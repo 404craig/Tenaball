@@ -8,6 +8,7 @@ Created by Aiden and Craig.
 
 - `index.html`: the full game (questions, sounds, animations and artwork are all built in, with no build step)
 - `tenable-animation.html`: a standalone preview of the winner's trophy animation
+- `og-image.jpg`: the preview picture shown when the game's link is posted in WhatsApp, iMessage or on social media
 
 ## Playing
 
