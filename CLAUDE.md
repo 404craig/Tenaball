@@ -23,6 +23,7 @@ Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and Jav
 - Variety: `family(q)` groups questions by type; `pickQuestion` favours the least recently played type.
 - Themes: `body[data-cat=...]` CSS blocks per competition.
 - End of game: `endGame()` builds the final table, records stats (`recordGame`), then runs `trophyReveal()` which hands the winner pill into first place.
+- Sharing: `prepareShare()` runs from `endGame()`. It builds the WhatsApp-style message (`shareText`, where `*text*` is bold) and draws the results card image (`shareCard`, 1080 by 1350) ahead of time, so tapping Share opens the share sheet straight away. `og-image.jpg` plus the `og:` meta tags give the link preview; it is the one asset kept outside `index.html`, because link previews need a real image URL.
 
 ## Planned work
 
