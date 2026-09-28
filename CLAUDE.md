@@ -23,10 +23,12 @@ Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and Jav
 - Variety: `family(q)` groups questions by type; `pickQuestion` favours the least recently played type.
 - Themes: `body[data-cat=...]` CSS blocks per competition.
 - End of game: `endGame()` builds the final table, records stats (`recordGame`), then runs `trophyReveal()` which hands the winner pill into first place.
+- Accounts and online games: the last `<script>` in `index.html`. `FIREBASE_CONFIG` switches them on (null means offline, as before). The Firebase SDK is loaded on demand from gstatic. Stats: `recordGame` keeps local stats; `accountRecord` saves the signed-in player's stats to `users/{uid}`.
+- Online play is a replayed move log: the host writes `round`, `reveal`, `refresh`, `next` and `skip` moves; the player whose turn it is writes `guess`, `pass` and `timeout`. Every phone applies them in order through `applyAction`, which calls the same `applyGuess`, `applyPass`, `applyTimeout`, `applyReveal`, `applyRefresh` and `applyNext` a local game uses. Keep those deterministic: no randomness, clock reads or local-only state in them, or phones will drift apart. Question picking happens only on the host, and the chosen id travels in the move.
+- `firestore.rules` guards rooms and moves. Run `cd tests && npm install && npm test` after changing the rules, the online code or the game loop; it runs the rules tests plus multi-phone browser tests against the Firebase emulators.
 - Sharing: `prepareShare()` runs from `endGame()`. It builds the WhatsApp-style message (`shareText`, where `*text*` is bold) and draws the results card image (`shareCard`, 1080 by 1350) ahead of time, so tapping Share opens the share sheet straight away. `og-image.jpg` plus the `og:` meta tags give the link preview; it is the one asset kept outside `index.html`, because link previews need a real image URL.
 
 ## Planned work
 
 - Club top-10 league scorers for 10 clubs in each of La Liga, Bundesliga, Serie A, Ligue 1 and the Scottish Premiership, using season-by-season player stats (for example FBref), working back from 2025/26 and stopping where data can't be verified.
 - Player records (hat-tricks, fastest to 50 and 100 goals, 20-goal seasons, single-season highs), managers and transfers, per competition.
-- A login to replace name-matched local stats.
