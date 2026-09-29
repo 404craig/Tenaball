@@ -304,11 +304,14 @@ body.ingame .toplogo img{width:min(46vw,210px)}
    Android Chrome from the theme-color tag (kept in step by syncChrome). The strip uses the screen's average top-edge
    colour, holds it a little, then eases into the background so the bar and the page join up without a line.
    Each full-screen overlay carries its own strip in its own colour (--band). */
-.topfade,.overlay::before,#winTrophy::before{content:"";position:fixed;left:0;right:0;top:0;height:8px;pointer-events:none;background-color:var(--band,var(--topc))}
-.topfade{z-index:-1}
-.topfade::after,.overlay::after{content:"";position:fixed;left:0;right:0;top:8px;height:140px;pointer-events:none;
+/* Safari only uses a strip that's taller than 10px (thinner counts as a border), sits on a normal layer (not below the
+   page, z-index 0 or more), and isn't a see-through layer that ignores taps; otherwise it falls back to the body's colour. */
+.topfade,.overlay::before,#winTrophy::before{content:"";position:fixed;left:0;right:0;top:0;height:16px;background-color:var(--band,var(--topc))}
+.topfade{z-index:0}
+.toplogo,.wrap{position:relative;z-index:1} /* the page sits above the strip */
+.topfade::after,.overlay::after{content:"";position:fixed;left:0;right:0;top:16px;height:140px;pointer-events:none;
   background:linear-gradient(var(--band,var(--topc)),transparent);background:linear-gradient(var(--band,var(--topc)) 0%,color-mix(in srgb,var(--band,var(--topc)) 97.6%,transparent) 10%,color-mix(in srgb,var(--band,var(--topc)) 90.5%,transparent) 20%,color-mix(in srgb,var(--band,var(--topc)) 79.4%,transparent) 30%,color-mix(in srgb,var(--band,var(--topc)) 65.5%,transparent) 40%,color-mix(in srgb,var(--band,var(--topc)) 50.0%,transparent) 50%,color-mix(in srgb,var(--band,var(--topc)) 34.5%,transparent) 60%,color-mix(in srgb,var(--band,var(--topc)) 20.6%,transparent) 70%,color-mix(in srgb,var(--band,var(--topc)) 9.5%,transparent) 80%,color-mix(in srgb,var(--band,var(--topc)) 2.4%,transparent) 90%,transparent 100%)}
-.overlay::before,.overlay::after{z-index:-1} /* above the overlay's own tint, behind its content */
+.overlay::before{z-index:0} .overlay::after{z-index:-1} /* above the overlay's own tint; its content starts below the strip */
 #winTrophy::before{z-index:40}
 #intro,#banner{--band:color-mix(in srgb,var(--topc) 45%,#000)}
 .overlay.out{--band:#2d0414} .overlay.out.yel{--band:#2a1c0f} .overlay.win{--band:#072829} #winTrophy{--band:#12031f}
