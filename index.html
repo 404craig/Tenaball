@@ -2706,7 +2706,7 @@ function confetti(){
 <script>
 /* ---------- accounts and online games (the Tenaball server in server/) ----------
    TENABALL_SERVER is the server's address. Set it to null to run offline exactly as before. docs/SERVER_SETUP.md has the steps. */
-const TENABALL_SERVER = null; // "https://tenaball.crw84.workers.dev" once its secrets are working
+const TENABALL_SERVER = "https://tenaball.crw84.workers.dev";
 // the tests set TENABALL_SERVER_URL: a local copy of the server, or "" to play offline
 const SERVER = String(("TENABALL_SERVER_URL" in window ? window.TENABALL_SERVER_URL : TENABALL_SERVER) || "").replace(/\/+$/, "");
 const NET = { user: null, stats: null };

@@ -13,23 +13,25 @@ You'll need a free Cloudflare account ([dash.cloudflare.com/sign-up](https://das
    - **Production branch:** `main`
    - Open the advanced settings and set **Root directory** (sometimes called **Path**) to `server`
    - **Build command:** leave empty
-   - **Deploy command:** `npm run deploy`
+   - **Deploy command:** `npx wrangler deploy`
 4. Choose **Deploy**. The first time, Cloudflare may ask you to pick a `workers.dev` subdomain, for example your name. The server's address is then `https://tenaball.<subdomain>.workers.dev`.
 
 From now on, every change to `server/` on `main` deploys itself.
 
 ## 2. Add the two secrets
 
-Cloudflare's GitHub builds can drop secrets that were added in the worker's own **Variables and Secrets**, so the build brings them with it instead. In **Workers & Pages**, open **tenaball**, then **Settings**, then **Build**, then **Variables and secrets** (the build's own list), and add two entries of type **Secret**:
+In **Workers & Pages**, open **tenaball**, then **Settings**, then **Variables and Secrets** (the worker's own list, not the one under **Build**). Add two entries of type **Secret**:
 
 | Name | Value |
 | --- | --- |
 | `PIN_SECRET` | A long random phrase, at least 16 characters, for example five random words. It scrambles every PIN. |
 | `ADMIN_PASSWORD` | A password for the admin page, at least 8 characters. |
 
-Make sure the **Deploy command** (in the same **Build** settings) is `npm run deploy`. That runs `server/deploy.mjs`, which uploads the two secrets with every new version. Then go to **Deployments** and retry the latest build, or push any change to `server/`.
+Save and deploy when it asks. Secrets added here reach the running server straight away, and deploys keep them.
 
 Keep `PIN_SECRET` somewhere safe and **never change it** once people have accounts: changing it makes every existing PIN stop working (you'd have to reset each one).
+
+**If a later build ever loses the secrets** (`/status` says `"missing"` after a deploy; Cloudflare's GitHub builds have been known to do this), there's a fallback: add the same two secrets under **Settings**, then **Build**, then **Variables and secrets**, and change the **Deploy command** to `npm run deploy`. That runs `server/deploy.mjs`, which uploads the two secrets with every new version.
 
 ## 3. Check it's running
 
