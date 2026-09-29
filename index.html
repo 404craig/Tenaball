@@ -434,7 +434,7 @@ body[data-cat="top5"]{--hit:linear-gradient(90deg,#7cffb2,#ffd54a 55%,#f5b700); 
 @keyframes wt-floorS{0%,10%{opacity:0}18%{opacity:.45}28%,100%{opacity:0}}
 #winTrophy .winpill{position:relative;display:flex;align-items:center;gap:14px;width:min(86vw,420px);padding:10px 16px;border-radius:14px;background:linear-gradient(90deg,#04f5ff,#00ff85);color:#1a0020;opacity:0;margin-top:30px;box-shadow:0 10px 30px -10px rgba(4,245,255,.6);will-change:transform,opacity}
 #winTrophy .winpill .place{font-weight:800;font-size:1.15rem;width:40px} #winTrophy .winpill .nm{flex:1;font-weight:700;font-size:1.05rem;text-align:left} #winTrophy .winpill .sc{font-weight:800;font-size:1.35rem}
-#winTrophy .tap{position:absolute;bottom:20px;left:0;right:0;font-size:.85rem;font-weight:700;color:#fff;opacity:.85;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+#winTrophy .tap{position:absolute;bottom:20px;left:0;right:0;font-size:.8rem;opacity:.55;text-align:center}
 @media (prefers-reduced-motion: reduce){#winTrophy.idle *{animation:none!important}#winTrophy .particles i{animation:none;opacity:.15}}
 
 /* ---------- reveal effects ---------- */
@@ -2545,6 +2545,7 @@ async function trophyReveal(sorted, targetRow){
   every.forEach(el=>el.getAnimations().forEach(a=>{ if(!(a instanceof CSSAnimation)) a.cancel(); }));
   ov.classList.remove("idle");
   ov.classList.remove("hidden");
+  ov.querySelectorAll(".rib svg").forEach(s=>s.unpauseAnimations&&s.unpauseAnimations());
   let skip; const sig=new Promise(r=>skip=r); ov.onclick=()=>skip();
   const A=(el,f,o)=>el.animate(f,Object.assign({fill:"both"},o));
   if (REDUCED){
@@ -2602,7 +2603,7 @@ async function trophyReveal(sorted, targetRow){
   ov.classList.add("idle");
   // bolts idle drift and an occasional faint charge along one of them
   [["-.5vw,.3vh",13000],["-.5vw,.3vh",13000],[".6vw,-.3vh",14500],["-.7vw,0",11800],[".6vw,0",12600]].forEach(([to,d],i)=>bolts[i].animate([{transform:"translate(0,0)"},{transform:`translate(${to})`}],{duration:d,direction:"alternate",iterations:Infinity,easing:"ease-in-out"}));
-  let bi=1; clearInterval(trophyIdle); trophyIdle=setInterval(()=>{ boltSweep(bolts[bi%3],"idle"); bi++; },3500);
+  let bi=1; clearInterval(trophyIdle); trophyIdle=setInterval(()=>{ if (ov.classList.contains("hidden")) return clearInterval(trophyIdle); boltSweep(bolts[bi%3],"idle"); bi++; },3500);
   // winner pill
   A(pill,[{opacity:0,transform:"translateY(22px) scale(.96)"},{opacity:1,transform:"none"}],{duration:500,delay:REDUCED?0:100,easing:EASE_OUT});
   const t0=performance.now()+200; const step=now=>{ const k=Math.max(0,Math.min(1,(now-t0)/800)); $("pillSc").textContent=Math.round(top*(1-Math.pow(1-k,3))); if(k<1) requestAnimationFrame(step); }; requestAnimationFrame(step);
@@ -2617,15 +2618,24 @@ async function trophyReveal(sorted, targetRow){
   A($("wtTzone"),[{opacity:1,transform:"translateY(0) scale(1)"},{opacity:0,transform:"translateY(-42vh) scale(.3)"}],{duration:D*.9,easing:"cubic-bezier(.55,0,.3,1)"});
   [$("wtBolts"),$("wtParticles"),$("wtWave"),$("wtVig"),...ov.querySelectorAll(".bgshift")].forEach(el=>A(el,[{opacity:getComputedStyle(el).opacity},{opacity:0}],{duration:D}));
   A($("wtBgbase"),[{opacity:1},{opacity:0}],{duration:D,delay:D*.2});
-  A($("wtTap"),[{opacity:.85},{opacity:0}],{duration:200});
+  A($("wtTap"),[{opacity:.55},{opacity:0}],{duration:200});
   swishSound(0,.5,.12,2500,600);
   await A(pill,[{transform:"none"},{transform:`translate(${dx}px,${dy}px) scale(${sx},${sy})`}],{duration:D,easing:"cubic-bezier(.65,0,.35,1)"}).finished.catch(()=>{});
   targetRow.style.transition = "none"; targetRow.classList.add("show"); void targetRow.offsetWidth; targetRow.style.transition = "";
+  closeTrophy();
+  [tr,pill,...bolts,...Object.values(glows)].forEach(el=>el.style.opacity="");
+}
+// hide the trophy overlay and stop everything in it, so nothing keeps animating behind the final table
+function closeTrophy(){
+  const ov=$("winTrophy");
+  clearInterval(trophyIdle); ov.onclick=null;
   ov.classList.add("hidden"); ov.classList.remove("idle");
   ov.querySelectorAll("*").forEach(el=>el.getAnimations&&el.getAnimations().forEach(a=>{ if(!(a instanceof CSSAnimation)) a.cancel(); }));
   ov.getAnimations().forEach(a=>{ if(!(a instanceof CSSAnimation)) a.cancel(); });
-  [tr,pill,...bolts,...Object.values(glows)].forEach(el=>el.style.opacity="");
+  ov.querySelectorAll(".rib svg").forEach(s=>s.pauseAnimations&&s.pauseAnimations());
+  ["wtConfBack","wtConfFront","wtFx","wtInward"].forEach(id=>$(id).innerHTML=""); // cancelled pieces never reach their own clean-up
 }
+document.querySelectorAll("#winTrophy .rib svg").forEach(s=>s.pauseAnimations&&s.pauseAnimations()); // idle until a game ends
 function burst(palette){
   palette = palette || ["#04f5ff","#00ff85","#ffffff"];
   if (REDUCED) return;
@@ -2977,7 +2987,7 @@ function stopOnlineGame(){
   if (O.unsub) O.unsub();
   stopTimer(); ONLINE = null;
   if (FAST){ FAST = false; muted = O.wasMuted; }
-  ["intro","banner","outOverlay","winOverlay","winTrophy"].forEach(id => $(id).classList.add("hidden"));
+  ["intro","banner","outOverlay","winOverlay"].forEach(id => $(id).classList.add("hidden")); closeTrophy();
   $("guessArea").classList.remove("watching"); $("skipBtn").classList.add("hidden");
   ["introBtn","refreshBtn","nextBtn","againBtn"].forEach(id => $(id).classList.remove("hidden"));
   ["introWait","roundWait"].forEach(id => $(id).classList.add("hidden"));

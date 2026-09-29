@@ -1,6 +1,6 @@
 # Tests
 
-Tests for sign-in, account stats and online games. They run against the Firebase emulators, so no real Firebase project is needed.
+Tests for sign-in, account stats, online games and the winner's trophy. They run against the Firebase emulators, so no real Firebase project is needed.
 
 Needs Node 20 or later and Java 11 or later (the Firestore emulator runs on Java).
 
@@ -14,6 +14,7 @@ npm test
 
 - `rules.test.mjs`: the Firestore security rules (who can join, start and play a room, and whose stats can be read).
 - `login.test.mjs`: the sign-in screen in a real browser: email accounts, password reset, guests, Google and Apple, and stats saved to an account.
+- `trophy.test.mjs`: the winner's trophy at full time on a 390 by 844 screen, for solo, two-player and drawn games: the approved timeline, the real winner pill, the hand-over into the final table, tap to skip, reduced motion, and that nothing is left running afterwards. Screenshots go in `tests/output/`.
 - `online.test.mjs`: online games across several browser "phones": invite links and codes, live lobby updates, a full game with the boards checked after every move, moves out of turn, reloading mid-game, the shot clock, skipping a player, Play again, the host leaving and version checks.
 
 The browser tests use Playwright's Chromium. If Chromium lives somewhere unusual, set `CHROMIUM_PATH`.
