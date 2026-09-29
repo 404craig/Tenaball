@@ -1,4 +1,7 @@
 tests/node_modules/
 tests/output/
 tests/package-lock.json
+server/node_modules/
+server/.wrangler/
+server/.dev.vars
 *.log

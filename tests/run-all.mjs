@@ -1,6 +1,6 @@
 // Runs every suite in order.
 import { spawnSync } from "node:child_process";
-const suites = ["trophy.test.mjs"];
+const suites = ["server.test.mjs", "trophy.test.mjs"];
 let failed = 0;
 for (const s of suites){
   console.log(`\n▶ ${s}`);
