@@ -261,7 +261,7 @@ export class Room extends DurableObject {
   publicRoom(){ const r = this.state; return { code: r.code, host: r.host, status: r.status, game: r.game, settings: r.settings, ver: r.ver, players: r.players, order: r.order || null, seq: r.seq }; }
   movesOf(game){ return this.sql.exec("SELECT seq, pid, type, data FROM moves WHERE game = ? ORDER BY seq", game).toArray().map(m => ({ seq: m.seq, uid: m.pid, type: m.type, data: JSON.parse(m.data) })); }
   send(ws, msg){ try { ws.send(JSON.stringify(msg)); } catch(e){} }
-  broadcast(msg){ const s = JSON.stringify(msg); for (const ws of this.ctx.getWebSockets()) try { ws.send(s); } catch(e){} }
+  broadcast(msg, except){ const s = JSON.stringify(msg); for (const ws of this.ctx.getWebSockets()) if (ws !== except) try { ws.send(s); } catch(e){} }
   pidOf(ws){ return (ws.deserializeAttachment() || {}).pid; }
   closeAll(code, reason){ for (const ws of this.ctx.getWebSockets()) try { ws.close(code, reason); } catch(e){} }
 
@@ -285,6 +285,7 @@ export class Room extends DurableObject {
     const r = await this.load(), refuse = (code, why) => { this.send(server, { t: "refused", why }); server.close(code, why); return new Response(null, { status: 101, webSocket: client }); };
     if (!r) return refuse(4404, "notfound");
     if (r.ver !== ver) return refuse(4409, "version");
+    let joined = false;
     if (!r.players[pid]){
       if (r.status !== "lobby") return refuse(4403, "started");
       const taken = Object.values(r.players);
@@ -292,10 +293,12 @@ export class Room extends DurableObject {
       let nm = name, k = 2; while (taken.some(p => p.name.toLowerCase() === nm.toLowerCase())) nm = cleanName(name.slice(0, 17)) + " " + (k++);
       r.players[pid] = { name: nm, n: Math.max(...taken.map(p => p.n)) + 1 };
       await this.save();
-      this.broadcast({ t: "room", room: this.publicRoom() });
+      joined = true;
     }
+    // the newcomer hears who they are first, then everyone else hears that they've joined
     server.serializeAttachment({ pid });
     this.send(server, { t: "hello", you: pid, room: this.publicRoom(), moves: r.status === "playing" ? this.movesOf(r.game) : [] });
+    if (joined) this.broadcast({ t: "room", room: this.publicRoom() }, server);
     return new Response(null, { status: 101, webSocket: client });
   }
 

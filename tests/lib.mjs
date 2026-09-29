@@ -55,3 +55,18 @@ export async function startServer({ port = 8787, origins = [], vars = {} } = {})
   await until(async () => (await fetch(url + "/")).ok, { timeout: 60000, every: 300, what: "the local server to start" }).catch(async e => { await stop(); throw new Error(e.message + "\n" + log); });
   return { url, log: () => log, stop };
 }
+
+// a phone: its own browser profile (own storage and sign-in), pointed at a local Tenaball server when given one
+export async function phone(browser, name, { server = null, dialogs = "accept" } = {}){
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce", permissions: ["clipboard-read", "clipboard-write"] });
+  await ctx.route("https://fonts.googleapis.com/**", route => route.fulfill({ body: "", contentType: "text/css" }));
+  await ctx.route("https://fonts.gstatic.com/**", route => route.abort());
+  if (server) await ctx.addInitScript(url => { window.TENABALL_SERVER_URL = url; }, server);
+  const page = await ctx.newPage();
+  page.errors = []; page.dialogs = [];
+  page.on("pageerror", e => page.errors.push(`${name}: ${e.message}`));
+  page.on("console", m => { if (m.type() === "error" && !/Failed to load resource|ERR_|favicon|WebSocket/.test(m.text())) page.errors.push(`${name} console: ${m.text()}`); });
+  page.on("dialog", d => { page.dialogs.push(d.message()); dialogs === "accept" ? d.accept() : d.dismiss(); });
+  page.label = name; page.ctx = ctx;
+  return page;
+}

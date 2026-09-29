@@ -166,6 +166,8 @@ await test("rooms: a host creates a game and friends join over a live connection
   eq(Object.values(hello.room.players).map(p => p.name), ["Craig"]);
   const aiden = live(r.code, { guest: guestId(), name: "Aiden" }); await aiden.opened;
   await h.wait(m => m.t === "room" && Object.keys(m.room.players).length === 2, "host sees Aiden");
+  await aiden.wait(m => m.t === "hello", "Aiden's hello");
+  eq(aiden.msgs[0].t, "hello", "a newcomer hears who they are before any room news");
   const emma = live(r.code, { guest: guestId(), name: "aiden" }); await emma.opened; // same name as Aiden
   const seen = await h.wait(m => m.t === "room" && Object.keys(m.room.players).length === 3, "host sees the third player");
   eq(Object.values(seen.room.players).sort((a, b) => a.n - b.n).map(p => p.name), ["Craig", "Aiden", "aiden 2"]);
