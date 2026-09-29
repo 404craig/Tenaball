@@ -24,7 +24,7 @@ async function toFullTime(p, players){
   for (let i = 0; i < players.length; i++) await boxes[i].fill(players[i][0]);
   await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro"), { what: "first round" });
-  await p.click("#introBtn"); await until(() => p.evaluate(() => G.turnReady), { what: "first turn" });
+  await p.click("#introBtn"); await until(() => p.evaluate(() => !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled), { what: "first turn" });
   await p.evaluate(sc => { G.round = cfg.rounds; G.players.forEach((x, i) => x.score = sc[i]); endRound(); }, players.map(x => x[1]));
   eq(await p.textContent("#nextBtn"), "See final scores");
   await p.evaluate(() => { window.__conf = { back: 0, front: 0 };
@@ -146,7 +146,7 @@ await test("trophy: playing again runs the whole sequence a second time from a c
   await until(() => p.evaluate(() => document.getElementById("winTrophy").classList.contains("hidden")), { what: "first close", timeout: 6000 });
   await p.waitForTimeout(1200);
   await p.click("#againBtn"); await until(() => visible(p, "#intro"), { what: "a new game" });
-  await p.click("#introBtn"); await until(() => p.evaluate(() => G.turnReady));
+  await p.click("#introBtn"); await until(() => p.evaluate(() => !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled));
   await p.evaluate(() => { window.__conf = { back: 0, front: 0 }; G.round = cfg.rounds; G.players[0].score = 3; G.players[1].score = 8; endRound(); }); await p.click("#nextBtn");
   await until(() => visible(p, "#winTrophy"));
   await until(async () => (await p.textContent("#pillName")) === "Aiden", { what: "the new winner" });
