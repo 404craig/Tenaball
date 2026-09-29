@@ -13,27 +13,27 @@ You'll need a free Cloudflare account ([dash.cloudflare.com/sign-up](https://das
    - **Production branch:** `main`
    - Open the advanced settings and set **Root directory** (sometimes called **Path**) to `server`
    - **Build command:** leave empty
-   - **Deploy command:** `npx wrangler deploy`
+   - **Deploy command:** `npm run deploy`
 4. Choose **Deploy**. The first time, Cloudflare may ask you to pick a `workers.dev` subdomain, for example your name. The server's address is then `https://tenaball.<subdomain>.workers.dev`.
 
 From now on, every change to `server/` on `main` deploys itself.
 
 ## 2. Add the two secrets
 
-In **Workers & Pages**, open **tenaball**, then **Settings**, then **Variables and Secrets**. Add two entries of type **Secret**:
+Cloudflare's GitHub builds can drop secrets that were added in the worker's own **Variables and Secrets**, so the build brings them with it instead. In **Workers & Pages**, open **tenaball**, then **Settings**, then **Build**, then **Variables and secrets** (the build's own list), and add two entries of type **Secret**:
 
 | Name | Value |
 | --- | --- |
 | `PIN_SECRET` | A long random phrase, at least 16 characters, for example five random words. It scrambles every PIN. |
 | `ADMIN_PASSWORD` | A password for the admin page, at least 8 characters. |
 
-Save, and deploy again if it asks.
+Make sure the **Deploy command** (in the same **Build** settings) is `npm run deploy`. That runs `server/deploy.mjs`, which uploads the two secrets with every new version. Then go to **Deployments** and retry the latest build, or push any change to `server/`.
 
 Keep `PIN_SECRET` somewhere safe and **never change it** once people have accounts: changing it makes every existing PIN stop working (you'd have to reset each one).
 
 ## 3. Check it's running
 
-Open `https://tenaball.<subdomain>.workers.dev` in a browser. It should say **Tenaball server is running.** Then open `/admin` on the same address and sign in with your admin password.
+Open `https://tenaball.<subdomain>.workers.dev/status`. Both lists should say `"set"` for `PIN_SECRET` and `ADMIN_PASSWORD` (it never shows the values). Then open `/admin` on the same address and sign in with your admin password.
 
 ## 4. Point the game at the server
 
