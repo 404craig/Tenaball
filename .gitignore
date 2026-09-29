@@ -5,3 +5,5 @@ server/node_modules/
 server/.wrangler/
 server/.dev.vars
 *.log
+
+server/.deploy-secrets.json
