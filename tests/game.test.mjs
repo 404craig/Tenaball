@@ -75,6 +75,8 @@ await test("game: solo with 0 points, the table shows - rather than 1st, no trop
   eq(await p.textContent("#podium .pod .place"), "-");
   eq(await p.evaluate(() => [document.querySelector("#podium .pod").classList.contains("show"), document.querySelector("#podium .pod").classList.contains("first")]), [true, false], "the row shows, not styled as a winner");
   eq(await p.textContent("#winnerLabel"), "You scored 0 points.");
+  const gaps = await p.evaluate(() => { const r = s => document.querySelector(s).getBoundingClientRect(), n = r("#zeroNote"); return [Math.round(n.top - r("#podium .pod").bottom), Math.round(r("#end .row").top - n.bottom)]; });
+  eq(gaps[1], gaps[0] * 2, "the gap under the line is twice the gap above it");
   const line = await p.textContent("#zeroNote");
   assert(await visible(p, "#zeroNote"), "the line shows under the table");
   assert(await p.evaluate(l => ZERO_LINES.includes(l), line), "one of the three lines: " + line);
