@@ -276,4 +276,14 @@ await test("server: without its secrets the server refuses to create accounts ra
   } finally { await bare.stop(); }
 });
 
+await test("server: secrets that are too short get their own message", async () => {
+  const weak = await startServer({ port: 8790, origins: [ORIGIN], vars: { PIN_SECRET: "short", ADMIN_PASSWORD: "short" } });
+  try {
+    const r = await fetch(weak.url + "/api/signup", { method: "POST", headers: { "content-type": "application/json", Origin: ORIGIN }, body: JSON.stringify({ name: "A", email: "a@b.co", pin: "1234" }) });
+    eq((await r.json()).error, "The server isn't set up yet (PIN_SECRET must be at least 16 characters).");
+    const a = await fetch(weak.url + "/api/admin/find", { method: "POST", headers: { "content-type": "application/json", Origin: ORIGIN }, body: JSON.stringify({ password: "short" }) });
+    eq((await a.json()).error, "The admin page isn't set up yet (ADMIN_PASSWORD must be at least 8 characters).");
+  } finally { await weak.stop(); }
+});
+
 report();
