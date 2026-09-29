@@ -61,7 +61,7 @@ export async function phone(browser, name, { server = null, dialogs = "accept" }
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce", permissions: ["clipboard-read", "clipboard-write"] });
   await ctx.route("https://fonts.googleapis.com/**", route => route.fulfill({ body: "", contentType: "text/css" }));
   await ctx.route("https://fonts.gstatic.com/**", route => route.abort());
-  if (server) await ctx.addInitScript(url => { window.TENABALL_SERVER_URL = url; }, server);
+  await ctx.addInitScript(url => { window.TENABALL_SERVER_URL = url; }, server || ""); // never the live server
   const page = await ctx.newPage();
   page.errors = []; page.dialogs = [];
   page.on("pageerror", e => page.errors.push(`${name}: ${e.message}`));

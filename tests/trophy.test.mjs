@@ -11,6 +11,7 @@ const OUT = new URL("./output/", import.meta.url).pathname; mkdirSync(OUT, { rec
 async function phone(name, reduced = false){
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: reduced ? "reduce" : "no-preference" });
   await ctx.route("https://fonts.googleapis.com/**", r => r.fulfill({ body: "", contentType: "text/css" }));
+  await ctx.addInitScript(() => { window.TENABALL_SERVER_URL = ""; }); // offline: the trophy doesn't need the server
   const p = await ctx.newPage(); p.errors = [];
   p.on("pageerror", e => p.errors.push(e.message));
   p.on("console", m => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) p.errors.push(m.text()); });

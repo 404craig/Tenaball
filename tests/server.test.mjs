@@ -141,6 +141,12 @@ await test("server: the admin can find a player, set a new PIN (signing them out
   eq((await admin("find", { q: "forgot" })).body.users, []);
   eq((await api("/signin", { email: "forgot@example.com", pin: "8642" }, { ip: freshIp() })).status, 401, "deleted");
 });
+await test("server: /status says whether each secret is set, without showing them", async () => {
+  const r = await fetch(srv.url + "/status"); const d = await r.json();
+  eq([d.server, d.secrets, d.accountsSees], ["running", { PIN_SECRET: "set", ADMIN_PASSWORD: "set" }, { PIN_SECRET: "set", ADMIN_PASSWORD: "set" }]);
+  const text = JSON.stringify(d);
+  assert(!text.includes(TEST_SECRETS.PIN_SECRET) && !text.includes(TEST_SECRETS.ADMIN_PASSWORD), "no secret values");
+});
 await test("server: the admin page is served at /admin", async () => {
   const r = await fetch(srv.url + "/admin"); const html = await r.text();
   eq(r.status, 200); assert(html.includes("<title>Tenaball admin</title>") && html.includes("Set new PIN"), "admin page");
@@ -273,7 +279,19 @@ await test("server: without its secrets the server refuses to create accounts ra
     eq([r.status, (await r.json()).error], [503, "The server isn't set up yet (PIN_SECRET is missing)."]);
     const a = await fetch(bare.url + "/api/admin/find", { method: "POST", headers: { "content-type": "application/json", Origin: ORIGIN }, body: JSON.stringify({ password: "anything" }) });
     eq(a.status, 503);
+    eq((await (await fetch(bare.url + "/status")).json()).accountsSees, { PIN_SECRET: "missing", ADMIN_PASSWORD: "missing" });
   } finally { await bare.stop(); }
+});
+
+await test("server: secrets that are too short get their own message", async () => {
+  const weak = await startServer({ port: 8790, origins: [ORIGIN], vars: { PIN_SECRET: "short", ADMIN_PASSWORD: "short" } });
+  try {
+    const r = await fetch(weak.url + "/api/signup", { method: "POST", headers: { "content-type": "application/json", Origin: ORIGIN }, body: JSON.stringify({ name: "A", email: "a@b.co", pin: "1234" }) });
+    eq((await r.json()).error, "The server isn't set up yet (PIN_SECRET must be at least 16 characters).");
+    const a = await fetch(weak.url + "/api/admin/find", { method: "POST", headers: { "content-type": "application/json", Origin: ORIGIN }, body: JSON.stringify({ password: "short" }) });
+    eq((await a.json()).error, "The admin page isn't set up yet (ADMIN_PASSWORD must be at least 8 characters).");
+    eq((await (await fetch(weak.url + "/status")).json()).secrets, { PIN_SECRET: "too short (needs 16 or more characters)", ADMIN_PASSWORD: "too short (needs 8 or more characters)" });
+  } finally { await weak.stop(); }
 });
 
 report();

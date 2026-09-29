@@ -33,6 +33,10 @@ function bumpStats(old, r){
   return s;
 }
 
+const secretReport = env => ({
+  PIN_SECRET: !env.PIN_SECRET ? "missing" : String(env.PIN_SECRET).length < 16 ? "too short (needs 16 or more characters)" : "set",
+  ADMIN_PASSWORD: !env.ADMIN_PASSWORD ? "missing" : String(env.ADMIN_PASSWORD).length < 8 ? "too short (needs 8 or more characters)" : "set" });
+
 /* ---------- the front door: CORS, routing, and connecting sockets to rooms ---------- */
 function allowedOrigin(req, env){
   const origin = req.headers.get("Origin");
@@ -68,6 +72,11 @@ export default {
     if (req.method === "OPTIONS") return new Response(null, { status: origin ? 204 : 403, headers: cors });
     try {
       if (url.pathname === "/") return new Response("Tenaball server is running.", { headers: { "content-type": "text/plain" } });
+      // a quick health check for setting up: says whether each secret can be seen (never their values)
+      if (url.pathname === "/status"){
+        const inner = await (await accounts(env).fetch("https://accounts/status", { method: "POST", body: "{}" })).json();
+        return json({ server: "running", secrets: secretReport(env), accountsSees: inner.secrets, allowedOrigins: String(env.ALLOWED_ORIGINS || ""), version: (env.VERSION && env.VERSION.id) || null }, 200, { "cache-control": "no-store" });
+      }
       if (url.pathname === "/admin") return new Response(ADMIN_PAGE, { headers: { "content-type": "text/html; charset=utf-8", "x-frame-options": "DENY", "cache-control": "no-store" } });
       if (!url.pathname.startsWith("/api/")) return new Response("Not found", { status: 404 });
       if (!origin) return fail(403, "This address isn't allowed to use the Tenaball server.");
@@ -143,16 +152,18 @@ export class Accounts extends DurableObject {
     return this.one("SELECT * FROM users WHERE id = ?", s.uid);
   }
   secret(){ return this.env.PIN_SECRET && String(this.env.PIN_SECRET).length >= 16 ? String(this.env.PIN_SECRET) : null; }
+  secretProblem(){ return !this.env.PIN_SECRET ? "The server isn't set up yet (PIN_SECRET is missing)." : "The server isn't set up yet (PIN_SECRET must be at least 16 characters)."; }
 
   async fetch(req){
     const path = new URL(req.url).pathname, ip = req.headers.get("x-ip") || "local", token = req.headers.get("x-token") || "";
     let b = {}; try { b = JSON.parse(await req.text() || "{}"); } catch(e){ return fail(400, "That request didn't make sense."); }
     const tries = Number(this.env.MAX_PIN_TRIES) || 5, lockMs = (Number(this.env.LOCK_MINUTES) || 15) * 60000;
 
+    if (path === "/status") return json({ secrets: secretReport(this.env) });
     if (path === "/whoami"){ const u = await this.userFromToken(b.token); return u ? json({ user: this.userOut(u) }) : fail(401, "Not signed in."); }
 
     if (path === "/signup"){
-      if (!this.secret()) return fail(503, "The server isn't set up yet (PIN_SECRET is missing).");
+      if (!this.secret()) return fail(503, this.secretProblem());
       const name = cleanName(b.name), email = cleanEmail(b.email);
       if (!name) return fail(400, "Enter your name so other players know who you are.");
       if (!validEmail(email)) return fail(400, "That email address doesn't look right.");
@@ -166,7 +177,7 @@ export class Accounts extends DurableObject {
     }
 
     if (path === "/signin"){
-      if (!this.secret()) return fail(503, "The server isn't set up yet (PIN_SECRET is missing).");
+      if (!this.secret()) return fail(503, this.secretProblem());
       if (this.limited("signin:" + ip, 20, 3600000)) return fail(429, "Too many wrong tries from this device. Wait a while and try again.");
       const email = cleanEmail(b.email), u = validEmail(email) ? this.one("SELECT * FROM users WHERE email = ?", email) : null, now = Date.now();
       if (u && u.lock_until > now){ const mins = Math.ceil((u.lock_until - now) / 60000); return fail(423, `Too many wrong PINs. This account is locked for ${mins} more minute${mins === 1 ? "" : "s"}.`, { retryAfter: mins }); }
@@ -219,7 +230,8 @@ export class Accounts extends DurableObject {
 
   // the admin page: find players, set a new PIN, unlock or delete an account
   async admin(path, b, ip){
-    if (!this.env.ADMIN_PASSWORD || String(this.env.ADMIN_PASSWORD).length < 8) return fail(503, "The admin page isn't set up yet (ADMIN_PASSWORD is missing).");
+    if (!this.env.ADMIN_PASSWORD) return fail(503, "The admin page isn't set up yet (ADMIN_PASSWORD is missing).");
+    if (String(this.env.ADMIN_PASSWORD).length < 8) return fail(503, "The admin page isn't set up yet (ADMIN_PASSWORD must be at least 8 characters).");
     if (this.limited("admin:" + ip, 10, 3600000)) return fail(429, "Too many wrong passwords. Try again in an hour.");
     if (!sameText(b.password || "", this.env.ADMIN_PASSWORD)){ this.limited("admin:" + ip, 10, 3600000, 1); return fail(401, "Wrong admin password."); }
     const row = u => ({ ...this.userOut(u), locked: u.lock_until > Date.now(), created: u.created, played: this.statsOf(u).played });
@@ -230,7 +242,7 @@ export class Accounts extends DurableObject {
     const u = this.one("SELECT * FROM users WHERE id = ?", String(b.id || ""));
     if (!u) return fail(404, "No player with that id.");
     if (path === "/admin/pin"){
-      if (!this.secret()) return fail(503, "The server isn't set up yet (PIN_SECRET is missing).");
+      if (!this.secret()) return fail(503, this.secretProblem());
       if (!validPin(b.pin)) return fail(400, "The new PIN must be 4 digits.");
       const salt = randomHex(16);
       this.sql.exec("UPDATE users SET salt = ?, pin = ?, fails = 0, lock_until = 0 WHERE id = ?", salt, await pinHash(this.secret(), salt, b.pin), u.id);
