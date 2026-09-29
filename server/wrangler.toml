@@ -16,6 +16,10 @@ LOCK_MINUTES = "15"
 #   PIN_SECRET      a long random phrase used to scramble PINs
 #   ADMIN_PASSWORD  the password for the admin page at /admin
 
+# lets /status say which version is running
+[version_metadata]
+binding = "VERSION"
+
 [[durable_objects.bindings]]
 name = "ACCOUNTS"
 class_name = "Accounts"

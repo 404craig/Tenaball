@@ -33,6 +33,10 @@ function bumpStats(old, r){
   return s;
 }
 
+const secretReport = env => ({
+  PIN_SECRET: !env.PIN_SECRET ? "missing" : String(env.PIN_SECRET).length < 16 ? "too short (needs 16 or more characters)" : "set",
+  ADMIN_PASSWORD: !env.ADMIN_PASSWORD ? "missing" : String(env.ADMIN_PASSWORD).length < 8 ? "too short (needs 8 or more characters)" : "set" });
+
 /* ---------- the front door: CORS, routing, and connecting sockets to rooms ---------- */
 function allowedOrigin(req, env){
   const origin = req.headers.get("Origin");
@@ -68,6 +72,11 @@ export default {
     if (req.method === "OPTIONS") return new Response(null, { status: origin ? 204 : 403, headers: cors });
     try {
       if (url.pathname === "/") return new Response("Tenaball server is running.", { headers: { "content-type": "text/plain" } });
+      // a quick health check for setting up: says whether each secret can be seen (never their values)
+      if (url.pathname === "/status"){
+        const inner = await (await accounts(env).fetch("https://accounts/status", { method: "POST", body: "{}" })).json();
+        return json({ server: "running", secrets: secretReport(env), accountsSees: inner.secrets, allowedOrigins: String(env.ALLOWED_ORIGINS || ""), version: (env.VERSION && env.VERSION.id) || null }, 200, { "cache-control": "no-store" });
+      }
       if (url.pathname === "/admin") return new Response(ADMIN_PAGE, { headers: { "content-type": "text/html; charset=utf-8", "x-frame-options": "DENY", "cache-control": "no-store" } });
       if (!url.pathname.startsWith("/api/")) return new Response("Not found", { status: 404 });
       if (!origin) return fail(403, "This address isn't allowed to use the Tenaball server.");
@@ -150,6 +159,7 @@ export class Accounts extends DurableObject {
     let b = {}; try { b = JSON.parse(await req.text() || "{}"); } catch(e){ return fail(400, "That request didn't make sense."); }
     const tries = Number(this.env.MAX_PIN_TRIES) || 5, lockMs = (Number(this.env.LOCK_MINUTES) || 15) * 60000;
 
+    if (path === "/status") return json({ secrets: secretReport(this.env) });
     if (path === "/whoami"){ const u = await this.userFromToken(b.token); return u ? json({ user: this.userOut(u) }) : fail(401, "Not signed in."); }
 
     if (path === "/signup"){
