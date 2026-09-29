@@ -229,7 +229,7 @@ await test("online: when the shot clock runs out, that player loses a life on ev
   await closeAll(craig, aiden);
 });
 
-await test("online: the host can skip a player who has gone quiet", async () => {
+await test("online: the host can skip a player who has gone quiet without costing a life, but a pass costs one", async () => {
   const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
   const code = await hostGame(craig);
   const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
@@ -242,6 +242,10 @@ await test("online: the host can skip a player who has gone quiet", async () => 
   assert(!(await visible(aiden, "#skipBtn")), "other players don't");
   await step([craig, aiden], craig, () => craig.click("#skipBtn"), "skip");
   eq(await aiden.evaluate(() => [G.players[1].lives, G.players[G.turn].name]), [3, "Craig"], "no life lost, back to Craig");
+  // a pass is different: it costs a life, on every phone
+  await step([craig, aiden], craig, () => craig.click("#passBtn"), "Craig passes");
+  eq(await aiden.evaluate(() => [G.players[0].lives, G.players[G.turn].name]), [2, "Aiden"], "Craig loses a life and Aiden is up");
+  eq(await craig.evaluate(() => G.players[0].lives), 2, "same on Craig's phone");
   await closeAll(craig, aiden);
 });
 

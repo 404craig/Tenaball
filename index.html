@@ -724,7 +724,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <div class="tiphead"><strong>How to play</strong><button type="button" class="tipclose" id="infoClose" aria-label="Close">✕</button></div>
     <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. With 2 or 3 players you take turns; solo, it's you against the board.</p>
     <p>The tower then scans up from the bottom. If it stops on your club, you score a point for every slot that club fills. If it runs all the way to the top, you lose a life.</p>
-    <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? Pass and the next player goes. Fill the last slot for a 2 point bonus.</p>
+    <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
   </div>
 </section>
 
@@ -2026,15 +2026,23 @@ $("passBtn").onclick = () => {
   if (ONLINE){ if (onlineMyTurn()){ stopTimer(); onlineSend("pass"); } return; }
   return applyPass();
 };
-async function applyPass(){
+// a pass costs a life, like a wrong answer: a yellow card, or a red card on the last life.
+// The host's skip for an online player who has gone quiet (skip = true) moves the turn on without one.
+async function applyPass(skip){
   stopTimer();
   const p = G.players[G.turn];
   if (G.players.length===1){ feedback("You gave up this round.", "bad"); p.out = true; renderPlayers(); return endRound(); }
+  G.busy = true; input.disabled = true; $("lockBtn").disabled = true;
+  if (!skip){
+    G.passes = 0;
+    loseLife(p, `${p.name} passes. ${loses(p)}`);
+    await showCard(p, p.out ? "red" : "yellow", { reason: "Passed." });
+    G.busy = false; return nextTurn();
+  }
   G.passes = (G.passes||0) + 1;
   const active = G.players.filter(x=>!x.out).length;
-  if (G.passes >= active){ feedback("Everyone passed, so the round is over.", "bad"); return endRound(); }
-  feedback(`${p.name} passes.`, "wait");
-  G.busy = true; input.disabled = true; $("lockBtn").disabled = true;
+  if (G.passes >= active){ G.busy = false; feedback("Everyone was skipped, so the round is over.", "bad"); return endRound(); }
+  feedback(`${p.name} is skipped.`, "wait");
   await wait(700); G.busy = false; nextTurn();
 }
 const qType = () => (G && G.q && G.q.type) || "club";
@@ -2182,7 +2190,8 @@ async function showCard(p, colour, opts={}){
   const others = G.players.filter(x=>!x.out).length;
   if (colour==="yellow"){
     $("outWho").textContent = solo ? "Yellow card" : p.name; $("outWho").style.color = solo ? "#fff" : p.color;
-    $("outLbl").textContent = (opts.reason ? opts.reason+" " : "") + (solo ? `${p.lives} ${p.lives===1?"life":"lives"} left.` : `is booked. ${p.lives} ${p.lives===1?"life":"lives"} left.`);
+    const left = `${p.lives} ${p.lives===1?"life":"lives"} left.`;
+    $("outLbl").textContent = solo ? (opts.reason ? opts.reason+" " : "") + left : opts.reason ? `${opts.reason} Booked, ${left}` : `is booked. ${left}`;
     ov.querySelector(".broken").textContent = "♥ ".repeat(p.lives).trim() + (p.lives<3 ? "  " + "♡ ".repeat(3-p.lives).trim() : "");
   } else {
     $("outWho").textContent = solo ? "Out of lives" : p.name; $("outWho").style.color = solo ? "#fff" : p.color;
@@ -3031,7 +3040,7 @@ function applyAction(a){
     stopTimer();
     if (t==="guess") return typeof d.name==="string" ? applyGuess(d.name) : undefined;
     if (t==="timeout") return applyTimeout();
-    return applyPass();
+    return applyPass(t==="skip");
   }
   if (!byHost) return;
   const q = d.qid ? Q.find(x => x.id===d.qid) : null;

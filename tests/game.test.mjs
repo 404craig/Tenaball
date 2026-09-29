@@ -1,0 +1,64 @@
+// Game rules on one phone: passing costs a life, with a yellow card (red on the last life).
+import { serve, launch, phone, until, visible } from "./lib.mjs";
+import { test, assert, eq, report } from "./harness.mjs";
+
+const site = await serve(5190);
+const browser = await launch();
+async function twoPlayerGame(){
+  const p = await phone(browser, "game"); await p.goto(site.url);
+  await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="2"]'); await p.click('#clockSeg button[data-v="0"]');
+  const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
+  return p;
+}
+const ready = p => until(() => p.evaluate(() => !G.busy && !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled), { what: "a turn", timeout: 10000 });
+const who = p => p.evaluate(() => G.players[G.turn].name);
+const lives = p => p.evaluate(() => G.players.map(x => x.lives));
+// press Pass and read the card that comes up
+async function pass(p){
+  await ready(p); const name = await who(p);
+  await p.click("#passBtn");
+  await until(() => visible(p, "#outOverlay"), { what: "the card" });
+  const card = await p.evaluate(() => ({ who: document.getElementById("outWho").textContent, lbl: document.getElementById("outLbl").textContent, yellow: document.getElementById("outOverlay").classList.contains("yel") }));
+  await p.click("#outOverlay");
+  await until(async () => !(await visible(p, "#outOverlay")), { what: "the card to close" });
+  return { name, ...card };
+}
+
+await test("game: passing costs a life and shows a yellow card, then the turn moves on", async () => {
+  const p = await twoPlayerGame();
+  const first = await who(p);
+  const c = await pass(p);
+  eq([c.who, c.yellow, c.lbl], [first, true, "Passed. Booked, 2 lives left."]);
+  eq(await lives(p), first === "Craig" ? [2, 3] : [3, 2], "one life gone");
+  assert((await p.textContent("#feedback")).includes(`${first} passes. ${first} loses a life.`), "the message says so");
+  await ready(p); assert((await who(p)) !== first, "the other player's turn");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("game: a pass on the last life is a red card, and the round ends when everyone is out", async () => {
+  const p = await twoPlayerGame();
+  const cards = []; for (let i = 0; i < 5; i++) cards.push(await pass(p));
+  eq(cards.map(c => c.yellow), [true, true, true, true, false], "yellow, yellow, yellow, yellow, then red");
+  eq(cards[4].lbl, "is sent off. One player left standing.");
+  const last = await pass(p); // the last player standing passes on their final life
+  eq(last.yellow, false);
+  await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
+  eq(await lives(p), [0, 0]);
+  assert((await p.textContent("#feedback")).includes("Everyone is out."), "round over message");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("game: solo, the button still says Give up and ends the round without a card", async () => {
+  const p = await phone(browser, "solo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  eq(await p.textContent("#passBtn"), "Give up");
+  await p.click("#passBtn");
+  await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
+  assert(!(await visible(p, "#outOverlay")), "no card");
+  eq(await p.textContent("#feedback").then(t => t.startsWith("You gave up this round.")), true);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
+await browser.close(); await site.close();
+report();
