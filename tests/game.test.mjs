@@ -60,5 +60,39 @@ await test("game: solo, the button still says Give up and ends the round without
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("game: solo with 0 points, the table shows - rather than 1st, no trophy, and a cheeky line", async () => {
+  const p = await phone(browser, "zero"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click("#startBtn");
+  for (let r = 1; r <= 3; r++){
+    await until(() => visible(p, "#intro"), { what: `round ${r}` }); await p.click("#introBtn"); await ready(p);
+    await p.click("#passBtn"); await until(() => visible(p, "#roundEnd"), { what: `round ${r} to end` });
+    await p.click("#nextBtn");
+  }
+  await until(() => visible(p, "#end"), { what: "full time" });
+  await p.waitForTimeout(1200);
+  assert(await p.evaluate(() => document.getElementById("winTrophy").classList.contains("hidden")), "no trophy celebration");
+  eq(await p.textContent("#podium .pod .place"), "-");
+  eq(await p.evaluate(() => [document.querySelector("#podium .pod").classList.contains("show"), document.querySelector("#podium .pod").classList.contains("first")]), [true, false], "the row shows, not styled as a winner");
+  eq(await p.textContent("#winnerLabel"), "You scored 0 points.");
+  const line = await p.textContent("#zeroNote");
+  assert(await visible(p, "#zeroNote"), "the line shows under the table");
+  assert(await p.evaluate(l => ZERO_LINES.includes(l), line), "one of the three lines: " + line);
+  const share = await p.evaluate(() => SHARE.text);
+  assert(share.includes("scored 0 points.") && /\n- /.test(share), "the share message has no medal or place: " + share);
+  assert(!share.includes("wins with"), "the share message doesn't call it a win");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("game: solo with points still gets the trophy, and no cheeky line", async () => {
+  const p = await phone(browser, "some"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  await p.evaluate(() => { G.round = cfg.rounds; G.players[0].score = 4; endRound(); });
+  await p.click("#nextBtn");
+  await until(() => visible(p, "#winTrophy"), { what: "the trophy" });
+  assert(!(await visible(p, "#zeroNote")), "no cheeky line");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();

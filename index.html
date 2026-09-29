@@ -482,6 +482,7 @@ body[data-cat="top5"]{--hit:linear-gradient(90deg,#7cffb2,#ffd54a 55%,#f5b700); 
 .sharemsg{min-height:1.2em;font-size:.85rem;color:var(--muted);text-align:center;margin:6px 0 0}
 .statcard{margin:14px 0 30px;background:var(--panel);border:1px solid var(--slotline);border-radius:18px;padding:14px 14px 12px}
 .stathead{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:1rem;margin-bottom:10px}
+.zeronote{margin:14px 8px 0;text-align:center;font-size:1.05rem;font-weight:700;line-height:1.35;color:#fff}
 .statreset{background:none;border:0;color:var(--muted);font-size:.8rem;text-decoration:underline;padding:4px}
 .statchips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;scrollbar-width:none}
 .statchips button{flex:none;border:1.5px solid var(--slotline);background:transparent;border-radius:999px;padding:6px 12px;font-weight:700;font-size:.88rem;color:var(--pc,var(--ink))}
@@ -799,6 +800,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 <section id="end" class="hidden">
   <div class="brand"><h1>Full time</h1><div class="sub" id="winnerLabel">&nbsp;</div></div>
   <div class="podium" id="podium"></div>
+  <p class="zeronote hidden" id="zeroNote"></p>
   <div class="row">
     <button class="btn" id="againBtn">Play again</button>
     <button class="btn ghost" id="setupBtn">Change settings</button>
@@ -2324,7 +2326,7 @@ const MEDALS = ["🥇","🥈","🥉","4️⃣"];
 const PLAYER_HEX = ["#04f5ff","#ffd23f","#00ff85","#c77dff"];
 function shareSummary(sorted){
   const top = sorted[0].score, winners = sorted.filter(p=>p.score===top), solo = sorted.length===1;
-  return { top, winners, solo,
+  return { top, winners, solo, zero: solo && top===0,
     rank: p => 1 + sorted.filter(q=>q.score>p.score).length,
     names: winners.map(w=>w.name).join(" and "),
     meta: [`${cfg.rounds} Rounds`, LEVELS[cfg.level], cfg.cat==="random" ? "Random" : CAT_NAME[cfg.cat]] };
@@ -2332,9 +2334,9 @@ function shareSummary(sorted){
 // *text* is bold in WhatsApp
 function shareText(sorted){
   const s = shareSummary(sorted);
-  const head = s.solo ? `*${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!*` : "*FINAL SCORE*";
+  const head = s.zero ? `*${sorted[0].name} scored 0 points.*` : s.solo ? `*${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!*` : "*FINAL SCORE*";
   return [ "🏆 *TENABALL | FOOTBALL EDITION*", "", head, "",
-    ...sorted.map(p => `${MEDALS[s.rank(p)-1]} ${p.name} · *${ptsLabel(p.score)}*`), "",
+    ...sorted.map(p => `${s.zero ? "-" : MEDALS[s.rank(p)-1]} ${p.name} · *${ptsLabel(p.score)}*`), "",
     "🎮 " + s.meta.join("  •  "), "",
     `*Think you can beat ${s.solo ? s.top : s.names}?*`, shareUrl() ].join("\n");
 }
@@ -2372,17 +2374,17 @@ async function shareCard(sorted){
   } catch(e){}
   // headline
   c.textAlign = "center"; c.textBaseline = "alphabetic"; c.fillStyle = "#fff";
-  if (s.solo){ c.font = F(800, 60); c.fillText(fitText(c, `${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!`, W-120), W/2, headY); }
+  if (s.solo){ c.font = F(800, 60); c.fillText(fitText(c, s.zero ? `${sorted[0].name} scored 0 points.` : `${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!`, W-120), W/2, headY); }
   else { c.font = F(800, 46); if ("letterSpacing" in c) c.letterSpacing = "6px"; c.fillText("FINAL SCORE", W/2, headY); if ("letterSpacing" in c) c.letterSpacing = "0px"; }
   // the final table, styled like the game's
   sorted.forEach((p, i) => {
-    const y = rowsTop + i*(rowH+gap), x = 110, w = W-220, first = p.score===s.top, rk = s.rank(p);
+    const y = rowsTop + i*(rowH+gap), x = 110, w = W-220, first = p.score===s.top && !s.zero, rk = s.rank(p);
     pillPath(x, y, w, rowH, 24, c);
     if (first){ const g = c.createLinearGradient(x,0,x+w,0); g.addColorStop(0,"#04f5ff"); g.addColorStop(1,"#00ff85"); c.fillStyle = g; c.shadowColor = "rgba(4,245,255,.5)"; c.shadowBlur = 40; c.shadowOffsetY = 12; }
     else c.fillStyle = "rgba(255,255,255,.1)";
     c.fill(); c.shadowColor = "transparent"; c.shadowBlur = 0; c.shadowOffsetY = 0;
     const mid = y + rowH/2 + 15, ink = first ? "#1a0020" : "#fff";
-    c.textAlign = "left"; c.font = F(800, 42); c.fillStyle = first ? ink : "#d3bcd8"; c.fillText(ord(rk), x+34, mid);
+    c.textAlign = "left"; c.font = F(800, 42); c.fillStyle = first ? ink : "#d3bcd8"; c.fillText(s.zero ? "-" : ord(rk), x+34, mid);
     c.textAlign = "right"; c.font = F(800, 52); c.fillStyle = ink; c.fillText(String(p.score), x+w-36, mid+2);
     const scW = c.measureText(String(p.score)).width;
     c.textAlign = "left"; c.font = F(700, 42); c.fillStyle = first ? ink : PLAYER_HEX[(parseInt(String(p.color).replace(/\D/g,""),10)||1)-1];
@@ -2420,10 +2422,17 @@ function shareResults(withImage){
   else done("Sharing isn't available in this browser."+saved);
 }
 
+const ZERO_LINES = [
+  "You’d have scored more by mashing the screen with your forehead.",
+  "Not one. Not even by accident. Outstanding performance.",
+  "0 points. The footballing equivalent of turning up pissed and forgetting your boots."
+];
 async function endGame(){
   sfx.fullTime();
   const sorted = [...G.players].sort((a,b)=>b.score-a.score);
   const top = sorted[0].score, winners = sorted.filter(p=>p.score===top);
+  // a solo game with no points has no winner: no place, no trophy, just a line under the table
+  const zero = sorted.length===1 && top===0;
   theme("pl"); show("end");
   const box = $("podium"); box.innerHTML="";
   const S = recordGame(sorted);
@@ -2432,9 +2441,9 @@ async function endGame(){
   box.appendChild(note);
   const els = sorted.map((p,i)=>{
     const w=document.createElement("div"); w.className="podwrap";
-    const d=document.createElement("div"); d.className="pod"+(p.score===top?" first":""); d.style.setProperty("--pc",p.color);
-    d.setAttribute("role","button"); d.tabIndex = 0; d.setAttribute("aria-expanded","false"); d.setAttribute("aria-label", `${p.name}, ${ord(i+1)}, ${p.score} points. Show stats`);
-    d.innerHTML=`<span class="place">${ord(i+1)}</span><span class="nm">${esc(p.name)}</span><span class="stico" aria-hidden="true"><svg viewBox="0 0 18 16"><rect x="1" y="8" width="4" height="7" rx="1"/><rect x="7" y="3" width="4" height="12" rx="1"/><rect x="13" y="6" width="4" height="9" rx="1"/></svg></span><span class="sc">${p.score}</span>`;
+    const d=document.createElement("div"); d.className="pod"+(p.score===top && !zero?" first":""); d.style.setProperty("--pc",p.color);
+    d.setAttribute("role","button"); d.tabIndex = 0; d.setAttribute("aria-expanded","false"); d.setAttribute("aria-label", `${p.name}, ${zero ? "no place" : ord(i+1)}, ${p.score} points. Show stats`);
+    d.innerHTML=`<span class="place">${zero ? "-" : ord(i+1)}</span><span class="nm">${esc(p.name)}</span><span class="stico" aria-hidden="true"><svg viewBox="0 0 18 16"><rect x="1" y="8" width="4" height="7" rx="1"/><rect x="7" y="3" width="4" height="12" rx="1"/><rect x="13" y="6" width="4" height="9" rx="1"/></svg></span><span class="sc">${p.score}</span>`;
     const own = !ONLINE || p.uid===ONLINE.me;
     const panel=document.createElement("div"); panel.className="podstats"; panel.innerHTML = `<div class="podstats-in">${own ? statsHTML(isAccountPlayer(p) ? NET.stats : S[statKey(p.name)]) : '<p class="statnote">Their stats are saved on their own device or account.</p>'}</div>`;
     const toggle=()=>{ const open = !w.classList.contains("open"); box.querySelectorAll(".podwrap.open").forEach(x=>{ x.classList.remove("open"); x.querySelector(".pod").setAttribute("aria-expanded","false"); }); if (open){ w.classList.add("open"); d.setAttribute("aria-expanded","true"); } note.classList.add("gone"); };
@@ -2446,6 +2455,13 @@ async function endGame(){
   $("statReset").onclick = () => { if (!confirm("Reset the stats for everyone on this device?")) return; saveStats({}); box.querySelectorAll(".podstats-in").forEach(x => x.innerHTML = statsHTML(null)); };
   $("winnerLabel").textContent = sorted.length===1 ? " " : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : `${winners[0].name} wins with ${top} points.`;
   prepareShare(sorted);
+  $("zeroNote").classList.toggle("hidden", !zero);
+  if (zero){
+    $("winnerLabel").textContent = "You scored 0 points.";
+    $("zeroNote").textContent = ZERO_LINES[Math.floor(Math.random()*ZERO_LINES.length)];
+    els[0].classList.add("show");
+    return;
+  }
   await trophyReveal(sorted, els[0]);
   for (let i=1;i<els.length;i++){ await wait(250); els[i].classList.add("show"); sfx.place(); }
   if (sorted.length===1){
