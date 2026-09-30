@@ -710,7 +710,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     </div></div>
 
   <div class="field"><label for="diff">Difficulty: <span id="diffName">Medium</span></label>
-    <input type="range" id="diff" min="0" max="2" step="1" value="1" aria-valuetext="Medium">
+    <input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
     <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div>
   </div>
 
@@ -1783,12 +1783,31 @@ $("compSel").addEventListener("change", e => { cfg.cat = e.target.value; theme(c
 seg("countSeg","count",Number); seg("repeatSeg","repeat",String); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
 const LEVELS = ["Easy","Medium","Hard"];
 const DIFF_COL = ["#00ff85","#04f5ff","#ff2882"], DIFF_GLOW = ["10px","16px","26px"];
-function paintDiff(){
+// the ball slides freely along the bar (0 to 200) and snaps to the nearest level when let go
+let diffDrag = false, diffAnim = 0;
+function paintDiff(v){
   const s = $("diff"), l = cfg.level;
-  s.style.setProperty("--fill", Math.max(8, l*50)+"%"); s.style.setProperty("--dc", DIFF_COL[l]); s.style.setProperty("--gl", DIFF_GLOW[l]);
+  if (v==null){ v = l*100; if (!diffDrag) s.value = v; }
+  s.style.setProperty("--fill", Math.max(8, v/2)+"%"); s.style.setProperty("--dc", DIFF_COL[l]); s.style.setProperty("--gl", DIFF_GLOW[l]);
   $("diffName").textContent = LEVELS[l]; $("diffName").style.setProperty("--dcn", DIFF_COL[l]); s.setAttribute("aria-valuetext", LEVELS[l]);
 }
-$("diff").addEventListener("input", e => { cfg.level = Number(e.target.value); paintDiff(); });
+$("diff").addEventListener("input", e => { cancelAnimationFrame(diffAnim); diffDrag = true; const v = Number(e.target.value); cfg.level = Math.round(v/100); paintDiff(v); });
+function snapDiff(){
+  diffDrag = false; cancelAnimationFrame(diffAnim);
+  const s = $("diff"), from = Number(s.value), to = cfg.level*100;
+  if (REDUCED || from===to) return paintDiff();
+  const t0 = performance.now(), dur = 180;
+  const step = now => { const k = Math.min(1, (now-t0)/dur), v = from + (to-from)*(1-Math.pow(1-k,3)); s.value = v; paintDiff(v); if (k<1) diffAnim = requestAnimationFrame(step); };
+  diffAnim = requestAnimationFrame(step);
+}
+$("diff").addEventListener("change", snapDiff);
+$("diff").addEventListener("pointerup", snapDiff);
+$("diff").addEventListener("touchend", snapDiff);
+// keys move a whole level at a time
+$("diff").addEventListener("keydown", e => {
+  const d = {ArrowLeft:-1, ArrowDown:-1, PageDown:-1, ArrowRight:1, ArrowUp:1, PageUp:1, Home:-2, End:2}[e.key];
+  if (d==null) return; e.preventDefault(); cfg.level = Math.max(0, Math.min(2, cfg.level+d)); snapDiff();
+});
 paintDiff();
 function drawNames(){
   const box = $("nameFields"); box.innerHTML = `<label>${cfg.count===1?'Your name':'Names'}</label>`;

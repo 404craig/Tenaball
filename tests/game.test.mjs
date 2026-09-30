@@ -96,5 +96,28 @@ await test("game: solo with points still gets the trophy, and no cheeky line", a
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
+  const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
+  const box = await (await p.$("#diff")).boundingBox(), y = box.y + box.height/2, at = f => box.x + 16 + (box.width - 32) * f;
+  const read = () => p.evaluate(() => [Number(document.getElementById("diff").value), cfg.level, document.getElementById("diffName").textContent]);
+  await p.mouse.move(at(.5), y); await p.mouse.down();
+  await p.mouse.move(at(.7), y, { steps: 5 });
+  const mid = await read();
+  assert(mid[0] > 120 && mid[0] < 160, "the ball sits between the stops while dragging: " + mid[0]);
+  eq(mid.slice(1), [1, "Medium"], "the closest level shows while dragging");
+  await p.mouse.move(at(.8), y, { steps: 3 });
+  eq((await read()).slice(1), [2, "Hard"], "past the halfway point it reads Hard");
+  await p.mouse.up();
+  await until(async () => (await read())[0] === 200, { what: "the snap to Hard" });
+  await p.mouse.move(at(.8), y); await p.mouse.down(); await p.mouse.move(at(.3), y, { steps: 5 }); await p.mouse.up();
+  await until(async () => (await read())[0] === 100, { what: "the snap back to Medium" });
+  eq(await read(), [100, 1, "Medium"]);
+  await p.focus("#diff"); await p.keyboard.press("ArrowLeft");
+  await until(async () => (await read())[0] === 0, { what: "the arrow key to move a whole level" });
+  eq((await read()).slice(1), [0, "Easy"]);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();
