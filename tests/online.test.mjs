@@ -23,10 +23,8 @@ async function signUp(p, name, email){
 // tick exactly these competitions in the slide-up panel
 async function pickComps(p, cats){
   await p.click("#compBtn"); await shown(p, "compSheet");
-  for (const row of await p.$$("#compList button.crow")){
-    const [c, on] = await row.evaluate(r => [r.dataset.c, r.getAttribute("aria-checked") === "true"]);
-    if (on !== cats.includes(c)) await row.click();
-  }
+  const rows = await p.$$eval("#compList button.crow", rs => rs.map(r => [r.dataset.c, r.getAttribute("aria-checked") === "true"]));
+  for (const [c, on] of rows) if (on !== cats.includes(c)) await p.click(`#compList [data-c="${c}"]`); // the list redraws after each tap
   await p.click("#compDone");
 }
 // host: pick settings on the home screen, then create an online game
@@ -209,7 +207,7 @@ await test("online: the host's ticked competitions and All levels apply on every
   const all = [craig, aiden];
   await everyoneSees(all, ["Craig", "Aiden"]);
   const set = await aiden.textContent("#lobbySet");
-  assert(set.includes("World Cup and Euros") && set.includes("All levels"), "the lobby shows the host's settings: " + set);
+  assert(set.includes("International only") && set.includes("All levels"), "the lobby shows the host's settings: " + set);
   await craig.click("#lobbyStart");
   for (const p of all) await shown(p, "intro");
   await inSync(all, "start");
