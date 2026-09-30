@@ -256,5 +256,62 @@ await test("share: if the trophy fails to load onto the results card, the card i
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("badges: every game club but four gets a crest by its game name, and the four keep the circle", async () => {
+  const p = await phone(browser, "crest"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const names = Object.keys(COLOURS), none = names.filter(n => !crestKey(n));
+    const two = [crestKey("RB Salzburg"), crestKey("Red Bull Salzburg")];
+    const h = n => badge(n);
+    return { total: names.length, none, two, aliased: [crestKey("Tottenham Hotspur"), crestKey("spurs"), crestKey("SPURS")], imgs: Object.keys(BADGE_IMG).length,
+      every: names.filter(n => crestKey(n) && !h(n).includes("<img")).length, circle: ["Arles","Lleida","Merida","Salamanca"].map(n => h(n).includes('class="badge"') && !h(n).includes("<img")),
+      valid: Object.values(BADGE_FILE).every(k => BADGE_IMG[k]) };
+  });
+  eq(r.none, ["Arles", "Lleida", "Merida", "Salamanca"], "only these four have no badge");
+  eq(r.total - r.none.length, 324, "324 game names have a badge");
+  assert(r.two[0] && r.two[0] === r.two[1], "both names on a two-name row find the same badge");
+  assert(r.aliased[1] && r.aliased[1] === r.aliased[2], "lookup ignores case");
+  eq(r.circle, [true, true, true, true], "no badge keeps the two-colour circle");
+  eq([r.every, r.valid], [0, true], "every name that has a badge draws an image, and every badge has its picture");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("badges: crests are 24px on the board and 15px in suggestions, on a light disc only where the surface is dark", async () => {
+  const p = await phone(browser, "disc"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  // suggestions while typing: 15px crests on a light disc
+  await p.fill("#guessInput", "ma"); await until(() => p.evaluate(() => document.querySelectorAll("#sugg button").length > 0), { what: "suggestions" });
+  const sg = await p.evaluate(() => [...document.querySelectorAll("#sugg button")].map(b => { const i = b.querySelector(".bcell.crest img"); if (!i) return null; const c = getComputedStyle(i); return [b.textContent, c.width, c.height, c.backgroundColor, c.paddingLeft]; }));
+  assert(sg.some(Boolean), "suggestions show crests: " + JSON.stringify(sg));
+  for (const x of sg.filter(Boolean)) eq(x.slice(1), ["15px", "15px", "rgba(255, 255, 255, 0.92)", "2px"], "suggestion crest for " + x[0]);
+  // a found answer: bright row, a plain 24px crest with no disc
+  await p.fill("#guessInput", "Man Utd"); await p.click("#lockBtn");
+  await until(() => p.evaluate(() => document.querySelectorAll("#tower .slot.found").length > 0), { what: "a found answer" });
+  const f = await p.evaluate(() => { const i = document.querySelector("#tower .slot.found .bcell.crest img"), c = getComputedStyle(i); return [c.width, c.height, c.backgroundColor, c.paddingLeft]; });
+  eq(f, ["24px", "24px", "rgba(0, 0, 0, 0)", "0px"], "a found row is bright, so no disc");
+  // the round over: every missed answer is revealed on a dark row, each crest on a light disc (Spurs is on this board)
+  await ready(p); await p.click("#passBtn"); await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
+  const m = await p.evaluate(() => [...document.querySelectorAll("#tower .slot.missed")].map(s => { const i = s.querySelector(".bcell.crest img"); if (!i) return [s.textContent.trim(), null]; const c = getComputedStyle(i); return [s.textContent.trim(), c.width, c.backgroundColor, c.paddingLeft, i.naturalWidth > 0]; }));
+  assert(m.length >= 8, "missed answers are shown: " + m.length);
+  for (const x of m) eq(x.slice(1), ["24px", "rgba(255, 255, 255, 0.92)", "2px", true], "missed crest for " + x[0]);
+  assert(m.some(x => /Spurs/.test(x[0])), "Spurs, a dark crest, is on the board");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("badges: Spurs, Juventus and Inter Miami, the dark crests, all sit on the disc", async () => {
+  const p = await phone(browser, "dark"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(async () => {
+    const host = document.createElement("div"); host.className = "t"; host.style.cssText = "position:fixed;left:0;top:0;width:360px;z-index:99";
+    host.innerHTML = ["Spurs", "Juventus", "Inter Miami"].map(n => `<div class="slot missed"><span class="club">${badge(n)}${n}</span></div><div class="sugg"><button type="button">${badge(n)}${n}</button></div><div class="slot found"><span class="club">${badge(n)}${n}</span></div>`).join("");
+    document.body.appendChild(host);
+    await Promise.all([...host.querySelectorAll("img")].map(i => i.decode()));
+    const at = sel => [...host.querySelectorAll(sel)].map(i => { const c = getComputedStyle(i); return [i.naturalWidth > 0, c.backgroundColor, c.paddingLeft]; });
+    const out = { missed: at(".slot.missed .bcell.crest img"), pill: at(".sugg .bcell.crest img"), found: at(".slot.found .bcell.crest img") };
+    host.remove(); return out;
+  });
+  const disc = [true, "rgba(255, 255, 255, 0.92)", "2px"], plain = [true, "rgba(0, 0, 0, 0)", "0px"];
+  eq(r.missed, [disc, disc, disc], "missed rows"); eq(r.pill, [disc, disc, disc], "suggestion pills"); eq(r.found, [plain, plain, plain], "found rows");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();
