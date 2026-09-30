@@ -173,6 +173,25 @@ await test("online: a 3-player game plays through on every phone with matching b
   await closeAll(...all);
 });
 
+await test("online: a club record scorers board drawn at random on the host is the same board on every phone", async () => {
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  const code = await hostGame(craig, { rounds: 3, cat: "pl" });
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  const all = [craig, aiden];
+  await everyoneSees(all, ["Craig", "Aiden"]);
+  await craig.evaluate(() => { window.pickQuestion = () => drawClubRec(Q.find(x => x.id === "pl-club-rec-1")); });
+  await craig.click("#lobbyStart");
+  for (const p of all) await shown(p, "intro");
+  await inSync(all, "start");
+  const boards = await Promise.all(all.map(p => p.evaluate(() => [G.q.id, G.q.slots.map(s => s.label + ":" + s.club)])));
+  assert(/^pl-club-rec-1:[\d.]+$/.test(boards[0][0]), "a drawn board: " + boards[0][0]);
+  eq(boards[1], boards[0], "both phones built the same ten clubs");
+  const { moves } = await playThrough(all, craig);
+  assert(moves >= 4, `expected a real game, got ${moves} moves`);
+  await skipTrophies(all);
+  await closeAll(...all);
+});
+
 await test("online: moves sent out of turn are ignored by every phone", async () => {
   const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
   const code = await hostGame(craig);

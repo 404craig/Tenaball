@@ -119,5 +119,45 @@ await test("home: the difficulty ball slides anywhere along the bar and snaps to
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("questions: club record scorers draw a fresh ten clubs, with the right mix for each level", async () => {
+  const p = await phone(browser, "rec"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const out = {};
+    [0, 1, 2].forEach(lv => {
+      const tpl = Q.find(x => x.id === `pl-club-rec-${lv}`), seen = new Set(), bad = [];
+      for (let i = 0; i < 60; i++){
+        const b = drawClubRec(tpl), clubs = b.slots.map(s => s.label), tier0 = clubs.filter(c => CLUB_REC.find(x => x[0] === c)[3] === 0).length;
+        seen.add(b.id);
+        if (clubs.length !== 10 || new Set(clubs).size !== 10 || tier0 !== CLUB_REC_MIX[lv][0]) bad.push(b.id);
+        const again = findQ(b.id);
+        if (!again || JSON.stringify(again.slots) !== JSON.stringify(b.slots) || again.period !== tpl.period || again.level !== lv) bad.push("rebuild " + b.id);
+        const goals = b.slots.map(s => parseInt(s.val)); if (goals.some((g, k) => k && g > goals[k-1])) bad.push("order " + b.id);
+      }
+      out[lv] = { level: tpl.level, distinct: seen.size, bad, period: tpl.period };
+    });
+    out.junk = [findQ("pl-club-rec-1:1.2.3"), findQ("pl-club-rec-1:0.0.1.2.3.4.5.6.7.8"), findQ("pl-club-rec-1:0.1.2.3.4.5.6.7.8.99")].map(x => x === null);
+    return out;
+  });
+  for (const lv of [0, 1, 2]){ eq([r[lv].level, r[lv].bad], [lv, []], `level ${lv}`); assert(r[lv].distinct > 20, `level ${lv} boards vary: ${r[lv].distinct}`); eq(r[lv].period, "Premier League era, 1992/93 to 2025/26"); }
+  eq(r.junk, [true, true, true], "a made-up id isn't a board");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("questions: most titles as a manager takes any six of the nine one-title managers, and the top two board has all ten clubs", async () => {
+  const p = await phone(browser, "mgr"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const info = await p.evaluate(() => { const m = findQ("pl-at-mgr-titles"), t = findQ("pl-at-top2"); return { m: m && [m.slots.length, m.level, m.period, m.slots.filter(s => s.pool).length, m.slots[5].alts.length], t: t && [t.slots.map(s => s.club), t.level, t.period] }; });
+  eq(info.m, [10, 1, "Premier League era, 1992/93 to 2025/26", 6, 9]);
+  eq(info.t, [["Man Utd","Arsenal","Man City","Chelsea","Liverpool","Blackburn","Newcastle","Aston Villa","Leicester","Spurs"], 0, "Premier League era, 1992/93 to 2025/26"]);
+  // play the managers board solo: six one-title managers fill the pool, the seventh is turned away
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-mgr-titles"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
+  const one = ["Carlo Ancelotti","Mikel Arteta","Antonio Conte","Kenny Dalglish","Jurgen Klopp","Roberto Mancini","Manuel Pellegrini"];
+  for (const n of one){ await ready(p); await p.fill("#guessInput", n); await p.click("#lockBtn"); await p.waitForTimeout(50); }
+  await until(() => p.evaluate(() => !G.busy), { what: "the last guess" });
+  eq(await p.evaluate(() => [G.players[0].score, Object.keys(G.foundBy).length]), [6, 6], "six count");
+  assert((await p.textContent("#feedback")).includes("tied on that total"), "the seventh is told the places are filled");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();

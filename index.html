@@ -1320,12 +1320,53 @@ ranked("pl-at-titles","pl","club","Premier League winners","Name every club to h
  [["Man Utd","13 titles"],["Man City","8 titles"],["Chelsea","5 titles"],["Arsenal","4 titles"],["Liverpool","2 titles"],["Blackburn","1 title"],["Leicester","1 title"]]);
 labelled("pl-at-ever","pl","club","Ever-presents","Name the six clubs that have played in every Premier League season since 1992/93.",
  [["Ever-present","Arsenal","34 seasons"],["Ever-present","Chelsea","34 seasons"],["Ever-present","Everton","34 seasons"],["Ever-present","Liverpool","34 seasons"],["Ever-present","Man Utd","34 seasons"],["Ever-present","Spurs","34 seasons"]]);
-ranked("pl-at-mgr","pl","person","Title-winning managers","Name every manager to have won the Premier League.",
- [["Alex Ferguson","13 titles"],["Pep Guardiola","6 titles"],["Jose Mourinho","3 titles"],["Arsene Wenger","3 titles"],["Carlo Ancelotti","1 title"],["Mikel Arteta","1 title"],["Antonio Conte","1 title"],["Kenny Dalglish","1 title"],["Jurgen Klopp","1 title"],["Roberto Mancini","1 title"],["Manuel Pellegrini","1 title"],["Claudio Ranieri","1 title"],["Arne Slot","1 title"]]);
-labelled("pl-club-top1","pl","person","Club record scorers","Name each club's top scorer in the Premier League era.",
- [["Arsenal","Thierry Henry","175 goals"],["Chelsea","Frank Lampard","147 goals"],["Liverpool","Mohamed Salah","191 goals"],["Man City","Sergio Aguero","184 goals"],["Man Utd","Wayne Rooney","183 goals"],["Spurs","Harry Kane","213 goals"],["Newcastle","Alan Shearer","148 goals"],["Everton","Romelu Lukaku","68 goals"],["Leicester","Jamie Vardy","145 goals"],["Southampton","Matt Le Tissier","100 goals"]]);
-labelled("pl-club-top2","pl","person","More club record scorers","Name each club's top scorer in the Premier League era.",
- [["Blackburn","Alan Shearer","112 goals"],["Aston Villa","Ollie Watkins","91 goals"],["West Ham","Michail Antonio","68 goals"],["Crystal Palace","Wilfried Zaha","68 goals"],["Leeds","Mark Viduka","59 goals"],["Fulham","Clint Dempsey","50 goals"],["Bolton","Kevin Davies","68 goals"],["Burnley","Chris Wood","49 goals"],["Nottingham Forest","Chris Wood","38 goals"],["Brighton","Danny Welbeck","46 goals"]]);
+{ // 13 managers have won it, so the nine with one title share the last six places: any six of them count
+  const one = ["Carlo Ancelotti","Mikel Arteta","Antonio Conte","Kenny Dalglish","Jurgen Klopp","Roberto Mancini","Manuel Pellegrini","Claudio Ranieri","Arne Slot"];
+  [...one, "Alex Ferguson", "Pep Guardiola", "Jose Mourinho", "Arsene Wenger"].forEach(addPerson);
+  Q.push({ id:"pl-at-mgr-titles", cat:"pl", type:"person", title:"Most Premier League titles as a manager", numeric:true, hard:false,
+    brief:"Name the managers with the most Premier League titles. Nine managers have won it once, so any six of them fill the last six places.",
+    slots:[{label:"1",club:"Alex Ferguson",val:"13 titles"},{label:"2",club:"Pep Guardiola",val:"6 titles"},{label:"3",club:"Arsene Wenger",val:"3 titles"},{label:"4",club:"Jose Mourinho",val:"3 titles"},
+      ...[5,6,7,8,9,10].map(n => ({label:String(n), club:one[n-5], alts:one, pool:"mgr1", val:"1 title"}))] });
+}
+ranked("pl-at-top2","pl","club","Premier League top two","Name every club to have finished first or second in the Premier League, most top-two finishes first.",
+ [["Man Utd","20 times"],["Arsenal","13 times"],["Man City","12 times"],["Chelsea","9 times"],["Liverpool","7 times"],["Blackburn","2 times"],["Newcastle","2 times"],["Aston Villa","once"],["Leicester","once"],["Spurs","once"]]);
+/* club record scorers: every club with a checked record, and a fresh ten of them each time.
+   Tier 0 are the best known. Each level has its own board, drawn with a set mix of tiers; the clubs chosen travel in the board's id
+   (for example "pl-club-rec-1:0.4.12"), so every phone in an online game rebuilds the same board from it. */
+const CLUB_REC = [
+ ["Arsenal","Thierry Henry",175,0],["Chelsea","Frank Lampard",147,0],["Liverpool","Mohamed Salah",191,0],["Man City","Sergio Aguero",184,0],["Man Utd","Wayne Rooney",183,0],
+ ["Spurs","Harry Kane",213,0],["Newcastle","Alan Shearer",148,0],["Everton","Romelu Lukaku",68,0],["Leicester","Jamie Vardy",145,0],["Southampton","Matt Le Tissier",100,0],
+ ["Blackburn","Alan Shearer",112,1],["Aston Villa","Ollie Watkins",91,1],["West Ham","Michail Antonio",68,1],["Crystal Palace","Wilfried Zaha",68,1],["Leeds","Mark Viduka",59,1],
+ ["Fulham","Clint Dempsey",50,1],["Bolton","Kevin Davies",68,1],["Burnley","Chris Wood",49,1],["Nottingham Forest","Chris Wood",38,1],["Brighton","Danny Welbeck",46,1]];
+CLUB_REC.forEach(([,n]) => addPerson(n));
+const CLUB_REC_MIX = [[8,2],[5,5],[2,8]]; // how many tier 0 and tier 1 clubs at each level
+function clubRecBoard(tpl, idx){
+  const ok = idx.length===10 && new Set(idx).size===10 && idx.every(i => Number.isInteger(i) && CLUB_REC[i]);
+  if (!ok) return null;
+  const rows = idx.map(i => CLUB_REC[i]).sort((x,y) => y[2]-x[2] || x[0].localeCompare(y[0]));
+  return Object.assign({}, tpl, { id:`${tpl.id}:${idx.join(".")}`, template:tpl.id, slots: rows.map(([c,n,g]) => ({label:c, club:n, val:g+" goals"})) });
+}
+function drawClubRec(tpl, rnd = Math.random){
+  const [a, b] = CLUB_REC_MIX[tpl.recLevel], pick = (tier, n) => {
+    const c = CLUB_REC.map((r,i) => r[3]===tier ? i : -1).filter(i => i>=0);
+    for (let i=c.length-1;i>0;i--){ const j = Math.floor(rnd()*(i+1)); [c[i],c[j]] = [c[j],c[i]]; }
+    return c.slice(0, n);
+  };
+  return clubRecBoard(tpl, [...pick(0,a), ...pick(1,b)].sort((x,y) => x-y));
+}
+// each level's board sits in the list as a normal board (its first draw), and pickQuestion swaps in a fresh draw
+CLUB_REC_MIX.forEach((m, lv) => {
+  const tpl = { id:`pl-club-rec-${lv}`, cat:"pl", type:"person", title:"Club record scorers", brief:"Name each club's top scorer in the Premier League era.", hard:false, recLevel:lv, dyn:true };
+  const first = drawClubRec(tpl, (() => { let k = lv+1; return () => (k = (k*9301+49297) % 233280) / 233280; })());
+  Q.push(Object.assign(first, { id: tpl.id }));
+});
+// find a board by id, including a drawn club record board
+function findQ(id){
+  const q = Q.find(x => x.id===id); if (q) return q;
+  const m = /^(pl-club-rec-\d):([\d.]+)$/.exec(String(id||"")); if (!m) return null;
+  const tpl = Q.find(x => x.id===m[1]);
+  return tpl ? clubRecBoard(tpl, m[2].split(".").map(Number)) : null;
+}
 const GB = [["1992/93","Teddy Sheringham",22],["1993/94","Andy Cole",34],["1994/95","Alan Shearer",34],["1995/96","Alan Shearer",31],["1996/97","Alan Shearer",25],["1997/98","Dion Dublin",18],["1997/98","Chris Sutton",18],["1997/98","Michael Owen",18],["1998/99","Jimmy Floyd Hasselbaink",18],["1998/99","Michael Owen",18],["1998/99","Dwight Yorke",18],["1999/00","Kevin Phillips",30],["2000/01","Jimmy Floyd Hasselbaink",23],["2001/02","Thierry Henry",24],["2002/03","Ruud van Nistelrooy",25],["2003/04","Thierry Henry",30],
  ["2004/05","Thierry Henry",25],["2005/06","Thierry Henry",27],["2006/07","Didier Drogba",20],["2007/08","Cristiano Ronaldo",31],["2008/09","Nicolas Anelka",19],["2009/10","Didier Drogba",29],["2010/11","Dimitar Berbatov",20],["2010/11","Carlos Tevez",20],["2011/12","Robin van Persie",30],["2012/13","Robin van Persie",26],["2013/14","Luis Suarez",31],["2014/15","Sergio Aguero",26],
  ["2015/16","Harry Kane",25],["2016/17","Harry Kane",29],["2017/18","Mohamed Salah",32],["2018/19","Pierre-Emerick Aubameyang",22],["2018/19","Sadio Mane",22],["2018/19","Mohamed Salah",22],["2019/20","Jamie Vardy",23],["2020/21","Harry Kane",23],["2021/22","Heung-min Son",23],["2021/22","Mohamed Salah",23],["2022/23","Erling Haaland",36],["2023/24","Erling Haaland",27],["2024/25","Mohamed Salah",29],["2025/26","Erling Haaland",27]].map(([s,n,g]) => [s,n,g+" goals"]);
@@ -1441,11 +1482,11 @@ function PALIASrebuild(){ for (const k in PALIAS) delete PALIAS[k]; buildPersonA
 /* difficulty: 0 easy, 1 medium, 2 hard */
 Q.forEach(q => {
   const id = q.id, y = parseInt((id.match(/(\d{4})/)||[])[1]||"0",10);
-  const easy = /^pl-at-(goals|table|wins|seasons)$/.test(id) || id==="pl-club-top1" || id==="ucl-at-goals"
+  const easy = /^pl-at-(goals|table|wins|seasons)$/.test(id) || id==="pl-club-rec-0" || id==="pl-at-top2" || id==="ucl-at-goals"
     || (/^pl-cr-/.test(id) && y>=2011) || (/^pl-(mgr|gb)-/.test(id) && y>=2016)
     || (/^ucl-w-/.test(id) && y>=2007) || (/^ucl-(r|mgr)-/.test(id) && y>=2017)
     || (/^t5-bdo-/.test(id) && y>=2005) || (/^t5-ch-/.test(id) && y>=2022);
-  const medium = /^pl-at-(apps|assists|cs)$/.test(id) || id==="pl-club-top2" || /^pl-(mu|lfc|afc)-goals$/.test(id)
+  const medium = /^pl-at-(apps|assists|cs)$/.test(id) || id==="pl-club-rec-1" || id==="pl-at-mgr-titles" || /^pl-(mu|lfc|afc)-goals$/.test(id)
     || /^t5-(at-goals|at-titles|double)$/.test(id)
     || (/^pl-(cr|mgr|gb)-/.test(id) && y>=2006) || (/^pl-top-/.test(id) && y>=2019)
     || (/^ucl-(w|r|mgr)-/.test(id) && y>=2007) || (/^ucl-sf-/.test(id) && y>=2017) || (/^ucl-top-/.test(id) && y>=2016)
@@ -1499,7 +1540,8 @@ EXTRA_Q2.forEach(q => { if (!Q.some(x => x.id===q.id)) Q.push(q); });
 const PERIOD_BY_ID = {
   "pl-at-goals":"Premier League era, 1992/93 to 2025/26","pl-at-apps":"Premier League era, 1992/93 to 2025/26","pl-at-assists":"Premier League era, 1992/93 to 2025/26",
   "pl-at-cs":"Premier League era, 1992/93 to 2025/26","pl-at-table":"Premier League era, 1992/93 to 2025/26","pl-at-wins":"Premier League era, 1992/93 to 2025/26",
-  "pl-at-seasons":"Premier League era, 1992/93 to 2025/26","pl-club-top1":"Premier League era, 1992/93 to 2025/26","pl-club-top2":"Premier League era, 1992/93 to 2025/26",
+  "pl-at-seasons":"Premier League era, 1992/93 to 2025/26","pl-club-rec-0":"Premier League era, 1992/93 to 2025/26","pl-club-rec-1":"Premier League era, 1992/93 to 2025/26","pl-club-rec-2":"Premier League era, 1992/93 to 2025/26",
+  "pl-at-mgr-titles":"Premier League era, 1992/93 to 2025/26","pl-at-top2":"Premier League era, 1992/93 to 2025/26",
   "pl-mu-goals":"Premier League era, 1992/93 to September 2026","pl-lfc-goals":"Premier League era, 1992/93 to September 2026","pl-afc-goals":"Premier League era, 1992/93 to September 2026",
   "ucl-at-goals":"Champions League era, 1992/93 to September 2026, excluding qualifying rounds","t5-at-goals":"Seasons 1992/93 to 2025/26",
   "t5-at-titles":"Seasons 1992/93 to 2025/26","t5-double":"Seasons 2010/11 to 2025/26"
@@ -1738,7 +1780,7 @@ function family(q){
   if (/mgr/.test(id)) return "managers";
   if (/bdo|-aw-/.test(id)) return "awards";
   if (/venue|host/.test(id)) return "hosts";
-  if (/-goals|-ts-|-gb-|ucl-top|ucl-at-goals/.test(id)) return "scorers";
+  if (/-goals|-ts-|-gb-|ucl-top|ucl-at-goals|club-rec/.test(id)) return "scorers";
   if (/rec-|seasons|at-wins|most-finals|at-table/.test(id)) return "records";
   if (/-top-|-bot-|-mid-|-p2-|-p3-|-p4-/.test(id)) return "tables";
   if (/-sf-|3rd|4th|last4/.test(id)) return "knockouts";
@@ -1764,7 +1806,8 @@ function pickQuestion(cat){
       const f = choices[Math.floor(Math.random()*choices.length)];
       const opts = pool.filter(q => family(q)===f);
       const q = opts[Math.floor(Math.random()*opts.length)];
-      G.picked.add(q.id); USED.add(q.id); saveUsed(USED); pushFamily(f); return q;
+      G.picked.add(q.id); USED.add(q.id); saveUsed(USED); pushFamily(f);
+      return q.dyn ? drawClubRec(q) : q;
     }
   }
 }
@@ -3078,7 +3121,7 @@ function applyAction(a){
     return applyPass(t==="skip");
   }
   if (!byHost) return;
-  const q = d.qid ? Q.find(x => x.id===d.qid) : null;
+  const q = d.qid ? findQ(d.qid) : null;
   if ((t==="round" || t==="refresh" || (t==="next" && G.round<cfg.rounds)) && !q){ feedback("This game needs the latest version of Tenaball. Refresh the page.", "bad"); return; }
   if (t==="round"){ if (!G.q) startRound(q); return; }
   if (t==="reveal"){ if (G.phase==="intro") return applyReveal(); return; }
