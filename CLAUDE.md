@@ -32,5 +32,7 @@ Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and Jav
 
 ## Planned work
 
+- Craig's wishlist of new questions, waiting for data, is in `docs/QUESTION_IDEAS.md`. Add new ideas there, and move them to its Built list when done.
+
 - Club top-10 league scorers for 10 clubs in each of La Liga, Bundesliga, Serie A, Ligue 1 and the Scottish Premiership, using season-by-season player stats (for example FBref), working back from 2025/26 and stopping where data can't be verified.
 - Player records (hat-tricks, fastest to 50 and 100 goals, 20-goal seasons, single-season highs), managers and transfers, per competition.
