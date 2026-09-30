@@ -76,6 +76,7 @@ p{margin:0 0 12px}
 .brand .bar{display:flex;gap:6px;margin-top:14px}
 .brand .bar i{height:6px;border-radius:3px;flex:1}
 .field{margin:0 0 16px}
+#setup .field{margin-bottom:18px} /* a little more room between the home screen's sections */
 .field>label{display:block;font-weight:600;margin-bottom:7px}
 .seg{display:flex;gap:8px;flex-wrap:wrap}
 .seg button{flex:1;min-width:70px;background:var(--panel);border:1.5px solid var(--slotline);border-radius:999px;padding:10px 10px;font-weight:600}
@@ -257,6 +258,7 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 .crow .nm{flex:1;min-width:0}
 .crow[aria-checked="true"] .tsw{background:linear-gradient(90deg,#00ff85,#04f5ff);border-color:transparent}
 .crow[aria-checked="true"] .tsw::after{transform:translateX(17px)}
+.crow[aria-checked="false"] .ic,.crow[aria-checked="false"] .nm{opacity:.5;transition:opacity .2s}
 .crow.soon{opacity:.45;cursor:default}
 .crow .tag{font-size:.72rem;font-weight:700;color:var(--muted);border:1px solid var(--slotline);border-radius:999px;padding:2px 8px}
 .csfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 16px 12px;border-top:1px solid var(--slotline);font-size:.88rem;color:var(--muted)}
@@ -268,7 +270,7 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 .alltoggle{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:0;font-size:.92rem;font-weight:600;color:var(--ink)}
 .alltoggle .sw{width:42px;height:25px;border-radius:999px;background:var(--panel2);border:1.5px solid var(--slotline);position:relative;transition:background .2s}
 .alltoggle .sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s}
-.alltoggle[aria-checked="true"] .sw{background:linear-gradient(90deg,#00ff85,#04f5ff,#ff2882);border-color:transparent}
+.alltoggle[aria-checked="true"] .sw{background:linear-gradient(90deg,#00ff85,#04f5ff);border-color:transparent}
 .alltoggle[aria-checked="true"] .sw::after{transform:translateX(17px)}
 #diffWrap.dimmed{opacity:.3;pointer-events:none;filter:saturate(.2)}
 #diffWrap{transition:opacity .2s}
