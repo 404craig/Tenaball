@@ -9,8 +9,8 @@ When one is built, move it to the "Built" list at the bottom with the date.
 | Idea | Notes |
 | --- | --- |
 | Most appearances for [club], for the same 10 clubs as the club scorer boards (Man Utd, Liverpool, Arsenal, Chelsea, Spurs, Man City, Newcastle, Everton, West Ham, Aston Villa) | Premier League games only. Needs per-club appearance lists, for example from 11v11 or the Premier League site. |
-| Relegated clubs, all-time, Premier League era | Clubs relegated the most times. Ties likely near 10th, so use a pool. |
-| Most promotions to the Premier League, Premier League era | Count each time a club came up (promotion or play-off). Ties likely, use a pool. |
+| Relegated clubs, all-time, Premier League era | Clubs relegated the most times. The game's own final tables (`PL`) already give this: Norwich 6, then Leicester, West Brom and Burnley 5, then Palace, Middlesbrough, Sheffield Utd, Sunderland and Watford 4, with seven clubs on 3 sharing 10th (a pool). Check the counts against a source before building. |
+| Most promotions to the Premier League, Premier League era | Count each time a club came up (promotion or play-off). From the game's tables: Leicester, Sunderland, West Brom, Norwich and Burnley 5, Palace, Watford and Fulham 4, with eight clubs on 3 sharing 9th and 10th (a pool). Decide whether 1992/93's promoted clubs count, and whether 2026/27's count once the season starts. |
 | Most goals in a single season | Haaland 36, Cole and Shearer 34, Salah 32 and so on. 42-game seasons (1992/93 to 1994/95) count as they are; say so in the brief. One player may appear more than once, so check the 4-slot rule (Shearer). |
 | Most hat-tricks | Aguero, Shearer, Kane, Fowler and so on. Ties near 10th, use a pool. |
 | Record signings, all-time, Premier League era | Biggest fees paid by Premier League clubs. Needs one agreed source for fees (they vary by source and currency). |
@@ -18,6 +18,7 @@ When one is built, move it to the "Built" list at the bottom with the date.
 | Managers with the most Premier League games, and managers with the most Premier League wins | Two boards. |
 | Fastest to 50 goals and fastest to 100 goals | Premier League era. Counted in games. Two boards. |
 | Most penalties scored, all clubs, Premier League era | Ties near 10th likely, use a pool. |
+| Club record scorers for every Premier League club | The board now draws 10 clubs at random from a pool (`CLUB_REC`), but the pool only has the 20 clubs already checked. Add the other clubs that have played in the Premier League (Sunderland, Middlesbrough, Wolves, Stoke, Watford, Bournemouth, Brentford and so on), each checked against a source, and give each a tier (0 well known, 1 less so). |
 
 ## Other competitions
 
@@ -28,4 +29,5 @@ Carried over from `CLAUDE.md`:
 
 ## Built
 
-Nothing yet.
+- September 2026: club record scorers now draw a fresh 10 clubs each time (from the 20 checked so far).
+- September 2026: most Premier League titles as a manager (`pl-at-mgr-titles`) and every club to finish in the top two (`pl-at-top2`), in place of sliding windows that broke the 4-slot rule.

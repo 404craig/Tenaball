@@ -19,6 +19,7 @@ Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and Jav
 ## Structure pointers
 
 - Question data: `PL`, `T5`, `UCL_W`, `UCL_R`, `EXTRA_Q`, `EXTRA_Q2`, `EXTRA_Q3` and the helper builders near them. A final pass re-cuts or removes boards that break the 4-slot rule.
+- Drawn boards: club record scorers (`CLUB_REC`) aren't a fixed ten. `pickQuestion` swaps each level's board (`pl-club-rec-0` to `-2`) for a fresh draw (`drawClubRec`), and the clubs chosen travel in the board's id, for example `pl-club-rec-1:0.4.12...`. Look boards up with `findQ(id)`, not `Q.find`, so every phone in an online game rebuilds the same draw.
 - Difficulty: `q.level` (0 easy, 1 medium, 2 hard); the home screen slider picks the level.
 - Variety: `family(q)` groups questions by type; `pickQuestion` favours the least recently played type.
 - Themes: `body[data-cat=...]` CSS blocks per competition.
