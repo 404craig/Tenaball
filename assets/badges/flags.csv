@@ -1,0 +1,272 @@
+code,name,continent,type
+af,Afghanistan,Asia,country
+ax,Aland Islands,Europe,country
+al,Albania,Europe,country
+dz,Algeria,Africa,country
+as,American Samoa,Oceania,country
+ad,Andorra,Europe,country
+ao,Angola,Africa,country
+ai,Anguilla,North America,country
+aq,Antarctica,,country
+ag,Antigua and Barbuda,North America,country
+ar,Argentina,South America,country
+am,Armenia,Asia,country
+aw,Aruba,South America,country
+sh-ac,Ascension Island,Africa,region/territory
+asean,Association of Southeast Asian Nations,,organisation/other
+au,Australia,Oceania,country
+at,Austria,Europe,country
+az,Azerbaijan,Asia,country
+bs,Bahamas,North America,country
+bh,Bahrain,Asia,country
+bd,Bangladesh,Asia,country
+bb,Barbados,North America,country
+es-pv,Basque Country,,region/territory
+by,Belarus,Europe,country
+be,Belgium,Europe,country
+bz,Belize,North America,country
+bj,Benin,Africa,country
+bm,Bermuda,North America,country
+bt,Bhutan,Asia,country
+bo,Bolivia,South America,country
+bq,"Bonaire, Sint Eustatius and Saba",South America,country
+ba,Bosnia and Herzegovina,Europe,country
+bw,Botswana,Africa,country
+bv,Bouvet Island,,country
+br,Brazil,South America,country
+io,British Indian Ocean Territory,Asia,country
+bn,Brunei Darussalam,Asia,country
+bg,Bulgaria,Europe,country
+bf,Burkina Faso,Africa,country
+bi,Burundi,Africa,country
+cv,Cabo Verde,Africa,country
+kh,Cambodia,Asia,country
+cm,Cameroon,Africa,country
+ca,Canada,North America,country
+ic,Canary Islands,,region/territory
+es-ct,Catalonia,,region/territory
+ky,Cayman Islands,North America,country
+cf,Central African Republic,Africa,country
+cefta,Central European Free Trade Agreement,,organisation/other
+td,Chad,Africa,country
+cl,Chile,South America,country
+cn,China,Asia,country
+cx,Christmas Island,Asia,country
+cp,Clipperton Island,,region/territory
+cc,Cocos (Keeling) Islands,Asia,country
+co,Colombia,South America,country
+km,Comoros,Africa,country
+ck,Cook Islands,Oceania,country
+cr,Costa Rica,North America,country
+hr,Croatia,Europe,country
+cu,Cuba,North America,country
+cw,Curaçao,South America,country
+cy,Cyprus,Europe,country
+cz,Czech Republic,Europe,country
+ci,Côte d'Ivoire,Africa,country
+cd,Democratic Republic of the Congo,Africa,country
+dk,Denmark,Europe,country
+dg,Diego Garcia,,region/territory
+dj,Djibouti,Africa,country
+dm,Dominica,North America,country
+do,Dominican Republic,North America,country
+eac,East African Community,,organisation/other
+ec,Ecuador,South America,country
+eg,Egypt,Africa,country
+sv,El Salvador,North America,country
+gb-eng,England,Europe,UK home nation
+gq,Equatorial Guinea,Africa,country
+er,Eritrea,Africa,country
+ee,Estonia,Europe,country
+sz,Eswatini,Africa,country
+et,Ethiopia,Africa,country
+eu,Europe,,organisation/other
+fk,Falkland Islands,South America,country
+fo,Faroe Islands,Europe,country
+fm,Federated States of Micronesia,Oceania,country
+fj,Fiji,Oceania,country
+fi,Finland,Europe,country
+fr,France,Europe,country
+gf,French Guiana,South America,country
+pf,French Polynesia,Oceania,country
+tf,French Southern Territories,Africa,country
+ga,Gabon,Africa,country
+es-ga,Galicia,,region/territory
+gm,Gambia,Africa,country
+ge,Georgia,Asia,country
+de,Germany,Europe,country
+gh,Ghana,Africa,country
+gi,Gibraltar,Europe,country
+gr,Greece,Europe,country
+gl,Greenland,North America,country
+gd,Grenada,North America,country
+gp,Guadeloupe,North America,country
+gu,Guam,Oceania,country
+gt,Guatemala,North America,country
+gg,Guernsey,Europe,country
+gn,Guinea,Africa,country
+gw,Guinea-Bissau,Africa,country
+gy,Guyana,South America,country
+ht,Haiti,North America,country
+hm,Heard Island and McDonald Islands,,country
+va,Holy See,Europe,country
+hn,Honduras,North America,country
+hk,Hong Kong,Asia,country
+hu,Hungary,Europe,country
+is,Iceland,Europe,country
+in,India,Asia,country
+id,Indonesia,Asia,country
+ir,Iran,Asia,country
+iq,Iraq,Asia,country
+ie,Ireland,Europe,country
+im,Isle of Man,Europe,country
+il,Israel,Asia,country
+it,Italy,Europe,country
+jm,Jamaica,North America,country
+jp,Japan,Asia,country
+je,Jersey,Europe,country
+jo,Jordan,Asia,country
+kz,Kazakhstan,Asia,country
+ke,Kenya,Africa,country
+ki,Kiribati,Oceania,country
+xk,Kosovo,Europe,country (not ISO)
+kw,Kuwait,Asia,country
+kg,Kyrgyzstan,Asia,country
+la,Laos,Asia,country
+lv,Latvia,Europe,country
+arab,League of Arab States,,organisation/other
+lb,Lebanon,Asia,country
+ls,Lesotho,Africa,country
+lr,Liberia,Africa,country
+ly,Libya,Africa,country
+li,Liechtenstein,Europe,country
+lt,Lithuania,Europe,country
+lu,Luxembourg,Europe,country
+mo,Macau,Asia,country
+mg,Madagascar,Africa,country
+mw,Malawi,Africa,country
+my,Malaysia,Asia,country
+mv,Maldives,Asia,country
+ml,Mali,Africa,country
+mt,Malta,Europe,country
+mh,Marshall Islands,Oceania,country
+mq,Martinique,North America,country
+mr,Mauritania,Africa,country
+mu,Mauritius,Africa,country
+yt,Mayotte,Africa,country
+mx,Mexico,North America,country
+md,Moldova,Europe,country
+mc,Monaco,Europe,country
+mn,Mongolia,Asia,country
+me,Montenegro,Europe,country
+ms,Montserrat,North America,country
+ma,Morocco,Africa,country
+mz,Mozambique,Africa,country
+mm,Myanmar,Asia,country
+na,Namibia,Africa,country
+nr,Nauru,Oceania,country
+np,Nepal,Asia,country
+nl,Netherlands,Europe,country
+nc,New Caledonia,Oceania,country
+nz,New Zealand,Oceania,country
+ni,Nicaragua,North America,country
+ne,Niger,Africa,country
+ng,Nigeria,Africa,country
+nu,Niue,Oceania,country
+nf,Norfolk Island,Oceania,country
+kp,North Korea,Asia,country
+mk,North Macedonia,Europe,country
+gb-nir,Northern Ireland,Europe,UK home nation
+mp,Northern Mariana Islands,Oceania,country
+no,Norway,Europe,country
+om,Oman,Asia,country
+pc,Pacific Community,,organisation/other
+pk,Pakistan,Asia,country
+pw,Palau,Oceania,country
+pa,Panama,North America,country
+pg,Papua New Guinea,Oceania,country
+py,Paraguay,South America,country
+pe,Peru,South America,country
+ph,Philippines,Asia,country
+pn,Pitcairn,Oceania,country
+pl,Poland,Europe,country
+pt,Portugal,Europe,country
+pr,Puerto Rico,North America,country
+qa,Qatar,Asia,country
+cg,Republic of the Congo,Africa,country
+ro,Romania,Europe,country
+ru,Russia,Europe,country
+rw,Rwanda,Africa,country
+re,Réunion,Africa,country
+bl,Saint Barthélemy,North America,country
+sh-hl,Saint Helena,Africa,region/territory
+sh,"Saint Helena, Ascension and Tristan da Cunha",Africa,country
+kn,Saint Kitts and Nevis,North America,country
+lc,Saint Lucia,North America,country
+mf,Saint Martin,North America,country
+pm,Saint Pierre and Miquelon,North America,country
+vc,Saint Vincent and the Grenadines,North America,country
+ws,Samoa,Oceania,country
+sm,San Marino,Europe,country
+st,Sao Tome and Principe,Africa,country
+sa,Saudi Arabia,Asia,country
+gb-sct,Scotland,Europe,UK home nation
+sn,Senegal,Africa,country
+rs,Serbia,Europe,country
+sc,Seychelles,Africa,country
+sl,Sierra Leone,Africa,country
+sg,Singapore,Asia,country
+sx,Sint Maarten,North America,country
+sk,Slovakia,Europe,country
+si,Slovenia,Europe,country
+sb,Solomon Islands,Oceania,country
+so,Somalia,Africa,country
+za,South Africa,Africa,country
+gs,South Georgia and the South Sandwich Islands,Antarctica,country
+kr,South Korea,Asia,country
+ss,South Sudan,Africa,country
+es,Spain,Europe,country
+lk,Sri Lanka,Asia,country
+ps,State of Palestine,Asia,country
+sd,Sudan,Africa,country
+sr,Suriname,South America,country
+sj,Svalbard and Jan Mayen,Europe,country
+se,Sweden,Europe,country
+ch,Switzerland,Europe,country
+sy,Syria,Asia,country
+tw,Taiwan,Asia,country
+tj,Tajikistan,Asia,country
+tz,Tanzania,Africa,country
+th,Thailand,Asia,country
+tl,Timor-Leste,Asia,country
+tg,Togo,Africa,country
+tk,Tokelau,Oceania,country
+to,Tonga,Oceania,country
+tt,Trinidad and Tobago,South America,country
+sh-ta,Tristan da Cunha,Africa,region/territory
+tn,Tunisia,Africa,country
+tm,Turkmenistan,Asia,country
+tc,Turks and Caicos Islands,North America,country
+tv,Tuvalu,Oceania,country
+tr,Türkiye,Asia,country
+ug,Uganda,Africa,country
+ua,Ukraine,Europe,country
+ae,United Arab Emirates,Asia,country
+gb,United Kingdom,Europe,country
+un,United Nations,,organisation/other
+um,United States Minor Outlying Islands,North America,country
+us,United States of America,North America,country
+xx,Unknown,,organisation/other
+uy,Uruguay,South America,country
+uz,Uzbekistan,Asia,country
+vu,Vanuatu,Oceania,country
+ve,Venezuela,South America,country
+vn,Vietnam,Asia,country
+vg,Virgin Islands (British),North America,country
+vi,Virgin Islands (U.S.),North America,country
+gb-wls,Wales,Europe,UK home nation
+wf,Wallis and Futuna,Oceania,country
+eh,Western Sahara,Africa,country
+ye,Yemen,Asia,country
+zm,Zambia,Africa,country
+zw,Zimbabwe,Africa,country
