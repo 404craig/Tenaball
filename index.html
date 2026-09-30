@@ -226,10 +226,59 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
   --bg1:#0d1a6b; --bg2:#050928; --topc:#1b2769; --muted:#cbd3ff; --slot:rgba(4,8,36,.66); --slotline:rgba(200,210,255,.18);
   --acc:#1cb0f6; --accInk:#06103d; --acc2:#ffb400; --hit:linear-gradient(90deg,#ff4f8b,#ffb400,#34d17a,#1cb0f6); --hitInk:#0d1a6b;
   --scan:linear-gradient(90deg,#ff4f8b,#ffb400,#34d17a,#1cb0f6); --miss:#ff4f6d; --glowA:rgba(28,176,246,.35); --glowB:rgba(255,79,139,.22); --glowC:rgba(255,180,0,.14);}
-.selwrap{position:relative}
-.selwrap::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--muted);font-size:1.1rem}
-#compSel{-webkit-appearance:none;appearance:none;width:100%;font:inherit;font-size:1.05rem;font-weight:600;padding:13px 44px 13px 16px;border-radius:14px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.28);color:var(--ink);cursor:pointer}
-#compSel option{color:#111;background:#fff}
+/* competitions: one line on the home screen, ticks in a panel that slides up */
+.comptrig{display:flex;align-items:center;gap:10px;width:100%;text-align:left;font-size:1.05rem;font-weight:600;padding:12px 16px;border-radius:14px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.28);color:var(--ink)}
+.comptrig .flags{display:flex;flex:none}
+.comptrig .flags .ic{width:24px;height:17px;margin-right:-4px}
+.comptrig .flags .ic svg{width:24px;height:16px;border-radius:3px;box-shadow:0 0 0 1.5px #2a0630}
+.comptrig .flags .ic.crest svg{width:20px;height:20px}
+.comptrig .flags .ic.five{width:48px}
+.comptrig .flags .ic.five svg{width:48px;height:15px}
+.comptrig .sum{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:8px}
+.comptrig .chev{color:var(--muted)}
+.ic{flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:21px;vertical-align:middle}
+.ic svg{display:block;width:30px;height:20px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.ic.crest svg{box-shadow:none;border-radius:0;width:24px;height:24px}
+.ic.five svg{width:52px;height:16px;box-shadow:none;border-radius:0}
+.ic.five{width:52px}
+.chip .ic{width:auto;height:1em;margin-right:6px}
+.chip .ic svg{width:1.35em;height:.9em;border-radius:2px}
+.chip .ic.crest svg{width:1.1em;height:1.1em}
+.chip .ic.five svg{width:3.2em;height:1em}
+#compSheet{--band:color-mix(in srgb,var(--topc) 45%,#000);place-items:end center;padding:0}
+.csheet{position:relative;z-index:1;width:min(100%,480px);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:#2a0630;border-radius:22px 22px 0 0;border-top:1.5px solid var(--slotline);padding-bottom:env(safe-area-inset-bottom,0px);animation:sheetUp .28s cubic-bezier(.2,.9,.3,1) both}
+@keyframes sheetUp{from{transform:translateY(100%)}}
+.csheet .grab{width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.3);margin:8px auto 2px}
+.csheet h3{margin:4px 16px 0;font-size:1.15rem}
+.cscroll{overflow-y:auto;flex:1 1 auto;min-height:0;overscroll-behavior:contain}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px 4px}
+.quick button{background:var(--panel);border:1.5px solid var(--slotline);border-radius:999px;padding:6px 11px;font-size:.84rem;font-weight:600;white-space:nowrap}
+.quick button[aria-pressed="true"]{background:#fff;color:#38003c;border-color:#fff}
+.cgrp{padding:12px 16px 4px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.crow{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;padding:9px 16px;text-align:left;font-weight:600;font-size:1.02rem;min-height:46px;color:var(--ink)}
+.crow .box{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid rgba(255,255,255,.45);display:grid;place-items:center}
+.crow .box svg{width:14px;height:14px;opacity:0}
+.crow .ic{width:52px;justify-content:flex-start}
+.crow .nm{flex:1;min-width:0}
+.crow[aria-checked="true"] .box{background:linear-gradient(135deg,#04f5ff,#00ff85);border-color:transparent}
+.crow[aria-checked="true"] .box svg{opacity:1}
+.crow.soon{opacity:.45;cursor:default}
+.crow.soon .box{border-style:dashed}
+.crow .tag{font-size:.72rem;font-weight:700;color:var(--muted);border:1px solid var(--slotline);border-radius:999px;padding:2px 8px}
+.csfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 16px 12px;border-top:1px solid var(--slotline);font-size:.88rem;color:var(--muted)}
+.csdone{background:#fff;color:#38003c;border:0;border-radius:999px;padding:9px 24px;font-weight:700}
+.csdone:disabled{opacity:.4}
+/* difficulty: the All levels switch */
+.difflbl{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:7px}
+.difflbl label{font-weight:600}
+.alltoggle{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:0;font-size:.92rem;font-weight:600;color:var(--ink)}
+.alltoggle .sw{width:42px;height:25px;border-radius:999px;background:var(--panel2);border:1.5px solid var(--slotline);position:relative;transition:background .2s}
+.alltoggle .sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s}
+.alltoggle[aria-checked="true"] .sw{background:linear-gradient(90deg,#00ff85,#04f5ff,#ff2882);border-color:transparent}
+.alltoggle[aria-checked="true"] .sw::after{transform:translateX(17px)}
+#diffWrap.dimmed{opacity:.3;pointer-events:none;filter:saturate(.2)}
+#diffWrap{transition:opacity .2s}
+.compnote{color:#ffd23f;font-size:.9rem;margin:-4px 0 14px}
 .slot.lab-slot .pos{width:34px;font-size:1.05rem}
 .slot.lab-slot .lab{width:29%;font-size:.76rem;padding:4px 8px}
 .slot.lab-slot .club{font-size:1rem;padding:0 8px;min-width:0}
@@ -676,24 +725,8 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
       <button type="button" data-v="7" aria-pressed="false">7</button>
     </div></div>
 
-  <div class="field"><label for="compSel">Competition Questions</label>
-    <div class="selwrap"><select id="compSel">
-      <option value="random" selected>🎲 Random</option>
-      <option disabled>──────────</option>
-      <option value="pl">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
-      <option value="laliga">🇪🇸 La Liga</option>
-      <option value="bund">🇩🇪 Bundesliga</option>
-      <option value="seriea">🇮🇹 Serie A</option>
-      <option value="ligue1">🇫🇷 Ligue 1</option>
-      <option value="spfl">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scottish Premiership</option>
-      <option disabled>──────────</option>
-      <option value="top5">🌍 Top 5 Leagues</option>
-      <option disabled>──────────</option>
-      <option value="ucl">⚽ Champions League</option>
-      <option disabled>──────────</option>
-      <option value="wc">🏆 World Cup</option>
-      <option value="euro">🇪🇺 Euros</option>
-    </select></div></div>
+  <div class="field"><label id="compLbl">Competitions</label>
+    <button type="button" class="comptrig" id="compBtn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="compLbl compSum"><span class="flags" id="compFlags" aria-hidden="true"></span><span class="sum" id="compSum">All competitions</span><span class="chev" aria-hidden="true">▾</span></button></div>
 
   <div class="field"><label>Shot clock per answer</label>
     <div class="seg" id="clockSeg">
@@ -709,10 +742,11 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
       <button type="button" data-v="one" aria-pressed="false">One per guess</button>
     </div></div>
 
-  <div class="field"><label for="diff">Difficulty: <span id="diffName">Medium</span></label>
-    <input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
-    <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div>
+  <div class="field"><div class="difflbl"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
+    <div id="diffWrap"><input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
+    <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div></div>
   </div>
+  <p class="compnote hidden" id="compNote" aria-live="polite"></p>
 
   <button class="btn" id="startBtn">Kick off</button>
   <button class="btn ghost onlinebtn hidden" id="onlineBtn" type="button">🌐 Play online with friends</button>
@@ -928,6 +962,13 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <div class="dark" id="wtDark"></div>
   <div class="tap" id="wtTap">Tap to see the final table</div>
 </div>
+
+<div class="overlay sheetwrap hidden" id="compSheet" role="dialog" aria-modal="true" aria-labelledby="compSheetTitle"><div class="csheet">
+  <div class="grab" aria-hidden="true"></div>
+  <h3 id="compSheetTitle">Competitions</h3>
+  <div class="cscroll"><div class="quick" id="compQuick"></div><div id="compList"></div></div>
+  <div class="csfoot"><span id="compCount"></span><button type="button" class="csdone" id="compDone">Done</button></div>
+</div></div>
 
 <div class="overlay hidden" id="banner"><div class="banner">
   <div class="who" id="bannerWho"></div>
@@ -1238,8 +1279,8 @@ chunksFromEnd(T5S, 2).forEach(g => {
   });
 })();
 
-const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", wc:"World Cup", euro:"Euros" };
-const CAT_ICON = { pl:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", laliga:"🇪🇸", bund:"🇩🇪", seriea:"🇮🇹", ligue1:"🇫🇷", spfl:"🏴󠁧󠁢󠁳󠁣󠁴󠁿", top5:"🌍", ucl:"⚽", wc:"🏆", euro:"🇪🇺" };
+const ALL_CATS = ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"];
+const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", uel:"Europa League", wc:"World Cup", euro:"Euros" };
 const byCat = c => Q.filter(q => q.cat===c);
 </script>
 <script>
@@ -1682,7 +1723,7 @@ const $ = id => document.getElementById(id);
 let ONLINE = null, FAST = false; // ONLINE is set while playing an online game; FAST skips waits while catching up on its move log
 const wait = ms => new Promise(r => setTimeout(r, FAST ? 0 : ms));
 const REDUCED = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-let cfg = { count:2, rounds:5, cat:"random", clock:30, level:1, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
+let cfg = { count:2, rounds:5, cats:null, clock:30, level:1, allLevels:false, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
 let G = null, muted = false;
 
 /* ---------- sound, synthesised so nothing loads from outside ---------- */
@@ -1790,7 +1831,7 @@ const FAM_KEY = "tenaball-families";
 function famHistory(){ try { return JSON.parse(localStorage.getItem(FAM_KEY)||"[]"); } catch(e){ return []; } }
 function pushFamily(f){ const h = famHistory(); h.push(f); try { localStorage.setItem(FAM_KEY, JSON.stringify(h.slice(-12))); } catch(e){} }
 function pickQuestion(cat){
-  const L = cfg.level;
+  const L = cfg.allLevels ? Math.floor(Math.random()*3) : cfg.level; // All levels: each level gets a fair share
   const tiers = [[L], [L, L-1, L+1], [0,1,2]];
   const hist = famHistory();
   // how recently each kind of question was played: never played scores highest
@@ -1822,7 +1863,99 @@ function seg(id, key, cast){
     cfg[key] = cast(b.dataset.v); if (key==="count") drawNames();
   });
 }
-$("compSel").addEventListener("change", e => { cfg.cat = e.target.value; theme(cfg.cat==="random" ? "pl" : cfg.cat); });
+/* ---------- competitions: ticks in a slide-up panel ---------- */
+// flags and badges are drawn here rather than using emoji, which don't show on Windows, and the England and Scotland ones are missing on many Android phones
+const FLAG = {
+  eng:'<rect width="30" height="20" fill="#fff"/><rect x="12.5" width="5" height="20" fill="#ce1124"/><rect y="7.5" width="30" height="5" fill="#ce1124"/>',
+  esp:'<rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/>',
+  ger:'<rect width="30" height="6.67" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#dd0000"/><rect y="13.33" width="30" height="6.67" fill="#ffce00"/>',
+  ita:'<rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/>',
+  fra:'<rect width="10" height="20" fill="#0055a4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ef4135"/>',
+  sco:'<rect width="30" height="20" fill="#005eb8"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="3.6"/>',
+  eu:'<rect width="30" height="20" fill="#003399"/><g fill="#ffcc00">' + Array.from({length:12}, (_, i) => { const a = i*Math.PI/6; return `<circle cx="${(15+6*Math.cos(a)).toFixed(2)}" cy="${(10+6*Math.sin(a)).toFixed(2)}" r="1.1"/>`; }).join("") + '</g>'
+};
+const BADGE = {
+  ucl:'<circle cx="12" cy="12" r="10.5" fill="#0b1a55" stroke="#bfefff" stroke-width="1.2"/>' + Array.from({length:8}, (_, i) => { const a = i*Math.PI/4 - Math.PI/2, x = 12+6.3*Math.cos(a), y = 12+6.3*Math.sin(a); return `<path d="M${x.toFixed(1)} ${(y-2).toFixed(1)}l.6 1.4 1.4.1-1.1.9.4 1.4-1.3-.8-1.3.8.4-1.4-1.1-.9 1.4-.1z" fill="#fff"/>`; }).join(""),
+  uel:'<circle cx="12" cy="12" r="10.5" fill="#3a1a00" stroke="#ff8a00" stroke-width="1.2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#ff8a00" stroke-width="1.6"/>',
+  wc:'<path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/>'
+};
+const CAT_FLAG = { pl:"eng", laliga:"esp", bund:"ger", seriea:"ita", ligue1:"fra", spfl:"sco", euro:"eu" };
+let flagClip = 0;
+function compIcon(cat){
+  if (cat==="top5"){ // the five countries' flags, overlapping
+    const id = "c5-" + (flagClip++);
+    return `<span class="ic five" aria-hidden="true"><svg viewBox="0 0 52 16"><defs><clipPath id="${id}"><circle r="7.2"/></clipPath></defs>` + ["eng","esp","ger","ita","fra"].map((f, i) =>
+      `<g transform="translate(${8+i*9} 8)"><g clip-path="url(#${id})"><g transform="translate(-10.8 -7.2) scale(.72)">${FLAG[f]}</g></g><circle r="7.2" fill="none" stroke="#2a0630" stroke-width="1.3"/></g>`).join("") + `</svg></span>`;
+  }
+  if (BADGE[cat]) return `<span class="ic crest" aria-hidden="true"><svg viewBox="0 0 24 24">${BADGE[cat]}</svg></span>`;
+  return CAT_FLAG[cat] ? `<span class="ic" aria-hidden="true"><svg viewBox="0 0 30 20">${FLAG[CAT_FLAG[cat]]}</svg></span>` : "";
+}
+const COMP_GROUPS = [
+  ["Leagues", ["pl","laliga","bund","seriea","ligue1","spfl","top5"]],
+  ["Europe", ["ucl","uel"]],
+  ["International", ["wc","euro"]]
+];
+const PLAYABLE = c => ALL_CATS.includes(c);
+const QUICK = [["All", ALL_CATS], ...COMP_GROUPS.map(([g, cs]) => [g, cs.filter(PLAYABLE)])];
+const SETUP_KEY = "tenaball-setup";
+const sameCats = (a, b) => a.length===b.length && a.every(c => b.includes(c));
+const allCats = () => sameCats(cfg.cats, ALL_CATS);
+function catsLabel(cats = cfg.cats){
+  if (sameCats(cats, ALL_CATS)) return "All competitions";
+  const q = QUICK.slice(1).find(([, cs]) => sameCats(cats, cs));
+  if (q) return q[0] + " only";
+  if (cats.length<=2) return cats.map(c => CAT_NAME[c]).join(" and ");
+  return `${cats.length} competitions`;
+}
+// the home screen's colours: the competition's own when only one is ticked
+const homeTheme = () => theme(cfg.cats.length===1 ? cfg.cats[0] : "pl");
+function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ cats: cfg.cats, allLevels: cfg.allLevels })); } catch(e){} }
+(() => { let s = null; try { s = JSON.parse(localStorage.getItem(SETUP_KEY)||"null"); } catch(e){}
+  const cats = s && Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : [];
+  cfg.cats = cats.length ? cats : [...ALL_CATS];
+  cfg.allLevels = !!(s && s.allLevels);
+})();
+const tickSvg = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="#1a0020" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+let sheetCats = null; // the ticks being changed in the open panel
+function renderCompBtn(){
+  $("compFlags").innerHTML = cfg.cats.slice(0, 4).map(compIcon).join("");
+  $("compSum").textContent = catsLabel();
+  renderCompNote();
+}
+function renderSheet(){
+  const on = sheetCats, scroll = document.querySelector("#compSheet .cscroll"), top = scroll.scrollTop;
+  $("compQuick").innerHTML = QUICK.map(([n, cs]) => `<button type="button" data-q="${n}" aria-pressed="${sameCats(on, cs)}">${n}</button>`).join("");
+  $("compList").innerHTML = COMP_GROUPS.map(([g, cs]) => `<div class="cgrp">${g}</div>` + cs.map(c => PLAYABLE(c)
+    ? `<button type="button" class="crow" role="checkbox" aria-checked="${on.includes(c)}" data-c="${c}"><span class="box">${tickSvg}</span>${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span></button>`
+    : `<div class="crow soon" aria-disabled="true"><span class="box"></span>${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span><span class="tag">Coming later</span></div>`).join("")).join("");
+  $("compCount").textContent = on.length ? `${on.length} of ${ALL_CATS.length} ticked` : "Tick at least one";
+  $("compDone").disabled = !on.length;
+  scroll.scrollTop = top;
+}
+function openComps(){ sheetCats = [...cfg.cats]; renderSheet(); $("compSheet").classList.remove("hidden"); $("compBtn").setAttribute("aria-expanded","true"); $("compDone").focus({ preventScroll:true }); }
+function closeComps(){
+  if (sheetCats && sheetCats.length){ cfg.cats = ALL_CATS.filter(c => sheetCats.includes(c)); saveSetup(); }
+  sheetCats = null; $("compSheet").classList.add("hidden"); $("compBtn").setAttribute("aria-expanded","false");
+  renderCompBtn(); homeTheme(); $("compBtn").focus({ preventScroll:true });
+}
+$("compBtn").onclick = openComps;
+$("compDone").onclick = closeComps;
+$("compSheet").addEventListener("click", e => {
+  if (e.target === $("compSheet")) return closeComps(); // a tap on the shade above the panel
+  const row = e.target.closest("button.crow"), q = e.target.closest("[data-q]");
+  if (row){ const c = row.dataset.c; sheetCats = sheetCats.includes(c) ? sheetCats.filter(x => x!==c) : [...sheetCats, c]; renderSheet(); }
+  else if (q){ sheetCats = [...QUICK.find(x => x[0]===q.dataset.q)[1]]; renderSheet(); }
+});
+document.addEventListener("keydown", e => { if (e.key==="Escape" && sheetCats) closeComps(); });
+// a note when a ticked competition has no questions at the chosen level yet
+function renderCompNote(){
+  const note = $("compNote");
+  if (cfg.allLevels){ note.classList.add("hidden"); return; }
+  const thin = cfg.cats.filter(c => !byCat(c).some(q => q.level===cfg.level)).map(c => CAT_NAME[c]);
+  const list = thin.length>1 ? thin.slice(0,-1).join(", ")+" and "+thin[thin.length-1] : thin[0];
+  note.textContent = thin.length ? `No ${LEVELS[cfg.level]} questions for ${list} yet, so ${thin.length>1?"those rounds":"that round"} will use the nearest level.` : "";
+  note.classList.toggle("hidden", !thin.length);
+}
 seg("countSeg","count",Number); seg("repeatSeg","repeat",String); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
 const LEVELS = ["Easy","Medium","Hard"];
 const DIFF_COL = ["#00ff85","#04f5ff","#ff2882"], DIFF_GLOW = ["10px","16px","26px"];
@@ -1832,8 +1965,12 @@ function paintDiff(v){
   const s = $("diff"), l = cfg.level;
   if (v==null){ v = l*100; if (!diffDrag) s.value = v; }
   s.style.setProperty("--fill", Math.max(8, v/2)+"%"); s.style.setProperty("--dc", DIFF_COL[l]); s.style.setProperty("--gl", DIFF_GLOW[l]);
-  $("diffName").textContent = LEVELS[l]; $("diffName").style.setProperty("--dcn", DIFF_COL[l]); s.setAttribute("aria-valuetext", LEVELS[l]);
+  $("diffName").textContent = cfg.allLevels ? "All levels" : LEVELS[l]; $("diffName").style.setProperty("--dcn", cfg.allLevels ? "#c77dff" : DIFF_COL[l]); s.setAttribute("aria-valuetext", LEVELS[l]);
+  $("diffWrap").classList.toggle("dimmed", cfg.allLevels); $("allLevels").setAttribute("aria-checked", cfg.allLevels);
+  if (paintDiff.noted !== l + "" + cfg.allLevels){ paintDiff.noted = l + "" + cfg.allLevels; renderCompNote(); }
 }
+// All levels: the slider greys out and each round picks Easy, Medium or Hard at random
+$("allLevels").onclick = () => { cfg.allLevels = !cfg.allLevels; saveSetup(); paintDiff(); };
 $("diff").addEventListener("input", e => { cancelAnimationFrame(diffAnim); diffDrag = true; const v = Number(e.target.value); cfg.level = Math.round(v/100); paintDiff(v); });
 function snapDiff(){
   diffDrag = false; cancelAnimationFrame(diffAnim);
@@ -1851,7 +1988,7 @@ $("diff").addEventListener("keydown", e => {
   const d = {ArrowLeft:-1, ArrowDown:-1, PageDown:-1, ArrowRight:1, ArrowUp:1, PageUp:1, Home:-2, End:2}[e.key];
   if (d==null) return; e.preventDefault(); cfg.level = Math.max(0, Math.min(2, cfg.level+d)); snapDiff();
 });
-paintDiff();
+renderCompBtn(); paintDiff();
 function drawNames(){
   const box = $("nameFields"); box.innerHTML = `<label>${cfg.count===1?'Your name':'Names'}</label>`;
   for (let i=0;i<cfg.count;i++){
@@ -1896,7 +2033,7 @@ document.addEventListener("keydown", e => { if (e.key==="Escape") tip(false); })
 window.addEventListener("resize", () => { if (!$("infoTip").classList.contains("hidden")) placeTip(); });
 window.addEventListener("scroll", () => { if (!$("infoTip").classList.contains("hidden")) placeTip(); }, {passive:true});
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
-$("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); theme(cfg.cat==="random" ? "pl" : cfg.cat); show("setup"); };
+$("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
 $("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); theme("pl"); show("setup"); } };
 $("muteBtn").onclick = () => { muted = !muted; $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
 $("nextBtn").onclick = () => { if (ONLINE) return onlineNext(); applyNext(); };
@@ -1931,10 +2068,10 @@ function startRound(qIn){
   $("intro").classList.remove("hidden"); sfx.whoosh();
   if (ONLINE) onlineIntroUI();
 }
-const ALL_CATS = ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"];
 function nextCat(){
-  if (cfg.cat!=="random") return cfg.cat;
-  const opts = ALL_CATS.filter(c => c!==G.lastCat && byCat(c).length);
+  const ok = cfg.cats.filter(c => byCat(c).length);
+  if (ok.length<=1) return ok[0] || cfg.cats[0];
+  const opts = ok.filter(c => c!==G.lastCat);
   const c = opts[Math.floor(Math.random()*opts.length)]; G.lastCat = c; return c;
 }
 function setPlaceholder(q){
@@ -1943,16 +2080,16 @@ function setPlaceholder(q){
 }
 function fillIntro(q){
   theme(q.cat);
-  $("introCat").textContent = CAT_ICON[q.cat]+" "+CAT_NAME[q.cat];
+  $("introCat").innerHTML = compIcon(q.cat)+esc(CAT_NAME[q.cat]);
   $("introTitle").textContent = q.title;
   $("introBrief").textContent = q.brief + ` ${q.slots.length} slots to fill.`;
-  $("catLabel").textContent = CAT_ICON[q.cat]+" "+CAT_NAME[q.cat];
+  $("catLabel").innerHTML = compIcon(q.cat)+esc(CAT_NAME[q.cat]);
   $("titleLabel").textContent = q.title; $("briefLabel").textContent = q.brief;
   $("periodLabel").textContent = "🗓 " + q.period; $("introPeriod").textContent = "🗓 " + q.period;
   const b = $("refreshBtn"); b.disabled = G.refreshLeft<=0;
   b.textContent = G.refreshLeft>0 ? `↻ Different question (${G.refreshLeft} left this game)` : "No question changes left";
 }
-const refreshPick = () => pickQuestion(cfg.cat==="random" ? nextCat() : G.q.cat);
+const refreshPick = () => pickQuestion(cfg.cats.length>1 ? nextCat() : G.q.cat);
 $("refreshBtn").onclick = () => {
   if (G.refreshLeft<=0) return;
   if (ONLINE) return onlineRefresh();
@@ -2391,7 +2528,7 @@ function shareSummary(sorted){
   return { top, winners, solo, zero: solo && top===0,
     rank: p => 1 + sorted.filter(q=>q.score>p.score).length,
     names: winners.map(w=>w.name).join(" and "),
-    meta: [`${cfg.rounds} Rounds`, LEVELS[cfg.level], cfg.cat==="random" ? "Random" : CAT_NAME[cfg.cat]] };
+    meta: [`${cfg.rounds} Rounds`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
 }
 // *text* is bold in WhatsApp
 function shareText(sorted){
@@ -2527,7 +2664,7 @@ async function endGame(){
   await trophyReveal(sorted, els[0]);
   for (let i=1;i<els.length;i++){ await wait(250); els[i].classList.add("show"); sfx.place(); }
   if (sorted.length===1){
-    const key = `tenable-best-${cfg.cat}-${cfg.rounds}`; let best = 0;
+    const key = `tenable-best-${allCats() ? "random" : [...cfg.cats].sort().join("+")}-${cfg.rounds}${cfg.allLevels ? "-all" : ""}`; let best = 0;
     try { best = Number(localStorage.getItem(key)||0); } catch(e){}
     const isBest = top > best;
     if (isBest){ try { localStorage.setItem(key, String(top)); } catch(e){} }
@@ -2846,7 +2983,7 @@ function afterLogin(){
   const p = PENDING; PENDING = null;
   if (p && p.join) return openJoin(p.join);
   if (p === "online") return openOnlineMenu();
-  theme(cfg.cat==="random" ? "pl" : cfg.cat); show("setup");
+  homeTheme(); show("setup");
 }
 function setUser(user, stats, token){
   NET.user = user; if (stats) NET.stats = stats;
@@ -2938,7 +3075,7 @@ $("onlineBtn").onclick = () => {
   if (!signedIn() && lsGet(GUEST_KEY)!=="1"){ PENDING = "online"; return showLogin(); }
   openOnlineMenu();
 };
-$("lobbyBack").onclick = () => { history.replaceState(null, "", location.pathname); theme(cfg.cat==="random" ? "pl" : cfg.cat); show("setup"); };
+$("lobbyBack").onclick = () => { history.replaceState(null, "", location.pathname); homeTheme(); show("setup"); };
 $("joinCode").addEventListener("input", e => { e.target.value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,5); });
 $("joinCode").addEventListener("keydown", e => { if (e.key==="Enter") $("joinBtn").click(); });
 function menuName(){
@@ -2951,7 +3088,7 @@ function menuBusy(on){ ["createBtn","joinBtn"].forEach(id => $(id).disabled = on
 $("createBtn").onclick = async () => {
   const name = menuName(); if (!name) return;
   menuBusy(true); lobbyMsg("");
-  const r = await api("/rooms", { settings: { rounds: cfg.rounds, cat: cfg.cat, clock: cfg.clock, level: cfg.level, repeat: cfg.repeat }, ver: APP_VER, ...(signedIn() ? {} : { guest: guestId(), name }) });
+  const r = await api("/rooms", { settings: { rounds: cfg.rounds, cats: cfg.cats, cat: cfg.cats.length===1 ? cfg.cats[0] : "random", clock: cfg.clock, level: cfg.allLevels ? 3 : cfg.level, repeat: cfg.repeat }, ver: APP_VER, ...(signedIn() ? {} : { guest: guestId(), name }) });
   menuBusy(false);
   if (!r.ok) return lobbyMsg(r.data.error || "Couldn't create a game. Try again.");
   enterRoom(r.data.code, name);
@@ -2962,7 +3099,7 @@ const REFUSED = { notfound: "There's no game with that code. Check it and try ag
   version: "That game is on a different version of Tenaball. Refresh the page and try again." };
 function enterRoom(code, name){
   leaveRoomLocal(null, true);
-  ROOM = { code, name, data: null, me: null, picked: new Set(), lastCat: null, seen: new Set(), localCfg: { ...cfg, names: [...cfg.names] }, tries: 0, sends: new Map() };
+  ROOM = { code, name, data: null, me: null, picked: new Set(), lastCat: null, seen: new Set(), localCfg: { ...cfg, names: [...cfg.names], cats: [...cfg.cats] }, tries: 0, sends: new Map() };
   history.replaceState(null, "", "?room=" + code);
   connectRoom(ROOM);
 }
@@ -3013,6 +3150,9 @@ function onRoom(room, moves){
     else if (moves) { const O = ONLINE; moves.forEach(mv => { if (mv.seq >= O.next) O.pending.set(mv.seq, mv); }); pump(O); }
   }
 }
+// the host's settings, as this phone's cfg (a room from before ticks has just "cat"; level 3 is All levels)
+function roomCats(s){ const cs = Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : []; return cs.length ? cs : s.cat && s.cat!=="random" && ALL_CATS.includes(s.cat) ? [s.cat] : [...ALL_CATS]; }
+const roomCfg = s => ({ rounds: s.rounds, cats: roomCats(s), clock: s.clock, level: s.level===3 ? 1 : s.level, allLevels: s.level===3, repeat: s.repeat });
 const roomPlayers = d => Object.entries(d.players).map(([uid, p]) => ({ uid, ...p })).sort((a,b) => a.n-b.n);
 const hostName = () => { const d = ROOM && ROOM.data; return d && d.players[d.host] ? d.players[d.host].name : "the host"; };
 function renderLobby(d){
@@ -3034,7 +3174,7 @@ function renderLobby(d){
   for (let i=list.length; i<4; i++){ const r = document.createElement("div"); r.className = "lobbyrow empty"; r.textContent = "Waiting for a player to join…"; box.appendChild(r); }
   list.forEach(p => ROOM.seen.add(p.uid));
   const s = d.settings;
-  $("lobbySet").innerHTML = [`${s.rounds} rounds`, s.cat==="random" ? "Random" : CAT_NAME[s.cat], LEVELS[s.level], s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
+  $("lobbySet").innerHTML = [`${s.rounds} rounds`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
   $("lobbyStart").classList.toggle("hidden", !isHost);
   $("lobbyStart").disabled = list.length < 2;
   $("lobbyStart").textContent = list.length < 2 ? "Waiting for players to join" : `Start game with ${list.length} players`;
@@ -3058,7 +3198,7 @@ $("lobbyLeave").onclick = () => {
 $("lobbyStart").onclick = async () => {
   const d = ROOM.data, list = roomPlayers(d); if (list.length < 2) return;
   $("lobbyStart").disabled = true;
-  const s = d.settings; Object.assign(cfg, { rounds: s.rounds, cat: s.cat, clock: s.clock, level: s.level, repeat: s.repeat });
+  const s = d.settings; Object.assign(cfg, roomCfg(s));
   G = { picked: ROOM.picked, lastCat: null };
   const q = pickQuestion(nextCat()); ROOM.lastCat = G.lastCat;
   try { await roomSend({ t: "start", move: { type: "round", data: { qid: q.id } } }); }
@@ -3077,7 +3217,7 @@ function leaveRoomLocal(msg, quiet){
 function startOnlineGame(d, moves){
   stopOnlineGame();
   const s = d.settings, me = ROOM.me;
-  Object.assign(cfg, { rounds: s.rounds, cat: s.cat, clock: s.clock, level: s.level, repeat: s.repeat, count: d.order.length });
+  Object.assign(cfg, roomCfg(s), { count: d.order.length });
   G = { players: d.order.map((uid, i) => ({ uid, name: d.players[uid] ? d.players[uid].name : "Player", score:0, lives:3, out:false, color:`var(--p${i+1})` })),
         round:1, picked: ROOM.picked, refreshLeft:3, lastCat: ROOM.lastCat };
   const last = moves.length ? moves[moves.length-1].seq : 0;
@@ -3172,7 +3312,7 @@ function onlineLeave(){
   if (host && !confirm("Leaving closes this game for everyone. Leave?")) return;
   if (ROOM){ ROOM.leaving = true; try { ROOM.ws.send(JSON.stringify({ t: host ? "close" : "leave" })); } catch(e){} }
   leaveRoomLocal(null, true); history.replaceState(null, "", location.pathname);
-  drawNames(); theme(cfg.cat==="random" ? "pl" : cfg.cat); show("setup");
+  drawNames(); homeTheme(); show("setup");
 }
 function onlineExit(){
   const host = ONLINE.isHost;

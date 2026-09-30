@@ -159,5 +159,59 @@ await test("questions: most titles as a manager takes any six of the nine one-ti
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("home: competitions tick in a slide-up panel, the box sums them up, and the phone remembers them", async () => {
+  const p = await phone(browser, "comps"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  eq(await p.textContent("#compSum"), "All competitions");
+  await p.click("#compBtn"); await until(() => visible(p, "#compSheet"));
+  const rows = await p.$$eval("#compList .crow", rs => rs.map(r => [r.querySelector(".nm").textContent, r.getAttribute("aria-checked"), r.classList.contains("soon")]));
+  eq(rows.map(r => r[0]), ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","Scottish Premiership","Top 5 Leagues","Champions League","Europa League","World Cup","Euros"]);
+  eq(rows.filter(r => r[2]).map(r => r[0]), ["Europa League"], "Europa League is shown as coming later");
+  eq(await p.$$eval("#compList .cgrp", g => g.map(x => x.textContent)), ["Leagues","Europe","International"]);
+  eq(await p.$$eval("#compList .crow .ic svg", s => s.length), 11, "every row has a drawn flag or badge");
+  await p.click('#compQuick [data-q="Leagues"]');
+  eq(await p.textContent("#compCount"), "7 of 10 ticked");
+  await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
+  await p.click("#compDone"); await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
+  eq(await p.textContent("#compSum"), "5 competitions");
+  // none ticked: Done waits
+  await p.click("#compBtn"); for (const c of ["pl","laliga","bund","seriea","ligue1"]) await p.click(`#compList [data-c="${c}"]`);
+  eq([await p.textContent("#compCount"), await p.$eval("#compDone", b => b.disabled)], ["Tick at least one", true]);
+  await p.click('#compList [data-c="wc"]'); await p.click('#compList [data-c="euro"]');
+  await p.mouse.click(195, 30); // a tap above the panel closes it too
+  await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
+  eq(await p.textContent("#compSum"), "International only");
+  eq(await p.$$eval("#compFlags .ic svg", s => s.length), 2);
+  await p.reload(); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro"], "International only"], "remembered after a reload");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("game: rounds come only from ticked competitions, never the same one twice running", async () => {
+  const p = await phone(browser, "ticked"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { cfg.cats = ["wc","euro","ucl"]; renderCompBtn(); });
+  const seq = await p.evaluate(() => { G = { picked: new Set(), lastCat: null }; return Array.from({ length: 12 }, () => nextCat()); });
+  assert(seq.every(c => ["wc","euro","ucl"].includes(c)), seq.join(","));
+  assert(seq.every((c, i) => !i || c !== seq[i-1]), "no repeats in a row: " + seq.join(","));
+  eq(await p.evaluate(() => { cfg.cats = ["pl"]; return [nextCat(), nextCat()]; }), ["pl","pl"]);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
+  const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { cfg.cats = ["laliga"]; renderCompBtn(); });
+  await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
+  await p.focus("#diff"); await p.keyboard.press("ArrowLeft");
+  await until(async () => (await p.textContent("#diffName")) === "Easy", { what: "Easy" });
+  assert(await visible(p, "#compNote"), "a note for La Liga on Easy");
+  eq(await p.textContent("#compNote"), "No Easy questions for La Liga yet, so that round will use the nearest level.");
+  await p.click("#allLevels");
+  eq(await p.evaluate(() => [document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed"), document.getElementById("allLevels").getAttribute("aria-checked"), cfg.allLevels]), ["All levels", true, "true", true]);
+  assert(!(await visible(p, "#compNote")), "no note with All levels");
+  const lv = await p.evaluate(() => { G = { picked: new Set(), lastCat: null }; const c = [0,0,0]; for (let i = 0; i < 90; i++){ G.picked = new Set(); c[pickQuestion("pl").level]++; } return c; });
+  assert(lv.every(n => n >= 12), "every level comes up: " + lv.join(","));
+  eq(await p.evaluate(() => shareSummary([{ name: "Craig", score: 3 }]).meta.slice(1)), ["All levels", "La Liga"]);
+  await p.reload(); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => cfg.allLevels), true, "remembered after a reload");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();

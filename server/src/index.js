@@ -5,6 +5,8 @@ import { ADMIN_PAGE } from "./admin.js";
 
 const BLANK_STATS = { played: 0, multi: 0, wins: 0, streak: 0, best: 0, points: 0, top: 0, tenables: 0 };
 const MAX_PLAYERS = 4;
+// the host's ticked competitions: short lowercase keys only, at most 16, no repeats (the game ignores ones it doesn't know)
+const catList = v => Array.isArray(v) ? [...new Set(v.filter(c => typeof c === "string" && /^[a-z0-9]{2,10}$/.test(c)))].slice(0, 16) : [];
 const cleanName = n => String(n || "").replace(/\s+/g, " ").trim().slice(0, 20);
 const cleanEmail = e => String(e || "").trim().toLowerCase();
 const validEmail = e => e.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
@@ -284,7 +286,7 @@ export class Room extends DurableObject {
       if (await this.load()) return fail(409, "taken");
       const s = b.settings || {}, pick = (v, ok, d) => ok.includes(v) ? v : d;
       this.state = { code: b.code, host: b.host, status: "lobby", game: 1, seq: 0, ver: b.ver, created: Date.now(),
-        settings: { rounds: pick(s.rounds, [3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2], 1), repeat: pick(s.repeat, ["all", "one"], "all") },
+        settings: { rounds: pick(s.rounds, [3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all") },
         players: { [b.host]: { name: b.name, n: 0 } } };
       await this.save();
       return json({ code: b.code, room: this.publicRoom() });

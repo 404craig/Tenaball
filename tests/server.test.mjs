@@ -166,7 +166,12 @@ await test("rooms: a host creates a game and friends join over a live connection
   const craig = { token: (await signup("Craig", "craig.rooms@example.com")).body.token };
   const r = await newRoom(craig);
   eq(r.status, 200); assert(/^[A-HJ-NP-Z2-9]{5}$/.test(r.code), `code ${r.code}`);
-  eq(r.room.settings, { rounds: 3, cat: "pl", clock: 0, level: 1, repeat: "all" });
+  eq(r.room.settings, { rounds: 3, cat: "pl", cats: [], clock: 0, level: 1, repeat: "all" });
+  // ticked competitions: only short keys are kept, without repeats; level 3 is All levels
+  const r2 = await newRoom(craig, { rounds: 5, cats: ["wc", "euro", "wc", "<b>", 7, "averyveryverylongkey"], clock: 30, level: 3, repeat: "all" });
+  eq([r2.room.settings.cats, r2.room.settings.level], [["wc", "euro"], 3]);
+  const r3 = await newRoom(craig, { rounds: 5, cats: "pl", level: 9 });
+  eq([r3.room.settings.cats, r3.room.settings.level], [[], 1], "anything else falls back");
   const h = live(r.code, craig); await h.opened;
   const hello = await h.wait(m => m.t === "hello", "host hello");
   eq(Object.values(hello.room.players).map(p => p.name), ["Craig"]);

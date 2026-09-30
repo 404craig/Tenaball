@@ -20,9 +20,16 @@ async function signUp(p, name, email){
   await p.fill("#signName", name); await p.fill("#signEmail", email); await p.fill("#signPin", "2468"); await p.fill("#signPin2", "2468"); await p.click("#authBtn");
   await shown(p, "setup");
 }
+// tick exactly these competitions in the slide-up panel
+async function pickComps(p, cats){
+  await p.click("#compBtn"); await shown(p, "compSheet");
+  const rows = await p.$$eval("#compList button.crow", rs => rs.map(r => [r.dataset.c, r.getAttribute("aria-checked") === "true"]));
+  for (const [c, on] of rows) if (on !== cats.includes(c)) await p.click(`#compList [data-c="${c}"]`); // the list redraws after each tap
+  await p.click("#compDone");
+}
 // host: pick settings on the home screen, then create an online game
 async function hostGame(p, { rounds = 3, clock = 0, cat = "pl" } = {}){
-  await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(`#clockSeg button[data-v="${clock}"]`); await p.selectOption("#compSel", cat);
+  await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(`#clockSeg button[data-v="${clock}"]`); await pickComps(p, [].concat(cat));
   await p.click("#onlineBtn"); await shown(p, "lobbyMenu");
   if (!(await p.inputValue("#onlineName"))) await p.fill("#onlineName", p.label);
   await p.click("#createBtn"); await shown(p, "lobbyRoom");
@@ -148,7 +155,7 @@ await test("online: a 3-player game plays through on every phone with matching b
   await craig.click("#lobbyStart");
   for (const p of all) await shown(p, "intro");
   await inSync(all, "start");
-  eq(await aiden.evaluate(() => [cfg.rounds, cfg.cat, cfg.count]), [3, "pl", 3], "joiners use the host's settings");
+  eq(await aiden.evaluate(() => [cfg.rounds, cfg.cats, cfg.count]), [3, ["pl"], 3], "joiners use the host's settings");
   // the host can change the question; everyone gets the new one
   const before = JSON.parse(await state(aiden)).q;
   await step(all, craig, () => craig.click("#refreshBtn"), "question change");
@@ -188,6 +195,26 @@ await test("online: a club record scorers board drawn at random on the host is t
   eq(boards[1], boards[0], "both phones built the same ten clubs");
   const { moves } = await playThrough(all, craig);
   assert(moves >= 4, `expected a real game, got ${moves} moves`);
+  await skipTrophies(all);
+  await closeAll(...all);
+});
+
+await test("online: the host's ticked competitions and All levels apply on every phone", async () => {
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  await craig.click("#allLevels");
+  const code = await hostGame(craig, { rounds: 3, cat: ["wc", "euro"] });
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  const all = [craig, aiden];
+  await everyoneSees(all, ["Craig", "Aiden"]);
+  const set = await aiden.textContent("#lobbySet");
+  assert(set.includes("International only") && set.includes("All levels"), "the lobby shows the host's settings: " + set);
+  await craig.click("#lobbyStart");
+  for (const p of all) await shown(p, "intro");
+  await inSync(all, "start");
+  eq(await aiden.evaluate(() => [cfg.cats, cfg.allLevels]), [["wc", "euro"], true]);
+  const cats = new Set();
+  await playThrough(all, craig, { onMove: async p => { cats.add(await p.evaluate(() => G.q.cat)); } });
+  assert([...cats].every(c => c === "wc" || c === "euro"), "only ticked competitions: " + [...cats].join(", "));
   await skipTrophies(all);
   await closeAll(...all);
 });
