@@ -76,7 +76,20 @@ p{margin:0 0 12px}
 .brand .bar{display:flex;gap:6px;margin-top:14px}
 .brand .bar i{height:6px;border-radius:3px;flex:1}
 .field{margin:0 0 16px}
-#setup .field{margin-bottom:18px} /* a little more room between the home screen's sections */
+/* the home screen's settings sit in three soft panels, each with a small heading */
+.homegrp{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:16px 14px 4px;margin:0 0 18px}
+.homegrp .gh{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 2px 14px}
+#setup .field{margin-bottom:20px}
+#setup .homegrp+.btn{margin-top:6px}
+.homegrp .seg{flex-wrap:nowrap;gap:7px}
+.homegrp .seg button{min-width:0;padding-left:6px;padding-right:6px}
+.homegrp .difflbl{flex-wrap:wrap;row-gap:8px}
+.homegrp .alltoggle{margin-left:auto}
+.homegrp .difflbl{column-gap:6px}
+.homegrp .difflbl .lblrow{gap:6px}
+.homegrp .alltoggle{gap:6px;font-size:.88rem}
+@media (max-width:380px){.homegrp{padding-left:12px;padding-right:12px}.homegrp .seg button{font-size:.95rem}.comptrig .flags .ic:nth-child(n+4){display:none}}
+@media (max-width:340px){.comptrig .flags .ic:nth-child(n+3){display:none}.homegrp .seg{gap:5px}.homegrp .seg button{font-size:.84rem;padding-left:2px;padding-right:2px}}
 .field>label{display:block;font-weight:600;margin-bottom:7px}
 .seg{display:flex;gap:8px;flex-wrap:wrap}
 .seg button{flex:1;min-width:70px;background:var(--panel);border:1.5px solid var(--slotline);border-radius:999px;padding:10px 10px;font-weight:600}
@@ -245,7 +258,9 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 /* section info: a small i next to each heading, opening a slide-up panel */
 .lblrow{display:flex;align-items:center;gap:8px;margin-bottom:7px}
 .lblrow>label{margin:0!important;font-weight:600}
-.difflbl .lblrow{margin:0}
+.difflbl .lblrow{margin:0;min-width:0}
+.difflbl label,.alltoggle{white-space:nowrap}
+.alltoggle{flex:none}
 .finfo{flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--slotline);background:var(--panel);color:var(--muted);font:italic 700 .72rem/1 Georgia,serif;display:grid;place-items:center;padding:0;position:relative}
 .finfo::after{content:"";position:absolute;inset:-12px} /* a bigger target for thumbs */
 .infobody{padding:6px 16px 10px}
@@ -385,7 +400,7 @@ body[data-cat="ucl"]{--hit:linear-gradient(90deg,#9fd8ff,#ffffff 50%,#c9b8ff); -
 body[data-cat="wc"]{--hit:linear-gradient(90deg,#fff1b8,#f4d774 40%,#d4af37); --hitInk:#1b1300; --scan:linear-gradient(90deg,#6b5310,#d4af37);}
 body[data-cat="top5"]{--hit:linear-gradient(90deg,#7cffb2,#ffd54a 55%,#f5b700); --hitInk:#1b1300;}
 
-.homebrand{text-align:center;margin:-10px 0 22px}
+.homebrand{text-align:center;margin:-10px 0 26px}
 .homebrand .sub{margin-top:0;color:var(--ink)}
 .breaker{width:80vw;max-width:420px;height:2px;margin:6px auto 0;border-radius:2px;background:linear-gradient(90deg,#04f5ff,#00ff85);box-shadow:0 0 10px rgba(4,245,255,.35)}
 #end .brand{margin:6px 0 14px}
@@ -710,45 +725,48 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <div class="acct hidden" id="acct"></div>
   </div>
 
-  <div class="field"><label>Players</label>
-    <div class="seg" id="countSeg">
-      <button type="button" data-v="1" aria-pressed="false" aria-label="1 player">1</button>
-      <button type="button" data-v="2" aria-pressed="true" aria-label="2 players">2</button>
-      <button type="button" data-v="3" aria-pressed="false" aria-label="3 players">3</button>
-      <button type="button" data-v="4" aria-pressed="false" aria-label="4 players">4</button>
-    </div></div>
-  <div class="field names" id="nameFields"></div>
-
-  <div class="field"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
-    <div class="seg" id="roundSeg">
-      <button type="button" data-v="1" aria-pressed="false">1</button>
-      <button type="button" data-v="3" aria-pressed="false">3</button>
-      <button type="button" data-v="5" aria-pressed="true">5</button>
-      <button type="button" data-v="7" aria-pressed="false">7</button>
-    </div></div>
-
-  <div class="field"><div class="lblrow"><label id="compLbl">Competitions</label><button type="button" class="finfo" data-info="comps" aria-label="About competitions">i</button></div>
-    <button type="button" class="comptrig" id="compBtn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="compLbl compSum"><span class="flags" id="compFlags" aria-hidden="true"></span><span class="sum" id="compSum">All competitions</span><span class="chev" aria-hidden="true">▾</span></button></div>
-
-  <div class="field"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
-    <div class="seg" id="clockSeg">
-      <button type="button" data-v="0" aria-pressed="false">Off</button>
-      <button type="button" data-v="15" aria-pressed="false">15 sec</button>
-      <button type="button" data-v="30" aria-pressed="true">30 sec</button>
-      <button type="button" data-v="60" aria-pressed="false">60 sec</button>
-    </div></div>
-
-  <div class="field"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
-    <div class="seg" id="repeatSeg">
-      <button type="button" data-v="all" aria-pressed="true">Fill all at once</button>
-      <button type="button" data-v="one" aria-pressed="false">One per guess</button>
-    </div></div>
-
-  <div class="field"><div class="difflbl"><div class="lblrow"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="finfo" data-info="diff" aria-label="About difficulty">i</button></div><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
-    <div id="diffWrap"><input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
-    <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div></div>
+  <div class="homegrp" role="group" aria-labelledby="ghWho"><div class="gh" id="ghWho">Who's playing</div>
+    <div class="field"><label>Players</label>
+      <div class="seg" id="countSeg">
+        <button type="button" data-v="1" aria-pressed="false" aria-label="1 player">1</button>
+        <button type="button" data-v="2" aria-pressed="true" aria-label="2 players">2</button>
+        <button type="button" data-v="3" aria-pressed="false" aria-label="3 players">3</button>
+        <button type="button" data-v="4" aria-pressed="false" aria-label="4 players">4</button>
+      </div></div>
+    <div class="field names" id="nameFields"></div>
   </div>
-  <p class="compnote hidden" id="compNote" aria-live="polite"></p>
+
+  <div class="homegrp" role="group" aria-labelledby="ghGame"><div class="gh" id="ghGame">The game</div>
+    <div class="field"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
+      <div class="seg" id="roundSeg">
+        <button type="button" data-v="1" aria-pressed="false">1</button>
+        <button type="button" data-v="3" aria-pressed="false">3</button>
+        <button type="button" data-v="5" aria-pressed="true">5</button>
+        <button type="button" data-v="7" aria-pressed="false">7</button>
+      </div></div>
+    <div class="field"><div class="lblrow"><label id="compLbl">Competitions</label><button type="button" class="finfo" data-info="comps" aria-label="About competitions">i</button></div>
+      <button type="button" class="comptrig" id="compBtn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="compLbl compSum"><span class="flags" id="compFlags" aria-hidden="true"></span><span class="sum" id="compSum">All competitions</span><span class="chev" aria-hidden="true">▾</span></button></div>
+    <div class="field"><div class="difflbl"><div class="lblrow"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="finfo" data-info="diff" aria-label="About difficulty">i</button></div><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
+      <div id="diffWrap"><input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
+      <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div></div>
+    </div>
+    <p class="compnote hidden" id="compNote" aria-live="polite"></p>
+  </div>
+
+  <div class="homegrp" role="group" aria-labelledby="ghRules"><div class="gh" id="ghRules">House rules</div>
+    <div class="field"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
+      <div class="seg" id="clockSeg">
+        <button type="button" data-v="0" aria-pressed="false">Off</button>
+        <button type="button" data-v="15" aria-pressed="false">15 sec</button>
+        <button type="button" data-v="30" aria-pressed="true">30 sec</button>
+        <button type="button" data-v="60" aria-pressed="false">60 sec</button>
+      </div></div>
+    <div class="field"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
+      <div class="seg" id="repeatSeg">
+        <button type="button" data-v="all" aria-pressed="true">Fill all at once</button>
+        <button type="button" data-v="one" aria-pressed="false">One per guess</button>
+      </div></div>
+  </div>
 
   <button class="btn" id="startBtn">Kick off</button>
   <button class="btn ghost onlinebtn hidden" id="onlineBtn" type="button">🌐 Play online with friends</button>
