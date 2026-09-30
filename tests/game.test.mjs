@@ -213,5 +213,33 @@ await test("home: All levels greys the slider and each board's level is picked a
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("home: each section's i opens a slide-up panel explaining it, and How to play opens the rules", async () => {
+  const p = await phone(browser, "info"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const seen = [];
+  for (const k of ["rounds","comps","clock","repeat","diff","how"]){
+    const b = k === "how" ? "#infoBtn" : `#setup .finfo[data-info="${k}"]`;
+    await p.evaluate(sel => document.querySelector(sel).scrollIntoView({ block: "center" }), b);
+    await p.click(b); await until(() => visible(p, "#infoSheet"), { what: `the ${k} panel` });
+    seen.push([await p.textContent("#infoTitle"), (await p.textContent("#infoBody")).length > 80]);
+    if (k === "how") await p.mouse.click(195, 30); else await p.click("#infoDone");
+    await until(async () => !(await visible(p, "#infoSheet")), { what: "the panel to close" });
+  }
+  eq(seen, [["Rounds",true],["Competitions",true],["Shot clock per answer",true],["Repeated answers",true],["Difficulty",true],["How to play",true]]);
+  eq(await p.evaluate(() => cfg.allLevels), false, "the i next to Difficulty doesn't flip the switch");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("game: a 1-round game goes straight to full time after its round", async () => {
+  const p = await phone(browser, "one"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  eq(await p.$$eval("#roundSeg button", b => b.map(x => x.textContent)), ["1","3","5","7"]);
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click("#startBtn"); await until(() => visible(p, "#intro"));
+  eq(await p.textContent("#introRound"), "Round 1 of 1");
+  await p.click("#introBtn"); await ready(p); await p.click("#passBtn");
+  await until(() => visible(p, "#roundEnd")); eq(await p.textContent("#nextBtn"), "See final scores");
+  await p.click("#nextBtn"); await until(() => visible(p, "#end"), { what: "full time" });
+  eq(await p.evaluate(() => shareSummary(G.players).meta[0]), "1 Round");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();
