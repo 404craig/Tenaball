@@ -241,5 +241,20 @@ await test("game: a 1-round game goes straight to full time after its round", as
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("share: if the trophy fails to load onto the results card, the card is drawn again with it", async () => {
+  const p = await phone(browser, "card"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(async () => {
+    const real = cardImg; let calls = 0;
+    window.cardImg = async el => { if (++calls === 1) throw new Error("busy"); return real(el); };
+    prepareShare([{ name: "Craig", score: 8, color: "var(--p1)" }]);
+    const first = await new Promise(res => { const t0 = Date.now(), iv = setInterval(() => { if (SHARE.file || Date.now()-t0 > 4000){ clearInterval(iv); res(!!SHARE.file); } }, 50); });
+    const firstFile = SHARE.file;
+    await new Promise(res => setTimeout(res, 4500));
+    return [first, calls, SHARE.file !== firstFile && !!SHARE.file];
+  });
+  eq(r, [true, 2, true], "a card straight away, then a second try that swaps in the card with the trophy");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
 await browser.close(); await site.close();
 report();
