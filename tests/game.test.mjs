@@ -169,13 +169,13 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(await p.$$eval("#compList .cgrp", g => g.map(x => x.textContent)), ["Leagues","Europe","International"]);
   eq(await p.$$eval("#compList .crow .ic svg", s => s.length), 11, "every row has a drawn flag or badge");
   await p.click('#compQuick [data-q="Leagues"]');
-  eq(await p.textContent("#compCount"), "7 of 10 ticked");
+  eq(await p.textContent("#compCount"), "7 of 10 on");
   await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
   await p.click("#compDone"); await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "5 competitions");
   // none ticked: Done waits
   await p.click("#compBtn"); for (const c of ["pl","laliga","bund","seriea","ligue1"]) await p.click(`#compList [data-c="${c}"]`);
-  eq([await p.textContent("#compCount"), await p.$eval("#compDone", b => b.disabled)], ["Tick at least one", true]);
+  eq([await p.textContent("#compCount"), await p.$eval("#compDone", b => b.disabled)], ["Turn at least one on", true]);
   await p.click('#compList [data-c="wc"]'); await p.click('#compList [data-c="euro"]');
   await p.mouse.click(195, 30); // a tap above the panel closes it too
   await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });

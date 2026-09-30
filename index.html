@@ -232,19 +232,14 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 .comptrig .flags .ic{width:24px;height:17px;margin-right:-4px}
 .comptrig .flags .ic svg{width:24px;height:16px;border-radius:3px;box-shadow:0 0 0 1.5px #2a0630}
 .comptrig .flags .ic.crest svg{width:20px;height:20px}
-.comptrig .flags .ic.five{width:48px}
-.comptrig .flags .ic.five svg{width:48px;height:15px}
 .comptrig .sum{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:8px}
 .comptrig .chev{color:var(--muted)}
 .ic{flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:21px;vertical-align:middle}
 .ic svg{display:block;width:30px;height:20px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 .ic.crest svg{box-shadow:none;border-radius:0;width:24px;height:24px}
-.ic.five svg{width:52px;height:16px;box-shadow:none;border-radius:0}
-.ic.five{width:52px}
 .chip .ic{width:auto;height:1em;margin-right:6px}
 .chip .ic svg{width:1.35em;height:.9em;border-radius:2px}
 .chip .ic.crest svg{width:1.1em;height:1.1em}
-.chip .ic.five svg{width:3.2em;height:1em}
 #compSheet{--band:color-mix(in srgb,var(--topc) 45%,#000);place-items:end center;padding:0}
 .csheet{position:relative;z-index:1;width:min(100%,480px);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:#2a0630;border-radius:22px 22px 0 0;border-top:1.5px solid var(--slotline);padding-bottom:env(safe-area-inset-bottom,0px);animation:sheetUp .28s cubic-bezier(.2,.9,.3,1) both}
 @keyframes sheetUp{from{transform:translateY(100%)}}
@@ -256,14 +251,13 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 .quick button[aria-pressed="true"]{background:#fff;color:#38003c;border-color:#fff}
 .cgrp{padding:12px 16px 4px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
 .crow{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;padding:9px 16px;text-align:left;font-weight:600;font-size:1.02rem;min-height:46px;color:var(--ink)}
-.crow .box{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid rgba(255,255,255,.45);display:grid;place-items:center}
-.crow .box svg{width:14px;height:14px;opacity:0}
-.crow .ic{width:52px;justify-content:flex-start}
+.crow .ic{width:34px}
+.crow .tsw{flex:none;width:42px;height:25px;border-radius:999px;background:var(--panel2);border:1.5px solid var(--slotline);position:relative;transition:background .2s}
+.crow .tsw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s}
 .crow .nm{flex:1;min-width:0}
-.crow[aria-checked="true"] .box{background:linear-gradient(135deg,#04f5ff,#00ff85);border-color:transparent}
-.crow[aria-checked="true"] .box svg{opacity:1}
+.crow[aria-checked="true"] .tsw{background:linear-gradient(90deg,#00ff85,#04f5ff);border-color:transparent}
+.crow[aria-checked="true"] .tsw::after{transform:translateX(17px)}
 .crow.soon{opacity:.45;cursor:default}
-.crow.soon .box{border-style:dashed}
 .crow .tag{font-size:.72rem;font-weight:700;color:var(--muted);border:1px solid var(--slotline);border-radius:999px;padding:2px 8px}
 .csfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 16px 12px;border-top:1px solid var(--slotline);font-size:.88rem;color:var(--muted)}
 .csdone{background:#fff;color:#38003c;border:0;border-radius:999px;padding:9px 24px;font-weight:700}
@@ -1880,13 +1874,9 @@ const BADGE = {
   wc:'<path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/>'
 };
 const CAT_FLAG = { pl:"eng", laliga:"esp", bund:"ger", seriea:"ita", ligue1:"fra", spfl:"sco", euro:"eu" };
-let flagClip = 0;
 function compIcon(cat){
-  if (cat==="top5"){ // the five countries' flags, overlapping
-    const id = "c5-" + (flagClip++);
-    return `<span class="ic five" aria-hidden="true"><svg viewBox="0 0 52 16"><defs><clipPath id="${id}"><circle r="7.2"/></clipPath></defs>` + ["eng","esp","ger","ita","fra"].map((f, i) =>
-      `<g transform="translate(${8+i*9} 8)"><g clip-path="url(#${id})"><g transform="translate(-10.8 -7.2) scale(.72)">${FLAG[f]}</g></g><circle r="7.2" fill="none" stroke="#2a0630" stroke-width="1.3"/></g>`).join("") + `</svg></span>`;
-  }
+  if (cat==="top5") // five stripes, one colour from each country's flag: England, Spain, Germany, Italy, France
+    return `<span class="ic" aria-hidden="true"><svg viewBox="0 0 30 20">${["#ce1124","#f1bf00","#111111","#009246","#0055a4"].map((c, i) => `<rect x="${i*6}" width="6" height="20" fill="${c}"/>`).join("")}</svg></span>`;
   if (BADGE[cat]) return `<span class="ic crest" aria-hidden="true"><svg viewBox="0 0 24 24">${BADGE[cat]}</svg></span>`;
   return CAT_FLAG[cat] ? `<span class="ic" aria-hidden="true"><svg viewBox="0 0 30 20">${FLAG[CAT_FLAG[cat]]}</svg></span>` : "";
 }
@@ -1915,8 +1905,7 @@ function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ cat
   cfg.cats = cats.length ? cats : [...ALL_CATS];
   cfg.allLevels = !!(s && s.allLevels);
 })();
-const tickSvg = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="#1a0020" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-let sheetCats = null; // the ticks being changed in the open panel
+let sheetCats = null; // the competitions being switched on and off in the open panel
 function renderCompBtn(){
   $("compFlags").innerHTML = cfg.cats.slice(0, 4).map(compIcon).join("");
   $("compSum").textContent = catsLabel();
@@ -1926,9 +1915,9 @@ function renderSheet(){
   const on = sheetCats, scroll = document.querySelector("#compSheet .cscroll"), top = scroll.scrollTop;
   $("compQuick").innerHTML = QUICK.map(([n, cs]) => `<button type="button" data-q="${n}" aria-pressed="${sameCats(on, cs)}">${n}</button>`).join("");
   $("compList").innerHTML = COMP_GROUPS.map(([g, cs]) => `<div class="cgrp">${g}</div>` + cs.map(c => PLAYABLE(c)
-    ? `<button type="button" class="crow" role="checkbox" aria-checked="${on.includes(c)}" data-c="${c}"><span class="box">${tickSvg}</span>${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span></button>`
-    : `<div class="crow soon" aria-disabled="true"><span class="box"></span>${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span><span class="tag">Coming later</span></div>`).join("")).join("");
-  $("compCount").textContent = on.length ? `${on.length} of ${ALL_CATS.length} ticked` : "Tick at least one";
+    ? `<button type="button" class="crow" role="switch" aria-checked="${on.includes(c)}" data-c="${c}">${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span><span class="tsw" aria-hidden="true"></span></button>`
+    : `<div class="crow soon" aria-disabled="true">${compIcon(c)}<span class="nm">${CAT_NAME[c]}</span><span class="tag">Coming later</span></div>`).join("")).join("");
+  $("compCount").textContent = on.length ? `${on.length} of ${ALL_CATS.length} on` : "Turn at least one on";
   $("compDone").disabled = !on.length;
   scroll.scrollTop = top;
 }
