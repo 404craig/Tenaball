@@ -286,7 +286,7 @@ export class Room extends DurableObject {
       if (await this.load()) return fail(409, "taken");
       const s = b.settings || {}, pick = (v, ok, d) => ok.includes(v) ? v : d;
       this.state = { code: b.code, host: b.host, status: "lobby", game: 1, seq: 0, ver: b.ver, created: Date.now(),
-        settings: { rounds: pick(s.rounds, [3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all") },
+        settings: { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all") },
         players: { [b.host]: { name: b.name, n: 0 } } };
       await this.save();
       return json({ code: b.code, room: this.publicRoom() });

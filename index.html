@@ -241,7 +241,17 @@ body[data-cat="euro"]{ /* Euros: navy with the multicoloured tournament slices *
 .chip .ic{width:auto;height:1em;margin-right:6px}
 .chip .ic svg{width:1.35em;height:.9em;border-radius:2px}
 .chip .ic.crest svg{width:1.1em;height:1.1em}
-#compSheet{--band:color-mix(in srgb,var(--topc) 45%,#000);place-items:end center;padding:0}
+#compSheet,#infoSheet{--band:color-mix(in srgb,var(--topc) 45%,#000);place-items:end center;padding:0}
+/* section info: a small i next to each heading, opening a slide-up panel */
+.lblrow{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.lblrow>label{margin:0!important;font-weight:600}
+.difflbl .lblrow{margin:0}
+.finfo{flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--slotline);background:var(--panel);color:var(--muted);font:italic 700 .72rem/1 Georgia,serif;display:grid;place-items:center;padding:0;position:relative}
+.finfo::after{content:"";position:absolute;inset:-12px} /* a bigger target for thumbs */
+.infobody{padding:6px 16px 10px}
+.infobody p{margin:0 0 10px;color:var(--muted);line-height:1.5}
+.infobody p strong{color:var(--ink)}
+.howbtn{background:var(--panel);border:1.5px solid var(--slotline);border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--ink)}
 .csheet{position:relative;z-index:1;width:min(100%,480px);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:#2a0630;border-radius:22px 22px 0 0;border-top:1.5px solid var(--slotline);padding-bottom:env(safe-area-inset-bottom,0px);animation:sheetUp .28s cubic-bezier(.2,.9,.3,1) both}
 @keyframes sheetUp{from{transform:translateY(100%)}}
 .csheet .grab{width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.3);margin:8px auto 2px}
@@ -570,14 +580,9 @@ body[data-cat="top5"]{--hit:linear-gradient(90deg,#7cffb2,#ffd54a 55%,#f5b700); 
 .seg button{white-space:nowrap;padding-left:8px;padding-right:8px}
 #catSeg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 #catSeg button{min-width:0;font-size:.95rem}
-.credit{position:relative;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem;margin:34px 0 6px;min-height:34px}
+.credit{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--muted);font-size:.9rem;margin:30px 0 6px}
+.credit .howbtn{order:-1}
 .credit span{opacity:.85}
-.infobtn{position:absolute;right:0;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:1.5px solid var(--slotline);background:var(--panel);font-style:italic;font-weight:700;font-family:Georgia,serif;font-size:.95rem;display:grid;place-items:center;padding:0}
-.tip{position:fixed;right:16px;bottom:calc(64px + env(safe-area-inset-bottom,0px));z-index:40;width:min(340px,calc(100vw - 32px));background:#2a0630;border:1px solid var(--slotline);border-radius:16px;padding:14px 16px;font-size:.92rem;box-shadow:0 18px 50px rgba(0,0,0,.55);animation:cardIn .25s both}
-.tip::after{content:"";position:absolute;right:14px;bottom:-7px;width:14px;height:14px;background:#2a0630;border-right:1px solid var(--slotline);border-bottom:1px solid var(--slotline);transform:rotate(45deg)}
-.tip p{margin:0 0 8px}.tip p:last-child{margin:0}
-.tiphead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.tipclose{width:30px;height:30px;border-radius:50%;border:0;background:var(--panel2);font-size:.85rem;padding:0}
 .namebox{position:relative;margin-bottom:8px}
 .namebox input{margin:0;padding-right:48px}
 .clearx{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:0;background:var(--panel2);font-size:.9rem}
@@ -714,17 +719,18 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     </div></div>
   <div class="field names" id="nameFields"></div>
 
-  <div class="field"><label>Rounds</label>
+  <div class="field"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
     <div class="seg" id="roundSeg">
+      <button type="button" data-v="1" aria-pressed="false">1</button>
       <button type="button" data-v="3" aria-pressed="false">3</button>
       <button type="button" data-v="5" aria-pressed="true">5</button>
       <button type="button" data-v="7" aria-pressed="false">7</button>
     </div></div>
 
-  <div class="field"><label id="compLbl">Competitions</label>
+  <div class="field"><div class="lblrow"><label id="compLbl">Competitions</label><button type="button" class="finfo" data-info="comps" aria-label="About competitions">i</button></div>
     <button type="button" class="comptrig" id="compBtn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="compLbl compSum"><span class="flags" id="compFlags" aria-hidden="true"></span><span class="sum" id="compSum">All competitions</span><span class="chev" aria-hidden="true">▾</span></button></div>
 
-  <div class="field"><label>Shot clock per answer</label>
+  <div class="field"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
     <div class="seg" id="clockSeg">
       <button type="button" data-v="0" aria-pressed="false">Off</button>
       <button type="button" data-v="15" aria-pressed="false">15 sec</button>
@@ -732,13 +738,13 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
       <button type="button" data-v="60" aria-pressed="false">60 sec</button>
     </div></div>
 
-  <div class="field"><label>Repeated answers</label>
+  <div class="field"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
     <div class="seg" id="repeatSeg">
       <button type="button" data-v="all" aria-pressed="true">Fill all at once</button>
       <button type="button" data-v="one" aria-pressed="false">One per guess</button>
     </div></div>
 
-  <div class="field"><div class="difflbl"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
+  <div class="field"><div class="difflbl"><div class="lblrow"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="finfo" data-info="diff" aria-label="About difficulty">i</button></div><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
     <div id="diffWrap"><input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
     <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div></div>
   </div>
@@ -749,14 +755,13 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 
   <footer class="credit">
     <span>Created by Aiden and Craig</span>
-    <button type="button" class="infobtn" id="infoBtn" aria-label="How to play" aria-expanded="false" aria-controls="infoTip">i</button>
+    <button type="button" class="howbtn" id="infoBtn" data-info="how">How to play</button>
   </footer>
-  <div class="tip hidden" id="infoTip" role="dialog" aria-label="How to play">
-    <div class="tiphead"><strong>How to play</strong><button type="button" class="tipclose" id="infoClose" aria-label="Close">✕</button></div>
-    <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. With 2 or 3 players you take turns; solo, it's you against the board.</p>
+  <template id="howText">
+    <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. With 2 to 4 players you take turns; solo, it's you against the board.</p>
     <p>The tower then scans up from the bottom. If it stops on your club, you score a point for every slot that club fills. If it runs all the way to the top, you lose a life.</p>
     <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
-  </div>
+  </template>
 </section>
 
 <section id="lobby" class="hidden">
@@ -964,6 +969,13 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <h3 id="compSheetTitle">Competitions</h3>
   <div class="cscroll"><div class="quick" id="compQuick"></div><div id="compList"></div></div>
   <div class="csfoot"><span id="compCount"></span><button type="button" class="csdone" id="compDone">Done</button></div>
+</div></div>
+
+<div class="overlay sheetwrap hidden" id="infoSheet" role="dialog" aria-modal="true" aria-labelledby="infoTitle"><div class="csheet">
+  <div class="grab" aria-hidden="true"></div>
+  <h3 id="infoTitle"></h3>
+  <div class="cscroll infobody" id="infoBody"></div>
+  <div class="csfoot"><span></span><button type="button" class="csdone" id="infoDone">Got it</button></div>
 </div></div>
 
 <div class="overlay hidden" id="banner"><div class="banner">
@@ -1996,7 +2008,7 @@ drawNames();
 function show(id){ ["login","setup","lobby","game","end"].forEach(s => $(s).classList.toggle("hidden", s!==id)); document.body.classList.toggle("ingame", ["lobby","game","end"].includes(id)); window.scrollTo(0,0); }
 function theme(cat){ document.body.dataset.cat = cat; }
 // Android Chrome (and iOS Safari before 26) colour the browser bar from theme-color: keep it on the colour at the top of the screen
-const CHROME_OVERLAYS = ["winTrophy","winOverlay","outOverlay","banner","intro"];
+const CHROME_OVERLAYS = ["winTrophy","winOverlay","outOverlay","banner","intro","compSheet","infoSheet"];
 function cssHex(c){
   let m = /rgba?\(([^)]+)\)/.exec(c), v;
   if (m) v = m[1].split(/[\s,\/]+/).slice(0,3).map(Number);
@@ -2015,14 +2027,23 @@ function syncChrome(){
   CHROME_OVERLAYS.forEach(id => watch.observe($(id), { attributes: true, attributeFilter: ["class"] }));
   syncChrome(); }
 $("startBtn").onclick = () => { ac(); startGame(); };
-function placeTip(){ const b=$("infoBtn").getBoundingClientRect(), t=$("infoTip"); t.style.bottom = (window.innerHeight - b.top + 12) + "px"; t.style.right = Math.max(16, window.innerWidth - b.right - 2) + "px"; }
-function tip(open){ $("infoTip").classList.toggle("hidden", !open); $("infoBtn").setAttribute("aria-expanded", open); if (open) placeTip(); }
-$("infoBtn").onclick = e => { e.stopPropagation(); tip($("infoTip").classList.contains("hidden")); };
-$("infoClose").onclick = () => tip(false);
-document.addEventListener("click", e => { if (!$("infoTip").classList.contains("hidden") && !e.target.closest("#infoTip")) tip(false); });
-document.addEventListener("keydown", e => { if (e.key==="Escape") tip(false); });
-window.addEventListener("resize", () => { if (!$("infoTip").classList.contains("hidden")) placeTip(); });
-window.addEventListener("scroll", () => { if (!$("infoTip").classList.contains("hidden")) placeTip(); }, {passive:true});
+// section info and How to play, in a slide-up panel like the competitions one
+const INFO = {
+  rounds: ["Rounds", "<p>How many boards you play. Each round is one board with 10 answers to find.</p><p>Points carry over from round to round, and the highest total at full time wins. Pick 1 for a quick game.</p>"],
+  comps: ["Competitions", "<p>Choose which competitions the questions come from. Each round picks one of the competitions you've switched on, never the same one twice in a row.</p><p>Switch on just one and every round comes from it. Your choices are remembered on this phone.</p>"],
+  clock: ["Shot clock per answer", "<p>How long each player has to lock in an answer on their turn.</p><p>If the clock runs out, that player loses a life, just like a wrong answer. Choose Off to take as long as you like.</p>"],
+  repeat: ["Repeated answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill all at once:</strong> naming it fills every slot it's in, with a point for each.</p><p><strong>One per guess:</strong> each guess fills one slot, so it has to be named again on a later turn to fill the next.</p>"],
+  diff: ["Difficulty", "<p><strong>Easy</strong> boards are the best-known facts. <strong>Hard</strong> ones go deeper into older seasons and smaller clubs, with <strong>Medium</strong> in between.</p><p>Some competitions don't have questions at every level yet. Those rounds use the nearest level, and a note under the slider says so.</p><p>Switch on <strong>All levels</strong> for a random mix of Easy, Medium and Hard, with a fair share of each.</p>"],
+  how: ["How to play", ""]
+};
+INFO.how[1] = $("howText").innerHTML.trim();
+let infoFrom = null;
+function openInfo(k, from){ const [t, h] = INFO[k]; $("infoTitle").textContent = t; $("infoBody").innerHTML = h; infoFrom = from; $("infoSheet").classList.remove("hidden"); $("infoDone").focus({ preventScroll:true }); }
+function closeInfo(){ if ($("infoSheet").classList.contains("hidden")) return; $("infoSheet").classList.add("hidden"); if (infoFrom) infoFrom.focus({ preventScroll:true }); infoFrom = null; }
+document.addEventListener("click", e => { const b = e.target.closest("[data-info]"); if (b){ e.preventDefault(); openInfo(b.dataset.info, b); } });
+$("infoDone").onclick = closeInfo;
+$("infoSheet").addEventListener("click", e => { if (e.target === $("infoSheet")) closeInfo(); });
+document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); });
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
 $("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
 $("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); theme("pl"); show("setup"); } };
@@ -2519,7 +2540,7 @@ function shareSummary(sorted){
   return { top, winners, solo, zero: solo && top===0,
     rank: p => 1 + sorted.filter(q=>q.score>p.score).length,
     names: winners.map(w=>w.name).join(" and "),
-    meta: [`${cfg.rounds} Rounds`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
+    meta: [`${cfg.rounds} Round${cfg.rounds===1?"":"s"}`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
 }
 // *text* is bold in WhatsApp
 function shareText(sorted){
@@ -3165,7 +3186,7 @@ function renderLobby(d){
   for (let i=list.length; i<4; i++){ const r = document.createElement("div"); r.className = "lobbyrow empty"; r.textContent = "Waiting for a player to join…"; box.appendChild(r); }
   list.forEach(p => ROOM.seen.add(p.uid));
   const s = d.settings;
-  $("lobbySet").innerHTML = [`${s.rounds} rounds`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
+  $("lobbySet").innerHTML = [`${s.rounds} round${s.rounds===1?"":"s"}`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
   $("lobbyStart").classList.toggle("hidden", !isHost);
   $("lobbyStart").disabled = list.length < 2;
   $("lobbyStart").textContent = list.length < 2 ? "Waiting for players to join" : `Start game with ${list.length} players`;

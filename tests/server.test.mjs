@@ -170,6 +170,7 @@ await test("rooms: a host creates a game and friends join over a live connection
   // ticked competitions: only short keys are kept, without repeats; level 3 is All levels
   const r2 = await newRoom(craig, { rounds: 5, cats: ["wc", "euro", "wc", "<b>", 7, "averyveryverylongkey"], clock: 30, level: 3, repeat: "all" });
   eq([r2.room.settings.cats, r2.room.settings.level], [["wc", "euro"], 3]);
+  eq((await newRoom(craig, { rounds: 1 })).room.settings.rounds, 1, "a 1-round game");
   const r3 = await newRoom(craig, { rounds: 5, cats: "pl", level: 9 });
   eq([r3.room.settings.cats, r3.room.settings.level], [[], 1], "anything else falls back");
   const h = live(r.code, craig); await h.opened;
