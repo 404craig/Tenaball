@@ -2569,6 +2569,11 @@ function shareText(sorted){
     "🎮 " + s.meta.join("  •  "), "",
     `*Think you can beat ${s.solo ? s.top : s.names}?*`, shareUrl() ].join("\n");
 }
+// a picture for the card: the page's own copy once it's decoded, otherwise a fresh one
+async function cardImg(el){
+  try { if (el.decode) await el.decode(); if (el.complete && el.naturalWidth) return el; } catch(e){}
+  return loadImg(el.src);
+}
 const loadImg = src => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = src; });
 function pillPath(x, y, w, h, r, c){ c.beginPath(); c.moveTo(x+r,y); c.arcTo(x+w,y,x+w,y+h,r); c.arcTo(x+w,y+h,x,y+h,r); c.arcTo(x,y+h,x,y,r); c.arcTo(x,y,x+w,y,r); c.closePath(); }
 function fitText(c, t, max){ if (c.measureText(t).width <= max) return t; while (t.length > 1 && c.measureText(t+"…").width > max) t = t.slice(0,-1); return t+"…"; }
@@ -2595,11 +2600,19 @@ async function shareCard(sorted){
   const tTop = 64+lh+30, tBottom = headY-80, th = Math.max(180, tBottom-tTop), tw = th*820/777, tx = (W-tw)/2;
   const glow = c.createRadialGradient(W/2, tTop+th*.62, 0, W/2, tTop+th*.62, tw*.75);
   glow.addColorStop(0,"rgba(60,255,210,.45)"); glow.addColorStop(.45,"rgba(4,245,255,.16)"); glow.addColorStop(1,"rgba(0,0,0,0)"); c.fillStyle = glow; c.fillRect(0, tTop-60, W, th+160);
+  // each picture on its own, so one that fails to load can't take the others with it
+  for (const r of document.querySelectorAll("#winTrophy .rib")){
+    try { const im = await loadImg(r.querySelector("image").getAttribute("href")), st = r.style;
+      c.drawImage(im, tx+tw*parseFloat(st.left)/100, tTop+th*parseFloat(st.top)/100, tw*parseFloat(st.width)/100, th*parseFloat(st.height)/100); } catch(e){}
+  }
+  // the trophy: use the picture already on the page (a big image, which a phone can fail to load a second copy of mid-animation),
+  // then check it really landed on the card
+  let trophy = false;
   try {
-    const t = document.querySelector("#winTrophy .tbase"), ribs = [...document.querySelectorAll("#winTrophy .rib")];
-    for (const r of ribs){ const im = await loadImg(r.querySelector("image").getAttribute("href")), st = r.style;
-      c.drawImage(im, tx+tw*parseFloat(st.left)/100, tTop+th*parseFloat(st.top)/100, tw*parseFloat(st.width)/100, th*parseFloat(st.height)/100); }
-    c.drawImage(await loadImg(t.src), tx, tTop, tw, th);
+    const t = document.querySelector("#winTrophy .tbase"), cx = Math.round(tx+tw/2), cy = Math.round(tTop+th*.3);
+    const before = c.getImageData(cx, cy, 1, 1).data.join();
+    c.drawImage(await cardImg(t), tx, tTop, tw, th);
+    trophy = c.getImageData(cx, cy, 1, 1).data.join() !== before;
   } catch(e){}
   // headline
   c.textAlign = "center"; c.textBaseline = "alphabetic"; c.fillStyle = "#fff";
@@ -2624,14 +2637,21 @@ async function shareCard(sorted){
   c.font = F(800, 48); c.fillStyle = "#fff"; c.fillText(fitText(c, `Think you can beat ${s.solo ? s.top : s.names}?`, W-120), W/2, ctaY);
   c.font = F(700, 36); c.fillStyle = "#04f5ff"; c.fillText(shareUrl().replace(/^https?:\/\//,"").replace(/\/$/,""), W/2, urlY);
   const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", .92));
-  return blob ? new File([blob], "tenaball-results.jpg", {type:"image/jpeg"}) : null;
+  return { file: blob ? new File([blob], "tenaball-results.jpg", {type:"image/jpeg"}) : null, trophy };
 }
 let SHARE = null;
 // build the card as soon as the final table exists, so tapping Share can open the share sheet straight away
 function prepareShare(sorted){
   SHARE = { text: shareText(sorted), file: null };
   const mine = SHARE;
-  shareCard(sorted).then(f => { mine.file = f; }).catch(() => {});
+  // if the trophy didn't make it onto the card (the phone was busy with the trophy animation), draw it again a little later
+  let tries = 0;
+  const build = () => shareCard(sorted).then(r => {
+    if (SHARE !== mine) return;
+    if (r.file && (r.trophy || !mine.file)) mine.file = r.file;
+    if (!r.trophy && ++tries < 3) setTimeout(build, 2500);
+  }).catch(() => {});
+  build();
   $("shareBtn").onclick = () => shareResults(true);
   $("shareTextBtn").onclick = () => shareResults(false);
 }
