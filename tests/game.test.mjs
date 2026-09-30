@@ -167,7 +167,8 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(rows.map(r => r[0]), ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","Scottish Premiership","Top 5 Leagues","Champions League","Europa League","World Cup","Euros"]);
   eq(rows.filter(r => r[2]).map(r => r[0]), ["Europa League"], "Europa League is shown as coming later");
   eq(await p.$$eval("#compList .cgrp", g => g.map(x => x.textContent)), ["Leagues","Europe","International"]);
-  eq(await p.$$eval("#compList .crow .ic svg", s => s.length), 11, "every row has a drawn flag or badge");
+  eq(await p.$$eval("#compList .crow .ic img, #compList .crow .ic svg", s => s.length), 11, "every row has a circle flag, logo or badge");
+  eq(await p.$$eval("#compList .crow .ic img", s => s.length), 9, "the leagues, Euros, Champions League and Europa League use the pack's images");
   await p.click('#compQuick [data-q="Leagues"]');
   eq(await p.textContent("#compCount"), "7 of 10 on");
   await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
@@ -180,7 +181,7 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   await p.mouse.click(195, 30); // a tap above the panel closes it too
   await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "International only");
-  eq(await p.$$eval("#compFlags .ic svg", s => s.length), 2);
+  eq(await p.$$eval("#compFlags .ic img, #compFlags .ic svg", s => s.length), 2);
   await p.reload(); await until(() => visible(p, "#setup"));
   eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro"], "International only"], "remembered after a reload");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
@@ -274,42 +275,88 @@ await test("badges: every game club but four gets a crest by its game name, and 
   eq([r.every, r.valid], [0, true], "every name that has a badge draws an image, and every badge has its picture");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
-await test("badges: crests are 24px on the board and 15px in suggestions, on a light disc only where the surface is dark", async () => {
-  const p = await phone(browser, "disc"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+await test("badges: crests are 30px on the board and 24px in suggestions, transparent, with a soft backing only on the dark ones", async () => {
+  const p = await phone(browser, "bk"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
-  // suggestions while typing: 15px crests on a light disc
-  await p.fill("#guessInput", "ma"); await until(() => p.evaluate(() => document.querySelectorAll("#sugg button").length > 0), { what: "suggestions" });
-  const sg = await p.evaluate(() => [...document.querySelectorAll("#sugg button")].map(b => { const i = b.querySelector(".bcell.crest img"); if (!i) return null; const c = getComputedStyle(i); return [b.textContent, c.width, c.height, c.backgroundColor, c.paddingLeft]; }));
+  // suggestions while typing: 22px, transparent, backed only when dark (Spurs is, Man City is not)
+  await p.fill("#guessInput", "sp"); await until(() => p.evaluate(() => document.querySelectorAll("#sugg button").length > 0), { what: "suggestions" });
+  const sg = await p.evaluate(() => [...document.querySelectorAll("#sugg button")].map(b => { const c = b.querySelector(".bcell.crest"), i = c && c.querySelector("img"); if (!i) return null; const s = getComputedStyle(i); return [b.textContent, s.width, s.height, c.classList.contains("bk"), s.backgroundImage.startsWith("radial-gradient")]; }));
   assert(sg.some(Boolean), "suggestions show crests: " + JSON.stringify(sg));
-  for (const x of sg.filter(Boolean)) eq(x.slice(1), ["15px", "15px", "rgba(255, 255, 255, 0.92)", "2px"], "suggestion crest for " + x[0]);
-  // a found answer: bright row, a plain 24px crest with no disc
+  for (const x of sg.filter(Boolean)) eq([x[1], x[2], x[4]], ["24px", "24px", x[3]], "suggestion crest for " + x[0] + ": backed exactly when it is in BADGE_DARK");
+  assert(sg.some(x => x && x[0].includes("Spurs") && x[3]), "Spurs is backed in the pills");
+  // a found answer: bright row, a plain 28px crest with no backing even for a dark crest
   await p.fill("#guessInput", "Man Utd"); await p.click("#lockBtn");
   await until(() => p.evaluate(() => document.querySelectorAll("#tower .slot.found").length > 0), { what: "a found answer" });
-  const f = await p.evaluate(() => { const i = document.querySelector("#tower .slot.found .bcell.crest img"), c = getComputedStyle(i); return [c.width, c.height, c.backgroundColor, c.paddingLeft]; });
-  eq(f, ["24px", "24px", "rgba(0, 0, 0, 0)", "0px"], "a found row is bright, so no disc");
-  // the round over: every missed answer is revealed on a dark row, each crest on a light disc (Spurs is on this board)
+  const f = await p.evaluate(() => { const i = document.querySelector("#tower .slot.found .bcell.crest img"), c = getComputedStyle(i); return [c.width, c.height, c.backgroundImage, c.paddingLeft]; });
+  eq(f, ["30px", "30px", "none", "0px"], "a found row is bright, so no backing");
+  // the round over: missed answers on dark rows, transparent crests, backed only where listed (Spurs is on this board)
   await ready(p); await p.click("#passBtn"); await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
-  const m = await p.evaluate(() => [...document.querySelectorAll("#tower .slot.missed")].map(s => { const i = s.querySelector(".bcell.crest img"); if (!i) return [s.textContent.trim(), null]; const c = getComputedStyle(i); return [s.textContent.trim(), c.width, c.backgroundColor, c.paddingLeft, i.naturalWidth > 0]; }));
+  const m = await p.evaluate(() => [...document.querySelectorAll("#tower .slot.missed")].map(s => { const c = s.querySelector(".bcell.crest"), i = c && c.querySelector("img"); if (!i) return [s.textContent.trim(), null]; const st = getComputedStyle(i); return [s.textContent.trim(), st.width, c.classList.contains("bk"), st.backgroundImage.startsWith("radial-gradient"), st.borderRadius === "0px", i.naturalWidth > 0]; }));
   assert(m.length >= 8, "missed answers are shown: " + m.length);
-  for (const x of m) eq(x.slice(1), ["24px", "rgba(255, 255, 255, 0.92)", "2px", true], "missed crest for " + x[0]);
-  assert(m.some(x => /Spurs/.test(x[0])), "Spurs, a dark crest, is on the board");
+  for (const x of m) eq([x[1], x[3], x[4], x[5]], ["30px", x[2], true, true], "missed crest for " + x[0] + ": 30px, never a white circle, backed exactly when listed");
+  assert(m.some(x => /Spurs/.test(x[0]) && x[2]), "Spurs, a dark crest, is backed");
+  assert(m.some(x => !x[2]), "light crests have no backing");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
-await test("badges: Spurs, Juventus and Inter Miami, the dark crests, all sit on the disc", async () => {
+await test("badges: Spurs, Juventus and Inter Miami are listed as dark and get the backing on dark surfaces only", async () => {
   const p = await phone(browser, "dark"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const r = await p.evaluate(async () => {
-    const host = document.createElement("div"); host.className = "t"; host.style.cssText = "position:fixed;left:0;top:0;width:360px;z-index:99";
-    host.innerHTML = ["Spurs", "Juventus", "Inter Miami"].map(n => `<div class="slot missed"><span class="club">${badge(n)}${n}</span></div><div class="sugg"><button type="button">${badge(n)}${n}</button></div><div class="slot found"><span class="club">${badge(n)}${n}</span></div>`).join("");
+    const host = document.createElement("div"); host.style.cssText = "position:fixed;left:0;top:0;width:360px;z-index:99";
+    host.innerHTML = ["Spurs", "Juventus", "Inter Miami", "Man Utd"].map(n => `<div class="slot missed"><span class="club">${badge(n)}${n}</span></div><div class="sugg"><button type="button">${badge(n)}${n}</button></div><div class="slot found"><span class="club">${badge(n)}${n}</span></div>`).join("");
     document.body.appendChild(host);
     await Promise.all([...host.querySelectorAll("img")].map(i => i.decode()));
-    const at = sel => [...host.querySelectorAll(sel)].map(i => { const c = getComputedStyle(i); return [i.naturalWidth > 0, c.backgroundColor, c.paddingLeft]; });
-    const out = { missed: at(".slot.missed .bcell.crest img"), pill: at(".sugg .bcell.crest img"), found: at(".slot.found .bcell.crest img") };
+    const at = sel => [...host.querySelectorAll(sel)].map(i => getComputedStyle(i).backgroundImage.startsWith("radial-gradient"));
+    const out = { missed: at(".slot.missed .bcell.crest img"), pill: at(".sugg .bcell.crest img"), found: at(".slot.found .bcell.crest img"), listed: ["spurs", "juventus", "inter-miami"].map(k => BADGE_DARK.has(k)) };
     host.remove(); return out;
   });
-  const disc = [true, "rgba(255, 255, 255, 0.92)", "2px"], plain = [true, "rgba(0, 0, 0, 0)", "0px"];
-  eq(r.missed, [disc, disc, disc], "missed rows"); eq(r.pill, [disc, disc, disc], "suggestion pills"); eq(r.found, [plain, plain, plain], "found rows");
+  eq(r.listed, [true, true, true], "the three named dark crests are in the list");
+  eq(r.missed, [true, true, true, false], "missed rows: the dark three are backed, Man Utd is not");
+  eq(r.pill, [true, true, true, false], "suggestion pills: the same");
+  eq(r.found, [false, false, false, false], "found rows are bright, so never backed");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("badges: country boards use circle flags, and the three countries that no longer exist get a drawn circle flag", async () => {
+  const p = await phone(browser, "flags"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(async () => {
+    const all = Object.keys(FLAGS), none = all.filter(n => !(NATION_FLAG[n] && FLAG_IMG[NATION_FLAG[n]]));
+    const host = document.createElement("div"); host.style.cssText = "position:fixed;left:0;top:0;width:360px;z-index:99";
+    host.innerHTML = `<div class="slot found"><span class="club">${badgeN("Brazil")}Brazil</span></div><div class="sugg"><button type="button">${badgeN("England")}England</button><button type="button">${badgeN("Soviet Union")}Soviet Union</button></div>`;
+    document.body.appendChild(host); await Promise.all([...host.querySelectorAll("img")].map(i => i.decode()));
+    const b = host.querySelector(".slot .bcell.fl img"), e = host.querySelector(".sugg .bcell.fl img"), cs = getComputedStyle(b), es = getComputedStyle(e);
+    const former = ["Czechoslovakia", "Soviet Union", "Yugoslavia"].map(n => { const h = document.createElement("div"); h.innerHTML = badgeN(n); const v = h.querySelector(".bcell.fl svg"); document.body.appendChild(h); const ok = !!v && v.getBoundingClientRect().width === 24 && getComputedStyle(v).borderRadius === "50%"; h.remove(); return ok; });
+    const out = { total: all.length, none, board: [cs.width, cs.borderRadius, b.naturalWidth > 0], pill: [es.width, es.borderRadius], emoji: host.querySelectorAll(".badge.flag").length, former, ni: NATION_FLAG["Northern Ireland"], wales: NATION_FLAG.Wales };
+    host.remove(); return out;
+  });
+  eq(r.none.sort(), ["Czechoslovakia", "Soviet Union", "Yugoslavia"], "only the three former states have no flag in the pack");
+  eq(r.board, ["24px", "50%", true], "a flag on the board is a 24px circle");
+  eq(r.pill, ["19px", "50%"], "a flag in a suggestion is a 19px circle");
+  eq([r.emoji, r.former], [0, [true, true, true]], "no emoji flags are left: the former states are drawn circles");
+  eq([r.ni, r.wales], ["gb-nir", "gb-wls"]);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+
+await test("badges: missed rows fade the name more than the crest, and year boards get a narrow label column so names fit", async () => {
+  const p = await phone(browser, "fade"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("wc-ru-1930"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  const mid = await p.evaluate(() => { const l = document.querySelector("#tower .slot .lab"); return [document.getElementById("tower").classList.contains("shortlab"), Math.round(l.getBoundingClientRect().width)]; });
+  eq(mid, [true, 54], "a board labelled by year has the narrow label column");
+  await p.click("#passBtn"); await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
+  const r = await p.evaluate(() => { const s = document.querySelector("#tower .slot.missed"), nm = s.querySelector(".nm"), f = s.querySelector(".bcell.fl"), c = getComputedStyle(nm);
+    return { club: getComputedStyle(s.querySelector(".club")).opacity, nm: c.opacity, ellipsis: c.textOverflow, nowrap: c.whiteSpace, flag: f ? getComputedStyle(f.querySelector("img")).width : null }; });
+  eq([r.club, r.nm, r.ellipsis, r.nowrap, r.flag], ["1", "0.65", "ellipsis", "nowrap", "24px"], "the name is faded to 65 percent and kept on one line");
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("badges: a club board has a normal label column, and thin crests are scaled up a little", async () => {
+  const p = await phone(browser, "scale"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => { const v = Object.values(BADGE_SCALE); return { n: v.length, min: Math.min(...v), max: Math.max(...v), thin: BADGE_SCALE["oldham"] || 0, round: BADGE_SCALE["man-utd"] || 1,
+    style: /transform:scale\(1\.\d+\)/.test(badge("Oldham")) && !/transform/.test(badge("Man Utd")) }; });
+  assert(r.n > 40 && r.min >= 1.03 && r.max <= 1.28, "a sensible range of scales: " + JSON.stringify(r));
+  assert(r.thin > 1.1 && r.round === 1 && r.style, "a thin crest (Oldham) is scaled up, a round one (Man Utd) is not: " + JSON.stringify(r));
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
