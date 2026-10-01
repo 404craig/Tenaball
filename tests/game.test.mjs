@@ -330,6 +330,23 @@ await test("Premier League season tables show each club's final points", async (
   eq(f, ["Tenable! Man Utd finished 8th with 60 pts. +1.", "60 pts"], "the message and the row show the points");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("each competition has a faint watermark at the top right of the game screen, kept within the screen", async () => {
+  const p = await phone(browser, "wmk"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => Q.find(q => q.cat === "ucl"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  const r = await p.evaluate(async () => {
+    const out = {};
+    for (const c of ALL_CATS){ theme(c); const i = document.getElementById("wmkImg"); await i.decode(); const b = i.parentNode.getBoundingClientRect(), s = getComputedStyle(i);
+      out[c] = [i.naturalWidth, s.opacity, b.right <= innerWidth + 0.5, getComputedStyle(i.parentNode).display]; }
+    theme("ucl");
+    const title = document.getElementById("titleLabel"), t = document.elementFromPoint(title.getBoundingClientRect().right - 4, title.getBoundingClientRect().top + 8);
+    return { out, cats: ALL_CATS, uel: !!WATERMARK.uel, scroll: document.documentElement.scrollWidth <= innerWidth, onTop: !t.closest(".wmk") };
+  });
+  for (const c of r.cats) eq([r.out[c][0], r.out[c][2], r.out[c][3]], [256, true, "block"], "watermark for " + c);
+  eq([r.out.pl[1], r.out.laliga[1], r.uel, r.scroll, r.onTop], ["0.13", "0.2", true, true, true], "white marks are fainter, the Europa League one is ready, no sideways scroll, text sits above it");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("badges: a found row on the Champions League board has no coloured bar across the top", async () => {
   const p = await phone(browser, "ucl"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const r = await p.evaluate(() => { document.body.dataset.cat = "ucl"; const h = document.createElement("div"); h.innerHTML = '<div class="slot found"><span class="club">x</span></div>'; document.body.appendChild(h);
