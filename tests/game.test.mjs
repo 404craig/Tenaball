@@ -75,27 +75,51 @@ await test("game: solo with 0 points, the table shows - rather than 1st, no trop
   eq(await p.textContent("#podium .pod .place"), "-");
   eq(await p.evaluate(() => [document.querySelector("#podium .pod").classList.contains("show"), document.querySelector("#podium .pod").classList.contains("first")]), [true, false], "the row shows, not styled as a winner");
   eq(await p.textContent("#winnerLabel"), "You scored 0 points.");
-  const gaps = await p.evaluate(() => { const r = s => document.querySelector(s).getBoundingClientRect(), n = r("#zeroNote"); return [Math.round(n.top - r("#podium .pod").bottom), Math.round(r("#end .row").top - n.bottom)]; });
+  const gaps = await p.evaluate(() => { const r = s => document.querySelector(s).getBoundingClientRect(), n = r("#banter"); return [Math.round(n.top - r("#podium .pod").bottom), Math.round(r("#end .row").top - n.bottom)]; });
   eq(gaps[1], gaps[0] * 2, "the gap under the line is twice the gap above it");
-  const line = await p.textContent("#zeroNote");
-  assert(await visible(p, "#zeroNote"), "the line shows under the table");
-  assert(await p.evaluate(l => ZERO_LINES.includes(l), line), "one of the three lines: " + line);
+  const line = await p.textContent("#banter");
+  assert(await visible(p, "#banter"), "the line shows under the table");
+  assert(await p.evaluate(l => BANTER.soloZero.includes(l), line), "one of the zero-score lines: " + line);
   const share = await p.evaluate(() => SHARE.text);
   assert(share.includes("scored 0 points.") && /\n- /.test(share), "the share message has no medal or place: " + share);
   assert(!share.includes("wins with"), "the share message doesn't call it a win");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
-await test("game: solo with points still gets the trophy, and no cheeky line", async () => {
+await test("game: solo with points still gets the trophy, then a line for the score under the table", async () => {
   const p = await phone(browser, "some"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.evaluate(() => { G.round = cfg.rounds; G.players[0].score = 4; endRound(); });
   await p.click("#nextBtn");
   await until(() => visible(p, "#winTrophy"), { what: "the trophy" });
-  assert(!(await visible(p, "#zeroNote")), "no cheeky line");
+  assert(!(await visible(p, "#banter")), "the line waits until the table is in");
+  await p.click("#winTrophy"); await until(() => visible(p, "#banter"), { what: "the banter line" });
+  const line = await p.textContent("#banter");
+  assert(await p.evaluate(l => BANTER.soloPoor.some(x => x.replace("{pts}", "4 points") === l), line), "4 of 30 is a poor score: " + line);
+  assert(await p.evaluate(l => SHARE.text.includes("_" + l + "_"), line), "the share message carries the line");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
+await test("banter: the line reacts to what happened in the table", async () => {
+  const p = await phone(browser, "banter"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const k = (scores, rounds = 1) => banterKind(scores, rounds * 10);
+    return {
+      solo: [k([0]), k([2]), k([5]), k([7]), k([9]), k([10]), k([21], 3), k([26], 3)],
+      multi: [k([0, 0]), k([4, 4, 1]), k([2, 1]), k([9, 1]), k([7, 2]), k([5, 3, 0]), k([5, 4]), k([4, 2, 2]), k([7, 5]), k([16, 14], 3)],
+      names: banterLine([{ name: "Craig", score: 3 }, { name: "Aiden", score: 3 }], 10).text,
+      every: Object.entries(BANTER).every(([kind, a]) => a.length >= 5 && a.every(l => !/\u2014/.test(l) && (l.match(/\{(\w+)\}/g) || []).every(t => ["{name}","{winner}","{winners}","{second}","{bottom}","{top}","{secondScore}","{bottomScore}","{lead}","{pts}","{topPts}"].includes(t))))
+    };
+  });
+  eq(r.solo, ["soloZero", "soloPoor", "soloMid", "soloGood", "soloGreat", "soloPerfect", "soloGood", "soloGreat"], "solo goes by the share of the game's slots");
+  eq(r.multi, ["allZero", "tie", "leastBad", "chasm", "runaway", "bottomZero", "close", "winMid", "winHigh", "close"], "multiplayer follows the table");
+  assert(!/\{/.test(r.names), "placeholders are filled: " + r.names);
+  assert(r.every, "every list has at least five lines, no em dashes and only known placeholders");
+  // the same result on two phones gives the same line
+  const two = await p.evaluate(() => { const g = [{ name: "Craig", score: 6 }, { name: "Aiden", score: 2 }]; localStorage.removeItem("tenaball-banter"); const a = banterLine(g, 10).text; localStorage.removeItem("tenaball-banter"); const b = banterLine(g, 10).text; const c = banterLine(g, 10).text; return [a === b, b !== c]; });
+  eq(two, [true, true], "same result, same line on a fresh phone; a phone doesn't repeat itself straight away");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
   const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));

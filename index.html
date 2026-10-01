@@ -892,7 +892,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 <section id="end" class="hidden">
   <div class="brand"><h1>Full time</h1><div class="sub" id="winnerLabel">&nbsp;</div></div>
   <div class="podium" id="podium"></div>
-  <p class="zeronote hidden" id="zeroNote"></p>
+  <p class="zeronote hidden" id="banter" aria-live="polite"></p>
   <div class="row">
     <button class="btn" id="againBtn">Play again</button>
     <button class="btn ghost" id="setupBtn">Change settings</button>
@@ -2680,6 +2680,7 @@ function shareText(sorted){
   const head = s.zero ? `*${sorted[0].name} scored 0 points.*` : s.solo ? `*${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!*` : "*FINAL SCORE*";
   return [ "🏆 *TENABALL | FOOTBALL EDITION*", "", head, "",
     ...sorted.map(p => `${s.zero ? "-" : MEDALS[s.rank(p)-1]} ${p.name} · *${ptsLabel(p.score)}*`), "",
+    ...(G && G.banter ? ["_" + G.banter + "_", ""] : []),
     "🎮 " + s.meta.join("  •  "), "",
     `*Think you can beat ${s.solo ? s.top : s.names}?*`, shareUrl() ].join("\n");
 }
@@ -2785,11 +2786,216 @@ function shareResults(withImage){
   else done("Sharing isn't available in this browser."+saved);
 }
 
-const ZERO_LINES = [
-  "You’d have scored more by mashing the screen with your forehead.",
-  "Not one. Not even by accident. Outstanding performance.",
-  "0 points. The footballing equivalent of turning up pissed and forgetting your boots."
-];
+/* ---------- end of game banter: a line under the final table that reacts to what happened ----------
+   The game isn't out of 10: every round has 10 slots, so the game's total is rounds x 10 and every rule works on shares of that.
+   Solo: picked from the player's share. Multiplayer, first rule that fits wins: everyone on 0, a tie for first, a table that found
+   hardly anything (the least bad player wins), a chasm between first and last, a runaway winner, a last-placed player on 0,
+   a close finish, then the winner's own score. Placeholders: {name} {winner} {winners} {second} {bottom} {top} {secondScore}
+   {bottomScore} {lead} {pts} {topPts} (the top score with its unit, "1 point", "6 points"). Each phone avoids its recent lines, and the pick is seeded from the result, so every phone
+   in an online game shows the same line. */
+const BANTER = {
+  soloZero: [
+    "You’d have scored more by mashing the screen with your forehead.",
+    "That wasn’t a performance. That was a cry for help.",
+    "Not one. Not even by accident. Outstanding.",
+    "The footballing equivalent of turning up pissed and forgetting your boots.",
+    "You’ve just spent five minutes aggressively proving you know fuck all about football.",
+    "Zero. Even a stopped clock is right twice a day.",
+    "Somewhere a goldfish has just watched that and felt clever.",
+    "That’s not a scoreline, that’s a confession.",
+    "Pack it in. Take up darts.",
+    "Nil points. Eurovision would be proud."
+  ],
+  soloPoor: [
+    "Technically you knew something. Let’s not get carried away.",
+    "A heroic effort, assuming you’ve never actually watched football.",
+    "You’ve escaped complete humiliation by the width of a bawhair.",
+    "Some knowledge detected. Unfortunately, not very fucking much.",
+    "There are guesses, educated guesses, and whatever the hell that was.",
+    "{pts}. Sunday league called. They don’t want you either.",
+    "The highlights package will be short. Very fucking short.",
+    "Points on the board, technically. Like a consolation goal in a 6-1.",
+    "You know as much about football as Spurs know about trophies.",
+    "Relegation form. And that’s before the points deduction."
+  ],
+  soloMid: [
+    "Perfectly mediocre. Your mum will still be proud.",
+    "Not embarrassing, not impressive. The Everton of performances.",
+    "Enough knowledge to be dangerous. Not enough to be useful.",
+    "You clearly watch football. Whether you pay attention is another matter.",
+    "A solid mid-table performance. Absolutely nobody’s making a documentary about it.",
+    "Bang average. A cold, wet Tuesday night in Stoke of a performance.",
+    "Half right, which also means half wrong, you absolute coin toss.",
+    "Not good, not bad, just there. Like a Sky Sports pundit.",
+    "{pts}. The definition of ‘he’s alright, I suppose’.",
+    "Middle of the road. Like a traffic cone, and about as useful."
+  ],
+  soloGood: [
+    "Okay, you actually know your football. Annoying.",
+    "Strong effort. You may now correct strangers in the pub with confidence.",
+    "Very respectable. Just enough wrong answers to keep your ego manageable.",
+    "That’s dangerously close to knowing what you’re talking about.",
+    "Good stuff. Somewhere, Jeff Stelling just nodded approvingly.",
+    "{pts}. Smug face loading.",
+    "Proper effort, that. You’ve earned a pint and a lie-down.",
+    "Very tidy. Annoyingly tidy.",
+    "That’s a Champions League place. Don’t bottle it next time.",
+    "Good answer after good answer. Who the fuck invited you?"
+  ],
+  soloGreat: [
+    "Fucking hell. Someone’s been studying.",
+    "Either you really know football or you’ve found a way to cheat.",
+    "That was disgustingly good. Go outside for a bit.",
+    "Basically flawless. Your group chat is going to hate you.",
+    "Congratulations, you unbearable footballing know-it-all.",
+    "That’s not knowledge, that’s a medical condition.",
+    "Sickening. Absolutely sickening. Well done.",
+    "Wikipedia called. It wants its brain back.",
+    "{pts}. Get a hobby that isn’t this.",
+    "You’ve peaked. It’s all downhill from here, you beautiful nerd."
+  ],
+  soloPerfect: [
+    "Every single one. Are you okay? Do you need to talk to someone?",
+    "A perfect score. Nobody likes a show-off, {name}.",
+    "Full marks. Put the phone down and go and touch some grass.",
+    "Flawless. Utterly flawless. We hate you a bit.",
+    "Every slot filled. Your other half is officially worried about you."
+  ],
+  allZero: [
+    "An extraordinary team effort to know absolutely fuck all.",
+    "Not a single correct answer between you. Football has requested an apology.",
+    "Collectively, you’ve got the football knowledge of a garden shed.",
+    "Nobody wins. More importantly, everybody should be embarrassed.",
+    "A room full of football fans and apparently not one functioning brain cell.",
+    "Zero points between you. Impressive commitment to being shit.",
+    "Not one of you. Not a single one. Sack the lot of them.",
+    "That was like watching a pub team take on Real Madrid.",
+    "Everybody loses. Nobody learns anything. Beautiful.",
+    "If knowing nothing was a sport, you’d all be on the podium."
+  ],
+  tie: [
+    "A draw. How disappointingly civilised.",
+    "Joint winners. Share the glory like the pair of needy bastards you are.",
+    "Nobody could separate you. Unfortunately, that means we have to praise both of you.",
+    "Dead level. Settle it outside.",
+    "A tie. Somewhere, a penalty shootout is begging to happen.",
+    "{winners} finish level. Like kissing your nan: nobody’s happy.",
+    "{winners} can’t be split. Like a pair of nervous centre-backs.",
+    "All square. Rematch. Now. Nobody leaves.",
+    "{winners} share the crown. It’s a very small crown. Don’t fight over it.",
+    "Level on {topPts}. Goal difference? We don’t do that here. Go again."
+  ],
+  leastBad: [
+    "{winner} wins! Mainly because everyone else was somehow even worse.",
+    "Congratulations {winner}, you were officially the least shit player here.",
+    "{winner} takes it. A victory in the loosest possible interpretation of the word.",
+    "Somebody had to win. Unfortunately, it was {winner}.",
+    "{winner} crawls over the finish line while everyone else lies face-down behind them.",
+    "{winner} wins the battle of the clueless. Get it printed on a mug.",
+    "{winner} is champion of a very, very shit league.",
+    "{winner} wins. Like being the best singer at a funeral.",
+    "In the land of the blind, {winner} is the one-eyed king. Barely.",
+    "{winner} takes the trophy. Please don’t post it anywhere."
+  ],
+  chasm: [
+    "{winner} and {bottom} apparently played two completely different games.",
+    "{winner} got {top}. {bottom} got {bottomScore}. Same quiz, allegedly.",
+    "The gap between {winner} and {bottom} is visible from space.",
+    "{winner} is a football genius. {bottom} is a football rumour.",
+    "{bottom}, {winner} lapped you so many times they lost count."
+  ],
+  runaway: [
+    "{winner} absolutely battered the lot of you. Embarrassing.",
+    "{winner} came to play football trivia. The rest of you apparently came for snacks.",
+    "That wasn’t a contest. {winner} just publicly mugged you all off.",
+    "{winner} wins comfortably. Everyone else can delete the app now.",
+    "Someone check {winner} for performance-enhancing Wikipedia.",
+    "{winner} was playing chess. The rest of you were eating the pieces.",
+    "{second} came second, in a race {winner} had already gone home from.",
+    "That’s a hammering. {winner} should be charged with something.",
+    "{winner} won by {lead}. The rest of you should be genuinely ashamed.",
+    "Somebody call the police. {winner} just robbed everyone in this room."
+  ],
+  bottomZero: [
+    "We’d discuss {winner}, but can we please talk about what the fuck happened to {bottom}?",
+    "Congratulations to {winner}. Condolences to anyone who had {bottom} on their team.",
+    "{winner} takes the glory. {bottom} takes nothing, and frankly deserved less.",
+    "A decent game from everyone except {bottom}, who appears to have suffered a complete systems failure.",
+    "Well played {winner}. {bottom}, were you answering a different fucking quiz?",
+    "{bottom} scored 0. Not low. Not poor. Zero. Frame it.",
+    "{winner} wins, but the real headline is {bottom} contributing absolutely fuck all.",
+    "Someone get {bottom} a map of a football pitch. They’re clearly lost.",
+    "{bottom}, you had one job. Then lots of other jobs. You did none of them.",
+    "Thoughts and prayers to {bottom}, who turned up and then simply didn’t."
+  ],
+  close: [
+    "{winner} sneaks it. {second} will be replaying that one wrong answer in bed tonight.",
+    "That was tight. {winner} gets the glory, {second} gets absolutely fuck all.",
+    "{winner} by a bawhair. Deliciously cruel.",
+    "Nothing in it. Unlucky {second}, nobody remembers second place anyway.",
+    "{winner} steals it at the death. {second} is entitled to be absolutely raging.",
+    "{winner} edges it. {second}, that’s going to sting for a week.",
+    "Won by a whisker. {second} will be blaming the Wi-Fi.",
+    "{winner} by the skin of their teeth. {second}, demand a recount.",
+    "A photo finish, and {winner} has the bigger nose. Hard luck {second}.",
+    "{winner} {top}, {second} {secondScore}. Glorious for one of you, unbearable for the other."
+  ],
+  winMid: [
+    "{winner} takes it. Nobody disgraced themselves too badly.",
+    "{winner} wins. Solid enough, although we won’t be alerting Sky Sports.",
+    "The bragging rights belong to {winner}. For now.",
+    "{winner} comes out on top. Expect them to become absolutely unbearable.",
+    "Victory for {winner}. Group chat notification incoming in 3, 2, 1.",
+    "{winner} wins. The rest of you were beaten fair and square, which is worse.",
+    "{winner} takes it with {topPts}. Nothing flashy. A 1-0 at Stoke.",
+    "A tidy win for {winner}. The rest of you, back to the training ground.",
+    "{winner} wins. Somewhere, a parent is cautiously proud.",
+    "{winner} on top. Losers buy the next round."
+  ],
+  winHigh: [
+    "{winner} absolutely knows their football. Or has a suspicious second phone.",
+    "That’s filthy from {winner}. The rest of you never stood a chance.",
+    "{winner} has just earned the right to be insufferable for the rest of the evening.",
+    "Outstanding from {winner}. Somebody check their browser history.",
+    "{winner} has cooked the lot of you. No further questions.",
+    "{winner} cleaned up. Everyone else, please hand in your season tickets.",
+    "{winner} is the Pep Guardiola of this living room.",
+    "A masterclass from {winner}. The rest of you were just extras.",
+    "{winner} absolutely bodied that. Ice for everyone else’s egos.",
+    "{winner} knows too much. Keep an eye on them."
+  ]
+};
+// which kind of line fits this result; scores are the final scores, best first; total is the game's slots (rounds x 10)
+function banterKind(scores, total){
+  const top = scores[0], pct = top / total;
+  if (scores.length === 1) return top === 0 ? "soloZero" : top >= total ? "soloPerfect" : pct >= .85 ? "soloGreat" : pct >= .65 ? "soloGood" : pct >= .35 ? "soloMid" : "soloPoor";
+  const second = scores[1], bottom = scores[scores.length-1], lead = top - second, sum = scores.reduce((a,b) => a+b, 0);
+  if (top === 0) return "allZero";
+  if (second === top) return "tie";
+  if (pct <= .3 && sum <= total * .5) return "leastBad";
+  if (bottom > 0 && pct >= .6 && bottom * 6 <= top) return "chasm";
+  if (lead >= Math.max(3, Math.round(total * .2)) && top >= second * 2) return "runaway";
+  if (bottom === 0) return "bottomZero";
+  if (lead <= Math.max(1, Math.round(total / 20))) return "close";
+  return pct >= .6 ? "winHigh" : "winMid";
+}
+const pointsLabel = n => n === 1 ? "1 point" : `${n} points`;
+const BANTER_KEY = "tenaball-banter";
+// the line for a finished game: sorted is the players, best first
+function banterLine(sorted, total){
+  const scores = sorted.map(p => p.score), kind = banterKind(scores, total), lines = BANTER[kind];
+  let recent = []; try { recent = JSON.parse(localStorage.getItem(BANTER_KEY) || "[]"); } catch(e){}
+  // the same result gives the same order on every phone; take the first line this phone hasn't shown lately
+  let h = 2166136261; for (const ch of kind + "|" + sorted.map(p => p.name + ":" + p.score).join("|") + "|" + total) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
+  const start = h % lines.length, order = lines.map((_, i) => (start + i * 7) % lines.length);
+  const seen = [...new Set(order)].length === lines.length ? order : lines.map((_, i) => (start + i) % lines.length);
+  const pick = seen.find(i => !recent.includes(kind + ":" + i)) ?? seen[0];
+  try { localStorage.setItem(BANTER_KEY, JSON.stringify([kind + ":" + pick, ...recent].slice(0, 12))); } catch(e){}
+  const top = sorted[0], second = sorted[1] || top, bottom = sorted[sorted.length-1];
+  const winners = sorted.filter(p => p.score === top.score).map(p => p.name), and = a => a.length > 1 ? a.slice(0,-1).join(", ") + " and " + a[a.length-1] : a[0];
+  const vals = { name: top.name, winner: top.name, winners: and(winners), second: second.name, bottom: bottom.name, top: top.score, secondScore: second.score, bottomScore: bottom.score, lead: top.score - second.score, pts: pointsLabel(top.score), topPts: pointsLabel(top.score) };
+  return { kind, text: lines[pick].replace(/\{(\w+)\}/g, (m, k) => k in vals ? vals[k] : m) };
+}
 async function endGame(){
   sfx.fullTime();
   const sorted = [...G.players].sort((a,b)=>b.score-a.score);
@@ -2817,11 +3023,11 @@ async function endGame(){
   if (ONLINE) onlineEndUI();
   $("statReset").onclick = () => { if (!confirm("Reset the stats for everyone on this device?")) return; saveStats({}); box.querySelectorAll(".podstats-in").forEach(x => x.innerHTML = statsHTML(null)); };
   $("winnerLabel").textContent = sorted.length===1 ? " " : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : `${winners[0].name} wins with ${top} points.`;
+  G.banter = banterLine(sorted, cfg.rounds * 10).text;
   prepareShare(sorted);
-  $("zeroNote").classList.toggle("hidden", !zero);
+  const banter = $("banter"); banter.textContent = G.banter; banter.classList.toggle("hidden", !zero); // shown once the table is in
   if (zero){
     $("winnerLabel").textContent = "You scored 0 points.";
-    $("zeroNote").textContent = ZERO_LINES[Math.floor(Math.random()*ZERO_LINES.length)];
     els[0].classList.add("show");
     return;
   }
@@ -2834,8 +3040,10 @@ async function endGame(){
     if (isBest){ try { localStorage.setItem(key, String(top)); } catch(e){} }
     $("winnerLabel").textContent = isBest ? (best ? `New personal best: ${top} points (previous best ${best}).` : `You scored ${top} points. That's your first best to beat.`) : `You scored ${top} points. Your best for this setup is ${best}.`;
     if (isBest || top>0) confetti();
+    banter.classList.remove("hidden");
     return;
   }
+  banter.classList.remove("hidden");
   confetti();
 }
 
