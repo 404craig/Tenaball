@@ -1,0 +1,299 @@
+[
+ {
+  "comp": "premier-league",
+  "option": 1,
+  "label": "lion-logo",
+  "file": "premier-league/1_lion-logo.png",
+  "white": "premier-league/1_lion-logo_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (PL)"
+ },
+ {
+  "comp": "premier-league",
+  "option": 2,
+  "label": "england-flag",
+  "file": "premier-league/2_england-flag.png",
+  "white": "",
+  "source": "lipis/flag-icons",
+  "licence": "MIT"
+ },
+ {
+  "comp": "premier-league",
+  "option": 3,
+  "label": "trophy",
+  "file": "premier-league/3_trophy.png",
+  "white": "premier-league/3_trophy_white.png",
+  "source": "Commons: Premier league trophy icon (adjusted).png",
+  "licence": " CC BY-SA 2.5"
+ },
+ {
+  "comp": "la-liga",
+  "option": 1,
+  "label": "laliga-mark",
+  "file": "la-liga/1_laliga-mark.png",
+  "white": "la-liga/1_laliga-mark_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (LaLiga)"
+ },
+ {
+  "comp": "la-liga",
+  "option": 2,
+  "label": "spain-flag",
+  "file": "la-liga/2_spain-flag.png",
+  "white": "",
+  "source": "lipis/flag-icons",
+  "licence": "MIT"
+ },
+ {
+  "comp": "la-liga",
+  "option": 3,
+  "label": "trophy",
+  "file": "la-liga/3_trophy.png",
+  "white": "la-liga/3_trophy_white.png",
+  "source": "Commons: Copa de Liga de Espa\u00f1a2.svg",
+  "licence": "CC BY-SA 3.0"
+ },
+ {
+  "comp": "bundesliga",
+  "option": 1,
+  "label": "player-mark",
+  "file": "bundesliga/1_player-mark.png",
+  "white": "bundesliga/1_player-mark_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (DFL)"
+ },
+ {
+  "comp": "bundesliga",
+  "option": 2,
+  "label": "germany-flag",
+  "file": "bundesliga/2_germany-flag.png",
+  "white": "",
+  "source": "lipis/flag-icons",
+  "licence": "MIT"
+ },
+ {
+  "comp": "bundesliga",
+  "option": 3,
+  "label": "meisterschale",
+  "file": "bundesliga/3_meisterschale.png",
+  "white": "bundesliga/3_meisterschale_white.png",
+  "source": "Commons: Meisterschale.png",
+  "licence": "CC BY-SA 3.0"
+ },
+ {
+  "comp": "serie-a",
+  "option": 1,
+  "label": "serie-a-mark",
+  "file": "serie-a/1_serie-a-mark.png",
+  "white": "serie-a/1_serie-a-mark_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (Lega Serie A)"
+ },
+ {
+  "comp": "serie-a",
+  "option": 2,
+  "label": "scudetto",
+  "file": "serie-a/2_scudetto.png",
+  "white": "",
+  "source": "Commons: Scudetto Italia sport.svg",
+  "licence": "Public domain"
+ },
+ {
+  "comp": "serie-a",
+  "option": 3,
+  "label": "trophy",
+  "file": "serie-a/3_trophy.png",
+  "white": "serie-a/3_trophy_white.png",
+  "source": "Commons: Coppa Campioni d'Italia (Serie A).png",
+  "licence": "CC BY-SA 4.0"
+ },
+ {
+  "comp": "ligue-1",
+  "option": 1,
+  "label": "ligue1-mark",
+  "file": "ligue-1/1_ligue1-mark.png",
+  "white": "ligue-1/1_ligue1-mark_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (LFP)"
+ },
+ {
+  "comp": "ligue-1",
+  "option": 2,
+  "label": "france-flag",
+  "file": "ligue-1/2_france-flag.png",
+  "white": "",
+  "source": "lipis/flag-icons",
+  "licence": "MIT"
+ },
+ {
+  "comp": "ligue-1",
+  "option": 3,
+  "label": "old-trophy",
+  "file": "ligue-1/3_old-trophy.png",
+  "white": "ligue-1/3_old-trophy_white.png",
+  "source": "Commons: Logo Troph\u00e9e Ligue 1 2003-2007.svg",
+  "licence": "CC BY-SA 4.0"
+ },
+ {
+  "comp": "scottish-premiership",
+  "option": 1,
+  "label": "spfl-lion",
+  "file": "scottish-premiership/1_spfl-lion.png",
+  "white": "scottish-premiership/1_spfl-lion_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (SPFL)"
+ },
+ {
+  "comp": "scottish-premiership",
+  "option": 2,
+  "label": "saltire",
+  "file": "scottish-premiership/2_saltire.png",
+  "white": "",
+  "source": "lipis/flag-icons",
+  "licence": "MIT"
+ },
+ {
+  "comp": "scottish-premiership",
+  "option": 3,
+  "label": "spl-trophy",
+  "file": "scottish-premiership/3_spl-trophy.png",
+  "white": "scottish-premiership/3_spl-trophy_white.png",
+  "source": "Commons: Spltrophy.png",
+  "licence": "Public domain"
+ },
+ {
+  "comp": "top-5-leagues",
+  "option": 1,
+  "label": "flag-stripes",
+  "file": "top-5-leagues/1_flag-stripes.png",
+  "white": "",
+  "source": "lipis/flag-icons (composite)",
+  "licence": "MIT"
+ },
+ {
+  "comp": "top-5-leagues",
+  "option": 2,
+  "label": "flag-pie",
+  "file": "top-5-leagues/2_flag-pie.png",
+  "white": "",
+  "source": "lipis/flag-icons (composite)",
+  "licence": "MIT"
+ },
+ {
+  "comp": "top-5-leagues",
+  "option": 3,
+  "label": "flag-fan",
+  "file": "top-5-leagues/3_flag-fan.png",
+  "white": "",
+  "source": "lipis/flag-icons (composite)",
+  "licence": "MIT"
+ },
+ {
+  "comp": "champions-league",
+  "option": 1,
+  "label": "starball",
+  "file": "champions-league/1_starball.png",
+  "white": "champions-league/1_starball_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "champions-league",
+  "option": 2,
+  "label": "european-cup-trophy",
+  "file": "champions-league/2_european-cup-trophy.png",
+  "white": "champions-league/2_european-cup-trophy_white.png",
+  "source": "Commons: Coppa Campioni.svg",
+  "licence": "Public domain"
+ },
+ {
+  "comp": "champions-league",
+  "option": 3,
+  "label": "full-logo",
+  "file": "champions-league/3_full-logo.png",
+  "white": "champions-league/3_full-logo_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "europa-league",
+  "option": 1,
+  "label": "trophy-brackets",
+  "file": "europa-league/1_trophy-brackets.png",
+  "white": "europa-league/1_trophy-brackets_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "europa-league",
+  "option": 2,
+  "label": "trophy-shape",
+  "file": "europa-league/2_trophy-shape.png",
+  "white": "europa-league/2_trophy-shape_white.png",
+  "source": "Commons: PD-Shape Europa League Trophy.svg",
+  "licence": "Public domain"
+ },
+ {
+  "comp": "europa-league",
+  "option": 3,
+  "label": "full-logo",
+  "file": "europa-league/3_full-logo.png",
+  "white": "europa-league/3_full-logo_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "world-cup",
+  "option": 1,
+  "label": "trophy-flat",
+  "file": "world-cup/1_trophy-flat.png",
+  "white": "world-cup/1_trophy-flat_white.png",
+  "source": "Commons: FIFA World Cup.png",
+  "licence": "CC0"
+ },
+ {
+  "comp": "world-cup",
+  "option": 2,
+  "label": "trophy-detailed",
+  "file": "world-cup/2_trophy-detailed.png",
+  "white": "world-cup/2_trophy-detailed_white.png",
+  "source": "Commons: FIFA World Cup Icon (Campionato mondiale di calcio).svg",
+  "licence": "Public domain"
+ },
+ {
+  "comp": "world-cup",
+  "option": 3,
+  "label": "wc2026-emblem",
+  "file": "world-cup/3_wc2026-emblem.png",
+  "white": "world-cup/3_wc2026-emblem_white.png",
+  "source": "football-logos.cc",
+  "licence": "trademark (FIFA)"
+ },
+ {
+  "comp": "euros",
+  "option": 1,
+  "label": "henri-delaunay-trophy",
+  "file": "euros/1_henri-delaunay-trophy.png",
+  "white": "euros/1_henri-delaunay-trophy_white.png",
+  "source": "Commons: UEFA European Cup.svg",
+  "licence": "CC BY-SA 3.0"
+ },
+ {
+  "comp": "euros",
+  "option": 2,
+  "label": "euro-2024-logo",
+  "file": "euros/2_euro-2024-logo.png",
+  "white": "",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "euros",
+  "option": 3,
+  "label": "euro-2028-logo",
+  "file": "euros/3_euro-2028-logo.png",
+  "white": "",
+  "source": "football-logos.cc",
+  "licence": "trademark (UEFA)"
+ }
+]
