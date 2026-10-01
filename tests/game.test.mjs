@@ -120,6 +120,33 @@ await test("banter: the line reacts to what happened in the table", async () => 
   eq(two, [true, true], "same result, same line on a fresh phone; a phone doesn't repeat itself straight away");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("questions: the October 2026 Premier League boards are all playable, and every answer is recognised", async () => {
+  const p = await phone(browser, "q4"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const ids = EXTRA_Q4.map(q => q.id), live = ids.filter(id => findQ(id));
+    const bad = [];
+    for (const id of live){
+      const q = findQ(id);
+      if (q.slots.length !== 10 || !q.period || ![0,1,2].includes(q.level)) bad.push(id + ": shape");
+      const names = new Set(q.slots.flatMap(s => s.alts ? s.alts : [s.club]));
+      for (const n of names){ const m = PALIAS[norm(n)] || PALIAS[norm(n.split(" ").pop())]; if (!m || !m.has(n)) bad.push(id + ": " + n + " not recognised"); }
+    }
+    return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
+  });
+  eq([r.n, r.live], [20, 20], "all twenty boards survive the final pass");
+  eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
+  eq(r.fam, ["appearances", "managers", "scorers", "transfers"], "the boards spread across families");
+  // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-hattricks"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  await p.fill("#guessInput", "Raheem Sterling"); await p.click("#lockBtn"); await ready(p);
+  const f = await p.evaluate(() => [Object.keys(G.foundBy).length, G.slotName[9]]);
+  eq(f, [1, "Raheem Sterling"], "a player tied on 5 fills 10th");
+  await p.fill("#guessInput", "Mohamed Salah"); await p.click("#lockBtn"); await ready(p);
+  assert(/one short/.test(await p.textContent("#feedback")), "a near miss explains itself: " + await p.textContent("#feedback"));
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
   const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
