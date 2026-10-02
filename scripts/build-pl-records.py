@@ -138,6 +138,28 @@ sales("pl-fee-sales-new", "Newcastle's biggest sales", "Name the ten players New
   ("Elliot Anderson","£35m, 2024"),("Yankuba Minteh","£33m, 2024"),("Moussa Sissoko","£30m, 2016"),("Ayoze Perez","£30m, 2019"),("Allan Saint-Maximin","£30m, 2023")],
  {"Georginio Wijnaldum":"Georginio Wijnaldum's £25m move is just outside.","Aleksandar Mitrovic":"Aleksandar Mitrovic's £22m move is outside the top ten."})
 
+
+# each club's top Premier League scorers counting only goals from 2000/01, researched 2 October 2026 (docs/data/SINCE_2000_SCORERS.md)
+S2000 = "Premier League goals from 2000/01 to 2025/26"
+def since(id, club, rows, notes):
+    ranked(id, f"{club}'s Premier League scorers since 2000", f"Name {club}'s ten highest Premier League scorers, counting only goals from the 2000/01 season onwards.", S2000, 1, rows, notes)
+since("pl-mu-2000-goals", "Man Utd",
+ [("Wayne Rooney","183 goals"),("Cristiano Ronaldo","103 goals"),("Ruud van Nistelrooy","95 goals"),("Marcus Rashford","87 goals"),("Bruno Fernandes","71 goals"),
+  ("Paul Scholes","66 goals"),("Anthony Martial","63 goals"),("Ryan Giggs","55 goals"),("Dimitar Berbatov","48 goals"),("Robin van Persie","48 goals")],
+ {"Ole Gunnar Solskjaer":"Ole Gunnar Solskjaer scored 43 from 2000/01, just outside.","Javier Hernandez":"Javier Hernandez scored 37, just outside.","Juan Mata":"Juan Mata scored about 34, not quite top ten."})
+since("pl-lfc-2000-goals", "Liverpool",
+ [("Mohamed Salah","191 goals"),("Steven Gerrard","119 goals"),("Sadio Mane","90 goals"),("Roberto Firmino","82 goals"),("Michael Owen","70 goals"),
+  ("Luis Suarez","69 goals"),("Fernando Torres","65 goals"),("Dirk Kuyt","51 goals"),("Daniel Sturridge","50 goals"),("Diogo Jota","47 goals")],
+ {"Philippe Coutinho":"Philippe Coutinho scored 41, just outside.","Emile Heskey":"Emile Heskey scored 36 from 2000/01, just outside.","Cody Gakpo":"Cody Gakpo has 32, not top ten yet.","Robbie Fowler":"Most of Robbie Fowler's goals came before 2000/01."})
+since("pl-afc-2000-goals", "Arsenal",
+ [("Thierry Henry","158 goals"),("Robin van Persie","96 goals"),("Olivier Giroud","73 goals"),("Pierre-Emerick Aubameyang","68 goals"),("Theo Walcott","65 goals"),
+  ("Robert Pires","62 goals"),("Bukayo Saka","60 goals"),("Alexis Sanchez","60 goals"),("Alexandre Lacazette","54 goals"),("Emmanuel Adebayor","46 goals")],
+ {"Gabriel Martinelli":"Gabriel Martinelli scored 41, just outside.","Aaron Ramsey":"Aaron Ramsey scored 40, just outside.","Freddie Ljungberg":"Freddie Ljungberg scored 39 from 2000/01, just outside.","Dennis Bergkamp":"Dennis Bergkamp scored 30 from 2000/01."})
+since("pl-cfc-2000-goals", "Chelsea",
+ [("Frank Lampard","147 goals"),("Didier Drogba","104 goals"),("Eden Hazard","85 goals"),("Jimmy Floyd Hasselbaink","69 goals"),("Eidur Gudjohnsen","54 goals"),
+  ("Diego Costa","52 goals"),("Cole Palmer","47 goals"),("John Terry","41 goals"),("Nicolas Anelka","38 goals"),("Willian","37 goals")],
+ {"Salomon Kalou":"Salomon Kalou scored 36, just outside.","Florent Malouda":"Florent Malouda scored 35, just outside.","Gianfranco Zola":"Gianfranco Zola scored 26 from 2000/01."})
+
 # every 20-goal season, in runs of consecutive seasons that hold exactly ten
 TWENTY = [l.split(" | ") for l in open("docs/data/Tenaball_EPL_Data_2026-10-01.txt", encoding="utf-8").read().split("== 20+ Seasons")[1].split("== 20+ Players")[0].splitlines() if re.match(r"^\d\d/\d\d \|", l)]
 FIX = {"Sergio Agüero":"Sergio Aguero","Luis Suárez":"Luis Suarez","Jürgen Klinsmann":"Jurgen Klinsmann","Yaya Touré":"Yaya Toure","Alexis Sánchez":"Alexis Sanchez","Sadio Mané":"Sadio Mane","Son Heung-min":"Heung-min Son"}
