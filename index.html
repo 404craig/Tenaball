@@ -1808,6 +1808,10 @@ PALIASrebuild();
 })();
 </script>
 <script>
+/* recorded sounds (crowd, whistles) from ElevenLabs, written by scripts/make-sounds.py: name -> list of base64 MP3 takes */
+/* SOUNDS:BEGIN */const SOUND_MP3 = {};/* SOUNDS:END */
+</script>
+<script>
 /* Premier League style swirl: dark curved slashes sweep in over a bold colour, hold and drift, then pull away as the colour cuts to the next */
 function startSwirl(canvas){
   const ctx = canvas.getContext("2d"), DPR = Math.min(2, window.devicePixelRatio||1);
@@ -1868,9 +1872,36 @@ const REDUCED = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce
 let cfg = { count:2, rounds:5, cats:null, clock:30, level:1, allLevels:false, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
 let G = null, muted = false;
 
-/* ---------- sound, synthesised so nothing loads from outside ---------- */
+/* ---------- sound: synthesised tones, plus recorded crowd and whistle takes when SOUND_MP3 has them ---------- */
 let AC = null;
-function ac(){ if (!AC){ try { AC = new (window.AudioContext||window.webkitAudioContext)(); } catch(e){} } if (AC && AC.state==="suspended") AC.resume(); return AC; }
+function ac(){ if (!AC){ try { AC = new (window.AudioContext||window.webkitAudioContext)(); } catch(e){} if (AC) loadSamples(AC); } if (AC && AC.state==="suspended") AC.resume(); return AC; }
+// recorded takes are decoded once, the first time sound is used; each name has several takes
+const SAMPLES = {}, LAST_TAKE = {}, PLAYING = new Set();
+function loadSamples(a){
+  Object.entries(SOUND_MP3).forEach(([name, takes]) => takes.forEach(b64 => {
+    try {
+      const bin = atob(b64), u = new Uint8Array(bin.length); for (let i=0;i<bin.length;i++) u[i] = bin.charCodeAt(i);
+      const done = buf => (SAMPLES[name] = SAMPLES[name] || []).push(buf);
+      const pr = a.decodeAudioData(u.buffer, done, () => {}); if (pr && pr.catch) pr.catch(() => {});
+    } catch(e){}
+  }));
+}
+const has = name => !!(SAMPLES[name] && SAMPLES[name].length);
+// play a random take (never the same one twice running) with a little change of pitch, speed and level, so it never sounds canned
+function sample(name, vol=1, when=0){
+  const a = AC, takes = SAMPLES[name]; if (!a || muted || FAST || !takes || !takes.length) return false;
+  let i = Math.floor(Math.random()*takes.length);
+  if (takes.length>1 && i===LAST_TAKE[name]) i = (i+1+Math.floor(Math.random()*(takes.length-1))) % takes.length;
+  LAST_TAKE[name] = i;
+  const src = a.createBufferSource(), g = a.createGain(), t = a.currentTime + when;
+  src.buffer = takes[i]; src.playbackRate.value = .93 + Math.random()*.14;
+  g.gain.value = vol * (.8 + Math.random()*.25);
+  src.connect(g).connect(a.destination); src.start(t);
+  PLAYING.add(src); src.onended = () => PLAYING.delete(src);
+  return true;
+}
+// stop the recorded sounds, used when the sound is switched off mid-roar
+function hush(){ PLAYING.forEach(s => { try { s.stop(); } catch(e){} }); PLAYING.clear(); }
 function tone(f, dur, type="sine", vol=.12, when=0, slideTo){
   const a = ac(); if (!a || muted) return;
   const o = a.createOscillator(), g = a.createGain(), t = a.currentTime + when;
@@ -1933,20 +1964,22 @@ function groan(){
 const sfx = {
   tick: k => tone(420 + k*38, .07, "square", .045),
   stop: () => tone(880, .12, "square", .06),
-  correct: () => { bell(880,0,1.1,.13); bell(1319,.11,1.4,.12); bell(2637,.2,.6,.03); },
-  wrong: () => thud(),
+  // big: several slots at once or the number 10, so the crowd goes up a notch
+  correct: big => { bell(880,0,1.1,.13); bell(1319,.11,1.4,.12); bell(2637,.2,.6,.03); sample(big && has("cheerBig") ? "cheerBig" : "cheer", .7, .08); },
+  wrong: () => { thud(); sample("groan", .75, .1); },
   build: k => tone(300 + k*25, .05, "sine", .05),
   clock: () => tone(1200, .05, "square", .05),
   whoosh: () => tone(200, .35, "sine", .08, 0, 900),
-  fanfare: () => { [523,659,784,1047,1319,1568].forEach((f,i)=>bell(f,i*.09,1.6,.1)); [1047,1319,1568].forEach(f=>bell(f,.62,2.4,.08)); bell(3136,.7,1.2,.025); },
+  fanfare: () => { [523,659,784,1047,1319,1568].forEach((f,i)=>bell(f,i*.09,1.6,.1)); [1047,1319,1568].forEach(f=>bell(f,.62,2.4,.08)); bell(3136,.7,1.2,.025); sample("roar", .8); },
   place: () => tone(660, .2, "triangle", .1),
   pop: () => { const a = ac(); if (!a || muted) return; const t = a.currentTime;
     const n = a.createBufferSource(); n.buffer = noiseBuf(a); const f = a.createBiquadFilter(); f.type = "lowpass"; f.frequency.setValueAtTime(4000,t); f.frequency.exponentialRampToValueAtTime(300,t+.4);
     const g = a.createGain(); g.gain.setValueAtTime(.5,t); g.gain.exponentialRampToValueAtTime(.0001,t+.45);
     n.connect(f).connect(g).connect(a.destination); n.start(t); n.stop(t+.5); tone(110,.5,"sine",.25,0,40); },
-  blast: () => whistle([[0,.45]]),
-  fullTime: () => whistle([[0,.32],[.5,.32],[1.0,1.15]]),
-  whistle: () => { whistle([[0,.22],[.32,.22],[.64,.7]]); tone(90,.9,"sine",.12,.5,45); }
+  blast: () => { if (!sample("whistleShort", .9)) whistle([[0,.45]]); },
+  fullTime: () => { if (!sample("whistleFull", .9)) whistle([[0,.32],[.5,.32],[1.0,1.15]]); sample("applause", .5, 1.2); },
+  timeUp: () => { if (!sample("whistleFull", .9)) whistle([[0,.32],[.5,.32],[1.0,1.15]]); sample("groan", .5, 1.1); },
+  whistle: () => { if (!sample("whistleRed", .9)) whistle([[0,.22],[.32,.22],[.64,.7]]); tone(90,.9,"sine",.12,.5,45); sample("jeer", .7, .5); }
 };
 const buzz = p => { if (FAST) return; try { navigator.vibrate && navigator.vibrate(p); } catch(e){} };
 
@@ -2180,7 +2213,7 @@ document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); }
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
 $("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
 $("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); theme("pl"); show("setup"); } };
-$("muteBtn").onclick = () => { muted = !muted; $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
+$("muteBtn").onclick = () => { muted = !muted; if (muted) hush(); $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
 $("nextBtn").onclick = () => { if (ONLINE) return onlineNext(); applyNext(); };
 function applyNext(q){ G.round++; G.round > cfg.rounds ? endGame() : startRound(q); }
 
@@ -2357,7 +2390,7 @@ async function timeUp(){
 async function applyTimeout(){
   G.busy = true; input.disabled = true; $("lockBtn").disabled = true;
   const p = G.players[G.turn];
-  sfx.fullTime(); buzz([80,60,80]);
+  sfx.timeUp(); buzz([80,60,80]);
   loseLife(p, `Time's up. ${loses(p)}`);
   await showCard(p, p.out ? "red" : "yellow", {delay:900, silent:true, reason:"Time's up."});
   G.busy = false; nextTurn();
@@ -2507,7 +2540,7 @@ async function applyGuess(name){
   if (hits.length){
     hits.forEach(i => { G.foundBy[i] = G.turn; const s = q.slots[i]; if (s.pool){ (G.poolUsed[s.pool] = G.poolUsed[s.pool]||[]).push(name); G.slotName[i] = name; } });
     p.score += hits.length;
-    drawTower(hits); sfx.correct(); buzz(40);
+    drawTower(hits); sfx.correct(hits.length>1 || hits.some(i => i===q.slots.length-1)); buzz(40);
     const s0 = q.slots[hits[0]];
     let msg = q.kind==="table" ? `Tenable! ${name} finished ${ord(Number(s0.label))}${s0.val ? " with "+s0.val : ""}. +1${forWho(p)}.`
             : q.numeric ? `Tenable! ${name} ${hits.length>1?"fill "+hits.length+" slots":"is "+ord(Number(s0.label))+(s0.val?" with "+s0.val:"")}. +${hits.length}${forWho(p)}.`
@@ -3108,7 +3141,7 @@ async function celebrate(p){
   await skippable(REDUCED?0:900, sig);
   // 5. confetti, fanfare and the round details
   wrap.classList.add("shown");
-  sfx.fanfare(); whistle([[0,.3],[.45,.3],[.9,.9]]); confetti(); setTimeout(confetti, 800); buzz([60,40,60,40,300]);
+  sfx.fanfare(); if (!sample("whistleFull", .8)) whistle([[0,.3],[.45,.3],[.9,.9]]); confetti(); setTimeout(confetti, 800); buzz([60,40,60,40,300]);
   await skippable(REDUCED?1800:3000, sig);
   running.forEach(a => { try { a.finish(); } catch(e){} });
   ov.classList.add("hidden");
