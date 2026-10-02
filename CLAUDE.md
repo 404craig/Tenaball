@@ -1,6 +1,20 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Tenaball: notes for Claude Code
 
 Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and JavaScript in one file, assets embedded as data URIs). `tenable-animation.html` is a standalone preview of the end-of-game trophy sequence and should stay in step with the game's version.
+
+## Commands
+
+There is no build step: open `index.html` in a browser (GitHub Pages serves it from `main`). Needs Node 20+ for tests and Python 3 with Pillow for the scripts.
+
+- All tests: `cd tests && npm install && (cd ../server && npm install) && npm test` (`run-all.mjs` runs server, game, account, online and trophy suites in order).
+- One suite: `cd tests && node game.test.mjs` (or `server`, `account`, `online`, `trophy`). Each suite starts its own local server with an empty database; no Cloudflare account needed. Chromium comes from `/opt/pw-browsers/chromium` or `CHROMIUM_PATH`. Trophy screenshots go to `tests/output/`.
+- Local server: `cd server && npm run dev` (wrangler). Deploys happen from `main` via Cloudflare; see `docs/SERVER_SETUP.md`.
+- Premier League records boards: `python3 scripts/build-pl-records.py` (from the repo root; rewrites `EXTRA_Q4` in `index.html`).
+- Badges: `python3 scripts/size-badges.py` after adding a badge. Top 5 watermark: `python3 scripts/top5-watermark.py`.
 
 ## Question rules (set by Craig, keep these)
 
@@ -35,7 +49,7 @@ Tenable-style football quiz. Everything lives in `index.html` (HTML, CSS and Jav
 - End of game: `endGame()` builds the final table, records stats (`recordGame`), then runs `trophyReveal()` which hands the winner pill into first place. The trophy sequence is a signed-off copy of `tenable-animation.html`: keep its artwork, timings, colours and effects identical to the preview. `closeTrophy()` stops everything in the overlay (animations, the ribbons' SVG ripple, the idle bolt timer, leftover confetti) whenever it closes; `tests/trophy.test.mjs` checks the sequence and the hand-over. A solo game that ends on 0 points has no winner: no trophy and `-` instead of a place in the table and the share message (`tests/game.test.mjs`). Every game ends with a banter line under the table and in the share message (`banterLine`, `banterKind`, lines in `BANTER`; Craig wants it sarcastic, rude and crude). The rules work on shares of the game's slots (rounds x 10): solo goes by the player's share (0, poor, mid, good, great, perfect); multiplayer takes the first rule that fits: everyone on 0, a tie for first, a table that found hardly anything, a chasm between first and last, a runaway winner, last place on 0, a close finish, then the winner's own score. The pick is seeded from the result, so every phone in an online game shows the same line, and each phone skips lines it showed recently (`tenaball-banter`). Add lines to any list freely; placeholders are listed above `BANTER`.
 - Accounts and online games: the last `<script>` in `index.html` talks to the server in `server/` (a Cloudflare Worker). `TENABALL_SERVER` switches them on (null means offline, as before). Accounts are an email plus a 4-digit PIN; there's no email checking or PIN recovery by email, Craig resets PINs from the server's `/admin` page. Stats: `recordGame` keeps local stats for everyone except the signed-in player, whose results go to their account through `accountRecord`.
 - Online play is a replayed move log. The server's room puts moves in one order, checks the sender is in the game, and lets only the host send `round`, `reveal`, `refresh`, `next` and `skip`; players send `guess`, `pass` and `timeout`. Every phone applies them in order through `applyAction`, which calls the same `applyGuess`, `applyPass`, `applyTimeout`, `applyReveal`, `applyRefresh` and `applyNext` a local game uses. Keep those deterministic: no randomness, clock reads or local-only state in them, or phones will drift apart. Question picking happens only on the host, and the chosen id travels in the move.
-- Tests: `cd tests && npm install && (cd ../server && npm install) && npm test` runs the server tests, the account and multi-phone online tests (against a local copy of the server) and the trophy tests. Run them after changing the server, the online code, the game loop or the end of game.
+- Tests: `cd tests && npm install && (cd ../server && npm install) && npm test` runs the server tests, the game tests, the account and multi-phone online tests (against a local copy of the server) and the trophy tests (see `tests/README.md` for what each covers). Run them after changing the server, the online code, the game loop or the end of game.
 - Sharing: `prepareShare()` runs from `endGame()`. It builds the WhatsApp-style message (`shareText`, where `*text*` is bold) and draws the results card image (`shareCard`, 1080 by 1350) ahead of time, so tapping Share opens the share sheet straight away. `og-image.jpg` plus the `og:` meta tags give the link preview; it is the one asset kept outside `index.html`, because link previews need a real image URL.
 
 ## Planned work
