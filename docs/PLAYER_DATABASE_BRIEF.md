@@ -31,7 +31,7 @@ Columns, in this order:
 A player who moved in January gets one row for each club.
 
 SOURCES
-Use the club season squad and statistics pages on worldfootball.net, FBref (from 2017/18 it has full stats), Transfermarkt, 11v11, the Premier League website player pages, and Wikipedia's "YYYY-YY [Club] F.C. season" pages. Check every club-season against a second source: the number of players who appeared, and the total goals (which should match the club's goals for that season, less own goals).
+Use the club season squad and statistics pages on worldfootball.net, the GitHub copies of FBref (sangmin-shim/Football) and the Fantasy Premier League archive (vaastav/Fantasy-Premier-League, 2016/17 onwards), FBref (from 2017/18 it has full stats), Transfermarkt, 11v11, the Premier League website player pages, and Wikipedia's "YYYY-YY [Club] F.C. season" pages. Check every club-season against a second source: the number of players who appeared, and the total goals (which should match the club's goals for that season, less own goals).
 
 CHECKS (each subagent, then once more for the whole set)
 - Every club-season has a row count that matches a second source, and the goals add up to the club's season total less own goals scored by opponents.
