@@ -17,11 +17,11 @@ def ranked(id, title, brief, period, level, rows, notes=None, type="person"):
             slots.append({"label": str(len(slots)+1), "club": r[0], "val": r[1]})
     assert len(slots) == 10, (id, len(slots))
     Q.append({"id": id, "cat": "pl", "type": type, "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "numeric": True, "slots": slots, "notes": notes or {}})
-def labelled(id, title, brief, period, level, rows, notes=None):
+def labelled(id, title, brief, period, level, rows, notes=None, type="person"):
     assert len(rows) == 10, id
     # a list of names in a row means any of them counts for that slot (for example a record that depends on whether add-ons count)
     slot = lambda l, n, v: {"label": l, "club": n[0], "alts": n, "pool": id[-6:] + l, "val": v} if isinstance(n, list) else {"label": l, "club": n, "val": v}
-    Q.append({"id": id, "cat": "pl", "type": "person", "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "slots": [slot(l, n, v) for l, n, v in rows], "notes": notes or {}})
+    Q.append({"id": id, "cat": "pl", "type": type, "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "slots": [slot(l, n, v) for l, n, v in rows], "notes": notes or {}})
 
 LIVE = "Premier League era, 1992/93 to 2025/26"
 DONE = "Premier League era, 1992/93 to 2025/26"
@@ -612,6 +612,72 @@ for s, d, h, a, hg, ag in RES:
     if ag > hg and a not in BIG6 and h in BIG6: b6[a] += 1
 cboard("pl-rec-big6-wins", "Most wins over the big six", "Name the clubs outside the big six (Man Utd, Liverpool, Arsenal, Chelsea, Man City and Spurs) with the most Premier League wins over them.", 2,
        b6, lambda k, v: f"{v} wins", lambda c: f"{c} wins")
+
+
+# ---- Craig's picks, batch 3 (3 October 2026): awards and cups, from docs/data/PL_AWARDS_CUPS_2026-10-03.md (Wikipedia, read in full, 2025/26 checked against a second outlet)
+def md_tables(path):
+    """every markdown table in a research file, keyed by the heading above it: {heading: [row cells]}"""
+    out, head = {}, None
+    for line in open(path, encoding="utf-8"):
+        if line.startswith("#"): head = line.strip("# \n")
+        elif line.startswith("|") and head:
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if set("".join(cells)) <= set("-: "): continue
+            out.setdefault(head, []).append(cells)
+    return {h: rows[1:] for h, rows in out.items()}  # drop the header row
+AW = md_tables("docs/data/PL_AWARDS_CUPS_2026-10-03.md")
+def tab(prefix): return next(v for k, v in AW.items() if k.startswith(prefix))
+FULLCLUB = {"Manchester United": "Man Utd", "Manchester City": "Man City", "Tottenham Hotspur": "Spurs", "Tottenham": "Spurs", "Newcastle United": "Newcastle", "West Ham United": "West Ham",
+            "Blackburn Rovers": "Blackburn", "Leeds United": "Leeds", "Leicester City": "Leicester", "Ipswich Town": "Ipswich", "Sheffield Wednesday": "Sheffield Wed",
+            "Nottingham Forest": "Nottingham Forest", "Wigan Athletic": "Wigan", "Birmingham City": "Birmingham", "Bolton Wanderers": "Bolton", "Swansea City": "Swansea",
+            "Charlton Athletic": "Charlton", "Coventry City": "Coventry", "Norwich City": "Norwich", "Cardiff City": "Cardiff", "Hull City": "Hull", "Stoke City": "Stoke",
+            "Wolverhampton Wanderers": "Wolves", "Brighton & Hove Albion": "Brighton", "Queens Park Rangers": "QPR", "Bradford City": "Bradford", "Tranmere Rovers": "Tranmere"}
+gclub = lambda c: FULLCLUB.get(c.strip(), c.strip())
+gname = lambda n: CANON.get(n, n)
+def by_season(prefix, windows, id_base, title, brief, levels, col_name=1, col_val=2, fmt=lambda r: gclub(r[2]), type="person", name=None):
+    rows = {r[0][:7]: r for r in tab(prefix)}
+    for (a, b), lv in zip(windows, levels):
+        ss = [s for s in SEAS if a <= s <= b]; assert len(ss) == 10 and all(s in rows for s in ss), (id_base, a)
+        out = []
+        for s in ss:
+            r = rows[s]; n = name(r) if name else gname(r[col_name])
+            out.append((s, n, fmt(r)))
+        flat = Counter(x for _, n, _ in out for x in (n if isinstance(n, list) else [n]))
+        assert max(flat.values()) <= 3, (id_base, a, flat.most_common(2))
+        labelled(f"{id_base}-{a}", title, brief, f"Seasons {a} to {b}", lv, out, type=type)
+by_season("1. PFA Players", [("2016/17", "2025/26"), ("2002/03", "2011/12"), ("1992/93", "2001/02")], "pl-pfa-player", "PFA Players' Player of the Year",
+          "Name the PFA Players' Player of the Year each season.", [0, 1, 2], fmt=lambda r: gclub(r[2]).split(" (")[0])
+by_season("2. PFA Young", [("2016/17", "2025/26")], "pl-pfa-young", "PFA Young Player of the Year", "Name the PFA Young Player of the Year each season.", [1])
+# the latest window would repeat the PFA board above almost name for name, so only the earlier two
+by_season("4. Premier League Player of the Season", [("2006/07", "2015/16"), ("1994/95", "2003/04")], "pl-potss", "Premier League Player of the Season",
+          "Name the Premier League's official Player of the Season each year.", [1, 2])
+def glove_name(r):
+    k = r[1].replace(" (shared)", "")
+    return [gname(x.strip()) for x in k.split(" and ")] if " and " in k else gname(k)
+by_season("6a. Winners by season", [("2016/17", "2025/26"), ("2004/05", "2013/14")], "pl-golden-glove", "Golden Glove winners",
+          "Name the Golden Glove winner (most clean sheets) each season. In a shared season, either keeper counts.", [1, 2],
+          fmt=lambda r: f"{r[3]} clean sheets", name=glove_name)
+def count_board(prefix, id, title, brief, level, unit, type="person", namecol=1, valcol=2, who="players"):
+    sc = {}
+    for r in tab(prefix):
+        if not r[0][:1].isdigit(): continue
+        for n in [x.strip() for x in r[namecol].split(",")]:
+            sc[gclub(n) if type == "club" else gname(n)] = int(re.match(r"\d+", r[valcol]).group())
+    u = lambda v: f"{v} {unit[:-1] if v == 1 else unit}"
+    gboard(id, title, brief, level, sc, lambda k: k, lambda k, v: u(v), u, type=type, who_word="clubs" if type == "club" else who)
+count_board("5a. Most awards per player", "pl-potm-most", "Most Player of the Month awards", "Name the players who have won the Premier League Player of the Month award the most times.", 1, "awards")
+count_board("6b. Most Golden Gloves", "pl-golden-glove-most", "Most Golden Gloves", "Name the goalkeepers who have won the Golden Glove (most clean sheets in a season) the most times. Shared awards count.", 1, "awards", who="keepers")
+count_board("7. Premier League Manager of the Month", "pl-mgr-motm-most", "Most Manager of the Month awards", "Name the managers who have won the Premier League Manager of the Month award the most times.", 1, "awards", who="managers")
+count_board("8. Premier League Manager of the Season", "pl-mgr-mots-most", "Most Manager of the Season awards", "Name the managers who have won the Premier League Manager of the Season award the most times.", 1, "awards", who="managers")
+def cup(prefix, id_base, title, brief, windows, levels):
+    def fmt(r):
+        t, opp = r[2] + " " + (r[4] if len(r) > 4 else ""), gclub(r[3])
+        if "pen" in t: return f"beat {opp} on penalties"
+        if "replay" in t: return f"beat {opp} in a replay"
+        return f"beat {opp} {r[2].replace(' aet', '').strip()}"
+    by_season(prefix, windows, id_base, title, brief, levels, fmt=fmt, type="club", name=lambda r: gclub(r[1]))
+cup("9. FA Cup finals", "pl-fa-cup", "FA Cup winners", "Name the FA Cup winners each season.", [("2016/17", "2025/26"), ("2007/08", "2016/17"), ("1992/93", "2001/02")], [0, 1, 1])
+cup("10. League Cup", "pl-league-cup", "League Cup winners", "Name the League Cup winners each season.", [("1999/00", "2008/09"), ("1992/93", "2001/02")], [1, 2])
 
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
