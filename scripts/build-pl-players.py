@@ -48,7 +48,9 @@ data = "\\n".join(l.replace("\\", "").replace('"', "") for l in lines)
 # club open boards: (id, clubs, letter or "", level)
 LETTERS = {"Man Utd":"MS","Liverpool":"MS","Arsenal":"MS","Chelsea":"SB","Spurs":"SD","Man City":"SB","Newcastle":"BS","Everton":"BM","West Ham":"BM","Aston Villa":"BC"}
 KEY = {"Man Utd":"mu","Liverpool":"lfc","Arsenal":"afc","Chelsea":"cfc","Spurs":"tot","Man City":"mci","Newcastle":"new","Everton":"eve","West Ham":"whu","Aston Villa":"avl"}
-PAIRS = [("Chelsea","Man City"),("Arsenal","Chelsea"),("Everton","Man Utd"),("Liverpool","Newcastle"),("Newcastle","Spurs"),("Spurs","West Ham"),("Arsenal","West Ham"),("Aston Villa","Liverpool"),("Liverpool","Man City")]
+PAIRS = [("Chelsea","Man City"),("Arsenal","Chelsea"),("Everton","Man Utd"),("Liverpool","Newcastle"),("Newcastle","Spurs"),("Spurs","West Ham"),("Arsenal","West Ham"),("Aston Villa","Liverpool"),("Liverpool","Man City"),
+         # added 3 October 2026 (Craig's picks): every other pair of the ten clubs with 15 or more shared players
+         ("Aston Villa","Everton"),("Liverpool","West Ham"),("Aston Villa","Chelsea"),("Man City","West Ham"),("Chelsea","West Ham"),("Everton","Man City"),("Aston Villa","Man City"),("Aston Villa","West Ham"),("Aston Villa","Newcastle")]
 plet = collections.defaultdict(set)
 for r in rows: plet[r["player_id"]] |= {x for x in (first(r["surname"]), first(r["player"].split()[-1])) if x}
 OPEN = []
@@ -65,6 +67,29 @@ for club, ls in LETTERS.items():
 for a, b in PAIRS:
     add_open(f"pl-both-{KEY[a]}-{KEY[b]}", [a, b], "", f"Played for {a} and {b}",
              f"Name players who have played Premier League games for both {a} and {b}.")
+# open boards with their own list of answers (Craig's picks, 3 October 2026): the 100-goal and 500-game clubs, and each big club's forwards,
+# midfielders and defenders (a player's position at that club is the one he played most of his games there in)
+pgoals, papps = collections.Counter(), collections.Counter()
+for r in rows: pgoals[r["player_id"]] += int(r["goals"]); papps[r["player_id"]] += int(r["apps"])
+def add_list(id, title, brief, level, pids, rank, miss, clubs=None):
+    pids = sorted(pids, key=lambda p: (-rank[p], pid_name[p]))
+    names = list(dict.fromkeys(pid_name[p] for p in pids))
+    assert len(names) >= 13, (id, len(names))
+    b = {"id": id, "title": title, "brief": brief, "clubs": clubs or [], "letters": "", "level": level, "examples": names[:40], "count": len(names), "names": names, "miss": miss}
+    OPEN.append(b)
+add_list("pl-open-100-goals", "The 100-goal club", "Name players who have scored 100 or more Premier League goals.", 1, [p for p in pgoals if pgoals[p] >= 100], pgoals,
+         "{n} didn't reach 100 Premier League goals.")
+add_list("pl-open-500-games", "The 500-game club", "Name players who have played 500 or more Premier League games.", 2, [p for p in papps if papps[p] >= 500], papps,
+         "{n} didn't reach 500 Premier League games.")
+clubpos = collections.defaultdict(collections.Counter)
+for r in rows:
+    if int(r["apps"]) > 0: clubpos[(r["player_id"], r["club"])][r["position"]] += int(r["apps"])
+TOP6 = {"Man Utd", "Liverpool", "Arsenal", "Chelsea", "Spurs", "Man City"}
+for club in LETTERS:
+    for P, word in [("FWD", "forwards"), ("MID", "midfielders"), ("DEF", "defenders")]:
+        pids = [pid for (pid, c), pc in clubpos.items() if c == club and pc.most_common(1)[0][0] == P]
+        add_list(f"pl-open-{KEY[club]}-{P.lower()}", f"{club} {word}", f"Name players who have played for {club} in the Premier League as {word} (the position each played most at the club).",
+                 0 if club in TOP6 else 1, pids, collections.Counter({p: club_apps[p][club] for p in pids}), "{n} didn't mainly play as one of " + club + "'s " + word + ".", [club])
 import json
 block = f'const PL_PLAYERS = "{data}";\nconst PL_CLUBS = {json.dumps(CLUBS)};\nconst PL_OPEN = {json.dumps(OPEN, separators=(",", ":"))};\n'
 src = open("index.html", encoding="utf-8").read()

@@ -237,26 +237,33 @@ def tally(rows, field):
     t = Counter()
     for r in rows: t[r["player_id"]] += int(r[field])
     return t
+WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"]
+def gboard(id, title, brief, level, scores, name, val, pool_val, notes=None, period=None, type="person", asc=False, near=None, who_word="players"):
+    """the ten best in scores (key -> number, highest first unless asc); a tie across 10th becomes a pool and the brief says so.
+    name(key) is the answer, val(key, n) the stat; near(key, n) words the 'just outside' notes."""
+    sign = 1 if asc else -1
+    order = sorted(scores, key=lambda k: (sign * scores[k], name(k)))
+    cut = scores[order[9]]
+    above = [k for k in order if sign * scores[k] < sign * cut]
+    tied = [k for k in order if scores[k] == cut]
+    rows = [(name(k), val(k, scores[k])) for k in above]
+    if len(above) + len(tied) == 10:
+        rows += [(name(k), val(k, scores[k])) for k in tied]
+    else:
+        n = 10 - len(above); names = list(dict.fromkeys(name(k) for k in tied))
+        assert len(names) > n, (id, names, n)
+        rows.append((names, pool_val(cut), id.replace("pl-", "")[:12], n))
+        who = " and ".join(names) if len(names) == 2 else f"{WORDS[len(names)] if len(names) < len(WORDS) else len(names)} {who_word}"
+        brief += f" {who} share {'10th' if n == 1 else 'the last ' + WORDS[n].lower() + ' places'}, so {'either' if len(names) == 2 else 'any ' + WORDS[n].lower()} of them {'counts' if n == 1 else 'fill them'}."
+    below = [k for k in order if sign * scores[k] > sign * cut][:3]
+    near = near or (lambda k, v: f"{v}")
+    auto = {name(k): f"{name(k)} is just outside with {near(k, scores[k])}." for k in below if name(k) not in {r[0] if isinstance(r[0], str) else "" for r in rows}}
+    auto.update(notes or {})
+    ranked(id, title, brief, period or LIVE, level, rows, auto, type=type)
+
 def board(id, title, brief, level, tally_, unit, notes=None, val=None, period=None):
     """the ten highest in tally_ (player_id -> number); a tie across 10th becomes a pool and the brief says so"""
-    val = val or (lambda p, v: f"{v} {unit}")
-    order = sorted(tally_, key=lambda p: (-tally_[p], PNAME[p]))
-    cut = tally_[order[9]]
-    above = [p for p in order if tally_[p] > cut]
-    tied = [p for p in order if tally_[p] == cut]
-    rows = [(PNAME[p], val(p, tally_[p])) for p in above]
-    if len(above) + len(tied) == 10:
-        rows += [(PNAME[p], val(p, tally_[p])) for p in tied]
-    else:
-        n = 10 - len(above); names = [PNAME[p] for p in tied]
-        rows.append((names, f"{cut} {unit}", id.replace("pl-", "")[:12], n))
-        WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"]
-        who = " and ".join(names) if len(names) == 2 else f"{WORDS[len(names)]} players"
-        brief += f" {who} share {'10th' if n == 1 else 'the last ' + str(n) + ' places'}, so {'either' if len(names) == 2 else 'any ' + ('one' if n == 1 else str(n))} of them {'counts' if n == 1 else 'fill them'}."
-    below = [p for p in order if tally_[p] < cut][:3]
-    auto = {PNAME[p]: f"{PNAME[p]} is just outside with {tally_[p]}." for p in below}
-    auto.update(notes or {})
-    ranked(id, title, brief, period or LIVE, level, rows, auto)
+    gboard(id, title, brief, level, tally_, lambda p: PNAME[p], val or (lambda p, v: f"{v} {unit}"), lambda c: f"{c} {unit}", notes, period)
 
 # most appearances for a club
 CLUBS = [("mu","Man Utd","Man Utd's","Manchester United",1),("lfc","Liverpool","Liverpool's","Liverpool",1),("afc","Arsenal","Arsenal's","Arsenal",1),
@@ -351,6 +358,179 @@ order = sorted(nat_players, key=lambda n: -len(nat_players[n]))
 assert len(nat_players[order[9]]) > len(nat_players[order[10]])
 ranked("pl-nat-players", "Countries with the most Premier League players", "Name the ten countries that have had the most players in the Premier League (a player counts for the country he plays for).", "Premier League players, 1992/93 to 2025/26", 1,
        [(n, f"{len(nat_players[n])} players") for n in order[:10]], {n: f"{n} is just outside with {len(nat_players[n])}." for n in order[10:13]}, type="nation")
+
+# ---- Craig's picks, batch 1 (3 October 2026): more boards from the player dataset and the game's own season tables
+# season tables and points, read from index.html (PL and PL_PTS, both sourced: docs/PL_POINTS_SOURCES.md)
+H0 = open("index.html", encoding="utf-8").read()
+def jsblock(name):
+    i = H0.index(f"const {name} = {{"); return H0[i:H0.index("};", i)]
+PLT = {s: v.split(",") for s, v in re.findall(r'^"(\d{4}/\d{2})":"([^"]+)"', jsblock("PL"), re.M)}
+PTS = {s: json.loads(v) for s, v in re.findall(r'^"(\d{4}/\d{2})":(\[[^\]]+\])', jsblock("PL_PTS"), re.M)}
+SEAS = sorted(PLT); assert len(SEAS) == 34 and SEAS[-1] == "2025/26" and all(len(PLT[s]) == len(PTS[s]) for s in SEAS)
+DOWN = {s: 4 if s == "1994/95" else 3 for s in SEAS}
+CHAMPS = {PLT[s][0] for s in SEAS}
+def ordn(n): return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+def times(n): return "once" if n == 1 else f"{n} times"
+club = lambda k: k if isinstance(k, str) else k[0]
+
+# club records from the tables (answers are clubs)
+def cboard(id, title, brief, level, scores, val, pool_val, notes=None, period=None, asc=False, near=None):
+    gboard(id, title, brief, level, scores, club, val, pool_val, notes, period, "club", asc, near or (lambda k, v: val(k, v)), "clubs")
+top4, top6, bottom = Counter(), Counter(), Counter()
+for s in SEAS:
+    t = PLT[s]
+    for c in t[:4]: top4[c] += 1
+    for c in t[:6]: top6[c] += 1
+    for c in t[len(t) // 2:]: bottom[c] += 1
+cboard("pl-rec-top4", "Most top-four finishes", "Name the clubs that have finished in the Premier League's top four the most times.", 0, top4, lambda k, v: times(v), times)
+cboard("pl-rec-top6", "Most top-six finishes", "Name the clubs that have finished in the Premier League's top six the most times.", 1, top6, lambda k, v: times(v), times)
+cboard("pl-rec-bottomhalf", "Most bottom-half finishes", "Name the clubs that have finished in the bottom half of the Premier League the most times (relegation seasons count).", 2, bottom, lambda k, v: times(v), times)
+run, best = Counter(), Counter()
+for c in {c for s in SEAS for c in PLT[s]}:
+    n = 0
+    for s in SEAS:
+        n = n + 1 if c in PLT[s] else 0; best[c] = max(best[c], n)
+cboard("pl-rec-run", "Longest unbroken Premier League spells", "Name the clubs with the most Premier League seasons in a row without being relegated. The six ever-presents have all 34.", 0, best,
+       lambda k, v: f"{v} seasons", lambda c: f"{c} seasons")
+played = Counter(c for s in SEAS for c in PLT[s])
+cboard("pl-rec-notitle", "Most Premier League seasons without winning it", "Name the clubs that have played the most Premier League seasons without ever winning the title.", 0,
+       Counter({c: n for c, n in played.items() if c not in CHAMPS}), lambda k, v: f"{v} seasons", lambda c: f"{c} seasons")
+up, down = Counter(), Counter()
+for i, s in enumerate(SEAS):
+    for c in PLT[s][-DOWN[s]:]: down[c] += 1
+    if i: up.update(c for c in PLT[s] if c not in PLT[SEAS[i - 1]])
+yoyo = up + down
+cboard("pl-rec-yoyo", "Yo-yo clubs", "Name the clubs that have gone up into or down out of the Premier League the most times, promotions and relegations added together (from 1993/94; the 1992/93 founder members don't count as promoted).", 1,
+       yoyo, lambda k, v: f"{v} ({up[k]} up, {down[k]} down)", lambda c: f"{c} moves")
+# season points (answers are clubs, the stat names the season); points are after deductions
+seasonpts, relegated, survived = {}, {}, {}
+for s in SEAS:
+    t, n = PLT[s], len(PLT[s])
+    for i, c in enumerate(t):
+        seasonpts[(c, s)] = PTS[s][i]
+        (relegated if i >= n - DOWN[s] else survived)[(c, s)] = PTS[s][i]
+pv = lambda k, v: f"{v} pts, {k[1]}"
+cboard("pl-rec-fewest-pts", "Fewest points in a Premier League season", "Name the clubs behind the ten lowest points totals in a Premier League season (after any points deductions).", 2,
+       seasonpts, pv, lambda c: f"{c} pts", asc=True)
+cboard("pl-rec-relegated-pts", "Relegated with the most points", "Name the clubs that went down from the Premier League with the most points. The 42-game seasons up to 1994/95 count.", 2,
+       relegated, pv, lambda c: f"{c} pts")
+cboard("pl-rec-survived-pts", "Survived with the fewest points", "Name the clubs that stayed up with the fewest points (after any points deductions).", 2,
+       survived, pv, lambda c: f"{c} pts", asc=True)
+
+# year-labelled series: one answer per season
+def series(id_base, title, brief, level, pick, windows, period_word="Seasons"):
+    for a, b in windows:
+        ss = [s for s in SEAS if a <= s <= b]; assert len(ss) == 10, (id_base, a, b)
+        rows = [(s, *pick(s)) for s in ss]
+        flat = Counter(n for _, n, _ in rows for n in (n if isinstance(n, list) else [n]))
+        assert max(flat.values()) <= 3, (id_base, a, flat.most_common(2))
+        labelled(f"{id_base}-{a}", title, brief, f"{period_word} {a} to {b}", level, rows)
+def promoted_best(s):
+    i = SEAS.index(s); new = [c for c in PLT[s] if c not in PLT[SEAS[i - 1]]]
+    c = new[0]; return c, f"{ordn(PLT[s].index(c) + 1)} place"
+series("pl-promoted-best", "Best finish by a promoted club", "Name the newly promoted club that finished highest in the Premier League each season.", 2, promoted_best,
+       [("2016/17", "2025/26"), ("2006/07", "2015/16"), ("1996/97", "2005/06")])
+def champ_ts(s):
+    c = PLT[s][0]; t = Counter()
+    for r in PR:
+        if r["club"] == c and r["season"] == s: t[r["player_id"]] += int(r["goals"])
+    m = max(t.values()); tops = sorted(PNAME[p] for p in t if t[p] == m)
+    return (tops if len(tops) > 1 else tops[0]), f"{m} goals, {c}"
+series("pl-champ-ts", "The champions' top scorer", "Name the title winners' top Premier League scorer each season. Where two players shared it, either counts.", 2, champ_ts,
+       [("2016/17", "2025/26"), ("2006/07", "2015/16"), ("1996/97", "2005/06")])
+
+# player records
+clubs_of = defaultdict(set)
+for r in PR:
+    if int(r["apps"]) > 0: clubs_of[r["player_id"]].add(r["club"])
+apps = tally(PR, "apps")
+one = {p for p in clubs_of if len(clubs_of[p]) == 1}
+board("pl-oneclub-apps", "One-club men: most appearances", "Name the players with the most Premier League games who only ever played for one Premier League club.", 0,
+      Counter({p: apps[p] for p in one}), "games", val=lambda p, v: f"{v} games, {next(iter(clubs_of[p]))}",
+      notes={"James Milner":"James Milner played for six Premier League clubs.","Frank Lampard":"Frank Lampard also played for West Ham and Man City.","Rio Ferdinand":"Rio Ferdinand also played for West Ham, Leeds and QPR."})
+board("pl-oneclub-goals", "One-club men: most goals", "Name the top Premier League scorers who only ever played for one Premier League club.", 0,
+      Counter({p: goals[p] for p in one}), "goals", val=lambda p, v: f"{v} goals, {next(iter(clubs_of[p]))}",
+      notes={"Alan Shearer":"Alan Shearer played for Blackburn and Newcastle.","Harry Kane":"Harry Kane also played for Norwich and Leicester on loan.","Wayne Rooney":"Wayne Rooney played for Everton and Man Utd."})
+gpg = {p: round(goals[p] / apps[p], 3) for p in apps if apps[p] >= 200}
+gboard("pl-gpg-goals", "Best goals-per-game record", "Name the ten players with the best Premier League goals-per-game record, from at least 200 games.", 1,
+       gpg, lambda p: PNAME[p], lambda p, v: f"{v:.2f} a game", lambda c: f"{c:.2f} a game", near=lambda p, v: f"{v:.2f} a game",
+       notes={"Erling Haaland":"Erling Haaland hasn't played 200 Premier League games yet."})
+pseason = defaultdict(Counter)
+for r in PR: pseason[r["player_id"]][r["season"]] += int(r["goals"])
+board("pl-10-goals-seasons", "Most 10-goal Premier League seasons", "Name the players with the most Premier League seasons of 10 goals or more.", 1,
+      Counter({p: sum(1 for g in d.values() if g >= 10) for p, d in pseason.items()}), "seasons")
+board("pl-15-goals-seasons", "Most 15-goal Premier League seasons", "Name the players with the most Premier League seasons of 15 goals or more.", 1,
+      Counter({p: sum(1 for g in d.values() if g >= 15) for p, d in pseason.items()}), "seasons")
+def longest(d):
+    b = n = 0
+    for s in SEAS:
+        n = n + 1 if d.get(s, 0) > 0 else 0; b = max(b, n)
+    return b
+board("pl-consec-goals-seasons", "Most seasons in a row with a goal", "Name the players who scored in the most Premier League seasons in a row.", 1,
+      Counter({p: longest(d) for p, d in pseason.items()}), "seasons")
+cs = defaultdict(Counter)
+for r in PR: cs[(r["club"], r["season"])][r["player_id"]] += int(r["goals"])
+topsc = Counter()
+for t in cs.values():
+    m = max(t.values())
+    if m: topsc.update(p for p in t if t[p] == m)
+board("pl-club-top-goals", "Most seasons as a club's top scorer", "Name the players who have been their club's top Premier League scorer in the most seasons (shared top spots count).", 2, topsc, "seasons")
+for P, word, lv in [("DEF", "defender", 1), ("MID", "midfielder", 0), ("FWD", "forward", 1)]:
+    board(f"pl-{P.lower()}-apps", f"Most Premier League appearances by a {word}", f"Name the ten {word}s who have played the most Premier League games. Each player goes by the position he played most often.", lv,
+          Counter({p: apps[p] for p in apps if main[p] == P}), "games")
+for key, clubn, poss, lv in [("mu", "Man Utd", "Man Utd's", 1), ("lfc", "Liverpool", "Liverpool's", 1), ("afc", "Arsenal", "Arsenal's", 2), ("cfc", "Chelsea", "Chelsea's", 2)]:
+    board(f"pl-{key}-eng-goals", f"{poss} top English scorers", f"Name {clubn}'s ten highest English scorers in the Premier League.", lv,
+          tally([r for r in PR if r["club"] == clubn and r["nationality"] == "England"], "goals"), "goals")
+board("pl-most-clubs-apps", "Played for the most Premier League clubs", "Name the players who have played for the most different Premier League clubs.", 2,
+      Counter({p: len(c) for p, c in clubs_of.items()}), "clubs", val=lambda p, v: f"{v} clubs")
+scored_for = defaultdict(set)
+for r in PR:
+    if int(r["goals"]) > 0: scored_for[r["player_id"]].add(r["club"])
+board("pl-most-clubs-goals", "Scored for the most Premier League clubs", "Name the players who have scored for the most different Premier League clubs.", 2,
+      Counter({p: len(c) for p, c in scored_for.items()}), "clubs")
+best_mid = Counter()
+for r in PR:
+    p = r["player_id"]
+    if main[p] == "MID": best_mid[p] = max(best_mid[p], pseason[p][r["season"]])
+mid_season = {p: max((s for s in pseason[p]), key=lambda s: pseason[p][s]) for p in best_mid}
+board("pl-mid-season-goals", "Most goals in a season by a midfielder", "Name the midfielders with the most Premier League goals in a single season. Each player counts once, for his best season, and goes by the position he played most often.", 1,
+      best_mid, "goals", val=lambda p, v: f"{v} in {mid_season[p]}",
+      notes={"Mohamed Salah":"Mohamed Salah counts as a forward here.","Heung-min Son":"Son counts as a forward here."})
+BIG10 = [("mu","Man Utd","Man Utd's",0),("lfc","Liverpool","Liverpool's",0),("afc","Arsenal","Arsenal's",0),("cfc","Chelsea","Chelsea's",1),("tot","Spurs","Spurs'",1),
+         ("mci","Man City","Man City's",1),("new","Newcastle","Newcastle's",1),("eve","Everton","Everton's",2),("whu","West Ham","West Ham's",2),("avl","Aston Villa","Aston Villa's",2)]
+for key, clubn, poss, lv in BIG10:
+    bs, bsea = Counter(), {}
+    for (c, s), t in cs.items():
+        if c != clubn: continue
+        for p, g in t.items():
+            if g > bs[p]: bs[p], bsea[p] = g, s
+    board(f"pl-{key}-season-goals", f"{poss} best Premier League seasons", f"Name the players with the most Premier League goals in a single season for {clubn}. Each player counts once, for his best season.", min(lv + 1, 2),
+          bs, "goals", val=lambda p, v, bsea=bsea: f"{v} in {bsea[p]}")
+HOME = {"England", "Scotland", "Wales", "Northern Ireland", "Republic of Ireland"}
+for key, clubn, poss, lv in BIG10:
+    board(f"pl-{key}-foreign-apps", f"{poss} overseas players: most appearances", f"Name the players from outside Britain and Ireland who have played the most Premier League games for {clubn}.", 2,
+          tally([r for r in PR if r["club"] == clubn and r["nationality"] not in HOME], "apps"), "games")
+for key, clubn, poss, lv in BIG10:
+    a2 = tally([r for r in PR if r["club"] == clubn and r["season"] >= "2000/01"], "apps")
+    at = tally([r for r in PR if r["club"] == clubn], "apps")
+    t10 = lambda t: set(sorted(t, key=lambda p: -t[p])[:10])
+    if t10(a2) == t10(at): continue
+    board(f"pl-{key}-2000-apps", f"{poss} most Premier League appearances since 2000", f"Name the players with the most Premier League games for {clubn}, counting only games from the 2000/01 season onwards.", 2,
+          a2, "games", period="Premier League games from 2000/01 to 2025/26")
+# by continent (the country a player plays for). Asia and Oceania are left out: their tens run into little-known names.
+AFRICA = {"Egypt","Ivory Coast","Senegal","Nigeria","Ghana","Cameroon","Morocco","Algeria","DR Congo","Mali","South Africa","Togo","Zimbabwe","Tunisia","Guinea","Gabon","Zambia","Burkina Faso","Angola","Congo","Kenya","Cape Verde","Sierra Leone","Liberia","Benin","Gambia","Uganda","Mozambique","Tanzania","Equatorial Guinea","Madagascar","Comoros","Libya","Guinea-Bissau","Zaire","Burundi","Central African Republic","Namibia","Mauritania","Seychelles"}
+SOUTHAM = {"Brazil","Argentina","Uruguay","Colombia","Chile","Paraguay","Ecuador","Peru","Venezuela","Bolivia"}
+NCAM = {"United States","Canada","Mexico","Jamaica","Trinidad and Tobago","Costa Rica","Honduras","Haiti","Barbados","Bermuda","Grenada","Antigua and Barbuda","Montserrat","Saint Kitts and Nevis","St Kitts and Nevis","Curacao","Guadeloupe","Martinique","Guyana","Suriname","Panama","El Salvador","Guatemala","Cuba","Dominican Republic"}
+ASIAOCE = {"South Korea","Japan","Iran","Iraq","China","Israel","Uzbekistan","Oman","Indonesia","Philippines","Bangladesh","Pakistan","Australia","New Zealand"}
+EUROPE = {r["nationality"] for r in PR} - AFRICA - SOUTHAM - NCAM - ASIAOCE - HOME
+assert not EUROPE & {"Brazil", "Egypt", "Japan", "United States"}
+for key, S, title, brief, lv in [("afr", AFRICA, "Top African scorers", "Name the ten African players with the most Premier League goals.", 0),
+                                 ("sam", SOUTHAM, "Top South American scorers", "Name the ten South American players with the most Premier League goals.", 0),
+                                 ("eur", EUROPE, "Top European scorers", "Name the ten European players with the most Premier League goals, not counting players from Britain and Ireland.", 0),
+                                 ("nca", NCAM, "Top North and Central American scorers", "Name the ten players from North America, Central America or the Caribbean with the most Premier League goals.", 2)]:
+    board(f"pl-cont-{key}-goals", title, brief, lv, tally([r for r in PR if r["nationality"] in S], "goals"), "goals")
+board("pl-nat-hn-goals", "Top scorers from Scotland, Wales and Ireland", "Name the ten players from Scotland, Wales, Northern Ireland or the Republic of Ireland with the most Premier League goals.", 1,
+      tally([r for r in PR if r["nationality"] in HOME - {"England"}], "goals"), "goals")
 
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
