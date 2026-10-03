@@ -129,13 +129,14 @@ await test("questions: the October 2026 Premier League boards are all playable, 
       const q = findQ(id);
       if (q.slots.length !== 10 || !q.period || ![0,1,2].includes(q.level)) bad.push(id + ": shape");
       const names = new Set(q.slots.flatMap(s => s.alts ? s.alts : [s.club]));
-      for (const n of names){ const m = PALIAS[norm(n)] || PALIAS[norm(n.split(" ").pop())]; if (!m || !m.has(n)) bad.push(id + ": " + n + " not recognised"); }
+      const D = { person: PALIAS, club: ALIAS, nation: NALIAS }[q.type];
+      for (const n of names){ const m = D[norm(n)] || D[norm(n.split(" ").pop())]; if (!m || !(m instanceof Set ? m.has(n) : m === n)) bad.push(id + ": " + n + " not recognised"); }
     }
     return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
   });
-  eq([r.n, r.live], [62, 62], "all sixty-two boards survive the final pass");
+  eq([r.n, r.live], [106, 106], "all 106 boards survive the final pass");
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
-  eq(r.fam, ["appearances", "managers", "scorers", "transfers"], "the boards spread across families");
+  eq(r.fam, ["appearances", "managers", "records", "scorers", "transfers"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-hattricks"); });
@@ -150,13 +151,22 @@ await test("questions: the October 2026 Premier League boards are all playable, 
 await test("letter boards: any Premier League player with the right surname letter counts, filling from 10th up", async () => {
   const p = await phone(browser, "letters"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const info = await p.evaluate(() => { const t0 = performance.now(); for (const q of ["ka","smi","arnautvic","de bruy"]) { matches(norm(q)); fuzzy(norm(q)); } const ms = performance.now() - t0;
-    return { players: PLP.size, boards: Q.filter(q => q.open).map(q => q.id), counts: Q.filter(q => q.open).map(q => q.open.count),
+    const letterQ = Q.filter(q => q.open && /^pl-letter-[a-z]+$/.test(q.id));
+    return { players: PLP.size, boards: letterQ.map(q => q.id), counts: letterQ.map(q => q.open.count),
       kdb: PLP.get("Kevin De Bruyne").letters, son: PLP.has("Heung-min Son") && !PLP.has("Son Heung-min"), known: [...PLP.keys()].every(n => PEOPLE[n]), ms }; });
   assert(info.players > 5000, "every player is loaded: " + info.players);
   eq(info.boards.length, 22, "22 letter boards"); assert(info.boards.includes("pl-letter-iqu") && info.boards.includes("pl-letter-xyz"), "rare letters share boards");
   assert(Math.min(...info.counts) >= 70, "every board has plenty of answers: " + info.counts);
   eq([info.kdb, info.son, info.known], ["BD", true, true], "De Bruyne counts for B and D, Son keeps the game's spelling, every player is a known name");
   assert(info.ms < 1500, "suggestions stay quick with every player loaded: " + Math.round(info.ms) + "ms");
+  // club open boards: a surname letter at one club, or players who played for two clubs (the same player, not just the same name)
+  const club = await p.evaluate(() => { const s = findQ("pl-letter-lfc-s"), b = findQ("pl-both-eve-mu"), q = Q.filter(x => x.open);
+    return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
+      sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
+      smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
+  eq([club.n, club.fam], [51, ["letters"]], "22 letter boards plus 29 club open boards, all in the letters family");
+  eq([club.salah, club.rooney, club.sterling, club.both, club.bothNo, club.smith, club.ex], [true, false, true, true, false, true, true], "club boards check the club, the letter and, for two clubs, the same player");
+  assert(/didn't play for Liverpool/.test(club.rooneyNote) && /doesn't begin with S/.test(club.sNote) && /both Everton and Man Utd/.test(club.bNote), "wrong answers explain why: " + [club.rooneyNote, club.sNote, club.bNote]);
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-letter-a"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);

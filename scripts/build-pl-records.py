@@ -35,6 +35,10 @@ ranked("pl-at-mgr-winpct", "Best Premier League win rate as a manager", "Name th
  [("Pep Guardiola","70.8%"),("Alex Ferguson","65.2%"),("Antonio Conte","62.9%"),("Jurgen Klopp","62.6%"),("Roberto Mancini","61.7%"),
   ("Mikel Arteta","60.1%"),("Jose Mourinho","59.8%"),("Arsene Wenger","57.5%"),("Thomas Tuchel","55.6%"),("Arne Slot","55.3%")],
  {"Carlo Ancelotti":"Carlo Ancelotti is just outside on 54.5%.","Enzo Maresca":"Enzo Maresca is on 49.1%, not top ten.","Manuel Pellegrini":"Manuel Pellegrini is on 52.6%, not quite top ten.","Mauricio Pochettino":"Mauricio Pochettino is on about 51%."})
+ranked("pl-at-mgr-games", "Most Premier League games as a manager", "Name the ten managers who have taken charge of the most Premier League games. Caretaker spells count.", LIVE, 1,
+ [("Arsene Wenger","828 games"),("Alex Ferguson","810 games"),("David Moyes","754 games"),("Harry Redknapp","641 games"),("Sam Allardyce","541 games"),
+  ("Steve Bruce","476 games"),("Mark Hughes","466 games"),("Roy Hodgson","416 games"),("Pep Guardiola","380 games"),("Eddie Howe","369 games")],
+ {"Jose Mourinho":"Jose Mourinho is 11th with 363.","Rafael Benitez":"Rafael Benitez is just outside with 359.","Martin O'Neill":"Martin O'Neill is just outside with 359.","Sean Dyche":"Sean Dyche has 351, just outside.","Jurgen Klopp":"Jurgen Klopp managed 334 Premier League games.","Tony Pulis":"Tony Pulis managed about 320.","Alan Pardew":"Alan Pardew managed about 320."})
 FOUR = ["Ron Atkinson","Rafael Benitez","David Moyes","Nuno Espirito Santo","Claudio Ranieri","Marco Silva","Graeme Souness","Neil Warnock","Chris Hughton"]
 ranked("pl-at-mgr-clubs", "Most Premier League clubs managed", "Name the managers who have taken charge of the most different Premier League clubs. Caretaker spells count. Nine managers have had four, so any four of them fill the last four places.", LIVE, 2,
  [("Sam Allardyce","9 clubs"),(["Roy Hodgson","Mark Hughes"],"6 clubs","mgrc6",2),(["Harry Redknapp","Steve Bruce","Alan Pardew"],"5 clubs","mgrc5",3),(FOUR,"4 clubs","mgrc4",4)],
@@ -54,6 +58,10 @@ ranked("pl-at-hattricks", "Most Premier League hat-tricks", "Name the ten player
  [("Sergio Aguero","12 hat-tricks"),("Alan Shearer","11 hat-tricks"),("Robbie Fowler","9 hat-tricks"),("Erling Haaland","8 hat-tricks"),("Thierry Henry","8 hat-tricks"),
   ("Harry Kane","8 hat-tricks"),("Michael Owen","8 hat-tricks"),("Wayne Rooney","7 hat-tricks"),("Luis Suarez","6 hat-tricks"),(FIVE,"5 hat-tricks","ht5",1)],
  {"Mohamed Salah":"Mohamed Salah has 4, one short.","Heung-min Son":"Son has 4, one short.","Cole Palmer":"Cole Palmer has 4, one short."})
+ranked("pl-at-penalties", "Most Premier League penalties scored", "Name the ten players who have scored the most Premier League penalties.", LIVE, 1,
+ [("Alan Shearer","56 penalties"),("Frank Lampard","43 penalties"),("Mohamed Salah","35 penalties"),("Harry Kane","33 penalties"),("Steven Gerrard","31 penalties"),
+  ("Mark Noble","28 penalties"),("Sergio Aguero","27 penalties"),("Jamie Vardy","27 penalties"),("Bruno Fernandes","26 penalties"),("Matt Le Tissier","25 penalties")],
+ {"Thierry Henry":"Thierry Henry is just outside with 23.","Wayne Rooney":"Wayne Rooney is just outside with 23 (he missed 11).","James Milner":"James Milner scored 18.","Erling Haaland":"Erling Haaland isn't in the top ten yet.","Cole Palmer":"Cole Palmer isn't in the top ten yet."})
 ranked("pl-at-fastest-50", "Fastest to 50 Premier League goals", "Name the ten players who reached 50 Premier League goals in the fewest games. Thierry Henry and Kevin Phillips share 10th, so either counts.", "Premier League seasons 1992/93 to 2025/26", 2,
  [("Erling Haaland","48 games"),("Andy Cole","65 games"),("Alan Shearer","66 games"),("Ruud van Nistelrooy","68 games"),("Fernando Torres","72 games"),
   ("Mohamed Salah","72 games"),("Alexander Isak","76 games"),("Pierre-Emerick Aubameyang","79 games"),("Sergio Aguero","81 games"),(["Thierry Henry","Kevin Phillips"],"83 games","f50",1)],
@@ -66,6 +74,17 @@ NINETEEN = ["Jermain Defoe","John Terry","Paul Scholes","Phil Neville","Sol Camp
 ranked("pl-at-apps-seasons", "Most Premier League seasons played", "Name the players who have played in the most Premier League seasons (one game in a season counts). Six players have 19, so any five of them fill the last five places.", DONE, 2,
  [("James Milner","24 seasons"),("Ryan Giggs","22 seasons"),("Gareth Barry","21 seasons"),(["Frank Lampard","Rio Ferdinand"],"20 seasons","sp20",2),(NINETEEN,"19 seasons","sp19",5)],
  {"Danny Welbeck":"Danny Welbeck has 18, one short.","David James":"David James played in 18 seasons.","Mark Schwarzer":"Mark Schwarzer played in 18 seasons.","Ashley Young":"Ashley Young played in 18 seasons.","Peter Crouch":"Peter Crouch played in 18 seasons.","Michael Carrick":"Michael Carrick played in 18 seasons.","Gary Neville":"Gary Neville played in 18 seasons."})
+
+# relegations and promotions, from the game's season tables (PL) and checked against sources: docs/data/PL_RELEGATIONS_2026-10-03.md
+REL3 = ["Nottingham Forest","Ipswich","QPR","Bolton","West Ham","Wolves","Southampton","Birmingham","Hull","Fulham"]
+ranked("pl-at-relegated", "Most relegations from the Premier League", "Name the clubs relegated from the Premier League the most times. Ten clubs have gone down three times, so any one of them fills 10th.", LIVE, 1,
+ [("Norwich","6 times"),("Leicester","5 times"),("West Brom","5 times"),("Burnley","5 times"),("Crystal Palace","4 times"),("Middlesbrough","4 times"),
+  ("Sheffield Utd","4 times"),("Sunderland","4 times"),("Watford","4 times"),(REL3,"3 times","rel3",1)],
+ {}, type="club")
+PRO3 = ["Newcastle","West Ham","Nottingham Forest","Middlesbrough","Bolton","Birmingham","Wolves","Sheffield Utd","Hull"]
+ranked("pl-at-promoted", "Most promotions to the Premier League", "Name the clubs promoted to the Premier League the most times, from 1993/94 (the 1992/93 founder members don't count as promoted). Nine clubs have come up three times, so any two of them fill 9th and 10th.", "Promotions for seasons 1993/94 to 2025/26", 1,
+ [("Leicester","5 times"),("Sunderland","5 times"),("West Brom","5 times"),("Norwich","5 times"),("Burnley","5 times"),("Crystal Palace","4 times"),
+  ("Watford","4 times"),("Fulham","4 times"),(PRO3,"3 times","pro3",2)], type="club")
 
 # transfers (headline fees as reported in the UK)
 FEES = "All time, to 1 September 2026"
@@ -143,7 +162,7 @@ sales("pl-fee-sales-new", "Newcastle's biggest sales", "Name the ten players New
 # each club's top Premier League scorers counting only goals from 2000/01, researched 2 October 2026 (docs/data/SINCE_2000_SCORERS.md)
 S2000 = "Premier League goals from 2000/01 to 2025/26"
 # each club's biggest signings (headline fees, add-ons included, as the most prominent UK outlets published them), researched 3 October 2026.
-# Rows and sources: docs/data/PL_SIGNINGS_2026-10-03.md. Everton is held back: Moise Kean's fee (Sky £36.6m, Juventus about £29m) decides 10th place.
+# Rows and sources: docs/data/PL_SIGNINGS_2026-10-03.md. Everton uses Sky's £36.6m for Moise Kean (Juventus said about £29m), Craig's call.
 def buys(id, title, level, rows, notes=None):
     ranked(id, title, f"Name the ten players {re.sub(chr(39) + 's? biggest signings$', '', title)} signed for the biggest fees. {SB}", FEES, level, rows, notes)
 buys("pl-fee-buys-mu", "Man Utd's biggest signings", 1,
@@ -183,6 +202,11 @@ buys("pl-fee-buys-whu", "West Ham's biggest signings", 2,
   ("Mohammed Kudus","£38m, 2023"),("Gianluca Scamacca","£35.5m, 2022"),("Edson Alvarez","£35.4m, 2023"),("Jean-Clair Todibo","£34.2m, 2025"),("Crysencio Summerville","£34m, 2024")],
  {"Nayef Aguerd":"Nayef Aguerd's £30m move is just outside.","Kurt Zouma":"Kurt Zouma's £29.8m move is just outside."})
 
+buys("pl-fee-buys-eve", "Everton's biggest signings", 2,
+ [("Richarlison","£50m, 2018"),("Gylfi Sigurdsson","£45m, 2017"),("Tyler Dibling","£42m, 2025"),("Moise Kean","£36.6m, 2019"),("Alex Iwobi","£34m, 2019"),
+  ("Amadou Onana","£33.7m, 2022"),("Jordan Pickford","£30m, 2017"),("Michael Keane","£30m, 2017"),("Yannick Bolasie","£30m, 2016"),("Kiernan Dewsbury-Hall","£29m, 2025")],
+ {"Yerry Mina":"Yerry Mina's £28.5m move is just outside.","Romelu Lukaku":"Romelu Lukaku's £28m move is just outside.","Thierno Barry":"Thierno Barry's move is just outside the ten."})
+
 def since(id, club, rows, notes):
     ranked(id, f"{club}'s Premier League scorers since 2000", f"Name {club}'s ten highest Premier League scorers, counting only goals from the 2000/01 season onwards.", S2000, 1, rows, notes)
 since("pl-mu-2000-goals", "Man Utd",
@@ -213,7 +237,7 @@ def tally(rows, field):
     t = Counter()
     for r in rows: t[r["player_id"]] += int(r[field])
     return t
-def board(id, title, brief, level, tally_, unit, notes=None, val=None, short=None):
+def board(id, title, brief, level, tally_, unit, notes=None, val=None, period=None):
     """the ten highest in tally_ (player_id -> number); a tie across 10th becomes a pool and the brief says so"""
     val = val or (lambda p, v: f"{v} {unit}")
     order = sorted(tally_, key=lambda p: (-tally_[p], PNAME[p]))
@@ -226,12 +250,13 @@ def board(id, title, brief, level, tally_, unit, notes=None, val=None, short=Non
     else:
         n = 10 - len(above); names = [PNAME[p] for p in tied]
         rows.append((names, f"{cut} {unit}", id.replace("pl-", "")[:12], n))
-        who = " and ".join(names) if len(names) == 2 else f"{len(names)} players"
+        WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"]
+        who = " and ".join(names) if len(names) == 2 else f"{WORDS[len(names)]} players"
         brief += f" {who} share {'10th' if n == 1 else 'the last ' + str(n) + ' places'}, so {'either' if len(names) == 2 else 'any ' + ('one' if n == 1 else str(n))} of them {'counts' if n == 1 else 'fill them'}."
     below = [p for p in order if tally_[p] < cut][:3]
     auto = {PNAME[p]: f"{PNAME[p]} is just outside with {tally_[p]}." for p in below}
     auto.update(notes or {})
-    ranked(id, title, brief, LIVE, level, rows, auto)
+    ranked(id, title, brief, period or LIVE, level, rows, auto)
 
 # most appearances for a club
 CLUBS = [("mu","Man Utd","Man Utd's","Manchester United",1),("lfc","Liverpool","Liverpool's","Liverpool",1),("afc","Arsenal","Arsenal's","Arsenal",1),
@@ -280,6 +305,52 @@ board("pl-defender-goals", "Most Premier League goals by a defender", "Name the 
 board("pl-midfield-goals", "Most Premier League goals by a midfielder", "Name the ten midfielders with the most Premier League goals. Wingers count as midfielders, and each player goes by the position he played most often.", 1,
       Counter({p: g for p, g in goals.items() if main[p] == "MID"}), "goals",
       {"Mohamed Salah":"Mohamed Salah counts as a forward here.","Heung-min Son":"Son counts as a forward here.","Matt Le Tissier":"Matt Le Tissier counts as a forward here.","Dennis Bergkamp":"Dennis Bergkamp counts as a forward here.","Leroy Sane":"Leroy Sane counts as a forward here."})
+
+# more boards from the player dataset (Craig's picks, 3 October 2026)
+board("pl-nat-eng-goals", "Top English Premier League scorers", "Name the ten English players with the most Premier League goals.", 0,
+      tally([r for r in PR if r["nationality"] == "England"], "goals"), "goals",
+      {"Mohamed Salah":"Mohamed Salah is Egyptian.","Sergio Aguero":"Sergio Aguero is Argentinian.","Thierry Henry":"Thierry Henry is French."})
+# top scorers for more countries: only those whose ten are mostly well-known players (Norway, Denmark, Sweden, USA, Australia, Jamaica and Northern Ireland left out)
+for key, nat, adj, lv in [("esp","Spain","Spanish",1),("bra","Brazil","Brazilian",1),("arg","Argentina","Argentinian",1),("bel","Belgium","Belgian",1),("por","Portugal","Portuguese",1),
+                          ("ger","Germany","German",2),("civ","Ivory Coast","Ivory Coast",2),("nga","Nigeria","Nigerian",2),("sen","Senegal","Senegalese",2),("ita","Italy","Italian",2)]:
+    who = "Ivory Coast players" if key == "civ" else f"{adj} players"
+    board(f"pl-nat-{key}-goals", f"Top Premier League scorers: {nat}", f"Name the ten {who} with the most Premier League goals.", lv,
+          tally([r for r in PR if r["nationality"] == nat], "goals"), "goals")
+# most appearances by country, the same rule for which countries go in
+for key, nat, adj, lv in [("eng","England","English",1),("fra","France","French",1),("esp","Spain","Spanish",1),("irl","Republic of Ireland","Republic of Ireland",2),
+                          ("wal","Wales","Welsh",2),("ned","Netherlands","Dutch",2),("bra","Brazil","Brazilian",1),("arg","Argentina","Argentinian",2),
+                          ("por","Portugal","Portuguese",2),("bel","Belgium","Belgian",1),("ger","Germany","German",2),("civ","Ivory Coast","Ivory Coast",2),
+                          ("nga","Nigeria","Nigerian",2),("ita","Italy","Italian",2)]:
+    who = f"{adj} players" if key not in ("irl", "civ") else f"{adj} players"
+    board(f"pl-nat-{key}-apps", f"Most Premier League appearances: {nat}", f"Name the ten {who} who have played the most Premier League games.", lv,
+          tally([r for r in PR if r["nationality"] == nat], "apps"), "games")
+
+# top scorers since 2000/01 for more clubs (Man City is left out: since 2000 its ten are the same as its all-time board)
+for key, club, poss in [("tot","Spurs","Spurs'"),("mci","Man City","Man City's"),("new","Newcastle","Newcastle's"),("eve","Everton","Everton's"),("whu","West Ham","West Ham's"),("avl","Aston Villa","Aston Villa's")]:
+    allt = tally([r for r in PR if r["club"] == club], "goals")
+    s2k = tally([r for r in PR if r["club"] == club and r["season"] >= "2000/01"], "goals")
+    top10 = lambda t: set(sorted(t, key=lambda p: -t[p])[:10])
+    if top10(allt) == top10(s2k): continue
+    before = {PNAME[p]: f"Most of {PNAME[p]}'s goals for {club} came before 2000/01." for p in sorted(allt, key=lambda p: -allt[p])[:12] if s2k[p] * 2 < allt[p]}
+    board(f"pl-{key}-2000-goals", f"{poss} Premier League scorers since 2000", f"Name {poss} ten highest Premier League scorers, counting only goals from the 2000/01 season onwards.", 1,
+          s2k, "goals", before, period=S2000)
+
+# by decade (the 2020s so far)
+for dec, a, b, glv, alv in [("1990s","1992/93","1999/00",1,2),("2000s","2000/01","2009/10",1,2),("2010s","2010/11","2019/20",0,2),("2020s","2020/21","2025/26",1,1)]:
+    rows = [r for r in PR if a <= r["season"] <= b]
+    per = f"Premier League seasons {a} to {b}"
+    board(f"pl-dec-{dec[:4]}-goals", f"Top Premier League scorers of the {dec}", f"Name the ten players who scored the most Premier League goals from {a} to {b}.", glv,
+          tally(rows, "goals"), "goals", period=per)
+    board(f"pl-dec-{dec[:4]}-apps", f"Most Premier League appearances in the {dec}", f"Name the ten players who played the most Premier League games from {a} to {b}.", alv,
+          tally(rows, "apps"), "games", period=per)
+
+# countries with the most Premier League players
+nat_players = defaultdict(set)
+for r in PR: nat_players[r["nationality"]].add(r["player_id"])
+order = sorted(nat_players, key=lambda n: -len(nat_players[n]))
+assert len(nat_players[order[9]]) > len(nat_players[order[10]])
+ranked("pl-nat-players", "Countries with the most Premier League players", "Name the ten countries that have had the most players in the Premier League (a player counts for the country he plays for).", "Premier League players, 1992/93 to 2025/26", 1,
+       [(n, f"{len(nat_players[n])} players") for n in order[:10]], {n: f"{n} is just outside with {len(nat_players[n])}." for n in order[10:13]}, type="nation")
 
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
