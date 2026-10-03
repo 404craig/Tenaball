@@ -173,6 +173,28 @@ await test("letter boards: any Premier League player with the right surname lett
   assert(end.every(Boolean) && end[9] === "Marko Arnautovic" && new Set(end).size === 10, "empty places show different example players: " + end);
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("sounds: the crowd joins the bleeps, cards get one whistle blast, and three blasts are kept for full time", async () => {
+  const p = await phone(browser, "sounds"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { window.__snd = []; const c = window.crowdPlay; window.crowdPlay = (k, ...r) => { __snd.push("crowd:" + k); return c(k, ...r); };
+    const w = window.whistle; window.whistle = pat => { __snd.push("whistle:" + pat.length); return w(pat); };
+    window.__sizes = Object.fromEntries(Object.entries(CROWD_MP3).map(([k, v]) => [k, v.length])); });
+  eq(await p.evaluate(() => __sizes), { applause:3, bigcheer:3, boos:4, cheer:4, groan:5, roar:3 }, "all 22 takes are in");
+  await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-2023/24"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  await p.evaluate(() => __snd.length = 0);
+  await p.fill("#guessInput", "Man Utd"); await p.click("#lockBtn"); await ready(p);
+  eq(await p.evaluate(() => __snd), ["crowd:cheer"], "a right answer gets a cheer");
+  await p.evaluate(() => __snd.length = 0);
+  await p.fill("#guessInput", "Burnley"); await p.click("#lockBtn"); await ready(p);
+  eq(await p.evaluate(() => __snd), ["crowd:groan", "whistle:1", "crowd:boos"], "a wrong answer gets a groan, then one whistle blast and boos for the yellow card");
+  await p.fill("#guessInput", "Man City"); await p.click("#lockBtn"); await ready(p);
+  await p.evaluate(() => __snd.length = 0);
+  await p.evaluate(() => { G.round = cfg.rounds; endRound(); }); await p.click("#nextBtn");
+  await until(() => p.evaluate(() => __snd.includes("crowd:applause")), { what: "applause" });
+  eq(await p.evaluate(() => __snd.slice(0, 2)), ["whistle:3", "crowd:applause"], "full time: three blasts, then applause");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
   const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.click("#allLevels"); // All levels starts on; the slider works with it off
