@@ -102,6 +102,13 @@ add_names("pl-open-4-goals", "Four goals in a game", "Name players who have scor
           sorted({h["player"] for h in HTS if int(h["goals"]) >= 4}), "{n} never scored four in a Premier League game.")
 add_names("pl-open-perfect-ht", "Perfect hat-tricks", "Name players who have scored a perfect hat-trick in the Premier League: one with the left foot, one with the right and a header.", 2,
           sorted({h["player"] for h in HTS if h["perfect"] == "yes"} | {"Sergio Aguero"}), "{n} never scored a perfect Premier League hat-trick.")
+# 50 goals and 50 assists (docs/data/PL_ASSISTS_2026-10-03.md: Opta's assists list down to 50, goals from the dataset)
+add_names("pl-open-50-50", "50 goals and 50 assists", "Name players with at least 50 Premier League goals and at least 50 Premier League assists.", 1,
+          ["Ryan Giggs","Kevin De Bruyne","Cesc Fabregas","Wayne Rooney","Frank Lampard","Dennis Bergkamp","Mohamed Salah","David Silva","Steven Gerrard","James Milner",
+           "David Beckham","Christian Eriksen","Teddy Sheringham","Thierry Henry","Ashley Young","Andy Cole","Bruno Fernandes","Son Heung-min","Raheem Sterling","Gareth Barry",
+           "Alan Shearer","Matt Le Tissier","Riyad Mahrez","Peter Crouch","Jimmy Floyd Hasselbaink","Eric Cantona","Theo Walcott","Kevin Davies","Didier Drogba","Damien Duff",
+           "Danny Murphy","Paul Scholes","Eden Hazard","Juan Mata","Emile Heskey","Robin van Persie","Roberto Firmino","Nick Barmby","Gylfi Sigurdsson","Dwight Yorke","Bukayo Saka"],
+          "{n} doesn't have both 50 Premier League goals and 50 assists.")
 import json
 block = f'const PL_PLAYERS = "{data}";\nconst PL_CLUBS = {json.dumps(CLUBS)};\nconst PL_OPEN = {json.dumps(OPEN, separators=(",", ":"))};\n'
 src = open("index.html", encoding="utf-8").read()

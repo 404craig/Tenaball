@@ -757,6 +757,19 @@ ranked("pl-own-goals", "Most Premier League own goals", "Name the players who ha
         ("Wes Brown","6 own goals"),("Seamus Coleman","6 own goals"),("Jonny Evans","6 own goals"),("Ryan Shawcross","6 own goals"),("Frank Sinclair","6 own goals")],
        {"Rio Ferdinand":"Rio Ferdinand is just outside with five.","Craig Dawson":"Craig Dawson is just outside with five.","John O'Shea":"John O'Shea is just outside with five."})
 
+# ---- batch 4: assists (docs/data/PL_ASSISTS_2026-10-03.md: Opta figures via premierleague.com, The Analyst and NBC, cross-checked with StatMuse;
+# goals checked against the player dataset). The all-time list is pl-at-assists, which already matched. Club and defender assist boards were left out:
+# below the top few places they rest on one source, and the cut-offs are too close to call.
+ranked("pl-assists-season", "Most assists in a season", "Name the players with the most assists in one Premier League season, counting each player's best season once. Nine players have 15, so any two of them fill the last two places.", LIVE, 1,
+       [("Bruno Fernandes","21 in 2025/26"),("Thierry Henry","20 in 2002/03"),("Kevin De Bruyne","20 in 2019/20"),("Mesut Ozil","19 in 2015/16"),("Frank Lampard","18 in 2004/05"),
+        ("Cesc Fabregas","18 in 2014/15"),("Mohamed Salah","18 in 2024/25"),("Eric Cantona","16 in 1992/93"),
+        (["Matt Le Tissier","Steve McManaman","David Beckham","Nolberto Solano","Robert Pires","David Silva","Christian Eriksen","Leroy Sane","Eden Hazard"],"15 assists","as15",2)],
+       {"Nani":"Nani is just outside with 14 in 2010/11.","Harry Kane":"Harry Kane is just outside with 14 in 2020/21.","Muzzy Izzet":"Muzzy Izzet is just outside with 14 in 2003/04.","Ryan Fraser":"Ryan Fraser is just outside with 14 in 2018/19."})
+ranked("pl-assist-ga", "Most goals plus assists", "Name the players with the most Premier League goals and assists added together.", LIVE, 1,
+       [("Alan Shearer","324 (260 + 64)"),("Wayne Rooney","311 (208 + 103)"),("Mohamed Salah","287 (193 + 94)"),("Frank Lampard","279 (177 + 102)"),("Ryan Giggs","271 (109 + 162)"),
+        ("Andy Cole","260 (187 + 73)"),("Harry Kane","259 (213 + 46)"),("Thierry Henry","249 (175 + 74)"),("Sergio Aguero","231 (184 + 47)"),("Teddy Sheringham","222 (146 + 76)")],
+       {"Steven Gerrard":"Steven Gerrard is just outside with 212 (120 + 92).","Robbie Fowler":"Robbie Fowler is just outside with 202.","Son Heung-min":"Son Heung-min has 198 (127 + 71)."})
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
