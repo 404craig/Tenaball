@@ -1,0 +1,8 @@
+Newcastle 1995/96 check
+Player counts: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (under cap, union 22). 11v11 club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/1996/comp/1/) 22 (A+S). Rows = 22.
+Club goals (Wikipedia 1995-96 FA Premier League table): 66.
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1995-96-premier-league, also tried -vs-newcastle-) returned HTTP 422, which StatMuse usually returns for an empty result. Wikipedia 1995-96 Newcastle United season page documents no own goals in Newcastle's favour. Player goals from both StatMuse and 11v11 sum to the club total.
+Player goals sum: 66. 66 - 0 = 66. Difference: 0.
+Disagreements: 1. Scott Sellars apps: StatMuse 5 vs 11v11 club page 2+4 = 6, 11v11 player page (https://www.11v11.com/players/scott-sellars-2374/) 2+4 and Wikipedia season page 2+4; used 6. All other apps and goals match.
+Positions from footballsquads 1995-1996/faprem/newcas.htm (Fox, Sellars, Hottiger in players no longer at club). Nationality reused from earlier seasons (all players appear in later seasons).
+Unverified: own goals for rely on Wikipedia plus the goal sum, as StatMuse own-goal page could not be read (422).

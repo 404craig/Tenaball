@@ -1,0 +1,8 @@
+Swansea 2012/13 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 players, list complete as fewest goes from 1 app to 37); 11v11 PL club page 25; footballsquads lists all 25.
+Club PL goals: 47 (Wikipedia 2012-13 Premier League table).
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2012-13-premier-league, also slug swansea) returned HTTP 422 three times (no result page); Wikipedia 2012-13 Swansea City season page lists no own goals in Swansea's favour and its goalscorer total is 47.
+Player goals sum: 47. Difference (club goals - own goals - player goals): 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 25 players.
+Name note: StatMuse and 11v11 say Etey Shechter; footballsquads says Itay Shechter (used Itay).
+Unverified: own goals for = 0 rests on Wikipedia and on the totals reconciling, StatMuse OG query could not be read.

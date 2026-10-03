@@ -1,0 +1,13 @@
+Man City 2015/16 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 25 players
+11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2016/comp/1/): 25 players
+Rows written: 25. Player sets identical; apps (11v11 starts + subs) match for every player.
+Club PL goals (Wikipedia 2015-16 Premier League table, https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League): 71
+Own goals for: 0. Wikipedia 2015-16 Manchester City season goalscorers table: own goals PL = 0, total 71. StatMuse players-with-own-goals-vs-manchester-city-2015-16-premier-league and most-own-goals-against-manchester-city-premier-league-2015-16 return HTTP 422 (no rows).
+Player goals sum: 71. Club goals minus own goals: 71. Difference: 0
+Disagreements: 2 (goals)
+- David Silva: 11v11 2, Wikipedia 2, StatMuse 1. Kept 2.
+- Yaya Toure: 11v11 6, Wikipedia 6, StatMuse 7. Kept 6.
+(StatMuse appears to credit one goal to Toure that the other sources give Silva; both sums are 71.) 11v11 player pages not checked.
+Position/nationality: footballsquads 2015-16 Man City page (https://www.footballsquads.co.uk/eng/2015-2016/faprem/mancity.htm), all 25 players found (Roberts in players-no-longer-at-club). Bersant Celina: footballsquads NOR, set to Kosovo (later capped by Kosovo; 11v11 lists Kosovo).
+Unverified: none beyond the Silva/Toure attribution

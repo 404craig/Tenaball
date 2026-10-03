@@ -1,0 +1,10 @@
+Club: Man Utd 2010/11
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 29. 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2011/comp/1/) 29. Same 29 players.
+Club PL goals: 78 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 3 (Anton Ferdinand, Sunderland; Brede Hangeland, Fulham; Ian Evatt, Blackpool). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2010-11-premier-league. Consistent with StatMuse and 11v11 player goal sums (75 + 3 = 78).
+Player goals sum: 75
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: none on apps or goals (all 29 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/manutd.htm (all 29 listed; Macheda and Neville in players no longer at club). Obertan and Bebe listed as forwards there.
+Unverified: own goal scorers not confirmed against a second named source (Wikipedia/11v11 match pages not read); totals reconcile exactly.

@@ -1,0 +1,17 @@
+Everton 2015/16 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 31 players. StatMuse names Tyias Browning as Jiang Guangtai.
+11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2016/comp/1/): 31 players
+Rows written: 31. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2015-16 Premier League table, https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League): 59
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2015-16-premier-league):
+- Sebastian Coates (Sunderland), Everton 6-2 Sunderland, Nov 2015 (Fox Sports/AP report)
+- John Terry (Chelsea), Chelsea 3-3 Everton, 16 Jan 2016 (Deccan Chronicle, The Hard Tackle reports)
+- Jack Cork (Swansea), Everton 1-2 Swansea, Jan 2016 (Citi FM report)
+Player goals sum: 56. Club goals minus own goals: 56. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2015-16 Everton page (https://www.footballsquads.co.uk/eng/2015-2016/faprem/everton.htm), truncated at squad number 30. Fallbacks:
+- Naismith: footballsquads 2015-16 Norwich page (SCO F)
+- Galloway, Kenny, Pennington (DEF, England), Tom Davies, Dowell (MID, England): reused from later-season files
+- Callum Connolly: footballsquads rows found (2017-18 Ipswich, 2018-19 Wigan, 2021-22 Blackpool) give ENG but position cut off; DEF taken from 11v11 Defender/Midfielder (unverified)
+- Browning: footballsquads ENG D; nationality set to China (later capped by China, 11v11 lists CHN)
+Unverified: Connolly position; Galloway, Kenny, Pennington, Davies, Dowell not confirmed on a 2015-16 footballsquads page

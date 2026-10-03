@@ -1,0 +1,9 @@
+Arsenal 1994/95 Premier League check
+Player count: StatMuse merged 30 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 club page 30 (https://www.11v11.com/teams/arsenal/tab/players/season/1995/comp/1/); all 30 in footballsquads arsenal.htm (/eng/1994-1995/faprem/). Rows: 30
+Club goals: 52 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 2 (Michel Vonk, Man City; Rob Newman, Norwich) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1994-95-premier-league. Wikipedia Arsenal season page summary did not list own goals; confirmed only by exact balance.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Alan Smith goals: StatMuse 2, 11v11 3, Wikipedia 1994-95 Arsenal season 2 -> 2. All apps (11v11 starts + subs) match StatMuse for all 30 players.
+Unverified: own goals not confirmed match by match from a second source.
+Nationality: footballsquads 1994-95 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page (Bartram, Carter, Davis, Flatts, Kiwomya).

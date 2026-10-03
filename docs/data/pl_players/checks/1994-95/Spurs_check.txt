@@ -1,0 +1,8 @@
+Spurs 1994/95 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (none capped); union 24. 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/1995/comp/1/, Apps = starts, next column = subs) 24. Rows = 24.
+Club goals (Wikipedia 1994-95 FA Premier League table): 66.
+Own goals for: 4. Mark Bosnich (Aston Villa) 19 Nov 1994; Neil Ruddock (Liverpool) 26 Nov 1994; Julian Darby (Coventry) 31 Dec 1994; Eddie Youds (Ipswich) 8 Mar 1995. Source Wikipedia 1994-95 Tottenham Hotspur F.C. season page; Bosnich, Ruddock, Darby confirmed by 11v11 match pages (tottenham-hotspur-v-aston-villa-19-november-1994-21870, liverpool-v-tottenham-hotspur-26-november-1994-21881, coventry-city-v-tottenham-hotspur-31-december-1994-21942); Youds confirmed by StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1994-95-premier-league. Note the StatMuse own-goal query lists only Youds (1), so it under-counts; og_source set to the Wikipedia page.
+Player goals sum: 62. 66 - 4 = 62. Difference: 0.
+Disagreements: 0 on player apps/goals. StatMuse and 11v11 agree for every player.
+Positions from footballsquads 1994-1995/faprem/tottenha.htm (Hazard in players no longer at club). Popescu, Barmby, Dumitrescu M there.
+Nationality reused from other seasons; Popescu (Romania), Thorstvedt (Norway), Danny Hill (England) from 11v11. Andy Turner: 11v11 shows "Ireland"; set Republic of Ireland (youth international) but not independently verified.

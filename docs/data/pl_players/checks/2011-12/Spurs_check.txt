@@ -1,0 +1,8 @@
+Spurs 2011/12 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25, fewest-appearances 25; union 29. 11v11 PL club page 29. footballsquads 2011/12 lists all 29.
+Players only in most-appearances query: Kaboul, Gallas, Corluka. Only in fewest-appearances: Huddlestone. All four confirmed on 11v11 club page.
+Club PL goals: 66 (Wikipedia 2011-12 Premier League table).
+Own goals for: 1. Chris Baird (Fulham), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2011-12-premier-league; Wikipedia 2011-12 Tottenham season notes a goal originally given to Bale was ruled a Chris Baird own goal.
+Player goals sum: 65. Difference (66 - 1 - 65): 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 29 (Bale 9 goals in both).
+Unverified: nothing.

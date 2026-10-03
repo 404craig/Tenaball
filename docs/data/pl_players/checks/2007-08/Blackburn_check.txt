@@ -1,0 +1,9 @@
+Blackburn 2007/08 check
+Player count per source: StatMuse 22 (all three queries return the same 22); 11v11 club page 22; footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/blackbrn.htm: all 22 present (Savage in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 50
+Own goals for: 0. https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2007-08-premier-league returned HTTP 422 (no result); Wikipedia 2007-08 Blackburn Rovers season page mentions no own goals in Blackburn's favour.
+Player goals sum: 50. 50 - 0 - 50 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2007-08 (Bentley F, Emerton M, Reid M, Berner M).
+Nationality: footballsquads 2007-08 has no nationality column. Reused from other seasons' CSVs; Berner Switzerland, Rigters Netherlands, Savage Wales from Wikipedia 2007-08 Blackburn season squad table.
+Unverified: zero own goals rests on StatMuse returning no result plus Wikipedia silence; it reconciles exactly with the club total.

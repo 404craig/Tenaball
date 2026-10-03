@@ -1,0 +1,10 @@
+Southampton 2001/02 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 30. 11v11 club page 30 (same players). Rows written: 30.
+Apps: every player's StatMuse apps equal 11v11 starts + subs except El Khalej (below).
+Club goals (Wikipedia 2001-02 FA Premier League table): 46
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2001-02-premier-league) lists 3: Jody Craddock (Sunderland), John Arne Riise (Liverpool), Richard Rufus (Charlton). Craddock confirmed on 11v11 match page southampton-v-sunderland-15-december-2001-10456 (43). Riise confirmed by Wikipedia season page (Southampton 2-0 Liverpool, 9 Jan 2002). Rufus: 11v11 match page charlton-athletic-v-southampton-13-april-2002-12130 shows Rufus scoring for Charlton (16) and Tahar El Khalej scoring Southampton's goal (85), so not counted as an own goal; Wikipedia also gives El Khalej 1 league goal.
+Player goals sum: 44. Difference (club goals - own goals - player goals): 0
+Disagreements (1):
+- Tahar El Khalej: StatMuse 14 apps 0 goals; 11v11 club page, 11v11 player page and Wikipedia 13 apps 1 goal. Used 13 and 1 (StatMuse attributes the 13 Apr 2002 goal at Charlton to a Rufus own goal; StatMuse extra app probably an unused booked sub, not checked match by match).
+Positions from footballsquads 2001-2002/faprem/southam.htm (Petrescu and El Khalej listed M there). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column.
+Unverified: which match gives StatMuse its extra El Khalej appearance.

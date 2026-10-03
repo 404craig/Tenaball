@@ -1,0 +1,9 @@
+Club: Arsenal 2020/21
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Willian, Partey only in most list; Kolasinac, Mustafi only in fewest list). 11v11 PL club page 29 (A+S). Same 29 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse.
+Club PL goals: 55. Club PL goals source: https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League league table.
+Own goals for: 2 (Tomas Soucek and Craig Dawson, West Ham 3-3 Arsenal, 21 Mar 2021; StatMuse own-goals query, confirmed on 11v11 match page https://www.11v11.com/matches/west-ham-united-v-arsenal-21-march-2021-369527/)
+Player goals sum: 53
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2020-2021/engprem/arsenal.htm (incl. players no longer at club). Gabriel listed as Gabriel; name spelling reused from earlier seasons.
+Unverified: nothing material.

@@ -1,0 +1,11 @@
+Man Utd 2000/01 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 29; 11v11 club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2001/comp/1/) = 29; all appear in footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/manutd.htm).
+Club goals (Wikipedia 2000-01 FA Premier League table): 79
+Own goals for: 3 (Matthew Jones (then Leeds) 21 Oct 2000, Stuart Pearce (West Ham) 1 Jan 2001, Steve Watson (Everton) 3 Feb 2001; Wikipedia 2000-01 Man Utd season page lists the same three own goals (Jones, Pearce, Watson)), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2000-01-premier-league
+Player goals sum: 76
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 (starts + subs) agree for every player.
+Disagreements: none
+Name/position/nationality notes: Paul Rachubka: 11v11 shows England; United States used as in other seasons (born California); Ronnie Wallwork: 11v11 lists as midfielder; footballsquads D used
+Positions from footballsquads 2000-01; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

@@ -1,0 +1,23 @@
+West Ham 2024/25 check
+Players per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (union 27, so complete: the three lists cover Kilman to Casey); Wikipedia 23; footballsquads roster 26 current players (includes non-appearing players).
+Club PL goals: 46 (Wikipedia league table).
+Own goals for: 3. Wikipedia fetch gave Dias (Man City, 31 Aug 2024) and Vestergaard (Leicester, 27 Feb 2025); it also listed a Coufal own goal that is AGAINST West Ham and so not counted. The third own goal for is NOT named by a source; 3 is the Wikipedia total used by the summariser and matches club goals minus player goals.
+Player goals sum: 43. Difference (club goals - og - player goals): 0.
+Disagreements: 0 between StatMuse and Wikipedia on apps/goals for the 23 players both list. Casey, Orford, Irving, Scarles are StatMuse only.
+
+
+VERIFIED (2026-10-02)
+Sources added: https://www.11v11.com/teams/west-ham-united/tab/players/season/2025/comp/1/ (11v11 PL squad page, Apps=starts, Subs=sub apps); https://www.footballsquads.co.uk/eng/2024-2025/engprem/ club page.
+- 11v11 PL squad page: 27 players, identical apps/goals to CSV; 43 player goals.
+- footballsquads (westham.htm) checked for all players.
+- Third own goal now named: Andy Robertson (Liverpool) 86 min, Liverpool 2-1 West Ham, 13 Apr 2025. Dias and Vestergaard confirmed on 11v11 match pages.
+Changes:
+- Kaelan Casey: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Lewis Orford: sources_agree partial -> yes (confirmed by 11v11 (2 apps, 0 goals) matching StatMuse)
+- Evan Ferguson: nationality Ireland -> Republic of Ireland (naming consistency with other club files)
+- Andy Irving: sources_agree partial -> yes (confirmed by 11v11 (10 apps, 0 goals) matching StatMuse)
+- Oliver Scarles: sources_agree partial -> yes (confirmed by 11v11 (15 apps, 0 goals) matching StatMuse)
+- Aaron Wan-Bissaka: nationality England -> DR Congo (nationality DR Congo per 11v11 (capped by DR Congo); footballsquads lists ENG)
+- og_for 3 -> 3 now sourced: https://www.11v11.com/matches/west-ham-united-v-manchester-city-31-august-2024-384880/ (Ruben Dias og 31 Aug 2024); https://www.11v11.com/matches/west-ham-united-v-leicester-city-27-february-2025-387781/ (Jannik Vestergaard og 27 Feb 2025); https://www.11v11.com/matches/liverpool-v-west-ham-united-13-april-2025-388560/ (Andy Robertson og 13 Apr 2025)
+Final: rows 27, club goals 46, own goals for 3, player goals 43, difference 0.
+Still unverified: Robertson own goal single source (11v11); consistent with club total. Wan-Bissaka nationality: footballsquads ENG vs 11v11 DR Congo; DR Congo used (he plays for DR Congo; matches 2025-26 file).

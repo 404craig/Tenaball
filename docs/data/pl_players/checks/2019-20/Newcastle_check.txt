@@ -1,0 +1,9 @@
+Newcastle 2019/20 check
+Players per source: StatMuse player-stats 25 (cap), fewest-appearances 25 (cap), most-appearances not run (11v11 squad page fully covers the squad); StatMuse union 28; 11v11 PL squad page 28; rows written 28.
+Club PL goals: 38 (Wikipedia 2019-20 Newcastle United F.C. season page: 13th, 44 pts, GF 38 GA 58). Wikipedia 2019-20 Premier League table page could not be read (HTTP 429).
+Own goals for: 0. StatMuse own-goals-vs-newcastle-united query returned HTTP 422 (no result); Wikipedia season page goalscorers table totals 38 with no own goals row, and no o.g. listed in PL match results.
+Player goals sum: 38 (StatMuse, 11v11 and Wikipedia goalscorers table identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2019-2020/engprem/newcas.htm could not be read (summariser got a truncated page twice, no player rows). Used instead: earlier-season files (mainly Newcastle 2020/21, built from footballsquads) for 20 players, and the Wikipedia 2019-20 season squad table (Pos/Nat) for Atsu, Bentaleb, Lazaro, Lejeune, Muto, Ki, Watts, Willems. Lazaro given MID (Wikipedia MF). Isaac Hayden England as in later files (11v11 shows Jamaica).
+Unverified: positions not confirmed against footballsquads 2019-20 for any Newcastle player.

@@ -1,0 +1,9 @@
+Everton 2001/02 Premier League check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (union 28); 11v11 club page 28; footballsquads lists all 28 (current or "no longer at club").
+Club goals (Wikipedia 2001-02 FA Premier League table): 45
+Own goals for: 1 (Don Hutchison, West Ham, 29 Sep 2001), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2001-02-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/everton-v-west-ham-united-29-september-2001-8750/
+Player goals sum: 44
+Difference (45 - 1 - 44): 0
+Disagreements: none. All 28 players match on apps (11v11 A + S) and goals.
+Notes: Alec Cleland (11v11 spells Alex). Abel Xavier listed by 11v11 as "Xavier". Nationalities of players without earlier rows (Cadamarteri, Cleland, Gascoigne, Ginola, Moore) from 11v11 club page.
+Unverified: nothing.

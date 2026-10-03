@@ -1,0 +1,8 @@
+Liverpool 1994/95 Premier League check
+Player count: StatMuse 21 (player-stats, most-apps and fewest-apps all 21 rows); 11v11 club page 21 (https://www.11v11.com/teams/liverpool/tab/players/season/1995/comp/1/); all 21 in footballsquads liverpool.htm (/eng/1994-1995/faprem/). Rows: 21
+Club goals: 65 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 4 (David Burrows, Everton; Des Walker, Sheffield Wed; Steve Bruce, Man Utd; Terry Phelan, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1994-95-premier-league; Wikipedia 1994-95 Liverpool F.C. season statistics table shows 4 own goals in the Premier League.
+Player goals sum: 61
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All apps (11v11 starts + subs) and goals match StatMuse for all 21 players.
+Unverified: individual own-goal matches not checked.

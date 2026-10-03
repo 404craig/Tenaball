@@ -1,0 +1,9 @@
+Club: Everton 2019/20
+Players per source: StatMuse player-stats 24 (under cap, complete). StatMuse most/fewest-appearances not run because the WebFetch proxy was rate limiting; player-stats is under the 25-row cap and 11v11 fully covers the squad. 11v11 PL club page 24. Same 24 players.
+Disagreements: none. All apps (starts+subs on 11v11) and goals match.
+Club PL goals: 44 (Wikipedia 2019-20 Premier League table).
+Own goals for: 2 (Adam Webster, Brighton; Victor Lindelof, Man Utd). Source: StatMuse own-goals vs Everton query. Not separately confirmed on 11v11 match pages; consistent with the goals check.
+Player goals sum: 42
+Difference: 0
+Position/nationality: footballsquads 2019-2020 everton.htm is truncated after 2 rows when fetched (same problem noted for 2020-21). Used footballsquads 2018-2019 everton.htm for players listed there (Pickford, Baines, Keane, Gomes, Sigurdsson, Walcott, Digne, Mina, Tosun, Schneiderlin, Bernard, Coleman, Davies, Calvert-Lewin, Richarlison, Gordon). Bernard is M there (earlier-season file had FWD). Others (Iwobi, Sidibe, Delph, Gbamin, Kean, Holgate, Branthwaite, Niasse) from Wikipedia 2019-20 Everton season squad list and earlier-season files.
+Unverified: positions for Iwobi, Sidibe, Delph, Gbamin, Kean, Holgate, Branthwaite, Niasse not checked against footballsquads 2019-20. Holgate nationality Jamaica reused from earlier-season files (footballsquads 2019-20 showed ENG).

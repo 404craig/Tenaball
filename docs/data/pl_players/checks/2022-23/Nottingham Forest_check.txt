@@ -1,0 +1,9 @@
+Nottingham Forest 2022/23 check
+Players per source: 11v11 PL squad page 33; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 33. Same players in both.
+Club PL goals: 38 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-2022-23-premier-league). StatMuse lists Pascal Gross (Brighton) 1 and Mathias Jorgensen (Brentford) 1. Confirmed: 11v11 match page Forest 3-1 Brighton 26 Apr 2023 (Gross o.g. 45) and Sky Sports report Forest 2-2 Brentford 5 Nov 2022 (Jorgensen stoppage-time o.g.). Wikipedia season page goalscorer table also shows an own goals row of 2.
+Player goals sum: 36
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2022-2023/engprem/nottmf.htm
+Unverified: footballsquads fetch did not show Chris Wood or Lewis O'Brien (departed/late section truncated); Wood from 2023-24 file, O'Brien as England MID from 11v11 position and English birth, uncapped.

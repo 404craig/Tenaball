@@ -1,0 +1,10 @@
+Club: Sunderland 2010/11
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 31. 11v11 PL club page (https://www.11v11.com/teams/sunderland/tab/players/season/2011/comp/1/) 31. Same 31 players.
+Club PL goals: 45 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 3 (Nicky Shorey, West Brom; Richard Dunne, Aston Villa; Stephen Carr, Birmingham). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2010-11-premier-league. Consistent with player goal sums from both StatMuse and 11v11 (42 + 3 = 45).
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 31
+Disagreements: none on apps or goals (all 31 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/sunder.htm (all 31 listed; Waghorn, Bent, da Silva, Reid in players no longer at club). Elmohamady listed as M this season.
+Unverified: own goal scorers not confirmed against a second named source (Wikipedia/11v11 match pages not read); totals reconcile exactly.

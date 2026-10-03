@@ -1,0 +1,9 @@
+Newcastle 1997/98 check
+Player counts: StatMuse player-stats 25 (capped, missing Barton), most-apps 25, fewest-apps 25; merged 26; 11v11 club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/1998/comp/1/) 26. Rows = 26.
+Own goals for: 0. StatMuse own-goals query returned HTTP 422 (no result). Wikipedia 1997-98 Newcastle United season page shows no own goals. Player goals equal club goals exactly.
+Disagreements: 0. All 26 players' apps (11v11 A + S) and goals match StatMuse.
+Nationality: reused spellings from other seasons; new players (Asprilla, Hamilton, Rush, Tomasson) from 11v11 Nat column.
+Club goals (Wikipedia 1997-98 FA Premier League table (https://en.wikipedia.org/wiki/1997%E2%80%9398_FA_Premier_League)): 35.
+Own goals for: 0 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1997-98-premier-league).
+Player goals sum: 35. 35 - 0 = 35. Difference: 0.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1997-1998/faprem/newcas.htm (season-specific; includes players no longer at club).

@@ -1,0 +1,11 @@
+Club: Spurs 2014/15
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 27. 11v11 PL club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2015/comp/1/) 27 (A+S). Same 27 players. Mason and Kaboul only in most/fewest StatMuse queries.
+Disagreements: 0 between StatMuse and 11v11. Wikipedia season goalscorer table also totals 56 PL goals with the same player figures.
+Club PL goals: 58 (Wikipedia 2014-15 Premier League table).
+Own goals for: 2 (StatMuse OG query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2014-15-premier-league).
+- Jeffrey Schlupp (Leicester), Spurs 4-3 Leicester, 21 Mar 2015, 85 min: confirmed by thfcdb https://thfcdb.com/matches/2014-15/leicester-city-21-mar-2015/.
+- John O'Shea (Sunderland), Spurs 2-1 Sunderland, 17 Jan 2015, 3 min: StatMuse; thfcdb (https://thfcdb.com/matches/2014-15/sunderland-afc-17-jan-2015/) credits Jan Vertonghen, but 11v11, StatMuse and Wikipedia all give Vertonghen 0 PL goals, so it is treated as an O'Shea OG.
+Player goals sum: 56
+Difference: 0 (58 - 2 - 56).
+Position/nationality: https://www.footballsquads.co.uk/eng/2014-2015/faprem/tottenha.htm (Holtby, Naughton, Lennon in players no longer at club).
+Unverified: O'Shea own goal attribution disputed by thfcdb (see above).

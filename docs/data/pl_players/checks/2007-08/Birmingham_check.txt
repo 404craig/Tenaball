@@ -1,0 +1,9 @@
+Birmingham 2007/08 check
+Player count per source: StatMuse 28 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: most-apps adds Kelly, Parnaby, Palacios); 11v11 club page 28; footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/birmin.htm: all 28 present (Djourou, Palacios, Danns, Sadler, Oubina in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 46
+Own goals for: 2 (Paul McShane, Sunderland; Stewart Downing, Middlesbrough) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2007-08-premier-league
+Player goals sum: 44. 46 - 2 - 44 = 0.
+Disagreements: none between StatMuse and 11v11. Wikipedia 2007-08 Birmingham season squad table also agrees for the players checked (Forssell, Jaidi, Nafti, Oubina, Sadler, Schmitz, Martin Taylor, Danns).
+Positions: footballsquads 2007-08 (Kapo F, McSheffrey F, de Ridder F, Nafti M).
+Nationality: footballsquads 2007-08 has no nationality column. Reused from other seasons' CSVs; players not in other seasons from Wikipedia 2007-08 Birmingham season squad table (Forssell Finland, Jaidi Tunisia, Nafti Tunisia, Oubina Spain, Sadler England, Schmitz Brazil, Martin Taylor England). Neil Danns: squad table ENG, but later capped by Guyana (Wikipedia Neil Danns infobox), Guyana used.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

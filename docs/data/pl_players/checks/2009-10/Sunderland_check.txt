@@ -1,0 +1,11 @@
+Sunderland 2009/10 Premier League check
+Player counts: StatMuse merged (player-stats, most-appearances, fewest-appearances; each capped at 25) = 28; 11v11 club page = 28; all 28 players listed by both.
+Sources: https://www.statmuse.com/fc/ask/sunderland-premier-league-player-stats-2009-10 ; https://www.11v11.com/teams/sunderland/tab/players/season/2010/comp/1/
+Positions and nationality: https://www.footballsquads.co.uk/eng/2009-2010/faprem/sunder.htm
+Club PL goals (Wikipedia 2009-10 Premier League table): 48
+Own goals for: 2 (Kamil Zayatte (Hull), Michael Mancienne (Wolves)); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2009-10-premier-league
+Player goals sum: 46
+Difference (club goals - own goals for - player goals): 0
+Disagreements: apps and goals agree between StatMuse and 11v11 for every player (0 disagreements).
+Own goals note: StatMuse own-goals list used; the Wikipedia season page summary did not list own goals, so no independent second confirmation, but the count reconciles exactly with club goals minus player goals.
+Other notes: Phil Bardsley: footballsquads lists ENG for 2009/10; nationality Scotland reused from earlier seasons (later capped by Scotland); Lorik Cana: 11v11 lists defender; footballsquads M used

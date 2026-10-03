@@ -1,0 +1,10 @@
+Middlesbrough 1992/93 Premier League check
+Player count: StatMuse merged 26 (player-stats 25 at cap, most-apps 25, fewest-apps 25; Willie Falconer only in most/fewest, Andy Collett only in player-stats/fewest); 11v11 club page 26 (https://www.11v11.com/teams/middlesbrough/tab/players/season/1993/comp/1/). Rows: 26
+Club goals: 54 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 4 (Garry Flitcroft, Man City, 12 Sep 1992; Paul McGrath, Aston Villa, 26 Sep 1992; David Seaman, Arsenal, 19 Dec 1992; Steve Nicol, Liverpool, 13 Mar 1993). StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1992-93-premier-league) lists 5 incl. Neil Ruddock (Spurs); Wikipedia 1992-93 Middlesbrough season results list the 4 above; Flitcroft og also on 11v11 match page.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements (1): Paul Wilkinson goals StatMuse 13, 11v11 15. Spurs 2-2 Boro 17 Oct 1992: 11v11 match page and Wikipedia credit Wilkinson (32'), StatMuse Ruddock og -> Wilkinson. Arsenal 1-1 Boro 19 Dec 1992: StatMuse and Wikipedia Seaman og, 11v11 match page Wilkinson -> og. Result 14 goals (sources_agree=partial, total not directly in either stats source). All apps (11v11 starts+subs) match StatMuse for all 26.
+Note: Wikipedia summariser gave inconsistent scorer totals; resolution used the match results table only.
+Positions/nationality: footballsquads has no 1992-93 season (archive starts 1993/94; /eng/1992-1993/faprem/ returns 404), so reused from 1993-94+ files for the same player, otherwise from the 11v11 club page.
+Unverified: positions/nationality for players not in other seasons (Collett, Gittens, Horne, Ironside, Marshall, Parkinson, Peake, Pears, Proctor, Slaven, Tommy Wright) from 11v11 only.

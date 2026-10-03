@@ -1,0 +1,11 @@
+Stoke 2014/15 Premier League check
+Player count per source: StatMuse 25 (player-stats + most-apps + fewest-apps merged; all three lists hold the same 25), 11v11 25 (https://www.11v11.com/teams/stoke-city/tab/players/season/2015/comp/1/). Same 25 players.
+Club goals: 48 (Wikipedia 2014-15 Premier League table)
+Own goals for: 1. Jan Vertonghen (Spurs) 86', Stoke 3-0 Spurs 9 May 2015, ruled an own goal by the PL Goal Accreditation Panel per 11v11 match page https://www.11v11.com/matches/stoke-city-v-tottenham-hotspur-09-may-2015-310838/; confirmed by Wikipedia 2014-15 Stoke City F.C. season page. StatMuse own-goal query returned HTTP 422 (no result) for both stoke-city and stoke slugs, as StatMuse credits the goal to Diouf.
+Player goals sum: 47
+Difference (48 - 1 - 47): 0
+Disagreements and resolutions (1):
+- Mame Biram Diouf goals: StatMuse 12, 11v11 11, Wikipedia 11. Vertonghen own goal (see above). Used 11.
+All apps agree between StatMuse and 11v11 (starts + subs).
+Positions/nationality: footballsquads.co.uk/eng/2014-2015/faprem/stoke.htm; spellings reused from earlier seasons.
+Unverified: nothing material. Dionatan Teixeira nationality Slovakia as footballsquads and earlier season.

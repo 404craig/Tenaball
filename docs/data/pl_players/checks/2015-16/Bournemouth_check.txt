@@ -1,0 +1,10 @@
+Club: Bournemouth 2015/16
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 28 unique (Mings, Kermorgant, Elphick not in player-stats). 11v11 PL club page (slug afc-bournemouth; /teams/bournemouth/ is blocked by robots.txt) 28. Same 28 players.
+Club PL goals: 45 (https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League league table).
+Own goals for: 2 (Chris Smalling (Man Utd), Steven Taylor (Newcastle)) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2015-16-premier-league.
+Player goals sum: 43
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: none. All apps and goals match (11v11 spells Allsop as Allsopp).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2015-2016/faprem/bourne.htm. Name spellings reused from earlier seasons where the same player already appears. 
+Unverified: Own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

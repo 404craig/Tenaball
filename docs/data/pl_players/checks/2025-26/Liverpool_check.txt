@@ -1,0 +1,19 @@
+Liverpool 2025/26 Premier League check
+Source problem: primary StatMuse URL (liverpool-premier-league-player-stats-2025-26) was rate limited (HTTP 429) and not retried; used StatMuse liverpool-premier-league-player-appearances-2025-26 instead.
+Player count: StatMuse 24; Wikipedia 2025-26 Liverpool season page 24 with an appearance (Calvin Ramsay listed 0+0, excluded); footballsquads 61 listed squad/ex-squad (all 24 present); ESPN 0 (unreadable).
+Club PL goals (Wikipedia 2025-26 Premier League table): 63
+Own goals for: 2 (Wikipedia season page)
+Sum of player goals: 61
+Difference: 0
+Disagreements: 0 (StatMuse and Wikipedia agree on every player's apps and goals).
+Unverified: Wikipedia figures came via a page summariser. No 11v11 checks needed.
+ESPN (league filter, season 2025): page returned no content via WebFetch for this club; no ESPN figures recorded.
+11v11 team page: shows starts only, not usable as an all-competition ceiling; 11v11 player pages (Apps=starts, Subs=sub apps) used as tie-breaker.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/liverpool/tab/players/season/2026/comp/1/ (A=starts, S=subs): 24 players; every row apps (A+S) and goals match the CSV.
+- Alisson Becker: player Alisson Becker -> Alisson (spelling used for same player in other seasons)
+- Alisson Becker: surname Becker -> Alisson (spelling used for same player in other seasons)
+- Andrew Robertson: player Andrew Robertson -> Andy Robertson (spelling used for same player in other seasons)
+- Andrew Robertson: full_name Andrew Robertson -> Andy Robertson (spelling used for same player in other seasons)
+Rows 24; player goals 61; club goals 63; own goals for 2; difference 0. All rows sources_agree=yes.

@@ -1,0 +1,8 @@
+Spurs 2003/04 check
+Player count per source: StatMuse most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 28; 11v11 club page (PL) 28; footballsquads roster lists all 28. Player-stats query not run separately (union = 11v11 count).
+Club goals: 47 (Wikipedia 2003-04 Premier League table)
+Own goals for: 1 (Andy O'Brien, Newcastle, 14 Mar 2004) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2003-04-premier-league
+Player goals sum: 46
+Difference: 0
+Disagreements: none; all 28 players match.
+Unverified: OG not cross-checked against a second source.

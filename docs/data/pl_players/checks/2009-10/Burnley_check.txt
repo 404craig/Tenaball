@@ -1,0 +1,10 @@
+Club: Burnley 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 26 unique (Wade Elliott only in most-appearances, Diego Penny only in fewest-appearances). 11v11 PL club page (https://www.11v11.com/teams/burnley/tab/players/season/2010/comp/1/) 26. Same 26 players.
+Club PL goals: 42 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2009-10-premier-league) returned HTTP 422 (no result). Wikipedia 2009-10 Burnley season page (via summariser) lists all 38 PL results with scorers and records no own goals in Burnley's favour; 11v11 player goals also sum to 42.
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/burnley.htm (Guerrero, Kalvenes, Gudjonsson in "no longer at club" section). Spellings reused from other seasons where they exist (Steven Caldwell, Jack Cork, Robbie Blake, etc.).
+Unverified: own goals for = 0 rests on Wikipedia season page plus goal totals; StatMuse own-goal query gave no answer.

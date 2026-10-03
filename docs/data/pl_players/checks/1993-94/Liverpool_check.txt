@@ -1,0 +1,9 @@
+Liverpool 1993/94 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (capped; union 26, Piechnik only in fewest-apps); 11v11 club page (https://www.11v11.com/teams/liverpool/tab/players/season/1994/comp/1/) 26; all 26 in footballsquads https://www.footballsquads.co.uk/eng/1993-1994/faprem/liverpool.htm. Rows: 26
+Club goals: 59 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 5 (Alvin Martin, West Ham; Andy Barlow, Oldham; Craig Burley, Chelsea; Ian Culverhouse, Norwich; John Scales, Wimbledon) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1993-94-premier-league. Confirmed only by exact balance.
+Player goals sum: 54
+Difference: 0
+Disagreements: 0. All apps and goals match.
+Unverified: own goals single source.
+Positions: footballsquads liverpool.htm. Nationality: reused spellings from other seasons, else 11v11 club page (Piechnik, Ronnie Whelan).

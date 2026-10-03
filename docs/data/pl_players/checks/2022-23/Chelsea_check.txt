@@ -1,0 +1,11 @@
+Season 2022/23, Chelsea
+Player count per source: StatMuse union of 3 pages 32 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 PL squad page 32; final rows 32.
+Sources: StatMuse https://www.statmuse.com/fc/ask/chelsea-premier-league-player-stats-2022-23 , -players-most-appearances-2022-23 , -players-fewest-appearances-2022-23 (all three read); 11v11 https://www.11v11.com/teams/chelsea/tab/players/season/2023/comp/1/
+Club PL goals: 38 (Wikipedia 2022-23 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2022-23-premier-league) (Kieran Trippier, Newcastle, Chelsea v Newcastle 28 May 2023)
+Player goals sum: 37
+Difference (club goals - og - player goals): 0
+Disagreements: none. Every player matched on apps and goals between StatMuse and 11v11.
+Positions and nationalities: footballsquads.co.uk https://www.footballsquads.co.uk/eng/2022-2023/engprem/chelsea.htm (read via summariser). Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Own goals confirmed by Wikipedia 2022-23 club season page goalscorer table (own goals row = 1).
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).

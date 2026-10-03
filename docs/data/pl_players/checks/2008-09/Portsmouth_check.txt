@@ -1,0 +1,10 @@
+Club: Portsmouth 2008/09
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Campbell, Distin, Kaboul only in most/fewest; Gekas only in fewest). 11v11 PL club page (https://www.11v11.com/teams/portsmouth/tab/players/season/2009/comp/1/) 29. Same 29 players.
+Club PL goals: 38 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 2 (Phil Bardsley, Sunderland; Ryan Shawcross, Stoke). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2008-09-premier-league. Consistent with player goals 36 + 2 = 38.
+Player goals sum: 36
+Difference: 0
+Rows: 29
+Disagreements: 1. Noe Pamarot apps: StatMuse 15, 11v11 club page 16 (11+5); 11v11 player page https://www.11v11.com/players/noe-pamarot-19500/ confirms PL 11 starts + 5 subs = 16. 16 used, sources_agree=no. All other apps and goals match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/portsm.htm. Armand Traore: footballsquads 2008-09 FRA; Senegal used to match earlier-season CSVs (later capped by Senegal).
+Unverified: Pamarot 16 not confirmed by a source independent of 11v11.

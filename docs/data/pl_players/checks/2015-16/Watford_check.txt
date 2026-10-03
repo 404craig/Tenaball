@@ -1,0 +1,17 @@
+Watford 2015/16 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/watford-premier-league-player-stats-2015-16 (+ most-appearances and fewest-appearances queries; each 25 rows, union 25); 11v11 https://www.11v11.com/teams/watford/tab/players/season/2016/comp/1/ and 11v11 match pages; Wikipedia 2015-16 Watford F.C. season (scorers); footballsquads https://www.footballsquads.co.uk/eng/2015-2016/faprem/watford.htm (position, nationality).
+Player counts: StatMuse union 25; 11v11 club page 25. All apps match.
+Rows written: 25
+Club goals (Wikipedia 2015-16 Premier League table): 40
+Own goals for: 3 (official Goal Accreditation Panel rulings as recorded on 11v11 match pages):
+ - Alan Hutton (Aston Villa), Aston Villa 2-3 Watford 28 Nov 2015, 69' https://www.11v11.com/matches/aston-villa-v-watford-28-november-2015-316971/
+ - Gary Cahill (Chelsea), Chelsea 2-2 Watford 26 Dec 2015, 56' https://www.11v11.com/matches/chelsea-v-watford-26-december-2015-317012/ (panel ruling, not Ighalo)
+ - Seamus Coleman (Everton), Watford 1-1 Everton 9 Apr 2016, 45+' https://www.11v11.com/matches/watford-v-everton-09-april-2016-317168/ (panel ruling, not Holebas)
+ StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2015-16-premier-league) lists 2: Hutton and Aleksandar Kolarov. 11v11 match page https://www.11v11.com/matches/watford-v-manchester-city-02-january-2016-317037/ states the 2 Jan 2016 goal was confirmed as Ben Watson's, not a Kolarov OG.
+Player goals sum: 37
+Club goals minus own goals for minus player goals: 0 (OK). (StatMuse's own credits also total 40: players 38 + 2 OG.)
+Disagreements: 3 (all goals, StatMuse vs 11v11), resolved with 11v11 match pages (official accreditation):
+ - Odion Ighalo: StatMuse 16, 11v11 15 (Wikipedia 15). Used 15 (Cahill OG ruling). Ighalo's 15 confirmed match by match on 11v11 pages.
+ - Ben Watson: StatMuse 1, 11v11 2 (Wikipedia 2). Used 2 (Man City goal ruled Watson).
+ - Jose Holebas: StatMuse 1, 11v11 0. Used 0 (Coleman OG ruling).
+Unverified: nothing outstanding.

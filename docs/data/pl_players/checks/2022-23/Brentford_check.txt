@@ -1,0 +1,11 @@
+Club: Brentford 2022/23
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (identical sets, 25 unique). 11v11 PL club page 25. Same 25 players; apps and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Cesar Azpilicueta (Chelsea) and Ibrahima Konate (Liverpool); consistent with 58 - 56 = 2.
+Nationality note: footballsquads gives Rico Henry ENG for 2022-23; Jamaica used to match the 2023-24 file for the same player.
+Unverified: nothing material.
+Club PL goals (https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League table): 58
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2022-23-premier-league (Azpilicueta, Konate); total reconciles exactly)
+Player goals sum: 56
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2022-2023/engprem/brentf.htm

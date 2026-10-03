@@ -1,0 +1,25 @@
+Chelsea 2025/26 PL check
+Player count per source:
+- StatMuse (most-apps and fewest-apps queries merged, each capped at 25 rows): 30
+- ESPN squad page (id 363, ENG.1, season 2025): 0, page returned no data (also tried espn.co.uk and non-season URL)
+- footballsquads.co.uk chelsea.htm: all 30 found on roster (Buonanotte, Tyrique George listed as left)
+- Wikipedia 2025-26 Chelsea F.C. season: 29 from season page extracts; Tyrique George confirmed via Wikipedia player page (4 apps)
+Club PL goals (Wikipedia 2025-26 Premier League table): 58
+Own goals for: 1 (Wikipedia season page)
+Sum of player goals: 57
+Difference (club goals - own goals - player sum): 0
+Disagreements: none on apps/goals. Wikipedia season page extract first omitted Jorgensen, Buonanotte, George; re-query confirmed Jorgensen 3+2 and Buonanotte 1; George 4 from player page.
+Unverified: ESPN not usable. Positions/nationality from footballsquads codes only. Nkunku and Jackson not credited with any PL apps by StatMuse; not added.
+Default StatMuse URL (chelsea-premier-league-player-stats-2025-26) truncates at 25 rows and missed Estevao, Gittens, Hato, Sarr, Derry.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/chelsea/tab/players/season/2026/comp/1/ read: 30 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- Positions/nationality already from footballsquads chelsea.htm (pilot); not refetched.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 58 - own goals for 1 - player goals 57 = 0.
+- Chelsea_summary.json written.
+Changes:
+- Marc Guiu: name/nationality fields ('Marc Guiu', 'Marc Guiu', 'Guiu', 'Spain') -> ('Marc Guiu', 'Marc Guiu Paz', 'Guiu', 'Spain') (match spelling used in other seasons / spec nationality name)
+- Shim Mheuka: name/nationality fields ('Shim Mheuka', 'Shumaira Mheuka', 'Mheuka', 'England') -> ('Shumaira Mheuka', 'Shumaira Mheuka', 'Mheuka', 'England') (match spelling used in other seasons / spec nationality name)

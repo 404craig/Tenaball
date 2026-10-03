@@ -1,0 +1,10 @@
+Newcastle 2002/03 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 26. 11v11 club page 26 (same players).
+Apps and goals: every player's StatMuse figure matches 11v11 (starts + subs) except as listed below.
+Club goals (Wikipedia 2002-03 FA Premier League table): 63
+Own goals for: 3 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2002-03-premier-league). Jimmy Floyd Hasselbaink (Chelsea, 1 Mar 2003, 31) 1, Li Tie (Everton, 1 Dec 2002, 89) 1, Vratislav Gresko (Blackburn, 22 Mar 2003, 89) 1; all three confirmed on 11v11 match pages (newcastle-united-v-chelsea-01-march-2003-15304, newcastle-united-v-everton-01-december-2002-14534, newcastle-united-v-blackburn-rovers-22-march-2003-15252). Wikipedia season page scorers sum to 60 with no own goals listed.
+Player goals sum: 60. Difference (club goals - own goals - player goals): 0
+Disagreements (0):
+- none
+Positions from footballsquads 2002-2003/faprem/newcas.htm. Nationality: footballsquads has no nationality column; from spellings used in other seasons, otherwise 11v11 Nat column.
+Unverified: nothing outstanding.

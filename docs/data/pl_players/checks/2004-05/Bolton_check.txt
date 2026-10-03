@@ -1,0 +1,9 @@
+Bolton 2004/05 check
+Player count per source: StatMuse 25 (player-stats 25, most-apps 25, fewest-apps 25; identical sets, union 25); 11v11 club page https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2005/comp/1/ 25 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/bolton.htm: all 25 present (Ferdinand and Oakes under players no longer at club).
+Club PL goals: Wikipedia 2004-05 FA Premier League table (https://en.wikipedia.org/wiki/2004%E2%80%9305_FA_Premier_League): 49
+Own goals for: 0. StatMuse own-goals-vs query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2004-05-premier-league) returned HTTP 422 on three attempts (also the bolton slug variant). StatMuse player goals and 11v11 player goals each sum to 49 = club goals. Wikipedia 2004-05 Bolton Wanderers season page shows no own goals line.
+Player goals sum: 49. 49 - 0 - 49 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (Campo M, Jaidi D, Julio Cesar D, Fadiga M, Vaz Te F, O'Brien M, Hierro D).
+Nationality: footballsquads has no nationality column; spellings reused from other seasons' CSVs; Barness, Ferdinand, Oakes, Poole (England), Candela (France), Hierro (Spain), Kaku (Nigeria), Julio Cesar (Brazil) from the 11v11 club page.
+Unverified: own goals for = 0 rests on goal-sum consistency of two sources and the Wikipedia page; no direct own-goals-for list could be loaded. Julio Cesar full name not confirmed from a fetched source.

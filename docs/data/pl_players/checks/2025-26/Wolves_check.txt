@@ -1,0 +1,29 @@
+Wolves 2025/26 PL check
+Player count per source:
+- StatMuse: 31 (default query capped at 25; most-apps query added Tchatchoua, Mane, Arias, Moller Wolfe, Munetsi; fewest-apps query added Abbey)
+- ESPN squad page (id 380, ENG.1, season 2025 and no-season URL): 0, page returned no data
+- footballsquads.co.uk wolves.htm: all 31 found (departed and loaned players in left section)
+- Wikipedia 2025-26 Wolverhampton Wanderers F.C. season: 31
+- 11v11 team page (all comps): 31. All league apps <= all-comp apps.
+Club PL goals (Wikipedia 2025-26 Premier League table): 27
+Own goals for: 1 (Wikipedia season page, Verbruggen of Brighton)
+Sum of player goals: 26
+Difference (club goals - own goals - player sum): 0
+Disagreements (2):
+- Hugo Bueno: StatMuse 35, Wikipedia 23+9=32; 11v11 player page 26+9=35; used 35
+- Angel Gomes: StatMuse 12, Wikipedia 6+5=11; 11v11 player page 7+5=12; used 12
+Unverified: ESPN not usable. Positions from footballsquads codes (Tchatchoua M and Rodrigo Gomes D there, Wikipedia has them the other way round as DF/MF).
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/wolverhampton-wanderers/tab/players/season/2026/comp/1/ (A=starts, S=subs): 31 players; every row apps (A+S) and goals match the CSV.
+- Angel Gomes: sources_agree partial -> yes (StatMuse 12/0, 11v11 club page 7+5=12/0)
+- Hugo Bueno: sources_agree partial -> yes (StatMuse 35/1, 11v11 club page 26+9=35/1)
+- Jose Sa: surname Sa -> Sá (spelling used for same player in other seasons)
+- Dan Bentley: player Dan Bentley -> Daniel Bentley (spelling used for same player in other seasons)
+- Toti Gomes: full_name Toti Gomes -> Toti António Gomes (spelling used for same player in other seasons)
+- Sasa Kalajdzic: surname Kalajdzic -> Kalajdžić (spelling used for same player in other seasons)
+- Andre: full_name André -> André Trindade da Costa Neto (spelling used for same player in other seasons)
+- Andre: surname Andre -> André (spelling used for same player in other seasons)
+- Mateus Mane: surname Mane -> Mané (spelling used for same player in other seasons)
+- Mateus Mane nationality kept Portugal: footballsquads wolves.htm 2025-26 shows POR, born Barreiro. NOTE 2024-25 Wolves.csv has him as England, which looks wrong (not changed here).
+Rows 31; player goals 26; club goals 27; own goals for 1; difference 0. All rows sources_agree=yes.

@@ -1,0 +1,11 @@
+Spurs 1996/97 Premier League check
+Player count: StatMuse (slug tottenham-hotspur) player-stats 25, most-apps 25, fewest-apps 25 (26 unique merged: most-apps added Sheringham); 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/1997/comp/1/) = 26 (A starts + S subs), same players. All 26 on footballsquads (https://www.footballsquads.co.uk/eng/1996-1997/faprem/tottenha.htm).
+Club goals (Wikipedia 1996-97 FA Premier League table): 44
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1996-97-premier-league, also slug tottenham) returned HTTP 422 (no answer). Wikipedia 1996-97 Tottenham Hotspur season page (https://en.wikipedia.org/wiki/1996%E2%80%9397_Tottenham_Hotspur_F.C._season) lists no own goals and its goalscorer table totals 44 from players.
+Player goals sum: 44
+Difference (club goals - og - player goals): 0
+Rows: 26
+Disagreements: 0. StatMuse and 11v11 agree on apps and goals for all 26; goals also match the Wikipedia scorers table.
+Names: Espen Baardsen (StatMuse Espen Per Baardsen), Stephen Carr (footballsquads Steve). Spellings reused from other seasons.
+Positions from footballsquads 1996-1997 (Mabbutt D, Clapham D, Wilson D). Nationality from 11v11 club page.
+Unverified: own goals for rests on Wikipedia only (StatMuse returned no answer).

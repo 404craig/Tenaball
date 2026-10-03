@@ -1,0 +1,27 @@
+Nottingham Forest 2025/26 PL check
+Player count per source:
+- StatMuse: 31 (default player-stats query capped at 25 rows; most-apps query added Igor Jesus, Savona, Bakwa; fewest-apps query added John Victor, Kalimuendo, Jair Cunha)
+- ESPN squad page (id 393, ENG.1, season 2025): 0, page returned no data (also tried non-season URL for another club, same result)
+- footballsquads.co.uk nottmf.htm: 28 current players listed; departures section not returned by fetch, so Zinchenko, Douglas Luiz, Jota Silva, Zach Abbott, Kalimuendo not confirmed there
+- Wikipedia 2025-26 Nottingham Forest F.C. season: 31 with at least 1 PL app (Willy Boly listed with 0)
+- 11v11 team page (all comps, ceiling check): 33 incl Boly 1+1 and Jimmy Sinclair 0+2, neither credited with a PL app by StatMuse or Wikipedia, so not added. All league apps <= all-comp apps.
+Club PL goals (Wikipedia 2025-26 Premier League table): 48
+Own goals for: 1 (Wikipedia season page)
+Sum of player goals: 47
+Difference (club goals - own goals - player sum): 0
+Disagreements (2):
+- Chris Wood: StatMuse 15, Wikipedia 12+4=16; 11v11 player page 11+4=15; used 15
+- Douglas Luiz: StatMuse 8, Wikipedia 5+2=7; 11v11 player page Forest PL 5+3=8; used 8
+Unverified: ESPN not usable. Nationality/position for Zinchenko, Douglas Luiz, Jota Silva, Abbott, Kalimuendo not from footballsquads. Kalimuendo nationality France based on youth caps (no senior cap). Wikipedia's own goal attribution text looked odd (named Milenkovic vs Everton); count of 1 accepted because it closes the total.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/nottingham-forest/tab/players/season/2026/comp/1/ (A=starts, S=subs): 31 players; every row apps (A+S) and goals match the CSV.
+- Chris Wood: sources_agree partial -> yes (StatMuse 15/3, 11v11 club page 11+4=15/3)
+- Douglas Luiz: sources_agree partial -> yes (StatMuse 8/0, 11v11 club page 5+3=8/0)
+- Stefan Ortega: full_name Stefan Ortega Moreno -> Stefan Ortega (spelling used for same player in other seasons)
+- Murillo: full_name Murillo -> Murillo Santiago Costa dos Santos (spelling used for same player in other seasons)
+- Nicolas Dominguez: surname Dominguez -> Domínguez (spelling used for same player in other seasons)
+- Ibrahim Sangare: surname Sangare -> Sangaré (spelling used for same player in other seasons)
+- Nikola Milenkovic: surname Milenkovic -> Milenković (spelling used for same player in other seasons)
+- footballsquads nottmf.htm re-fetched: departures section still not returned, so Zinchenko, Douglas Luiz, Jota Silva, Abbott, Kalimuendo position/nationality not confirmed there (first four match spellings/values used in earlier seasons).
+Rows 31; player goals 47; club goals 48; own goals for 1; difference 0. All rows sources_agree=yes.

@@ -1,0 +1,10 @@
+Nottingham Forest 1992/93 Premier League check
+Player count: StatMuse merged 23 (player-stats 23, most-apps 23, fewest-apps 23); 11v11 club page 23 (https://www.11v11.com/teams/nottingham-forest/tab/players/season/1993/comp/1/). Rows: 23
+Club goals: 41 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 0. StatMuse own-goal query returned HTTP 422 on three URL variants (consistent with no results); StatMuse and 11v11 player goals both sum to 41 = club goals; Wikipedia 1992-93 Nottingham Forest season lists no league own goals (only a League Cup og by Gannon, Stockport). og_source recorded as the Wikipedia season page.
+Player goals sum: 41
+Difference (club goals - og - player goals): 0
+Disagreements (2): Gary Bannister goals StatMuse 8 vs 11v11 9; Kingsley Black StatMuse 5 vs 11v11 4. Wikipedia 1992-93 Nottingham Forest season gives Bannister 8 (27+4) and Black 5 (19+5) -> StatMuse figures. All apps match.
+Names: Thorvaldur Orlygsson (StatMuse) = Toddy Orlygsson (11v11); player field uses Toddy Orlygsson, full_name Þorvaldur Örlygsson.
+Positions/nationality: footballsquads has no 1992-93 season (archive starts 1993/94; /eng/1992-1993/faprem/ returns 404), so reused from 1993-94+ files for the same player, otherwise from the 11v11 club page.
+Unverified: own goals confirmed only by goal-sum consistency and Wikipedia; StatMuse og query unavailable. Positions/nationality for Bannister, Crosby, Glover, Laws, McKinnon, Orlygsson, Webb, Williams, Terry Wilson from 11v11 only.

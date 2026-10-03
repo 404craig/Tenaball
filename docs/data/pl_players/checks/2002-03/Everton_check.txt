@@ -1,0 +1,10 @@
+Everton 2002/03 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped); union 28. 11v11 club page 28 (same players). fewest-apps not fetched: the union of the other two StatMuse lists already equals the full 11v11 squad of 28.
+Club goals (Wikipedia 2002-03 FA Premier League table): 48
+Own goals for: 0. StatMuse players-with-own-goals-vs-everton-2002-03 lists Russell Hoult (West Brom) 1, but 11v11 match page https://www.11v11.com/matches/west-bromwich-albion-v-everton-12-april-2003-15340/ and Wikipedia season page credit David Weir (23'). Wikipedia season page shows Cunningham o.g. v Birmingham 28 Aug 2002, but 11v11 match page https://www.11v11.com/matches/everton-v-birmingham-city-28-august-2002-13282/ says goals panel awarded it to David Unsworth (StatMuse also counts no Cunningham o.g. and gives Unsworth 5). So 0 own goals for.
+Player goals sum: 48. Difference: 0.
+Disagreements (2):
+- David Weir goals: StatMuse 0 vs 11v11 1. Resolved 1 (11v11 club, player and match pages plus Wikipedia).
+- Tomasz Radzinski apps: StatMuse 30 vs 11v11 29 (27+2). Resolved 29 (11v11 player page and Wikipedia 27+2).
+Positions from footballsquads 2002-2003/faprem/everton.htm (Watson, Hibbert, Yobo listed D). Nationality: footballsquads has no nationality column; from spellings in later seasons and 11v11 Nat for Alexandersson (Sweden), Baardsen (Norway), Gemmill (Scotland), Li Weifeng (China), Rodrigo (Brazil).
+Unverified: Rodrigo's full name.

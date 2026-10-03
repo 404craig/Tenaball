@@ -1,0 +1,9 @@
+Spurs 2021/22 check
+Players per source: 11v11 PL squad page 25; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 25. Same players in both.
+Club PL goals: 69 (Wikipedia 2021-22 Premier League table)
+Own goals for: 6 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2021-22-premier-league). StatMuse lists Matt Targett (Aston Villa), Sergi Canos (Brentford), Michael Keane (Everton), Kurt Zouma (West Ham), Jan Bednarek (Southampton), Harry Maguire (Man Utd), 1 each. Confirmed: thfcdb.com match pages Spurs 2-1 Villa 3 Oct 2021 (Targett o.g. 71), Spurs 3-1 West Ham 20 Mar 2022 (Zouma o.g. 9), Spurs 2-3 Southampton 9 Feb 2022 (Bednarek o.g. 18), Spurs 2-3 Man Utd 12 Mar 2022 (Maguire o.g. 72); Sky Sports reports Spurs 2-0 Brentford 2 Dec 2021 (Canos o.g.) and Spurs 5-0 Everton 7 Mar 2022 (Keane o.g. 14). Wikipedia season page summariser reported none in Spurs favour (unreliable; it listed only own goals conceded).
+Player goals sum: 63
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse (3 queries) and 11v11 (11v11 apps+subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/tottenha.htm
+Unverified: nothing material. Player name Reguilon reused exactly from earlier-season files for consistency. Eric Dier MID as footballsquads gives M this season.

@@ -1,0 +1,7 @@
+Chelsea 2008/09 check
+Player count per source: StatMuse 29 (player-stats 25 + fewest-apps 25 + most-apps 25, merged: adds Bridge, Kalou, Sinclair, Wright-Phillips); 11v11 club page 29; footballsquads roster: all 29 present.
+Club PL goals (Wikipedia table): 68
+Own goals for: 3 (David Wheater, Johan Djourou, Kolo Toure) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2008-09-premier-league
+Player goals sum: 65. 68 - 3 - 65 = 0.
+Disagreements: none.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

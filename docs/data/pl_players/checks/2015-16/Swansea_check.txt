@@ -1,0 +1,11 @@
+Swansea 2015/16 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/swansea-city-premier-league-player-stats-2015-16 (+ most-appearances and fewest-appearances queries; player-stats query hit the 25-row cap, union of three gives 27); 11v11 https://www.11v11.com/teams/swansea-city/tab/players/season/2016/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2015-2016/faprem/swansea.htm (position, nationality).
+Player counts: StatMuse union 27; 11v11 club page 27. Every player's apps and goals match.
+Rows written: 27
+Club goals (Wikipedia 2015-16 Premier League table): 42
+Own goals for: 1 (StatMuse own-goals query): Harry Kane (Spurs), Swansea 2-2 Spurs 4 Oct 2015, confirmed by 11v11 match page https://www.11v11.com/matches/swansea-city-v-tottenham-hotspur-04-october-2015-316918/ (31st minute OG).
+Player goals sum: 41
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Notes: Stephen Kingsley's OG for West Ham (7 May 2016) is against Swansea and does not affect this total.
+Unverified: nothing outstanding.

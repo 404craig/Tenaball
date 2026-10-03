@@ -1,0 +1,8 @@
+West Ham 2010/11 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25, fewest-appearances 25; union 35. 11v11 PL club page 35. footballsquads 2010-2011/faprem/westham.htm lists all 35 (position and nationality taken from it).
+Players only in most-appearances query: Green, Parker, Obinna, Bridge, Hitzlsperger, Hines. Only in fewest-appearances: Boffin, Behrami, Reid, Ben Haim. All on 11v11 club page with the same figures.
+Club PL goals: 43 (Wikipedia 2010-11 Premier League table).
+Own goals for: 2. Ronald Zubar (Wolves, 1 Jan 2011) and Tony Hibbert (Everton, 28 Dec 2010), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2010-11-premier-league; both confirmed on 11v11 match pages (293274, 293240).
+Player goals sum: 41. Difference (43 - 2 - 41): 0.
+Disagreements: none between StatMuse and 11v11 (apps = starts + subs on 11v11).
+Unverified: nothing.

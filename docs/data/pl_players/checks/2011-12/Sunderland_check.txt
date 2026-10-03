@@ -1,0 +1,10 @@
+Sunderland 2011/12 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (sunderland slug); 11v11 PL club page https://www.11v11.com/teams/sunderland/tab/players/season/2012/comp/1/; footballsquads eng/2011-2012/faprem/sunder.htm; Wikipedia 2011-12 Sunderland season page.
+Player count: final rows 28; StatMuse merged 28 (Bramble, Bridge, Brown only in most/fewest; Gordon, Noble, Kyrgiakos absent from most); 11v11 club page 28.
+Club goals (Wikipedia 2011-12 Premier League table): 45
+Own goals for: 2 (Daniel Ayala (Norwich), Jonathan Woodgate (Stoke)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2011-12-premier-league; confirmed by Wikipedia season page (2 own goals; Woodgate o.g. v Stoke and Ayala o.g. v Norwich in match list).
+Player goals sum: 43
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 28 players match on apps and goals between StatMuse and 11v11. (Wikipedia summary goalscorer table omitted Bardsley, Bramble, Campbell, Colback; not trusted over two agreeing sources.)
+Positions/nationalities: footballsquads 2011-12 (all 28 found; Ferdinand and Gyan in 'no longer at club' section). Names reuse earlier-season spellings (Phil Bardsley, Seb Larsson, Matt Kilgallon, Ji Dong-won).
+Unverified: nothing material.

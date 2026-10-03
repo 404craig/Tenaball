@@ -1,0 +1,9 @@
+Arsenal 2007/08 check
+Player count per source: StatMuse 27 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: player-stats lacks Gallas and Rosicky, both in most/fewest); 11v11 club page 27 (apps = starts + subs); footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/arsenal.htm: all 27 present (Diarra, Randall in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 74
+Own goals for: 1 (Jlloyd Samuel, Bolton, 29 Mar 2008) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2007-08-premier-league
+Player goals sum: 73. 74 - 1 - 73 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2007-08 (van Persie listed M, Eboue D, Walcott F).
+Nationality: footballsquads 2007-08 pages have no nationality column. Nationality and name spellings reused from other seasons' CSVs; Gilberto Silva (not in other seasons) Brazil per Wikipedia 2007-08 Arsenal season squad table.
+Unverified: own goal not separately confirmed by Wikipedia or 11v11 match pages, but it reconciles exactly.

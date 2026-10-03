@@ -1,0 +1,13 @@
+Club: Burnley 2014/15
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (below cap, complete). 11v11 PL club page 24. Same 24 players.
+Club PL goals: 28 (https://en.wikipedia.org/wiki/2014%E2%80%9315_Premier_League league table).
+Own goals for: 1 (Paul Dummett (Newcastle), 1 Jan 2015) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2014-15-premier-league, confirmed by Wikipedia 2014-15 Burnley season page.
+Player goals sum: 27
+Difference (club goals - og_for - player goals): 0
+Rows: 24
+Disagreements: 2.
+- Nathaniel Chalobah: StatMuse 5, 11v11 club page 0+4. 11v11 player page and Wikipedia season page both 0+4. Used 4.
+- Michael Keane: StatMuse 20, 11v11 club page 17+4=21. 11v11 player page and Wikipedia season page both 17+4. Used 21.
+Goals agree for all players.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2014-2015/faprem/burnley.htm. Nationality reused from earlier seasons for Scott Arfield (Canada) and Ashley Barnes (Austria).
+Unverified: nothing else.

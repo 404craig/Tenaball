@@ -1,0 +1,9 @@
+Club: Sunderland 2013/14
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25 (at cap), fewest-appearances 25 (at cap); union of the three = 31 players. 11v11 PL club page (https://www.11v11.com/teams/sunderland/tab/players/season/2014/comp/1/) 31 players (A+S). Same 31 players.
+Disagreements: 0. Every player's apps (starts+subs) and goals match between StatMuse and 11v11.
+Club PL goals: 41 (Wikipedia 2013-14 Premier League table).
+Own goals for: 0. StatMuse own-goal query (players-with-own-goals-vs-sunderland-afc-2013-14-premier-league and -vs-sunderland-) returned HTTP 422 (no result). Wikipedia 2013-14 Sunderland A.F.C. season goalscorers table: Own Goals PL 0 (FA Cup 1, League Cup 1); PL scorers sum to 41.
+Player goals sum: 41
+Difference: 0 (41 - 0 - 41).
+Position/nationality: https://www.footballsquads.co.uk/eng/2013-2014/faprem/sunder.htm (Sessegnon, Cabral, Ji, Vaughan, Diakite in players no longer at club). Cabral listed CPV there (used Cape Verde). El-Hadji Ba listed FRA (used France). Bardsley SCO.
+Unverified: nothing material.

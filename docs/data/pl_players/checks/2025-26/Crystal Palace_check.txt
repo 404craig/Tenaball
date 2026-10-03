@@ -1,0 +1,29 @@
+Crystal Palace 2025/26 PL check
+Player count per source:
+- StatMuse (most-apps and fewest-apps queries merged, each capped at 25 rows): 30
+- ESPN squad page: 0, page returned no data (not separately fetched for Palace after failing for Chelsea and Everton)
+- footballsquads.co.uk cpalace.htm: all 30 found (Eze, Edouard, Esse, Guehi listed as left)
+- Wikipedia 2025-26 Crystal Palace F.C. season: 24 in extract
+Club PL goals (Wikipedia table): 41
+Own goals for: 1 (Wikipedia season page)
+Sum of player goals: 40
+Difference: 0
+Disagreements: none on figures. Six players (Esse, Devenny, Rodney, Benitez, Cardines, Drakes-Thomas) not in Wikipedia extract, StatMuse only, marked partial. Devenny's 1 goal is needed for the goals check to balance.
+Unverified: those six players' apps; ESPN not usable.
+Default StatMuse URL truncated at 25 and missed Benitez, Cardines, Drakes-Thomas, Guessand, Canvot.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/crystal-palace/tab/players/season/2026/comp/1/ read: 30 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- Positions/nationality already from footballsquads cpalace.htm (pilot); not refetched.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 41 - own goals for 1 - player goals 40 = 0.
+- Crystal Palace_summary.json written.
+Changes:
+- Kaden Rodney: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Justin Devenny: sources_agree partial -> yes (21 apps, 1 goals confirmed by 11v11 PL club page)
+- Romain Esse: sources_agree partial -> yes (4 apps, 0 goals confirmed by 11v11 PL club page)
+- Walter Benitez: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Rio Cardines: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Joel Drakes-Thomas: sources_agree partial -> yes (2 apps, 0 goals confirmed by 11v11 PL club page)

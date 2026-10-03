@@ -1,0 +1,9 @@
+Newcastle 2021/22 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 29; 11v11 PL squad page 29; rows written 29. StatMuse union adds Ryan Fraser, Sean Longstaff, Bruno Guimaraes (most-apps) and Paul Dummett (fewest-apps).
+Club PL goals: 44 (Wikipedia 2021-22 Premier League table)
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2021-22-premier-league). StatMuse lists Ben White (Arsenal) 1, Eric Dier (Spurs) 1, Mason Holgate (Everton) 1. Confirmed: 11v11 match page Newcastle 3-1 Everton 8 Feb 2022 (Holgate o.g. 37), Sportskeeda report Newcastle 2-3 Spurs 17 Oct 2021 (Dier o.g.), Wikipedia 2021-22 Newcastle season fixture list Newcastle 2-0 Arsenal 16 May 2022 (White o.g.).
+Player goals sum: 41
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2021-2022/engprem/newcas.htm exists but the summariser returned only the header (3 attempts; 2020-21 and 2022-23 newcas pages same). Fallback: later-season files for the same players (footballsquads-based) and Wikipedia 2021-22 Newcastle season squad for Clark, Fernandez, Gayle, Hayden, Hendrick, Woodman. Darlow: Wikipedia squad ENG, Wales used to match later-season file.
+Unverified: nothing material beyond Newcastle positions not checked on footballsquads 2021-22.

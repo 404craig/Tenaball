@@ -1,0 +1,10 @@
+Liverpool 2016/17 Premier League check
+StatMuse: player-stats 23, most-appearances 23, fewest-appearances 23 (not capped); union 23 players
+11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2017/comp/1/): 23 players
+Rows written: 23. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2016-17 Premier League table): 78
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2016-17-premier-league): Giannelli Imbula (Stoke), Liverpool 4-1 Stoke, 27 Dec 2016, confirmed by Off The Ball report (https://www.offtheball.com/Liverpool-hammer-Stoke-to-keep-pace-with-the-leaders--256660)
+Player goals sum: 77. Club goals minus own goals: 77. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2016-17 Liverpool page (https://www.footballsquads.co.uk/eng/2016-2017/faprem/liverpool.htm), complete. Kevin Stewart listed ENG there; 11v11 lists Jamaica, used Jamaica (country he plays for).
+Unverified: nothing outstanding

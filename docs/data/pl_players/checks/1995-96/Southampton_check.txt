@@ -1,0 +1,12 @@
+Southampton 1995/96 check
+Player counts: StatMuse player-stats 25, fewest-apps 25 (full list); union 25. 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/1996/comp/1/) 25. Rows = 25. most-apps query not run as 11v11 and the fewest-apps list cover the full squad of 25.
+Club goals (Wikipedia 1995-96 FA Premier League table): 34.
+Own goals for: 2 (Ian Bishop, West Ham; Steve Clarke, Chelsea) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1995-96-premier-league. Wikipedia 1995-96 Southampton season page squad goals total 32 = 34 - 2, consistent. Match-by-match own-goal scorers not confirmed on Wikipedia or 11v11 match pages.
+Player goals sum: 32. 34 - 2 = 32. Difference: 0. (11v11 sum 33, StatMuse sum 32.)
+Disagreements: 4.
+- Neil Shipperley goals: StatMuse 7, Wikipedia 7, 11v11 8. Used 7 (11v11 appears to credit one of the own goals to him).
+- Mark Walters goals: StatMuse 0, 11v11 1, Wikipedia 1. Used 1.
+- Gordon Watson goals: StatMuse 3, 11v11 2, Wikipedia 2. Used 2.
+- Christer Warren apps: StatMuse 6, 11v11 1+6=7, Wikipedia 1(6)=7. Used 7.
+Positions from footballsquads 1995-1996/faprem/southam.htm (Maskell, McDonald in players no longer at club; Le Tissier F). Nationality from other seasons or 11v11; David Hughes kept as Wales (other seasons) though 11v11 shows England.
+Unverified: which specific goals were the two own goals.

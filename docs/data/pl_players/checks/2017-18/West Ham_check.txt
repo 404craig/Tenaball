@@ -1,0 +1,11 @@
+West Ham 2017/18 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-ham-united-premier-league-player-stats-2017-18 (+ most/fewest appearances queries); 11v11 https://www.11v11.com/teams/west-ham-united/tab/players/season/2018/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2017-2018/faprem/westham.htm (position, nationality).
+Player counts: StatMuse player-stats 25 rows (missing Byram, Reid), most 25, fewest 25; union 27. 11v11 club page 27 rows. Every player's apps and goals match.
+Rows written: 27
+Club goals (Wikipedia 2017-18 Premier League table): 48
+Own goals for: 0 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2017-18-premier-league). 0 own goals for: StatMuse query returns no result (HTTP 422, no rows); Wikipedia 2017-18 West Ham season page lists no own goals in West Ham's favour; player goals (identical in StatMuse and 11v11) sum to the club total of 48. (StatMuse 'own goals for West Ham' page shows 1, which is the Zabaleta own goal West Ham conceded v Man City on 29 Apr 2018, confirmed by Sky Sports report, so not an own goal for.) Not checked match by match.
+Player goals sum: 48
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: from footballsquads 2017/18 (G/D/M/F mapped to GK/DEF/MID/FWD); nationality = footballsquads code for this season. Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Unverified: own goals for not cross-checked match by match (see above).

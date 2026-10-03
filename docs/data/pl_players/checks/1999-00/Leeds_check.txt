@@ -1,0 +1,11 @@
+Leeds 1999/00 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 20; 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/2000/comp/1/) = 20; all matched to footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/leeds.htm), including its "no longer at club" section.
+Apps and goals: every player identical on StatMuse and 11v11 (11v11 apps = starts + subs).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 58
+Own goals for: 1 (Rigobert Song (Liverpool, Aug 1999)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1999-00-premier-league
+Player goals sum: 57 (same on StatMuse and 11v11)
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals.
+Name/position notes: Alf-Inge Haaland: StatMuse spells Alf-Inge Håland; Matt Jones: 11v11 spells Matthew Jones; Gary Kelly: 11v11 spells Garry Kelly; Lucas Radebe: footballsquads spells Radabe
+Positions from footballsquads 1999-00 page; nationality from 11v11 club page or the spelling already used for the player in later seasons.
+Unverified: own goals rest on the StatMuse own-goal query plus the goals total; not confirmed match by match on 11v11 or Wikipedia (Wikipedia season pages did not give scorers via the summariser).

@@ -1,0 +1,9 @@
+Wimbledon 1993/94 Premier League check
+Player count: StatMuse merged 25 (player-stats 25, most-apps 25, fewest-apps 7); 11v11 club page 25 (https://www.11v11.com/teams/wimbledon/tab/players/season/1994/comp/1/); all 25 in footballsquads wimbled.htm. Rows: 25
+Club goals: 56 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 3. Les Ferdinand (QPR, 27 Sep 1993, https://www.11v11.com/matches/wimbledon-v-queens-park-rangers-27-september-1993-21347/), Henning Berg (Blackburn, 29 Mar 1994, https://www.11v11.com/matches/wimbledon-v-blackburn-rovers-29-march-1994-21619/), Gary Ablett (Everton, 7 May 1994, https://www.11v11.com/matches/everton-v-wimbledon-07-may-1994-21703/). All three listed on Wikipedia 1993-94 Wimbledon season page and on 11v11 match pages. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1993-94-premier-league) lists only Ablett.
+Player goals sum: 53
+Difference (club goals - og - player goals): 0
+Disagreements: 0 on player figures; apps and goals match for all 25 players.
+Position: footballsquads used (Gerald Dobbs D, Greg Berry M, Marcus Gayle F). Neal Ardley spelled as in other seasons (footballsquads 'Neil'); Steve Talboys spelled as in other seasons (footballsquads 'Tallboys').
+Nationality: footballsquads 1993-94 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

@@ -1,0 +1,8 @@
+Man City 2002/03 check
+Player count per source: StatMuse player-stats 25 (cap, Distin missing), most-apps 25 (cap, Jordan missing), fewest-apps 25 (cap, Anelka missing); merged 26. 11v11 club page https://www.11v11.com/teams/manchester-city/tab/players/season/2003/comp/1/: 26 (total = Apps + Subs). footballsquads 2002-03 (/faprem/mancity.htm): all 26 present.
+Club PL goals: 47 (Wikipedia 2002-03 FA Premier League table).
+Own goals for: 2 (Phil Gilchrist, West Brom; Tomasz Radzinski, Everton) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2002-03-premier-league. Wikipedia 2002-03 Man City season page scorers list totals 45, consistent with 2 own goals.
+Player goals sum: 45. 47 - 2 - 45 = 0.
+Disagreements: 0. All 26 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2002-03 (Wright-Phillips F, Tiatto M, Jordan M there). Nationality from 11v11 club page, spellings aligned with other seasons' files (11v11 "Ireland" written as Republic of Ireland).
+Unverified: own goals not cross-checked on 11v11 match pages.

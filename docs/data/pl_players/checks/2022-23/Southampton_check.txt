@@ -1,0 +1,9 @@
+Southampton 2022/23 check
+Players per source: 11v11 PL squad page 36; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 36. Same players in both.
+Club PL goals: 36 (Wikipedia 2022-23 Premier League table)
+Own goals for: 0 (https://en.wikipedia.org/wiki/2022%E2%80%9323_Southampton_F.C._season). StatMuse own-goals-vs-southampton query returned HTTP 422 twice (two URL variants), i.e. no rows. Wikipedia season page: the only Premier League o.g. text found is against Southampton (Fulham away 31 Dec 2022), none in Southampton's favour. StatMuse and 11v11 player totals both sum to 36 = club goals. Not confirmed match by match on 11v11.
+Player goals sum: 36
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2022-2023/engprem/southam.htm
+Unverified: own goals for = 0 not confirmed on 11v11 match pages; StatMuse own-goal query 422 and Wikipedia shows none in Southampton favour.

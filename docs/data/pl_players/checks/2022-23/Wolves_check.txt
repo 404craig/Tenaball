@@ -1,0 +1,8 @@
+Wolves 2022/23 check
+Players per source: 11v11 PL squad page 32; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 32. Same players in both.
+Club PL goals: 31 (Wikipedia 2022-23 Premier League table)
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2022-23-premier-league). StatMuse lists Jan Bednarek (Southampton), Joachim Andersen (Crystal Palace), Joel Matip (Liverpool), 1 each. Confirmed on 11v11 match pages: Southampton 1-2 Wolves 11 Feb 2023 (Bednarek o.g. 72), Wolves 3-0 Liverpool 4 Feb 2023 (Matip o.g. 5), Wolves 2-0 Crystal Palace 25 Apr 2023 (Andersen o.g. 3).
+Player goals sum: 28
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Matheus Nunes: StatMuse 35 vs 11v11 34 (30+4). Resolved to 34 by 11v11 player page (PL 30 starts, 4 subs, 1 goal) and Wikipedia player career table (34). Diego Costa: Wikipedia season page 24 vs StatMuse 23 and 11v11 23 (16+7). Kept 23 (two sources agree; Wikipedia summariser not trusted). Not counted as a StatMuse/11v11 disagreement.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2022-2023/engprem/wolves.htm

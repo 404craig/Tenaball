@@ -1,0 +1,11 @@
+Middlesbrough 1999/00 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 28 unique; 11v11 club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/2000/comp/1/) = 28 (starts A + subs S); all 28 in footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/middles.htm).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 46
+Own goals for: 2 (Mark Williams (Watford) 24 Oct 1999; Stephen Carr (Spurs) 3 Apr 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1999-00-premier-league; confirmed by Wikipedia 1999-2000 Middlesbrough F.C. season results.
+Player goals sum: 44 (matches Wikipedia season page league goalscorer list)
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 28 players.
+Disagreements: none
+Names: Juninho (StatMuse Juninho Paulista), Micky Cummins (11v11 Michael Cummins).
+Positions from footballsquads 1999-2000 (Ziege D, Stockdale D). Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

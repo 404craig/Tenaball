@@ -1,0 +1,11 @@
+Newcastle 1999/00 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 32 unique; 11v11 club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2000/comp/1/) = 32 (starts A + subs S); all 32 in footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/newcas.htm, Wright and Dumas in no-longer-at-club section).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 63
+Own goals for: 4 (Henning Berg (Man Utd) 30 Aug 1999; Stefano Eranio (Derby) 25 Oct 1999; Richard Dryden and Garry Monk (Southampton) 16 Jan 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1999-00-premier-league; each confirmed on 11v11 match pages (manchester-united-v-newcastle-united-30-august-1999-202, newcastle-united-v-derby-county-25-october-1999-234, newcastle-united-v-southampton-16-january-2000-242).
+Player goals sum: 59
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 32 players.
+Disagreements: Wikipedia season page gives Dabizas 4 league goals and only 3 own goals; StatMuse, 11v11 club page and 11v11 player page give Dabizas 3 and match pages confirm 4 own goals. Resolved: Dabizas 3, og_for 4.
+Names: Paul Robinson is the striker (11v11 Paul D Robinson), a different person from the goalkeeper/defender Paul Robinson rows in other seasons. Helder = Hélder Cristóvão; Fumaca = José Antunes Fumaça; Marcelino = Marcelino Elena.
+Positions from footballsquads 1999-2000 (Solano M, Maric M, Helder D). Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

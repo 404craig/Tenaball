@@ -1,0 +1,10 @@
+Season 2023/24, Everton
+Player count per source: StatMuse union of 3 pages (player-stats, most-appearances, fewest-appearances, all read) 26; 11v11 PL squad page (season 2024, comp 1) 26; final rows 26.
+Club PL goals: 40 (Wikipedia 2023-24 Premier League table)
+Own goals for: 0 (https://efcstatto.com/?p=10607 (end-of-season summary: Everton one of 3 teams with no opponent own goal in the 2023-24 PL); StatMuse own-goal query returned 422)
+Player goals sum: 40
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: None. All 26 players match StatMuse and 11v11 on apps and goals.
+Positions and nationalities: footballsquads.co.uk eng/2023-2024/engprem (all players found there, read via summariser). Names, full names and nationality reused from earlier season files where the player already exists.
+Nationality: Beto kept as Guinea-Bissau (footballsquads 2023-24 says POR).
+Unverified: full names of players new to the dataset are from general knowledge (where unsure, the display name with accents is used). 11v11 player pages not needed except as noted, since StatMuse and the 11v11 squad page agreed on every listed player.

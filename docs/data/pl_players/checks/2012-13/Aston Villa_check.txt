@@ -1,0 +1,10 @@
+Club: Aston Villa 2012/13
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 28 unique players. 11v11 PL club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2013/comp/1/) 28. Same 28 players.
+Club PL goals: 47 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2012-13-premier-league) returned HTTP 422 (no answer, likely no results), variant URL also 422. Wikipedia 2012-13 Aston Villa season page summary found only a League Cup own goal (Gareth Barry), none in the Premier League. 0 consistent with exact reconciliation.
+Player goals sum: 47
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: Yacouba Sylla goals shown as 2 in one StatMuse summary (fewest-appearances) vs 0 in StatMuse most-appearances and 11v11; resolved as 0 (two sources agree, totals reconcile). All other apps (starts + subs) and goals match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2012-2013/faprem/avilla.htm. Exceptions: Sylla nationality Mali (reused from later seasons; footballsquads lists FRA), Dawkins Jamaica (11v11; footballsquads lists ENG, he was uncapped then).
+Unverified: own goals for not confirmed by a positive source (only absence of evidence plus reconciliation).

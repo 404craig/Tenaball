@@ -1,0 +1,8 @@
+Arsenal 1999/00 check
+Player counts: StatMuse player-stats 25 (capped; Henry, Sylvinho, Adams, Luzhny, Black missing), most-apps 25, fewest-apps 25; union 30. 11v11 club page (https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/) 30. Rows = 30.
+Club goals (Wikipedia 1999-2000 FA Premier League table): 73.
+Own goals for: 3. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1999-00-premier-league) lists Frank Sinclair, Steve Guppy (both Leicester) and Chris Armstrong (Spurs). 11v11 match pages confirm Sinclair og 90 (Arsenal 2-1 Leicester, 7 Aug 1999) and Armstrong og 20 (Arsenal 2-1 Spurs, 19 Mar 2000). Guppy og: 11v11 credits that goal (53, Leicester 0-3 Arsenal, 4 Dec 1999) to Lee Dixon instead.
+Player goals sum: 70. 73 - 3 = 70. Difference: 0.
+Disagreements: 1. Lee Dixon goals: StatMuse 3, Wikipedia 1999-2000 Arsenal season squad stats 3, 11v11 club and player page 4 (counts the 4 Dec 1999 goal StatMuse lists as Guppy og). Used 3 (two sources agree); og_for = 3 accordingly. All 30 players' apps (11v11 A+S) match StatMuse; all other goals match.
+Positions from footballsquads 1999-2000/faprem/arsenal.htm (Boa Morte, Hughes in no-longer-at-club section; Grimandi listed M). Nationality: footballsquads has no nationality column; spellings reused from other seasons, 11v11 Nat column for Barrett and McGovern (Ireland -> Republic of Ireland), Black (England), Weston (Wales), Overmars (Netherlands); Suker as Croatia per existing rows.
+Unverified: the Guppy own goal vs Dixon attribution is the one source conflict (11v11 vs StatMuse/Wikipedia).

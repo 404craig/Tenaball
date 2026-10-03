@@ -1,0 +1,11 @@
+Sheffield Wed 1995/96 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 10; union 28. 11v11 club page (https://www.11v11.com/teams/sheffield-wednesday/tab/players/season/1996/comp/1/) 28. Rows = 28.
+Club goals (Wikipedia 1995-96 FA Premier League table): 48 (also Wikipedia 1995-96 Sheffield Wednesday season page).
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1995-96-premier-league) returned HTTP 422 (usually an empty result). StatMuse and 11v11 player goals both sum to 48.
+Player goals sum: 48. 48 - 0 = 48. Difference: 0. StatMuse and 11v11 goals agree for every player.
+Disagreements: 3 (all apps).
+- Regi Blinker: StatMuse 10 vs 11v11 club and player page 9; Wikipedia career table (42 apps 1995-97 minus 33 in 1996/97) = 9. Used 9.
+- Ritchie Humphreys: StatMuse 4 vs 11v11 1+4=5. StatMuse game log omits Bolton v Wednesday 23 Mar 1996, where the 11v11 match page has him starting. Used 5, sources_agree=no (no independent third source found; soccerbase link from Wikipedia did not load the right page).
+- Chris Waddle: StatMuse 31 vs 11v11 23+9=32; Wikipedia career table 32. Used 32.
+Positions from footballsquads 1995-1996/faprem/sheffwed.htm (Ingesson, Petrescu, Pearce, Sinton, Watts in players no longer at club). Nationality reused from other seasons; new players Degryse (Belgium), Ingesson (Sweden), Kovacevic (Serbia, 11v11 SRB), Pearce and Platts (England) from 11v11.
+Unverified: own goals 0 rests on the 422 response plus the goal sum; Humphreys 5th appearance only from 11v11.

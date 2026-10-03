@@ -1,0 +1,8 @@
+West Brom 2012/13 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25); 11v11 PL club page 25; footballsquads lists all 25.
+Club PL goals: 53 (Wikipedia 2012-13 Premier League table).
+Own goals for: 4. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2012-13-premier-league) lists 3: Gary Caldwell (Wigan), Jonathan de Guzman (Swansea), Rob Green (QPR). 4th: Craig Gardner (Sunderland) 90' in Sunderland 2-4 West Brom, 24 Nov 2012, per 11v11 match page https://www.11v11.com/matches/sunderland-v-west-bromwich-albion-24-november-2012-299603/ ("confirmed as a Craig Gardner own goal and has not been credited to Marc Antoine Fortune"). StatMuse credits that goal to Fortune.
+Player goals sum: 49. Difference: 0 (StatMuse view 50 + 3 = 53 also reconciles).
+Disagreements: 1.
+- Marc-Antoine Fortune goals: StatMuse 2 (goals @Sunderland 24 Nov 2012 and @Southampton 27 Apr 2013), 11v11 club and player page 1. 11v11 match pages: Southampton 0-3 WBA goal credited to Fortune 6'; Sunderland goal credited as Gardner OG. Used 1.
+Wikipedia West Brom season page claims 0 own goals and Fortune 2: not trusted over 11v11 match page note.

@@ -1,0 +1,8 @@
+Man City 2004/05 check
+Player count per source: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (all three read; identical 25-player set, and 11v11 also has exactly 25, so the 25-row cap hides no one). 11v11 club page 25 (total = Apps + Subs). footballsquads 2004-05 (/faprem/mancity.htm): all 25 present (Anelka in "no longer at club").
+Club PL goals: 47 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2005/; StatMuse team query also G 47).
+Own goals for: 0. StatMuse own-goals-vs query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2004-05-premier-league) and two variants returned HTTP 422. StatMuse team query https://www.statmuse.com/fc/ask/man-city-own-goals-for-2004-05-premier-league gives OG 2, but that column counts own goals BY the club's players (the same query for Liverpool gives 0 while Liverpool had 3 OGs in their favour), so it is not own goals for. StatMuse player goals and 11v11 player goals each sum to 47 = club goals. Wikipedia season goalscorer list shows no own goals (its own sum is 44, with Fowler 10, Reyna 1, Dunne 1, off by 1 each).
+Player goals sum: 47. 47 - 0 - 47 = 0.
+Disagreements: 0 between StatMuse and 11v11 (all apps and goals identical). Wikipedia lower by 1 for Fowler, Reyna, Dunne; ignored per spec.
+Positions from footballsquads 2004-05 (Jordan M, Sibierski M). Nationality from 11v11 club page and other seasons' spellings, except Negouai: 11v11 Morocco, Wikipedia French (born Martinique, no caps found); used France.
+Unverified: own goals for = 0 rests on goal-sum consistency of two sources and the Wikipedia goalscorer list; no direct own-goals-for list could be loaded.

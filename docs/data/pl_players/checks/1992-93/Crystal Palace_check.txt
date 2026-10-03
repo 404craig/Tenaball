@@ -1,0 +1,9 @@
+Crystal Palace 1992/93 Premier League check
+Player count: StatMuse 24 (player-stats 24, most-apps 24, fewest-apps 24, under the 25 cap); 11v11 club page 24 (https://www.11v11.com/teams/crystal-palace/tab/players/season/1993/comp/1/). Rows: 24
+Club goals: 48 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 2. Neil Ruddock (Spurs, 30 Jan 1993) and Bardsley (QPR, 3 Apr 1993), from the Wikipedia 1992-93 Crystal Palace season match list. Not confirmed on a second source. StatMuse own-goal queries for 1992-93 (players-with-own-goals-vs-<club>-1992-93-premier-league) return HTTP 422, and the reworded query returns 'no own goals' even where Wikipedia and 11v11 match pages show one (e.g. Chelsea, Coventry), so StatMuse own-goal data for 1992-93 is treated as missing.
+Player goals sum: 46
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All 24 players' apps (11v11 starts + subs) and goals match StatMuse.
+Unverified: own goals rely on Wikipedia only (consistent with exact balance). Paul Williams is the forward also in Sheffield Wed 1992/93 (England, FWD); position taken from 11v11.
+Nationality and position: footballsquads has no 1992-93 season pages (archive starts 1993/94); nationality/position taken from this project's rows for the same player in other seasons (footballsquads-based), otherwise from the 11v11 club page.

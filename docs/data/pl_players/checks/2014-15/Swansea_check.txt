@@ -1,0 +1,12 @@
+Club: Swansea 2014/15
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 28. 11v11 PL club page (https://www.11v11.com/teams/swansea-city/tab/players/season/2015/comp/1/) 28 (A+S). Same 28 players. Bony, Routledge, Tom Carroll only appear in the most/fewest StatMuse queries.
+Disagreements: 0. All apps and goals agree between StatMuse and 11v11.
+Club PL goals: 46 (Wikipedia 2014-15 Premier League table).
+Own goals for: 3 (StatMuse OG query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2014-15-premier-league).
+- John Terry (Chelsea), Chelsea 4-2 Swansea, 13 Sep 2014, 12 min: confirmed by Swansea club report https://www.swanseacity.com/news/full-time-chelsea-4-swans-2.
+- Kieran Trippier (Burnley), Burnley 0-1 Swansea: confirmed by match report headlines ("Swansea seal away win at Burnley after Kieran Trippier own goal").
+- Mark Noble (West Ham), Swansea 1-1 West Ham (Jan 2015): Swansea club report (https://www.swanseacity.com/news/full-time-swans-1-west-ham-1) describes Gomis header deflecting off Noble; StatMuse game log credits Noble OG; 11v11 Gomis total (7) also excludes it.
+Player goals sum: 43
+Difference: 0 (46 - 3 - 43).
+Position/nationality: https://www.footballsquads.co.uk/eng/2014-2015/faprem/swansea.htm (Bony in players no longer at club; Jazz Richards listed as Ashley Richards). Jordi Amat set to Indonesia for consistency with 2015-16/2016-17 files (footballsquads ESP).
+Unverified: Wikipedia season page summariser could not read match goalscorers; OG confirmations rely on club report / headlines.

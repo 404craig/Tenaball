@@ -1,0 +1,13 @@
+Reading 2007/08 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances all read and merged; each capped at 25 rows): 26 players
+- 11v11 club page https://www.11v11.com/teams/reading/tab/players/season/2008/comp/1/: 26 players
+- footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/ : all 26 players found (position taken from it; the 2007-08 pages have no nationality column, so nationality is from the 11v11 club page Nat code, matched to spelling used in earlier season files)
+Club PL goals (Wikipedia 2007-08 Premier League table): 41
+Own goals for: 1 (Sol Campbell (Portsmouth, 29 Sep 2007, Portsmouth 7-4 Reading); confirmed by Wikipedia 2007-08 Reading F.C. season page); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-reading-2007-08-premier-league
+Player goals sum: 40
+Club goals minus own goals for: 40
+Difference: 0
+Disagreements: Ivar Ingimarsson: StatMuse 35 apps, 11v11 club page 34 (33+1). 11v11 player page (PL 33+1) and Wikipedia 2007-08 Reading season (33+1) both give 34. Resolved: 34 (StatMuse likely counted an unused sub appearance).
+Notes: Seol Ki-hyeon also played for Fulham (moved Aug 2007). Leroy Lita nationality England reused from other seasons (footballsquads birth place Brazzaville).
+Unverified: nothing outstanding.

@@ -1,0 +1,9 @@
+Spurs 2006/07 Premier League check
+Player count per source: StatMuse merged (player-stats, most-appearances, fewest-appearances) 26; 11v11 club page 26 (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2007/comp/1/); footballsquads (https://www.footballsquads.co.uk/eng/2006-2007/faprem/tottenha.htm) lists all 26 (current or no longer at club).
+Club PL goals (Wikipedia 2006-07 FA Premier League table): 57
+Own goals for: 2 - Juan Pablo Angel (Aston Villa), Steven Taylor (Newcastle). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2006-07-premier-league
+Player goals sum: 55
+Difference (club goals - own goals - player goals): 0
+Disagreements: none. Every player's apps and goals agree between StatMuse and 11v11 (11v11 apps = starts + subs).
+Positions from footballsquads; nationalities from 11v11 club page (footballsquads 2006-07 has no nationality column), or earlier-season spelling where the player already exists.
+Unverified: own goals for taken from StatMuse only (not separately confirmed on Wikipedia/11v11 match pages), but consistent with the exact goal-sum check.

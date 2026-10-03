@@ -1,0 +1,9 @@
+Club: Spurs 2018/19
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged StatMuse 28. 11v11 PL club page 28 (page header said 27, 28 rows listed).
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse for every player. Name-only spelling differences between sources are noted per row.
+Club PL goals: 67 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 1: Abdoulaye Doucoure (Watford), Watford 2-1 Tottenham, 2 Sep 2018. Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2018-19-premier-league. Confirmed by web search for Watford 2-1 Tottenham 2 Sep 2018 match reports (Sky Sports, premierleague.com) and reconciliation 66+1=67; Wikipedia Spurs season page not separately read.
+Player goals sum: 66
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm (incl. players no longer at club section). Nationality follows footballsquads 2018/19 (time-specific); exceptions noted per row. Name spellings reused from later seasons' files where present.
+Unverified: own goal confirmed by StatMuse plus match-report search titles and exact goal reconciliation; Wikipedia club season page not used for own goals. No 11v11 player pages needed (no stat disagreements).

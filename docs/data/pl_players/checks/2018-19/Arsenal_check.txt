@@ -1,0 +1,10 @@
+Club: Arsenal 2018/19
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 28 unique (Mustafi, Sokratis, Lichtsteiner only in most/fewest lists; Willock, Jenkinson, Saka only in player-stats/fewest). 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2019/comp/1/) 28 (apps = starts + subs). Same 28 players.
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Club PL goals: 73 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 4 (Cathcart Watford, Diop West Ham, Lerma Bournemouth, Rojo Man United) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2018-19-premier-league.
+Player goals sum: 69
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm. Name spellings reused from earlier seasons where present (Elneny, Konstantinos Mavropanos).
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

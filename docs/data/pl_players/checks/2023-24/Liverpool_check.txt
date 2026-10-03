@@ -1,0 +1,8 @@
+Liverpool 2023/24 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged StatMuse union 30; 11v11 PL squad page 30; rows written 30
+Club PL goals: 86 (Wikipedia 2023-24 Premier League table)
+Own goals for: 6 (StatMuse own-goals-vs-liverpool query: Areola, Leno, Emiliano Martinez, Gabriel, Hugo Bueno, Matty Cash; Wikipedia Liverpool season goalscorers Own goals PL = 6)
+Player goals sum: 80; difference (86 - 6 - 80): 0
+Disagreements: none. All 30 players' apps (11v11 starts + subs) and goals match StatMuse.
+Position/nationality: footballsquads liverpool.htm. Owen Beck not on that page: DEF/Wales from his Wikipedia page. Ben Gannon-Doak listed there as Ben Doak.
+Unverified: nothing material.

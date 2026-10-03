@@ -1,0 +1,16 @@
+Wimbledon 1997/98 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (26 unique merged); 11v11 club page (https://www.11v11.com/teams/wimbledon/tab/players/season/1998/comp/1/) = 26 (A starts + S subs); all 26 on footballsquads (https://www.footballsquads.co.uk/eng/1997-1998/faprem/wimbled.htm), Holdsworth, Solbakken, Vinnie Jones in no-longer-at-club section.
+Club goals (Wikipedia 1997-98 FA Premier League table): 34
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1997-98-premier-league) lists Christian Dailly (Derby, 22 Oct 1997). 11v11 match page Derby 1-1 Wimbledon, 22 Oct 1997 (https://www.11v11.com/matches/derby-county-v-wimbledon-22-october-1997-22946/) confirms an own goal (70) but credits it to Gary Rowett. Count of 1 agreed either way.
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Rows: 26
+Goals: StatMuse and 11v11 agree for all 26 players.
+Disagreements: 2.
+- Andy Clarke apps StatMuse 13 vs 11v11 14 (1+13). 11v11 player page lists 14 PL matches. Resolved 14.
+- Ceri Hughes apps StatMuse 16 vs 11v11 17 (13+4). 11v11 player page lists 17 PL matches. Resolved 17.
+Own goal scorer identity in the Derby match differs (StatMuse Dailly vs 11v11 Rowett); no effect on Wimbledon rows.
+Names: Neal Ardley (footballsquads Neil), Carl Leaburn (footballsquads Leadburn), Stale Solbakken. Spellings reused from other seasons where present.
+Positions from footballsquads 1997-1998 (Gayle F, Euell F, McAllister D).
+Nationality from 11v11 club page.
+Unverified: nothing outstanding beyond the two StatMuse undercounts above.

@@ -1,0 +1,10 @@
+Club: Aston Villa 2014/15
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique players. 11v11 PL club page 27. Same 27 players.
+Club PL goals: 31 (https://en.wikipedia.org/wiki/2014%E2%80%9315_Premier_League league table).
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2014-15-premier-league returned HTTP 422 (no results); Wikipedia 2014-15 Aston Villa season page mentions no own goals in Villa's favour.
+Player goals sum: 31
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none. All apps and goals match between StatMuse and 11v11 (11v11 starts + subs).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2014-2015/faprem/avilla.htm. Name/nationality spellings reused from earlier seasons (Gabriel Agbonlahor, Matthew Lowton, Leandro Bacuna as Curacao, Jack Grealish as England; footballsquads gives NED and IRL for those two in 2014/15).
+Unverified: og_for of 0 rests on StatMuse returning no rows plus Wikipedia, not on match-by-match check; consistent with exact goal reconciliation.

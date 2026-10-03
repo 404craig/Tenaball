@@ -1,0 +1,10 @@
+Blackburn 2005/06 check
+Player count per source: StatMuse 25 (player-stats 25, most-apps 25, fewest-apps 25; identical sets, so squad complete at 25); 11v11 club page https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2006/comp/1/ 25 (A = starts, S = subs); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/blackbrn.htm: all 25 present.
+Club PL goals: Wikipedia 2005-06 FA Premier League table (https://en.wikipedia.org/wiki/2005%E2%80%9306_FA_Premier_League), matches 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/: 51
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2005-06-premier-league): Zat Knight (Fulham) and Chris Powell (Charlton); Wikipedia 2005-06 Blackburn Rovers season page shows Knight og (17 Dec 2005) and Powell og (29 Apr 2006).
+Player goals sum: 49. 51 - 2 - 49 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (Neill M, Emerton M, Reid M, Pedersen F, Bentley F).
+Nationality: footballsquads 2005-06 has no nationality column; spellings reused from other seasons' CSVs, new players taken from the 11v11 club page. New: Paul Dickov kept Scotland, Garry Flitcroft (England), Vratislav Gresko (Slovakia), Matt Jansen (England), Jemal Johnson (United States), Dominic Matteo (Scotland), Florent Sinama-Pongolle (France).
+Note: Matt Jansen also appears for Bolton (loan, 6 apps).
+Unverified: nothing outstanding.

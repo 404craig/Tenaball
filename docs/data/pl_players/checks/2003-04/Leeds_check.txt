@@ -1,0 +1,8 @@
+Leeds 2003/04 check
+Player counts: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged union 30. 11v11 club page 30. Same 30 players.
+Club goals (Wikipedia 2003-04 FA Premier League table): 40
+Own goals for: 0. StatMuse players-with-own-goals-vs-leeds-united-2003-04 returned HTTP 422; Wikipedia 2003-04 Leeds United season page lists no own goals; player goals sum equals club goals on StatMuse, 11v11 and Wikipedia scorers list.
+Player goals sum: 40. Difference: 0.
+Disagreements on apps/goals: none (11v11 starts+subs = StatMuse apps for all 30).
+Positions from footballsquads 2003-2004/faprem/leeds.htm. Nationality from other seasons' spelling and 11v11 Nat (Batty, Bridges, Chapuis, Domi, Kelly, McPhail, Morris, Radebe, Roque Junior, Sakho, Wilcox, Seth/Simon Johnson, Camara).
+Unverified: own goals for = 0 rests on Wikipedia listing none plus goals reconciling across three sources.

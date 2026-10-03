@@ -1,0 +1,9 @@
+Everton 2013/14 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/everton-premier-league-player-stats-2013-14); 11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2014/comp/1/); footballsquads.co.uk/eng/2013-2014/faprem/ for position and nationality.
+Player count: final rows 28; StatMuse merged 28 (player-stats 25, most 25, fewest 25 rows; all three read); 11v11 club page 28.
+Club goals (Wikipedia 2013-14 Premier League table): 61
+Own goals for: 3 (Stockdale (Fulham), Arteta (Arsenal), Wes Brown (Sunderland); Wikipedia Everton season page: 3 PL own goals). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2013-14-premier-league
+Player goals sum: 58
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 28 players match on apps and goals between StatMuse and 11v11
+Unverified: nothing material.

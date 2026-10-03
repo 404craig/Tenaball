@@ -1,0 +1,11 @@
+Newcastle 2001/02 check
+Player counts: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (all under the 25 cap, same players). 11v11 club page 23 (same players). Rows written: 23.
+Apps: every player's StatMuse apps equal 11v11 starts + subs.
+Club goals (Wikipedia 2001-02 FA Premier League table): 74
+Own goals for: 2 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2001-02-premier-league). Wes Brown (Man Utd, 15 Sep 2001, 82) and Michael Duberry (Leeds, 12 Jan 2002, 44); both confirmed on 11v11 match pages (newcastle-united-v-manchester-united-15-september-2001-8299, newcastle-united-v-leeds-united-12-january-2002-10949).
+Player goals sum: 72. Difference (club goals - own goals - player goals): 0
+Disagreements (2):
+- Craig Bellamy goals: StatMuse 10, 11v11 club and player page 9, Wikipedia 9. Used 9.
+- Gary Speed goals: StatMuse 4, 11v11 club and player page 5, Wikipedia 5. Used 5. (StatMuse total 72 is the same either way, so StatMuse likely credits one Speed goal to Bellamy.)
+Positions from footballsquads 2001-2002/faprem/newcas.htm. Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Barton ENG, Bassedas ARG, Lee ENG).
+Unverified: nothing outstanding.

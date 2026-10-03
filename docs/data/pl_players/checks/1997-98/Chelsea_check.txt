@@ -1,0 +1,8 @@
+Chelsea 1997/98 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); merged StatMuse 28. 11v11 club page (https://www.11v11.com/teams/chelsea/tab/players/season/1998/comp/1/) 28. footballsquads (faprem/chelsea.htm) lists all 28.
+Club goals: 71 (Wikipedia 1997-98 FA Premier League table)
+Own goals for: 2 (Henning Berg, Man Utd; Rio Ferdinand, West Ham) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1997-98-premier-league ; not independently confirmed by match page, but the goal total balances exactly.
+Player goals sum: 69. 71 - 2 - 69 = 0.
+Disagreements: 1. Gianluca Vialli goals StatMuse 7 vs 11v11 11; Wikipedia Chelsea season page gives 11. Used 11 (two sources agree, club total balances). Apps agree for all 28 players.
+Nationality: Roberto Di Matteo listed Swiss by footballsquads (birth); recorded Italy (his international team). Ruud Gullit had no nationality shown in footballsquads departed section; Netherlands used.
+Unverified: none beyond the own-goal list relying on StatMuse alone.

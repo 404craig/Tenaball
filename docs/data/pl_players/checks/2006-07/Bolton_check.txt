@@ -1,0 +1,9 @@
+Bolton 2006/07 check
+Player count per source: StatMuse 23 (player-stats, most-apps and fewest-apps all 23, identical); 11v11 club page https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2007/comp/1/ 23 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/bolton.htm: all 23 present.
+Club PL goals (11v11 final table, https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia cache-only): 47
+Own goals for: 2. Nicky Shorey (Reading, 21 Apr 2007, https://www.11v11.com/matches/bolton-wanderers-v-reading-21-april-2007-277623/) and Peter Ramage (Newcastle, 26 Dec 2006, https://www.11v11.com/matches/bolton-wanderers-v-newcastle-united-26-december-2006-276299/). StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2006-07-premier-league lists both players (summary read Ramage as 0; 11v11 match page confirms his own goal).
+Player goals sum: 45. 47 - 2 - 45 = 0.
+Disagreements: none; all 23 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Campo M, Faye D, Diouf F, Vaz Te F, Michalik D).
+Nationality: reused other seasons' spellings; Cesar Martin (Spain), Fortune (South Africa), Henrik Pedersen (Denmark), Sinclair (England), Johann Smith (United States), Idan Tal (Israel), David Thompson (England) from 11v11 club page nationality column.
+Unverified: nothing outstanding.

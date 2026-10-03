@@ -1,0 +1,9 @@
+Aston Villa 2006/07 check
+Player count per source: StatMuse 30 merged (player-stats 25, missing Bouma, Davis, Petrov, Sorensen, Taylor; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/aston-villa/tab/players/season/2007/comp/1/ 30 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/avilla.htm: all 30 present.
+Club PL goals (11v11 final table, https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia cache-only): 43
+Own goals for: 1, Gavin Mahon (Watford, 20 Jan 2007) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2006-07-premier-league, confirmed on https://www.11v11.com/matches/aston-villa-v-watford-20-january-2007-276559/
+Player goals sum: 42. 43 - 1 - 42 = 0.
+Disagreements: none; all 30 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Barry D, Maloney F, Gardner M, Sutton F).
+Nationality: reused other seasons' spellings; Agathe (France), Angel (Colombia), Djemba-Djemba (Cameroon), Hendrie (England), Kiraly (Hungary), Sutton (England) from 11v11 club page. Phil Bardsley full_name kept as "Phil Bardsley" (majority spelling in other seasons; footballsquads gives Phillip).
+Unverified: nothing outstanding.

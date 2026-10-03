@@ -1,0 +1,13 @@
+Man City 2019/20 check
+Players per source: StatMuse player-stats 24 (below the 25-row cap, so complete); StatMuse most-appearances and fewest-appearances NOT READ (HTTP 429 from fetch proxy, which said not to refetch); 11v11 PL squad page NOT READ (HTTP 429, same); Wikipedia 2019-20 Man City season stats table 24 players with PL apps (summariser also listed Taylor Harwood-Bellis 1 app, but his 11v11 player page shows no 2019-20 PL appearance, only FA Cup, League Cup and UCL); rows written 24.
+Club PL goals: 102 (Wikipedia 2019-20 Manchester City F.C. season page, 2nd). Wikipedia 2019-20 Premier League table page could not be read (HTTP 429).
+Own goals for: 2 (Alex Oxlade-Chamberlain, Liverpool; Federico Fernandez, Newcastle). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2019-20-premier-league. Confirmation: Wikipedia 2019-20 Man City season goalscorers table, PL own goals 2 (scorers not named in the summary).
+Player goals sum: 100
+Difference (club goals - og - player goals): 0
+Disagreements: 2. Bernardo Silva apps: StatMuse 34, Wikipedia 35; 11v11 player page 23+11=34, set 34. Fernandinho: Wikipedia summary gave 2 goals; StatMuse 0 and 11v11 player page 0 goals 30 apps, set 30/0.
+Position/nationality: footballsquads eng/2019-2020/engprem/mancity.htm NOT READ (HTTP 429, not retried). Positions and nationality for 19 players reused from earlier-season files (mostly Man City 2020/21, built from footballsquads; Doyle from Wolves files); Angelino, Bravo, David Silva, Sane, Otamendi from the Wikipedia season squad table (Pos/Nat). Laporte Spain as in later files (Wikipedia shows France for 2019-20).
+Unverified: 2019-20 positions not confirmed against footballsquads (Mahrez MID, Sterling FWD, Jesus FWD etc taken from 2020/21 file). No second full-squad stats source (11v11 club page) was read; completeness rests on StatMuse player-stats being under the cap plus the Wikipedia table.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/manchester-city/tab/players/season/2020/comp/1/): 24 players, all match on apps and goals. StatMuse most-appearances and fewest-appearances now read: both 24 rows, all match CSV. No player missing (Harwood-Bellis not in any PL list, confirmed). footballsquads https://www.footballsquads.co.uk/eng/2019-2020/engprem/mancity.htm read: all 24 positions and nationalities match except Leroy Sane (footballsquads F; changed MID to FWD) and Aymeric Laporte (footballsquads FRA for 2019-20, before his Spain switch; Spain kept for consistency with other seasons' files). Goals diff 0. Wikipedia PL table page for club goals still not read (102 from season page).

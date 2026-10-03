@@ -1,0 +1,14 @@
+Everton 2018/19 Premier League check
+StatMuse: player-stats 23, most-appearances 23, fewest-appearances 23; union 23
+11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2019/comp/1/): 23 players
+Rows written: 23. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/everton.htm
+Club PL goals (Wikipedia 2018-19 Premier League table): 54
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2018-19-premier-league): Ben Mee (Burnley), Everton 2-0 Burnley 3 May 2019; confirmed by premierleague.com/news/1204247 match report
+Player goals sum: 53. Club goals minus own goals: 53. Difference: 0
+Disagreements (apps/goals): none
+Naming/position/nationality notes:
+- Ademola Lookman: footballsquads 2018-19 lists ENG; nationality Nigeria kept to match earlier seasons' files
+- Mason Holgate: footballsquads 2018-19 page truncated before his row; position and nationality (Jamaica) taken from earlier seasons' files (footballsquads 2019-20 lists ENG)
+- Oumar Niasse: footballsquads 2018-19 page truncated before his row; position and nationality taken from earlier seasons' files
+Unverified: Holgate and Niasse position/nationality not visible on footballsquads 2018-19 (page truncated by fetcher); taken from earlier seasons' files

@@ -1,0 +1,9 @@
+Bolton 2007/08 check
+Player count per source: StatMuse 31 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: adds Gardner, Anelka, Giannakopoulos, Hunt, Cohen, Vaz Te); 11v11 club page 31; footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/bolton.htm: all 31 present (Faye, Speed, Anelka, Cid, Wilhelmsson, Michalik in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 36
+Own goals for: 2 (Daryl Murphy, Sunderland; Paul Scharner, Wigan) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2007-08-premier-league
+Player goals sum: 34. 36 - 2 - 34 = 0.
+Disagreements: none between StatMuse and 11v11. Wikipedia 2007-08 Bolton season page also agrees for Alonso, Braaten, Campo, Cid, Michalik, Rasiak, Speed, Wilhelmsson.
+Positions: footballsquads 2007-08 (Campo M, Joey O'Brien M, Vaz Te F).
+Nationality: footballsquads 2007-08 has no nationality column. Reused from other seasons' CSVs; Nicky Hunt England from footballsquads 2008-09 bolton.htm; Alonso Spain, Braaten Norway, Campo Spain, Cid France, Michalik Slovakia, Rasiak Poland, Speed Wales, Wilhelmsson Sweden from Wikipedia 2007-08 Bolton season squad table.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

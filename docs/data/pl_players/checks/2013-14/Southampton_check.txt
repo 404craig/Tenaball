@@ -1,0 +1,8 @@
+Southampton 2013/14 Premier League check
+Sources: StatMuse player-stats 24 rows, most-appearances 24, fewest-appearances 24 (list complete, under 25 cap); 11v11 club page (comp 1, season 2014) = 24 players. footballsquads 2013-2014/faprem/southam.htm used for position and nationality.
+Club goals (Wikipedia 2013-14 Premier League table): 54
+Own goals for: 2 (Antolin Alcaraz and Seamus Coleman, Everton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2013-14-premier-league . Wikipedia 2013-14 Southampton season summariser did not list them (it returned an unrelated item), so confirmation is StatMuse plus the goal sum.
+Player goals sum: 52. Expected 54 - 2 = 52. Difference: 0.
+Disagreements: none. All 24 players match on apps and goals between StatMuse and 11v11.
+Nationality choice: Sam Gallagher listed SCO on footballsquads (youth level); set to England (birth country, no senior cap) to match earlier-season CSVs.
+Unverified: own goals not confirmed by a second named source beyond the goal sum.

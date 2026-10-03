@@ -1,0 +1,10 @@
+Club: Liverpool 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Babel, Benayoun, Gerrard, Kyrgiakos only in most/fewest lists, Darby only in fewest; source URL is the list they appear in). 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2010/comp/1/) 30. Same 30 players.
+Club PL goals: 61 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 3 (Joseph Yobo, Everton; Kevin Davies, Bolton; Rob Green, West Ham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2009-10-premier-league. Wikipedia 2009-10 Liverpool season page (via summariser) confirmed the Yobo own goal only; 11v11 player goals also sum to 58, consistent with 3.
+Player goals sum: 58
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/liverpool.htm. Spellings reused from other seasons where they exist (Sotirios Kyrgiakos, Dani Pacheco/Daniel Pacheco, Lucas Leiva surname Lucas). Babel FWD and Kuyt FWD per footballsquads 2009-10.
+Unverified: Davies and Green own goals confirmed by StatMuse only (consistent with goals total from both stats sources).

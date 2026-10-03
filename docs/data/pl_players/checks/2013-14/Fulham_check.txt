@@ -1,0 +1,9 @@
+Fulham 2013/14 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/fulham-premier-league-player-stats-2013-14); 11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2014/comp/1/); footballsquads.co.uk/eng/2013-2014/faprem/ for position and nationality.
+Player count: final rows 39; StatMuse merged 39 (player-stats 25, most 24, fewest 25; all three read); 11v11 club page 39.
+Club goals (Wikipedia 2013-14 Premier League table): 40
+Own goals for: 2 (Kolo Toure (Liverpool), Kompany (Man City); Wikipedia Fulham season page: 2 PL own goals). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2013-14-premier-league
+Player goals sum: 38
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 39 players match on apps and goals between StatMuse and 11v11
+Unverified: nothing material.

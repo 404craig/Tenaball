@@ -1,0 +1,9 @@
+Club: Middlesbrough 2016/17
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 27 (adds Viktor Fischer, Victor Valdes). 11v11 PL club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/2017/comp/1/) 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 27 (Wikipedia 2016-17 Premier League table).
+Own goals for: 1 (Maarten Stekelenburg, Everton, 17 Sep 2016). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2016-17-premier-league
+Player goals sum: 26
+Difference: 0 (27 - 1 - 26)
+Position/nationality: https://www.footballsquads.co.uk/eng/2016-2017/faprem/middles.htm. Traore, Fischer F (FWD); Nsue M (MID), Equatorial Guinea; Gestede Benin.
+Unverified: own goals for from StatMuse only, consistent with goal sum.

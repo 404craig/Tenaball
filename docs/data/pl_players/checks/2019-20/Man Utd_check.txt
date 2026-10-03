@@ -1,0 +1,9 @@
+Man Utd 2019/20 check
+Players per source: StatMuse player-stats NOT READ (HTTP 429 from fetch proxy, which said not to refetch); most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 29; 11v11 PL squad page 29; rows written 29. 11v11 fully covers the squad and matches the StatMuse union exactly.
+Club PL goals: 66 (Wikipedia 2019-20 Manchester United F.C. season page; 3rd, 66 pts). Wikipedia 2019-20 Premier League table page could not be read (HTTP 429).
+Own goals for: 1 (Tom Heaton, Aston Villa, 1 Dec 2019). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2019-20-premier-league. Confirmation: Wikipedia 2019-20 Man Utd season, PL own goals 1, "Heaton 42 (o.g.)" v Aston Villa 1 Dec 2019.
+Player goals sum: 65 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2019-2020/engprem/manutd.htm, all 29 found. Nationality/name spelling reused from earlier-season files where the player exists (Wan-Bissaka and Tuanzebe DR Congo as in later files although footballsquads 2019-20 lists ENG; de Gea spelling).
+Unverified: nothing material.

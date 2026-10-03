@@ -1,0 +1,11 @@
+Sheffield Wed 1999/00 Premier League check
+Player count: StatMuse player-stats, most-apps and fewest-apps each return the same 25 players (25 unique merged); 11v11 club page (https://www.11v11.com/teams/sheffield-wednesday/tab/players/season/2000/comp/1/) = 25 (starts A + subs S); all 25 in footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/sheffwed.htm, Carbone and Thome in no-longer-at-club section).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 38
+Own goals for: 2 (John Dreyer (Bradford) 14 Aug 1999; Andy O'Brien (Bradford) 15 Jan 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1999-00-premier-league; confirmed by Wikipedia 1999-2000 Sheffield Wednesday F.C. season results.
+Player goals sum: 36 (matches Wikipedia season page league goalscorer list)
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 25 players.
+Disagreements: none
+Names: Phil Scott (full Philip Scott), Steve Haslam (full Steven Haslam). Mark McKeever: 11v11 Ireland, recorded as Republic of Ireland.
+Positions from footballsquads 1999-2000 (Briscoe D, Haslam D, Donnelly F). Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

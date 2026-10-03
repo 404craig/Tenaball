@@ -1,0 +1,11 @@
+Sunderland 2005/06 Premier League check
+Player count per source: StatMuse merged (player-stats, most-appearances, fewest-appearances) 28; 11v11 club page 28 (https://www.11v11.com/teams/sunderland/tab/players/season/2006/comp/1/); footballsquads (https://www.footballsquads.co.uk/eng/2005-2006/faprem/sunder.htm) lists all 28 (current squad or no longer at club).
+Club PL goals (Wikipedia 2005-06 FA Premier League table): 26
+Own goals for: 1 - Steve Watson (West Brom), 21 Jan 2006, from StatMuse own-goal query; consistent with the 1-goal gap between club total and player sum. Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2005-06-premier-league
+Player goals sum: 25
+Difference (club goals - own goals - player goals): 0
+Disagreements: none. Every player's apps and goals agree between StatMuse and 11v11 (11v11 apps = starts + subs).
+Positions from footballsquads; nationalities from 11v11 club page (footballsquads 2005-06 has no nationality column), or earlier-season spelling where the player already exists in other seasons.
+Nationality: Justin Hoyte listed Trinidad and Tobago on 11v11; England kept to match his earlier rows.
+Wikipedia season page not used.
+Unverified: none.

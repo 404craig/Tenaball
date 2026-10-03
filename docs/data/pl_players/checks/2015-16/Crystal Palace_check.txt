@@ -1,0 +1,10 @@
+Club: Crystal Palace 2015/16
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 30 unique (Zaha, Cabaye, Hennessey, Bolasie, Kaikai not in player-stats). 11v11 PL club page 30. Same 30 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League league table).
+Own goals for: 1 (Jan Vertonghen (Spurs, 23/01/2016)) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2015-16-premier-league.
+Player goals sum: 38
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2015-2016/faprem/cpalace.htm. Name spellings reused from earlier seasons where the same player already appears. Wilfried Zaha: footballsquads 2015/16 gives ENG, kept Ivory Coast as used in earlier seasons.
+Unverified: Own goal not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

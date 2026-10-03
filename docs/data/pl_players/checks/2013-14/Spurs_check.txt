@@ -1,0 +1,9 @@
+Club: Spurs 2013/14
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25 (at cap), fewest-appearances 25 (at cap); union = 28 players (Sandro, Chiriches, Kaboul only in most/fewest lists). 11v11 PL club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2014/comp/1/) 28 players. Same 28 players.
+Disagreements: 0. Every player's apps (A+S) and goals match between StatMuse and 11v11.
+Club PL goals: 55 (Wikipedia 2013-14 Premier League table; Wikipedia Spurs season page also gives 55 PL goals).
+Own goals for: 5. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2013-14-premier-league): Chico Flores (Swansea), John O'Shea (Sunderland), Jonas Olsson (West Brom), Jos Hooiveld (Southampton), Nathan Baker (Aston Villa). Nathan Baker 35' confirmed on 11v11 match page Spurs 3-0 Aston Villa 11 May 2014 (https://www.11v11.com/matches/tottenham-hotspur-v-aston-villa-11-may-2014-308625/). The other four not individually confirmed on match pages (the home fixtures checked v Southampton 23 Mar 2014 and v Sunderland 7 Apr 2014 had no OG, so those OGs were in the other fixtures). Wikipedia season page summary showed no own-goals row. Totals reconcile: 11v11 and StatMuse both sum player goals to 50 = 55 - 5.
+Player goals sum: 50
+Difference: 0 (55 - 5 - 50).
+Position/nationality: https://www.footballsquads.co.uk/eng/2013-2014/faprem/tottenha.htm (Holtby and Defoe in players no longer at club). Lamela, Holtby, Pritchard listed F there. Mousa Dembele spelling reused from later seasons.
+Unverified: OG scorers Chico, O'Shea, Olsson, Hooiveld rely on StatMuse plus arithmetic.

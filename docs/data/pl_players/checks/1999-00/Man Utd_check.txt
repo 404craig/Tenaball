@@ -1,0 +1,11 @@
+Man Utd 1999/00 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 29 unique; 11v11 club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2000/comp/1/) = 29 (starts A + subs S); all 29 in footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/manutd.htm).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 97
+Own goals for: 3 (Jamie Carragher (Liverpool) 2 on 11 Sep 1999; Francis Benali (Southampton) 22 Apr 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1999-00-premier-league; confirmed by Wikipedia 1999-2000 Manchester United F.C. season results (Carragher 2 o.g. at Anfield, Benali o.g. at The Dell).
+Player goals sum: 94
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 29 players.
+Disagreements: none
+Names: Jordi Cruyff (StatMuse Cruijff), Andy Cole (full name Andrew Cole) as used elsewhere. Danny Higginbotham: 11v11 lists Gibraltar, England kept as in other seasons.
+Positions from footballsquads 1999-2000 (Wallwork D, Silvestre D). Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

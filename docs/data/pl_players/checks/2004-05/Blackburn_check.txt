@@ -1,0 +1,9 @@
+Blackburn 2004/05 check
+Player count per source: StatMuse 31 (player-stats 25, most-apps 25, fewest-apps 25; union 31: most-apps adds Steven Reid, Tugay, Ryan Nelsen, Robbie Savage; fewest-apps adds Vratislav Gresko and Youri Djorkaeff); 11v11 club page https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2005/comp/1/ 31 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/blackbrn.htm: all 31 present (Yorke, Djorkaeff, de Pedro, Ferguson under players no longer at club).
+Club PL goals: Wikipedia 2004-05 FA Premier League table (https://en.wikipedia.org/wiki/2004%E2%80%9305_FA_Premier_League): 32
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2004-05-premier-league): Andreas Jakobsson (Southampton), 9 Apr 2005; confirmed on 11v11 match page https://www.11v11.com/matches/blackburn-rovers-v-southampton-09-april-2005-33721/ (Jakobsson og 48).
+Player goals sum: 31. 32 - 1 - 31 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (Neill M, Emerton M, Pedersen F, Reid M, Johansson D).
+Nationality: footballsquads has no nationality column; spellings reused from other seasons' CSVs; Amoruso (Italy), Djorkaeff (France), Jonathan Douglas (Republic of Ireland), Nils-Eric Johansson (Sweden), Craig Short (England), de Pedro (Spain) from the 11v11 club page.
+Unverified: nothing outstanding.

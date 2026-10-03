@@ -1,0 +1,9 @@
+Arsenal 2006/07 check
+Player count per source: StatMuse 25 (player-stats 25, most-apps 25, fewest-apps 25; identical sets, so the squad is complete at 25); 11v11 club page https://www.11v11.com/teams/arsenal/tab/players/season/2007/comp/1/ 25 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/arsenal.htm: all 25 present (Song in "no longer at club", loaned to Charlton).
+Club PL goals (11v11 final table, https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia is cache-only and could not be fetched): 63
+Own goals for: 3. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2006-07-premier-league lists only Fitz Hall (Wigan, 11 Feb 2007, confirmed on 11v11 match page). StatMuse misses two that 11v11 match pages show: Phil Jagielka (Sheffield United, 23 Sep 2006, https://www.11v11.com/matches/arsenal-v-sheffield-united-23-september-2006-274752/) and Jordan Stewart (Watford, 14 Oct 2006, https://www.11v11.com/matches/arsenal-v-watford-14-october-2006-275220/).
+Player goals sum: 60. 63 - 3 - 60 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (van Persie M, Baptista M, Eboue D, Walcott F).
+Nationality: footballsquads 2006-07 has no nationality column. Reused other seasons' spellings; Julio Baptista (Brazil) and Mart Poom (Estonia) from 11v11 club page. Justin Hoyte: 11v11 shows Trinidad and Tobago, kept England as used in other seasons.
+Unverified: nothing outstanding.

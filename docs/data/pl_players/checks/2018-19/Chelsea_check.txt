@@ -1,0 +1,10 @@
+Chelsea 2018/19 Premier League check
+StatMuse: player-stats 24, most-appearances 24, fewest-appearances 24 rows (all under the 25 cap); union 24
+11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2019/comp/1/): 24 players
+Rows written: 24. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm
+Club PL goals (Wikipedia 2018-19 Premier League table): 63
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2018-19-premier-league): DeAndre Yedlin (Newcastle), Kieran Trippier (Spurs); Wikipedia 2018-19 Chelsea season confirms both
+Player goals sum: 61. Club goals minus own goals: 61. Difference: 0
+Disagreements (apps/goals): none
+Unverified: nothing

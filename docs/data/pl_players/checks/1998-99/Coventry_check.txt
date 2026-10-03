@@ -1,0 +1,10 @@
+Coventry 1998/99 check
+Player counts: StatMuse player-stats 25 (capped; Ogrizovic, Froggatt, Soltvedt missing), most-apps 25, fewest-apps 25; union 28. 11v11 club page (https://www.11v11.com/teams/coventry-city/tab/players/season/1999/comp/1/) 28. Rows = 28.
+Club goals (Wikipedia 1998-99 FA Premier League table): 39.
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1998-99-premier-league) returned HTTP 422 (no answer). Wikipedia 1998-99 Coventry City F.C. season page records no league own goals in Coventry's favour (only an FA Cup own goal v Macclesfield).
+Player goals sum: 39 (StatMuse and 11v11 both). 39 - 0 = 39. Difference: 0.
+Disagreements: 0. All 28 players' apps (11v11 starts + subs) and goals match StatMuse.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1998-1999/faprem/coventry.htm (Haworth, Dublin, Wallemme, Darren Jackson in no-longer-at-club section). Nationality: footballsquads has no nationality column; spellings reused from other seasons, 11v11 Nat column for new players (Clement BEL, Gioacchini ITA, Haworth WAL, Darren Jackson SCO, Nilsson SWE, Shilton ENG, Wallemme FRA).
+Naming: footballsquads spells Gioacchini as "Gioacchino" and Konjic as "Mohammed Konjic"; Konjic reuses existing "Mo Konjic" row.
+Wikipedia summariser gave Aloisi 2 goals; StatMuse and 11v11 agree on 5 and both sources' totals equal club goals, so 5 kept.
+Unverified: nothing material.

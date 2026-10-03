@@ -1,0 +1,10 @@
+Club: Arsenal 2011/12
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 32 unique players. 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2012/comp/1/) 32 (A=starts, S=subs). Same 32 players.
+Club PL goals: 74 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 1 (Scott Dann, Blackburn, 4 Feb 2012, Arsenal 7-1 Blackburn). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2011-12-premier-league.
+Player goals sum: 73
+Difference (club goals - og_for - player goals): 0
+Rows: 32
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11 (StatMuse lists Nico Yennaris as Li Ke).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/arsenal.htm. Spellings reused from other seasons where present. Yennaris listed ENG by footballsquads, set to China (later capped by China).
+Unverified: own goal confirmed by StatMuse only (consistent with goals total).

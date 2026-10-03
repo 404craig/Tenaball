@@ -1,0 +1,11 @@
+Liverpool 2022/23 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged StatMuse union 28 (Darwin Nunez, Luis Diaz, Fabio Carvalho not in player-stats); 11v11 PL squad page 28; rows written 28
+Club PL goals: 75 (Wikipedia 2022-23 Premier League table)
+Own goals for: 4 (StatMuse own-goals-vs-liverpool query: Adam Webster, Chris Mepham, Wout Faes 2; Wikipedia 2022-23 Liverpool season goalscorers Own goals PL = 4)
+Player goals sum: 71; difference (75 - 4 - 71): 0
+Disagreements: 2.
+- Fabinho goals: 11v11 squad page and 11v11 player page 1; StatMuse, Wikipedia season page and LFChistory 0. Used 0.
+- Roberto Firmino goals: 11v11 squad page 10; StatMuse, Wikipedia season page and LFChistory 11. Used 11. (11v11 appears to credit one Firmino goal to Fabinho; both versions total 71.)
+All apps agree between StatMuse and 11v11.
+Position/nationality: footballsquads eng/2022-2023/engprem/liverpool.htm. Trent Alexander-Arnold, Caoimhin Kelleher, Nat Phillips and Ben Gannon-Doak were not returned from that page by the summariser: TAA DEF/England, Kelleher GK/Republic of Ireland, Phillips DEF/England from Wikipedia 2022-23 Liverpool season squad; Gannon-Doak MID/Scotland from footballsquads 2023-24 (listed as Ben Doak).
+Unverified: nothing material.

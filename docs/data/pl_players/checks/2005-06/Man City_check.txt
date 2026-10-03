@@ -1,0 +1,8 @@
+Man City 2005/06 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25, fewest-apps 25; merged 26 (Willo Flood only in most/fewest). 11v11 club page 26 (total = A+S). footballsquads 2005-06 (/faprem/mancity.htm): all 26 present (Fowler in "no longer at club").
+Club PL goals: 43 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2005-06-premier-league) returned HTTP 422 on 3 spaced attempts. Variant https://www.statmuse.com/fc/ask/man-city-own-goals-for-2005-06-premier-league says "Manchester City had 0 own goals" (OG 0), though it is ambiguous whether that column means own goals for or by City. Wikipedia 2005-06 Man City season goalscorer table lists no own goals, and its player goals sum to 43 = club goals; StatMuse player goals and 11v11 player goals also each sum to 43.
+Player goals sum: 43. 43 - 0 - 43 = 0.
+Disagreements: 2 (goals only, offsetting). Sibierski StatMuse 2 / Wikipedia 2 / 11v11 1; Sommeil StatMuse 2 / Wikipedia 2 / 11v11 3. Cause: Birmingham 4-1 (17 Dec 2005), 11v11 match page credits Sommeil twice, StatMuse credits Sommeil + Sibierski. Resolved to StatMuse + Wikipedia (2 sources). All apps agree.
+Positions from footballsquads 2005-06; nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals for = 0 rests on Wikipedia goalscorer list, the goal sums of three sources, and an ambiguous StatMuse team OG figure; the standard StatMuse own-goals-vs query returned 422.

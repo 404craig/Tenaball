@@ -1,0 +1,9 @@
+Man Utd 1998/99 Premier League check
+Player count: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (under the 25-row cap); 11v11 club page (https://www.11v11.com/teams/manchester-united/tab/players/season/1999/comp/1/) = 23; all on footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/manutd.htm).
+Apps and goals: every player identical on StatMuse and 11v11.
+Club goals (https://en.wikipedia.org/wiki/1998%E2%80%9399_FA_Premier_League table): 80
+Own goals for: 2 (Craig Short, Everton, 31 Oct 1998; Steve Watson, Aston Villa, 1 May 1999). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1998-99-premier-league ; confirmed by Wikipedia season page (https://en.wikipedia.org/wiki/1998%E2%80%9399_Manchester_United_F.C._season) match details.
+Player goals sum: 78
+Difference: 0
+Disagreements: none. StatMuse spells Cruijff (used Cruyff as 11v11/footballsquads and earlier seasons).
+Unverified: nothing.

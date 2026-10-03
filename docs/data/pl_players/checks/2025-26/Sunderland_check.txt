@@ -1,0 +1,25 @@
+Sunderland 2025/26 PL check
+Player count per source:
+- StatMuse: 28 (the spec URL sunderland-premier-league-player-stats-2025-26 was rate limited, HTTP 429, and not retried; used sunderland-afc-premier-league-player-stats-2025-26 (25 rows) plus most-apps and fewest-apps queries adding Roefs, Ta Bi, Angulo). Mayenda not in any StatMuse list fetched.
+- ESPN squad page (id 366, ENG.1, season 2025): 0, page returned no data
+- footballsquads.co.uk sunder.htm: all 29 found (Masuaku, Adingra, Roberts, Guiu, Seelt, Neil listed as left)
+- Wikipedia 2025-26 Sunderland A.F.C. season: 29 with at least 1 PL app (Aleksic, Harrison Jones, Patterson, Huggins listed with 0)
+- 11v11 team page (all comps): 34 incl Aleksic, Huggins, Harrison Jones, Jenson Jones, Patterson, none credited with a PL app, so not added. All league apps <= all-comp apps.
+- fbref squad page: player goals total 38, matches
+Club PL goals (Wikipedia 2025-26 Premier League table): 42
+Own goals for: not found (Wikipedia season page has no own goals row; fbref OG column shows 0, which appears to be Sunderland players' own goals)
+Sum of player goals: 38
+Difference (club goals - player sum): 4, unexplained. Likely own goals in Sunderland's favour but NOT verified. Player goal figures agree across StatMuse, Wikipedia and fbref.
+Disagreements (0): none on apps/goals between StatMuse and Wikipedia.
+Unverified: ESPN not usable. Own goals for. Mayenda (20 apps, 2 goals) rests on Wikipedia plus 11v11 player page, no StatMuse row. Dennis Cirkin nationality Latvia per footballsquads (Wikipedia extract showed ENG); flagged in note.
+
+Follow-up (2026-10-02):
+- Own goals for: 4 per StatMuse "most own goals against Sunderland 2025-26": Malo Gusto (Chelsea), Axel Tuanzebe (Burnley), Nick Woltemade (Newcastle), Ladislav Krejci (Wolves). Single source (no second source checked per match), but it matches the implied gap exactly.
+- Goals check now: 42 - 4 - 38 = 0.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/sunderland/tab/players/season/2026/comp/1/ (A=starts, S=subs): 29 players; every row apps (A+S) and goals match the CSV.
+- Marc Guiu: full_name Marc Guiu -> Marc Guiu Paz (spelling used for same player in other seasons)
+Rows 29; player goals 38; club goals 42; own goals for 4; difference 0. All rows sources_agree=yes.
+- Own goals re-checked: https://www.statmuse.com/fc/ask/most-own-goals-against-sunderland-2025-26 lists 4 (Gusto, Tuanzebe, Woltemade, Krejci); the spec-pattern query players-with-own-goals-vs-sunderland-2025-26-premier-league lists only Tuanzebe. og_for=4 kept because it closes the total exactly, but it still rests on one StatMuse query (no match-report confirmation).
+

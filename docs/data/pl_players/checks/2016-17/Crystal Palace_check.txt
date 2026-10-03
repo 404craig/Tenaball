@@ -1,0 +1,10 @@
+Club: Crystal Palace 2016/17
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 31 unique (Zaha, Cabaye, Hennessey, Mandanda, Kaikai, Bolasie not in player-stats query). 11v11 PL club page (https://www.11v11.com/teams/crystal-palace/tab/players/season/2017/comp/1/) 31 (apps = A + S). Same 31 players.
+Club PL goals: 50 (https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League league table).
+Own goals for: 2 (Jack Cork, Swansea; Troy Deeney, Watford) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2016-17-premier-league.
+Player goals sum: 48
+Difference: 0
+Rows: 31
+Disagreements: none. All apps and goals match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2016-2017/faprem/cpalace.htm. Sullay Kaikai England (footballsquads; 11v11 shows Sierra Leone).
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

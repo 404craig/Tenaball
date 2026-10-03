@@ -1,0 +1,37 @@
+Club: Bournemouth 2024/25
+Players (rows): 29 (StatMuse player-stats list, most-appearances list and fewest-appearances list merged; each returned 25 rows)
+Club PL goals (Wikipedia 2024-25 Premier League table): 58
+Own goals for: 1 (derived (club goals 58 minus player goals 57); not confirmed by a source)
+Player goals sum: 57
+Difference (club goals - og_for - player goals): 0
+Disagreements: none found among players Wikipedia covered
+Unverified: position and nationality entered from general knowledge (footballsquads.co.uk not fetched); 11v11 not used; most players rely on StatMuse only (sources_agree=no where Wikipedia gave no figure).
+
+VERIFIED (verification pass 2026-10-02)
+StatMuse: three queries were run previously; union of most- and fewest-appearances lists covers all rows (each list capped at 25), no missing player found. 11v11 squad page cross-checked; extra names there had no PL apps (cup/UCL only or not used).
+Own goals for: 1 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2024-25-premier-league (Vitaly Janelt). Club goals 58 - og 1 - player goals 57 = diff 0.
+Position/nationality checked against https://www.footballsquads.co.uk/eng/2024-2025/engprem/bourne.htm.
+Changes:
+- Adam Smith: confirmed by Wikipedia season page, sources_agree no -> yes
+- Daniel Jebbison: confirmed by Wikipedia season page, sources_agree no -> yes
+- Daniel Jebbison: nationality England -> Canada
+- David Brooks: confirmed by Wikipedia season page, sources_agree no -> yes
+- Enes Unal: confirmed by Wikipedia season page, sources_agree no -> yes
+- Mark Travers: confirmed by 11v11 player page, sources_agree no -> yes
+- Max Aarons: confirmed by 11v11 player page, sources_agree no -> yes
+- Philip Billing: confirmed by 11v11 player page, sources_agree no -> yes
+- Neto: confirmed by 11v11 player page, sources_agree no -> yes
+- Marcos Senesi: confirmed by Wikipedia season page, sources_agree no -> yes
+- Luis Sinisterra: confirmed by Wikipedia season page, sources_agree no -> yes
+- Luis Sinisterra: position FWD -> MID
+- Alex Scott: confirmed by Wikipedia season page, sources_agree no -> yes
+- Justin Kluivert: position MID -> FWD
+- Antoine Semenyo: confirmed by 11v11 player page, sources_agree no -> yes
+- James Hill: confirmed by Wikipedia season page, sources_agree no -> yes
+- Julian Araujo: confirmed by Wikipedia season page, sources_agree no -> yes
+- Ben Winterburn: confirmed by Wikipedia season page, sources_agree no -> yes
+- Remy Rees-Dottin: confirmed by Wikipedia season page, sources_agree no -> yes
+- Zain Silcott-Duberry: confirmed by Wikipedia season page, sources_agree no -> yes
+- Zain Silcott-Duberry: position MID -> FWD
+- Julio Soler: confirmed by Wikipedia season page, sources_agree no -> yes
+Rows with sources_agree != yes after pass: 0

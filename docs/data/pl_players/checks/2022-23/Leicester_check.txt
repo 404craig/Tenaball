@@ -1,0 +1,8 @@
+Leicester 2022/23 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged StatMuse union 28 (Tete, Victor Kristiansen, Lewis Brunt only in most/fewest queries); 11v11 PL squad page 28; rows written 28
+Club PL goals: 51 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (StatMuse own-goals-vs-leicester-city query: Robin Koch, William Saliba; Wikipedia 2022-23 Leicester City season goalscorers Own goals PL = 2; Koch OG confirmed by Sky Sports report Leicester 2-0 Leeds)
+Player goals sum: 49; difference (51 - 2 - 49): 0
+Disagreements: none. All 28 players' apps (11v11 starts + subs) and goals match StatMuse.
+Position/nationality: footballsquads eng/2022-2023/engprem/leicester.htm (all 28 players found, incl. players no longer at club).
+Unverified: Saliba own goal individually confirmed only by StatMuse (count of 2 confirmed by Wikipedia).

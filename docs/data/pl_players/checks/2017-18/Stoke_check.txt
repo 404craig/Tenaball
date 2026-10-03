@@ -1,0 +1,9 @@
+Club: Stoke 2017/18
+Players per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); union 30 (adds Saido Berahino, Tyrese Campbell, Tom Edwards, Stephen Ireland, Xherdan Shaqiri). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2018/comp/1/) 30 (A+S). Same 30 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 35 (Wikipedia 2017-18 Premier League table).
+Own goals for: 1 (Kyle Walker, Man City, 14 Oct 2017, Man City 7-2 Stoke). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2017-18-premier-league
+Player goals sum: 34
+Difference: 0 (35 - 1 - 34)
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/stoke.htm. Bauer SUI there, Austria used; Berahino ENG there, Burundi used (senior international teams, as 11v11). Choupo-Moting, Diouf, Jese, Bojan given F (FWD).
+Unverified: own goals for from StatMuse only, consistent with goal sum.

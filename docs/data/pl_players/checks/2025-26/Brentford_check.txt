@@ -1,0 +1,44 @@
+Brentford 2025/26 Premier League check
+
+Player count per source:
+- StatMuse: 25 (exactly 25 rows, may be capped)
+- Wikipedia 2025-26 Brentford season: 23 with PL apps (no Myles Peart-Harris or Kaye Furo)
+- ESPN (id 337): page returned empty content, no figures
+- footballsquads: roster check; all 25 present (Onyeka, Peart-Harris under players no longer at club)
+- 11v11 team page (all comps): 30 rows; extra 5 (Benjamin Arthur, Luka Bentt, Romelle Donovan, Gustavo Nunes, Yunus Konak) not in StatMuse or Wikipedia PL lists, assumed cup only
+- 11v11 PL 2025-26 goal scorers page: 12 scorers, all match
+Rows written: 25
+
+Club PL goals: 55
+Own goals for: 2 (Wikipedia season page)
+Sum of player goals: 53
+Difference (55 - 2 - 53): 0
+
+Disagreements and resolution:
+- Michael Kayode: StatMuse 37, Wikipedia 36. Used 37 per Brentford club site article ("37 appearances ... in the top flight").
+- Myles Peart-Harris and Kaye Furo: StatMuse 1 app each, absent from Wikipedia PL table. Kept on StatMuse; 11v11 all-comp figures (0+1 and 1+2) are consistent as a ceiling only.
+
+Unverified:
+- Peart-Harris and Furo PL apps rely on StatMuse alone.
+- StatMuse returned exactly 25 rows; Arthur, Bentt, Donovan, Nunes or Konak could have a PL sub appearance hidden by the cap, but Wikipedia does not list any of them with PL apps.
+
+Follow-up (2026-10-02):
+- Completeness: StatMuse fewest-appearances query found Romelle Donovan (4 apps, 0 goals) hidden by the 25-row cap. Confirmed on 11v11 player page (0+4 PL, four sub appearances Jan to Feb 2026). Added; rows now 26. The earlier assumption that Donovan was cup only was wrong. Arthur, Bentt, Nunes and Konak do not appear in either StatMuse list, so remain excluded.
+- Donovan position (MID) taken from 11v11 "Midfielder/Forward"; footballsquads Brentford page now 404, so unconfirmed.
+- Goals check unchanged: 55 - 2 - 53 = 0.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/brentford/tab/players/season/2026/comp/1/ read: 26 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- footballsquads 2025-2026 brentf.htm: all 26 positions match; IRL players set to "Republic of Ireland" (spec naming).
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 55 - own goals for 2 - player goals 53 = 0.
+- Brentford_summary.json written.
+Changes:
+- Caoimhin Kelleher: name/nationality fields ('Caoimhin Kelleher', 'Caoimhín Kelleher', 'Kelleher', 'Ireland') -> ('Caoimhin Kelleher', 'Caoimhín Kelleher', 'Kelleher', 'Republic of Ireland') (match spelling used in other seasons / spec nationality name)
+- Myles Peart-Harris: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Nathan Collins: name/nationality fields ('Nathan Collins', 'Nathan Collins', 'Collins', 'Ireland') -> ('Nathan Collins', 'Nathan Collins', 'Collins', 'Republic of Ireland') (match spelling used in other seasons / spec nationality name)
+- Igor Thiago: name/nationality fields ('Igor Thiago', 'Igor Thiago', 'Thiago', 'Brazil') -> ('Igor Thiago', 'Igor Thiago Nascimento Rodrigues', 'Thiago', 'Brazil') (match spelling used in other seasons / spec nationality name)
+- Michael Kayode: sources_agree no -> yes (37 apps, 1 goals confirmed by 11v11 PL club page)
+- Kaye Furo: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)

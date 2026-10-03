@@ -1,0 +1,10 @@
+Everton 2006/07 check
+Player count per source: StatMuse merged 26 (player-stats 25 + most-apps 25 + fewest-apps; most-apps adds Victor Anichebe, fewest adds Richard Wright); 11v11 club page 26 (total = A+S); footballsquads roster: all 26 present (Kilbane, Weir, Simon Davies, Mark Hughes in "no longer at club").
+Club PL goals: 52
+Own goals for: 2 (Calum Davenport, labelled Tottenham by StatMuse, and Hermann Hreidarsson, Charlton) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2006-07-premier-league
+Player goals sum: 50. 52 - 2 - 50 = 0.
+Disagreements: none (all 26 match).
+Simon Davies moved to Fulham in January 2007 and has a row for each club.
+Club goals source: Wikipedia 2006-07 Premier League page could not be fetched (domain cache-only), so club goals taken from the 11v11 final 2006-07 table (https://www.11v11.com/league-tables/premier-league/01-june-2007/).
+Positions from footballsquads 2006-07 (/faprem/); nationality from 11v11 club page (pre-2008-09 footballsquads has no nationality column), spellings aligned with other seasons' files.
+Unverified: own goals not confirmed by a second source; StatMuse team label for Davenport (Tottenham) not checked against match page. Totals reconcile exactly.

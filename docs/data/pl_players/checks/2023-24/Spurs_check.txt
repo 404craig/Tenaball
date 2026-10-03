@@ -1,0 +1,8 @@
+Spurs 2023/24 check
+Players per source: 11v11 PL squad page 29; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 10; StatMuse union 29. Same 29 players.
+Disagreements: 0 (all apps and goals identical).
+Club PL goals: 74 (Wikipedia 2023-24 Premier League table)
+Own goals for: 5 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2023-24-premier-league) (Joel Matip, Liverpool; Joel Ward, Crystal Palace; Issa Kabore, Luton; Lisandro Martinez, Man Utd; Murillo, Nottingham Forest. Wikipedia season page confirms Ward (27 Oct 2023) and Kabore (30 Mar 2024); Wikipedia goalscorers PL total 69 = player goals, consistent with 74 - 5)
+Player goals sum: 69
+Difference (club goals - og - player goals): 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2023-2024/engprem/tottenha.htm (all 29 players found)

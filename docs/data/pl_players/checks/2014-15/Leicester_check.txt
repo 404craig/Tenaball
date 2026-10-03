@@ -1,0 +1,9 @@
+Leicester 2014/15 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/leicester-city-premier-league-player-stats-2014-15); 11v11 PL club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2015/comp/1/); footballsquads.co.uk/eng/2014-2015/faprem/ for position and nationality.
+Player count: final rows 28; 11v11 club page 28 players; StatMuse merged 28 players (all three queries read).
+Club goals (Wikipedia 2014-15 Premier League table): 46
+Own goals for: 1 (Simon Mignolet (Liverpool, 2 Dec 2014)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2014-15-premier-league
+Player goals sum: 45
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: Leonardo Ulloa listed as Jose Ulloa on StatMuse; figures agree.
+Unverified: own goals for taken from StatMuse only (not separately confirmed on Wikipedia or 11v11 match pages); the goal total reconciles exactly.

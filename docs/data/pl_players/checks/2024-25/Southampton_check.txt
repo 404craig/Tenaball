@@ -1,0 +1,33 @@
+Southampton 2024/25 check
+Players per source: StatMuse player-stats 25 (capped), StatMuse fewest-appearances 25 (capped), Wikipedia summary 29 (incl. Juan Larios 0 apps, excluded). StatMuse most-appearances page returned HTTP 429 and was not refetched. footballsquads URL 404. 11v11 pages were garbled and unusable as tie-breaker.
+Union of lists gives 36 players. Because both StatMuse lists are capped at 25 and the most-appearances list is missing, players with 27+ apps could be missing from StatMuse; Wikipedia supplied Sugawara and Fernandes (single source each). Any other high-apps player missing from all fetched lists would be unverified; none found.
+Club PL goals: 26 (Wikipedia league table).
+Own goals for: 1 IMPLIED ONLY (not verified from a source).
+Player goals sum: 25. Difference (club goals - og - player goals): 0.
+Result: 25 player goals vs 26 club goals; the 1 goal gap is presumably one own goal for, not confirmed.
+Disagreements: 0 numeric disagreements between sources. Sugawara and Fernandes are single-source (Wikipedia). Several players (Alcaraz, Edwards, Cornet, Edozie, Amo-Ameyaw, Robinson, Brereton Diaz, Armstrong) only on StatMuse; position/nationality for them from general knowledge.
+
+
+VERIFIED (2026-10-02)
+Sources added: https://www.11v11.com/teams/southampton/tab/players/season/2025/comp/1/ (11v11 PL squad page, Apps=starts, Subs=sub apps); https://www.footballsquads.co.uk/eng/2024-2025/engprem/ club page.
+- StatMuse most-appearances page returned HTTP 429 again; proxy said not to refetch, so not retried. Completeness instead confirmed by the 11v11 PL squad page: 36 players, identical apps and goals for all 36 CSV rows; no extra players.
+- footballsquads (southam.htm) checked: all 36 positions and nationalities now confirmed.
+- Own goal now named: Manuel Ugarte (Man Utd) 43 min, Man Utd 3-1 Southampton, 16 Jan 2025 (11v11 match page; single source, consistent with club total).
+Changes:
+- Carlos Alcaraz: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Ronnie Edwards: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Maxwel Cornet: sources_agree partial -> yes (confirmed by 11v11 (2 apps, 0 goals) matching StatMuse)
+- Maxwel Cornet: position FWD -> MID (footballsquads)
+- Samuel Edozie: sources_agree partial -> yes (confirmed by 11v11 (2 apps, 0 goals) matching StatMuse)
+- Samuel Amo-Ameyaw: sources_agree partial -> yes (confirmed by 11v11 (2 apps, 0 goals) matching StatMuse)
+- Jay Robinson: sources_agree partial -> yes (confirmed by 11v11 (4 apps, 0 goals) matching StatMuse)
+- Ben Brereton Diaz: sources_agree partial -> yes (confirmed by 11v11 (10 apps, 0 goals) matching StatMuse)
+- William Smallbone: nationality Ireland -> Republic of Ireland (naming consistency with other club files)
+- Adam Armstrong: sources_agree partial -> yes (confirmed by 11v11 (20 apps, 2 goals) matching StatMuse)
+- Ryan Manning: nationality Ireland -> Republic of Ireland (naming consistency with other club files)
+- Kamaldeen Sulemana: position MID -> FWD (footballsquads)
+- Yukinari Sugawara: sources_agree no -> yes (confirmed by 11v11 (30 apps, 1 goals) matching Wikipedia)
+- Mateus Fernandes: sources_agree no -> yes (confirmed by 11v11 (36 apps, 2 goals) matching Wikipedia)
+- og_for 1 -> 1 now sourced: https://www.11v11.com/matches/manchester-united-v-southampton-16-january-2025-387476/ (Manuel Ugarte og, 16 Jan 2025)
+Final: rows 36, club goals 26, own goals for 1, player goals 25, difference 0.
+Still unverified: StatMuse most-appearances page never read (429); covered by 11v11. Ugarte own goal single source (11v11). Otherwise nothing unverified.

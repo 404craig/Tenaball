@@ -1,0 +1,9 @@
+West Ham 2023/24 check
+Players per source: 11v11 PL squad page 26; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 26. Same 26 players.
+Disagreements: 0 (all apps and goals identical).
+Unverified: Henderson own goal confirmed only by StatMuse plus the goals sum.
+Club PL goals: 60 (Wikipedia 2023-24 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2023-24-premier-league) (Dara O'Shea, Burnley, 25 Nov 2023, confirmed by Wikipedia season page; Dean Henderson, Crystal Palace, 21 Apr 2024, StatMuse only)
+Player goals sum: 58
+Difference (club goals - og - player goals): 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2023-2024/engprem/westham.htm (all 26 players found)

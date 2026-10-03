@@ -1,0 +1,14 @@
+Man Utd 2015/16 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 33 players
+11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2016/comp/1/): 33 players
+Rows written: 33. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2015-16 Premier League table, https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League): 49
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2015-16-premier-league):
+- Kyle Walker (Spurs), Man Utd 1-0 Spurs, 8 Aug 2015
+- Troy Deeney (Watford), Watford 1-2 Man Utd, Nov 2015
+- Damien Delaney (Crystal Palace), Man Utd 2-0 Crystal Palace, 20 Apr 2016
+Wikipedia 2015-16 Man Utd season: own goals PL = 3 (Walker and Delaney named)
+Player goals sum: 46. Club goals minus own goals: 46. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2015-16 Man Utd page (https://www.footballsquads.co.uk/eng/2015-2016/faprem/manutd.htm), all 33 players found (Hernandez, Powell in players-no-longer-at-club). Andreas Pereira: footballsquads BEL, set to Brazil (capped by Brazil; matches later files).
+Unverified: none

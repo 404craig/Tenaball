@@ -1,0 +1,687 @@
+season,club,club_goals,og_for,player_goals,diff,rows,og_source
+1992/93,Arsenal,40,0,40,0,29,https://en.wikipedia.org/wiki/1992%E2%80%9393_Arsenal_F.C._season
+1992/93,Aston Villa,57,1,56,0,24,https://www.11v11.com/matches/aston-villa-v-sheffield-united-27-january-1993-21053/
+1992/93,Blackburn,68,4,64,0,25,https://en.wikipedia.org/wiki/1992%E2%80%9393_Blackburn_Rovers_F.C._season
+1992/93,Chelsea,51,1,50,0,32,https://en.wikipedia.org/wiki/1992%E2%80%9393_Chelsea_F.C._season
+1992/93,Coventry,52,2,50,0,30,https://www.11v11.com/matches/leeds-united-v-coventry-city-31-october-1992-20932/
+1992/93,Crystal Palace,48,2,46,0,24,https://en.wikipedia.org/wiki/1992%E2%80%9393_Crystal_Palace_F.C._season
+1992/93,Everton,53,2,51,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1992-93-premier-league
+1992/93,Ipswich,50,0,50,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-ipswich-town-1992-93-premier-league
+1992/93,Leeds,57,1,56,0,30,https://en.wikipedia.org/wiki/1992%E2%80%9393_Leeds_United_A.F.C._season
+1992/93,Liverpool,62,1,61,0,25,https://en.wikipedia.org/wiki/1992%E2%80%9393_Liverpool_F.C._season
+1992/93,Man City,56,2,54,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1992-93-premier-league
+1992/93,Man Utd,67,1,66,0,20,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1992-93-premier-league
+1992/93,Middlesbrough,54,4,50,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1992-93-premier-league
+1992/93,Norwich,61,3,58,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-1992-93-premier-league
+1992/93,Nottingham Forest,41,0,41,0,23,https://en.wikipedia.org/wiki/1992%E2%80%9393_Nottingham_Forest_F.C._season
+1992/93,Oldham,63,1,62,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-oldham-athletic-1992-93-premier-league
+1992/93,QPR,63,1,62,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-1992-93-premier-league
+1992/93,Sheffield Utd,54,2,52,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-1992-93-premier-league
+1992/93,Sheffield Wed,55,2,53,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1992-93-premier-league
+1992/93,Southampton,54,0,54,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1992-93-premier-league
+1992/93,Spurs,60,1,59,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1992-93-premier-league
+1992/93,Wimbledon,56,0,56,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1992-93-premier-league
+1993/94,Arsenal,53,3,50,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1993-94-premier-league
+1993/94,Aston Villa,46,1,45,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1993-94-premier-league
+1993/94,Blackburn,63,0,63,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1993-94-premier-league
+1993/94,Chelsea,49,1,48,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1993-94-premier-league
+1993/94,Coventry,43,0,43,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1993-94-premier-league
+1993/94,Everton,42,0,42,0,22,https://www.11v11.com/matches/ipswich-town-v-everton-30-october-1993-21384/
+1993/94,Ipswich,35,2,33,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-ipswich-town-1993-94-premier-league
+1993/94,Leeds,65,3,62,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1993-94-premier-league
+1993/94,Liverpool,59,5,54,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1993-94-premier-league
+1993/94,Man City,38,1,37,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1993-94-premier-league
+1993/94,Man Utd,80,0,80,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1993-94-premier-league
+1993/94,Newcastle,82,1,81,0,27,https://www.11v11.com/matches/coventry-city-v-newcastle-united-18-august-1993-21266/
+1993/94,Norwich,65,1,64,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-1993-94-premier-league
+1993/94,Oldham,42,2,40,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-oldham-athletic-1993-94-premier-league
+1993/94,QPR,62,2,60,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-1993-94-premier-league
+1993/94,Sheffield Utd,42,1,41,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-1993-94-premier-league
+1993/94,Sheffield Wed,76,5,71,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1993-94-premier-league
+1993/94,Southampton,49,1,48,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1993-94-premier-league
+1993/94,Spurs,54,1,53,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1993-94-premier-league
+1993/94,Swindon,47,1,46,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swindon-town-1993-94-premier-league
+1993/94,West Ham,47,1,46,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1993-94-premier-league
+1993/94,Wimbledon,56,3,53,0,25,https://www.11v11.com/matches/everton-v-wimbledon-07-may-1994-21703/
+1994/95,Arsenal,52,2,50,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1994-95-premier-league
+1994/95,Aston Villa,51,4,47,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1994-95-premier-league
+1994/95,Blackburn,80,2,78,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1994-95-premier-league
+1994/95,Chelsea,50,1,49,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1994-95-premier-league
+1994/95,Coventry,44,2,42,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1994-95-premier-league
+1994/95,Crystal Palace,34,0,34,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-1994-95-premier-league
+1994/95,Everton,44,1,43,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1994-95-premier-league
+1994/95,Ipswich,36,2,34,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-ipswich-town-1994-95-premier-league
+1994/95,Leeds,59,3,56,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1994-95-premier-league
+1994/95,Leicester,45,1,44,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1994-95-premier-league
+1994/95,Liverpool,65,4,61,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1994-95-premier-league
+1994/95,Man City,53,0,53,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1994-95-premier-league
+1994/95,Man Utd,77,0,77,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1994-95-premier-league
+1994/95,Newcastle,67,3,64,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1994-95-premier-league
+1994/95,Norwich,37,1,36,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-1994-95-premier-league
+1994/95,Nottingham Forest,72,2,70,0,20,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1994-95-premier-league
+1994/95,QPR,61,1,60,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-1994-95-premier-league
+1994/95,Sheffield Wed,49,1,48,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1994-95-premier-league
+1994/95,Southampton,61,2,59,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1994-95-premier-league
+1994/95,Spurs,66,4,62,0,24,https://en.wikipedia.org/wiki/1994%E2%80%9395_Tottenham_Hotspur_F.C._season
+1994/95,West Ham,44,0,44,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1994-95-premier-league
+1994/95,Wimbledon,48,1,47,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1994-95-premier-league
+1995/96,Arsenal,49,0,49,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1995-96-premier-league
+1995/96,Aston Villa,52,3,49,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1995-96-premier-league
+1995/96,Blackburn,61,1,60,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1995-96-premier-league
+1995/96,Bolton,39,0,39,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-1995-96-premier-league
+1995/96,Chelsea,46,1,45,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1995-96-premier-league
+1995/96,Coventry,42,1,41,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1995-96-premier-league
+1995/96,Everton,64,1,63,0,24,https://www.11v11.com/matches/everton-v-leeds-united-30-december-1995-22374/
+1995/96,Leeds,40,0,40,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1995-96-premier-league
+1995/96,Liverpool,70,2,68,0,19,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1995-96-premier-league
+1995/96,Man City,33,0,33,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1995-96-premier-league
+1995/96,Man Utd,73,1,72,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1995-96-premier-league
+1995/96,Middlesbrough,35,1,34,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1995-96-premier-league
+1995/96,Newcastle,66,0,66,0,22,https://en.wikipedia.org/wiki/1995%E2%80%9396_Newcastle_United_F.C._season
+1995/96,Nottingham Forest,50,1,49,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1995-96-premier-league
+1995/96,QPR,38,1,37,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-1995-96-premier-league
+1995/96,Sheffield Wed,48,0,48,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1995-96-premier-league
+1995/96,Southampton,34,2,32,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1995-96-premier-league
+1995/96,Spurs,50,3,47,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1995-96-premier-league
+1995/96,West Ham,43,1,42,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1995-96-premier-league
+1995/96,Wimbledon,55,1,54,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1995-96-premier-league
+1996/97,Arsenal,62,0,62,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1996-97-premier-league
+1996/97,Aston Villa,47,1,46,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1996-97-premier-league
+1996/97,Blackburn,42,0,42,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1996-97-premier-league
+1996/97,Chelsea,58,1,57,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1996-97-premier-league
+1996/97,Coventry,38,3,35,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1996-97-premier-league
+1996/97,Derby,45,4,41,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1996-97-premier-league
+1996/97,Everton,44,0,44,0,26,https://en.wikipedia.org/wiki/1996%E2%80%9397_Everton_F.C._season
+1996/97,Leeds,28,1,27,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1996-97-premier-league
+1996/97,Leicester,46,2,44,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1996-97-premier-league
+1996/97,Liverpool,62,2,60,0,23,https://en.wikipedia.org/wiki/1996%E2%80%9397_Liverpool_F.C._season
+1996/97,Man Utd,76,6,70,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1996-97-premier-league
+1996/97,Middlesbrough,51,0,51,0,30,https://www.11v11.com/matches/sheffield-wednesday-v-middlesbrough-01-march-1997-22820/
+1996/97,Newcastle,73,0,73,0,20,https://www.11v11.com/matches/newcastle-united-v-derby-county-19-april-1997-22894/
+1996/97,Nottingham Forest,31,0,31,0,29,https://en.wikipedia.org/wiki/1996%E2%80%9397_Nottingham_Forest_F.C._season
+1996/97,Sheffield Wed,50,0,50,0,24,https://en.wikipedia.org/wiki/1996%E2%80%9397_Sheffield_Wednesday_F.C._season
+1996/97,Southampton,50,3,47,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1996-97-premier-league
+1996/97,Spurs,44,0,44,0,26,https://en.wikipedia.org/wiki/1996%E2%80%9397_Tottenham_Hotspur_F.C._season
+1996/97,Sunderland,35,2,33,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-1996-97-premier-league
+1996/97,West Ham,39,2,37,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1996-97-premier-league
+1996/97,Wimbledon,49,1,48,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1996-97-premier-league
+1997/98,Arsenal,68,2,66,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1997-98-premier-league
+1997/98,Aston Villa,49,0,49,0,22,https://en.wikipedia.org/wiki/1997%E2%80%9398_Aston_Villa_F.C._season
+1997/98,Barnsley,37,0,37,0,26,https://en.wikipedia.org/wiki/1997%E2%80%9398_Barnsley_F.C._season
+1997/98,Blackburn,57,1,56,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1997-98-premier-league
+1997/98,Bolton,41,0,41,0,28,https://en.wikipedia.org/wiki/1997%E2%80%9398_Bolton_Wanderers_F.C._season
+1997/98,Chelsea,71,2,69,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1997-98-premier-league
+1997/98,Coventry,46,0,46,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1997-98-premier-league
+1997/98,Crystal Palace,37,0,37,0,36,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-1997-98-premier-league
+1997/98,Derby,52,1,51,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1997-98-premier-league
+1997/98,Everton,41,2,39,0,34,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1997-98-premier-league
+1997/98,Leeds,57,4,53,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1997-98-premier-league
+1997/98,Leicester,51,0,51,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1997-98-premier-league
+1997/98,Liverpool,68,0,68,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1997-98-premier-league
+1997/98,Man Utd,73,5,68,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1997-98-premier-league
+1997/98,Newcastle,35,0,35,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1997-98-premier-league
+1997/98,Sheffield Wed,52,0,52,0,34,https://en.wikipedia.org/wiki/1997%E2%80%9398_Sheffield_Wednesday_F.C._season
+1997/98,Southampton,50,2,48,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1997-98-premier-league
+1997/98,Spurs,44,0,44,0,28,https://en.wikipedia.org/wiki/1997%E2%80%9398_Tottenham_Hotspur_F.C._season
+1997/98,West Ham,56,2,54,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1997-98-premier-league
+1997/98,Wimbledon,34,1,33,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1997-98-premier-league
+1998/99,Arsenal,59,1,58,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1998-99-premier-league
+1998/99,Aston Villa,51,1,50,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1998-99-premier-league
+1998/99,Blackburn,38,1,37,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1998-99-premier-league
+1998/99,Charlton,41,2,39,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-1998-99-premier-league
+1998/99,Chelsea,57,2,55,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1998-99-premier-league
+1998/99,Coventry,39,0,39,0,28,https://en.wikipedia.org/wiki/1998%E2%80%9399_Coventry_City_F.C._season
+1998/99,Derby,40,0,40,0,30,https://en.wikipedia.org/wiki/1998%E2%80%9399_Derby_County_F.C._season
+1998/99,Everton,42,0,42,0,34,https://en.wikipedia.org/wiki/1998%E2%80%9399_Everton_F.C._season
+1998/99,Leeds,62,1,61,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1998-99-premier-league
+1998/99,Leicester,40,2,38,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1998-99-premier-league
+1998/99,Liverpool,68,0,68,0,25,https://en.wikipedia.org/wiki/1998%E2%80%9399_Liverpool_F.C._season
+1998/99,Man Utd,80,2,78,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1998-99-premier-league
+1998/99,Middlesbrough,48,1,47,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1998-99-premier-league
+1998/99,Newcastle,48,1,47,0,34,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1998-99-premier-league
+1998/99,Nottingham Forest,35,0,35,0,33,https://en.wikipedia.org/wiki/1998%E2%80%9399_Nottingham_Forest_F.C._season
+1998/99,Sheffield Wed,41,0,41,0,31,https://www.11v11.com/matches/newcastle-united-v-sheffield-wednesday-14-november-1998-23831/
+1998/99,Southampton,37,1,36,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1998-99-premier-league
+1998/99,Spurs,47,2,45,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1998-99-premier-league
+1998/99,West Ham,46,1,45,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1998-99-premier-league
+1998/99,Wimbledon,40,0,40,0,23,https://en.wikipedia.org/wiki/1998%E2%80%9399_Wimbledon_F.C._season
+1999/00,Arsenal,73,3,70,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1999-00-premier-league
+1999/00,Aston Villa,46,1,45,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1999-00-premier-league
+1999/00,Bradford,38,1,37,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bradford-city-1999-00-premier-league
+1999/00,Chelsea,53,5,48,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1999-00-premier-league
+1999/00,Coventry,47,1,46,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1999-00-premier-league
+1999/00,Derby,44,1,43,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1999-00-premier-league
+1999/00,Everton,59,2,57,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1999-00-premier-league
+1999/00,Leeds,58,1,57,0,20,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1999-00-premier-league
+1999/00,Leicester,55,3,52,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1999-00-premier-league
+1999/00,Liverpool,51,1,50,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1999-00-premier-league
+1999/00,Man Utd,97,3,94,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1999-00-premier-league
+1999/00,Middlesbrough,46,2,44,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1999-00-premier-league
+1999/00,Newcastle,63,4,59,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1999-00-premier-league
+1999/00,Sheffield Wed,38,2,36,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1999-00-premier-league
+1999/00,Southampton,45,2,43,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1999-00-premier-league
+1999/00,Spurs,57,3,54,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1999-00-premier-league (Dave Watson Everton, Dean Richards Southampton, Paul Scholes Man Utd); Wikipedia season page confirms Scholes and Richards; 11v11 https://www.11v11.com/matches/everton-v-tottenham-hotspur-15-january-2000-130/ confirms Watson"
+1999/00,Sunderland,57,0,57,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-1999-00-premier-league (HTTP 422, also -sunderland- slug 422); Wikipedia https://en.wikipedia.org/wiki/1999%E2%80%932000_Sunderland_A.F.C._season shows no league own goals for; StatMuse and 11v11 player goals both sum to 57 = club 57"
+1999/00,Watford,35,0,35,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-1999-00-premier-league (HTTP 422); Wikipedia https://en.wikipedia.org/wiki/1999%E2%80%932000_Watford_F.C._season shows no own goals for; StatMuse and 11v11 player goals both sum to 35 = club 35
+1999/00,West Ham,52,1,51,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1999-00-premier-league (Gareth Southgate, Aston Villa, 16 Aug 1999); confirmed by Wikipedia 1999-2000 West Ham United season page"
+1999/00,Wimbledon,46,3,43,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1999-00-premier-league (Richard Johnson Watford, Ugo Ehiogu Aston Villa, Eric Roy Sunderland); Wikipedia season page confirms Johnson and Ehiogu; 11v11 https://www.11v11.com/matches/sunderland-v-wimbledon-08-april-2000-304/ confirms the Sunderland own goal (credited to Darren Holloway by 11v11)"
+2000/01,Arsenal,63,2,61,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2000-01-premier-league
+2000/01,Aston Villa,46,0,46,0,23,https://en.wikipedia.org/wiki/2000%E2%80%9301_Aston_Villa_F.C._season
+2000/01,Bradford,30,0,30,0,30,https://www.11v11.com/matches/bradford-city-v-tottenham-hotspur-09-december-2000-3482/
+2000/01,Charlton,50,3,47,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2000-01-premier-league
+2000/01,Chelsea,68,1,67,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2000-01-premier-league
+2000/01,Coventry,36,3,33,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-2000-01-premier-league (Christian Dailly, West Ham; Noel Whelan, Middlesbrough; Richard Edghill, Man City); all three confirmed on 11v11 match pages (west-ham-united-v-coventry-city-12-february-2001-4973, middlesbrough-v-coventry-city-30-december-2000-3890, manchester-city-v-coventry-city-26-august-2000-969)"
+2000/01,Derby,37,0,37,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-2000-01-premier-league (HTTP 422, no answer); Wikipedia 2000-01 Derby County season results table flags no own goals; 11v11 and StatMuse player goals both sum to 37 = club 37"
+2000/01,Everton,45,0,45,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2000-01-premier-league (HTTP 422, no answer); Wikipedia 2000-01 Everton F.C. season page shows own goals 0; 11v11 and StatMuse player goals both sum to 45 = club 45"
+2000/01,Ipswich,57,3,54,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-ipswich-town-2000-01-premier-league (David Wetherall, Bradford; Horacio Carbonari, Derby; Wayne Bridge, Southampton); all three confirmed on 11v11 match pages (bradford-city-v-ipswich-town-21-october-2000-2210, derby-county-v-ipswich-town-19-may-2001-7261, ipswich-town-v-southampton-16-december-2000-3620)"
+2000/01,Leeds,64,1,63,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-2000-01-premier-league (Mark Venus, Ipswich, 3 Feb 2001); confirmed https://www.11v11.com/matches/ipswich-town-v-leeds-united-03-february-2001-4616/"
+2000/01,Leicester,39,1,38,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2000-01-premier-league
+2000/01,Liverpool,71,1,70,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2000-01-premier-league
+2000/01,Man City,41,3,38,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2000-01-premier-league
+2000/01,Man Utd,79,3,76,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2000-01-premier-league
+2000/01,Middlesbrough,44,4,40,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2000-01-premier-league
+2000/01,Newcastle,44,2,42,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2000-01-premier-league (David Unsworth, Everton, 3 Mar 2001; Mark Delaney, Aston Villa, 19 May 2001); confirmed https://www.11v11.com/matches/everton-v-newcastle-united-03-march-2001-5543/ and https://www.11v11.com/matches/newcastle-united-v-aston-villa-19-may-2001-7266/"
+2000/01,Southampton,40,2,38,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2000-01-premier-league (Gunnar Halle, Bradford, 23 Sep 2000; Wes Brown, Man Utd, 13 May 2001); confirmed https://www.11v11.com/matches/bradford-city-v-southampton-23-september-2000-1575/ and https://www.11v11.com/matches/southampton-v-manchester-united-13-may-2001-7139/"
+2000/01,Spurs,47,1,46,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2000-01-premier-league (Taribo West, Derby, 3 Mar 2001); confirmed https://www.11v11.com/matches/derby-county-v-tottenham-hotspur-03-march-2001-5542/"
+2000/01,Sunderland,46,0,46,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2000-01-premier-league (HTTP 422, also -sunderland- slug 422); Wikipedia https://en.wikipedia.org/wiki/2000%E2%80%9301_Sunderland_A.F.C._season league scorer lists show no own goals for; StatMuse and 11v11 player goals both sum to 46 = club 46"
+2000/01,West Ham,45,1,44,0,34,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2000-01-premier-league (Richard Rufus, Charlton, 26 Dec 2000); confirmed https://www.11v11.com/matches/west-ham-united-v-charlton-athletic-26-december-2000-3804/"
+2001/02,Arsenal,79,0,79,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2001-02-premier-league (HTTP 422, no answer); 11v11 player goals sum 79 = club 79; Wikipedia season summary claim of a Festa og v Middlesbrough 29 Dec 2001 refuted by https://www.11v11.com/matches/arsenal-v-middlesbrough-29-december-2001-10699/ (Pires, Cole)"
+2001/02,Aston Villa,46,1,45,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2001-02-premier-league (Paul Warhurst, Bolton, 30 Mar 2002); confirmed https://www.11v11.com/matches/bolton-wanderers-v-aston-villa-30-march-2002-11946/"
+2001/02,Blackburn,55,3,52,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2001-02-premier-league (Beckham, Man Utd; van Bronckhorst, Arsenal; Grant McCann, West Ham); Beckham and van Bronckhorst confirmed by Wikipedia 2001-02 Blackburn Rovers season page, McCann by https://www.11v11.com/matches/blackburn-rovers-v-west-ham-united-14-october-2001-9078/"
+2001/02,Bolton,44,1,43,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2001-02-premier-league (Mark Delaney, Aston Villa, 30 Mar 2002); confirmed https://www.11v11.com/matches/bolton-wanderers-v-aston-villa-30-march-2002-11946/"
+2001/02,Charlton,38,3,35,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2001-02-premier-league (Andy Melville, Fulham; Niall Quinn, Sunderland; Richard Wright, Arsenal); Melville and Quinn confirmed by Wikipedia 2001-02 Charlton Athletic season page, Wright by https://www.11v11.com/matches/arsenal-v-charlton-athletic-04-november-2001-9576/"
+2001/02,Chelsea,66,1,65,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2001-02-premier-league
+2001/02,Derby,33,0,33,0,34,"https://en.wikipedia.org/wiki/2001%E2%80%9302_Derby_County_F.C._season (no opponent own goals listed; StatMuse players-with-own-goals-vs-derby-county-2001-02-premier-league returns no result, HTTP 422)"
+2001/02,Everton,45,1,44,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2001-02-premier-league
+2001/02,Fulham,36,1,35,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2001-02-premier-league
+2001/02,Ipswich,41,0,41,0,26,"https://en.wikipedia.org/wiki/2001%E2%80%9302_Ipswich_Town_F.C._season (no opponent own goals listed; results sum to 41; StatMuse players-with-own-goals-vs-ipswich-town-2001-02-premier-league returns no result, HTTP 422)"
+2001/02,Leeds,53,2,51,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-2001-02-premier-league
+2001/02,Leicester,30,1,29,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2001-02-premier-league
+2001/02,Liverpool,67,1,66,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2001-02-premier-league
+2001/02,Man Utd,87,2,85,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2001-02-premier-league
+2001/02,Middlesbrough,35,1,34,0,35,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2001-02-premier-league
+2001/02,Newcastle,74,2,72,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2001-02-premier-league
+2001/02,Southampton,46,2,44,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2001-02-premier-league
+2001/02,Spurs,49,1,48,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2001-02-premier-league
+2001/02,Sunderland,29,0,29,0,26,https://en.wikipedia.org/wiki/2001%E2%80%9302_Sunderland_A.F.C._season
+2001/02,West Ham,48,0,48,0,28,https://en.wikipedia.org/wiki/2001%E2%80%9302_West_Ham_United_F.C._season
+2002/03,Arsenal,85,3,82,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2002-03-premier-league
+2002/03,Aston Villa,42,1,41,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2002-03-premier-league
+2002/03,Birmingham,41,2,39,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2002-03-premier-league
+2002/03,Blackburn,52,3,49,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2002-03-premier-league
+2002/03,Bolton,41,3,38,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2002-03-premier-league
+2002/03,Charlton,45,3,42,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2002-03-premier-league
+2002/03,Chelsea,68,2,66,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2002-03-premier-league
+2002/03,Everton,48,0,48,0,28,"https://www.11v11.com/matches/west-bromwich-albion-v-everton-12-april-2003-15340/ and https://www.11v11.com/matches/everton-v-birmingham-city-28-august-2002-13282/ (StatMuse OG query lists Hoult, overruled)"
+2002/03,Fulham,41,4,37,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2002-03-premier-league
+2002/03,Leeds,58,0,58,0,29,https://www.11v11.com/matches/leeds-united-v-chelsea-28-december-2002-15298/
+2002/03,Liverpool,61,0,61,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2002-03-premier-league
+2002/03,Man City,47,2,45,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2002-03-premier-league
+2002/03,Man Utd,74,2,72,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2002-03-premier-league
+2002/03,Middlesbrough,48,0,48,0,29,https://en.wikipedia.org/wiki/2002%E2%80%9303_Middlesbrough_F.C._season
+2002/03,Newcastle,63,3,60,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2002-03-premier-league
+2002/03,Southampton,43,2,41,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2002-03-premier-league
+2002/03,Spurs,51,1,50,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2002-03-premier-league
+2002/03,Sunderland,21,1,20,0,34,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2002-03-premier-league
+2002/03,West Brom,29,0,29,0,23,https://en.wikipedia.org/wiki/2002%E2%80%9303_West_Bromwich_Albion_F.C._season
+2002/03,West Ham,42,3,39,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2002-03-premier-league
+2003/04,Arsenal,73,4,69,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2003-04-premier-league
+2003/04,Aston Villa,48,1,47,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2003-04-premier-league
+2003/04,Birmingham,43,0,43,0,27,https://en.wikipedia.org/wiki/2003%E2%80%9304_Birmingham_City_F.C._season
+2003/04,Blackburn,51,4,47,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2003-04-premier-league
+2003/04,Bolton,48,5,43,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2003-04-premier-league
+2003/04,Charlton,51,0,51,0,24,https://en.wikipedia.org/wiki/2003%E2%80%9304_Charlton_Athletic_F.C._season (no own goals listed; StatMuse OG-vs query 422; player goals sum = club goals on StatMuse and 11v11)
+2003/04,Chelsea,67,3,64,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2003-04-premier-league (Lilian Nalis, Nikos Dabizas of Leicester; Martin Cranie of Southampton)"
+2003/04,Everton,45,2,43,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2003-04-premier-league (Gary Neville 26 Dec 2003, John O'Shea 7 Feb 2004, both Man Utd; confirmed by https://en.wikipedia.org/wiki/2003%E2%80%9304_Everton_F.C._season match results)"
+2003/04,Fulham,52,0,52,0,30,https://en.wikipedia.org/wiki/2003%E2%80%9304_Fulham_F.C._season (no own goals listed; StatMuse OG-vs query 422; player goals sum = club goals on StatMuse and 11v11)
+2003/04,Leeds,40,0,40,0,30,https://en.wikipedia.org/wiki/2003%E2%80%9304_Leeds_United_A.F.C._season (no own goals listed; StatMuse OG-vs query 422; player goals sum = club goals on StatMuse and 11v11)
+2003/04,Leicester,48,2,46,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2003-04-premier-league
+2003/04,Liverpool,55,2,53,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2003-04-premier-league
+2003/04,Man City,55,3,52,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2003-04-premier-league
+2003/04,Man Utd,64,1,63,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2003-04-premier-league
+2003/04,Middlesbrough,44,4,40,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2003-04-premier-league
+2003/04,Newcastle,52,1,51,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2003-04-premier-league
+2003/04,Portsmouth,47,0,47,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2003-04-premier-league
+2003/04,Southampton,44,3,41,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2003-04-premier-league
+2003/04,Spurs,47,1,46,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2003-04-premier-league
+2003/04,Wolves,38,1,37,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2003-04-premier-league
+2004/05,Arsenal,87,1,86,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2004-05-premier-league
+2004/05,Aston Villa,45,3,42,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2004-05-premier-league
+2004/05,Birmingham,40,1,39,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2004-05-premier-league
+2004/05,Blackburn,32,1,31,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2004-05-premier-league
+2004/05,Bolton,49,0,49,0,25,https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2005/comp/1/ (player goals sum = club goals; StatMuse OG-vs query 422)
+2004/05,Charlton,42,2,40,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2004-05-premier-league
+2004/05,Chelsea,72,1,71,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2004-05-premier-league
+2004/05,Crystal Palace,41,1,40,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2004-05-premier-league
+2004/05,Everton,45,2,43,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2004-05-premier-league
+2004/05,Fulham,52,0,52,0,24,https://en.wikipedia.org/wiki/2004%E2%80%9305_Fulham_F.C._season (no own goals in Fulham scorers; player goals sum = club goals; StatMuse OG-vs query 422)
+2004/05,Liverpool,52,3,49,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2004-05-premier-league
+2004/05,Man City,47,0,47,0,25,https://www.11v11.com/teams/manchester-city/tab/players/season/2005/comp/1/ (player goals sum = club goals; StatMuse OG-vs query 422)
+2004/05,Man Utd,58,4,54,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2004-05-premier-league
+2004/05,Middlesbrough,53,4,49,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2004-05-premier-league
+2004/05,Newcastle,47,3,44,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2004-05-premier-league
+2004/05,Norwich,42,1,41,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2004-05-premier-league
+2004/05,Portsmouth,43,4,39,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2004-05-premier-league
+2004/05,Southampton,45,3,42,0,34,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2004-05-premier-league
+2004/05,Spurs,47,0,47,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2004-05-premier-league
+2004/05,West Brom,36,2,34,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2004-05-premier-league
+2005/06,Arsenal,68,2,66,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2005-06-premier-league
+2005/06,Aston Villa,42,1,41,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2005-06-premier-league
+2005/06,Birmingham,28,2,26,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2005-06-premier-league
+2005/06,Blackburn,51,2,49,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2005-06-premier-league
+2005/06,Bolton,49,2,47,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2005-06-premier-league
+2005/06,Charlton,41,1,40,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2005-06-premier-league
+2005/06,Chelsea,72,1,71,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2005-06-premier-league
+2005/06,Everton,34,2,32,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2005-06-premier-league
+2005/06,Fulham,48,1,47,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2005-06-premier-league
+2005/06,Liverpool,57,2,55,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2005-06-premier-league
+2005/06,Man City,43,0,43,0,26,https://en.wikipedia.org/wiki/2005%E2%80%9306_Manchester_City_F.C._season
+2005/06,Man Utd,72,4,68,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2005-06-premier-league
+2005/06,Middlesbrough,48,1,47,0,37,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2005-06-premier-league
+2005/06,Newcastle,47,1,46,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2005-06-premier-league
+2005/06,Portsmouth,37,1,36,0,34,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2005-06-premier-league
+2005/06,Spurs,53,1,52,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2005-06-premier-league
+2005/06,Sunderland,26,1,25,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2005-06-premier-league
+2005/06,West Brom,31,0,31,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2005-06-premier-league
+2005/06,West Ham,52,4,48,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2005-06-premier-league
+2005/06,Wigan,45,1,44,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2005-06-premier-league
+2006/07,Arsenal,63,3,60,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2006-07-premier-league
+2006/07,Aston Villa,43,1,42,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2006-07-premier-league
+2006/07,Blackburn,52,3,49,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2006-07-premier-league
+2006/07,Bolton,47,2,45,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2006-07-premier-league
+2006/07,Charlton,34,2,32,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2006-07-premier-league
+2006/07,Chelsea,64,5,59,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2006-07-premier-league
+2006/07,Everton,52,2,50,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2006-07-premier-league
+2006/07,Fulham,38,1,37,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2006-07-premier-league
+2006/07,Liverpool,57,1,56,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2006-07-premier-league
+2006/07,Man City,29,1,28,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2006-07-premier-league
+2006/07,Man Utd,83,3,80,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2006-07-premier-league
+2006/07,Middlesbrough,44,1,43,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2006-07-premier-league
+2006/07,Newcastle,38,0,38,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2006-07-premier-league
+2006/07,Portsmouth,45,3,42,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2006-07-premier-league
+2006/07,Reading,52,4,48,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-reading-2006-07-premier-league
+2006/07,Sheffield Utd,32,1,31,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2006-07-premier-league
+2006/07,Spurs,57,2,55,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2006-07-premier-league
+2006/07,Watford,29,2,27,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2006-07-premier-league
+2006/07,West Ham,35,0,35,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2006-07-premier-league
+2006/07,Wigan,37,3,34,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2006-07-premier-league
+2007/08,Arsenal,74,1,73,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2007-08-premier-league
+2007/08,Aston Villa,71,4,67,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2007-08-premier-league
+2007/08,Birmingham,46,2,44,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2007-08-premier-league
+2007/08,Blackburn,50,0,50,0,22,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2007-08-premier-league
+2007/08,Bolton,36,2,34,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2007-08-premier-league
+2007/08,Chelsea,65,1,64,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2007-08-premier-league
+2007/08,Derby,20,1,19,0,36,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-2007-08-premier-league
+2007/08,Everton,55,2,53,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2007-08-premier-league
+2007/08,Fulham,38,3,35,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2007-08-premier-league
+2007/08,Liverpool,67,3,64,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2007-08-premier-league
+2007/08,Man City,45,3,42,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2007-08-premier-league
+2007/08,Man Utd,80,2,78,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2007-08-premier-league
+2007/08,Middlesbrough,43,0,43,0,30,https://en.wikipedia.org/wiki/2007%E2%80%9308_Middlesbrough_F.C._season
+2007/08,Newcastle,45,3,42,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2007-08-premier-league
+2007/08,Portsmouth,48,3,45,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2007-08-premier-league
+2007/08,Reading,41,1,40,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-reading-2007-08-premier-league
+2007/08,Spurs,66,1,65,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2007-08-premier-league
+2007/08,Sunderland,36,1,35,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2007-08-premier-league
+2007/08,West Ham,42,3,39,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2007-08-premier-league
+2007/08,Wigan,34,1,33,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2007-08-premier-league
+2008/09,Arsenal,68,4,64,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2008-09-premier-league
+2008/09,Aston Villa,54,5,49,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2008-09-premier-league
+2008/09,Blackburn,40,0,40,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2008-09-premier-league
+2008/09,Bolton,41,1,40,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2008-09-premier-league
+2008/09,Chelsea,68,3,65,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2008-09-premier-league
+2008/09,Everton,55,2,53,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2008-09-premier-league
+2008/09,Fulham,39,0,39,0,26,https://en.wikipedia.org/wiki/2008%E2%80%9309_Fulham_F.C._season
+2008/09,Hull,39,3,36,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2008-09-premier-league
+2008/09,Liverpool,77,4,73,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2008-09-premier-league
+2008/09,Man City,58,0,58,0,34,https://en.wikipedia.org/wiki/2008%E2%80%9309_Manchester_City_F.C._season
+2008/09,Man Utd,68,0,68,0,33,https://en.wikipedia.org/wiki/2008%E2%80%9309_Manchester_United_F.C._season
+2008/09,Middlesbrough,28,2,26,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2008-09-premier-league
+2008/09,Newcastle,40,1,39,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2008-09-premier-league
+2008/09,Portsmouth,38,2,36,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2008-09-premier-league
+2008/09,Spurs,45,2,43,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2008-09-premier-league
+2008/09,Stoke,38,2,36,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2008-09-premier-league
+2008/09,Sunderland,34,2,32,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2008-09-premier-league
+2008/09,West Brom,36,2,34,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2008-09-premier-league
+2008/09,West Ham,42,1,41,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2008-09-premier-league
+2008/09,Wigan,34,1,33,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2008-09-premier-league
+2009/10,Arsenal,83,6,77,0,30,https://www.11v11.com/teams/arsenal/tab/matches/season/2010/ (match pages)
+2009/10,Aston Villa,52,4,48,0,23,https://www.11v11.com/teams/aston-villa/tab/matches/season/2010/ (match pages)
+2009/10,Birmingham,38,1,37,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2009-10-premier-league
+2009/10,Blackburn,41,2,39,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2009-10-premier-league
+2009/10,Bolton,42,0,42,0,25,https://www.11v11.com/teams/bolton-wanderers/tab/matches/season/2010/ (all 22 scoring-match pages checked)
+2009/10,Burnley,42,0,42,0,26,https://en.wikipedia.org/wiki/2009%E2%80%9310_Burnley_F.C._season
+2009/10,Chelsea,103,4,99,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2009-10-premier-league
+2009/10,Everton,60,4,56,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2009-10-premier-league
+2009/10,Fulham,39,1,38,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2009-10-premier-league
+2009/10,Hull,34,0,34,0,30,https://www.11v11.com/teams/hull-city/tab/matches/season/2010/
+2009/10,Liverpool,61,3,58,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2009-10-premier-league
+2009/10,Man City,73,0,73,0,31,https://en.wikipedia.org/wiki/2009%E2%80%9310_Manchester_City_F.C._season (own goals PL=0); StatMuse players-with-own-goals-vs-manchester-city-2009-10 (and man-city slug) returns HTTP 422 (no rows)
+2009/10,Man Utd,86,10,76,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2009-10-premier-league (Diaby, Dawson, Vanden Borre, A. Ferdinand, Higginbotham, Collins, Samuel, Wilson, Dann, Knight)"
+2009/10,Portsmouth,34,0,34,0,33,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2009-10-premier-league (HTTP 422, no rows); goals arithmetic with StatMuse player goals"
+2009/10,Spurs,67,0,67,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2009-10-premier-league
+2009/10,Stoke,34,1,33,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2009-10-premier-league (Stephen Jordan, Burnley, 15 Aug 2009); Wikipedia 2009-10 Stoke City season (Jordan o.g. 33', own goals league 1)"
+2009/10,Sunderland,48,2,46,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2009-10-premier-league
+2009/10,West Ham,47,0,47,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2009-10-premier-league
+2009/10,Wigan,37,1,36,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2009-10-premier-league
+2009/10,Wolves,32,4,28,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2009-10-premier-league
+2010/11,Arsenal,72,2,70,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2010-11-premier-league
+2010/11,Aston Villa,48,3,45,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2010-11-premier-league
+2010/11,Birmingham,37,0,37,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2010-11-premier-league
+2010/11,Blackburn,46,4,42,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2010-11-premier-league
+2010/11,Blackpool,55,1,54,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackpool-2010-11-premier-league
+2010/11,Bolton,52,2,50,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2010-11-premier-league
+2010/11,Chelsea,69,1,68,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2010-11-premier-league
+2010/11,Everton,51,1,50,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2010-11-premier-league
+2010/11,Fulham,49,1,48,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2010-11-premier-league
+2010/11,Liverpool,59,1,58,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2010-11-premier-league
+2010/11,Man City,60,2,58,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2010-11-premier-league
+2010/11,Man Utd,78,3,75,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2010-11-premier-league
+2010/11,Newcastle,56,1,55,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2010-11-premier-league
+2010/11,Spurs,55,2,53,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2010-11-premier-league
+2010/11,Stoke,46,2,44,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2010-11-premier-league
+2010/11,Sunderland,45,3,42,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2010-11-premier-league
+2010/11,West Brom,56,3,53,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2010-11-premier-league
+2010/11,West Ham,43,2,41,0,35,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2010-11-premier-league
+2010/11,Wigan,40,4,36,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2010-11-premier-league
+2010/11,Wolves,46,1,45,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2010-11-premier-league
+2011/12,Arsenal,74,1,73,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2011-12-premier-league
+2011/12,Aston Villa,37,0,37,0,27,https://en.wikipedia.org/wiki/2011%E2%80%9312_Aston_Villa_F.C._season
+2011/12,Blackburn,48,4,44,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2011-12-premier-league
+2011/12,Bolton,46,4,42,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2011-12-premier-league
+2011/12,Chelsea,65,2,63,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2011-12-premier-league
+2011/12,Everton,50,2,48,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2011-12-premier-league
+2011/12,Fulham,48,5,43,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2011-12-premier-league
+2011/12,Liverpool,47,5,42,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2011-12-premier-league
+2011/12,Man City,93,2,91,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2011-12-premier-league
+2011/12,Man Utd,89,2,87,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2011-12-premier-league
+2011/12,Newcastle,56,5,51,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2011-12-premier-league
+2011/12,Norwich,52,0,52,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2011-12-premier-league (HTTP 422, no rows)"
+2011/12,QPR,43,2,41,0,35,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-2011-12-premier-league
+2011/12,Spurs,66,1,65,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2011-12-premier-league (Chris Baird, Fulham, 6 Nov 2011) + Wikipedia 2011-12 Tottenham Hotspur season (Baird own goal, originally given to Bale)"
+2011/12,Stoke,36,1,35,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2011-12-premier-league
+2011/12,Sunderland,45,2,43,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2011-12-premier-league
+2011/12,Swansea,44,1,43,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2011-12-premier-league (Scott Dann, Blackburn, 14 Apr 2012) + Wikipedia 2011-12 Swansea City season (Own goals 1)"
+2011/12,West Brom,45,1,44,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2011-12-premier-league (Martin Olsson, Blackburn, 7 Apr 2012) + Wikipedia 2011-12 West Bromwich Albion season (Own goals 1)"
+2011/12,Wigan,42,1,41,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2011-12-premier-league (Phil Neville, Everton, 4 Feb 2012) + https://www.11v11.com/matches/wigan-athletic-v-everton-04-february-2012-296648/ (Neville og 76)"
+2011/12,Wolves,40,0,40,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2011-12-premier-league (HTTP 422, also slug wolves) + https://en.wikipedia.org/wiki/2011%E2%80%9312_Wolverhampton_Wanderers_F.C._season (no own goals, scorers total 40)"
+2012/13,Arsenal,72,3,69,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2012-13-premier-league
+2012/13,Aston Villa,47,0,47,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2012-13-premier-league
+2012/13,Chelsea,75,3,72,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2012-13-premier-league
+2012/13,Everton,55,2,53,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2012-13-premier-league
+2012/13,Fulham,50,5,45,0,29,https://en.wikipedia.org/wiki/2012%E2%80%9313_Fulham_F.C._season
+2012/13,Liverpool,71,4,67,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2012-13-premier-league + Wikipedia season page (4 PL own goals)
+2012/13,Man City,66,1,65,0,25,https://www.11v11.com/matches/norwich-city-v-manchester-city-29-december-2012-300012/ + Wikipedia season page (1 PL own goal)
+2012/13,Man Utd,86,6,80,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2012-13-premier-league + Wikipedia season page (6 PL own goals)
+2012/13,Newcastle,45,2,43,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2012-13-premier-league + Wikipedia season page (2 PL own goals)
+2012/13,Norwich,41,1,40,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2012-13-premier-league + https://www.11v11.com/matches/norwich-city-v-west-bromwich-albion-12-may-2013-301406/
+2012/13,QPR,30,1,29,0,30,https://www.11v11.com/matches/queens-park-rangers-v-everton-21-october-2012-299262/
+2012/13,Reading,43,2,41,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-reading-2012-13-premier-league
+2012/13,Southampton,49,3,46,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2012-13-premier-league (Wilkinson) + Wikipedia 2012-13 Southampton season (Ferdinand, Barry)"
+2012/13,Spurs,66,4,62,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2012-13-premier-league
+2012/13,Stoke,34,1,33,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2012-13-premier-league
+2012/13,Sunderland,41,2,39,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2012-13-premier-league
+2012/13,Swansea,47,0,47,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2012-13-premier-league (HTTP 422, no rows) + https://en.wikipedia.org/wiki/2012%E2%80%9313_Swansea_City_A.F.C._season (no own goals listed)"
+2012/13,West Brom,53,4,49,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2012-13-premier-league (3: Caldwell, de Guzman, Green) + https://www.11v11.com/matches/sunderland-v-west-bromwich-albion-24-november-2012-299603/ (Craig Gardner)"
+2012/13,West Ham,45,2,43,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2012-13-premier-league + Wikipedia season page (2 own goals)
+2012/13,Wigan,47,2,45,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2012-13-premier-league + Wikipedia season page (2 PL own goals)
+2013/14,Arsenal,68,0,68,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2013-14-premier-league
+2013/14,Aston Villa,39,1,38,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2013-14-premier-league
+2013/14,Cardiff,32,1,31,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-cardiff-city-2013-14-premier-league
+2013/14,Chelsea,71,2,69,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2013-14-premier-league
+2013/14,Crystal Palace,33,1,32,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2013-14-premier-league
+2013/14,Everton,61,3,58,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2013-14-premier-league + Wikipedia season page
+2013/14,Fulham,40,2,38,0,39,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2013-14-premier-league + Wikipedia season page
+2013/14,Hull,38,3,35,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2013-14-premier-league + Wikipedia season page
+2013/14,Liverpool,101,5,96,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2013-14-premier-league + Wikipedia season page
+2013/14,Man City,102,5,97,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2013-14-premier-league + 11v11 match page (Russell Martin) + Wikipedia season page
+2013/14,Man Utd,64,1,63,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2013-14-premier-league
+2013/14,Newcastle,43,2,41,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2013-14-premier-league
+2013/14,Norwich,28,0,28,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2013-14-premier-league
+2013/14,Southampton,54,2,52,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2013-14-premier-league
+2013/14,Spurs,55,5,50,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2013-14-premier-league
+2013/14,Stoke,45,2,43,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2013-14-premier-league
+2013/14,Sunderland,41,0,41,0,31,https://en.wikipedia.org/wiki/2013%E2%80%9314_Sunderland_A.F.C._season
+2013/14,Swansea,54,8,46,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2013-14-premier-league
+2013/14,West Brom,43,2,41,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2013-14-premier-league
+2013/14,West Ham,40,3,37,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2013-14-premier-league
+2014/15,Arsenal,71,2,69,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2014-15-premier-league
+2014/15,Aston Villa,31,0,31,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2014-15-premier-league
+2014/15,Burnley,28,1,27,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2014-15-premier-league
+2014/15,Chelsea,73,1,72,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2014-15-premier-league
+2014/15,Crystal Palace,47,1,46,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2014-15-premier-league
+2014/15,Everton,48,2,46,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2014-15-premier-league (Upson) + toffeeweb.com QPR(h) report (Onuoha) + Wikipedia Everton season page (2 OGs)
+2014/15,Hull,33,1,32,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2014-15-premier-league
+2014/15,Leicester,46,1,45,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2014-15-premier-league
+2014/15,Liverpool,52,4,48,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2014-15-premier-league
+2014/15,Man City,83,1,82,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2014-15-premier-league
+2014/15,Man Utd,62,2,60,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2014-15-premier-league
+2014/15,Newcastle,40,0,40,0,27,https://en.wikipedia.org/wiki/2014%E2%80%9315_Newcastle_United_F.C._season
+2014/15,QPR,42,3,39,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-2014-15-premier-league (Demichelis, Morgan) + https://www.11v11.com/matches/queens-park-rangers-v-liverpool-19-october-2014-310556/ (Gerrard)"
+2014/15,Southampton,54,5,49,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2014-15-premier-league (Shackell, Bridcutt, Lukaku, Vergini) + https://www.11v11.com/matches/southampton-v-sunderland-18-october-2014-310555/ (van Aanholt)"
+2014/15,Spurs,58,2,56,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2014-15-premier-league
+2014/15,Stoke,48,1,47,0,25,https://www.11v11.com/matches/stoke-city-v-tottenham-hotspur-09-may-2015-310838/
+2014/15,Sunderland,31,1,30,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2014-15-premier-league
+2014/15,Swansea,46,3,43,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2014-15-premier-league
+2014/15,West Brom,38,1,37,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2014-15-premier-league
+2014/15,West Ham,44,1,43,0,28,https://en.wikipedia.org/wiki/2014%E2%80%9315_West_Ham_United_F.C._season
+2015/16,Arsenal,65,3,62,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2015-16-premier-league
+2015/16,Aston Villa,27,3,24,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2015-16-premier-league + https://www.11v11.com/matches/aston-villa-v-crystal-palace-12-january-2016-317041/ + https://www.11v11.com/matches/aston-villa-v-norwich-city-06-february-2016-317081/
+2015/16,Bournemouth,45,2,43,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2015-16-premier-league
+2015/16,Chelsea,59,4,55,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2015-16-premier-league
+2015/16,Crystal Palace,39,1,38,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2015-16-premier-league
+2015/16,Everton,59,3,56,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2015-16-premier-league (Sebastian Coates, Sunderland; John Terry, Chelsea; Jack Cork, Swansea)"
+2015/16,Leicester,68,1,67,0,23,"https://en.wikipedia.org/wiki/2015%E2%80%9316_Leicester_City_F.C._season (Jonas Olsson, West Brom, 1 Mar 2016); StatMuse players-with-own-goals-vs-leicester(-city)-2015-16 queries return HTTP 422 (no rows)"
+2015/16,Liverpool,63,1,62,0,34,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2015-16-premier-league (Eliaquim Mangala, Man City, 21 Nov 2015); Wikipedia 2015-16 Liverpool season own goals PL=1"
+2015/16,Man City,71,0,71,0,25,https://en.wikipedia.org/wiki/2015%E2%80%9316_Manchester_City_F.C._season (own goals PL=0); StatMuse players-with-own-goals-vs-manchester-city-2015-16 and most-own-goals-against-manchester-city queries return HTTP 422 (no rows)
+2015/16,Man Utd,49,3,46,0,33,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2015-16-premier-league (Kyle Walker, Spurs; Troy Deeney, Watford; Damien Delaney, Crystal Palace); Wikipedia 2015-16 Man Utd season own goals PL=3"
+2015/16,Newcastle,44,1,43,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2015-16-premier-league
+2015/16,Norwich,39,1,38,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2015-16-premier-league
+2015/16,Southampton,59,1,58,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2015-16-premier-league
+2015/16,Spurs,69,1,68,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2015-16-premier-league
+2015/16,Stoke,41,1,40,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2015-16-premier-league
+2015/16,Sunderland,48,4,44,0,31,https://en.wikipedia.org/wiki/2015%E2%80%9316_Sunderland_A.F.C._season
+2015/16,Swansea,42,1,41,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2015-16-premier-league
+2015/16,Watford,40,3,37,0,25,https://www.11v11.com/teams/watford/tab/matches/season/2016/
+2015/16,West Brom,34,2,32,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2015-16-premier-league
+2015/16,West Ham,65,1,64,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2015-16-premier-league
+2016/17,Arsenal,77,4,73,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2016-17-premier-league
+2016/17,Bournemouth,55,2,53,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2016-17-premier-league
+2016/17,Burnley,39,0,39,0,27,https://en.wikipedia.org/wiki/2016%E2%80%9317_Burnley_F.C._season
+2016/17,Chelsea,85,2,83,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2016-17-premier-league
+2016/17,Crystal Palace,50,2,48,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2016-17-premier-league
+2016/17,Everton,62,4,58,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2016-17-premier-league
+2016/17,Hull,37,1,36,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2016-17-premier-league
+2016/17,Leicester,48,2,46,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2016-17-premier-league
+2016/17,Liverpool,78,1,77,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2016-17-premier-league
+2016/17,Man City,80,5,75,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2016-17-premier-league
+2016/17,Man Utd,54,0,54,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2016-17-premier-league (no result, HTTP 422); Wikipedia 2016-17 Manchester United season page lists no opponent own goals in PL"
+2016/17,Middlesbrough,27,1,26,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2016-17-premier-league (Maarten Stekelenburg, Everton, 17 Sep 2016)"
+2016/17,Southampton,41,2,39,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2016-17-premier-league (Jason Denayer, Sunderland; Petr Cech, Arsenal)"
+2016/17,Spurs,86,2,84,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2016-17-premier-league
+2016/17,Stoke,41,4,37,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2016-17-premier-league (Alfie Mawson, Swansea; Heurelho Gomes, Watford; Juan Mata, Man Utd; Lys Mousset, Bournemouth)"
+2016/17,Sunderland,29,1,28,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2016-17-premier-league (Robert Huth, Leicester, 3 Dec 2016)"
+2016/17,Swansea,45,0,45,0,27,https://en.wikipedia.org/wiki/2016%E2%80%9317_Swansea_City_A.F.C._season
+2016/17,Watford,40,1,39,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2016-17-premier-league
+2016/17,West Brom,43,0,43,0,23,https://en.wikipedia.org/wiki/2016%E2%80%9317_West_Bromwich_Albion_F.C._season
+2016/17,West Ham,47,1,46,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2016-17-premier-league
+2017/18,Arsenal,74,1,73,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2017-18-premier-league
+2017/18,Bournemouth,45,0,45,0,22,StatMuse own-goals query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2017-18-premier-league returned HTTP 422 (no results; afc-bournemouth slug also 422); https://en.wikipedia.org/wiki/2017%E2%80%9318_AFC_Bournemouth_season PL scorers total 45 with no own goals listed
+2017/18,Brighton,34,1,33,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2017-18-premier-league
+2017/18,Burnley,36,1,35,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2017-18-premier-league
+2017/18,Chelsea,62,2,60,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2017-18-premier-league
+2017/18,Crystal Palace,45,1,44,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2017-18-premier-league
+2017/18,Everton,44,2,42,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2017-18-premier-league
+2017/18,Huddersfield,28,3,25,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-huddersfield-town-2017-18-premier-league
+2017/18,Leicester,56,3,53,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2017-18-premier-league
+2017/18,Liverpool,84,2,82,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2017-18-premier-league
+2017/18,Man City,106,3,103,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2017-18-premier-league (Christian Kabasele, Watford; Lewis Dunk, Brighton; Pablo Zabaleta, West Ham)"
+2017/18,Man Utd,68,1,67,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2017-18-premier-league (Lewis Dunk, Brighton, 25 Nov 2017)"
+2017/18,Newcastle,39,1,38,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2017-18-premier-league (Jonny Evans, West Brom, 28 Nov 2017)"
+2017/18,Southampton,37,1,36,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2017-18-premier-league (Davinson Sanchez, Spurs, 21 Jan 2018)"
+2017/18,Spurs,74,4,70,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2017-18-premier-league
+2017/18,Stoke,35,1,34,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2017-18-premier-league (Kyle Walker, Man City, 14 Oct 2017)"
+2017/18,Swansea,28,1,27,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2017-18-premier-league
+2017/18,Watford,44,2,42,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2017-18-premier-league
+2017/18,West Brom,31,0,31,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2017-18-premier-league
+2017/18,West Ham,48,0,48,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2017-18-premier-league
+2018/19,Arsenal,73,4,69,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2018-19-premier-league
+2018/19,Bournemouth,56,1,55,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2018-19-premier-league
+2018/19,Brighton,35,0,35,0,21,StatMuse own-goals query returned HTTP 422; https://en.wikipedia.org/wiki/2018%E2%80%9319_Brighton_%26_Hove_Albion_F.C._season shows no PL own goals for Brighton
+2018/19,Burnley,45,2,43,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2018-19-premier-league
+2018/19,Cardiff,34,1,33,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-cardiff-city-2018-19-premier-league
+2018/19,Chelsea,63,2,61,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2018-19-premier-league
+2018/19,Crystal Palace,51,3,48,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2018-19-premier-league
+2018/19,Everton,54,1,53,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2018-19-premier-league
+2018/19,Fulham,34,1,33,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2018-19-premier-league
+2018/19,Huddersfield,22,1,21,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-huddersfield-town-2018-19-premier-league
+2018/19,Leicester,51,3,48,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2018-19-premier-league (Conor Coady, Wolves; Matt Doherty, Wolves; Hector Bellerin, Arsenal)"
+2018/19,Liverpool,89,3,86,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2018-19-premier-league (Steve Cook, Bournemouth; Toby Alderweireld, Spurs; Wesley Hoedt, Southampton)"
+2018/19,Man City,95,4,91,0,21,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2018-19-premier-league (Conor Coady, Wolves; James Ward-Prowse, Southampton; Terence Kongolo, Huddersfield; Wesley Hoedt, Southampton)"
+2018/19,Man Utd,65,0,65,0,28,"https://en.wikipedia.org/wiki/2018%E2%80%9319_Manchester_United_F.C._season (only own goal for United in all competitions was v Juventus, Champions League; StatMuse own-goals query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2018-19-premier-league returned HTTP 422, no result)"
+2018/19,Newcastle,42,1,41,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2018-19-premier-league (Ben Mee, Burnley, 26 Nov 2018)"
+2018/19,Southampton,45,1,44,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2018-19-premier-league
+2018/19,Spurs,67,1,66,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2018-19-premier-league
+2018/19,Watford,52,1,51,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2018-19-premier-league
+2018/19,West Ham,52,1,51,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2018-19-premier-league
+2018/19,Wolves,47,1,46,0,21,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2018-19-premier-league
+2019/20,Arsenal,56,0,56,0,29,StatMuse own-goals query returned HTTP 422; https://en.wikipedia.org/wiki/2019%E2%80%9320_Arsenal_F.C._season shows no PL own goals for Arsenal
+2019/20,Aston Villa,41,1,40,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2019-20-premier-league (Toby Alderweireld, Spurs, 16 Feb 2020); Wikipedia season page shows 1 PL own goal"
+2019/20,Bournemouth,40,2,38,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2019-20-premier-league (Jonny Evans, Pascal Gross); confirmed on 11v11 match pages 366597 and 365480"
+2019/20,Brighton,39,4,35,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2019-20-premier-league (Doucoure, Digne, Ogbonna, Mariappa); all confirmed on 11v11 match pages"
+2019/20,Burnley,43,2,41,0,22,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2019-20-premier-league (Roberto, West Ham; Ben Godfrey, Norwich); both in Wikipedia 2019-20 Burnley season match results"
+2019/20,Chelsea,69,0,69,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2019-20-premier-league returned no results (HTTP 422); Wikipedia 2019-20 Chelsea F.C. season goalscorers table own goals row: Premier League 0 (1 in FA Cup only)
+2019/20,Crystal Palace,31,2,29,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2019-20-premier-league (Leander Dendoncker, Wolves; Fernandinho, Man City); Wikipedia 2019-20 Crystal Palace F.C. season goalscorers table shows 2 PL own goals"
+2019/20,Everton,44,2,42,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2019-20-premier-league (Adam Webster, Brighton; Victor Lindelof, Man Utd)"
+2019/20,Leicester,67,2,65,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2019-20-premier-league (Paul Dummett, Newcastle; Tim Krul, Norwich)"
+2019/20,Liverpool,85,2,83,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2019-20-premier-league (Grant Hanley, Norwich; Chris Wood, Burnley)"
+2019/20,Man City,102,2,100,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2019-20-premier-league
+2019/20,Man Utd,66,1,65,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2019-20-premier-league
+2019/20,Newcastle,38,0,38,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2019-20-premier-league (HTTP 422, no rows) ; https://en.wikipedia.org/wiki/2019%E2%80%9320_Newcastle_United_F.C._season"
+2019/20,Norwich,26,1,25,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2019-20-premier-league
+2019/20,Sheffield Utd,39,3,36,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2019-20-premier-league
+2019/20,Southampton,51,0,51,0,25,StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2019-20-premier-league returned HTTP 422 (no rows); https://en.wikipedia.org/wiki/2019%E2%80%9320_Southampton_F.C._season shows no PL own goals for Southampton
+2019/20,Spurs,61,5,56,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2019-20-premier-league (Van Aanholt, Rudiger, Soucek, Keane, Justin); all five confirmed on 11v11 match pages 363837, 365867, 366217, 366578, 366626"
+2019/20,Watford,36,1,35,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2019-20-premier-league (Jan Bednarek, Southampton, 28 Jun 2020); confirmed on 11v11 match page 366528"
+2019/20,West Ham,49,0,49,0,29,StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2019-20-premier-league returned HTTP 422 (no rows); https://en.wikipedia.org/wiki/2019%E2%80%9320_West_Ham_United_F.C._season shows no PL own goals for West Ham
+2019/20,Wolves,51,2,49,0,21,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2019-20-premier-league (Tammy Abraham, Chelsea; Daryl Janmaat, Watford); confirmed on 11v11 match pages 363838 and 363958"
+2020/21,Arsenal,55,2,53,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2020-21-premier-league (Tomas Soucek and Craig Dawson, West Ham, 21 Mar 2021); confirmed on https://www.11v11.com/matches/west-ham-united-v-arsenal-21-march-2021-369527/"
+2020/21,Aston Villa,55,3,52,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2020-21-premier-league (Bukayo Saka, Arsenal; Ciaran Clark, Newcastle; Sergio Reguilon, Spurs); Wikipedia 2020-21 Aston Villa F.C. season scorers table shows 3 own goals; Clark (12 Mar 2021) confirmed by avdb.co.uk match page, Reguilon (19 May 2021) by spursodyssey.com report"
+2020/21,Brighton,40,1,39,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2020-21-premier-league (Jake Livermore, West Brom, 26 Oct 2020); confirmed on https://11v11.com/matches/brighton-and-hove-albion-v-west-bromwich-albion-26-october-2020-367372/"
+2020/21,Burnley,33,1,32,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2020-21-premier-league (Pierre-Emerick Aubameyang, Arsenal, 13 Dec 2020); Wikipedia 2020-21 Burnley F.C. season lists 1 own goal (Aubameyang)"
+2020/21,Chelsea,58,2,56,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2020-21-premier-league (Federico Fernandez, Newcastle, 21 Nov 2020; Ben Godfrey, Everton, 8 Mar 2021); Wikipedia 2020-21 Chelsea F.C. season scorers table shows 2 own goals and Godfrey OG in match report"
+2020/21,Crystal Palace,41,2,39,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2020-21-premier-league
+2020/21,Everton,47,2,45,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2020-21-premier-league
+2020/21,Fulham,27,1,26,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2020-21-premier-league
+2020/21,Leeds,62,2,60,0,23,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-2020-21-premier-league
+2020/21,Leicester,68,4,64,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2020-21-premier-league
+2020/21,Liverpool,68,3,65,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2020-21-premier-league
+2020/21,Man City,83,1,82,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2020-21-premier-league
+2020/21,Man Utd,73,3,70,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2020-21-premier-league
+2020/21,Newcastle,46,2,44,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2020-21-premier-league
+2020/21,Sheffield Utd,20,1,19,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2020-21-premier-league
+2020/21,Southampton,47,0,47,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2020-21-premier-league
+2020/21,Spurs,68,2,66,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2020-21-premier-league
+2020/21,West Brom,35,2,33,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2020-21-premier-league
+2020/21,West Ham,62,2,60,0,24,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2020-21-premier-league
+2020/21,Wolves,36,2,34,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2020-21-premier-league
+2021/22,Arsenal,61,1,60,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2021-22-premier-league (Jose Sa, Wolves, 24 Feb 2022); confirmed on Wikipedia 2021-22 Arsenal F.C. season page"
+2021/22,Aston Villa,52,2,50,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2021-22-premier-league (Lucas Digne, Everton; Reece James, Chelsea); Wikipedia 2021-22 Aston Villa F.C. season goalscorers table shows 2 own goals; James OG v Chelsea 26 Dec 2021 confirmed by NBC Sports clip"
+2021/22,Brentford,48,2,46,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2021-22-premier-league (Jamaal Lascelles, Newcastle, 20 Nov 2021; Seamus Coleman, Everton, 15 May 2022); confirmed by newcastleunited.com match report and 11v11 match page Everton v Brentford 15 May 2022"
+2021/22,Brighton,42,2,40,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2021-22-premier-league (Joachim Andersen, Crystal Palace, 15 Jan 2022; Mohammed Salisu, Southampton, 24 Apr 2022); Andersen on Wikipedia season page, Salisu on 11v11 match page"
+2021/22,Burnley,34,2,32,0,23,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2021-22-premier-league (Jamie Vardy, Leicester, Leicester 2-2 Burnley; Luka Milivojevic, Crystal Palace, 26 Feb 2022); Milivojevic on Wikipedia season page, Vardy confirmed by ESPN headline and NBC clip"
+2021/22,Chelsea,76,1,75,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2021-22-premier-league
+2021/22,Crystal Palace,50,0,50,0,24,https://en.wikipedia.org/wiki/2021%E2%80%9322_Crystal_Palace_F.C._season
+2021/22,Everton,43,1,42,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2021-22-premier-league
+2021/22,Leeds,42,0,42,0,29,https://en.wikipedia.org/wiki/2021%E2%80%9322_Leeds_United_F.C._season
+2021/22,Leicester,62,0,62,0,28,https://en.wikipedia.org/wiki/2021%E2%80%9322_Leicester_City_F.C._season
+2021/22,Liverpool,94,0,94,0,27,https://en.wikipedia.org/wiki/2021%E2%80%9322_Liverpool_F.C._season
+2021/22,Man City,99,3,96,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2021-22-premier-league
+2021/22,Man Utd,57,1,56,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2021-22-premier-league
+2021/22,Newcastle,44,3,41,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2021-22-premier-league
+2021/22,Norwich,23,2,21,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2021-22-premier-league
+2021/22,Southampton,43,2,41,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2021-22-premier-league
+2021/22,Spurs,69,6,63,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2021-22-premier-league
+2021/22,Watford,34,1,33,0,30,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2021-22-premier-league
+2021/22,West Ham,60,2,58,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2021-22-premier-league
+2021/22,Wolves,38,3,35,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2021-22-premier-league
+2022/23,Arsenal,88,4,84,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2022-23-premier-league (E. Martinez, Schar, Lloris, Guehi); total reconciles exactly with table goals and player sum"
+2022/23,Aston Villa,51,2,49,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2022-23-premier-league (Souttar, Andersen); total reconciles exactly"
+2022/23,Bournemouth,37,0,37,0,31,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2022-23-premier-league returned HTTP 422 (no answer; afc-bournemouth slug variants also 422); Wikipedia 2022-23 AFC Bournemouth season page match results show no own goals in Bournemouth favour
+2022/23,Brentford,58,2,56,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2022-23-premier-league (Azpilicueta, Konate); total reconciles exactly"
+2022/23,Brighton,72,4,68,0,29,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-2022-23-premier-league lists 5 (Harrison, L. Thomas, Perraud, Loftus-Cheek, Chalobah) but Harrison OG was reassigned to Solly March (https://www.11v11.com/matches/leeds-united-v-brighton-and-hove-albion-11-march-2023-378534/); Wikipedia 2022-23 Brighton season statistics give 4 own goals"
+2022/23,Chelsea,38,1,37,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2022-23-premier-league
+2022/23,Crystal Palace,40,2,38,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2022-23-premier-league
+2022/23,Everton,34,2,32,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2022-23-premier-league
+2022/23,Fulham,55,3,52,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2022-23-premier-league
+2022/23,Leeds,48,3,45,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-2022-23-premier-league
+2022/23,Leicester,51,2,49,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2022-23-premier-league (Robin Koch, William Saliba); Wikipedia 2022-23 Leicester City season goalscorers Own goals PL=2; Koch OG in Leicester 2-0 Leeds (Sky Sports report)"
+2022/23,Liverpool,75,4,71,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2022-23-premier-league (Adam Webster, Chris Mepham, Wout Faes x2); Wikipedia 2022-23 Liverpool season goalscorers Own goals PL=4"
+2022/23,Man City,94,2,92,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2022-23-premier-league (Jefferson Lerma, Chris Mepham); Lerma OG in City 4-0 Bournemouth Aug 2022 and Mepham OG in Bournemouth 1-4 City Feb 2023 (match reports)"
+2022/23,Man Utd,58,2,56,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2022-23-premier-league (Alexis Mac Allister, Jacob Ramsey); Wikipedia 2022-23 Manchester United season own goals PL=2"
+2022/23,Newcastle,68,4,64,0,27,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2022-23-premier-league (David Raya, Ethan Pinnock, Theo Walcott, Deniz Undav); confirmed by 11v11 match page Brentford v Newcastle 08-04-2023 (Raya), Wikipedia season (Pinnock), Sky Sports report 30-04-2023 (Walcott), nufc.com 18-05-2023 (Undav)"
+2022/23,Nottingham Forest,38,2,36,0,33,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-2022-23-premier-league
+2022/23,Southampton,36,0,36,0,36,https://en.wikipedia.org/wiki/2022%E2%80%9323_Southampton_F.C._season
+2022/23,Spurs,70,2,68,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2022-23-premier-league
+2022/23,West Ham,42,1,41,0,25,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2022-23-premier-league
+2022/23,Wolves,31,3,28,0,32,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2022-23-premier-league
+2023/24,Arsenal,91,5,86,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2023-24-premier-league (Romero, Hojbjerg, Bogle, Botman, Hashioka); Romero confirmed by Wikipedia 2023-24 Arsenal season page"
+2023/24,Aston Villa,76,4,72,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2023-24-premier-league (A. Robinson, Cucurella, Estupinan, Lockyer); count 4 confirmed by Wikipedia 2023-24 Aston Villa season goalscorers table"
+2023/24,Bournemouth,54,2,52,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2023-24-premier-league (Coleman, Badiashile); Badiashile confirmed by Wikipedia 2023-24 AFC Bournemouth season page"
+2023/24,Brentford,56,2,54,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2023-24-premier-league (Mavropanos, Arblaster); Mavropanos confirmed by Wikipedia 2023-24 Brentford season page"
+2023/24,Brighton,55,5,50,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2023-24-premier-league (Omobamidele, Muric, A. Young, J. Robinson, Kerkez); Robinson confirmed by Wikipedia 2023-24 Brighton season page"
+2023/24,Burnley,41,1,40,0,31,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2023-24-premier-league (Mavropanos, West Ham v Burnley 10 Mar 2024); confirmed by Wikipedia 2023-24 Burnley F.C. season match report"
+2023/24,Chelsea,77,1,76,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2023-24-premier-league (Al-Dakhil, Burnley v Chelsea 7 Oct 2023); confirmed by Wikipedia 2023-24 Chelsea F.C. season goalscorer table own goals 1"
+2023/24,Crystal Palace,57,1,56,0,26,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2023-24-premier-league (Emerson, Crystal Palace 5-2 West Ham 21 Apr 2024); confirmed by Malay Mail match report https://www.malaymail.com/amp/news/sports/2024/04/22/crystal-palaces-mateta-nets-brace-in-5-2-thrashing-of-west-ham/130089"
+2023/24,Everton,40,0,40,0,26,https://efcstatto.com/?p=10607 (end-of-season summary: Everton one of 3 teams with no opponent own goal in the 2023-24 PL); StatMuse own-goal query returned 422
+2023/24,Fulham,55,1,54,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2023-24-premier-league (Foderingham, Fulham 3-1 Sheffield Utd 7 Oct 2023); confirmed by Wikipedia 2023-24 Fulham F.C. season goalscorer table own goals 1"
+2023/24,Liverpool,86,6,80,0,30,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2023-24-premier-league (Areola, Leno, E. Martinez, Gabriel, Hugo Bueno, Cash); Wikipedia 2023-24 Liverpool season goalscorers Own goals PL=6"
+2023/24,Luton,52,3,49,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-luton-town-2023-24-premier-league (Emiliano Martinez, Jack Robinson, Anis Ben Slimane); Wikipedia 2023-24 Luton Town season names Robinson and Ben Slimane own goals"
+2023/24,Man City,96,2,94,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2023-24-premier-league (Son Heung-min, Daiki Hashioka); Wikipedia 2023-24 Manchester City season goalscorers Own goals PL=2"
+2023/24,Man Utd,57,0,57,0,31,Wikipedia 2023-24 Manchester United season goalscorers Own goals row = 0; https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2023-24-premier-league returned no table (HTTP 422)
+2023/24,Newcastle,85,2,83,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2023-24-premier-league (Ben Osborn, Sheffield Utd; Alex Moreno, Aston Villa)"
+2023/24,Nottingham Forest,49,0,49,0,33,https://en.wikipedia.org/wiki/2023%E2%80%9324_Nottingham_Forest_F.C._season
+2023/24,Sheffield Utd,35,4,31,0,35,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2023-24-premier-league
+2023/24,Spurs,74,5,69,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2023-24-premier-league
+2023/24,West Ham,60,2,58,0,26,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2023-24-premier-league
+2023/24,Wolves,50,3,47,0,27,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2023-24-premier-league
+2024/25,Arsenal,69,2,67,0,25,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2024-25-premier-league (Solanke 15 Jan 2025, Ndidi 28 Sep 2024)"
+2024/25,Aston Villa,58,2,56,0,28,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2024-25-premier-league (Dan Burn, Issa Diop)"
+2024/25,Bournemouth,58,1,57,0,29,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2024-25-premier-league (Vitaly Janelt)
+2024/25,Brentford,66,1,65,0,28,https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2024-25-premier-league (Luke Shaw)
+2024/25,Brighton,66,2,64,0,32,"https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2024-25-premier-league (Marc Guehi 15 Dec 2024, Abdukodir Khusanov)"
+2024/25,Chelsea,64,3,61,0,29,"https://www.statmuse.com/fc/ask/most-own-goals-against-chelsea-premier-league-2024-25 (Quansah, Tuanzebe, Wan-Bissaka 1 each) and Wikipedia 2024-25 Chelsea season goalscorer table own goals 3"
+2024/25,Crystal Palace,51,2,49,0,29,"https://www.statmuse.com/fc/ask/most-own-goals-against-crystal-palace-premier-league-2024-25 (Andersen for Fulham, Pinnock for Brentford, 1 each)"
+2024/25,Everton,42,3,39,0,26,"https://www.statmuse.com/fc/ask/most-own-goals-against-everton-premier-league-2024-25 (Craig Dawson 2, Archie Gray 1); Dawson 2 confirmed by Sky Sports report https://www.skysports.com/football/news/11661/13265221/everton-4-0-wolves-craig-dawson-scores-two-own-goals-as-set-pieces-tear-visitors-apart-at-goodison-park"
+2024/25,Fulham,54,1,53,0,26,"https://www.statmuse.com/fc/ask/most-own-goals-against-fulham-premier-league-2024-25 (Matt O'Riley, Brighton) and Wikipedia 2024-25 Fulham season own goals 1"
+2024/25,Ipswich,36,1,35,0,32,"https://www.statmuse.com/fc/ask/most-own-goals-against-ipswich-town-premier-league-2024-25 (Matt Doherty, Wolves) and Wikipedia 2024-25 Ipswich Town season goalscorer table own goals 1"
+2024/25,Leicester,33,0,33,0,32,StatMuse most-own-goals-against-leicester(-city)-premier-league-2024-25 queries return no result (HTTP 422) while the same query returns rows for other clubs; StatMuse and Wikipedia player goals both sum to 33. Not itemised by a positive source
+2024/25,Liverpool,86,1,85,0,24,"https://www.statmuse.com/fc/ask/most-own-goals-against-liverpool-premier-league-2024-25 (Destiny Udogie, Spurs, 27 Apr 2025); Wikipedia season page goalscorers Own goals PL=1"
+2024/25,Man City,72,1,71,0,30,"https://www.statmuse.com/fc/ask/most-own-goals-against-manchester-city-premier-league-2024-25 (Vladimir Coufal, West Ham, 4 Jan 2025); Wikipedia season goalscorers Own goals PL=1"
+2024/25,Man Utd,44,2,42,0,31,"https://www.statmuse.com/fc/ask/most-own-goals-against-manchester-united-premier-league-2024-25 (Sam Morsy, Ipswich; Victor Kristiansen, Leicester); matches Wikipedia match list"
+2024/25,Newcastle,68,2,66,0,24,"https://www.statmuse.com/fc/ask/players-with-own-goals-against-newcastle-united-premier-league-2024-25 (Marc Guehi, Crystal Palace, 30 Nov 2024 and 16 Apr 2025)"
+2024/25,Nottingham Forest,58,1,57,0,23,"https://www.11v11.com/matches/nottingham-forest-v-brighton-and-hove-albion-01-february-2025-387741/ (Lewis Dunk og, 1 Feb 2025; also citizen.digital match report)"
+2024/25,Southampton,26,1,25,0,36,"https://www.11v11.com/matches/manchester-united-v-southampton-16-january-2025-387476/ (Manuel Ugarte og, 16 Jan 2025)"
+2024/25,Spurs,64,3,61,0,31,https://www.11v11.com/matches/newcastle-united-v-tottenham-hotspur-01-september-2024-385444/ (Dan Burn og 1 Sep 2024); https://www.11v11.com/matches/tottenham-hotspur-v-west-ham-united-19-october-2024-386109/ (Alphonse Areola og 19 Oct 2024); https://www.11v11.com/matches/brentford-v-tottenham-hotspur-02-february-2025-387747/ (Vitaly Janelt og 2 Feb 2025)
+2024/25,West Ham,46,3,43,0,27,https://www.11v11.com/matches/west-ham-united-v-manchester-city-31-august-2024-384880/ (Ruben Dias og 31 Aug 2024); https://www.11v11.com/matches/west-ham-united-v-leicester-city-27-february-2025-387781/ (Jannik Vestergaard og 27 Feb 2025); https://www.11v11.com/matches/liverpool-v-west-ham-united-13-april-2025-388560/ (Andy Robertson og 13 Apr 2025)
+2024/25,Wolves,54,1,53,0,32,https://www.11v11.com/matches/wolverhampton-wanderers-v-tottenham-hotspur-13-april-2025-388561/ (Djed Spence og 13 Apr 2025; also wolves.co.uk match report)
+2025/26,Arsenal,71,4,67,0,25,"StatMuse most own goals against Arsenal 2025-26 (Lisandro Martinez, Georginio Rutter, Sam Johnstone, Yerson Mosquera); corroborated by Wikipedia 2025-26 Arsenal F.C. season page and FotMob"
+2025/26,Aston Villa,56,3,53,0,30,Wikipedia 2025-26 Aston Villa F.C. season page
+2025/26,Bournemouth,58,1,57,0,26,"StatMuse most own goals against Bournemouth 2025-26 (Jefferson Lerma, 3 May 2026); corroborated by ESPN Deportes"
+2025/26,Brentford,55,2,53,0,26,Wikipedia 2025-26 Brentford F.C. season page
+2025/26,Brighton,52,1,51,0,28,Wikipedia 2025-26 Brighton & Hove Albion F.C. season page
+2025/26,Burnley,38,3,35,0,28,Wikipedia 2025-26 Burnley F.C. season page
+2025/26,Chelsea,58,1,57,0,30,Wikipedia 2025-26 Chelsea F.C. season page
+2025/26,Crystal Palace,41,1,40,0,30,Wikipedia 2025-26 Crystal Palace F.C. season page
+2025/26,Everton,47,2,45,0,22,"StatMuse most own goals against Everton 2025-26 (Nikola Milenkovic, Bernd Leno); Leno og confirmed by evertonia.com Fulham 1-2 Everton 7 Feb 2026"
+2025/26,Fulham,47,4,43,0,24,Wikipedia 2025-26 Fulham F.C. season page
+2025/26,Leeds,49,1,48,0,24,https://en.wikipedia.org/wiki/2025%E2%80%9326_Leeds_United_F.C._season
+2025/26,Liverpool,63,2,61,0,24,https://en.wikipedia.org/wiki/2025%E2%80%9326_Liverpool_F.C._season
+2025/26,Man City,77,3,74,0,27,https://en.wikipedia.org/wiki/2025%E2%80%9326_Manchester_City_F.C._season
+2025/26,Man Utd,69,3,66,0,27,https://en.wikipedia.org/wiki/2025%E2%80%9326_Manchester_United_F.C._season
+2025/26,Newcastle,53,0,53,0,26,https://en.wikipedia.org/wiki/2025%E2%80%9326_Newcastle_United_F.C._season
+2025/26,Nottingham Forest,48,1,47,0,31,https://en.wikipedia.org/wiki/2025%E2%80%9326_Nottingham_Forest_F.C._season
+2025/26,Spurs,48,1,47,0,31,https://en.wikipedia.org/wiki/2025%E2%80%9326_Tottenham_Hotspur_F.C._season
+2025/26,Sunderland,42,4,38,0,29,https://www.statmuse.com/fc/ask/most-own-goals-against-sunderland-2025-26
+2025/26,West Ham,46,2,44,0,32,https://en.wikipedia.org/wiki/2025%E2%80%9326_West_Ham_United_F.C._season
+2025/26,Wolves,27,1,26,0,31,https://en.wikipedia.org/wiki/2025%E2%80%9326_Wolverhampton_Wanderers_F.C._season

@@ -1,0 +1,9 @@
+Club: Leicester 2019/20
+Players per source: StatMuse player-stats 24 (under cap, complete). StatMuse most/fewest-appearances not run because the WebFetch proxy was rate limiting; player-stats is under the 25-row cap and 11v11 fully covers the squad. 11v11 PL club page 24. Same 24 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 67 (Wikipedia 2019-20 Premier League table).
+Own goals for: 2 (Paul Dummett, Newcastle, Leicester 5-0 Newcastle; Tim Krul, Norwich, Leicester 1-1 Norwich Dec 2019). Source: StatMuse own-goals vs Leicester City query; NBC Sports clip "Krul own goal equalizes for Foxes v Norwich City" corroborates Krul.
+Player goals sum: 65
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2019-2020/engprem/leicester.htm. Spellings reused from earlier-season files (Gray Jamaica, Hirst Scotland, Choudhury Bangladesh as in later files).
+Unverified: nothing material.

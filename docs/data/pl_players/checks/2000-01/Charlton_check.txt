@@ -1,0 +1,9 @@
+Charlton 2000/01 check
+Player counts: StatMuse player-stats 25 (capped; Brown, Caig missing), most-apps 25 (capped), fewest-apps 25 (capped); union 27. 11v11 club page (https://www.11v11.com/teams/charlton-athletic/tab/players/season/2001/comp/1/) 27. Same names. Rows = 27.
+Club goals (Wikipedia 2000-01 FA Premier League table): 50.
+Own goals for: 3. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2000-01-premier-league): Dion Dublin, George Boateng (Aston Villa), Youl Mawene (Derby). Confirmed on 11v11 match pages: Aston Villa 2-1 Charlton 28 Oct 2000 (Dublin og 82), Charlton 3-3 Aston Villa 17 Apr 2001 (Boateng og 16), Charlton 2-1 Derby 30 Jan 2001 (Mawene og 8).
+Player goals sum: 47. 50 - 3 = 47. Difference: 0.
+Disagreements: 0. All 27 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2000-2001/faprem/charlton.htm (Kishishev D, Lisbie M, Todd D; Tiler in no-longer-at-club section).
+Nationality: spellings from other seasons; 11v11 Nat for new names. Sasa Ilic shown as Yugoslavia on 11v11; written as Serbia to match the convention other seasons' files use for Serbian players of that era.
+Unverified: nothing material.

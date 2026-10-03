@@ -1,0 +1,11 @@
+Leicester 2015/16 Premier League check
+StatMuse: player-stats 23, most-appearances 23, fewest-appearances 23 (none capped); union 23 players. StatMuse names Leonardo Ulloa as Jose Ulloa.
+11v11 PL club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2016/comp/1/): 23 players
+Rows written: 23. Player sets identical; apps match for every player.
+Club PL goals (Wikipedia 2015-16 Premier League table, https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League): 68
+Own goals for: 1, Jonas Olsson (West Brom), Leicester 2-2 West Brom, 1 Mar 2016 (Wikipedia 2015-16 Leicester City season). StatMuse own-goal queries (players-with-own-goals-vs-leicester-city / -vs-leicester / most-own-goals-against-leicester-city) all return HTTP 422, consistent with StatMuse crediting the goal to Drinkwater.
+Player goals sum: 67. Club goals minus own goals: 67. Difference: 0
+Disagreements: 1
+- Danny Drinkwater goals: 11v11 2, Wikipedia 2, StatMuse 3. The disputed goal is his deflected 31st-minute shot v West Brom (Sportsmole credits Drinkwater, Wikipedia records Olsson OG). Kept 2 (11v11 + Wikipedia agree; totals balance with og_for 1). 11v11 player page for Drinkwater could not be located (guessed URL returned a different player).
+Position/nationality: footballsquads 2015-16 Leicester page (https://www.footballsquads.co.uk/eng/2015-2016/faprem/leicester.htm), all 23 players found (De Laet, Kramaric, Benalouane in players-no-longer-at-club). Demarai Gray: footballsquads ENG, set to Jamaica to match later files (capped by Jamaica).
+Unverified: none beyond the Drinkwater/OG attribution noted above

@@ -1,0 +1,9 @@
+Chelsea 1994/95 Premier League check
+Player count: StatMuse player-stats 24 (under the 25-row cap, complete); 11v11 club page 24 (https://www.11v11.com/teams/chelsea/tab/players/season/1995/comp/1/); all 24 in footballsquads chelsea.htm. Rows: 24
+Club goals: 50 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 1 (Michel Vonk, Man City, 31 Aug 1994) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-1994-95-premier-league; confirmed by exact balance.
+Player goals sum: 49
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All 24 players' apps and goals match between StatMuse and 11v11 (StatMuse spells the keeper Dmitriy Kharin; earlier-season spelling Dmitri Kharine kept).
+Unverified: Vonk own goal not confirmed by a second source beyond the balance.
+Nationality: from earlier-season files, otherwise 11v11 (Hoddle, Kjeldbjerg, Rix).

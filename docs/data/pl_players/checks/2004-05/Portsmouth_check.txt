@@ -1,0 +1,12 @@
+Portsmouth 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap, alphabetical, Yakubu cut off), most-apps 25, fewest-apps 25; merged 26 (most/fewest add Yakubu; fewest adds John Curtis absent from most-apps). 11v11 club page (https://www.11v11.com/teams/portsmouth/tab/players/season/2005/comp/1/) 26 (total = A+S). footballsquads 2004-05 (/faprem/portsm.htm): all 26 present (Quashie, Faye, Berkovic, Curtis in "no longer at club").
+Club PL goals: 43 (Wikipedia 2004-05 FA Premier League table; 11v11 final table agrees).
+Own goals for: 4, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2004-05-premier-league, each confirmed on 11v11 match pages:
+ - Tony Popovic (Crystal Palace) 11 Sep 2004, 85 min: https://www.11v11.com/matches/portsmouth-v-crystal-palace-11-september-2004-25387/
+ - Andreas Jakobsson (Southampton) 13 Nov 2004, 12 min: https://www.11v11.com/matches/southampton-v-portsmouth-13-november-2004-26588/
+ - Darren Purse (West Brom) 4 Dec 2004, 35 min: https://www.11v11.com/matches/portsmouth-v-west-bromwich-albion-04-december-2004-26837/
+ - Franck Queudrue (Middlesbrough) 1 Feb 2005, 58 min (Dubious Goals Committee, originally Yakubu): https://www.11v11.com/matches/portsmouth-v-middlesbrough-01-february-2005-27469/
+Player goals sum: 39. 43 - 4 - 39 = 0.
+Disagreements: none on apps or goals between StatMuse and 11v11 (all 26 match). Wikipedia season page gives Yakubu 13 league goals; StatMuse and 11v11 both 12, explained by the Queudrue own-goal reassignment. Kept 12.
+Positions from footballsquads 2004-05 (Matt Taylor D, Cisse M, Berkovic M). Nationality from 11v11 club page; spellings aligned with other seasons' files (Lomana LuaLua, Dejan Stefanovic Serbia, Matt Taylor/Matthew Taylor). Rodic Slovenia (11v11 SVN). Mezague France (11v11 FRA).
+Unverified: nothing material.

@@ -1,0 +1,13 @@
+Sunderland 2008/09 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances merged; each capped at 25 rows): 30 players
+- 11v11 club page https://www.11v11.com/teams/sunderland/tab/players/season/2009/comp/1/: 30 players
+- footballsquads https://www.footballsquads.co.uk/eng/2008-2009/faprem/ : all 30 players found (position and nationality taken from it)
+Club PL goals (Wikipedia 2008-09 Premier League table): 34
+Own goals for: 2 (Kamil Zayatte (Hull, 20 Dec 2008), Titus Bramble (Wigan, 13 Sep 2008); both confirmed by Wikipedia 2008-09 Sunderland season); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2008-09-premier-league
+Player goals sum: 32
+Club goals minus own goals for: 32
+Difference: 0
+Disagreements: none on apps or goals; every player's apps (11v11 starts+subs) and goals match StatMuse.
+Notes: Chimbonda, Davenport and McCartney also appear for other clubs this season (Spurs, West Ham, West Ham).
+Unverified: nothing outstanding.

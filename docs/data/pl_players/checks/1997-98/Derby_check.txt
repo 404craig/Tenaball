@@ -1,0 +1,7 @@
+Derby 1997/98 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged StatMuse 28. 11v11 club page (https://www.11v11.com/teams/derby-county/tab/players/season/1998/comp/1/) 28. footballsquads (faprem/derby.htm) lists all 28 (positions from it; no nationality column, nationality from 11v11 club page / earlier-season spellings).
+Club goals: 52 (Wikipedia 1997-98 FA Premier League table)
+Own goals for: 1 (Ludek Miklosko, West Ham, 6 Dec 1997, Derby 2-0 West Ham) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1997-98-premier-league ; confirmed by Wikipedia 1997-98 Derby County season page.
+Player goals sum: 51. 52 - 1 - 51 = 0.
+Disagreements: 0 (apps and goals agree for all 28 players between StatMuse and 11v11). The Wikipedia Derby season page summary gave different goal splits (e.g. Baiano 7, Sturridge 7) but was not trusted over two agreeing sources.
+Unverified: none.

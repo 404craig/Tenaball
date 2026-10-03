@@ -1,0 +1,9 @@
+Nottingham Forest 1995/96 check
+Player counts: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (under cap, union 22). 11v11 club page (https://www.11v11.com/teams/nottingham-forest/tab/players/season/1996/comp/1/) 22 (A+S). Rows = 22.
+Club goals (Wikipedia 1995-96 FA Premier League table): 50.
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1995-96-premier-league) lists Dave Watson (Everton) on 17 Sep 1995. Confirmed by Wikipedia 1995-96 Nottingham Forest season page (Forest 3-2 Everton, 17 Sep 1995, Watson o.g.).
+Player goals sum: 49. 50 - 1 = 49. Difference: 0.
+Disagreements: 1. Bobby Howe apps: StatMuse 8 vs 11v11 club page and player page (https://www.11v11.com/players/bobby-howe-4757/) 4+5 = 9. StatMuse game log omits 17 Apr 1996 Forest 0-0 Coventry; 11v11 match page (https://www.11v11.com/matches/nottingham-forest-v-coventry-city-17-april-1996-22528/) shows Howe replacing Kevin Campbell at 46 min. Used 9; marked partial because no non-11v11 source confirms 9 (Wikipedia season page gives no apps for him). Goals 2 agree.
+All other apps and goals match.
+Positions from footballsquads 1995-1996/faprem/nottmf.htm (lists Howe as Stephen Howe; Bobby Howe used as in 1996/97). Nationality reused from earlier seasons; new players Kingsley Black (NIR) and Richard Irving (ENG) from 11v11 Nat column.
+Unverified: Howe's 9th appearance confirmed only by 11v11 (club, player and match pages).

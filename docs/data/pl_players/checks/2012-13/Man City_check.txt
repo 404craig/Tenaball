@@ -1,0 +1,11 @@
+Man City 2012/13 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (manchester-city slug); 11v11 PL club page https://www.11v11.com/teams/manchester-city/tab/players/season/2013/comp/1/; 11v11 player page (Yaya Toure) and match pages (Norwich v Man City 29 Dec 2012, Man City v Newcastle 30 Mar 2013); Wikipedia 2012-13 Man City season page; footballsquads.co.uk/eng/2012-2013/faprem/mancity.htm for position and nationality.
+Player count: final rows 25; StatMuse merged 25 (all three queries list the same 25); 11v11 club page 25.
+Club goals (Wikipedia 2012-13 Premier League table): 66
+Own goals for: 1 (Mark Bunn, Norwich, 29 Dec 2012, per 11v11 match page; Wikipedia season page: 1 PL own goal). StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2012-13-premier-league) lists 2: Bunn and James Perch (Newcastle); the Perch one was given to Yaya Toure by the Dubious Goals Committee (11v11 match page), so 1 used.
+Player goals sum: 65
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions (1):
+- Yaya Toure goals: StatMuse 6, 11v11 club page 7, 11v11 player page 7, Wikipedia 7 (StatMuse credits Perch own goal v Newcastle 30 Mar 2013). Used 7.
+All apps agree.
+Unverified: nothing material. Abdul Razak spelled Abdoul by StatMuse.

@@ -1,0 +1,9 @@
+Chelsea 2001/02 Premier League check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 players, list complete below 25-row cap); 11v11 club page 25; footballsquads lists all 25.
+Club goals (Wikipedia 2001-02 FA Premier League table): 66
+Own goals for: 1 (Colin Hendry, Bolton, 23 Dec 2001), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2001-02-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/chelsea-v-bolton-wanderers-23-december-2001-10626/
+Player goals sum: 65
+Difference (66 - 1 - 65): 0
+Disagreements: none. All 25 players match on apps (11v11 starts + subs) and goals between StatMuse and 11v11.
+Notes: Samuele Dalla Bona listed as D by footballsquads (position DEF used per spec). Nationalities for Bosnich (Australia), Dalla Bona (Italy), Jokanovic (11v11 YUG, written Serbia per existing convention) from 11v11; others reused from later seasons. Stanic reused as Croatia (11v11 shows YUG).
+Unverified: nothing.

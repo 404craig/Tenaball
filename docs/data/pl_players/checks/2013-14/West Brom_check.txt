@@ -1,0 +1,9 @@
+Club: West Brom 2013/14
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25 (at cap), fewest-appearances 25 (at cap); union = 28 players (Mulumbu, Anichebe, Gera only in most/fewest lists). 11v11 PL club page (https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2014/comp/1/) 28 players. Same 28 players.
+Disagreements: 0. Every player's apps (A+S) and goals match between StatMuse and 11v11.
+Club PL goals: 43 (Wikipedia 2013-14 Premier League table).
+Own goals for: 2. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2013-14-premier-league): Costel Pantilimon (Man City), Fabian Delph (Aston Villa). Confirmed on 11v11 match pages: Pantilimon 85', West Brom 2-3 Man City, 4 Dec 2013 (https://www.11v11.com/matches/west-bromwich-albion-v-manchester-city-04-december-2013-306001/); Delph 9', Aston Villa 4-3 West Brom, 29 Jan 2014 (https://www.11v11.com/matches/aston-villa-v-west-bromwich-albion-29-january-2014-306693/). Wikipedia season page summary gave no own-goals row.
+Player goals sum: 41
+Difference: 0 (43 - 2 - 41).
+Position/nationality: https://www.footballsquads.co.uk/eng/2013-2014/faprem/wba.htm (Long, Rosenberg, Anelka in players no longer at club). Steven Reid listed M there. Berahino ENG there, Burundi used to match other seasons. Bifouma FRA there, Congo used (country he later played for). Popov MKD shown as North Macedonia per earlier convention.
+Unverified: nothing material.

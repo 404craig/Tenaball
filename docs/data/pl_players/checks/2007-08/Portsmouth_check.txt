@@ -1,0 +1,11 @@
+Club: Portsmouth 2007/08
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 28 unique (Campbell, Distin, Muntari missing from player-stats list, present in most/fewest lists). 11v11 PL club page (https://www.11v11.com/teams/portsmouth/tab/players/season/2008/comp/1/) 28 players (starts + subs). Same 28 players.
+Club PL goals: 48 (https://en.wikipedia.org/wiki/2007%E2%80%9308_Premier_League league table).
+Own goals for: 3 (Craig Gardner, Aston Villa; Ivar Ingimarsson, Reading; Nigel Reo-Coker, Aston Villa) per https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2007-08-premier-league. Wikipedia 2007-08 Portsmouth season page (summariser) did not list own goals, so not separately confirmed; goal sum check (48 - 3 = 45) is consistent.
+Player goals sum: 45
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: 1. Matt Taylor apps: StatMuse 14, 11v11 club page 13 (3 starts + 10 subs). Tie-breaker 11v11 player page https://www.11v11.com/players/matt-taylor-4490/ gives Premier League 3 apps + 10 subs, and the Wikipedia 2007-08 Portsmouth season squad table gives 3+10. Used 13. All other apps and goals agree (11v11 shows a dash for zero goals).
+Position source: https://www.footballsquads.co.uk/eng/2007-2008/faprem/portsm.htm (O'Neil, Matt Taylor, Traore, Benjani in "no longer at club"). Lauren and Songo'o listed M, Utaka F.
+Nationality: footballsquads 2007/08 page has no nationality column; reused from earlier-season CSVs where available. Others: Milan Baros (born Valasske Mezirici, Czech Republic), Pedro Mendes (born Guimaraes, Portugal) from footballsquads birth place; Lucien Aubey Congo (born Brazzaville, 5 caps for Congo per https://en.wikipedia.org/wiki/Lucien_Aubey), Djimi Traore Mali (born France, capped by Mali per Wikipedia), Lauren Cameroon (full name Laureano Bisan-Etame Mayer per https://en.wikipedia.org/wiki/Lauren_Etame_Mayer), Franck Songo'o Cameroon (3 caps per Wikipedia).
+Unverified: own goals for (3) rest on StatMuse plus the goal sum only.

@@ -1,0 +1,14 @@
+Liverpool 2024/25 check
+Player count per source: liverpoolfc.com 24; Wikipedia 20 in first extract plus Alisson, Kelleher, Jaros, Danns in second query; StatMuse NOT READ (all three Liverpool URLs rejected by the proxy with HTTP 429 and an instruction not to refetch); rows written: 24
+Club PL goals: 86 (Wikipedia Premier League table)
+Own goals for: 1 (Wikipedia season page team totals)
+Player goals sum: 85; difference (club - og - players): 0
+Disagreements and resolutions: none between liverpoolfc.com and Wikipedia (all apps and goals match, including Kelleher 10, Jaros 1, Danns 1).
+Unverified: no StatMuse data, so no third source; sources_agree rests on liverpoolfc.com plus Wikipedia. Kelleher figure comes from those two only. Jayden Danns position/nationality not confirmed from footballsquads.
+
+VERIFIED (2026-10-02)
+- StatMuse now read: player-stats, most-appearances, fewest-appearances each 24 rows (under the 25 cap). All 24 names, apps and goals match the CSV exactly. No missing players.
+- Changes: source column switched to StatMuse player-stats URL for all rows; note added that StatMuse, liverpoolfc.com and Wikipedia agree.
+- Position/nationality: all checked against footballsquads liverpool.htm and match, except Jayden Danns (not on that page); FWD/England confirmed from Wikipedia player page (England youth international, never senior-capped).
+- Own goals for: 1, Destiny Udogie (Spurs) 27 Apr 2025, from StatMuse most-own-goals-against-liverpool query; Wikipedia goalscorers Own goals PL = 1. og_source updated.
+- Goals diff 0.

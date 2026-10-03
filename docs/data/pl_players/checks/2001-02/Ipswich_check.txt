@@ -1,0 +1,9 @@
+Ipswich 2001/02 Premier League check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (union 26); 11v11 club page 26; footballsquads lists all 26.
+Club goals (Wikipedia 2001-02 FA Premier League table): 41 (Wikipedia season page results also sum to 41)
+Own goals for: 0. StatMuse players-with-own-goals-vs-ipswich-town-2001-02-premier-league returned HTTP 422 (no result); Wikipedia 2001-02 Ipswich Town season page lists no opponent own goals.
+Player goals sum: 41
+Difference (41 - 0 - 41): 0
+Disagreements: 2 (Wikipedia only). Wikipedia season goalscorer table credits Jim Magilton and Titus Bramble with 1 PL goal each and totals 43 PL goals, which exceeds the club's 41. StatMuse and 11v11 agree both scored 0 PL goals; two agreeing sources kept. All 26 players match on apps (11v11 A + S) and goals between StatMuse and 11v11.
+Notes: footballsquads lists Gaardsoe as M and Jermaine Wright as M (positions used). Nationalities for players without earlier rows from 11v11 club page.
+Unverified: own goals for rests on Wikipedia plus StatMuse empty result, consistent with the goal sum.

@@ -1,0 +1,8 @@
+Man Utd 2005/06 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25, fewest-apps 25; merged 26 (Wes Brown only in most/fewest, Tim Howard only in player-stats/fewest). 11v11 club page 26 (total = A+S). footballsquads 2005-06 (/faprem/manutd.htm): all 26 present (Keane, Liam Miller in "no longer at club").
+Club PL goals: 72 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/).
+Own goals for: 4 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2005-06-premier-league: Bruno N'Gotty (Bolton), Carlos Bocanegra (Fulham), Jason Euell (Charlton), Pascal Chimbonda (Wigan). Wikipedia season page confirms N'Gotty (31 Dec 2005) and Euell (7 May 2006); 11v11 match pages confirm Bocanegra (Man Utd v Fulham 4 Feb 2006, 6 min) and Chimbonda (Wigan v Man Utd 6 Mar 2006, 90 min).
+Player goals sum: 68. 72 - 4 - 68 = 0.
+Disagreements: none (all 26 apps and goals match between StatMuse and 11v11).
+Positions from footballsquads 2005-06 (Ronaldo, Smith, Rossi listed F; Richardson M); nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: nothing material.

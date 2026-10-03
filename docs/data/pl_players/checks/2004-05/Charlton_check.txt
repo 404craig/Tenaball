@@ -1,0 +1,8 @@
+Charlton 2004/05 check
+Player count per source: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (all under the 25-row cap, identical sets); 11v11 club page https://www.11v11.com/teams/charlton-athletic/tab/players/season/2005/comp/1/ 22 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/charlton.htm: all 22 present (Stuart in 'no longer at club'). Final rows: 22.
+Club PL goals: 42, Wikipedia 2004-05 FA Premier League table.
+Own goals for: 2, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2004-05-premier-league: David Unsworth (Portsmouth, 21 Aug 2004, Charlton 2-1 Portsmouth, confirmed by Wikipedia 2004-05 Charlton Athletic F.C. season match report) and Stephen Carr (Newcastle, 17 Oct 2004, Charlton 1-1 Newcastle, confirmed by 11v11 match page https://www.11v11.com/matches/charlton-athletic-v-newcastle-united-17-october-2004-26053/ which notes the Dubious Goals Committee changed it from Lisbie to Carr own goal).
+Player goals sum: 40. 42 - 2 - 40 = 0.
+Disagreements: none; all 22 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (no nationality column). Nationality: reused other seasons' spellings where present; Mark Fish (South Africa) and Graham Stuart (England) from 11v11 nationality column.
+Unverified: nothing outstanding.

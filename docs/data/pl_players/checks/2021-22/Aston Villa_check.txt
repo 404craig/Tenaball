@@ -1,0 +1,9 @@
+Club: Aston Villa 2021/22
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 31 unique. 11v11 PL club page 31. Same 31 players; all apps (starts+subs) and goals match.
+Disagreements: none.
+Club PL goals (https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League table): 52
+Own goals for: 2 (Lucas Digne, Everton; Reece James, Chelsea 26 Dec 2021; StatMuse own-goals query. Wikipedia 2021-22 Aston Villa season goalscorers table shows 2 own goals; James OG also confirmed by NBC Sports clip title. Digne OG not individually confirmed outside StatMuse).
+Player goals sum: 50
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2021-2022/engprem/avilla.htm. Tuanzebe listed ENG there; DR Congo used for consistency with later seasons.
+Unverified: nothing material.

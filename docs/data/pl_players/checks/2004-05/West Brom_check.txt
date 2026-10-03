@@ -1,0 +1,10 @@
+West Brom 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap, alphabetical; Gera and Kuszczak cut off), most-apps 25, fewest-apps 25; merged 27. 11v11 club page (https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2005/comp/1/) 27 (total = A+S). footballsquads 2004-05 (/faprem/wba.htm): all 27 present (Dobie, Haas, Contra in "no longer at club").
+Club PL goals: 36 (Wikipedia 2004-05 FA Premier League table; 11v11 final table agrees).
+Own goals for: 2, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2004-05-premier-league, confirmed on 11v11 match pages:
+ - Dejan Stefanovic (Portsmouth) 4 Dec 2004, 14 min: https://www.11v11.com/matches/portsmouth-v-west-bromwich-albion-04-december-2004-26837/
+ - Richard Dunne (Man City) 28 Dec 2004, 85 min: https://www.11v11.com/matches/manchester-city-v-west-bromwich-albion-28-december-2004-27100/
+Player goals sum: 34. 36 - 2 - 34 = 0.
+Disagreements: none on apps or goals between StatMuse and 11v11 (all 27 match). Spelling only: Sakiri (StatMuse Shakjiri, 11v11 Shakiri); footballsquads form used.
+Positions from footballsquads 2004-05 (Gera F, Gaardsoe M, Richardson M, Wallwork D, Scimeca D, Sakiri M, Andy Johnson M). Nationality from 11v11 club page; spellings aligned with other seasons' files (Andy Johnson Wales, Kanu, Zoltan Gera). Sakiri North Macedonia (11v11 MKD; naming follows other files).
+Unverified: nothing material.

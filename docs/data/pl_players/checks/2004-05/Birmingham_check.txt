@@ -1,0 +1,9 @@
+Birmingham 2004/05 check
+Player count per source: StatMuse 27 (player-stats 25, most-apps 25, fewest-apps 25; union 27, most-apps adds Walter Pandiani, fewest-apps adds Stern John and Pandiani); 11v11 club page https://www.11v11.com/teams/birmingham-city/tab/players/season/2005/comp/1/ 27 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/birmin.htm: all 27 present (John, Gronkjaer, Forssell, Savage, Yorke under players no longer at club).
+Club PL goals: Wikipedia 2004-05 FA Premier League table (https://en.wikipedia.org/wiki/2004%E2%80%9305_FA_Premier_League): 40
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2004-05-premier-league): Moritz Volz (Fulham), 22 Jan 2005; confirmed on 11v11 match page https://www.11v11.com/matches/birmingham-city-v-fulham-22-january-2005-27352/ (Volz og 51).
+Player goals sum: 39. 40 - 1 - 39 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (Clapham D, Tebily D, Nafti M though 11v11 says defender, Anderton M).
+Nationality: footballsquads has no nationality column; spellings reused from other seasons' CSVs; Darren Anderton (England) and Jesper Gronkjaer (Denmark) from the 11v11 club page.
+Unverified: nothing outstanding.

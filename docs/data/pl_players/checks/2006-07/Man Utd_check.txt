@@ -1,0 +1,9 @@
+Man Utd 2006/07 check
+Player count per source: StatMuse 25 (player-stats 25 and fewest-apps 25 give the same 25; the fewest-apps list runs from 1 to 35 apps, the season maximum, so it is complete; most-apps not separately read as 11v11 fully covers it); 11v11 club page https://www.11v11.com/teams/manchester-united/tab/players/season/2007/comp/1/ 25 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/manutd.htm: all 25 present (Larsson in "no longer at club").
+Club PL goals: 83 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia 2006-07 Premier League page also states "Most goals scored: 83, Manchester United"; its table rows could not be extracted).
+Own goals for: 3 (Ian Pearce, Fulham; Lloyd Doyley, Watford; Phil Neville, Everton) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2006-07-premier-league
+Player goals sum: 80. 83 - 3 - 80 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Ronaldo F, Richardson M, Kieran Lee D).
+Nationality: footballsquads 2006-07 has no nationality column. Reused from other seasons' CSVs; new players from the 11v11 club page Nat column: Heinze ARG, Larsson SWE, Kieran Lee ENG, Dong Fangzhuo CHN, Solskjaer NOR.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

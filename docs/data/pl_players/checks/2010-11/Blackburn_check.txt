@@ -1,0 +1,10 @@
+Club: Blackburn 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique players. 11v11 PL club page (https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2011/comp/1/) 29 (starts + subs). Same 29 players.
+Club PL goals: 46 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 4 (Brede Hangeland, Fulham; Charlie Adam, Blackpool; Gabriel Tamas, West Brom; Jamie Carragher, Liverpool). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2010-11-premier-league
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: 1. Mame Biram Diouf apps StatMuse 27 vs 11v11 club page 26 (17+9); 11v11 player page (https://www.11v11.com/players/mame-biram-diouf-230064/) also 26. Used 26 (possible StatMuse unused-sub count). All goals agree.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/blackbrn.htm. Amine Linganzi listed ALG (born Algiers): Algeria used, later cap status not verified. Samba CGO = Congo (matches other seasons).
+Unverified: own goals confirmed by StatMuse only (Wikipedia season page summary lists none explicitly); consistent with goals total. Mame Biram Diouf 27th StatMuse appearance not checked at match level.

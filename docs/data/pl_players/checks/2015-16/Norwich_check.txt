@@ -1,0 +1,9 @@
+Club: Norwich 2015/16
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 28 (adds Hoolahan, Mulumbu, Odjidja-Ofoe). 11v11 PL club page (https://www.11v11.com/teams/norwich-city/tab/players/season/2016/comp/1/) 28 (A+S). Same 28 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 39 (Wikipedia 2015-16 Premier League table).
+Own goals for: 1 (Craig Cathcart, Watford, 11 May 2016). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2015-16-premier-league
+Player goals sum: 38
+Difference: 0 (39 - 1 - 38)
+Position/nationality: https://www.footballsquads.co.uk/eng/2015-2016/faprem/norwich.htm (Johnson, Grabban, Hooper in players no longer at club). Mbokani and Mulumbu COD there, written DR Congo. Redmond full_name reused from later seasons.
+Unverified: own goal for from StatMuse only, consistent with goal sum.

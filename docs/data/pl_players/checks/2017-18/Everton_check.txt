@@ -1,0 +1,14 @@
+Everton 2017/18 Premier League check
+StatMuse: player-stats 25 (capped, alphabetical; missing Davies, Rooney, Bolasie, Walcott, Coleman), most-appearances 25 (capped), fewest-appearances 25 (capped); union 30
+11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2018/comp/1/): 30 players
+Rows written: 30. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2017-18 Premier League table): 44
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2017-18-premier-league): Gaetan Bong (Brighton, 10 Mar 2018, confirmed by premierleague.com report https://www.premierleague.com/news/636351), Kyle Naughton (Swansea, 14 Apr 2018, confirmed by 11v11 match page https://www.11v11.com/matches/swansea-city-v-everton-14-april-2018-357324/)
+Player goals sum: 42. Club goals minus own goals: 42. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/everton.htm , but the fetched page is truncated at squad number 30 (Mason Holgate). Fallbacks:
+- Holgate (position), Besic, Lennon, Mirallas: footballsquads 2016-17 Everton page
+- Kenny, Lookman: footballsquads 2018-19 Everton page
+- Baningime, Sandro: Wikipedia player pages (not footballsquads)
+- Holgate nationality Jamaica and Lookman nationality Nigeria kept to match later seasons' files (footballsquads lists ENG for both)
+Unverified: Baningime and Sandro position/nationality not confirmed on footballsquads

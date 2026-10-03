@@ -1,0 +1,8 @@
+Chelsea 2007/08 check
+Player count per source: StatMuse 27 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: fewest/most add Tal Ben Haim and Wayne Bridge); 11v11 club page 27 (its "Apps" column is starts, "Starts" column is subs; totals computed as sum); footballsquads roster: all 27 present (Glen Johnson in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 65
+Own goals for: 1 (Richard Dunne, Man City, 5 Apr 2008) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2007-08-premier-league
+Player goals sum: 64. 65 - 1 - 64 = 0.
+Disagreements: none (all 27 players match on apps and goals between StatMuse and 11v11).
+Positions from footballsquads 2007-08 (Scott Sinclair and Salomon Kalou listed as Forward that season).
+Unverified: own goal not separately confirmed by Wikipedia or 11v11 match page, but totals reconcile exactly.

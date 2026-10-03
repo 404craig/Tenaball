@@ -1,0 +1,11 @@
+West Ham 1998/99 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (29 unique merged); 11v11 club page (https://www.11v11.com/teams/west-ham-united/tab/players/season/1999/comp/1/) = 29; all 29 in footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/westham.htm; Impey, Hartson, Breacker in no-longer-at-club section).
+Club goals (Wikipedia 1998-99 FA Premier League table): 46
+Own goals for: 1 (Richard Rufus (Charlton) 24 Oct 1998), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1998-99-premier-league; confirmed by 11v11 match page https://www.11v11.com/matches/charlton-athletic-v-west-ham-united-24-october-1998-23798/ (18 min own goal).
+Player goals sum: 45
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 29 players.
+Disagreements: none
+Names: Manny Omoyinmi (full Emmanuel Omoyinmi; footballsquads Emmanuel), Stan Lazaridis (footballsquads Lazarides), Marc-Vivien Foe (full Marc-Vivien Foé).
+Positions from footballsquads 1998-1999 (Lee Hodges M, 11v11 Forward). Nationality from 11v11 club page / other seasons (Samassi Abou: 11v11 France).
+Unverified: nothing material.

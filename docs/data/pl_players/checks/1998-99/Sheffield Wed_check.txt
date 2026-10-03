@@ -1,0 +1,11 @@
+Sheffield Wed 1998/99 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (31 unique merged); 11v11 club page (https://www.11v11.com/teams/sheffield-wednesday/tab/players/season/1999/comp/1/) = 31 (A starts + S subs); all 31 in footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/sheffwed.htm; Di Canio, Hyde, Magilton in no-longer-at-club section).
+Club goals (Wikipedia 1998-99 FA Premier League table): 41
+Own goals for: 0. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1998-99-premier-league) lists 1 (Laurent Charvet, Newcastle, 14 Nov 1998), but the 11v11 match page (https://www.11v11.com/matches/newcastle-united-v-sheffield-wednesday-14-november-1998-23831/) and the Wikipedia 1998-99 Sheffield Wednesday season page both credit Petter Rudi (80 min) with that goal. Taken as Rudi goal, og_for 0.
+Player goals sum: 41
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 agree for all 31 players.
+Disagreements: 1. Petter Rudi goals StatMuse 5 vs 11v11 6 (Newcastle 14 Nov 1998 goal, see above). Resolved 6 (11v11 club page, 11v11 match page, Wikipedia season page). If the StatMuse own goal view were adopted instead: Rudi 5, og_for 1, diff still 0.
+Names: Phil Scott (full Philip Scott), Steve Haslam (full Steven Haslam), Ritchie Humphreys (11v11 Richie). Mark McKeever and Alan Quinn: 11v11 Ireland, recorded as Republic of Ireland. Dejan Stefanovic nationality Serbia as used in other seasons.
+Positions from footballsquads 1998-1999 (Briscoe D, Humphreys F, Morrison F, Oakes M, Cobian D, Haslam D). Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: the Newcastle 14 Nov 1998 goal attribution (Rudi vs Charvet own goal) has conflicting sources.

@@ -1,0 +1,9 @@
+Southampton 2003/04 check
+Player count per source: StatMuse most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 29; 11v11 club page (PL) 29; footballsquads roster lists all 29. Player-stats query not run separately (union of most/fewest = 29 = 11v11 count).
+Club goals: 44 (Wikipedia 2003-04 Premier League table)
+Own goals for: 3 (Anthony Gardner, Spurs; Sebastien Schemmel, Portsmouth; Titus Bramble, Newcastle) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2003-04-premier-league
+Player goals sum: 41
+Difference: 0
+Disagreements: none; all 29 players match.
+Notes: Danny Higginbotham 11v11 nationality GIB, England reused from earlier seasons. Paul Jones moved to Wolves in Jan 2004 (row in both clubs).
+Unverified: OGs not cross-checked against a second source.

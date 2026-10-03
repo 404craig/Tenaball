@@ -1,0 +1,9 @@
+Reading 2006/07 check
+Player count per source: StatMuse 23 (player-stats query returned 23 rows, below the 25-row cap, so it is complete; most/fewest not needed); 11v11 club page https://www.11v11.com/teams/reading/tab/players/season/2007/comp/1/ 23 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/reading.htm: all 23 present.
+Club PL goals: 52 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia 2006-07 Premier League table rows could not be extracted).
+Own goals for: 4 (Anton Ferdinand, West Ham; Cesc Fabregas, Arsenal; Joleon Lescott, Everton; Michael Essien, Chelsea) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-reading-2006-07-premier-league
+Player goals sum: 48. 52 - 4 - 48 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Ingimarsson M, Convey F, Seol F, Gunnarsson D).
+Nationality: footballsquads 2006-07 has no nationality column. Reused from other seasons' CSVs; Sam Sodje (new) Nigeria from the 11v11 club page Nat column.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

@@ -1,0 +1,25 @@
+Burnley 2025/26 PL check
+Player count per source:
+- StatMuse (most-apps and fewest-apps queries merged, each capped at 25 rows): 28
+- ESPN squad page: 0, page returned no data
+- footballsquads.co.uk burnley.htm: all 28 found (Sonne, Banel listed as left)
+- Wikipedia 2025-26 Burnley F.C. season: 28 with apps
+Club PL goals (Wikipedia table): 38
+Own goals for: 3 (Wikipedia season page)
+Sum of player goals: 35
+Difference: 0
+Disagreements:
+- Ashley Barnes apps: StatMuse 8, Wikipedia season page 0+7, Wikipedia player page 7. Used 7.
+Unverified: ESPN not usable. 11v11 team page checked as ceiling but columns unclear (appears to split starts/subs), not relied on. Positions/nationality from footballsquads codes.
+Default StatMuse URL truncated at 25 and missed Sonne, Flemming, Laurent.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/burnley/tab/players/season/2026/comp/1/ read: 28 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- Positions/nationality already from footballsquads burnley.htm (pilot); not refetched.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 38 - own goals for 3 - player goals 35 = 0.
+- Burnley_summary.json written.
+Changes:
+- Ashley Barnes: sources_agree no -> yes (7 apps, 0 goals confirmed by 11v11 PL club page)

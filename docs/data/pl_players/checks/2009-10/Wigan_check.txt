@@ -1,0 +1,11 @@
+Wigan 2009/10 Premier League check
+Player counts: StatMuse merged (player-stats, most-appearances, fewest-appearances; each capped at 25) = 27; 11v11 club page = 27; all 27 players listed by both.
+Sources: https://www.statmuse.com/fc/ask/wigan-athletic-premier-league-player-stats-2009-10 ; https://www.11v11.com/teams/wigan-athletic/tab/players/season/2010/comp/1/
+Positions and nationality: https://www.footballsquads.co.uk/eng/2009-2010/faprem/wigan.htm
+Club PL goals (Wikipedia 2009-10 Premier League table): 37
+Own goals for: 1 (Jonathan Spector (West Ham), 24 Apr 2010); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2009-10-premier-league
+Player goals sum: 36
+Difference (club goals - own goals for - player goals): 0
+Disagreements: apps and goals agree between StatMuse and 11v11 for every player (0 disagreements).
+Own goals note: StatMuse own-goals list used; the Wikipedia season page summary did not list own goals, so no independent second confirmation, but the count reconciles exactly with club goals minus player goals.
+Other notes: Victor Moses: footballsquads lists ENG for 2009/10; nationality Nigeria reused from earlier seasons (later capped by Nigeria); Hendry Thomas: 11v11 lists forward; footballsquads M used

@@ -1,0 +1,9 @@
+Man Utd 2022/23 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances NOT READ (HTTP 429 from proxy, which said not to retry); merged StatMuse union 26 (Wout Weghorst only in most-appearances); 11v11 PL squad page 26; rows written 26
+11v11 fully covers the unread query: all 26 11v11 players are in the StatMuse union and every figure matches.
+Club PL goals: 58 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (StatMuse own-goals-vs-manchester-united query: Alexis Mac Allister, Jacob Ramsey; Wikipedia 2022-23 Manchester United season own goals PL = 2, Mac Allister named)
+Player goals sum: 56; difference (58 - 2 - 56): 0
+Disagreements: none.
+Position/nationality: footballsquads eng/2022-2023/engprem/manutd.htm (all 26 found). Aaron Wan-Bissaka: footballsquads 2022-23 shows ENG (he had no senior caps then); DR Congo used to match later seasons, his senior international team.
+Unverified: Jacob Ramsey own goal named only by StatMuse (count 2 confirmed by Wikipedia).

@@ -1,0 +1,10 @@
+Club: Sunderland 2015/16
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 31. 11v11 PL club page (https://www.11v11.com/teams/sunderland/tab/players/season/2016/comp/1/) 31 (A+S). Same 31 players.
+Disagreements: 1.
+- Patrick van Aanholt goals: StatMuse 6, 11v11 4, Wikipedia season page 4. StatMuse game log credits him vs Swansea (13 Jan 2016) and vs Aston Villa (2 Jan 2016); 11v11 match pages give those as Federico Fernandez own goal (Swansea 2-4 Sunderland) and Micah Richards own goal (Sunderland 3-1 Aston Villa). Used 4 (11v11 + Wikipedia, tie-break by 11v11 match pages).
+Club PL goals: 48 (Wikipedia 2015-16 Premier League table).
+Own goals for: 4. David De Gea (Man Utd, 13 Feb 2016; StatMuse and 11v11 match page), Olivier Giroud (Arsenal, 5 Dec 2015; StatMuse, press reports "scores at both ends"), Federico Fernandez (Swansea, 13 Jan 2016; 11v11 match page), Micah Richards (Aston Villa, 2 Jan 2016; 11v11 match page). Wikipedia season page gives 4 own goals. StatMuse OG query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2015-16-premier-league) lists only De Gea and Giroud because it credits the other two to van Aanholt.
+Player goals sum: 44
+Difference: 0 (48 - 4 - 44). Under StatMuse's version: 48 - 2 - 46 = 0 as well.
+Position/nationality: https://www.footballsquads.co.uk/eng/2015-2016/faprem/sunder.htm (Pantilimon, Graham, Coates, Gomez, Fletcher, Adam Johnson in players no longer at club). Seb Larsson player name reused from later seasons.
+Unverified: Giroud own goal not checked on an 11v11 match page.

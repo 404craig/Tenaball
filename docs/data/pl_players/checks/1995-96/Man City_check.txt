@@ -1,0 +1,9 @@
+Man City 1995/96 Premier League check
+Player count: StatMuse player-stats 25 (no Phelan, Rosler), most-apps 25 (no Kerr, Mazzarelli), fewest-apps 25; union 27. 11v11 club page 27 (https://www.11v11.com/teams/manchester-city/tab/players/season/1996/comp/1/); footballsquads faprem/mancity.htm lists all 27.
+Club goals: 33 (Wikipedia 1995-96 FA Premier League table)
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1995-96-premier-league) returns HTTP 422 (no results); Wikipedia 1995-96 Manchester City season page shows no own goals in City's favour. 11v11 goals sum to 33.
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Scott Hiley apps: StatMuse 6 (game log: 24 Feb Newcastle 90 min, 2 Mar Blackburn 18, 5 Mar Arsenal 45, 16 Mar Southampton 15, 23 Mar West Ham 33, 30 Mar Bolton 89); 11v11 5 (2 starts + 3 subs; West Ham v Man City 23 Mar 1996 match page lists him as unused substitute). Wikipedia Scott Hiley career table: Man City loan 1996 6 apps. Resolved to 6 (StatMuse + Wikipedia). Not fully settled at match level.
+Name notes: StatMuse "Gerry Creaney" = 11v11 "Gerard Creaney"; StatMuse "Mikheil Kavelashvili" = 11v11 "Mikhail Kavelashvili"; footballsquads "Georgiou Kinkladze" = Georgi Kinkladze.
+Positions from footballsquads (Mazzarelli M, Clough F).

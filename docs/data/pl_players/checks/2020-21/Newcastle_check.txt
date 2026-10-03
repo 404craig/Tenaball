@@ -1,0 +1,9 @@
+Newcastle 2020/21 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 27; 11v11 PL squad page 27; rows written 27. union adds Sean Longstaff, Ryan Fraser to player-stats 25.
+Club PL goals: 46 (Wikipedia 2020-21 Premier League table)
+Own goals for: 2 (Luke Shaw (Man Utd, 17 October 2020, confirmed by newcastleunited.com report), Issa Diop (West Ham, 17 April 2021, confirmed by whufc.com report)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2020-21-premier-league. Confirmation: Wikipedia season page showed no goalscorer table as read; both own goals confirmed by match reports: https://newcastleunited.com/en/news/newcastle-united-1-manchester-united-4 and https://www.whufc.com/news/articles/2021/april/17-april/goals-newcastle-united-3-2-west-ham-united
+Player goals sum: 44 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2020-2021/engprem/newcas.htm fetched 3 times but the player table never rendered (only header). Position/nationality from Wikipedia 2020-21 Newcastle season squad (GK/DF/MF/FW), cross-checked with earlier footballsquads-based season files. Joelinton FWD (Wikipedia 2020-21 FW). Karl Darlow set to Wales (later capped; Wikipedia shows ENG). Unverified on footballsquads: all Newcastle positions/nationalities.
+Unverified: Newcastle positions/nationalities not confirmed on footballsquads (see above).

@@ -1,0 +1,11 @@
+Spurs 2017/18 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/tottenham-hotspur-premier-league-player-stats-2017-18 (+ most/fewest appearances queries); 11v11 https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2018/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2017-2018/faprem/tottenha.htm (position, nationality).
+Player counts: All three StatMuse queries return the same 25 rows; 11v11 club page 25 rows (fully covers squad). Every player's apps and goals match.
+Rows written: 25
+Club goals (Wikipedia 2017-18 Premier League table): 74
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2017-18-premier-league). 4 own goals for: Michy Batshuayi (Chelsea) Spurs 1-2 Chelsea 20 Aug 2017 (thfcdb.com match page); Ryan Shawcross (Stoke) Spurs 5-1 Stoke 9 Dec 2017 (channelstv report); Phil Jones (Man Utd) Spurs 2-0 Man Utd 31 Jan 2018 (11v11 match page); Christian Fuchs (Leicester) Spurs 5-4 Leicester 13 May 2018 (11v11 match page).
+Player goals sum: 70
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: from footballsquads 2017/18 (G/D/M/F mapped to GK/DEF/MID/FWD); nationality = footballsquads code for this season. Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Unverified: nothing outstanding.

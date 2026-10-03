@@ -1,0 +1,12 @@
+Norwich 1992/93 Premier League check
+Player count: StatMuse merged 21 (player-stats 21, most-apps 21, fewest-apps 21); 11v11 club page 21 (https://www.11v11.com/teams/norwich-city/tab/players/season/1993/comp/1/). Rows: 21
+Club goals: 61 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 3 per StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-1992-93-premier-league): John Pemberton (Sheffield Utd), Nick Henry (Oldham), Rufus Brevett (QPR). 11v11 match pages: Norwich 2-1 Sheff Utd 21 Nov 1992 has an og (named Paul Beesley, StatMuse names Pemberton) -> og confirmed by two sources, name differs. QPR 3-1 Norwich 6 Mar 1993: 11v11 credits Robins. Norwich 1-0 Oldham 13 Mar 1993: 11v11 credits David Phillips.
+Player goals sum: 58 (StatMuse figures except as below)
+Difference (club goals - og - player goals): 0. (11v11 alternative: 60 player goals + 1 og = 61, also consistent.)
+Disagreements (2):
+- Mark Robins goals StatMuse 14 vs 11v11 15 (QPR away 6 Mar). Wikipedia 1992-93 Norwich City season infobox: league top scorer Robins 14 -> 14, so Brevett og accepted.
+- David Phillips goals StatMuse 9 vs 11v11 10 (Oldham home 13 Mar: Henry og vs Phillips). No third source found (Wikipedia season page gives no scorer for that match). Kept StatMuse 9, sources_agree=no. If 11v11 is right, Phillips 10 and og_for 2.
+All apps match between StatMuse and 11v11 starts+subs.
+Positions/nationality: footballsquads has no 1992-93 season (archive starts 1993/94; /eng/1992-1993/faprem/ returns 404), so reused from 1993-94+ files for the same player, otherwise from the 11v11 club page.
+Unverified: David Phillips goals (9 or 10) and hence og_for (3 or 2); og scorer name in 21 Nov match (Pemberton vs Beesley).

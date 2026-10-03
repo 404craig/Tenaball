@@ -1,0 +1,9 @@
+Man City 1993/94 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (capped; union 32); 11v11 club page (https://www.11v11.com/teams/manchester-city/tab/players/season/1994/comp/1/) 32; all 32 in footballsquads https://www.footballsquads.co.uk/eng/1993-1994/faprem/mancity.htm. Rows: 32
+Club goals: 38 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 1 (Kevin Horlock, Swindon, 26 Feb 1994) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-1993-94-premier-league; confirmed by Wikipedia 1993-94 Manchester City season page (Horlock o.g., 26 Feb 1994 v Swindon, H, 2-1).
+Player goals sum: 37
+Difference: 0
+Disagreements: 1. Peter Reid apps: StatMuse 3, 11v11 4. Resolved to 4 from four 11v11 match pages (Leeds 14 Aug sub, Everton 17 Aug sub, Spurs 21 Aug start, Blackburn 24 Aug sub). All other apps and goals match.
+Unverified: none beyond the above.
+Positions: footballsquads mancity.htm (Ingebrigtsen D). Nationality: reused spellings from other seasons, else 11v11 club page (Groenendijk, Ingebrigtsen, Quigley, Shutt). Steffen Karl: 11v11 gives no nationality; Germany from Wikipedia (born East Germany, only U21 caps). Names: footballsquads Alphonse Groenendijk / Stefan Karl, 11v11 and StatMuse Alfons Groenendijk / Steffen Karl used.

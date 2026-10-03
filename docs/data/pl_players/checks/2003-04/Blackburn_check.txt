@@ -1,0 +1,10 @@
+Blackburn 2003/04 check
+Player count per source: StatMuse player-stats 25 (capped; missing Gresko, Reid, Tugay), most-apps 25, fewest-apps 25, union 28; 11v11 club page https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2004/comp/1/ 28 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2003-2004/faprem/blackbrn.htm: 27 of 28 shown (Michael Gray not in the summarised list).
+Club PL goals: Wikipedia 2003-04 FA Premier League table (https://en.wikipedia.org/wiki/2003%E2%80%9304_FA_Premier_League): 51
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2003-04-premier-league): Matthew Taylor (Portsmouth), Nikos Dabizas (Leicester), Stephen Carr (Spurs), Trevor Sinclair (Man City). Sinclair og confirmed on 11v11 match page https://www.11v11.com/matches/blackburn-rovers-v-manchester-city-25-august-2003-16324/ (44 min). 13 further 11v11 match pages checked (34 of 51 goals) with no other own goals; the remaining 17 goals (16 matches) equal the outstanding player goals (14) plus the three other StatMuse own goals.
+Player goals sum: 47. 51 - 4 - 47 = 0.
+Disagreements: none on apps/goals between StatMuse and 11v11. Wikipedia season page summary omitted Baggio and Friedel goals; StatMuse and 11v11 agree (Friedel goal confirmed on 11v11 match page Charlton v Blackburn 21 Feb 2004).
+Positions: footballsquads 2003-04 (Neill M, Emerton M, Reid M, Johansson D, Todd D, Gallagher F). Michael Gray DEF from 11v11 and other seasons (unconfirmed on footballsquads).
+Nationality: footballsquads 2003-04 has no nationality column; spellings reused from other seasons' CSVs; Andresen, Babbel, Baggio, Enckelman, Grabbi from 11v11 club page flags.
+Note: Martin Taylor is the same player as Birmingham's Martin Taylor (moved Feb 2004).
+Unverified: Taylor, Dabizas and Carr own goals rest on StatMuse plus the match-total reconciliation above.

@@ -1,0 +1,9 @@
+QPR 2012/13 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25, fewest-appearances 25; merged = 30 players. 11v11 club page (comp 1, season 2013) = 30 players, same 30. footballsquads 2012-2013/faprem/qpr.htm used for position and nationality (all 30 found).
+Club goals (Wikipedia 2012-13 Premier League table): 30
+Own goals for: 1 (Leighton Baines, Everton, QPR 1-1 Everton, 21 Oct 2012). Source: 11v11 match page https://www.11v11.com/matches/queens-park-rangers-v-everton-21-october-2012-299262/ (Dubious Goals Committee ruled it a Baines own goal). Wikipedia 2012-13 QPR season page also lists 1 own goal. The StatMuse own-goal query (queens-park-rangers and qpr slugs) returned HTTP 422 on every attempt, so it could not be read.
+Player goals sum: 29. Expected 30 - 1 = 29. Difference: 0.
+All 30 players' apps agree between StatMuse and 11v11 (starts + subs).
+Disagreements (1):
+- Junior Hoilett goals: StatMuse 2, 11v11 club and player page 1, Wikipedia 1. Used 1 (StatMuse appears to credit him with the Baines own goal; its sum of 30 would leave no room for the confirmed own goal).
+Unverified: StatMuse own-goal page unread (422); own goal confirmed instead from 11v11 match page and Wikipedia.

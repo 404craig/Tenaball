@@ -1,0 +1,8 @@
+Fulham 2007/08 check
+Player count per source: StatMuse 33 (player-stats 25 + most-apps 25 + fewest-apps 25 merged; fewest/most add Christanval, Warner, Knight, Kuqi, Seol, Stalteri, Simon Davies, Steven Davis); 11v11 club page 33 (A = starts, S = subs; totals = sum); footballsquads roster: all 33 present (Knight, Bouba Diop, Kuqi, Collins John, Steven Davis in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 38
+Own goals for: 3 (Dean Leacock, Derby; Gerald Cid, Bolton; Ricardo Rocha, Spurs) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2007-08-premier-league
+Player goals sum: 35. 38 - 3 - 35 = 0.
+Disagreements: none (all 33 match on apps and goals).
+Positions from footballsquads 2007-08 (Andreasen D, Stalteri M this season). The footballsquads Fulham 2007-08 page has no nationality column, so nationality is from the 11v11 club page Nat codes, consistent with earlier-season files.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but totals reconcile exactly.

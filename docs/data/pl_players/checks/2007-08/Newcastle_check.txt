@@ -1,0 +1,11 @@
+Club: Newcastle 2007/08
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique (Steve Harper, Steven Taylor missing from player-stats list, present in most/fewest lists). 11v11 PL club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2008/comp/1/) 27 players (starts + subs). Same 27 players.
+Club PL goals: 45 (https://en.wikipedia.org/wiki/2007%E2%80%9308_Premier_League league table).
+Own goals for: 3 (George McCartney, West Ham; Michael Duberry, Reading; Sol Campbell, Portsmouth) per https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2007-08-premier-league. Not separately confirmed on Wikipedia or 11v11 match pages; goal sum check (45 - 3 = 42) is consistent.
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11 (11v11 shows a dash for goalkeeper goals, read as 0).
+Position source: https://www.footballsquads.co.uk/eng/2007-2008/faprem/newcas.htm (Solano, Rozehnal in "no longer at club"). Solano listed M (11v11 says DEF/MID), Milner M, LuaLua F.
+Nationality: footballsquads 2007/08 page has no nationality column; reused from earlier-season CSVs except Emre Belozoglu (born Istanbul, Turkey), Lamine Diatta (born Dakar, Senegal), Peter Ramage (born Ashington, England), David Rozehnal (born Sternberk, Czech Republic), Nolberto Solano (born Callao, Peru), from footballsquads birth place.
+Unverified: own goals for (3) rest on StatMuse plus the goal sum only.

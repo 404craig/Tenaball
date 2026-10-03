@@ -1,0 +1,9 @@
+Man Utd 2021/22 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 29; 11v11 PL squad page 29; rows written 29. StatMuse union adds Scott McTominay, Victor Lindelof (most-apps) and Shola Shoretire, Alejandro Garnacho (fewest-apps). The 11v11 summariser stated a total of 30 but listed 29 rows; all 29 match StatMuse; no 30th player found in any source.
+Club PL goals: 57 (Wikipedia 2021-22 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2021-22-premier-league). StatMuse lists Ben Mee (Burnley) 1, Man Utd 3-1 Burnley 30 Dec 2021. Confirmed by Wikipedia 2021-22 Man Utd season (own goals row PL = 1; Mee deflected Sancho shot). A Josh Brownhill o.g. at Burnley 8 Feb 2022 was disallowed.
+Player goals sum: 56
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2021-2022/engprem/manutd.htm. Nationality exceptions to that page: Garnacho Argentina (page ESP), Wan-Bissaka DR Congo (page ENG), both their senior teams and matching later-season files.
+Unverified: nothing material.

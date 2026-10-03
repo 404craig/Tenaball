@@ -1,0 +1,8 @@
+Spurs 2010/11 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25, fewest-appearances 25; union 28. 11v11 PL club page 28. footballsquads 2010-2011/faprem/tottenha.htm lists all 28 (position and nationality taken from it).
+Players only in most-appearances query: Gallas, Palacios, Kaboul (all on 11v11 club page with same figures).
+Club PL goals: 55 (Wikipedia 2010-11 Premier League table).
+Own goals for: 2. Craig Cathcart (Blackpool, 22 Feb 2011) and Martin Skrtel (Liverpool, 28 Nov 2010), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2010-11-premier-league; both confirmed on 11v11 match pages (blackpool-v-tottenham-hotspur-22-february-2011-293921, tottenham-hotspur-v-liverpool-28-november-2010-292857).
+Player goals sum: 53. Difference (55 - 2 - 53): 0.
+Disagreements: none between StatMuse and 11v11 (apps = starts + subs on 11v11). Wikipedia season page credits Pavlyuchenko 10 PL goals; 11v11 notes the Blackpool goal was re-awarded as a Cathcart own goal, so 9 used.
+Unverified: nothing.

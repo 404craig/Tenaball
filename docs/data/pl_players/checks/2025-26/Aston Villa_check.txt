@@ -1,0 +1,39 @@
+Aston Villa 2025/26 Premier League check
+
+Player count per source:
+- StatMuse: 25 (capped at 25 rows; truncated)
+- Wikipedia 2025-26 Aston Villa season: 30 with PL apps (Kadan Young listed with 0, excluded)
+- ESPN (id 362): page returned empty content, no figures
+- footballsquads: roster check; all 30 present (Malen, Guessand, Jimoh-Aloba under players no longer at club)
+- 11v11 PL 2025-26 goal scorers page: 11 Villa scorers, all match
+Rows written: 30
+
+Club PL goals: 56
+Own goals for: 3 (Wikipedia season page)
+Sum of player goals: 53
+Difference (56 - 3 - 53): 0
+
+Disagreements and resolution:
+- None on figures. All 25 StatMuse rows agree with Wikipedia on apps and goals.
+- 5 players missing from StatMuse because of the row cap (Marco Bizot 7, Andres Garcia 6, Alysson 3, George Hemmings 2, Evann Guessand 13): Wikipedia used.
+- Naming: StatMuse "Jamaldeen Jimoh" = Jamaldeen Jimoh-Aloba; StatMuse "Victor Nilsson-Lindelof" = Victor Lindelof.
+- Position: footballsquads used (Bogarde DEF, Malen MID, Bailey MID), which differ from Wikipedia labels.
+
+Unverified:
+- The 5 Wikipedia-only rows have no second apps source (ESPN empty).
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/aston-villa/tab/players/season/2026/comp/1/ read: 30 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- footballsquads 2025-2026 avilla.htm: all 30 positions and nationalities match; no change.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 56 - own goals for 3 - player goals 53 = 0.
+- Aston Villa_summary.json written.
+Changes:
+- Marco Bizot: sources_agree partial -> yes (7 apps, 0 goals confirmed by 11v11 PL club page)
+- Andres Garcia: name/nationality fields ('Andres Garcia', 'Andrés García', 'Garcia', 'Spain') -> ('Andres Garcia', 'Andrés García Robledo', 'García', 'Spain') (match spelling used in other seasons / spec nationality name)
+- Andres Garcia: sources_agree partial -> yes (6 apps, 0 goals confirmed by 11v11 PL club page)
+- Alysson: sources_agree partial -> yes (3 apps, 0 goals confirmed by 11v11 PL club page)
+- George Hemmings: sources_agree partial -> yes (2 apps, 0 goals confirmed by 11v11 PL club page)
+- Evann Guessand: sources_agree partial -> yes (13 apps, 0 goals confirmed by 11v11 PL club page)

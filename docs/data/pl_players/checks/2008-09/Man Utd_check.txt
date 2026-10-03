@@ -1,0 +1,10 @@
+Club: Man Utd 2008/09
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 33 unique. 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2009/comp/1/) 33. Same 33 players.
+Club PL goals: 68 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2008-09-premier-league) returned HTTP 422 on two attempts (no answer). Wikipedia 2008-09 Manchester United season page (via summariser) mentions only the 25 Aug 2008 Portsmouth goal deflected off Sol Campbell, which StatMuse and 11v11 both credit to Darren Fletcher (Fletcher 3 goals in both). StatMuse and 11v11 player goals both sum to 68 = club goals, so 0 own goals for.
+Player goals sum: 68
+Difference (club goals - og_for - player goals): 0
+Rows: 33
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/manutd.htm. Possebon Italy per footballsquads (11v11 lists BRA). Spellings reused from other seasons where the player exists (Park Ji-sung, Rafael / Rafael da Silva, Danny Welbeck).
+Unverified: own goals for = 0 rests on goal arithmetic plus the Wikipedia summariser; StatMuse own-goal query unreadable.

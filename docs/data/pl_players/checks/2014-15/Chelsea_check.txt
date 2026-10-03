@@ -1,0 +1,10 @@
+Club: Chelsea 2014/15
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap), identical 25 players. 11v11 PL club page 25. Same 25 players.
+Club PL goals: 73 (https://en.wikipedia.org/wiki/2014%E2%80%9315_Premier_League league table).
+Own goals for: 1 (Seamus Coleman (Everton), 30 Aug 2014) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2014-15-premier-league.
+Player goals sum: 72
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none. All apps and goals match between StatMuse and 11v11 (11v11 starts + subs).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2014-2015/faprem/chelsea.htm. Name spellings reused from earlier seasons (Izzy Brown, Willian full name).
+Unverified: own goal not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

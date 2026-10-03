@@ -1,0 +1,8 @@
+West Ham 2022/23 check
+Players per source: 11v11 PL squad page 25; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 25. Same players in both.
+Club PL goals: 42 (Wikipedia 2022-23 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2022-23-premier-league). StatMuse lists Harrison Reed (Fulham) 1, Fulham 0-1 West Ham 8 Apr 2023. Confirmed by Wikipedia season page (Reed o.g., West Ham 1-0 at Craven Cottage) and fulhamfc.com Fulham 0-1 West Ham report.
+Player goals sum: 41
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2022-2023/engprem/westham.htm

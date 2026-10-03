@@ -1,0 +1,11 @@
+Club: Man Utd 2007/08
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 in all three, i.e. at the cap); 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2008/comp/1/) 25 players, so the cap did not hide anyone. Same 25 players.
+Club PL goals: 80 (https://en.wikipedia.org/wiki/2007%E2%80%9308_Premier_League league table).
+Own goals for: 2 (Simon Davies, Fulham; William Gallas, Arsenal) per https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2007-08-premier-league. Not separately confirmed on Wikipedia or 11v11 match pages; the goal sum check (80 - 2 = 78) is consistent.
+Player goals sum: 78
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position source: https://www.footballsquads.co.uk/eng/2007-2008/faprem/manutd.htm (Fraizer Campbell in "no longer at club"). Ronaldo and Tevez listed F there.
+Nationality: footballsquads 2007/08 page has no nationality column; all reused from earlier-season CSVs except Gerard Pique (birth place Barcelona per footballsquads, Spain).
+Unverified: own goals for (2) rest on StatMuse plus the goal sum only.

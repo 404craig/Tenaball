@@ -1,0 +1,9 @@
+Nottingham Forest 1998/99 Premier League check
+Player count: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged = 33; 11v11 club page (https://www.11v11.com/teams/nottingham-forest/tab/players/season/1999/comp/1/) = 33; all on footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/nottmf.htm), Armstrong, Hodges, Stone, Gemmill in "no longer at club".
+Apps and goals: every player identical on StatMuse and 11v11.
+Club goals (https://en.wikipedia.org/wiki/1998%E2%80%9399_FA_Premier_League table): 35
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1998-99-premier-league) returned HTTP 422 (no answer); Wikipedia season page (https://en.wikipedia.org/wiki/1998%E2%80%9399_Nottingham_Forest_F.C._season) league scorers list has no own goals.
+Player goals sum: 35
+Difference: 0
+Disagreements: none. Spellings: 11v11 Matthieu Louis-Jean, Jon-Olav Hjelde, Andy D Gray; footballsquads Darchville, Christain Edwards.
+Unverified: own goals 0 rests on Wikipedia scorers list plus balancing total; StatMuse OG query unavailable.

@@ -1,0 +1,10 @@
+Club: Burnley 2016/17
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 27 unique (Tom Heaton and Steven Defour not in player-stats query). 11v11 PL club page (https://www.11v11.com/teams/burnley/tab/players/season/2017/comp/1/) 27 (apps = A + S). Same 27 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League league table).
+Own goals for: 0. StatMuse own-goal query (players-with-own-goals-vs-burnley-2016-17-premier-league and a word-order variant) returned HTTP 422 (likely no results). Wikipedia https://en.wikipedia.org/wiki/2016%E2%80%9317_Burnley_F.C._season match list shows no own goals in Burnley's favour.
+Player goals sum: 39
+Difference: 0
+Rows: 27
+Disagreements: none between StatMuse and 11v11. (Wikipedia summary gave Keane 1 league goal; StatMuse and 11v11 both 2, kept 2.)
+Position/nationality source: https://www.footballsquads.co.uk/eng/2016-2017/faprem/burnley.htm. Ashley Barnes Austria and Andre Gray England as footballsquads and earlier seasons; Dan Agyei England per footballsquads (11v11 shows Ghana).
+Unverified: own goals = 0 rests on Wikipedia plus exact reconciliation, StatMuse OG page unreadable.

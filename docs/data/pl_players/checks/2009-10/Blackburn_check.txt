@@ -1,0 +1,10 @@
+Club: Blackburn 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 28 unique (Grella, Steven Reid, Basturk missing from player-stats, found in the appearance queries). 11v11 PL club page (https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2010/comp/1/) 28 (starts + subs). Same 28 players.
+Club PL goals: 41 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 2. Sam Ricketts (Bolton 0-2 Blackburn, 22 Nov 2009), Richard Dunne (Aston Villa 0-1 Blackburn, 9 May 2010; StatMuse labels his team Man City). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2009-10-premier-league, confirmed by 11v11 match pages https://www.11v11.com/matches/bolton-wanderers-v-blackburn-rovers-22-november-2009-286220/ and https://www.11v11.com/matches/aston-villa-v-blackburn-rovers-09-may-2010-289783/
+Player goals sum: 39
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/blackbrn.htm (Emerton M, Reid M, Gallagher F). Gallagher, Warnock, McCarthy in "no longer at club" section.
+Unverified: none.

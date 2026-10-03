@@ -1,0 +1,9 @@
+Liverpool 2021/22 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 27; 11v11 PL squad page 27; rows written 27. StatMuse union adds Virgil van Dijk (most-apps) and Luis Diaz (most/fewest) to the 25 in player-stats.
+Club PL goals: 94 (Wikipedia 2021-22 Premier League table)
+Own goals for: 0 (https://en.wikipedia.org/wiki/2021%E2%80%9322_Liverpool_F.C._season). StatMuse players-with-own-goals-vs-liverpool-2021-22-premier-league returned HTTP 422 (no rows). Wikipedia 2021-22 Liverpool season goalscorers table own goals row shows 0 in the Premier League column. Player goals sum (both StatMuse and 11v11) = 94 = club goals, consistent with 0.
+Player goals sum: 94
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2021-2022/engprem/liverpool.htm (Neco Williams not on page as read: DEF/Wales from Wikipedia 2021-22 Liverpool season squad).
+Unverified: nothing material.

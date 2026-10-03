@@ -1,0 +1,9 @@
+West Ham 2020/21 check
+Players per source: 11v11 PL squad page 24; StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (not capped). Same 24 players.
+Club PL goals: 62 (Wikipedia 2020-21 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2020-21-premier-league). StatMuse lists Davinson Sanchez (Spurs) 1 and Raul Jimenez (Wolves) 1. Confirmed: Wikipedia 2020-21 Tottenham season page (Sanchez o.g. in Spurs 3-3 West Ham, 18 Oct 2020); Goal.com report West Ham 4-0 Wolves 27 Sep 2020 (Jimenez deflected Soucek header, o.g.). Note: Wikipedia West Ham season summary mentioned an Andersen o.g. at Palace (1-1, 6 Feb 2021) and Own goals 1 in PL; this summariser output conflicts with StatMuse and was not used (Wikipedia summariser is known to be unreliable); player sum plus 2 matches club goals.
+Player goals sum: 60
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps and goals identical in StatMuse (3 queries) and 11v11 (starts + subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/westham.htm
+Unverified / notes: Michail Antonio nationality England per footballsquads 2020-21 (later-season files use Jamaica).

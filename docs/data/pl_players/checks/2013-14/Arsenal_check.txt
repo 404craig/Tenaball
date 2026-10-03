@@ -1,0 +1,10 @@
+Club: Arsenal 2013/14
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique players. 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2014/comp/1/) 27. Same 27 players.
+Club PL goals: 68 (https://en.wikipedia.org/wiki/2013%E2%80%9314_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2013-14-premier-league) returned HTTP 422 (no answer, likely no results) on 3 attempts incl. a variant URL. Wikipedia Arsenal season page summary had no goalscorer table. 0 is consistent with exact reconciliation, but not independently confirmed.
+Player goals sum: 68
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none. All apps and goals match between StatMuse and 11v11 (starts + subs).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2013-2014/faprem/arsenal.htm. Name spellings reused from earlier seasons (Fabianski surname Fabiański, Ryō Miyaichi full name).
+Unverified: own goals for (see above).

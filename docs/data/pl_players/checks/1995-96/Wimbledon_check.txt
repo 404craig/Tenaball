@@ -1,0 +1,8 @@
+Wimbledon 1995/96 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 30. 11v11 club page (https://www.11v11.com/teams/wimbledon/tab/players/season/1996/comp/1/) 30. Rows = 30.
+Club goals (Wikipedia 1995-96 FA Premier League table): 55.
+Own goals for: 1 (Steve Clarke, Chelsea, 2 Mar 1996) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1995-96-premier-league, confirmed by the Wikipedia 1995-96 Wimbledon season page.
+Player goals sum: 54. 55 - 1 = 54. Difference: 0.
+Disagreements: 0. StatMuse and 11v11 agree on apps and goals for all 30 players.
+Positions from footballsquads 1995-1996/faprem/wimbled.htm (Tracey in players no longer at club). Nationality from other seasons or 11v11.
+Unverified: none.

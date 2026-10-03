@@ -1,0 +1,30 @@
+Wolves 2024/25 check
+Players per source: StatMuse player-stats 25 (capped), most-appearances 25 (capped, cutoff 3 apps), Wikipedia 29. StatMuse fewest-appearances page returned HTTP 429, not refetched. Union 31. Low-appearance players (1-3 apps) come from the player-stats page, which may not be exhaustive; Wikipedia and footballsquads add no further 1-app players.
+Club PL goals: 54 (Wikipedia league table).
+Own goals for: 1 (Wikipedia season page, Chelsea player, 25 Aug 2024).
+Player goals sum: 53. Difference (club goals - og - player goals): 0.
+Disagreements: 3 apps disagreements, StatMuse used: Hwang 21 vs 22, Sarabia 24 vs 22, Toti 31 vs 30. Not resolved; 11v11 pages were garbled and unusable. Pond and Chiquinho only on StatMuse.
+
+
+VERIFIED (2026-10-02)
+Sources added: https://www.11v11.com/teams/wolverhampton-wanderers/tab/players/season/2025/comp/1/ (11v11 PL squad page, Apps=starts, Subs=sub apps); https://www.footballsquads.co.uk/eng/2024-2025/engprem/ club page.
+- StatMuse fewest-appearances page now read: 25 rows; added Mateus Mane, all other figures match CSV except Sarabia (see below).
+- 11v11 PL squad page: 32 players, apps/goals identical to CSV after fixes; 53 player goals.
+- footballsquads (wolves.htm) checked for all players.
+- Own goal corrected: previous file credited an unnamed Chelsea player (25 Aug 2024); real own goal for is Djed Spence (Spurs) 38 min, Wolves 4-2 Spurs, 13 Apr 2025 (11v11 match page and wolves.co.uk report). StatMuse "3 own goals" figure is own goals conceded, not for.
+Changes:
+- ADDED Mateus Mane (1 app, 0 goals): StatMuse fewest-appearances page and 11v11 squad page (0+1) agree; Wikipedia row 0+1; footballsquads ENG M
+- Alfie Pond: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Chiquinho: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Hwang Hee-chan: sources_agree no -> yes (StatMuse 21 confirmed by 11v11 (21); Wikipedia figure rejected)
+- Pablo Sarabia apps 24 -> 23: 11v11 7+16=23; StatMuse game log lists 24 but includes 20 Oct 2024 v Man City with 0 minutes, where wolvescompletehistory.co.uk shows him as an unused (booked) sub; Wikipedia read 7+15=22 rejected
+- Pablo Sarabia: sources_agree no -> yes (apps 23: 11v11 (7+16) and StatMuse game log less the 20 Oct 2024 Man City match (unused sub per wolvescompletehistory.co.uk) agree; StatMuse total 24 and Wikipedia 22 rejected)
+- Pablo Sarabia: position FWD -> MID (footballsquads)
+- Matt Doherty: nationality Ireland -> Republic of Ireland (naming consistency with other club files)
+- Goncalo Guedes: position FWD -> MID (footballsquads)
+- Toti Gomes: sources_agree no -> yes (StatMuse 31 confirmed by 11v11 (31); Wikipedia figure rejected)
+- Jean-Ricner Bellegarde: nationality France -> Haiti (nationality Haiti per 11v11 (Haiti international); footballsquads lists FRA)
+- Mateus Mane: sources_agree new -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- og_for 1 -> 1 now sourced: https://www.11v11.com/matches/wolverhampton-wanderers-v-tottenham-hotspur-13-april-2025-388561/ (Djed Spence og 13 Apr 2025; also wolves.co.uk match report)
+Final: rows 32, club goals 54, own goals for 1, player goals 53, difference 0.
+Still unverified: Bellegarde nationality: footballsquads FRA vs 11v11 Haiti; Haiti used (matches 2025-26 file). Nothing else unverified.

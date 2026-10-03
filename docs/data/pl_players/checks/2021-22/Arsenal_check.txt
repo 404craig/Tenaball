@@ -1,0 +1,9 @@
+Club: Arsenal 2021/22
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 27 unique (Partey and Tomiyasu only in most/fewest lists). 11v11 PL club page 27. Same 27 players.
+Disagreements: 1. Emile Smith Rowe apps: StatMuse 33, 11v11 club and player page 21+11=32, Wikipedia player career table 33. Resolved to 33 (two sources). Goals 10 everywhere. All other apps and goals match.
+Club PL goals (https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League table): 61
+Own goals for: 1 (Jose Sa, Wolves, 24 Feb 2022; StatMuse own-goals query, confirmed on Wikipedia 2021-22 Arsenal season page)
+Player goals sum: 60
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2021-2022/engprem/arsenal.htm (Pepe listed F there, used FWD; Kolasinac BIH = Bosnia and Herzegovina).
+Unverified: nothing material.

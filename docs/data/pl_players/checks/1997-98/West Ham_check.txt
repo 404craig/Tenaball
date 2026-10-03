@@ -1,0 +1,13 @@
+West Ham 1997/98 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (29 unique merged); 11v11 club page (https://www.11v11.com/teams/west-ham-united/tab/players/season/1998/comp/1/) = 29 (A starts + S subs); all 29 on footballsquads (https://www.footballsquads.co.uk/eng/1997-1998/faprem/westham.htm), Rieper, Hughes, Moore, Alves, Terrier, Rowland, Dowie, Bishop in no-longer-at-club section.
+Club goals (Wikipedia 1997-98 FA Premier League table): 56
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1997-98-premier-league) lists Alan Kimble (Wimbledon) and Dave Watson (Everton). Confirmed on 11v11 match pages: Wimbledon 1-2 West Ham, 28 Dec 1997 (https://www.11v11.com/matches/wimbledon-v-west-ham-united-28-december-1997-23141/, Kimble og 31) and Everton 2-1 West Ham, 23 Aug 1997 (https://www.11v11.com/matches/everton-v-west-ham-united-23-august-1997-22953/, Watson og 23).
+Player goals sum: 54
+Difference (club goals - og - player goals): 0
+Rows: 29
+Apps and goals: StatMuse and 11v11 agree for all 29 players.
+Disagreements: 0.
+Names: Ian Moore (11v11 Ian Thomas-Moore), Marc Rieper (11v11 Rieper-Jonsen), Paulo Alves (footballsquads Paolo), Manny Omoyinmi (footballsquads Emmanuel), Ludek Miklosko. Spellings reused from other seasons where present.
+Positions from footballsquads 1997-1998 (Hodges M, 11v11 Forward).
+Nationality from 11v11 club page.
+Unverified: nothing outstanding.

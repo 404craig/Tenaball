@@ -1,0 +1,9 @@
+Leeds 1993/94 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (union 25; queries hit the 25-row cap, but 11v11 also lists exactly 25 and all match); 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/1994/comp/1/) 25; all in footballsquads https://www.footballsquads.co.uk/eng/1993-1994/faprem/leeds.htm. Rows: 25
+Club goals: 65 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 3 (Dave Watson, Everton; Tim Sherwood, Blackburn; Tony Adams, Arsenal) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1993-94-premier-league. Confirmed only by exact balance, not by a second source.
+Player goals sum: 62
+Difference: 0
+Disagreements: 0. All apps (11v11 A+S) and goals match StatMuse.
+Unverified: own goals single source.
+Positions: footballsquads leeds.htm (David White listed M). Nationality: reused spellings from other seasons, else 11v11 club page (Forrester, O'Leary, Strandli, Ray Wallace).

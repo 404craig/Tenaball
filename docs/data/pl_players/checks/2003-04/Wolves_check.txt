@@ -1,0 +1,9 @@
+Wolves 2003/04 check
+Player count per source: StatMuse most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 27; 11v11 club page (PL) 27; footballsquads roster lists all 27. Player-stats query not run separately (union = 11v11 count).
+Club goals: 38 (Wikipedia 2003-04 Premier League table)
+Own goals for: 1 (Alan Smith, Leeds, 28 Dec 2003) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2003-04-premier-league
+Player goals sum: 37
+Difference: 0
+Disagreements: 1. Mark Clyde: StatMuse 9 (6 starts), 11v11 club and player page 10 (6 + 4 subs), Wikipedia 2003-04 Wolves season page 9 (6 + 3). Used 9 (StatMuse and Wikipedia agree); sources_agree=partial. 11v11 player page has no match list to settle it.
+Notes: Paul Jones joined from Southampton Jan 2004 (row in both clubs).
+Unverified: Clyde's 10th appearance per 11v11 not resolved at match level; OG not cross-checked against a second source.

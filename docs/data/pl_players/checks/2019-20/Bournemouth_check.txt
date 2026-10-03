@@ -1,0 +1,13 @@
+Club: Bournemouth 2019/20
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique (Simon Francis, Steve Cook only in most/fewest lists). Wikipedia 2019-20 AFC Bournemouth season appearances table: 26 read (Travers missing from first summary, his row 1 PL app confirmed on second read) = 27. 11v11 PL club page https://www.11v11.com/teams/afc-bournemouth/tab/players/season/2020/comp/1/ NOT read: fetch proxy refused with HTTP 429 and an instruction not to retry. Travers also confirmed on 11v11 player page.
+Disagreements: none. All 27 apps and goals match between StatMuse and Wikipedia.
+Club PL goals: 40 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 2 (Jonny Evans, Leicester, Bournemouth 4-1 Leicester 12 Jul 2020; Pascal Gross, Brighton, Bournemouth 3-1 Brighton 21 Jan 2020) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2019-20-premier-league; confirmed on 11v11 match pages https://www.11v11.com/matches/afc-bournemouth-v-leicester-city-12-july-2020-366597/ and https://www.11v11.com/matches/afc-bournemouth-v-brighton-and-hove-albion-21-january-2020-365480/. (Wikipedia summary did not list own goals.)
+Player goals sum: 38
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/bourne.htm (Danjuma listed M; all players found). Spellings reused from earlier-season files (Josh King / Joshua King).
+Unverified: 11v11 club page (mandatory second source) not available; Wikipedia used as second source, all figures agree.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/afc-bournemouth/tab/players/season/2020/comp/1/): 27 players, all apps match. Goals: 11v11 has Solanke 2 (CSV 3) and Stanislas 4 (CSV 3); 11v11 match page 366597 credits the 87th-minute goal v Leicester (12 Jul 2020) to Stanislas. StatMuse and Wikipedia both give 3 each, so kept 3/3 (two sources agree); noted in both rows. Total unaffected. Goals diff 0.

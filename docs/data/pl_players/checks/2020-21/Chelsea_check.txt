@@ -1,0 +1,9 @@
+Club: Chelsea 2020/21
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 27 unique (Werner only in most list, Caballero only in fewest list). 11v11 PL club page 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 58. Club PL goals source: https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League league table.
+Own goals for: 2 (Federico Fernandez, Newcastle 0-2 Chelsea, 21 Nov 2020; Ben Godfrey, Chelsea 2-0 Everton, 8 Mar 2021). StatMuse own-goals query; Wikipedia 2020-21 Chelsea season scorers table shows 2 own goals and the Godfrey OG in match report; Fernandez OG also in Eurosport report title.
+Player goals sum: 56
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2020-2021/engprem/chelsea.htm (incl. players no longer at club for Barkley, Loftus-Cheek, Tomori).
+Unverified: nothing material.

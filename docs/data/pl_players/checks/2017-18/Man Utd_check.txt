@@ -1,0 +1,9 @@
+Club: Man Utd 2017/18
+Players per source: StatMuse player-stats 25 (at cap), StatMuse fewest-appearances 25; union 27 (adds Zlatan Ibrahimovic and Victor Lindelof). Most-appearances not run: union of the two queries equals the 11v11 list. 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2018/comp/1/) 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 68 (Wikipedia 2017-18 Premier League table).
+Own goals for: 1 (Lewis Dunk, Brighton, 25 Nov 2017). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2017-18-premier-league
+Player goals sum: 67
+Difference: 0 (68 - 1 - 67)
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/manutd.htm. Tuanzebe ENG there, DR Congo used (later seasons). McTominay ENG there, Scotland used. Sanchez F there (FWD); Valencia, Young, Blind M (MID).
+Unverified: own goals for from StatMuse only, consistent with goal sum.

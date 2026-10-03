@@ -1,0 +1,13 @@
+Club: Burnley 2019/20
+Players: StatMuse player-stats 22, most-appearances 22, fewest-appearances 22 (under the 25 cap, complete); merged 22. Wikipedia 2019-20 Burnley season appearances table: 22 with PL apps (Max Thompson row 0 (1)); Gibson, Hart 0. 11v11 PL club page https://www.11v11.com/teams/burnley/tab/players/season/2020/comp/1/ NOT read: fetch proxy refused with HTTP 429 and an instruction not to retry. Max Thompson confirmed on 11v11 player page (1 sub app).
+Disagreements: none on figures (Wikipedia summariser initially read Thompson as 0 league apps; the row 0 (1) and 11v11 both give 1 sub app).
+Club PL goals: 43 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 2 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2019-20-premier-league: Roberto (West Ham, Burnley 3-0 West Ham, 9 Nov 2019) and Ben Godfrey (Norwich, Burnley 2-0 Norwich, July 2020). Both appear in the Wikipedia 2019-20 Burnley season match results; the Wikipedia scorers table summary showed only 1 own goal (Roberto), so the table total is not confirmed.
+Player goals sum: 41
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/burnley.htm (Drinkwater in players no longer at club). Spellings reused from earlier-season files.
+Unverified: 11v11 club page not available; Wikipedia used as second source, all figures agree.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/burnley/tab/players/season/2020/comp/1/): 22 players, all 22 rows match on apps and goals. No player missing. No changes. Goals diff 0.

@@ -1,0 +1,9 @@
+Hull 2013/14 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/hull-city-premier-league-player-stats-2013-14); 11v11 PL club page (https://www.11v11.com/teams/hull-city/tab/players/season/2014/comp/1/); footballsquads.co.uk/eng/2013-2014/faprem/ for position and nationality.
+Player count: final rows 27; StatMuse merged 27 (player-stats 25, most 25, fewest 25; all three read); 11v11 club page 27.
+Club goals (Wikipedia 2013-14 Premier League table): 38
+Own goals for: 3 (Carlos Cuellar (Sunderland), Jordan Bowery (Aston Villa), Martin Skrtel (Liverpool); Wikipedia Hull season page lists no OG names; total check confirms). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2013-14-premier-league
+Player goals sum: 35
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: Tom Huddlestone goals StatMuse 2 vs 11v11 3: resolved 3 (11v11 player page and Wikipedia); Nikica Jelavic goals StatMuse 5 vs 11v11 4: resolved 4 (11v11 player page and Wikipedia). Both StatMuse errors offset, so StatMuse sum also 35; Apps all match
+Unverified: nothing material.

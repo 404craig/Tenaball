@@ -1,0 +1,8 @@
+Man Utd 2003/04 check
+Player count per source: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (all under the 25 cap, so complete); merged 22. 11v11 club page https://www.11v11.com/teams/manchester-united/tab/players/season/2004/comp/1/: 22 (total = Apps+Subs). footballsquads 2003-04 (/faprem/manutd.htm): all 22 present.
+Club PL goals: 64 (Wikipedia 2003-04 FA Premier League table).
+Own goals for: 1 (Danny Mills, Middlesbrough, 28 Dec 2003) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2003-04-premier-league.
+Player goals sum: 63. 64 - 1 - 63 = 0.
+Disagreements: 0. All 22 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2003-04 (Ronaldo F, Bellion F). Nationality from 11v11 club page, spellings aligned with other seasons' files (11v11 'Ireland' written as Republic of Ireland).
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

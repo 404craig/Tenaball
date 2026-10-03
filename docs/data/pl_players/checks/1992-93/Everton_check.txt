@@ -1,0 +1,9 @@
+Everton 1992/93 Premier League check
+Player count: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 26 (Tony Cottee only in most/fewest, Neil Moore only in player-stats/fewest). 11v11 club page (https://www.11v11.com/teams/everton/tab/players/season/1993/comp/1/) 26. Rows: 26
+Club goals: 53 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 2 (Colin Hendry, Blackburn; Ian Brightwell, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1992-93-premier-league. Wikipedia 1992-93 Everton F.C. season page match list confirms both (Brightwell og v Man City 31 Oct 1992; Hendry og v Blackburn 3 Mar 1993).
+Player goals sum: 51
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All apps (11v11 starts+subs) and goals match StatMuse for all 26.
+Unverified: nothing on apps/goals.
+Positions: footballsquads.co.uk has no 1992-93 season (archive starts 1993-94; eng/1992-1993/faprem/ returns 404). Position reused from the earliest existing row for the same player (footballsquads-based, mostly 1993-94); 5 players with no other season take the 11v11 club page position. Nationality reused from other seasons, else 11v11 club page.

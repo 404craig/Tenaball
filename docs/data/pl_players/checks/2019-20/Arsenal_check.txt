@@ -1,0 +1,9 @@
+Club: Arsenal 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Kolasinac, Sokratis, Mustafi, Holding only in most list; Monreal, Mkhitaryan, Smith Rowe, Mari in fewest list). 11v11 PL club page 29 (A+S). Same 29 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse.
+Club PL goals: 56 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (players-with-own-goals-vs-arsenal-2019-20-premier-league and a variant) returned HTTP 422 (no answer). Wikipedia 2019-20 Arsenal season goalscorers table has no PL own-goal row. Consistent with player sum.
+Player goals sum: 56
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/arsenal.htm (incl. players no longer at club for Monreal, Mkhitaryan, Smith Rowe). Name spellings reused from earlier seasons where present.
+Unverified: StatMuse own-goal query unavailable (422); og_for=0 rests on Wikipedia season page plus exact goal reconciliation.

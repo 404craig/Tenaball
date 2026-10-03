@@ -1,0 +1,7 @@
+Leicester 1996/97 Premier League check
+Player count per source: StatMuse player-stats 24 (under cap, complete; other two queries not run as 11v11 fully covers). 11v11 club page (https://www.11v11.com/teams/leicester-city/tab/players/season/1997/comp/1/) 24. footballsquads (faprem/leicester.htm) lists all 24.
+Club goals: 46 (11v11 final table 01-june-1997)
+Own goals for: 2 (Frank Sinclair, Chelsea; Alan Neilson, Southampton) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1996-97-premier-league ; Sinclair confirmed by 11v11 match page Chelsea v Leicester 19 Apr 1997. Neilson not confirmed by 11v11 (11v11 credits Claridge in Southampton 2-2 Leicester, 22 Mar 1997); Wikipedia season page gives Claridge 11 league goals, consistent with StatMuse.
+Player goals sum: 44. 46 - 2 - 44 = 0.
+Disagreements: 1. Steve Claridge goals: 11v11 club and player page 12, StatMuse 11, Wikipedia 11. Used 11. All apps agree.
+Unverified: Neilson own goal (StatMuse only, indirectly supported by Wikipedia's Claridge total).

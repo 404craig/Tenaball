@@ -1,0 +1,9 @@
+Aston Villa 2007/08 check
+Player count per source: StatMuse 22 (all three queries return the same 22); 11v11 club page 22; footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/avilla.htm: all 22 present (Cahill in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 71
+Own goals for: 4 (Aaron Hughes, Fabio Aurelio, Liam Ridgewell, Philippe Senderos) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2007-08-premier-league
+Player goals sum: 67. 71 - 4 - 67 = 0.
+Disagreements: none between StatMuse and 11v11. The summary of the StatMuse fewest-apps query once gave Patrik Berger 1 goal; the other two StatMuse queries and 11v11 give 0, and the club total reconciles with 0, so 0 used.
+Positions: footballsquads 2007-08 (Gareth Barry D, Shaun Maloney F, Ashley Young M).
+Nationality: footballsquads 2007-08 has no nationality column. Reused from other seasons' CSVs; Bouma (NED), Osbourne (ENG), Salifou (TOG) from footballsquads 2008-09 avilla.htm; Berger Czech Republic and Mellberg Sweden from Wikipedia 2007-08 Aston Villa season squad table.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

@@ -1,0 +1,8 @@
+Nottingham Forest 1994/95 check
+Player counts: StatMuse player-stats 20, most-apps 20, fewest-apps 20 (union 20). 11v11 club page (https://www.11v11.com/teams/nottingham-forest/tab/players/season/1995/comp/1/) 20. Rows = 20.
+Club goals (Wikipedia 1994-95 FA Premier League table): 72.
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1994-95-premier-league): Andy Dibble (Man City), Andy Hinchcliffe (Everton). Confirmed on 11v11 match pages: Man City 3-3 Forest 8 Oct 1994 (Dibble og 51'), Everton 1-2 Forest 30 Aug 1994 (Hinchcliffe og 24').
+Player goals sum: 70. 72 - 2 = 70. Difference: 0.
+Disagreements: 0. All apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 1994-1995/faprem/nottmf.htm (Dave Phillips M, Haaland D). Nationality reused from other seasons; Gary Bull and Robert Rosario (England) from 11v11 Nat column.
+Unverified: nothing outstanding.

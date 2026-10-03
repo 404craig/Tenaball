@@ -1,0 +1,9 @@
+Wolves 2020/21 check
+Players per source: 11v11 PL squad page 27; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 27. Same 27 players.
+Club PL goals: 36 (Wikipedia 2020-21 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2020-21-premier-league). StatMuse lists Dan Burn (Brighton) 1 and Illan Meslier (Leeds) 1. Confirmed: Daily Star Sunday via PressReader 3 Jan 2021 (Burn own goal, Brighton 3-3 Wolves); BreakingNews.ie/Yorkshire Post (Meslier own goal, Wolves 1-0 Leeds, 19 Feb 2021). Wikipedia season page summary did not show an own goals row.
+Player goals sum: 34
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps and goals identical in StatMuse (3 queries) and 11v11 (starts + subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/wolves.htm
+Unverified / notes: Rayan Ait-Nouri nationality France per footballsquads 2020-21 (later-season files use Algeria). Romain Saiss listed as Ghanem Saiss on StatMuse; Jonny as Jonny Otto.

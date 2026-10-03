@@ -1,0 +1,9 @@
+Newcastle 1993/94 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (capped; union 27); 11v11 club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/1994/comp/1/) 27; all in footballsquads https://www.footballsquads.co.uk/eng/1993-1994/faprem/newcas.htm. Rows: 27
+Club goals: 82 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 1 (Peter Atherton, Coventry, 27 min, 18 Aug 1993) from 11v11 match page https://www.11v11.com/matches/coventry-city-v-newcastle-united-18-august-1993-21266/. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1993-94-premier-league) returned HTTP 422; StatMuse instead credits this goal to Liam O'Brien. Wikipedia season page gives O'Brien 0 goals, supporting the own goal.
+Player goals sum: 81
+Difference: 0
+Disagreements: 1. Liam O'Brien goals: StatMuse 1, 11v11 0 (own goal Atherton), Wikipedia 0 -> 0. All apps and other goals match.
+Unverified: Wikipedia match list does not name scorers, so the Atherton own goal is confirmed directly only by 11v11.
+Positions: footballsquads newcas.htm. Nationality: reused spellings from other seasons, else 11v11 club page (Holland, Jeffrey, O'Brien, Papavasiliou, Robinson). Name: StatMuse/footballsquads Nikodimos Papavasiliou (11v11 Nicos Papavassiliou).

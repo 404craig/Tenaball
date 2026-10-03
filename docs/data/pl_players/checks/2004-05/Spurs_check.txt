@@ -1,0 +1,8 @@
+Spurs 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap, alphabetical), most-apps 25, fewest-apps 25; merged 31 (adds Keane, Simon Davies, Atouba, Kelly, Sean Davis, Ricketts). 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2005/comp/1/) 31 (total = A+S). footballsquads 2004-05 (/faprem/tottenha.htm): all 31 present (Doherty, Mabizela, Redknapp, Davenport in "no longer at club").
+Club PL goals: 47 (Wikipedia 2004-05 FA Premier League table; 11v11 final table agrees; Wikipedia Spurs season page total 47).
+Own goals for: 0. https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2004-05-premier-league (and the "tottenham" slug) returned HTTP 422 on two tries, which StatMuse gives when a query has no rows. https://www.statmuse.com/fc/ask/tottenham-hotspur-own-goals-for-2004-05-premier-league says 0 own goals (wording ambiguous). Wikipedia Spurs 2004-05 season page lists no own goals among scorers. Player goals equal club goals, consistent with 0. Treat as confirmed by reconciliation plus StatMuse/Wikipedia showing none; no direct own-goal list row available.
+Player goals sum: 47. 47 - 0 - 47 = 0.
+Disagreements: none on apps or goals between StatMuse and 11v11 (all 31 match). Wikipedia scorer list (Defoe 13, Keane 11, Kanoute 7, Mido 2, King 2) agrees.
+Positions from footballsquads 2004-05 (Atouba D, Ziegler M, Yeates F, Reid M). Nationality from 11v11 club page; spellings aligned with other seasons' files (Noureddine Naybet, Phil Ifil/Philip Ifil, Mido/Ahmed Hossam Mido). Bunjevcevic Serbia (11v11 SRB).
+Unverified: own goals for = 0 rests on the 422 empty StatMuse result and reconciliation, not a positive list.

@@ -1,0 +1,11 @@
+Middlesbrough 2000/01 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 28; 11v11 club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/2001/comp/1/) = 28; all appear in footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/middles.htm).
+Club goals (Wikipedia 2000-01 FA Premier League table): 44
+Own goals for: 4 (Steve Watson (Everton) 9 Sep 2000, Alpay (Aston Villa) 23 Sep 2000, Edu and Sylvinho (Arsenal) 14 Apr 2001; Wikipedia 2000-01 Middlesbrough season page lists the same four), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2000-01-premier-league
+Player goals sum: 40
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 (starts + subs) agree for every player.
+Disagreements: Dean Gordon: GOALS: StatMuse 1, 11v11 club and player page 2; Wikipedia season page 2 (17 Sep 2000 v Man City, 16 Dec 2000 v Chelsea); 2 used. footballsquads spells Gordan; Noel Whelan: GOALS: StatMuse 1, 11v11 club and player page 0; Wikipedia season page 0 (his goal was in the League Cup); 0 used
+Name/position/nationality notes: Gary Walsh: also played for Bradford this season; Dean Windass: 11v11 lists as forward; footballsquads M used
+Positions from footballsquads 2000-01; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

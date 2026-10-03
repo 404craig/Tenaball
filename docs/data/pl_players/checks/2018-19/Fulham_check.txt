@@ -1,0 +1,14 @@
+Fulham 2018/19 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 28
+11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2019/comp/1/): 28 players
+Rows written: 28. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/fulham.htm
+Club PL goals (Wikipedia 2018-19 Premier League table): 34
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2018-19-premier-league): Fernando Llorente (Spurs), Fulham v Spurs 20 Jan 2019; Wikipedia 2018-19 Fulham season scorers table shows 1 PL own goal
+Player goals sum: 33. Club goals minus own goals: 33. Difference: 0
+Disagreements (apps/goals): none
+Naming/position/nationality notes:
+- Aboubakar Kamara: footballsquads 2018-19 lists FRA; nationality Mauritania kept to match earlier seasons' files
+- Denis Odoi: 11v11 lists Ghana; footballsquads BEL and earlier seasons' files Belgium
+- Fabri: StatMuse lists as Fabricio, 11v11 as Fabri
+Unverified: nothing

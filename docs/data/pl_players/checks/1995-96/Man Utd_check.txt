@@ -1,0 +1,8 @@
+Man Utd 1995/96 check
+Player counts: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (all under the 25-row cap, union 23). 11v11 club page (https://www.11v11.com/teams/manchester-united/tab/players/season/1996/comp/1/) 23 (A+S). Rows = 23.
+Club goals (Wikipedia 1995-96 FA Premier League table): 73.
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1995-96-premier-league) lists Chris Perry (Wimbledon) on 3 Feb 1996. Confirmed by Wikipedia 1995-96 Manchester United season page (Wimbledon 2-4 Man Utd, 3 Feb 1996, Perry o.g.).
+Player goals sum: 72. 73 - 1 = 72. Difference: 0.
+Disagreements: 0. Every player's apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 1995-1996/faprem/manutd.htm (Prunier in players no longer at club). Nationality: no footballsquads column; spellings reused from other seasons; new players Steve Bruce, Terry Cooke (ENG), William Prunier (FRA), Simon Davies (WAL) from 11v11 Nat column. This Simon Davies (b. 1974, Winsford) is not the Spurs Simon Davies of 2003/04; same name string used.
+Unverified: nothing outstanding.

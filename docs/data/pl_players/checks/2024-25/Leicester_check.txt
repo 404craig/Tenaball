@@ -1,0 +1,17 @@
+Leicester 2024/25 check
+Player count per source: StatMuse 33 names across 3 queries (incl. Bastien Meupiyou); Wikipedia 32 rows; footballsquads roster used for position/nationality; rows written: 32
+Club PL goals: 33 (Wikipedia 2024-25 Premier League table)
+Own goals for: 0 (Wikipedia season page narrative lists only own goals BY Leicester players: Kristiansen v Man Utd, Ndidi v Arsenal, Vestergaard v West Ham. StatMuse OG column = 3 appears to be own goals committed by Leicester, not for)
+Player goals sum: 33; difference (club - og - players): 0
+Disagreements and resolutions:
+1. Buonanotte: Wikipedia 30, StatMuse 31, 11v11 14+17=31 -> 31
+2. Ricardo Pereira: Wikipedia 9, StatMuse 10, 11v11 4+6=10 -> 10
+3. Bastien Meupiyou: StatMuse lists 1 app. Not in Wikipedia table, not on footballsquads Leicester roster, not on 11v11 Leicester 2024-25 page; he signed for Wolves Aug 2024. EXCLUDED as unconfirmed (StatMuse apparently wrong). No goals involved.
+Unverified: 11v11 team page counts all competitions so could not tie-break others; Chris Popov appears on 11v11 (all comps, 0+1) but not in any PL source, excluded.
+
+VERIFIED (2026-10-02)
+- StatMuse: all three queries re-read (player-stats 25, most-apps 25, fewest-apps 25 rows). Union = 32 CSV players plus Bastien Meupiyou. Meupiyou remains EXCLUDED: Wikipedia player page shows 0 senior apps in 2024-25 (Wolves, bench only); not on footballsquads Leicester roster.
+- No rows with sources_agree != yes. Earlier disagreements (Buonanotte 31, Ricardo Pereira 10) already settled by 11v11; unchanged.
+- Position/nationality: all 32 rows checked against footballsquads leicester.htm; all match (Fatawu F, Mavididi F, McAteer IRL M, De Cordova-Reid JAM M, Choudhury BAN M). No changes.
+- Own goals for: 0. StatMuse "most-own-goals-against-leicester(-city)" and "players-with-own-goals-against-leicester-city" queries return HTTP 422 (no answer), while the same query form returns rows for the other clubs. StatMuse and Wikipedia player goals both sum to 33 = club goals. Not itemised by a positive source: treat as probable, not proven.
+- Changes: og_source in summary only. CSV unchanged. Goals diff 0.

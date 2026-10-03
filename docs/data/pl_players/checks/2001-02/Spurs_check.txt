@@ -1,0 +1,10 @@
+Spurs 2001/02 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (under the 25 cap, same players). 11v11 club page 24 (same players). Rows written: 24.
+Apps and goals: every player's StatMuse figure matches 11v11 (starts + subs).
+Club goals (Wikipedia 2001-02 FA Premier League table): 49
+Own goals for: 1 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2001-02-premier-league). Gary Speed (Newcastle, 21 Oct 2001, 8), confirmed on 11v11 match page newcastle-united-v-tottenham-hotspur-21-october-2001-9218.
+Player goals sum: 48. Difference (club goals - own goals - player goals): 0
+Disagreements (0):
+- none
+Positions from footballsquads 2001-2002/faprem/tottenha.htm (Ziege listed D). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Rebrov Ukraine, Thelwell England).
+Unverified: nothing outstanding.

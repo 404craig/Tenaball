@@ -1,0 +1,9 @@
+Man Utd 2014/15 Premier League check
+Player count per source: StatMuse 33 (player-stats 25 + most-apps 25 + fewest-apps 25, merged), 11v11 33 (https://www.11v11.com/teams/manchester-united/tab/players/season/2015/comp/1/). Same 33 players.
+Club goals: 62 (Wikipedia 2014-15 Premier League table)
+Own goals for: 2 (Kieran Gibbs, Arsenal 1-2 Man Utd 22 Nov 2014; Wes Morgan, Man Utd 3-1 Leicester 31 Jan 2015). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2014-15-premier-league, confirmed by Wikipedia 2014-15 Manchester United F.C. season page.
+Player goals sum: 60
+Difference (62 - 2 - 60): 0
+Disagreements: none. Every player's apps (11v11 starts + subs) and goals match StatMuse.
+Positions/nationality: footballsquads.co.uk/eng/2014-2015/faprem/manutd.htm. Andreas Pereira listed BEL there; Brazil used (later capped by Brazil, matches earlier seasons' files). Juan Mata listed F by footballsquads.
+Unverified: nothing.

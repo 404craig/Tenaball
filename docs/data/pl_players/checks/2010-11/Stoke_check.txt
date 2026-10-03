@@ -1,0 +1,10 @@
+Club: Stoke 2010/11
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all hit the 25 cap but return the identical 25 players, with fewest-appearances covering 2 to 37 apps). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2011/comp/1/) 25. Same 25 players.
+Club PL goals: 46 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 2 (James Perch, Newcastle; Phil Jagielka, Everton). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2010-11-premier-league. Consistent with player goal sums from both StatMuse and 11v11 (44 + 2 = 46).
+Player goals sum: 44
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none on apps or goals (all 25 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/stoke.htm (all 25 listed; Tuncay and Gudjohnsen in players no longer at club).
+Unverified: own goal scorers not confirmed against a second named source (Wikipedia/11v11 match pages not read); totals reconcile exactly.

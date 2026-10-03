@@ -1,0 +1,8 @@
+Aston Villa 1997/98 check
+Player counts: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (all uncapped, same 22). 11v11 club page (https://www.11v11.com/teams/aston-villa/tab/players/season/1998/comp/1/) 22 (A+S). Rows = 22.
+Club goals (Wikipedia 1997-98 FA Premier League table): 49.
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1997-98-premier-league) returned HTTP 422 (no result). Wikipedia season page (https://en.wikipedia.org/wiki/1997%E2%80%9398_Aston_Villa_F.C._season) match-by-match scorers list no own goals in Villa's favour, and its scorers total 49.
+Player goals sum: 49. 49 - 0 = 49. Difference: 0.
+Disagreements: 0. All 22 players' apps and goals match between StatMuse and 11v11.
+Positions from footballsquads 1997-1998/faprem/avilla.htm (Barry D, Scimeca M). Nationality: reused from other seasons where available; new players from 11v11: Byfield Jamaica, Fernando Nelson Portugal, Milosevic (11v11 says Serbia; recorded as Yugoslavia, the country he played for in 1997/98, matching the Curcic spelling).
+Unverified: nothing outstanding.

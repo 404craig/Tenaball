@@ -1,0 +1,7 @@
+Wigan 2012/13 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25; merged 28 (Maloney, McCarthy only in most; Moses only in fewest; Miyaichi in most/fewest). 11v11 PL club page 28 (Piscu listed as Adrian Lopez). footballsquads lists all 28.
+Club PL goals: 47 (Wikipedia 2012-13 Premier League table).
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2012-13-premier-league): David Vaughan (Sunderland), Nathan Baker (Aston Villa). Wikipedia season page shows 2 PL own goals (scorers not named).
+Player goals sum: 45. Difference: 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 28.
+Unverified: Piscu full name given as Adrian Lopez (11v11 form, accents added); not confirmed further.

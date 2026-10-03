@@ -1,0 +1,10 @@
+West Ham 2001/02 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 28. 11v11 club page 28 (same players). Rows written: 28.
+Apps and goals: every player's StatMuse figure matches 11v11 (starts + subs).
+Club goals (Wikipedia 2001-02 FA Premier League table): 48
+Own goals for: 0. StatMuse own-goal query (players-with-own-goals-vs-west-ham-united-2001-02-premier-league) returned HTTP 422 (no result page); Wikipedia 2001-02 West Ham season page records no own goals in West Ham's favour and its scorer list (Kanoute 11, Defoe 10, Di Canio 9, Sinclair 5, Lomas 4, Kitson 3, Pearce 2, Carrick 2, Hutchison 1, Schemmel 1) matches StatMuse and 11v11 and sums to 48.
+Player goals sum: 48. Difference (club goals - own goals - player goals): 0
+Disagreements (0):
+- none
+Positions from footballsquads 2001-2002/faprem/westham.htm (Richard Garcia listed F, Soma D, Byrne M). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column.
+Unverified: StatMuse own-goal page could not be read (422).

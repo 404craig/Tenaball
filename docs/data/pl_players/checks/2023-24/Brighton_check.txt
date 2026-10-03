@@ -1,0 +1,10 @@
+Club: Brighton 2023/24
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 30 unique. 11v11 PL club page 30. Same 30 players, apps and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Omobamidele (Nottm Forest), Muric (Burnley), Ashley Young (Everton), Jack Robinson (Sheff Utd), Kerkez (Bournemouth). Wikipedia 2023-24 Brighton season page summary confirmed Jack Robinson (18 Feb 2024); goalscorers table shows 5 OGs all competitions. Total reconciles exactly.
+Unverified: footballsquads brighton.htm returned only the first 5 squad rows (3 attempts). Positions/nationalities for Verbruggen, Lamptey, Igor, Webster taken from footballsquads; others reused from earlier seasons in this dataset (footballsquads-checked) and, for players new to the dataset (Offiah, Dahoud, Ansu Fati, O'Mahony, Baker-Boaitey, Barco), from the Wikipedia squad list. Baker-Boaitey MID vs FWD is a judgement call.
+Club PL goals (https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League table): 55
+Own goals for: 5 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2023-24-premier-league (Omobamidele, Muric, A. Young, J. Robinson, Kerkez); Robinson confirmed by Wikipedia 2023-24 Brighton season page)
+Player goals sum: 50
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2023-2024/engprem/brighton.htm (truncated) + Wikipedia

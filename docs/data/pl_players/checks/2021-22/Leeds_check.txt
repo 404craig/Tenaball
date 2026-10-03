@@ -1,0 +1,10 @@
+Season 2021/22, Leeds
+Player count per source: StatMuse union of 3 pages 29 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 PL squad page 29; final rows 29.
+Sources: StatMuse https://www.statmuse.com/fc/ask/leeds-united-premier-league-player-stats-2021-22 , -players-most-appearances-2021-22 , -players-fewest-appearances-2021-22 (all three read); 11v11 https://www.11v11.com/teams/leeds-united/tab/players/season/2022/comp/1/
+Club PL goals: 42 (Wikipedia 2021-22 Premier League table)
+Own goals for: 0. StatMuse players-with-own-goals-vs-leeds-united / -vs-leeds 2021-22 returned HTTP 422. Wikipedia 2021-22 Leeds United season page: no own goals in Leeds' favour, PL total 42. Player sum 42 equals club goals.
+Player goals sum: 42
+Difference (club goals - og - player goals): 0
+Disagreements: 1. StatMuse (player-stats and fewest-appearances) lists Nohan Kenneh 1 app 0 goals; 11v11 does not list him. Resolved: EXCLUDED. Wikipedia Nohan Kenneh page says he never made a first-team appearance for Leeds (unused sub, booked as unused sub v Wolves), Wikipedia season page has no appearance for him, StatsCrew shows 0 PL apps for Leeds 2021-22. All other 29 players matched on apps and goals between StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/leeds.htm (Summerville listed as F). Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).

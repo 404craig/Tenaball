@@ -1,0 +1,9 @@
+Newcastle 2000/01 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); merged StatMuse 29. 11v11 club page 29 (same players). Rows written: 29.
+Apps: every player's StatMuse apps equal 11v11 starts + subs. Goals agree for every player.
+Club goals (Wikipedia 2000-01 FA Premier League table): 44
+Own goals for: 2 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2000-01-premier-league). David Unsworth (Everton, 3 Mar 2001, 47) and Mark Delaney (Aston Villa, 19 May 2001, 74); both confirmed on 11v11 match pages (everton-v-newcastle-united-03-march-2001-5543, newcastle-united-v-aston-villa-19-may-2001-7266).
+Player goals sum: 42. Difference (club goals - own goals - player goals): 0
+Disagreements: 0 between StatMuse and 11v11. Wikipedia season page summary listed Steven Caldwell with 1 goal; StatMuse and 11v11 both 0, and the sum balances without it, so 0 used.
+Positions from footballsquads 2000-2001/faprem/newcas.htm (Cordone and Coppinger listed F there). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Charvet FRA, Coppinger ENG, Cordone ARG, Gallacher SCO, Gavilan PAR, Glass SCO, Marcelino ESP, Quinn ENG).
+Unverified: nothing outstanding.

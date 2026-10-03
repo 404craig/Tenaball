@@ -1,0 +1,11 @@
+Club: Chelsea 2013/14
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique players. 11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2014/comp/1/) 29. Same 29 players.
+Club PL goals: 71 (https://en.wikipedia.org/wiki/2013%E2%80%9314_Premier_League league table).
+Own goals for: 2 (Antonio Luna, Aston Villa; Phil Bardsley, Sunderland) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2013-14-premier-league.
+Player goals sum: 69
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: 1.
+- Michael Essien apps: StatMuse 6, 11v11 club page 5 (2+3), 11v11 player page https://www.11v11.com/players/michael-essien-8669/ 5. StatMuse game log (https://www.statmuse.com/fc/ask/michael-essien-premier-league-games-2013-14) shows a 0-minute entry with a yellow card v Man Utd 26 Aug 2013 (booked unused sub). Used 5, sources_agree partial.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2013-2014/faprem/chelsea.htm. Oscar and Ramires full_name reused as earlier seasons.
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages (Wikipedia season page summary gave no scorer table); consistent with exact reconciliation.

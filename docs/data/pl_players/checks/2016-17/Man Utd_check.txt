@@ -1,0 +1,9 @@
+Club: Man Utd 2016/17
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 31. 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2017/comp/1/) 31 (A+S). Same 31 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 54 (Wikipedia 2016-17 Premier League table).
+Own goals for: 0. StatMuse own-goals query returned HTTP 422 (no result); Wikipedia 2016-17 Manchester United season page lists no opponent own goals in PL matches.
+Player goals sum: 54
+Difference: 0 (54 - 0 - 54)
+Position/nationality: https://www.footballsquads.co.uk/eng/2016-2017/faprem/manutd.htm. Tuanzebe ENG and McTominay ENG there; DR Congo and Scotland used to match later seasons. Joel Pereira SUI there; Portugal used (youth international, not senior-capped). Valencia, Blind, Young M (MID); Memphis F (FWD).
+Unverified: own goals for 0 relies on Wikipedia summary plus StatMuse empty result; consistent with goal sum.

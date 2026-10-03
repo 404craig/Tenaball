@@ -1,0 +1,8 @@
+West Brom 2010/11 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25, fewest-appearances 25; union 28. 11v11 PL club page 28. footballsquads 2010-2011/faprem/wba.htm lists all 28 (position and nationality taken from it; Pablo Ibanez listed as 'Pablo').
+Players only in most-appearances query: Mulumbu, Reid, Tchoyi (all on 11v11 club page with same figures).
+Club PL goals: 56 (Wikipedia 2010-11 Premier League table).
+Own goals for: 3. Patrice Evra (Man Utd, 16 Oct 2010), Scott Dann (Birmingham, 18 Sep 2010), Winston Reid (West Ham, 12 Feb 2011), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2010-11-premier-league; all three confirmed on 11v11 match pages (290636, 290403, 293813).
+Player goals sum: 53. Difference (56 - 3 - 53): 0.
+Disagreements: none between StatMuse and 11v11 (apps = starts + subs on 11v11). Wikipedia season page summary not used for figures (it gave Mulumbu 6, StatMuse and 11v11 both 7).
+Unverified: nothing.

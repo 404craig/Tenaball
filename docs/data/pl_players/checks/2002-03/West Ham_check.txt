@@ -1,0 +1,10 @@
+West Ham 2002/03 check
+WRITTEN AFTER THE FACT: the CSV and summary were produced by an earlier agent without a check file. This file was written later from what the CSV notes and summary show; no data was re-fetched or re-checked.
+Sources used (per CSV notes): StatMuse player-stats, most-appearances and fewest-appearances (https://www.statmuse.com/fc/ask/west-ham-united-premier-league-player-stats-2002-03), and 11v11 club page (https://www.11v11.com/teams/west-ham-united/tab/players/season/2003/comp/1/). Per-source player counts were not recorded; CSV has 24 rows. Positions from footballsquads (westham.htm per the build script).
+Club goals: 42
+Own goals for: 3 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2002-03-premier-league): Mark Fish (Charlton) 1, Richard Rufus (Charlton) 1, Martin Taylor (Blackburn) 1; Wikipedia 2002-03 West Ham United season also lists 3 own goals
+Player goals sum: 39 (summary says 39). Difference (club goals - own goals - player goals): 0
+Rows with sources_agree other than yes: 0
+Disagreements and notes recorded in CSV (1):
+- Edouard Cisse: Goals: StatMuse 0 and Wikipedia season page 0 vs 11v11 club and player page 1; 0 used (two sources agree, and club total 42 = 39 + 3 own goals per StatMuse and Wikipedia)
+Unverified: per-source counts and any checks not reflected in the CSV notes.

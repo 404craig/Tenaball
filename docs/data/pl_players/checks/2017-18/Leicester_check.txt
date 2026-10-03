@@ -1,0 +1,14 @@
+Leicester 2017/18 Premier League check
+StatMuse: player-stats 25 (capped, alphabetical; missing Ndidi, Benalouane), most-appearances 25 (capped; missing Benalouane, Jakupovic), fewest-appearances 25 (capped; missing Maguire, Vardy); union 27
+11v11 PL club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2018/comp/1/): 27 players
+Rows written: 27. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/leicester.htm (all 27 found)
+Club PL goals (Wikipedia 2017-18 Premier League table): 56
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2017-18-premier-league): Ayoze Perez (Newcastle), Federico Fernandez (Swansea), Jack Butland (Stoke). Wikipedia 2017-18 Leicester City season page goalscorers table shows 3 Premier League own goals (scorers not named in the summary).
+Player goals sum: 53. Club goals minus own goals: 53. Difference: 0
+Disagreements (apps/goals):
+- Ben Hamer: StatMuse fewest-appearances summary 3 vs 4 in the other two StatMuse queries and 11v11 (3+1); used 4
+Naming/nationality notes:
+- Gray (ENG on footballsquads) kept Jamaica and Choudhury (ENG on footballsquads) kept Bangladesh to match later seasons' files
+- Ulloa listed by StatMuse as Jose Ulloa; Iborra listed as Iborra
+Unverified: individual own goal scorers named only by StatMuse (count confirmed by Wikipedia)

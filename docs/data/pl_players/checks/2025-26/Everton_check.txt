@@ -1,0 +1,28 @@
+Everton 2025/26 PL check
+Player count per source:
+- StatMuse (most and fewest-apps queries both returned the same 22 rows, not truncated): 22
+- ESPN squad page (id 368): 0, page returned no data
+- footballsquads.co.uk everton.htm: all 22 found
+- Wikipedia 2025-26 Everton F.C. season: 22 with PL apps (Aznou listed with 0)
+Club PL goals (Wikipedia table): 47
+Own goals for: 1 per Wikipedia season page (Milenkovic v Nottingham Forest), UNVERIFIED
+Sum of player goals: 45
+Difference: 1 (47 - 1 - 45). NOT RESOLVED.
+Disagreements: none on individual apps/goals; StatMuse goals list and Wikipedia goalscorers agree player by player.
+Unverified: the missing goal. Either there were 2 own goals for, or a player is short one PL goal. 11v11 (all comps) shows Alcaraz 1 goal and Beto 10, Garner 3, but those are all-competition so cannot settle it. Wikipedia match-by-match extract was unreliable. ESPN not usable.
+
+Follow-up (2026-10-02):
+- Own goals for: VERIFIED 2, not 1. StatMuse "most own goals against Everton 2025-26": Nikola Milenkovic (Nottm Forest, 6 Dec 2025) and Bernd Leno (Fulham). Leno own goal confirmed by evertonia.com match page: Fulham 1-2 Everton, 7 Feb 2026, "Leno (og) 83'". Wikipedia season page missed the Leno own goal.
+- Player goals re-checked against 11v11 player pages: Alcaraz 0 PL (his 1 goal was League Cup), Beto 9 PL (+1 League Cup), Garner 2 PL (+1 FA Cup). Sum of 11v11 all-comp goals (48) minus these 3 cup goals = 45, matching the CSV.
+- Goals check now: 47 - 2 - 45 = 0. No player goal error; CSV unchanged.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/everton/tab/players/season/2026/comp/1/ read: 22 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- Positions/nationality already from footballsquads everton.htm (pilot); not refetched.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 47 - own goals for 2 - player goals 45 = 0.
+- Everton_summary.json written.
+Changes:
+- Charly Alcaraz: name/nationality fields ('Charly Alcaraz', 'Carlos Alcaraz', 'Alcaraz', 'Argentina') -> ('Carlos Alcaraz', 'Carlos Alcaraz Durán', 'Alcaraz', 'Argentina') (match spelling used in other seasons / spec nationality name)

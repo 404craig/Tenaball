@@ -1,0 +1,8 @@
+Chelsea 2005/06 check
+Player count per source: StatMuse 25 merged (player-stats 25, most-apps 25, fewest-apps 25, same 25 players); 11v11 club page https://www.11v11.com/teams/chelsea/tab/players/season/2006/comp/1/ 25 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/chelsea.htm: all 25 present.
+Club PL goals: 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/, also Wikipedia 2005-06 Chelsea F.C. season: 72
+Own goals for: 1, Zurab Khizanishvili (Blackburn, 29 Oct 2005 at Stamford Bridge), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2005-06-premier-league. Wikipedia season page did not list own goal scorers; count consistent with goals check.
+Player goals sum: 71. 72 - 1 - 71 = 0.
+Disagreements: none; all 25 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (Robben F, Gudjohnsen F). Nationality: reused other seasons' spellings; new players (Crespo, Del Horno, Maniche, Pidgeley, Jimmy Smith) from 11v11.
+Unverified: own goal not confirmed on an 11v11 match page (sum check closes).

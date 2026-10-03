@@ -1,0 +1,10 @@
+Club: Everton 2008/09
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all three read; same 25 players in each). 11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2009/comp/1/) 25 (starts + subs). Same 25 players, so 11v11 fully covers the StatMuse 25-row cap.
+Club PL goals: 55 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 2 (Danny Collins, Sunderland; Vedran Corluka, Tottenham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2008-09-premier-league. Wikipedia 2008-09 Everton season page (via summariser) did not list own-goal scorers; 11v11 player goals sum to 53, consistent with 2.
+Player goals sum: 53
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/everton.htm (Jutkiewicz in "no longer at club"). Spellings reused from other seasons where they exist.
+Unverified: the two own goals are confirmed by StatMuse only (consistent with goals total).

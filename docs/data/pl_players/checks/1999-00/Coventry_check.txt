@@ -1,0 +1,9 @@
+Coventry 1999/00 check
+Player counts: StatMuse player-stats 25 (capped; Chippo, Froggatt, Gustafsson, Normann, Ogrizovic missing), most-apps 25, fewest-apps 25; union 30. 11v11 club page (https://www.11v11.com/teams/coventry-city/tab/players/season/2000/comp/1/) 30. Rows = 30.
+Club goals (Wikipedia 1999-2000 FA Premier League table): 47.
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1999-00-premier-league) lists Paul Ince (Middlesbrough). Confirmed on 11v11 match page: Coventry 2-1 Middlesbrough, 15 Apr 2000 (Ince og 32).
+Player goals sum: 46. 47 - 1 = 46. Difference: 0.
+Disagreements: 0. All 30 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 1999-2000/faprem/coventry.htm (Huckerby, Paul Hall in no-longer-at-club section; Quinn listed M, Whelan F). Nationality: footballsquads has no nationality column; spellings reused from other seasons, 11v11 Nat column for Burrows, Froggatt, Ogrizovic (ENG), Normann (NOR), Paul Hall (JAM), Gustafsson (SWE).
+Naming: Tomas Gustafsson is "Tomas Antonelius" on 11v11, "Tomas Gustafsson-Antonelius" on StatMuse, "Tomas Gustafsson" on footballsquads; same player.
+Unverified: nothing material.

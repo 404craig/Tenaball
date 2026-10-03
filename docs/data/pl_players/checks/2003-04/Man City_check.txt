@@ -1,0 +1,8 @@
+Man City 2003/04 check
+Player count per source: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (all under the 25 cap, so complete); merged 24. 11v11 club page https://www.11v11.com/teams/manchester-city/tab/players/season/2004/comp/1/: 24 (total = A+S). footballsquads 2003-04 (/faprem/mancity.htm): all 24 present (Berkovic, Seaman in 'no longer at club').
+Club PL goals: 55 (Wikipedia 2003-04 FA Premier League table).
+Own goals for: 3 (Lauren, Arsenal; Simon Charlton, Bolton; Zat Knight, Fulham) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2003-04-premier-league.
+Player goals sum: 52. 55 - 3 - 52 = 0.
+Disagreements: 0. All 24 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2003-04 (Wright-Phillips F, Tiatto M, Jordan M, Sibierski M). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

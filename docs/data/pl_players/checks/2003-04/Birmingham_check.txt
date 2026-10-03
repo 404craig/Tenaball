@@ -1,0 +1,9 @@
+Birmingham 2003/04 check
+Player count per source: StatMuse player-stats 25 (capped; missing Clemence and Stern John), most-apps 25, fewest-apps 25, union 27; 11v11 club page https://www.11v11.com/teams/birmingham-city/tab/players/season/2004/comp/1/ 27 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2003-2004/faprem/birmin.htm: all 27 present (Horsfield, Devlin, Figueroa, Kirovski, Kenna, Dugarry under players no longer at club).
+Club PL goals: Wikipedia 2003-04 FA Premier League table (https://en.wikipedia.org/wiki/2003%E2%80%9304_FA_Premier_League): 43
+Own goals for: 0. StatMuse own-goal queries (players-with-own-goals-vs-birmingham-city-2003-04-premier-league and the -birmingham- variant) returned HTTP 422 (no answer page, consistent with no results); Wikipedia Birmingham season page (https://en.wikipedia.org/wiki/2003%E2%80%9304_Birmingham_City_F.C._season) records no opponent own goals in league matches.
+Player goals sum: 43. 43 - 0 - 43 = 0.
+Disagreements: none on apps/goals between StatMuse and 11v11. Name: StatMuse "Andy Barrowman", 11v11 and footballsquads "Andrew Barrowman"; used Andrew Barrowman. Wikipedia summariser listed Morrison with 1 goal and omitted Dugarry; StatMuse and 11v11 agree on Morrison 4 and Dugarry 1, kept those.
+Positions: footballsquads 2003-04 (Devlin F, Kirovski M, Cisse M, Clapham D, Grainger D, Kenna D).
+Nationality: footballsquads 2003-04 has no nationality column; spellings reused from other seasons' CSVs; Barrowman, Devlin, Dugarry, Figueroa, Grainger, Kenna, Kirovski taken from 11v11 club page flags.
+Unverified: no StatMuse own-goal page available; OG = 0 rests on Wikipedia plus exact reconciliation.

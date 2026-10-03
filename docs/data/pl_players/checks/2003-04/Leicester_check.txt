@@ -1,0 +1,8 @@
+Leicester 2003/04 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 30 (Benjamin only in fewest-apps; Freund, Guppy, Howey, Scimeca not in player-stats). 11v11 club page https://www.11v11.com/teams/leicester-city/tab/players/season/2004/comp/1/: 30 (total = A+S). footballsquads 2003-04 (/faprem/leicester.htm): all 30 present (Deane, Howey, Curtis, Taggart in 'no longer at club').
+Club PL goals: 48 (Wikipedia 2003-04 FA Premier League table).
+Own goals for: 2 (Gary Doherty, Spurs; Matthew Taylor, Portsmouth) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2003-04-premier-league.
+Player goals sum: 46. 48 - 2 - 46 = 0.
+Disagreements: 0. All 30 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2003-04 (Canero M, Stewart M, Hignett M, Scimeca D). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

@@ -1,0 +1,7 @@
+Norwich 2013/14 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25, fewest-appearances 25 (same 25 players, list complete); 11v11 club page (comp 1, season 2014) = 25 players. footballsquads 2013-2014/faprem/norwich.htm used for position and nationality.
+Club goals (Wikipedia 2013-14 Premier League table): 28
+Own goals for: 0. StatMuse own-goal URL https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2013-14-premier-league returned HTTP 422 (also with slug norwich), consistent with no results; Wikipedia 2013-14 Norwich City season page statistics show 0 league own goals.
+Player goals sum: 28. Expected 28 - 0 = 28. Difference: 0.
+Disagreements: none. All 25 players match on apps and goals between StatMuse and 11v11.
+Unverified: own goals for rely on Wikipedia and the goal sum (StatMuse page not readable).

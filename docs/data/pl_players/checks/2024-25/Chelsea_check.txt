@@ -1,0 +1,31 @@
+Player count per source: StatMuse union of 3 pages 29; Wikipedia season page 21 table rows (0-app GK Bettinelli excluded, 8 StatMuse players missing from summarised table); 11v11 not used.
+Disagreements: 1. Chalobah (Wikipedia club page 14 apps/1 goal vs StatMuse and Wikipedia player page 13/0); resolved 13/0. Note Chalobah's Wikipedia 1 goal would make sum 62.
+Unverified: own goals for Chelsea. Implied 3 (or 2 if Chalobah did score 1). Not confirmed, so goals check is open. Position/nationality for players not in the Wikipedia table (Lavia, Disasi, Felix, Acheampong, George, Veiga, Guiu, Mheuka, Amougou) from general knowledge, footballsquads not consulted.
+Full names for most players are from general knowledge.
+Club PL goals: 64 (Wikipedia 2024-25 Premier League table)
+Own goals for: unverified (unverified: no source found for own goals for Chelsea (StatMuse own-goal query returned 422; Chelsea site article gave only 5 own goals across all competitions))
+Player goals sum: 61
+Difference (club goals - og - player goals): n/a (og unverified; implied og = 3)
+
+
+VERIFIED (2026-10-02)
+StatMuse: player-stats, most and fewest pages had been read (29 players); no missing players found. 11v11 squad page does not list PL-only apps, so Wikipedia used as second source for the 9 partial rows.
+Goals: all 61 player goals match the 11v11 PL 2024-25 goal-scorers list (Disasi 1 confirmed there; Wikipedia shows Disasi 0 goals, outvoted).
+Disagreement Chalobah settled with 11v11 (13/0 for Chelsea).
+Positions: footballsquads lists Palmer F, Mudryk M, Madueke M; CSV changed to match. Others match footballsquads.
+Changes:
+- Romeo Lavia: sources_agree partial -> yes (Wikipedia 11+5)
+- Axel Disasi: sources_agree partial -> yes (Wikipedia 4+2 apps (Wikipedia shows 0 goals); 11v11 PL scorers list gives 1 goal, agreeing with StatMuse)
+- Joao Felix: sources_agree partial -> yes (Wikipedia 3+9/1)
+- Josh Acheampong: sources_agree partial -> yes (Wikipedia 2+2)
+- Tyrique George: sources_agree partial -> yes (Wikipedia 1+7/1)
+- Renato Veiga: sources_agree partial -> yes (Wikipedia 1+6)
+- Marc Guiu: sources_agree partial -> yes (Wikipedia 0+3)
+- Shumaira Mheuka: sources_agree partial -> yes (Wikipedia 0+1)
+- Mathis Amougou: sources_agree partial -> yes (Wikipedia 0+1)
+- Cole Palmer: position MID -> FWD (footballsquads 2024-2025)
+- Mykhailo Mudryk: position FWD -> MID (footballsquads 2024-2025)
+- Noni Madueke: position FWD -> MID (footballsquads 2024-2025)
+- Trevoh Chalobah: note updated (11v11 player page: Chelsea PL 11+2 apps, 0 goals; confirms 13/0 against Wikipedia season page 14/1)
+Final: club goals 64, own goals for 3, player goals 61, difference 0
+All rows now sources_agree=yes.

@@ -1,0 +1,8 @@
+Sheffield Wed 1996/97 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (union 24). 11v11 club page (https://www.11v11.com/teams/sheffield-wednesday/tab/players/season/1997/comp/1/) 24 (A+S). Rows = 24.
+Club goals (Wikipedia 1996-97 FA Premier League table): 50.
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1996-97-premier-league) returned HTTP 422 (usually an empty result). Wikipedia 1996-97 Sheffield Wednesday season page: no own goals in the league results table.
+Player goals sum: 50. 50 - 0 = 50. Difference: 0. StatMuse and 11v11 goals agree for every player.
+Disagreements: 1. Dejan Stefanovic apps: StatMuse 28 vs 11v11 club page and player page 27+2 = 29 and Wikipedia 27+2; used 29.
+Positions from footballsquads 1996-1997/faprem/sheffwed.htm (Sheridan, Bright in players no longer at club). Nationality reused from other seasons (Stefanovic kept as Serbia for consistency); new players Blinker and Trustfull (NED), Michael Williams (ENG) from 11v11.
+Unverified: own goals rely on Wikipedia plus the goal sum.

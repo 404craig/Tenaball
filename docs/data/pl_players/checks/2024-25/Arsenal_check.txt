@@ -1,0 +1,44 @@
+Club: Arsenal 2024/25
+Players (rows): 25 (StatMuse player-stats list, most-appearances list and fewest-appearances list merged; each returned 25 rows)
+Club PL goals (Wikipedia 2024-25 Premier League table): 69
+Own goals for: 1 (https://en.wikipedia.org/wiki/2024%E2%80%9325_Arsenal_F.C._season (Ndidi OG v Leicester confirmed; second OG not confirmed))
+Player goals sum: 67
+Difference (club goals - og_for - player goals): 1
+Disagreements: none found among players Wikipedia covered
+Unverified: position and nationality entered from general knowledge (footballsquads.co.uk not fetched); 11v11 not used; most players rely on StatMuse only (sources_agree=no where Wikipedia gave no figure).
+Arsenal unresolved: 69 club goals - 1 confirmed OG (Ndidi) = 68 vs 67 player goals. One goal unaccounted for: either a second opponent own goal (not confirmed) or a missing/understated scorer. StatMuse lists exactly 25 players with identical sets in ascending and descending queries, so a missing player is unlikely.
+
+VERIFIED (verification pass 2026-10-02)
+StatMuse: three queries were run previously; union of most- and fewest-appearances lists covers all rows (each list capped at 25), no missing player found. 11v11 squad page cross-checked; extra names there had no PL apps (cup/UCL only or not used).
+Own goals for: 2 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2024-25-premier-league (Solanke 15 Jan 2025, Ndidi 28 Sep 2024). Club goals 69 - og 2 - player goals 67 = diff 0.
+Position/nationality checked against https://www.footballsquads.co.uk/eng/2024-2025/engprem/arsenal.htm.
+Changes:
+- Ben White: confirmed by 11v11 player page, sources_agree no -> yes
+- Bukayo Saka: confirmed by 11v11 player page, sources_agree no -> yes
+- Bukayo Saka: position FWD -> MID
+- David Raya: confirmed by 11v11 player page, sources_agree no -> yes
+- Declan Rice: confirmed by 11v11 player page, sources_agree no -> yes
+- Gabriel Jesus: confirmed by 11v11 player page, sources_agree no -> yes
+- Gabriel Magalhaes: confirmed by 11v11 player page, sources_agree no -> yes
+- Gabriel Martinelli: confirmed by 11v11 player page, sources_agree no -> yes
+- Jorginho: confirmed by 11v11 player page, sources_agree no -> yes
+- Kai Havertz: position FWD -> MID
+- Kieran Tierney: confirmed by 11v11 player page, sources_agree no -> yes
+- Leandro Trossard: confirmed by 11v11 player page, sources_agree no -> yes
+- Leandro Trossard: position FWD -> MID
+- Martin Odegaard: confirmed by 11v11 player page, sources_agree no -> yes
+- Mikel Merino: confirmed by 11v11 player page, sources_agree no -> yes
+- Oleksandr Zinchenko: confirmed by 11v11 player page, sources_agree no -> yes
+- Raheem Sterling: confirmed by 11v11 player page, sources_agree no -> yes
+- Reiss Nelson: confirmed by 11v11 player page, sources_agree no -> yes
+- Takehiro Tomiyasu: confirmed by 11v11 player page, sources_agree no -> yes
+- Thomas Partey: confirmed by 11v11 player page, sources_agree no -> yes
+- William Saliba: confirmed by 11v11 player page, sources_agree no -> yes
+- Jurrien Timber: confirmed by 11v11 player page, sources_agree no -> yes
+- Jakub Kiwior: confirmed by 11v11 player page, sources_agree no -> yes
+- Ethan Nwaneri: confirmed by 11v11 player page, sources_agree no -> yes
+- Nathan Butler-Oyedeji: confirmed by 11v11 player page, sources_agree no -> yes
+- Myles Lewis-Skelly: confirmed by 11v11 player page, sources_agree no -> yes
+- Riccardo Calafiori: confirmed by 11v11 player page, sources_agree no -> yes
+- og_for 1 -> 2
+Rows with sources_agree != yes after pass: 0

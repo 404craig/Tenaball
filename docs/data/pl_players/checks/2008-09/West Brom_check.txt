@@ -1,0 +1,13 @@
+West Brom 2008/09 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances merged; each capped at 25 rows): 30 players
+- 11v11 club page https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2009/comp/1/: 30 players
+- footballsquads https://www.footballsquads.co.uk/eng/2008-2009/faprem/ : all 30 players found (position and nationality taken from it)
+Club PL goals (Wikipedia 2008-09 Premier League table): 36
+Own goals for: 2 (Danny Shittu (Bolton, 21 Mar 2009, confirmed by Wikipedia 2008-09 WBA season), Tony McMahon (Middlesbrough, 17 Jan 2009, confirmed by 11v11 match page https://www.11v11.com/matches/west-bromwich-albion-v-middlesbrough-17-january-2009-284061/)); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2008-09-premier-league
+Player goals sum: 34
+Club goals minus own goals for: 34
+Difference: 0
+Disagreements: none on apps or goals; every player's apps (11v11 starts+subs) and goals match StatMuse.
+Notes: Name spelling variants only (11v11 Hoefkels/StatMuse Hoefkens; Kim Do-heon/Kim Doheon; Mac-Donald). Nationality: Donk set to Suriname (fs NED), Martis Curacao (fs ANT).
+Unverified: nothing outstanding.

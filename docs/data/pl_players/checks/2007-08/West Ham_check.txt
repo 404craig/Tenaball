@@ -1,0 +1,13 @@
+West Ham 2007/08 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances all read and merged; each capped at 25 rows): 28 players
+- 11v11 club page https://www.11v11.com/teams/west-ham-united/tab/players/season/2008/comp/1/: 28 players
+- footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/ : all 28 players found (position taken from it; the 2007-08 pages have no nationality column, so nationality is from the 11v11 club page Nat code, matched to spelling used in earlier season files)
+Club PL goals (Wikipedia 2007-08 Premier League table): 42
+Own goals for: 3 (Craig Gordon (Sunderland), Eddie Lewis (Derby), Luke Young (Middlesbrough); Wikipedia 2007-08 West Ham United season goalscorer table confirms 3 own goals (scorers not named there)); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2007-08-premier-league
+Player goals sum: 39
+Club goals minus own goals for: 39
+Difference: 0
+Disagreements: none on apps or goals; every player matches between StatMuse and 11v11 (starts+subs).
+Notes: Solano also 1 app for Newcastle. Faubert listed MTQ by 11v11; France reused from other seasons.
+Unverified: own goal count confirmed by Wikipedia; individual scorers named only by StatMuse.

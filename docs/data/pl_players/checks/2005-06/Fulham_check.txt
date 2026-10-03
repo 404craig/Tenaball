@@ -1,0 +1,8 @@
+Fulham 2005/06 check
+Player count per source: StatMuse 27 merged (player-stats 25, missing Knight, Rehman; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/fulham/tab/players/season/2006/comp/1/ 27 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/fulham.htm: all 27 present.
+Club PL goals: 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/, also Wikipedia 2005-06 Fulham F.C. season: 48
+Own goals for: 1, Curtis Davies (West Brom, 11 Feb 2006, Fulham 6-1 West Brom), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2005-06-premier-league, confirmed by Wikipedia 2005-06 Fulham F.C. season results.
+Player goals sum: 47. 48 - 1 - 47 = 0.
+Disagreements: none; all 27 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (Rosenior listed F, Rehman M, Elrich F, Boa Morte M). Nationality: reused other seasons' spellings; new players (Crossley, Elliott, Elrich, Goma, N Jensen, Legwinski, Pembridge, Rehman) from 11v11.
+Unverified: Rosenior position F taken as footballsquads gives it (other seasons have him DEF).

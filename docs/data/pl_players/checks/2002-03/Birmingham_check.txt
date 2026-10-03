@@ -1,0 +1,9 @@
+Birmingham 2002/03 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25 (union 33 players); 11v11 club page 33. Union = 33 rows.
+Club goals (Wikipedia 2002-03 FA Premier League table): 41
+Own goals for: 2 (Darren Moore, West Brom, 19 Oct 2002; Peter Enckelman, Aston Villa, 16 Sep 2002). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2002-03-premier-league. Both confirmed by the Wikipedia 2002-03 Birmingham City season results (Moore 86' o.g., Enckelman 77' o.g.).
+Player goals sum: 39. Difference: 0.
+Disagreements: 2, offsetting. Horsfield goals StatMuse 5 / Wikipedia 5 / 11v11 4; Savage goals StatMuse 4 / Wikipedia 4 / 11v11 5. Resolved to StatMuse+Wikipedia (Horsfield 5, Savage 4). 11v11 player pages give only season totals (no match detail) so the specific match was not identified. Sum is 39 under either version.
+All apps agree between StatMuse and 11v11 (A+S).
+Positions from footballsquads 2002-2003/faprem/birmin.htm (Devlin F, Cisse M, Kirovski M, Hutchinson M as Jonathan Hutchinson; Powell in no-longer-at-club section M). Nationality: footballsquads has no nationality column; taken from spellings used in other seasons and 11v11 Nat column (Coly Senegal, Marriott Wales, Mooney England, Powell Jamaica, Swierczewski Poland, Vickers England, Woodhouse England, Hutchinson England; Michael Johnson Jamaica as in his Derby 2007/08 row).
+Unverified: nothing material.

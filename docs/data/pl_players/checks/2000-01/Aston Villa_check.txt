@@ -1,0 +1,8 @@
+Aston Villa 2000/01 check
+Player counts: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (identical, union 23); 11v11 club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2001/comp/1/) 23. Rows = 23.
+Club goals (Wikipedia 2000-01 FA Premier League table): 46.
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2000-01-premier-league) returned HTTP 422 (no answer). Wikipedia 2000-01 Aston Villa season page summary reports no own goals in Villa's favour.
+Player goals sum: 46. Difference: 0.
+Disagreements: 0. All 23 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2000-2001/faprem/avilla.htm (Merson F, Barry D; Ehiogu, De Bilde, Nilis in no-longer-at-club section). Nationality: reused spellings from other seasons; 11v11 Nat for De Bilde (BEL), Nilis (BEL), Joachim (ENG), McGrath (IRL).
+Unverified: og_for = 0 rests on StatMuse 422, the Wikipedia summary and the exact 46 = 46 match; individual 11v11 match pages not checked.

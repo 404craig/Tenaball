@@ -1,0 +1,10 @@
+Club: Arsenal 2015/16
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap, identical 25 players); 11v11 PL club page 25. Same 25 players.
+Club PL goals: 65 (https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League league table).
+Own goals for: 3 (Damien Delaney (Crystal Palace), Fabricio Coloccini (Newcastle), Mark Bunn (Aston Villa)) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2015-16-premier-league.
+Player goals sum: 62
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2015-2016/faprem/arsenal.htm. Name spellings reused from earlier seasons where the same player already appears. 
+Unverified: Own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

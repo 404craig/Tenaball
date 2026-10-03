@@ -1,0 +1,13 @@
+Newcastle 2024/25 check
+Player count per source: StatMuse 24 in each of 3 queries (under the 25 cap so not truncated); Wikipedia 25 rows (incl. Vlachodimos, 0 apps, excluded); rows written: 24
+Club PL goals: 68 (Wikipedia Premier League table)
+Own goals for: 2 IMPLIED from totals, not itemised. StatMuse OG=2 coincides but is probably own goals committed; Wikipedia summary said 0 (unreliable); Wikipedia match list too garbled to use.
+Player goals sum: 66; difference (club - og - players): 0 (zero only if own goals for really is 2)
+Disagreements and resolutions: none. All 24 players agree between StatMuse (3 queries) and Wikipedia on apps and goals.
+Unverified: own goals for (see above). footballsquads Newcastle page returned 404 under slugs newcastle and newcastleutd; positions/nationalities taken from Wikipedia summary.
+
+VERIFIED (2026-10-02)
+- StatMuse queries were read previously (24 rows each, under cap); no missing players. Wikipedia season table re-read: all 24 apps and goals match; Vlachodimos, Ruddy, Lascelles 0 apps.
+- Position/nationality: footballsquads correct file is newcas.htm (from the 2024-2025 engprem index), but the player table does not come through the fetcher (page truncated). Checked against Wikipedia season squad table instead: all positions and nations match the CSV. Notes reworded accordingly. Still not confirmed from footballsquads.
+- Own goals for: 2, both Marc Guehi (Crystal Palace), 30 Nov 2024 and 16 Apr 2025, from StatMuse players-with-own-goals-against-newcastle-united query. Now positively sourced. og_source updated.
+- Goals diff 0.

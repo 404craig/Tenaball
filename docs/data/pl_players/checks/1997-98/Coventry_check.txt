@@ -1,0 +1,7 @@
+Coventry 1997/98 Premier League check
+Player count per source: StatMuse player-stats 25 (capped, missing Willie Boland), most-apps 25, fewest-apps 25; merged StatMuse 26. 11v11 club page (https://www.11v11.com/teams/coventry-city/tab/players/season/1998/comp/1/) 26. footballsquads (faprem/coventry.htm) lists all 26 (positions taken from it; no nationality column, nationality from 11v11 club page and earlier-season spellings).
+Club goals: 46 (Wikipedia 1997-98 FA Premier League table)
+Own goals for: 0. StatMuse own-goal query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1997-98-premier-league returned HTTP 422 (no answer page, consistent with no results). Wikipedia Coventry season page records no own goals in Coventry's favour. Player goals from two agreeing sources sum to exactly 46.
+Player goals sum: 46. 46 - 0 - 46 = 0.
+Disagreements: 0 (apps and goals agree for all 26 players across StatMuse and 11v11).
+Unverified: own goals for = 0 not confirmed by a StatMuse list (query errored); supported by Wikipedia season page and exact balance.

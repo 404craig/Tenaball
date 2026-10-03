@@ -1,0 +1,9 @@
+Season 2023/24, Burnley
+Player count per source: StatMuse union of 3 pages (player-stats, most-appearances, fewest-appearances, all read) 31; 11v11 PL squad page (season 2024, comp 1) 31; final rows 31.
+Club PL goals: 41 (Wikipedia 2023-24 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2023-24-premier-league (Mavropanos, West Ham v Burnley 10 Mar 2024); confirmed by Wikipedia 2023-24 Burnley F.C. season match report)
+Player goals sum: 40
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: None. All 31 players match StatMuse and 11v11 on apps and goals.
+Positions and nationalities: footballsquads.co.uk eng/2023-2024/engprem (all players found there, read via summariser). Names, full names and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (where unsure, the display name with accents is used). 11v11 player pages not needed except as noted, since StatMuse and the 11v11 squad page agreed on every listed player.

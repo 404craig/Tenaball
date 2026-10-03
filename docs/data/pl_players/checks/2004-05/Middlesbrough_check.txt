@@ -1,0 +1,8 @@
+Middlesbrough 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 27 (Ehiogu, McMahon missing from player-stats; Bates, Kennedy missing from most-apps). 11v11 club page 27 (total = A + S). footballsquads 2004-05 (/faprem/middles.htm): all 27 present (Nash in "no longer at club").
+Club PL goals: 53 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2005/).
+Own goals for: 4 (Danny Higginbotham, Southampton; Darren Purse, West Brom; Talal El Karkouri, Charlton; Tony Popovic, Crystal Palace) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2004-05-premier-league. 11v11 and StatMuse player goals each sum to 49 = 53 - 4.
+Player goals sum: 49. 53 - 4 - 49 = 0.
+Disagreements: 0. All 27 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2004-05. Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on individual match pages (StatMuse list plus goal-sum consistency only). Wikipedia not consulted (cache-only for league page).

@@ -1,0 +1,9 @@
+Man Utd 1997/98 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); merged 29; 11v11 club page (https://www.11v11.com/teams/manchester-united/tab/players/season/1998/comp/1/) 29. Rows = 29.
+Own goals for: 5. StatMuse lists Ramon Vega (Spurs), Hermann Hreidarsson (Crystal Palace), Jon Newsome (Sheffield Wednesday), Stephane Henchoz and Jeff Kenna (Blackburn). Confirmed by Wikipedia 1997-98 Manchester United season page: Vega og 83 at Spurs 10 Aug 1997; Hreidarsson og 30 v Palace 4 Oct 1997; Newsome og 20 v Sheffield Wednesday 1 Nov 1997; Henchoz og 59 and Kenna og 84 v Blackburn 30 Nov 1997.
+Disagreements: 0. All 29 players' apps (11v11 Apps + Subs) and goals match StatMuse.
+Nationality: reused spellings from other seasons (Danny Higginbotham kept as England; 11v11 shows Gibraltar, his later international team); new players (McClair, Pilkington, Poborsky, Thornley) from 11v11 Nat column.
+Club goals (Wikipedia 1997-98 FA Premier League table (https://en.wikipedia.org/wiki/1997%E2%80%9398_FA_Premier_League)): 73.
+Own goals for: 5 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-1997-98-premier-league).
+Player goals sum: 68. 73 - 5 = 68. Difference: 0.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1997-1998/faprem/manutd.htm (season-specific; includes players no longer at club).

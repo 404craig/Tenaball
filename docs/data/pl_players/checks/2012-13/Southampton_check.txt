@@ -1,0 +1,10 @@
+Southampton 2012/13 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25, fewest-appearances 25; merged = 25 players. 11v11 club page (comp 1, season 2013) = 25 players, same 25. footballsquads 2012-2013/faprem/southam.htm used for position and nationality (all 25 found).
+Club goals (Wikipedia 2012-13 Premier League table): 49
+Own goals for: 3 (Anton Ferdinand, QPR, 17 Nov 2012; Andy Wilkinson, Stoke, 29 Dec 2012; Gareth Barry, Man City, 9 Feb 2013). Sources: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2012-13-premier-league (lists Wilkinson, plus Ferdinand, Ciaran Clark, Barry) and Wikipedia 2012-13 Southampton season match reports (Ferdinand, Wilkinson, Barry).
+Ciaran Clark (Aston Villa, 22 Sep 2012) is counted by StatMuse as an own goal, but the 11v11 match page states the Dubious Goals Committee credited the goal to Jason Puncheon, so not counted.
+Player goals sum: 46. Expected 49 - 3 = 46. Difference: 0. (StatMuse version, 45 + 4 own goals, also totals 49; the split is the only difference.)
+All 25 players' apps agree between StatMuse and 11v11.
+Disagreements (1):
+- Jason Puncheon goals: StatMuse 5, 11v11 club page 6, Wikipedia player page 6 (32 apps). Used 6.
+Unverified: nothing outstanding.

@@ -1,0 +1,8 @@
+Spurs 2012/13 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25; merged 28 (Gallas, Huddlestone, Kaboul only in most/fewest queries; Vertonghen, Defoe, Walker only in player-stats/most). 11v11 PL club page 28. footballsquads lists all 28.
+Club PL goals: 66 (Wikipedia 2012-13 Premier League table).
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2012-13-premier-league): Alejandro Faurlin (QPR), Carlos Cuellar (Sunderland), Emmerson Boyce (Wigan), Jonny Evans (Man Utd). Wikipedia season page says player goals total 62 (consistent with 66 - 4) but does not name the own goals; individual OGs not checked on 11v11 match pages.
+Player goals sum: 62. Difference: 0.
+Disagreements: 1.
+- Jake Livermore apps: StatMuse 12, 11v11 club page 4+7=11, 11v11 player page (https://www.11v11.com/players/jake-livermore-228526/) 4+7=11, Wikipedia 4+7=11. Used 11 (likely StatMuse counting an unused sub).
+Nationality note: Steven Caulker listed ENG by footballsquads 2012/13; Sierra Leone kept to match earlier seasons' rows.

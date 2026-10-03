@@ -1,0 +1,9 @@
+Liverpool 2020/21 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 28; 11v11 PL squad page 28; rows written 28. union adds Trent Alexander-Arnold, Xherdan Shaqiri, Virgil van Dijk to player-stats 25.
+Club PL goals: 68 (Wikipedia 2020-21 Premier League table)
+Own goals for: 3 (Jonny Evans (Leicester), Kean Bryan (Sheffield Utd), Nelson Semedo (Wolves)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2020-21-premier-league. Confirmation: Wikipedia 2020-21 Liverpool season goalscorers table: 3 own goals in PL column (match-level names not extracted).
+Player goals sum: 65 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2020-2021/engprem/liverpool.htm used; page as read omitted Trent Alexander-Arnold, Caoimhin Kelleher, Nat Phillips, Neco Williams, Takumi Minamino (no departed section rendered): their position/nationality from Wikipedia 2020-21 Liverpool season squad, consistent with earlier season files.
+Unverified: nothing material.

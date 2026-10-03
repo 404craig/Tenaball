@@ -1,0 +1,13 @@
+Club: Aston Villa 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 28 unique (Trezeguet, Mings, Wesley only in most list; Steer, Baston, Vassilev in stats/fewest lists). Wikipedia 2019-20 Aston Villa season appearances table: 28 (Baston 0+2 and Vassilev 0+4 confirmed on a second read). 11v11 PL club page https://www.11v11.com/teams/aston-villa/tab/players/season/2020/comp/1/ NOT read: fetch proxy refused with HTTP 429 and an instruction not to retry.
+Disagreements: none. All 28 apps and goals match between StatMuse and Wikipedia.
+Club PL goals: 41 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 1 (Toby Alderweireld, Tottenham v Aston Villa, 16 Feb 2020) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2019-20-premier-league; Wikipedia season page top-scorers table shows 1 PL own goal.
+Player goals sum: 40
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/avilla.htm (Trezeguet listed as Mahmoud Hassan, Baston as Borja Gonzalez, Heaton as Thomas Heaton; Kodjia in players no longer at club). Spellings reused from earlier-season files where present.
+Unverified: 11v11 club page (mandatory second source) not available; Wikipedia used as second source, all figures agree.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/aston-villa/tab/players/season/2020/comp/1/): 28 players, all 28 rows match on apps and goals. No player missing. No changes. Goals diff 0.

@@ -1,0 +1,13 @@
+Club: Newcastle 2010/11
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 30. 11v11 PL club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2011/comp/1/) 30. Same 30 players.
+Club PL goals: 56 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 1 (Jonas Olsson, West Brom, 22 May 2011). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2010-11-premier-league. Confirmed by Wikipedia 2010-11 Newcastle United F.C. season (own goal from Jonas Olsson in 3-3 v West Brom).
+Player goals sum: 55
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: 2 (apps only, goals all agree).
+  - James Perch: StatMuse 12, 11v11 9+4=13. 11v11 player page 9+4 and Wikipedia season page 9+4. Used 13.
+  - Ryan Taylor: StatMuse 6, 11v11 3+2=5. 11v11 player page 3+2 and Wikipedia season page 3+2. Used 5.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/newcas.htm for 27 players. Not on that page (no departed-players section shown): Andy Carroll (taken from footballsquads 2010-11 Liverpool), Wayne Routledge (footballsquads 2011-12 Swansea), Xisco (footballsquads 2008-09 Newcastle).
+Shola Ameobi: footballsquads says ENG; Nigeria used (country he later played for, consistent with earlier-done seasons).
+Unverified: nothing material.

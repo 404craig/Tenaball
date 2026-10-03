@@ -1,0 +1,15 @@
+Man City 2016/17 Premier League check
+StatMuse: player-stats 25, most-appearances 25, fewest-appearances 25 (each capped at 25 but all three return the same 25 players); union 25 players
+11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2017/comp/1/): 25 players (fully covers the squad)
+Rows written: 25. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2016-17 Premier League table): 80
+Own goals for: 5 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2016-17-premier-league):
+- Paddy McNair (Sunderland), Man City 2-1 Sunderland, 13 Aug 2016 (Fox News/AP report)
+- Gary Cahill (Chelsea), Man City 1-3 Chelsea, 3 Dec 2016 (Bangkok Post/AFP report)
+- Curtis Davies (Hull), Man City 3-0 Hull, 26 Dec 2016 (Daily Star report)
+- Tyrone Mings (Bournemouth), Bournemouth 0-2 Man City, 13 Feb 2017 (mancity.com match report)
+- Ahmed Elmohamady (Hull), Man City 3-1 Hull, 8 Apr 2017 (Sports Mole report)
+Player goals sum: 75. Club goals minus own goals: 75. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2016-17 Man City page (https://www.footballsquads.co.uk/eng/2016-2017/faprem/mancity.htm), complete including players no longer at club.
+Unverified: nothing outstanding

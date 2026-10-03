@@ -1,0 +1,9 @@
+Southampton 2021/22 check
+Players per source: 11v11 PL squad page 25; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 25. Same players in both.
+Club PL goals: 43 (Wikipedia 2021-22 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2021-22-premier-league). StatMuse lists Alvaro Fernandez (Brentford) 1 and Fred (Man Utd) 1. Confirmed: Sky Sports report Southampton 4-1 Brentford 11 Jan 2022 (Fernandez o.g. 37) and Guernsey Press/PA report Southampton 1-1 Man Utd 22 Aug 2021 (Adams shot deflected in off Fred, credited as Fred o.g.). Wikipedia season page summary did not show an own goals row.
+Player goals sum: 41
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse (3 queries) and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/southam.htm
+Unverified: nothing material. Yan Valery nationality France per footballsquads 2021-22 (later seasons Tunisia). Player name William Smallbone reused from earlier-season files.

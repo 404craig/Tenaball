@@ -1,0 +1,11 @@
+Coventry 1994/95 Premier League check
+Player count: StatMuse merged 29 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 club page 30 (https://www.11v11.com/teams/coventry-city/tab/players/season/1995/comp/1/); footballsquads coventry.htm lists 29 of them. Rows: 29
+Club goals: 44 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 2 (John Wark, Ipswich, 10 Oct 1994; Craig Burley, Chelsea, 4 Feb 1995) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1994-95-premier-league, confirmed by Wikipedia 1994-95 Coventry City season page.
+Player goals sum: 42
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: 2.
+- Paul D Williams: 11v11 club page lists 4 PL apps for Coventry, but his 11v11 player page (paul-d-williams-145) match list shows every 1994-95 game for Derby County in Division 1; he joined Coventry in 1995. StatMuse has only one Paul Williams (5 apps) and footballsquads only Paul Williams b. 1969. Excluded as an 11v11 club-page error.
+- John Williams: StatMuse 7 vs 11v11 8; 11v11 player page match list has 7 PL matches (Leeds 18 Mar 1995 row duplicated) -> 7.
+Unverified: none beyond the above.
+Nationality: from earlier-season files, otherwise 11v11 (Darby, Gillespie, Gould, Jenkinson, Cobi Jones USA, Marsh, Morgan, Pressley, Quinn, Robertson, Wegerle USA, John Williams).

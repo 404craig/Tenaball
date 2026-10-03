@@ -1,0 +1,11 @@
+West Ham 2015/16 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-ham-united-premier-league-player-stats-2015-16 (+ most-appearances and fewest-appearances queries; player-stats query hit the 25-row cap, union 28); 11v11 https://www.11v11.com/teams/west-ham-united/tab/players/season/2016/comp/1/; Wikipedia 2015-16 West Ham United F.C. season (scorers); footballsquads https://www.footballsquads.co.uk/eng/2015-2016/faprem/westham.htm (position, nationality).
+Player counts: StatMuse union 28; 11v11 club page 28. Every player's apps and goals match.
+Rows written: 28
+Club goals (Wikipedia 2015-16 Premier League table): 65
+Own goals for: 1 (StatMuse own-goals query): Stephen Kingsley (Swansea), West Ham 1-4 Swansea 7 May 2016, 68', confirmed by 11v11 match page https://www.11v11.com/matches/west-ham-united-v-swansea-city-07-may-2016-317209/. Wikipedia season page also shows 1 OG.
+Player goals sum: 64
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0 between StatMuse and 11v11. Wikipedia summary gave Michail Antonio 7 goals; StatMuse and 11v11 agree on 8, used 8.
+Nationality notes: Michail Antonio listed England by footballsquads 2015/16 (uncapped then); Jamaica used (senior international). Victor Moses listed Forward by footballsquads this season (FWD).
+Unverified: nothing outstanding.

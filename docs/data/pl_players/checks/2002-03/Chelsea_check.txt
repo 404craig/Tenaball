@@ -1,0 +1,8 @@
+Chelsea 2002/03 check
+Player counts: StatMuse player-stats 23 (under the 25 cap, so complete), fewest-apps 23 (same players); most-apps not fetched as player-stats was uncapped and 11v11 covers the same 23; 11v11 club page 23.
+Club goals (Wikipedia 2002-03 FA Premier League table): 68
+Own goals for: 2 (Alain Goma, Fulham; Dominic Matteo, Leeds). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2002-03-premier-league. Consistent with 11v11 player goals sum (66) = 68 - 2.
+Player goals sum: 66. Difference: 0.
+Disagreements: none. Every player's apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2002-2003/faprem/chelsea.htm (Keenan M, Filipe Oliveira F, De Lucas M). Nationality: footballsquads has no nationality column; from spellings in later seasons and 11v11 Nat for Ferrer (Spain), de Goey (Netherlands), de Lucas (Spain), Keenan (England). Stanic 11v11 shows Yugoslavia; Croatia used.
+Unverified: own goals not separately confirmed on a Wikipedia season page.

@@ -1,0 +1,10 @@
+Club: Stoke 2008/09
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Sorensen, Soares only in most; Pericard, Simonsen only in fewest). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2009/comp/1/) 29. Same 29 players.
+Club PL goals: 38 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 2 (Justin Hoyte, Middlesbrough; Phil Jagielka, Everton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2008-09-premier-league, confirmed by Wikipedia 2008-09 Stoke City season match list (Hoyte o.g. at Middlesbrough, Jagielka o.g. v Everton).
+Player goals sum: 36
+Difference: 0
+Rows: 29
+Disagreements: 2 (goals only, sum unaffected). Abdoulaye Faye: StatMuse 3, Wikipedia squad stats 3, 11v11 club and player page (https://www.11v11.com/players/abdoulaye-faye-20959/) 2. Amdy Faye: StatMuse 0, Wikipedia 0, 11v11 club and player page (https://www.11v11.com/players/amdy-faye-8637/) 1. StatMuse game log (https://www.statmuse.com/fc/ask/abdoulaye-faye-premier-league-goals-game-log-2008-09) gives Abdoulaye goals v Newcastle 6 Dec 2008, West Ham 28 Dec 2008, Newcastle 11 Apr 2009; Wikipedia match list shows "Faye" in those three games. Used Abdoulaye 3, Amdy 0 (StatMuse + Wikipedia agree). All apps match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/stoke.htm (Abdoulaye listed as Abdoulaye Diagne-Faye). Higginbotham and Cort England per footballsquads and earlier CSVs.
+Unverified: 11v11 match page for the West Ham game not checked.

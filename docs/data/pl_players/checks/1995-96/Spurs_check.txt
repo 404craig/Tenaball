@@ -1,0 +1,10 @@
+Spurs 1995/96 check
+Player counts: StatMuse player-stats 23, fewest-apps 23 (full list); union 23. 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/1996/comp/1/) 23. Rows = 23.
+Club goals (Wikipedia 1995-96 FA Premier League table): 50.
+Own goals for: 3 (Des Walker, Sheffield Wed, 16 Sep 1995; Gary Elkins, Wimbledon, 30 Sep 1995; John Barnes, Liverpool, 26 Aug 1995) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1995-96-premier-league, confirmed by the Wikipedia 1995-96 Tottenham Hotspur season results list and (Barnes) the 11v11 match page https://www.11v11.com/matches/tottenham-hotspur-v-liverpool-26-august-1995-22200/.
+Player goals sum: 47. 50 - 3 = 47. Difference: 0. (11v11 sum 48.)
+Disagreements: 1.
+- Ilie Dumitrescu goals: StatMuse 0 and Wikipedia 0; 11v11 club and player page 1. Used 0.
+Apps agree for all 23 players.
+Positions from footballsquads 1995-1996/faprem/tottenha.htm (Caskey, Dumitrescu in players no longer at club). Nationality from other seasons or 11v11.
+Unverified: none beyond the above.

@@ -1,0 +1,11 @@
+Club: Aston Villa 2023/24
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 31 unique. 11v11 PL club page 31. Same 31 players, apps and goals all match.
+Disagreements: none on figures (spelling only: Kessler-Hayden on StatMuse).
+Own goals: StatMuse lists Antonee Robinson (Fulham), Cucurella (Chelsea), Estupinan (Brighton), Lockyer (Luton). Wikipedia 2023-24 Aston Villa season goalscorer table shows 4 own goals (summary misnamed some scorers). Total reconciles exactly.
+Position note: footballsquads 2023-24 lists Leon Bailey as F (earlier seasons in this dataset have MID).
+Unverified: nothing material.
+Club PL goals (https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League table): 76
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2023-24-premier-league (A. Robinson, Cucurella, Estupinan, Lockyer); count 4 confirmed by Wikipedia 2023-24 Aston Villa season goalscorers table)
+Player goals sum: 72
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2023-2024/engprem/avilla.htm

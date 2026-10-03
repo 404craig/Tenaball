@@ -1,0 +1,10 @@
+Club: Man City 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 31 unique (Given, Bridge, Ireland, Kompany, Sylvinho, Wright-Phillips not in player-stats list; source URL is most-appearances query). 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2010/comp/1/) 31. Same 31 players.
+Club PL goals: 73 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 0. Source: https://en.wikipedia.org/wiki/2009%E2%80%9310_Manchester_City_F.C._season goalscorers table (Own goals PL = 0). StatMuse own-goal query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2009-10-premier-league (and man-city slug) returns HTTP 422 (no rows, consistent with 0). Both stats sources' player goals sum to 73.
+Player goals sum: 73
+Difference (club goals - og_for - player goals): 0
+Rows: 31
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/mancity.htm. Spellings reused from other seasons (Benjani / Benjani Mwaruwari, Marton Fulop, Kolo Toure). Robinho and Sylvinho one-name.
+Unverified: Alex Nimely nationality given as England per footballsquads 2009-10 (StatMuse lists him as Alex Tchuimeni-Nimely); not cross-checked. Own goals count 0 rests on Wikipedia plus a StatMuse 422 response.

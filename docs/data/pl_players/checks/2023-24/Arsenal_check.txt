@@ -1,0 +1,10 @@
+Club: Arsenal 2023/24
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (identical sets, 25 unique; each list hit the 25 cap, completeness confirmed by 11v11 listing the same 25); 11v11 PL club page 25. Same 25 players, apps (starts+subs) and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Romero, Hojbjerg (Spurs), Bogle (Sheff Utd), Botman (Newcastle), Hashioka (Luton). Wikipedia season page summary confirmed Romero only; total reconciles exactly.
+Unverified: nothing material.
+Club PL goals (https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League table): 91
+Own goals for: 5 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2023-24-premier-league (Romero, Hojbjerg, Bogle, Botman, Hashioka); Romero confirmed by Wikipedia 2023-24 Arsenal season page)
+Player goals sum: 86
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm

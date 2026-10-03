@@ -1,0 +1,8 @@
+Man City 2023/24 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 in all three); 11v11 PL squad page 25 (fully covers the cap); rows written 25
+Club PL goals: 96 (Wikipedia 2023-24 Premier League table)
+Own goals for: 2 (StatMuse own-goals-vs-manchester-city query: Son Heung-min (Spurs), Daiki Hashioka (Luton); Wikipedia Man City season goalscorers Own goals PL = 2)
+Player goals sum: 94; difference (96 - 2 - 94): 0
+Disagreements: none. All 25 players' apps and goals match.
+Position/nationality: footballsquads mancity.htm for all 25.
+Unverified: nothing material.

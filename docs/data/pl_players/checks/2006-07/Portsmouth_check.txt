@@ -1,0 +1,9 @@
+Portsmouth 2006/07 check
+Player count per source: StatMuse 25 (player-stats 25 and fewest-apps 25 give the same 25; the fewest-apps list runs from 1 to 38 apps, the season maximum, so it is complete; most-apps not separately read as 11v11 fully covers it); 11v11 club page https://www.11v11.com/teams/portsmouth/tab/players/season/2007/comp/1/ 25 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/portsm.htm: all 25 present (Fernandes, Thompson, Koroman in "no longer at club").
+Club PL goals: 45 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia 2006-07 Premier League table rows could not be extracted).
+Own goals for: 3 (Brynjar Gunnarsson, Reading; Phil Jagielka, Sheffield United; Rio Ferdinand, Man Utd) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2006-07-premier-league
+Player goals sum: 42. 45 - 3 - 42 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Matt Taylor D, Lauren M, Douala F).
+Nationality: footballsquads 2006-07 has no nationality column. Reused from other seasons' CSVs; new players from the 11v11 club page Nat column: Douala CMR, Koroman SRB, Lomana LuaLua DR Congo, Thompson ENG, Todorov BUL. LuaLua spelling follows the Kazenga LuaLua rows and footballsquads.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

@@ -1,0 +1,10 @@
+Club: Stoke 2009/10
+Players: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (all under the 25 cap, same 23 players). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2010/comp/1/) 23. Same 23 players.
+Club PL goals: 34 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 1 (Stephen Jordan, Burnley, Stoke 2-0 Burnley, 15 Aug 2009). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2009-10-premier-league; confirmed by https://en.wikipedia.org/wiki/2009%E2%80%9310_Stoke_City_F.C._season (Jordan o.g. 33', goalscorers table own goals league 1).
+Player goals sum: 33
+Difference (club goals - og_for - player goals): 0
+Rows: 23
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11 (Wikipedia per-player league goals also match).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/stoke.htm. Spellings reused from other seasons (Abdoulaye Faye / Abdoulaye Diagne-Faye, Tuncay Sanli surname Tuncay, Thomas Sorensen). Asmir Begovic joined from Portsmouth mid-season (also in Portsmouth.csv).
+Unverified: nothing outstanding.

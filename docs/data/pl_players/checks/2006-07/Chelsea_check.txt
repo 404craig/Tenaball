@@ -1,0 +1,9 @@
+Chelsea 2006/07 check
+Player count per source: StatMuse merged 26 (player-stats 25 + most-apps 25 + fewest-apps 25; most/fewest add Wayne Bridge); 11v11 club page 26 (A = starts, S = subs; total = A+S); footballsquads roster: all 26 present.
+Club PL goals: 64
+Own goals for: 5 (Abel Xavier Middlesbrough, Chris Kirkland Wigan, Ivar Ingimarsson Reading, Jussi Jaaskelainen Bolton, Liam Rosenior Fulham) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2006-07-premier-league
+Player goals sum: 59. 64 - 5 - 59 = 0.
+Disagreements: none (all 26 players match on apps and goals between StatMuse and 11v11).
+Club goals source: Wikipedia 2006-07 Premier League page could not be fetched (domain cache-only), so club goals taken from the 11v11 final 2006-07 table (https://www.11v11.com/league-tables/premier-league/01-june-2007/).
+Positions from footballsquads 2006-07 (/faprem/); nationality from 11v11 club page (pre-2008-09 footballsquads has no nationality column), spellings aligned with other seasons' files.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages (StatMuse summary named only Xavier explicitly, the other four were listed without match detail), but totals reconcile exactly.

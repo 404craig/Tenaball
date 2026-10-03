@@ -1,0 +1,8 @@
+Liverpool 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 29 (Finnan, Gerrard, Smicer, Alonso missing from player-stats; Potter, Raven, Welsh, Carson not in most-apps). 11v11 club page 29 (total = A+S). footballsquads 2004-05 (/faprem/liverpool.htm): all 29 present.
+Club PL goals: 52 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2005/; Wikipedia cache-only, would not load).
+Own goals for: 3 (John O'Shea, Man Utd; Titus Bramble, Newcastle; Zat Knight, Fulham) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2004-05-premier-league. Consistent with 11v11 player goals sum (49) = 52 - 3.
+Player goals sum: 49. 52 - 3 - 49 = 0.
+Disagreements: 0. All 29 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2004-05 (Riise M, Warnock M, Welsh D, Kewell F, Garcia F). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

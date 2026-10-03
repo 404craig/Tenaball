@@ -1,0 +1,10 @@
+Oldham 1993/94 Premier League check
+Player count: StatMuse merged 28 (player-stats 25, most-apps 25, fewest-apps 25; McCarthy, Pedersen, Redmond missing from capped player-stats list but in most-apps); 11v11 club page 28 (https://www.11v11.com/teams/oldham-athletic/tab/players/season/1994/comp/1/); all 28 in footballsquads oldham.htm (/eng/1993-1994/faprem/). Rows: 28
+Club goals: 42 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 2 (Francis Benali, Southampton; Alan McCarthy, QPR) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-oldham-athletic-1993-94-premier-league; confirmed by Wikipedia 1993-94 Oldham Athletic season results (30 Mar 1994 at Southampton, 2 Apr 1994 v QPR).
+Player goals sum: 40
+Difference (club goals - og - player goals): 0
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse for all 28 players.
+Positions: footballsquads used (Halle M although 11v11 says Defender). footballsquads typos Hallworh/Onley ignored.
+Nationality: footballsquads 1993-94 has no nationality column; from earlier-season files where available, otherwise 11v11 club page.
+Unverified: nothing material.

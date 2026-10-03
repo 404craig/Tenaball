@@ -1,0 +1,13 @@
+Club: Brighton 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25, all the same 25 players (fewest list starts at 2 apps and most list ends at 2, so no player is cut off); merged 25. Wikipedia 2019-20 Brighton season appearances table: 25 players with PL apps (Yapi, Balogun, Baluta 0). 11v11 PL club page https://www.11v11.com/teams/brighton-and-hove-albion/tab/players/season/2020/comp/1/ NOT read: fetch proxy refused with HTTP 429 and an instruction not to retry.
+Disagreements: 1. Shane Duffy StatMuse 19 vs Wikipedia 20 (12+8); 11v11 player page 12+7 = 19; 19 used.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 4 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2019-20-premier-league: Abdoulaye Doucoure (Watford 0-3 Brighton, 10 Aug 2019), Lucas Digne (Brighton 3-2 Everton, 26 Oct 2019), Angelo Ogbonna (West Ham 3-3 Brighton, 1 Feb 2020), Adrian Mariappa (Brighton 1-1 Watford, 8 Feb 2020). All four confirmed on 11v11 match pages 362904, 364363, 365853, 365858.
+Player goals sum: 35
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/brighton.htm is truncated after 4 rows (Ryan, Lamptey, Duffy, Dunk), as for other seasons. Other players from footballsquads-based entries for the same players in other seasons' files; Mooy, Montoya, Stephens, Schelotto, Bong, Andone, Murray from the Wikipedia 2019-20 Brighton season squad table (Bong also D/CMR on the readable part of footballsquads 2018-19). Lamptey ENG on footballsquads, Ghana used for consistency with other seasons.
+Unverified: 11v11 club page not available; positions for players not on readable footballsquads rows.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/brighton-and-hove-albion/tab/players/season/2020/comp/1/): 25 players, 24 match. CHANGE: Ezequiel Schelotto apps 9 -> 8. 11v11 club page 4+4, 11v11 player page https://www.11v11.com/players/ezequiel-schelotto-239425/ lists 8 PL matches; StatMuse game log (https://www.statmuse.com/fc/ask/ezequiel-schelotto-premier-league-games-2019-20) has a 9th with 0 minutes on 29 Feb 2020 v Crystal Palace, and 11v11 match page https://www.11v11.com/matches/brighton-and-hove-albion-v-crystal-palace-29-february-2020-365878/ shows him an unused sub (booked while warming up). So 8 is correct; StatMuse/Wikipedia 9 counts a non-appearance. Goals diff 0.

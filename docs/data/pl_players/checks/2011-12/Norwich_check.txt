@@ -1,0 +1,10 @@
+Norwich 2011/12 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (norwich-city slug); 11v11 PL club page https://www.11v11.com/teams/norwich-city/tab/players/season/2012/comp/1/; footballsquads eng/2011-2012/faprem/norwich.htm; Wikipedia 2011-12 Norwich season page.
+Player count: final rows 27; StatMuse merged 27 (player-stats 25, most 25, fewest 25; Hoolahan and Whitbread missing from player-stats, Lappin only in player-stats/fewest); 11v11 club page 27.
+Club goals (Wikipedia 2011-12 Premier League table): 52
+Own goals for: 0. Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2011-12-premier-league returned HTTP 422 twice (no rows); Wikipedia season page summary mentions no own goals.
+Player goals sum: 52
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 27 players match on apps and goals between StatMuse and 11v11.
+Positions/nationalities: footballsquads 2011-12 (G/D/M/F mapped). Chris Martin nationality kept as Scotland from earlier-season files (later capped by Scotland); footballsquads 2011-12 shows ENG.
+Unverified: own goals for = 0 not confirmed on 11v11 match pages; consistent with exact goal reconciliation.

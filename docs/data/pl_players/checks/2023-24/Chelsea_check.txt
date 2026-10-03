@@ -1,0 +1,9 @@
+Season 2023/24, Chelsea
+Player count per source: StatMuse union of 3 pages (player-stats, most-appearances, fewest-appearances, all read) 33; 11v11 PL squad page (season 2024, comp 1) 32; final rows 32.
+Club PL goals: 77 (Wikipedia 2023-24 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2023-24-premier-league (Al-Dakhil, Burnley v Chelsea 7 Oct 2023); confirmed by Wikipedia 2023-24 Chelsea F.C. season goalscorer table own goals 1)
+Player goals sum: 76
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: 1. Marcus Bettinelli: StatMuse fewest-appearances and player-stats list 1 app/0 goals; 11v11 PL squad page does not list him and Wikipedia (2023-24 Chelsea season table and his career stats table) gives 0 PL apps. Sanchez 16 starts + Petrovic 22 starts = 38 starts, Petrovic 1 sub app. Excluded (two sources against StatMuse). 11v11 player page fetch returned no 2023-24 rows, so not checked there.
+Positions and nationalities: footballsquads.co.uk eng/2023-2024/engprem (all players found there, read via summariser). Names, full names and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (where unsure, the display name with accents is used). 11v11 player pages not needed except as noted, since StatMuse and the 11v11 squad page agreed on every listed player.

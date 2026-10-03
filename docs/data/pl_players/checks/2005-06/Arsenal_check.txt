@@ -1,0 +1,9 @@
+Arsenal 2005/06 check
+Player count per source: StatMuse 27 (player-stats 25, most-apps 25, fewest-apps 25; union 27, adds Thierry Henry and Sol Campbell / Kerrea Gilbert and Arturo Lupoli); 11v11 club page https://www.11v11.com/teams/arsenal/tab/players/season/2006/comp/1/ 27 (Apps column = starts, next column = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/arsenal.htm: all 27 present.
+Club PL goals: Wikipedia 2005-06 FA Premier League table (https://en.wikipedia.org/wiki/2005%E2%80%9306_FA_Premier_League), matches 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/: 68
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2005-06-premier-league). StatMuse lists Danny Collins (Sunderland) and Stephen Clemence (Birmingham, 1 Oct 2005); Wikipedia 2005-06 Arsenal season page lists Own goals 2 among league scorers and describes the Clemence own goal.
+Player goals sum: 66. 68 - 2 - 66 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (Lauren M, Kolo Toure M, van Persie M, Eboue D, Diaby listed as Vassiriki Diaby).
+Nationality: footballsquads 2005-06 has no nationality column; spellings reused from other seasons' CSVs, new players taken from the 11v11 club page. New: Dennis Bergkamp (Netherlands), Pascal Cygan (France), Jose Antonio Reyes (Spain), Arturo Lupoli (Italy), Kerrea Gilbert (England).
+Unverified: Danny Collins own goal not checked on a match page (total of 2 confirmed by Wikipedia).

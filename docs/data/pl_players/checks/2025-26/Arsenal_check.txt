@@ -1,0 +1,70 @@
+Arsenal 2025/26 Premier League check
+
+Player count per source:
+- StatMuse: 25 (table shows exactly 25 rows; re-asked as player-appearances, same 25)
+- ESPN squad page (ENG.1, 2025): 23 with figures; stale/partial (David Raya 30 apps vs 38 games); Ethan Nwaneri not listed
+- footballsquads: roster check only (no figures); all 25 present (Nwaneri under players no longer at club, loan to Marseille)
+- 11v11 team page (all comps): 24 rows; Max Dowman missing from extract
+- 11v11 PL 2025-26 goal scorers page: 18 Arsenal scorers, all figures identical to StatMuse
+- Wikipedia 2025-26 Arsenal season page: no stats table could be extracted
+Rows written: 25
+
+Club PL goals (Wikipedia 2025-26 Premier League table): 71
+Own goals for: NOT VERIFIED. Implied by subtraction: 4.
+Sum of player goals: 67
+Difference (club goals minus sum): 4
+Problem: a Squawka post (X, around 31 Jan 2026) said Arsenal had benefited from 5 PL own goals at that point. If correct, own goals for are at least 5 and player goals should sum to 66 or fewer, i.e. at least 1 goal overcounted. Player goals are confirmed by two sources (StatMuse and 11v11 PL scorers list) so they were kept. Unresolved.
+StatMuse "own goals" queries returned own goals committed by Arsenal players (1), not own goals for, so not usable.
+
+Disagreements and resolution:
+- ESPN apps/goals differ for almost every player because ESPN is stale. StatMuse used throughout; goals cross-checked against 11v11 PL scorers list (all match). ESPN figures recorded in each row's note.
+- Kepa Arrizabalaga: ESPN 0 apps, StatMuse 1 (1 start). StatMuse used; Raya 37 starts + Kepa 1 = 38.
+- Max Dowman: ESPN 2 apps 0 goals, StatMuse 6 apps 1 goal. StatMuse used; 1 goal matches 11v11 scorers list.
+
+Unverified:
+- Apps have only one reliable source (StatMuse); ESPN stale, Wikipedia had no table.
+- Possible missing players: StatMuse output is exactly 25 rows, which is the row cap seen on other clubs. No extra Arsenal player with PL apps was found in ESPN, footballsquads or 11v11, but completeness is not proven.
+- Own goals for (see above).
+
+Follow-up (2026-10-02):
+- Completeness: StatMuse fewest-appearances and most-appearances queries each return the same 25 players (fewest list runs Kepa 1 to Zubimendi 38). No hidden player; squad of 25 confirmed complete. No CSV change.
+- Own goals for: VERIFIED 4. StatMuse "most own goals against Arsenal 2025-26": Lisandro Martinez (Man Utd), Georginio Rutter (Brighton), Sam Johnstone (Wolves), Yerson Mosquera (Wolves). Corroborated by Wikipedia season page narrative (Martinez 25 Jan 2026, Rutter 27 Dec 2025, Mosquera 13 Dec 2025) and FotMob report of Arsenal 2-1 Wolves (both Arsenal goals were own goals, Johnstone 70', Mosquera 90+6').
+- Goals check now: 71 - 4 - 67 = 0. The earlier Squawka "5 own goals" claim is not supported by these sources (possibly all competitions); not used.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/arsenal/tab/players/season/2026/comp/1/ read: 25 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- footballsquads 2025-2026 arsenal.htm: all 25 positions and nationalities match; no change.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 71 - own goals for 4 - player goals 67 = 0.
+- Arsenal_summary.json written.
+Changes:
+- Ben White: sources_agree partial -> yes (12 apps, 0 goals confirmed by 11v11 PL club page)
+- Bukayo Saka: sources_agree partial -> yes (31 apps, 7 goals confirmed by 11v11 PL club page)
+- Christian Norgaard: sources_agree partial -> yes (7 apps, 0 goals confirmed by 11v11 PL club page)
+- David Raya: sources_agree partial -> yes (37 apps, 0 goals confirmed by 11v11 PL club page)
+- Declan Rice: sources_agree partial -> yes (36 apps, 4 goals confirmed by 11v11 PL club page)
+- Eberechi Eze: sources_agree partial -> yes (32 apps, 7 goals confirmed by 11v11 PL club page)
+- Gabriel Jesus: sources_agree partial -> yes (14 apps, 3 goals confirmed by 11v11 PL club page)
+- Gabriel: name/nationality fields ('Gabriel', 'Gabriel Magalhães', 'Gabriel', 'Brazil') -> ('Gabriel Magalhaes', 'Gabriel dos Santos Magalhães', 'Gabriel', 'Brazil') (match spelling used in other seasons / spec nationality name)
+- Gabriel Magalhaes: sources_agree partial -> yes (32 apps, 3 goals confirmed by 11v11 PL club page)
+- Gabriel Martinelli: sources_agree partial -> yes (30 apps, 1 goals confirmed by 11v11 PL club page)
+- Kai Havertz: sources_agree partial -> yes (12 apps, 2 goals confirmed by 11v11 PL club page)
+- Kepa Arrizabalaga: name/nationality fields ('Kepa Arrizabalaga', 'Kepa Arrizabalaga', 'Arrizabalaga', 'Spain') -> ('Kepa Arrizabalaga', 'Kepa Arrizabalaga Revuelta', 'Kepa', 'Spain') (match spelling used in other seasons / spec nationality name)
+- Kepa Arrizabalaga: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Leandro Trossard: sources_agree partial -> yes (31 apps, 6 goals confirmed by 11v11 PL club page)
+- Martin Odegaard: sources_agree partial -> yes (24 apps, 1 goals confirmed by 11v11 PL club page)
+- Mikel Merino: name/nationality fields ('Mikel Merino', 'Mikel Merino', 'Merino', 'Spain') -> ('Mikel Merino', 'Mikel Merino Zazón', 'Merino', 'Spain') (match spelling used in other seasons / spec nationality name)
+- Mikel Merino: sources_agree partial -> yes (22 apps, 4 goals confirmed by 11v11 PL club page)
+- Viktor Gyokeres: sources_agree partial -> yes (36 apps, 14 goals confirmed by 11v11 PL club page)
+- William Saliba: sources_agree partial -> yes (31 apps, 1 goals confirmed by 11v11 PL club page)
+- Jurrien Timber: sources_agree partial -> yes (30 apps, 3 goals confirmed by 11v11 PL club page)
+- Noni Madueke: sources_agree partial -> yes (26 apps, 3 goals confirmed by 11v11 PL club page)
+- Ethan Nwaneri: sources_agree partial -> yes (6 apps, 0 goals confirmed by 11v11 PL club page)
+- Myles Lewis-Skelly: sources_agree partial -> yes (20 apps, 0 goals confirmed by 11v11 PL club page)
+- Cristhian Mosquera: sources_agree partial -> yes (20 apps, 0 goals confirmed by 11v11 PL club page)
+- Martin Zubimendi: sources_agree partial -> yes (38 apps, 5 goals confirmed by 11v11 PL club page)
+- Riccardo Calafiori: sources_agree partial -> yes (26 apps, 1 goals confirmed by 11v11 PL club page)
+- Piero Hincapie: sources_agree partial -> yes (25 apps, 1 goals confirmed by 11v11 PL club page)
+- Max Dowman: sources_agree partial -> yes (6 apps, 1 goals confirmed by 11v11 PL club page)

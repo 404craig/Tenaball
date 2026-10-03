@@ -1,0 +1,10 @@
+Season 2021/22, Chelsea
+Player count per source: StatMuse union of 3 pages 26 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 PL squad page 26; final rows 26.
+Sources: StatMuse https://www.statmuse.com/fc/ask/chelsea-premier-league-player-stats-2021-22 , -players-most-appearances-2021-22 , -players-fewest-appearances-2021-22 (all three read); 11v11 https://www.11v11.com/teams/chelsea/tab/players/season/2022/comp/1/
+Club PL goals: 76 (Wikipedia 2021-22 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2021-22-premier-league): Max Aarons (Norwich), Chelsea v Norwich 23 Oct 2021. Wikipedia season page goalscorer table not readable via summariser; player sum confirms 76 - 1 = 75.
+Player goals sum: 75
+Difference (club goals - og - player goals): 0
+Disagreements: none. Every player matched on apps and goals between StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/chelsea.htm (Chalobah listed as M). Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).
