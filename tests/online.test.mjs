@@ -205,9 +205,11 @@ await test("online: a club record scorers board drawn at random on the host is t
 
 await test("online: the host's ticked competitions and All levels apply on every phone", async () => {
   const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
-  await craig.click("#allLevels");
+  eq(await craig.evaluate(() => cfg.allLevels), true, "All levels is on by default");
   const code = await hostGame(craig, { rounds: 3, cat: ["wc", "euro"] });
-  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  const aiden = await open("Aiden");
+  await aiden.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ v: 2, cats: ["pl"], allLevels: false }))); // Aiden's own phone has it off
+  await joinByLink(aiden, code, "Aiden");
   const all = [craig, aiden];
   await everyoneSees(all, ["Craig", "Aiden"]);
   const set = await aiden.textContent("#lobbySet");
