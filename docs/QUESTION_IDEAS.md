@@ -24,7 +24,7 @@ Ideas that need new data:
 
 The full list of 233 researched Premier League ideas (October 2026), with sources and checks, is in the question picker artifact. Craig marked them on 3 October 2026: 119 liked, 114 dropped. The liked ones are below, grouped by where the data comes from, which is also the build order. Craig's comments are in quotes. "Hard" in a comment means set the board's level to hard.
 
-### Picked, batch 1: our player dataset and the game's own tables (no research needed)
+### Picked, batch 1: our player dataset and the game's own tables (no research needed). Built 3 October 2026, except most defeats and fewest wins in a season, which need every result, so they move to batch 2
 
 - One-club men: most appearances, and most goals, for players who only played for one Premier League club.
 - Best goals-per-game ratio (200+ games).
@@ -54,6 +54,7 @@ The full list of 233 researched Premier League ideas (October 2026), with source
 
 ### Picked, batch 2: computed from every Premier League result (engsoccerdata and football-data.co.uk), checked against Wikipedia's records page
 
+- Most defeats and fewest wins in a season (moved from batch 1: the game's tables hold points, not results).
 - Biggest Premier League wins. "Unsure how we'd display this well within the answer pill." Plan: the answer is the winning club (badge and name, as on every club board) and the stat on the right shows the score and opponent, for example "9-0 v Ipswich, 1995".
 - Fewest goals conceded, most clean sheets, most goals conceded, fewest goals scored, best goal difference and worst goal difference, each in a season. Worst goal difference: "Hard."
 - Longest unbeaten, winning, losing and winless runs; longest home unbeaten run; most consecutive clean sheets.
@@ -144,6 +145,8 @@ Carried over from `CLAUDE.md`:
 - Player records (hat-tricks, fastest to 50 and 100 goals, 20-goal seasons, single-season highs), managers and transfers, per competition.
 
 ## Built
+
+- October 2026 (3rd, batch 1 of Craig's picks): 66 boards from the player dataset and the game's tables, plus 41 open boards (the 100-goal and 500-game clubs, forwards, midfielders and defenders for ten clubs, and nine more two-club pairs).
 
 - October 2026 (3rd, second batch, Craig's picks): Everton's biggest signings; top English scorers; top scorers for ten more countries and most appearances for fifteen (well-known players only, plus Scotland at Craig's request); top scorers since 2000/01 for Spurs, Newcastle, Everton, West Ham and Villa; top scorers and appearances by decade; countries with the most Premier League players; club open boards (surname letters at a club, and played for two clubs); most games as a manager; most penalties scored; most relegations and most promotions.
 

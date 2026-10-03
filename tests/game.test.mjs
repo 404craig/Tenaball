@@ -134,7 +134,7 @@ await test("questions: the October 2026 Premier League boards are all playable, 
     }
     return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
   });
-  eq([r.n, r.live], [107, 107], "all 107 boards survive the final pass");
+  eq([r.n, r.live], [173, 173], "all 173 boards survive the final pass");
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
   eq(r.fam, ["appearances", "managers", "records", "scorers", "transfers"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
@@ -164,8 +164,13 @@ await test("letter boards: any Premier League player with the right surname lett
     return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
       sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
       smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
-  eq([club.n, club.fam], [51, ["letters"]], "22 letter boards plus 29 club open boards, all in the letters family");
+  eq([club.n, club.fam], [92, ["letters"]], "22 letter boards plus 70 club open boards, all in the letters family");
   eq([club.salah, club.rooney, club.sterling, club.both, club.bothNo, club.smith, club.ex], [true, false, true, true, false, true, true], "club boards check the club, the letter and, for two clubs, the same player");
+  // boards with their own list of answers: the 100-goal club and a club's forwards
+  const listed = await p.evaluate(() => { const g = findQ("pl-open-100-goals"), f = findQ("pl-open-lfc-fwd");
+    return [g.open.fits("Alan Shearer"), g.open.fits("Gary Neville"), /100 Premier League goals/.test(g.note("Gary Neville")),
+      f.open.fits("Mohamed Salah"), f.open.fits("Steven Gerrard"), /forwards/.test(f.note("Steven Gerrard")), /didn't play for Liverpool/.test(f.note("Wayne Rooney"))]; });
+  eq(listed, [true, false, true, true, false, true, true], "list boards take only their own names and explain a miss");
   assert(/didn't play for Liverpool/.test(club.rooneyNote) && /doesn't begin with S/.test(club.sNote) && /both Everton and Man Utd/.test(club.bNote), "wrong answers explain why: " + [club.rooneyNote, club.sNote, club.bNote]);
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-letter-a"); });
