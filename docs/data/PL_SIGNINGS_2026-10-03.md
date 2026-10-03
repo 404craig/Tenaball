@@ -1,6 +1,6 @@
 # Premier League club signings, headline fees (researched 3 October 2026)
 
-Two research passes by web search for the ten clubs in docs/data/Tenaball_new_boards_2026-10-03.md, board 10. The game uses the headline fee (add-ons included) as the other fee boards do. Nine clubs are built (`pl-fee-buys-*` in scripts/build-pl-records.py). Everton is held back until Moise Kean's fee is settled (Sky £36.6m, Juventus about £29m), because it decides 10th place.
+Two research passes by web search for the ten clubs in docs/data/Tenaball_new_boards_2026-10-03.md, board 10. The game uses the headline fee (add-ons included) as the other fee boards do. All ten clubs are built (`pl-fee-buys-*` in scripts/build-pl-records.py). For Everton, Craig left the call to us: Moise Kean is taken at Sky's £36.6m (Juventus said about £29m).
 
 ## Record signings, headline basis: Man Utd, Liverpool, Arsenal, Chelsea, Man City
 
