@@ -22,7 +22,76 @@ Ideas that need new data:
 - Penalties, assists by club, clean sheets by club, red cards: no match events in the dataset.
 - Own goals: the dataset leaves them out.
 
-The full list of 233 researched Premier League ideas (October 2026), with sources and checks, is in the question picker artifact. Craig ticks the ones he wants there, and the liked ones get copied into this file before they're built.
+The full list of 233 researched Premier League ideas (October 2026), with sources and checks, is in the question picker artifact. Craig marked them on 3 October 2026: 119 liked, 114 dropped. The liked ones are below, grouped by where the data comes from, which is also the build order. Craig's comments are in quotes. "Hard" in a comment means set the board's level to hard.
+
+### Picked, batch 1: our player dataset and the game's own tables (no research needed)
+
+- One-club men: most appearances, and most goals, for players who only played for one Premier League club.
+- Best goals-per-game ratio (200+ games).
+- Most seasons scoring 10+ goals; most seasons scoring 15+.
+- Most consecutive seasons with a goal (Giggs 21).
+- Most seasons as a club's top scorer.
+- Most appearances by a defender, a midfielder, a forward.
+- English top scorers for Man Utd, Liverpool, Arsenal and Chelsea.
+- Played for the most Premier League clubs; scored for the most. "Hard."
+- Clubs with the most Premier League seasons.
+- Clubs that have used the most players; fielded the most nationalities; most and fewest players used in a season.
+- Nationalities with the most players at a club (France at Arsenal and so on).
+- Most goals in a season by a midfielder. "Remove Salah and include a 10th player." (Go by a player's career position, so Salah counts as a forward.)
+- Best single season for each big club (each player once).
+- The 100-goal club and the 500-game club (open boards).
+- More two-club open boards (pairs with 15+ shared players). Three-club boards: only seven players have played for three of the big six, so that one can't be an open board.
+- Most appearances for the big clubs since 2000/01 (only where the ten differ from the all-time board).
+- Most appearances by a non-British or Irish player, per club.
+- Top scorers by continent: Africa and South America. "Do you also have the other continents?" Yes: Europe outside the UK and Ireland (Henry 175, Van Persie 144, Hasselbaink 127, Anelka 125, Lukaku 121, Haaland 112) and North and Central America (Yorke 123, Antonio 68, Jimenez 68, Dempsey 57, Euell 56, Hernandez 53, Wanchope 50) are clean tens. Asia and Oceania tail off into little-known names after five or six (Asia's 10th has 8 goals), so leave them out.
+- Top scorers from the home nations outside England, together.
+- Most top-four finishes; most top-six; most consecutive seasons; most seasons without winning the title; yo-yo clubs (promotions plus relegations); most bottom-half finishes.
+- Fewest points in a season; relegated with the most points; survived with the fewest points; most defeats; fewest wins. "Hard" on the first three.
+- Best finish by a promoted club, by season.
+- The champions' top scorer, by season (ten-season blocks). "Hard."
+- Club position open boards, from Craig's comment on the shirt-number idea: "do eg Liverpool forwards, Newcastle forwards, Arsenal forwards. Top 10 clubs for forwards, midfielders and defenders as open boards. Probably easy for the top six, then medium outside that." Thirty boards (ten clubs, three positions).
+- Not building: top scorers for 15 more clubs as single-club boards. "Happy if it's one team and their top scorer on a board of other teams, not a board of only that club's 10 top scorers." That's already in the game as the club record scorers board, which now covers all 51 clubs.
+
+### Picked, batch 2: computed from every Premier League result (engsoccerdata and football-data.co.uk), checked against Wikipedia's records page
+
+- Biggest Premier League wins. "Unsure how we'd display this well within the answer pill." Plan: the answer is the winning club (badge and name, as on every club board) and the stat on the right shows the score and opponent, for example "9-0 v Ipswich, 1995".
+- Fewest goals conceded, most clean sheets, most goals conceded, fewest goals scored, best goal difference and worst goal difference, each in a season. Worst goal difference: "Hard."
+- Longest unbeaten, winning, losing and winless runs; longest home unbeaten run; most consecutive clean sheets.
+- Most wins over the big six by clubs outside it. "Needs number of wins if we can calculate them." Yes, the wins are the stat.
+
+### Picked, batch 3: Wikipedia lists (can be fetched in full from the build machine)
+
+- PFA Players' Player of the Year by season; PFA Young Player by season ("more recent years"); Premier League Player of the Season by season; most Player of the Month awards.
+- Golden Glove by season (2016/17 to 2025/26); most Golden Gloves.
+- Most Manager of the Month awards; most Manager of the Season awards.
+- FA Cup winners by season; League Cup winners by season (the clean windows only).
+- Most hat-tricks for one club; most hat-tricks in a season; scored four or more in a game (open board); most goals without ever scoring a hat-trick (with our dataset).
+- Clubs that moved to a new ground; longest single spells as manager; most games by foreign, Scottish, Italian and Spanish managers.
+- Most winners' medals; won the title with two clubs; title-winning captains.
+- World Cup winners, Euros winners, Premier League plus Champions League winners and Premier League plus La Liga winners, each ranked by Premier League appearances from our dataset.
+- Merseyside, Manchester and North London derby top scorers.
+
+### Picked, batch 4: published lists found by search (Opta's The Analyst, the Premier League site, BBC, Sky)
+
+- Most assists; most assists in a season (each player once); most goals and assists combined; most assists for each big club; most assists by a defender, all time and in a season; the 50 goals and 50 assists club (open board).
+- Most clean sheets; most clean sheets for one club; most penalty saves.
+- Most red cards; most yellow cards; most own goals.
+- Fastest hat-tricks; perfect hat-tricks (open board).
+- Longest scoring streaks; most minutes played.
+- Most goals as a substitute ("Hard"); most headed goals; most direct free kicks; most goals from open play; scored against the most different clubs.
+- Most points and most defeats as a manager.
+- Highest average attendances 2025/26; biggest grounds.
+- Most expensive British players; most expensive teenagers; record signing of each season ("only for the most recent 10 years"); biggest sales abroad.
+- Man Utd's number 7s and Newcastle's number 9s (open boards).
+
+### Picked, batch 5: only if the data can be found
+
+- Most goals in a calendar year ("if we can get the data").
+- Most goals from outside the box (only the top four are published).
+
+### Dropped
+
+The 114 ideas Craig dropped stay in the picker artifact for reference.
 
 ## International football
 
