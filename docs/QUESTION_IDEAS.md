@@ -146,6 +146,8 @@ Carried over from `CLAUDE.md`:
 
 ## Built
 
+- October 2026 (4th, Aiden's idea): Ballon d'Or boards, played only when every competition is ticked: most wins, winners 1993 to 2002 and 2002 to 2011, and the top ten of the 2022 to 2025 votes (hard). Next: the 2026 vote after 26 October, and winners 2016 to 2026.
+
 - October 2026 (3rd, batches 2 to 5 of Craig's picks): 77 more records boards and 4 open boards. Season and run records from every result (batch 2); awards, cups, hat-tricks, managers, medals, captains (open board), new grounds, winners of the World Cup, Euros, Champions League and La Liga ranked by Premier League games, and the three big derbies' top scorers (batch 3); scoring streaks, minutes, sub, headed, free-kick, open-play and long-range goals, scored against the most clubs, keepers and cards, assists (best season, goals plus assists, the 50 and 50 club), manager points and defeats, crowds, grounds, British and teenage fees, record signing each season, sales abroad, and Man Utd's 7s and Newcastle's 9s (batch 4). Left out: goals in a calendar year (only nine players could be verified), club and defenders' assists (one source below the top few places), and Newcastle's 9s before 1995 (eleven players, one too many). Two-club champions became a ranked board (eleven names is too few for an open board).
 
 - October 2026 (3rd, batch 1 of Craig's picks): 66 boards from the player dataset and the game's tables, plus 41 open boards (the 100-goal and 500-game clubs, forwards, midfielders and defenders for ten clubs, and nine more two-club pairs).

@@ -341,6 +341,22 @@ await test("game: rounds come only from ticked competitions, never the same one 
   eq(await p.evaluate(() => { cfg.cats = ["pl"]; return [nextCat(), nextCat()]; }), ["pl","pl"]);
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("Ballon d'Or boards are drawn only when every competition is ticked, and stay within the chosen level", async () => {
+  const p = await phone(browser, "bdo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    G = { picked:new Set(), lastCat:null };
+    const draw = n => Array.from({length:n}, nextCat).filter(c => c==="bdo").length;
+    cfg.allLevels = true; cfg.cats = [...ALL_CATS]; const all = draw(600);
+    cfg.cats = ALL_CATS.filter(c => c!=="wc"); const some = draw(600);
+    cfg.cats = [...ALL_CATS]; cfg.allLevels = false; cfg.level = 0; G.picked.add("bdo-most-wins"); const easyUsed = draw(300);
+    const qs = Q.filter(q => q.cat==="bdo");
+    return { all, some, easyUsed, n: qs.length, ten: qs.every(q => q.slots.length===10 && q.period), inPanel: COMP_GROUPS.some(([,cs]) => cs.includes("bdo")), top5: byCat("top5").some(q => /bdo/.test(q.id)) };
+  });
+  assert(r.all > 20 && r.all < 100, "about one round in eleven with every competition ticked: " + r.all);
+  eq([r.some, r.easyUsed], [0, 0], "never with a competition unticked, or once the level's boards are played");
+  eq([r.n, r.ten, r.inPanel, r.top5], [7, true, false, false], "seven boards, all complete, not in the panel, and gone from Top 5");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
   const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   eq(await p.evaluate(() => [cfg.allLevels, document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed")]), [true, "All levels", true], "All levels is on by default");

@@ -47,6 +47,13 @@ body[data-cat="top5"]{
   --scan:linear-gradient(90deg,#7cffb2,#ffffff); --miss:#ff4d4d;
   --glowA:rgba(124,255,178,.3); --glowB:rgba(245,183,0,.28); --glowC:rgba(255,255,255,.12);
 }
+/* Ballon d'Or: black tie and gold */
+body[data-cat="bdo"]{
+  --bg1:#3a2c08; --bg2:#0b0903; --topc:#3d3011; --muted:#eadfb8; --slot:rgba(14,11,3,.66); --slotline:rgba(255,226,140,.2);
+  --acc:#d4af37; --accInk:#1b1300; --acc2:#ffe9a3; --hit:linear-gradient(90deg,#fff1b8,#f4d774 45%,#d4af37); --hitInk:#1b1300;
+  --scan:linear-gradient(90deg,#8a6d1c,#f4d774); --miss:#ff4d4d;
+  --glowA:rgba(212,175,55,.38); --glowB:rgba(255,233,163,.2); --glowC:rgba(255,255,255,.12);
+}
 *,*::before,*::after{box-sizing:inherit}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;min-height:100%;color:var(--ink);background:var(--bg2);font-family:Outfit,"Century Gothic","Avenir Next",system-ui,sans-serif;font-size:17px;line-height:1.45;transition:background .6s}
@@ -1396,7 +1403,7 @@ chunksFromEnd(T5S, 2).forEach(g => {
 })();
 
 const ALL_CATS = ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"];
-const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", uel:"Europa League", wc:"World Cup", euro:"Euros" };
+const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", uel:"Europa League", wc:"World Cup", euro:"Euros", bdo:"Ballon d'Or" };
 const byCat = c => Q.filter(q => q.cat===c);
 </script>
 <script>
@@ -1740,6 +1747,33 @@ Q.forEach(q => {
   if (m){ q.period = `Seasons ${m[1]} to ${m[2]}`; return; }
   q.period = "Premier League era onwards";
 });
+/* Ballon d'Or: its own category, never in the competitions panel; it joins the draw only when every competition is ticked (nextCat).
+   Votes from Wikipedia's page for each year, checked against a second outlet (90min, Sports Illustrated, Sportskeeda, TNT); see docs/BALLON_DOR_SOURCES.md */
+Q.forEach(q => { if (/^t5-bdo-/.test(q.id)){ q.cat = "bdo"; q.level = 1; q.hard = false; } });
+(() => {
+  const add = (id, title, brief, period, level, rows, notes, labels) => {
+    rows.forEach(([n]) => addPerson(n));
+    Q.push({ id, cat:"bdo", type:"person", title, brief, period, level, hard: level===2, numeric: !labels,
+      slots: rows.map(([n,v],i) => ({label: labels ? labels[i] : String(i+1), club:n, val:v})), note: c => notes[c] || null });
+  };
+  add("bdo-most-wins", "Most Ballon d'Or wins", "Name the ten players who have won the Ballon d'Or more than once.", "Every Ballon d'Or, 1956 to 2025", 0,
+    [["Lionel Messi","8 wins"],["Cristiano Ronaldo","5 wins"],["Johan Cruyff","3 wins"],["Michel Platini","3 wins"],["Marco van Basten","3 wins"],
+     ["Alfredo Di Stefano","2 wins"],["Franz Beckenbauer","2 wins"],["Kevin Keegan","2 wins"],["Karl-Heinz Rummenigge","2 wins"],["Ronaldo Nazario","2 wins"]],
+    {"Luka Modric":"Luka Modric won it once, in 2018.","Zinedine Zidane":"Zinedine Zidane won it once, in 1998.","Karim Benzema":"Karim Benzema won it once, in 2022.","Ronaldinho":"Ronaldinho won it once, in 2005."});
+  const W = BDO.filter(([y]) => y>=1993 && y<=2002);
+  add("bdo-w-1993", "Ballon d'Or winners", "Name the Ballon d'Or winner each year.", "Years 1993 to 2002", 2, W.map(([,n,c]) => [n,c]), {}, W.map(([y]) => String(y)));
+  const VOTES = [
+    [2022, "2021/22", [["Karim Benzema",549],["Sadio Mane",193],["Kevin De Bruyne",175],["Robert Lewandowski",170],["Mohamed Salah",116],["Kylian Mbappe",85],["Thibaut Courtois",82],["Vinicius Junior",61],["Luka Modric",20],["Erling Haaland",18]],
+      {"Son Heung-min":"Son Heung-min was 11th with 5 points.","Riyad Mahrez":"Riyad Mahrez was 12th with 4 points."}],
+    [2023, "2022/23", [["Lionel Messi",462],["Erling Haaland",357],["Kylian Mbappe",270],["Kevin De Bruyne",100],["Rodri",57],["Vinicius Junior",49],["Julian Alvarez",28],["Victor Osimhen",24],["Bernardo Silva",20],["Luka Modric",19]],
+      {"Mohamed Salah":"Mohamed Salah was 11th with 13 points.","Robert Lewandowski":"Robert Lewandowski was 12th with 12 points.","Yassine Bounou":"Yassine Bounou was 13th with 10 points."}],
+    [2024, "2023/24", [["Rodri",1170],["Vinicius Junior",1129],["Jude Bellingham",917],["Dani Carvajal",550],["Erling Haaland",432],["Kylian Mbappe",420],["Lautaro Martinez",402],["Lamine Yamal",383],["Toni Kroos",291],["Harry Kane",201]],
+      {"Phil Foden":"Phil Foden was 11th with 157 points.","Florian Wirtz":"Florian Wirtz was 12th with 101 points.","Dani Olmo":"Dani Olmo was 13th with 86 points."}],
+    [2025, "2024/25", [["Ousmane Dembele",1380],["Lamine Yamal",1059],["Vitinha",703],["Mohamed Salah",657],["Raphinha",620],["Achraf Hakimi",484],["Kylian Mbappe",378],["Cole Palmer",211],["Gianluigi Donnarumma",172],["Nuno Mendes",171]],
+      {"Pedri":"Pedri was 11th with 124 points.","Khvicha Kvaratskhelia":"Khvicha Kvaratskhelia was 12th with 123 points.","Harry Kane":"Harry Kane was 13th with 112 points."}]];
+  VOTES.forEach(([y, season, rows, notes]) => add(`bdo-vote-${y}`, `${y} Ballon d'Or: the top ten`, `Name the top ten in the ${y} Ballon d'Or vote.`,
+    `The ${y} award, for the ${season} season`, 2, rows.map(([n,p]) => [n, `${p.toLocaleString("en-GB")} pts`]), notes));
+})();
 </script>
 <script>
 /* ---------- more club scorer boards (11v11, September 2026) ---------- */
@@ -2093,7 +2127,8 @@ function seg(id, key, cast){
 const BADGE = {
   ucl:'<circle cx="12" cy="12" r="10.5" fill="#0b1a55" stroke="#bfefff" stroke-width="1.2"/>' + Array.from({length:8}, (_, i) => { const a = i*Math.PI/4 - Math.PI/2, x = 12+6.3*Math.cos(a), y = 12+6.3*Math.sin(a); return `<path d="M${x.toFixed(1)} ${(y-2).toFixed(1)}l.6 1.4 1.4.1-1.1.9.4 1.4-1.3-.8-1.3.8.4-1.4-1.1-.9 1.4-.1z" fill="#fff"/>`; }).join(""),
   uel:'<circle cx="12" cy="12" r="10.5" fill="#3a1a00" stroke="#ff8a00" stroke-width="1.2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#ff8a00" stroke-width="1.6"/>',
-  wc:'<circle cx="12" cy="12" r="11.2" fill="#2b2209" stroke="#d4af37" stroke-width="1"/><g transform="translate(12 12) scale(.66) translate(-12 -11.4)"><path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/></g>'
+  wc:'<circle cx="12" cy="12" r="11.2" fill="#2b2209" stroke="#d4af37" stroke-width="1"/><g transform="translate(12 12) scale(.66) translate(-12 -11.4)"><path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/></g>',
+  bdo:'<circle cx="12" cy="12" r="11" fill="#d4af37" stroke="#fff1b8" stroke-width="1"/><path d="M12 7.6l3.6 2.6-1.4 4.2H9.8l-1.4-4.2z" fill="#6b5310"/><path d="M12 7.6V2M15.6 10.2l5-1.8M14.2 14.4l3 4.2M9.8 14.4l-3 4.2M8.4 10.2l-5-1.8" stroke="#6b5310" stroke-width="1.1" fill="none"/>'
 };
 const CAT_FLAG = { pl:"gb-eng", laliga:"es", bund:"de", seriea:"it", ligue1:"fr", spfl:"gb-sct", euro:"eu" };
 function compIcon(cat){
@@ -2297,7 +2332,9 @@ function startRound(qIn){
   if (ONLINE) onlineIntroUI();
 }
 function nextCat(){
-  const ok = cfg.cats.filter(c => byCat(c).length);
+  // the Ballon d'Or boards join the draw only when every competition is ticked
+  const bdo = allCats() && byCat("bdo").some(q => (cfg.allLevels || q.level===cfg.level) && !G.picked.has(q.id)); // a board at this level not yet played this game
+  const ok = (bdo ? [...cfg.cats, "bdo"] : cfg.cats).filter(c => byCat(c).length);
   if (ok.length<=1) return ok[0] || cfg.cats[0];
   const opts = ok.filter(c => c!==G.lastCat);
   const c = opts[Math.floor(Math.random()*opts.length)]; G.lastCat = c; return c;
