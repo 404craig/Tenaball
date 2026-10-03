@@ -316,9 +316,9 @@ for key, nat, adj, lv in [("esp","Spain","Spanish",1),("bra","Brazil","Brazilian
     who = "Ivory Coast players" if key == "civ" else f"{adj} players"
     board(f"pl-nat-{key}-goals", f"Top Premier League scorers: {nat}", f"Name the ten {who} with the most Premier League goals.", lv,
           tally([r for r in PR if r["nationality"] == nat], "goals"), "goals")
-# most appearances by country, the same rule for which countries go in
+# most appearances by country, the same rule for which countries go in (Scotland added at Craig's request)
 for key, nat, adj, lv in [("eng","England","English",1),("fra","France","French",1),("esp","Spain","Spanish",1),("irl","Republic of Ireland","Republic of Ireland",2),
-                          ("wal","Wales","Welsh",2),("ned","Netherlands","Dutch",2),("bra","Brazil","Brazilian",1),("arg","Argentina","Argentinian",2),
+                          ("wal","Wales","Welsh",2),("sco","Scotland","Scottish",2),("ned","Netherlands","Dutch",2),("bra","Brazil","Brazilian",1),("arg","Argentina","Argentinian",2),
                           ("por","Portugal","Portuguese",2),("bel","Belgium","Belgian",1),("ger","Germany","German",2),("civ","Ivory Coast","Ivory Coast",2),
                           ("nga","Nigeria","Nigerian",2),("ita","Italy","Italian",2)]:
     who = f"{adj} players" if key not in ("irl", "civ") else f"{adj} players"
