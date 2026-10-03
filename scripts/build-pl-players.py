@@ -90,6 +90,32 @@ for club in LETTERS:
         pids = [pid for (pid, c), pc in clubpos.items() if c == club and pc.most_common(1)[0][0] == P]
         add_list(f"pl-open-{KEY[club]}-{P.lower()}", f"{club} {word}", f"Name players who have played for {club} in the Premier League as {word} (the position each played most at the club).",
                  0 if club in TOP6 else 1, pids, collections.Counter({p: club_apps[p][club] for p in pids}), "{n} didn't mainly play as one of " + club + "'s " + word + ".", [club])
+# open boards from the hat-trick list (docs/data/pl_hattricks.csv): scored four or more in a game, and perfect hat-tricks
+# (left foot, right foot and header: Wikipedia's marks, plus Aguero's five against Newcastle in October 2015, which the Premier League counts)
+HTS = list(csv.DictReader(open("docs/data/pl_hattricks.csv", encoding="utf-8")))
+name_pid = {}
+for pid, n in pid_name.items(): name_pid.setdefault(n, pid)
+def add_names(id, title, brief, level, names, miss):
+    pids = [name_pid[CANON.get(n, n)] for n in names]
+    add_list(id, title, brief, level, pids, pgoals, miss)
+add_names("pl-open-4-goals", "Four goals in a game", "Name players who have scored four or more goals in one Premier League game.", 1,
+          sorted({h["player"] for h in HTS if int(h["goals"]) >= 4}), "{n} never scored four in a Premier League game.")
+add_names("pl-open-perfect-ht", "Perfect hat-tricks", "Name players who have scored a perfect hat-trick in the Premier League: one with the left foot, one with the right and a header.", 2,
+          sorted({h["player"] for h in HTS if h["perfect"] == "yes"} | {"Sergio Aguero"}), "{n} never scored a perfect Premier League hat-trick.")
+# 50 goals and 50 assists (docs/data/PL_ASSISTS_2026-10-03.md: Opta's assists list down to 50, goals from the dataset)
+add_names("pl-open-50-50", "50 goals and 50 assists", "Name players with at least 50 Premier League goals and at least 50 Premier League assists.", 1,
+          ["Ryan Giggs","Kevin De Bruyne","Cesc Fabregas","Wayne Rooney","Frank Lampard","Dennis Bergkamp","Mohamed Salah","David Silva","Steven Gerrard","James Milner",
+           "David Beckham","Christian Eriksen","Teddy Sheringham","Thierry Henry","Ashley Young","Andy Cole","Bruno Fernandes","Son Heung-min","Raheem Sterling","Gareth Barry",
+           "Alan Shearer","Matt Le Tissier","Riyad Mahrez","Peter Crouch","Jimmy Floyd Hasselbaink","Eric Cantona","Theo Walcott","Kevin Davies","Didier Drogba","Damien Duff",
+           "Danny Murphy","Paul Scholes","Eden Hazard","Juan Mata","Emile Heskey","Robin van Persie","Roberto Firmino","Nick Barmby","Gylfi Sigurdsson","Dwight Yorke","Bukayo Saka"],
+          "{n} doesn't have both 50 Premier League goals and 50 assists.")
+# title-winning captains (docs/data/PL_MANAGERS_2026-10-03.md, from Wikipedia's featured list of winning players
+# and match reports). Captains: anyone who lifted the trophy as captain, including shared lifts (Bruce and Robson in 1993 and 1994, Terry and Cahill
+# in 2017) and both of 2007/08's (Giggs lifted it, Gary Neville was club captain).
+add_names("pl-open-title-captains", "Title-winning captains", "Name players who have lifted the Premier League trophy as their club's captain.", 1,
+          ["Steve Bruce","Bryan Robson","Tim Sherwood","Eric Cantona","Tony Adams","Roy Keane","Patrick Vieira","John Terry","Gary Neville","Ryan Giggs","Nemanja Vidic",
+           "Vincent Kompany","Wes Morgan","Gary Cahill","Jordan Henderson","Fernandinho","Ilkay Gundogan","Kyle Walker","Virgil van Dijk","Martin Odegaard"],
+          "{n} never lifted the Premier League trophy as captain.")
 import json
 block = f'const PL_PLAYERS = "{data}";\nconst PL_CLUBS = {json.dumps(CLUBS)};\nconst PL_OPEN = {json.dumps(OPEN, separators=(",", ":"))};\n'
 src = open("index.html", encoding="utf-8").read()

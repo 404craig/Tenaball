@@ -48,6 +48,37 @@ await test("game: a pass on the last life is a red card, and the round ends when
   assert((await p.textContent("#feedback")).includes("Everyone is out."), "round over message");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("end: each player's row opens this game's stats, with a small link to their all-time stats", async () => {
+  const p = await phone(browser, "gamestats"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
+  await p.click("#startBtn"); await until(() => visible(p, "#intro"));
+  await p.evaluate(() => applyRefresh(findQ("pl-at-mgr-wins"))); await p.click("#introBtn");
+  const card = async () => { await until(() => visible(p, "#outOverlay"), { what: "the card" }); await p.click("#outOverlay"); };
+  await ready(p); await p.evaluate(() => applyGuess("Alex Ferguson"));      // Craig: right
+  await ready(p); p.evaluate(() => applyGuess("Kevin Keegan")); await card(); // Aiden: wrong, a yellow
+  await ready(p); await p.click("#passBtn"); await card();                   // Craig: passes, a yellow
+  await ready(p); await p.evaluate(() => applyGuess("Arsene Wenger"));      // Aiden: right
+  await p.evaluate(() => endRound()); await p.click("#nextBtn");
+  for (const r of [2, 3]){ await until(() => visible(p, "#intro"), { what: `round ${r}` }); await p.click("#introBtn"); await ready(p); await p.evaluate(() => endRound()); await p.click("#nextBtn"); }
+  await until(() => visible(p, "#end"), { what: "full time" });
+  const panel = await p.evaluate(() => [...document.querySelectorAll("#podium .podwrap")].map(w => ({
+    name: w.querySelector(".nm").textContent, grid: [...w.querySelectorAll(".pgame .statgrid b")].map(b => b.textContent),
+    extra: w.querySelector(".pgame .statextra").textContent, rounds: w.querySelector(".pgame .statnote").textContent,
+    allHidden: w.querySelector(".pall").classList.contains("hidden") })));
+  const craig = panel.find(x => x.name === "Craig"), aiden = panel.find(x => x.name === "Aiden");
+  eq(craig.grid, ["1", "0", "100%", "1"], "Craig: 1 right, 0 wrong, 100% correct, best round 1");
+  eq(aiden.grid, ["1", "1", "50%", "1"], "Aiden: 1 right, 1 wrong, 50% correct");
+  assert(craig.extra.includes("Yellow cards 1") && craig.extra.includes("Passes 1") && !craig.extra.includes("Time-outs"), "Craig's cards and pass: " + craig.extra);
+  assert(aiden.extra.includes("Yellow cards 1") && aiden.extra.includes("Red cards 0") && !aiden.extra.includes("Passes"), "Aiden's card: " + aiden.extra);
+  eq(craig.rounds, "Round by round: 1, 0, 0");
+  assert(craig.allHidden, "all-time stats wait behind the link");
+  const flip = await p.evaluate(() => { const w = document.querySelector("#podium .podwrap"); w.querySelector(".pgame .statlink").click();
+    const a = [w.querySelector(".pgame").classList.contains("hidden"), w.querySelector(".pall").classList.contains("hidden"), w.querySelector(".pall").textContent.includes("Games")];
+    w.querySelector(".pall .statlink").click(); return [...a, w.querySelector(".pgame").classList.contains("hidden")]; });
+  eq(flip, [true, false, true, false], "the link swaps to all-time stats and back");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("game: solo, the button still says Give up and ends the round without a card", async () => {
   const p = await phone(browser, "solo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
@@ -134,9 +165,9 @@ await test("questions: the October 2026 Premier League boards are all playable, 
     }
     return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
   });
-  eq([r.n, r.live], [173, 173], "all 173 boards survive the final pass");
+  eq([r.n, r.live], [250, 250], "all 250 boards survive the final pass");
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
-  eq(r.fam, ["appearances", "managers", "records", "scorers", "transfers"], "the boards spread across families");
+  eq(r.fam, ["appearances", "assists", "keepers", "managers", "records", "scorers", "transfers", "trophies"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-hattricks"); });
@@ -164,7 +195,7 @@ await test("letter boards: any Premier League player with the right surname lett
     return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
       sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
       smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
-  eq([club.n, club.fam], [92, ["letters"]], "22 letter boards plus 70 club open boards, all in the letters family");
+  eq([club.n, club.fam], [96, ["letters"]], "22 letter boards plus 74 club open boards, all in the letters family");
   eq([club.salah, club.rooney, club.sterling, club.both, club.bothNo, club.smith, club.ex], [true, false, true, true, false, true, true], "club boards check the club, the letter and, for two clubs, the same player");
   // boards with their own list of answers: the 100-goal club and a club's forwards
   const listed = await p.evaluate(() => { const g = findQ("pl-open-100-goals"), f = findQ("pl-open-lfc-fwd");
