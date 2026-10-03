@@ -38,6 +38,10 @@ A hundred and seven boards added in October 2026 (`EXTRA_Q4` in `index.html`). T
 | Most relegations, most promotions | `pl-at-relegated`, `pl-at-promoted` | From the game's season tables (`PL`), checked against The Analyst, Guinness, HITC and others (`docs/data/PL_RELEGATIONS_2026-10-03.md`). 2025/26: Wolves, Burnley and West Ham went down. Ten clubs on 3 relegations share 10th. Promotions start with 1993/94 (the 1992/93 founders, including Ipswich, Middlesbrough and Blackburn, who came up in 1992, don't count); nine clubs on 3 share 9th and 10th. |
 | Club open boards: surname letters at a club, and played for two clubs | `pl-letter-lfc-s`, `pl-both-eve-mu` and so on (`PL_OPEN`) | Built by `scripts/build-pl-players.py` from the dataset: two letters for each of the ten big clubs, and nine pairs of clubs with 15 or more shared players (the old rivalries are too thin: Arsenal and Spurs share 4, the Manchester clubs 5). A two-club answer must be one player who played for both, not two players with the same name. |
 
+## Levels
+
+Rebalanced on 3 October 2026 at Craig's request (`RELEVEL` in the build script): the best-known club, nation and records boards went to easy, and the newer club and fee boards to medium. Season tables: top halves from 2019/20 easy and from 2008/09 medium, bottom halves from 2015/16 and middles from 2021/22 medium.
+
 ## Left out
 
 - Most points as a manager: nearly the same ten as most wins.

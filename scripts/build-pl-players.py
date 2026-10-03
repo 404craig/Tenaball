@@ -57,7 +57,7 @@ def add_open(id, clubs, letter, title, brief):
     fit.sort(key=lambda pid: (-sum(club_apps[pid][c] for c in clubs), pid_name[pid]))
     names = list(dict.fromkeys(pid_name[pid] for pid in fit))
     assert len(names) >= 15, (id, len(names))
-    OPEN.append({"id": id, "title": title, "brief": brief, "clubs": clubs, "letters": letter, "level": 1 if len(names) >= 25 else 2, "examples": names[:40], "count": len(names)})
+    OPEN.append({"id": id, "title": title, "brief": brief, "clubs": clubs, "letters": letter, "level": 1 if len(clubs) == 1 else 2, "examples": names[:40], "count": len(names)})
 for club, ls in LETTERS.items():
     for l in ls:
         add_open(f"pl-letter-{KEY[club]}-{l.lower()}", [club], l, f"{club} players beginning with {l}",
