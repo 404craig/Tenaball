@@ -341,20 +341,19 @@ await test("game: rounds come only from ticked competitions, never the same one 
   eq(await p.evaluate(() => { cfg.cats = ["pl"]; return [nextCat(), nextCat()]; }), ["pl","pl"]);
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
-await test("Ballon d'Or boards are drawn only when every competition is ticked, and stay within the chosen level", async () => {
+await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions League finalist since 2017 has a starting-line-up board", async () => {
   const p = await phone(browser, "bdo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const r = await p.evaluate(() => {
-    G = { picked:new Set(), lastCat:null };
-    const draw = n => Array.from({length:n}, nextCat).filter(c => c==="bdo").length;
-    cfg.allLevels = true; cfg.cats = [...ALL_CATS]; const all = draw(600);
-    cfg.cats = ALL_CATS.filter(c => c!=="wc"); const some = draw(600);
-    cfg.cats = [...ALL_CATS]; cfg.allLevels = false; cfg.level = 0; G.picked.add("bdo-most-wins"); const easyUsed = draw(300);
-    const qs = Q.filter(q => q.cat==="bdo");
-    return { all, some, easyUsed, n: qs.length, ten: qs.every(q => q.slots.length===10 && q.period), inPanel: COMP_GROUPS.some(([,cs]) => cs.includes("bdo")), top5: byCat("top5").some(q => /bdo/.test(q.id)) };
+    const bdo = Q.filter(q => /bdo/.test(q.id)), xi = Q.filter(q => /^ucl-xi-/.test(q.id));
+    const lfc19 = findQ("ucl-xi-2019-lfc");
+    return { bdo: [bdo.length, bdo.every(q => q.cat==="top5")], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
+      lfc19: [lfc19.title, lfc19.period, lfc19.slots.map(s => s.club).join(", ")], known: xi.every(q => q.slots.every(s => s.club in PEOPLE)) };
   });
-  assert(r.all > 20 && r.all < 100, "about one round in eleven with every competition ticked: " + r.all);
-  eq([r.some, r.easyUsed], [0, 0], "never with a competition unticked, or once the level's boards are played");
-  eq([r.n, r.ten, r.inPanel, r.top5], [7, true, false, false], "seven boards, all complete, not in the panel, and gone from Top 5");
+  eq(r.bdo, [7, true], "seven Ballon d'Or boards, all under Top 5");
+  eq(r.xi, [20, true, ["lineups"]], "twenty line-up boards of ten different players, in their own family");
+  eq(r.lfc19, ["Liverpool's starters, 2019 final", "2018/19 Champions League final, 1 June 2019",
+    "Trent Alexander-Arnold, Joel Matip, Virgil van Dijk, Andy Robertson, Jordan Henderson, Fabinho, Georginio Wijnaldum, Mohamed Salah, Roberto Firmino, Sadio Mane"]);
+  assert(r.known, "every starter is a recognised name");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
