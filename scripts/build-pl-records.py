@@ -679,6 +679,26 @@ def cup(prefix, id_base, title, brief, windows, levels):
 cup("9. FA Cup finals", "pl-fa-cup", "FA Cup winners", "Name the FA Cup winners each season.", [("2016/17", "2025/26"), ("2007/08", "2016/17"), ("1992/93", "2001/02")], [0, 1, 1])
 cup("10. League Cup", "pl-league-cup", "League Cup winners", "Name the League Cup winners each season.", [("1999/00", "2008/09"), ("1992/93", "2001/02")], [1, 2])
 
+
+# ---- batch 3: hat-tricks, from docs/data/pl_hattricks.csv (every Premier League hat-trick, 405, from Wikipedia's list read in full and checked against
+# its club and nationality totals, Opta's 400th and the existing most hat-tricks board; notes in docs/data/PL_HATTRICKS_2026-10-03.md)
+HT = list(csv.DictReader(open("docs/data/pl_hattricks.csv", encoding="utf-8")))
+assert len(HT) == 405
+htc = Counter((h["player"], gclub(h["player_club"])) for h in HT)
+gboard("pl-ht-club", "Most hat-tricks for one club", "Name the players who scored the most Premier League hat-tricks for a single club.", 1,
+       htc, lambda k: gname(k[0]), lambda k, v: f"{v} for {k[1]}", lambda c: f"{c} hat-tricks", near=lambda k, v: f"{v} for {k[1]}")
+gboard("pl-ht-season", "Most hat-tricks in a season", "Name the players who scored the most Premier League hat-tricks in a single season.", 1,
+       Counter((h["player"], h["season"]) for h in HT), lambda k: gname(k[0]), lambda k, v: f"{v} in {k[1]}", lambda c: f"{c} hat-tricks", near=lambda k, v: f"{v} in {k[1]}")
+with_ht = {gname(h["player"]) for h in HT}
+board("pl-ht-none-goals", "Most goals without a hat-trick", "Name the players with the most Premier League goals who never scored a Premier League hat-trick.", 1,
+      Counter({p: g for p, g in goals.items() if PNAME[p] not in with_ht}), "goals",
+      notes={"Thierry Henry":"Thierry Henry scored eight Premier League hat-tricks.","Wayne Rooney":"Wayne Rooney scored seven Premier League hat-tricks.","Alan Shearer":"Alan Shearer scored 11 Premier League hat-tricks."})
+# fastest hat-tricks: time from first goal to third, stoppage time included (Premier League site, January 2025; top seven match Opta; none quicker since)
+ranked("pl-ht-fastest", "Fastest Premier League hat-tricks", "Name the players who scored the fastest hat-tricks in Premier League history, timed from the first goal to the third.", LIVE, 2,
+       [("Sadio Mane","2 min 56 sec"),("Robbie Fowler","4 min 33 sec"),("Jermain Defoe","7 min"),("Gabriel Agbonlahor","7 min 10 sec"),("Ian Wright","9 min"),
+        ("Cole Palmer","9 min 48 sec"),("Andy Carroll","9 min 50 sec"),("Yannick Bolasie","10 min 33 sec"),("Romelu Lukaku","11 min 37 sec"),("Sergio Aguero","11 min 40 sec")],
+       {"Amad Diallo":"Amad took 12 minutes 7 seconds, just outside.","Morgan Gibbs-White":"Morgan Gibbs-White's 2025/26 hat-trick took 15 minutes."})
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
