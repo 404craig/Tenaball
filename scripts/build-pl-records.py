@@ -5,7 +5,6 @@ Sources, corrections and live lists to re-check: docs/PL_RECORDS_SOURCES.md.
 Run from the repo root: python3 scripts/build-pl-records.py
 """
 import json, re
-NOW = "1 October 2026"
 Q = []
 def ranked(id, title, brief, period, level, rows, notes=None, type="person"):
     """rows: (name, val) or (alts list, val, poolname, count) for a tie at the end"""
@@ -22,18 +21,18 @@ def labelled(id, title, brief, period, level, rows, notes=None):
     assert len(rows) == 10, id
     Q.append({"id": id, "cat": "pl", "type": "person", "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "slots": [{"label": l, "club": n, "val": v} for l, n, v in rows], "notes": notes or {}})
 
-LIVE = f"Premier League only, 1992/93 to {NOW}"
+LIVE = "Premier League era, 1992/93 to 2025/26"
 DONE = "Premier League era, 1992/93 to 2025/26"
 
 # managers
 ranked("pl-at-mgr-wins", "Most Premier League wins as a manager", "Name the ten managers who have won the most Premier League games.", LIVE, 1,
- [("Alex Ferguson","528 wins"),("Arsene Wenger","476 wins"),("David Moyes","292 wins"),("Pep Guardiola","269 wins"),("Harry Redknapp","236 wins"),
+ [("Alex Ferguson","528 wins"),("Arsene Wenger","476 wins"),("David Moyes","290 wins"),("Pep Guardiola","269 wins"),("Harry Redknapp","236 wins"),
   ("Jose Mourinho","217 wins"),("Jurgen Klopp","209 wins"),("Sam Allardyce","178 wins"),("Rafael Benitez","173 wins"),("Mark Hughes","158 wins")],
- {"Mikel Arteta":"Mikel Arteta is 11th with 153 and closing in.","Mauricio Pochettino":"Mauricio Pochettino is just outside with 150.","Eddie Howe":"Eddie Howe has 140, not quite top ten.","Roy Hodgson":"Roy Hodgson has 136, just short.","Steve Bruce":"Steve Bruce has 133, just short."})
+ {"Mauricio Pochettino":"Mauricio Pochettino is 11th with 150, just outside.","Mikel Arteta":"Mikel Arteta is 12th with 149, just outside.","Eddie Howe":"Eddie Howe has 140, not quite top ten.","Roy Hodgson":"Roy Hodgson has 136, just short.","Steve Bruce":"Steve Bruce has 133, just short."})
 ranked("pl-at-mgr-winpct", "Best Premier League win rate as a manager", "Name the ten managers with the best Premier League win percentage, from at least 50 games.", LIVE, 2,
  [("Pep Guardiola","70.8%"),("Alex Ferguson","65.2%"),("Antonio Conte","62.9%"),("Jurgen Klopp","62.6%"),("Roberto Mancini","61.7%"),
-  ("Mikel Arteta","60.5%"),("Jose Mourinho","59.8%"),("Arsene Wenger","57.5%"),("Thomas Tuchel","55.6%"),("Arne Slot","55.3%")],
- {"Carlo Ancelotti":"Carlo Ancelotti is just outside on 54.5%.","Enzo Maresca":"Enzo Maresca is on 53.2%, just outside.","Manuel Pellegrini":"Manuel Pellegrini is on 52.6%, not quite top ten.","Mauricio Pochettino":"Mauricio Pochettino is on about 51%."})
+  ("Mikel Arteta","60.1%"),("Jose Mourinho","59.8%"),("Arsene Wenger","57.5%"),("Thomas Tuchel","55.6%"),("Arne Slot","55.3%")],
+ {"Carlo Ancelotti":"Carlo Ancelotti is just outside on 54.5%.","Enzo Maresca":"Enzo Maresca is on 49.1%, not top ten.","Manuel Pellegrini":"Manuel Pellegrini is on 52.6%, not quite top ten.","Mauricio Pochettino":"Mauricio Pochettino is on about 51%."})
 FOUR = ["Ron Atkinson","Rafael Benitez","David Moyes","Nuno Espirito Santo","Claudio Ranieri","Marco Silva","Graeme Souness","Neil Warnock","Chris Hughton"]
 ranked("pl-at-mgr-clubs", "Most Premier League clubs managed", "Name the managers who have taken charge of the most different Premier League clubs. Caretaker spells count. Nine managers have had four, so any four of them fill the last four places.", LIVE, 2,
  [("Sam Allardyce","9 clubs"),(["Roy Hodgson","Mark Hughes"],"6 clubs","mgrc6",2),(["Harry Redknapp","Steve Bruce","Alan Pardew"],"5 clubs","mgrc5",3),(FOUR,"4 clubs","mgrc4",4)],
