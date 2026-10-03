@@ -374,6 +374,17 @@ for a, b, lv in WINDOWS:
     assert len(rows) == 10 and max(Counter(r[1] for r in rows).values()) <= 3, (a, b)
     labelled(f"pl-20g-{full(a)}", "Every 20-goal Premier League season", "Name every player who scored 20 or more Premier League goals in a season. A player can fill more than one slot.", f"Seasons {full(a)} to {full(b)}", lv, rows)
 
+# levels rebalanced at Craig's request (3 October 2026): too many hard boards and too few easy ones
+RELEVEL = {0: ["pl-mu-apps","pl-lfc-apps","pl-mu-2000-goals","pl-lfc-2000-goals","pl-at-season-goals","pl-at-hattricks","pl-at-penalties","pl-at-mgr-wins",
+               "pl-fee-signings","pl-fee-clubbuy","pl-midfield-goals","pl-dec-2000-goals","pl-dec-2020-goals","pl-nat-fra-goals","pl-nat-bra-goals","pl-apps-one-club"],
+           1: ["pl-tot-apps","pl-mci-apps","pl-new-apps","pl-eve-apps","pl-whu-apps","pl-nat-wal-goals","pl-nat-irl-goals","pl-nat-sco-goals","pl-nat-civ-goals",
+               "pl-nat-wal-apps","pl-nat-irl-apps","pl-nat-ned-apps","pl-fee-buys-tot","pl-fee-buys-new","pl-fee-buys-avl","pl-fee-buys-whu","pl-fee-buys-eve",
+               "pl-fee-sales-mu","pl-fee-sales-lfc","pl-fee-sales-cfc","pl-dec-2000-apps","pl-dec-2010-apps","pl-at-20-goals","pl-at-fastest-50",
+               "pl-defender-goals","pl-20g-2009/10"]}
+ids = {q["id"]: q for q in Q}
+for lv, names in RELEVEL.items():
+    for i in names: ids[i]["level"] = lv; ids[i]["hard"] = lv == 2
+
 for q in Q:
     for s in q["slots"]:
         for t in [s.get("val",""), q["brief"], q["title"], q["period"], *q["notes"].values()]: assert "—" not in t
