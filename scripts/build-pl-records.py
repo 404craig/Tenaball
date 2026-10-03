@@ -857,6 +857,42 @@ ranked("pl-rec-new-9", "Newcastle's number 9s", "Name the ten players who have w
         ("Dwight Gayle","2017/18"),("Salomon Rondon","2018/19"),("Joelinton","2019/20 to 2020/21"),("Callum Wilson","2021/22 to 2024/25"),("Yoane Wissa","2025/26")],
        {"Andy Cole":"Andy Cole wore it before 1995, from 1993/94 until his move to Man Utd in January 1995."})
 
+# ---- batch 3: winners' squads and derbies (docs/data/PL_SQUADS_DERBIES_2026-10-03.md). Winners' lists: Wikipedia's tournament squads, and the
+# honours of every player on Wikipedia's list of Premier League winners; every name matched to the dataset by hand (clashes such as Brazil 1994's
+# Jorginho taken out), then ranked by Premier League games from the dataset. Derbies: Premier League games only, two sources agreeing.
+import unicodedata
+SQ = open("docs/data/PL_SQUADS_DERBIES_2026-10-03.md", encoding="utf-8").read()
+plain = lambda x: unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower().strip()
+by_name = defaultdict(set)
+for r in PR: by_name[plain(r["player"])].add(r["player_id"]); by_name[plain(r["full_name"])].add(r["player_id"])
+by_name["vasilios lakis"] = by_name["vassilis lakis"]; by_name["danilo"] = {"Danilo"}  # the dataset's spelling; Man City's Danilo, not Forest's
+def winners(a, b, pat):
+    names = re.findall(pat, SQ[SQ.index(a):SQ.index(b)], re.M)
+    ids = [by_name[plain(n)] for n in names]; assert all(len(i) == 1 for i in ids), [n for n, i in zip(names, ids) if len(i) != 1]
+    return {next(iter(i)): apps[next(iter(i))] for i in ids}
+POOL = r"([^;\n]+?) \(\d{4}"; ROW = r"^\| \d+ \| ([^|]+?) \|"
+gv = lambda k, n: f"{n} games"
+gboard("pl-wc-winners-apps", "World Cup winners in the Premier League", "Name the World Cup winners with the most Premier League games.", 1,
+       winners("### Combined board pool: World Cup", "### Squad by squad", POOL), lambda k: PNAME[k], gv, gv, period="World Cups to 2026; Premier League games, 1992/93 to 2025/26")
+gboard("pl-euro-winners-apps", "Euros winners in the Premier League", "Name the European Championship winners with the most Premier League games.", 1,
+       winners("### Combined board pool: Euros", "### Squad by squad\n### Euro 1992", POOL), lambda k: PNAME[k], gv, gv, period="Euros to 2024; Premier League games, 1992/93 to 2025/26")
+gboard("pl-ucl-pl-winners-apps", "Won the league and the Champions League", "Name the players with the most Premier League games who have won both the Premier League and the Champions League.", 1,
+       winners("## 3. Won", "## 4. Won", ROW), lambda k: PNAME[k], gv, gv)
+gboard("pl-liga-pl-winners-apps", "Won the Premier League and La Liga", "Name the players with the most Premier League games who have won both the Premier League and La Liga.", 2,
+       winners("## 4. Won", "## 5. Derby", ROW), lambda k: PNAME[k], gv, gv)
+ranked("pl-derby-mer-goals", "Merseyside derby top scorers", "Name the top scorers in Premier League Merseyside derbies, Liverpool v Everton. Five players have four, so any four of them fill the last four places.", LIVE, 1,
+       [("Mohamed Salah","9 goals"),("Steven Gerrard","9 goals"),("Robbie Fowler","6 goals"),("Divock Origi","6 goals"),("Dirk Kuyt","5 goals"),("Tim Cahill","5 goals, for Everton"),
+        (["Duncan Ferguson","Michael Owen","Daniel Sturridge","Luis Suarez","Sadio Mane"],"4 goals","mer4",4)],
+       {"Romelu Lukaku":"Romelu Lukaku is just outside with three.","Fernando Torres":"Fernando Torres is just outside with three.","Philippe Coutinho":"Philippe Coutinho is just outside with three."})
+ranked("pl-derby-man-goals", "Manchester derby top scorers", "Name the top scorers in Premier League Manchester derbies, Man Utd v Man City. Five players have four, so any two of them fill the last two places.", LIVE, 1,
+       [("Wayne Rooney","8 goals"),("Sergio Aguero","8 goals"),("Erling Haaland","8 goals"),("Eric Cantona","7 goals"),("Phil Foden","7 goals"),("Marcus Rashford","5 goals"),
+        ("Anthony Martial","5 goals"),("Paul Scholes","5 goals"),(["Ruud van Nistelrooy","Andrei Kanchelskis","Edin Dzeko","David Silva","Niall Quinn"],"4 goals","man4",2)],
+       {"Cristiano Ronaldo":"Cristiano Ronaldo is just outside with three.","Kevin De Bruyne":"Kevin De Bruyne is just outside with three.","Bruno Fernandes":"Bruno Fernandes is just outside with three."})
+ranked("pl-derby-nld-goals", "North London derby top scorers", "Name the top scorers in Premier League North London derbies, Arsenal v Spurs. Seven players have four, so any two of them fill the last two places.", LIVE, 1,
+       [("Harry Kane","14 goals"),("Emmanuel Adebayor","8 goals, for both clubs"),("Son Heung-min","8 goals"),("Robert Pires","7 goals"),("Thierry Henry","5 goals"),("Robin van Persie","5 goals"),
+        ("Gareth Bale","5 goals"),("Eberechi Eze","5 goals"),(["Ian Wright","Patrick Vieira","Freddie Ljungberg","Theo Walcott","Rafael van der Vaart","Pierre-Emerick Aubameyang","Alexandre Lacazette"],"4 goals","nld4",2)],
+       {"Teddy Sheringham":"Teddy Sheringham is just outside with three.","Bukayo Saka":"Bukayo Saka is just outside with three.","Robbie Keane":"Robbie Keane is just outside with three."})
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
