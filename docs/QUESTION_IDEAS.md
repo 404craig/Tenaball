@@ -31,7 +31,7 @@ Carried over from `CLAUDE.md`:
 
 ## Built
 
-- October 2026 (3rd, second batch, Craig's picks): Everton's biggest signings; top English scorers; top scorers for ten more countries and most appearances for fourteen (well-known players only); top scorers since 2000/01 for Spurs, Newcastle, Everton, West Ham and Villa; top scorers and appearances by decade; countries with the most Premier League players; club open boards (surname letters at a club, and played for two clubs); most games as a manager; most penalties scored; most relegations and most promotions.
+- October 2026 (3rd, second batch, Craig's picks): Everton's biggest signings; top English scorers; top scorers for ten more countries and most appearances for fifteen (well-known players only, plus Scotland at Craig's request); top scorers since 2000/01 for Spurs, Newcastle, Everton, West Ham and Villa; top scorers and appearances by decade; countries with the most Premier League players; club open boards (surname letters at a club, and played for two clubs); most games as a manager; most penalties scored; most relegations and most promotions.
 
 - October 2026 (3rd): from Craig's new boards document (`docs/data/Tenaball_new_boards_2026-10-03.md`): most appearances for each of 10 clubs; top scorers for France, the Netherlands, Scotland, the Republic of Ireland and Wales; top scorers and most appearances from outside England; most appearances by a goalkeeper; most seasons at one club; most goals by a defender and by a midfielder; biggest signings for nine clubs (Everton waits); and club record scorers for all 51 Premier League clubs.
 

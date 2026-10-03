@@ -134,7 +134,7 @@ await test("questions: the October 2026 Premier League boards are all playable, 
     }
     return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
   });
-  eq([r.n, r.live], [106, 106], "all 106 boards survive the final pass");
+  eq([r.n, r.live], [107, 107], "all 107 boards survive the final pass");
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
   eq(r.fam, ["appearances", "managers", "records", "scorers", "transfers"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
