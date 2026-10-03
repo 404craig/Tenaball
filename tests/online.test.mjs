@@ -64,6 +64,10 @@ const myTurn = p => p.evaluate(() => onlineMyTurn());
 async function step(pages, actor, fn, what){ const at = await seqOf(actor); await fn(); await inSync(pages, what, at); }
 // answers for the current board, from the page's own data
 const answer = (p, kind) => p.evaluate(kind => {
+  if (G.q.open){ // a letter board: any player with (or, for a wrong answer, without) the right surname letter
+    const fits = n => [...G.q.open.letters].some(c => PLP.get(n).letters.includes(c));
+    return [...PLP.keys()].find(n => fits(n) === (kind !== "wrong") && !G.guessed.has(n) && !Object.values(G.slotName).includes(n));
+  }
   if (kind === "wrong"){ const on = new Set(G.q.slots.flatMap(s => [s.club, ...(s.alts || [])])); return Object.keys(DICT()).map(a => { const v = DICT()[a]; return v instanceof Set ? [...v][0] : v; }).find(x => !on.has(x) && !G.guessed.has(x)); }
   const open = G.q.slots.map((s, i) => [s, i]).filter(([s, i]) => G.foundBy[i] === undefined);
   const [s] = open[0]; return s.pool ? s.alts.find(a => !(G.poolUsed[s.pool] || []).includes(a) && !G.guessed.has(a)) : s.club;

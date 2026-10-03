@@ -1,0 +1,10 @@
+Aston Villa 2003/04 check
+Player count per source: StatMuse 24 (player-stats 24, most-apps 24, fewest-apps 24; identical sets, under the 25-row cap); 11v11 club page https://www.11v11.com/teams/aston-villa/tab/players/season/2004/comp/1/ 24 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2003-2004/faprem/avilla.htm: all 24 present (Alpay, Kinsella, Hadji under players no longer at club).
+Club PL goals: Wikipedia 2003-04 FA Premier League table (https://en.wikipedia.org/wiki/2003%E2%80%9304_FA_Premier_League): 48
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2003-04-premier-league): Ben Thatcher (Leicester), 30 Aug 2003 at Villa Park.
+Player goals sum: 47. 48 - 1 - 47 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2003-04 (Barry D, Ridgewell M, de la Cruz M, Solano M, Samuel D).
+Nationality: footballsquads 2003-04 has no nationality column; spellings reused from other seasons' CSVs; Dublin, Allback, Kinsella, Hadji, Alpay, Angel taken from 11v11 club page flags.
+Naming: Alpay Ozalan listed as "Alpay" (the name used by fans and footballsquads/StatMuse first-name form).
+Unverified: own goal relies on StatMuse only, but reconciles exactly with club goals and player goals.

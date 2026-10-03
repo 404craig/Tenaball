@@ -1,0 +1,9 @@
+Arsenal 1993/94 Premier League check
+Player count: StatMuse merged 23 (player-stats 23, most-apps 23, fewest-apps read); 11v11 club page 23 (https://www.11v11.com/teams/arsenal/tab/players/season/1994/comp/1/); all 23 in footballsquads arsenal.htm (/eng/1993-1994/faprem/). Rows: 23
+Club goals: 53 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 3 (Eddie Youds, Ipswich; Gary Pallister, Man Utd; Jon Newsome, Leeds) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1993-94-premier-league. Not confirmed match by match from a second source; consistent with exact balance.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements: 2. Kevin Campbell goals StatMuse 15 vs 11v11 14; Ray Parlour goals StatMuse 1 vs 11v11 2. Wikipedia 1993-94 Arsenal season squad stats gives Campbell 14, Parlour 2 -> 11v11 figures used (both totals give 50, so balance unaffected). All apps (11v11 starts + subs) match StatMuse.
+Unverified: own goals not confirmed by a second source.
+Nationality: footballsquads 1993-94 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

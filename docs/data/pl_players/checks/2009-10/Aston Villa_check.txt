@@ -1,0 +1,12 @@
+Club: Aston Villa 2009/10
+Players: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (all under the 25 cap, so complete); merged 23 unique. 11v11 PL club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2010/comp/1/) 23 (starts + subs). Same 23 players.
+Club PL goals: 52 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 4. Lucas Leiva (Liverpool 1-3, 24 Aug 2009), John Pantsil (Villa 2-0 Fulham, 30 Aug 2009), James McCarthy (Wigan 1-2, 16 Mar 2010), Phil Jagielka (Villa 2-2 Everton, 14 Apr 2010). Source: 11v11 match pages linked from https://www.11v11.com/teams/aston-villa/tab/matches/season/2010/
+StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2009-10-premier-league) lists only James McCarthy: StatMuse incomplete. Wikipedia Villa season page gives 4 opposition own goals in all competitions (does not split cleanly by competition).
+Player goals sum: 48
+Difference (club goals - og_for - player goals): 0
+Rows: 23
+Disagreements: none. All apps and goals match between StatMuse and 11v11. (Milner own goal v Wolves and Collins own goal v Man Utd are against Villa, not counted.)
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/avilla.htm (Ashley Young M, Agbonlahor F). Gardner and Shorey in "no longer at club" section.
+Ciaran Clark: footballsquads gives ENG; Republic of Ireland used to match later seasons.
+Unverified: none.

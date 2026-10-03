@@ -1,0 +1,10 @@
+Club: Birmingham 2009/10
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (at cap, but all three return the identical 25 players and 11v11 also has exactly 25, so complete); merged 25 unique. 11v11 PL club page (https://www.11v11.com/teams/birmingham-city/tab/players/season/2010/comp/1/) 25 (starts + subs). Same 25 players.
+Club PL goals: 38 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 1. Chris Baird (Fulham 2-1 Birmingham, 21 Feb 2010). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2009-10-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/fulham-v-birmingham-city-21-february-2010-287051/
+Player goals sum: 37
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/birmin.htm (McSheffrey M, Gardner M, Benitez F). McSheffrey and Damien Johnson in "no longer at club" section.
+Unverified: none.

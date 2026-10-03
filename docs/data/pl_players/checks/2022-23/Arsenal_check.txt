@@ -1,0 +1,10 @@
+Club: Arsenal 2022/23
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all hit 25 cap); merged 26 unique (Nwaneri only in fewest list). 11v11 PL club page 26. Same 26 players; apps (starts+subs) and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Emiliano Martinez (Aston Villa), Fabian Schar (Newcastle), Hugo Lloris (Spurs), Marc Guehi (Crystal Palace), 1 each. Not separately confirmed on Wikipedia/11v11 match pages; consistent with 88 - 84 = 4.
+Unverified: nothing material.
+Club PL goals (https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League table): 88
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2022-23-premier-league (E. Martinez, Schar, Lloris, Guehi); total reconciles exactly with table goals and player sum)
+Player goals sum: 84
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2022-2023/engprem/arsenal.htm

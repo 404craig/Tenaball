@@ -1,0 +1,6 @@
+West Ham 2012/13 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25; merged 26 (Benayoun only in most/fewest; Jaaskelainen only in player-stats/most). 11v11 PL club page 26. footballsquads lists all 26.
+Club PL goals: 45 (Wikipedia 2012-13 Premier League table).
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2012-13-premier-league): Ashley Westwood (Aston Villa), Steven Gerrard (Liverpool). Wikipedia season page goalscorer table shows 2 own goals (scorers not named).
+Player goals sum: 43. Difference: 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 26.

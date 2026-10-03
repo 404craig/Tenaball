@@ -1,0 +1,10 @@
+Club: Chelsea 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Kalou, Ricardo Carvalho, Zhirkov only in most/fewest lists; Hutchinson, Turnbull only in fewest). 11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2010/comp/1/) 30. Same 30 players.
+Club PL goals: 103 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 4 (Chris Smalling, Fulham; Emmanuel Adebayor, Man City; Gael Givet, Blackburn; Thomas Vermaelen, Arsenal). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2009-10-premier-league. Wikipedia 2009-10 Chelsea season page (via summariser) confirmed Givet (24 Oct 2009 v Blackburn) and Vermaelen (29 Nov 2009 at Arsenal); 11v11 player goals sum to 99, consistent with 4.
+Player goals sum: 99
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none on apps (starts + subs) or goals. Summariser initially gave Sam Hutchinson 1 goal on the StatMuse fewest list; a row-level recheck showed G=0 (the 1 was an assist), matching 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/chelsea.htm (Shevchenko in "no longer at club"). Spellings reused from other seasons where they exist. Kakuta: footballsquads lists FRA for 2009-10; nationality DR Congo reused from other seasons (his senior international country).
+Unverified: Smalling and Adebayor own goals confirmed by StatMuse only (consistent with goals total).

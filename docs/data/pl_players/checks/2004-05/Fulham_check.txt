@@ -1,0 +1,8 @@
+Fulham 2004/05 check
+Player count per source: StatMuse player-stats 24, most-apps 24, fewest-apps 4 (bottom only, consistent); merged StatMuse 24. 11v11 club page https://www.11v11.com/teams/fulham/tab/players/season/2005/comp/1/ 24 (total = A + S). footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/fulham.htm: all 24 present. Final rows: 24.
+Club PL goals: 52, Wikipedia 2004-05 FA Premier League table.
+Own goals for: 0. StatMuse own-goals-vs query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2004-05-premier-league) returned HTTP 422 on two attempts, and the fulham-fc slug variant also 422. Wikipedia 2004-05 Fulham F.C. season results list shows no opponent own goals. StatMuse and 11v11 player goals each sum to 52 = club goals.
+Player goals sum: 52. 52 - 0 - 52 = 0.
+Disagreements: none; all 24 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (no nationality column; Rehman listed M, Rosenior F, Boa Morte M). Nationality: reused other seasons' spellings; new players Fontaine and Green (England), Hammond (Ghana), McKinlay (Scotland) from 11v11.
+Unverified: own goals for = 0 rests on Wikipedia results plus the goals reconciliation, not a positive StatMuse answer.

@@ -1,0 +1,8 @@
+Arsenal 2000/01 check
+Player counts: StatMuse player-stats 25 (capped, Luzhny missing), most-apps 25, fewest-apps 25; union 26. 11v11 club page (https://www.11v11.com/teams/arsenal/tab/players/season/2001/comp/1/) 26. Rows = 26.
+Club goals (Wikipedia 2000-01 FA Premier League table): 63.
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2000-01-premier-league) lists Claus Lundekvam and Rio Ferdinand. Confirmed on 11v11 match pages: Arsenal 1-0 Southampton 2 Dec 2000 (Lundekvam og 85), West Ham 1-2 Arsenal 21 Oct 2000 (Ferdinand og 21).
+Player goals sum: 61. 63 - 2 = 61. Difference: 0.
+Disagreements: 0. All 26 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2000-2001/faprem/arsenal.htm (Lauren D, Grimandi D, Sylvinho D, Vernazza M in no-longer-at-club section). Nationality: footballsquads has no nationality column; spellings reused from other seasons, 11v11 Nat column for Danilevicius (LTU), Lukic (ENG), Malz (GER), Manninger (AUT), Vernazza (ENG), Vivas (ARG).
+Unverified: nothing material.

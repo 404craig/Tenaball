@@ -1,0 +1,9 @@
+Bolton 2005/06 check
+Player count per source: StatMuse 24 (player-stats 24, most-apps 24, fewest-apps 24; under the 25 cap, complete); 11v11 club page https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2006/comp/1/ 24 (A = starts, S = subs); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/bolton.htm: all 24 present.
+Club PL goals: Wikipedia 2005-06 FA Premier League table (https://en.wikipedia.org/wiki/2005%E2%80%9306_FA_Premier_League), matches 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/: 49
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2005-06-premier-league): Sylvain Legwinski and Heidar Helguson (Fulham), confirmed on 11v11 match pages https://www.11v11.com/matches/fulham-v-bolton-wanderers-27-november-2005-221755/ and https://www.11v11.com/matches/bolton-wanderers-v-fulham-26-february-2006-272143/.
+Player goals sum: 47. 49 - 2 - 47 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11 (11v11 spells Borguetti, used Borgetti).
+Positions: footballsquads 2005-06 (Campo M, O'Brien M, Fadiga M, Fernandes M, Djetou D, Vaz Te F).
+Nationality: footballsquads 2005-06 has no nationality column; spellings reused from other seasons' CSVs, new players taken from the 11v11 club page. New: Jared Borgetti (Mexico), Martin Djetou (France), Khalilou Fadiga (Senegal), Fabrice Fernandes (France), Jaroslaw Fojut (Poland), Matt Jansen (England), Bruno N'Gotty (France), Hidetoshi Nakata (Japan), Jay-Jay Okocha (Nigeria).
+Unverified: nothing outstanding.

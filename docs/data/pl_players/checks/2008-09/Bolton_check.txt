@@ -1,0 +1,7 @@
+Bolton 2008/09 check
+Player count per source: StatMuse 25 (all three queries 25 rows, merged 25 incl. Nicky Hunt); 11v11 club page 24; footballsquads roster: all 24 present (Hunt also on roster).
+Club PL goals (Wikipedia table): 41
+Own goals for: 1 (Richard Dunne, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2008-09-premier-league ; Wikipedia 2008-09 Bolton season page also lists 1 own goal.
+Player goals sum: 40. 41 - 1 - 40 = 0.
+Disagreements: Nicky Hunt: StatMuse 1 app, 11v11 not listed, Wikipedia season squad stats 0 league apps (on loan at Birmingham Nov-Dec 2008). Resolution: excluded (two sources against; likely StatMuse counting an unused sub). 11v11 player page for Hunt not checked (slug unknown).
+All other players match StatMuse and 11v11.

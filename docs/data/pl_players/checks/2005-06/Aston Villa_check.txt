@@ -1,0 +1,9 @@
+Aston Villa 2005/06 check
+Player count per source: StatMuse 27 (player-stats 25, most-apps 25, fewest-apps 25; union 27, adds Wilfred Bouma and Ulises de la Cruz); 11v11 club page https://www.11v11.com/teams/aston-villa/tab/players/season/2006/comp/1/ 27 (Apps = starts, next column = subs); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/avilla.htm: all 27 present.
+Club PL goals: Wikipedia 2005-06 FA Premier League table (https://en.wikipedia.org/wiki/2005%E2%80%9306_FA_Premier_League), matches 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/: 42
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2005-06-premier-league): Richard Hughes (Portsmouth), confirmed on 11v11 match page https://www.11v11.com/matches/portsmouth-v-aston-villa-23-august-2005-220749/ (og 11 min).
+Player goals sum: 41. 42 - 1 - 41 = 0.
+Disagreements: 1. Peter Whittingham goals: 11v11 club page 1, StatMuse 0. 11v11 player page https://www.11v11.com/players/peter-whittingham-20276/ shows 4 PL apps, 0 goals; Wikipedia season page lists no league goal for him. Used 0 (and the club total balances only with 0).
+Positions: footballsquads 2005-06 (Gareth Barry D, Ridgewell D, Milner M, de la Cruz M).
+Nationality: footballsquads 2005-06 has no nationality column; spellings reused from other seasons' CSVs, new players taken from the 11v11 club page. New: Eirik Bakke (Norway), Mark Delaney (Wales).
+Unverified: nothing outstanding.

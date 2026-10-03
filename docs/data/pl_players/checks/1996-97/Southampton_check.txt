@@ -1,0 +1,11 @@
+Southampton 1996/97 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (31 unique merged: player-stats alphabetical to Shipperley, most-apps added Slater, Dryden, Charlton, van Gobbel, Basham, fewest-apps added Watkinson); 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/1997/comp/1/) = 31 (A starts + S subs). All 31 on footballsquads (https://www.footballsquads.co.uk/eng/1996-1997/faprem/southam.htm); Shipperley, Heaney, Dia, Woods, Watson, Potter in no-longer-at-club section.
+Club goals (Wikipedia 1996-97 FA Premier League table): 50
+Own goals for: 3. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1996-97-premier-league) lists Craig Short (Everton), Darryl Powell (Derby), Phil Neville (Man Utd). Wikipedia season page confirms an og in Southampton 6-3 Man Utd, 26 Oct 1996, but names Gary Neville (goal first credited to Ostenstad). Short and Powell ogs confirmed only by StatMuse; total of 3 consistent with the goals check.
+Player goals sum: 47
+Difference (club goals - og - player goals): 0
+Rows: 31
+Disagreements: 1. Gordon Watson apps StatMuse 14 vs 11v11 club page 15; 11v11 player page (https://www.11v11.com/players/gordon-watson-4309/) 7+8=15 and Wikipedia season page 7+8=15; used 15. All other apps and goals agree StatMuse vs 11v11.
+Names: Ali Dia (11v11 Aly), Micky Evans (StatMuse Mickey, footballsquads Michael, 11v11 Ireland recorded Republic of Ireland), Alan Neilson (footballsquads Neilsen), Matt Robinson (StatMuse Matthew), Russell Watkinson (footballsquads Russ). Spellings reused from other seasons where present.
+Positions from footballsquads 1996-1997 (Le Tissier F, Potter M, Warren M, Watkinson F). Nationality from 11v11 club page.
+Unverified: own goal scorer identity in Man Utd match (Phil vs Gary Neville); Short and Powell ogs single-source.

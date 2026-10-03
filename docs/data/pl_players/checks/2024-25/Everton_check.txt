@@ -1,0 +1,30 @@
+Player count per source: StatMuse union of stats + most pages 25 (fewest page returned HTTP 429, not read, not retried); Wikipedia 23 apps rows (Joao Virginia 0 apps excluded).
+Disagreements: 1. Calvert-Lewin apps (Wikipedia 22 vs StatMuse 26); resolved 26 with 11v11 (19+7).
+Goals check FAILS: player goals 39 + own goals 1 = 40 vs club 42, difference 2. Unresolved. Wikipedia and StatMuse give the same player goals so the cause is either more own goals for Everton than the one found, or a scorer missing from both (e.g. a player outside the 25-row StatMuse cap; fewest page not read). Not resolved.
+Players beyond 25 rows on the unread fewest page could be missing. Roman Dixon single source only.
+Full names and some pos/nat from general knowledge.
+Club PL goals: 42 (Wikipedia 2024-25 Premier League table)
+Own goals for: 1 (https://en.wikipedia.org/wiki/2024%E2%80%9325_Everton_F.C._season (summariser: one own goal, Archie Gray v Spurs 19 Jan 2025; not confirmed by a second source))
+Player goals sum: 39
+Difference (club goals - og - player goals): 2
+
+
+VERIFIED (2026-10-02)
+StatMuse fewest-appearances page (previously 429) now read: 25 rows, no new players; union is 26 including Pickford (most page). Dixon and Holgate both on it.
+Own goals for: previous figure 1 was incomplete. StatMuse most-own-goals-against page: Craig Dawson (Wolves) 2, Archie Gray (Spurs) 1. Dawson's 2 confirmed by Sky Sports match report (Everton 4-0 Wolves, 4 Dec 2024). Note: StatMuse 'everton-own-goals-for' query answers own goals BY Everton (0), not useful.
+Goals check previously failed by 2; now 42 - 3 - 39 = 0. All 39 player goals match the 11v11 PL goal-scorers list.
+Wikipedia season page summariser output for match-by-match scorers was unreliable (invented fixtures); not used.
+Armstrong and Dixon not shown individually in the footballsquads youth section summary; positions/nationalities taken from Wikipedia season page (MF ENG, DF ENG).
+Changes:
+- Youssef Chermiti: sources_agree partial -> yes (Wikipedia 0+4)
+- Harrison Armstrong: sources_agree partial -> yes (Wikipedia 0+3)
+- Mason Holgate: sources_agree partial -> yes (Wikipedia 0+1)
+- Roman Dixon: sources_agree no -> yes (StatMuse fewest-appearances page 1 app, matches Wikipedia)
+- Iliman Ndiaye: position FWD -> MID (footballsquads 2024-2025)
+- Jack Harrison: position FWD -> MID (footballsquads 2024-2025)
+- Dwight McNeil: position FWD -> MID (footballsquads 2024-2025)
+- Jesper Lindstrom: position FWD -> MID (footballsquads 2024-2025)
+- Mason Holgate: nationality England -> Jamaica (footballsquads 2024-2025 / Wikipedia)
+- Dominic Calvert-Lewin: note updated ((already settled with 11v11; unchanged))
+Final: club goals 42, own goals for 3, player goals 39, difference 0
+All rows now sources_agree=yes.

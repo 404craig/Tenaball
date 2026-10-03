@@ -1,0 +1,8 @@
+Derby 2007/08 check
+Player count per source: StatMuse 36 (player-stats 25 + most-apps 25 + fewest-apps 25 merged; fewest/most add Addison, Camara, Simmons, Malcolm, Carroll, Savage, Bywater, Mears, Pearson, Earnshaw, Howard); 11v11 club page 36 (its "Apps" column is starts, "Starts" is subs; totals = sum); footballsquads roster: all 36 present (Howard, Camara, Oakley, Griffin, Macken, Bywater, Nyatanga, Malcolm, Robert in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 20
+Own goals for: 1 (Sun Jihai, Man City, 30 Jan 2008) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-2007-08-premier-league
+Player goals sum: 19. 20 - 1 - 19 = 0.
+Disagreements: none (all 36 match on apps and goals between StatMuse and 11v11).
+Positions from footballsquads 2007-08 (G/D/M/F). The footballsquads Derby 2007-08 page has no nationality column, so nationality is taken from the 11v11 club page Nationality column. Giles Barnes and Tyrone Mears are Jamaica per 11v11 (both later capped by Jamaica) but earlier-season files in this project list them as England: inconsistency flagged, not changed elsewhere.
+Unverified: own goal not separately confirmed by Wikipedia or 11v11 match page, but totals reconcile exactly.

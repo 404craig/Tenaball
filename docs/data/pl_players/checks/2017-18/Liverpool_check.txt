@@ -1,0 +1,10 @@
+Liverpool 2017/18 Premier League check
+StatMuse: player-stats 25 (capped, alphabetical; missing Alexander-Arnold, van Dijk), most-appearances 25 (capped; missing Woodburn, Origi), fewest-appearances 25 (capped; missing Firmino, Salah); union 27
+11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2018/comp/1/): 27 players
+Rows written: 27. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/liverpool.htm (all 27 found)
+Club PL goals (Wikipedia 2017-18 Premier League table): 84
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2017-18-premier-league): Eric Bailly (Man Utd), Lewis Dunk (Brighton). Wikipedia 2017-18 Liverpool season page shows 2 PL own goals and names Dunk (Brighton 1-5 Liverpool, 2 Dec 2017).
+Player goals sum: 82. Club goals minus own goals: 82. Difference: 0
+Disagreements (apps/goals): none
+Unverified: Bailly own goal named by StatMuse only (count confirmed by Wikipedia)

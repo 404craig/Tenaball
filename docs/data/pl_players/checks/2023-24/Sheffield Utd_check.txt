@@ -1,0 +1,10 @@
+Sheffield Utd 2023/24 check
+Players per source: 11v11 PL squad page 35; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 35. Same 35 players. Wikipedia season page also counts 35 PL players.
+Disagreements: 0 (all apps and goals identical). StatMuse fewest-appearances summary showed Baldock goals 1, but player-stats and most-appearances pages give 0 goals/1 assist and 11v11 0: read as summariser error.
+Iliman Ndiaye: in no source as a PL player for the club (left for Marseille before the season).
+Unverified: footballsquads page fetch truncated, so position/nationality for Brooks, Fleck, Hackford, Jebbison, Norrington-Davies, Osula, Peck, L. Thomas, B. Traore and Holgate position come from 11v11 and earlier season files.
+Club PL goals: 35 (Wikipedia 2023-24 Premier League table)
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2023-24-premier-league) (Adam Webster, Brighton; Antonee Robinson, Fulham; Conor Bradley, Liverpool; Jordan Pickford, Everton. Wikipedia 2023-24 Sheffield United season goalscorers table: Own goals 4 in PL)
+Player goals sum: 31
+Difference (club goals - og - player goals): 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2023-2024/engprem/sheffu.htm (page truncated in fetch; 10 players filled from 11v11 and prior files, see notes)

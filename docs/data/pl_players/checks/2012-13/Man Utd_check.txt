@@ -1,0 +1,9 @@
+Man Utd 2012/13 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (manchester-united slug); 11v11 PL club page https://www.11v11.com/teams/manchester-united/tab/players/season/2013/comp/1/; Wikipedia 2012-13 Man Utd season page; footballsquads.co.uk/eng/2012-2013/faprem/manutd.htm for position and nationality.
+Player count: final rows 25; StatMuse merged 25 (all three queries list the same 25); 11v11 club page 25.
+Club goals (Wikipedia 2012-13 Premier League table): 86
+Own goals for: 6 (David Luiz (Chelsea), Gareth McAuley (West Brom), Jonas Olsson (West Brom), Ron Vlaar (Aston Villa), Titus Bramble (Sunderland), Vincent Kompany (Man City)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2012-13-premier-league; Wikipedia season goalscorer table: 6 PL own goals.
+Player goals sum: 80
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 25 players match on apps and goals.
+Unverified: nothing material. The StatMuse own-goal query hit HTTP 429 once and was read on retry.

@@ -1,0 +1,10 @@
+Club: Bournemouth 2022/23
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all hit cap); merged 31 unique. 11v11 PL club page 31. Same 31 players; apps and goals all match.
+Disagreements: none.
+Own goals: StatMuse own-goal query returned HTTP 422 on all slug variants (likely empty result). Wikipedia season page summary found no own goals in Bournemouth's favour in PL fixtures. Player goals 37 = table goals 37, so 0 is consistent. Not confirmed via StatMuse.
+Unverified: Ben Pearson position (footballsquads row truncated), taken from 11v11.
+Club PL goals (https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League table): 37
+Own goals for: 0 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2022-23-premier-league returned HTTP 422 (no answer; afc-bournemouth slug variants also 422); Wikipedia 2022-23 AFC Bournemouth season page match results show no own goals in Bournemouth favour)
+Player goals sum: 37
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2022-2023/engprem/bourne.htm

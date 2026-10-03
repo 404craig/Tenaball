@@ -1,0 +1,10 @@
+Bolton 1995/96 Premier League check
+Player count: StatMuse merged 28 (player-stats 25 capped, most-apps 25, fewest-apps 25 adding Wayne Burnett, Steve McAnespie, Simon Coleman); 11v11 club page 28 (https://www.11v11.com/teams/bolton-wanderers/tab/players/season/1996/comp/1/); all 28 in footballsquads bolton.htm (McAteer, Coyle, Patterson, Sneekes in players no longer at club).
+Club goals: 39 (Wikipedia 1995-96 FA Premier League table)
+Own goals for: 0. StatMuse own-goals query returned HTTP 422 (no result). Wikipedia 1995-96 Bolton season page summary documents no own goals in Bolton's favour (its scorer list was incomplete).
+Player goals sum: 39
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All 28 players' apps (11v11 starts + subs) and goals match StatMuse.
+Notes: Bolton's David Lee (MID) and Scott Taylor (FWD) are different people from Chelsea's David Lee and Leicester's Scott Taylor in other seasons' files.
+Unverified: own goals = 0 rests on the 422 result, Wikipedia summary and exact balance.
+Nationality: footballsquads 1995-96 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

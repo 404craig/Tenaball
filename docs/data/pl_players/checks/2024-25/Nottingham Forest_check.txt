@@ -1,0 +1,21 @@
+Nottingham Forest 2024/25 check
+Players per source: StatMuse fewest-appearances 23 (under 25 so a complete list); Wikipedia 23. StatMuse player-stats and most-appearances pages returned HTTP 429 and were not refetched. footballsquads URL 404.
+Club PL goals: 58 (Wikipedia league table).
+Own goals for: 1 IMPLIED ONLY. Not verified from any source. The Wikipedia season page summary showed no own goals row and said 0.
+Player goals sum: 57. Difference (club goals - og - player goals): 0.
+Result: player goals are 57 vs club 58. One goal unexplained: either one own goal for Forest (not confirmed) or a player goal missing. All 23 players agree between StatMuse and Wikipedia, and no 24th player was found, so an own goal is the likely cause. NOT VERIFIED.
+Disagreements: 0. Positions and nationalities from Wikipedia squad table (positions mapped to GK/DEF/MID/FWD by me).
+
+
+VERIFIED (2026-10-02)
+Sources added: https://www.11v11.com/teams/nottingham-forest/tab/players/season/2025/comp/1/ (11v11 PL squad page, Apps=starts, Subs=sub apps); https://www.footballsquads.co.uk/eng/2024-2025/engprem/ club page.
+- StatMuse most-appearances page now read: 23 rows, identical apps/goals to the fewest-appearances page (list complete). StatMuse player-stats page returned HTTP 429 again; proxy said not to refetch, so not retried (not needed: two complete StatMuse lists plus 11v11).
+- 11v11 squad page (PL): 23 players, apps and goals identical to CSV for all 23; 57 player goals.
+- footballsquads (eng/2024-2025/engprem/nottmf.htm) checked for all players; James Ward-Prowse not on Forest page (loanee), MID/England confirmed on the West Ham page.
+- Own goal now named: Lewis Dunk (Brighton) 12 min, Forest 7-0 Brighton, 1 Feb 2025 (11v11 match page and citizen.digital report).
+Changes:
+- Eric da Silva Moreira: position DEF -> FWD (footballsquads)
+- Callum Hudson-Odoi: position FWD -> MID (footballsquads)
+- og_for 1 -> 1 now sourced: https://www.11v11.com/matches/nottingham-forest-v-brighton-and-hove-albion-01-february-2025-387741/ (Lewis Dunk og, 1 Feb 2025; also citizen.digital match report)
+Final: rows 23, club goals 58, own goals for 1, player goals 57, difference 0.
+Still unverified: Nothing unverified.

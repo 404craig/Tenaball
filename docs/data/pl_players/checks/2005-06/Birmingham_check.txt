@@ -1,0 +1,9 @@
+Birmingham 2005/06 check
+Player count per source: StatMuse 30 (player-stats 25, most-apps 25, fewest-apps 25; union 30, adds Stan Lazaridis, Walter Pandiani, Olivier Tebily, Stephen Clemence, Nico Vaesen); 11v11 club page https://www.11v11.com/teams/birmingham-city/tab/players/season/2006/comp/1/ 30 (Apps = starts, next column = subs); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/birmin.htm: all 30 present.
+Club PL goals: Wikipedia 2005-06 FA Premier League table (https://en.wikipedia.org/wiki/2005%E2%80%9306_FA_Premier_League), matches 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/: 28
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-birmingham-city-2005-06-premier-league): Stephen Warnock and Xabi Alonso (Liverpool); Wikipedia 2005-06 Birmingham City season page shows Warnock og (24 Sep 2005) and Alonso og (1 Feb 2006).
+Player goals sum: 26. 28 - 2 - 26 = 0.
+Disagreements: none on apps or goals. Name spelling only: 11v11 Matthew Birley, StatMuse and footballsquads Mathew Birley (used Mathew); 11v11 Medhi Nafti, used Mehdi Nafti as in other seasons.
+Positions: footballsquads 2005-06 (Clapham D, Nafti M, Sutton F, Sadler listed as Matthew Sadler D).
+Nationality: footballsquads 2005-06 has no nationality column; spellings reused from other seasons' CSVs, new players taken from the 11v11 club page. New: Jamie Clapham (England), Kenny Cunningham, Clinton Morrison, Marcos Painter (11v11 "Ireland", written Republic of Ireland), Jiri Jarosik and Martin Latka (Czech Republic), Neil Kilkenny and Stan Lazaridis (Australia), Muzzy Izzet (Turkey), Mathew Birley and Stephen Clemence (England), Walter Pandiani (Uruguay), Olivier Tebily (Ivory Coast), Nico Vaesen (Belgium).
+Unverified: nothing outstanding.

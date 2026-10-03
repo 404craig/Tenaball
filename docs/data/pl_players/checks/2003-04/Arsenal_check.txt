@@ -1,0 +1,9 @@
+Arsenal 2003/04 check
+Player count per source: StatMuse 22 (player-stats 22, most-apps 22, fewest-apps 22; identical sets, under the 25-row cap); 11v11 club page https://www.11v11.com/teams/arsenal/tab/players/season/2004/comp/1/ 22 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2003-2004/faprem/arsenal.htm: all 22 present.
+Club PL goals: Wikipedia 2003-04 FA Premier League table (https://en.wikipedia.org/wiki/2003%E2%80%9304_FA_Premier_League): 73
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2003-04-premier-league): Franck Queudrue (Middlesbrough), Jody Craddock (Wolves), Michael Tarnat (Man City), Sami Hyypia (Liverpool).
+Player goals sum: 69. 73 - 4 - 69 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2003-04 (Lauren M, Kolo Toure M, Bentley F, Hoyte D).
+Nationality: footballsquads 2003-04 has no nationality column; spellings reused from other seasons' CSVs.
+Unverified: own goals rely on StatMuse; the Wikipedia Arsenal season page (via summariser) did not list them, but the count reconciles exactly with club goals and player goals.

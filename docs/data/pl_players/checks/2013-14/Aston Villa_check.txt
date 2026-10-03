@@ -1,0 +1,11 @@
+Club: Aston Villa 2013/14
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 26 unique players. 11v11 PL club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2014/comp/1/) 26. Same 26 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2013%E2%80%9314_Premier_League league table).
+Own goals for: 1 (Sebastien Bassong, Norwich, 2 Mar 2014) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2013-14-premier-league.
+Player goals sum: 38
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2013-2014/faprem/avilla.htm. Grant Holt (loan from Wigan) not on the Villa page; taken from https://www.footballsquads.co.uk/eng/2013-2014/flcham/wigan.htm (ENG, F).
+Nationality reuse from earlier seasons: Leandro Bacuna Curacao (footballsquads 2013/14 says NED), Jack Grealish England (footballsquads 2013/14 says IRL), Callum Robinson Republic of Ireland (footballsquads 2013/14 says ENG).
+Unverified: own goal not separately confirmed on Wikipedia/11v11 match page; consistent with exact reconciliation.

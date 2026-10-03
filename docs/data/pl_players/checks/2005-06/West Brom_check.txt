@@ -1,0 +1,10 @@
+West Brom 2005/06 Premier League check
+Player count per source: StatMuse merged (player-stats, most-appearances, fewest-appearances) 29; 11v11 club page 29 (https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2006/comp/1/); footballsquads (https://www.footballsquads.co.uk/eng/2005-2006/faprem/wba.htm) lists all 29 (current squad or no longer at club).
+Club PL goals (Wikipedia 2005-06 FA Premier League table): 31
+Own goals for: 0 - StatMuse own-goal query returned HTTP 422 (no results); Wikipedia 2005-06 West Bromwich Albion season page summary mentions no own goals and gives 31 league goals (its per-player summary was off by 1-2 for Horsfield and Campbell, so not trusted over StatMuse and 11v11). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2005-06-premier-league
+Player goals sum: 31
+Difference (club goals - own goals - player goals): 0
+Disagreements: none. Every player's apps and goals agree between StatMuse and 11v11 (11v11 apps = starts + subs).
+Positions from footballsquads; nationalities from 11v11 club page (footballsquads 2005-06 has no nationality column), or earlier-season spelling where the player already exists in other seasons.
+Nationality: Curtis Davies listed Sierra Leone on 11v11; England kept to match his earlier rows.
+Unverified: none.

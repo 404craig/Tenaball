@@ -1,0 +1,10 @@
+Club: Fulham 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Simon Davies, Gera, Kelly, Sidwell only in most/fewest lists; their source URL is the most-appearances query). 11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2011/comp/1/) 29. Same 29 players.
+Club PL goals: 49 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 1 (Scott Carson, West Brom, 23 Oct 2010). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2010-11-premier-league. 11v11 player goals also sum to 48, consistent.
+Player goals sum: 48
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/fulham.htm (Pascal Zuberbuhler listed but made no PL appearance). Spellings reused from other seasons (Andy Johnson, Mousa Dembele with surname Dembélé as in earlier files, Briggs England as in other seasons although 11v11 shows Guyana). Kakuta DR Congo as in other seasons (footballsquads FRA). Konchesky also appears for Liverpool 2010/11 (transfer).
+Unverified: own goal confirmed by StatMuse only (consistent with goals total from both stats sources).

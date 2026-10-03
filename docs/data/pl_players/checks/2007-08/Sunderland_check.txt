@@ -1,0 +1,13 @@
+Sunderland 2007/08 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances all read and merged; each capped at 25 rows): 31 players
+- 11v11 club page https://www.11v11.com/teams/sunderland/tab/players/season/2008/comp/1/: 31 players
+- footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/ : all 31 players found (position taken from it; the 2007-08 pages have no nationality column, so nationality is from the 11v11 club page Nat code, matched to spelling used in earlier season files)
+Club PL goals (Wikipedia 2007-08 Premier League table): 36
+Own goals for: 1 (Emanuel Pogatetz (Middlesbrough, 26 Apr 2008, Sunderland 3-2 Middlesbrough); confirmed by Wikipedia 2007-08 Sunderland A.F.C. season page); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2007-08-premier-league
+Player goals sum: 35
+Club goals minus own goals for: 35
+Difference: 0
+Disagreements: none on apps or goals; every player matches between StatMuse and 11v11 (starts+subs).
+Notes: Danny Higginbotham listed GIB by 11v11; England reused from other seasons. footballsquads 2007-08 pages give position and birth place only (no nationality column), so nationality is from 11v11 club page and earlier season files.
+Unverified: nothing outstanding.

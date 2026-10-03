@@ -1,0 +1,9 @@
+Southampton 2000/01 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (all under the 25 cap, same players). 11v11 club page 24 (same players). Rows written: 24.
+Apps: every player's StatMuse apps equal 11v11 starts + subs. Goals agree for every player.
+Club goals (Wikipedia 2000-01 FA Premier League table): 40
+Own goals for: 2 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2000-01-premier-league). Gunnar Halle (Bradford, 23 Sep 2000, 29) and Wes Brown (Man Utd, 13 May 2001, 11); both confirmed on 11v11 match pages (bradford-city-v-southampton-23-september-2000-1575, southampton-v-manchester-united-13-may-2001-7139).
+Player goals sum: 38. Difference (club goals - own goals - player goals): 0
+Disagreements: 0.
+Positions from footballsquads 2000-2001/faprem/southam.htm (Wayne Bridge and Dan Petrescu listed M; Soltvedt in no-longer-at-club section as M). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Gibbens ENG, Soltvedt NOR).
+Unverified: nothing outstanding.

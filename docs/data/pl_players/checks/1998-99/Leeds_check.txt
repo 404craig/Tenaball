@@ -1,0 +1,8 @@
+Leeds 1998/99 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (not capped); 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/1999/comp/1/) 24. Rows = 24.
+Club goals (Wikipedia 1998-99 FA Premier League table): 62.
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1998-99-premier-league) lists Scott Marshall (Southampton). Confirmed on 11v11 match page https://www.11v11.com/matches/leeds-united-v-southampton-08-september-1998-23742/ (Leeds 3-0 Southampton, Marshall og 38, Harte 52, Wijnhard 86).
+Player goals sum: 61. 62 - 1 = 61. Difference: 0.
+Disagreements: 0. All 24 players' apps (11v11 starts + subs) and goals match StatMuse.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1998-1999/faprem/leeds.htm (Sharpe in no-longer-at-club section). Nationality: spellings reused from other seasons; 11v11 Nat column for Lilley (SCO), Ribeiro (POR), Wijnhard (SUR).
+Unverified: Clyde Wijnhard nationality set to Suriname from 11v11 (born Paramaribo; no Netherlands senior cap known); not confirmed by a second source.

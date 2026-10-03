@@ -1,0 +1,11 @@
+Club: Cardiff 2013/14
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 32 unique players. 11v11 PL club page (https://www.11v11.com/teams/cardiff-city/tab/players/season/2014/comp/1/) 32. Same 32 players.
+Club PL goals: 32 (https://en.wikipedia.org/wiki/2013%E2%80%9314_Premier_League league table).
+Own goals for: 1 (Sascha Riether, Fulham, 8 Mar 2014) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-cardiff-city-2013-14-premier-league.
+Player goals sum: 31
+Difference (club goals - og_for - player goals): 0
+Rows: 32
+Disagreements: 1.
+- Craig Bellamy goals: StatMuse 2, 11v11 club page 1; Wikipedia 2013-14 Cardiff City season page (summariser) lists 2. Apps agree (22). Used 2: two sources agree and the club total reconciles exactly with 2 (with 1 it would be off by 1). 11v11 player page blocked (robots.txt).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2013-2014/faprem/cardiff.htm. Nationality reuse from earlier seasons: Steven Caulker Sierra Leone, Wilfried Zaha Ivory Coast (footballsquads 2013/14 says England for both). Fabio full name reused as "Fábio da Silva".
+Unverified: own goal not separately confirmed on Wikipedia/11v11 match page; consistent with exact reconciliation.

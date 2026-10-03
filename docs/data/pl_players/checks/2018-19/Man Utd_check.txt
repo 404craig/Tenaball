@@ -1,0 +1,9 @@
+Club: Man Utd 2018/19
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 28 (McTominay, Chong, Lindelof missing from player-stats). 11v11 PL club page 28 (A+S). Same 28 players.
+Disagreements: none. All apps and goals match (StatMuse names Lindelof as Victor Nilsson-Lindelof).
+Club PL goals: 65 (Wikipedia 2018-19 Premier League table).
+Own goals for: 0. StatMuse own-goals query returned HTTP 422 (no answer) on 2 tries, plus a variant URL also 422. Wikipedia 2018-19 Manchester United season page lists 1 own goal in all competitions, v Juventus (Champions League), so 0 in the PL. Consistent with player goal sum equalling club goals.
+Player goals sum: 65
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm. Spellings reused from later files (David de Gea, Andreas Pereira full name).
+Unverified: own goals for not confirmed by StatMuse (422).

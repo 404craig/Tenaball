@@ -1,0 +1,10 @@
+Club: Bournemouth 2016/17
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 27 unique (Steve Cook and Tyrone Mings only in most-appearances; Matt Worthington and Ryan Allsop in player-stats/fewest). 11v11 PL club page (https://www.11v11.com/teams/afc-bournemouth/tab/players/season/2017/comp/1/) 27 (apps = A + S). Same 27 players.
+Club PL goals: 55 (https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League league table).
+Own goals for: 2 (Alfie Mawson, Swansea; Ryan Shawcross, Stoke) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2016-17-premier-league.
+Player goals sum: 53
+Difference: 0
+Rows: 27
+Disagreements: none. All apps and goals match. (11v11 lists Andrew Surman as "Drew Surman"; same player.)
+Position/nationality source: https://www.footballsquads.co.uk/eng/2016-2017/faprem/bourne.htm. Benik Afobe kept as England (footballsquads ENG, earlier seasons England).
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

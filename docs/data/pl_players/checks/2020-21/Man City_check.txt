@@ -1,0 +1,9 @@
+Man City 2020/21 check
+Players per source: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24; StatMuse union 24; 11v11 PL squad page 24; rows written 24. all three StatMuse lists complete (24 < cap).
+Club PL goals: 83 (Wikipedia 2020-21 Premier League table)
+Own goals for: 1 (Leander Dendoncker (Wolves, 2 March 2021)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2020-21-premier-league. Confirmation: Wikipedia 2020-21 Man City season: 1 PL own goal, Dendoncker v Wolves 2 March 2021.
+Player goals sum: 82 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2020-2021/engprem/mancity.htm: all 24 players found (Mahrez and Ferran Torres listed M there, so MID).
+Unverified: nothing material.

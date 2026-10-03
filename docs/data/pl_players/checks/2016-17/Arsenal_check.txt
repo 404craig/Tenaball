@@ -1,0 +1,10 @@
+Club: Arsenal 2016/17
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Holding, Mustafi, Cazorla, Walcott not in player-stats query). 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2017/comp/1/) 29 (apps = A + S). Same 29 players.
+Club PL goals: 77 (https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League league table).
+Own goals for: 4 (Jack Cork, Swansea; Kevin Wimmer, Spurs; Kyle Naughton, Swansea; Robert Huth, Leicester) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2016-17-premier-league.
+Player goals sum: 73
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2016-2017/faprem/arsenal.htm. Name spellings reused from earlier seasons where the same player already appears.
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

@@ -1,0 +1,11 @@
+Crystal Palace 2020/21 Premier League check
+StatMuse player-stats query: read; most-appearances: read; fewest-appearances: read. Merged StatMuse players: 24
+11v11 club page (https://www.11v11.com/teams/crystal-palace/tab/players/season/2021/comp/1/): 24 players
+Player rows written: 24
+Club PL goals (Wikipedia 2020-21 Premier League table): 41
+Own goals for: 2 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2020-21-premier-league; StatMuse: Darnell Furlong (West Brom) 1, Helder Costa (Leeds) 1; Wikipedia 2020-21 Crystal Palace F.C. season goalscorers table: Own goal 2 (PL 2))
+Sum of player goals: 39
+Club goals - own goals for - player goals = 0
+Disagreements: 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/cpalace.htm. Names/full names/surnames/nationality reused from earlier season files for the same person where present.
+Unverified: none for apps/goals (all rows agree between StatMuse and 11v11 after resolution).

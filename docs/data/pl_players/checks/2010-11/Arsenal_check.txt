@@ -1,0 +1,10 @@
+Club: Arsenal 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique players. 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2011/comp/1/) 27 (starts + subs). Same 27 players.
+Club PL goals: 72 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 2 (Pepe Reina, Liverpool; Roger Johnson, Birmingham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2010-11-premier-league
+Player goals sum: 70
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/arsenal.htm (Walcott F, Song M, Eboue D per footballsquads). Spellings reused from other seasons where present.
+Unverified: own goals confirmed by StatMuse only (Wikipedia Arsenal season page has no match scorer detail); consistent with goals total.

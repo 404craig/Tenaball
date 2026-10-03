@@ -1,0 +1,9 @@
+Club: Liverpool 2019/20
+Players per source: StatMuse player-stats 24 (under cap, complete). StatMuse most/fewest-appearances not run because the WebFetch proxy was rate limiting; player-stats is under the 25-row cap and 11v11 fully covers the squad. 11v11 PL club page 24. Same 24 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 85 (Wikipedia 2019-20 Premier League table).
+Own goals for: 2 (Grant Hanley, Norwich, Liverpool 4-1 Norwich 9 Aug 2019; Chris Wood, Burnley, Burnley 0-3 Liverpool Aug 2019). Source: StatMuse own-goals vs Liverpool query. Not separately confirmed on 11v11 match pages; consistent with the goals check.
+Player goals sum: 83
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2019-2020/engprem/liverpool.htm. Spellings reused from earlier-season files.
+Unverified: nothing material.

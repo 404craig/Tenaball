@@ -1,0 +1,11 @@
+Club: Man City 2007/08
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 28 unique (Corluka, Sun Jihai only in most/fewest lists; Bojinov only in fewest list). 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2008/comp/1/) 28 players (starts + subs). Same 28 players.
+Club PL goals: 45 (https://en.wikipedia.org/wiki/2007%E2%80%9308_Premier_League league table).
+Own goals for: 3 (Chris Riggott, Middlesbrough; Lubomir Michalik, Bolton; Ryan Nelsen, Blackburn) per https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2007-08-premier-league. Wikipedia 2007-08 Manchester City season page (summariser) gives no own goals line, so OG not confirmed there; the goal sum check (45 - 3 = 42) is consistent.
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11. Spelling only: 11v11 "Valery Bozhinov", StatMuse "Valeri Bozhinov", footballsquads "Valeri Bojinov" (used, matches 2008/09 CSV).
+Position source: https://www.footballsquads.co.uk/eng/2007-2008/faprem/mancity.htm (Bianchi, Samaras in "no longer at club"). Petrov and Etuhu listed F there, so FWD.
+Nationality: the 2007/08 footballsquads page has no nationality column. Reused from earlier-season CSVs where the player exists; otherwise birth place on footballsquads: Isaksson (Trelleborg, Sweden), Mpenza (Brussels, Belgium), Castillo (San Luis Potosi, Mexico), Bianchi (Italy), Sam Williamson (Manchester, England), Sun Jihai (Dalian, China). Not cross-checked against national team records.
+Unverified: own goals for (3) rest on StatMuse plus the goal sum only.

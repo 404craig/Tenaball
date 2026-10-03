@@ -1,0 +1,9 @@
+Club: Newcastle 2017/18
+Players per source: StatMuse player-stats 25 (at cap), StatMuse fewest-appearances 25; union 27 (adds Rolando Aarons, Rob Elliot). Most-appearances not run: union equals the 11v11 list. 11v11 PL club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2018/comp/1/) 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 39 (Wikipedia 2017-18 Premier League table).
+Own goals for: 1 (Jonny Evans, West Brom, 28 Nov 2017). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2017-18-premier-league
+Player goals sum: 38
+Difference: 0 (39 - 1 - 38)
+SOURCE PROBLEM: footballsquads Newcastle page (https://www.footballsquads.co.uk/eng/2017-2018/faprem/newcas.htm, also the 2016-17 and 2018-19 pages) returns only the header through the fetcher, no squad table, after several attempts. Position/nationality for 21 players reused from later-season files (themselves from footballsquads); for Mbemba, Saivet, Gamez, Haidara, Rolando Aarons and Rob Elliot taken from 11v11 instead. Unverified against footballsquads: all Newcastle positions this season, Aarons FWD/Jamaica (11v11), Hayden kept England (11v11 now says Jamaica).
+Unverified: own goals for from StatMuse only, consistent with goal sum.

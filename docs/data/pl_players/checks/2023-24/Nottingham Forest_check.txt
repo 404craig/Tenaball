@@ -1,0 +1,9 @@
+Nottingham Forest 2023/24 check
+Players per source: 11v11 PL squad page 33; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 33. Same 33 players in both.
+Disagreements: 2. Felipe StatMuse 8 vs 11v11 7 (4+3); Matt Turner StatMuse 18 vs 11v11 17 (17+0). Resolved by Wikipedia season page and player career tables (7 and 17), so 11v11 used. 11v11 player page for Felipe also gives 4 starts + 3 subs.
+Unverified: footballsquads page fetch truncated, so position/nationality for Aguilera, Aina, Andrey Santos, Aurier, B. Johnson, Mangala, McKenna, Murillo, Worrall come from 11v11 and earlier season files.
+Club PL goals: 49 (Wikipedia 2023-24 Premier League table)
+Own goals for: 0 (https://en.wikipedia.org/wiki/2023%E2%80%9324_Nottingham_Forest_F.C._season) (Wikipedia goalscorers table PL total 49 with no own-goal row; StatMuse own-goals-vs-nottingham-forest query returned HTTP 422 (no result), consistent with 0)
+Player goals sum: 49
+Difference (club goals - og - player goals): 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2023-2024/engprem/nottmf.htm (page truncated in fetch; 9 players filled from 11v11 and prior files, see notes)

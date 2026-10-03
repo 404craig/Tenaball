@@ -1,0 +1,10 @@
+Club: Sunderland 2014/15
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; all three the same 25 players (fewest list bottoms out at 1 app). 11v11 PL club page (https://www.11v11.com/teams/sunderland/tab/players/season/2015/comp/1/) 25 (A+S). Same 25 players.
+Disagreements: 1.
+- Anthony Reveillere apps: StatMuse 17 (16 starts), 11v11 15+1=16, Wikipedia season page 15+1=16. Used 16 (two sources agree; likely StatMuse counting an unused booked sub). 11v11 player page not checked (URL not found).
+Club PL goals: 31 (Wikipedia 2014-15 Premier League table).
+Own goals for: 1. Harry Kane (Spurs), Sunderland 2-2 Tottenham, 13 Sep 2014, 82 min (StatMuse OG query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-afc-2014-15-premier-league; confirmed by thfcdb match page https://thfcdb.com/matches/2014-15/sunderland-afc-13-sep-2014/ and Sports Mole headline "Late Kane own goal").
+Player goals sum: 30
+Difference: 0 (31 - 1 - 30).
+Position/nationality: https://www.footballsquads.co.uk/eng/2014-2015/faprem/sunder.htm (Roberge, Altidore, Mandron in players no longer at club). Mandron given as SCO there. Roberge FRA there, 11v11 shows CYP; used France. Seb Larsson name reused from later seasons.
+Unverified: nothing material.

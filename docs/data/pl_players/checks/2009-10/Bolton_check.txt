@@ -1,0 +1,11 @@
+Club: Bolton 2009/10
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (at cap, but all three return the identical 25 players and 11v11 also has exactly 25, so complete); merged 25 unique. 11v11 PL club page (https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2010/comp/1/) 25 (starts + subs). Same 25 players.
+Club PL goals: 42 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table; 11v11 results also sum to 42).
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2009-10-premier-league and the -vs-bolton- variant) returns HTTP 422 (no result). Confirmed by checking all 22 11v11 match pages in which Bolton scored (linked from https://www.11v11.com/teams/bolton-wanderers/tab/matches/season/2010/): no opponent own goals; scorers there tally to the player totals.
+Wikipedia season page (https://en.wikipedia.org/wiki/2009%E2%80%9310_Bolton_Wanderers_F.C._season) shows 1 league own goal; this conflicts with its own player goals (42) and the club total (42). Likely Zat Knight's own goal against Bolton at Man Utd (17 Oct 2009) miscounted. Rejected in favour of 11v11 match pages.
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 25
+Disagreements: none between StatMuse and 11v11 on apps or goals. Wikipedia has Ricardo Gardner 20 league apps vs 21 on StatMuse and 11v11 (11+10); 21 used.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/bolton.htm (Basham M, Ward F, Riga Mustapha F NED). Wilshere on loan from Arsenal.
+Unverified: Riga Mustapha nationality taken as footballsquads NED (Ghana-born, no senior caps known).

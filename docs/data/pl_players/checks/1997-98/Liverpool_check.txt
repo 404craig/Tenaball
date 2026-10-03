@@ -1,0 +1,9 @@
+Liverpool 1997/98 check
+Player counts: StatMuse player-stats 24, fewest-apps 24 (not capped; most-apps not run since 24 < 25 cap); 11v11 club page (https://www.11v11.com/teams/liverpool/tab/players/season/1998/comp/1/) 24. Rows = 24.
+Own goals for: 0. StatMuse own-goals query returned HTTP 422 (no result). Wikipedia 1997-98 Liverpool F.C. season page shows no own goals in league matches. Player goals equal club goals exactly.
+Disagreements: 0. All 24 players' apps (11v11 A + S) and goals match StatMuse.
+Nationality: reused spellings from other seasons; new players (Rob Jones, Michael Thomas, Mark Wright) from 11v11 Nat column.
+Club goals (Wikipedia 1997-98 FA Premier League table (https://en.wikipedia.org/wiki/1997%E2%80%9398_FA_Premier_League)): 68.
+Own goals for: 0 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1997-98-premier-league).
+Player goals sum: 68. 68 - 0 = 68. Difference: 0.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1997-1998/faprem/liverpool.htm (season-specific; includes players no longer at club).

@@ -1,0 +1,8 @@
+Charlton 2005/06 check
+Player count per source: StatMuse 28 merged (player-stats 25, missing Andersen, El Karkouri, Myhre; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/charlton-athletic/tab/players/season/2006/comp/1/ 28 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/charlton.htm: all 28 present.
+Club PL goals: 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/, also Wikipedia 2005-06 Charlton Athletic F.C. season: 41
+Own goals for: 1, Lee Bowyer (Newcastle, 26 Mar 2006, Charlton 3-1 Newcastle), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2005-06-premier-league, confirmed by Wikipedia 2005-06 Charlton Athletic F.C. season results.
+Player goals sum: 40. 41 - 1 - 40 = 0.
+Disagreements: none; all 28 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (no nationality column). Nationality: reused other seasons' spellings where present; new players (Andersen, Bartlett, Johansson, Perry) from 11v11 nationality column.
+Unverified: nothing outstanding.

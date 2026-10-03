@@ -1,0 +1,9 @@
+Sheffield Utd 1992/93 Premier League check
+Player count: StatMuse merged 25 (player-stats 25, fewest-apps 25, same 25 names, so list is complete); 11v11 club page 25 (https://www.11v11.com/teams/sheffield-united/tab/players/season/1993/comp/1/). Rows: 25
+Club goals: 54 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-1992-93-premier-league: Andy Gray, Spurs; Andy Pearce, Coventry). Confirmed by Wikipedia 1992-93 Sheffield United F.C. season results: Gray (own goal) v Tottenham 2 Mar 1993 (6-0), Pearce (own goal) v Coventry 28 Nov 1992 (1-1).
+Player goals sum: 52
+Difference (club goals - og - player goals): 0
+Disagreements: none. 11v11 starts+subs and goals match StatMuse for all 25 players. Wikipedia season squad table also matches for the players it showed.
+Positions/nationality: footballsquads has no 1992-93 season (archive starts 1993/94), so positions and nationality reused from 1993-94+ files (footballsquads-based) for the same player; Ian Bryson, Mike Lake, Alan McLeary not in other seasons, taken from 11v11 club page.
+Unverified: nothing material.

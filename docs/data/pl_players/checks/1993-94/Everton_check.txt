@@ -1,0 +1,9 @@
+Everton 1993/94 Premier League check
+Player count: StatMuse merged 22 (player-stats 22, fewest-apps 22); 11v11 club page 22 (https://www.11v11.com/teams/everton/tab/players/season/1994/comp/1/); all 22 in footballsquads everton.htm. Rows: 22
+Club goals: 42 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 0. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1993-94-premier-league lists Neil Thompson (Ipswich, 30 Oct 1993), but the 11v11 match page https://www.11v11.com/matches/ipswich-town-v-everton-30-october-1993-21384/ credits that goal to Peter Beagrie (61 min) and the Wikipedia 1993-94 Everton season match list (Barlow, Beagrie) agrees; no own goals appear anywhere in the Wikipedia match list. og_for set to 0 on two sources against one.
+Player goals sum: 42
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Peter Beagrie goals StatMuse 3 vs 11v11 4 (see own goals above) -> 4 (11v11 club page, 11v11 player page, 11v11 match page and Wikipedia match list). All apps match.
+Unverified: none beyond the StatMuse own-goal attribution conflict described.
+Nationality: footballsquads 1993-94 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

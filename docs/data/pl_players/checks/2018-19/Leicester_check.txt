@@ -1,0 +1,9 @@
+Club: Leicester 2018/19
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25 (lowest 1 app); all three return the same 25 players, so the squad is complete. 11v11 PL club page 25 (A = starts, S = sub apps; A+S used). Same 25 players.
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Club PL goals: 51 (Wikipedia 2018-19 Premier League table).
+Own goals for: 3 (Conor Coady, Wolves; Matt Doherty, Wolves; Hector Bellerin, Arsenal). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2018-19-premier-league
+Player goals sum: 48
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/leicester.htm. Footballsquads gives Demarai Gray and Hamza Choudhury ENG and Nampalys Mendy FRA; Jamaica, Bangladesh and Senegal used to match earlier-season files (their senior international teams).
+Unverified: own goals for taken from StatMuse only (not cross-checked on Wikipedia or 11v11 match pages), but consistent with the goal sum.

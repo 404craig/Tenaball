@@ -1,0 +1,11 @@
+Season 2022/23, Crystal Palace
+Player count per source: StatMuse union of 3 pages 26; 11v11 PL squad page 26; final rows 26.
+Sources: StatMuse https://www.statmuse.com/fc/ask/crystal-palace-premier-league-player-stats-2022-23 , -players-most-appearances-2022-23 , -players-fewest-appearances-2022-23 (all three read); 11v11 https://www.11v11.com/teams/crystal-palace/tab/players/season/2023/comp/1/
+Club PL goals: 40 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2022-23-premier-league) (Daniel Iversen, Leicester; John Stones, Man City)
+Player goals sum: 38
+Difference (club goals - og - player goals): 0
+Disagreements: none. Every player matched on apps and goals between StatMuse and 11v11.
+Positions and nationalities: footballsquads.co.uk https://www.footballsquads.co.uk/eng/2022-2023/engprem/cpalace.htm (read via summariser). Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Own goals confirmed by Wikipedia 2022-23 club season page goalscorer table (own goals row = 2).
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).

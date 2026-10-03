@@ -1,0 +1,8 @@
+Everton 1995/96 Premier League check
+Player count: StatMuse 24 in each of player-stats, most-apps, fewest-apps; 11v11 club page 24 (https://www.11v11.com/teams/everton/tab/players/season/1996/comp/1/); footballsquads faprem/everton.htm lists all 24.
+Club goals: 64 (Wikipedia 1995-96 FA Premier League table)
+Own goals for: 1. David Wetherall (Leeds), Everton 2-0 Leeds 30 Dec 1995: 11v11 match page (https://www.11v11.com/matches/everton-v-leeds-united-30-december-1995-22374/) and Wikipedia 1995-96 Everton season page. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1995-96-premier-league) lists 2: Wetherall and Nicky Marker (Blackburn). The Marker og is not supported: 11v11 match page Blackburn 0-3 Everton 30 Mar 1996 gives Amokachi 71, Kanchelskis 76, 89, and Wikipedia gives Kanchelskis 2 in that match.
+Player goals sum: 63
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Kanchelskis goals: StatMuse 15, 11v11 club and player page 16, Wikipedia season page 16. Resolved to 16 (StatMuse appears to credit one of his goals at Blackburn to Marker as an own goal). Apps agree for all 24.
+Nationality: from spelling used in other seasons or 11v11 club page.

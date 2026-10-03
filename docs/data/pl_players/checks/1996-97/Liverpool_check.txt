@@ -1,0 +1,7 @@
+Liverpool 1996/97 Premier League check
+Player count per source: StatMuse player-stats 23 (under cap, complete; other two queries not run as 11v11 fully covers). 11v11 club page (https://www.11v11.com/teams/liverpool/tab/players/season/1997/comp/1/) 23. footballsquads (faprem/liverpool.htm) lists all 23.
+Club goals: 62 (11v11 final table 01-june-1997)
+Own goals for: 2 (Andy Myers, Chelsea, 21 Sep 1996; Des Lyttle, Nottingham Forest, 17 Dec 1996), both confirmed on 11v11 match pages; Wikipedia 1996-97 Liverpool season page also gives 2 own goals. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-1996-97-premier-league) lists 3, adding Claus Thomsen (Everton).
+Player goals sum: 60. 62 - 2 - 60 = 0.
+Disagreements: 1. Jamie Redknapp goals: StatMuse 2 (counts the Everton 1-1 Liverpool 16 Apr 1997 goal as a Thomsen own goal), 11v11 club page and match page 3, Wikipedia 3. Used 3 and og_for 2. All apps agree.
+Unverified: the Thomsen/Redknapp attribution for 16 Apr 1997 is disputed between sources.

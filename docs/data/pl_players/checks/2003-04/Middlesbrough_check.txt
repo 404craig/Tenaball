@@ -1,0 +1,8 @@
+Middlesbrough 2003/04 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 27 (Ehiogu, Nemeth missing from player-stats; Marinelli, Morrison not in most-apps). 11v11 club page https://www.11v11.com/teams/middlesbrough/tab/players/season/2004/comp/1/: 27 (total = A+S). footballsquads 2003-04 (/faprem/middles.htm): all 27 present (Marinelli, Alan Wright in 'no longer at club').
+Club PL goals: 44 (Wikipedia 2003-04 FA Premier League table).
+Own goals for: 4 (John Curtis, Leicester; Joseph Yobo, Everton; Kevin Nolan, Bolton; Sun Jihai, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2003-04-premier-league.
+Player goals sum: 40. 44 - 4 - 40 = 0.
+Disagreements: 0. All 27 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2003-04. Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

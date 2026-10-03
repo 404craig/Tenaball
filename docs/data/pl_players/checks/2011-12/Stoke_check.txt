@@ -1,0 +1,10 @@
+Stoke 2011/12 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (stoke-city slug, each 23 rows, not capped); 11v11 PL club page https://www.11v11.com/teams/stoke-city/tab/players/season/2012/comp/1/; footballsquads eng/2011-2012/faprem/stoke.htm; Wikipedia 2011-12 Stoke season page.
+Player count: final rows 23; StatMuse 23; 11v11 club page 23.
+Club goals (Wikipedia 2011-12 Premier League table): 36
+Own goals for: 1 (Kevin Doyle, Wolves, 17 Dec 2011). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2011-12-premier-league. Wikipedia season page summary gave 'Own goals 2' without a league/cup split (likely all competitions); StatMuse 1 reconciles exactly.
+Player goals sum: 35
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 23 players match on apps and goals between StatMuse and 11v11.
+Positions/nationalities: footballsquads 2011-12 (all 23 found; Pugh and Higginbotham in 'no longer at club' section).
+Unverified: league own goal count not confirmed on 11v11 match pages.

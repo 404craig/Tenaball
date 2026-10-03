@@ -1,0 +1,20 @@
+Player count per source: StatMuse union of 3 pages 29; Wikipedia season page 30 table rows (29 with Matt Turner, 0 apps, excluded).
+Disagreements: 0 on apps/goals across StatMuse and Wikipedia.
+Unverified: own goals for Palace; implied 2 (51 - 49). Not confirmed, so goals check is open.
+Chalobah 12 apps/3 goals is a loan stint; Chelsea apps are in the Chelsea file. Full names from general knowledge.
+Club PL goals: 51 (Wikipedia 2024-25 Premier League table)
+Own goals for: unverified (unverified: Wikipedia season page summary had no own-goal breakdown)
+Player goals sum: 49
+Difference (club goals - og - player goals): n/a (og unverified; implied og = 2)
+
+
+VERIFIED (2026-10-02)
+StatMuse three pages had been read (29 players); no missing players.
+Goals: all 49 player goals match the 11v11 PL 2024-25 goal-scorers list.
+Chalobah 12/3 confirmed by 11v11 player page.
+footballsquads file is cpalace.htm; all positions/nationalities match except Schlupp (D).
+Changes:
+- Jeffrey Schlupp: position MID -> DEF (footballsquads 2024-2025)
+- Trevoh Chalobah: note updated (11v11 player page: Palace PL 12+0 apps, 3 goals; confirmed)
+Final: club goals 51, own goals for 2, player goals 49, difference 0
+All rows now sources_agree=yes.

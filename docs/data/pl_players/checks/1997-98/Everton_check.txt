@@ -1,0 +1,7 @@
+Everton 1997/98 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged StatMuse 34. 11v11 club page (https://www.11v11.com/teams/everton/tab/players/season/1998/comp/1/) 34. footballsquads (faprem/everton.htm) lists all 34 (positions from it; no nationality column, nationality from 11v11 club page / earlier-season spellings).
+Club goals: 41 (Wikipedia 1997-98 FA Premier League table)
+Own goals for: 2 (Neil Ruddock, Liverpool, 18 Oct 1997; Michael Duberry, Chelsea, 18 Jan 1998) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-1997-98-premier-league ; confirmed by Wikipedia 1997-98 Everton season page results.
+Player goals sum: 39. 41 - 2 - 39 = 0.
+Disagreements: 0 (apps and goals agree for all 34 players between StatMuse and 11v11).
+Unverified: none.

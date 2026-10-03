@@ -1,0 +1,9 @@
+Blackburn 2006/07 check
+Player count per source: StatMuse 29 merged (player-stats 25, missing Tugay, Khizanishvili, Warnock, Reid; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2007/comp/1/ 29 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/blackbrn.htm: all 29 present (Neill, Kuqi, McEveley in "no longer at club").
+Club PL goals (11v11 final table, https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia cache-only): 52
+Own goals for: 3. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2006-07-premier-league lists only Emile Heskey (Wigan, 1 Jan 2007, confirmed https://www.11v11.com/matches/wigan-athletic-v-blackburn-rovers-01-january-2007-276397/). 11v11 match pages add Trevor Sinclair (Man City, 17 Sep 2006, https://www.11v11.com/matches/blackburn-rovers-v-manchester-city-17-september-2006-274693/) and Hermann Hreidarsson (Charlton, 28 Apr 2007, https://www.11v11.com/matches/blackburn-rovers-v-charlton-athletic-28-april-2007-277700/).
+Player goals sum: 49. 52 - 3 - 49 = 0.
+Disagreements: none; all 29 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Bentley F, Emerton M, Reid M, Berner M).
+Nationality: reused other seasons' spellings; Gray (England), Henchoz (Switzerland), Jeffers (England), Nonda (DR Congo), Peter (Germany) from 11v11 club page.
+Unverified: nothing outstanding.

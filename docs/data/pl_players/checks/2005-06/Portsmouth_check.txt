@@ -1,0 +1,8 @@
+Portsmouth 2005/06 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25, fewest-apps 25; merged 34 (most-apps adds Hughes, Todorov, Davis, Mendes, Routledge, Diao, Vukic; fewest-apps adds Westerveld, Pericard). 11v11 club page 34 (total = A+S). footballsquads 2005-06 (/faprem/portsm.htm): all 34 present (Robert, Skopelitis, Vukic, Viafara, Silva in "no longer at club").
+Club PL goals: 37 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/).
+Own goals for: 1, Duncan Ferguson (Everton), 10 Sep 2005, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2005-06-premier-league; confirmed by 11v11 match page https://www.11v11.com/matches/everton-v-portsmouth-10-september-2005-220899/ (60 min, 1-0).
+Player goals sum: 36. 37 - 1 - 36 = 0.
+Disagreements: none (all 34 apps and goals match between StatMuse and 11v11).
+Positions from footballsquads 2005-06 (Karadas F, Matt Taylor D); nationality from 11v11 club page, spellings aligned with other seasons' files. Pericard: 11v11 says Cameroon, France kept to match his other-season rows. Serbia used for Koroman, Stefanovic, Vukic (11v11 SRB; Serbia and Montenegro at the time).
+Unverified: nothing material.

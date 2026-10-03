@@ -1,0 +1,9 @@
+Liverpool 2014/15 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/liverpool-premier-league-player-stats-2014-15); 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2015/comp/1/); footballsquads.co.uk/eng/2014-2015/faprem/ for position and nationality.
+Player count: final rows 25; 11v11 club page 25 players; StatMuse merged 25 players (all three queries read).
+Club goals (Wikipedia 2014-15 Premier League table): 52
+Own goals for: 4 (Richard Dunne and Steven Caulker (QPR), Pablo Zabaleta (Man City), Jonjo Shelvey (Swansea)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2014-15-premier-league
+Player goals sum: 48
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: Lazar Markovic apps: StatMuse 18 vs 11v11 19 (11+8). Wikipedia career table 19. Used 19. 11v11 player page not fetched (web search budget exhausted, ID unknown).
+Unverified: own goals for taken from StatMuse only (not separately confirmed on Wikipedia or 11v11 match pages); the goal total reconciles exactly.

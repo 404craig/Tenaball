@@ -1,0 +1,10 @@
+Leeds 2002/03 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 29. 11v11 club page 29 (same players).
+Apps and goals: every player's StatMuse figure matches 11v11 (starts + subs) except as listed below.
+Club goals (Wikipedia 2002-03 FA Premier League table): 58
+Own goals for: 0 (source https://www.11v11.com/matches/leeds-united-v-chelsea-28-december-2002-15298/). StatMuse (players-with-own-goals-vs-leeds-united-2002-03-premier-league) lists William Gallas (Chelsea, 28 Dec 2002) 1, but the 11v11 match page credits that goal (30) to Jonathan Woodgate, and the 11v11 club page and Wikipedia season page both give Woodgate 1 league goal. So 0 own goals for, Woodgate 1.
+Player goals sum: 58. Difference (club goals - own goals - player goals): 0
+Disagreements (1):
+- Jonathan Woodgate: Goals: StatMuse 0 (it records the 28 Dec 2002 v Chelsea goal as a William Gallas own goal) vs 11v11 club page 1, 11v11 match page (leeds-united-v-chelsea-28-december-2002-15298) 1 and Wikipedia season page 1; 1 used. Moved to Newcastle in January 2003; also has a Newcastle row
+Positions from footballsquads 2002-2003/faprem/leeds.htm. Nationality: footballsquads has no nationality column; from spellings used in other seasons, otherwise 11v11 Nat column.
+Unverified: Jamie McMaster nationality (11v11 ENG, born Sydney).

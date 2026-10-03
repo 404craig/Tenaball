@@ -1,0 +1,30 @@
+West Ham 2025/26 PL check
+Player count per source:
+- StatMuse: 32 (default query capped at 25; most-apps query added Fernandes, Diouf, Magassa, Pablo, Kante, Fullkrug; fewest-apps query added Ezra Mayers)
+- ESPN squad page (id 371, ENG.1, season 2025): 0, page returned no data
+- footballsquads.co.uk westham.htm: all 32 found (departed and loaned players in left section)
+- Wikipedia 2025-26 West Ham United F.C. season: 30 returned; Kante and Mayers not returned by fetch
+- 11v11 team page (all comps): 35 incl Finlay Herrick, Keiber Lamadrid, Lewis Orford, not credited with a PL app by StatMuse, so not added. All league apps <= all-comp apps.
+Club PL goals (Wikipedia 2025-26 Premier League table): 46
+Own goals for: 2 (Wikipedia season page goalscorers table)
+Sum of player goals: 44
+Difference (club goals - own goals - player sum): 0
+Disagreements (2):
+- Lucas Paqueta: StatMuse 18, Wikipedia 17; 11v11 player page 18; used 18
+- Niclas Fullkrug: StatMuse 8, Wikipedia 6+3=9; 11v11 player page 5+3=8; used 8
+Unverified: ESPN not usable. Kante (11) and Mayers (6) rest on StatMuse plus 11v11 player pages.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/west-ham-united/tab/players/season/2026/comp/1/ (A=starts, S=subs): 32 players; every row apps (A+S) and goals match the CSV.
+- Adama Traore: full_name Adama Traoré -> Adama Traoré Diarra (spelling used for same player in other seasons)
+- Max Kilman: full_name Max Kilman -> Maximilian Kilman (spelling used for same player in other seasons)
+- Tomas Soucek: surname Soucek -> Souček (spelling used for same player in other seasons)
+- Igor: full_name Igor Julio -> Igor Julio dos Santos de Paulo (spelling used for same player in other seasons)
+- Lucas Paqueta: sources_agree partial -> yes (StatMuse 18/4, 11v11 club page 18+0=18/4)
+- Lucas Paqueta: surname Paqueta -> Paquetá (spelling used for same player in other seasons)
+- Andy Irving: full_name Andy Irving -> Andrew Irving (spelling used for same player in other seasons)
+- Guido Rodriguez: surname Rodriguez -> Rodríguez (spelling used for same player in other seasons)
+- Luis Guilherme: surname Luis Guilherme -> Guilherme (spelling used for same player in other seasons)
+- Niclas Fullkrug: sources_agree partial -> yes (StatMuse 8/0, 11v11 club page 5+3=8/0)
+- Niclas Fullkrug: surname Fullkrug -> Füllkrug (spelling used for same player in other seasons)
+Rows 32; player goals 44; club goals 46; own goals for 2; difference 0. All rows sources_agree=yes.

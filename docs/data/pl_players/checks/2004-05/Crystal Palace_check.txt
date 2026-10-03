@@ -1,0 +1,8 @@
+Crystal Palace 2004/05 check
+Player count per source: StatMuse player-stats 25 (capped; missing Andrews, Routledge), most-apps 25, fewest-apps 25; merged StatMuse 27. 11v11 club page https://www.11v11.com/teams/crystal-palace/tab/players/season/2005/comp/1/ 27 (total = A + S). footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/cpalace.htm: all 27 present (Kaviedes, Derry in 'no longer at club'). Final rows: 27.
+Club PL goals: 41, Wikipedia 2004-05 FA Premier League table.
+Own goals for: 1, Andreas Jakobsson (Southampton, 27 Nov 2004, Southampton 2-2 Crystal Palace), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2004-05-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/southampton-v-crystal-palace-27-november-2004-26746/ (Dubious Goals Committee changed it from Routledge to Jakobsson own goal).
+Player goals sum: 40. 41 - 1 - 40 = 0.
+Disagreements: none; all 27 players' apps and goals match between StatMuse (merged) and 11v11.
+Positions: footballsquads 2004-05 (no nationality column; Kolkka listed F, Leigertwood and Boyce D, Derry M). Nationality: reused other seasons' spellings where present; new players from 11v11 nationality column.
+Unverified: Lakis spelling varies by source (11v11 Vassilis, footballsquads Vassilios, StatMuse Vasilis); used 11v11 form.

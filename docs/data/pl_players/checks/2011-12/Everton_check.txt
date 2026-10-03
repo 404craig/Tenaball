@@ -1,0 +1,10 @@
+Club: Everton 2011/12
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 30. 11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2012/comp/1/) 30. Same 30 players.
+Club PL goals: 50 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 2 (Jack Colback, Sunderland; Peter Crouch, Stoke). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2011-12-premier-league. Confirmed by Wikipedia 2011-12 Everton F.C. season statistics (2 own goals, Premier League).
+Player goals sum: 48
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none on apps or goals (all 30 match between StatMuse and 11v11). Magaye Gueye nationality: footballsquads 2011-12 FRA; Senegal kept for consistency with 2012-13 row.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/everton.htm
+Unverified: nothing material.

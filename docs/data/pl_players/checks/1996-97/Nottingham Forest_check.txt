@@ -1,0 +1,10 @@
+Nottingham Forest 1996/97 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 29. 11v11 club page (https://www.11v11.com/teams/nottingham-forest/tab/players/season/1997/comp/1/) 29 (A+S). Rows = 29.
+Club goals (Wikipedia 1996-97 FA Premier League table): 31.
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-nottingham-forest-1996-97-premier-league) returned HTTP 422 on three attempts (also tried a shorter URL), which StatMuse usually returns for an empty result. Wikipedia 1996-97 Nottingham Forest season page lists no own goals in league results; 11v11 player goals sum to the club total.
+Player goals sum: 31. 31 - 0 = 31. Difference: 0.
+Disagreements: 2.
+- Stuart Pearce goals: StatMuse 4 vs 11v11 5 and Wikipedia 5 (lists league goals v Middlesbrough 24 Aug, Blackburn 25 Nov, Liverpool 17 Dec 1996, Chelsea 11 Jan, Southampton 5 Apr 1997); used 5. Apps agree (33).
+- Steve Guinan apps: StatMuse 1 vs 11v11 club page and player page 0+2 = 2; used 2, sources_agree = partial (no third source checked).
+Positions from footballsquads 1996-1997/faprem/nottmf.htm (Silenzi, Tommy Wright, Clough in players no longer at club). footballsquads lists Stephen Howe and Stephen Guinan; fan names Bobby Howe and Steve Guinan used (11v11/StatMuse). Nationality reused from other seasons; new players from 11v11 Nat column (Allen, Blatherwick, Guinan, Howe, Lee, McGregor, Warner ENG; Jerkan CRO; Phillips WAL; Roy NED; Silenzi ITA). Tommy Wright is the Northern Ireland goalkeeper (11v11 NIR), matching the Newcastle row of the same name.
+Unverified: Forest own goals rely on Wikipedia plus the goal sum, as StatMuse could not be read.

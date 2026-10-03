@@ -1,0 +1,12 @@
+Blackburn 1992/93 Premier League check
+Player count: StatMuse 25 (player-stats 25, most-apps 25, fewest-apps 25; all three return the same 25 names); 11v11 club page 25 (https://www.11v11.com/teams/blackburn-rovers/tab/players/season/1993/comp/1/). Rows: 25
+Club goals: 68 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 4. Mark Crossley (Nottingham Forest, 5 Sep 1992; confirmed on 11v11 match page https://www.11v11.com/matches/blackburn-rovers-v-nottingham-forest-05-september-1992-20852/), Phillips (Middlesbrough, 5 Dec 1992), Phelan (Man City, 30 Jan 1993), Whelan (Ipswich, 12 Apr 1993), from the Wikipedia 1992-93 Blackburn Rovers season match list. Only Crossley confirmed on a second source. StatMuse own-goal queries for 1992-93 (players-with-own-goals-vs-<club>-1992-93-premier-league) return HTTP 422, and the reworded query returns 'no own goals' even where Wikipedia and 11v11 match pages show one (e.g. Chelsea, Coventry), so StatMuse own-goal data for 1992-93 is treated as missing.
+Player goals sum: 64
+Difference (club goals - og - player goals): 0
+Disagreements: 4.
+- Mark Atkins goals StatMuse 5 vs 11v11 4, Mike Newell goals StatMuse 13 vs 11v11 14: one goal, Leeds away 10 Apr 1993 (11v11 match page: Newell 84 min; StatMuse games list and Wikipedia match list: Atkins). StatMuse + Wikipedia agree -> Atkins 5, Newell 13.
+- Alan Wright apps StatMuse 25 vs 11v11 24; Tony Dobson apps StatMuse 18 vs 11v11 19: one game, home v Arsenal 18 Aug 1992 (11v11 match page lists Dobson in the XI, no subs used, Wright absent; StatMuse has Wright playing 90 min and not Dobson). 11v11 player pages used (Wright 24, Dobson 19), sources_agree=partial; Wikipedia gives no season apps split for either.
+Unverified: Wright/Dobson 18 Aug 1992 appearance; three of the four own goals rely on Wikipedia only.
+Position note: Steve Livingstone is "Defender/Forward" on 11v11; FWD used.
+Nationality and position: footballsquads has no 1992-93 season pages (archive starts 1993/94); nationality/position taken from this project's rows for the same player in other seasons (footballsquads-based), otherwise from the 11v11 club page.

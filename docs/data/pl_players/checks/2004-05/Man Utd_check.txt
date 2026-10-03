@@ -1,0 +1,8 @@
+Man Utd 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 26 (Wes Brown missing from player-stats; Forlan missing from most-apps). 11v11 club page 26 (total = Apps + Subs). footballsquads 2004-05 (/faprem/manutd.htm): all 26 present (Forlan, Djemba-Djemba in "no longer at club").
+Club PL goals: 58 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2005/).
+Own goals for: 4 (Ashley Cole, Arsenal; Emmerson Boyce, Crystal Palace; Nicky Hunt, Bolton; Richard Dunne, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2004-05-premier-league. Dunne's OG also matches the StatMuse team figure of 2 own goals by Man City players. 11v11 and StatMuse player goals each sum to 54 = 58 - 4.
+Player goals sum: 54. 58 - 4 - 54 = 0.
+Disagreements: 1 apps. Roy Carroll StatMuse 27 vs 11v11 26; resolved to 26 via 11v11 player page (PL 26+0) and Wikipedia season page (26). Probable StatMuse counting of an unused-sub appearance. All goals agree between StatMuse and 11v11. Wikipedia goals differ for Giggs (6), Bellion (2), Saha (0); ignored per spec (its total is still 54).
+Positions from footballsquads 2004-05 (Richardson M). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on individual match pages (StatMuse list plus goal-sum consistency only).

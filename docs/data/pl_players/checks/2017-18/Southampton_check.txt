@@ -1,0 +1,9 @@
+Club: Southampton 2017/18
+Players per source: StatMuse player-stats 25 (at cap), StatMuse fewest-appearances 25; union 26 (adds Wesley Hoedt). Most-appearances not run: union equals the 11v11 list. 11v11 PL club page (https://www.11v11.com/teams/southampton/tab/players/season/2018/comp/1/) 26 (A+S). Same 26 players. All apps match.
+Disagreements: 1. Charlie Austin goals: StatMuse 7, 11v11 club page and player page (https://www.11v11.com/players/charlie-austin-230465/) 6. Wikipedia 2017-18 Southampton F.C. season gives 7 league goals (West Ham 19 Aug, Everton x2 26 Nov, Bournemouth 3 Dec, Arsenal 10 Dec, Huddersfield 23 Dec, Arsenal 8 Apr). Resolved 7 (StatMuse + Wikipedia, and goal sum reconciles).
+Club PL goals: 37 (Wikipedia 2017-18 Premier League table).
+Own goals for: 1 (Davinson Sanchez, Spurs, 21 Jan 2018). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2017-18-premier-league. Wikipedia season page summary did not mention own goals.
+Player goals sum: 36
+Difference: 0 (37 - 1 - 36)
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/southam.htm. Targett ENG there (11v11 says Scotland); England kept as in later seasons.
+Unverified: own goals for from StatMuse only, consistent with goal sum.

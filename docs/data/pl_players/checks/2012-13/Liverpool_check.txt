@@ -1,0 +1,12 @@
+Liverpool 2012/13 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (liverpool slug); 11v11 PL club page https://www.11v11.com/teams/liverpool/tab/players/season/2013/comp/1/; 11v11 player pages (Gerrard, Shelvey); Wikipedia 2012-13 Liverpool season page; footballsquads.co.uk/eng/2012-2013/faprem/liverpool.htm for position and nationality.
+Player count: final rows 28; StatMuse merged 28 (player-stats 25, most 25, fewest 25; Gerrard, Downing, Suso only in most-appearances list); 11v11 club page 28.
+Club goals (Wikipedia 2012-13 Premier League table): 71
+Own goals for: 4 (Gareth Bale (Spurs), James Collins (West Ham), Leighton Baines (Everton), Ryan Bennett (Norwich)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2012-13-premier-league; Wikipedia Liverpool season page also gives 4 PL own goals.
+Player goals sum: 67
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions (2):
+- Steven Gerrard goals: StatMuse 10, 11v11 club page 9, 11v11 player page 9, Wikipedia 9. Used 9.
+- Jonjo Shelvey goals: StatMuse 0, 11v11 club page 1, 11v11 player page 1, Wikipedia 1. Used 1.
+All apps agree between StatMuse and 11v11 (11v11 starts+subs).
+Unverified: nothing material.

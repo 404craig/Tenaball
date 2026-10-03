@@ -1,0 +1,9 @@
+Chelsea 2003/04 check
+Player counts: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged union 27. 11v11 club page 27. Same 27 players.
+Club goals (Wikipedia 2003-04 FA Premier League table): 67
+Own goals for: 3 (Lilian Nalis and Nikos Dabizas of Leicester, Martin Cranie of Southampton) per https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2003-04-premier-league. Wikipedia Chelsea season page does not list own goals; not confirmed by a match page.
+Player goals sum: 64 (StatMuse and 11v11 identical). 67 - 3 - 64 = 0.
+Disagreements on apps/goals: none (11v11 starts+subs = StatMuse apps for all 27).
+Positions from footballsquads 2003-2004/faprem/chelsea.htm (Oliveira listed F). Nationality from other seasons' spelling, 11v11 Nat and Wikipedia season squad flags.
+Nationality conflicts: Alexis Nicolas England (11v11) vs Cyprus (Wikipedia), kept England, unresolved. Mario Stanic Croatia (Wikipedia; 11v11 shows Yugoslavia), used Croatia.
+Unverified: own goals not confirmed by a second source.

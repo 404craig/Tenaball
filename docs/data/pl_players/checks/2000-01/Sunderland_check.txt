@@ -1,0 +1,9 @@
+Sunderland 2000/01 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); merged StatMuse 28. 11v11 club page 28 (same players). Rows written: 28.
+Apps: every player's StatMuse apps equal 11v11 starts + subs. Goals agree for every player.
+Club goals (Wikipedia 2000-01 FA Premier League table): 46
+Own goals for: 0. StatMuse own-goal query returned HTTP 422 (slugs sunderland-afc and sunderland, with and without -premier-league). Wikipedia 2000-01 Sunderland A.F.C. season page league scorer lists show no own goals in Sunderland's favour. Player goals from two independent sources (StatMuse, 11v11) both total 46 = club goals.
+Player goals sum: 46. Difference (club goals - own goals - player goals): 0
+Disagreements: 0.
+Positions from footballsquads 2000-2001/faprem/sunder.htm (Julio Arca listed D). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Bould ENG, Carteron FRA, Holloway ENG, Reddy IRL, Roy FRA).
+Unverified: StatMuse own-goal list unavailable (422); own goals = 0 rests on Wikipedia season page plus matching totals.

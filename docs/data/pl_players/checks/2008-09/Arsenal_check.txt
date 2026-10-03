@@ -1,0 +1,8 @@
+Arsenal 2008/09 check
+Player count per source: StatMuse 28 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: adds Gallas, Mannone, Walcott); 11v11 club page 28 (apps = starts + subs); footballsquads roster: all 28 present.
+Club PL goals (Wikipedia 2008-09 Premier League table): 68
+Own goals for: 4 (Andre Ooijer, James Beattie, Julien Faubert, Paul McShane) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2008-09-premier-league
+Player goals sum: 64. 68 - 4 - 64 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Nationality notes: Gavin Hoyte listed ENG by footballsquads, set to Trinidad and Tobago (later capped; 11v11 nationality). Amaury Bischoff Portugal per footballsquads.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

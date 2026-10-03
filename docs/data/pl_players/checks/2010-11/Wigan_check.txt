@@ -1,0 +1,7 @@
+Wigan 2010/11 check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 players in all three, table not capped beyond the squad); union 25. 11v11 PL club page 25 (Piscu listed as Adrian Lopez). footballsquads 2010-2011/faprem/wigan.htm lists all 25 (position and nationality taken from it).
+Club PL goals: 40 (Wikipedia 2010-11 Premier League table).
+Own goals for: 4. Danny Collins and Rory Delap (Stoke, 4 Dec 2010), Sebastien Squillaci (Arsenal, 29 Dec 2010), Neal Eardley (Blackpool, 16 Apr 2011), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2010-11-premier-league; all four confirmed on 11v11 match pages (292947, 293262, 294387).
+Player goals sum: 36. Difference (40 - 4 - 36): 0.
+Disagreements: none between StatMuse and 11v11 (apps = starts + subs on 11v11). Nationality: footballsquads gives Victor Moses as ENG; Nigeria used to match earlier seasons' files.
+Unverified: nothing.

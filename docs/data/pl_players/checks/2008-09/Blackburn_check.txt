@@ -1,0 +1,7 @@
+Blackburn 2008/09 check
+Player count per source: StatMuse 28 (player-stats 25 + fewest-apps 25 + most-apps 25, merged: adds Grella, Khizanishvili, Tugay); 11v11 club page 28; footballsquads roster: all 28 present.
+Club PL goals (Wikipedia table): 40
+Own goals for: 0. StatMuse own-goals query (blackburn-rovers and blackburn slugs) returned HTTP 422, i.e. no table; Wikipedia season page summary gave no own goals. Not separately confirmed by match pages.
+Player goals sum: 40. 40 - 0 - 40 = 0.
+Disagreements: none.
+Unverified: og_for = 0 rests on the StatMuse query returning no results plus the exact reconciliation of two agreeing player sources; not confirmed against 11v11 match pages.

@@ -1,0 +1,12 @@
+Club: Arsenal 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique players. 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2010/comp/1/) 30 (starts + subs). Same 30 players.
+Club PL goals: 83 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table; 11v11 results list also sums to 83).
+Own goals for: 6. Ronald Zubar and Jody Craddock (Wolves 1-4, 7 Nov 2009), Glen Johnson (Liverpool 1-2, 13 Dec 2009), Younes Kaboul (Portsmouth 1-4, 30 Dec 2009), Leon Osman (Arsenal 2-2 Everton, 9 Jan 2010), Chris Baird (Arsenal 4-0 Fulham, 9 May 2010). Source: 11v11 match pages linked from https://www.11v11.com/teams/arsenal/tab/matches/season/2010/
+StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2009-10-premier-league) lists only Chris Baird: StatMuse incomplete for this season; the other 5 confirmed on 11v11 match pages. Wikipedia Arsenal season page does not list PL scorers.
+Player goals sum: 77
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/arsenal.htm (Arshavin M, Walcott F, Eboue D, Eastmond D, Song M). Wilshere in "no longer at club" section (loaned to Bolton).
+Armand Traore: footballsquads gives FRA; Senegal used to match spelling in later seasons (later Senegal international).
+Unverified: none.

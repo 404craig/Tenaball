@@ -1,0 +1,8 @@
+Newcastle 2005/06 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25, fewest-apps 25; merged 26 (Titus Bramble only in most/fewest). 11v11 club page 26 (total = A+S). footballsquads 2005-06 (/faprem/newcas.htm): all 26 present (Jenas, Milner in "no longer at club").
+Club PL goals: 47 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/).
+Own goals for: 1, George Boateng (Middlesbrough), 9 Apr 2006, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2005-06-premier-league; confirmed by 11v11 match page https://www.11v11.com/matches/middlesbrough-v-newcastle-united-09-april-2006-272521/ (Dubious Goals Committee took it off Bowyer).
+Player goals sum: 46. 47 - 1 - 46 = 0.
+Disagreements: none (all 26 apps and goals match between StatMuse and 11v11).
+Positions from footballsquads 2005-06; nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: nothing material.

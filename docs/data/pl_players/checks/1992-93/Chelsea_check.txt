@@ -1,0 +1,9 @@
+Chelsea 1992/93 Premier League check
+Player count: StatMuse merged 32 (player-stats 25 capped, most-apps 25 capped, fewest-apps 25 capped; union 32); 11v11 club page 32 (https://www.11v11.com/teams/chelsea/tab/players/season/1993/comp/1/). Rows: 32
+Club goals: 51 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 1. Shaw (Crystal Palace), Chelsea v Crystal Palace, 7 Nov 1992, from the Wikipedia 1992-93 Chelsea season match list. Not confirmed on a second source. StatMuse own-goal queries for 1992-93 (players-with-own-goals-vs-<club>-1992-93-premier-league) return HTTP 422, and the reworded query returns 'no own goals' even where Wikipedia and 11v11 match pages show one (e.g. Chelsea, Coventry), so StatMuse own-goal data for 1992-93 is treated as missing.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All 32 players' apps (11v11 starts + subs) and goals match StatMuse.
+Unverified: own goal relies on Wikipedia only (consistent with exact balance). Steve Livingstone 11v11 position "Defender/Forward"; FWD used. Dmitri Kharine spelling reused from 1993/94 and 1994/95 rows.
+Nationality and position: footballsquads has no 1992-93 season pages (archive starts 1993/94); nationality/position taken from this project's rows for the same player in other seasons (footballsquads-based), otherwise from the 11v11 club page.

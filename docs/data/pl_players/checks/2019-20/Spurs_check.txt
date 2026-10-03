@@ -1,0 +1,9 @@
+Club: Spurs 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Alderweireld, Ndombele only in most list; Parrott, Wanyama, Nkoudou in fewest list, Nkoudou also in stats list). 11v11 PL club page 29. Same 29 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse. Name-only differences between sources noted in the note column.
+Club PL goals: 61 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 5 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2019-20-premier-league: Patrick van Aanholt (Crystal Palace, Spurs 4-0 Palace 14 Sep 2019), Antonio Rudiger (Chelsea, Chelsea 2-1 Spurs 22 Feb 2020), Tomas Soucek (West Ham, Spurs 2-0 West Ham 23 Jun 2020), Michael Keane (Everton, Spurs 1-0 Everton 6 Jul 2020), James Justin (Leicester, Spurs 3-0 Leicester 19 Jul 2020). All five confirmed on 11v11 match pages: https://www.11v11.com/matches/tottenham-hotspur-v-crystal-palace-14-september-2019-363837/ , https://www.11v11.com/matches/chelsea-v-tottenham-hotspur-22-february-2020-365867/ , https://www.11v11.com/matches/tottenham-hotspur-v-west-ham-united-23-june-2020-366217/ , https://www.11v11.com/matches/tottenham-hotspur-v-everton-06-july-2020-366578/ , https://www.11v11.com/matches/tottenham-hotspur-v-leicester-city-19-july-2020-366626/ . (Wikipedia season page summariser reported no own goals for; not trusted over StatMuse plus 11v11.)
+Player goals sum: 56
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/tottenha.htm (incl. players no longer at club section). Nationality follows footballsquads 2019/20 (time-specific), exceptions noted per row. Name spellings reused from earlier seasons where present.
+Unverified: nothing material.

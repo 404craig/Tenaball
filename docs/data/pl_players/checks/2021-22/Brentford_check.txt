@@ -1,0 +1,9 @@
+Club: Brentford 2021/22
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique. 11v11 PL club page 29. Same 29 players; all apps and goals match.
+Disagreements: none on figures.
+Club PL goals (https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League table): 48
+Own goals for: 2 (Jamaal Lascelles, Newcastle 3-3 Brentford 20 Nov 2021, confirmed by newcastleunited.com report; Seamus Coleman, Everton 2-3 Brentford 15 May 2022, confirmed by 11v11 match page). Wikipedia season page summary claimed an Ibrahima Diallo OG v Southampton 7 May 2022; brentfordfc.com report shows Jansson, Wissa, Ajer scored, no own goal, so rejected.
+Player goals sum: 46
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2021-2022/engprem/brentf.htm. footballsquads gives Mbeumo FRA and Rico Henry ENG (uncapped then); Cameroon and Jamaica used for consistency with later seasons.
+Unverified: nothing material.

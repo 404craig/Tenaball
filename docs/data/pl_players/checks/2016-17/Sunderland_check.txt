@@ -1,0 +1,9 @@
+Club: Sunderland 2016/17
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 31 (adds Kaboul, Mannone, Pienaar, Anichebe, Larsson, Khazri). 11v11 PL club page (https://www.11v11.com/teams/sunderland/tab/players/season/2017/comp/1/) 31 (A+S). Same 31 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 29 (Wikipedia 2016-17 Premier League table).
+Own goals for: 1 (Robert Huth, Leicester, 3 Dec 2016). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2016-17-premier-league
+Player goals sum: 28
+Difference: 0 (29 - 1 - 28)
+Position/nationality: https://www.footballsquads.co.uk/eng/2016-2017/faprem/sunder.htm (Kaboul, Lens, van Aanholt in players no longer at club). Rodwell M and Oviedo D per footballsquads this season.
+Unverified: own goals for from StatMuse only, consistent with goal sum.

@@ -1,0 +1,24 @@
+Spurs 2024/25 check
+Players per source: StatMuse player-stats 25 (capped), StatMuse fewest-appearances 25 (capped), Wikipedia 30. Union 31. StatMuse most-appearances page returned HTTP 429, not refetched. footballsquads 404; 11v11 page garbled (mixed competitions/columns) and unusable.
+Club PL goals: 64 (Wikipedia league table; the squad summariser said 61, treated as an error).
+Own goals for: 3 IMPLIED ONLY. Wikipedia read named 2 (Areola for West Ham, Janelt for Brentford) and one read of the summariser said 4. Not verified.
+Player goals sum: 61. Difference (club goals - og - player goals): 0 by construction of the implied og.
+Disagreements: 3 apps disagreements, StatMuse used: Danso 10 vs 11, Drăgușin 16 vs 15, Maddison 31 vs 32. Not resolved with 11v11. Dorrington single StatMuse source (both lists), not in Wikipedia.
+
+
+VERIFIED (2026-10-02)
+Sources added: https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2025/comp/1/ (11v11 PL squad page, Apps=starts, Subs=sub apps); https://www.footballsquads.co.uk/eng/2024-2025/engprem/ club page.
+- StatMuse most-appearances page now read: 25 rows, all match CSV.
+- 11v11 PL squad page: 31 players, identical apps/goals to CSV after resolution; 61 player goals.
+- footballsquads (tottenha.htm) checked for all players.
+- Own goals for now all named (3): Dan Burn (Newcastle) 1 Sep 2024, Alphonse Areola (West Ham) 19 Oct 2024, Vitaly Janelt (Brentford) 2 Feb 2025, each on its 11v11 match page.
+Changes:
+- Alfie Dorrington: sources_agree partial -> yes (confirmed by 11v11 (1 apps, 0 goals) matching StatMuse)
+- Kevin Danso: sources_agree no -> yes (StatMuse 10 confirmed by 11v11 (10); Wikipedia figure rejected)
+- Mikey Moore: position MID -> FWD (footballsquads)
+- Radu Dragusin: sources_agree no -> yes (StatMuse 16 confirmed by 11v11 (16); Wikipedia figure rejected)
+- James Maddison: sources_agree no -> yes (StatMuse 31 confirmed by 11v11 (31); Wikipedia figure rejected)
+- Brennan Johnson: position FWD -> MID (footballsquads)
+- og_for 3 -> 3 now sourced: https://www.11v11.com/matches/newcastle-united-v-tottenham-hotspur-01-september-2024-385444/ (Dan Burn og 1 Sep 2024); https://www.11v11.com/matches/tottenham-hotspur-v-west-ham-united-19-october-2024-386109/ (Alphonse Areola og 19 Oct 2024); https://www.11v11.com/matches/brentford-v-tottenham-hotspur-02-february-2025-387747/ (Vitaly Janelt og 2 Feb 2025)
+Final: rows 31, club goals 64, own goals for 3, player goals 61, difference 0.
+Still unverified: Nothing unverified.

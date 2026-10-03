@@ -1,0 +1,9 @@
+Aston Villa 1994/95 Premier League check
+Player count: StatMuse merged 26 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 club page 26 (https://www.11v11.com/teams/aston-villa/tab/players/season/1995/comp/1/); all 26 in footballsquads avilla.htm. Rows: 26
+Club goals: 51 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 4 (Alan Reeves, Wimbledon; Chris Swailes, Ipswich; Frank Sinclair, Chelsea; Ian Brightwell, Man City) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-1994-95-premier-league. Wikipedia season page summary showed an own goal in the Leeds home match but the summariser output was unreliable; 4 confirmed by exact balance with StatMuse player goals.
+Player goals sum: 47
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Steve Staunton goals: StatMuse 5, 11v11 club page and player page (steve-staunton-291) 6, Wikipedia season page top scorers 5 (all competitions) -> 5. With 11v11's 6 the total would be 1 over club goals. All apps match.
+Unverified: own goals not individually confirmed by a second source.
+Nationality: from earlier-season files, otherwise 11v11 (Atkinson, Boden, Fashanu, Houghton IRL, King, Teale).

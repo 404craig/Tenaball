@@ -1,0 +1,12 @@
+Southampton 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap, alphabetical), most-apps 25, fewest-apps 25; merged 34. 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/2005/comp/1/) 34 (total = A+S). footballsquads 2004-05 (/faprem/southam.htm): all 34 present (Keller, Beattie in "no longer at club").
+Club PL goals: 45 (Wikipedia 2004-05 FA Premier League table; 11v11 final table agrees; also re-summed from the 38 results on the 11v11 fixtures page = 45).
+Own goals for: 3, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2004-05-premier-league, each confirmed on 11v11 match pages:
+ - Paul Robinson (West Brom) 6 Nov 2004, 87 min (Dubious Goals Committee): https://www.11v11.com/matches/southampton-v-west-bromwich-albion-06-november-2004-26437/
+ - Liam Rosenior (Fulham) 5 Jan 2005, 71 min: https://www.11v11.com/matches/southampton-v-fulham-05-january-2005-27237/
+ - John O'Shea (Man Utd) 15 May 2005, 10 min: https://www.11v11.com/matches/southampton-v-manchester-united-15-may-2005-186759/
+Player goals sum: 42. 45 - 3 - 42 = 0.
+Extra verification: every 11v11 match page with a Southampton goal was read (27 matches) and scorers tallied: Crouch 12, Phillips 10, Camara 4, Beattie 3, Svensson 3, Delap 2, Jakobsson 2, Blackstock, Higginbotham, Le Saux, Oakley, Prutton, Quashie 1 each = 42, plus 3 own goals = 45.
+Disagreements: none on apps or goals between StatMuse and 11v11 (all 34 match). Wikipedia season page summary gave Darren Kenton 1 goal and omitted Blackstock; overruled by StatMuse, 11v11 and the match-page tally.
+Positions from footballsquads 2004-05 (Cranie D, Kenton M, McCann M, Camara F, Fernandes M). Nationality from 11v11 club page; Higginbotham kept England (11v11 GIB) to match his other-season rows; Blackstock Antigua and Barbuda per 11v11.
+Unverified: nothing material.

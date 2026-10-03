@@ -1,0 +1,9 @@
+Middlesbrough 1996/97 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 30. 11v11 club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/1997/comp/1/) 30 (A+S). Rows = 30. Every player appears in at least one StatMuse list and in 11v11.
+Club goals (Wikipedia 1996-97 FA Premier League table): 51.
+Own goals for: 0. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1996-97-premier-league) lists one, Steve Nicol (Sheffield Wednesday) on 1 Mar 1997. The 11v11 match page (https://www.11v11.com/matches/sheffield-wednesday-v-middlesbrough-01-march-1997-22820/) gives Middlesbrough's goal (72 min) to Robbie Mustoe with no own goal, and the Wikipedia 1996-97 Middlesbrough season page lists Mustoe as scorer in that match. Treated as a Mustoe goal, so og_for = 0.
+Player goals sum: 51. 51 - 0 = 51. Difference: 0.
+Disagreements: 1. Robbie Mustoe goals: StatMuse 2 vs 11v11 club page, player page and Wikipedia 3 (the 1 Mar 1997 goal above); used 3. All apps agree.
+Note: Middlesbrough had 3 points deducted this season (does not affect goals).
+Positions from footballsquads 1996-1997/faprem/middles.htm (including players no longer at club: Barmby, Fjortoft, Miller). Nationality: spellings reused from other seasons where present; new players (Blackmore WAL, Branco BRA, Freestone ENG, Liddle ENG, Chris Morris IRL, Pearson ENG, Robson ENG, Whelan ENG, Whyte SCO, Emerson BRA) from 11v11 Nat column. Emerson is Emerson Moises Costa (Brazil), a different person from the Chelsea Emerson Palmieri row in later seasons; full_name set accordingly.
+Unverified: Branco and Emerson full names are not given by 11v11/StatMuse (they use the single name).

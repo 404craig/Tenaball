@@ -1,0 +1,10 @@
+Club: Arsenal 2012/13
+Players: StatMuse player-stats 25 (cap, missing Szczesny), most-appearances 25 (cap, missing Gnabry), fewest-appearances 25 (cap, missing Wilshere); merged 26 unique players. 11v11 PL club page (https://www.11v11.com/teams/arsenal/tab/players/season/2013/comp/1/) 26. Same 26 players.
+Club PL goals: 72 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Premier_League league table).
+Own goals for: 3 (Guly do Prado, Jos Hooiveld, Nathaniel Clyne, all Southampton). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2012-13-premier-league. Confirmed by Wikipedia 2012-13 Arsenal season page (Guly do Prado own goal on 1 Jan 2013 described as Arsenal's third own goal of the season, previous two also against Southampton).
+Player goals sum: 69
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2012-2013/faprem/arsenal.htm. Name spellings reused from later seasons where present (Fabianski surname Fabiański, Szczesny, Rosicky).
+Unverified: nothing material.

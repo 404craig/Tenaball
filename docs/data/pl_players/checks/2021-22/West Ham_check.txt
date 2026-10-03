@@ -1,0 +1,9 @@
+West Ham 2021/22 check
+Players per source: 11v11 PL squad page 25; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 25. Same players in both.
+Club PL goals: 60 (Wikipedia 2021-22 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2021-22-premier-league). StatMuse lists Alisson (Liverpool) 1 and Junior Firpo (Leeds) 1. Confirmed: Sporting Life report West Ham 3-2 Liverpool 7 Nov 2021 (Alisson touched Fornals corner into own net, 4 min); Vavel report Leeds 1-2 West Ham 25 Sep 2021 names a Junior Firpo own goal for 1-1 (the same report also describes it as Bowen double-deflection; StatMuse and 11v11 both give Bowen 12, consistent with the o.g. credit). Wikipedia season page summariser gave an own goals row of 2.
+Player goals sum: 58
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse (3 queries) and 11v11 (11v11 apps+subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/westham.htm
+Unverified: Firpo o.g. credited by StatMuse and Vavel intro; Vavel body text also calls it a Bowen deflected goal. Both stats sources give Bowen 12, consistent with the o.g. Issa Diop nationality France per footballsquads 2021-22.

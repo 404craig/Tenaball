@@ -1,0 +1,13 @@
+West Brom 2015/16 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-bromwich-albion-premier-league-player-stats-2015-16 (+ most-appearances and fewest-appearances queries; player-stats query hit the 25-row cap, union 28); 11v11 https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2016/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2015-2016/faprem/wba.htm (position, nationality).
+Player counts: StatMuse union 28; 11v11 club page 28. Every player's apps and goals match.
+Rows written: 28
+Club goals (Wikipedia 2015-16 Premier League table): 34
+Own goals for: 2 (StatMuse own-goals query):
+ - Mikel Arteta (Arsenal), West Brom 2-1 Arsenal 21 Nov 2015, 40' https://www.11v11.com/matches/west-bromwich-albion-v-arsenal-21-november-2015-316969/
+ - Winston Reid (West Ham), West Ham 1-1 West Brom 29 Nov 2015, 50' https://www.11v11.com/matches/west-ham-united-v-west-bromwich-albion-29-november-2015-316979/
+Player goals sum: 32
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0 (Wikipedia summariser output was incomplete/garbled for scorers and was not used.)
+Nationality notes: Saido Berahino listed ENG by footballsquads 2015/16 (England U21 at the time); Burundi used (senior international, matches other seasons).
+Unverified: nothing outstanding.

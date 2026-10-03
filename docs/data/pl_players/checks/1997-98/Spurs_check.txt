@@ -1,0 +1,13 @@
+Spurs 1997/98 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (28 unique merged); 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/1998/comp/1/) = 28 (A starts + S subs); all 28 on footballsquads (https://www.footballsquads.co.uk/eng/1997-1998/faprem/tottenha.htm), Mahorn in no-longer-at-club section.
+Club goals (Wikipedia 1997-98 FA Premier League table): 44
+Own goals for: 0. StatMuse own goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1997-98-premier-league) returned HTTP 422 (no results). Wikipedia season page (https://en.wikipedia.org/wiki/1997%E2%80%9398_Tottenham_Hotspur_F.C._season) shows no league own goals for Spurs (only an FA Cup og) and league scorers summing to 44.
+Player goals sum: 44
+Difference (club goals - og - player goals): 0
+Rows: 28
+Apps and goals: StatMuse and 11v11 agree for all 28 players; goals also match Wikipedia scorers list.
+Disagreements: 0.
+Names: Stephen Carr (footballsquads Steve), Steffen Iversen (footballsquads Iverson), Jose Dominguez, Jurgen Klinsmann, Moussa Saib (accents in full_name). Espen Baardsen (StatMuse Espen Per Baardsen). Carr and Fenn 11v11 IRL recorded Republic of Ireland. Spellings reused from other seasons where present.
+Positions from footballsquads 1997-1998 (Mabbutt D, Wilson D).
+Nationality from 11v11 club page.
+Unverified: nothing outstanding.

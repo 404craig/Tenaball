@@ -1,0 +1,8 @@
+Man City 2022/23 check
+Player count per source: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (all under the 25 cap, so complete); 11v11 PL squad page 24; rows written 24
+Club PL goals: 94 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (StatMuse own-goals-vs-manchester-city query: Jefferson Lerma, Chris Mepham; Lerma OG confirmed in City 4-0 Bournemouth 13-08-2022 match reports, Mepham OG in City 4-1 Bournemouth 25-02-2023 per Vavel report). Wikipedia season page summariser did not return an own goals row.
+Player goals sum: 92; difference (94 - 2 - 92): 0
+Disagreements: none. All 24 players' apps and goals match.
+Position/nationality: footballsquads eng/2022-2023/engprem/mancity.htm (all 24 found; Cancelo in players no longer at club). Positions as footballsquads gives them (e.g. Mahrez F, Alvarez F, Palmer M, Rico Lewis D).
+Unverified: nothing material.

@@ -1,0 +1,10 @@
+Club: Brighton 2022/23
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all hit cap); merged 29 unique. 11v11 PL club page 29. Same 29 players; apps all match.
+Disagreements: 1. Solly March goals StatMuse 6 vs 11v11 7. Resolved to 7: Wikipedia season page and Wikipedia player page give 7, and the 11v11 Leeds v Brighton (11 Mar 2023) match page records the PL panel crediting the goal to March rather than a Jack Harrison own goal.
+Own goals: StatMuse lists 5 (Jack Harrison, Luke Thomas, Romain Perraud, Ruben Loftus-Cheek, Trevoh Chalobah); Harrison removed per panel ruling above, giving 4, which matches the Wikipedia season page own-goal count of 4.
+Unverified: footballsquads Brighton page is truncated (only 4 rows readable), so positions/nationalities taken from prior-season footballsquads-based files and the Wikipedia squad list (Moran, Mwepu, Undav, Peupion from Wikipedia only).
+Club PL goals (https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League table): 72
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-2022-23-premier-league lists 5 (Harrison, L. Thomas, Perraud, Loftus-Cheek, Chalobah) but Harrison OG was reassigned to Solly March (https://www.11v11.com/matches/leeds-united-v-brighton-and-hove-albion-11-march-2023-378534/); Wikipedia 2022-23 Brighton season statistics give 4 own goals)
+Player goals sum: 68
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2022-2023/engprem/brighton.htm (page broken/truncated after 4 rows); positions and nationalities from footballsquads-based prior-season files (2023-24) where the player exists, otherwise from the Wikipedia 2022-23 Brighton season squad list

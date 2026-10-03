@@ -1,0 +1,11 @@
+Club: Man City 2010/11
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 27. 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2011/comp/1/) 27. Same 27 players.
+Club PL goals: 60 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 2 (Fabricio Coloccini, Newcastle; Peter Crouch, Spurs). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2010-11-premier-league.
+  Wikipedia 2010-11 Manchester City F.C. season (via summariser) reports 3 PL own goals without naming scorers; this conflicts. StatMuse player goals and 11v11 player goals both sum to 58, and 58 + 2 = 60, so 2 is used. The Wikipedia figure is treated as summariser/page error (unverified).
+Player goals sum: 58
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none on apps or goals (all 27 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/mancity.htm (all 27 listed, Adebayor/Bridge/Santa Cruz in players no longer at club).
+Unverified: identity of own goals not confirmed by a second named source (Wikipedia count differs, see above).

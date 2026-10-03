@@ -1,0 +1,9 @@
+Newcastle 2014/15 Premier League check
+Player count per source: StatMuse 27 (player-stats + most-apps + fewest-apps merged), 11v11 27 (https://www.11v11.com/teams/newcastle-united/tab/players/season/2015/comp/1/). Same 27 players.
+Club goals: 40 (Wikipedia 2014-15 Premier League table)
+Own goals for: 0. Wikipedia 2014-15 Newcastle United F.C. season page: no own goals in the PL scorer table (scorers sum to 40). StatMuse own-goal query (players-with-own-goals-vs-newcastle-united-2014-15-premier-league) returned HTTP 422 (no result) for both newcastle-united and newcastle slugs.
+Player goals sum: 40
+Difference (40 - 0 - 40): 0
+Disagreements: none. Every player's apps (11v11 starts + subs) and goals match StatMuse. Wikipedia scorer list matches.
+Positions/nationality: footballsquads Newcastle page (2014-2015/faprem/newcas.htm) could not be read: the fetch summariser returned only the page header on repeated attempts (same problem recorded in 2015-16). Position and nationality reused from earlier-season CSVs where the player exists; otherwise from the Wikipedia 2014-15 Newcastle season squad list (Abeid MID Algeria, Alnwick GK England, Ameobi FWD, Armstrong FWD England, Cabella MID France, Gutierrez MID Argentina, Ryan Taylor DEF England, Vuckic MID Slovenia, Williamson DEF England).
+Unverified: all positions/nationalities above not checked on footballsquads. Sammy Ameobi nationality set to England (birth country); Wikipedia shows a Nigeria flag, senior cap not confirmed. Own goals for confirmed by Wikipedia and the goal sum only, not StatMuse.

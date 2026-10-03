@@ -1,0 +1,10 @@
+Club: Fulham 2008/09
+Players: StatMuse player-stats 25 (cap; missing Gera), most-appearances 25 (cap; missing Wayne Brown), fewest-appearances 25 (cap; missing Gera); merged 26 unique. 11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2009/comp/1/) 26 (starts + subs). Same 26 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2008-09-premier-league returned HTTP 422 (no result; variant "against" also 422). Wikipedia 2008-09 Fulham season page (via summariser) documents only one own goal in Fulham's favour, Garry Monk in the FA Cup (not PL). 11v11 player goals sum to 39 = club goals, consistent with 0.
+Player goals sum: 39
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11. Name spellings only: StatMuse "Seol Kihyeon", "John Paintsil" (11v11 "Pantsil"); Seol Ki-hyeon / Paintsil reused from other seasons.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/fulham.htm (Seol, Bullard, Andreasen, Teymourian, Wayne Brown in "no longer at club").
+Unverified: own goals for = 0 not confirmed by a positive StatMuse listing (422); supported by Wikipedia match reports and the goals total.

@@ -1,0 +1,8 @@
+Spurs 2022/23 check
+Players per source: 11v11 PL squad page 29; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 29. Same players in both.
+Club PL goals: 70 (Wikipedia 2022-23 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-2022-23-premier-league). StatMuse lists Mohammed Salisu (Southampton) 1 and Thilo Kehrer (West Ham) 1. Confirmed: tottenhamhotspur.com report West Ham 1-1 Spurs Aug 2022 (Kehrer o.g. 34) and SI headline on Salisu own goal in Spurs 4-1 Southampton (6 Aug 2022). Wikipedia season page summariser did not show them.
+Player goals sum: 68
+Difference (club goals - og - player goals): 0
+Disagreements: 0. None: every player apps and goals identical in StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2022-2023/engprem/tottenha.htm

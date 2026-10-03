@@ -1,0 +1,8 @@
+Coventry 1996/97 Premier League check
+Player count: StatMuse 25 (player-stats, most-apps and fewest-apps each return the same 25); 11v11 club page 25 (https://www.11v11.com/teams/coventry-city/tab/players/season/1997/comp/1/); footballsquads coventry.htm lists all 25.
+Club goals: 38 (Wikipedia 1996-97 FA Premier League table, https://en.wikipedia.org/wiki/1996%E2%80%9397_FA_Premier_League)
+Own goals for: 3. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1996-97-premier-league) lists Marc Rieper (West Ham), Neil Cox (Middlesbrough), Steve Staunton (Aston Villa). Wikipedia 1996-97 Coventry City season page shows 3 league own goals: Rieper (v West Ham, 22 Mar 1997), Staunton (at Villa, 19 Feb 1997) and one v Middlesbrough (28 Dec 1996) credited in the summary to Liddle rather than Cox. Count of 3 agreed; identity of the Middlesbrough og scorer unresolved (does not affect Coventry rows).
+Player goals sum: 35
+Difference (club goals - og - player goals): 0
+Disagreements: 0 on apps/goals.
+Name notes: 11v11 Alex Evtushok = Oleksandr Yevtushok; Marques Isaias = Isaias; Paul D Williams = Paul Williams.

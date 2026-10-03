@@ -1,0 +1,9 @@
+Club: Burnley 2020/21
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap, identical sets); merged 25. 11v11 PL club page 25 (A+S), which fully covers the squad. Same 25 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 33. Club PL goals source: https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League league table.
+Own goals for: 1 (Pierre-Emerick Aubameyang, Arsenal 0-1 Burnley, 13 Dec 2020; StatMuse own-goals query; Wikipedia 2020-21 Burnley season and Arsenal season pages both mention the Aubameyang own goal)
+Player goals sum: 32
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2020-2021/engprem/burnley.htm. Ashley Barnes AUT there (kept Austria, matches earlier-season files).
+Unverified: nothing material.

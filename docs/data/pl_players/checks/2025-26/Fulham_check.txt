@@ -1,0 +1,23 @@
+Fulham 2025/26 PL check
+Player count per source:
+- StatMuse (most and fewest-apps queries both returned 24 rows, not truncated): 24
+- ESPN squad page: 0, page returned no data (not separately fetched)
+- footballsquads.co.uk fulham.htm: all 24 found (Traore listed as left)
+- Wikipedia 2025-26 Fulham F.C. season: 24 with PL apps (Lecomte 0)
+Club PL goals (Wikipedia table): 47
+Own goals for: 4 (Wikipedia season page)
+Sum of player goals: 43
+Difference: 0
+Disagreements: none.
+Unverified: ESPN not usable. Positions/nationality from footballsquads codes.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/fulham/tab/players/season/2026/comp/1/ read: 24 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- Positions/nationality already from footballsquads fulham.htm (pilot); not refetched.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 47 - own goals for 4 - player goals 43 = 0.
+- Fulham_summary.json written.
+Changes:
+- Jorge Cuenca: name/nationality fields ('Jorge Cuenca', 'Jorge Cuenca', 'Cuenca', 'Spain') -> ('Jorge Cuenca', 'Jorge Cuenca Barreda', 'Cuenca', 'Spain') (match spelling used in other seasons / spec nationality name)

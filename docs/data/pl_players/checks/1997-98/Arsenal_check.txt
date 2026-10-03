@@ -1,0 +1,8 @@
+Arsenal 1997/98 check
+Player counts: StatMuse player-stats 25 (capped; Tony Adams missing), most-apps 25 (Paolo Vernazza missing), fewest-apps 25 (Nigel Winterburn missing); union 26. 11v11 club page (https://www.11v11.com/teams/arsenal/tab/players/season/1998/comp/1/) 26 (A+S). Rows = 26.
+Club goals (Wikipedia 1997-98 FA Premier League table): 68.
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-1997-98-premier-league) lists Slaven Bilic (Everton) and Steve Walsh (Leicester). Confirmed by 11v11 match pages: https://www.11v11.com/matches/arsenal-v-everton-03-may-1998-23293/ (Bilic og 6, Arsenal 4-0) and https://www.11v11.com/matches/arsenal-v-leicester-city-26-december-1997-23123/ (Walsh og 56, Arsenal 2-1).
+Player goals sum: 66. 68 - 2 = 66. Difference: 0.
+Disagreements: 0. All 26 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 1997-1998/faprem/arsenal.htm. Nationality: no footballsquads column; spellings reused from other seasons; Gavin McGowan and David Platt (new) from 11v11 Nat column (ENG).
+Unverified: nothing outstanding.

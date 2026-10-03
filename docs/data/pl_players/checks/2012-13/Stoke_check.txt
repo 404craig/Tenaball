@@ -1,0 +1,7 @@
+Stoke 2012/13 Premier League check
+Sources: StatMuse player-stats 24 rows, most-appearances 24, fewest-appearances 24; merged = 24 players. 11v11 club page (comp 1, season 2013) = 24 players, same 24. footballsquads 2012-2013/faprem/stoke.htm used for position and nationality (all 24 found).
+Club goals (Wikipedia 2012-13 Premier League table): 34
+Own goals for: 1 (Wayne Rooney, Man Utd, 20 Oct 2012). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2012-13-premier-league ; consistent with 11v11 player sum (33 = 34 - 1).
+Player goals sum: 33. Expected 34 - 1 = 33. Difference: 0.
+Disagreements: none. All 24 players' apps and goals agree between StatMuse and 11v11.
+Unverified: own goal not separately checked on 11v11 match page or Wikipedia season page (StatMuse plus totals reconcile).

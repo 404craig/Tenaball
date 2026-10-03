@@ -1,0 +1,11 @@
+Man City 2000/01 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 30; 11v11 club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2001/comp/1/) = 30; all appear in footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/mancity.htm).
+Club goals (Wikipedia 2000-01 FA Premier League table): 41
+Own goals for: 3 (Gary Naysmith (Everton) 9 Dec 2000, Ian Pearce (West Ham) 28 Apr 2001, Steve Vickers (Middlesbrough) 3 Feb 2001; all three confirmed on 11v11 match pages (manchester-city-v-everton-09-december-2000-3485, manchester-city-v-west-ham-united-28-april-2001-6820, middlesbrough-v-manchester-city-03-february-2001-4623)), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2000-01-premier-league
+Player goals sum: 38
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 (starts + subs) agree for every player.
+Disagreements: none
+Name/position/nationality notes: Laurent Charvet: also played for Newcastle this season; Alf-Inge Haaland: StatMuse spells Alf-Inge Håland; Andrei Kanchelskis: 11v11 shows USSR flag; Russia used as in other seasons; Tommy Wright: goalkeeper born Belfast 1963; not the Tommy Wright at Leicester 2001/02; Shaun Wright-Phillips: 11v11 lists as midfielder; footballsquads F used
+Positions from footballsquads 2000-01; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

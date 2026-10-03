@@ -1,0 +1,15 @@
+Crystal Palace 2017/18 Premier League check
+StatMuse: player-stats 25 (capped, alphabetical; missing Hennessey, Zaha, Cabaye), most-appearances 25 (capped), fewest-appearances 25 (capped); union 28
+11v11 PL club page (https://www.11v11.com/teams/crystal-palace/tab/players/season/2018/comp/1/): 28 players
+Rows written: 28. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/cpalace.htm
+Club PL goals (Wikipedia 2017-18 Premier League table): 45
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2017-18-premier-league): Cesar Azpilicueta (Chelsea), 14 Oct 2017; confirmed by Wikipedia 2017-18 Crystal Palace season page
+Player goals sum: 44. Club goals minus own goals: 44. Difference: 0
+Wikipedia season page PL scorers agree (Milivojevic 10, Zaha 9, McArthur 5, van Aanholt 5, Sako 3, Tomkins 3, Benteke 3, Townsend 2, Loftus-Cheek 2).
+Disagreements (apps/goals): none
+Naming/position/nationality notes:
+- Aaron Wan-Bissaka: footballsquads 2017-18 lists ENG; nationality DR Congo kept to match later seasons' files
+- Freddie Ladapo: footballsquads lists NGA; used Nigeria (uncapped, birth country not checked against a source)
+- Positions are footballsquads 2017-18 (Zaha, Schlupp, Wan-Bissaka listed M this season)
+Unverified: Ladapo nationality basis (see above)

@@ -1,0 +1,9 @@
+Leeds 2000/01 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 26; 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/2001/comp/1/) = 26; all matched to footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/leeds.htm), Matt Jones and Huckerby in its "no longer at club" section.
+Club goals (Wikipedia 2000-01 FA Premier League table): 64
+Own goals for: 1 (Mark Venus, Ipswich, 3 Feb 2001), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-2000-01-premier-league, confirmed https://www.11v11.com/matches/ipswich-town-v-leeds-united-03-february-2001-4616/
+Player goals sum: 63
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals.
+Name/position notes: Gary Kelly (11v11 Garry Kelly); Gareth Evans DEF per footballsquads (11v11 Midfielder).
+Unverified: nothing outstanding.

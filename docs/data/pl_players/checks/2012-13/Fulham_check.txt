@@ -1,0 +1,10 @@
+Club: Fulham 2012/13
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique players. 11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2013/comp/1/) 29. Same 29 players.
+Club PL goals: 50 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Premier_League league table).
+Own goals for: 5. Wikipedia 2012-13 Fulham season goalscorers table shows Own Goals 5 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Fulham_F.C._season). StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2012-13-premier-league) lists 6: Clint Hill (QPR), Fabian Delph (Aston Villa), Joey O'Brien (West Ham), Jos Hooiveld (Southampton), Nemanja Vidic (Man Utd), Tim Howard (Everton). The Tim Howard one (Fulham v Everton, 3 Nov 2012) was reassigned to Bryan Ruiz by the Dubious Goals Committee per 11v11 match page https://www.11v11.com/matches/fulham-v-everton-03-november-2012-299363/. Delph own goal (Aston Villa v Fulham, 13 Apr 2013) confirmed by 11v11 match page. So 5.
+Player goals sum: 45
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: 1. Bryan Ruiz goals StatMuse 4 vs 11v11 5 and Wikipedia 5; resolved 5 (Dubious Goals Committee ruling above). All other apps (starts + subs) and goals match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2012-2013/faprem/fulham.htm. Name spellings reused from other seasons (Mousa Dembele surname Dembélé, Giorgos Karagounis, Matthew Briggs England).
+Unverified: other four own goals rely on StatMuse plus Wikipedia total; not individually checked on match pages.

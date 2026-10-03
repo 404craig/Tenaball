@@ -1,0 +1,10 @@
+Club: Burnley 2018/19
+Players: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (under the 25 cap, so complete); same 23 players. 11v11 PL club page (https://www.11v11.com/teams/burnley/tab/players/season/2019/comp/1/) 23 (apps = starts + subs). Same 23 players.
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Club PL goals: 45 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 2 (Conor Coady, Wolves; Denis Odoi, Fulham) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2018-19-premier-league.
+Player goals sum: 43
+Difference (club goals - og_for - player goals): 0
+Rows: 23
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/burnley.htm (Vokes in players no longer at club). Name spellings reused from earlier seasons (Tom Heaton, Phil Bardsley, Johann Berg Gudmundsson). Barnes nationality Austria as on footballsquads and earlier seasons.
+Unverified: own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

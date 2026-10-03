@@ -1,0 +1,11 @@
+Watford 2017/18 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/watford-premier-league-player-stats-2017-18 (+ most/fewest appearances queries); 11v11 https://www.11v11.com/teams/watford/tab/players/season/2018/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2017-2018/faprem/watford.htm (position, nationality).
+Player counts: StatMuse player-stats 25 rows, most 25, fewest 25; union 29 (Deeney, Cleverley, Hughes only in most; Kaboul only in fewest). 11v11 club page 29 rows. Every player's apps and goals match.
+Rows written: 29
+Club goals (Wikipedia 2017-18 Premier League table): 44
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2017-18-premier-league). 2 own goals for: DeAndre Yedlin (Newcastle) Newcastle 0-3 Watford 25 Nov 2017 (sport24 report); Kasper Schmeichel (Leicester) Watford 2-1 Leicester 26 Dec 2017 (Sky Sports report 'Kasper Schmeichel own goal gives hosts first win in seven').
+Player goals sum: 42
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: from footballsquads 2017/18 (G/D/M/F mapped to GK/DEF/MID/FWD); nationality = footballsquads code for this season. Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Unverified: nothing outstanding.

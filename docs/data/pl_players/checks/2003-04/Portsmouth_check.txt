@@ -1,0 +1,9 @@
+Portsmouth 2003/04 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 32; 11v11 club page (PL) 32; footballsquads roster lists all 32.
+Club goals: 47 (Wikipedia 2003-04 Premier League table; Wikipedia Portsmouth season page also 47)
+Own goals for: 0. StatMuse own-goals URL https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2003-04-premier-league returned HTTP 422 (no answer, likely empty result); Wikipedia season page mentions no own goals.
+Player goals sum: 47
+Difference: 0
+Disagreements: none; all 32 players match StatMuse and 11v11 on apps and goals.
+Notes: Vincent Pericard 11v11 nationality CMR, France reused from earlier seasons. LuaLua on loan from Newcastle (also has Newcastle row).
+Unverified: own goals for = 0 not confirmed by a working StatMuse answer; supported by player goals summing exactly to 47 across two agreeing sources.

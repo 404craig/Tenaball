@@ -1,0 +1,10 @@
+Season 2023/24, Fulham
+Player count per source: StatMuse union of 3 pages (player-stats, most-appearances, fewest-appearances, all read) 26; 11v11 PL squad page (season 2024, comp 1) 25; final rows 25.
+Club PL goals: 55 (Wikipedia 2023-24 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2023-24-premier-league (Foderingham, Fulham 3-1 Sheffield Utd 7 Oct 2023); confirmed by Wikipedia 2023-24 Fulham F.C. season goalscorer table own goals 1)
+Player goals sum: 54
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: 1. Marek Rodak: StatMuse lists 1 app/0 goals; 11v11 PL squad page does not list him, Leno started all 38 (both sources) and Wikipedia career stats give 0 PL apps for Fulham 2023-24. Excluded (two sources against StatMuse).
+Positions and nationalities: footballsquads.co.uk eng/2023-2024/engprem (all players found there, read via summariser). Names, full names and nationality reused from earlier season files where the player already exists.
+Nationality: Issa Diop kept as Morocco (footballsquads 2023-24 says FRA). Bobby De Cordova-Reid spelling reused from earlier seasons (11v11/footballsquads write Decordova-Reid).
+Unverified: full names of players new to the dataset are from general knowledge (where unsure, the display name with accents is used). 11v11 player pages not needed except as noted, since StatMuse and the 11v11 squad page agreed on every listed player.

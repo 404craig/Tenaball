@@ -1,0 +1,38 @@
+Club: Brighton 2024/25
+Players (rows): 32 (StatMuse player-stats list, most-appearances list and fewest-appearances list merged; each returned 25 rows)
+Club PL goals (Wikipedia 2024-25 Premier League table): 66
+Own goals for: 2 (derived (club goals 66 minus player goals 64); statmuse/Wikipedia 'Brighton had 2 own goals' refers to own goals by Brighton players, so not a confirmation)
+Player goals sum: 64
+Difference (club goals - og_for - player goals): 0
+Disagreements: none found among players Wikipedia covered
+Unverified: position and nationality entered from general knowledge (footballsquads.co.uk not fetched); 11v11 not used; most players rely on StatMuse only (sources_agree=no where Wikipedia gave no figure).
+
+VERIFIED (verification pass 2026-10-02)
+StatMuse: three queries were run previously; union of most- and fewest-appearances lists covers all rows (each list capped at 25), no missing player found. 11v11 squad page cross-checked; extra names there had no PL apps (cup/UCL only or not used).
+Own goals for: 2 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brighton-hove-albion-2024-25-premier-league (Marc Guehi 15 Dec 2024, Abdukodir Khusanov). Club goals 66 - og 2 - player goals 64 = diff 0.
+Position/nationality checked against https://en.wikipedia.org/wiki/2024%E2%80%9325_Brighton_%26_Hove_Albion_F.C._season (footballsquads brighton.htm returned truncated content).
+Changes:
+- Adam Webster: confirmed by Wikipedia season page, sources_agree no -> yes
+- Billy Gilmour: confirmed by Wikipedia season page, sources_agree no -> yes
+- Evan Ferguson: confirmed by Wikipedia season page, sources_agree no -> yes
+- Jakub Moder: confirmed by Wikipedia season page, sources_agree no -> yes
+- James Milner: confirmed by Wikipedia season page, sources_agree no -> yes
+- Jason Steele: confirmed by Wikipedia season page, sources_agree no -> yes
+- Jeremy Sarmiento: confirmed by 11v11 player page, sources_agree no -> yes
+- Joel Veltman: confirmed by Wikipedia season page, sources_agree no -> yes
+- Lewis Dunk: confirmed by Wikipedia season page, sources_agree no -> yes
+- Matt O'Riley: confirmed by Wikipedia season page, sources_agree no -> yes
+- Solly March: confirmed by Wikipedia season page, sources_agree no -> yes
+- Tariq Lamptey: confirmed by Wikipedia season page, sources_agree no -> yes
+- Igor: confirmed by 11v11 player page, sources_agree no -> yes
+- Julio Enciso: confirmed by Wikipedia season page, sources_agree no -> yes
+- Julio Enciso: position MID -> FWD
+- Simon Adingra: confirmed by Wikipedia season page, sources_agree no -> yes
+- Yasin Ayari: confirmed by Wikipedia season page, sources_agree no -> yes
+- Mats Wieffer: confirmed by Wikipedia season page, sources_agree no -> yes
+- Brajan Gruda: confirmed by Wikipedia season page, sources_agree no -> yes
+- Diego Gomez: confirmed by Wikipedia season page, sources_agree no -> yes
+- Ferdi Kadioglu: confirmed by Wikipedia season page, sources_agree no -> yes
+- Harry Howell: confirmed by 11v11 player page, sources_agree no -> yes
+- Eiran Cashin: confirmed by Wikipedia season page, sources_agree no -> yes
+Rows with sources_agree != yes after pass: 0

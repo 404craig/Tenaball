@@ -1,0 +1,9 @@
+Newcastle 2003/04 check
+Player count per source: StatMuse player-stats 24 (under the 25-row cap, so complete); 11v11 club page (PL) 24; footballsquads roster lists all 24. Most/fewest StatMuse queries not run separately because the player-stats answer had only 24 rows and 11v11 fully covers the squad.
+Club goals: 52 (Wikipedia 2003-04 Premier League table)
+Own goals for: 1 (Gerry Taggart, Leicester, 7 Feb 2004) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2003-04-premier-league
+Player goals sum: 51
+Difference (club goals - OG - player goals): 0
+Disagreements: none on apps or goals; all 24 players match StatMuse and 11v11 (11v11 apps = starts + subs).
+Notes: LuaLua also played for Portsmouth on loan from Feb 2004 (separate row there). Positions from footballsquads (faprem/newcas.htm); nationality from 11v11 / earlier-season spellings (no nationality column on footballsquads for 2003-04).
+Unverified: OG not cross-checked against a second source.

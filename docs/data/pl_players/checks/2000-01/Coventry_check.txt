@@ -1,0 +1,10 @@
+Coventry 2000/01 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 28; 11v11 club page (https://www.11v11.com/teams/coventry-city/tab/players/season/2001/comp/1/) = 28; all matched to footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/coventry.htm), Hendry and Roussel in its "no longer at club" section.
+Club goals (Wikipedia 2000-01 FA Premier League table): 36
+Own goals for: 3 (Christian Dailly, West Ham, 12 Feb 2001; Noel Whelan, Middlesbrough, 30 Dec 2000; Richard Edghill, Man City, 26 Aug 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-2000-01-premier-league, each confirmed on its 11v11 match page.
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals; StatMuse and 11v11 (starts + subs) agree for every player. The Wikipedia season page summary credited Marcus Hall with 1 league goal; StatMuse and 11v11 both give 0, kept 0.
+Name notes: Mo Konjic (full name Muhamed Konjić; footballsquads spells Mohammed Konjic); Ivan Guerrero (footballsquads spells Guerreo); Paul Williams (11v11 "Paul D Williams").
+Positions from footballsquads 2000-01; nationality from 11v11 club page or spellings already used in other seasons.
+Unverified: nothing outstanding.

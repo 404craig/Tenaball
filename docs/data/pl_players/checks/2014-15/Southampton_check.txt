@@ -1,0 +1,11 @@
+Southampton 2014/15 Premier League check
+Player count per source: StatMuse 29 (player-stats + most-apps + fewest-apps merged), 11v11 29 (https://www.11v11.com/teams/southampton/tab/players/season/2015/comp/1/). Same 29 players.
+Club goals: 54 (Wikipedia 2014-15 Premier League table)
+Own goals for: 5. StatMuse own-goal query lists Jason Shackell (Burnley, confirmed 58' on 11v11 match page Southampton 2-0 Burnley 21 Mar 2015), Liam Bridcutt and Santiago Vergini (Sunderland), Romelu Lukaku (Everton, 20 Dec 2014 per Wikipedia). Fifth: Patrick van Aanholt (Sunderland) 86', Southampton 8-0 Sunderland 18 Oct 2014, per 11v11 match page https://www.11v11.com/matches/southampton-v-sunderland-18-october-2014-310555/ (Wikipedia season page also gives three own goals in that match).
+Player goals sum: 49
+Difference (54 - 5 - 49): 0
+Disagreements and resolutions (2):
+- Sadio Mane goals: StatMuse 11, 11v11 10, Wikipedia 10. StatMuse credits him with the van Aanholt own goal v Sunderland. Used 10.
+- Florin Gardos apps: StatMuse 11, 11v11 10 (5+5). StatMuse game log shows 1 min v Newcastle 13 Sep 2014; 11v11 match page lists Gardos as unused sub (only two subs used). Used 10, sources_agree partial (no third source checked for this one).
+Positions/nationality: footballsquads.co.uk/eng/2014-2015/faprem/southam.htm (Elia F, Mane M, Tadic M).
+Unverified: Gardos apps rely on 11v11 only.

@@ -1,0 +1,15 @@
+Club: Swansea 2013/14
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25 (at cap), fewest-appearances 25 (at cap); union = 27 players (Routledge and Bony only in most-appearances list). 11v11 PL club page (https://www.11v11.com/teams/swansea-city/tab/players/season/2014/comp/1/) 27 players. Same 27 players. Wikipedia 2013-14 Swansea City A.F.C. season page used as third source for goals.
+Disagreements: 2 (both goals, apps all agree).
+- Wilfried Bony goals: StatMuse 17, 11v11 16, Wikipedia 16. Wikipedia footnote: his goal v Liverpool 23 Feb 2014 was later credited as a Martin Skrtel own goal. Used 16.
+- Chico goals: StatMuse 3, 11v11 2, Wikipedia 2. Wikipedia footnote and 11v11 match page (https://www.11v11.com/matches/swansea-city-v-fulham-28-january-2014-306661/): goal v Fulham 28 Jan 2014 credited as a Dimitar Berbatov own goal. Used 2.
+- Marvin Emnes: Wikipedia summary omitted his PL goal; StatMuse, 11v11 club page and 11v11 player page (https://www.11v11.com/players/marvin-emnes-228703/) all give 7 apps, 1 goal. Kept 1.
+Club PL goals: 54 (Wikipedia 2013-14 Premier League table).
+Own goals for: 8.
+- StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-swansea-city-2013-14-premier-league) lists 6: Aaron Hughes (Fulham), Bryan Oviedo (Everton), Mathieu Debuchy (Newcastle), Mathieu Flamini (Arsenal), Phil Bardsley (Sunderland), Steven Fletcher (Sunderland).
+- Plus 2 StatMuse does not count as OGs (credits to Bony/Chico): Dimitar Berbatov (Fulham, 28 Jan 2014) and Martin Skrtel (Liverpool, 23 Feb 2014), per Wikipedia season page footnotes; Berbatov confirmed on 11v11 match page.
+- 11v11 match pages confirm Bardsley 57' and Fletcher 80' (Swansea 4-0 Sunderland, 19 Oct 2013, https://www.11v11.com/matches/swansea-city-v-sunderland-19-october-2013-305480/) and Hughes 56' (Fulham 1-2 Swansea, 23 Nov 2013, https://www.11v11.com/matches/fulham-v-swansea-city-23-november-2013-305824/). Oviedo, Debuchy, Flamini confirmed by StatMuse only (match pages not fetched), but totals reconcile under both sources' own crediting (StatMuse 48 player goals + 6 OG = 54; 11v11 46 + 8 = 54).
+Player goals sum: 46
+Difference: 0 (54 - 8 - 46).
+Position/nationality: https://www.footballsquads.co.uk/eng/2013-2014/faprem/swansea.htm (Ki in players no longer at club). Pozuelo listed F there. Jordi Amat given Indonesia to match earlier seasons' rows (now plays for Indonesia; footballsquads 2013/14 lists ESP).
+Unverified: Oviedo, Debuchy, Flamini OGs not checked on match pages.

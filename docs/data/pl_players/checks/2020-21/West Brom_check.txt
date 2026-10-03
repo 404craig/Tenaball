@@ -1,0 +1,9 @@
+West Brom 2020/21 check
+Players per source: 11v11 PL squad page 30; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 30. Same 30 players.
+Club PL goals: 35 (Wikipedia 2020-21 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2020-21-premier-league). StatMuse lists Ruben Dias (Man City) 1 and Tyrone Mings (Aston Villa) 1. Confirmed: Football365 report Man City 1-1 West Brom 15 Dec 2020 (Ajayi shot deflected in by Dias, o.g.); Sports Mole round-up Aston Villa 2-2 West Brom 25 Apr 2021 (Diagne shot deflected in by Mings). Wikipedia season page summary shows Own goals 2 in the PL column.
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps and goals identical in StatMuse (3 queries) and 11v11 (starts + subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/wba.htm
+Unverified / notes: Charlie Austin, Sam Field, Rekeem Harper, Ahmed Hegazi, Filip Krovinovic are not on the footballsquads 2020-21 WBA page (no departures section returned); their position/nationality taken from footballsquads 2019-20 Championship WBA page (flcham/wba.htm). Karlan Grant is Karlan Ahearne-Grant on StatMuse.

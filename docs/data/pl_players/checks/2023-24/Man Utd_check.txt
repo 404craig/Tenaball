@@ -1,0 +1,8 @@
+Man Utd 2023/24 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25, fewest-appearances 25; merged StatMuse union 31; 11v11 PL squad page 31; rows written 31
+Club PL goals: 57 (Wikipedia 2023-24 Premier League table)
+Own goals for: 0 (Wikipedia 2023-24 Manchester United season goalscorers Own goals row = 0; StatMuse own-goals-vs-manchester-united query returned HTTP 422, i.e. no table, consistent with 0)
+Player goals sum: 57; difference (57 - 0 - 57): 0
+Disagreements: none. All 31 players' apps and goals match between StatMuse and 11v11.
+Position/nationality: footballsquads manutd.htm. Aaron Wan-Bissaka listed ENG there; DR Congo kept to match earlier season files.
+Unverified: own goals for rests on Wikipedia plus goal sum reconciling exactly.

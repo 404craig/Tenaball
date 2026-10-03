@@ -1,0 +1,10 @@
+Club: Chelsea 2012/13
+Players: StatMuse player-stats 25 (cap, missing Benayoun), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 26 unique players. 11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2013/comp/1/) 26. Same 26 players.
+Club PL goals: 75 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Premier_League league table).
+Own goals for: 3 (Jon Walters 2, Stoke; Matthew Kilgallon 1, Sunderland). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2012-13-premier-league (first attempt HTTP 429, succeeded on retry). Confirmed by Wikipedia 2012-13 Chelsea season goalscorers table (Own Goals, Premier League column: 3).
+Player goals sum: 72
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2012-2013/faprem/chelsea.htm (Mata, Moses, Piazon listed F; Hazard M). Name spellings reused from other seasons (Oscar, Ramires, John Obi Mikel, Cech, Ivanovic, Azpilicueta, Ake).
+Unverified: nothing material.

@@ -1,0 +1,10 @@
+QPR 2011/12 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (queens-park-rangers slug); 11v11 PL club page https://www.11v11.com/teams/queens-park-rangers/tab/players/season/2012/comp/1/; footballsquads eng/2011-2012/faprem/qpr.htm.
+Player count: final rows 35; StatMuse merged 35 (each query capped at 25; Kenny, Wright-Phillips, Derry, Smith, Onuoha, Taiwo, Diakite only in most; Agyemang, Hulse, Cerny only in fewest); 11v11 club page 35.
+Club goals (Wikipedia 2011-12 Premier League table): 43
+Own goals for: 2 (Richard Dunne and Stephen Warnock, both Aston Villa). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-queens-park-rangers-2011-12-premier-league
+Player goals sum: 41
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 35 players match on apps and goals between StatMuse and 11v11.
+Positions/nationalities: footballsquads 2011-12 (all 35 found, incl. 'no longer at club' section for Puncheon, Connolly, Orr).
+Unverified: own goals from StatMuse only (not checked on Wikipedia/11v11 match pages); consistent with exact goal reconciliation.

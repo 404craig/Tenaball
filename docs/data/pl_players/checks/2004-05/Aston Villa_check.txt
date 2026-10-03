@@ -1,0 +1,9 @@
+Aston Villa 2004/05 check
+Player count per source: StatMuse 22 (player-stats 22, most-apps 22, fewest-apps 22; identical sets); 11v11 club page https://www.11v11.com/teams/aston-villa/tab/players/season/2005/comp/1/ 22 (A = starts, S = subs, total = sum); footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/avilla.htm: all 22 present.
+Club PL goals: Wikipedia 2004-05 FA Premier League table (https://en.wikipedia.org/wiki/2004%E2%80%9305_FA_Premier_League): 45
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2004-05-premier-league): Arjan de Zeeuw (Portsmouth), Dean Ashton (Norwich), Fernando Hierro (Bolton). All three confirmed on 11v11 match pages: https://www.11v11.com/matches/portsmouth-v-aston-villa-12-february-2005-27547/ (de Zeeuw 17), https://www.11v11.com/matches/aston-villa-v-norwich-city-15-january-2005-27285/ (Ashton 9, Dubious Goals Committee ruling), https://www.11v11.com/matches/aston-villa-v-bolton-wanderers-23-april-2005-186568/ (Hierro 26).
+Player goals sum: 42. 45 - 3 - 42 = 0.
+Disagreements: none between StatMuse and 11v11 (all apps and goals match). Wikipedia 2004-05 Aston Villa season page lists Ridgewell 1 goal and omits Luke Moore; overruled by the two agreeing sources.
+Positions: footballsquads 2004-05 (Barry D, de la Cruz M, Solano M, Samuel D).
+Nationality: footballsquads has no nationality column; spellings reused from other seasons' CSVs; Berson (France), Postma (Netherlands), Stefan Moore (England) from the 11v11 club page.
+Unverified: nothing outstanding.

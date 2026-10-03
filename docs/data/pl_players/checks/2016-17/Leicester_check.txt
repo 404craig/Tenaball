@@ -1,0 +1,12 @@
+Leicester 2016/17 Premier League check
+StatMuse: player-stats 25, most-appearances 25, fewest-appearances 25 (each capped at 25 but all three return the same 25 players); union 25 players
+11v11 PL club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2017/comp/1/): 25 players (fully covers the squad)
+Rows written: 25. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2016-17 Premier League table): 48
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2016-17-premier-league):
+- Ben Mee (Burnley), Leicester 3-0 Burnley, 17 Sep 2016, confirmed by 11v11 match page https://www.11v11.com/matches/leicester-city-v-burnley-17-september-2016-320043/
+- Tom Huddlestone (Hull), Leicester 3-1 Hull, 4 Mar 2017, confirmed by Sky Sports report
+Player goals sum: 46. Club goals minus own goals: 46. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2016-17 Leicester page (https://www.footballsquads.co.uk/eng/2016-2017/faprem/leicester.htm), complete. Ndidi listed D there (used DEF). Gray (ENG there) kept as Jamaica and Mendy (FRA there) kept as Senegal to match later seasons' files.
+Unverified: nothing outstanding

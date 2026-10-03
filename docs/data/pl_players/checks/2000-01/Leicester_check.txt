@@ -1,0 +1,11 @@
+Leicester 2000/01 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 29; 11v11 club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2001/comp/1/) = 29; all appear in footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/leicester.htm).
+Club goals (Wikipedia 2000-01 FA Premier League table): 39
+Own goals for: 1 (Rio Ferdinand (Leeds), 19 May 2001 Leeds 3-1 Leicester; confirmed on 11v11 match page https://www.11v11.com/matches/leeds-united-v-leicester-city-19-may-2001-7263/), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2000-01-premier-league
+Player goals sum: 38
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 (starts + subs) agree for every player.
+Disagreements: none
+Name/position/nationality notes: Stan Collymore: also played for Bradford this season; Kevin Ellison: 11v11 lists as midfielder; footballsquads F used; Arnar Gunnlaugsson: 11v11 lists as forward; footballsquads M used; Matt Jones: joined from Leeds mid-season; Junior Lewis: 11v11 lists as midfielder; footballsquads F used; Roberto Mancini: 11v11 lists as midfielder; footballsquads F used
+Positions from footballsquads 2000-01; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

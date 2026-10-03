@@ -1,0 +1,11 @@
+Spurs 2015/16 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/tottenham-hotspur-premier-league-player-stats-2015-16 (+ most-appearances and fewest-appearances queries); 11v11 https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2016/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2015-2016/faprem/tottenha.htm (position, nationality).
+Player counts: StatMuse union of three queries 24; 11v11 club page 24. Every player's apps and goals match.
+Rows written: 24
+Club goals (Wikipedia 2015-16 Premier League table): 69
+Own goals for: 1 (StatMuse own-goals query): Craig Dawson (West Brom), Spurs 1-1 West Brom 25 Apr 2016, confirmed by 11v11 match page https://www.11v11.com/matches/tottenham-hotspur-v-west-bromwich-albion-25-april-2016-317188/ (33rd minute OG).
+Player goals sum: 68
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Notes: Clinton N'Jie listed F by footballsquads (FWD). Alex Pritchard listed F (FWD).
+Unverified: nothing outstanding.

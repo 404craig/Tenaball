@@ -1,0 +1,9 @@
+Coventry 1992/93 Premier League check
+Player count: StatMuse merged 30 (player-stats 25 capped, most-apps 25 capped, fewest-apps 25 capped; union 30); 11v11 club page 30 (https://www.11v11.com/teams/coventry-city/tab/players/season/1993/comp/1/). Rows: 30
+Club goals: 52 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 2. Gary McAllister (Leeds, 12 min, Leeds 2-2 Coventry, 31 Oct 1992; https://www.11v11.com/matches/leeds-united-v-coventry-city-31-october-1992-20932/) and David May (Blackburn, 19 min, Blackburn 2-5 Coventry, 26 Jan 1993; https://www.11v11.com/matches/blackburn-rovers-v-coventry-city-26-january-1993-21049/). Both also in the Wikipedia 1992-93 Coventry City season match list. StatMuse own-goal queries for 1992-93 (players-with-own-goals-vs-<club>-1992-93-premier-league) return HTTP 422, and the reworded query returns 'no own goals' even where Wikipedia and 11v11 match pages show one (e.g. Chelsea, Coventry), so StatMuse own-goal data for 1992-93 is treated as missing.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements: 2 (one goal). Micky Gynn StatMuse 3 vs 11v11 2; Robert Rosario StatMuse 3 vs 11v11 4. At Wimbledon 22 Aug 1992 StatMuse gives Gynn 2; 11v11 match page and Wikipedia give Gynn 1, Rosario 1. Used Gynn 2, Rosario 4. All apps agree.
+Unverified: none beyond nationality/position sourcing below. Coventry's David Smith is a different player from Norwich's Dave Smith; Paul Williams (Northern Ireland, per 11v11) is a different player from the Paul Williams in Coventry 1993/94 and 1994/95 rows.
+Nationality and position: footballsquads has no 1992-93 season pages (archive starts 1993/94); nationality/position taken from this project's rows for the same player in other seasons (footballsquads-based), otherwise from the 11v11 club page.

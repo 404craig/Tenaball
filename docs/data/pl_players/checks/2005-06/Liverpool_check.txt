@@ -1,0 +1,8 @@
+Liverpool 2005/06 check
+Player count per source: StatMuse 24 (player-stats 24, most-apps 24, fewest-apps 24); 11v11 club page https://www.11v11.com/teams/liverpool/tab/players/season/2006/comp/1/ 24 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/liverpool.htm: all 24 present (Baros, Josemi, Sinama-Pongolle in "no longer at club").
+Club PL goals: 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/, also Wikipedia 2005-06 Liverpool F.C. season: 57
+Own goals for: 2, Michael Brown (StatMuse gives team only as "Total"; he played for Spurs then Fulham this season) and Phil Neville (Everton), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2005-06-premier-league. Wikipedia 2005-06 Liverpool F.C. season goalscorer table confirms 2 own goals in the league (scorers not named there).
+Player goals sum: 55. 57 - 2 - 55 = 0.
+Disagreements: none; all 24 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2005-06 (Riise M, Kewell F, Sissoko F, Warnock M). Nationality: reused other seasons' spellings; new players (Josemi, Morientes, Sinama-Pongolle) from 11v11.
+Unverified: match dates of the two own goals not pinned to 11v11 match pages.

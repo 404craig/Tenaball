@@ -1,0 +1,12 @@
+QPR 2014/15 Premier League check
+Player count per source: StatMuse 32 (player-stats + most-apps + fewest-apps merged), 11v11 32 (https://www.11v11.com/teams/queens-park-rangers/tab/players/season/2015/comp/1/). Same 32 players.
+Club goals: 42 (Wikipedia 2014-15 Premier League table)
+Own goals for: 3. StatMuse own-goal query lists Martin Demichelis (Man City) and Wes Morgan (Leicester). Third: Steven Gerrard (Liverpool), QPR 2-3 Liverpool 19 Oct 2014, per 11v11 match page https://www.11v11.com/matches/queens-park-rangers-v-liverpool-19-october-2014-310556/. Wikipedia 2014-15 QPR season page also gives 3 own goals for.
+Player goals sum: 39
+Difference (42 - 3 - 39): 0
+Disagreements and resolutions (3):
+- Eduardo Vargas goals: StatMuse 4, 11v11 3, Wikipedia 3. StatMuse credits him with 2 v Liverpool 19 Oct 2014; 11v11 match page records Vargas 87' and a Gerrard own goal. Used 3.
+- Matt Phillips apps: StatMuse 24, 11v11 25, Wikipedia 25. 11v11 match page v Crystal Palace 28 Dec 2014 shows Matt Phillips on 75' (missing from StatMuse game log). Used 25.
+- Shaun Wright-Phillips apps: StatMuse 5, 11v11 4, Wikipedia 4. Same Palace match: 11v11 lists him as unused sub; StatMuse appears to have given him Matt Phillips's appearance. Used 4.
+Positions/nationality: footballsquads.co.uk/eng/2014-2015/faprem/qpr.htm. Spellings reused from earlier seasons where present (Caulker Sierra Leone, Sandro, Rob Green).
+Unverified: Michael Doughty (Wales) and Reece Grego-Cox (Republic of Ireland) nationality taken from footballsquads; senior caps not checked.

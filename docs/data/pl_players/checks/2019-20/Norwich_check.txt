@@ -1,0 +1,9 @@
+Norwich 2019/20 check
+Players per source: StatMuse player-stats 25 (hit 25-row cap), most-appearances 25 (hit cap), fewest-appearances not run (11v11 squad page fully covers the squad); StatMuse union 30; 11v11 PL squad page 30; rows written 30.
+Club PL goals: 26 (Wikipedia 2019-20 Norwich City F.C. season page, league record 38 5 6 27 26 75). Wikipedia 2019-20 Premier League table page could not be read (HTTP 429 from fetch proxy).
+Own goals for: 1 (Serge Aurier, Tottenham, 28 Dec 2019). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2019-20-premier-league. Confirmation: Wikipedia 2019-20 Norwich season goalscorers table, Own goals 1 (PL).
+Player goals sum: 25 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11. Cantwell, Pukki, Krul, Trybull, Klose only in StatMuse most-appearances (beyond player-stats cap); figures match 11v11.
+Position/nationality: footballsquads eng/2019-2020/engprem/norwich.htm, all 30 players found. Players seen in later seasons reuse earlier-file name/nationality spelling (Jamal Lewis Northern Ireland, Adam Idah Republic of Ireland etc).
+Unverified: Onel Hernandez nationality given as Germany per footballsquads (birth country Cuba); not cross-checked for later Cuba caps. Ben Godfrey listed M by footballsquads so MID.

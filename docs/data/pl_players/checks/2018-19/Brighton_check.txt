@@ -1,0 +1,10 @@
+Club: Brighton 2018/19
+Players: StatMuse player-stats 21, most-appearances 21, fewest-appearances 21 (under the 25 cap, so complete); same 21 players. 11v11 PL club page (https://www.11v11.com/teams/brighton-and-hove-albion/tab/players/season/2019/comp/1/) 21 (apps = starts + subs). Same 21 players.
+Disagreements: none. All apps and goals match between StatMuse and 11v11. Wikipedia 2018-19 Brighton season goalscorers also match (35 PL goals).
+Club PL goals: 35 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (players-with-own-goals-vs-brighton-hove-albion-2018-19-premier-league) returned HTTP 422 (no answer). Wikipedia https://en.wikipedia.org/wiki/2018%E2%80%9319_Brighton_%26_Hove_Albion_F.C._season goalscorers show no PL own goals; individual goals total 35 = club total.
+Player goals sum: 35
+Difference (club goals - og_for - player goals): 0
+Rows: 21
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/brighton.htm is truncated after 5 rows (Ryan AUS G, Bruno ESP D, Bong CMR D, Duffy IRL D, Dunk ENG). Other players from earlier seasons' footballsquads-based entries for the same players; Kayal (MF ISR), Knockaert (MF FRA), Balogun (DF NGA) from the Wikipedia 2018-19 Brighton season squad list. Locadia: 11v11 says Curacao, Wikipedia and earlier-season files say Netherlands; Netherlands kept for consistency. Jahanbakhsh and Izquierdo kept MID as in earlier seasons (Wikipedia lists them FW).
+Unverified: positions for players outside the readable footballsquads rows rest on Wikipedia / earlier seasons. Own goals for 0 not confirmed by StatMuse (422).

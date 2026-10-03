@@ -1,0 +1,9 @@
+Club: Wolves 2019/20
+Players: StatMuse player-stats 21, most-appearances 21, fewest-appearances 21 (under cap, complete). 11v11 PL club page 21. Same 21 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse. Name-only differences between sources noted in the note column.
+Club PL goals: 51 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 2 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2019-20-premier-league: Tammy Abraham (Chelsea, Wolves 2-5 Chelsea, 14 Sep 2019) and Daryl Janmaat (Watford, Wolves 2-0 Watford, 28 Sep 2019). Both confirmed on 11v11 match pages https://www.11v11.com/matches/wolverhampton-wanderers-v-chelsea-14-september-2019-363838/ and https://www.11v11.com/matches/wolverhampton-wanderers-v-watford-28-september-2019-363958/.
+Player goals sum: 49
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/wolves.htm (incl. players no longer at club section). Nationality follows footballsquads 2019/20 (time-specific), exceptions noted per row. Name spellings reused from earlier seasons where present.
+Unverified: nothing material.

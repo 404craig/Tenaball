@@ -1,0 +1,9 @@
+Club: Man City 2017/18
+Players per source: StatMuse player-stats 25 (at cap), StatMuse fewest-appearances 25 (same 25 players, so the squad is exactly 25; most-appearances not needed). 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2018/comp/1/) 25. Same 25 players.
+Disagreements: 1. Ederson StatMuse 37 apps, 11v11 36 (36 starts, 0 subs; confirmed on 11v11 player page https://www.11v11.com/players/ederson-251499/). Resolved 36: Bravo 2 starts + Ederson 36 = 38 league games. All other apps and goals match.
+Club PL goals: 106 (Wikipedia 2017-18 Premier League table).
+Own goals for: 3 (Christian Kabasele, Watford; Lewis Dunk, Brighton; Pablo Zabaleta, West Ham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2017-18-premier-league
+Player goals sum: 103
+Difference: 0 (106 - 3 - 103)
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/mancity.htm. Laporte FRA there; Spain used as in later seasons. Brahim Diaz ESP there; Morocco used (current senior team, as 11v11 lists). Zinchenko M there, so MID this season.
+Unverified: own goals for from StatMuse only, consistent with goal sum.

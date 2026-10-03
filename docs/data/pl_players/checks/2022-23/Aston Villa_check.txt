@@ -1,0 +1,10 @@
+Club: Aston Villa 2022/23
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all hit cap); merged 26 unique (Augustinsson missing from player-stats list). 11v11 PL club page 26. Same 26 players; apps and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Harry Souttar (Leicester) and Joachim Andersen (Crystal Palace), 1 each; consistent with 51 - 49 = 2. Not separately confirmed on match pages.
+Unverified: nothing material.
+Club PL goals (https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League table): 51
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2022-23-premier-league (Souttar, Andersen); total reconciles exactly)
+Player goals sum: 49
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2022-2023/engprem/avilla.htm

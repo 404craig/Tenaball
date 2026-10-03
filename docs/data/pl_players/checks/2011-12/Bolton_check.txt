@@ -1,0 +1,10 @@
+Club: Bolton 2011/12
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique players. 11v11 PL club page (https://www.11v11.com/teams/bolton-wanderers/tab/players/season/2012/comp/1/) 30. Same 30 players.
+Club PL goals: 46 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 4 (Billy Jones, West Brom; Danny Gabbidon, QPR; Danny Graham, Swansea; Gary Caldwell, Wigan). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2011-12-premier-league. 11v11 player goals also sum to 42, consistent.
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/bolton.htm. Spellings reused from other seasons (Tim Ream full name, Ryo Miyaichi FWD, Lee Chung-yong). Kakuta set to DR Congo (footballsquads FRA in 2011-12, later capped by DR Congo). Muamba England (footballsquads ENG, England U21).
+Unverified: own goals confirmed by StatMuse only (consistent with goals total). Tuncay surname given as Tuncay (known by first name).

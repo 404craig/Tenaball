@@ -1,0 +1,9 @@
+Southampton 1993/94 Premier League check
+Player count: StatMuse merged 31 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 club page 31 (https://www.11v11.com/teams/southampton/tab/players/season/1994/comp/1/); all 31 in footballsquads southam.htm (/eng/1993-1994/faprem/). Rows: 31
+Club goals: 49 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 1 (Robert Ullathorne, Norwich, 9 Apr 1994) from StatMuse own-goals query. Not confirmed on a match page; consistent with exact balance.
+Player goals sum: 48
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Apps (11v11 starts + subs) and goals match StatMuse for all 31 players.
+Position: footballsquads lists Le Tissier as F and Lee Powell as F (11v11 has Midfielder/Forward and Midfielder); footballsquads used. Nationality from 11v11 club page or earlier-season files (David Hughes: England, as 11v11 and most other seasons; one 1995/96 row says Wales).
+Nationality: footballsquads 1993-94 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

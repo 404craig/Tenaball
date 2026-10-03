@@ -1,0 +1,11 @@
+West Brom 2017/18 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-bromwich-albion-premier-league-player-stats-2017-18 (+ most/fewest appearances queries); 11v11 https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2018/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2017-2018/faprem/wba.htm (position, nationality).
+Player counts: All three StatMuse queries return 24 rows (under the cap). 11v11 club page 24 rows. One disagreement (Sam Field apps).
+Rows written: 24
+Club goals (Wikipedia 2017-18 Premier League table): 31
+Own goals for: 0 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2017-18-premier-league). 0 own goals for: StatMuse query returns no result (HTTP 422, no rows); Wikipedia 2017-18 West Bromwich Albion season page mentions only an FA Cup own goal (Matip), none in the Premier League; player goals (identical in StatMuse and 11v11) sum to the club total of 31. Not checked match by match.
+Player goals sum: 31
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 1 - Sam Field apps: StatMuse 11 vs 11v11 10; 11v11 player page and Wikipedia say 10; used 10.
+Position and nationality: from footballsquads 2017/18 (G/D/M/F mapped to GK/DEF/MID/FWD); nationality = footballsquads code for this season. Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Unverified: own goals for not cross-checked match by match (see above).

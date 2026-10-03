@@ -1,0 +1,11 @@
+Wimbledon 1998/99 Premier League check
+Player count: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (23 unique merged, under the 25 row cap); 11v11 club page (https://www.11v11.com/teams/wimbledon/tab/players/season/1999/comp/1/) = 23; all 23 in footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/wimbled.htm).
+Club goals (Wikipedia 1998-99 FA Premier League table): 40
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1998-99-premier-league returned HTTP 422 (no result); Wikipedia 1998-99 Wimbledon season page shows no own goals for Wimbledon; player goals sum equals club goals.
+Player goals sum: 40
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 23 players.
+Disagreements: none
+Names: Neal Ardley (footballsquads Neil), Carl Leaburn (footballsquads Leadburn).
+Positions from footballsquads 1998-1999 (Euell F, Gayle F). Nationality from 11v11 club page / other seasons (Carl Cort GUY = Guyana; Ben Thatcher WAL = Wales).
+Unverified: own goals for rests on Wikipedia and the totals reconciling (StatMuse query returned no page).

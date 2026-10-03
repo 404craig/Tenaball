@@ -1,0 +1,12 @@
+Fulham 2020/21 Premier League check
+StatMuse player-stats query: read; most-appearances: read; fewest-appearances: read. Merged StatMuse players: 28
+11v11 club page (https://www.11v11.com/teams/fulham/tab/players/season/2021/comp/1/): 28 players
+Player rows written: 28
+Club PL goals (Wikipedia 2020-21 Premier League table): 27
+Own goals for: 1 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2020-21-premier-league; StatMuse: Matt Ritchie (Newcastle) 1, 19 Dec 2020; Wikipedia 2020-21 Fulham F.C. season goalscorers table: Own goals 1)
+Sum of player goals: 26
+Club goals - own goals for - player goals = 0
+Disagreements: 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/fulham.htm. Names/full names/surnames/nationality reused from earlier season files for the same person where present.
+Nationality notes: Fabio Carvalho footballsquads ENG; Portugal used to match later-season files (capped by Portugal).
+Unverified: none for apps/goals (all rows agree between StatMuse and 11v11 after resolution).

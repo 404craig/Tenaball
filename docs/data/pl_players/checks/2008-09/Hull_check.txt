@@ -1,0 +1,10 @@
+Club: Hull 2008/09
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Wayne Brown, Ryan France, Stelios Giannakopoulos only in fewest list; Sam Ricketts only in most/fewest). 11v11 PL club page (https://www.11v11.com/teams/hull-city/tab/players/season/2009/comp/1/) 29 (starts + subs). Same 29 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 3 (Jamie Carragher, Liverpool; Phil Neville, Everton; Ross Turnbull, Middlesbrough). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2008-09-premier-league. 11v11 player goals sum to 36, consistent with 3.
+Player goals sum: 36
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: 1. Dean Windass StatMuse 6 apps vs 11v11 5; 11v11 player page (https://www.11v11.com/players/dean-windass-72/) gives 1 start + 4 subs and notes a booking as an unused sub at Stoke on 29 Nov 2008, which StatMuse counts as an appearance. Used 5. All other apps and goals agree.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/hullc.htm (Windass, McShane, Stelios, Marlon King, Wayne Brown in "no longer at club"). Hull's Wayne Brown is the centre back (footballsquads D), a different player from Fulham's Wayne Brown (M).
+Unverified: the three own goals are confirmed by StatMuse only (consistent with goals total).

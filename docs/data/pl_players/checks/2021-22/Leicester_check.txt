@@ -1,0 +1,10 @@
+Season 2021/22, Leicester
+Player count per source: StatMuse union of 3 pages 28 (player-stats 25, most-apps 25, fewest-apps 25); 11v11 PL squad page 28; final rows 28.
+Sources: StatMuse https://www.statmuse.com/fc/ask/leicester-city-premier-league-player-stats-2021-22 , -players-most-appearances-2021-22 , -players-fewest-appearances-2021-22 (all three read); 11v11 https://www.11v11.com/teams/leicester-city/tab/players/season/2022/comp/1/
+Club PL goals: 62 (Wikipedia 2021-22 Premier League table)
+Own goals for: 0. StatMuse players-with-own-goals-vs-leicester-city / -vs-leicester 2021-22 returned HTTP 422. Wikipedia 2021-22 Leicester City season goalscorer table: no Premier League own-goals entry, PL total 62. Player sum 62 equals club goals.
+Player goals sum: 62
+Difference (club goals - og - player goals): 0
+Disagreements: none. Every player matched on apps and goals between StatMuse and 11v11.
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/leicester.htm. Kasey McAteer (footballsquads: England) and Hamza Choudhury (Bangladesh) kept as in earlier season files per spelling-reuse rule. Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).

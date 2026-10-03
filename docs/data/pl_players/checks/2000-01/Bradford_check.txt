@@ -1,0 +1,9 @@
+Bradford 2000/01 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 30. 11v11 club page (https://www.11v11.com/teams/bradford-city/tab/players/season/2001/comp/1/) 30. Same 30 names. Rows = 30.
+Club goals (Wikipedia 2000-01 FA Premier League table): 30.
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bradford-city-2000-01-premier-league) lists 1: Les Ferdinand (Spurs), Bradford 3-3 Spurs 9 Dec 2000. 11v11 match page (https://www.11v11.com/matches/bradford-city-v-tottenham-hotspur-09-december-2000-3482/) gives Bradford scorers Lawrence 9, Windass 69, Carbone 89, no own goal; Wikipedia 2000-01 Bradford City season page also lists Lawrence, Windass, Carbone. StatMuse claim rejected; og_for = 0.
+Player goals sum: 30. 30 - 0 = 30. Difference: 0.
+Disagreements: 1. Jamie Lawrence goals: StatMuse 0 vs 11v11 and Wikipedia 1 (same goal StatMuse books as Les Ferdinand og). Resolved to 1. All 30 players' apps agree (11v11 A+S vs StatMuse).
+Positions from footballsquads 2000-2001/faprem/bradford.htm (Locke D, Windass M, Petrescu M; Petrescu, Rankin, Collymore, Beagrie, Windass, O'Brien, Hopkin in no-longer-at-club section). footballsquads spells Rankin "Isiah"; StatMuse and 11v11 "Isaiah", used.
+Nationality: from 11v11 Nat column or spellings used in other seasons. Jamie Lawrence shown as ENG on 11v11; he may have been capped by Jamaica, not verified from a source here, so left as England.
+Unverified: Lawrence nationality as above.

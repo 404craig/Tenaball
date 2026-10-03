@@ -1,0 +1,7 @@
+Crystal Palace 1997/98 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged StatMuse 36. 11v11 club page (https://www.11v11.com/teams/crystal-palace/tab/players/season/1998/comp/1/) 36. footballsquads (faprem/cpalace.htm) lists all 36 (positions from it; no nationality column, nationality from 11v11 club page / earlier-season spellings).
+Club goals: 37 (Wikipedia 1997-98 FA Premier League table)
+Own goals for: 0. StatMuse own-goal query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-1997-98-premier-league returned HTTP 422 (consistent with no results); Wikipedia Palace season page shows none. Player goals from two agreeing sources sum to exactly 37.
+Player goals sum: 37. 37 - 0 - 37 = 0.
+Disagreements: 1. Neil Shipperley apps StatMuse 25 vs 11v11 club page 26 (17+9); 11v11 player page and Wikipedia season page both 17+9; used 26. All goals agree.
+Unverified: own goals for = 0 not confirmed by a StatMuse list (query errored).

@@ -1,0 +1,10 @@
+Club: Bournemouth 2023/24
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 30 unique. 11v11 PL club page (slug afc-bournemouth) 30. Same 30 players, apps and goals all match.
+Disagreements: none.
+Own goals: StatMuse lists Seamus Coleman (Everton) and Benoit Badiashile (Chelsea). Wikipedia 2023-24 Bournemouth season summary confirmed Badiashile (19 May 2024); Coleman not confirmed there. Total reconciles exactly.
+Unverified: Coleman OG confirmed by StatMuse only.
+Club PL goals (https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League table): 54
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bournemouth-2023-24-premier-league (Coleman, Badiashile); Badiashile confirmed by Wikipedia 2023-24 AFC Bournemouth season page)
+Player goals sum: 52
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2023-2024/engprem/bourne.htm

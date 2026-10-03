@@ -1,0 +1,9 @@
+Man City 2021/22 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 26; 11v11 PL squad page 26; rows written 26. Kayky only in fewest-appearances list.
+Club PL goals: 99 (Wikipedia 2021-22 Premier League table)
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2021-22-premier-league). StatMuse lists Eric Bailly (Man Utd) 1, Tim Krul (Norwich) 1, Vladimir Coufal (West Ham) 1. Confirmed: Sky Sports report Man City 5-0 Norwich 21 Aug 2021 (Krul o.g. 7), Daily Dispatch/AFP report Man Utd 0-2 Man City 6 Nov 2021 (Bailly o.g. 7), Wikipedia 2021-22 Man City season fixture list West Ham 2-2 Man City 15 May 2022 (Coufal o.g.).
+Player goals sum: 96
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2021-2022/engprem/mancity.htm (Ferran Torres, Cole Palmer, James McAtee not on page as read and no departed section returned: positions/nationality from Wikipedia 2021-22 Man City season squad).
+Unverified: nothing material.

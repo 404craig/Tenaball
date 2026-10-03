@@ -1,0 +1,10 @@
+Club: Liverpool 2008/09
+Players: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (not capped; same 23 players). 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2009/comp/1/) 23 (starts + subs). Same 23 players.
+Club PL goals: 77 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 4 (Alan Hutton, Tottenham; Emanuel Pogatetz, Middlesbrough; Jose Bosingwa, Chelsea; Wes Brown, Man Utd). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2008-09-premier-league. 11v11 player goals sum to 73, consistent with 4.
+Player goals sum: 73
+Difference (club goals - og_for - player goals): 0
+Rows: 23
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/liverpool.htm (Pennant, Robbie Keane in "no longer at club"). Spellings reused from other seasons where they exist. Babel FWD per footballsquads 2008-09.
+Unverified: the four own goals are confirmed by StatMuse only (consistent with goals total).

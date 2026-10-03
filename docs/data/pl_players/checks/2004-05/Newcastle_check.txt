@@ -1,0 +1,8 @@
+Newcastle 2004/05 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 27 (Bramble, Taylor missing from player-stats; Chopra, Harper missing from most-apps). 11v11 club page 27 (total = A + S). footballsquads 2004-05 (/faprem/newcas.htm): all 27 present (Johnsen, Bernard in "no longer at club").
+Club PL goals: 47 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2005/).
+Own goals for: 3 (David Prutton, Southampton; Garry Flitcroft, Blackburn; Geremi, Chelsea) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2004-05-premier-league. 11v11 and StatMuse player goals each sum to 44 = 47 - 3.
+Player goals sum: 44. 47 - 3 - 44 = 0.
+Disagreements: 0. All 27 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2004-05 (Milner M, Elliott D). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on individual match pages (StatMuse list plus goal-sum consistency only).

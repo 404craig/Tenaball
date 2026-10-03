@@ -1,0 +1,9 @@
+Club: Stoke 2016/17
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 26 (adds Xherdan Shaqiri). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2017/comp/1/) 26 (A+S). Same 26 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 41 (Wikipedia 2016-17 Premier League table).
+Own goals for: 4 (Alfie Mawson, Swansea; Heurelho Gomes, Watford; Juan Mata, Man Utd; Lys Mousset, Bournemouth). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2016-17-premier-league
+Player goals sum: 37
+Difference: 0 (41 - 4 - 37)
+Position/nationality: https://www.footballsquads.co.uk/eng/2016-2017/faprem/stoke.htm (Wollscheid, Bojan in players no longer at club). Imbula CGO there, Congo DR on 11v11; DR Congo used. Berahino ENG there; Burundi used to match later seasons and 11v11.
+Unverified: own goals for from StatMuse only (no dates shown), consistent with goal sum.

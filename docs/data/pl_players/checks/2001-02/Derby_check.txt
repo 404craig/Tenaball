@@ -1,0 +1,9 @@
+Derby 2001/02 Premier League check
+Player count per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (union 34; first fewest-apps attempt hit HTTP 429, retried successfully); 11v11 club page 34; footballsquads lists all 34.
+Club goals (Wikipedia 2001-02 FA Premier League table): 33
+Own goals for: 0. StatMuse players-with-own-goals-vs-derby-county-2001-02-premier-league returned HTTP 422 (no result); Wikipedia 2001-02 Derby County season page lists no opponent own goals.
+Player goals sum: 33
+Difference (33 - 0 - 33): 0
+Disagreements: none. All 34 players match on apps (11v11 A + S) and goals.
+Notes: Danny Higginbotham shown as GIB by 11v11 (later Gibraltar cap); England kept per existing spelling in later seasons. Brian O'Neil spelt O'Neill by footballsquads; StatMuse and 11v11 spelling used. Lee Morris position MID per footballsquads (11v11 says Forward). Nationalities of players without earlier rows taken from 11v11 club page.
+Unverified: own goals for rests on Wikipedia plus StatMuse empty result (no third confirmation), consistent with goal sum.

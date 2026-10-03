@@ -1,0 +1,10 @@
+Club: Liverpool 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Reina, Meireles, Gerrard, Kyrgiakos, Babel only in most/fewest lists; their source URL is the most-appearances query). 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2011/comp/1/) 30. Same 30 players.
+Club PL goals: 59 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 1 (John Paintsil, Fulham, 26 Jan 2011). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2010-11-premier-league. 11v11 player goals also sum to 58, consistent.
+Player goals sum: 58
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/liverpool.htm. Spellings reused from other seasons (Sotirios Kyrgiakos, Lucas Leiva surname Lucas). Babel FWD per footballsquads 2010-11 (MID in other seasons' files). Torres and Konchesky also appear for Chelsea and Fulham 2010/11 respectively (January transfers).
+Unverified: own goal confirmed by StatMuse only (consistent with goals total from both stats sources).

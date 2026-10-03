@@ -1,0 +1,10 @@
+Club: Chelsea 2015/16
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 28 unique (Abraham, Courtois, Willian not in player-stats). 11v11 PL club page 28. Same 28 players.
+Club PL goals: 59 (https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League league table).
+Own goals for: 4 (Alan Hutton (Aston Villa), Calum Chambers (Arsenal), Federico Fernandez (Swansea), Gareth McAuley (West Brom)) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2015-16-premier-league.
+Player goals sum: 55
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2015-2016/faprem/chelsea.htm. Name spellings reused from earlier seasons where the same player already appears. Fikayo Tomori: footballsquads 2015/16 gives CAN, kept England as used in earlier seasons.
+Unverified: Own goals not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

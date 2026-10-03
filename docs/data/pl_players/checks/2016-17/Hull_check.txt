@@ -1,0 +1,10 @@
+Hull 2016/17 Premier League check
+StatMuse: player-stats 25 (capped; missing Huddlestone, Mason, Keane), most-appearances 25 (capped), fewest-appearances 25 (capped); union 28 players
+11v11 PL club page (https://www.11v11.com/teams/hull-city/tab/players/season/2017/comp/1/): 28 players
+Rows written: 28. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2016-17 Premier League table): 37
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2016-17-premier-league): Tyrone Mings (Bournemouth), Hull 3-1 Bournemouth, 14 Jan 2017, confirmed by Sky Sports report (https://www.skysports.com/football/news/11661/10728363/hull-3-1-bournemouth-abel-hernandez-strikes-twice-as-marco-silvas-side-fight-back)
+Player goals sum: 36. Club goals minus own goals: 36. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2016-17 Hull page (https://www.footballsquads.co.uk/eng/2016-2017/faprem/hullc.htm), complete including players no longer at club. Note footballsquads lists Elmohamady as M (used MID), Tymon D, Bowen F.
+Unverified: nothing outstanding

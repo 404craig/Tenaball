@@ -1,0 +1,10 @@
+Club: Aston Villa 2011/12
+Players: StatMuse player-stats 25 (cap, missing Petrov, Warnock), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 27 unique players. 11v11 PL club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2012/comp/1/) 27. Same 27 players.
+Club PL goals: 37 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 0. Wikipedia 2011-12 Aston Villa season goalscorer table (https://en.wikipedia.org/wiki/2011%E2%80%9312_Aston_Villa_F.C._season) lists no own goals in the league; 11v11 player goals also sum to 37. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2011-12-premier-league) returned HTTP 422.
+Player goals sum: 37
+Difference (club goals - og_for - player goals): 0
+Rows: 27
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11; Wikipedia goalscorer list also matches.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/avilla.htm. Spellings reused from other seasons (Gabriel Agbonlahor, Carlos Cuellar).
+Unverified: StatMuse own-goals page unavailable (422).

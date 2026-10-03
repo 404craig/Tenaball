@@ -1,0 +1,9 @@
+Club: Brighton 2021/22
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 26 unique (Bissouma not in player-stats list). 11v11 PL club page: summariser said 27 but listed only 26 names, the same 26. Wikipedia season page figures for listed players also match.
+Disagreements: none on figures. 11v11 headline count 27 vs 26 rows listed; no 27th player found in any source, and goals reconcile exactly, so any missing player would have 0 goals.
+Club PL goals (https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League table): 42
+Own goals for: 2 (Joachim Andersen, Crystal Palace, 15 Jan 2022, on Wikipedia season page; Mohammed Salisu, Southampton, 24 Apr 2022, on 11v11 match page Brighton v Southampton). Source: StatMuse own-goals query.
+Player goals sum: 40
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2021-2022/engprem/brighton.htm is truncated after 5 rows (Sanchez, Lamptey, Cucurella, Webster, Dunk). Others taken from footballsquads-based entries for the same players in other seasons' files (2022/23 etc.), and Connolly, Locadia, Alzate, Taylor Richards from the Wikipedia 2021-22 Brighton season squad list. Lamptey listed ENG on footballsquads; Ghana used for consistency.
+Unverified: positions for non-first-5 players not confirmed on the 2021-22 footballsquads page.

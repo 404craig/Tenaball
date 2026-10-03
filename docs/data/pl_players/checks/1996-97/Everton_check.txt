@@ -1,0 +1,7 @@
+Everton 1996/97 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), fewest-apps 25; merged StatMuse 26 (most-apps not run: 11v11 club page fully covers). 11v11 club page (https://www.11v11.com/teams/everton/tab/players/season/1997/comp/1/) 26. footballsquads (faprem/everton.htm) lists all 26.
+Club goals: 44 (11v11 final table 01-june-1997)
+Own goals for: 0. StatMuse own-goals query (players-with-own-goals-vs-everton-1996-97-premier-league) returned HTTP 422 (no result); Wikipedia 1996-97 Everton season page lists no league own goals in Everton's favour (only an FA Cup one).
+Player goals sum: 44. 44 - 0 - 44 = 0.
+Disagreements: 0 (apps and goals agree for all 26). Kanchelskis listed by 11v11 as Soviet Union; nationality Russia used as in other seasons.
+Unverified: none.

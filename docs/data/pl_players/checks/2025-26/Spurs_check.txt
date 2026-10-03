@@ -1,0 +1,22 @@
+Spurs 2025/26 PL check
+Player count per source:
+- StatMuse: 31 (default query capped at 25; most-apps query added Tel, Kolo Muani, Simons, Souza; fewest-apps query added Byfield, Rowswell)
+- ESPN squad page (id 367, ENG.1, season 2025): 0, page returned no data
+- footballsquads.co.uk tottenha.htm: all 31 found (Johnson, Scarlett listed as left)
+- Wikipedia 2025-26 Tottenham Hotspur F.C. season: 28 rows returned; Olusesi, Byfield, Rowswell not returned; Souza returned in one fetch (2+2) and missing in another
+- 11v11 team page (all comps): 32 incl Luca Williams-Barnett 0+1, not credited with a PL app by StatMuse, so not added. All league apps <= all-comp apps.
+Club PL goals (Wikipedia 2025-26 Premier League table): 48
+Own goals for: 1 (Wikipedia season page)
+Sum of player goals: 47
+Difference (club goals - own goals - player sum): 0
+Disagreements (1):
+- Pedro Porro: StatMuse 34, Wikipedia 31+2=33; 11v11 player page 32+2=34; used 34
+Unverified: ESPN not usable. Olusesi, Byfield, Rowswell (1 app each) rest on StatMuse plus 11v11 player pages only. Positions/nationality from footballsquads codes.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2026/comp/1/ (A=starts, S=subs): 31 players; every row apps (A+S) and goals match the CSV.
+- Pedro Porro: sources_agree partial -> yes (StatMuse 34/1, 11v11 club page 32+2=34/1)
+- Richarlison: full_name Richarlison -> Richarlison de Andrade (spelling used for same player in other seasons)
+- Radu Dragusin: surname Dragusin -> Drăgușin (spelling used for same player in other seasons)
+- Antonin Kinsky: surname Kinsky -> Kinský (spelling used for same player in other seasons)
+Rows 31; player goals 47; club goals 48; own goals for 1; difference 0. All rows sources_agree=yes.

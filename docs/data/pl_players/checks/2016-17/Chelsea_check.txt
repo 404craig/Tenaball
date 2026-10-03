@@ -1,0 +1,10 @@
+Club: Chelsea 2016/17
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (below cap, complete). 11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2017/comp/1/) 24 (apps = A + S). Same 24 players.
+Club PL goals: 85 (https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League league table).
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2016-17-premier-league) lists only Adam Smith (Bournemouth, 8 Apr 2017). Wikipedia https://en.wikipedia.org/wiki/2016%E2%80%9317_Chelsea_F.C._season records the 90+3 goal v Bournemouth on 26 Dec 2016 (Pedro shot deflected) as a Steve Cook own goal; 11v11 credits Pedro with 9 so also treats it as an OG.
+Player goals sum: 83
+Difference: 0
+Rows: 24
+Disagreements: 1. Pedro goals StatMuse 10 vs 11v11 9 (the 26 Dec deflected goal). Resolved to 9 with og_for 2 (11v11 + Wikipedia). Both versions reconcile to 85 (StatMuse 84 + 1 OG; 11v11 83 + 2 OG). Sky Sports match report credits the goal to Pedro, so this is a genuine attribution dispute. 11v11 Pedro player page could not be located for a tie-break.
+All appearance counts agree.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2016-2017/faprem/chelsea.htm. Ola Aina kept as Nigeria to match earlier seasons (footballsquads 2016/17 shows ENG, he switched later).

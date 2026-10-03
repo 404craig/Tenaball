@@ -1,0 +1,18 @@
+Everton 2016/17 Premier League check
+StatMuse: player-stats 25 (capped; missing Bolasie, Davies), most-appearances 25 (capped), fewest-appearances 25 (capped); Stekelenburg appears as two rows (12 + 7 = 19); union 27 players
+11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2017/comp/1/): 27 players
+Wikipedia 2016-17 Everton season page: spot checks (Lukaku, Mirallas, Barkley, Gueye, Baines, Barry, Williams) agree
+Rows written: 27. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2016-17 Premier League table): 62
+Own goals for: 4 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2016-17-premier-league):
+- Shay Given (Stoke), Everton 1-0 Stoke, 27 Aug 2016 (ITV report)
+- David Marshall (Hull), Hull 2-2 Everton, 30 Dec 2016 (Yorkshire Post report)
+- Ryan Shawcross (Stoke), Stoke 1-1 Everton, 1 Feb 2017 (Sky Sports report; Coleman shot diverted in by Shawcross; Coleman's 4 goals in both sources exclude it)
+- Ben Mee (Burnley), Everton 3-1 Burnley, 15 Apr 2017 (Sky Sports report)
+Player goals sum: 58. Club goals minus own goals: 58. Difference: 0
+Disagreements (apps/goals): none (Stekelenburg split row in StatMuse resolved by summing, equals 11v11)
+Position/nationality: footballsquads 2016-17 Everton page (https://www.footballsquads.co.uk/eng/2016-2017/faprem/everton.htm) truncated at squad number 30 (Holgate). Fallbacks:
+- Oviedo, Cleverley, Deulofeu: footballsquads 2015-16 Everton page (Oviedo listed M there)
+- Pennington: footballsquads 2017-18 Leeds page
+- Kenny, Lookman, Holgate position: reused from 2017-18 files (Holgate Jamaica and Lookman Nigeria kept to match later files; footballsquads lists ENG for Holgate)
+Unverified: Kenny and Lookman not confirmed on a 2016-17 footballsquads page

@@ -1,0 +1,10 @@
+Club: Man City 2011/12
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (all under the 25 cap, same 24). 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2012/comp/1/) 24. Same 24 players.
+Club PL goals: 93 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 2 (Chris Baird, Fulham; Gretar Steinsson, Bolton). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2011-12-premier-league. Confirmed by Wikipedia 2011-12 Manchester City F.C. season goalscorers table (Own goal, Premier League: 2).
+Player goals sum: 91
+Difference (club goals - og_for - player goals): 0
+Rows: 24
+Disagreements: none on apps or goals (all 24 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/mancity.htm
+Unverified: nothing material.

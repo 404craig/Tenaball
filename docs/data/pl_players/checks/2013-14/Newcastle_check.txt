@@ -1,0 +1,8 @@
+Newcastle 2013/14 Premier League check
+Sources: StatMuse player-stats 25 rows (Cabaye missing), most-appearances 25, fewest-appearances 25; merged = 26 players. 11v11 club page (comp 1, season 2014) = 26 players.
+Club goals (Wikipedia 2013-14 Premier League table): 43
+Own goals for: 2 (Danny Gabbidon, Crystal Palace, 21 Dec 2013; Martin Skrtel, Liverpool). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2013-14-premier-league ; Gabbidon confirmed by Wikipedia 2013-14 Newcastle season page; Skrtel not listed by the Wikipedia summariser, supported by StatMuse and the goal sum.
+Player goals sum: 41. Expected 43 - 2 = 41. Difference: 0.
+Disagreements: none. All 26 players match on apps and goals between StatMuse and 11v11.
+Positions/nationality: footballsquads 2013-2014/faprem/newcas.htm could not be read (summariser returns only the page header; same problem with 2012-13 and 2014-15 pages, also recorded by earlier seasons). Reused position and nationality from earlier-season CSVs where the player exists; Luuk de Jong (FWD Netherlands), Sylvain Marveaux (MID France), Davide Santon (DEF Italy), Mapou Yanga-Mbiwa (DEF France) taken from the Wikipedia 2013-14 Newcastle season squad list.
+Unverified: Newcastle positions/nationalities not checked on footballsquads; Skrtel own goal confirmed by StatMuse only.

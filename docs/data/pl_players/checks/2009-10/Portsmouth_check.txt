@@ -1,0 +1,12 @@
+Club: Portsmouth 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 33 unique. 11v11 PL club page (https://www.11v11.com/teams/portsmouth/tab/players/season/2010/comp/1/) 33. Same 33 players.
+Club PL goals: 34 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 0. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-portsmouth-2009-10-premier-league returns HTTP 422 (no rows). Wikipedia 2009-10 Portsmouth season page (via summariser) mentions no own goals. StatMuse player goals sum to 34 = club goals.
+Player goals sum: 34
+Difference (club goals - og_for - player goals): 0
+Rows: 33
+Disagreements: 1.
+- Younes Kaboul goals: StatMuse 3, 11v11 club page and player page (https://www.11v11.com/players/younès-kaboul-42196/) 2. StatMuse game log credits him at Arsenal (22 Aug 2009, lost 4-1), v Bolton (12 Sep 2009) and at Sunderland (12 Dec 2009). 11v11 match pages credit him in the Bolton and Sunderland games; the 11v11 Arsenal v Portsmouth page (https://www.11v11.com/matches/arsenal-v-portsmouth-22-august-2009-285398/) lists no Portsmouth scorer at all and no own goal, so 11v11 leaves that goal unattributed (its player goals sum 33 against a club total of 34). Wikipedia Portsmouth season page (summariser) gives Kaboul 3. Used 3.
+All other apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/portsm.htm. Matt Ritchie: footballsquads lists ENG; Scotland used to match other seasons' files (later Scotland international). Asmir Begovic, Younes Kaboul and Niko Kranjcar left mid-season (Stoke, Spurs, Spurs).
+Unverified: scorer of Portsmouth's goal at Arsenal on 22 Aug 2009 rests on StatMuse plus Wikipedia (summariser); not confirmed by a match report naming the scorer.

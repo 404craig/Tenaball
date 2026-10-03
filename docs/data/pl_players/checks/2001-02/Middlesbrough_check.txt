@@ -1,0 +1,10 @@
+Middlesbrough 2001/02 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 35; 11v11 club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/2002/comp/1/) = 35; all footballsquads (https://www.footballsquads.co.uk/eng/2001-2002/faprem/middles.htm) entries matched.
+Club goals (Wikipedia 2001-02 FA Premier League table): 35
+Own goals for: 1 (Frank Sinclair (Leicester)), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2001-02-premier-league
+Player goals sum: 34
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals; StatMuse and 11v11 agree for every player (11v11 total = starts + subs).
+Name/position notes: Benito Carbone: on loan; Brian Deane: moved to Leicester mid-season; Mark Hudson: not the same person as the later Cardiff defender Mark Hudson; Luke Wilkshire: footballsquads spells Wiltshire
+Positions from footballsquads 2001-02; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: own goals confirmed by StatMuse only (consistent with the goals total); not cross-checked on Wikipedia season page or 11v11 match pages.

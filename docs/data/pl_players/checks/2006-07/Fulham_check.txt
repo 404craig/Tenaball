@@ -1,0 +1,11 @@
+Fulham 2006/07 check
+Player count per source: StatMuse merged 25 (player-stats, most-apps and fewest-apps each list the same 25); 11v11 club page 25 (total = A+S); footballsquads roster: all 25 present (Boa Morte in "no longer at club").
+Club PL goals: 38
+Own goals for: 1 (Damien Francis, Watford) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2006-07-premier-league
+Player goals sum: 37. 38 - 1 - 37 = 0.
+Disagreements: none (all 25 match).
+Matthew Briggs: 11v11 nationality Guyana (later capped by Guyana); earlier-season files in this project list England. Used Guyana per spec rule (country he plays for); flagged for consistency review.
+Simon Davies joined from Everton in January 2007; has a row for each club.
+Club goals source: Wikipedia 2006-07 Premier League page could not be fetched (domain cache-only), so club goals taken from the 11v11 final 2006-07 table (https://www.11v11.com/league-tables/premier-league/01-june-2007/).
+Positions from footballsquads 2006-07 (/faprem/); nationality from 11v11 club page (pre-2008-09 footballsquads has no nationality column), spellings aligned with other seasons' files.
+Unverified: own goal not confirmed by second source (StatMuse match date shown oddly as 10/2/2006). Totals reconcile exactly.

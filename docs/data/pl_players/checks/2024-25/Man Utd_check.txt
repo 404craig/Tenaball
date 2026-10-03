@@ -1,0 +1,17 @@
+Man Utd 2024/25 check
+Player count per source: StatMuse 31 across 3 queries; Wikipedia table 19 plus 11 more in a second query (Casemiro missing from it); rows written: 31
+Club PL goals: 44 (Wikipedia Premier League table)
+Own goals for: 2 (Wikipedia match list: Kristiansen og v Leicester, Morsy og v Ipswich; a Wikipedia stat row showing 3 is all competitions)
+Player goals sum: 42; difference (club - og - players): 0
+Disagreements and resolutions:
+1. Ayden Heaven: Wikipedia summary 4(1), StatMuse 4, 11v11 2+2=4 -> 4
+2. Chidozie Obi-Martin: Wikipedia summary 1(7), StatMuse 7, 11v11 1+6=7 -> 7
+Partial: Casemiro (not in Wikipedia summary; goal confirmed via match list).
+Unverified: 11v11 team page is all competitions so only player pages used as tie-breakers.
+
+VERIFIED (2026-10-02)
+- StatMuse queries were read previously (31-player union); no missing players found.
+- Casemiro: 11v11 player page 2024-25 PL = 18 starts + 6 sub = 24, 1 goal; matches StatMuse. sources_agree partial -> yes.
+- Position/nationality: all 31 rows match footballsquads manutd.htm (Chido Obi listed DEN F). No changes.
+- Own goals for: 2, Sam Morsy (Ipswich) and Victor Kristiansen (Leicester), StatMuse most-own-goals-against-manchester-united query; matches Wikipedia match list. og_source updated.
+- Goals diff 0.

@@ -1,0 +1,9 @@
+Club: Watford 2018/19
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (same 25 players in all three); 11v11 PL club page 25 (header said 24, 25 rows listed). Merged 25.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse for every player. Name-only spelling differences between sources are noted per row.
+Club PL goals: 52 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 1: Seamus Coleman (Everton), Everton 2-2 Watford, 10 Dec 2018. Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2018-19-premier-league. Confirmed by web search for Everton 2-2 Watford 10 Dec 2018 (HITC "Everton fans fear end for Seamus Coleman after Watford nightmare", toffeeweb report) and reconciliation 51+1=52.
+Player goals sum: 51
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/watford.htm (incl. players no longer at club section). Nationality follows footballsquads 2018/19 (time-specific); exceptions noted per row. Name spellings reused from later seasons' files where present.
+Unverified: own goal confirmed by StatMuse plus match-report search titles and exact goal reconciliation; Wikipedia club season page not used for own goals. No 11v11 player pages needed (no stat disagreements).

@@ -1,0 +1,7 @@
+Derby 1996/97 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), fewest-apps 25; merged StatMuse 26 (most-apps query not run: 11v11 club page fully covers the squad). 11v11 club page (https://www.11v11.com/teams/derby-county/tab/players/season/1997/comp/1/) 26. footballsquads (faprem/derby.htm) lists all 26 (positions from it; nationality from 11v11 club page / earlier-season spellings).
+Club goals: 45 (11v11 final table 01-june-1997; Wikipedia league page rate-limited)
+Own goals for: 4 (Mike Whitlow, Leicester, 2 Nov 1996; Steve Vickers, Middlesbrough, 17 Nov 1996; Scott Minto, Chelsea, 1 Mar 1997; David Burrows, Coventry, 3 May 1997) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1996-97-premier-league ; all four confirmed by Wikipedia 1996-97 Derby County season results table.
+Player goals sum: 41. 45 - 4 - 41 = 0.
+Disagreements: 1. Gary Rowett goals: 11v11 2 (11v11 match page credits him at Coventry 3 May 1997), StatMuse 1 and Wikipedia 1 (Wikipedia lists that Coventry goal as a Burrows own goal). Used 1. All apps agree between StatMuse and 11v11.
+Unverified: none.

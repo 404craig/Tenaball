@@ -1,0 +1,16 @@
+Huddersfield 2018/19 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 31
+11v11 PL club page (https://www.11v11.com/teams/huddersfield-town/tab/players/season/2019/comp/1/): 31 players
+Rows written: 31. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/hudders.htm
+Club PL goals (Wikipedia 2018-19 Premier League table): 22
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-huddersfield-town-2018-19-premier-league): Timothy Fosu-Mensah (Fulham), Huddersfield v Fulham 5 Nov 2018; Wikipedia 2018-19 Huddersfield season scorers table shows 1 league own goal
+Player goals sum: 21. Club goals minus own goals: 21. Difference: 0
+Disagreements (apps/goals): none
+Naming/position/nationality notes:
+- Juninho Bacuna: footballsquads NED (11v11 lists Curacao)
+- Florent Hadergjonaj: footballsquads SUI (11v11 lists Kosovo)
+- Abdelhamid Sabiri: footballsquads GER (11v11 lists Morocco)
+- Erik Durm: footballsquads lists D (11v11 Midfielder)
+- Karlan Grant: StatMuse lists as Karlan Ahearne-Grant
+Unverified: nothing

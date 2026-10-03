@@ -1,0 +1,16 @@
+Man City 2024/25 check
+Player count per source: StatMuse 30 across 3 queries; Wikipedia 30 rows (incl. Ait-Nouri, excl. Rodri); rows written: 30
+Club PL goals: 72 (Wikipedia Premier League table)
+Own goals for: 1 (Wikipedia season page via summariser; not independently itemised. StatMuse OG column = 2 appears to be own goals committed by City)
+Player goals sum: 71; difference (club - og - players): 0
+Disagreements and resolutions:
+1. Rayan Ait-Nouri: Wikipedia summary shows 3 apps for Man City 24/25; not in any StatMuse list or footballsquads City roster (joined City in 2025 from Wolves). EXCLUDED.
+2. Rodri missing from Wikipedia summary; kept (StatMuse x3, footballsquads).
+Unverified: own goals for taken as 1 from Wikipedia summariser plus consistency with totals; 11v11 not used (no disagreement).
+
+VERIFIED (2026-10-02)
+- StatMuse queries were read previously (30-player union); no missing players. Ait-Nouri exclusion upheld (11v11 shows 3 apps only in its 2025 season list, which covers the June 2025 Club World Cup; not in any PL source).
+- Rodri: 11v11 player page 2024-25 PL = 1 start + 2 sub = 3, 0 goals; matches StatMuse. sources_agree partial -> yes.
+- Position/nationality: all 30 rows match footballsquads mancity.htm. No changes.
+- Own goals for: 1, Vladimir Coufal (West Ham) 4 Jan 2025, StatMuse most-own-goals-against-manchester-city query; Wikipedia goalscorers Own goals PL = 1. og_source updated.
+- Goals diff 0.

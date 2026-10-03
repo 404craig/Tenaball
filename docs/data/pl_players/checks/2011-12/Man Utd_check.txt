@@ -1,0 +1,10 @@
+Club: Man Utd 2011/12
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 31. 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2012/comp/1/) 31. Same 31 players.
+Club PL goals: 89 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 2 (Steven Reid, West Brom, 14 Aug 2011; Wes Brown, Sunderland, 5 Nov 2011). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2011-12-premier-league. Confirmed by Wikipedia 2011-12 Manchester United F.C. season PL results table ("Reid 81' (o.g.)", "Brown 45+1' (o.g.)").
+Player goals sum: 87
+Difference (club goals - og_for - player goals): 0
+Rows: 31
+Disagreements: none on apps or goals (all 31 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/manutd.htm
+Unverified: nothing material.

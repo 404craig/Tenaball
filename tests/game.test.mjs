@@ -147,6 +147,32 @@ await test("questions: the October 2026 Premier League boards are all playable, 
   assert(/one short/.test(await p.textContent("#feedback")), "a near miss explains itself: " + await p.textContent("#feedback"));
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("letter boards: any Premier League player with the right surname letter counts, filling from 10th up", async () => {
+  const p = await phone(browser, "letters"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const info = await p.evaluate(() => { const t0 = performance.now(); for (const q of ["ka","smi","arnautvic","de bruy"]) { matches(norm(q)); fuzzy(norm(q)); } const ms = performance.now() - t0;
+    return { players: PLP.size, boards: Q.filter(q => q.open).map(q => q.id), counts: Q.filter(q => q.open).map(q => q.open.count),
+      kdb: PLP.get("Kevin De Bruyne").letters, son: PLP.has("Heung-min Son") && !PLP.has("Son Heung-min"), known: [...PLP.keys()].every(n => PEOPLE[n]), ms }; });
+  assert(info.players > 5000, "every player is loaded: " + info.players);
+  eq(info.boards.length, 22, "22 letter boards"); assert(info.boards.includes("pl-letter-iqu") && info.boards.includes("pl-letter-xyz"), "rare letters share boards");
+  assert(Math.min(...info.counts) >= 70, "every board has plenty of answers: " + info.counts);
+  eq([info.kdb, info.son, info.known], ["BD", true, true], "De Bruyne counts for B and D, Son keeps the game's spelling, every player is a known name");
+  assert(info.ms < 1500, "suggestions stay quick with every player loaded: " + Math.round(info.ms) + "ms");
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.evaluate(() => { window.pickQuestion = () => findQ("pl-letter-a"); });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
+  const guess = async (t) => { await p.fill("#guessInput", t); await p.click("#lockBtn"); await ready(p); return p.textContent("#feedback"); };
+  assert(/goes in 10th/.test(await guess("Arnautovic")), "a surname alone works and goes in 10th");
+  assert(/goes in 9th/.test(await guess("Shola Ameobi")), "the next goes in 9th");
+  assert(/already/.test(await guess("Marko Arnautovic")), "the same player can't go in twice");
+  assert(/doesn't begin with A/.test(await guess("Wayne Rooney")), "a Premier League player with the wrong letter is wrong");
+  const slots = await p.evaluate(() => [G.slotName[9], G.slotName[8], Object.keys(G.foundBy).length, G.players[0].lives]);
+  eq(slots, ["Marko Arnautovic", "Shola Ameobi", 2, 2], "answers sit in 10th and 9th, one life lost");
+  assert(/never played in the Premier League/.test(await guess("Lionel Messi")), "a famous name who never played in the Premier League is wrong");
+  await p.click("#passBtn"); await until(() => visible(p, "#roundEnd"), { what: "the round to end" });
+  const end = await p.evaluate(() => [...document.querySelectorAll("#tower .slot")].map(s => s.querySelector(".nm") && s.querySelector(".nm").textContent));
+  assert(end.every(Boolean) && end[9] === "Marko Arnautovic" && new Set(end).size === 10, "empty places show different example players: " + end);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
   const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));

@@ -1,0 +1,9 @@
+Man Utd 2020/21 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 29; 11v11 PL squad page 29; rows written 29. union adds Victor Lindelof, Shola Shoretire, Tim Fosu-Mensah, Will Fish to player-stats 25.
+Club PL goals: 73 (Wikipedia 2020-21 Premier League table)
+Own goals for: 3 (Lewis Dunk (Brighton), Jan Bednarek (Southampton), Craig Dawson (West Ham)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2020-21-premier-league. Confirmation: Wikipedia 2020-21 Man Utd season: 3 PL own goals; Dunk and Bednarek named in match details.
+Player goals sum: 70 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2020-2021/engprem/manutd.htm: all 29 players found (incl. departed section). Wan-Bissaka and Tuanzebe (ENG there) set to DR Congo, Mejbri (FRA there) set to Tunisia: countries they later played for, matching earlier season files. Amad Diallo F there, so FWD.
+Unverified: nothing material.

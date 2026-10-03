@@ -1,0 +1,12 @@
+Watford 2016/17 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/watford-premier-league-player-stats-2016-17 (+ most-appearances and fewest-appearances queries); 11v11 https://www.11v11.com/teams/watford/tab/players/season/2017/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2016-2017/faprem/watford.htm (position, nationality).
+Player counts: StatMuse union of the three queries 33 players; 11v11 club page 33 rows (A starts + S subs). Every player's apps and goals match between the two sources.
+Rows written: 33
+Club goals (Wikipedia 2016-17 Premier League table): 40
+Own goals for: 1 (StatMuse own-goals query): Michael Dawson (Hull) Watford 1-0 Hull 29 Oct 2016, confirmed by Sky Sports / NBC Sports reports ("Michael Dawson own goal gifts Watford victory") and 11v11 match page https://www.11v11.com/matches/watford-v-hull-city-29-october-2016-351101/.
+Player goals sum: 39
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: footballsquads 2016/17 (G/D/M/F mapped to GK/DEF/MID/FWD). Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Nationality notes: Abdoulaye Doucoure: footballsquads 2016/17 code gives France; reused Mali from earlier seasons in this dataset; Mbaye Niang: footballsquads lists France; nationality set to Senegal, the country he plays for (11v11 also lists Senegal)
+Unverified: nothing outstanding.

@@ -1,0 +1,8 @@
+Newcastle 2023/24 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25, fewest-appearances 25; merged StatMuse union 32; 11v11 PL squad page 32; rows written 32
+Club PL goals: 85 (Wikipedia 2023-24 Premier League table)
+Own goals for: 2 (StatMuse own-goals-vs-newcastle-united query: Ben Osborn (Sheffield Utd), Alex Moreno (Aston Villa)); Wikipedia season page has no own goals row in the summary
+Player goals sum: 83; difference (85 - 2 - 83): 0
+Disagreements: none. All 32 players' apps and goals match between StatMuse and 11v11.
+Position/nationality: footballsquads newcas.htm (2023-2024 and 2022-2023) returned an empty table to the fetcher on every try. Used earlier season files where the player exists, otherwise the Wikipedia 2023-24 Newcastle season squad list (Karius, Dummett, Ritchie, Joe White, Amadou Diallo, Ndiweni, Parkinson). Elliot Anderson: Wikipedia shows SCO, England kept to match earlier season files.
+Unverified: positions/nationalities for the seven Wikipedia-sourced players not confirmed on footballsquads; own goals for from a single source (StatMuse), consistent with goal sum.

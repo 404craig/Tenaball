@@ -1,0 +1,9 @@
+Norwich 2021/22 check
+Players per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); StatMuse union 28; 11v11 PL squad page 28; rows written 28. StatMuse union adds Jonathan Rowe, Todd Cantwell (most-apps) and Tony Springett (fewest-apps).
+Club PL goals: 23 (Wikipedia 2021-22 Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2021-22-premier-league). StatMuse lists Juraj Kucka (Watford) 1 and Michael Keane (Everton) 1. Confirmed: Sky Sports report Watford 0-3 Norwich 21 Jan 2022 (Kucka o.g. 90+2), Gulf News/AFP report Norwich 2-1 Everton 12 Feb 2022 (Keane o.g.). Wikipedia 2021-22 Norwich season goalscorers own goals row PL = 2.
+Player goals sum: 21
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2021-2022/engprem/norwich.htm. Exception: Angus Gunn Scotland (page ENG), his senior team since 2023.
+Unverified: nothing material.

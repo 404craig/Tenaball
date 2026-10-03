@@ -1,0 +1,16 @@
+Wimbledon 1996/97 Premier League check
+Player count: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (under the 25-row cap, same 24 in all three); 11v11 club page (https://www.11v11.com/teams/wimbledon/tab/players/season/1997/comp/1/) = 24, same players. All 24 on footballsquads (https://www.footballsquads.co.uk/eng/1996-1997/faprem/wimbled.htm). 11v11 starts sum to 418 (38 x 11).
+Club goals (Wikipedia 1996-97 FA Premier League table): 49
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wimbledon-1996-97-premier-league) lists Neil Cox (Middlesbrough, 1 Feb 1997); Wikipedia 1996-97 Wimbledon season page confirms Cox og in 1-1 home draw v Middlesbrough, 1 Feb 1997.
+Player goals sum: 48
+Difference (club goals - og - player goals): 0
+Rows: 24
+Disagreements: 5, all on apps (goals agree for all 24).
+- Dean Holdsworth: StatMuse 24 vs 11v11 25 (10+15); Wikipedia 25. Used 25 (yes).
+- Neal Ardley: 11v11 34 (33+1) vs StatMuse 33 and Wikipedia 33. Used 34 (11v11 tie-break), partial.
+- Peter Fear: 11v11 18 (9+9) vs StatMuse 17 and Wikipedia 17 (9+8). Used 18, partial.
+- Mick Harford: 11v11 13 (3+10) vs StatMuse 12 and Wikipedia 12 (3+9). Used 13, partial.
+- Paul Heald: 11v11 2 (2+0) vs StatMuse 3 and Wikipedia 3 (2+1). Used 2, partial.
+Names: Neal Ardley (footballsquads Neil), Oyvind Leonhardsen (full name with accent). Spellings reused from other seasons.
+Positions from footballsquads 1996-1997 (Gayle F, Euell F, Fear M). Nationality from 11v11 club page and earlier seasons.
+Unverified: the four partial apps figures (Ardley, Fear, Harford, Heald) were not confirmed at match level; StatMuse and Wikipedia agree with each other against 11v11.

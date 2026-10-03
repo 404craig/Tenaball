@@ -1,0 +1,10 @@
+Newcastle 2012/13 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (newcastle-united slug); 11v11 PL club page https://www.11v11.com/teams/newcastle-united/tab/players/season/2013/comp/1/; Wikipedia 2012-13 Newcastle season page.
+Player count: final rows 32; StatMuse merged 32 (player-stats 25, most 25, fewest 25; Harper, Gouffran, Marveaux, Krul only in fewest; Cabaye, Steven Taylor, Anita only in most); 11v11 club page 32.
+Club goals (Wikipedia 2012-13 Premier League table): 45
+Own goals for: 2 (Jonny Evans (Man Utd), Jos Hooiveld (Southampton)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2012-13-premier-league; Wikipedia season goalscorer table: 2 PL own goals.
+Player goals sum: 43
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 32 players match on apps and goals.
+SOURCE PROBLEM: footballsquads eng/2012-2013/faprem/newcas.htm could not be read (summariser returned only the page header, twice; engprem path 404), as recorded in other seasons. Position/nationality reused from earlier-season CSVs where the player exists; otherwise from the Wikipedia 2012-13 Newcastle season squad list: Bigirimana (MID Burundi), Adam Campbell (FWD England), Shane Ferguson (DEF Northern Ireland), James Perch (DEF England), Nile Ranger (FWD England), James Tavernier (DEF England).
+Unverified: all Newcastle positions/nationalities not checked on footballsquads; Anita (Curacao) and Haidara (Mali) nationality reused from earlier-season files.

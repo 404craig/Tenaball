@@ -1,0 +1,8 @@
+Barnsley 1997/98 check
+Player counts: StatMuse player-stats 25 (capped; Scott Jones missing), most-apps 25 (Laurens ten Heuvel missing), fewest-apps 25 (Neil Redfearn missing); union 26. 11v11 club page (https://www.11v11.com/teams/barnsley/tab/players/season/1998/comp/1/) 26 (A+S). Rows = 26.
+Club goals (Wikipedia 1997-98 FA Premier League table): 37.
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-barnsley-1997-98-premier-league) returned HTTP 422 (no result). Wikipedia season page (https://en.wikipedia.org/wiki/1997%E2%80%9398_Barnsley_F.C._season) match-by-match scorers show no opponent own goals; match scorers total 37.
+Player goals sum: 37. 37 - 0 = 37. Difference: 0.
+Disagreements: 0. All 26 players' apps and goals match between StatMuse and 11v11. (Wikipedia goals table also lists Darren Sheridan 1, not in its league match list; StatMuse and 11v11 both give 0, kept 0.)
+Positions from footballsquads 1997-1998/faprem/barnsley.htm (Barnard M, Hendrie F, Marcelle M). Nationality from 11v11 Nat column (YUG -> Yugoslavia, MKD -> North Macedonia, SVN Slovenia, RSA South Africa, TRI Trinidad and Tobago) or reused spellings.
+Unverified: nothing outstanding.

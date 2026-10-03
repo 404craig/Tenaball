@@ -1,0 +1,23 @@
+Man Utd 2025/26 Premier League check
+Player count: StatMuse 25; Wikipedia summary 21 (omits the 4 low-appearance players below); footballsquads 91 listed squad/ex-squad (all 25 present); ESPN 0 (unreadable).
+Club PL goals (Wikipedia 2025-26 Premier League table): 69
+Own goals for: 3 (Wikipedia season page)
+Sum of player goals: 66
+Difference: 0
+Disagreements: 0 on apps/goals for the 21 players in both sources.
+Unverified (StatMuse only, sources_agree=partial): Tyrell Malacia 3, Tyler Fredricson 1, Jack Fletcher 3, Bendito Mantato 1 (all 0 goals).
+StatMuse list is exactly 25 rows; a 25-row cap may hide further players (see Man City), though goals reconcile exactly.
+ESPN (league filter, season 2025): page returned no content via WebFetch for this club; no ESPN figures recorded.
+11v11 team page: shows starts only, not usable as an all-competition ceiling; 11v11 player pages (Apps=starts, Subs=sub apps) used as tie-breaker.
+
+Follow-up (2026-10-02):
+- Completeness: StatMuse fewest-appearances query found 2 players hidden by the 25-row cap: Tyler Fletcher (2 apps, 0 goals) and Shea Lacey (3 apps, 0 goals). Both confirmed on 11v11 player pages (Fletcher 0+2 PL, Lacey 0+3 PL). Added; rows now 27. Most-appearances query shows no other missing player.
+- Goals check unchanged: 69 - 3 - 66 = 0.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/manchester-united/tab/players/season/2026/comp/1/ (A=starts, S=subs): 27 players; every row apps (A+S) and goals match the CSV.
+- Tyrell Malacia: sources_agree partial -> yes (StatMuse 3/0, 11v11 club page 0+3=3/0)
+- Tyler Fredricson: sources_agree partial -> yes (StatMuse 1/0, 11v11 club page 0+1=1/0)
+- Jack Fletcher: sources_agree partial -> yes (StatMuse 3/0, 11v11 club page 0+3=3/0)
+- Bendito Mantato: sources_agree partial -> yes (StatMuse 1/0, 11v11 club page 0+1=1/0)
+Rows 27; player goals 66; club goals 69; own goals for 3; difference 0. All rows sources_agree=yes.

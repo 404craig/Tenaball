@@ -1,0 +1,14 @@
+Leeds 1997/98 check
+Player counts: StatMuse player-stats 22, most-apps 22, fewest-apps 22 (not capped); 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/1998/comp/1/) 22. Rows = 22.
+Own goals for: 4. StatMuse lists John Beresford (Newcastle), Mark Pembridge (Sheffield Wednesday), Jacob Laursen (Derby), Adie Moses (Barnsley). Confirmed by Wikipedia 1997-98 Leeds United season page: Beresford og v Newcastle 18 Oct 1997, Pembridge og v Sheffield Wednesday 17 Jan 1998, Laursen og v Derby 15 Mar 1998, Moses og v Barnsley 4 Apr 1998.
+Disagreements: 3, all resolved.
+- Gunnar Halle: StatMuse 32 vs 11v11 31+2=33 (club and player page). Wikipedia 31+2. Used 33.
+- Robert Molenaar: StatMuse 23 vs 11v11 18+4=22 (club and player page). Wikipedia 18+4. Used 22.
+- Derek Lilley: StatMuse 12 vs 11v11 table 0+13=13. 11v11 player match list (as read via summariser) showed 12 PL matches; Wikipedia 0+12. Used 12. Not fully certain (11v11 table says 13).
+All goals agree across sources. Other 19 players' apps match.
+Note: 11v11 spells David Robertson as "Roberton" and Alf-Inge Haaland as "Alfe-Inge"; same players as StatMuse.
+Nationality: reused spellings from other seasons; new players (Beeney, Jackson, Matthews, Robertson) from 11v11 Nat column.
+Club goals (Wikipedia 1997-98 FA Premier League table (https://en.wikipedia.org/wiki/1997%E2%80%9398_FA_Premier_League)): 57.
+Own goals for: 4 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1997-98-premier-league).
+Player goals sum: 53. 57 - 4 = 53. Difference: 0.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1997-1998/faprem/leeds.htm (season-specific; includes players no longer at club).

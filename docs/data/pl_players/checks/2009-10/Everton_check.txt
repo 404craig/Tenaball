@@ -1,0 +1,10 @@
+Club: Everton 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 28 unique (Anichebe, Hibbert, Yakubu only in most/fewest lists). 11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2010/comp/1/) 28. Same 28 players.
+Club PL goals: 60 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 4 (Chris Smalling, Fulham; Kamil Zayatte, Hull; Petr Cech, Chelsea; Richard Garcia, Hull). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2009-10-premier-league. Wikipedia 2009-10 Everton season page (via summariser) confirmed the Cech own goal (12 Dec 2009, Chelsea 3-3 Everton); 11v11 player goals sum to 56, consistent with 4.
+Player goals sum: 56
+Difference (club goals - og_for - player goals): 0
+Rows: 28
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/everton.htm (Lescott, Neill, Jo, Donovan in "no longer at club"). Spellings reused from other seasons where they exist. Donovan FWD per footballsquads 2009-10.
+Unverified: Smalling, Zayatte and Garcia own goals confirmed by StatMuse only (consistent with goals total).

@@ -1,0 +1,9 @@
+Sheffield Utd 2019/20 check
+Players per source: StatMuse player-stats 25 (cap), fewest-appearances 25 (cap), most-appearances not run (11v11 squad page fully covers the squad); StatMuse union 26; 11v11 PL squad page 26; rows written 26.
+Club PL goals: 39 (Wikipedia 2019-20 Sheffield United F.C. season page: 9th, 54 pts; goalscorers Total row PL 39). Wikipedia 2019-20 Premier League table page could not be read (HTTP 429).
+Own goals for: 3 (Kurt Zouma, Chelsea; Vicente Guaita, Crystal Palace; Yerry Mina, Everton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-united-2019-20-premier-league. Confirmation: Wikipedia 2019-20 Sheffield Utd season goalscorers table "Own Goals | 3" in the PL column.
+Player goals sum: 36 (StatMuse and 11v11 identical)
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player apps (11v11 starts + subs) and goals identical in StatMuse and 11v11.
+Position/nationality: footballsquads eng/2019-2020/engprem/sheffu.htm, all 26 found. Baldock Greece as in later files (footballsquads 2019-20 says ENG). Ravel Morrison Jamaica and Richairo Zivkovic Curacao per 11v11 nationality (footballsquads 2019-20 lists ENG and NED); no earlier-season file has them.
+Unverified: Morrison and Zivkovic nationality rests on 11v11 only.

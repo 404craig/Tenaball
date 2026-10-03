@@ -1,0 +1,13 @@
+Spurs 1998/99 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (29 unique merged); 11v11 club page (https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/1999/comp/1/) = 29; all 29 in footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/tottenha.htm; Berti, Calderwood in no-longer-at-club section).
+Club goals (Wikipedia 1998-99 FA Premier League table): 47
+Own goals for: 2 (Jamie Carragher (Liverpool) 5 Dec 1998 and 1 May 1999), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-tottenham-hotspur-1998-99-premier-league; both confirmed by 11v11 match pages (tottenham-hotspur-v-liverpool-05-december-1998-23862, 50 min; liverpool-v-tottenham-hotspur-01-may-1999-24054, 13 min).
+Player goals sum: 45 (Wikipedia season page goalscorer total also 45)
+Difference (club goals - og - player goals): 0
+Goals: StatMuse and 11v11 agree for all 29 players.
+Disagreements: 2 (apps).
+- Rory Allen: StatMuse 4, Wikipedia season page 0+4, 11v11 club/player page 0+5. Resolved 4.
+- Stephen Clemence: StatMuse 17, Wikipedia season page 9+8, Wikipedia player career table 17, 11v11 club page 9+9 (player page lists 18 PL matches). Resolved 17. Checked 11v11 match pages 16 Jan, 1 May, 10 May 1999 (he played in all three); the extra 11v11 match was not identified.
+Names: Jose Dominguez (full José Dominguez), Moussa Saib (full Moussa Saïb), Espen Baardsen. Stephen Carr: 11v11 Ireland, recorded as Republic of Ireland.
+Positions from footballsquads 1998-1999. Nationality from 11v11 club page / other seasons.
+Unverified: exact sub app counts for Allen and Clemence (11v11 one higher each).

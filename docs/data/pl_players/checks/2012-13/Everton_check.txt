@@ -1,0 +1,10 @@
+Club: Everton 2012/13
+Players: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (all under the 25 cap, same 23). 11v11 PL club page (https://www.11v11.com/teams/everton/tab/players/season/2013/comp/1/) 23. Same 23 players.
+Club PL goals: 55 (https://en.wikipedia.org/wiki/2012%E2%80%9313_Premier_League league table).
+Own goals for: 2 (Julio Cesar, QPR; Ryan Shawcross, Stoke). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2012-13-premier-league. Confirmed by Wikipedia 2012-13 Everton season goalscorers table (Own goals, Premier League: 2).
+Player goals sum: 53
+Difference (club goals - og_for - player goals): 0
+Rows: 23
+Disagreements: none on apps or goals. Magaye Gueye nationality: footballsquads SEN, 11v11 France; used footballsquads (Senegal).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2012-2013/faprem/everton.htm. Name spellings reused from other seasons (Seamus Coleman full Séamus Coleman, Jelavic, Heitinga).
+Unverified: nothing material.

@@ -1,0 +1,45 @@
+Bournemouth 2025/26 Premier League check
+
+Player count per source:
+- StatMuse: 25 (capped at 25 rows; truncated, Rayan missing)
+- Wikipedia 2025-26 AFC Bournemouth season: 24 with PL apps (Remy Rees-Dottin listed with 0, excluded); Hamed Traore and Ben Winterburn absent
+- ESPN (id 349): page returned empty content, no figures
+- footballsquads: roster check; all 26 present (Semenyo, Traore, Winterburn under players no longer at club)
+- 11v11 team page (all comps): 24 rows (omits Unal, Traore, Winterburn)
+- 11v11 player pages: Hamed Traore 0+1 PL (Liverpool v Bournemouth, 15 Aug 2025); Ben Winterburn 0+1 PL 2025-26
+- 11v11 PL 2025-26 goal scorers page: 14 scorers, all match
+Rows written: 26
+
+Club PL goals: 58
+Own goals for: NOT FOUND (Wikipedia season page has no own goal figure). Implied by subtraction: 1.
+Sum of player goals: 57
+Difference (58 - 57): 1, consistent with 1 own goal for but unverified.
+Note: StatMuse "own goals by team" list gave Bournemouth 3, but it appears to count own goals committed, not benefited, so not used.
+
+Disagreements and resolution:
+- Enes Unal: StatMuse 23 apps, Wikipedia 22 (0+22). Used 23. Tie-break: Soccerbase league record since permanent move (May 2024) is 2 starts + 38 sub, 3 goals; StatMuse 2024-25 is 17 apps (2 starts) 2 goals, leaving 0+23 and 1 goal for 2025-26.
+- Hamed Traore and Ben Winterburn: StatMuse 1 app each, absent from Wikipedia. Confirmed by 11v11 player pages; included.
+- Rayan: missing from StatMuse (cap); Wikipedia 13+2 = 15 apps, 5 goals used, consistent with 11v11.
+
+Unverified:
+- Own goals for.
+- Rayan has no second PL apps source beyond Wikipedia (11v11 figure is all comps).
+
+Follow-up (2026-10-02):
+- Own goals for: VERIFIED 1. StatMuse "most own goals against Bournemouth 2025-26": Jefferson Lerma (Crystal Palace), 3 May 2026. Corroborated by ESPN Deportes video headline "Lerma y su autogol con Crystal Palace vs. Bournemouth".
+- Goals check now: 58 - 1 - 57 = 0.
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/afc-bournemouth/tab/players/season/2026/comp/1/ read: 26 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- footballsquads 2025-2026 bourne.htm: all 26 positions and nationalities match; no change.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 58 - own goals for 1 - player goals 57 = 0.
+- Bournemouth_summary.json written.
+Changes:
+- Enes Unal: sources_agree no -> yes (23 apps, 1 goals confirmed by 11v11 PL club page)
+- Hamed Traore: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Evanilson: name/nationality fields ('Evanilson', 'Evanilson', 'Evanilson', 'Brazil') -> ('Evanilson', 'Evanilson de Lima Barbosa', 'Evanilson', 'Brazil') (match spelling used in other seasons / spec nationality name)
+- Ben Winterburn: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)
+- Rayan: sources_agree partial -> yes (15 apps, 5 goals confirmed by 11v11 PL club page)

@@ -1,0 +1,15 @@
+Club: Chelsea 2019/20
+Players per source: StatMuse player-stats 25 (cap); StatMuse least-appearances 25 (cap, adds Willy Caballero); StatMuse most-games-played 25 (cap, adds Willian); merged 27 unique. The spec URLs most-appearances and fewest-appearances were refused by the WebFetch proxy (HTTP 429, told not to refetch), so the equivalent least-appearances and most-games-played phrasings were used; together they cover the full range (least list runs 1 to 36 apps, most list runs 37 to 1).
+11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2020/comp/1/): NOT READ, proxy HTTP 429 with instruction not to refetch. 11v11 player pages are robots-disallowed for WebFetch.
+Second source used instead: Wikipedia 2019-20 Chelsea F.C. season stats table: 26 players with PL apps (Lamptey not shown by the summariser), all 26 match StatMuse apps and goals. Lamptey confirmed via Wikipedia Tariq Lamptey career table (Chelsea 2019-20 PL 1 app, 0 goals; sub debut v Arsenal 29 Dec 2019).
+Club PL goals: 69 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 0. StatMuse own-goals vs Chelsea query returned HTTP 422 (no results); Wikipedia 2019-20 Chelsea season goalscorers table own goals row: PL 0, FA Cup 1.
+Player goals sum: 69
+Difference: 0
+Disagreements: none.
+Position/nationality: https://www.footballsquads.co.uk/eng/2019-2020/engprem/chelsea.htm (Lamptey in players no longer at club). Nationality spellings reused from earlier-season files (Lamptey Ghana and Broja Albania as in later files; footballsquads 2019-20 showed Lamptey ENG).
+Unverified: no 11v11 confirmation for any Chelsea player this season (rate limited); sources_agree=yes rests on StatMuse plus Wikipedia.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/chelsea/tab/players/season/2020/comp/1/): 27 players, all 27 rows match on apps (A+S) and goals. No player missing. No changes to figures. Notes updated. Own goals for remains 0 (Wikipedia). Goals diff 0.

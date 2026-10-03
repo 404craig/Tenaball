@@ -1,0 +1,8 @@
+Liverpool 2002/03 check
+Player count per source: StatMuse player-stats 23, most-apps 23, fewest-apps 23 (all under the 25 cap; identical sets). 11v11 club page https://www.11v11.com/teams/liverpool/tab/players/season/2003/comp/1/: 23 (total = Apps + Subs). footballsquads 2002-03 (/faprem/liverpool.htm): all 23 present.
+Club PL goals: 61 (Wikipedia 2002-03 FA Premier League table).
+Own goals for: 0. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2002-03-premier-league returned HTTP 422 twice (no answer page, consistent with no results); Wikipedia 2002-03 Liverpool season page mentions no own goals for Liverpool.
+Player goals sum: 61. 61 - 0 - 61 = 0.
+Disagreements: 0. All 23 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2002-03 (Riise listed M there). Nationality from 11v11 club page, spellings aligned with other seasons' files (Traore Mali per 11v11 and later seasons).
+Unverified: own goals not cross-checked on 11v11 match pages (zero inferred from StatMuse 422, Wikipedia and goal-sum consistency).

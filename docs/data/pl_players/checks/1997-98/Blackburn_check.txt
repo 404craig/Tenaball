@@ -1,0 +1,8 @@
+Blackburn 1997/98 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (uncapped, same 24). 11v11 club page (https://www.11v11.com/teams/blackburn-rovers/tab/players/season/1998/comp/1/) 24 (A+S). Rows = 24.
+Club goals (Wikipedia 1997-98 FA Premier League table): 57.
+Own goals for: 1. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-1997-98-premier-league) lists Graham Hyde (Sheffield Wednesday), 25 Aug 1997. Confirmed by Wikipedia season page (https://en.wikipedia.org/wiki/1997%E2%80%9398_Blackburn_Rovers_F.C._season): Blackburn 7-2 Sheffield Wednesday, Hyde own goal.
+Player goals sum: 56. 57 - 1 = 56. Difference: 0.
+Disagreements: 1. Tim Flowers: StatMuse 26 apps; 11v11 club page 24+1 = 25 and 11v11 player page (https://www.11v11.com/players/tim-flowers-262/) 24 apps + 1 sub = 25. 11v11 GK starts total 38 (Flowers 24, Fettis 7, Filan 7). Kept 25 per 11v11 tie-breaker; the extra StatMuse match was not identified. All other players agree.
+Positions from footballsquads 1997-1998/faprem/blackbrn.htm (Sutton F). Nationality reused from other seasons; Patrick Valery France and Anders Andersson Sweden from 11v11.
+Unverified: Flowers' extra StatMuse appearance not traced to a match.

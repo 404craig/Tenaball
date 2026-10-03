@@ -1,0 +1,9 @@
+Club: Southampton 2016/17
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 26 (adds Virgil van Dijk). 11v11 PL club page (https://www.11v11.com/teams/southampton/tab/players/season/2017/comp/1/) 26 (A+S). Same 26 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 41 (Wikipedia 2016-17 Premier League table).
+Own goals for: 2 (Jason Denayer, Sunderland; Petr Cech, Arsenal). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2016-17-premier-league
+Player goals sum: 39
+Difference: 0 (41 - 2 - 39)
+Position/nationality: https://www.footballsquads.co.uk/eng/2016-2017/faprem/southam.htm (Fonte in players no longer at club). Targett ENG there and in 11v11 shown as SCO; England used to match footballsquads and earlier seasons.
+Unverified: own goals for from StatMuse only (no dates shown), consistent with goal sum.

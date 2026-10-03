@@ -1,0 +1,10 @@
+Club: Fulham 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Gera, Okaka, Kelly only in most/fewest lists; Kallio only in fewest). 11v11 PL club page (https://www.11v11.com/teams/fulham/tab/players/season/2010/comp/1/) 29. Same 29 players.
+Club PL goals: 39 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table; also 11v11 results list sums to 39).
+Own goals for: 1 (Carlton Cole, West Ham, 2 May 2010, Fulham 3-2 West Ham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2009-10-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/fulham-v-west-ham-united-02-may-2010-289737/. Further 11v11 match pages checked (Everton H, West Ham A, Hull H, Man City A, Liverpool H, Blackburn H, Man Utd H, Stoke A, Burnley H, Birmingham H, Wigan H) show no other own goal for Fulham (Birmingham H had a Chris Baird own goal for Birmingham).
+Player goals sum: 38
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/fulham.htm (Eddie Johnson, Seol, Kamara, Kallio in "no longer at club"). Spellings reused from other seasons where they exist (Andy Johnson / Andrew Johnson, Stefano Okaka). Wikipedia Fulham season page summariser gave only partial scorer data.
+Unverified: nothing outstanding.

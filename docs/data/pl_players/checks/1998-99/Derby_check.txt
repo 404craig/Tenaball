@@ -1,0 +1,9 @@
+Derby 1998/99 check
+Player counts: StatMuse player-stats 25 (capped; Borbokis, Dorigo, Elliott, Eranio, Schnoor missing), most-apps 25, fewest-apps 25; union 30. 11v11 club page (https://www.11v11.com/teams/derby-county/tab/players/season/1999/comp/1/) 30. Rows = 30.
+Club goals (Wikipedia 1998-99 FA Premier League table): 40.
+Own goals for: 0. StatMuse own-goal query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-1998-99-premier-league) returned HTTP 422 (no answer). Wikipedia 1998-99 Derby County F.C. season page records no league own goals in Derby's favour.
+Player goals sum: 40 (StatMuse and 11v11 both). 40 - 0 = 40. Difference: 0.
+Disagreements: 0. All 30 players' apps (11v11 starts + subs) and goals match StatMuse.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1998-1999/faprem/derby.htm (Dailly, Kozluk, Hunt, Carsley in no-longer-at-club section). Nationality: spellings reused from other seasons; 11v11 Nat column for Bridge-Wilkinson (ENG), Hunt (ENG), Launders (IRL).
+Naming: StatMuse "Vasileios Bormpokis" = 11v11/footballsquads "Vassilis Borbokis"; footballsquads "Paul Boertein" = Paul Boertien.
+Unverified: nothing material.

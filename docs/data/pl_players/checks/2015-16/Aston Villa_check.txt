@@ -1,0 +1,10 @@
+Club: Aston Villa 2015/16
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Gestede, Richards, Sinclair, Hepburn-Murphy not in player-stats). 11v11 PL club page 29. Same 29 players.
+Club PL goals: 27 (https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League league table).
+Own goals for: 3 (Pape Souare (Crystal Palace, 22/08/2015, StatMuse); Wayne Hennessey (Crystal Palace, 12/01/2016) and Timm Klose (Norwich, 06/02/2016), both per 11v11 match pages quoting the PL Goal Accreditation Panel (StatMuse own-goal query lists only Souare because it still credits those two goals to Lescott)) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2015-16-premier-league + https://www.11v11.com/matches/aston-villa-v-crystal-palace-12-january-2016-317041/ + https://www.11v11.com/matches/aston-villa-v-norwich-city-06-february-2016-317081/.
+Player goals sum: 24
+Difference (club goals - og_for - player goals): 0
+Rows: 29
+Disagreements: 1 (Joleon Lescott goals: StatMuse 3, 11v11 1). Resolved to 1: 11v11 match pages show the PL Goal Accreditation Panel re-credited the Crystal Palace (12/01/2016) and Norwich (06/02/2016) goals as own goals by Hennessey and Klose; his goal at Southampton (05/12/2015) stands (11v11 match page). Wikipedia career table also shows 1. All apps match.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2015-2016/faprem/avilla.htm. Name spellings reused from earlier seasons where the same player already appears. Leandro Bacuna: footballsquads 2015/16 gives NED, kept Curacao as used in earlier seasons.
+Unverified: Souare own goal from StatMuse only (not separately checked on a match page); consistent with exact reconciliation.

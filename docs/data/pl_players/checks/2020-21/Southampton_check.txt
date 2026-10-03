@@ -1,0 +1,9 @@
+Southampton 2020/21 check
+Players per source: 11v11 PL squad page 29; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); StatMuse union 29. Same 29 players in both.
+Club PL goals: 47 (Wikipedia 2020-21 Premier League table)
+Own goals for: 0 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2020-21-premier-league). StatMuse own-goals query returned HTTP 422 on 3 attempts (and on 2 slug/phrasing variants), consistent with no rows; Wikipedia 2020-21 Southampton season page summary shows no own goals row. Player goals equal club goals, so 0 is consistent. UNVERIFIED by a positive source: own goals for = 0.
+Player goals sum: 47
+Difference (club goals - og - player goals): 0
+Disagreements: 0. Every player's apps and goals identical in StatMuse (3 queries) and 11v11 (starts + subs).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/southam.htm
+Unverified / notes: Yan Valery nationality France per footballsquads 2020-21 (later-season files use Tunisia). Alexandre Jankewitz listed as Alex Jankewitz on 11v11/footballsquads; StatMuse Alexandre. Kayne Ramsay spelled Ramsey on StatMuse.

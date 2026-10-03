@@ -1,0 +1,8 @@
+Bolton 2002/03 check
+Player counts: StatMuse player-stats 25 (capped; Djorkaeff, Tofting missing), most-apps 25, fewest-apps 25 (union 27 players); 11v11 club page 27. Union = 27 rows.
+Club goals (Wikipedia 2002-03 FA Premier League table): 41
+Own goals for: 3 (Kenny Cunningham, Birmingham; Martin Keown, Arsenal; Phil Babb, Sunderland). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-2002-03-premier-league. Consistent with 11v11 player goals sum (38) = 41 - 3.
+Player goals sum: 38. Difference: 0.
+Disagreements: none. Every player's apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2002-2003/faprem/bolton.htm (Nolan listed D, Campo D, Warhurst D, Walters F as Jonathan Walters; Holdsworth and Ricketts in no-longer-at-club section, F). Nationality: footballsquads has no nationality column; taken from spellings used in other seasons and 11v11 Nat column (Akin Turkey, Andre France, Bergsson Iceland, Farrelly Republic of Ireland, Holdsworth England, Jermaine Johnson Jamaica, Livesey England, Salva Spain, Tofting Denmark, Warhurst England, Whitlow England).
+Unverified: own goals not separately confirmed on an 11v11 match page or Wikipedia (StatMuse plus arithmetic consistency only).

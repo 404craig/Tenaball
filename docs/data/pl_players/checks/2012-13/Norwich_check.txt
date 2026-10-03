@@ -1,0 +1,10 @@
+Norwich 2012/13 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (norwich-city slug); 11v11 PL club page https://www.11v11.com/teams/norwich-city/tab/players/season/2013/comp/1/; 11v11 match page Norwich v West Brom 12 May 2013; footballsquads.co.uk/eng/2012-2013/faprem/norwich.htm for position and nationality.
+Player count: final rows 27; StatMuse merged 27 (player-stats 25, most 25, fewest 25; Whittaker and Hoolahan not in player-stats list); 11v11 club page 27.
+Club goals (Wikipedia 2012-13 Premier League table): 41
+Own goals for: 1 (Gareth McAuley, West Brom, 12 May 2013). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-norwich-city-2012-13-premier-league, confirmed by 11v11 match page https://www.11v11.com/matches/norwich-city-v-west-bromwich-albion-12-may-2013-301406/. (Wikipedia season page gives 2 own goals across all competitions, PL split not given.)
+Player goals sum: 40
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 27 players match on apps and goals.
+Notes: Chris Martin listed ENG on footballsquads 2012-13 (uncapped then); Scotland used as the country he later played for. Snodgrass and Pilkington given FWD as footballsquads (F).
+Unverified: nothing material.

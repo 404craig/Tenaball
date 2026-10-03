@@ -1,0 +1,7 @@
+Luton 2023/24 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25, fewest-appearances 25; merged StatMuse union 28; 11v11 PL squad page 28; rows written 28
+Club PL goals: 52 (Wikipedia 2023-24 Premier League table)
+Own goals for: 3 (StatMuse own-goals-vs-luton-town query: Emiliano Martinez (Aston Villa), Jack Robinson and Anis Ben Slimane (Sheffield Utd)); Wikipedia Luton season page summary named Robinson and Ben Slimane own goals in one match (summariser mislabelled the opponent)
+Player goals sum: 49; difference (52 - 3 - 49): 0
+Disagreements: none. All 28 players' apps and goals match between StatMuse and 11v11.
+Position/nationality: footballsquads luton.htm only rendered its first 5 rows (Shea, Osho, Potts, Lockyer, Andersen) after repeated tries. Remaining positions/nationalities taken from the Wikipedia 2023-24 Luton Town season squad list (GK/DF/MF/FW mapped to GK/DEF/MID/FWD) or earlier season files (Barkley, Ogbene). Wikipedia lists Chong, Townsend, Ogbene as FW; footballsquads may class Chong and Townsend as M: unconfirmed.

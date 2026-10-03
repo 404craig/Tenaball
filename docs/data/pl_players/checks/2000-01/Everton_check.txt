@@ -1,0 +1,9 @@
+Everton 2000/01 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 31; 11v11 club page (https://www.11v11.com/teams/everton/tab/players/season/2001/comp/1/) = 31; all matched to footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/everton.htm), Dunne and Mark Hughes in its "no longer at club" section.
+Club goals (Wikipedia 2000-01 FA Premier League table): 45
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2000-01-premier-league returns HTTP 422 (no answer); Wikipedia 2000-01 Everton F.C. season page gives own goals 0.
+Player goals sum: 45 (same on StatMuse and 11v11)
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals. (Wikipedia season page summary gave Jeffers 5, Unsworth 4, Ball 2; read via summariser and its own total did not add up; StatMuse and 11v11 agree on Jeffers 6, Unsworth 5, Ball 3, kept.)
+Name notes: Abel Xavier (11v11 "Xavier"); Alec Cleland (11v11 Alex).
+Unverified: own goals = 0 not checked match by match on 11v11.

@@ -1,0 +1,9 @@
+Leicester 1997/98 check
+Player counts: StatMuse player-stats 22, fewest-apps 22 (not capped; most-apps not run since 22 < 25 cap); 11v11 club page (https://www.11v11.com/teams/leicester-city/tab/players/season/1998/comp/1/) 22. Rows = 22.
+Own goals for: 0. StatMuse own-goals query (leicester-city and leicester slugs) returned HTTP 422 (no result). Wikipedia 1997-98 Leicester City season page summary shows no own goals. Player goals equal club goals exactly. Not confirmed match by match.
+Disagreements: 0. All 22 players' apps (11v11 A + S) and goals match StatMuse.
+Nationality: reused spellings from other seasons; new players (Claridge, McMahon, Watts) from 11v11 Nat column.
+Club goals (Wikipedia 1997-98 FA Premier League table (https://en.wikipedia.org/wiki/1997%E2%80%9398_FA_Premier_League)): 51.
+Own goals for: 0 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-1997-98-premier-league).
+Player goals sum: 51. 51 - 0 = 51. Difference: 0.
+Positions from footballsquads https://www.footballsquads.co.uk/eng/1997-1998/faprem/leicester.htm (season-specific; includes players no longer at club).

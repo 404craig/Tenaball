@@ -1,0 +1,13 @@
+Huddersfield 2017/18 Premier League check
+StatMuse: player-stats 25, most-appearances 25, fewest-appearances 25 (all three same 25 players, so not truncated in practice); union 25
+11v11 PL club page (https://www.11v11.com/teams/huddersfield-town/tab/players/season/2018/comp/1/): 25 players
+Rows written: 25. Player sets identical in both sources; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Position/nationality: https://www.footballsquads.co.uk/eng/2017-2018/faprem/hudders.htm (all 25 found)
+Club PL goals (Wikipedia 2017-18 Premier League table): 28
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-huddersfield-town-2017-18-premier-league): Joel Ward (Crystal Palace), Nicolas Otamendi (Man City), Steve Cook (Bournemouth). Cook confirmed by premierleague.com report https://www.premierleague.com/news/621340 (Huddersfield 4-1 Bournemouth). Ward and Otamendi from StatMuse only.
+Player goals sum: 25. Club goals minus own goals: 25. Difference: 0
+Disagreements (apps/goals): none between StatMuse and 11v11. Wikipedia season page summary credited Danny Williams 1 PL goal; 11v11 player page shows 0 PL goals (1 FA Cup), StatMuse 0; used 0.
+Naming/nationality notes:
+- Kachunga: footballsquads GER, kept DR Congo to match 2018/19 file
+- Sabiri: footballsquads MAR, kept Germany to match 2018/19 file
+Unverified: Ward and Otamendi own goals not independently confirmed beyond StatMuse (total still reconciles exactly)

@@ -1,0 +1,11 @@
+Southampton 1998/99 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (31 unique merged); 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/1999/comp/1/) = 31; all 31 in footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/southam.htm; Palmer in no-longer-at-club section).
+Club goals (Wikipedia 1998-99 FA Premier League table): 37
+Own goals for: 1 (Robbie Earle (Wimbledon) 8 May 1999), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1998-99-premier-league. Wikipedia 1998-99 Southampton season goalscorer list sums to 36 with Le Tissier 6, consistent with 1 own goal. The 11v11 match page (https://www.11v11.com/matches/wimbledon-v-southampton-08-may-1999-24071/) instead credits Matt Le Tissier (84 min) and Beattie (72 min).
+Player goals sum: 36
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 agree for all 31 players.
+Disagreements: 1. Matt Le Tissier goals StatMuse 6 and Wikipedia 6 vs 11v11 7 (Wimbledon 8 May 1999 goal). Resolved 6 with og_for 1 (StatMuse + Wikipedia).
+Names: Matt Le Tissier (full Matthew Le Tissier), Egil Ostenstad (full Egil Johan Østenstad), Marian Pahars (full Marians Pahars), spellings as used in other seasons.
+Positions from footballsquads 1998-1999 (Le Tissier F, Ripley M, Warner D). Nationality from 11v11 club page / other seasons.
+Unverified: the Wimbledon 8 May 1999 second goal attribution (Earle own goal vs Le Tissier) has conflicting sources; Wikipedia match narrative did not name the scorers.

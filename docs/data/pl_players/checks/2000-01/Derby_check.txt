@@ -1,0 +1,10 @@
+Derby 2000/01 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 32; 11v11 club page (https://www.11v11.com/teams/derby-county/tab/players/season/2001/comp/1/) = 32; all matched to footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/derby.htm), Schnoor, Sturridge and Bohinen in its "no longer at club" section.
+Club goals (Wikipedia 2000-01 FA Premier League table): 37
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-derby-county-2000-01-premier-league returns HTTP 422 (no answer); Wikipedia 2000-01 Derby County season results table flags no own goals.
+Player goals sum: 37 (same on StatMuse and 11v11)
+Difference (club goals - og - player goals): 0
+Disagreements: none on apps or goals.
+Name notes: Bjorn Otto Bragstad (StatMuse Bjørn Bragstad); Thordur Gudjonsson (full name Þórður Guðjónsson); Kinkladze (footballsquads Georgiou).
+Nationality: Danny Higginbotham listed GIB on 11v11 (later Gibraltar international); England kept to match the spelling used for him in all other seasons.
+Unverified: own goals = 0 rests on StatMuse 422, Wikipedia match table and the goals total; no match-by-match 11v11 check.

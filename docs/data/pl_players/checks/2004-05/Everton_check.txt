@@ -1,0 +1,8 @@
+Everton 2004/05 check
+Player count per source: StatMuse player-stats 22, most-apps 22, fewest-apps 10 (answer limited to bottom 10, all consistent); merged StatMuse 22. 11v11 club page https://www.11v11.com/teams/everton/tab/players/season/2005/comp/1/ 22 (total = A + S). footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/everton.htm: all 22 present (Campbell, Gravesen, Chadwick in 'no longer at club'). Final rows: 22.
+Club PL goals: 45, Wikipedia 2004-05 FA Premier League table.
+Own goals for: 2, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2004-05-premier-league: Radhi Jaidi (Bolton, 4 Dec 2004, Everton 3-2 Bolton, 11v11 https://www.11v11.com/matches/everton-v-bolton-wanderers-04-december-2004-26834/) and Gary Doherty (Norwich, 2 Feb 2005, Everton 1-0 Norwich, 11v11 https://www.11v11.com/matches/everton-v-norwich-city-02-february-2005-27485/, Dubious Goals Committee changed it from Ferguson).
+Player goals sum: 43. 45 - 2 - 43 = 0.
+Disagreements: none; all 22 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2004-05 (no nationality column; Cahill listed M, McFadden F). Nationality: reused other seasons' spellings; Nick Chadwick (England) from 11v11.
+Unverified: nothing outstanding.

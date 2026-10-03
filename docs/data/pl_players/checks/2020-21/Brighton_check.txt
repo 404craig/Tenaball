@@ -1,0 +1,9 @@
+Club: Brighton 2020/21
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 27 unique (Bissouma, Lamptey missing from player-stats list). 11v11 PL club page 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 40. Club PL goals source: https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League league table.
+Own goals for: 1 (Jake Livermore, West Brom, Brighton 1-1 West Brom, 26 Oct 2020; StatMuse own-goals query, confirmed on 11v11 match page https://11v11.com/matches/brighton-and-hove-albion-v-west-bromwich-albion-26-october-2020-367372/). Wikipedia season page summariser did not mention it.
+Player goals sum: 39
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2020-2021/engprem/brighton.htm is truncated after 4 rows (Lamptey, White, Webster, Dunk), as for other seasons. Other players taken from footballsquads-based entries for the same players in other seasons' files; Jahanbakhsh, Zeqiri, Propper, Molumby, Izquierdo, Tau, Khadra, Mat Ryan from the Wikipedia 2020-21 Brighton season squad table (Ryan also on footballsquads Arsenal page as AUS G); Bernardo DEF from 11v11 (Defender/Midfielder) though Wikipedia summary said MF. Lamptey ENG on footballsquads, Ghana used for consistency.
+Unverified: positions for players not on the readable footballsquads rows.

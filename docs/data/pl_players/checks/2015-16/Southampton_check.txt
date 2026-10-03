@@ -1,0 +1,10 @@
+Club: Southampton 2015/16
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 24 rows returned; union 26 (adds van Dijk). 11v11 PL club page (https://www.11v11.com/teams/southampton/tab/players/season/2016/comp/1/) 26 (A+S). Same 26 players.
+Disagreements: 1.
+- Dusan Tadic goals: StatMuse 8, 11v11 7. 11v11 match page (Southampton 3-1 Swansea, 26 Sep 2015) credits the 54th minute goal as Ki Sung-yueng own goal; Wikipedia player page (8 league goals) and Wikipedia season results (Tadic scorer vs Swansea) credit Tadic. Used 8 (StatMuse + Wikipedia). Under 11v11's version Tadic 7 and own goals for 2; club total balances either way.
+Club PL goals: 59 (Wikipedia 2015-16 Premier League table).
+Own goals for: 1 (Carl Jenkinson, West Ham, 28 Dec 2015), StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-2015-16-premier-league, confirmed by Wikipedia season page. (11v11 additionally counts Ki Sung-yueng, see above.)
+Player goals sum: 58
+Difference: 0 (59 - 1 - 58)
+Position/nationality: https://www.footballsquads.co.uk/eng/2015-2016/faprem/southam.htm (Caulker, Ramirez in players no longer at club). Caulker ENG there; Sierra Leone used (later senior caps; 11v11 SLE). Targett ENG there (11v11 shows SCO); England used. Jay Rodriguez full_name reused from later seasons.
+Unverified: none beyond Tadic credit question.

@@ -1,0 +1,8 @@
+Middlesbrough 2005/06 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25, fewest-apps 25; merged 37 (most-apps adds Yakubu, Parnaby, Ehiogu, Maccarone, Bates, Parlour, Downing; fewest-apps adds Craddock, Turnbull, McMahon, Reiziger, Nemeth). 11v11 club page 37 (total = A+S). footballsquads 2005-06 (/faprem/middles.htm): all 37 present (Reiziger, Job, Xavier, Nemeth in "no longer at club").
+Club PL goals: 48 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/).
+Own goals for: 1, Ronnie Wallwork (West Brom), 26 Feb 2006, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2005-06-premier-league; confirmed by 11v11 match page https://www.11v11.com/matches/west-bromwich-albion-v-middlesbrough-26-february-2006-272145/ (Dubious Goals Committee took it off Hasselbaink).
+Player goals sum: 47. 48 - 1 - 47 = 0.
+Disagreements: none (all 37 apps and goals match between StatMuse and 11v11).
+Positions from footballsquads 2005-06; nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: nothing material (Doriva full_name left as the single name the sources use).

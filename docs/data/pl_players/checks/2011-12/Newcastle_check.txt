@@ -1,0 +1,10 @@
+Newcastle 2011/12 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (newcastle-united slug); 11v11 PL club page https://www.11v11.com/teams/newcastle-united/tab/players/season/2012/comp/1/; Wikipedia 2011-12 Newcastle season page.
+Player count: final rows 26; StatMuse merged 26 (player-stats 25, most 25, fewest 25; Cabaye missing from player-stats, Barton only in fewest); 11v11 club page 26.
+Club goals (Wikipedia 2011-12 Premier League table): 56
+Own goals for: 5 (Daniel Agger (Liverpool), John Heitinga (Everton), Tony Hibbert (Everton), Phil Jones (Man Utd), Scott Dann (Blackburn)). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2011-12-premier-league. Wikipedia season page summary gave 4 own goals (spec notes Wikipedia is often off by 1); StatMuse 5 reconciles exactly.
+Player goals sum: 51
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 26 players match on apps and goals between StatMuse and 11v11.
+SOURCE PROBLEM: footballsquads eng/2011-2012/faprem/newcas.htm could not be read (summariser returned only the page header, three attempts), as in other seasons. Position/nationality reused from earlier-season CSVs where the player exists; Leon Best (FWD Republic of Ireland) and Peter Lovenkrands (FWD Denmark) from the Wikipedia 2011-12 season squad list; Alan Smith (MID England) from his Wikipedia page.
+Unverified: own goals count 5 rests on StatMuse plus exact reconciliation (Wikipedia summary said 4, not confirmed on 11v11 match pages). Newcastle positions/nationalities not checked on footballsquads.

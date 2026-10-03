@@ -1,0 +1,10 @@
+Club: Birmingham 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap, read on retry after HTTP 429), fewest-appearances 25 (cap); merged 26 unique players. 11v11 PL club page (https://www.11v11.com/teams/birmingham-city/tab/players/season/2011/comp/1/) 26 (starts + subs). Same 26 players.
+Club PL goals: 37 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (birmingham-city and birmingham slugs) returned HTTP 422 (no rows). Wikipedia season page summary mentioned two own goals (Carr at Sunderland 14 Aug 2010, Dann at West Brom 18 Sep 2010) but 11v11 match pages (https://www.11v11.com/matches/sunderland-v-birmingham-city-14-august-2010-290109/ and https://www.11v11.com/matches/west-bromwich-albion-v-birmingham-city-18-september-2010-290403/) show both were own goals AGAINST Birmingham. Player goals sum equals club goals.
+Player goals sum: 37
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/birmin.htm. Spellings reused from other seasons where present.
+Unverified: own goals for = 0 rests on StatMuse 422 plus goals total; no positive own-goal list found.

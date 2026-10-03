@@ -1,0 +1,9 @@
+Newcastle 2006/07 check
+Player count per source: StatMuse 29 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: most/fewest add Steven Taylor, Stephen Carr, Steve Harper, Titus Bramble); 11v11 club page https://www.11v11.com/teams/newcastle-united/tab/players/season/2007/comp/1/ 29 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/newcas.htm: all 29 present (Rossi in "no longer at club").
+Club PL goals: 38 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia 2006-07 Premier League table rows could not be extracted).
+Own goals for: 0. https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2006-07-premier-league returned HTTP 422 (no result); Wikipedia 2006-07 Newcastle United season page gives no own goals in Newcastle's favour.
+Player goals sum: 38. 38 - 0 - 38 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Milner M, Solano M, Rossi F, Sibierski M).
+Nationality: footballsquads 2006-07 has no nationality column. Reused from other seasons' CSVs; new players from the 11v11 club page Nat column: Babayaro NGA, Huntington ENG, Luque ESP, Craig Moore AUS, Alan O'Brien IRL, Onyewu USA, Pattison RSA, Rossi ITA, Srnicek CZE.
+Unverified: zero own goals rests on StatMuse returning no result plus Wikipedia silence; it reconciles exactly with the club total.

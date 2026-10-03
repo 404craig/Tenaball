@@ -1,0 +1,7 @@
+Leeds 1996/97 Premier League check
+Player count per source: StatMuse player-stats 25 (capped), fewest-apps 25; merged StatMuse 30 (most-apps not run: 11v11 club page fully covers). 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/1997/comp/1/) 30. footballsquads (faprem/leeds.htm) lists all 30.
+Club goals: 28 (11v11 final table 01-june-1997)
+Own goals for: 1 (Jacob Laursen, Derby, 17 Aug 1996) source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1996-97-premier-league ; confirmed by 11v11 match page https://www.11v11.com/matches/derby-county-v-leeds-united-17-august-1996-22556/
+Player goals sum: 27. 28 - 1 - 27 = 0.
+Disagreements: 0 (apps and goals agree for all 30).
+Unverified: none.

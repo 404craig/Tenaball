@@ -1,0 +1,8 @@
+Liverpool 2007/08 check
+Player count per source: StatMuse 25 (player-stats, most-apps and fewest-apps all return the same 25; fewest list runs up to Reina 38 apps so the set is complete); 11v11 club page 25 (Apps column = starts, Starts column = subs; totals = sum); footballsquads roster: all 25 present (Hobbs and Sissoko in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 67
+Own goals for: 3 (Jussi Jaaskelainen, Bolton; Martin Laursen, Aston Villa; Sylvain Distin, Portsmouth) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2007-08-premier-league
+Player goals sum: 64. 67 - 3 - 64 = 0.
+Disagreements: none (all 25 match on apps and goals).
+Positions from footballsquads 2007-08 (Riise M, Kewell F this season). The footballsquads Liverpool 2007-08 page has no nationality column, so nationality is from the 11v11 club page, consistent with earlier-season files.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but totals reconcile exactly.

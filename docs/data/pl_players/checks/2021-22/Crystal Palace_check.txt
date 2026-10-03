@@ -1,0 +1,10 @@
+Season 2021/22, Crystal Palace
+Player count per source: StatMuse union of 3 pages 24 (player-stats 24, most-apps 24, fewest-apps 24); 11v11 PL squad page 24; final rows 24.
+Sources: StatMuse https://www.statmuse.com/fc/ask/crystal-palace-premier-league-player-stats-2021-22 , -players-most-appearances-2021-22 , -players-fewest-appearances-2021-22 (all three read); 11v11 https://www.11v11.com/teams/crystal-palace/tab/players/season/2022/comp/1/
+Club PL goals: 50 (Wikipedia 2021-22 Premier League table)
+Own goals for: 0. StatMuse players-with-own-goals-vs-crystal-palace-2021-22-premier-league returned HTTP 422 (two URL variants tried). Wikipedia 2021-22 Crystal Palace season goalscorer table: no own-goals row, PL total 50 (the only o.g. noted there is Milivojevic's for Watford, i.e. against Palace). Player sum 50 equals club goals.
+Player goals sum: 50
+Difference (club goals - og - player goals): 0
+Disagreements: none. Every player matched on apps and goals between StatMuse and 11v11 (Remi Matthews not listed by either).
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2021-2022/engprem/cpalace.htm. Names, full names, surnames and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (display name with accents used where unsure).

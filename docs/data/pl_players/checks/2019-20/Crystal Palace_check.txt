@@ -1,0 +1,15 @@
+Club: Crystal Palace 2019/20
+Players per source: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25; all three are the identical 25 players (fewest list starts at 1 app, most list ends at 1 app), so the squad is complete at 25.
+11v11 PL club page (https://www.11v11.com/teams/crystal-palace/tab/players/season/2020/comp/1/): NOT READ, proxy HTTP 429 with instruction not to refetch.
+Second source used instead: Wikipedia 2019-20 Crystal Palace F.C. season stats table: 24 players with PL apps shown (plus Sam Woods 0 apps); all 24 match StatMuse apps and goals. Victor Camarasa (not shown by summariser) confirmed via Wikipedia Victor Camarasa career table: Palace 2019-20 PL 1 app, 0 goals.
+Club PL goals: 31 (Wikipedia 2019-20 Premier League table).
+Own goals for: 2 (Leander Dendoncker, Wolves, Palace 1-1 Wolves Sep 2019; Fernandinho, Man City 2-2 Palace Jan 2020). Source: StatMuse own-goals vs Crystal Palace query; Wikipedia season goalscorers table shows 2 PL own goals; web search headlines (e.g. "Fernandinho own-goal costs Manchester City more points") corroborate.
+Player goals sum: 29
+Difference: 0
+Disagreements: none.
+Position/nationality: https://www.footballsquads.co.uk/eng/2019-2020/engprem/cpalace.htm (Camarasa and Wickham in players no longer at club). Spellings reused from earlier-season files.
+Unverified: no 11v11 confirmation this season (rate limited); sources_agree=yes rests on StatMuse plus Wikipedia.
+
+
+VERIFIED (2026-10-02)
+11v11 PL club page read (https://www.11v11.com/teams/crystal-palace/tab/players/season/2020/comp/1/): 25 players, all 25 rows match on apps and goals. No player missing. No changes to figures. Goals diff 0.

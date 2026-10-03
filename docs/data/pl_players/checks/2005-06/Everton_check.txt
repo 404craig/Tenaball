@@ -1,0 +1,8 @@
+Everton 2005/06 check
+Player count per source: StatMuse 28 merged (player-stats 25, missing Anichebe, Cahill, Hibbert; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/everton/tab/players/season/2006/comp/1/ 28 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2005-2006/faprem/everton.htm: all 28 present (Marcus Bent, Kroldrup, Westerveld in "no longer at club").
+Club PL goals: 11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2006/, also Wikipedia 2005-06 Everton F.C. season: 34
+Own goals for: 2, Andy O'Brien (Portsmouth, 14 Jan 2006, Portsmouth 0-1 Everton) and David Thompson (Wigan, 31 Jan 2006, Wigan 1-1 Everton), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2005-06-premier-league, confirmed by Wikipedia 2005-06 Everton F.C. season results.
+Player goals sum: 32. 34 - 2 - 32 = 0.
+Disagreements: none; all 28 players' apps and goals match between StatMuse and 11v11. (Wikipedia scorer list omits Anichebe, Bent, Ferguson 1 each; not trusted over two agreeing sources.)
+Positions: footballsquads 2005-06. Nationality: reused other seasons' spellings; new players (Ferguson, Ferrari, Kroldrup, Martyn, Pistone, Westerveld) from 11v11.
+Unverified: nothing outstanding.

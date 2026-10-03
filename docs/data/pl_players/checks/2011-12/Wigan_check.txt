@@ -1,0 +1,7 @@
+Wigan 2011/12 check
+Player count per source: StatMuse player-stats 23, most-appearances 23, fewest-appearances 23 (same 23, under the 25 cap so complete); 11v11 PL club page 23; footballsquads 2011/12 lists all 23.
+Club PL goals: 42 (Wikipedia 2011-12 Premier League table).
+Own goals for: 1. Phil Neville (Everton) 4 Feb 2012, from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2011-12-premier-league; confirmed by 11v11 match page https://www.11v11.com/matches/wigan-athletic-v-everton-04-february-2012-296648/ (Neville og 76). Wikipedia season page (via summariser) did not mention it; its player total is 41.
+Player goals sum: 41. Difference (42 - 1 - 41): 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 23. Name forms: StatMuse Crusat / Piscu, 11v11 Albert Crusat / Adrian Lopez.
+Unverified: nothing.

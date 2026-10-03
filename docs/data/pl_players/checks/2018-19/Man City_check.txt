@@ -1,0 +1,9 @@
+Club: Man City 2018/19
+Players per source: StatMuse player-stats 21 (under cap, complete). Most/fewest-appearances queries not run: under cap and 11v11 fully covers the squad. 11v11 PL club page 21 (A+S). Same 21 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 95 (Wikipedia 2018-19 Premier League table).
+Own goals for: 4 (Conor Coady, Wolves; James Ward-Prowse, Southampton; Terence Kongolo, Huddersfield; Wesley Hoedt, Southampton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2018-19-premier-league
+Player goals sum: 91
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm. Footballsquads gives Laporte FRA; Spain used (his senior team, as in later files). Sterling, Sane, Mahrez MID as footballsquads gives M. Danilo here is Danilo (Brazil right back), not the Forest Danilo in later files; full name left as Danilo.
+Unverified: own goals for from StatMuse only, consistent with goal sum.

@@ -1,0 +1,10 @@
+Club: Liverpool 2011/12
+Players: StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); merged union 26. 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2012/comp/1/) 26. Same 26 players.
+Club PL goals: 47 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 5 (Aaron Ramsey, Arsenal; Joleon Lescott, Man City; Laurent Koscielny, Arsenal; Michael Essien, Chelsea; Roger Johnson, Wolves). StatMuse: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2011-12-premier-league. Confirmed by Wikipedia 2011-12 Liverpool F.C. season goalscorers table (Own goals, Premier League: 5).
+Player goals sum: 42
+Difference (club goals - og_for - player goals): 0
+Rows: 26
+Disagreements: none on apps or goals (all 26 match between StatMuse and 11v11).
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/liverpool.htm
+Unverified: nothing material.

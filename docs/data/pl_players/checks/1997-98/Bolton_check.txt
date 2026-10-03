@@ -1,0 +1,8 @@
+Bolton 1997/98 check
+Player counts: StatMuse player-stats 25 (capped; Robbie Elliott, Steve McAnespie, Scott Sellars missing), most-apps 25 (Aljofree, McAnespie, Giallanza missing), fewest-apps 25 (Frandsen, Bergsson, Blake missing); union 28. 11v11 club page (https://www.11v11.com/teams/bolton-wanderers/tab/players/season/1998/comp/1/) 28 (A+S). Rows = 28.
+Club goals (Wikipedia 1997-98 FA Premier League table): 41.
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-bolton-wanderers-1997-98-premier-league) returned HTTP 422 (no result). Wikipedia season page (https://en.wikipedia.org/wiki/1997%E2%80%9398_Bolton_Wanderers_F.C._season) shows no own goals in Bolton's favour in the league (only one in the League Cup).
+Player goals sum: 41. 41 - 0 = 41. Difference: 0.
+Disagreements: 0. All 28 players' apps and goals match between StatMuse and 11v11.
+Positions from footballsquads 1997-1998/faprem/bolton.htm (Fish M, Gunnlaugsson M, McAnespie D; footballsquads spells "Hansey Aljofree" and "Gaetano Gallianza", 11v11/StatMuse spellings Hasney Aljofree and Gaetano Giallanza used). Nationality reused from other seasons or from 11v11 Nat column.
+Unverified: nothing outstanding.

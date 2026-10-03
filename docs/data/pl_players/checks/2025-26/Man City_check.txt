@@ -1,0 +1,35 @@
+Man City 2025/26 Premier League check
+Player count: StatMuse 25 (both stats and appearances queries return exactly 25 rows; Rayan Cherki missing, list appears capped); Wikipedia summary 23 plus 3 more confirmed on a second ask; 11v11 confirms Cherki and Alleyne; final 26; footballsquads 81 listed squad/ex-squad (all 26 present); ESPN 0 (unreadable).
+Club PL goals (Wikipedia 2025-26 Premier League table): 77
+Own goals for: 3 (Wikipedia season page)
+Sum of player goals: 74
+Difference: 0
+Disagreements (10), all apps:
+- Nunes, Reijnders, Dias, Marmoush, Ake, Ait-Nouri, Savinho, Rodri, Semenyo: Wikipedia summary 1 higher than StatMuse in each case; 11v11 player pages match StatMuse every time. Used StatMuse.
+- Max Alleyne: Wikipedia summary 0, StatMuse 2, 11v11 2. Used 2.
+- Rayan Cherki: not in StatMuse; Wikipedia summary 34 apps 4 goals; 11v11 19+14=33 apps, 4 goals. Used 33 (Wikipedia summary has a consistent +1 error on this page).
+Excluded: Kalvin Phillips. Wikipedia summary claimed 1 PL app; StatMuse does not list him and 11v11 shows 0 appearances all competitions. Treated as not appeared; flag for check.
+Unverified: Wikipedia figures came via a page summariser and look unreliable for this club.
+ESPN (league filter, season 2025): page returned no content via WebFetch for this club; no ESPN figures recorded.
+11v11 team page: shows starts only, not usable as an all-competition ceiling; 11v11 player pages (Apps=starts, Subs=sub apps) used as tie-breaker.
+
+Follow-up (2026-10-02):
+- Kalvin Phillips: RESOLVED, 0 PL apps. beIN Sports report of his loan to Sheffield United (2 Feb 2026): "The midfielder has featured just once for Pep Guardiola's side this term, coming off the bench in its Carabao Cup win over Huddersfield in the third round." He was then on loan for the rest of the season. StatMuse does not list him. Wikipedia summary's 1 PL app was wrong. Exclusion stands; CSV unchanged. (11v11 showing 0 all comps misses the League Cup sub, which does not affect PL.)
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/manchester-city/tab/players/season/2026/comp/1/ (A=starts, S=subs): 27 players; every row apps (A+S) and goals match the CSV.
+- Added Divine Mukasa (MID, England, 2 apps, 0 goals): StatMuse fewest-appearances and 11v11 club page agree; footballsquads mancity.htm M ENG
+- Nathan Ake: sources_agree partial -> yes (StatMuse 18/0, 11v11 club page 6+12=18/0)
+- Rayan Ait-Nouri: sources_agree partial -> yes (StatMuse 17/0, 11v11 club page 12+5=17/0)
+- Rayan Ait-Nouri: surname Ait-Nouri -> Aït-Nouri (spelling used for same player in other seasons)
+- Rodri: sources_agree partial -> yes (StatMuse 21/1, 11v11 club page 17+4=21/1)
+- Ruben Dias: sources_agree partial -> yes (StatMuse 26/2, 11v11 club page 24+2=26/2)
+- Antoine Semenyo: sources_agree partial -> yes (StatMuse 17/7, 11v11 club page 17+0=17/7)
+- Matheus Nunes: sources_agree partial -> yes (StatMuse 34/1, 11v11 club page 32+2=34/1)
+- Max Alleyne: sources_agree partial -> yes (StatMuse 2/0, 11v11 club page 2+0=2/0)
+- Savinho: sources_agree partial -> yes (StatMuse 24/1, 11v11 club page 7+17=24/1)
+- Omar Marmoush: sources_agree partial -> yes (StatMuse 21/3, 11v11 club page 8+13=21/3)
+- Tijjani Reijnders: sources_agree partial -> yes (StatMuse 28/5, 11v11 club page 19+9=28/5)
+- Rayan Cherki: sources_agree partial -> yes (StatMuse 33/4, 11v11 club page 19+14=33/4)
+- StatMuse fewest-appearances query now read: confirms Cherki 33/4 and Mukasa 2/0, so all rows two-source.
+Rows 27; player goals 74; club goals 77; own goals for 3; difference 0. All rows sources_agree=yes.

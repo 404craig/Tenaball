@@ -1,0 +1,9 @@
+Club: Aston Villa 2020/21
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (under cap, full squad); merged 24. 11v11 PL club page 24 (A+S). Same 24 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 55. Club PL goals source: https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League league table.
+Own goals for: 3 (Bukayo Saka, Arsenal 0-3 Villa, 8 Nov 2020; Ciaran Clark, Newcastle 1-1 Villa, 12 Mar 2021; Sergio Reguilon, Spurs 1-2 Villa, 19 May 2021). Source StatMuse own-goals query; Wikipedia 2020-21 Aston Villa season scorers table shows 3 own goals; Clark confirmed by avdb.co.uk match page, Reguilon by spursodyssey.com report.
+Player goals sum: 52
+Difference: 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2020-2021/engprem/avilla.htm (Trezeguet listed as Mahmoud Hassan). Hourihane not on that page (no departed-players section readable); IRL/Midfielder taken from 11v11 club page. Matty Cash ENG on footballsquads, Poland used for consistency with later seasons. 11v11 gives Chukwuemeka AUT and Targett SCO; footballsquads ENG used.
+Unverified: Hourihane position/nationality only from 11v11.

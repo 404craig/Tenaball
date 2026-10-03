@@ -1,0 +1,14 @@
+West Ham 1996/97 Premier League check
+Player count: StatMuse (slug west-ham-united) player-stats 25, most-apps 25, fewest-apps 25 (32 unique merged: most-apps added Breacker, Lazaridis, Potts, Steve Jones; fewest-apps added Mautone, Cottee, Lomas); 11v11 club page (https://www.11v11.com/teams/west-ham-united/tab/players/season/1997/comp/1/) = 32 (A starts + S subs), same players. All 32 on footballsquads (https://www.footballsquads.co.uk/eng/1996-1997/faprem/westham.htm); Slater, Cottee, Futre, Dumitrescu, Raducioiu, Newell, Jones, Mautone, Bowen in no-longer-at-club section.
+Club goals (Wikipedia 1996-97 FA Premier League table): 39
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-1996-97-premier-league) lists Henning Berg (Blackburn) and Matthew Rose (Arsenal). Wikipedia 1996-97 West Ham season page confirms Berg og (v Blackburn, 26 Oct 1996); Rose og single-source (StatMuse).
+Player goals sum: 37
+Difference (club goals - og - player goals): 0
+Rows: 32
+Disagreements: 3.
+- Steve Lomas goals: StatMuse 1 vs 11v11 0 and Wikipedia 0; used 0 (StatMuse player goals 38 + its own 2 ogs would give 40, above the club's 39).
+- Tim Breacker apps: 11v11 club and player page 26 (22+4) vs StatMuse 25 and Wikipedia 25 (22+3). Used 26 (11v11 tie-break per spec); flagged partial.
+- Keith Rowland apps: 11v11 club and player page 15 (11+4) vs StatMuse 14 and Wikipedia 14 (11+3). Used 15 (11v11 tie-break per spec); flagged partial.
+Names: Marc Rieper (11v11 Rieper-Jonsen), Manny Omoyinmi (footballsquads Emmanuel), Ludek Miklosko, Slaven Bilic, Florin Raducioiu, Hugo Porfirio accents removed in player. Spellings reused from other seasons.
+Positions from footballsquads 1996-1997 (Dumitrescu M, Futre F, Rowland D). Nationality from 11v11 club page (Ireland Republic recorded Republic of Ireland).
+Unverified: Breacker and Rowland sub apps not confirmed at match level; Rose og single-source.

@@ -1,0 +1,10 @@
+Club: Man Utd 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Rooney, Giggs, Brown, Kuszczak only in most/fewest; De Laet only in fewest). 11v11 PL club page (https://www.11v11.com/teams/manchester-united/tab/players/season/2010/comp/1/) 30. Same 30 players.
+Club PL goals: 86 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 10 (Abou Diaby, Arsenal; Andy Dawson, Hull; Anthony Vanden Borre, Portsmouth; Anton Ferdinand, Sunderland; Danny Higginbotham, Stoke; James Collins, Aston Villa; Jlloyd Samuel, Bolton; Marc Wilson, Portsmouth; Scott Dann, Birmingham; Zat Knight, Bolton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2009-10-premier-league. Wikipedia 2009-10 Manchester United season page (via summariser) named 7 own goals in league results (Diaby, Knight, A. Ferdinand, Dann, Vanden Borre, Wilson, plus "Richard Hughes"); summariser output incomplete. Both StatMuse and 11v11 player goals sum to 76, and 76 + 10 = 86, so 10 is used.
+Player goals sum: 76
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/manutd.htm. Spellings reused from other seasons (Fabio / Fábio da Silva, Rafael / Rafael da Silva, Park Ji-sung, Antonio Valencia, Danny Welbeck). Obertan FWD per footballsquads 2009-10.
+Unverified: identities of 4 of the 10 own goals (Dawson, Higginbotham, Collins, Samuel not named by the Wikipedia summariser) rest on StatMuse plus goal arithmetic.

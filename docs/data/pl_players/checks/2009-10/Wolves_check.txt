@@ -1,0 +1,10 @@
+Wolves 2009/10 Premier League check
+Player counts: StatMuse merged (player-stats, most-appearances, fewest-appearances; each capped at 25) = 29; 11v11 club page = 29; all 29 players listed by both.
+Sources: https://www.statmuse.com/fc/ask/wolverhampton-wanderers-premier-league-player-stats-2009-10 ; https://www.11v11.com/teams/wolverhampton-wanderers/tab/players/season/2010/comp/1/
+Positions and nationality: https://www.footballsquads.co.uk/eng/2009-2010/faprem/wolves.htm
+Club PL goals (Wikipedia 2009-10 Premier League table): 32
+Own goals for: 4 (Anthony Gardner (Hull), Clarke Carlisle (Burnley), James Milner (Aston Villa), John Mensah (Sunderland)); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2009-10-premier-league
+Player goals sum: 28
+Difference (club goals - own goals for - player goals): 0
+Disagreements: apps and goals agree between StatMuse and 11v11 for every player (0 disagreements).
+Own goals note: StatMuse own-goals list used; the Wikipedia season page summary did not list own goals, so no independent second confirmation, but the count reconciles exactly with club goals minus player goals.

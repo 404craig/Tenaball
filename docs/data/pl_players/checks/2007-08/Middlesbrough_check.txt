@@ -1,0 +1,11 @@
+Club: Middlesbrough 2007/08
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Downing, Tuncay only in most list; McMahon, Yakubu, Craddock only in fewest list). 11v11 PL club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/2008/comp/1/) 30 players (starts + subs). Same 30 players.
+Club PL goals: 43 (https://en.wikipedia.org/wiki/2007%E2%80%9308_Premier_League league table).
+Own goals for: 0. StatMuse query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2007-08-premier-league returned HTTP 422 (no result). Wikipedia 2007-08 Middlesbrough season page (summariser) lists no Premier League own goals in Middlesbrough's favour (only an FA Cup own goal by Jake Buxton, Mansfield). Player goals sum equals club goals.
+Player goals sum: 43
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none between StatMuse and 11v11 (apps = starts + subs, goals). Wikipedia summariser gave David Wheater 4 league goals; StatMuse and 11v11 both give 3 and the sum then matches 43, so 3 kept.
+Position source: https://www.footballsquads.co.uk/eng/2007-2008/faprem/middles.htm (Yakubu, Andrew Davies, Woodgate, Hutchinson in "no longer at club"). Julio Arca listed D there, so DEF.
+Nationality: footballsquads 2007/08 page has no nationality column; reused from earlier-season CSVs except Lee Dong-gook (born Pohang, South Korea), Fabio Rochemback (born Soledade, Brazil), Tom Craddock (born Darlington, England), Ben Hutchinson (born Nottingham, England), from footballsquads birth place.
+Unverified: own goals for = 0 not confirmed by a positive StatMuse listing (422); supported by the Wikipedia page and the goal sum.

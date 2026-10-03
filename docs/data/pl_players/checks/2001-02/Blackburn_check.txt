@@ -1,0 +1,8 @@
+Blackburn 2001/02 check
+Player counts: StatMuse player-stats 25 (capped; Tugay and Yordi missing), most-apps 25, fewest-apps 25 (union 27); 11v11 club page 27. Union = 27 rows.
+Club goals (Wikipedia 2001-02 FA Premier League table): 55
+Own goals for: 3 (David Beckham, Man Utd; Giovanni van Bronckhorst, Arsenal; Grant McCann, West Ham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2001-02-premier-league. Beckham (22 Aug 2001) and van Bronckhorst (20 Oct 2001) confirmed by Wikipedia 2001-02 Blackburn Rovers season page; McCann (63 min) confirmed on https://www.11v11.com/matches/blackburn-rovers-v-west-ham-united-14-october-2001-9078/.
+Player goals sum: 52. Difference: 55 - 3 - 52 = 0.
+Disagreements: 0. All 27 players' apps (11v11 A+S) and goals match StatMuse; Wikipedia season table also agrees for the players it listed.
+Positions from footballsquads 2001-2002/faprem/blackbrn.htm (Neill M, Hughes F; Blake, McAteer, Bent, Johnson in players no longer at club). Nationality from other-season spellings; new names from 11v11 Nat column: Stig Inge Bjornebye (Norway), Hakan Unsal (Turkey), Mark Hughes (Wales), Yordi (Spain). Mark Hughes here is the Wales forward, not the Mark Hughes in 2006/07 Everton data.
+Unverified: nothing material.

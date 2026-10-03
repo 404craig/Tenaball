@@ -1,0 +1,9 @@
+Leeds 1992/93 Premier League check
+Player count: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 30. 11v11 club page (https://www.11v11.com/teams/leeds-united/tab/players/season/1993/comp/1/) 30. Rows: 30
+Club goals: 57 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 1 (Phil King, Sheffield Wednesday, 4 May 1993) from Wikipedia 1992-93 Leeds United A.F.C. season match list. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1992-93-premier-league) returned HTTP 422 (no result; StatMuse player goals sum to 57, so it credits that goal to a Leeds player). 11v11 club page player goals sum to 56, consistent with 1 og.
+Player goals sum: 56
+Difference (club goals - og - player goals): 0
+Disagreements: 2 (goals). Lee Chapman StatMuse 15 / 11v11 13; Chris Fairclough StatMuse 3 / 11v11 4. Wikipedia statistics table agrees with 11v11 for both: used 13 and 4. All apps match.
+Unverified: King own goal not checked on an 11v11 match page.
+Positions: footballsquads.co.uk has no 1992-93 season (archive starts 1993-94; eng/1992-1993/faprem/ returns 404). Position reused from the earliest existing row for the same player (footballsquads-based, mostly 1993-94); 4 players with no other season take the 11v11 club page position. Nationality reused from other seasons, else 11v11 club page.

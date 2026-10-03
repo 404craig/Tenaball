@@ -1,0 +1,11 @@
+Sunderland 1996/97 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (same 25 players in all three, so list is complete); 11v11 club page (https://www.11v11.com/teams/sunderland/tab/players/season/1997/comp/1/) = 25 (A starts + S subs), same players. All 25 on footballsquads (https://www.footballsquads.co.uk/eng/1996-1997/faprem/sunder.htm).
+Club goals (Wikipedia 1996-97 FA Premier League table): 35
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-1996-97-premier-league) lists Michael Duberry (Chelsea) and Tony Adams (Arsenal); Wikipedia 1996-97 Sunderland season page confirms Duberry og (Sunderland 3-0 Chelsea, 15 Dec 1996) and Adams og (Sunderland 1-0 Arsenal, 11 Jan 1997).
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Rows: 25
+Disagreements: 3, all on apps, StatMuse vs 11v11. Michael Gray StatMuse 35 vs 11v11 34; Craig Russell StatMuse 28 vs 11v11 29; Alex Rae StatMuse 22 vs 11v11 23. Resolved with 11v11 player pages (Gray 31+3, Russell 10+19, Rae 13+10), Wikipedia season page also gives Gray 34 and Russell 29; used 11v11 figures. All goals agree.
+Names: Lionel Perez (full name Lionel Pérez). 11v11 nationality Ireland recorded as Republic of Ireland (Kelly, Quinn).
+Positions from footballsquads 1996-1997 (Stewart M, Mullin M, Williams D, Howey D, Gray D). Nationality from 11v11 club page and earlier-season spellings.
+Unverified: nothing outstanding.

@@ -1,0 +1,8 @@
+Aston Villa 2008/09 check
+Player count per source: StatMuse 21 (all three queries return the same 21, under the 25-row cap); 11v11 club page 21; footballsquads roster: all 21 present.
+Club PL goals (Wikipedia table): 54
+Own goals for: 5 (Damien Duff, Gael Clichy, Kamil Zayatte, Kevin Davies, Lucas Neill) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2008-09-premier-league
+Player goals sum: 49. 54 - 5 - 49 = 0.
+Disagreements: none.
+Nationality notes: Curtis Davies kept England (footballsquads ENG, same as other seasons); 11v11 shows Sierra Leone.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but they reconcile exactly.

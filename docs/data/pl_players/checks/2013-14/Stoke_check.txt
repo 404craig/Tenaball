@@ -1,0 +1,10 @@
+Stoke 2013/14 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25, fewest-appearances 25; merged = 26 players. 11v11 club page (comp 1, season 2014) = 26 players. footballsquads 2013-2014/faprem/stoke.htm used for position and nationality.
+Club goals (Wikipedia 2013-14 Premier League table): 45
+Own goals for: 2 (Gareth McAuley, West Brom, 11 May 2014; Michael Carrick, Man Utd, 1 Feb 2014). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2013-14-premier-league ; confirmed by Wikipedia 2013-14 Stoke City season page.
+Player goals sum: 43. Expected 45 - 2 = 43. Difference: 0.
+Disagreements (3), resolved with 11v11 player pages and Wikipedia:
+- Peter Crouch goals: StatMuse 7, 11v11 club and player page 8, Wikipedia 8. Used 8.
+- Peter Odemwingie goals: StatMuse 6, 11v11 club and player page 5, Wikipedia 5. Used 5.
+- Glenn Whelan apps: StatMuse 31, 11v11 club and player page 32 (28+4), Wikipedia 28(4). Used 32.
+Unverified: nothing outstanding.

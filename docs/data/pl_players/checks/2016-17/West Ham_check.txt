@@ -1,0 +1,12 @@
+West Ham 2016/17 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-ham-united-premier-league-player-stats-2016-17 (+ most-appearances and fewest-appearances queries); 11v11 https://www.11v11.com/teams/west-ham-united/tab/players/season/2017/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2016-2017/faprem/westham.htm (position, nationality).
+Player counts: StatMuse union of the three queries 29 players; 11v11 club page 29 rows (A starts + S subs). Every player's apps and goals match between the two sources.
+Rows written: 29
+Club goals (Wikipedia 2016-17 Premier League table): 47
+Own goals for: 1 (StatMuse own-goals query): Glenn Whelan (Stoke) West Ham 1-1 Stoke 5 Nov 2016, confirmed by 11v11 match page https://www.11v11.com/matches/west-ham-united-v-stoke-city-05-november-2016-351151/ (Whelan OG 65 min).
+Player goals sum: 46
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: footballsquads 2016/17 (G/D/M/F mapped to GK/DEF/MID/FWD). Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Nationality notes: Arthur Masuaku: footballsquads 2016/17 code gives France; reused DR Congo from earlier seasons in this dataset; Michail Antonio: footballsquads 2016/17 code gives England; reused Jamaica from earlier seasons in this dataset; Declan Rice: footballsquads 2016/17 code gives Republic of Ireland; reused England from earlier seasons in this dataset
+Unverified: nothing outstanding.

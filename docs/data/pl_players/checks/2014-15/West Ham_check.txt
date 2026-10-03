@@ -1,0 +1,10 @@
+Club: West Ham 2014/15
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances (top-10 summary); union 28. 11v11 PL club page (https://www.11v11.com/teams/west-ham-united/tab/players/season/2015/comp/1/) 28 (A+S). Same 28 players. Downing, Reid, Vaz Te only in most/fewest StatMuse queries.
+Disagreements: 1.
+- Diafra Sakho goals: StatMuse 9, 11v11 10, Wikipedia season page 10. StatMuse credits Nedum Onuoha (QPR) an own goal on 5 Oct 2014 (West Ham 2-0 QPR) that 11v11 and Wikipedia give to Sakho. Used 10. Not checked on an 11v11 match page.
+Club PL goals: 44 (Wikipedia 2014-15 Premier League table).
+Own goals for: 1 per Wikipedia season page (https://en.wikipedia.org/wiki/2014%E2%80%9315_West_Ham_United_F.C._season, own goals 1 in PL). StatMuse OG query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2014-15-premier-league) lists 2: Curtis Davies (Hull, Hull v West Ham 15 Sep 2014) and Nedum Onuoha (QPR, 5 Oct 2014). Counted Davies only; Onuoha goal credited to Sakho (see above).
+Player goals sum: 43
+Difference: 0 (44 - 1 - 43). Under StatMuse's version: 44 - 2 - 42 = 0 as well.
+Position/nationality: https://www.footballsquads.co.uk/eng/2014-2015/faprem/westham.htm (Diame, Zarate, Vaz Te, Ravel Morrison in players no longer at club). Ravel Morrison set to Jamaica for consistency with later seasons (footballsquads ENG).
+Unverified: Curtis Davies OG confirmed only by StatMuse plus the Wikipedia own-goal count; Sakho/Onuoha attribution not checked on a match page.

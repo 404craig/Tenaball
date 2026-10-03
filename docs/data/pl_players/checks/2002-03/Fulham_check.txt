@@ -1,0 +1,10 @@
+Fulham 2002/03 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); union 27. 11v11 club page 27 (same players).
+Apps and goals: every player's StatMuse figure matches 11v11 (starts + subs) except as listed below.
+Club goals (Wikipedia 2002-03 FA Premier League table): 41
+Own goals for: 4 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-fulham-2002-03-premier-league). Alan Stubbs (Everton, 3 May 2003, 33) 1, Richard Wright (Everton, 3 May 2003, 42) 1, Ledley King (Spurs, 24 Feb 2003, 15) 1, Michael Svensson (Southampton, 15 Mar 2003, 52) 1; all four confirmed on 11v11 match pages (fulham-v-everton-03-may-2003-15342, tottenham-hotspur-v-fulham-24-february-2003-15356, fulham-v-southampton-15-march-2003-15358). Wikipedia Fulham season page (via summariser) gave no own goal detail.
+Player goals sum: 37. Difference (club goals - own goals - player goals): 0
+Disagreements (0):
+- none
+Positions from footballsquads 2002-2003/faprem/fulham.htm. Nationality: footballsquads has no nationality column; from spellings used in other seasons, otherwise 11v11 Nat column.
+Unverified: Calum Willock nationality (11v11 SKN only).

@@ -1,0 +1,13 @@
+Leicester 2020/21 Premier League check
+StatMuse player-stats query: read; most-appearances: read; fewest-appearances: read. Merged StatMuse players: 27
+11v11 club page (https://www.11v11.com/teams/leicester-city/tab/players/season/2021/comp/1/): 27 players
+Player rows written: 27
+Club PL goals (Wikipedia 2020-21 Premier League table): 68
+Own goals for: 4 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leicester-city-2020-21-premier-league; StatMuse: Axel Tuanzebe (Man Utd), Erik Pieters (Burnley), Ethan Ampadu (Sheffield Utd), Toby Alderweireld (Spurs), 1 each; Wikipedia 2020-21 Leicester City F.C. season goalscorers table: Own goals 4 (PL 4))
+Sum of player goals: 64
+Club goals - own goals for - player goals = 0
+Disagreements: 1
+  Daniel Amartey: StatMuse 13 apps vs 11v11 12; 11v11 player page (https://www.11v11.com/players/daniel-amartey-249706/) 8+4=12 and Wikipedia career table 12; used 12
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2020-2021/engprem/leicester.htm. Names/full names/surnames/nationality reused from earlier season files for the same person where present.
+Nationality notes: Demarai Gray (footballsquads ENG) and Hamza Choudhury (ENG) given Jamaica and Bangladesh to match later-season files (later capped by those countries).
+Unverified: none for apps/goals (all rows agree between StatMuse and 11v11 after resolution).

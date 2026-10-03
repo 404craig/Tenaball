@@ -1,0 +1,9 @@
+Wolves 2011/12 check
+Player count per source: StatMuse player-stats 25 (capped), most-appearances 25, fewest-appearances (summariser returned 15 rows, 1 to 10 apps); union 32. 11v11 PL club page 32.
+Players only in most-appearances: Bassong, Ebanks-Blake, Fletcher, Hennessey, Hunt, Ward. Only in fewest-appearances: Maierhofer (1 app). All confirmed on 11v11 club page. Union covers every 11v11 player, so the fewest list being cut at 15 rows loses nothing.
+Club PL goals: 40 (Wikipedia 2011-12 Premier League table).
+Own goals for: 0. StatMuse own-goal query returned HTTP 422 (slugs wolverhampton-wanderers and wolves). Wikipedia 2011-12 Wolverhampton Wanderers season scorers total 40 with no own goals listed.
+Player goals sum: 40. Difference (40 - 0 - 40): 0.
+Disagreements: none. StatMuse and 11v11 agree on apps and goals for all 32. Elokobi: 11v11 SOM, footballsquads CMR (Cameroon used).
+Source problems: footballsquads 2011/12 wolves.htm was cut off by the fetcher after about 23 rows (three tries). Positions/nationality for Davis, de Vries, Doherty, Doyle, Foley, Forde, Gorman, Guedioura, O'Hara, Vokes taken from footballsquads Wolves 2010/11 and/or 2012/13 pages; Maierhofer from the 2009/10 page. Noted per row.
+Unverified: own goals for = 0 rests on Wikipedia plus totals reconciling; StatMuse OG query unreadable.

@@ -1,0 +1,10 @@
+Club: Newcastle 2008/09
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 29 unique (Ameobi, Steven Taylor, Harper only in most/fewest; Xisco only in fewest). 11v11 PL club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2009/comp/1/) 29. Same 29 players.
+Club PL goals: 40 (https://en.wikipedia.org/wiki/2008%E2%80%9309_Premier_League league table).
+Own goals for: 1 (Richard Dunne, Man City, 20 Oct 2008). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2008-09-premier-league. Consistent with player goals 39 + 1 = 40.
+Player goals sum: 39
+Difference: 0
+Rows: 29
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2008-2009/faprem/newcas.htm (readable this season). Shola Ameobi: footballsquads 2008-09 gives ENG (uncapped then); Nigeria used to match earlier-season CSVs (later capped by Nigeria). Milner full name reused from other seasons.
+Unverified: none beyond own goal not checked on a match page.

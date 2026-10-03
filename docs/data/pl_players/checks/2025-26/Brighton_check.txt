@@ -1,0 +1,48 @@
+Brighton 2025/26 Premier League check
+
+Player count per source:
+- StatMuse: NOT READ (fetch rejected, HTTP 429 rate limit; not retried as instructed)
+- Wikipedia 2025-26 Brighton & Hove Albion season: 27 with PL apps (Jason Steele and Charlie Tasker listed with 0, excluded)
+- ESPN (id 331): page returned empty content twice, no figures
+- footballsquads: page extract incomplete (only 4 players returned), so no roster check
+- 11v11 team page (all comps): 31 rows; all 27 PL players present and within the all-comp ceiling. Extras Igor Julio (1 app), Nehemiah Oriola (0+1), Charlie Tasker (0+2), Jason Steele (5) assumed non-PL since Wikipedia shows 0 or no PL apps.
+- 11v11 PL 2025-26 goal scorers page: Brighton scorers match Wikipedia (extract also listed a "Brenda Aaronson" row, taken to be an extraction error and ignored)
+Rows written: 27
+
+Club PL goals: 52
+Own goals for: 1 (Wikipedia season page)
+Sum of player goals: 51
+Difference (52 - 1 - 51): 0
+
+Disagreements and resolution:
+- None found, but apps rest on Wikipedia alone.
+
+Unverified:
+- All apps figures (single source). Rows marked sources_agree=partial.
+- Position and nationality from Wikipedia only.
+- Igor Julio: 1 all-comp app on 11v11 but no PL apps on Wikipedia; not included.
+
+Follow-up (2026-10-02):
+- StatMuse now read (player-stats, fewest-appearances and most-appearances queries). StatMuse total: 28 players.
+- Added Nehemiah Oriola (1 app, 0 goals): StatMuse 1, 11v11 player page 0+1 PL (sub v Leeds 1 Nov 2025). Wikipedia does not list him with PL apps. Rows now 28.
+- Disagreements (2), both resolved to StatMuse with 11v11 player page as tie-breaker:
+  - Kaoru Mitoma: StatMuse 25, Wikipedia 24, 11v11 19+6=25. Used 25 (was 24).
+  - Brajan Gruda: StatMuse 18, Wikipedia 19, 11v11 8+10=18. Used 18 (was 19).
+- All other 25 players: StatMuse apps and goals match Wikipedia exactly; those rows now sources_agree=yes with StatMuse as source.
+- Goals check unchanged: 52 - 1 - 51 = 0.
+- Still unverified: positions and nationalities from Wikipedia; Oriola position (MID) from 11v11 "Midfielder/Forward".
+
+
+VERIFIED (2026-10-02)
+- 11v11 PL club page https://www.11v11.com/teams/brighton-and-hove-albion/tab/players/season/2026/comp/1/ read: 28 players, every row's apps (starts+subs) and goals agree with the CSV. No players missing, none extra. No figure changes.
+- All rows now sources_agree=yes (StatMuse or Wikipedia plus 11v11).
+- footballsquads brighton.htm (2025-2026 and 2024-2025) is truncated after 4-5 players, so positions could not be checked there. Positions match the Wikipedia 2025-26 squad list. UNCONFIRMED on footballsquads: all Brighton positions; note Minteh and Mitoma are MID here but FWD in the 2024-25 file.
+- Spelling reuse checked against other seasons' files (grep /tmp/claude-0/pl/*/clubs/*.csv).
+- Goals check: club goals 52 - own goals for 1 - player goals 51 = 0.
+- Brighton_summary.json written.
+Changes:
+- Kaoru Mitoma: sources_agree partial -> yes (25 apps, 3 goals confirmed by 11v11 PL club page)
+- Ferdi Kadioglu: name/nationality fields ('Ferdi Kadioglu', 'Ferdi Kadıoğlu', 'Kadioglu', 'Turkey') -> ('Ferdi Kadioglu', 'Ferdi Kadıoğlu', 'Kadıoğlu', 'Turkey') (match spelling used in other seasons / spec nationality name)
+- Diego Gomez: name/nationality fields ('Diego Gomez', 'Diego Gómez', 'Gomez', 'Paraguay') -> ('Diego Gomez', 'Diego Gómez Amarilla', 'Gómez', 'Paraguay') (match spelling used in other seasons / spec nationality name)
+- Brajan Gruda: sources_agree partial -> yes (18 apps, 1 goals confirmed by 11v11 PL club page)
+- Nehemiah Oriola: sources_agree partial -> yes (1 apps, 0 goals confirmed by 11v11 PL club page)

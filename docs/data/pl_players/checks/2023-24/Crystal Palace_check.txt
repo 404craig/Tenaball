@@ -1,0 +1,9 @@
+Season 2023/24, Crystal Palace
+Player count per source: StatMuse union of 3 pages (player-stats, most-appearances, fewest-appearances, all read) 26; 11v11 PL squad page (season 2024, comp 1) 26; final rows 26.
+Club PL goals: 57 (Wikipedia 2023-24 Premier League table)
+Own goals for: 1 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-crystal-palace-2023-24-premier-league (Emerson, Crystal Palace 5-2 West Ham 21 Apr 2024); confirmed by Malay Mail match report https://www.malaymail.com/amp/news/sports/2024/04/22/crystal-palaces-mateta-nets-brace-in-5-2-thrashing-of-west-ham/130089)
+Player goals sum: 56
+Difference (club goals - og - player goals): 0
+Disagreements and resolutions: None. All 26 players match StatMuse and 11v11 on apps and goals.
+Positions and nationalities: footballsquads.co.uk eng/2023-2024/engprem (all players found there, read via summariser). Names, full names and nationality reused from earlier season files where the player already exists.
+Unverified: full names of players new to the dataset are from general knowledge (where unsure, the display name with accents is used). 11v11 player pages not needed except as noted, since StatMuse and the 11v11 squad page agreed on every listed player.

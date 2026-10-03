@@ -1,0 +1,8 @@
+Sunderland 2012/13 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25, fewest-appearances 25; merged = 29 players. 11v11 club page (comp 1, season 2013) = 29 players, same 29. footballsquads 2012-2013/faprem/sunder.htm used for position and nationality (all 29 found).
+Club goals (Wikipedia 2012-13 Premier League table): 41
+Own goals for: 2 (Demba Ba, Newcastle, 21 Oct 2012; Cesar Azpilicueta, Chelsea, 7 Apr 2013). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2012-13-premier-league ; confirmed by Wikipedia 2012-13 Sunderland season page.
+Player goals sum: 39. Expected 41 - 2 = 39. Difference: 0.
+Disagreements: none. All 29 players' apps and goals agree between StatMuse and 11v11.
+Note: Alfred N'Diaye listed as France on footballsquads 2012-13; Senegal used to match earlier seasons' rows for the same player.
+Unverified: nothing outstanding.

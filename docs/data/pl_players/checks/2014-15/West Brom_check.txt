@@ -1,0 +1,12 @@
+Club: West Brom 2014/15
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 20 (summary list), fewest-appearances 25; union 26. 11v11 PL club page (https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2015/comp/1/) 26 (A+S). Same 26 players. Mulumbu only in most/fewest StatMuse queries.
+Disagreements: 2.
+- Jonas Olsson apps: StatMuse 12 (8 starts), 11v11 9+4=13, Wikipedia season page 13. Used 13.
+- Sebastien Pocognoli apps: StatMuse 16 (16 starts), 11v11 15+0=15, Wikipedia season page 15. Used 15.
+11v11 player pages not checked for these two (two sources agree).
+Club PL goals: 38 (Wikipedia 2014-15 Premier League table).
+Own goals for: 1. Esteban Cambiasso (Leicester), Leicester v West Brom, 1 Nov 2014 (StatMuse OG query https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-bromwich-albion-2014-15-premier-league). Wikipedia season page goalscorer table shows Own goals: 1 in the Premier League.
+Player goals sum: 37
+Difference: 0 (38 - 1 - 37).
+Position/nationality: https://www.footballsquads.co.uk/eng/2014-2015/faprem/wba.htm (Varela, Blanco, Samaras in players no longer at club). Berahino set to Burundi for consistency with later seasons (footballsquads ENG).
+Unverified: Cambiasso OG match not checked on an 11v11 match page.

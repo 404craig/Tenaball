@@ -1,0 +1,8 @@
+Arsenal 2001/02 check
+Player counts: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (all three identical, union 25); 11v11 club page 25. Union = 25 rows.
+Club goals (Wikipedia 2001-02 FA Premier League table): 79 (also matches sum of 11v11 match scores).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2001-02-premier-league) returned HTTP 422 twice (alternative phrasing also 422), i.e. no answer. Wikipedia 2001-02 Arsenal season page summary claimed a Gianluca Festa own goal v Middlesbrough 29 Dec 2001; 11v11 match page https://www.11v11.com/matches/arsenal-v-middlesbrough-29-december-2001-10699/ shows Arsenal scorers Pires 55 and Cole 80, no own goal, so claim rejected.
+Player goals sum: 79. Difference: 0.
+Disagreements: 0. All 25 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2001-2002/faprem/arsenal.htm (Lauren M, Grimandi D, Edu M). Nationality: footballsquads has no nationality column; taken from spellings used in other seasons, and 11v11 Nat column for new names Tony Adams (England), Lee Dixon (England), Gilles Grimandi (France).
+Unverified: og_for = 0 not confirmed by a positive StatMuse answer; rests on StatMuse 422, the 79 = 79 player sum from two agreeing stats sources, and refutation of the only own goal Wikipedia mentioned. Not every 11v11 match page was checked.

@@ -1,0 +1,8 @@
+Man Utd 2013/14 Premier League check
+Sources: StatMuse player-stats 25 rows, most-appearances 25 rows, fewest-appearances 25 rows; merged = 30 players. 11v11 club page (comp 1, season 2014) = 30 players. footballsquads 2013-2014/faprem/manutd.htm used for position and nationality.
+Club goals (Wikipedia 2013-14 Premier League table): 64
+Own goals for: 1 (James Chester, Hull City, 26 Dec 2013). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-united-2013-14-premier-league ; confirmed by Wikipedia 2013-14 Manchester United season page.
+Player goals sum: 63. Expected 64 - 1 = 63. Difference: 0.
+Disagreements: none. All 30 players match on apps and goals between StatMuse and 11v11.
+Nationality choice: Wilfried Zaha listed ENG on footballsquads (England friendly caps); set to Ivory Coast to match earlier-season CSVs (his senior team).
+Unverified: nothing outstanding.

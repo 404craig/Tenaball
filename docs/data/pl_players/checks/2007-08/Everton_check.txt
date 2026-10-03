@@ -1,0 +1,8 @@
+Everton 2007/08 check
+Player count per source: StatMuse 23 (player-stats, most-apps and fewest-apps all return the same 23, under the 25-row cap); 11v11 club page 23 (its "Apps" column is starts, "Starts" is subs; totals = sum); footballsquads roster: all 23 present (McFadden and Stubbs in "no longer at club").
+Club PL goals (Wikipedia 2007-08 Premier League table): 55
+Own goals for: 2 (Sami Hyypia, Liverpool; Shay Given, Newcastle) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-everton-2007-08-premier-league
+Player goals sum: 53. 55 - 2 - 53 = 0.
+Disagreements: none (all 23 match on apps and goals).
+Positions from footballsquads 2007-08 (Rodwell D, Cahill M). The footballsquads Everton 2007-08 page has no nationality column, so nationality is from the 11v11 club page Nationality column, consistent with earlier-season files.
+Unverified: own goals not separately confirmed by Wikipedia or 11v11 match pages, but totals reconcile exactly.

@@ -1,0 +1,9 @@
+Club: Newcastle 2015/16
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 31. 11v11 PL club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/2016/comp/1/) 31 (A+S). Same 31 players.
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Club PL goals: 44 (Wikipedia 2015-16 Premier League table).
+Own goals for: 1 (Martin Skrtel, Liverpool, 6 Dec 2015). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2015-16-premier-league
+Player goals sum: 43
+Difference: 0 (44 - 1 - 43)
+Position/nationality: footballsquads Newcastle pages (2014-15, 2015-16, 2016-17) could not be read: the fetch summariser returned only the page header with no squad table on repeated attempts. Nationality and position therefore come from earlier-season CSVs in this project where the player already existed, otherwise from the 11v11 club page (Nat and Position columns) mapped to GK/DEF/MID/FWD. 11v11-only positions (unverified on footballsquads): Tiote MID, Riviere FWD, Coloccini DEF, Thauvin MID, Obertan MID, Sterry DEF, Cisse FWD, Anita MID, de Jong MID, Doumbia FWD, Gouffran MID, Taylor DEF. Riviere nationality Martinique per 11v11 (MTQ). Tiote spelled Cheick (StatMuse Cheikh, 11v11 Cheik).
+Unverified: own goal for from StatMuse only, consistent with goal sum. Positions/nationalities above not checked on footballsquads.

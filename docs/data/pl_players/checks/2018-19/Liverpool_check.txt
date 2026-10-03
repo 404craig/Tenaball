@@ -1,0 +1,9 @@
+Club: Liverpool 2018/19
+Players per source: StatMuse player-stats 23 (under the 25-row cap, complete). Most/fewest-appearances queries not run: player-stats is under the cap and 11v11 fully covers the squad. 11v11 PL club page 23 (A+S). Same 23 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 89 (Wikipedia 2018-19 Premier League table).
+Own goals for: 3 (Steve Cook, Bournemouth; Toby Alderweireld, Spurs; Wesley Hoedt, Southampton). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2018-19-premier-league
+Player goals sum: 86
+Difference: 0
+Position/nationality: https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm (Clyne in "no longer at club"). Names reuse earlier-season spellings (Alisson, Andy Robertson).
+Unverified: own goals for from StatMuse only, consistent with goal sum.

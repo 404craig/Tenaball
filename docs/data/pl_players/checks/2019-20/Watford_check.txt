@@ -1,0 +1,9 @@
+Club: Watford 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 26 unique (Will Hughes missing from player-stats list). 11v11 PL club page 26. Same 26 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse. Name-only differences between sources noted in the note column.
+Club PL goals: 36 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 1 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-watford-2019-20-premier-league: Jan Bednarek (Southampton, Watford 1-3 Southampton, 28 Jun 2020). Confirmed on https://www.11v11.com/matches/watford-v-southampton-28-june-2020-366528/ (Bednarek 79 o.g.).
+Player goals sum: 35
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/watford.htm (incl. players no longer at club section). Nationality follows footballsquads 2019/20 (time-specific), exceptions noted per row. Name spellings reused from earlier seasons where present.
+Unverified: nothing material.

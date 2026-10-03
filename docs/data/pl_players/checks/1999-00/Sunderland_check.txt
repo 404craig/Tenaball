@@ -1,0 +1,9 @@
+Sunderland 1999/00 check
+Player counts: StatMuse player-stats 25 (capped), most-apps 25 (capped), fewest-apps 25 (capped); merged StatMuse 27. 11v11 club page (https://www.11v11.com/teams/sunderland/tab/players/season/2000/comp/1/) 27 (same players). Rows written: 27.
+Apps: every player's StatMuse apps equal 11v11 starts + subs. Goals agree for every player.
+Club goals (Wikipedia 1999-2000 FA Premier League table): 57
+Own goals for: 0. StatMuse own-goal query returned HTTP 422 (slugs sunderland-afc and sunderland). Wikipedia 1999-2000 Sunderland A.F.C. season page lists no league own goals in Sunderland's favour (only a League Cup own goal by Barras, Walsall). Player goals from two independent sources (StatMuse, 11v11) both total 57 = club goals.
+Player goals sum: 57. Difference (club goals - own goals - player goals): 0
+Disagreements: 0.
+Positions from footballsquads 1999-2000/faprem/sunder.htm (Kevin Ball in no-longer-at-club section). Nationality: footballsquads has no nationality column; spellings used in other seasons, otherwise 11v11 Nat column (Ball ENG, Fredgaard DEN, Helmer GER, Lumsdon ENG, Nunez HON, Summerbee ENG).
+Unverified: StatMuse own-goal list unavailable (422); own goals = 0 rests on Wikipedia season page plus matching totals.

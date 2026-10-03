@@ -1,0 +1,12 @@
+Southampton 1999/00 Premier League check
+Player count: StatMuse merged (player-stats 25 + most-apps 25 + fewest-apps 25) = 29 unique; 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/2000/comp/1/) = 29 (starts A + subs S); all 29 in footballsquads (https://www.footballsquads.co.uk/eng/1999-2000/faprem/southam.htm, Ostenstad, Hiley, Almeida, Hughes in no-longer-at-club section).
+Club goals (Wikipedia 1999-2000 FA Premier League table): 45
+Own goals for: 2 (Gary Charles (West Ham) 5 Feb 2000; Dean Windass (Bradford) 8 Apr 2000), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1999-00-premier-league; confirmed on 11v11 match pages southampton-v-west-ham-united-05-february-2000-284 and bradford-city-v-southampton-08-april-2000-52.
+Player goals sum: 43 (matches Wikipedia season page league goalscorer list)
+Difference (club goals - og - player goals): 0
+Apps and goals: StatMuse and 11v11 agree for all 29 players.
+Disagreements: none
+Names: Marian Pahars (full Marians Pahars) and Tahar El Khalej as used in other seasons; Dani Rodrigues (footballsquads Rodriguez).
+Positions from footballsquads 1999-2000: Le Tissier F, Boa Morte F, Soltvedt D, El Khalej M (some differ from other seasons' files, which follow those seasons' footballsquads pages).
+Nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

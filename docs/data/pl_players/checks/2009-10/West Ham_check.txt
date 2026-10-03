@@ -1,0 +1,10 @@
+West Ham 2009/10 Premier League check
+Player counts: StatMuse merged (player-stats, most-appearances, fewest-appearances; each capped at 25) = 30; 11v11 club page = 30; all 30 players listed by both.
+Sources: https://www.statmuse.com/fc/ask/west-ham-united-premier-league-player-stats-2009-10 ; https://www.11v11.com/teams/west-ham-united/tab/players/season/2010/comp/1/
+Positions and nationality: https://www.footballsquads.co.uk/eng/2009-2010/faprem/westham.htm
+Club PL goals (Wikipedia 2009-10 Premier League table): 47
+Own goals for: 0 (none); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-west-ham-united-2009-10-premier-league
+Player goals sum: 47
+Difference (club goals - own goals for - player goals): 0
+Disagreements: apps and goals agree between StatMuse and 11v11 for every player (0 disagreements).
+Own goals note: the StatMuse own-goals query returned HTTP 422 (no result rows); the Wikipedia season page summary shows no league own goals in the club's favour. Recorded 0, consistent with player goals equalling club goals.

@@ -1,0 +1,9 @@
+Arsenal 2002/03 check
+Player counts: StatMuse player-stats 25 (capped; Henry, Luzhny, Wiltord missing), most-apps 25, fewest-apps 25 (union 28 players); 11v11 club page 28. Union = 28 rows.
+Club goals (Wikipedia 2002-03 FA Premier League table): 85
+Own goals for: 3 (Marcel Desailly, Chelsea; Michael Johnson, Birmingham; Steve Marlet, Fulham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-arsenal-2002-03-premier-league. Desailly OG confirmed on 11v11 match page Arsenal v Chelsea 01 Jan 2003; Marlet OG confirmed by Wikipedia 2002-03 Arsenal season page (3 Nov 2002, 1-0 v Fulham). Johnson OG from StatMuse only.
+Player goals sum: 82. Difference: 0.
+Disagreements: 1. Lauren goals StatMuse 1 vs 11v11 2. 11v11 player page links the extra goal(s) to Arsenal v Chelsea 01 Jan 2003 and Man City v Arsenal 22 Feb 2003, but both 11v11 match pages show no Lauren goal (Chelsea game: Desailly og, van Bronckhorst, Henry). StatMuse game log gives one goal (v West Brom 27 Aug 2002); Wikipedia player career table gives 1 league goal. Resolved 1. With Lauren 1, sum = 85 - 3 = 82. (Wikipedia season page summary also listed Lauren 2: treated as off by 1.)
+All other players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2002-2003/faprem/arsenal.htm (Lauren listed M, Toure M, Edu M, Luzhny D). Nationality: footballsquads has no nationality column; taken from spellings used in other seasons, and 11v11 Nat column for van Bronckhorst (Netherlands), Shaaban (Sweden), Stepanovs (Latvia), Tavlaridis (Greece), Garry (England). Justin Hoyte: 11v11 shows Trinidad and Tobago; England kept to match spelling used in other seasons (England youth/U21 international at the time).
+Unverified: Michael Johnson own goal only from StatMuse.

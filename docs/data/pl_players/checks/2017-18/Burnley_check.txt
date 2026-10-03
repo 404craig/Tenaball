@@ -1,0 +1,10 @@
+Club: Burnley 2017/18
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (all under the 25 cap, identical lists); merged 24 unique. 11v11 PL club page (https://www.11v11.com/teams/burnley/tab/players/season/2018/comp/1/) 24 (apps = starts + subs). Same 24 players.
+Club PL goals: 36 (https://en.wikipedia.org/wiki/2017%E2%80%9318_Premier_League league table).
+Own goals for: 1 (Karl Darlow, Newcastle, 31 Jan 2018) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-burnley-2017-18-premier-league.
+Player goals sum: 35
+Difference (club goals - og_for - player goals): 0
+Rows: 24
+Disagreements: none. All apps and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm. Name spellings reused from earlier seasons where the same player already appears.
+Unverified: own goal (Darlow) not separately confirmed on Wikipedia/11v11 match pages; consistent with exact goal reconciliation.

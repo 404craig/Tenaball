@@ -1,0 +1,10 @@
+Club: Hull 2009/10
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 30 unique (Hunt, Mouyokolo, Olofinjana, Cairney only in most/fewest lists; Atkinson only in fewest). 11v11 PL club page (https://www.11v11.com/teams/hull-city/tab/players/season/2010/comp/1/) 30. Same 30 players.
+Club PL goals: 34 (https://en.wikipedia.org/wiki/2009%E2%80%9310_Premier_League league table).
+Own goals for: 0. StatMuse own-goals query (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-hull-city-2009-10-premier-league) returned HTTP 422 (no result). Wikipedia Hull season page summariser found no own goals in Hull's favour but gave little scorer detail. 11v11 match pages checked for the highest-scoring games (Hull 3-3 West Ham, Hull 3-2 Everton) show no own goal for Hull (Hull v Everton had a Zayatte own goal for Everton). Player goals from both StatMuse and 11v11 sum to 34 = club goals.
+Player goals sum: 34
+Difference (club goals - og_for - player goals): 0
+Rows: 30
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2009-2010/faprem/hullc.htm (Turner, Cousin, Zaki in "no longer at club"). Spellings reused from other seasons where they exist. Cairney: footballsquads lists ENG for 2009-10; Scotland reused from other seasons. Geovanni listed by single name (full_name also Geovanni; no full name taken from memory).
+Unverified: own goals for = 0 not confirmed match by match for all 38 games; rests on two agreeing player-goal totals equalling club goals plus two match checks.

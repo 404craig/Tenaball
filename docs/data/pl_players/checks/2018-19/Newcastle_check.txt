@@ -1,0 +1,9 @@
+Club: Newcastle 2018/19
+Players per source: StatMuse player-stats 24 (under cap, complete). Most/fewest-appearances queries not run: under cap and 11v11 fully covers the squad. 11v11 PL club page 24 (A+S). Same 24 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 42 (Wikipedia 2018-19 Premier League table).
+Own goals for: 1 (Ben Mee, Burnley, 26 Nov 2018). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-2018-19-premier-league; Wikipedia 2018-19 Newcastle season stats also show 1 own goal.
+Player goals sum: 41
+Difference: 0
+Position/nationality: footballsquads eng/2018-2019/engprem/newcas.htm exists but the summariser returned only the table header (3 tries), as in other seasons. Fallback: earlier-season files (footballsquads-based) for 20 players, Wikipedia 2018-19 Newcastle season squad for Barreca (DEF Italy), Joselu (FWD Spain), Diame (MID Senegal), Kenedy (MID Brazil). Isaac Hayden England as in later files (11v11 shows Jamaica).
+Unverified: Newcastle positions not confirmed on footballsquads 2018-19.

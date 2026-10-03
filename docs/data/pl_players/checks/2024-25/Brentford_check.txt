@@ -1,0 +1,36 @@
+Club: Brentford 2024/25
+Players (rows): 28 (StatMuse player-stats list, most-appearances list and fewest-appearances list merged; each returned 25 rows)
+Club PL goals (Wikipedia 2024-25 Premier League table): 66
+Own goals for: 1 (https://en.wikipedia.org/wiki/2024%E2%80%9325_Brentford_F.C._season (1 opponent own goal))
+Player goals sum: 65
+Difference (club goals - og_for - player goals): 0
+Disagreements: Mikkel Damsgaard: StatMuse 38 apps (two lists agree); Wikipedia 33+4 = 37; unresolved, StatMuse used
+Unverified: position and nationality entered from general knowledge (footballsquads.co.uk not fetched); 11v11 not used; most players rely on StatMuse only (sources_agree=no where Wikipedia gave no figure).
+
+VERIFIED (verification pass 2026-10-02)
+StatMuse: three queries were run previously; union of most- and fewest-appearances lists covers all rows (each list capped at 25), no missing player found. 11v11 squad page cross-checked; extra names there had no PL apps (cup/UCL only or not used).
+Own goals for: 1 from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-brentford-2024-25-premier-league (Luke Shaw). Club goals 66 - og 1 - player goals 65 = diff 0.
+Position/nationality checked against https://www.footballsquads.co.uk/eng/2024-2025/engprem/brentf.htm.
+Changes:
+- Ben Mee: confirmed by Wikipedia season page, sources_agree no -> yes
+- Bryan Mbeumo: position FWD -> MID
+- Frank Onyeka: confirmed by 11v11 player page, sources_agree no -> yes
+- Kristoffer Ajer: confirmed by Wikipedia season page, sources_agree no -> yes
+- Mads Roerslev: confirmed by Wikipedia season page, sources_agree no -> yes
+- Mathias Jensen: confirmed by Wikipedia season page, sources_agree no -> yes
+- Vitaly Janelt: confirmed by Wikipedia season page, sources_agree no -> yes
+- Kim Ji-soo: confirmed by 11v11 player page, sources_agree no -> yes
+- Yehor Yarmoliuk: confirmed by Wikipedia season page, sources_agree no -> yes
+- Mikkel Damsgaard: confirmed by 11v11 player page, sources_agree no -> yes
+- Keane Lewis-Potter: confirmed by Wikipedia season page, sources_agree no -> yes
+- Keane Lewis-Potter: position DEF -> FWD
+- Jayden Meghoma: confirmed by 11v11 player page, sources_agree no -> yes
+- Ryan Trevitt: confirmed by 11v11 player page, sources_agree no -> yes
+- Paris Maghoma: confirmed by 11v11 player page, sources_agree no -> yes
+- Yunus Konak: confirmed by 11v11 player page, sources_agree no -> yes
+- Hakon Valdimarsson: confirmed by Wikipedia season page, sources_agree no -> yes
+- Michael Kayode: confirmed by Wikipedia season page, sources_agree no -> yes
+- Igor Thiago: confirmed by 11v11 player page, sources_agree no -> yes
+- Gustavo Nunes: confirmed by 11v11 player page, sources_agree no -> yes
+- Gustavo Nunes: position MID -> FWD
+Rows with sources_agree != yes after pass: 0

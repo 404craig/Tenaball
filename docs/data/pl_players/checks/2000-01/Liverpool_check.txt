@@ -1,0 +1,11 @@
+Liverpool 2000/01 Premier League check
+Player count: StatMuse merged (player-stats + most-apps + fewest-apps) = 26; 11v11 club page (https://www.11v11.com/teams/liverpool/tab/players/season/2001/comp/1/) = 26; all appear in footballsquads (https://www.footballsquads.co.uk/eng/2000-2001/faprem/liverpool.htm).
+Club goals (Wikipedia 2000-01 FA Premier League table): 71
+Own goals for: 1 (Mark Fish (Charlton), 2 Dec 2000 at Anfield; Wikipedia 2000-01 Liverpool season page also shows 1 league own goal), source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2000-01-premier-league
+Player goals sum: 70
+Difference (club goals - og - player goals): 0
+Apps: StatMuse and 11v11 (starts + subs) agree for every player.
+Disagreements: none
+Name/position/nationality notes: Vegard Heggem: footballsquads spells Vergard; Vladimir Smicer: not in StatMuse player-stats (25-row cap); in most- and fewest-apps lists; Christian Ziege: 11v11 lists as midfielder; footballsquads D used
+Positions from footballsquads 2000-01; nationality from 11v11 club page / spellings already used in other seasons.
+Unverified: nothing material.

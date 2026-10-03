@@ -1,0 +1,9 @@
+Charlton 2006/07 check
+Player count per source: StatMuse 29 merged (player-stats 25, missing El Karkouri, Diawara, Zheng, Myhre; most-apps 25; fewest-apps 25); 11v11 club page https://www.11v11.com/teams/charlton-athletic/tab/players/season/2007/comp/1/ 29 (total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/charlton.htm: all 29 present (Traore, Pouso, Sorondo in "no longer at club").
+Club PL goals (11v11 final table, https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia cache-only): 34
+Own goals for: 2, Arjan de Zeeuw (Wigan, 11 Nov 2006, https://www.11v11.com/matches/wigan-athletic-v-charlton-athletic-11-november-2006-275593/) and Michael Dawson (Spurs, 9 Dec 2006, https://www.11v11.com/matches/tottenham-hotspur-v-charlton-athletic-09-december-2006-276113/), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2006-07-premier-league and confirmed on 11v11 match pages.
+Player goals sum: 32. 34 - 2 - 32 = 0.
+Disagreements: none; all 29 players' apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Kishishev D, Rommedahl M, Song M, Zheng M).
+Nationality: reused other seasons' spellings where present; others from 11v11 club page nationality column ("Ireland" written as Republic of Ireland). Alex Song on loan from Arsenal (also has an Arsenal row this season).
+Unverified: nothing outstanding.

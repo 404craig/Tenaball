@@ -1,0 +1,9 @@
+Newcastle 1998/99 Premier League check
+Player count: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged = 34; 11v11 club page (https://www.11v11.com/teams/newcastle-united/tab/players/season/1999/comp/1/) = 34; all on footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/newcas.htm), Watson, Guivarc'h, Batty, Gillespie, Barnes in "no longer at club".
+Apps and goals: every player identical on StatMuse and 11v11.
+Club goals (https://en.wikipedia.org/wiki/1998%E2%80%9399_FA_Premier_League table): 48
+Own goals for: 1 (Scott Marshall, Southampton, 12 Sep 1998). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-newcastle-united-1998-99-premier-league ; confirmed by 11v11 match page (https://www.11v11.com/matches/newcastle-united-v-southampton-12-september-1998-23753/).
+Player goals sum: 47
+Difference: 0
+Disagreements: none.
+Unverified: nothing.

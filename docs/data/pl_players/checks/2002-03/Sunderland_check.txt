@@ -1,0 +1,10 @@
+Sunderland 2002/03 check
+WRITTEN AFTER THE FACT: the CSV and summary were produced by an earlier agent without a check file. This file was written later from what the CSV notes and summary show; no data was re-fetched or re-checked.
+Sources used (per CSV notes): StatMuse player-stats, most-appearances and fewest-appearances (https://www.statmuse.com/fc/ask/sunderland-premier-league-player-stats-2002-03), and 11v11 club page (https://www.11v11.com/teams/sunderland/tab/players/season/2003/comp/1/). Per-source player counts were not recorded; CSV has 34 rows. Positions from footballsquads (sunder.htm per the build script).
+Club goals: 21
+Own goals for: 1 (source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sunderland-2002-03-premier-league): Juan Sebastian Veron (Man Utd, 1 Jan 2003) 1
+Player goals sum: 20 (summary says 20). Difference (club goals - own goals - player goals): 0
+Rows with sources_agree other than yes: 0
+Disagreements and notes recorded in CSV (1):
+- Paul Thirlwell: StatMuse 19 apps; 11v11 club page 12+6=18 and 11v11 player page (https://www.11v11.com/players/paul-thirlwell-481/) 12+6=18 with 18 matches listed; 18 used (StatMuse likely counts an unused sub)
+Unverified: per-source counts and any checks not reflected in the CSV notes.

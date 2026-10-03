@@ -1,0 +1,24 @@
+Player count per source: StatMuse most-appearances page 25 (player-stats and fewest pages returned HTTP 429, not read, not retried); Wikipedia 24 rows.
+Disagreements: 0 on apps/goals between the StatMuse page and Wikipedia.
+Goals check: player goals 53 + own goal 1 = 54 = club goals, difference 0. The own goal count rests on one summarised Wikipedia line.
+Gap: the StatMuse most page is capped at 25 rows, so players with 1 app other than Stansfield could be missing (fewest page not read). Stansfield single source. Josh King nationality unverified. Full names and some pos/nat from general knowledge.
+Club PL goals: 54 (Wikipedia 2024-25 Premier League table)
+Own goals for: 1 (https://en.wikipedia.org/wiki/2024%E2%80%9325_Fulham_F.C._season (summariser: own goals 1, single source))
+Player goals sum: 53
+Difference (club goals - og - player goals): 0
+
+
+VERIFIED (2026-10-02)
+StatMuse player-stats and fewest pages (previously 429) now read: 25 rows each; union with most page is 26, no new players. Stansfield and Cuenca confirmed.
+Goals: all 53 player goals match the 11v11 PL goal-scorers list. Own goals 1 now confirmed by StatMuse (Matt O'Riley, Brighton) as well as Wikipedia.
+Godo nationality: footballsquads 2024-25 shows ENG (he was England U20 then); 11v11 and Wikipedia player page show 1 senior cap for Ivory Coast (March 2026), so Ivory Coast per spec rule.
+Changes:
+- Carlos Vinicius: sources_agree partial -> yes (StatMuse stats/fewest pages and Wikipedia 0+3)
+- Martial Godo: sources_agree partial -> yes (StatMuse and 11v11 player page 0+2)
+- Jay Stansfield: sources_agree no -> yes (StatMuse stats/fewest pages 1 app, matches Wikipedia 0+1)
+- Harry Wilson: position FWD -> MID (footballsquads 2024-2025)
+- Willian: position FWD -> MID (footballsquads 2024-2025)
+- Martial Godo: nationality France -> Ivory Coast (11v11 and Wikipedia player page: born Greenwich, England U20, now capped by Ivory Coast; footballsquads shows ENG)
+- Josh King: note updated (Nationality ENG confirmed by footballsquads and Wikipedia season page)
+Final: club goals 54, own goals for 1, player goals 53, difference 0
+All rows now sources_agree=yes.

@@ -1,0 +1,9 @@
+Coventry 1993/94 Premier League check
+Player count: StatMuse merged 27 (player-stats 25, most-apps 25, fewest-apps 7 shown; Boland and Sheridan only in most-apps); 11v11 club page 27 (https://www.11v11.com/teams/coventry-city/tab/players/season/1994/comp/1/); all 27 in footballsquads coventry.htm. Rows: 27
+Club goals: 43 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 0. StatMuse https://www.statmuse.com/fc/ask/players-with-own-goals-vs-coventry-city-1993-94-premier-league returned HTTP 422 (no results).
+Player goals sum: 43
+Difference (club goals - og - player goals): 0
+Disagreements: none. All apps and goals match between StatMuse and 11v11 (Boland and Sheridan goals from 11v11 as StatMuse most-apps query shows apps only; both 0).
+Unverified: own goals = 0 rests on StatMuse no-result plus exact balance. Kruszynski nationality (Germany) from 11v11 only.
+Nationality: footballsquads 1993-94 has no nationality column; taken from earlier-season files where the player exists, otherwise from the 11v11 club page.

@@ -1,0 +1,9 @@
+Man City 2006/07 check
+Player count per source: StatMuse merged 29 (player-stats 25 + most-apps adds Distin, Trevor Sinclair, Stephen Jordan, Sun Jihai + fewest-apps confirms); 11v11 club page 29 (total = A+S); footballsquads roster: all 29 present (Thatcher, Reyna in "no longer at club").
+Club PL goals: 29
+Own goals for: 1 (Andre Ooijer, Blackburn, 17 Sep 2006) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2006-07-premier-league
+Player goals sum: 28. 29 - 1 - 28 = 0.
+Disagreements: none (all 29 match).
+Club goals source: Wikipedia 2006-07 Premier League page could not be fetched (domain cache-only), so club goals taken from the 11v11 final 2006-07 table (https://www.11v11.com/league-tables/premier-league/01-june-2007/).
+Positions from footballsquads 2006-07 (/faprem/); nationality from 11v11 club page (pre-2008-09 footballsquads has no nationality column), spellings aligned with other seasons' files.
+Unverified: own goal not confirmed by second source. Totals reconcile exactly.

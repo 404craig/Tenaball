@@ -1,0 +1,9 @@
+Ipswich 1993/94 Premier League check
+Player count: StatMuse player-stats 21, most-apps 21, fewest-apps 21 (union 21, under the 25-row cap); 11v11 club page (https://www.11v11.com/teams/ipswich-town/tab/players/season/1994/comp/1/) 21; all 21 in footballsquads https://www.footballsquads.co.uk/eng/1993-1994/faprem/ipswich.htm (Whitton in no-longer-at-club section). Rows: 21
+Club goals: 35 (Wikipedia 1993-94 FA Premier League table)
+Own goals for: 2 (Gary Megson, Norwich; Lee Dixon, Arsenal) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-ipswich-town-1993-94-premier-league. Wikipedia 1993-94 Ipswich season page confirms the Megson own goal (18 Dec 1993 v Norwich, H); Dixon own goal not confirmed by a second source.
+Player goals sum: 33
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Bontcho Guentchev apps: StatMuse 24, 11v11 club and player page 23 (9+14). 23 used, sources_agree=partial. All other apps and goals match.
+Unverified: Guentchev apps not checked match by match; Dixon own goal single source.
+Positions: footballsquads ipswich.htm. Nationality: footballsquads 1993-94 has no nationality column; reused spellings from other seasons, else 11v11 club page (Durrant, Goddard, Whitton).

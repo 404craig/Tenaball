@@ -1,0 +1,9 @@
+Liverpool 2013/14 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/liverpool-premier-league-player-stats-2013-14); 11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2014/comp/1/); footballsquads.co.uk/eng/2013-2014/faprem/ for position and nationality.
+Player count: final rows 25; StatMuse merged 25 (player-stats 25, most 25, fewest 25, all list the same 25); 11v11 club page 25.
+Club goals (Wikipedia 2013-14 Premier League table): 101
+Own goals for: 5 (Delaney (Crystal Palace), Amorebieta (Fulham), Demel (West Ham), Shawcross (Stoke), Kaboul (Spurs); Wikipedia Liverpool season page: 5 PL own goals). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2013-14-premier-league
+Player goals sum: 96
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: none: all 25 players match on apps and goals
+Unverified: nothing material.

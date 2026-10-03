@@ -1,0 +1,8 @@
+Charlton 2001/02 check
+Player counts: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (identical sets, union 25); 11v11 club page 25. Union = 25 rows.
+Club goals (Wikipedia 2001-02 FA Premier League table): 38
+Own goals for: 3 (Andy Melville, Fulham; Niall Quinn, Sunderland; Richard Wright, Arsenal). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-charlton-athletic-2001-02-premier-league. Melville (9 Sep 2001) and Quinn (22 Sep 2001) confirmed by Wikipedia 2001-02 Charlton Athletic season page; Wright (43 min) confirmed on https://www.11v11.com/matches/arsenal-v-charlton-athletic-04-november-2001-9576/.
+Player goals sum: 35. Difference: 38 - 3 - 35 = 0.
+Disagreements: 0. All 25 players' apps (11v11 A+S) and goals match StatMuse.
+Positions from footballsquads 2001-2002/faprem/charlton.htm (Lisbie listed M this season, so MID although other seasons have FWD; Kishishev D; Euell F; Peacock and Salako in players no longer at club). Nationality from other-season spellings; new names from 11v11 Nat column: Jorge Costa (Portugal), Charlie MacDonald, Gavin Peacock, John Salako (England).
+Unverified: nothing material.

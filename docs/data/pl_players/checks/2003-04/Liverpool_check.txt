@@ -1,0 +1,8 @@
+Liverpool 2003/04 check
+Player count per source: StatMuse player-stats 25 (cap), most-apps 25 (cap), fewest-apps 25 (cap); merged 26 (Smicer missing from player-stats; Luzi not in most-apps). 11v11 club page https://www.11v11.com/teams/liverpool/tab/players/season/2004/comp/1/: 26 (total = A+S). footballsquads 2003-04 (/faprem/liverpool.htm): all 26 present (Paul Jones in 'no longer at club').
+Club PL goals: 55 (Wikipedia 2003-04 FA Premier League table).
+Own goals for: 2 (Andy Todd, Blackburn; Mark Delaney, Aston Villa) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2003-04-premier-league.
+Player goals sum: 53. 55 - 2 - 53 = 0.
+Disagreements: 0. All 26 players' apps and goals identical in StatMuse and 11v11.
+Positions from footballsquads 2003-04 (Kewell F, Riise M, Welsh D, Otsemobor D). Nationality from 11v11 club page, spellings aligned with other seasons' files.
+Unverified: own goals not cross-checked on match pages (StatMuse list plus goal-sum consistency only).

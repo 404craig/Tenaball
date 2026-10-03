@@ -1,0 +1,9 @@
+Sheffield Wed 1992/93 Premier League check
+Player count: StatMuse merged 26 (player-stats 25 without Viv Anderson; most-apps 25 without Michael Williams; fewest-apps 25 without Nigel Worthington); 11v11 club page 26 (https://www.11v11.com/teams/sheffield-wednesday/tab/players/season/1993/comp/1/). Rows: 26
+Club goals: 55 (Wikipedia 1992-93 FA Premier League table)
+Own goals for: 2 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-sheffield-wednesday-1992-93-premier-league: Chris Morris, Middlesbrough; Neil Thompson, Ipswich). Confirmed by Wikipedia 1992-93 Sheffield Wednesday F.C. season results: Thompson (own goal) v Ipswich 21 Nov 1992 (1-1); Morris (own goal) v Middlesbrough 1 May 1993 (2-3).
+Player goals sum: 53
+Difference (club goals - og - player goals): 0
+Disagreements: 1. Trevor Francis apps: StatMuse 4, 11v11 club page 1+4 = 5, 11v11 player page 1+4 = 5. Wikipedia season page has no appearance table, so no independent third source; used 5, sources_agree=partial. All other 25 players match on apps and goals.
+Positions/nationality: footballsquads has no 1992-93 season (archive starts 1993/94), so positions and nationality reused from 1993-94+ files for the same player; Viv Anderson, Simon Stewart, Danny Wilson from 11v11 club page. Paul Williams is Paul A Williams (FWD, later Crystal Palace), not Coventry's Paul R/D Williams.
+Unverified: Francis 4 v 5 not confirmed by a non-11v11 source.

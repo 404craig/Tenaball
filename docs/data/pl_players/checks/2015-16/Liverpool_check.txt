@@ -1,0 +1,10 @@
+Liverpool 2015/16 Premier League check
+StatMuse: player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 25 (capped); union 34 players
+11v11 PL club page (https://www.11v11.com/teams/liverpool/tab/players/season/2016/comp/1/): 34 players
+Rows written: 34. Player sets identical; apps (11v11 starts + subs) and goals match StatMuse for every player.
+Club PL goals (Wikipedia 2015-16 Premier League table, https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League): 63
+Own goals for: 1, Eliaquim Mangala (Man City), Man City 1-4 Liverpool, 21 Nov 2015 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-liverpool-2015-16-premier-league); Wikipedia 2015-16 Liverpool season goalscorers own goals PL = 1
+Player goals sum: 62. Club goals minus own goals: 62. Difference: 0
+Disagreements (apps/goals): none
+Position/nationality: footballsquads 2015-16 Liverpool page (https://www.footballsquads.co.uk/eng/2015-2016/faprem/liverpool.htm), all 34 players found. Steven Caulker: footballsquads ENG, set to Sierra Leone (later capped by Sierra Leone; 11v11 lists Sierra Leone).
+Unverified: none

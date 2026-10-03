@@ -1,0 +1,10 @@
+Club: Aston Villa 2010/11
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 32 unique players. 11v11 PL club page (https://www.11v11.com/teams/aston-villa/tab/players/season/2011/comp/1/) 32 (starts + subs). Same 32 players.
+Club PL goals: 48 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 3 (Abdoulaye Meite, West Brom; Grant Hanley, Blackburn; John Paintsil, Fulham). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-aston-villa-2010-11-premier-league
+Player goals sum: 45
+Difference (club goals - og_for - player goals): 0
+Rows: 32
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/avilla.htm. Ciaran Clark listed ENG in the departed (loan) section and IRL in current squad; Republic of Ireland used (capped by Ireland, matches other seasons). Ashley Young M per footballsquads.
+Unverified: own goals confirmed by StatMuse only; consistent with goals total.

@@ -1,0 +1,12 @@
+West Brom 2016/17 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/west-bromwich-albion-premier-league-player-stats-2016-17 (+ most-appearances and fewest-appearances queries); 11v11 https://www.11v11.com/teams/west-bromwich-albion/tab/players/season/2017/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2016-2017/faprem/wba.htm (position, nationality).
+Player counts: StatMuse union of the three queries 23 players; 11v11 club page 23 rows (A starts + S subs). Every player's apps and goals match between the two sources.
+Rows written: 23
+Club goals (Wikipedia 2016-17 Premier League table): 43
+Own goals for: 0. StatMuse own-goals query (players-with-own-goals-vs-west-bromwich-albion-2016-17-premier-league) returned HTTP 422 (no results); Wikipedia 2016-17 West Brom season page shows no own goals row and no OG in match records. Consistent with exact reconciliation (43 player goals). Not checked on every 11v11 match page.
+Player goals sum: 43
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: footballsquads 2016/17 (G/D/M/F mapped to GK/DEF/MID/FWD). Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Nationality notes: Saido Berahino: footballsquads 2016/17 code gives England; reused Burundi from earlier seasons in this dataset
+Unverified: own goals for = 0 not checked on every 11v11 match page (StatMuse 422, Wikipedia shows none); consistent with exact reconciliation.

@@ -1,0 +1,8 @@
+Leeds 1994/95 Premier League check
+Player count: StatMuse 21 (player-stats, most-apps and fewest-apps all 21 rows); 11v11 club page 21 (https://www.11v11.com/teams/leeds-united/tab/players/season/1995/comp/1/); all 21 in footballsquads leeds.htm (/eng/1994-1995/faprem/). Rows: 21
+Club goals: 59 (Wikipedia 1994-95 FA Premier League table)
+Own goals for: 3 (Alan McDonald, QPR; Jonathan Gould, Coventry; Neil Maddison, Southampton) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-leeds-united-1994-95-premier-league; Wikipedia 1994-95 Leeds United season lists O.G in 19 Nov 1994 QPR away 2-3, 29 Oct 1994 Southampton away 3-1, 18 Mar 1995 Coventry home 3-0 (scorers not named there).
+Player goals sum: 56
+Difference (club goals - og - player goals): 0
+Disagreements: 0. All apps (11v11 starts + subs) and goals match StatMuse for all 21 players.
+Unverified: none.

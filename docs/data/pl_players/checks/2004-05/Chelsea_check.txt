@@ -1,0 +1,8 @@
+Chelsea 2004/05 check
+Player count per source: StatMuse player-stats 25 (capped; missing Bridge, Gallas, Parker, Tiago, Watt), most-apps 25, fewest-apps 25; merged StatMuse 30. 11v11 club page https://www.11v11.com/teams/chelsea/tab/players/season/2005/comp/1/ 30 (total = A + S). footballsquads https://www.footballsquads.co.uk/eng/2004-2005/faprem/chelsea.htm: all 30 present (Mutu, Babayaro in 'no longer at club'). Final rows: 30.
+Club PL goals: 72, Wikipedia 2004-05 FA Premier League table.
+Own goals for: 1, James Beattie (Southampton, 28 Aug 2004, Chelsea 2-1 Southampton), from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2004-05-premier-league, confirmed by Wikipedia 2004-05 Chelsea F.C. season match report.
+Player goals sum: 71. 72 - 1 - 71 = 0.
+Disagreements: none; all 30 players' apps and goals match between StatMuse (merged) and 11v11.
+Positions: footballsquads 2004-05 (no nationality column; Robben, Filipe Oliveira listed F). Nationality: reused other seasons' spellings where present; new players from 11v11 nationality column (Kezman Serbia, following existing Serbia convention for Serbia and Montenegro players; Mutu Romania; Filipe Oliveira and Tiago Portugal; Watt Scotland; Anthony Grant Jamaica as 11v11 gives it, not independently checked).
+Unverified: Anthony Grant nationality (11v11 only). Filipe Oliveira and Steven Watt full names not checked beyond the common form.

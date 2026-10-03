@@ -1,0 +1,9 @@
+Club: Wolves 2018/19
+Players: StatMuse player-stats 21, most-appearances 21, fewest-appearances 21 (under cap, complete); 11v11 PL club page 21 (header said 22, 21 rows listed). Merged 21.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse for every player. Name-only spelling differences between sources are noted per row.
+Club PL goals: 47 (https://en.wikipedia.org/wiki/2018%E2%80%9319_Premier_League league table).
+Own goals for: 1: Chris Smalling (Man Utd), Wolves 2-1 Man Utd, 2 Apr 2019. Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2018-19-premier-league. Confirmed by web search: SI.com "Smalling Own Goal Seals Man United's Loss to Wolves" (2 Apr 2019) and reconciliation 46+1=47; Wikipedia Wolves season page summary did not list own goals.
+Player goals sum: 46
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm (incl. players no longer at club section). Nationality follows footballsquads 2018/19 (time-specific); exceptions noted per row. Name spellings reused from later seasons' files where present.
+Unverified: own goal confirmed by StatMuse plus match-report search titles and exact goal reconciliation; Wikipedia club season page not used for own goals. No 11v11 player pages needed (no stat disagreements).

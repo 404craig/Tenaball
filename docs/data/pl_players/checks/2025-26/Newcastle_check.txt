@@ -1,0 +1,21 @@
+Newcastle 2025/26 Premier League check
+Player count: StatMuse 25; Wikipedia 2025-26 Newcastle season page 25 (same players); footballsquads 0 (newcas.htm returned only the page header; newcastle.htm and newcastleutd.htm 404); ESPN 0 (unreadable).
+Club PL goals (Wikipedia 2025-26 Premier League table): 53
+Own goals for: 0 (Wikipedia summary found no opponent own goals in PL; only a Champions League o.g.)
+Sum of player goals: 53
+Difference: 0
+Disagreements (1):
+- Jacob Murphy: Wikipedia 34 (20+14), StatMuse 33, 11v11 19+14=33. Used 33.
+Unverified: positions and nationalities taken from the Wikipedia squad list, not footballsquads. Jamaal Lascelles (DEF, England) not in that list, so his position/nationality is unconfirmed by a fetched source. StatMuse list is exactly 25 rows; possible cap, though goals reconcile.
+ESPN (league filter, season 2025): page returned no content via WebFetch for this club; no ESPN figures recorded.
+11v11 team page: shows starts only, not usable as an all-competition ceiling; 11v11 player pages (Apps=starts, Subs=sub apps) used as tie-breaker.
+
+Follow-up (2026-10-02):
+- Completeness: StatMuse fewest-appearances query found Sean Neave (1 app, 0 goals) hidden by the 25-row cap. Confirmed on 11v11 player page (0+1 PL). Added; rows now 26. Most-appearances query shows no other missing player.
+- Goals check unchanged: 53 - 0 - 53 = 0.
+
+VERIFIED (2026-10-02)
+11v11 club page https://www.11v11.com/teams/newcastle-united/tab/players/season/2026/comp/1/ (A=starts, S=subs): 26 players; every row apps (A+S) and goals match the CSV.
+- Jacob Murphy: sources_agree partial -> yes (StatMuse 33/3, 11v11 club page 19+14=33/3)
+- footballsquads newcas.htm (the file named on the 2025-2026 engprem index) still returns only the page header; positions/nationality remain from the Wikipedia squad list, unconfirmed by footballsquads.
+Rows 26; player goals 53; club goals 53; own goals for 0; difference 0. All rows sources_agree=yes.

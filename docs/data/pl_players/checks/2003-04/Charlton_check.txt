@@ -1,0 +1,8 @@
+Charlton 2003/04 check
+Player counts: StatMuse player-stats 24, most-apps 24, fewest-apps 24 (same 24 players); 11v11 club page 24; Wikipedia season page consistent for players read.
+Club goals (Wikipedia 2003-04 FA Premier League table): 51
+Own goals for: 0. StatMuse players-with-own-goals-vs-charlton-athletic-2003-04 returned HTTP 422; Wikipedia 2003-04 Charlton season page lists no own goals; player goals sum equals club goals on both StatMuse and 11v11.
+Player goals sum: 51. Difference: 0.
+Disagreements: none. Every player's apps (starts+subs on 11v11) and goals match StatMuse.
+Positions from footballsquads 2003-2004/faprem/charlton.htm (Kishishev listed D). Nationality: footballsquads has no nationality column; taken from spellings used in other seasons, and 11v11 Nat flags for Campbell-Ryce (Jamaica), Di Canio (Italy), Rowett (England), Royce (England).
+Unverified: none.

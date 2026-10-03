@@ -1,0 +1,13 @@
+Southampton 1997/98 Premier League check
+Player count: StatMuse player-stats 25, most-apps 25, fewest-apps 25 (31 unique merged); 11v11 club page (https://www.11v11.com/teams/southampton/tab/players/season/1998/comp/1/) = 31 (A starts + S subs); all 31 on footballsquads (https://www.footballsquads.co.uk/eng/1997-1998/faprem/southam.htm), Van Gobbel, Magilton, Bowen, Evans, Maddison, Neilson, Charlton, Robinson, Slater in no-longer-at-club section. Wikipedia season page also states 31 players used.
+Club goals (Wikipedia 1997-98 FA Premier League table): 50
+Own goals for: 2. StatMuse (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-southampton-1997-98-premier-league) lists Sol Campbell (Spurs) and Stuart Pearce (Newcastle). 11v11 match pages: Southampton 3-2 Spurs, 25 Oct 1997 (https://www.11v11.com/matches/southampton-v-tottenham-hotspur-25-october-1997-23045/) credits the og (54) to Ramon Vega rather than Campbell; Southampton 2-1 Newcastle, 28 Mar 1998 (https://www.11v11.com/matches/southampton-v-newcastle-united-28-march-1998-23241/) confirms Pearce og (69). Count of 2 agreed either way.
+Player goals sum: 48
+Difference (club goals - og - player goals): 0
+Rows: 31
+Apps and goals: StatMuse and 11v11 agree for all 31 players. Goal totals also match Wikipedia season page scorers.
+Disagreements: 0 on player apps/goals. Own goal scorer identity in the Spurs match differs (StatMuse Campbell vs 11v11 Vega); does not affect any Southampton player row.
+Names: Micky Evans (StatMuse Mickey, footballsquads Michael), Alan Neilson (footballsquads Neilsen), Matt Robinson (StatMuse Matthew), Ulrich van Gobbel. Micky Evans 11v11 IRL recorded Republic of Ireland. Spellings reused from other seasons where present.
+Positions from footballsquads 1997-1998 (Le Tissier F, Bowen M, Warner D).
+Nationality from 11v11 club page.
+Unverified: nothing outstanding.

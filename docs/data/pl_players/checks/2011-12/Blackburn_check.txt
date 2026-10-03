@@ -1,0 +1,10 @@
+Club: Blackburn 2011/12
+Players: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged 31 unique players. 11v11 PL club page (https://www.11v11.com/teams/blackburn-rovers/tab/players/season/2012/comp/1/) 31. Same 31 players.
+Club PL goals: 48 (https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League league table).
+Own goals for: 4 (Alex Song and Laurent Koscielny, Arsenal; Charlie Adam, Liverpool; Nedum Onuoha, QPR). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-blackburn-rovers-2011-12-premier-league. 11v11 player goals also sum to 44, consistent.
+Player goals sum: 44
+Difference (club goals - og_for - player goals): 0
+Rows: 31
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2011-2012/faprem/blackbrn.htm. Spellings reused from other seasons (Steven Nzonzi, Christopher Samba nationality Congo). Paul Robinson here is the goalkeeper (not the Bolton defender of the same name).
+Unverified: own goals confirmed by StatMuse only (consistent with goals total).

@@ -1,0 +1,9 @@
+Club: Stoke 2015/16
+Players per source: StatMuse player-stats 25 (at cap), most-appearances 25, fewest-appearances 25; union 27 (adds Shaqiri, Sidwell). 11v11 PL club page (https://www.11v11.com/teams/stoke-city/tab/players/season/2016/comp/1/) 27 (A+S). Same 27 players.
+Disagreements: none. All apps and goals match.
+Club PL goals: 41 (Wikipedia 2015-16 Premier League table).
+Own goals for: 1 (Ryan Bennett, Norwich, 13 Jan 2016). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-stoke-city-2015-16-premier-league
+Player goals sum: 40
+Difference: 0 (41 - 1 - 40)
+Position/nationality: https://www.footballsquads.co.uk/eng/2015-2016/faprem/stoke.htm (Sidwell, van Ginkel in players no longer at club). Imbula CGO there, DR Congo used to match later seasons/11v11. Marc Wilson IRL (Republic of Ireland). Arnautovic surname and Bardsley full_name reused from later seasons.
+Unverified: own goal for from StatMuse only, consistent with goal sum.

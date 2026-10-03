@@ -1,0 +1,9 @@
+Middlesbrough 1998/99 Premier League check
+Player count: StatMuse player-stats 25 (capped), most-apps 25, fewest-apps 25; merged = 29; 11v11 club page (https://www.11v11.com/teams/middlesbrough/tab/players/season/1999/comp/1/) = 29; all on footballsquads (https://www.footballsquads.co.uk/eng/1998-1999/faprem/middles.htm), Merson in "no longer at club".
+Apps and goals: identical on StatMuse and 11v11 for 28 of 29 players.
+Club goals (https://en.wikipedia.org/wiki/1998%E2%80%9399_FA_Premier_League table): 48
+Own goals for: 1 (Claus Lundekvam, Southampton, 7 Nov 1998). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-1998-99-premier-league ; confirmed by Wikipedia season page (https://en.wikipedia.org/wiki/1998%E2%80%9399_Middlesbrough_F.C._season).
+Player goals sum: 47
+Difference: 0
+Disagreements (1): Neil Maddison apps. StatMuse 20 (game log lists 20 matches), Wikipedia season page 10+10=20; 11v11 club page and 11v11 player page (https://www.11v11.com/players/neil-maddison-352/) 10+11=21. Kept 21 per spec tie-breaker (11v11 player page); sources_agree=no. The extra 11v11 match was not identified (no match-by-match check done), so this remains unverified.
+Name notes: StatMuse Micky Cummins = 11v11/footballsquads Michael Cummins (earlier-season spelling Micky Cummins kept).

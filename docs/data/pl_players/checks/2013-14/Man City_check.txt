@@ -1,0 +1,9 @@
+Man City 2013/14 Premier League check
+Sources: StatMuse player-stats, most-appearances and fewest-appearances queries (https://www.statmuse.com/fc/ask/manchester-city-premier-league-player-stats-2013-14); 11v11 PL club page (https://www.11v11.com/teams/manchester-city/tab/players/season/2014/comp/1/); footballsquads.co.uk/eng/2013-2014/faprem/ for position and nationality.
+Player count: final rows 23; StatMuse merged 23 (player-stats 23, most 23, fewest 23); 11v11 club page 23.
+Club goals (Wikipedia 2013-14 Premier League table): 102
+Own goals for: 5 (StatMuse lists 4: Bradley Johnson (Norwich), Glen Johnson (Liverpool), Sandro (Spurs), Tim Howard (Everton); plus Russell Martin (Norwich, 2 Nov 2013) per 11v11 match page https://www.11v11.com/matches/manchester-city-v-norwich-city-02-november-2013-305619/ (StatMuse credits it to Nastasic); Wikipedia City season page: 5 PL own goals). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-manchester-city-2013-14-premier-league
+Player goals sum: 97
+Club goals minus own goals minus player goals: 0
+Disagreements and resolutions: Matija Nastasic goals StatMuse 1 vs 11v11 0: resolved 0 (11v11 match page shows Russell Martin og v Norwich 2 Nov 2013; Wikipedia 0). Apps all match
+Unverified: nothing material.

@@ -1,0 +1,12 @@
+Spurs 2016/17 Premier League check
+Sources: StatMuse https://www.statmuse.com/fc/ask/tottenham-hotspur-premier-league-player-stats-2016-17 (+ most-appearances and fewest-appearances queries); 11v11 https://www.11v11.com/teams/tottenham-hotspur/tab/players/season/2017/comp/1/; footballsquads https://www.footballsquads.co.uk/eng/2016-2017/faprem/tottenha.htm (position, nationality).
+Player counts: StatMuse union of the three queries 24 players; 11v11 club page 24 rows (A starts + S subs). Every player's apps and goals match between the two sources.
+Rows written: 24
+Club goals (Wikipedia 2016-17 Premier League table): 86
+Own goals for: 2 (StatMuse own-goals query): Aleksandar Kolarov (Man City) Spurs 2-0 Man City 2 Oct 2016 (premierleague.com/news/116262 confirms 9th minute OG); Gareth McAuley (West Brom) Spurs 4-0 West Brom 14 Jan 2017 (11v11 match page https://www.11v11.com/matches/tottenham-hotspur-v-west-bromwich-albion-14-january-2017-351806/ confirms 26th minute OG).
+Player goals sum: 84
+Club goals minus own goals for minus player goals: 0 (OK)
+Disagreements: 0
+Position and nationality: footballsquads 2016/17 (G/D/M/F mapped to GK/DEF/MID/FWD). Names/spellings reused from earlier seasons in this dataset where the player already appears.
+Nationality notes: none
+Unverified: nothing outstanding.

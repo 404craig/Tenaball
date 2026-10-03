@@ -1,0 +1,9 @@
+Club: West Ham 2019/20
+Players: StatMuse player-stats 25, most-appearances 25, fewest-appearances 25 (all at cap); merged 29 unique (Haller, Fredericks, Soucek, Roberto missing from player-stats list). 11v11 PL club page 29. Same 29 players.
+Disagreements: none. All apps (11v11 starts + subs) and goals match StatMuse. Name-only differences between sources noted in the note column.
+Club PL goals: 49 (https://en.wikipedia.org/wiki/2019%E2%80%9320_Premier_League league table).
+Own goals for: 0. StatMuse own-goals vs West Ham United query returned HTTP 422 (no rows). Wikipedia 2019-20 West Ham season page: no own goals row in scorers table, PL column sums to 49 = league GF.
+Player goals sum: 49
+Difference (club goals - og_for - player goals): 0
+Position/nationality source: https://www.footballsquads.co.uk/eng/2019-2020/engprem/westham.htm (incl. players no longer at club section). Nationality follows footballsquads 2019/20 (time-specific), exceptions noted per row. Name spellings reused from earlier seasons where present.
+Unverified: og_for=0 rests on StatMuse 422 (no rows) plus Wikipedia season page and exact goal reconciliation.

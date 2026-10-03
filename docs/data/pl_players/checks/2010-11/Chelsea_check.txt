@@ -1,0 +1,10 @@
+Club: Chelsea 2010/11
+Players: StatMuse player-stats 24, most-appearances 24, fewest-appearances 24 (none capped); merged 24 unique. 11v11 PL club page (https://www.11v11.com/teams/chelsea/tab/players/season/2011/comp/1/) 24. Same 24 players.
+Club PL goals: 69 (https://en.wikipedia.org/wiki/2010%E2%80%9311_Premier_League league table).
+Own goals for: 1 (Ian Evatt, Blackpool, 19 Sep 2010). Source: https://www.statmuse.com/fc/ask/players-with-own-goals-vs-chelsea-2010-11-premier-league. 11v11 player goals also sum to 68, consistent.
+Player goals sum: 68
+Difference (club goals - og_for - player goals): 0
+Rows: 24
+Disagreements: none. All apps (starts + subs) and goals match between StatMuse and 11v11.
+Position/nationality source: https://www.footballsquads.co.uk/eng/2010-2011/faprem/chelsea.htm. Spellings reused from other seasons. Kakuta DR Congo (footballsquads FRA in 2010-11, later capped by DR Congo; matches other seasons). Zhirkov MID per footballsquads (11v11 lists Defender).
+Unverified: own goal confirmed by StatMuse only (consistent with goals total from both stats sources).

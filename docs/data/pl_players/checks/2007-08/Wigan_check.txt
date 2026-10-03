@@ -1,0 +1,13 @@
+Wigan 2007/08 Premier League check
+Player count per source:
+- StatMuse (player-stats, most-appearances, fewest-appearances all read and merged; each capped at 25 rows): 27 players
+- 11v11 club page https://www.11v11.com/teams/wigan-athletic/tab/players/season/2008/comp/1/: 27 players
+- footballsquads https://www.footballsquads.co.uk/eng/2007-2008/faprem/ : all 27 players found (position taken from it; the 2007-08 pages have no nationality column, so nationality is from the 11v11 club page Nat code, matched to spelling used in earlier season files)
+Club PL goals (Wikipedia 2007-08 Premier League table): 34
+Own goals for: 1 (Phil Jagielka (Everton, 20 Jan 2008, 53 min); confirmed by Wikipedia 2007-08 Wigan Athletic season page); source https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wigan-athletic-2007-08-premier-league
+Player goals sum: 33
+Club goals minus own goals for: 33
+Difference: 0
+Disagreements: none on apps or goals; every player matches between StatMuse and 11v11 (starts+subs).
+Notes: none
+Unverified: nothing outstanding.

@@ -1,0 +1,9 @@
+Newcastle 2022/23 check
+Player count per source: StatMuse player-stats 25 (cap), most-appearances 25 (cap), fewest-appearances 25 (cap); merged StatMuse union 27 (Bruno Guimaraes and Alexander Isak not in player-stats); 11v11 PL squad page 27; rows written 27
+Club PL goals: 68 (Wikipedia 2022-23 Premier League table)
+Own goals for: 4 (StatMuse own-goals-vs-newcastle-united query: David Raya, Ethan Pinnock, Theo Walcott, Deniz Undav; each confirmed: 11v11 match page Brentford v Newcastle 08-04-2023 Raya og; Wikipedia season page Pinnock og in 5-1 v Brentford 08-10-2022; Sky Sports report Newcastle 3-1 Southampton 30-04-2023 Walcott og; nufc.com report Newcastle 4-1 Brighton 18-05-2023 Undav og). Wikipedia summariser only listed Pinnock.
+Player goals sum: 64; difference (68 - 4 - 64): 0
+Disagreements: 1.
+- Jamaal Lascelles apps: StatMuse 9; 11v11 squad page 2+5=7, 11v11 player page 2 starts + 5 subs, Wikipedia season page 2+5. Used 7.
+Position/nationality: footballsquads eng/2022-2023/engprem/newcas.htm exists but its table could not be read (summariser returned header only, 3 attempts). Fallback: positions from footballsquads-based rows for the same players in later seasons (2023-24 to 2025-26), nationality checked against Wikipedia 2022-23 Newcastle season squad. Jamal Lewis DEF/Northern Ireland, Javier Manquillo DEF/Spain, Allan Saint-Maximin MID/France (winger), Jonjo Shelvey MID/England from Wikipedia season squad (no later-season row). Elliot Anderson: Wikipedia season squad shows SCO (youth level); England used, his senior team and later seasons.
+Unverified: Newcastle positions not confirmed against footballsquads 2022-23 (page unreadable).

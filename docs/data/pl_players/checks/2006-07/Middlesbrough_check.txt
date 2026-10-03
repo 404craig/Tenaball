@@ -1,0 +1,9 @@
+Middlesbrough 2006/07 check
+Player count per source: StatMuse 27 (player-stats 25 + most-apps 25 + fewest-apps 25, merged: most-apps adds Yakubu and Parnaby, fewest-apps adds none beyond those); 11v11 club page https://www.11v11.com/teams/middlesbrough/tab/players/season/2007/comp/1/ 27 (A = starts, S = subs, total = A + S); footballsquads https://www.footballsquads.co.uk/eng/2006-2007/faprem/middles.htm: all 27 present (Maccarone in "no longer at club").
+Club PL goals: 44 (11v11 final table https://www.11v11.com/league-tables/premier-league/01-june-2007/; Wikipedia 2006-07 Premier League table rows could not be extracted).
+Own goals for: 1 (Gary Speed, Bolton, 20 Jan 2007) from https://www.statmuse.com/fc/ask/players-with-own-goals-vs-middlesbrough-2006-07-premier-league
+Player goals sum: 43. 44 - 1 - 43 = 0.
+Disagreements: none; every player's apps and goals match between StatMuse and 11v11.
+Positions: footballsquads 2006-07 (Arca D, Euell F, Xavier D).
+Nationality: footballsquads 2006-07 has no nationality column. Reused from other seasons' CSVs; new players from the 11v11 club page Nat column: Christie ENG, Maccarone ITA, Mendieta ESP, Abel Xavier POR.
+Unverified: own goal not separately confirmed by Wikipedia or 11v11 match pages, but it reconciles exactly.

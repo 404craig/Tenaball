@@ -1,0 +1,9 @@
+Wolves 2023/24 check
+Players per source: 11v11 PL squad page 27; StatMuse player-stats 25 (capped), most-appearances 25 (capped), fewest-appearances 10; StatMuse union 27. Same 27 players.
+Disagreements: 0 (all apps and goals identical).
+Unverified: own goals not independently confirmed by Wikipedia or 11v11 match pages (summariser output inconsistent).
+Club PL goals: 50 (Wikipedia 2023-24 Premier League table)
+Own goals for: 3 (https://www.statmuse.com/fc/ask/players-with-own-goals-vs-wolverhampton-wanderers-2023-24-premier-league) (Ruben Dias, Man City, 30 Sep 2023; Tom Cairney, Fulham, 27 Nov 2023; Axel Disasi, Chelsea, 4 Feb 2024 in Chelsea 2-4 Wolves with Cunha hat-trick per match reports. Wikipedia season page summary unreliable (goalscorers total read as 43), so only StatMuse plus the goals sum confirm)
+Player goals sum: 47
+Difference (club goals - og - player goals): 0
+Positions/nationality: footballsquads https://www.footballsquads.co.uk/eng/2023-2024/engprem/wolves.htm (all 27 players found)
