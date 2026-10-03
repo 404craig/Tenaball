@@ -734,6 +734,29 @@ ranked("pl-longrange-goals", "Most goals from outside the box", "Name the player
        [("Frank Lampard","41 goals"),("David Beckham","34 goals"),("Steven Gerrard","33 goals"),("Alan Shearer","33 goals"),("Jimmy Floyd Hasselbaink","33 goals"),("Kevin De Bruyne","30 goals"),
         ("Thierry Henry","29 goals"),("Wayne Rooney","29 goals"),("Matt Le Tissier","28 goals"),("Harry Kane","25 goals")])
 
+
+# ---- batch 4: keepers and discipline (docs/data/PL_KEEPERS_DISCIPLINE_2026-10-03.md: the Premier League's own stats feed, with 2026/27 games taken off,
+# checked against Opta and the Premier League records page)
+ranked("pl-cs-club", "Most clean sheets for one club", "Name the goalkeepers with the most Premier League clean sheets for a single club.", LIVE, 1,
+       [("Petr Cech","162 for Chelsea"),("David de Gea","147 for Man Utd"),("David Seaman","138 for Arsenal"),("Pepe Reina","134 for Liverpool"),("Hugo Lloris","127 for Spurs"),
+        ("Ederson","122 for Man City"),("Tim Howard","116 for Everton"),("Peter Schmeichel","112 for Man Utd"),("Joe Hart","109 for Man City"),("Alisson","103 for Liverpool")],
+       {"Jordan Pickford":"Jordan Pickford is just outside with 94 for Everton.","Mark Schwarzer":"Mark Schwarzer is just outside with 93 for Middlesbrough.","Edwin van der Sar":"Edwin van der Sar had 90 for Man Utd."})
+ranked("pl-pen-saves", "Most penalty saves", "Name the goalkeepers who have saved the most Premier League penalties.", LIVE, 2,
+       [("David James","13 saves"),("Thomas Sorensen","12 saves"),("Lukasz Fabianski","11 saves"),("Mark Schwarzer","10 saves"),("Brad Friedel","10 saves"),("Shay Given","10 saves"),
+        ("Heurelho Gomes","9 saves"),("Rob Green","9 saves"),("Jussi Jaaskelainen","9 saves"),("Ben Foster","9 saves")],
+       {"Simon Mignolet":"Simon Mignolet is just outside with eight.","Edwin van der Sar":"Edwin van der Sar is just outside with eight.","Jordan Pickford":"Jordan Pickford is just outside with eight."})
+ranked("pl-red-cards", "Most Premier League red cards", "Name the players sent off the most times in the Premier League. Thirteen players have six, so any three of them fill the last three places.", LIVE, 1,
+       [("Richard Dunne","8 red cards"),("Duncan Ferguson","8 red cards"),("Patrick Vieira","8 red cards"),("Lee Cattermole","7 red cards"),("Vinnie Jones","7 red cards"),("Roy Keane","7 red cards"),("Alan Smith","7 red cards"),
+        (["Gareth Barry","Joey Barton","Luis Boa Morte","Nicky Butt","Andy Cole","Steven Gerrard","John Hartson","Younes Kaboul","Martin Keown","Paul Konchesky","Franck Queudrue","John Terry","Nemanja Vidic"],"6 red cards","red6",3)])
+ranked("pl-yellow-cards", "Most Premier League yellow cards", "Name the players booked the most times in the Premier League. George Boateng and Kevin Nolan share 10th, so either counts.", LIVE, 1,
+       [("Gareth Barry","123 yellows"),("Wayne Rooney","102 yellows"),("Lee Bowyer","99 yellows"),("Kevin Davies","99 yellows"),("Paul Scholes","97 yellows"),("Scott Parker","92 yellows"),
+        ("Ashley Young","91 yellows"),("Robbie Savage","89 yellows"),("Lee Cattermole","88 yellows"),(["George Boateng","Kevin Nolan"],"85 yellows","yel85",1)],
+       {"Phil Neville":"Phil Neville is just outside with 82.","Mark Noble":"Mark Noble is just outside with 82.","James Milner":"James Milner was booked 78 times."})
+ranked("pl-own-goals", "Most Premier League own goals", "Name the players who have scored the most own goals in the Premier League.", LIVE, 2,
+       [("Richard Dunne","10 own goals"),("Jamie Carragher","7 own goals"),("Lewis Dunk","7 own goals"),("Phil Jagielka","7 own goals"),("Martin Skrtel","7 own goals"),
+        ("Wes Brown","6 own goals"),("Seamus Coleman","6 own goals"),("Jonny Evans","6 own goals"),("Ryan Shawcross","6 own goals"),("Frank Sinclair","6 own goals")],
+       {"Rio Ferdinand":"Rio Ferdinand is just outside with five.","Craig Dawson":"Craig Dawson is just outside with five.","John O'Shea":"John O'Shea is just outside with five."})
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
