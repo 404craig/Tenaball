@@ -532,6 +532,87 @@ for key, S, title, brief, lv in [("afr", AFRICA, "Top African scorers", "Name th
 board("pl-nat-hn-goals", "Top scorers from Scotland, Wales and Ireland", "Name the ten players from Scotland, Wales, Northern Ireland or the Republic of Ireland with the most Premier League goals.", 1,
       tally([r for r in PR if r["nationality"] in HOME - {"England"}], "goals"), "goals")
 
+# ---- Craig's picks, batch 2 (3 October 2026): club records worked out from every Premier League result
+# docs/data/pl_results/pl_results.csv, built and checked by scripts/build-pl-results.py (two sources, and every table matches PL_PTS and PL)
+RES = [(r["season"], r["date"], r["home"], r["away"], int(r["home_goals"]), int(r["away_goals"])) for r in csv.DictReader(open("docs/data/pl_results/pl_results.csv", encoding="utf-8"))]
+assert len(RES) == 13166
+yr = lambda d: d[:4]
+cseason = defaultdict(lambda: {"w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "cs": 0})
+games_of = defaultdict(list)  # club -> [(date, result, gf, ga, home, opponent, season)]
+for s, d, h, a, hg, ag in RES:
+    for c, f, g, home, opp in [(h, hg, ag, True, a), (a, ag, hg, False, h)]:
+        t = cseason[(c, s)]; t["gf"] += f; t["ga"] += g; t["cs"] += g == 0
+        t["w" if f > g else "d" if f == g else "l"] += 1
+        games_of[c].append((d, "w" if f > g else "d" if f == g else "l", f, g, home, opp, s))
+for c in games_of: games_of[c].sort()
+assert cseason[("Arsenal", "2003/04")]["l"] == 0 and cseason[("Derby", "2007/08")]["w"] == 1
+sv = lambda n, k, word="": f"{n}{word}, {k[1]}"
+def best_each(field, low=True, filt=lambda k: True):
+    """each club once, at its best (lowest or highest) season"""
+    out = {}
+    for k, t in cseason.items():
+        if not filt(k): continue
+        v = field(t)
+        if k[0] not in out or (v < out[k[0]][1] if low else v > out[k[0]][1]): out[k[0]] = (k, v)
+    return {k: v for k, v in out.values()}
+cboard("pl-rec-fewest-conceded", "Fewest goals conceded in a season", "Name the clubs with the best defensive records in a Premier League season. Each club counts once, for its best season. The 42-game seasons up to 1994/95 count.", 1,
+       best_each(lambda t: t["ga"]), lambda k, v: f"{v} conceded, {k[1]}", lambda c: f"{c} conceded", asc=True)
+cboard("pl-rec-most-cs", "Most clean sheets in a season", "Name the clubs with the most clean sheets in a Premier League season. Each club counts once, for its best season.", 1,
+       best_each(lambda t: t["cs"], low=False), lambda k, v: f"{v} clean sheets, {k[1]}", lambda c: f"{c} clean sheets")
+cboard("pl-rec-most-conceded", "Most goals conceded in a season", "Name the clubs behind the leakiest defences in a Premier League season. The 42-game seasons up to 1994/95 count.", 1,
+       {k: t["ga"] for k, t in cseason.items()}, lambda k, v: f"{v} conceded, {k[1]}", lambda c: f"{c} conceded")
+cboard("pl-rec-fewest-scored", "Fewest goals scored in a season", "Name the clubs that scored the fewest goals in a Premier League season.", 1,
+       {k: t["gf"] for k, t in cseason.items()}, lambda k, v: f"{v} scored, {k[1]}", lambda c: f"{c} scored", asc=True)
+cboard("pl-rec-best-gd", "Best goal difference in a season", "Name the clubs with the best goal difference in a Premier League season. Each club counts once, for its best season.", 1,
+       best_each(lambda t: t["gf"] - t["ga"], low=False), lambda k, v: f"+{v}, {k[1]}", lambda c: f"+{c}")
+cboard("pl-rec-worst-gd", "Worst goal difference in a season", "Name the clubs with the worst goal difference in a Premier League season.", 2,
+       {k: t["gf"] - t["ga"] for k, t in cseason.items()}, lambda k, v: f"{v}, {k[1]}", lambda c: f"{c}", asc=True)
+cboard("pl-rec-most-defeats", "Most defeats in a season", "Name the clubs that lost the most games in a Premier League season. The 42-game seasons up to 1994/95 count.", 1,
+       {k: t["l"] for k, t in cseason.items()}, lambda k, v: f"{v} defeats, {k[1]}", lambda c: f"{c} defeats")
+cboard("pl-rec-fewest-wins", "Fewest wins in a season", "Name the clubs that won the fewest games in a Premier League season.", 1,
+       {k: t["w"] for k, t in cseason.items()}, lambda k, v: f"{v} {'win' if v == 1 else 'wins'}, {k[1]}", lambda c: f"{c} wins", asc=True)
+# biggest wins: the winning club is the answer, the score and opponent are the stat
+wins = {}
+for s, d, h, a, hg, ag in RES:
+    if hg != ag:
+        w, l, f, g = (h, a, hg, ag) if hg > ag else (a, h, ag, hg)
+        wins[(w, d, l, f, g)] = (f - g) * 100 + f
+bestwin = {}
+for k, v in sorted(wins.items(), key=lambda x: (-x[1], x[0][1])):
+    bestwin.setdefault(k[0], (k, v))
+cboard("pl-rec-biggest-wins", "Biggest Premier League wins", "Name the clubs behind the biggest wins in Premier League history. Each club counts once, for its biggest win (on margin, then goals scored).", 1,
+       {k: v for k, v in bestwin.values()}, lambda k, v: f"{k[3]}-{k[4]} v {k[2]}, {yr(k[1])}", lambda c: f"won by {c // 100}, {c % 100} scored", near=lambda k, v: f"{k[3]}-{k[4]} v {k[2]}")
+# runs: maximal runs over each club's Premier League games in date order (a run carries over a spell outside the league, as the official records do)
+def runs(ok, home=None, cs=False):
+    out = {}
+    for c, gl in games_of.items():
+        gl = [g for g in gl if home is None or g[4] == home]
+        n = 0; start = None
+        for i, g in enumerate(gl + [None]):
+            hit = g is not None and (g[3] == 0 if cs else g[1] in ok)
+            if hit:
+                if n == 0: start = g[0]
+                n += 1; end = g[0]
+            elif n:
+                if n > out.get(c, (None, 0))[1]: out[c] = ((c, start, end), n)
+                n = 0
+    return {k: v for k, v in out.values()}  # each club once, for its longest run
+rv = lambda k, v: f"{v} games, {yr(k[1])}" + ("" if yr(k[1]) == yr(k[2]) else f" to {yr(k[2])}")
+cboard("pl-rec-unbeaten-run", "Longest unbeaten runs", "Name the clubs behind the longest unbeaten runs in Premier League history. Each club counts once, for its longest run.", 1, runs("wd"), rv, lambda c: f"{c} games")
+cboard("pl-rec-winning-run", "Longest winning runs", "Name the clubs behind the longest winning runs in Premier League history. Each club counts once, for its longest run.", 1, runs("w"), rv, lambda c: f"{c} games")
+cboard("pl-rec-losing-run", "Longest losing runs", "Name the clubs behind the longest losing runs in Premier League history. Each club counts once, for its longest run. A run carries on if the club came back up after relegation.", 1, runs("l"), rv, lambda c: f"{c} games")
+cboard("pl-rec-winless-run", "Longest runs without a win", "Name the clubs behind the longest runs without a win in Premier League history. Each club counts once, for its longest run. A run carries on if the club came back up after relegation.", 2, runs("dl"), rv, lambda c: f"{c} games")
+cboard("pl-rec-home-unbeaten", "Longest unbeaten home runs", "Name the clubs behind the longest unbeaten runs at home in Premier League history. Each club counts once, for its longest run.", 2, runs("wd", home=True), rv, lambda c: f"{c} games")
+cboard("pl-rec-cs-run", "Most clean sheets in a row", "Name the clubs behind the longest runs of Premier League clean sheets. Each club counts once, for its longest run.", 2, runs("", cs=True), rv, lambda c: f"{c} games")
+# wins over the big six by everyone else
+BIG6 = {"Man Utd", "Liverpool", "Arsenal", "Chelsea", "Man City", "Spurs"}
+b6 = Counter()
+for s, d, h, a, hg, ag in RES:
+    if hg > ag and h not in BIG6 and a in BIG6: b6[h] += 1
+    if ag > hg and a not in BIG6 and h in BIG6: b6[a] += 1
+cboard("pl-rec-big6-wins", "Most wins over the big six", "Name the clubs outside the big six (Man Utd, Liverpool, Arsenal, Chelsea, Man City and Spurs) with the most Premier League wins over them.", 2,
+       b6, lambda k, v: f"{v} wins", lambda c: f"{c} wins")
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
