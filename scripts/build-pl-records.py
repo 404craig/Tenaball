@@ -19,7 +19,9 @@ def ranked(id, title, brief, period, level, rows, notes=None, type="person"):
     Q.append({"id": id, "cat": "pl", "type": type, "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "numeric": True, "slots": slots, "notes": notes or {}})
 def labelled(id, title, brief, period, level, rows, notes=None):
     assert len(rows) == 10, id
-    Q.append({"id": id, "cat": "pl", "type": "person", "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "slots": [{"label": l, "club": n, "val": v} for l, n, v in rows], "notes": notes or {}})
+    # a list of names in a row means any of them counts for that slot (for example a record that depends on whether add-ons count)
+    slot = lambda l, n, v: {"label": l, "club": n[0], "alts": n, "pool": id[-6:] + l, "val": v} if isinstance(n, list) else {"label": l, "club": n, "val": v}
+    Q.append({"id": id, "cat": "pl", "type": "person", "title": title, "brief": brief, "period": period, "level": level, "hard": level == 2, "slots": [slot(l, n, v) for l, n, v in rows], "notes": notes or {}})
 
 LIVE = "Premier League era, 1992/93 to 2025/26"
 DONE = "Premier League era, 1992/93 to 2025/26"
@@ -92,10 +94,10 @@ ranked("pl-fee-fwd", "Most expensive forwards", "Name the strikers and wingers b
   ("Romelu Lukaku","£90m, 2017"),("Mykhailo Mudryk","£88.5m, 2023"),("Antony","£85.5m, 2022"),("Savinho","£85m, 2026"),
   ("Darwin Nunez","£85m, 2022"),("Hugo Ekitike","£79m, 2025")],
  {"Benjamin Sesko":"Benjamin Sesko's £73.7m move to Man Utd is just outside."})
-labelled("pl-fee-clubbuy", "Club record signings", "Name each club's record signing (headline fees as reported in the UK).", FEES, 1,
- [("Man Utd","Paul Pogba","£89m, 2016"),("Liverpool","Alexander Isak","£125m, 2025"),("Arsenal","Declan Rice","£105m, 2023"),
+labelled("pl-fee-clubbuy", "Club record signings", "Name each club's record signing (headline fees as reported in the UK). Man Utd and Everton have two answers: Pogba and Sigurdsson cost the most up front, Lukaku and Richarlison the most once add-ons are counted.", FEES, 1,
+ [("Man Utd",["Romelu Lukaku","Paul Pogba"],"£90m Lukaku, 2017; £89m Pogba, 2016"),("Liverpool","Alexander Isak","£125m, 2025"),("Arsenal","Declan Rice","£105m, 2023"),
   ("Chelsea","Morgan Rogers","£117m, 2026"),("Man City","Enzo Fernandez","£125m, 2026"),("Spurs","Sandro Tonali","£100m, 2026"),
-  ("Newcastle","Nick Woltemade","£69m, 2025"),("Aston Villa","Nicolas Jackson","£65m, 2026"),("West Ham","Lucas Paqueta","£51m, 2022"),("Everton","Gylfi Sigurdsson","£45m, 2017")])
+  ("Newcastle","Nick Woltemade","£69m, 2025"),("Aston Villa","Nicolas Jackson","£65m, 2026"),("West Ham","Lucas Paqueta","£51m, 2022"),("Everton",["Richarlison","Gylfi Sigurdsson"],"£50m Richarlison, 2018; £45m Sigurdsson, 2017")])
 
 
 # biggest sales (headline fees, estimates as published by the most prominent UK outlets), researched 2 October 2026
@@ -140,6 +142,47 @@ sales("pl-fee-sales-new", "Newcastle's biggest sales", "Name the ten players New
 
 # each club's top Premier League scorers counting only goals from 2000/01, researched 2 October 2026 (docs/data/SINCE_2000_SCORERS.md)
 S2000 = "Premier League goals from 2000/01 to 2025/26"
+# each club's biggest signings (headline fees, add-ons included, as the most prominent UK outlets published them), researched 3 October 2026.
+# Rows and sources: docs/data/PL_SIGNINGS_2026-10-03.md. Everton is held back: Moise Kean's fee (Sky £36.6m, Juventus about £29m) decides 10th place.
+def buys(id, title, level, rows, notes=None):
+    ranked(id, title, f"Name the ten players {re.sub(chr(39) + 's? biggest signings$', '', title)} signed for the biggest fees. {SB}", FEES, level, rows, notes)
+buys("pl-fee-buys-mu", "Man Utd's biggest signings", 1,
+ [("Romelu Lukaku","£90m, 2017"),("Paul Pogba","£89m, 2016"),("Antony","£85.5m, 2022"),("Harry Maguire","£80m, 2019"),("Benjamin Sesko","£73.7m, 2025"),
+  ("Jadon Sancho","£73m, 2021"),("Rasmus Hojlund","£72m, 2023"),("Bryan Mbeumo","£71m, 2025"),("Casemiro","£70m, 2022"),("Carlos Baleba","£70m, 2026")],
+ {"Matheus Cunha":"Matheus Cunha's £62.5m move is just outside.","Mason Mount":"Mason Mount's £60m move is just outside.","Angel Di Maria":"Angel Di Maria's £59.7m move is just outside."})
+buys("pl-fee-buys-lfc", "Liverpool's biggest signings", 1,
+ [("Alexander Isak","£125m, 2025"),("Bradley Barcola","£123m, 2026"),("Florian Wirtz","£116.5m, 2025"),("Darwin Nunez","£85m, 2022"),("Hugo Ekitike","£79m, 2025"),
+  ("Virgil van Dijk","£75m, 2018"),("Alisson","£66.8m, 2018"),("Dominik Szoboszlai","£60m, 2023"),("Jeremy Jacquet","£60m, 2026"),("Naby Keita","£52.75m, 2018")],
+ {"Luis Diaz":"Luis Diaz's £49m move is just outside.","Milos Kerkez":"Milos Kerkez's £40m move is outside the ten."})
+buys("pl-fee-buys-afc", "Arsenal's biggest signings", 1,
+ [("Declan Rice","£105m, 2023"),("Bruno Guimaraes","£75m, 2026"),("Nicolas Pepe","£72m, 2019"),("Eberechi Eze","£67.5m, 2025"),("Kai Havertz","£65m, 2023"),
+  ("Viktor Gyokeres","£63.5m, 2025"),("Martin Zubimendi","£60m, 2025"),("Pierre-Emerick Aubameyang","£56m, 2018"),("Ezri Konsa","£55m, 2026"),("Alexandre Lacazette","£52.6m, 2017")],
+ {"Noni Madueke":"Noni Madueke's £52m move is just outside.","Ben White":"Ben White's £50m move is just outside.","Gabriel Jesus":"Gabriel Jesus's £45m move is outside the ten."})
+buys("pl-fee-buys-cfc", "Chelsea's biggest signings", 1,
+ [("Morgan Rogers","£117m, 2026"),("Moises Caicedo","£115m, 2023"),("Enzo Fernandez","£106.8m, 2023"),("Romelu Lukaku","£97.5m, 2021"),("Mykhailo Mudryk","£88.5m, 2023"),
+  ("Wesley Fofana","£75m, 2022"),("Kepa Arrizabalaga","£71.6m, 2018"),("Kai Havertz","£71m, 2020"),("Alvaro Morata","£70m, 2017"),("Marc Cucurella","£62m, 2022")],
+ {"Joao Pedro":"Joao Pedro's £60m move is just outside.","Romeo Lavia":"Romeo Lavia's £58m move is just outside.","Christian Pulisic":"Christian Pulisic's £58m move is just outside."})
+buys("pl-fee-buys-mci", "Man City's biggest signings", 1,
+ [("Enzo Fernandez","£125m, 2026"),("Elliot Anderson","£116m, 2026"),("Jack Grealish","£100m, 2021"),("Ayyoub Bouaddi","£86m, 2026"),("Josko Gvardiol","£77.6m, 2023"),
+  ("Antoine Semenyo","£65m, 2026"),("Iliman Ndiaye","£65m, 2026"),("Ruben Dias","£65m, 2020"),("Omar Marmoush","£63.2m, 2025"),("Rodri","£62.8m, 2019")],
+ {"Riyad Mahrez":"Riyad Mahrez's £60m move is just outside.","Joao Cancelo":"Joao Cancelo's £60m move is just outside.","Aymeric Laporte":"Aymeric Laporte's £57m move is just outside."})
+buys("pl-fee-buys-tot", "Spurs' biggest signings", 2,
+ [("Sandro Tonali","£100m, 2026"),("Mateus Fernandes","£85m, 2026"),("Savinho","£85m, 2026"),("Dominic Solanke","£65m, 2024"),("Tanguy Ndombele","£63m, 2019"),
+  ("Richarlison","£60m, 2022"),("Mohammed Kudus","£55m, 2025"),("Jan Paul van Hecke","£52m, 2026"),("Xavi Simons","£51.8m, 2025"),("Brennan Johnson","£47.5m, 2023")],
+ {"Cristian Romero":"Cristian Romero's £47m move is just outside.","Davinson Sanchez":"Davinson Sanchez's £42m move is just outside.","Omar Marmoush":"Omar Marmoush is on loan, with a £50m fee due if the obligation is met."})
+buys("pl-fee-buys-new", "Newcastle's biggest signings", 2,
+ [("Nick Woltemade","£69m, 2025"),("Alexander Isak","£63m, 2022"),("Yoane Wissa","£55m, 2025"),("Anthony Elanga","£55m, 2025"),("Sandro Tonali","£55m, 2023"),
+  ("Nico Gonzalez","£52m, 2026"),("Matias Fernandez-Pardo","£51m, 2026"),("Anthony Gordon","£45m, 2023"),("Jacob Ramsey","£43m, 2025"),("Bazoumana Toure","£43m, 2026")],
+ {"Bruno Guimaraes":"Bruno Guimaraes's £40m move is just outside.","Joelinton":"Joelinton's £40m move is just outside."})
+buys("pl-fee-buys-avl", "Aston Villa's biggest signings", 2,
+ [("Nicolas Jackson","£65m, 2026"),("Johan Manzambi","£59.5m, 2026"),("Moussa Diaby","£51.9m, 2023"),("Amadou Onana","£50m, 2024"),("Ibrahim Mbaye","£47m, 2026"),
+  ("Joao Gomes","£38m, 2026"),("Emiliano Buendia","£38m, 2021"),("Ian Maatsen","£37.5m, 2024"),("Ollie Watkins","£33m, 2020"),("Pau Torres","£31.5m, 2023")],
+ {"Leon Bailey":"Leon Bailey's £30m move is just outside.","Evann Guessand":"Evann Guessand's £30m move is just outside.","Taylor Harwood-Bellis":"Taylor Harwood-Bellis's £30m move is just outside.","Danny Ings":"Danny Ings's £30m move is just outside.","Alejandro Garnacho":"Alejandro Garnacho is on loan, with a fee due only if the obligation is met."})
+buys("pl-fee-buys-whu", "West Ham's biggest signings", 2,
+ [("Lucas Paqueta","£51m, 2022"),("Sebastien Haller","£45m, 2019"),("Mateus Fernandes","£42m, 2025"),("Felipe Anderson","£42m, 2018"),("Max Kilman","£40m, 2024"),
+  ("Mohammed Kudus","£38m, 2023"),("Gianluca Scamacca","£35.5m, 2022"),("Edson Alvarez","£35.4m, 2023"),("Jean-Clair Todibo","£34.2m, 2025"),("Crysencio Summerville","£34m, 2024")],
+ {"Nayef Aguerd":"Nayef Aguerd's £30m move is just outside.","Kurt Zouma":"Kurt Zouma's £29.8m move is just outside."})
+
 def since(id, club, rows, notes):
     ranked(id, f"{club}'s Premier League scorers since 2000", f"Name {club}'s ten highest Premier League scorers, counting only goals from the 2000/01 season onwards.", S2000, 1, rows, notes)
 since("pl-mu-2000-goals", "Man Utd",
@@ -158,6 +201,93 @@ since("pl-cfc-2000-goals", "Chelsea",
  [("Frank Lampard","147 goals"),("Didier Drogba","104 goals"),("Eden Hazard","85 goals"),("Jimmy Floyd Hasselbaink","69 goals"),("Eidur Gudjohnsen","54 goals"),
   ("Diego Costa","52 goals"),("Cole Palmer","47 goals"),("John Terry","41 goals"),("Nicolas Anelka","38 goals"),("Willian","37 goals")],
  {"Salomon Kalou":"Salomon Kalou scored 36, just outside.","Florent Malouda":"Florent Malouda scored 35, just outside.","Gianfranco Zola":"Gianfranco Zola scored 26 from 2000/01."})
+
+# boards worked out from Craig's player dataset (docs/data/pl_players/pl_players.csv, every Premier League player 1992/93 to 2025/26)
+# Players are grouped by player_id and use the game's own spelling (CANON, as in build-pl-players.py). Ideas from docs/data/Tenaball_new_boards_2026-10-03.md.
+import csv
+from collections import defaultdict, Counter
+CANON = {"Son Heung-min": "Heung-min Son", "Theo Zagorakis": "Theodoros Zagorakis", "Kanu": "Nwankwo Kanu", "Juninho": "Juninho Paulista", "Salva": "Salva Ballesta"}
+PR = list(csv.DictReader(open("docs/data/pl_players/pl_players.csv", encoding="utf-8")))
+PNAME = {r["player_id"]: CANON.get(r["player"], r["player"]) for r in PR}
+def tally(rows, field):
+    t = Counter()
+    for r in rows: t[r["player_id"]] += int(r[field])
+    return t
+def board(id, title, brief, level, tally_, unit, notes=None, val=None, short=None):
+    """the ten highest in tally_ (player_id -> number); a tie across 10th becomes a pool and the brief says so"""
+    val = val or (lambda p, v: f"{v} {unit}")
+    order = sorted(tally_, key=lambda p: (-tally_[p], PNAME[p]))
+    cut = tally_[order[9]]
+    above = [p for p in order if tally_[p] > cut]
+    tied = [p for p in order if tally_[p] == cut]
+    rows = [(PNAME[p], val(p, tally_[p])) for p in above]
+    if len(above) + len(tied) == 10:
+        rows += [(PNAME[p], val(p, tally_[p])) for p in tied]
+    else:
+        n = 10 - len(above); names = [PNAME[p] for p in tied]
+        rows.append((names, f"{cut} {unit}", id.replace("pl-", "")[:12], n))
+        who = " and ".join(names) if len(names) == 2 else f"{len(names)} players"
+        brief += f" {who} share {'10th' if n == 1 else 'the last ' + str(n) + ' places'}, so {'either' if len(names) == 2 else 'any ' + ('one' if n == 1 else str(n))} of them {'counts' if n == 1 else 'fill them'}."
+    below = [p for p in order if tally_[p] < cut][:3]
+    auto = {PNAME[p]: f"{PNAME[p]} is just outside with {tally_[p]}." for p in below}
+    auto.update(notes or {})
+    ranked(id, title, brief, LIVE, level, rows, auto)
+
+# most appearances for a club
+CLUBS = [("mu","Man Utd","Man Utd's","Manchester United",1),("lfc","Liverpool","Liverpool's","Liverpool",1),("afc","Arsenal","Arsenal's","Arsenal",1),
+         ("cfc","Chelsea","Chelsea's","Chelsea",1),("tot","Spurs","Spurs'","Tottenham",2),("mci","Man City","Man City's","Manchester City",2),
+         ("new","Newcastle","Newcastle's","Newcastle United",2),("eve","Everton","Everton's","Everton",2),("whu","West Ham","West Ham's","West Ham United",2),
+         ("avl","Aston Villa","Aston Villa's","Aston Villa",2)]
+for key, club, poss, full, lv in CLUBS:
+    board(f"pl-{key}-apps", f"{poss} most Premier League appearances", f"Name the ten players who have played the most Premier League games for {full}.", lv,
+          tally([r for r in PR if r["club"] == club], "apps"), "games")
+
+# top scorers by nationality (the country a player plays for, or his birth country if never capped)
+for key, nat, adj, lv in [("fra","France","French",1),("ned","Netherlands","Dutch",1),("sco","Scotland","Scottish",2),("irl","Republic of Ireland","Republic of Ireland",2),("wal","Wales","Welsh",2)]:
+    who = "Republic of Ireland players" if key == "irl" else f"{adj} players"
+    board(f"pl-nat-{key}-goals", f"Top Premier League scorers: {nat}", f"Name the ten {who} with the most Premier League goals.", lv,
+          tally([r for r in PR if r["nationality"] == nat], "goals"), "goals")
+noneng = [r for r in PR if r["nationality"] != "England"]
+board("pl-nonen-goals", "Top Premier League scorers who aren't English", "Name the ten highest Premier League scorers who don't or didn't play for England.", 0,
+      tally(noneng, "goals"), "goals", {"Harry Kane":"Harry Kane is English.","Alan Shearer":"Alan Shearer is English.","Wayne Rooney":"Wayne Rooney is English."})
+board("pl-nonen-apps", "Most Premier League appearances by a non-English player", "Name the ten players with the most Premier League games who don't or didn't play for England.", 2,
+      tally(noneng, "apps"), "games", {"James Milner":"James Milner is English.","Gareth Barry":"Gareth Barry is English.","Frank Lampard":"Frank Lampard is English."})
+board("pl-gk-apps", "Most Premier League appearances by a goalkeeper", "Name the ten goalkeepers who have played the most Premier League games.", 1,
+      tally([r for r in PR if r["position"] == "GK"], "apps"), "games")
+
+# most seasons at one club: a season counts if he played at least once; each player once, at the club where he has most
+seas = defaultdict(set)
+for r in PR:
+    if int(r["apps"]) > 0: seas[(r["player_id"], r["club"])].add(r["season"])
+best = {}
+for (p, c), s in seas.items():
+    if p not in best or len(s) > best[p][1]: best[p] = (c, len(s))
+board("pl-apps-one-club", "Most Premier League seasons at one club", "Name the players who have played in the most Premier League seasons for the same club (one game in a season counts).", 1,
+      Counter({p: n for p, (c, n) in best.items()}), "seasons", {"James Milner":"James Milner has the most seasons overall, but never more than 8 at one club."},
+      val=lambda p, v: f"{v} seasons, {best[p][0]}")
+
+# goals by position. Positions are the dataset's (footballsquads, season by season); wingers count as midfielders, as they do there.
+# A player is placed by the position he played most of his games in; every goal he scored counts.
+pos = defaultdict(Counter)
+for r in PR: pos[r["player_id"]][r["position"]] += int(r["apps"])
+main = {p: c.most_common(1)[0][0] for p, c in pos.items()}
+# checked by hand: Gareth Barry is 327 games in defence to 326 in midfield, and fans know him as a midfielder
+main.update({p: "MID" for p in PNAME if PNAME[p] == "Gareth Barry"})
+goals = tally(PR, "goals")
+board("pl-defender-goals", "Most Premier League goals by a defender", "Name the ten defenders with the most Premier League goals.", 2,
+      Counter({p: g for p, g in goals.items() if main[p] == "DEF"}), "goals",
+      {"Gareth Barry":"Gareth Barry played about half his games in defence, but he counts as a midfielder here.","Sol Campbell":"Sol Campbell scored 20.","Rio Ferdinand":"Rio Ferdinand scored 11."})
+board("pl-midfield-goals", "Most Premier League goals by a midfielder", "Name the ten midfielders with the most Premier League goals. Wingers count as midfielders, and each player goes by the position he played most often.", 1,
+      Counter({p: g for p, g in goals.items() if main[p] == "MID"}), "goals",
+      {"Mohamed Salah":"Mohamed Salah counts as a forward here.","Heung-min Son":"Son counts as a forward here.","Matt Le Tissier":"Matt Le Tissier counts as a forward here.","Dennis Bergkamp":"Dennis Bergkamp counts as a forward here.","Leroy Sane":"Leroy Sane counts as a forward here."})
+
+# the club record scorers in index.html (CLUB_REC) must match the dataset
+h0 = open("index.html", encoding="utf-8").read()
+cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
+for club, name, g in re.findall(r'\["([^"]+)","([^"]+)",(\d+),\d\]', cr):
+    t = tally([r for r in PR if r["club"] == club], "goals")
+    top = max(t.values()); tops = [PNAME[p] for p in t if t[p] == top]
+    assert tops == [name] and top == int(g), (club, name, g, tops, top)
 
 # every 20-goal season, in runs of consecutive seasons that hold exactly ten
 TWENTY = [l.split(" | ") for l in open("docs/data/Tenaball_EPL_Data_2026-10-01.txt", encoding="utf-8").read().split("== 20+ Seasons")[1].split("== 20+ Players")[0].splitlines() if re.match(r"^\d\d/\d\d \|", l)]
