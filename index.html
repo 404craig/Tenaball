@@ -47,13 +47,6 @@ body[data-cat="top5"]{
   --scan:linear-gradient(90deg,#7cffb2,#ffffff); --miss:#ff4d4d;
   --glowA:rgba(124,255,178,.3); --glowB:rgba(245,183,0,.28); --glowC:rgba(255,255,255,.12);
 }
-/* Ballon d'Or: black tie and gold */
-body[data-cat="bdo"]{
-  --bg1:#3a2c08; --bg2:#0b0903; --topc:#3d3011; --muted:#eadfb8; --slot:rgba(14,11,3,.66); --slotline:rgba(255,226,140,.2);
-  --acc:#d4af37; --accInk:#1b1300; --acc2:#ffe9a3; --hit:linear-gradient(90deg,#fff1b8,#f4d774 45%,#d4af37); --hitInk:#1b1300;
-  --scan:linear-gradient(90deg,#8a6d1c,#f4d774); --miss:#ff4d4d;
-  --glowA:rgba(212,175,55,.38); --glowB:rgba(255,233,163,.2); --glowC:rgba(255,255,255,.12);
-}
 *,*::before,*::after{box-sizing:inherit}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;min-height:100%;color:var(--ink);background:var(--bg2);font-family:Outfit,"Century Gothic","Avenir Next",system-ui,sans-serif;font-size:17px;line-height:1.45;transition:background .6s}
@@ -1403,7 +1396,7 @@ chunksFromEnd(T5S, 2).forEach(g => {
 })();
 
 const ALL_CATS = ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"];
-const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", uel:"Europa League", wc:"World Cup", euro:"Euros", bdo:"Ballon d'Or" };
+const CAT_NAME = { pl:"Premier League", laliga:"La Liga", bund:"Bundesliga", seriea:"Serie A", ligue1:"Ligue 1", spfl:"Scottish Premiership", top5:"Top 5 Leagues", ucl:"Champions League", uel:"Europa League", wc:"World Cup", euro:"Euros" };
 const byCat = c => Q.filter(q => q.cat===c);
 </script>
 <script>
@@ -1747,13 +1740,13 @@ Q.forEach(q => {
   if (m){ q.period = `Seasons ${m[1]} to ${m[2]}`; return; }
   q.period = "Premier League era onwards";
 });
-/* Ballon d'Or: its own category, never in the competitions panel; it joins the draw only when every competition is ticked (nextCat).
+/* Ballon d'Or boards, under Top 5 Leagues.
    Votes from Wikipedia's page for each year, checked against a second outlet (90min, Sports Illustrated, Sportskeeda, TNT); see docs/BALLON_DOR_SOURCES.md */
-Q.forEach(q => { if (/^t5-bdo-/.test(q.id)){ q.cat = "bdo"; q.level = 1; q.hard = false; } });
+Q.forEach(q => { if (/^t5-bdo-/.test(q.id)){ q.level = 1; q.hard = false; } });
 (() => {
   const add = (id, title, brief, period, level, rows, notes, labels) => {
     rows.forEach(([n]) => addPerson(n));
-    Q.push({ id, cat:"bdo", type:"person", title, brief, period, level, hard: level===2, numeric: !labels,
+    Q.push({ id, cat:"top5", type:"person", title, brief, period, level, hard: level===2, numeric: !labels,
       slots: rows.map(([n,v],i) => ({label: labels ? labels[i] : String(i+1), club:n, val:v})), note: c => notes[c] || null });
   };
   add("bdo-most-wins", "Most Ballon d'Or wins", "Name the ten players who have won the Ballon d'Or more than once.", "Every Ballon d'Or, 1956 to 2025", 0,
@@ -1773,6 +1766,16 @@ Q.forEach(q => { if (/^t5-bdo-/.test(q.id)){ q.cat = "bdo"; q.level = 1; q.hard 
       {"Pedri":"Pedri was 11th with 124 points.","Khvicha Kvaratskhelia":"Khvicha Kvaratskhelia was 12th with 123 points.","Harry Kane":"Harry Kane was 13th with 112 points."}]];
   VOTES.forEach(([y, season, rows, notes]) => add(`bdo-vote-${y}`, `${y} Ballon d'Or: the top ten`, `Name the top ten in the ${y} Ballon d'Or vote.`,
     `The ${y} award, for the ${season} season`, 2, rows.map(([n,p]) => [n, `${p.toLocaleString("en-GB")} pts`]), notes));
+})();
+/* Champions League finals: the ten outfield players each finalist started with, 2017 to 2026 (Wikipedia's match pages, each XI checked
+   against a second outlet; see docs/UCL_FINAL_XI_SOURCES.md). Labels are the positions on Wikipedia's team sheet. */
+(() => {
+  const FINALS = [["ucl-xi-2017-juv","Juventus","Real Madrid",2017,"2016/17","3 June 2017","lost 1-4",2,[["CB","Andrea Barzagli","No. 15"],["CB","Leonardo Bonucci","No. 19"],["CB","Giorgio Chiellini","No. 3"],["RM","Dani Alves","No. 23"],["CM","Miralem Pjanic","No. 5"],["CM","Sami Khedira","No. 6"],["LM","Alex Sandro","No. 12"],["AM","Paulo Dybala","No. 21"],["CF","Gonzalo Higuain","No. 9"],["CF","Mario Mandzukic","No. 17"]]],["ucl-xi-2017-rma","Real Madrid","Juventus",2017,"2016/17","3 June 2017","won 4-1",2,[["RB","Dani Carvajal","No. 2"],["CB","Sergio Ramos","No. 4"],["CB","Raphael Varane","No. 5"],["LB","Marcelo","No. 12"],["DM","Casemiro","No. 14"],["CM","Toni Kroos","No. 8"],["CM","Luka Modric","No. 19"],["RF","Isco","No. 22"],["CF","Karim Benzema","No. 9"],["LF","Cristiano Ronaldo","No. 7"]]],["ucl-xi-2018-rma","Real Madrid","Liverpool",2018,"2017/18","26 May 2018","won 3-1",2,[["RB","Dani Carvajal","No. 2"],["CB","Raphael Varane","No. 5"],["CB","Sergio Ramos","No. 4"],["LB","Marcelo","No. 12"],["DM","Casemiro","No. 14"],["CM","Luka Modric","No. 10"],["CM","Toni Kroos","No. 8"],["AM","Isco","No. 22"],["CF","Karim Benzema","No. 9"],["CF","Cristiano Ronaldo","No. 7"]]],["ucl-xi-2018-lfc","Liverpool","Real Madrid",2018,"2017/18","26 May 2018","lost 1-3",1,[["RB","Trent Alexander-Arnold","No. 66"],["CB","Dejan Lovren","No. 6"],["CB","Virgil van Dijk","No. 4"],["LB","Andy Robertson","No. 26"],["CM","James Milner","No. 7"],["CM","Jordan Henderson","No. 14"],["CM","Georginio Wijnaldum","No. 5"],["RF","Mohamed Salah","No. 11"],["CF","Roberto Firmino","No. 9"],["LF","Sadio Mane","No. 19"]]],["ucl-xi-2019-tot","Spurs","Liverpool",2019,"2018/19","1 June 2019","lost 0-2",1,[["RB","Kieran Trippier","No. 2"],["CB","Toby Alderweireld","No. 4"],["CB","Jan Vertonghen","No. 5"],["LB","Danny Rose","No. 3"],["CM","Moussa Sissoko","No. 17"],["CM","Harry Winks","No. 8"],["RW","Dele Alli","No. 20"],["AM","Christian Eriksen","No. 23"],["LW","Son Heung-min","No. 7"],["CF","Harry Kane","No. 10"]]],["ucl-xi-2019-lfc","Liverpool","Spurs",2019,"2018/19","1 June 2019","won 2-0",1,[["RB","Trent Alexander-Arnold","No. 66"],["CB","Joel Matip","No. 32"],["CB","Virgil van Dijk","No. 4"],["LB","Andy Robertson","No. 26"],["CM","Jordan Henderson","No. 14"],["CM","Fabinho","No. 3"],["CM","Georginio Wijnaldum","No. 5"],["RW","Mohamed Salah","No. 11"],["CF","Roberto Firmino","No. 9"],["LW","Sadio Mane","No. 10"]]],["ucl-xi-2020-psg","PSG","Bayern Munich",2020,"2019/20","23 August 2020","lost 0-1",2,[["RB","Thilo Kehrer","No. 4"],["CB","Thiago Silva","No. 2"],["CB","Presnel Kimpembe","No. 3"],["LB","Juan Bernat","No. 14"],["CM","Ander Herrera","No. 21"],["CM","Marquinhos","No. 5"],["CM","Leandro Paredes","No. 8"],["RF","Angel Di Maria","No. 11"],["CF","Kylian Mbappe","No. 7"],["LF","Neymar","No. 10"]]],["ucl-xi-2020-bay","Bayern Munich","PSG",2020,"2019/20","23 August 2020","won 1-0",2,[["RB","Joshua Kimmich","No. 32"],["CB","Jerome Boateng","No. 17"],["CB","David Alaba","No. 27"],["LB","Alphonso Davies","No. 19"],["CM","Thiago","No. 6"],["CM","Leon Goretzka","No. 18"],["RW","Serge Gnabry","No. 22"],["AM","Thomas Muller","No. 25"],["LW","Kingsley Coman","No. 29"],["CF","Robert Lewandowski","No. 9"]]],["ucl-xi-2021-mci","Man City","Chelsea",2021,"2020/21","29 May 2021","lost 0-1",1,[["RB","Kyle Walker","No. 2"],["CB","John Stones","No. 5"],["CB","Ruben Dias","No. 3"],["LB","Oleksandr Zinchenko","No. 11"],["CM","Bernardo Silva","No. 20"],["CM","Ilkay Gundogan","No. 8"],["CM","Phil Foden","No. 47"],["AM","Kevin De Bruyne","No. 17"],["CF","Riyad Mahrez","No. 26"],["CF","Raheem Sterling","No. 7"]]],["ucl-xi-2021-cfc","Chelsea","Man City",2021,"2020/21","29 May 2021","won 1-0",1,[["CB","Cesar Azpilicueta","No. 28"],["CB","Thiago Silva","No. 6"],["CB","Antonio Rudiger","No. 2"],["RWB","Reece James","No. 24"],["LWB","Ben Chilwell","No. 21"],["CM","Jorginho","No. 5"],["CM","N'Golo Kante","No. 7"],["AM","Kai Havertz","No. 29"],["AM","Mason Mount","No. 19"],["CF","Timo Werner","No. 11"]]],["ucl-xi-2022-lfc","Liverpool","Real Madrid",2022,"2021/22","28 May 2022","lost 0-1",1,[["RB","Trent Alexander-Arnold","No. 66"],["CB","Ibrahima Konate","No. 5"],["CB","Virgil van Dijk","No. 4"],["LB","Andy Robertson","No. 26"],["CM","Jordan Henderson","No. 14"],["CM","Fabinho","No. 3"],["CM","Thiago","No. 6"],["RF","Mohamed Salah","No. 11"],["CF","Sadio Mane","No. 10"],["LF","Luis Diaz","No. 23"]]],["ucl-xi-2022-rma","Real Madrid","Liverpool",2022,"2021/22","28 May 2022","won 1-0",2,[["RB","Dani Carvajal","No. 2"],["CB","Eder Militao","No. 3"],["CB","David Alaba","No. 4"],["LB","Ferland Mendy","No. 23"],["CM","Luka Modric","No. 10"],["CM","Casemiro","No. 14"],["CM","Toni Kroos","No. 8"],["RF","Federico Valverde","No. 15"],["CF","Karim Benzema","No. 9"],["LF","Vinicius Junior","No. 20"]]],["ucl-xi-2023-mci","Man City","Inter",2023,"2022/23","10 June 2023","won 1-0",1,[["CB","Manuel Akanji","No. 25"],["CB","Ruben Dias","No. 3"],["CB","Nathan Ake","No. 6"],["DM","John Stones","No. 5"],["DM","Rodri","No. 16"],["RW","Bernardo Silva","No. 20"],["AM","Kevin De Bruyne","No. 17"],["AM","Ilkay Gundogan","No. 8"],["LW","Jack Grealish","No. 10"],["CF","Erling Haaland","No. 9"]]],["ucl-xi-2023-int","Inter","Man City",2023,"2022/23","10 June 2023","lost 0-1",2,[["CB","Matteo Darmian","No. 36"],["CB","Francesco Acerbi","No. 15"],["CB","Alessandro Bastoni","No. 95"],["RM","Denzel Dumfries","No. 2"],["CM","Nicolo Barella","No. 23"],["CM","Marcelo Brozovic","No. 77"],["CM","Hakan Calhanoglu","No. 20"],["LM","Federico Dimarco","No. 32"],["CF","Lautaro Martinez","No. 10"],["CF","Edin Dzeko","No. 9"]]],["ucl-xi-2024-bvb","Dortmund","Real Madrid",2024,"2023/24","1 June 2024","lost 0-2",2,[["RB","Julian Ryerson","No. 26"],["CB","Mats Hummels","No. 15"],["CB","Nico Schlotterbeck","No. 4"],["LB","Ian Maatsen","No. 22"],["CM","Emre Can","No. 23"],["CM","Marcel Sabitzer","No. 20"],["RW","Jadon Sancho","No. 10"],["AM","Julian Brandt","No. 19"],["LW","Karim Adeyemi","No. 27"],["CF","Niclas Fullkrug","No. 14"]]],["ucl-xi-2024-rma","Real Madrid","Dortmund",2024,"2023/24","1 June 2024","won 2-0",2,[["RB","Dani Carvajal","No. 2"],["CB","Antonio Rudiger","No. 22"],["CB","Nacho","No. 6"],["LB","Ferland Mendy","No. 23"],["DM","Eduardo Camavinga","No. 12"],["CM","Federico Valverde","No. 15"],["CM","Toni Kroos","No. 8"],["AM","Jude Bellingham","No. 5"],["CF","Rodrygo","No. 11"],["CF","Vinicius Junior","No. 7"]]],["ucl-xi-2025-psg","PSG","Inter",2025,"2024/25","31 May 2025","won 5-0",2,[["RB","Achraf Hakimi","No. 2"],["CB","Marquinhos","No. 5"],["CB","Willian Pacho","No. 51"],["LB","Nuno Mendes","No. 25"],["CM","Joao Neves","No. 87"],["CM","Vitinha","No. 17"],["CM","Fabian Ruiz","No. 8"],["RF","Desire Doue","No. 14"],["CF","Ousmane Dembele","No. 10"],["LF","Khvicha Kvaratskhelia","No. 7"]]],["ucl-xi-2025-int","Inter","PSG",2025,"2024/25","31 May 2025","lost 0-5",2,[["CB","Benjamin Pavard","No. 28"],["CB","Francesco Acerbi","No. 15"],["CB","Alessandro Bastoni","No. 95"],["RM","Denzel Dumfries","No. 2"],["CM","Nicolo Barella","No. 23"],["CM","Hakan Calhanoglu","No. 20"],["CM","Henrikh Mkhitaryan","No. 22"],["LM","Federico Dimarco","No. 32"],["CF","Marcus Thuram","No. 9"],["CF","Lautaro Martinez","No. 10"]]],["ucl-xi-2026-psg","PSG","Arsenal",2026,"2025/26","30 May 2026","drew 1-1 and won on penalties",2,[["RB","Achraf Hakimi","No. 2"],["CB","Marquinhos","No. 5"],["CB","Willian Pacho","No. 51"],["LB","Nuno Mendes","No. 25"],["RM","Joao Neves","No. 87"],["CM","Vitinha","No. 17"],["LM","Fabian Ruiz","No. 8"],["RF","Desire Doue","No. 14"],["CF","Ousmane Dembele","No. 10"],["LF","Khvicha Kvaratskhelia","No. 7"]]],["ucl-xi-2026-afc","Arsenal","PSG",2026,"2025/26","30 May 2026","drew 1-1 and lost on penalties",1,[["RB","Cristhian Mosquera","No. 3"],["CB","William Saliba","No. 2"],["CB","Gabriel Magalhaes","No. 6"],["LB","Piero Hincapie","No. 5"],["CM","Declan Rice","No. 41"],["CM","Myles Lewis-Skelly","No. 49"],["RW","Bukayo Saka","No. 7"],["AM","Martin Odegaard","No. 8"],["LW","Leandro Trossard","No. 19"],["CF","Kai Havertz","No. 29"]]]];
+  FINALS.forEach(([id, team, other, y, season, date, res, level, players]) => {
+    players.forEach(([, n]) => addPerson(n));
+    Q.push({ id, cat:"ucl", type:"person", title:`${team}'s starters, ${y} final`, brief:`Name the ten outfield players ${team} started with in the ${y} Champions League final against ${other} (they ${res}).`,
+      period:`${season} Champions League final, ${date}`, level, hard: level===2, slots: players.map(([pos, n, v]) => ({label:pos, club:n, val:v})) });
+  });
 })();
 </script>
 <script>
@@ -2076,6 +2079,7 @@ function family(q){
   if (/apps/.test(id)) return "appearances";
   if (/mgr/.test(id)) return "managers";
   if (/-letter-|-both-|-open-/.test(id)) return "letters";
+  if (/-xi-/.test(id)) return "lineups";
   if (/-fee-/.test(id)) return "transfers";
   if (/hattrick|fastest|penalties|-20g-|20-goals/.test(id)) return "scorers";
   if (/bdo|-aw-/.test(id)) return "awards";
@@ -2127,8 +2131,7 @@ function seg(id, key, cast){
 const BADGE = {
   ucl:'<circle cx="12" cy="12" r="10.5" fill="#0b1a55" stroke="#bfefff" stroke-width="1.2"/>' + Array.from({length:8}, (_, i) => { const a = i*Math.PI/4 - Math.PI/2, x = 12+6.3*Math.cos(a), y = 12+6.3*Math.sin(a); return `<path d="M${x.toFixed(1)} ${(y-2).toFixed(1)}l.6 1.4 1.4.1-1.1.9.4 1.4-1.3-.8-1.3.8.4-1.4-1.1-.9 1.4-.1z" fill="#fff"/>`; }).join(""),
   uel:'<circle cx="12" cy="12" r="10.5" fill="#3a1a00" stroke="#ff8a00" stroke-width="1.2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#ff8a00" stroke-width="1.6"/>',
-  wc:'<circle cx="12" cy="12" r="11.2" fill="#2b2209" stroke="#d4af37" stroke-width="1"/><g transform="translate(12 12) scale(.66) translate(-12 -11.4)"><path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/></g>',
-  bdo:'<circle cx="12" cy="12" r="11" fill="#d4af37" stroke="#fff1b8" stroke-width="1"/><path d="M12 7.6l3.6 2.6-1.4 4.2H9.8l-1.4-4.2z" fill="#6b5310"/><path d="M12 7.6V2M15.6 10.2l5-1.8M14.2 14.4l3 4.2M9.8 14.4l-3 4.2M8.4 10.2l-5-1.8" stroke="#6b5310" stroke-width="1.1" fill="none"/>'
+  wc:'<circle cx="12" cy="12" r="11.2" fill="#2b2209" stroke="#d4af37" stroke-width="1"/><g transform="translate(12 12) scale(.66) translate(-12 -11.4)"><path d="M7 3h10v3.5a5 5 0 0 1-3 4.6V14h2.2v2.2H7.8V14H10v-2.9A5 5 0 0 1 7 6.5z" fill="#f5c542"/><path d="M7 4.2H4.5a3 3 0 0 0 3 3.6M17 4.2h2.5a3 3 0 0 1-3 3.6" fill="none" stroke="#f5c542" stroke-width="1.4"/><rect x="6.5" y="16.8" width="11" height="3.6" rx="1" fill="#1a7f3c"/></g>'
 };
 const CAT_FLAG = { pl:"gb-eng", laliga:"es", bund:"de", seriea:"it", ligue1:"fr", spfl:"gb-sct", euro:"eu" };
 function compIcon(cat){
@@ -2332,9 +2335,7 @@ function startRound(qIn){
   if (ONLINE) onlineIntroUI();
 }
 function nextCat(){
-  // the Ballon d'Or boards join the draw only when every competition is ticked
-  const bdo = allCats() && byCat("bdo").some(q => (cfg.allLevels || q.level===cfg.level) && !G.picked.has(q.id)); // a board at this level not yet played this game
-  const ok = (bdo ? [...cfg.cats, "bdo"] : cfg.cats).filter(c => byCat(c).length);
+  const ok = cfg.cats.filter(c => byCat(c).length);
   if (ok.length<=1) return ok[0] || cfg.cats[0];
   const opts = ok.filter(c => c!==G.lastCat);
   const c = opts[Math.floor(Math.random()*opts.length)]; G.lastCat = c; return c;
