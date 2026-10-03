@@ -699,6 +699,41 @@ ranked("pl-ht-fastest", "Fastest Premier League hat-tricks", "Name the players w
         ("Cole Palmer","9 min 48 sec"),("Andy Carroll","9 min 50 sec"),("Yannick Bolasie","10 min 33 sec"),("Romelu Lukaku","11 min 37 sec"),("Sergio Aguero","11 min 40 sec")],
        {"Amad Diallo":"Amad took 12 minutes 7 seconds, just outside.","Morgan Gibbs-White":"Morgan Gibbs-White's 2025/26 hat-trick took 15 minutes."})
 
+
+# ---- batch 4: scoring types, streaks and minutes (docs/data/PL_SCORING_2026-10-03.md: Premier League site, Opta via The Analyst, StatMuse, BBC; to the end of 2025/26).
+# Goals in a calendar year is left out: only nine players could be verified.
+SEVEN = ["Mark Stein","Ian Wright","Alan Shearer","Thierry Henry","Emmanuel Adebayor","Romelu Lukaku","Sergio Aguero","Joe Willock","Mohamed Salah","Erling Haaland","Taiwo Awoniyi"]
+ranked("pl-streak-goals", "Longest Premier League scoring streaks", "Name the players who scored in the most Premier League games in a row. Each player counts once, for his best run. Eleven players have scored in seven in a row, so any six of them fill the last six places.", LIVE, 1,
+       [("Jamie Vardy","11 games, 2015"),("Ruud van Nistelrooy","10 games, 2003"),("Daniel Sturridge","8 games, 2014"),("Alexander Isak","8 games, 2025"),(SEVEN,"7 games","streak7",6)],
+       {"Dominic Calvert-Lewin":"Dominic Calvert-Lewin's run stopped at six in January 2026."})
+ranked("pl-minutes-apps", "Most Premier League minutes played", "Name the ten players who have played the most minutes in the Premier League.", LIVE, 2,
+       [("Gareth Barry","54,429 minutes"),("David James","51,298 minutes"),("Frank Lampard","48,871 minutes"),("Ryan Giggs","46,437 minutes"),("Gary Speed","46,319 minutes"),
+        ("Mark Schwarzer","46,181 minutes"),("Rio Ferdinand","43,890 minutes"),("Sol Campbell","43,321 minutes"),("Jamie Carragher","43,267 minutes"),("John Terry","41,969 minutes")],
+       {"Steven Gerrard":"Steven Gerrard is just outside with 41,129 minutes.","James Milner":"James Milner has the most games but is 12th on minutes, with 40,913 (lots of his games were off the bench)."})
+SUB13 = ["James Milner","Marcus Rashford","Tore Andre Flo","Robbie Keane","Michael Owen","Andy Cole","Darren Bent","Victor Anichebe","Edin Dzeko"]
+ranked("pl-sub-goals", "Most goals as a substitute", "Name the players who have scored the most Premier League goals after coming off the bench. Nine players have 13, so any two of them fill the last two places.", LIVE, 2,
+       [("Jermain Defoe","24 goals"),("Olivier Giroud","21 goals"),("Danny Welbeck","19 goals"),("Javier Hernandez","19 goals"),("Nwankwo Kanu","17 goals"),("Ole Gunnar Solskjaer","17 goals"),
+        ("Daniel Sturridge","17 goals"),("Peter Crouch","16 goals"),(SUB13,"13 goals","sub13",2)])
+ranked("pl-header-goals", "Most headed goals", "Name the players who have scored the most Premier League goals with their head.", LIVE, 2,
+       [("Peter Crouch","53 headers"),("Alan Shearer","46 headers"),("Dion Dublin","45 headers"),("Les Ferdinand","40 headers"),("Harry Kane","40 headers"),("Dwight Yorke","38 headers"),
+        ("Duncan Ferguson","36 headers"),("Teddy Sheringham","36 headers"),("Christian Benteke","33 headers"),("Olivier Giroud","32 headers")],
+       {"Tim Cahill":"Tim Cahill is just outside with 31.","Chris Wood":"Chris Wood is just outside, on about 30.","Robbie Fowler":"Robbie Fowler scored 28 headers."})
+ranked("pl-freekick-goals", "Most direct free-kick goals", "Name the players who have scored the most Premier League goals straight from a free kick. Four players have nine, so any one of them fills 10th.", LIVE, 1,
+       [("David Beckham","18 free kicks"),("James Ward-Prowse","17 free kicks"),("Thierry Henry","12 free kicks"),("Gianfranco Zola","12 free kicks"),("Cristiano Ronaldo","12 free kicks"),
+        ("Laurent Robert","11 free kicks"),("Seb Larsson","11 free kicks"),("Ian Harte","10 free kicks"),("Morten Gamst Pedersen","10 free kicks"),
+        (["Nolberto Solano","Frank Lampard","Jamie Redknapp","James Maddison"],"9 free kicks","fk9",1)],
+       {"Christian Eriksen":"Christian Eriksen is just outside with eight.","Juan Mata":"Juan Mata is just outside with eight."})
+ranked("pl-openplay-goals", "Most non-penalty Premier League goals", "Name the ten players with the most Premier League goals, not counting penalties.", LIVE, 0,
+       [("Alan Shearer","204 goals"),("Andy Cole","186 goals"),("Wayne Rooney","185 goals"),("Harry Kane","180 goals"),("Mohamed Salah","158 goals"),("Sergio Aguero","157 goals"),
+        ("Thierry Henry","152 goals"),("Les Ferdinand","149 goals"),("Jermain Defoe","148 goals"),("Robbie Fowler","146 goals")],
+       {"Michael Owen":"Michael Owen is just outside with 136.","Frank Lampard":"Frank Lampard scored 43 of his 177 from the spot, so he has 134 without them."})
+ranked("pl-opponents-goals", "Scored against the most clubs", "Name the players who have scored against the most different Premier League clubs. Five players have 34, so any four of them fill the last four places.", LIVE, 2,
+       [("Frank Lampard","39 clubs"),("Andy Cole","38 clubs"),("Alan Shearer","37 clubs"),("Jermain Defoe","37 clubs"),("Wayne Rooney","36 clubs"),("Teddy Sheringham","35 clubs"),
+        (["Thierry Henry","Michael Owen","Paul Scholes","Steven Gerrard","Ryan Giggs"],"34 clubs","opp34",4)])
+ranked("pl-longrange-goals", "Most goals from outside the box", "Name the players who have scored the most Premier League goals from outside the penalty area.", LIVE, 2,
+       [("Frank Lampard","41 goals"),("David Beckham","34 goals"),("Steven Gerrard","33 goals"),("Alan Shearer","33 goals"),("Jimmy Floyd Hasselbaink","33 goals"),("Kevin De Bruyne","30 goals"),
+        ("Thierry Henry","29 goals"),("Wayne Rooney","29 goals"),("Matt Le Tissier","28 goals"),("Harry Kane","25 goals")])
+
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()
 cr = re.search(r"const CLUB_REC = \[(.*?)\];", h0, re.S).group(1)
