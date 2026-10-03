@@ -51,6 +51,9 @@ SOUNDS = {
     "whistleTweet": ("whistle", 5, 5, 1.0, 0.6, "A single short, sharp blast " + WHISTLE + " Exactly one blast, then silence."),
     "whistleLong":  ("whistle", 3, 3, 2.0, 0.6, "One long, hard, sustained blast held for about one and a half seconds " + WHISTLE + " Exactly one blast, then silence."),
 }
+# Sounds left out of the game. Craig prefers the game's own synthesised whistles, so the recorded
+# ones are kept in raw/ but not built or embedded; take a name out of this set to bring it back.
+OFF = {"whistleTweet", "whistleLong"}
 BLAST = {"whistleTweet": (0.25, 0.7), "whistleLong": (0.9, 1.6)}   # allowed blast length in seconds
 CROWD_MIN_FLAT, CROWD_MAX_PEAK = 0.15, 22.0                         # cheers Craig liked score about 0.25 and 18; the groans he rejected 0.02 to 0.13 and 22 to 38
 TRIES = 4                                                           # attempts per raw take before giving up
@@ -217,6 +220,8 @@ def main():
             sys.exit("Set ELEVENLABS_API_KEY first (ElevenLabs, Developers, API keys; it needs Sound Effects access).")
         redo = args[args.index("--redo") + 1:] if "--redo" in args else []
         for name in SOUNDS:
+            if name in OFF:
+                continue
             if name in redo:
                 for f in raws(name):
                     os.remove(f)
@@ -224,10 +229,11 @@ def main():
     # takes for sounds no longer in the list are cleared out
     for f in os.listdir(OUT):
         m = re.fullmatch(r"(.+)-\d+\.mp3", f)
-        if m and m.group(1) not in SOUNDS:
+        if m and (m.group(1) not in SOUNDS or m.group(1) in OFF):
             os.remove(os.path.join(OUT, f))
     for name in SOUNDS:
-        build(name)
+        if name not in OFF:
+            build(name)
     embed()
 
 
