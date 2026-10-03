@@ -1890,7 +1890,7 @@ const $ = id => document.getElementById(id);
 let ONLINE = null, FAST = false; // ONLINE is set while playing an online game; FAST skips waits while catching up on its move log
 const wait = ms => new Promise(r => setTimeout(r, FAST ? 0 : ms));
 const REDUCED = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-let cfg = { count:2, rounds:5, cats:null, clock:30, level:1, allLevels:false, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
+let cfg = { count:2, rounds:5, cats:null, clock:30, level:1, allLevels:true, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
 let G = null, muted = false;
 
 /* ---------- sound, synthesised so nothing loads from outside ---------- */
@@ -2068,11 +2068,12 @@ function catsLabel(cats = cfg.cats){
 }
 // the home screen's colours: the competition's own when only one is ticked
 const homeTheme = () => theme(cfg.cats.length===1 ? cfg.cats[0] : "pl");
-function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ cats: cfg.cats, allLevels: cfg.allLevels })); } catch(e){} }
+function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ v: 2, cats: cfg.cats, allLevels: cfg.allLevels })); } catch(e){} }
 (() => { let s = null; try { s = JSON.parse(localStorage.getItem(SETUP_KEY)||"null"); } catch(e){}
   const cats = s && Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : [];
   cfg.cats = cats.length ? cats : [...ALL_CATS];
-  cfg.allLevels = !!(s && s.allLevels);
+  // All levels is on by default; settings saved before it became the default (no v: 2) switch it on once, then the phone's own choice sticks
+  cfg.allLevels = s && s.v >= 2 ? !!s.allLevels : true;
 })();
 let sheetCats = null; // the competitions being switched on and off in the open panel
 function renderCompBtn(){

@@ -175,6 +175,7 @@ await test("letter boards: any Premier League player with the right surname lett
 });
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
   const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click("#allLevels"); // All levels starts on; the slider works with it off
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
   const box = await (await p.$("#diff")).boundingBox(), y = box.y + box.height/2, at = f => box.x + 16 + (box.width - 32) * f;
   const read = () => p.evaluate(() => [Number(document.getElementById("diff").value), cfg.level, document.getElementById("diffName").textContent]);
@@ -274,6 +275,8 @@ await test("game: rounds come only from ticked competitions, never the same one 
 });
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
   const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => [cfg.allLevels, document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed")]), [true, "All levels", true], "All levels is on by default");
+  await p.click("#allLevels"); eq(await p.evaluate(() => cfg.allLevels), false, "and can be switched off");
   await p.evaluate(() => { cfg.cats = ["laliga"]; renderCompBtn(); });
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
   await p.focus("#diff"); await p.keyboard.press("ArrowLeft");
@@ -288,6 +291,11 @@ await test("home: All levels greys the slider and each board's level is picked a
   eq(await p.evaluate(() => shareSummary([{ name: "Craig", score: 3 }]).meta.slice(1)), ["All levels", "La Liga"]);
   await p.reload(); await until(() => visible(p, "#setup"));
   eq(await p.evaluate(() => cfg.allLevels), true, "remembered after a reload");
+  // a phone that turned it off keeps it off; one that saved its setup before All levels became the default gets it switched on once
+  await p.click("#allLevels"); await p.reload(); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => cfg.allLevels), false, "switched off stays off after a reload");
+  await p.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ cats: ["pl"], allLevels: false }))); await p.reload(); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => [cfg.allLevels, cfg.cats]), [true, ["pl"]], "an older saved setup gets All levels switched on, and keeps its competitions");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 
@@ -303,7 +311,7 @@ await test("home: each section's i opens a slide-up panel explaining it, and How
     await until(async () => !(await visible(p, "#infoSheet")), { what: "the panel to close" });
   }
   eq(seen, [["Rounds",true],["Competitions",true],["Shot clock per answer",true],["Repeated answers",true],["Difficulty",true],["How to play",true]]);
-  eq(await p.evaluate(() => cfg.allLevels), false, "the i next to Difficulty doesn't flip the switch");
+  eq(await p.evaluate(() => cfg.allLevels), true, "the i next to Difficulty doesn't flip the switch (it starts on)");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("game: a 1-round game goes straight to full time after its round", async () => {
