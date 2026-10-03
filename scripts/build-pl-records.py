@@ -38,7 +38,7 @@ ranked("pl-at-mgr-winpct", "Best Premier League win rate as a manager", "Name th
 ranked("pl-at-mgr-games", "Most Premier League games as a manager", "Name the ten managers who have taken charge of the most Premier League games. Caretaker spells count.", LIVE, 1,
  [("Arsene Wenger","828 games"),("Alex Ferguson","810 games"),("David Moyes","754 games"),("Harry Redknapp","641 games"),("Sam Allardyce","541 games"),
   ("Steve Bruce","476 games"),("Mark Hughes","466 games"),("Roy Hodgson","416 games"),("Pep Guardiola","380 games"),("Eddie Howe","369 games")],
- {"Jose Mourinho":"Jose Mourinho is 11th with 363.","Rafael Benitez":"Rafael Benitez is just outside with 359.","Martin O'Neill":"Martin O'Neill is just outside with 359.","Sean Dyche":"Sean Dyche has 351, just outside.","Jurgen Klopp":"Jurgen Klopp managed 334 Premier League games.","Tony Pulis":"Tony Pulis managed about 320.","Alan Pardew":"Alan Pardew managed about 320."})
+ {"Jose Mourinho":"Jose Mourinho is 11th with 363.","Rafael Benitez":"Rafael Benitez is just outside with 359.","Martin O'Neill":"Martin O'Neill is just outside with 359.","Sean Dyche":"Sean Dyche has 351, just outside.","Jurgen Klopp":"Jurgen Klopp managed 334 Premier League games.","Tony Pulis":"Tony Pulis managed 322.","Alan Pardew":"Alan Pardew managed 320."})
 FOUR = ["Ron Atkinson","Rafael Benitez","David Moyes","Nuno Espirito Santo","Claudio Ranieri","Marco Silva","Graeme Souness","Neil Warnock","Chris Hughton"]
 ranked("pl-at-mgr-clubs", "Most Premier League clubs managed", "Name the managers who have taken charge of the most different Premier League clubs. Caretaker spells count. Nine managers have had four, so any four of them fill the last four places.", LIVE, 2,
  [("Sam Allardyce","9 clubs"),(["Roy Hodgson","Mark Hughes"],"6 clubs","mgrc6",2),(["Harry Redknapp","Steve Bruce","Alan Pardew"],"5 clubs","mgrc5",3),(FOUR,"4 clubs","mgrc4",4)],
@@ -101,7 +101,7 @@ ranked("pl-fee-gk", "Most expensive goalkeepers", "Name the goalkeepers behind t
 ranked("pl-fee-def", "Most expensive defenders", "Name the defenders behind the ten biggest fees paid by Premier League clubs for a defender (headline fees as reported in the UK).", FEES, 2,
  [("Harry Maguire","£80m, 2019"),("Josko Gvardiol","£77.6m, 2023"),("Virgil van Dijk","£75m, 2018"),("Wesley Fofana","£75m, 2022"),
   ("Ruben Dias","£65m, 2020"),("Marc Cucurella","£62m, 2022"),("Joao Cancelo","£60m, 2019"),("Jeremy Jacquet","£60m, 2026"),
-  ("Leny Yoro","£59.9m, 2024"),("Aymeric Laporte","£57m, 2018")],
+  ("Leny Yoro","£58.9m, 2024"),("Aymeric Laporte","£57m, 2018")],
  {"Lisandro Martinez":"Lisandro Martinez's £56.7m move is just outside.","Ezri Konsa":"Ezri Konsa's £55m move to Arsenal is just outside.","Marc Guehi":"Marc Guehi moved to Man City for only £20m."})
 ranked("pl-fee-mid", "Most expensive midfielders", "Name the midfielders behind the ten biggest fees paid by Premier League clubs for a midfielder, attacking midfielders included (headline fees as reported in the UK). A player can fill more than one slot.", FEES, 2,
  [("Enzo Fernandez","£125m, 2026"),("Morgan Rogers","£117m, 2026"),("Elliot Anderson","£116m, 2026"),("Florian Wirtz","£116m, 2025"),
@@ -769,6 +769,93 @@ ranked("pl-assist-ga", "Most goals plus assists", "Name the players with the mos
        [("Alan Shearer","324 (260 + 64)"),("Wayne Rooney","311 (208 + 103)"),("Mohamed Salah","287 (193 + 94)"),("Frank Lampard","279 (177 + 102)"),("Ryan Giggs","271 (109 + 162)"),
         ("Andy Cole","260 (187 + 73)"),("Harry Kane","259 (213 + 46)"),("Thierry Henry","249 (175 + 74)"),("Sergio Aguero","231 (184 + 47)"),("Teddy Sheringham","222 (146 + 76)")],
        {"Steven Gerrard":"Steven Gerrard is just outside with 212 (120 + 92).","Robbie Fowler":"Robbie Fowler is just outside with 202.","Son Heung-min":"Son Heung-min has 198 (127 + 71)."})
+
+# ---- batch 5: managers (docs/data/PL_MANAGERS_2026-10-03.md and pl_managers.csv: every result matched to the manager in charge on the day, from
+# Wikipedia's spell dates; every top-20 games total agrees with Wikipedia, and the wins, draws and defeats agree with every published figure)
+ranked("pl-at-mgr-points", "Most Premier League points as a manager", "Name the ten managers who have won the most Premier League points (three for a win, one for a draw).", LIVE, 1,
+       [("Alex Ferguson","1,752 points"),("Arsene Wenger","1,627 points"),("David Moyes","1,069 points"),("Harry Redknapp","875 points"),("Pep Guardiola","865 points"),
+        ("Jose Mourinho","735 points"),("Jurgen Klopp","705 points"),("Sam Allardyce","680 points"),("Rafael Benitez","605 points"),("Mark Hughes","601 points")],
+       {"Steve Bruce":"Steve Bruce is just outside with 531.","Mauricio Pochettino":"Mauricio Pochettino is just outside with 520.","Roy Hodgson":"Roy Hodgson is just outside with 510."})
+ranked("pl-at-mgr-defeats", "Most Premier League defeats as a manager", "Name the ten managers who have lost the most Premier League games.", LIVE, 1,
+       [("David Moyes","265 defeats"),("Harry Redknapp","238 defeats"),("Sam Allardyce","217 defeats"),("Steve Bruce","211 defeats"),("Mark Hughes","181 defeats"),
+        ("Roy Hodgson","178 defeats"),("Sean Dyche","157 defeats"),("Arsene Wenger","153 defeats"),("Eddie Howe","148 defeats"),("Alan Pardew","143 defeats")],
+       {"Alan Curbishley":"Alan Curbishley is just outside with 135.","Tony Pulis":"Tony Pulis is just outside with 131.","Alex Ferguson":"Alex Ferguson lost 114 in 810 games."})
+ranked("pl-at-mgr-spell", "Longest spells at one club", "Name the managers with the most Premier League games in one spell at one club. Only Premier League games count.", LIVE, 1,
+       [("Arsene Wenger","828, Arsenal"),("Alex Ferguson","810, Man Utd"),("David Moyes","427, Everton"),("Pep Guardiola","380, Man City"),("Jurgen Klopp","334, Liverpool"),
+        ("Joe Kinnear","278, Wimbledon"),("Harry Redknapp","269, West Ham"),("Alan Curbishley","266, Charlton"),("Sean Dyche","258, Burnley"),("Mikel Arteta","248, Arsenal")],
+       {"Rafael Benitez":"Rafael Benitez is just outside with 228 at Liverpool.","Sam Allardyce":"Sam Allardyce is just outside with 226 at Bolton.","Mauricio Pochettino":"Mauricio Pochettino managed 202 at Spurs."})
+ranked("pl-mgr-foreign", "Foreign managers: most games", "Name the managers from outside Britain and Ireland who have taken charge of the most Premier League games.", LIVE, 1,
+       [("Arsene Wenger","828 games"),("Pep Guardiola","380 games"),("Jose Mourinho","363 games"),("Rafael Benitez","359 games"),("Jurgen Klopp","334 games"),
+        ("Mauricio Pochettino","294 games"),("Roberto Martinez","265 games"),("Mikel Arteta","248 games"),("Marco Silva","247 games"),("Claudio Ranieri","238 games")],
+       {"Gerard Houllier":"Gerard Houllier is just outside with 234 (including his joint spell with Roy Evans).","Nuno Espirito Santo":"Nuno Espirito Santo is just outside with 219.","Martin Jol":"Martin Jol managed 202."})
+ranked("pl-mgr-scot", "Scottish managers: most games", "Name the Scottish managers who have taken charge of the most Premier League games.", LIVE, 2,
+       [("Alex Ferguson","810 games"),("David Moyes","754 games"),("George Graham","287 games"),("Graeme Souness","280 games"),("Gordon Strachan","271 games"),
+        ("Kenny Dalglish","238 games"),("Paul Lambert","154 games"),("Walter Smith","143 games"),("Alex McLeish","138 games"),("George Burley","98 games")],
+       {"Steve Kean":"Steve Kean is just outside with 59.","Steve Clarke":"Steve Clarke is just outside with 55."})
+ranked("pl-mgr-ita", "Italian managers: most games", "Name the Italian managers who have taken charge of the most Premier League games. Maurizio Sarri and Walter Mazzarri share 10th, so either counts.", LIVE, 2,
+       [("Claudio Ranieri","238 games"),("Carlo Ancelotti","134 games"),("Roberto Mancini","133 games"),("Antonio Conte","132 games"),("Gianluca Vialli","94 games"),
+        ("Roberto De Zerbi","77 games"),("Gianfranco Zola","72 games"),("Enzo Maresca","57 games"),("Roberto Di Matteo","48 games"),(["Maurizio Sarri","Walter Mazzarri"],"38 games","ita38",1)],
+       {"Francesco Guidolin":"Francesco Guidolin is just outside with 23.","Paolo Di Canio":"Paolo Di Canio managed 12."})
+ranked("pl-mgr-esp", "Spanish managers: most games", "Name the Spanish managers who have taken charge of the most Premier League games.", LIVE, 2,
+       [("Pep Guardiola","380 games"),("Rafael Benitez","359 games"),("Roberto Martinez","265 games"),("Mikel Arteta","248 games"),("Unai Emery","190 games"),
+        ("Andoni Iraola","114 games"),("Javi Gracia","67 games"),("Quique Sanchez Flores","48 games"),("Julen Lopetegui","43 games"),("Juande Ramos","35 games")],
+       {"Aitor Karanka":"Aitor Karanka is just outside with 27.","Pepe Mel":"Pepe Mel managed 18."})
+
+# ---- batch 5: medals and grounds (docs/data/PL_MANAGERS_2026-10-03.md: Wikipedia's featured list of Premier League winning players, to the end of
+# 2025/26, which counts medals the Premier League awarded; grounds from each stadium's Wikipedia article)
+ranked("pl-rec-medals", "Most Premier League winners' medals", "Name the players with the most Premier League winners' medals. Eleven players have six, so any five of them fill the last five places.", LIVE, 1,
+       [("Ryan Giggs","13 medals"),("Paul Scholes","11 medals"),("Gary Neville","8 medals"),("Denis Irwin","7 medals"),("Roy Keane","7 medals"),
+        (["David Beckham","Nicky Butt","Phil Neville","Ole Gunnar Solskjaer","Rio Ferdinand","Kevin De Bruyne","Ederson","Phil Foden","Bernardo Silva","John Stones","Kyle Walker"],"6 medals","med6",5)],
+       {"Wayne Rooney":"Wayne Rooney is just outside with five.","John Terry":"John Terry is just outside with five.","Sergio Aguero":"Sergio Aguero is just outside with five.","Riyad Mahrez":"Riyad Mahrez is just outside with five."})
+ranked("pl-rec-title-2-clubs", "Champions with two clubs", "Name the players who have won the Premier League with two different clubs, ranked by their titles. Nicolas Anelka, Kolo Toure and N'Golo Kante won two each, so any two of them fill the last two places.", LIVE, 2,
+       [("Riyad Mahrez","5 titles, Leicester and Man City"),("Gabriel Jesus","5 titles, Man City and Arsenal"),("Henning Berg","3 titles, Blackburn and Man Utd"),("Ashley Cole","3 titles, Arsenal and Chelsea"),
+        ("Gael Clichy","3 titles, Arsenal and Man City"),("Robert Huth","3 titles, Chelsea and Leicester"),("Carlos Tevez","3 titles, Man Utd and Man City"),("James Milner","3 titles, Man City and Liverpool"),
+        (["Nicolas Anelka","Kolo Toure","N'Golo Kante"],"2 titles","t2c2",2)])
+ranked("pl-rec-new-grounds", "New grounds since 2003", "Name the ten Premier League clubs that have moved to a new permanent ground since 2003, latest first. Temporary homes don't count.", "2003 to 2025/26", 2,
+       [("Everton","2025, Hill Dickinson Stadium"),("Brentford","2020, Gtech Community Stadium"),("Spurs","2019, Tottenham Hotspur Stadium"),("West Ham","2016, London Stadium"),
+        ("Brighton","2011, Amex Stadium"),("Cardiff","2009, Cardiff City Stadium"),("Arsenal","2006, Emirates Stadium"),("Coventry","2005, Coventry Building Society Arena"),
+        ("Swansea","2005, Swansea.com Stadium"),("Man City","2003, Etihad Stadium")],
+       {"Leicester":"Leicester moved to the King Power Stadium in 2002, just before.","Hull":"Hull moved to the MKM Stadium in 2002, just before.","Southampton":"Southampton moved to St Mary's in 2001.",
+        "Wimbledon":"Wimbledon's move to Milton Keynes in 2003 doesn't count: the club became MK Dons.","Bournemouth":"Bournemouth rebuilt Dean Court on the same site."}, type="club")
+
+# ---- batch 5: transfers, crowds and shirts (docs/data/PL_TRANSFERS_GROUNDS_2026-10-03.md; fees match the other fee boards)
+ranked("pl-fee-british", "Most expensive British players", "Name the ten most expensive British players, whichever clubs were buying and selling. Fees include add-ons and run to the end of the summer 2026 window.", "All transfers to 1 September 2026", 1,
+       [("Morgan Rogers","£117m, 2026"),("Elliot Anderson","£116m, 2026"),("Jude Bellingham","£115m, 2023"),("Declan Rice","£105m, 2023"),("Jack Grealish","£100m, 2021"),
+        ("Harry Kane","£100m, 2023"),("Gareth Bale","£85.3m, 2013"),("Harry Maguire","£80m, 2019"),("Jadon Sancho","£73m, 2021"),("Anthony Gordon","£69.3m, 2026")],
+       {"Eberechi Eze":"Eberechi Eze's £67.5m move to Arsenal is just outside.","Dominic Solanke":"Dominic Solanke's £65m move to Spurs is just outside.","Mason Mount":"Mason Mount's £60m move is outside the top ten."})
+ranked("pl-fee-teens", "Most expensive teenagers", "Name the ten most expensive players signed by Premier League clubs aged 19 or under. Fees include add-ons. Geovany Quenda, Archie Gray and Honest Ahanor all cost £40m, so any two of them fill the last two places.", "Premier League signings to 1 September 2026", 2,
+       [("Ayyoub Bouaddi","£86m, 2026"),("Leny Yoro","£58.9m, 2024"),("Romeo Lavia","£58m, 2023"),("Anthony Martial","£58m, 2015"),("Estevao","£51.5m, 2024"),
+        ("Luka Vuskovic","£50m, 2026"),("Ibrahim Mbaye","£47m, 2026"),(["Geovany Quenda","Archie Gray","Honest Ahanor"],"£40m","teen40",3)],
+       {"Amad Diallo":"Amad Diallo's move, up to £37.1m, is just outside.","Jorrel Hato":"Jorrel Hato's £37m move is just outside.","Wesley Fofana":"Wesley Fofana's move to Leicester, up to £36.5m, is outside the top ten."})
+labelled("pl-fee-record-season", "Record signing each season", "Name the Premier League's most expensive signing in each of the last ten seasons (the summer window before the season and the January window during it).", "2016/17 to 2025/26", 2,
+       [("2016/17","Paul Pogba","£89m from Juventus"),("2017/18","Romelu Lukaku","£90m from Everton"),("2018/19","Kepa Arrizabalaga","£71.6m from Athletic Bilbao"),
+        ("2019/20","Harry Maguire","£80m from Leicester"),("2020/21","Kai Havertz","£71m from Leverkusen"),("2021/22","Jack Grealish","£100m from Aston Villa"),
+        ("2022/23","Enzo Fernandez","£106.8m from Benfica"),("2023/24","Moises Caicedo","£115m from Brighton"),("2024/25","Dominic Solanke","£65m from Bournemouth"),
+        ("2025/26","Alexander Isak","£125m from Newcastle")],
+       {"John Stones":"John Stones (£47.5m) was 2016/17's next biggest.","Virgil van Dijk":"Virgil van Dijk (£75m) was 2017/18's next biggest.","Alisson":"Alisson (£66.8m) was 2018/19's next biggest.",
+        "Nicolas Pepe":"Nicolas Pepe (£72m) was 2019/20's next biggest.","Ruben Dias":"Ruben Dias (£65m) was 2020/21's next biggest.","Mykhailo Mudryk":"Mykhailo Mudryk (£88.5m) was 2022/23's next biggest.",
+        "Declan Rice":"Declan Rice (£105m) was 2023/24's next biggest.","Omar Marmoush":"Omar Marmoush (£63.2m) was 2024/25's next biggest.","Florian Wirtz":"Florian Wirtz (£116.5m) was 2025/26's next biggest."})
+sales("pl-fee-sales-abroad", "Biggest sales abroad", "Name the players behind the ten biggest fees Premier League clubs have received from clubs outside England. Luis Diaz (£65.5m) and Rodri (£65.4m) are a whisker apart, so either counts for 10th.", 2,
+      [("Philippe Coutinho","£142m, 2018"),("Eden Hazard","£130m, 2019"),("Harry Kane","£100m, 2023"),("Gareth Bale","£85.3m, 2013"),("Julian Alvarez","£81.5m, 2024"),
+       ("Cristiano Ronaldo","£80m, 2009"),("Luis Suarez","£75m, 2014"),("Romelu Lukaku","£74m, 2019"),("Anthony Gordon","£69.3m, 2026"),(["Luis Diaz","Rodri"],"£65.5m","abr65",1)],
+      {"Jhon Duran":"Jhon Duran's £64.5m move to Al-Nassr is just outside.","Gabriel Martinelli":"Gabriel Martinelli's £60m move to Al Hilal is just outside.","Oscar":"Oscar's £60m move to Shanghai is just outside."})
+ranked("pl-rec-attendance", "Biggest crowds, 2025/26", "Name the ten Premier League clubs with the highest average home league crowds in 2025/26.", "2025/26 season", 1,
+       [("Man Utd","73,975"),("West Ham","62,347"),("Spurs","61,003"),("Liverpool","60,389"),("Arsenal","60,217"),("Man City","52,640"),("Everton","52,132"),("Newcastle","52,095"),
+        ("Sunderland","46,489"),("Aston Villa","41,977")],
+       {"Chelsea":"Chelsea are just outside with 39,661.","Leeds":"Leeds are just outside with 36,695.","Brighton":"Brighton averaged 31,379."}, type="club")
+ranked("pl-rec-capacity", "Biggest grounds, 2025/26", "Name the ten 2025/26 Premier League clubs with the biggest grounds, by capacity in the Premier League Handbook 2025/26.", "2025/26 season", 0,
+       [("Man Utd","74,244, Old Trafford"),("Spurs","62,850, Tottenham Hotspur Stadium"),("West Ham","62,500, London Stadium"),("Liverpool","61,276, Anfield"),
+        ("Arsenal","60,704, Emirates Stadium"),("Man City","52,900, Etihad Stadium"),("Everton","52,769, Hill Dickinson Stadium"),("Newcastle","52,264, St James' Park"),
+        ("Sunderland","48,707, Stadium of Light"),("Aston Villa","43,205, Villa Park")],
+       {"Chelsea":"Chelsea's Stamford Bridge is just outside at 40,044.","Leeds":"Leeds's Elland Road is just outside at 37,645."}, type="club")
+ranked("pl-rec-mu-7", "Man Utd's number 7s", "Name the ten players who have worn Man Utd's number 7 shirt in the Premier League, in order.", "Squad numbers, 1993/94 to 2025/26", 1,
+       [("Eric Cantona","1993/94 to 1996/97"),("David Beckham","1997/98 to 2002/03"),("Cristiano Ronaldo","2003/04 to 2008/09, and 2021/22 to 2022/23"),("Michael Owen","2009/10 to 2011/12"),
+        ("Antonio Valencia","2012/13"),("Angel Di Maria","2014/15"),("Memphis Depay","2015/16 to 2016/17"),("Alexis Sanchez","2017/18 to 2019/20"),("Edinson Cavani","2020/21 to 2021/22"),
+        ("Mason Mount","2023/24 to 2025/26")])
+ranked("pl-rec-new-9", "Newcastle's number 9s", "Name the ten players who have worn Newcastle's number 9 shirt in the Premier League since 1995, in order.", "Squad numbers, 1995/96 to 2025/26", 1,
+       [("Les Ferdinand","1995/96"),("Alan Shearer","1996/97 to 2005/06"),("Obafemi Martins","2006/07 to 2008/09"),("Andy Carroll","2010/11"),("Papiss Cisse","2011/12 to 2015/16"),
+        ("Dwight Gayle","2017/18"),("Salomon Rondon","2018/19"),("Joelinton","2019/20 to 2020/21"),("Callum Wilson","2021/22 to 2024/25"),("Yoane Wissa","2025/26")],
+       {"Andy Cole":"Andy Cole wore it before 1995, from 1993/94 until his move to Man Utd in January 1995."})
 
 # the club record scorers in index.html (CLUB_REC) must match the dataset
 h0 = open("index.html", encoding="utf-8").read()

@@ -109,6 +109,13 @@ add_names("pl-open-50-50", "50 goals and 50 assists", "Name players with at leas
            "Alan Shearer","Matt Le Tissier","Riyad Mahrez","Peter Crouch","Jimmy Floyd Hasselbaink","Eric Cantona","Theo Walcott","Kevin Davies","Didier Drogba","Damien Duff",
            "Danny Murphy","Paul Scholes","Eden Hazard","Juan Mata","Emile Heskey","Robin van Persie","Roberto Firmino","Nick Barmby","Gylfi Sigurdsson","Dwight Yorke","Bukayo Saka"],
           "{n} doesn't have both 50 Premier League goals and 50 assists.")
+# title-winning captains (docs/data/PL_MANAGERS_2026-10-03.md, from Wikipedia's featured list of winning players
+# and match reports). Captains: anyone who lifted the trophy as captain, including shared lifts (Bruce and Robson in 1993 and 1994, Terry and Cahill
+# in 2017) and both of 2007/08's (Giggs lifted it, Gary Neville was club captain).
+add_names("pl-open-title-captains", "Title-winning captains", "Name players who have lifted the Premier League trophy as their club's captain.", 1,
+          ["Steve Bruce","Bryan Robson","Tim Sherwood","Eric Cantona","Tony Adams","Roy Keane","Patrick Vieira","John Terry","Gary Neville","Ryan Giggs","Nemanja Vidic",
+           "Vincent Kompany","Wes Morgan","Gary Cahill","Jordan Henderson","Fernandinho","Ilkay Gundogan","Kyle Walker","Virgil van Dijk","Martin Odegaard"],
+          "{n} never lifted the Premier League trophy as captain.")
 import json
 block = f'const PL_PLAYERS = "{data}";\nconst PL_CLUBS = {json.dumps(CLUBS)};\nconst PL_OPEN = {json.dumps(OPEN, separators=(",", ":"))};\n'
 src = open("index.html", encoding="utf-8").read()

@@ -134,9 +134,9 @@ await test("questions: the October 2026 Premier League boards are all playable, 
     }
     return { n: ids.length, live: live.length, bad, fam: [...new Set(live.map(id => family(findQ(id))))].sort() };
   });
-  eq([r.n, r.live], [223, 223], "all 223 boards survive the final pass");
+  eq([r.n, r.live], [243, 243], "all 243 boards survive the final pass");
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
-  eq(r.fam, ["appearances", "managers", "records", "scorers", "transfers"], "the boards spread across families");
+  eq(r.fam, ["appearances", "assists", "keepers", "managers", "records", "scorers", "transfers", "trophies"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
   await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-hattricks"); });
@@ -164,7 +164,7 @@ await test("letter boards: any Premier League player with the right surname lett
     return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
       sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
       smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
-  eq([club.n, club.fam], [94, ["letters"]], "22 letter boards plus 72 club open boards, all in the letters family");
+  eq([club.n, club.fam], [96, ["letters"]], "22 letter boards plus 74 club open boards, all in the letters family");
   eq([club.salah, club.rooney, club.sterling, club.both, club.bothNo, club.smith, club.ex], [true, false, true, true, false, true, true], "club boards check the club, the letter and, for two clubs, the same player");
   // boards with their own list of answers: the 100-goal club and a club's forwards
   const listed = await p.evaluate(() => { const g = findQ("pl-open-100-goals"), f = findQ("pl-open-lfc-fwd");
