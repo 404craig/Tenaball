@@ -193,7 +193,7 @@ input::placeholder{color:var(--muted);opacity:.7}
 .mini span{background:var(--panel);border-radius:999px;padding:5px 12px;font-weight:600;font-size:.9rem}
 
 /* overlays */
-.overlay{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:24px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.overlay{position:fixed;inset:0;bottom:var(--kb,0px);z-index:20;display:grid;place-items:center;padding:24px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .card{width:100%;max-width:440px;text-align:left;animation:cardIn .45s cubic-bezier(.2,.9,.3,1.2) both}
 @keyframes cardIn{from{opacity:0;transform:translateY(24px) scale(.96)}to{opacity:1;transform:none}}
 .card .rnd{color:var(--muted);font-weight:600;margin-bottom:10px}
@@ -3378,7 +3378,7 @@ function beatenTo(o, name, i){
   feedback(`Right answer, but too slow: ${o.name} got ${name} first (${ord(i+1)}). No card.`, "wait");
   const el = $("tower").children[i]; if (!el) return;
   el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
-  if (!REDUCED) el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  if (!REDUCED) window.scrollTo({ top: viewTargetFor(el), behavior: "smooth" }); // not scrollIntoView: that can land it under the keyboard or the dock
   sfx.tick(1); buzz(30);
 }
 function applyLiveGuess(pi, name){
@@ -3557,9 +3557,15 @@ function loseLife(p, msg){
 }
 
 /* keep the scanning slot in view: aim it at the middle of the space between the logo and the answer dock */
+// the part of the screen a player can see the board in: from the top of the visible viewport (which the keyboard and Safari's
+// toolbar shrink; see fitBottom) down to the top of the answer dock. The scan is aimed at the middle of that.
+function boardView(){
+  const vv = window.visualViewport, top = vv ? vv.offsetTop : 0, bottom = vv ? vv.offsetTop + vv.height : window.innerHeight;
+  const dock = (document.querySelector(".dock")||{}).offsetHeight || 0;
+  return { top, bottom: bottom - dock };
+}
 function viewTargetFor(el){
-  const head = 0, dock = (document.querySelector(".dock")||{}).offsetHeight || 0;
-  const r = el.getBoundingClientRect(), mid = head + Math.max(0, window.innerHeight - head - dock)/2;
+  const v = boardView(), r = el.getBoundingClientRect(), mid = v.top + Math.max(0, v.bottom - v.top)/2;
   const max = document.documentElement.scrollHeight - window.innerHeight;
   return Math.max(0, Math.min(max, window.scrollY + r.top + r.height/2 - mid));
 }
@@ -3601,6 +3607,7 @@ function nextTurn(){
 
 function endRound(){
   stopTimer(); stopBots(); G.over = true; G.shownSolo = false;
+  if (G.mode!=="turns") input.blur(); // the keyboard drops, so the points sheet and the board are in view
   const q = G.q, n = q.slots.length, ps = G.players, pts = ps.map(p => p.score - p.r0), best = Math.max(...pts);
   ps.forEach((p, k) => {
     if (!p.g) return;
