@@ -122,10 +122,10 @@ Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (ht
 
 ### Home screen: three doors
 
-- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Icons are one line-icon family drawn in the logo's cyan-to-green on dark tiles with a fine gradient edge (doors, the links under them and the game modes; Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
+- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Each door has a large glowing ring icon in its own colour with a white symbol (green ring and lightning bolt for solo, pink ring and a group of players for H2H on this phone, blue ring and a globe for H2H online) and a matching glowing edge down its left side, as in Craig's mock-up. Smaller line icons in the logo's cyan-to-green are used for the game modes (Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
 - Each door opens its own settings, laid out like today's home screen panels (Who's playing, The game, House rules) and changed as little as possible: solo has your name; head to head on this phone has 2 to 4 players and names; online has your name and the game mode, then create a game or join with a code.
 - Only the online door offers the new modes. For First touch and Beat the clock the shot clock is replaced by a time limit per round (30, 60 or 90 seconds).
-- Under the doors: **Share the game** (the phone's share sheet with the game link, or copy it, without starting a game), **My stats** (the all-time stats panel) and **Account** (sign in, name, PIN, sign out).
+- A tab bar along the bottom: **Play** (the doors, lit green with an underline), **Stats** (the stats page), **Share** (the phone's share sheet with the game link, or copy it, without starting a game) and **Account** (sign in, name, PIN, sign out).
 
 ### Who goes first
 
@@ -146,7 +146,7 @@ Everyone gets their own copy of the same board and the same time limit. Empty sl
 
 ### End of a round (First touch and Beat the clock)
 
-A sheet slides up over the bottom of the board. Each player gets a full colour pill (their gradient), in order of total points, showing their points this round and their running total, with a crown for the round's winner. Under it the host has Next round (Final scores after the last round); everyone else sees an outlined "Waiting for Craig to start…" pill. Tapping the top of the sheet slides it down to a bar so the board can be seen.
+A sheet slides up over the bottom of the board. Each player gets a full colour pill (their gradient), in order of total points, showing their points this round and their running total, with a crown for the round's winner. Under it the host has Next round (Final scores after the last round); everyone else sees an outlined "Waiting for Craig to start…" pill. A small ✕ in a see-through circle at the sheet's top right slides it down to a bar so the finished board can be seen while waiting; tapping the bar brings the points back.
 
 ### My stats (reworked)
 
@@ -156,11 +156,19 @@ Opened from My stats on the home screen and from the link at full time. A filter
 - Boards: boards played, Tenables (full boards) with a percentage, and one bar of all the slots on the boards you played: found by you, found by others, found by nobody, each with a percentage.
 - Answers: right and wrong with percentages, passes, time-outs, yellow and red cards.
 - Personal bests: best game, best round, longest run of right answers, plus mode records (first touches, beaten to it and quickest claim in First touch; most slots in a round and answers nobody else found in Beat the clock).
+- Boards completed: overall (completed out of played) and for each competition, under every filter including Solo and H2H; Compare shows both players' completed boards by competition side by side.
 - Accuracy by competition and by difficulty; head-to-head records against each opponent; the last 10 results; badges to chase.
 - Share my stats (a stats card, like the results card) and Compare (you against a friend, side by side).
 - Reset my stats at the bottom, with an in-page confirm step ("can't be undone"); afterwards the page shows zeros and "your stats start again with your next game".
 - Who you can compare with: no open friend search or requests. You can only add someone you've played online: after each online game the server saves who each signed-in player played, the stats page lists your last 10 signed-in opponents under "Played online recently", and a star keeps someone as a friend at the top. Players without an account are listed under "On this phone" from the local stats. Server work: a played-with list per account (updated when a game ends), a starred list, and a read of a friend's summary stats.
 - Needs the game to record more per round: mode, competition, difficulty, slots found by others and by nobody, opponents. Older games keep their totals only.
+
+### Sharing the new modes
+
+The Share button keeps sending a picture and a message together.
+
+- Results card (1080 by 1350, as now): each player as a full colour pill with their points, the winner first with a crown, then the last board in the finders' colours (First touch) or a grid with a dot per player per answer and stars for answers only one player found (Beat the clock), the settings line, "Think you can beat …?" and the link.
+- Message: WhatsApp can't colour text, so each player gets a coloured square (🟦 player 1, 🟨 player 2, 🟩 player 3, 🟪 player 4) by their name, and the board is drawn in squares like Wordle: one row per round for First touch (coloured by who got there first, ⬛ for nobody), one row per player for the last round of Beat the clock (⭐ where they were the only one). Banter line, settings line and link as now.
 
 ## Other competitions
 
