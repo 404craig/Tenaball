@@ -356,6 +356,17 @@ await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions Leagu
   assert(r.known, "every starter is a recognised name");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("every answer on every board locks in when typed in full", async () => {
+  const p = await phone(browser, "names"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]'); await p.click("#startBtn"); await until(() => visible(p, "#intro"));
+  const r = await p.evaluate(() => { const out = [], inp = document.getElementById("guessInput"); let n = 0;
+    for (const q of Q){ if (q.open || q.dyn) continue; G.q = q;
+      for (const name of new Set(q.slots.flatMap(s => [s.club, ...(s.alts || [])]))){ n++; inp.value = name; G.pick = null; const got = resolve(); if (got !== name) out.push(`${q.id}: "${name}" -> ${got}`); } }
+    return { n, out, has: ["pl-derby-nld-goals", "ucl-xi-2022-lfc", "bdo-vote-2025"].every(id => Q.some(q => q.id === id)) }; });
+  assert(r.has && r.n > 5000, "checked the records, line-up and Ballon d'Or boards too: " + r.n);
+  eq(r.out, [], "typing an answer exactly (Thiago, Heung-min Son and the rest) picks that player");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
   const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   eq(await p.evaluate(() => [cfg.allLevels, document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed")]), [true, "All levels", true], "All levels is on by default");

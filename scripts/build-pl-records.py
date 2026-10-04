@@ -768,7 +768,7 @@ ranked("pl-assists-season", "Most assists in a season", "Name the players with t
 ranked("pl-assist-ga", "Most goals plus assists", "Name the players with the most Premier League goals and assists added together.", LIVE, 1,
        [("Alan Shearer","324 (260 + 64)"),("Wayne Rooney","311 (208 + 103)"),("Mohamed Salah","287 (193 + 94)"),("Frank Lampard","279 (177 + 102)"),("Ryan Giggs","271 (109 + 162)"),
         ("Andy Cole","260 (187 + 73)"),("Harry Kane","259 (213 + 46)"),("Thierry Henry","249 (175 + 74)"),("Sergio Aguero","231 (184 + 47)"),("Teddy Sheringham","222 (146 + 76)")],
-       {"Steven Gerrard":"Steven Gerrard is just outside with 212 (120 + 92).","Robbie Fowler":"Robbie Fowler is just outside with 202.","Son Heung-min":"Son Heung-min has 198 (127 + 71)."})
+       {"Steven Gerrard":"Steven Gerrard is just outside with 212 (120 + 92).","Robbie Fowler":"Robbie Fowler is just outside with 202.","Heung-min Son":"Son Heung-min has 198 (127 + 71)."})
 
 # ---- batch 5: managers (docs/data/PL_MANAGERS_2026-10-03.md and pl_managers.csv: every result matched to the manager in charge on the day, from
 # Wikipedia's spell dates; every top-20 games total agrees with Wikipedia, and the wins, draws and defeats agree with every published figure)
@@ -889,7 +889,7 @@ ranked("pl-derby-man-goals", "Manchester derby top scorers", "Name the top score
         ("Anthony Martial","5 goals"),("Paul Scholes","5 goals"),(["Ruud van Nistelrooy","Andrei Kanchelskis","Edin Dzeko","David Silva","Niall Quinn"],"4 goals","man4",2)],
        {"Cristiano Ronaldo":"Cristiano Ronaldo is just outside with three.","Kevin De Bruyne":"Kevin De Bruyne is just outside with three.","Bruno Fernandes":"Bruno Fernandes is just outside with three."})
 ranked("pl-derby-nld-goals", "North London derby top scorers", "Name the top scorers in Premier League North London derbies, Arsenal v Spurs. Seven players have four, so any two of them fill the last two places.", LIVE, 1,
-       [("Harry Kane","14 goals"),("Emmanuel Adebayor","8 goals, for both clubs"),("Son Heung-min","8 goals"),("Robert Pires","7 goals"),("Thierry Henry","5 goals"),("Robin van Persie","5 goals"),
+       [("Harry Kane","14 goals"),("Emmanuel Adebayor","8 goals, for both clubs"),("Heung-min Son","8 goals"),("Robert Pires","7 goals"),("Thierry Henry","5 goals"),("Robin van Persie","5 goals"),
         ("Gareth Bale","5 goals"),("Eberechi Eze","5 goals"),(["Ian Wright","Patrick Vieira","Freddie Ljungberg","Theo Walcott","Rafael van der Vaart","Pierre-Emerick Aubameyang","Alexandre Lacazette"],"4 goals","nld4",2)],
        {"Teddy Sheringham":"Teddy Sheringham is just outside with three.","Bukayo Saka":"Bukayo Saka is just outside with three.","Robbie Keane":"Robbie Keane is just outside with three."})
 
