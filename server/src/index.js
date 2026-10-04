@@ -299,7 +299,7 @@ const MODES = ["turns", "first", "clock"];
 function roomSettings(s = {}){
   const pick = (v, ok, d) => ok.includes(v) ? v : d;
   return { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all"),
-    mode: pick(s.mode, MODES, "turns"), time: pick(s.time, [30, 60, 90], 60) };
+    mode: pick(s.mode, MODES, "turns"), time: pick(s.time, [60, 90, 120], 60) };
 }
 const IDLE_MS = 24 * 3600000;
 
@@ -375,7 +375,7 @@ export class Room extends DurableObject {
     if (m.t === "settings"){ // the host changes the game mode or time limit in the lobby
       if (!host || r.status !== "lobby") return oops("Only the host can change the game, in the lobby.");
       const n = m.settings || {};
-      r.settings = roomSettings({ ...r.settings, mode: MODES.includes(n.mode) ? n.mode : r.settings.mode, time: [30, 60, 90].includes(n.time) ? n.time : r.settings.time });
+      r.settings = roomSettings({ ...r.settings, mode: MODES.includes(n.mode) ? n.mode : r.settings.mode, time: [60, 90, 120].includes(n.time) ? n.time : r.settings.time });
       await this.save();
       this.send(ws, { t: "ok", ref: m.ref });
       return this.broadcast({ t: "room", room: this.publicRoom() });

@@ -17,7 +17,7 @@ const done = async p => { assert(!p.errors.length, p.errors.join("\n")); await p
 async function vsBot(p, mode, { qid = "pl-top-1992/93", level = 1 } = {}){
   await p.click('[data-door="solo"]'); await p.click('#oppSeg button[data-v="bot"]'); await p.click(`#botSeg button[data-v="${level}"]`);
   await p.click(`#modePick button[data-v="${mode}"]`); await p.click('#roundSeg button[data-v="1"]');
-  if (mode === "turns") await p.click('#clockSeg button[data-v="0"]'); else await p.click('#timeSeg button[data-v="30"]');
+  if (mode === "turns") await p.click('#clockSeg button[data-v="0"]'); else await p.click('#timeSeg button[data-v="60"]');
   await p.evaluate(id => { window.pickQuestion = () => findQ(id); }, qid);
   await p.click("#startBtn"); await until(() => visible(p, "#intro"), { what: "the intro", timeout: 15000 }); await p.click("#introBtn");
 }
@@ -35,7 +35,7 @@ await test("home: three doors, each opening its own settings, with Stats, Share 
   await p.click('#oppSeg button[data-v="bot"]');
   assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot brings the modes and its level");
   eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "First touch", "Beat the clock"]);
-  await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="30"]');
+  await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="120"]');
   assert(await visible(p, "#timeField") && !(await visible(p, "#clockField")) && !(await visible(p, "#repeatField")), "a time limit replaces the shot clock");
   await p.click("#doorSet .backbtn"); await p.click('[data-door="h2h"]');
   assert(!(await visible(p, "#modeField")), "pass and play takes turns");
@@ -47,7 +47,7 @@ await test("home: three doors, each opening its own settings, with Stats, Share 
   assert((await p.textContent("#siteLink")).startsWith("127.0.0.1:5191"), "the game's link");
   await p.click("#copyLink"); await until(async () => (await p.textContent("#linkMsg")).includes("copied"), { what: "copied" });
   await p.reload(); await until(() => visible(p, "#setup"));
-  eq(await p.evaluate(() => [cfg.mode, cfg.opp, cfg.time]), ["clock", "bot", 30], "the phone remembers the mode, opponent and time limit");
+  eq(await p.evaluate(() => [cfg.mode, cfg.opp, cfg.time]), ["clock", "bot", 120], "the phone remembers the mode, opponent and time limit");
   await done(p);
 });
 
@@ -101,6 +101,8 @@ await test("First touch: the first right answer claims the slot in the player's 
   const [a, b, c] = [await slotName(p, 0), await slotName(p, 1), await slotName(p, 2)];
   await p.evaluate(n => { input.value = n; G.pick = n; }, a); await p.click("#lockBtn");
   await until(() => p.evaluate(() => G.foundBy[0] === 0), { what: "your claim" });
+  assert(await p.evaluate(() => G.held.length === 1 && !document.querySelector("#tower .slot").classList.contains("found")), "your answer climbs the board before it shows");
+  await until(() => p.evaluate(() => !G.held.length), { what: "the scan to stop" });
   assert(await p.evaluate(() => document.querySelector("#tower .slot").classList.contains("pc1")), "your colour");
   await p.evaluate(([b, c]) => { applyLiveGuess(1, b); applyLiveGuess(1, c); }, [b, c]); // TenaBot claims two
   assert(await p.evaluate(() => document.querySelectorAll("#tower .slot")[1].classList.contains("pc2")), "TenaBot's colour");
@@ -109,6 +111,7 @@ await test("First touch: the first right answer claims the slot in the player's 
   eq(await p.evaluate(() => G.players[0].lives), 3, "no card for being beaten to it");
   await p.evaluate(() => applyLiveGuess(0, "Barnet"));
   eq(await p.evaluate(() => [G.players[0].lives, G.players[0].g.yellow]), [2, 1], "a wrong answer is a yellow card");
+  await until(() => p.evaluate(() => !G.held.length), { what: "the wrong answer's scan" });
   await p.evaluate(() => applyTimeUp());
   eq(await p.evaluate(() => G.players.map(x => x.score)), [1, 3], "a point a slot, plus a bonus for the most");
   await until(() => p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), { what: "the points sheet" });
@@ -136,7 +139,7 @@ await test("Beat the clock: your own board, others' finds as name pills, then on
   const first = await p.evaluate(() => { const s = document.querySelector("#tower .slot"); return [s.classList.contains("found"), s.querySelector(".upill") && s.querySelector(".upill").textContent, !!s.querySelector(".who"), s.querySelector(".club").textContent.includes("Manchester")]; });
   eq(first, [false, "TenaBot", true, false], "TenaBot's name and the stat, not the answer");
   await p.evaluate(n => { input.value = n; G.pick = n; }, a); await p.click("#lockBtn");
-  await until(() => p.evaluate(() => G.players[0].B.foundBy[0] === 0), { what: "your find" });
+  await until(() => p.evaluate(() => G.players[0].B.foundBy[0] === 0 && !G.held.length), { what: "your find" });
   assert(await p.evaluate(() => { const s = document.querySelector("#tower .slot"); return s.classList.contains("pc1") && !s.querySelector(".upill"); }), "your full pill, without anyone else's name");
   eq(await p.evaluate(() => G.foundBy[0]), undefined, "the shared board isn't touched");
   await p.evaluate(() => applyTimeUp());

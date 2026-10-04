@@ -28,7 +28,7 @@ async function pickComps(p, cats){
   await p.click("#compDone");
 }
 // host: pick settings on the home screen, then create an online game
-async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 30 } = {}){
+async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 60 } = {}){
   await p.click("#onlineBtn"); await shown(p, "onlineGo");
   await p.click(`#modePick button[data-v="${mode}"]`);
   await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(mode === "turns" ? `#clockSeg button[data-v="${clock}"]` : `#timeSeg button[data-v="${time}"]`); await pickComps(p, [].concat(cat));
@@ -362,7 +362,7 @@ await test("online: a phone whose connection drops mid-game reconnects and catch
 });
 
 // type an answer on a phone in First touch or Beat the clock
-const say = (p, name) => p.evaluate(n => { input.value = n; G.pick = n; lockIn(); }, name);
+const say = async (p, name) => { await p.waitForFunction(() => !G.held || !G.held.length); await p.evaluate(n => { input.value = n; G.pick = n; lockIn(); }, name); }; // after your last answer's scan
 const slotAnswer = (p, i) => p.evaluate(i => { const s = G.q.slots[i]; return s.alts ? s.alts[0] : s.club; }, i);
 async function liveGame(mode){
   const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
