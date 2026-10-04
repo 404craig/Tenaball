@@ -418,18 +418,18 @@ cboard("pl-rec-survived-pts", "Survived with the fewest points", "Name the clubs
        survived, pv, lambda c: f"{c} pts", asc=True)
 
 # year-labelled series: one answer per season
-def series(id_base, title, brief, level, pick, windows, period_word="Seasons"):
+def series(id_base, title, brief, level, pick, windows, period_word="Seasons", type="person"):
     for a, b in windows:
         ss = [s for s in SEAS if a <= s <= b]; assert len(ss) == 10, (id_base, a, b)
         rows = [(s, *pick(s)) for s in ss]
         flat = Counter(n for _, n, _ in rows for n in (n if isinstance(n, list) else [n]))
         assert max(flat.values()) <= 3, (id_base, a, flat.most_common(2))
-        labelled(f"{id_base}-{a}", title, brief, f"{period_word} {a} to {b}", level, rows)
+        labelled(f"{id_base}-{a}", title, brief, f"{period_word} {a} to {b}", level, rows, type=type)
 def promoted_best(s):
     i = SEAS.index(s); new = [c for c in PLT[s] if c not in PLT[SEAS[i - 1]]]
     c = new[0]; return c, f"{ordn(PLT[s].index(c) + 1)} place"
 series("pl-promoted-best", "Best finish by a promoted club", "Name the newly promoted club that finished highest in the Premier League each season.", 2, promoted_best,
-       [("2016/17", "2025/26"), ("2006/07", "2015/16"), ("1996/97", "2005/06")])
+       [("2016/17", "2025/26"), ("2006/07", "2015/16"), ("1996/97", "2005/06")], type="club") # the answers are clubs
 def champ_ts(s):
     c = PLT[s][0]; t = Counter()
     for r in PR:

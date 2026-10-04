@@ -574,5 +574,21 @@ await test("badges: missed rows fade the name more than the crest, and year boar
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("questions: every board's answers match its type (clubs on club boards, players on player boards), so the box, suggestions and TenaBot ask for the right thing", async () => {
+  const p = await phone(browser, "types"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const bad = await p.evaluate(() => {
+    const isClub = n => { const v = ALIAS[norm(n)]; return v === n || (v instanceof Set && v.has(n)); };
+    const isNation = n => { const v = NALIAS[norm(n)]; return v === n || (v instanceof Set && v.has(n)); };
+    return Q.filter(q => !q.open && q.slots).map(q => {
+      const t = q.type || "club", names = [...new Set(q.slots.flatMap(s => s.alts || [s.club]))].filter(Boolean);
+      const wrong = t === "person" ? names.filter(n => (isClub(n) || isNation(n)) && !PLP.has(n)) : t === "club" ? names.filter(n => !isClub(n)) : t === "nation" ? names.filter(n => !isNation(n)) : [];
+      return wrong.length ? `${q.id} (${t}): ${wrong.slice(0, 3).join(", ")}` : null;
+    }).filter(Boolean);
+  });
+  eq(bad, [], "boards whose answers don't match their type");
+  const q = await p.evaluate(() => { const q = findQ("pl-promoted-best-2006/07"); G = { q, pick: null, guessed: new Set() }; setPlaceholder(q); return [q.type, input.placeholder, matches(norm("Brighton"))[0]]; });
+  eq(q, ["club", "Type a club", "Brighton"], "the promoted clubs board asks for clubs");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await browser.close(); await site.close();
 report();
