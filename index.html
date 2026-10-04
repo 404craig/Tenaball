@@ -3360,14 +3360,14 @@ function liveLockIn(){
   const name = resolve();
   if (!name){ feedback(`That ${({person:"name",nation:"country",place:"city"})[qType()]||"club"} isn't recognised. Try another spelling.`, "bad"); return; }
   if (name==="?"){ feedback("Pick one from the list below.", "bad"); drawSugg(); return; }
-  const clear = () => { input.value = ""; G.pick = null; $("sugg").innerHTML = ""; input.focus({preventScroll:true}); };
-  if (p.guessed.has(name)){ feedback(`You've already tried ${name}.`, "bad"); return clear(); }
+  const clear = (keep) => { input.value = ""; G.pick = null; $("sugg").innerHTML = ""; if (keep) input.focus({preventScroll:true}); };
+  if (p.guessed.has(name)){ feedback(`You've already tried ${name}.`, "bad"); return clear(true); }
   const B = G.mode==="clock" ? p.B : G, h = guessHits(name, B, false);
   if (h.allHits.length && !h.hits.length){ // already on the board: no card, you weren't wrong
     const o = G.players[B.foundBy[h.allHits[0]]];
     if (G.mode==="first" && o && o!==p){ p.g.slow++; beatenTo(o, name, h.allHits[0]); }
     else feedback(h.pooled ? `${name} is tied on that total, but those places are already filled.` : `You already have ${name}.`, "bad");
-    return clear();
+    return clear(true);
   }
   clear();
   if (ONLINE) return void roomSend({ t: "move", type: "guess", data: { name } }).catch(e => feedback(e.message || "Couldn't send that. Try again.", "bad"));
@@ -3394,7 +3394,8 @@ function applyLiveGuess(pi, name){
   // your own answer climbs the board before it's revealed, as in Take turns. The game moves on at once (so every phone agrees);
   // only this phone's view waits: the slots, points and lives it holds back show when the scan stops
   const hold = mine && !FAST ? { pi, slots: hits.slice(), pts: clock ? 0 : hits.length, life: hits.length ? 0 : 1, t: Date.now() } : null;
-  if (hold){ (G.held = G.held || []).push(hold); feedback(`You lock in ${name}...`, "wait"); $("lockBtn").disabled = true; }
+  // as in Take turns, the box is switched off while the answer climbs: the phone's keyboard drops and the board is in view
+  if (hold){ (G.held = G.held || []).push(hold); feedback(`You lock in ${name}...`, "wait"); input.disabled = $("lockBtn").disabled = true; input.blur(); }
   // whatever happens in the scan or the reveal, the hold is released and the chain carries on, or the round would freeze
   const reveal = show => { if (!hold) return safe(show);
     const g = G, release = () => { if (G!==g) return; G.held = (G.held || []).filter(h => h!==hold); safe(show); if (!G.over && !p.out && !p.done) input.disabled = $("lockBtn").disabled = false; };
