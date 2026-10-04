@@ -122,7 +122,7 @@ Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (ht
 
 ### Home screen: three doors
 
-- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Each door has a large glowing ring icon in its own colour with a softly tinted symbol inside (green ring and a player for solo, pink ring and a group of players for H2H on this phone, blue ring and a globe for H2H online), as in Craig's mock-up; no coloured edge on the doors. H2H online's description: "Everyone on their own phone. 3 game modes." Smaller line icons in the logo's cyan-to-green are used for the game modes (Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
+- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Each door has a large glowing ring icon in its own colour with a softly tinted symbol inside (green ring and a player for solo, pink ring and a group of players for H2H on this phone, blue ring and a globe for H2H online), as in Craig's mock-up; no coloured edge on the doors. Door descriptions: Play solo "Beat your best score and complete more boards."; H2H on this phone "2 to 4 players. Pass and play."; H2H online "Play on separate phones. 3 game modes." Smaller line icons in the logo's cyan-to-green are used for the game modes (Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
 - Each door opens its own settings, laid out like today's home screen panels (Who's playing, The game, House rules) and changed as little as possible: solo has your name; head to head on this phone has 2 to 4 players and names; online has your name and the game mode, then create a game or join with a code.
 - Only the online door offers the new modes. For First touch and Beat the clock the shot clock is replaced by a time limit per round (30, 60 or 90 seconds).
 - A tab bar along the bottom with three tabs (no Play tab): **Stats** (the stats page), **Share** (the phone's share sheet with the game link, or copy it, without starting a game) and **Account** (sign in, name, PIN, sign out).
@@ -167,8 +167,12 @@ Opened from My stats on the home screen and from the link at full time. A filter
 
 The Share button keeps sending a picture and a message together.
 
-- Results card (1080 by 1350, as now): each player as a full colour pill with their points, the winner first with a crown, then the last board in the finders' colours (First touch) or a grid with a dot per player per answer and stars for answers only one player found (Beat the clock), the settings line, "Think you can beat …?" and the link.
-- Message: WhatsApp can't colour text, so each player gets a coloured square (🟦 player 1, 🟨 player 2, 🟩 player 3, 🟪 player 4) by their name, and the board is drawn in squares like Wordle: one row per round for First touch (coloured by who got there first, ⬛ for nobody), one row per player for the last round of Beat the clock (⭐ where they were the only one). Banter line, settings line and link as now.
+- Picture (1080 by 1350, as now): just the final table. Each player as a full colour pill in their own colours with their points, the winner on top with the game's black line crown (drawn, not an emoji), then the settings line, "Think you can beat …?" and the link. No last-round board.
+- Message: short, like today's: the mode, who won and with how many points, the banter line, and the challenge with the link. No coloured squares.
+
+### Playing a bot
+
+No fourth door: a bot is another kind of player. Play solo gets an Opponent choice (Nobody, or TenaBot at Easy, Medium or Hard; you take turns with it). In H2H on this phone every seat after the first has a Bot switch, with one bot level for the game. The bot answers after a short "thinking" pause, finds answers at a rate set by its level (deeper places are harder for it), and sometimes gives a near miss from the board's notes, so it can get cards too. Bot moves are worked out on the phone that's playing, so online play is unaffected. Games against a bot count in stats under their own filter and don't change your win rate against people.
 
 ## Other competitions
 
