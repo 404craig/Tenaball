@@ -344,15 +344,21 @@ await test("game: rounds come only from ticked competitions, never the same one 
 await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions League finalist since 2017 has a starting-line-up board", async () => {
   const p = await phone(browser, "bdo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const r = await p.evaluate(() => {
-    const bdo = Q.filter(q => /bdo/.test(q.id)), xi = Q.filter(q => /^ucl-xi-/.test(q.id));
+    const bdo = Q.filter(q => /bdo/.test(q.id)), xi = Q.filter(q => /^ucl-xi-/.test(q.id)), intl = Q.filter(q => /^(wc|euro)-xi-/.test(q.id));
+    const eng24 = findQ("euro-xi-2024-eng");
     const lfc19 = findQ("ucl-xi-2019-lfc");
     return { bdo: [bdo.length, bdo.every(q => q.cat==="top5" && q.look==="bdo"), !!WATERMARK.bdo, lookName(bdo[0])], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
+      intl: [intl.filter(q => q.cat==="wc").length, intl.filter(q => q.cat==="euro").length, intl.every(q => q.slots.length===10 && family(q)==="lineups")],
+      eng24: [eng24.title, eng24.brief, eng24.slots.map(s => s.club).join(", ")],
       lfc19: [lfc19.title, lfc19.period, lfc19.slots.map(s => s.club).join(", ")], known: xi.every(q => q.slots.every(s => s.club in PEOPLE)) };
   });
   eq(r.bdo, [7, true, true, "Ballon d'Or"], "seven Ballon d'Or boards, drawn under Top 5 but dressed in gold with the trophy watermark");
   eq(r.xi, [20, true, ["lineups"]], "twenty line-up boards of ten different players, in their own family");
   eq(r.lfc19, ["Liverpool's starters, 2019 final", "2018/19 Champions League final, 1 June 2019",
     "Trent Alexander-Arnold, Joel Matip, Virgil van Dijk, Andy Robertson, Jordan Henderson, Fabinho, Georginio Wijnaldum, Mohamed Salah, Roberto Firmino, Sadio Mane"]);
+  eq(r.intl, [8, 8, true], "eight World Cup and eight Euros final line-ups");
+  eq(r.eng24, ["England's starters, Euro 2024 final", "Name the ten outfield players England started with in the Euro 2024 final against Spain (they lost 2-1).",
+    "Kyle Walker, John Stones, Marc Guehi, Bukayo Saka, Kobbie Mainoo, Declan Rice, Luke Shaw, Phil Foden, Jude Bellingham, Harry Kane"]);
   assert(r.known, "every starter is a recognised name");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
