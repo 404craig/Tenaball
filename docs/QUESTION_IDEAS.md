@@ -118,24 +118,31 @@ A new competition for the home screen (an "Internationals" group, with its own t
 
 ## Game modes
 
-Ideas for new ways to play, not new questions. Both are online modes (one phone each), built on the server's move log.
+Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (https://claude.ai/artifact/A4BxSUqCxqRjY4gy6z6zcT). Not built yet.
 
-### Race the board
+### Home screen: three doors
 
-Everyone plays the same board at the same time, with no turns. Any player can type an answer whenever they like; the first correct answer to reach the server claims that slot, and it's then gone for everyone else. Wrong answers still cost a life (a yellow card), and losing all three is a red card that puts that player out of the round. The round ends when the board is full, when everyone is out, or when a time limit runs out.
+- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **Head to head on this phone** (or "Versus on this phone") and **Head to head online**.
+- Each door opens its own settings, laid out like today's home screen panels (Who's playing, The game, House rules) and changed as little as possible: solo has your name; head to head on this phone has 2 to 4 players and names; online has your name and the game mode, then create a game or join with a code.
+- Only the online door offers the new modes. For First touch and Beat the clock the shot clock is replaced by a time limit per round (30, 60 or 90 seconds).
+- Under the doors: **Share the game** (the phone's share sheet with the game link, or copy it, without starting a game), **My stats** (the all-time stats panel) and **Account** (sign in, name, PIN, sign out).
 
-- Fits the current design well: the server already puts moves in one order, so if two players send the same answer, whoever's move the server saw first gets it, and every phone agrees.
-- Needs: guesses allowed out of turn (today only the player whose turn it is can guess), a "too late, already taken" message, and each slot showing who claimed it. Scoring is one point per slot claimed, with the usual 2-point bonus for whoever fills the last slot.
-- Doesn't work on one shared phone, so it stays online only.
+### Who goes first
+
+- For head to head on this phone and online Take turns: after Kick off, the players' pills (the same size as board rows) swap places fast, slow down and settle into a random order of play; the top pill glows in its player's colour. About three seconds; a tap skips to the result.
+- Each round then starts one place further down the order, as now. Online, the host's phone draws the order and sends it with the first move so every phone shows the same result (keep the apply functions free of randomness).
+
+### First touch (was "Race the board")
+
+Description: "Race against your friends to fill each slot first." Everyone plays the same board at the same time, with no turns; the first right answer to reach the server claims the slot, and it's then gone for everyone else. Wrong answers still cost a life (a yellow card), and three gone is a red card. The round ends when the board is full, everyone is out, or the time limit runs out. A point a slot, plus 2 for the last one.
+
+- A claimed slot fills with the finder's colour as a gradient within that colour's family: player 1 cyan into teal and green, player 2 yellows, player 3 lime into green, player 4 pink through purple to red. The rest of the board (background, chip, watermark) keeps the competition's design.
+- "Too slow" message when someone else got there first, with no card. The server's move order decides ties, so every phone agrees.
+- The clock sits bottom right, where the shot clock is now. Slots stay the game's usual 46px rows.
 
 ### Beat the clock
 
-Everyone gets their own copy of the same board and the same time limit, for example 60 seconds. Each player fills as many slots as they can on their own board; the round ends for everyone at the same moment (losing all three lives, a red card, ends it early for that player). Then all the boards are revealed side by side and the most slots wins the round.
-
-- The clock must come from the host, not each phone: the host sends a "time up" move when the minute is over, so every phone ends at the same point in the move log and nobody's slow phone gives them extra time. The game's rule that `applyGuess` and the rest never read the clock stays intact.
-- Hide the other players' boards during the round (show only how many slots each has found), then reveal them all at the end.
-- Could also work on one phone as "pass and play": each player takes their own 60 seconds in turn with the board hidden from the others, though that's slower.
-- Settings: the time limit (30, 60 or 90 seconds), and whether repeated answers across players matter (they don't here, since every board is separate).
+Everyone gets their own copy of the same board and the same time limit; the others' progress shows only as filling dots. The host's phone sends "time up" so everyone stops at the same point in the move log. Then every board is revealed side by side and the most slots wins. Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
 
 ## Other competitions
 
