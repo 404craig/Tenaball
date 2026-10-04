@@ -346,14 +346,25 @@ await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions Leagu
   const r = await p.evaluate(() => {
     const bdo = Q.filter(q => /bdo/.test(q.id)), xi = Q.filter(q => /^ucl-xi-/.test(q.id));
     const lfc19 = findQ("ucl-xi-2019-lfc");
-    return { bdo: [bdo.length, bdo.every(q => q.cat==="top5")], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
+    return { bdo: [bdo.length, bdo.every(q => q.cat==="top5" && q.look==="bdo"), !!WATERMARK.bdo, lookName(bdo[0])], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
       lfc19: [lfc19.title, lfc19.period, lfc19.slots.map(s => s.club).join(", ")], known: xi.every(q => q.slots.every(s => s.club in PEOPLE)) };
   });
-  eq(r.bdo, [7, true], "seven Ballon d'Or boards, all under Top 5");
+  eq(r.bdo, [7, true, true, "Ballon d'Or"], "seven Ballon d'Or boards, drawn under Top 5 but dressed in gold with the trophy watermark");
   eq(r.xi, [20, true, ["lineups"]], "twenty line-up boards of ten different players, in their own family");
   eq(r.lfc19, ["Liverpool's starters, 2019 final", "2018/19 Champions League final, 1 June 2019",
     "Trent Alexander-Arnold, Joel Matip, Virgil van Dijk, Andy Robertson, Jordan Henderson, Fabinho, Georginio Wijnaldum, Mohamed Salah, Roberto Firmino, Sadio Mane"]);
   assert(r.known, "every starter is a recognised name");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("every answer on every board locks in when typed in full", async () => {
+  const p = await phone(browser, "names"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]'); await p.click("#startBtn"); await until(() => visible(p, "#intro"));
+  const r = await p.evaluate(() => { const out = [], inp = document.getElementById("guessInput"); let n = 0;
+    for (const q of Q){ if (q.open || q.dyn) continue; G.q = q;
+      for (const name of new Set(q.slots.flatMap(s => [s.club, ...(s.alts || [])]))){ n++; inp.value = name; G.pick = null; const got = resolve(); if (got !== name) out.push(`${q.id}: "${name}" -> ${got}`); } }
+    return { n, out, has: ["pl-derby-nld-goals", "ucl-xi-2022-lfc", "bdo-vote-2025"].every(id => Q.some(q => q.id === id)) }; });
+  assert(r.has && r.n > 5000, "checked the records, line-up and Ballon d'Or boards too: " + r.n);
+  eq(r.out, [], "typing an answer exactly (Thiago, Heung-min Son and the rest) picks that player");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
