@@ -1,6 +1,6 @@
 # World Cup and Euros final line-ups: sources
 
-Checked 4 October 2026. Sixteen boards (`wc-xi-<year>-<team>` and `euro-xi-<year>-<team>` in `index.html`, built next to the Champions League ones): the ten outfield players each finalist started with in the last four World Cup finals (2014, 2018, 2022, 2026) and the last four Euros finals (2012, 2016, 2020, 2024). The goalkeeper is left out so there are exactly ten. Labels are the positions on Wikipedia's team sheet, and each slot shows the shirt number. England's boards are medium, the rest hard.
+Checked 4 October 2026. Sixteen boards (`wc-xi-<year>-<team>` and `euro-xi-<year>-<team>` in `index.html`, built next to the Champions League ones): the ten outfield players each finalist started with in the last four World Cup finals (2014, 2018, 2022, 2026) and the last four Euros finals (2012, 2016, 2020, 2024). The goalkeeper is left out so there are exactly ten. Labels are the positions on Wikipedia's team sheet, and each slot shows the shirt number. All are medium.
 
 Source: Wikipedia's page for each final (the team sheets in the Details section). Second checks:
 
