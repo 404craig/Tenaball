@@ -3034,7 +3034,7 @@ async function beginTurn(){
   }
   if (p.bot){ // TenaBot thinks for a moment, then answers
     $("turnLabel").innerHTML = `<span style="color:${p.color}">${esc(p.name)}</span> is thinking…`;
-    $("guessArea").classList.add("watching"); $("guessArea").classList.remove("hidden"); $("passBtn").classList.remove("hidden");
+    $("guessArea").classList.add("watching"); $("guessArea").classList.remove("hidden"); $("passBtn").classList.add("hidden");
     input.value = ""; input.disabled = true; $("lockBtn").disabled = true; $("sugg").innerHTML = ""; $("clock").classList.add("hidden");
     G.turnReady = true; botTurn(p); return;
   }
@@ -3076,7 +3076,7 @@ async function timeUp(){
   if (ONLINE){ if (onlineMyTurn()) onlineSend("timeout"); return; }
   return applyTimeout();
 }
-async function applyTimeout(){
+async function applyTimeoutInner(){
   G.busy = true; input.disabled = true; $("lockBtn").disabled = true;
   const p = G.players[G.turn]; p.g.timeouts++;
   sfx.blast(); crowdPlay("groan"); buzz([80,60,80]);
@@ -3087,17 +3087,17 @@ async function applyTimeout(){
 
 /* ---------- input ---------- */
 const input = $("guessInput");
-input.addEventListener("input", () => { G.pick = null; drawSugg(); });
+input.addEventListener("input", () => { if (G.pick && input.value.trim()!==G.pick) G.pick = null; drawSugg(); });
 input.addEventListener("keydown", e => { if (e.key==="Enter"){ e.preventDefault(); lockIn(); } });
 $("lockBtn").onclick = lockIn;
 $("passBtn").onclick = () => {
-  if (G.busy || G.over) return;
+  if (G.busy || G.over || (G.players[G.turn] && G.players[G.turn].bot)) return;
   if (ONLINE){ if (onlineMyTurn()){ stopTimer(); onlineSend("pass"); } return; }
   return applyPass();
 };
 // a pass costs a life, like a wrong answer: a yellow card, or a red card on the last life.
 // The host's skip for an online player who has gone quiet (skip = true) moves the turn on without one.
-async function applyPass(skip){
+async function applyPassInner(skip){
   stopTimer();
   const p = G.players[G.turn];
   if (!skip) p.g.passes++;
@@ -3221,7 +3221,16 @@ function guessHits(name, B = G, one = cfg.repeat==="one" && G.mode==="turns"){
   const pooled = allHits.some(i => q.slots[i].pool) && !allHits.some(i => (B.poolUsed[q.slots[i].pool]||[]).includes(name));
   return { allHits, hits, pooled };
 }
-async function applyGuess(name){
+// if a guess, pass or time-out hits an error part-way, the round is unstuck: busy cleared, the box re-enabled, the turn moved on
+async function unstick(e){
+  console.warn(e); if (!G || G.over) return;
+  G.busy = false; input.disabled = $("lockBtn").disabled = false; $("outOverlay").classList.add("hidden");
+  feedback("Something went wrong with that answer, so it didn't count. Carry on.", "bad");
+}
+async function applyGuess(name){ try { await applyGuessInner(name); } catch(e){ await unstick(e); } }
+async function applyPass(skip){ try { await applyPassInner(skip); } catch(e){ await unstick(e); } }
+async function applyTimeout(){ try { await applyTimeoutInner(); } catch(e){ await unstick(e); } }
+async function applyGuessInner(name){
   stopTimer();
   G.busy = true; input.disabled = true; $("lockBtn").disabled = true; $("sugg").innerHTML = "";
   G.passes = 0;
@@ -3267,6 +3276,32 @@ async function applyGuess(name){
   G.busy = false; nextTurn();
 }
 
+// run a bit of UI work; an error is logged rather than stopping the round
+function safe(fn){ try { return fn(); } catch(e){ console.warn(e); } }
+// a safety net for the answer box: whatever goes wrong, nobody should be left unable to type or lock in.
+// Checked once a second: a held answer that has outstayed its scan is released; a live turn or a person's turn with a dead
+// input is re-enabled; a TenaBot turn whose timer never came back is given another go.
+function watchdog(){
+  if (!G || !G.q || G.over || FAST) return;
+  const now = Date.now();
+  if (G.held && G.held.length && G.held.some(h => now - h.t > 8000)){ G.held = []; G.revealing = null; safe(drawTower); safe(renderPlayers); }
+  if (G.phase==="live"){
+    const me = G.players[meIdx()];
+    if (me && !me.out && !me.done && !(G.held && G.held.length) && (input.disabled || $("lockBtn").disabled)) input.disabled = $("lockBtn").disabled = false;
+    return;
+  }
+  if (G.phase!=="turn" || !G.turnReady) return;
+  const p = G.players[G.turn]; if (!p) return;
+  if (p.bot){ if (!ONLINE && !G.busy && G.botDue && now > G.botDue + 4000) botTurn(p); return; }
+  if (!G.busy && !(ONLINE && p.uid!==ONLINE.me) && (input.disabled || $("lockBtn").disabled)){
+    input.disabled = $("lockBtn").disabled = false; $("guessArea").classList.remove("watching", "hidden");
+  }
+}
+setInterval(watchdog, 1000);
+// an error that escapes anywhere mid-turn clears the busy flag so the game can carry on
+addEventListener("error", () => { if (G && !G.over) G.busy = false; });
+addEventListener("unhandledrejection", () => { if (G && !G.over) G.busy = false; });
+
 /* ---------- First touch and Beat the clock: everyone answers at once against the round's clock ----------
    First touch: one shared board; the first right answer claims the slot, in the player's colour. 1 point a slot, and a bonus point
    for the round's winner (the most slots; tied players each get it). Beat the clock: everyone has their own board; when time's up,
@@ -3310,7 +3345,8 @@ function applyTimeUp(){
   endLiveRound("Time's up.");
 }
 function liveLockIn(){
-  if (G.over || (G.held && G.held.length)) return;
+  if (G.over) return;
+  if (G.held && G.held.length){ feedback("Hang on, your last answer is still on its way up the board.", "wait"); return; }
   const pi = meIdx(), p = G.players[pi]; if (!p || p.out || p.done) return;
   const name = resolve();
   if (!name){ feedback(`That ${({person:"name",nation:"country",place:"city"})[qType()]||"club"} isn't recognised. Try another spelling.`, "bad"); return; }
@@ -3348,10 +3384,12 @@ function applyLiveGuess(pi, name){
   p.guessed.add(name);
   // your own answer climbs the board before it's revealed, as in Take turns. The game moves on at once (so every phone agrees);
   // only this phone's view waits: the slots, points and lives it holds back show when the scan stops
-  const hold = mine && !FAST ? { pi, slots: hits.slice(), pts: clock ? 0 : hits.length, life: hits.length ? 0 : 1 } : null;
+  const hold = mine && !FAST ? { pi, slots: hits.slice(), pts: clock ? 0 : hits.length, life: hits.length ? 0 : 1, t: Date.now() } : null;
   if (hold){ (G.held = G.held || []).push(hold); feedback(`You lock in ${name}...`, "wait"); $("lockBtn").disabled = true; }
-  const reveal = show => { if (!hold) return show();
-    const g = G; G.revealing = (G.revealing || Promise.resolve()).then(() => scan(hits)).then(() => { if (G!==g) return; G.held = G.held.filter(h => h!==hold); show(); if (!G.over && !p.out && !p.done) $("lockBtn").disabled = false; }); };
+  // whatever happens in the scan or the reveal, the hold is released and the chain carries on, or the round would freeze
+  const reveal = show => { if (!hold) return safe(show);
+    const g = G, release = () => { if (G!==g) return; G.held = (G.held || []).filter(h => h!==hold); safe(show); if (!G.over && !p.out && !p.done) input.disabled = $("lockBtn").disabled = false; };
+    G.revealing = (G.revealing || Promise.resolve()).then(() => Promise.race([scan(hits), wait(6000)])).catch(e => console.warn("scan", e)).then(release); };
   if (hits.length){
     hits.forEach(i => { B.foundBy[i] = pi; const s = q.slots[i]; if (s.pool){ (B.poolUsed[s.pool] = B.poolUsed[s.pool]||[]).push(name); B.slotName[i] = name; } });
     p.rs += hits.length; p.g.right++; p.g.slots += hits.length; p.g.run++; p.g.bestRun = Math.max(p.g.bestRun, p.g.run);
@@ -3450,13 +3488,14 @@ function botMiss(p, B, taken){
   return opts.length ? opts[Math.floor(Math.random()*opts.length)] : null;
 }
 function botTurn(p){
-  const g = G, q = G.q;
-  clearTimeout(G.botT);
+  const g = G, q = G.q, ms = (1500 + Math.random()*2000 + (2 - p.bot.level)*500) / BOT_PACE;
+  clearTimeout(G.botT); G.botDue = Date.now() + ms;
   G.botT = setTimeout(() => {
-    if (G!==g || G.q!==q || G.over || G.busy || G.phase!=="turn" || G.players[G.turn]!==p) return;
+    if (G!==g || G.q!==q || G.over || G.phase!=="turn" || G.players[G.turn]!==p) return;
+    if (G.busy){ G.botT = setTimeout(() => botTurn(p), 400); return; } // something's still on screen: come back in a moment
     const name = botAnswer(p, G, G.guessed) || botMiss(p, G, G.guessed);
-    name ? applyGuess(name) : applyPass();
-  }, (1500 + Math.random()*2000 + (2 - p.bot.level)*500) / BOT_PACE);
+    (name ? applyGuess(name) : applyPass()).catch(e => { console.warn("TenaBot", e); G.busy = false; nextTurn(); });
+  }, ms);
 }
 function botLive(pi){
   const p = G.players[pi], g = G, q = G.q, gap = [[5200, 5000], [3600, 4200], [2800, 3400]][p.bot.level];
@@ -3567,7 +3606,8 @@ function endRound(){
   });
   drawTower(); renderPlayers();
   $("guessArea").classList.add("hidden");
-  if (G.mode!=="turns"){ $("clock").classList.add("hidden"); const g = G; (G.revealing || Promise.resolve()).then(() => { if (G!==g) return; drawTower(); renderPlayers(); showRoundSheet(); }); return; }
+  if (G.mode!=="turns"){ $("clock").classList.add("hidden"); const g = G;
+    Promise.race([G.revealing || Promise.resolve(), wait(6500)]).catch(() => {}).then(() => { if (G!==g) return; G.held = []; safe(drawTower); safe(renderPlayers); showRoundSheet(); }); return; }
   const left = G.q.slots.length - Object.keys(G.foundBy).length;
   if (left>0){ const allOut = G.players.every(x=>x.out); $("feedback").textContent += `${allOut ? (G.players.length===1 ? " Out of lives." : " Everyone is out.") : ""} ${left} slot${left>1?"s":""} not found, ${G.q.open ? `shown faded with players you could have had (${G.q.open.count} in all)` : "shown faded"}.`; }
   $("mini").innerHTML = [...G.players].sort((a,b)=>b.score-a.score).map(p=>`<span style="color:${p.color}">${esc(p.name)} ${p.score}</span>`).join("");
