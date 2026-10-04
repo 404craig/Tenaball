@@ -45,7 +45,7 @@ Send the server's address to Claude, or open `index.html`, search for `const TEN
 const TENABALL_SERVER = "https://tenaball.<subdomain>.workers.dev";
 ```
 
-Once that's on `main` and GitHub Pages has updated, the game shows the sign-in screen on first visit and **Play online with friends** on the home screen.
+Once that's on `main` and GitHub Pages has updated, the game shows the sign-in screen on first visit and the **H2H online** door on the home screen.
 
 If the game is ever served from another address (a custom domain, for example), add it to `ALLOWED_ORIGINS` in `server/wrangler.toml`, separated by a comma.
 

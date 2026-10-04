@@ -30,6 +30,8 @@
   --glowA:rgba(150,60,255,.55); --glowB:rgba(233,0,82,.45); --glowC:rgba(4,245,255,.25);
   --titleCase:none; --titleTrack:0; --titleWeight:800;
   --p1:#04f5ff; --p2:#ffd23f; --p3:#00ff85; --p4:#c77dff;
+  /* each player's gentle gradient, for slots they fill in First touch and Beat the clock, the round's points and the order of play */
+  --g1:linear-gradient(90deg,#3df4ff,#16e6d6); --g2:linear-gradient(90deg,#ffe066,#ffc93c); --g3:linear-gradient(90deg,#6dffa8,#1fe887); --g4:linear-gradient(90deg,#e58cff,#c77dff 55%,#ec7fb8);
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg1:#38003c; } }
@@ -404,7 +406,7 @@ body.ingame .toplogo img{width:min(46vw,210px)}
   background:linear-gradient(var(--band,var(--topc)),transparent);background:linear-gradient(var(--band,var(--topc)) 0%,color-mix(in srgb,var(--band,var(--topc)) 97.6%,transparent) 10%,color-mix(in srgb,var(--band,var(--topc)) 90.5%,transparent) 20%,color-mix(in srgb,var(--band,var(--topc)) 79.4%,transparent) 30%,color-mix(in srgb,var(--band,var(--topc)) 65.5%,transparent) 40%,color-mix(in srgb,var(--band,var(--topc)) 50.0%,transparent) 50%,color-mix(in srgb,var(--band,var(--topc)) 34.5%,transparent) 60%,color-mix(in srgb,var(--band,var(--topc)) 20.6%,transparent) 70%,color-mix(in srgb,var(--band,var(--topc)) 9.5%,transparent) 80%,color-mix(in srgb,var(--band,var(--topc)) 2.4%,transparent) 90%,transparent 100%)}
 .overlay::before{z-index:0} .overlay::after{z-index:-1} /* above the overlay's own tint; its content starts below the strip */
 #winTrophy::before{z-index:40}
-#intro,#banner{--band:color-mix(in srgb,var(--topc) 45%,#000)}
+#intro,#banner,#orderOv{--band:color-mix(in srgb,var(--topc) 45%,#000)}
 .overlay.out{--band:#2d0414} .overlay.out.yel{--band:#2a1c0f} .overlay.win{--band:#072829} #winTrophy{--band:#12031f}
 :root{box-sizing:border-box}
 .wrap{padding-top:10px}
@@ -734,6 +736,191 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 #guessArea.watching .guessrow,#guessArea.watching #passBtn{display:none}
 #skipBtn{margin-left:auto}
 @media (prefers-reduced-motion: reduce){.lobbyrow.fresh{animation:none}}
+
+/* home: three doors (a glowing ring icon in each door's colour), a tab bar, and panes for each door's settings, sharing, the account and stats */
+[hidden]{display:none!important}
+.askhow{text-align:center;color:var(--muted);font-size:.95rem;margin:-6px 0 12px}
+.door{position:relative;display:grid;grid-template-columns:62px 1fr 14px;gap:2px 14px;align-items:center;width:100%;text-align:left;padding:13px 14px 13px 12px;margin:0 0 12px;border-radius:20px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.025));color:var(--ink)}
+.door b{font-size:1.1rem;font-weight:700;white-space:nowrap}
+.door .dd{grid-column:2;font-size:.84rem;color:var(--muted);line-height:1.3}
+.door .ar{grid-row:1 / span 2;grid-column:3;font-size:1.5rem;line-height:1}
+.ringi{grid-row:span 2;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;border:4.5px solid var(--dc);background:radial-gradient(circle,rgba(0,0,0,.55) 55%,rgba(0,0,0,.2));box-shadow:0 0 16px color-mix(in srgb,var(--dc) 70%,transparent),inset 0 0 12px color-mix(in srgb,var(--dc) 45%,transparent)}
+.ringi svg{width:34px;height:34px;fill:var(--ic);stroke:none;filter:drop-shadow(0 0 4px color-mix(in srgb,var(--dc) 60%,transparent))}
+.ringi svg.line{fill:none;stroke:var(--ic);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ringi.sm{width:36px;height:36px;border-width:3px;flex:none}
+.ringi.sm svg{width:20px;height:20px}
+.backrow{display:flex;align-items:center;gap:12px;margin:-8px 0 16px}
+.backrow h2{font-size:1.3rem;margin:0;font-weight:800}
+.backbtn{width:38px;height:38px;flex:none;border-radius:50%;border:0;background:var(--panel2);font-size:1.5rem;line-height:1;display:grid;place-items:center;padding:0 0 3px}
+.tabbar{position:fixed;left:50%;transform:translateX(-50%);width:min(488px,calc(100% - 32px));bottom:calc(12px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:8px 4px 6px;border-radius:20px;border:1px solid rgba(255,255,255,.14);background:rgba(10,0,14,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:5}
+.tabbar button{display:grid;justify-items:center;gap:3px;border:0;background:none;color:#c8bfe0;font-size:.78rem;font-weight:600;padding:2px 0 7px;position:relative}
+.tabbar svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabbar svg .f{fill:currentColor;stroke:none}
+.tabbar button[aria-current="page"]{color:#fff}
+.tabbar button[aria-current="page"]::after{content:"";position:absolute;bottom:0;width:26px;height:3px;border-radius:3px;background:#c8bfe0}
+.tabbar.two{grid-template-columns:repeat(2,1fr)}
+#doors .credit{margin-top:22px}
+#setup > .tabbar{position:fixed}
+.st-head .st-av{color:#00262b;font-size:1.4rem}
+#setup:has(#tabBar:not(.hidden)){padding-bottom:96px}
+.whoami{margin:0 2px 16px;color:var(--muted);font-size:.95rem}
+.whoami b{color:var(--ink)}
+.namerow{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.namerow .namebox{flex:1;margin:0}
+.botbtn{flex:none;border:1.5px solid var(--slotline);background:rgba(0,0,0,.18);border-radius:999px;padding:9px 13px;font-weight:700;font-size:.85rem;color:var(--muted)}
+.botbtn[aria-pressed="true"]{background:#fff;color:var(--bg1);border-color:#fff}
+.botseat{flex:1;display:flex;align-items:center;gap:8px;min-height:46px;padding:0 14px;border-radius:14px;border:1.5px dashed var(--slotline);background:rgba(0,0,0,.2);font-weight:700}
+.botseat small{font-weight:500;color:var(--muted);font-size:.82rem}
+.botnote{font-size:.85rem;color:var(--muted);margin:-6px 2px 14px}
+.modepick{display:grid;gap:8px}
+.modepick button{display:grid;grid-template-columns:36px 1fr;gap:0 12px;align-items:center;text-align:left;padding:9px 12px;border-radius:16px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.18);font-weight:700;font-size:.95rem}
+.modepick button small{display:block;font-weight:400;color:var(--muted);font-size:.8rem;line-height:1.3}
+.modepick button[aria-pressed="true"]{background:#fff;color:var(--bg1);border-color:#fff}
+.modepick button[aria-pressed="true"] small{color:#5b3a60}
+.mico{grid-row:span 2;width:36px;height:36px;border-radius:11px;display:grid;place-items:center;border:1.5px solid transparent;background:linear-gradient(#1d0623,#14031a) padding-box,linear-gradient(135deg,rgba(4,245,255,.8),rgba(0,255,133,.5)) border-box}
+.mico svg{width:22px;height:22px;fill:none;stroke:#3df8d0;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.mico svg .fillg{fill:#3df8d0;stroke:none}
+#onlineGo{margin-top:4px}
+.panenote{font-size:.92rem;color:var(--muted)}
+.linkbox{display:flex;gap:8px;align-items:center;padding:6px 6px 6px 14px;border-radius:999px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.3);margin:0 0 12px}
+.linkbox span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.linkbox .btn{width:auto;flex:none;padding:9px 16px;font-size:.92rem}
+#sharePane .homegrp,#acctPane .homegrp{padding-bottom:14px}
+.acctrow{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;padding:12px 14px;margin:0 0 8px;border-radius:14px;border:0;background:rgba(255,255,255,.06);font-size:.95rem;text-align:left;color:var(--ink)}
+.acctrow span:last-child{color:var(--muted)}
+.pinform{display:grid;gap:8px;margin:0 0 10px}
+.pinform .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+/* player colours on the board: a slot a player fills takes their gradient, whatever the competition's theme */
+.slot.found.pc1{background:var(--g1);--hitInk:#00262b;color:#00262b}
+.slot.found.pc2{background:var(--g2);--hitInk:#2b1d00;color:#2b1d00}
+.slot.found.pc3{background:var(--g3);--hitInk:#002b12;color:#002b12}
+.slot.found.pc4{background:var(--g4);--hitInk:#2a0018;color:#2a0018}
+/* Beat the clock: a slot someone else has found shows their name in a small pill of their colour, and its stat */
+.slot .club.ups{gap:5px;overflow:hidden;padding-right:4px}
+.upill{display:inline-block;flex:none;height:22px;line-height:22px;padding:0 9px;border-radius:999px;font-size:.74rem;font-weight:800;color:#140016;white-space:nowrap;max-width:110px;overflow:hidden;text-overflow:ellipsis}
+.player .sc small{font-size:.7rem;font-weight:600;color:var(--muted);margin-left:3px}
+.player.me{border-color:var(--pc)}
+.players.gone{display:none}
+/* Beat the clock results: the board becomes one grid, answers down the side and a column per player */
+.res{display:grid;gap:5px}
+.res .hd,.res .rw{display:grid;grid-template-columns:34px minmax(0,1fr) repeat(var(--np),30px);gap:4px;align-items:center}
+.res .hd{font-size:.72rem;font-weight:800;text-align:center;padding:0 6px}
+.res .hd span:nth-child(2){text-align:left;color:var(--muted);font-weight:600}
+.res .rw{min-height:40px;border-radius:10px;background:var(--slot);border:1px solid var(--slotline);padding:0 6px}
+.res .rw .n{text-align:center;font-weight:800;color:var(--muted)}
+.res .rw .nm{font-weight:700;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.res .rw .nm small{font-weight:400;color:var(--muted);font-size:.74rem;margin-left:5px}
+.res .rw.none .nm{opacity:.55}
+.res .tk{width:22px;height:22px;border-radius:50%;margin:auto;display:grid;place-items:center;font-size:.74rem;font-weight:900;color:#140016}
+.res .tk.no{background:transparent;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18)}
+.res .tot{background:rgba(255,255,255,.1);font-weight:800}
+.res .tot b{text-align:center;font-size:1.05rem;font-variant-numeric:tabular-nums}
+.res .tot b.win{color:#ffd23f}
+.res .keyline{font-size:.78rem;color:var(--muted);margin:2px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* who goes first: pills the size of the board's rows shuffle under a blur, then slow down to the final order */
+.orderwrap{width:100%;max-width:440px;text-align:center}
+.ordertitle{font-size:1.6rem;font-weight:800;margin:0 0 16px}
+.order{position:relative;text-align:left;cursor:pointer}
+.opill{position:absolute;left:0;right:0;height:46px;border-radius:10px;display:flex;align-items:center;background:var(--slot);border:1px solid var(--slotline);font-weight:800;font-size:1.08rem;will-change:transform,filter}
+.opill .n{width:50px;flex:none;align-self:stretch;display:grid;place-items:center;color:var(--muted);border-right:1px solid var(--slotline);font-size:1.25rem}
+.opill .nm{flex:1;min-width:0;padding:0 12px;display:flex;align-items:center;gap:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.opill .nm i{width:14px;height:14px;border-radius:50%;flex:none}
+.opill .tagp{margin-right:10px;font-size:.74rem;font-weight:800;padding:2px 9px;border-radius:999px;background:rgba(255,255,255,.12);opacity:0;transition:opacity .3s}
+.order.done .opill .tagp{opacity:1}
+.order.done .opill.first{background:var(--pg);color:#1a0018;border-color:transparent;box-shadow:0 0 26px rgba(255,255,255,.22);animation:landIn .5s cubic-bezier(.34,1.56,.64,1)}
+.order.done .opill.first .n{color:#1a0018;border-color:rgba(0,0,0,.15)}
+.order.done .opill.first .nm i{box-shadow:0 0 0 2px rgba(0,0,0,.5)}
+.order.done .opill.first .tagp{background:rgba(0,0,0,.14)}
+@keyframes landIn{0%{scale:1.06}100%{scale:1}}
+.ordernote{font-weight:800;font-size:1.2rem;min-height:1.5em;margin:18px 0 4px}
+.ordersub{color:var(--muted);font-size:.92rem;margin:0}
+/* a yellow or red card in First touch and Beat the clock flashes up without stopping anyone typing */
+.overlay.passive{pointer-events:none}
+/* end of a round in First touch and Beat the clock: a sheet slides up with each player's round and total points */
+.rsheet{position:fixed;left:50%;bottom:0;z-index:15;width:min(100%,520px);transform:translate(-50%,105%);padding:10px 14px calc(16px + env(safe-area-inset-bottom,0px));border-radius:22px 22px 0 0;background:linear-gradient(180deg,#2a0730,#14001a);border-top:1px solid var(--slotline);box-shadow:0 -18px 40px rgba(0,0,0,.55);display:flex;flex-direction:column;gap:7px;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.rsheet.up{transform:translate(-50%,0)}
+.rsheet.peek{transform:translate(-50%,calc(100% - 52px))}
+.rsheet .rhead{position:relative;display:flex;align-items:center;justify-content:space-between;font-weight:800;font-size:1rem;padding:8px 2px 6px;cursor:pointer}
+.rsheet .rhead::before{content:"";position:absolute;left:50%;top:-4px;width:38px;height:4px;margin-left:-19px;border-radius:4px;background:rgba(255,255,255,.25)}
+.xbtn{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:#fff;font-size:1rem;line-height:1;flex:none;padding:0}
+.rrow{display:grid;grid-template-columns:44px 1fr auto auto;gap:8px;align-items:center;height:46px;border-radius:10px;padding-right:12px;font-weight:800;opacity:0;animation:rowIn .45s cubic-bezier(.16,1,.3,1) forwards}
+.rrow .pos{align-self:stretch;display:grid;place-items:center;border-right:1px solid rgba(0,0,0,.15);font-size:1.1rem}
+.rrow .nm{display:flex;align-items:center;gap:6px;min-width:0;white-space:nowrap;overflow:hidden}
+.rrow .nm span{overflow:hidden;text-overflow:ellipsis}
+.rrow .nm svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.rrow .rp{font-size:.76rem;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.16);white-space:nowrap}
+.rrow .tp{font-size:1.08rem;min-width:56px;text-align:right;font-variant-numeric:tabular-nums}
+@keyframes rowIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rsheet .btn{margin-top:4px}
+.waitpill{text-align:center;font-size:.92rem;font-weight:700;color:var(--muted);padding:12px;border-radius:999px;border:1.5px solid var(--slotline);margin:4px 0 0}
+.lobbymode{display:grid;gap:8px;margin:0 0 14px}
+.lobbymode .seg button{font-size:.84rem;padding:8px 4px;white-space:normal;line-height:1.15}
+@media (prefers-reduced-motion: reduce){.rrow{animation:none;opacity:1}.rsheet{transition:none}.order.done .opill.first{animation:none}}
+
+/* the Stats tab */
+.st-head{display:grid;grid-template-columns:56px 1fr;gap:2px 12px;align-items:center;margin:0 0 14px}
+.st-av{grid-row:span 2;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.4rem;background:var(--g1);color:#00262b}
+.st-head b{font-size:1.25rem}
+.st-head span{font-size:.82rem;color:var(--muted)}
+.st-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.st-actions .btn{padding:11px;font-size:.95rem}
+.st-tabs{display:flex;gap:6px;overflow-x:auto;padding:2px 0 4px;margin:0 0 12px;scrollbar-width:none}
+.st-tabs::-webkit-scrollbar{display:none}
+.st-tabs button{flex:none;padding:7px 13px;border-radius:999px;border:1.5px solid var(--slotline);background:transparent;font-size:.86rem;font-weight:700;white-space:nowrap}
+.st-tabs button[aria-pressed="true"]{background:#fff;color:var(--bg1);border-color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;text-align:center;margin:0 0 12px}
+.tiles div{padding:10px 2px;border-radius:14px;background:rgba(0,0,0,.25)}
+.tiles b{display:block;font-size:1.35rem;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
+.tiles span{display:block;font-size:.7rem;color:var(--muted);line-height:1.2;margin-top:3px}
+#statsBody .homegrp{padding-bottom:14px}
+#statsBody .statnote{margin:8px 2px 0;font-size:.82rem}
+.bar{display:flex;height:12px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.08);margin:10px 0 8px}
+.bar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.8rem;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:5px}
+.legend span i{width:9px;height:9px;border-radius:50%}
+.legend b{color:var(--ink);font-variant-numeric:tabular-nums}
+.kv{display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:.92rem}
+.kv span:nth-child(odd){color:var(--muted)}
+.kv span:nth-child(even){font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.hbars{display:grid;gap:7px;margin-top:10px}
+.hb{display:grid;grid-template-columns:118px 1fr 46px;gap:8px;align-items:center;font-size:.84rem}
+.hb span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb .t{height:8px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.hb .t i{display:block;height:100%;border-radius:999px;background:var(--hit)}
+.hb b{text-align:right;font-variant-numeric:tabular-nums}
+.vs{display:grid;gap:7px}
+.vsr{display:flex;justify-content:space-between;gap:8px;font-size:.92rem}
+.vsr .wl{font-weight:800;font-variant-numeric:tabular-nums}
+.vsr .wl em{font-style:normal;color:var(--muted);font-weight:400}
+.form{display:flex;gap:4px}
+.form i{flex:1;height:24px;border-radius:6px;display:grid;place-items:center;font-style:normal;font-size:.72rem;font-weight:800}
+.form .w{background:var(--p3);color:#002b12} .form .l{background:rgba(255,31,107,.85)} .form .d{background:rgba(255,255,255,.25)} .form .s{background:rgba(4,245,255,.25)}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.badges div{display:grid;justify-items:center;gap:4px;padding:10px 4px;border-radius:14px;background:rgba(0,0,0,.25);text-align:center;font-size:.72rem;line-height:1.25;color:var(--muted)}
+.badges div b{color:var(--ink);font-size:.8rem}
+.badges div.locked{opacity:.4}
+.cmp{display:grid;gap:7px}
+.cmpr{display:grid;grid-template-columns:1fr 104px 1fr;gap:6px;align-items:center;font-size:.86rem}
+.cmpr .l,.cmpr .r{display:flex;align-items:center;gap:6px;font-weight:800;font-variant-numeric:tabular-nums}
+.cmpr .l{justify-content:flex-end}
+.cmpr .m{text-align:center;color:var(--muted);font-size:.74rem}
+.cmpr .bl,.cmpr .br{height:7px;border-radius:999px;flex:none}
+.cmpr .better{color:#ffd23f}
+.frow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;margin:0 0 7px;border-radius:14px;background:rgba(255,255,255,.06);cursor:pointer}
+.frow b{display:block;font-size:.95rem}
+.frow small{display:block;font-size:.76rem;color:var(--muted)}
+.pin{width:36px;height:36px;border-radius:50%;border:0;background:none;font-size:1.15rem;color:var(--muted);flex:none}
+.pin[aria-pressed="true"]{color:#ffd23f}
+.danger{display:block;width:100%;text-align:center;padding:13px;border-radius:999px;border:1.5px solid rgba(255,31,107,.6);background:none;color:#ff6b97;font-weight:700;font-size:.95rem;margin:4px 0 0}
+.danger.solid{background:var(--miss);color:#fff;border-color:var(--miss);margin:0}
+.confirm{display:grid;gap:8px;padding:14px;border-radius:16px;border:1px solid rgba(255,31,107,.5);background:rgba(255,31,107,.08);margin:4px 0 0}
+.confirm p{margin:0;font-size:.88rem;color:var(--muted)}
+.confirm div{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.confirm .btn{padding:12px}
+.empty{text-align:center;padding:12px 6px;color:var(--muted);font-size:.92rem;margin:0}
+.linkish{display:block;margin:6px auto 0;background:none;border:0;color:var(--acc2);font-size:.9rem;text-decoration:underline;text-underline-offset:2px}
 </style>
 </head>
 <body data-cat="pl">
@@ -769,21 +956,48 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <div class="brand homebrand">
     <div class="sub">Tenable: <em>Football Edition!</em></div>
     <div class="breaker" aria-hidden="true"></div>
-    <div class="acct hidden" id="acct"></div>
   </div>
 
-  <div class="homegrp" role="group" aria-labelledby="ghWho"><div class="gh" id="ghWho">Who's playing</div>
-    <div class="field"><label>Players</label>
-      <div class="seg" id="countSeg">
-        <button type="button" data-v="1" aria-pressed="false" aria-label="1 player">1</button>
-        <button type="button" data-v="2" aria-pressed="true" aria-label="2 players">2</button>
-        <button type="button" data-v="3" aria-pressed="false" aria-label="3 players">3</button>
-        <button type="button" data-v="4" aria-pressed="false" aria-label="4 players">4</button>
-      </div></div>
-    <div class="field names" id="nameFields"></div>
+  <div id="doors">
+    <p class="askhow">How are you playing?</p>
+    <button type="button" class="door" data-door="solo" style="--dc:#19f0a0;--ic:#dcfff1"><span class="ringi" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7.6" r="4.2"/><path d="M4 20.5c0-4.2 3.6-7.4 8-7.4s8 3.2 8 7.4c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1z"/></svg></span><b>Play solo</b><span class="dd">Beat your best score and complete more boards.</span><span class="ar" aria-hidden="true">›</span></button>
+    <button type="button" class="door" data-door="h2h" style="--dc:#ff2fb8;--ic:#ffd9f3"><span class="ringi" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7.2" r="3"/><path d="M6.4 18c0-3.3 2.5-5.6 5.6-5.6s5.6 2.3 5.6 5.6z"/><circle cx="5.2" cy="9" r="2.2"/><path d="M1.6 17.4c0-2.4 1.6-4.2 3.8-4.2.8 0 1.5.2 2.1.6-1.2 1.1-1.9 2.6-2.1 4.2H1.6z"/><circle cx="18.8" cy="9" r="2.2"/><path d="M22.4 17.4c0-2.4-1.6-4.2-3.8-4.2-.8 0-1.5.2-2.1.6 1.2 1.1 1.9 2.6 2.1 4.2h3.8z"/></svg></span><b>H2H on this phone</b><span class="dd">2 to 4 players. Pass and play.</span><span class="ar" aria-hidden="true">›</span></button>
+    <button type="button" class="door hidden" data-door="online" id="onlineBtn" style="--dc:#18b4ff;--ic:#e1f5ff"><span class="ringi" aria-hidden="true"><svg class="line" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9M12 3c-2.6 2.5-3.9 5.5-3.9 9s1.3 6.5 3.9 9M4.6 7.5h14.8M4.6 16.5h14.8"/></svg></span><b>H2H online</b><span class="dd">Play on separate phones. 3 game modes.</span><span class="ar" aria-hidden="true">›</span></button>
+    <footer class="credit">
+      <span>Created by Aiden and Craig</span>
+      <button type="button" class="howbtn" id="infoBtn" data-info="how">How to play</button>
+    </footer>
   </div>
 
-  <div class="homegrp" role="group" aria-labelledby="ghGame"><div class="gh" id="ghGame">The game</div>
+  <div id="doorSet" class="hidden">
+    <div class="backrow"><button type="button" class="backbtn" data-view="doors" aria-label="Back to the home screen">‹</button><span class="ringi sm" id="doorIcon" aria-hidden="true"></span><h2 id="doorTitle"></h2></div>
+    <div class="homegrp" role="group" aria-labelledby="ghWho"><div class="gh" id="ghWho">Who's playing</div>
+      <div class="field" id="countField"><label>Players</label>
+        <div class="seg" id="countSeg">
+          <button type="button" data-v="2" aria-pressed="true" aria-label="2 players">2</button>
+          <button type="button" data-v="3" aria-pressed="false" aria-label="3 players">3</button>
+          <button type="button" data-v="4" aria-pressed="false" aria-label="4 players">4</button>
+        </div></div>
+      <div class="field names" id="nameFields"></div>
+      <div class="field" id="onlineNameRow"><label for="onlineName">Your name</label>
+        <input type="text" id="onlineName" maxlength="20" autocomplete="nickname"></div>
+      <p class="whoami hidden" id="whoAmI"></p>
+      <div class="field" id="oppField"><div class="lblrow"><label>Opponent</label><button type="button" class="finfo" data-info="opp" aria-label="About playing TenaBot">i</button></div>
+        <div class="seg" id="oppSeg">
+          <button type="button" data-v="none" aria-pressed="true">Nobody, just me</button>
+          <button type="button" data-v="bot" aria-pressed="false">TenaBot</button>
+        </div></div>
+      <div class="field" id="botField"><label id="botLbl">TenaBot's level</label>
+        <div class="seg" id="botSeg">
+          <button type="button" data-v="0" aria-pressed="false">Easy</button>
+          <button type="button" data-v="1" aria-pressed="true">Medium</button>
+          <button type="button" data-v="2" aria-pressed="false">Hard</button>
+        </div></div>
+    </div>
+
+    <div class="homegrp" role="group" aria-labelledby="ghGame"><div class="gh" id="ghGame">The game</div>
+      <div class="field" id="modeField"><div class="lblrow"><label id="modeLbl">Game mode</label><button type="button" class="finfo" data-info="mode" aria-label="About the game modes">i</button></div>
+        <div class="modepick" id="modePick" role="group" aria-labelledby="modeLbl"></div></div>
     <div class="field"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
       <div class="seg" id="roundSeg">
         <button type="button" data-v="1" aria-pressed="false">1</button>
@@ -800,55 +1014,78 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <p class="compnote hidden" id="compNote" aria-live="polite"></p>
   </div>
 
-  <div class="homegrp" role="group" aria-labelledby="ghRules"><div class="gh" id="ghRules">House rules</div>
-    <div class="field"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
+    <div class="homegrp" role="group" aria-labelledby="ghRules"><div class="gh" id="ghRules">House rules</div>
+    <div class="field" id="clockField"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
       <div class="seg" id="clockSeg">
         <button type="button" data-v="0" aria-pressed="false">Off</button>
         <button type="button" data-v="15" aria-pressed="false">15 sec</button>
         <button type="button" data-v="30" aria-pressed="true">30 sec</button>
         <button type="button" data-v="60" aria-pressed="false">60 sec</button>
       </div></div>
-    <div class="field"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
+    <div class="field hidden" id="timeField"><div class="lblrow"><label>Time limit per round</label><button type="button" class="finfo" data-info="time" aria-label="About the time limit">i</button></div>
+      <div class="seg" id="timeSeg">
+        <button type="button" data-v="30" aria-pressed="false">30 sec</button>
+        <button type="button" data-v="60" aria-pressed="true">60 sec</button>
+        <button type="button" data-v="90" aria-pressed="false">90 sec</button>
+      </div></div>
+    <div class="field" id="repeatField"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
       <div class="seg" id="repeatSeg">
         <button type="button" data-v="all" aria-pressed="true">Fill all at once</button>
         <button type="button" data-v="one" aria-pressed="false">One per guess</button>
       </div></div>
   </div>
 
-  <button class="btn" id="startBtn">Kick off</button>
-  <button class="btn ghost onlinebtn hidden" id="onlineBtn" type="button">🌐 Play online with friends</button>
-
-  <footer class="credit">
-    <span>Created by Aiden and Craig</span>
-    <button type="button" class="howbtn" id="infoBtn" data-info="how">How to play</button>
-  </footer>
-  <template id="howText">
-    <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. With 2 to 4 players you take turns; solo, it's you against the board.</p>
-    <p>The tower then scans up from the bottom. If it stops on your club, you score a point for every slot that club fills. If it runs all the way to the top, you lose a life.</p>
-    <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
-  </template>
-</section>
-
-<section id="lobby" class="hidden">
-  <div id="lobbyMenu">
-    <div class="lobbyhead"><h2>Play online</h2><p>Everyone plays on their own phone.</p></div>
-    <div class="joinbox">
-      <div class="joinbox" id="onlineNameRow"><label for="onlineName">Your name</label>
-      <input type="text" id="onlineName" maxlength="20" autocomplete="nickname"></div>
+    <button class="btn" id="startBtn">Kick off</button>
+    <div class="joinbox hidden" id="onlineGo">
       <button class="btn" id="createBtn" type="button">Create a game</button>
       <div class="orline">or join a friend's game</div>
       <div class="joinrow"><input type="text" id="joinCode" maxlength="5" placeholder="CODE" aria-label="Game code" autocomplete="off" autocapitalize="characters"><button class="btn" id="joinBtn" type="button">Join</button></div>
       <p class="authmsg" id="lobbyMsg" aria-live="polite"></p>
-      <button class="btn ghost" id="lobbyBack" type="button">Back</button>
     </div>
   </div>
-  <div id="lobbyRoom" class="hidden">
+
+  <div id="sharePane" class="hidden">
+    <div class="backrow"><button type="button" class="backbtn" data-view="doors" aria-label="Back to the home screen">‹</button><h2>Share the game</h2></div>
+    <div class="homegrp"><div class="gh">Send Tenaball to a friend</div>
+      <p class="panenote">Opens your phone's share sheet (WhatsApp, Messages and so on) with a short message and the link.</p>
+      <div class="linkbox"><span id="siteLink"></span><button type="button" class="btn" id="copyLink">Copy</button></div>
+      <button type="button" class="btn" id="shareLink">Share…</button>
+      <p class="sharemsg" id="linkMsg" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div id="acctPane" class="hidden">
+    <div class="backrow"><button type="button" class="backbtn" data-view="doors" aria-label="Back to the home screen">‹</button><h2>Account</h2></div>
+    <div class="homegrp" id="acct"></div>
+  </div>
+
+  <div id="statsPane" class="hidden">
+    <div class="backrow"><button type="button" class="backbtn" data-view="doors" aria-label="Back to the home screen">‹</button><h2>My stats</h2></div>
+    <div id="statsBody"></div>
+  </div>
+
+  <nav class="tabbar" id="tabBar" aria-label="More">
+    <button type="button" data-view="stats"><svg viewBox="0 0 24 24" aria-hidden="true"><rect class="f" x="4" y="13" width="4.2" height="8" rx="1.2"/><rect class="f" x="9.9" y="8.5" width="4.2" height="12.5" rx="1.2"/><rect class="f" x="15.8" y="3.5" width="4.2" height="17.5" rx="1.2"/></svg>Stats</button>
+    <button type="button" data-view="share"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5L12 3l4.5 4.5"/><path d="M5 12.5V19a2 2 0 002 2h10a2 2 0 002-2v-6.5"/></svg>Share</button>
+    <button type="button" data-view="acct" id="acctTab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg>Account</button>
+  </nav>
+  <template id="howText">
+    <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. Play solo against the board or TenaBot, take turns with 2 to 4 players on one phone, or play friends online on separate phones.</p>
+    <p>The tower then scans up from the bottom. If it stops on your club, you score a point for every slot that club fills. If it runs all the way to the top, you lose a life.</p>
+    <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
+    <p>Online, and against TenaBot, there are two more modes. <strong>First touch:</strong> everyone answers at once and the first right answer claims the slot. <strong>Beat the clock:</strong> your own board against the clock, with 2 points for an answer nobody else found.</p>
+  </template>
+</section>
+
+<section id="lobby" class="hidden">
+  <div id="lobbyRoom">
     <div class="lobbyhead"><h2>Game lobby</h2><p id="lobbySub"></p></div>
     <div class="codebox"><span>Game code</span><b id="lobbyCode"></b></div>
     <button class="btn sharebtn" id="inviteBtn" type="button">Invite players ↗</button>
     <p class="sharemsg" id="inviteMsg" aria-live="polite"></p>
     <div class="lobbylist" id="lobbyList"></div>
     <div class="lobbyset" id="lobbySet"></div>
+    <div class="lobbymode hidden" id="lobbyMode"></div>
     <button class="btn" id="lobbyStart" type="button">Start game</button>
     <p class="lobbywait hidden" id="lobbyWait"></p>
     <p class="authmsg" id="roomMsg" aria-live="polite"></p>
@@ -909,7 +1146,6 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <button class="btn sharebtn" id="shareBtn" type="button">Share results ↗</button>
   <button class="sharetext" id="shareTextBtn" type="button">Send as text only</button>
   <p class="sharemsg" id="shareMsg" aria-live="polite"></p>
-  <button type="button" class="statreset" id="statReset">Reset player stats</button>
 </section>
 </div>
 
@@ -1043,6 +1279,15 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <div class="cscroll infobody" id="infoBody"></div>
   <div class="csfoot"><span></span><button type="button" class="csdone" id="infoDone">Got it</button></div>
 </div></div>
+
+<div class="overlay hidden" id="orderOv" role="dialog" aria-modal="true" aria-labelledby="orderTitle"><div class="orderwrap">
+  <h2 class="ordertitle" id="orderTitle">Who goes first?</h2>
+  <div class="order" id="orderBox"></div>
+  <p class="ordernote" id="orderNote" aria-live="polite"></p>
+  <p class="ordersub" id="orderSub"></p>
+</div></div>
+
+<div class="rsheet" id="roundSheet" aria-live="polite" hidden></div>
 
 <div class="overlay hidden" id="banner"><div class="banner">
   <div class="who" id="bannerWho"></div>
@@ -1972,7 +2217,7 @@ const $ = id => document.getElementById(id);
 let ONLINE = null, FAST = false; // ONLINE is set while playing an online game; FAST skips waits while catching up on its move log
 const wait = ms => new Promise(r => setTimeout(r, FAST ? 0 : ms));
 const REDUCED = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-let cfg = { count:2, rounds:5, cats:null, clock:30, level:1, allLevels:true, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
+let cfg = { count:2, seats:2, door:"solo", mode:"turns", time:60, opp:"none", botLevel:1, bots:[false,false,false,false], rounds:5, cats:null, clock:30, level:1, allLevels:true, repeat:"all", names:["Player 1","Player 2","Player 3","Player 4"] };
 let G = null, muted = false;
 
 /* ---------- sound, synthesised so nothing loads from outside ---------- */
@@ -2115,7 +2360,7 @@ function pickQuestion(cat){
   // how recently each kind of question was played: never played scores highest
   const fresh = f => { const k = hist.lastIndexOf(f); return k<0 ? 99 : hist.length-1-k; };
   for (const lv of tiers){
-    const inTier = byCat(cat).filter(q => lv.includes(q.level));
+    const inTier = byCat(cat).filter(q => lv.includes(q.level) && !(G.mode==="clock" && q.open)); // letter boards need one shared board
     let pool = inTier.filter(q => !USED.has(q.id) && !G.picked.has(q.id));
     if (!pool.length){ inTier.forEach(q => USED.delete(q.id)); pool = inTier.filter(q => !G.picked.has(q.id)); }
     if (pool.length){
@@ -2138,7 +2383,9 @@ function seg(id, key, cast){
   el.addEventListener("click", e => {
     const b = e.target.closest("button"); if(!b) return;
     el.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x===b));
-    cfg[key] = cast(b.dataset.v); if (key==="count") drawNames();
+    cfg[key] = cast(b.dataset.v);
+    if (["seats","opp","botLevel","time"].includes(key)) homeSync();
+    if (["opp","botLevel","time"].includes(key)) saveSetup();
   });
 }
 /* ---------- competitions: ticks in a slide-up panel ---------- */
@@ -2165,6 +2412,12 @@ const COMP_GROUPS = [
 ];
 const PLAYABLE = c => ALL_CATS.includes(c);
 const QUICK = [["All", ALL_CATS], ...COMP_GROUPS.map(([g, cs]) => [g, cs.filter(PLAYABLE)])];
+// the three ways to play a game: Take turns (the original), and the two simultaneous modes, First touch and Beat the clock
+const MODES = {
+  turns: ["Take turns", '<path d="M19.5 9A8 8 0 006.2 6.3L4 8.5"/><path d="M4 4v4.5h4.5"/><path d="M4.5 15a8 8 0 0013.3 2.7L20 15.5"/><path d="M20 20v-4.5h-4.5"/>'],
+  first: ["First touch", '<path class="fillg" d="M13.5 2.5L5 13.5h6l-1.5 8 8.5-11h-6z"/>'],
+  clock: ["Beat the clock", '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M12 13.5l2.8 2M10 2.5h4M12 2.5V6M18.6 6.4l1.4-1.4"/>']
+};
 const SETUP_KEY = "tenaball-setup";
 const sameCats = (a, b) => a.length===b.length && a.every(c => b.includes(c));
 const allCats = () => sameCats(cfg.cats, ALL_CATS);
@@ -2177,12 +2430,13 @@ function catsLabel(cats = cfg.cats){
 }
 // the home screen's colours: the competition's own when only one is ticked
 const homeTheme = () => theme(cfg.cats.length===1 ? cfg.cats[0] : "pl");
-function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ v: 2, cats: cfg.cats, allLevels: cfg.allLevels })); } catch(e){} }
+function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ v: 2, cats: cfg.cats, allLevels: cfg.allLevels, mode: cfg.mode, time: cfg.time, opp: cfg.opp, botLevel: cfg.botLevel })); } catch(e){} }
 (() => { let s = null; try { s = JSON.parse(localStorage.getItem(SETUP_KEY)||"null"); } catch(e){}
   const cats = s && Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : [];
   cfg.cats = cats.length ? cats : [...ALL_CATS];
   // All levels is on by default; settings saved before it became the default (no v: 2) switch it on once, then the phone's own choice sticks
   cfg.allLevels = s && s.v >= 2 ? !!s.allLevels : true;
+  if (s){ if (MODES[s.mode]) cfg.mode = s.mode; if ([30,60,90].includes(s.time)) cfg.time = s.time; if (["none","bot"].includes(s.opp)) cfg.opp = s.opp; if ([0,1,2].includes(s.botLevel)) cfg.botLevel = s.botLevel; }
 })();
 let sheetCats = null; // the competitions being switched on and off in the open panel
 function renderCompBtn(){
@@ -2224,7 +2478,7 @@ function renderCompNote(){
   note.textContent = thin.length ? `No ${LEVELS[cfg.level]} questions for ${list} yet, so ${thin.length>1?"those rounds":"that round"} will use the nearest level.` : "";
   note.classList.toggle("hidden", !thin.length);
 }
-seg("countSeg","count",Number); seg("repeatSeg","repeat",String); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
+seg("countSeg","seats",Number); seg("oppSeg","opp",String); seg("botSeg","botLevel",Number); seg("timeSeg","time",Number); seg("repeatSeg","repeat",String); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
 const LEVELS = ["Easy","Medium","Hard"];
 const DIFF_COL = ["#00ff85","#04f5ff","#ff2882"], DIFF_GLOW = ["10px","16px","26px"];
 // the ball slides freely along the bar (0 to 200) and snaps to the nearest level when let go
@@ -2257,19 +2511,238 @@ $("diff").addEventListener("keydown", e => {
   if (d==null) return; e.preventDefault(); cfg.level = Math.max(0, Math.min(2, cfg.level+d)); snapDiff();
 });
 renderCompBtn(); paintDiff();
+/* ---------- home: three doors, each opening its own settings, and a tab bar for stats, sharing and the account ---------- */
+const BOT_NAME = "TenaBot";
+// which seats are TenaBot: solo against TenaBot has it in the second seat; on one phone each seat after the first can be one
+const botSeats = () => cfg.door==="solo" ? [false, cfg.opp==="bot"] : cfg.door==="h2h" ? cfg.bots.slice(0, cfg.seats).map((b, i) => i>0 && b) : [];
+const botName = (seats, i) => { const k = seats.slice(0, i+1).filter(Boolean).length; return k>1 ? `${BOT_NAME} ${k}` : BOT_NAME; };
+// the mode this game uses: only online games and solo games against TenaBot can pick one
+const modeNow = () => cfg.door==="online" || (cfg.door==="solo" && cfg.opp==="bot") ? cfg.mode : "turns";
+const MODE_DESC = {
+  turns: ["One answer at a time, round the table", "You and TenaBot answer in turn"],
+  first: ["Race against your friends to fill each slot first", "Race TenaBot to fill each slot first"],
+  clock: ["Your own board: most slots before time's up", "Your own board: beat TenaBot's before time's up"]
+};
+function drawModes(){
+  const vsBot = cfg.door==="solo";
+  $("modePick").innerHTML = Object.entries(MODES).map(([k, [t, ic]]) => `<button type="button" data-v="${k}" aria-pressed="${cfg.mode===k}"><span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${ic}</svg></span>${t}<small>${MODE_DESC[k][vsBot ? 1 : 0]}</small></button>`).join("");
+}
+$("modePick").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; cfg.mode = b.dataset.v; saveSetup(); homeSync(); });
 function drawNames(){
-  const box = $("nameFields"); box.innerHTML = `<label>${cfg.count===1?'Your name':'Names'}</label>`;
-  for (let i=0;i<cfg.count;i++){
-    const wrap = document.createElement("div"); wrap.className = "namebox";
-    const inp = document.createElement("input");
-    inp.type="text"; inp.value = cfg.names[i]; inp.setAttribute("aria-label","Player "+(i+1)+" name");
-    inp.addEventListener("input", () => cfg.names[i] = inp.value.trim() || ("Player "+(i+1)));
-    const x = document.createElement("button"); x.type="button"; x.className="clearx"; x.textContent="✕"; x.setAttribute("aria-label","Clear name");
-    x.onclick = () => { inp.value=""; cfg.names[i]="Player "+(i+1); inp.focus(); };
-    wrap.append(inp, x); box.appendChild(wrap);
+  const box = $("nameFields"), h2h = cfg.door==="h2h", n = h2h ? cfg.seats : 1, seats = botSeats();
+  box.innerHTML = `<label>${n===1 ? "Your name" : "Names"}</label>`;
+  for (let i=0;i<n;i++){
+    const row = document.createElement("div"); row.className = "namerow";
+    if (seats[i]){
+      const seat = document.createElement("div"); seat.className = "botseat"; seat.innerHTML = `${esc(botName(seats, i))}<small>· ${LEVELS[cfg.botLevel]}</small>`; row.appendChild(seat);
+    } else {
+      const wrap = document.createElement("div"); wrap.className = "namebox";
+      const inp = document.createElement("input");
+      inp.type="text"; inp.value = cfg.names[i]; inp.setAttribute("aria-label","Player "+(i+1)+" name");
+      inp.addEventListener("input", () => cfg.names[i] = inp.value.trim() || ("Player "+(i+1)));
+      const x = document.createElement("button"); x.type="button"; x.className="clearx"; x.textContent="✕"; x.setAttribute("aria-label","Clear name");
+      x.onclick = () => { inp.value=""; cfg.names[i]="Player "+(i+1); inp.focus(); };
+      wrap.append(inp, x); row.appendChild(wrap);
+    }
+    if (h2h && i>0){
+      const t = document.createElement("button"); t.type = "button"; t.className = "botbtn"; t.textContent = "Bot";
+      t.setAttribute("aria-pressed", !!cfg.bots[i]); t.setAttribute("aria-label", `Seat ${i+1}: ${cfg.bots[i] ? "TenaBot plays here. Tap for a person" : "tap to let TenaBot play here"}`);
+      t.onclick = () => { cfg.bots[i] = !cfg.bots[i]; homeSync(); };
+      row.appendChild(t);
+    }
+    box.appendChild(row);
   }
 }
 drawNames();
+// show the right settings for the door that's open
+function homeSync(){
+  const d = cfg.door, solo = d==="solo", h2h = d==="h2h", online = d==="online", seats = botSeats();
+  cfg.count = solo ? (cfg.opp==="bot" ? 2 : 1) : h2h ? cfg.seats : 1;
+  const signed = typeof signedIn==="function" && signedIn();
+  $("countField").classList.toggle("hidden", !h2h);
+  $("nameFields").classList.toggle("hidden", online);
+  $("onlineNameRow").classList.toggle("hidden", !online || signed);
+  $("whoAmI").classList.toggle("hidden", !online || !signed);
+  if (online && signed) $("whoAmI").innerHTML = `Playing as <b>${esc(accountName())}</b>. Change your name in Account.`;
+  $("oppField").classList.toggle("hidden", !solo);
+  $("botField").classList.toggle("hidden", !seats.some(Boolean));
+  $("botLbl").textContent = solo ? "TenaBot's level" : "Bot level";
+  $("modeField").classList.toggle("hidden", !(online || (solo && cfg.opp==="bot")));
+  drawModes();
+  const timed = modeNow()!=="turns";
+  $("clockField").classList.toggle("hidden", timed); $("repeatField").classList.toggle("hidden", timed); $("timeField").classList.toggle("hidden", !timed);
+  $("startBtn").classList.toggle("hidden", online); $("onlineGo").classList.toggle("hidden", !online);
+  drawNames();
+}
+// press the saved choices into the home screen's buttons
+const pressSeg = (id, v) => $(id).querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v===String(v)));
+[["oppSeg", cfg.opp], ["botSeg", cfg.botLevel], ["timeSeg", cfg.time]].forEach(([id, v]) => pressSeg(id, v));
+const VIEWS = { doors:"doors", door:"doorSet", share:"sharePane", acct:"acctPane", stats:"statsPane" };
+function setView(v){
+  Object.entries(VIEWS).forEach(([k, id]) => $(id).classList.toggle("hidden", k!==v));
+  $("tabBar").classList.toggle("hidden", v==="door");
+  $("tabBar").querySelectorAll("button").forEach(b => b.dataset.view===v ? b.setAttribute("aria-current","page") : b.removeAttribute("aria-current"));
+  if (v==="share") drawShareLink();
+  if (v==="acct" && typeof drawAcct==="function") drawAcct();
+  if (v==="stats"){ ST.cmp = null; ST.ask = false; drawStatsPage(); }
+  window.scrollTo(0,0);
+}
+function openDoor(d){
+  cfg.door = d;
+  const door = document.querySelector(`.door[data-door="${d}"]`);
+  $("doorIcon").innerHTML = door.querySelector(".ringi").innerHTML; $("doorIcon").setAttribute("style", door.getAttribute("style"));
+  $("doorTitle").textContent = door.querySelector("b").textContent;
+  homeSync(); setView("door");
+}
+document.querySelectorAll('.door[data-door="solo"],.door[data-door="h2h"]').forEach(b => b.onclick = () => openDoor(b.dataset.door));
+document.addEventListener("click", e => { const v = e.target.closest("#setup [data-view]"); if (v) setView(v.dataset.view); });
+// the Share tab: send the game's link to a friend
+function drawShareLink(){ $("siteLink").textContent = shareUrl().replace(/^https?:\/\//,"").replace(/\/$/,""); $("shareLink").classList.toggle("hidden", !navigator.share); }
+const linkMsg = m => { $("linkMsg").textContent = m; clearTimeout(linkMsg.t); linkMsg.t = setTimeout(() => $("linkMsg").textContent = "", 3500); };
+$("copyLink").onclick = () => navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(shareUrl()).then(() => linkMsg("Link copied. Paste it into a chat."), () => linkMsg("Copy this link: " + shareUrl())) : linkMsg("Copy this link: " + shareUrl());
+$("shareLink").onclick = () => navigator.share({ text: `⚽ *Tenaball: Tenable, Football Edition*\nName the top 10 in hundreds of football quizzes. Play solo, against TenaBot or with your mates.\n${shareUrl()}` }).catch(() => {});
+/* ---------- the Stats tab: the signed-in account's stats, or those this phone keeps for the first player's name ---------- */
+const STF = [["all","All"],["solo","Solo"],["bot","vs TenaBot"],["h2h","H2H phone"],["online","H2H online"],["first","First touch"],["clock","Beat the clock"]];
+const ST = { f: "all", cmp: null, ask: false, picks: null };
+const pctOf = (a, b) => b ? Math.round(100*a/b) + "%" : "–";
+const statIco = d => `<span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${d}</svg></span>`;
+const ICO = {
+  tenable: '<circle cx="12" cy="12" r="8.5"/><path d="M8.2 12.4l2.5 2.5 5.2-5.6"/>',
+  streak: '<path d="M12 3c1 3.2 4.6 4.6 4.6 9a4.6 4.6 0 01-9.2 0c0-2.2 1.3-3.4 2.3-4.6.2 1.6 1 2.5 2 2.8C11.2 7.8 11.3 5.3 12 3z"/>',
+  crown: '<path d="M4 17.5h16M5 17.5L3.5 8l5 4L12 5l3.5 7 5-4-1.5 9.5"/>',
+  first: MODES.first[1], clock: MODES.clock[1],
+  globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5M12 3.5c-2.4 2.4-3.6 5.2-3.6 8.5s1.2 6.1 3.6 8.5"/>'
+};
+// whose stats: the account when signed in, otherwise this phone's stats for the name in the first seat
+function statsOwner(){
+  const acc = typeof signedIn==="function" && signedIn();
+  return acc ? { name: accountName(), stats: NET.stats, acc: true } : { name: cfg.names[0], stats: loadStats()[statKey(cfg.names[0])], acc: false };
+}
+const aggOf = (s, f) => s && s.x && s.x.b && s.x.b[f];
+function badgesOf(a){
+  const comps = a ? Object.values(a.comp || {}).filter(c => c[1] > 0).length : 0;
+  return [["tenable","Tenable!","Complete a board", a && a.done > 0], ["streak","On fire","10 right in a row", a && a.bestRun >= 10],
+    ["crown","Clean sweep","Win every round of a game", a && a.sweeps > 0], ["first","Quick draw","7 first touches in a round", a && a.mostClaims >= 7],
+    ["clock","Against the clock","Full board in Beat the clock", a && a.fullClock > 0], ["globe","Globetrotter","Complete boards in 5 competitions", comps >= 5]];
+}
+function tilesOf(s, f){
+  const a = aggOf(s, f), legacy = f==="all" && s && (!a || s.played > a.games);
+  if (f==="solo"){ const g = a ? a.games : 0; return [[g, "Games"], [a ? a.best : 0, "Best score"], [g ? (a.points/g).toFixed(1) : "0", "Average"], [a ? a.points : 0, "Points"]]; }
+  if (f==="bot") return [[a ? a.games : 0, "Games"], [a ? a.bwins : 0, "Wins"], [a ? pctOf(a.bwins, a.bgames) : "–", "Win rate"], [a ? a.points : 0, "Points"]];
+  if (legacy) return [[s.played, "Games"], [s.wins, "Wins"], [pctOf(s.wins, s.multi), "Win rate"], [s.points, "Points"]];
+  return [[a ? a.games : 0, "Games"], [a ? a.wins : 0, "Wins"], [a ? pctOf(a.wins, a.people) : "–", "Win rate"], [a ? a.points : 0, "Points"]];
+}
+function bestsOf(a, f){
+  if (f==="first") return [["First touches (slots claimed)", a.claims], ["Beaten to it", a.slow], ["Most claimed in one round", a.mostClaims], ["Rounds won", a.roundWins]];
+  if (f==="clock") return [["Most slots in a round", a.mostClock], ["Full boards before time", a.fullClock], ["Answers nobody else found", a.unique], ["Rounds won", a.roundWins]];
+  return [["Best game", ptsLabel(a.best)], ["Best round", ptsLabel(a.bestRound)], ["Longest run of right answers", a.bestRun], ...(f==="solo" || f==="bot" ? [] : [["Longest winning run", a.bestStreak]])];
+}
+const hbar = (label, frac, val, gold) => `<div class="hb"><span>${esc(label)}</span><span class="t"><i style="width:${Math.round(100*frac)}%${gold ? ";background:#ffd23f" : ""}"></i></span><b>${val}</b></div>`;
+function drawStatsPage(){
+  const me = statsOwner(), s = me.stats, f = ST.f, a = aggOf(s, f), solo = f==="solo";
+  let h = `<div class="st-head"><span class="st-av" aria-hidden="true">${esc((me.name || "?").trim().charAt(0).toUpperCase())}</span><b>${esc(me.name)}</b>
+      <span>${me.acc ? "Signed in" : "Kept on this phone"}${s && s.x && s.x.since ? ` · detailed stats since ${new Date(s.x.since).toLocaleDateString("en-GB", { month: "long", year: "numeric" })}` : ""}</span></div>
+    <div class="st-actions"><button class="btn" type="button" data-st="share">Share my stats</button><button class="btn ghost" type="button" data-st="cmp">${ST.cmp ? "Back to my stats" : "Compare"}</button></div>
+    <p class="sharemsg" id="stMsg" aria-live="polite"></p>`;
+  if (ST.cmp) return void ($("statsBody").innerHTML = h + compareHTML(me));
+  h += `<div class="st-tabs" role="group" aria-label="Filter by how you played">${STF.map(([k, t]) => `<button type="button" data-sf="${k}" aria-pressed="${f===k}">${t}</button>`).join("")}</div>`;
+  h += `<div class="tiles">${tilesOf(s, f).map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
+  if (!s || !s.played){ $("statsBody").innerHTML = h + `<div class="homegrp"><p class="empty">No games yet. Your stats start with your next game.</p></div>`; return; }
+  if (f==="all" && (!a || s.played > a.games)) h += `<p class="statnote">${a ? `Games before ${new Date(s.x.since).toLocaleDateString("en-GB", { day: "numeric", month: "long" })} count in the totals above; the detail below starts from then.` : "Detailed stats start with your next game."}</p>`;
+  if (f!=="solo" && f!=="bot") h += `<p class="statnote">Win rate counts games against other people, not solo games or games against TenaBot.</p>`;
+  if (!a){ $("statsBody").innerHTML = h + `<div class="homegrp"><p class="empty">No games here yet.</p></div>` + resetHTML(); return; }
+  const slots = a.found + a.others + a.nobody, ans = a.right + a.wrong;
+  h += `<div class="homegrp"><div class="gh">Boards</div>
+      <div class="kv"><span>Boards played</span><span>${a.boards}</span><span>Completed (Tenable!)</span><span>${a.done} · ${pctOf(a.done, a.boards)}</span></div>
+      <div class="bar" aria-hidden="true"><i style="width:${slots ? 100*a.found/slots : 0}%;background:var(--p1)"></i>${a.others ? `<i style="width:${100*a.others/slots}%;background:var(--p4)"></i>` : ""}<i style="width:${slots ? 100*a.nobody/slots : 0}%;background:rgba(255,255,255,.22)"></i></div>
+      <div class="legend"><span><i style="background:var(--p1)"></i>You found <b>${a.found}</b> · ${pctOf(a.found, slots)}</span>${a.others && !solo ? `<span><i style="background:var(--p4)"></i>Others found <b>${a.others}</b> · ${pctOf(a.others, slots)}</span>` : ""}<span><i style="background:rgba(255,255,255,.4)"></i>Nobody found <b>${a.nobody}</b> · ${pctOf(a.nobody, slots)}</span></div>
+      <p class="statnote">Out of ${slots.toLocaleString("en-GB")} slots on the boards you played.</p></div>`;
+  const comps = Object.entries(a.comp || {}).sort((x, y) => y[1][0] - x[1][0]);
+  h += `<div class="homegrp"><div class="gh">Boards completed</div>
+      <div class="kv"><span>Completed overall</span><span>${a.done} of ${a.boards} · ${pctOf(a.done, a.boards)}</span></div>
+      <div class="hbars">${comps.map(([c, v]) => hbar(CAT_NAME[c] || c, v[0] ? v[1]/v[0] : 0, `${v[1]}/${v[0]}`, true)).join("")}</div>
+      <p class="statnote">Completed out of played, in each competition.</p></div>`;
+  h += `<div class="homegrp"><div class="gh">Answers</div>
+      <div class="bar" aria-hidden="true"><i style="width:${ans ? 100*a.right/ans : 0}%;background:var(--p3)"></i><i style="width:${ans ? 100*a.wrong/ans : 0}%;background:var(--miss)"></i></div>
+      <div class="kv"><span>Right</span><span>${a.right} · ${pctOf(a.right, ans)}</span><span>Wrong</span><span>${a.wrong} · ${pctOf(a.wrong, ans)}</span>${a.passes ? `<span>Passes</span><span>${a.passes}</span>` : ""}<span>Time-outs</span><span>${a.timeouts}</span><span>Yellow cards · red cards</span><span>${a.yellow} · ${a.red}</span></div></div>`;
+  h += `<div class="homegrp"><div class="gh">Personal bests</div><div class="kv">${bestsOf(a, f).map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div></div>`;
+  const acc = comps.map(([c, v]) => [CAT_NAME[c] || c, v[2], v[2] + v[3]]).filter(x => x[2]);
+  if (acc.length){
+    const ranked = acc.filter(x => x[2] >= 10).sort((x, y) => y[1]/y[2] - x[1]/x[2]);
+    h += `<div class="homegrp"><div class="gh">Accuracy by competition</div><div class="hbars">${acc.map(([n, r, t]) => hbar(n, r/t, pctOf(r, t))).join("")}</div>
+      ${ranked.length > 1 ? `<p class="statnote">Strongest: ${esc(ranked[0][0])}. Most to learn: ${esc(ranked[ranked.length-1][0])}.</p>` : ""}</div>`;
+  }
+  const lv = (a.lvl || []).map((v, i) => [LEVELS[i], v[0], v[0] + v[1]]).filter(x => x[2]);
+  if (lv.length) h += `<div class="homegrp"><div class="gh">Accuracy by difficulty</div><div class="hbars">${lv.map(([n, r, t]) => hbar(n, r/t, pctOf(r, t))).join("")}</div></div>`;
+  if (f==="all" || f==="h2h" || f==="online"){
+    const vs = Object.values((s.x && s.x.vs) || {}).sort((x, y) => (y.w + y.l + y.d) - (x.w + x.l + x.d)).slice(0, 6);
+    if (vs.length || (s.x && s.x.form)) h += `<div class="homegrp"><div class="gh">Head to head</div><div class="vs">${vs.map(v => `<div class="vsr"><span>v ${esc(v.name)}</span><span class="wl">${v.w}–${v.l}${v.d ? `<em> · ${v.d} drawn</em>` : ""}</span></div>`).join("")}</div>
+      ${s.x.form ? `<div class="gh" style="margin-top:10px">Last ${s.x.form.length} games</div><div class="form">${[...s.x.form].map(c => `<i class="${c}">${c.toUpperCase()}</i>`).join("")}</div><p class="statnote">Newest first. S is a game on your own.</p>` : ""}</div>`;
+  }
+  if (f==="all"){ const bs = badgesOf(a); h += `<div class="homegrp"><div class="gh">Badges · ${bs.filter(b => b[3]).length} of ${bs.length}</div><div class="badges">${bs.map(([ic, t, d, on]) => `<div class="${on ? "" : "locked"}">${statIco(ICO[ic])}<b>${t}</b>${d}</div>`).join("")}</div></div>`; }
+  $("statsBody").innerHTML = h + resetHTML();
+}
+const resetHTML = () => ST.ask ? `<div class="confirm" role="alertdialog" aria-labelledby="rsT"><b id="rsT">Reset all your stats?</b><p>This clears every game, best and badge${statsOwner().acc ? " on your account" : " this phone keeps for you"}. It can't be undone.</p><div><button class="btn ghost" type="button" data-st="keep">Keep them</button><button class="danger solid" type="button" data-st="reset">Reset</button></div></div>`
+  : `<button class="danger" type="button" data-st="ask">Reset my stats</button>`;
+// compare: friends (starred), people played online lately (signed in), and the other players this phone keeps stats for
+function compareHTML(me){
+  if (ST.cmp==="pick"){
+    const fr = ST.picks || [], local = Object.entries(loadStats()).filter(([k, v]) => k!==statKey(me.name) && v && v.played).map(([k, v]) => ({ local: k, name: v.name || k, games: v.played }));
+    const row = p => `<div class="frow" role="button" tabindex="0" data-with="${esc(p.id || "local:" + p.local)}"><span><b>${esc(p.name)}</b><small>${p.local ? `${p.games} game${p.games===1 ? "" : "s"} on this phone` : `Played ${p.games} time${p.games===1 ? "" : "s"} online · ${new Date(p.last).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}`}</small></span>${p.local ? "" : `<button class="pin" type="button" data-pin="${esc(p.id)}" aria-pressed="${p.star}" aria-label="${p.star ? `Remove ${esc(p.name)} from friends` : `Add ${esc(p.name)} as a friend`}">${p.star ? "★" : "☆"}</button>`}</div>`;
+    return (me.acc ? `<div class="homegrp"><div class="gh">Friends</div>${fr.filter(p => p.star).map(row).join("") || '<p class="statnote">No friends yet. Star someone below.</p>'}</div>
+        <div class="homegrp"><div class="gh">Played online recently</div>${fr.filter(p => !p.star).map(row).join("") || '<p class="statnote">Nobody yet. Play someone online and they show up here.</p>'}<p class="statnote">Your last 10 opponents who were signed in. Star one to keep them as a friend.</p></div>`
+        : SERVER ? `<div class="homegrp"><p class="statnote">Sign in to compare with friends you play online.</p></div>` : "")
+      + `<div class="homegrp"><div class="gh">On this phone</div>${local.map(row).join("") || '<p class="statnote">Nobody else has played on this phone yet.</p>'}</div>`;
+  }
+  const o = ST.cmp, A = aggOf(me.stats, "all") || {}, B = aggOf(o.stats, "all") || {}, ms = me.stats || BLANK_STATS, os = o.stats || BLANK_STATS;
+  const rate = (s, a) => a.people ? Math.round(100*a.wins/a.people) : s.multi ? Math.round(100*s.wins/s.multi) : 0;
+  const acc = a => a.right + a.wrong ? Math.round(100*a.right/(a.right + a.wrong)) : 0, found = a => { const t = (a.found||0) + (a.others||0) + (a.nobody||0); return t ? Math.round(100*a.found/t) : 0; };
+  const rows = [["Games", ms.played, os.played], ["Win rate", rate(ms, A), rate(os, B), "%"], ["Boards completed", A.done||0, B.done||0], ["Accuracy", acc(A), acc(B), "%"],
+    ["Slots found", found(A), found(B), "%"], ["Best game", Math.max(ms.top, A.best||0), Math.max(os.top, B.best||0)], ["Longest run", A.bestRun||0, B.bestRun||0], ["Red cards", A.red||0, B.red||0, "", true]];
+  const h2h = (me.stats && me.stats.x && me.stats.x.vs || {})[o.name.toLowerCase()] || { w:0, l:0 };
+  const cmpRow = ([k, x, y, u = "", low]) => { const xb = low ? x < y : x > y, yb = low ? y < x : y > x, mx = Math.max(x, y) || 1;
+    return `<div class="cmpr"><span class="l${xb ? " better" : ""}">${x}${u}<i class="bl" style="width:${Math.round(60*x/mx)}px;background:var(--p1)"></i></span><span class="m">${k}</span><span class="r${yb ? " better" : ""}"><i class="br" style="width:${Math.round(60*y/mx)}px;background:var(--p2)"></i>${y}${u}</span></div>`; };
+  const cats = [...new Set([...Object.keys(A.comp || {}), ...Object.keys(B.comp || {})])];
+  return `<div class="homegrp"><div class="gh">You v ${esc(o.name)} · all games</div><div class="cmp">
+      <div class="cmpr"><span class="l" style="color:var(--p1)">You</span><span class="m"></span><span class="r" style="color:var(--p2)">${esc(o.name)}</span></div>
+      ${rows.map(cmpRow).join("")}
+      <div class="cmpr"><span class="l${h2h.w > h2h.l ? " better" : ""}">${h2h.w}</span><span class="m">Wins against each other</span><span class="r${h2h.l > h2h.w ? " better" : ""}">${h2h.l}</span></div></div></div>
+    ${cats.length ? `<div class="homegrp"><div class="gh">Boards completed by competition</div><div class="cmp">${cats.map(c => cmpRow([CAT_NAME[c] || c, (A.comp[c]||[0,0])[1], ((B.comp||{})[c]||[0,0])[1]])).join("")}</div></div>` : ""}
+    <button class="linkish" type="button" data-st="pick">Compare with someone else</button>`;
+}
+async function openCompare(){
+  ST.cmp = "pick"; ST.picks = null; drawStatsPage();
+  if (statsOwner().acc){ const r = await api("/friends"); ST.picks = r.ok ? r.data.friends : []; if (ST.cmp==="pick") drawStatsPage(); }
+}
+async function compareWith(key){
+  if (key.startsWith("local:")){ const v = loadStats()[key.slice(6)]; ST.cmp = { name: (v && v.name) || key.slice(6), stats: v }; return drawStatsPage(); }
+  const r = await api("/friends/stats", { id: key });
+  if (!r.ok) return stMsg(r.data.error || "Couldn't fetch their stats.");
+  ST.cmp = { name: r.data.name, stats: r.data.stats }; drawStatsPage(); window.scrollTo(0, 0);
+}
+const stMsg = m => { const el = $("stMsg"); if (el){ el.textContent = m; setTimeout(() => { if ($("stMsg")) $("stMsg").textContent = ""; }, 3500); } };
+async function resetMyStats(){
+  const me = statsOwner(); ST.ask = false;
+  if (me.acc){ const r = await api("/stats/reset"); if (!r.ok) return stMsg(r.data.error || "Couldn't reset your stats."); NET.stats = r.data.stats; lsSet(USER_KEY, JSON.stringify({ user: NET.user, stats: NET.stats })); }
+  else { const S = loadStats(); delete S[statKey(me.name)]; saveStats(S); }
+  ST.f = "all"; drawStatsPage(); window.scrollTo(0, 0); stMsg("Your stats have been reset.");
+}
+$("statsBody").addEventListener("click", e => {
+  const pin = e.target.closest("[data-pin]");
+  if (pin){ e.stopPropagation(); const p = (ST.picks || []).find(x => x.id===pin.dataset.pin); if (!p) return;
+    p.star = !p.star; drawStatsPage(); api("/friends/star", { id: p.id, star: p.star }); return; }
+  const w = e.target.closest("[data-with]"); if (w) return compareWith(w.dataset.with);
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.sf){ ST.f = b.dataset.sf; return drawStatsPage(); }
+  const act = b.dataset.st;
+  if (act==="cmp") return ST.cmp ? (ST.cmp = null, drawStatsPage()) : openCompare();
+  if (act==="pick") return openCompare();
+  if (act==="ask"){ ST.ask = true; drawStatsPage(); return $("statsBody").querySelector(".confirm").scrollIntoView({ block: "center" }); }
+  if (act==="keep"){ ST.ask = false; return drawStatsPage(); }
+  if (act==="reset") return resetMyStats();
+  if (act==="share") return shareStats();
+});
+$("statsBody").addEventListener("keydown", e => { const w = e.target.closest("[data-with]"); if (w && (e.key==="Enter" || e.key===" ")){ e.preventDefault(); compareWith(w.dataset.with); } });
 function show(id){ ["login","setup","lobby","game","end"].forEach(s => $(s).classList.toggle("hidden", s!==id)); document.body.classList.toggle("ingame", ["lobby","game","end"].includes(id)); window.scrollTo(0,0); }
 const LOOK_NAME = { bdo:"Ballon d'Or" };
 const lookOf = q => q.look || q.cat;
@@ -2280,7 +2753,7 @@ function theme(cat){
   i.parentNode.classList.toggle("hidden", !w); if (w){ i.src = "data:image/png;base64," + w.img; i.classList.toggle("white", w.white); i.style.opacity = w.op || ""; }
 }
 // Android Chrome (and iOS Safari before 26) colour the browser bar from theme-color: keep it on the colour at the top of the screen
-const CHROME_OVERLAYS = ["winTrophy","winOverlay","outOverlay","banner","intro","compSheet","infoSheet"];
+const CHROME_OVERLAYS = ["winTrophy","winOverlay","outOverlay","banner","intro","orderOv","compSheet","infoSheet"];
 function cssHex(c){
   let m = /rgba?\(([^)]+)\)/.exec(c), v;
   if (m) v = m[1].split(/[\s,\/]+/).slice(0,3).map(Number);
@@ -2306,6 +2779,9 @@ const INFO = {
   clock: ["Shot clock per answer", "<p>How long each player has to lock in an answer on their turn.</p><p>If the clock runs out, that player loses a life, just like a wrong answer. Choose Off to take as long as you like.</p>"],
   repeat: ["Repeated answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill all at once:</strong> naming it fills every slot it's in, with a point for each.</p><p><strong>One per guess:</strong> each guess fills one slot, so it has to be named again on a later turn to fill the next.</p>"],
   diff: ["Difficulty", "<p><strong>Easy</strong> boards are the best-known facts. <strong>Hard</strong> ones go deeper into older seasons and smaller clubs, with <strong>Medium</strong> in between.</p><p>Some competitions don't have questions at every level yet. Those rounds use the nearest level, and a note under the slider says so.</p><p>Switch on <strong>All levels</strong> for a random mix of Easy, Medium and Hard, with a fair share of each.</p>"],
+  opp: ["Playing TenaBot", "<p>TenaBot is the game's own player. Choose it to play against someone when you're on your own, in any of the three game modes.</p><p>Its level sets how much it knows: <strong>Easy</strong> knows the famous answers, <strong>Hard</strong> knows most of the board. It takes a moment to think and makes the odd howler, so it gets carded too.</p><p>Games against TenaBot have their own filter in your stats and don't change your win rate against people.</p>"],
+  mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>First touch:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p>"],
+  time: ["Time limit per round", "<p>In First touch and Beat the clock, the round ends when the time runs out (or sooner, when the board is full or everyone is out).</p>"],
   how: ["How to play", ""]
 };
 INFO.how[1] = $("howText").innerHTML.trim();
@@ -2318,23 +2794,64 @@ $("infoSheet").addEventListener("click", e => { if (e.target === $("infoSheet"))
 document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); });
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
 $("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
-$("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); theme("pl"); show("setup"); } };
+$("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); stopBots(); hideSheet(); $("orderOv").classList.add("hidden"); G.left = 0; G.over = true; theme("pl"); show("setup"); } };
 $("muteBtn").onclick = () => { muted = !muted; if (muted) crowdStop(); $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
 $("nextBtn").onclick = () => { if (ONLINE) return onlineNext(); applyNext(); };
 function applyNext(q){ G.round++; G.round > cfg.rounds ? endGame() : startRound(q); }
 
-function startGame(){
-  crowdWarm();
-  G = { players: cfg.names.slice(0,cfg.count).map((n,i)=>({name:n, score:0, lives:3, out:false, color:`var(--p${i+1})`})),
+// a player: their colour (ci, 0 to 3) stays with them whatever the order of play; bot is TenaBot's level, or null for a person
+const newPlayer = (name, i, bot) => ({ name, score:0, lives:3, out:false, ci:i, color:`var(--p${i+1})`, bot: bot==null ? null : { level: bot } });
+async function startGame(){
+  crowdWarm(); stopBots(); hideSheet();
+  const seats = botSeats();
+  const g = G = { mode: modeNow(), players: Array.from({length: cfg.count}, (_, i) => newPlayer(seats[i] ? botName(seats, i) : cfg.names[i], i, seats[i] ? cfg.botLevel : null)),
         round:1, picked:new Set(), refreshLeft:3, lastCat:null };
-  show("game"); startRound();
+  show("game"); theme(cfg.cats.length===1 ? cfg.cats[0] : "pl");
+  feedback("", ""); $("tower").innerHTML = ""; $("roundEnd").classList.add("hidden"); $("guessArea").classList.add("hidden"); renderPlayers();
+  // taking turns with others: shuffle who goes first, once for the whole game
+  if (G.mode==="turns" && G.players.length>1){ await whoGoesFirst(shuffleOrder(G.players.length)); if (G!==g) return; }
+  startRound();
+}
+function shuffleOrder(n){ const a = [...Array(n).keys()]; for (let i=n-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+// final lists the players' current places in their new order. The order is set straight away (so an online game stays in step);
+// the shuffle is only the show: near-instant swaps under a blur, then slowing swaps as the blur clears, about five seconds. A tap skips it.
+async function whoGoesFirst(final){
+  const ps = G.players, n = ps.length, box = $("orderBox"), ov = $("orderOv");
+  G.players = final.map(i => ps[i]);
+  if (FAST) return;
+  box.style.height = `${n*46 + (n-1)*5}px`; box.classList.remove("done");
+  box.innerHTML = ps.map((p, i) => `<div class="opill" style="transform:translateY(${i*51}px);--pg:var(--g${p.ci+1})"><span class="n">${i+1}</span><span class="nm"><i style="background:${p.color}"></i>${esc(p.name)}</span><span class="tagp"></span></div>`).join("");
+  $("orderNote").textContent = ""; $("orderSub").textContent = "Shuffling the order of play…";
+  ov.classList.remove("hidden"); sfx.whoosh();
+  const els = [...box.children];
+  const place = (order, d, blur) => els.forEach((el, i) => {
+    const pos = order.indexOf(i);
+    el.style.transition = `transform ${Math.max(40, d*.92)}ms cubic-bezier(.4,0,.2,1), filter ${d}ms linear`;
+    el.style.transform = `translateY(${pos*51}px)`; el.style.filter = blur ? `blur(${blur}px)` : "none";
+    el.querySelector(".n").textContent = pos + 1;
+  });
+  let skip; const skipped = new Promise(r => skip = r); ov.onclick = () => skip(true);
+  const steps = REDUCED ? [] : [...Array(30).fill(45), 60, 75, 95, 120, 150, 185, 230, 285, 350, 430, 520, 620];
+  for (let k=0; k<steps.length; k++){
+    place(k===steps.length-1 ? final : shuffleOrder(n), steps[k], k<30 ? 2.6 : Math.max(0, 2.2 - (k-30)*.25));
+    if (k>=30) sfx.tick(k-30);
+    if (await Promise.race([wait(steps[k]).then(() => false), skipped])) break;
+  }
+  place(final, 260, 0); await wait(REDUCED ? 50 : 280);
+  box.classList.add("done");
+  els.forEach((el, i) => { const pos = final.indexOf(i); el.classList.toggle("first", pos===0); el.querySelector(".tagp").textContent = ord(pos+1); });
+  $("orderNote").textContent = `${ps[final[0]].name} goes first`; $("orderSub").textContent = "The order of play is set for this game. Tap to carry on."; sfx.place();
+  await Promise.race([wait(REDUCED ? 900 : 2200), new Promise(r => ov.onclick = r)]);
+  ov.onclick = null; ov.classList.add("hidden");
 }
 
 /* ---------- round flow ---------- */
 function startRound(qIn){
   const q = qIn || pickQuestion(nextCat());
-  Object.assign(G, { q, foundBy:{}, guessed:new Set(), over:false, busy:true, livesLost:0, passes:0, poolUsed:{}, slotName:{}, phase:"intro", tp:null });
-  G.players.forEach(p => { p.lives=3; p.out=false; p.g = p.g || newGameStats(); p.r0 = p.score; });
+  stopBots(); hideSheet();
+  Object.assign(G, { q, foundBy:{}, guessed:new Set(), over:false, busy:true, livesLost:0, passes:0, poolUsed:{}, slotName:{}, phase:"intro", tp:null, near:null });
+  // B is a player's own board in Beat the clock; rs counts the slots they fill this round
+  G.players.forEach(p => { p.lives=3; p.out=false; p.done=false; p.g = p.g || newGameStats(); p.r0 = p.score; p.rr0 = p.g.right; p.rw0 = p.g.wrong; p.rs = 0; p.guessed = new Set(); p.B = { foundBy:{}, poolUsed:{}, slotName:{} }; });
   G.turn = (G.round-1) % G.players.length;
   theme(lookOf(q));
   $("roundLabel").textContent = `Round ${G.round} of ${cfg.rounds}`;
@@ -2367,7 +2884,7 @@ function fillIntro(q){
   theme(lookOf(q));
   $("introCat").innerHTML = compIcon(lookOf(q))+esc(lookName(q));
   $("introTitle").textContent = q.title;
-  $("introBrief").textContent = q.brief + ` ${q.slots.length} slots to fill.`;
+  $("introBrief").textContent = q.brief + ` ${q.slots.length} slots to fill.` + (G.mode==="first" ? ` First touch: ${cfg.time} seconds to fill them before anyone else.` : G.mode==="clock" ? ` Beat the clock: ${cfg.time} seconds on your own board.` : "");
   $("catLabel").innerHTML = compIcon(lookOf(q))+esc(lookName(q));
   $("titleLabel").textContent = q.title; $("briefLabel").textContent = q.brief;
   $("periodLabel").textContent = "🗓 " + q.period; $("introPeriod").textContent = "🗓 " + q.period;
@@ -2389,7 +2906,9 @@ $("introBtn").onclick = () => ONLINE ? onlineReveal() : applyReveal();
 async function applyReveal(){
   $("intro").classList.add("hidden");
   await buildTower();
-  G.busy = false; G.phase = "turn"; G.tp = beginTurn();
+  G.busy = false;
+  if (G.mode!=="turns") return beginLive();
+  G.phase = "turn"; G.tp = beginTurn();
 }
 
 async function buildTower(){
@@ -2408,38 +2927,67 @@ function openExamples(){
   G.q.slots.map((s,i) => i).filter(i => G.foundBy[i]===undefined).forEach((i,k) => out[i] = ex[k]);
   return out;
 }
+// the player using this phone: online, its own player; offline, the first person (TenaBot never is)
+const meIdx = () => ONLINE ? G.players.findIndex(p => p.uid===ONLINE.me) : G.players.findIndex(p => !p.bot);
+// the board on show: the shared one, or in Beat the clock this phone's player's own
+const boardOf = () => G.mode==="clock" ? ((G.players[meIdx()] || G.players[0]).B) : G;
 function drawTower(flash){
   const t = $("tower"); t.innerHTML=""; t.classList.remove("wrong");
+  if (G.mode==="clock" && G.over) return drawResults();
   t.classList.toggle("shortlab", !G.q.numeric && G.q.slots.every(s => String(s.label).length <= 6)); // years only: a narrow label column leaves room for the name
+  const B = boardOf(), live = G.mode!=="turns", mi = meIdx();
   const openShown = G.q.open && G.over ? openExamples() : {};
   G.q.slots.forEach((sl, i) => {
-    const f = G.foundBy[i], d = document.createElement("div");
-    d.className = "slot" + (G.q.numeric ? "" : " lab-slot") + (f!==undefined ? " found" : (G.over ? " missed" : "")) + (flash && flash.includes(i) ? " flash" : "");
+    const f = B.foundBy[i], d = document.createElement("div");
+    // Beat the clock: who else has found this slot (their names go where the answer would, with its stat)
+    const others = G.mode==="clock" && f===undefined && !G.over ? G.players.filter((p, j) => j!==mi && p.B.foundBy[i]!==undefined) : [];
+    d.className = "slot" + (G.q.numeric ? "" : " lab-slot") + (f!==undefined ? " found" + (live ? " pc" + (G.players[f].ci+1) : "") : (G.over ? " missed" : "")) + (flash && flash.includes(i) ? " flash" : "");
     const showName = f!==undefined || G.over;
     let hideStat = false;
     if (showName && sl.val && !G.over){
       const v = sl.val.toLowerCase();
-      hideStat = G.q.slots.some((o,j) => j!==i && G.foundBy[j]===undefined && [o.club, ...(o.alts||[])].some(n => n && v.includes(n.toLowerCase())));
+      hideStat = G.q.slots.some((o,j) => j!==i && B.foundBy[j]===undefined && [o.club, ...(o.alts||[])].some(n => n && v.includes(n.toLowerCase())));
     }
-    const who = showName && sl.val ? `<span class="who${hideStat?" blurstat":""}">${esc(sl.val)}</span>` : "";
-    if (f!==undefined && G.players.length>1) d.style.boxShadow = `inset 6px 0 0 ${G.players[f].color}`;
+    const who = (showName || others.length) && sl.val ? `<span class="who${hideStat?" blurstat":""}">${esc(sl.val)}</span>` : "";
+    if (f!==undefined && !live && G.players.length>1) d.style.boxShadow = `inset 6px 0 0 ${G.players[f].color}`;
     const lab = G.q.numeric ? `<span class="pos">${sl.label}</span>` : `<span class="pos">${i+1}</span><span class="lab">${sl.label}</span>`;
     let shown = sl.alts ? sl.alts.join(" / ") : sl.club;
     if (G.q.open) shown = f!==undefined ? G.slotName[i] : (openShown[i] || "");
-    else if (sl.pool) shown = f!==undefined ? G.slotName[i] : sl.alts.filter(n => !(G.poolUsed[sl.pool]||[]).includes(n)).join(" / ");
-    d.innerHTML = `${lab}<span class="club">${showName ? anyBadge(sl.pool ? shown.split(" / ")[0] : sl.club)+`<span class="nm">${esc(shown)}</span>` : ""}</span>${who}`;
+    else if (sl.pool) shown = f!==undefined ? B.slotName[i] : sl.alts.filter(n => !(B.poolUsed[sl.pool]||[]).includes(n)).join(" / ");
+    d.innerHTML = others.length ? `${lab}<span class="club ups">${others.map(p => `<span class="upill" style="background:${p.color}">${esc(p.name)}</span>`).join("")}</span>${who}`
+      : `${lab}<span class="club">${showName ? anyBadge(sl.pool ? shown.split(" / ")[0] : sl.club)+`<span class="nm">${esc(shown)}</span>` : ""}</span>${who}`;
     t.appendChild(d);
   });
-  $("foundLabel").textContent = `${Object.keys(G.foundBy).length} of ${G.q.slots.length}`;
+  $("foundLabel").textContent = `${Object.keys(B.foundBy).length} of ${G.q.slots.length}`;
+}
+// Beat the clock, once time's up: one grid with every answer, a tick for each player who found it, and the round's points
+// (1 point an answer, 2 for one nobody else found)
+function drawResults(){
+  const t = $("tower"), ps = G.players, mi = meIdx(), q = G.q;
+  t.classList.remove("shortlab");
+  const short = (p, j) => j===mi ? "You" : p.bot ? (p.name===BOT_NAME ? "Bot" : "B" + p.name.split(" ").pop()) : p.name.slice(0, 2);
+  t.innerHTML = `<div class="res" style="--np:${ps.length}">
+    <div class="hd"><span></span><span>Answer</span>${ps.map((p, j) => `<span style="color:${p.color}">${esc(short(p, j))}</span>`).join("")}</div>
+    ${q.slots.map((sl, i) => { const got = ps.filter(p => p.B.foundBy[i]!==undefined);
+      const name = sl.pool ? sl.alts.join(" / ") : sl.alts ? sl.alts.join(" / ") : sl.club;
+      return `<div class="rw${got.length ? "" : " none"}"><span class="n">${q.numeric ? sl.label : i+1}</span><span class="nm">${esc(name)}${sl.val ? `<small>${esc(sl.val)}</small>` : ""}</span>${ps.map(p => p.B.foundBy[i]!==undefined ? `<span class="tk" style="background:${p.color}">${got.length===1 && ps.length>1 ? "★" : "✓"}</span>` : `<span class="tk no"></span>`).join("")}</div>`; }).join("")}
+    <div class="rw tot"><span></span><span class="nm">Points</span>${(() => { const pts = ps.map(p => p.score - p.r0), top = Math.max(...pts); return pts.map(v => `<b class="${v===top && top>0 ? "win" : ""}">${v}</b>`).join(""); })()}</div>
+    <p class="keyline">✓ 1 point · ★ only one player found it: 2 points</p>
+  </div>`;
+  $("foundLabel").textContent = "Results";
 }
 
 function renderPlayers(){
   const box = $("players"); box.innerHTML="";
+  const live = G.mode && G.mode!=="turns", clock = G.mode==="clock", mi = live ? meIdx() : -1;
+  box.classList.toggle("gone", clock && !!G.over); // the results grid shows everyone's finds
   G.players.forEach((p,i)=>{
     const d = document.createElement("div");
-    d.className = "player" + (i===G.turn && !G.over ? " active":"") + (p.out ? " out":"");
+    d.className = "player" + (!live && i===G.turn && !G.over ? " active":"") + (i===mi && G.players.length>1 ? " me" : "") + (p.out ? " out":"");
     d.style.setProperty("--pc", p.color);
-    d.innerHTML = `<span class="nm">${esc(p.name)}</span><span class="lives${p.lives===1?" last":""}" aria-label="${p.lives} lives">${"♥".repeat(p.lives)}<span style="opacity:.2">${"♥".repeat(3-p.lives)}</span></span><span class="sc">${p.score}</span>`;
+    // Beat the clock shows how many each player has found this round; the points come when time's up
+    const sc = clock && !G.over && p.B ? `${Object.keys(p.B.foundBy).length}<small>found</small>` : p.score;
+    d.innerHTML = `<span class="nm">${esc(p.name)}</span><span class="lives${p.lives===1?" last":""}" aria-label="${p.lives} lives">${"♥".repeat(p.lives)}<span style="opacity:.2">${"♥".repeat(3-p.lives)}</span></span><span class="sc">${sc}</span>`;
     box.appendChild(d);
   });
 }
@@ -2456,7 +3004,7 @@ async function beginTurn(){
   if (!solo && (active>1 || !G.shownSolo)){
     if (active===1) G.shownSolo = true;
     $("bannerWho").textContent = p.name; $("bannerWho").style.color = p.color;
-    const theirs = ONLINE && p.uid!==ONLINE.me;
+    const theirs = (ONLINE && p.uid!==ONLINE.me) || !!p.bot;
     $("bannerLbl").textContent = active===1 ? "Last one standing. Keep going." : theirs ? (p.lives===1 ? "Final life. Their go." : "Their go") : (p.lives===1 ? "Final life. Your go." : "Your go");
     $("bannerHearts").textContent = "♥".repeat(p.lives);
     $("banner").classList.remove("hidden");
@@ -2464,13 +3012,19 @@ async function beginTurn(){
     await Promise.race([wait(REDUCED?500:1100), new Promise(r => $("banner").onclick = r)]);
     $("banner").classList.add("hidden");
   }
+  if (p.bot){ // TenaBot thinks for a moment, then answers
+    $("turnLabel").innerHTML = `<span style="color:${p.color}">${esc(p.name)}</span> is thinking…`;
+    $("guessArea").classList.add("watching"); $("guessArea").classList.remove("hidden"); $("passBtn").classList.remove("hidden");
+    input.value = ""; input.disabled = true; $("lockBtn").disabled = true; $("sugg").innerHTML = ""; $("clock").classList.add("hidden");
+    G.turnReady = true; botTurn(p); return;
+  }
   const watching = ONLINE && p.uid!==ONLINE.me;
   $("turnLabel").innerHTML = solo ? `Your go <span style="color:var(--muted);font-weight:500;font-size:1rem">(${p.lives} ${p.lives===1?'life':'lives'} left)</span>`
     : watching ? `<span style="color:${p.color}">${esc(p.name)}</span>'s go` : `<span style="color:${p.color}">${esc(p.name)}</span>, your go`;
   $("guessArea").classList.toggle("watching", !!watching);
   $("guessArea").classList.remove("hidden");
   input.value = ""; G.pick = null; $("sugg").innerHTML = ""; input.disabled = !!watching; $("lockBtn").disabled = !!watching;
-  $("passBtn").textContent = G.players.length===1 ? "Give up" : "Pass";
+  $("passBtn").textContent = G.players.length===1 ? "Give up" : "Pass"; $("passBtn").classList.remove("hidden");
   if (!watching && !FAST) input.focus({preventScroll:true});
   if (ONLINE) onlineTurnUI();
   G.turnReady = true;
@@ -2490,8 +3044,8 @@ function startTimer(){
   }, 1000);
 }
 function stopTimer(){ if (G && G.tid){ clearInterval(G.tid); G.tid=null; } }
-function drawClock(){
-  const frac = G.left/cfg.clock;
+function drawClock(total = cfg.clock){
+  const frac = G.left/total;
   $("clockArc").setAttribute("stroke-dashoffset", String(125.66*(1-frac)));
   $("clockNum").textContent = G.left;
   $("clock").classList.toggle("low", G.left<=5);
@@ -2611,6 +3165,7 @@ function resolve(){
 }
 
 async function lockIn(){
+  if (G && G.phase==="live") return liveLockIn();
   if (G.busy || G.over) return;
   const name = resolve();
   if (!name){ feedback(`That ${({person:"name",nation:"country",place:"city"})[qType()]||"club"} isn't recognised. Try another spelling.`, "bad"); return; }
@@ -2624,25 +3179,26 @@ async function lockIn(){
   }
   return applyGuess(name);
 }
-function guessHits(name){
+// which slots a name fills on board B (the shared board, or a player's own in Beat the clock); one: "One per guess" is on
+function guessHits(name, B = G, one = cfg.repeat==="one" && G.mode==="turns"){
   const q = G.q;
   if (q.open){ // a letter board: any player with the right surname letter fills the lowest empty place
-    const placed = Object.keys(G.slotName).find(i => G.slotName[i]===name);
+    const placed = Object.keys(B.slotName).find(i => B.slotName[i]===name);
     if (placed!==undefined) return { allHits:[+placed], hits:[], pooled:false };
-    const p = PLP.get(name), free = q.slots.map((s,i) => i).filter(i => G.foundBy[i]===undefined);
+    const p = PLP.get(name), free = q.slots.map((s,i) => i).filter(i => B.foundBy[i]===undefined);
     if (!p || !free.length || !q.open.fits(name)) return { allHits:[], hits:[], pooled:false };
     return { allHits:[Math.max(...free)], hits:[Math.max(...free)], pooled:false };
   }
   const allHits = q.slots.map((s,i)=>(s.club===name || (s.alts && s.alts.includes(name))) ? i : -1).filter(i=>i>=0);
   const seenPool = new Set();
   const hits = allHits.filter(i => {
-    if (G.foundBy[i]!==undefined) return false;
+    if (B.foundBy[i]!==undefined) return false;
     const s = q.slots[i]; if (!s.pool) return true;
-    if ((G.poolUsed[s.pool]||[]).includes(name) || seenPool.has(s.pool)) return false;
+    if ((B.poolUsed[s.pool]||[]).includes(name) || seenPool.has(s.pool)) return false;
     seenPool.add(s.pool); return true;
   });
-  if (cfg.repeat==="one" && hits.length>1) hits.splice(1);
-  const pooled = allHits.some(i => q.slots[i].pool) && !allHits.some(i => (G.poolUsed[q.slots[i].pool]||[]).includes(name));
+  if (one && hits.length>1) hits.splice(1);
+  const pooled = allHits.some(i => q.slots[i].pool) && !allHits.some(i => (B.poolUsed[q.slots[i].pool]||[]).includes(name));
   return { allHits, hits, pooled };
 }
 async function applyGuess(name){
@@ -2663,7 +3219,7 @@ async function applyGuess(name){
 
   if (hits.length){
     hits.forEach(i => { G.foundBy[i] = G.turn; const s = q.slots[i]; if (s.pool){ (G.poolUsed[s.pool] = G.poolUsed[s.pool]||[]).push(name); G.slotName[i] = name; } });
-    p.score += hits.length; p.g.right++; p.g.slots += hits.length;
+    p.score += hits.length; p.g.right++; p.g.slots += hits.length; p.g.run++; p.g.bestRun = Math.max(p.g.bestRun, p.g.run);
     drawTower(hits); sfx.correct(); crowdPlay(hits.length>1 || hits.includes(q.slots.length-1) ? "bigcheer" : "cheer"); buzz(40);
     const s0 = q.slots[hits[0]];
     let msg = q.open ? `Tenable! ${name} goes in ${ord(Number(s0.label))}. +1${forWho(p)}.`
@@ -2681,7 +3237,7 @@ async function applyGuess(name){
     await wait(1500);
   } else {
     const t = $("tower");
-    p.g.wrong++;
+    p.g.wrong++; p.g.run = 0;
     t.classList.add("wrong","shake"); sfx.wrong(); crowdPlay("groan"); buzz([80,60,80]);
     const extra = q.note ? q.note(name, q.years) : null;
     loseLife(p, `No. ${extra || `${name} ${/s$/.test(name)&&!/ss$/.test(name)?"aren't":"isn't"} on this board.`} ${loses(p)}`);
@@ -2690,6 +3246,185 @@ async function applyGuess(name){
   }
   G.busy = false; nextTurn();
 }
+
+/* ---------- First touch and Beat the clock: everyone answers at once against the round's clock ----------
+   First touch: one shared board; the first right answer claims the slot, in the player's colour. 1 point a slot, and a bonus point
+   for the round's winner (the most slots; tied players each get it). Beat the clock: everyone has their own board; when time's up,
+   1 point an answer and 2 for one nobody else found. In both, a wrong answer costs a life; three and you're out for the round.
+   applyLiveGuess and applyTimeUp are applied in the same order on every phone online, so they stay free of randomness and clocks. */
+function beginLive(){
+  G.phase = "live"; G.turnReady = true;
+  const me = G.players[meIdx()];
+  renderPlayers();
+  $("turnLabel").innerHTML = G.mode==="first" ? "Go! Fill the slots first" : "Your board: as many as you can";
+  $("passBtn").classList.add("hidden"); $("skipBtn").classList.add("hidden");
+  $("guessArea").classList.remove("watching", "hidden");
+  input.value = ""; G.pick = null; $("sugg").innerHTML = "";
+  input.disabled = $("lockBtn").disabled = !me || me.out;
+  feedback(G.mode==="first" ? "Name any of the ten, as fast as you can. A wrong answer costs a life." : "Your own board. A name in a slot means someone else has found it.", "");
+  if (!FAST) input.focus({preventScroll:true});
+  startRoundClock();
+  if (!ONLINE) G.players.forEach((p, i) => { if (p.bot) botLive(i); });
+}
+function startRoundClock(){
+  stopTimer(); $("clock").classList.remove("hidden");
+  G.left = cfg.time; drawClock(cfg.time);
+  G.tid = setInterval(() => {
+    G.left--; drawClock(cfg.time);
+    if (G.left<=5 && G.left>0) sfx.clock();
+    if (G.left<=0){ stopTimer(); liveTimeUp(); }
+  }, 1000);
+}
+// this phone's clock has run out: offline that's the end of the round; online the host tells everyone (and keeps telling them until it lands)
+function liveTimeUp(){
+  if (G.over || G.phase!=="live") return;
+  input.disabled = $("lockBtn").disabled = true;
+  if (!ONLINE) return applyTimeUp();
+  if (!ONLINE.isHost) return feedback(`Time's up. Waiting for ${hostName()}…`, "wait");
+  const g = G, send = () => { if (G===g && !G.over && ONLINE && ONLINE.isHost){ roomSend({ t: "move", type: "timeup", data: {} }).catch(() => {}); setTimeout(send, 3000); } };
+  send();
+}
+function applyTimeUp(){
+  if (G.over || G.phase!=="live") return;
+  sfx.blast();
+  endLiveRound("Time's up.");
+}
+function liveLockIn(){
+  if (G.over) return;
+  const pi = meIdx(), p = G.players[pi]; if (!p || p.out || p.done) return;
+  const name = resolve();
+  if (!name){ feedback(`That ${({person:"name",nation:"country",place:"city"})[qType()]||"club"} isn't recognised. Try another spelling.`, "bad"); return; }
+  if (name==="?"){ feedback("Pick one from the list below.", "bad"); drawSugg(); return; }
+  const clear = () => { input.value = ""; G.pick = null; $("sugg").innerHTML = ""; input.focus({preventScroll:true}); };
+  if (p.guessed.has(name)){ feedback(`You've already tried ${name}.`, "bad"); return clear(); }
+  const B = G.mode==="clock" ? p.B : G, h = guessHits(name, B, false);
+  if (h.allHits.length && !h.hits.length){ // already on the board: no card, you weren't wrong
+    const o = G.players[B.foundBy[h.allHits[0]]];
+    if (G.mode==="first" && o && o!==p){ p.g.slow++; feedback(`Too slow. ${o.name} got ${name} first.`, "bad"); }
+    else feedback(h.pooled ? `${name} is tied on that total, but those places are already filled.` : `You already have ${name}.`, "bad");
+    return clear();
+  }
+  clear();
+  if (ONLINE) return void roomSend({ t: "move", type: "guess", data: { name } }).catch(e => feedback(e.message || "Couldn't send that. Try again.", "bad"));
+  applyLiveGuess(pi, name);
+}
+function applyLiveGuess(pi, name){
+  const p = G.players[pi];
+  if (!p || p.out || p.done || G.over || G.phase!=="live" || typeof name!=="string" || p.guessed.has(name)) return;
+  const q = G.q, mine = pi===meIdx(), clock = G.mode==="clock", B = clock ? p.B : G;
+  const { allHits, hits } = guessHits(name, B, false);
+  if (allHits.length && !hits.length){ // beaten to it: no card
+    if (mine && !clock){ const o = G.players[G.foundBy[allHits[0]]]; if (o && o!==p) feedback(`Too slow. ${o.name} got ${name} first.`, "bad"); }
+    return;
+  }
+  p.guessed.add(name);
+  if (hits.length){
+    hits.forEach(i => { B.foundBy[i] = pi; const s = q.slots[i]; if (s.pool){ (B.poolUsed[s.pool] = B.poolUsed[s.pool]||[]).push(name); B.slotName[i] = name; } });
+    p.rs += hits.length; p.g.right++; p.g.slots += hits.length; p.g.run++; p.g.bestRun = Math.max(p.g.bestRun, p.g.run);
+    if (!clock){ p.score += hits.length; p.g.claims += hits.length; }
+    drawTower(mine || !clock ? hits : []); renderPlayers();
+    const s0 = q.slots[hits[0]];
+    if (mine){ sfx.correct(); crowdPlay(hits.length>1 || hits.includes(q.slots.length-1) ? "bigcheer" : "cheer"); buzz(40);
+      feedback(`Tenable! ${name}${q.open ? "" : hits.length>1 ? ` fills ${hits.length} slots` : `, ${q.numeric ? ord(Number(s0.label)) : s0.label}`}. +${hits.length}.`, "good"); }
+    else if (!clock){ sfx.tick(2); feedback(`${p.name} claimed ${name}.`, ""); }
+    const full = Object.keys(B.foundBy).length===q.slots.length;
+    if (full && clock){ p.done = true; p.tenables = (p.tenables||0)+1; p.g.fullBoards++; if (mine){ feedback("Full board! Waiting for the clock.", "good"); input.disabled = $("lockBtn").disabled = true; } }
+    if (full && !clock) return endLiveRound("The board is full.");
+  } else {
+    p.g.wrong++; p.g.run = 0; p.lives--; G.livesLost = (G.livesLost||0)+1; p.g[p.lives===0 ? "red" : "yellow"]++;
+    if (p.lives===0) p.out = true;
+    renderPlayers();
+    const extra = q.note ? q.note(name, q.years) : null;
+    if (mine){
+      $("tower").classList.add("shake"); setTimeout(() => $("tower").classList.remove("shake"), 500);
+      sfx.wrong(); crowdPlay("groan"); buzz([80,60,80]);
+      feedback(`No. ${extra || `${name} isn't on this board.`} ${p.out ? "Red card: you're out of this round." : `Yellow card, ${p.lives} ${p.lives===1 ? "life" : "lives"} left.`}`, "bad");
+      showCard(p, p.out ? "red" : "yellow", { delay:100, live:true });
+      if (p.out){ input.disabled = $("lockBtn").disabled = true; }
+    } else feedback(`${p.name}: ${name}. ${p.out ? "Red card, out of the round." : "Yellow card."}`, "");
+  }
+  if (G.players.every(x => x.out || x.done)) endLiveRound(G.players.every(x => x.out) ? "Everyone has been sent off." : "Everyone's finished.");
+}
+function endLiveRound(why){
+  if (G.over) return;
+  stopTimer(); stopBots();
+  const ps = G.players, q = G.q;
+  if (G.mode==="first"){
+    // a point a slot, and a bonus point for the most slots (shared when tied)
+    const top = Math.max(...ps.map(p => p.rs));
+    if (top>0) ps.filter(p => p.rs===top).forEach(p => { p.score += 1; });
+    ps.forEach(p => { if (p.rs===q.slots.length){ p.tenables = (p.tenables||0)+1; p.g.fullBoards++; } });
+  } else {
+    // 1 point an answer, 2 for one nobody else found
+    q.slots.forEach((s, i) => { const f = ps.filter(p => p.B.foundBy[i]!==undefined); f.forEach(p => { const two = f.length===1 && ps.length>1; p.score += two ? 2 : 1; if (two) p.g.unique++; }); });
+  }
+  const best = Math.max(...ps.map(p => p.score - p.r0));
+  feedback(why + (G.mode==="first" ? (best>0 ? " A bonus point for the most slots." : "") : " Here's who found what."), "");
+  endRound();
+}
+// the end of a round in the new modes: a sheet slides up with every player's points (the crown marks the round's winner)
+const CROWN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17.5h16M5 17.5L3.5 8l5 4L12 5l3.5 7 5-4-1.5 9.5"/></svg>';
+const INK = ["#00262b","#2b1d00","#002b12","#2a0018"];
+function showRoundSheet(){
+  const rows = G.players.map(p => ({ p, r: p.score - p.r0 })), top = Math.max(...rows.map(x => x.r));
+  rows.sort((a, b) => b.p.score - a.p.score || b.r - a.r);
+  const last = G.round >= cfg.rounds, host = !ONLINE || ONLINE.isHost, sh = $("roundSheet");
+  sh.innerHTML = `<div class="rhead" data-sheet="1"><span>Round ${G.round} of ${cfg.rounds}: points</span><button type="button" class="xbtn" data-sheet="1" aria-label="Hide the points and see the board">✕</button></div>`
+    + rows.map((x, k) => `<div class="rrow" style="background:var(--g${x.p.ci+1});color:${INK[x.p.ci]};animation-delay:${.15 + k*.09}s"><span class="pos">${1 + rows.filter(y => y.p.score > x.p.score).length}</span><span class="nm">${x.r===top && top>0 ? CROWN : ""}<span>${esc(x.p.name)}</span></span><span class="rp">+${x.r} this round</span><span class="tp">${x.p.score} pts</span></div>`).join("")
+    + (host ? `<button class="btn" type="button" id="sheetNext">${last ? "Final scores" : "Next round"}</button>`
+            : `<p class="waitpill">Waiting for ${esc(hostName())} to ${last ? "show the final scores" : "start the next round"}…</p>`);
+  sh.hidden = false; sh.classList.remove("peek", "up"); void sh.offsetWidth; sh.classList.add("up");
+  const nx = $("sheetNext"); if (nx) nx.onclick = () => { if (ONLINE) return onlineNext(); hideSheet(); applyNext(); };
+}
+function hideSheet(){ const sh = $("roundSheet"); sh.classList.remove("up", "peek"); sh.hidden = true; }
+// ✕ slides the sheet down to a bar so the board shows; tapping the bar brings it back
+$("roundSheet").addEventListener("click", e => {
+  if (!e.target.closest("[data-sheet]")) return;
+  const sh = $("roundSheet"), peek = !sh.classList.contains("peek"), x = sh.querySelector(".xbtn");
+  sh.classList.toggle("peek", peek);
+  x.textContent = peek ? "▴" : "✕"; x.setAttribute("aria-label", peek ? "Show the points again" : "Hide the points and see the board");
+});
+
+/* ---------- TenaBot: plays on this phone only (never online), with a thinking pause, a hit rate set by its level
+   (the top of a board is better known than the bottom) and the odd near miss from elsewhere in the competition ---------- */
+const BOT_HIT = [.4, .58, .76];
+const BOT_PACE = Number(window.TENABALL_BOT_PACE) || 1; // the tests speed TenaBot up; players never change it
+function botAnswer(p, B, taken){
+  const q = G.q, free = q.slots.map((s, i) => i).filter(i => B.foundBy[i]===undefined);
+  if (!free.length || Math.random() >= BOT_HIT[p.bot.level] * (.75 + .25*free.length/q.slots.length)) return null;
+  const w = free.map(i => 1/(1 + i*.18)); let r = Math.random()*w.reduce((a, b) => a+b, 0), k = 0;
+  while (k < w.length-1 && r > w[k]) r -= w[k++];
+  const s = q.slots[free[k]];
+  const opts = (q.open ? q.open.examples.filter(n => q.open.fits(n)) : s.pool ? s.alts.filter(n => !(B.poolUsed[s.pool]||[]).includes(n)) : [s.club])
+    .filter(n => !taken.has(n) && guessHits(n, B, false).hits.length);
+  return opts.length ? opts[Math.floor(Math.random()*opts.length)] : null;
+}
+function botMiss(p, B, taken){
+  const q = G.q;
+  if (!G.near) G.near = [...new Set(Q.filter(x => x.cat===q.cat && x.type===q.type && x.id!==q.id && !x.open && x.slots).flatMap(x => x.slots.flatMap(s => s.alts || [s.club])))];
+  const opts = G.near.filter(n => n && !taken.has(n) && !guessHits(n, B, false).allHits.length);
+  return opts.length ? opts[Math.floor(Math.random()*opts.length)] : null;
+}
+function botTurn(p){
+  const g = G, q = G.q;
+  clearTimeout(G.botT);
+  G.botT = setTimeout(() => {
+    if (G!==g || G.q!==q || G.over || G.busy || G.phase!=="turn" || G.players[G.turn]!==p) return;
+    const name = botAnswer(p, G, G.guessed) || botMiss(p, G, G.guessed);
+    name ? applyGuess(name) : applyPass();
+  }, (1500 + Math.random()*2000 + (2 - p.bot.level)*500) / BOT_PACE);
+}
+function botLive(pi){
+  const p = G.players[pi], g = G, q = G.q, gap = [[5200, 5000], [3600, 4200], [2800, 3400]][p.bot.level];
+  (G.botTimers = G.botTimers || []).push(setTimeout(() => {
+    if (G!==g || G.q!==q || G.over || G.phase!=="live" || p.out || p.done) return;
+    const B = G.mode==="clock" ? p.B : G;
+    const name = botAnswer(p, B, p.guessed) || (Math.random() < .3 ? botMiss(p, B, p.guessed) : null);
+    if (name) applyLiveGuess(pi, name);
+    botLive(pi);
+  }, (gap[0] + Math.random()*gap[1]) / BOT_PACE));
+}
+function stopBots(){ if (!G) return; (G.botTimers || []).forEach(clearTimeout); G.botTimers = []; clearTimeout(G.botT); }
 
 const forWho = p => G.players.length===1 ? "" : ` for ${p.name}`;
 const loses = p => G.players.length===1 ? "You lose a life." : `${p.name} loses a life.`;
@@ -2714,12 +3449,13 @@ async function showCard(p, colour, opts={}){
       : others===0 ? "is sent off. Everyone is out, so the round is over." : others===1 ? "is sent off. One player left standing." : "is sent off for the rest of this round.";
     ov.querySelector(".broken").textContent = "♡ ♡ ♡";
   }
+  ov.classList.toggle("passive", !!opts.live);
   ov.classList.remove("hidden");
   if (!opts.silent) sfx.blast();
   crowdPlay("boos", colour==="yellow" ? .7 : 1);
   buzz(colour==="yellow" ? [120,60,120] : [200,80,200,80,400]);
-  await Promise.race([wait(REDUCED?900:(colour==="yellow"?1500:2600)), new Promise(r => ov.onclick = r)]);
-  ov.classList.add("hidden");
+  await Promise.race([wait(REDUCED?900:opts.live ? 1100 : (colour==="yellow"?1500:2600)), new Promise(r => ov.onclick = r)]);
+  ov.classList.add("hidden"); ov.classList.remove("passive");
 }
 const sendOff = p => showCard(p, "red");
 function loseLife(p, msg){
@@ -2771,10 +3507,22 @@ function nextTurn(){
 }
 
 function endRound(){
-  stopTimer(); G.over = true; G.shownSolo = false;
-  G.players.forEach(p => { if (p.g) p.g.rounds.push(p.score - p.r0); });
+  stopTimer(); stopBots(); G.over = true; G.shownSolo = false;
+  const q = G.q, n = q.slots.length, ps = G.players, pts = ps.map(p => p.score - p.r0), best = Math.max(...pts);
+  ps.forEach((p, k) => {
+    if (!p.g) return;
+    p.g.rounds.push(pts[k]);
+    if (ps.length>1 && best>0 && pts[k]===best) p.g.roundWins++;
+    // this board for the player's stats: slots they found, slots others found, slots nobody found, and whether it was completed
+    const mine = i => G.mode==="clock" ? p.B.foundBy[i]!==undefined : G.foundBy[i]===k;
+    const anyone = i => G.mode==="clock" ? ps.some(x => x.B.foundBy[i]!==undefined) : G.foundBy[i]!==undefined;
+    const f = q.slots.filter((s, i) => mine(i)).length, z = q.slots.filter((s, i) => !anyone(i)).length;
+    p.g.boards.push({ cat: q.cat, lv: q.level, pts: pts[k], f, o: n - f - z, z, r: p.g.right - p.rr0, w: p.g.wrong - p.rw0,
+      done: G.mode==="clock" ? f===n : z===0 });
+  });
   drawTower(); renderPlayers();
   $("guessArea").classList.add("hidden");
+  if (G.mode!=="turns"){ $("clock").classList.add("hidden"); showRoundSheet(); return; }
   const left = G.q.slots.length - Object.keys(G.foundBy).length;
   if (left>0){ const allOut = G.players.every(x=>x.out); $("feedback").textContent += `${allOut ? (G.players.length===1 ? " Out of lives." : " Everyone is out.") : ""} ${left} slot${left>1?"s":""} not found, ${G.q.open ? `shown faded with players you could have had (${G.q.open.count} in all)` : "shown faded"}.`; }
   $("mini").innerHTML = [...G.players].sort((a,b)=>b.score-a.score).map(p=>`<span style="color:${p.color}">${esc(p.name)} ${p.score}</span>`).join("");
@@ -2790,39 +3538,139 @@ const statKey = n => norm(n||"").replace(/\s+/g," ");
 function loadStats(){ try { return JSON.parse(localStorage.getItem(STATS_KEY)||"{}"); } catch(e){ return {}; } }
 function saveStats(s){ try { localStorage.setItem(STATS_KEY, JSON.stringify(s)); } catch(e){} }
 function recordGame(sorted){
-  const S = loadStats(), top = sorted[0].score, multi = sorted.length>1;
+  const S = loadStats();
   sorted.forEach(p => {
+    if (p.bot) return;                        // TenaBot keeps no stats
     if (ONLINE && p.uid!==ONLINE.me) return; // online, each phone records only its own player
     if (isAccountPlayer(p)) return;           // a signed-in player's games go to their account instead (accountRecord)
     const k = statKey(p.name); if (!k) return;
-    S[k] = bumpStats(S[k], p, top, multi);
+    S[k] = bumpStats(S[k], gameRec(p, sorted));
   });
   saveStats(S); return S;
 }
-const BLANK_STATS = {played:0, multi:0, wins:0, streak:0, best:0, points:0, top:0, tenables:0};
-function bumpStats(old, p, top, multi){
-  const s = Object.assign({}, BLANK_STATS, old||{});
-  s.name = p.name; s.played++; s.points += p.score; s.top = Math.max(s.top, p.score); s.tenables += (p.tenables||0);
-  if (multi){ s.multi++; if (p.score===top){ s.wins++; s.streak++; s.best = Math.max(s.best, s.streak); } else s.streak = 0; }
+// one player's game, for their all-time stats: the door and mode, the result, every board and who they played
+function gameRec(p, sorted){
+  const others = G.players.filter(x => x!==p), top = sorted[0].score, tied = sorted.filter(x => x.score===top).length, g = p.g || newGameStats();
+  return { door: ONLINE ? "online" : cfg.door, mode: G.mode || "turns", bots: others.some(x => x.bot), people: others.filter(x => !x.bot).length,
+    score: p.score, tenables: p.tenables || 0, result: !others.length ? "s" : p.score===top ? (tied>1 ? "d" : "w") : "l",
+    right: g.right, wrong: g.wrong, passes: g.passes, timeouts: g.timeouts, yellow: g.yellow, red: g.red, bestRun: g.bestRun, claims: g.claims, slow: g.slow, unique: g.unique,
+    roundWins: g.roundWins, sweep: others.length>0 && cfg.rounds>=3 && g.roundWins===cfg.rounds, rounds: g.boards,
+    opp: others.map(o => ({ name: o.name, uid: o.uid || null, bot: !!o.bot, score: o.score })) };
+}
+/* stats.js: start */
+// Tenaball stats: how one finished game folds into a player's all-time stats.
+// The same code runs on the server (accounts) and in the game (stats kept on the phone). index.html carries a copy between
+// the "stats.js" markers, made by scripts/embed-stats.mjs; tests/stats.test.mjs checks the copy matches this file.
+// The totals at the top level (played, multi, wins and so on) go back to the first game. Everything under x (filters by
+// door and mode, boards, answers, bests, head to head) starts from the first game played after the October 2026 update.
+
+const BLANK_STATS = { played: 0, multi: 0, wins: 0, streak: 0, best: 0, points: 0, top: 0, tenables: 0 };
+// one filter's figures: people = games against at least one other person (wins, draws and streaks count only those);
+// bgames and bwins are games against TenaBot alone
+const STAT_KEYS = ["games", "people", "wins", "draws", "streak", "bestStreak", "bgames", "bwins", "points", "best", "boards", "done", "found", "others", "nobody",
+  "right", "wrong", "passes", "timeouts", "yellow", "red", "bestRound", "bestRun", "claims", "slow", "unique", "fullClock", "mostClaims", "mostClock", "roundWins", "sweeps"];
+const MAX_KEYS = ["bestStreak", "best", "bestRound", "bestRun", "mostClaims", "mostClock"];
+const STAT_FILTERS = ["all", "solo", "h2h", "online", "first", "clock", "bot"];
+const blankAgg = () => Object.fromEntries(STAT_KEYS.map(k => [k, 0]));
+
+// a game's record, checked: anything unexpected is dropped or clamped
+function cleanRec(r){
+  r = r && typeof r === "object" ? r : {};
+  const n = (v, max = 1000) => Math.max(0, Math.min(max, Math.floor(Number(v) || 0)));
+  const pick = (v, ok, d) => ok.includes(v) ? v : d;
+  const rounds = (Array.isArray(r.rounds) ? r.rounds : []).slice(0, 7).map(x => {
+    x = x && typeof x === "object" ? x : {};
+    return { cat: String(x.cat || "").replace(/[^a-z0-9]/g, "").slice(0, 10), lv: pick(x.lv, [0, 1, 2], 1), pts: n(x.pts, 40), f: n(x.f, 10), o: n(x.o, 10), z: n(x.z, 10), r: n(x.r, 100), w: n(x.w, 3), done: !!x.done };
+  });
+  const opp = (Array.isArray(r.opp) ? r.opp : []).slice(0, 3).map(o => {
+    o = o && typeof o === "object" ? o : {};
+    return { name: String(o.name || "").replace(/\s+/g, " ").trim().slice(0, 20), uid: /^u:[a-f0-9]{24}$/.test(String(o.uid || "")) ? o.uid : null, bot: !!o.bot, score: n(o.score) };
+  }).filter(o => o.name);
+  return { door: pick(r.door, ["solo", "h2h", "online"], "solo"), mode: pick(r.mode, ["turns", "first", "clock"], "turns"),
+    bots: !!r.bots, people: n(r.people, 3), score: n(r.score), tenables: n(r.tenables, 7), result: pick(r.result, ["w", "l", "d", "s"], "s"),
+    right: n(r.right), wrong: n(r.wrong), passes: n(r.passes), timeouts: n(r.timeouts), yellow: n(r.yellow), red: n(r.red),
+    bestRun: n(r.bestRun, 70), claims: n(r.claims, 70), slow: n(r.slow), unique: n(r.unique, 70), roundWins: n(r.roundWins, 7), sweep: !!r.sweep, rounds, opp };
+}
+
+// which filters a game counts under
+function statBuckets(r){
+  const b = ["all"];
+  if (r.bots && !r.people) b.push("bot");
+  else if (r.door === "solo" && !r.bots && !r.people) b.push("solo");
+  if (r.door === "h2h") b.push("h2h");
+  if (r.door === "online") b.push("online");
+  if (r.mode === "first") b.push("first");
+  if (r.mode === "clock") b.push("clock");
+  return b;
+}
+
+function bumpStats(old, raw, now = Date.now()){
+  const r = cleanRec(raw), s = { ...BLANK_STATS, ...(old && typeof old === "object" ? old : {}) };
+  const won = r.result === "w" || r.result === "d";
+  s.played++; s.points += r.score; s.top = Math.max(s.top, r.score); s.tenables += r.tenables;
+  if (r.people){ s.multi++; if (won){ s.wins++; s.streak++; s.best = Math.max(s.best, s.streak); } else s.streak = 0; }
+  const x = s.x = s.x && typeof s.x === "object" ? s.x : {};
+  x.b = x.b || {}; x.vs = x.vs || {}; x.form = typeof x.form === "string" ? x.form : ""; x.since = x.since || now;
+  for (const k of statBuckets(r)){
+    const p = x.b[k] || {}, a = x.b[k] = { ...blankAgg(), ...p, comp: p.comp || {}, lvl: Array.isArray(p.lvl) ? p.lvl : [[0, 0], [0, 0], [0, 0]] };
+    a.games++; a.points += r.score; a.best = Math.max(a.best, r.score);
+    if (r.people){ a.people++; if (won){ a.wins++; a.streak++; a.bestStreak = Math.max(a.bestStreak, a.streak); } else a.streak = 0; if (r.result === "d") a.draws++; }
+    else if (r.bots){ a.bgames++; if (won) a.bwins++; }
+    for (const f of ["right", "wrong", "passes", "timeouts", "yellow", "red", "claims", "slow", "unique", "roundWins"]) a[f] += r[f];
+    a.bestRun = Math.max(a.bestRun, r.bestRun); if (r.sweep) a.sweeps++;
+    for (const d of r.rounds){
+      a.boards++; a.done += d.done ? 1 : 0; a.found += d.f; a.others += d.o; a.nobody += d.z; a.bestRound = Math.max(a.bestRound, d.pts);
+      if (d.cat){ const c = a.comp[d.cat] = a.comp[d.cat] || [0, 0, 0, 0]; c[0]++; c[1] += d.done ? 1 : 0; c[2] += d.r; c[3] += d.w; }
+      a.lvl[d.lv][0] += d.r; a.lvl[d.lv][1] += d.w;
+      if (r.mode === "first") a.mostClaims = Math.max(a.mostClaims, d.f);
+      if (r.mode === "clock"){ a.mostClock = Math.max(a.mostClock, d.f); if (d.done) a.fullClock++; }
+    }
+  }
+  // head to head against people (TenaBot's results stay in the vs TenaBot filter)
+  for (const o of r.opp){
+    if (o.bot) continue;
+    const key = o.name.toLowerCase(), v = x.vs[key] = x.vs[key] || { name: o.name, w: 0, l: 0, d: 0 };
+    v.name = o.name; if (o.uid) v.uid = o.uid; v.t = now;
+    if (r.score > o.score) v.w++; else if (r.score < o.score) v.l++; else v.d++;
+  }
+  const names = Object.keys(x.vs);
+  if (names.length > 30) names.sort((a, b) => (x.vs[a].t || 0) - (x.vs[b].t || 0)).slice(0, names.length - 30).forEach(k => delete x.vs[k]);
+  x.form = (r.result + x.form).slice(0, 10); // newest first: w, l, d, or s for a game on your own
   return s;
 }
-function renderStats(sorted, S){
-  const chips = $("statChips"), grid = $("statGrid"), extra = $("statExtra");
-  chips.innerHTML = "";
-  const show = p => {
-    [...chips.children].forEach(c => c.setAttribute("aria-selected", c.dataset.k===statKey(p.name)));
-    const s = S[statKey(p.name)] || {played:0,multi:0,wins:0,streak:0,best:0,points:0,top:0,tenables:0};
-    const pct = s.multi ? Math.round(100*s.wins/s.multi) : 0, avg = s.played ? (s.points/s.played) : 0;
-    grid.innerHTML = `<div><b>${s.played}</b><span>Games</span></div><div><b>${s.multi ? pct+"%" : "–"}</b><span>Win rate</span></div><div><b>${s.streak}</b><span>Win streak</span></div><div><b>${s.best}</b><span>Best streak</span></div>`;
-    extra.innerHTML = `<span>Best score <strong>${s.top}</strong></span><span>Average <strong>${avg.toFixed(1)}</strong></span><span>Full boards <strong>${s.tenables}</strong></span>`;
-  };
-  sorted.forEach((p,i) => {
-    const b = document.createElement("button"); b.type = "button"; b.role = "tab"; b.dataset.k = statKey(p.name); b.textContent = p.name;
-    b.style.setProperty("--pc", p.color); b.onclick = () => show(p); chips.appendChild(b);
-  });
-  show(sorted[0]);
-  $("statReset").onclick = () => { if (!confirm("Reset the stats for everyone on this device?")) return; saveStats({}); renderStats(sorted, {}); };
+
+// two sets of stats added together (a phone's guest stats going onto an account)
+function mergeStats(a, b){
+  const n = v => Math.max(0, Math.floor(Number(v) || 0));
+  // each side on its own terms first: wins can't exceed games against others, which can't exceed games
+  const fix = o => { const t = { ...BLANK_STATS, ...(o && typeof o === "object" ? o : {}) }; t.played = n(t.played); t.multi = Math.min(n(t.multi), t.played); t.wins = Math.min(n(t.wins), t.multi); return t; };
+  const A = fix(a), B = fix(b);
+  const out = {};
+  for (const k of Object.keys(BLANK_STATS)) out[k] = ["streak", "best", "top"].includes(k) ? Math.max(n(A[k]), n(B[k])) : n(A[k]) + n(B[k]);
+  out.multi = Math.min(out.multi, out.played); out.wins = Math.min(out.wins, out.multi); out.best = Math.max(out.best, out.streak);
+  const xa = A.x || {}, xb = B.x || {};
+  if (!A.x && !B.x) return out;
+  const x = out.x = { b: {}, vs: {}, form: String(xa.form || "") .slice(0, 10), since: Math.min(xa.since || Infinity, xb.since || Infinity) };
+  if (x.since === Infinity) x.since = Date.now();
+  for (const k of STAT_FILTERS){
+    const p = (xa.b || {})[k], q = (xb.b || {})[k]; if (!p && !q) continue;
+    const m = x.b[k] = { ...blankAgg(), comp: {}, lvl: [[0, 0], [0, 0], [0, 0]] };
+    for (const f of STAT_KEYS) m[f] = MAX_KEYS.includes(f) ? Math.max(n((p || {})[f]), n((q || {})[f])) : n((p || {})[f]) + n((q || {})[f]);
+    m.streak = Math.max(n((p || {}).streak), n((q || {}).streak));
+    for (const src of [p, q]) if (src){
+      for (const [c, v] of Object.entries(src.comp || {})) if (Array.isArray(v)){ const t = m.comp[c] = m.comp[c] || [0, 0, 0, 0]; v.slice(0, 4).forEach((y, i) => t[i] += n(y)); }
+      (Array.isArray(src.lvl) ? src.lvl : []).slice(0, 3).forEach((v, i) => { if (Array.isArray(v)){ m.lvl[i][0] += n(v[0]); m.lvl[i][1] += n(v[1]); } });
+    }
+  }
+  for (const src of [xa.vs || {}, xb.vs || {}]) for (const [k, v] of Object.entries(src)){
+    if (!v || typeof v !== "object") continue;
+    const t = x.vs[k] = x.vs[k] || { name: String(v.name || k).slice(0, 20), w: 0, l: 0, d: 0 };
+    t.w += n(v.w); t.l += n(v.l); t.d += n(v.d); if (v.uid) t.uid = v.uid; t.t = Math.max(t.t || 0, n(v.t));
+  }
+  if (!x.form) x.form = String(xb.form || "").slice(0, 10);
+  return out;
 }
+/* stats.js: end */
 function statsHTML(s){
   s = s || {played:0,multi:0,wins:0,streak:0,best:0,points:0,top:0,tenables:0};
   const pct = s.multi ? Math.round(100*s.wins/s.multi) : 0, avg = s.played ? s.points/s.played : 0;
@@ -2834,7 +3682,7 @@ function statsHTML(s){
     <div class="statextra"><span>Best score <strong>${s.top}</strong></span><span>Average <strong>${avg.toFixed(1)}</strong></span><span>Full boards <strong>${s.tenables}</strong></span></div>${note ? `<p class="statnote">${note}</p>` : ""}`;
 }
 // this game's figures for one player, counted as moves are applied (so every phone in an online game has the same ones)
-const newGameStats = () => ({right:0, wrong:0, slots:0, passes:0, timeouts:0, yellow:0, red:0, rounds:[]});
+const newGameStats = () => ({right:0, wrong:0, slots:0, passes:0, timeouts:0, yellow:0, red:0, rounds:[], boards:[], run:0, bestRun:0, claims:0, slow:0, unique:0, fullBoards:0, roundWins:0});
 function gameStatsHTML(p){
   const g = p.g || newGameStats(), guesses = g.right + g.wrong;
   const best = g.rounds.length ? Math.max(...g.rounds) : 0, bestAt = g.rounds.indexOf(best) + 1;
@@ -2856,11 +3704,15 @@ function shareSummary(sorted){
   return { top, winners, solo, zero: solo && top===0,
     rank: p => 1 + sorted.filter(q=>q.score>p.score).length,
     names: winners.map(w=>w.name).join(" and "),
-    meta: [`${cfg.rounds} Round${cfg.rounds===1?"":"s"}`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
+    meta: [...(G && G.mode && G.mode!=="turns" ? [MODES[G.mode][0]] : []), `${cfg.rounds} Round${cfg.rounds===1?"":"s"}`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
 }
 // *text* is bold in WhatsApp
 function shareText(sorted){
   const s = shareSummary(sorted);
+  // First touch and Beat the clock: a short message to go with the picture of the final table
+  if (G && G.mode && G.mode!=="turns") return [`🏆 *TENABALL | ${MODES[G.mode][0].toUpperCase()}*`, "",
+    s.winners.length>1 ? `*${s.names} draw on ${s.top} point${s.top===1?"":"s"}!*` : `*${s.names} wins with ${s.top} point${s.top===1?"":"s"}!*`, "",
+    ...(G.banter ? ["_" + G.banter + "_", ""] : []), `*Think you can beat ${s.names}?*`, shareUrl()].join("\n");
   const head = s.zero ? `*${sorted[0].name} scored 0 points.*` : s.solo ? `*${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!*` : "*FINAL SCORE*";
   return [ "🏆 *TENABALL | FOOTBALL EDITION*", "", head, "",
     ...sorted.map(p => `${s.zero ? "-" : MEDALS[s.rank(p)-1]} ${p.name} · *${ptsLabel(p.score)}*`), "",
@@ -2882,6 +3734,7 @@ async function shareCard(sorted){
   cv.width = W; cv.height = H; const c = cv.getContext("2d");
   try { await Promise.all(["800 60px Outfit","700 40px Outfit","500 30px Outfit"].map(f => document.fonts.load(f))); } catch(e){}
   const F = (w, px) => `${w} ${px}px Outfit, "Avenir Next", system-ui, sans-serif`;
+  if (G && G.mode && G.mode!=="turns") return modeCard(sorted, s, cv, c, F);
   // background: the game's purple gradient and glows
   const lg = c.createLinearGradient(W*.42, 0, W*.58, H); lg.addColorStop(0, "#38003c"); lg.addColorStop(.75, "#1c0020"); lg.addColorStop(1, "#1c0020");
   c.fillStyle = lg; c.fillRect(0, 0, W, H);
@@ -2937,6 +3790,66 @@ async function shareCard(sorted){
   c.font = F(700, 36); c.fillStyle = "#04f5ff"; c.fillText(shareUrl().replace(/^https?:\/\//,"").replace(/\/$/,""), W/2, urlY);
   const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", .92));
   return { file: blob ? new File([blob], "tenaball-results.jpg", {type:"image/jpeg"}) : null, trophy };
+}
+// First touch and Beat the clock: the logo, then just the final table in the players' colours (a black line crown on the winner),
+// the settings, the challenge and the link
+const GRAD = [["#3df4ff","#16e6d6"],["#ffe066","#ffc93c"],["#6dffa8","#1fe887"],["#e58cff","#ec7fb8"]];
+function crownPath(c, x, y, sz, ink){
+  c.save(); c.translate(x, y); c.scale(sz/24, sz/24); c.strokeStyle = ink; c.lineWidth = 2.3; c.lineCap = "round"; c.lineJoin = "round";
+  c.beginPath(); c.moveTo(4, 17.5); c.lineTo(20, 17.5); c.moveTo(5, 17.5); c.lineTo(3.5, 8); c.lineTo(8.5, 12); c.lineTo(12, 5); c.lineTo(15.5, 12); c.lineTo(20.5, 8); c.lineTo(19, 17.5); c.stroke(); c.restore();
+}
+async function modeCard(sorted, s, cv, c, F){
+  const W = 1080, H = 1350;
+  const bg = c.createLinearGradient(0, 0, 400, H); bg.addColorStop(0, "#38003c"); bg.addColorStop(1, "#14001a"); c.fillStyle = bg; c.fillRect(0, 0, W, H);
+  [[0, 0, 760, "rgba(150,60,255,.45)"], [W, H*.25, 620, "rgba(233,0,82,.3)"]].forEach(([x, y, r, col]) => { const g = c.createRadialGradient(x, y, 0, x, y, r); g.addColorStop(0, col); g.addColorStop(1, "rgba(0,0,0,0)"); c.fillStyle = g; c.fillRect(0, 0, W, H); });
+  let top = 90;
+  try { const logo = await loadImg(document.querySelector("#topLogo img").src), lw = 620, lh = lw*logo.naturalHeight/logo.naturalWidth; c.drawImage(logo, (W-lw)/2, top, lw, lh); top += lh; } catch(e){ top += 160; }
+  c.textAlign = "center"; c.fillStyle = "#04f5ff"; c.font = F(700, 40); if ("letterSpacing" in c) c.letterSpacing = "4px";
+  c.fillText(`${MODES[G.mode][0].toUpperCase()}  ·  FINAL SCORE`, W/2, top + 80); if ("letterSpacing" in c) c.letterSpacing = "0px";
+  const n = sorted.length, rowH = 140, gap = 30, y0 = top + 140;
+  sorted.forEach((p, k) => {
+    const y = y0 + k*(rowH + gap), [a, b] = GRAD[p.ci || 0], g = c.createLinearGradient(80, 0, 1000, 0), ink = "#140016", first = p.score===s.top;
+    g.addColorStop(0, a); g.addColorStop(1, b); c.fillStyle = g; pillPath(80, y, 920, rowH, 30, c); c.fill();
+    c.fillStyle = "rgba(0,0,0,.15)"; c.fillRect(196, y, 2, rowH);
+    c.fillStyle = ink; c.textAlign = "center"; c.font = F(800, 56); c.fillText(String(s.rank(p)), 138, y + 90);
+    let x = 232; if (first){ crownPath(c, x, y + 38, 64, ink); x += 82; }
+    c.textAlign = "right"; const pts = `${p.score} pts`; c.fillText(pts, 960, y + 90); const pw = c.measureText(pts).width;
+    c.textAlign = "left"; c.fillText(fitText(c, p.name, 960 - pw - 40 - x), x, y + 90);
+  });
+  c.textAlign = "center"; c.fillStyle = "#dcc6e2"; c.font = F(600, 32); c.fillText(s.meta.slice(1).join("  •  "), W/2, H - 190);
+  c.fillStyle = "#fff"; c.font = F(800, 46); c.fillText(fitText(c, `Think you can beat ${s.names}?`, W - 120), W/2, H - 112);
+  c.fillStyle = "#04f5ff"; c.font = F(600, 32); c.fillText(shareUrl().replace(/^https?:\/\//,"").replace(/\/$/,""), W/2, H - 56);
+  const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", .92));
+  return { file: blob ? new File([blob], "tenaball-results.jpg", {type:"image/jpeg"}) : null, trophy: true };
+}
+// the Stats tab's Share my stats: a card with the headline figures, and a short message
+async function shareStats(){
+  const me = statsOwner(), s = me.stats || BLANK_STATS, a = aggOf(s, "all");
+  const acc = a && a.right + a.wrong ? Math.round(100*a.right/(a.right + a.wrong)) : null;
+  const lines = [`${s.played} game${s.played===1?"":"s"}${s.multi ? ` · ${s.wins} win${s.wins===1?"":"s"} (${pctOf(s.wins, s.multi)})` : ""}`,
+    ...(a ? [`${a.done} board${a.done===1?"":"s"} completed${acc!=null ? ` · ${acc}% right` : ""}`] : []), `Best game: ${s.top} point${s.top===1?"":"s"}`];
+  const text = [`📊 *${me.name}'s Tenaball stats*`, "", ...lines, "", "*Think you can beat that?*", shareUrl()].join("\n");
+  let file = null;
+  try {
+    const W = 1080, H = 1350, cv = document.createElement("canvas"); cv.width = W; cv.height = H; const c = cv.getContext("2d");
+    try { await document.fonts.load("800 60px Outfit"); } catch(e){}
+    const F = (w, px) => `${w} ${px}px Outfit, "Avenir Next", system-ui, sans-serif`;
+    const bg = c.createLinearGradient(0, 0, 400, H); bg.addColorStop(0, "#38003c"); bg.addColorStop(1, "#14001a"); c.fillStyle = bg; c.fillRect(0, 0, W, H);
+    const gl = c.createRadialGradient(0, 0, 0, 0, 0, 760); gl.addColorStop(0, "rgba(150,60,255,.45)"); gl.addColorStop(1, "rgba(0,0,0,0)"); c.fillStyle = gl; c.fillRect(0, 0, W, H);
+    let top = 90;
+    try { const logo = await loadImg(document.querySelector("#topLogo img").src), lw = 560, lh = lw*logo.naturalHeight/logo.naturalWidth; c.drawImage(logo, (W-lw)/2, top, lw, lh); top += lh; } catch(e){ top += 150; }
+    c.textAlign = "center"; c.fillStyle = "#fff"; c.font = F(800, 64); c.fillText(fitText(c, me.name, W - 160), W/2, top + 100);
+    c.fillStyle = "#04f5ff"; c.font = F(700, 36); c.fillText("MY TENABALL STATS", W/2, top + 158);
+    const tiles = [[s.played, "Games"], [s.multi ? pctOf(s.wins, s.multi) : "–", "Win rate"], [a ? a.done : s.tenables, "Boards completed"], [acc!=null ? acc + "%" : "–", "Right answers"], [s.top, "Best game"], [a ? a.bestRun : "–", "Longest run"]];
+    tiles.forEach(([v, l], k) => { const col = k % 2, row = Math.floor(k / 2), x = 90 + col*460, y = top + 220 + row*190;
+      c.fillStyle = "rgba(255,255,255,.08)"; pillPath(x, y, 440, 165, 28, c); c.fill();
+      c.fillStyle = "#fff"; c.font = F(800, 70); c.fillText(String(v), x + 220, y + 88); c.fillStyle = "#dcc6e2"; c.font = F(600, 30); c.fillText(l, x + 220, y + 136); });
+    c.fillStyle = "#fff"; c.font = F(800, 46); c.fillText("Think you can beat that?", W/2, H - 112);
+    c.fillStyle = "#04f5ff"; c.font = F(600, 32); c.fillText(shareUrl().replace(/^https?:\/\//,"").replace(/\/$/,""), W/2, H - 56);
+    const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", .92)); if (blob) file = new File([blob], "tenaball-stats.jpg", { type: "image/jpeg" });
+  } catch(e){}
+  if (navigator.share){ const ok = file && navigator.canShare && navigator.canShare({ files: [file] }); return navigator.share(ok ? { files: [file], text } : { text }).catch(() => {}); }
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => stMsg("Your stats are copied. Paste them into a chat."), () => stMsg("Couldn't copy your stats."));
 }
 let SHARE = null;
 // build the card as soon as the final table exists, so tapping Share can open the share sheet straight away
@@ -3209,7 +4122,6 @@ async function endGame(){
   });
   accountRecord(sorted, box);
   if (ONLINE) onlineEndUI();
-  $("statReset").onclick = () => { if (!confirm("Reset the stats for everyone on this device?")) return; saveStats({}); box.querySelectorAll(".pall-body").forEach(x => x.innerHTML = statsHTML(null)); };
   $("winnerLabel").textContent = sorted.length===1 ? " " : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : `${winners[0].name} wins with ${top} points.`;
   G.banter = banterLine(sorted, cfg.rounds * 10).text;
   prepareShare(sorted);
@@ -3503,7 +4415,7 @@ const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch(e){} };
 const lsDel = k => { try { localStorage.removeItem(k); } catch(e){} };
 const cleanName = n => String(n||"").replace(/\s+/g," ").trim().slice(0,20);
 // every phone in an online game must have the same question set, so rooms carry this fingerprint
-const APP_VER = (() => { let h = 5381; const s = Q.map(q => q.id).join("|"); for (let i=0;i<s.length;i++) h = ((h*33) ^ s.charCodeAt(i)) >>> 0; return Q.length + "-" + h.toString(36); })();
+const APP_VER = (() => { let h = 5381; const s = Q.map(q => q.id).join("|"); for (let i=0;i<s.length;i++) h = ((h*33) ^ s.charCodeAt(i)) >>> 0; return "m2-" + Q.length + "-" + h.toString(36); })(); // m2: the game modes; an older page can't join a newer room
 
 async function api(path, body){
   const token = lsGet(TOKEN_KEY);
@@ -3543,7 +4455,7 @@ function afterLogin(){
   const p = PENDING; PENDING = null;
   if (p && p.join) return openJoin(p.join);
   if (p === "online") return openOnlineMenu();
-  homeTheme(); show("setup");
+  homeTheme(); show("setup"); setView("doors");
 }
 function setUser(user, stats, token){
   NET.user = user; if (stats) NET.stats = stats;
@@ -3585,24 +4497,51 @@ async function offerMerge(){
   if (r.ok){ NET.stats = r.data.stats; delete S[k]; saveStats(S); lsSet(USER_KEY, JSON.stringify({ user: NET.user, stats: NET.stats })); }
 }
 function drawAcct(){
-  const box = $("acct"); if (!SERVER){ box.classList.add("hidden"); return; }
-  box.classList.remove("hidden");
-  box.innerHTML = signedIn() ? `<span>Signed in as <button type="button" class="linkbtn" id="acctName" aria-label="Change your name">${esc(accountName())}</button></span>·<button type="button" class="linkbtn" id="acctOut">Sign out</button>`
-    : `<span>Playing as a guest</span>·<button type="button" class="linkbtn" id="acctIn">Sign in</button>`;
-  const out = $("acctOut"), inn = $("acctIn"), nm = $("acctName");
-  if (out) out.onclick = async () => { await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; drawAcct(); showLogin(); };
-  if (inn) inn.onclick = () => { PENDING = null; setAuthMode("in"); showLogin(); };
-  if (nm) nm.onclick = async () => {
+  const box = $("acct");
+  $("acctTab").classList.toggle("hidden", !SERVER); $("tabBar").classList.toggle("two", !SERVER);
+  if (!SERVER){ box.innerHTML = ""; return; }
+  box.innerHTML = signedIn() ? `<div class="gh">Signed in</div>
+      <button type="button" class="acctrow" id="acctName" aria-label="Change your name"><span>Name</span><span>${esc(accountName())} ›</span></button>
+      <div class="acctrow"><span>Email</span><span>${esc(NET.user.email || "")}</span></div>
+      <button type="button" class="acctrow" id="acctPin" aria-expanded="false"><span>PIN</span><span>Change ›</span></button>
+      <form class="pinform hidden" id="pinForm" novalidate><div class="row2">
+        <input type="password" id="pinOld" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="Current PIN" autocomplete="current-password" aria-label="Current PIN">
+        <input type="password" id="pinNew" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="New PIN" autocomplete="new-password" aria-label="New PIN"></div>
+        <button class="btn" type="submit">Save the new PIN</button></form>
+      <div class="acctrow"><span>Stats</span><span>Saved to your account</span></div>
+      <p class="authmsg" id="acctMsg" aria-live="polite"></p>
+      <button type="button" class="btn ghost" id="acctOut">Sign out</button>`
+    : `<div class="gh">Playing as a guest</div><p class="panenote">Guest stats stay on this phone. Sign in to keep them on your account and play from any phone.</p>
+      <button type="button" class="btn" id="acctIn">Sign in</button><button type="button" class="btn ghost" id="acctUp" style="margin-top:10px">Create an account</button>`;
+  const on = (id, f) => { const el = $(id); if (el) el.onclick = f; };
+  const msg = (m, ok) => { const el = $("acctMsg"); if (el){ el.textContent = m || ""; el.classList.toggle("ok", !!ok); } };
+  on("acctOut", async () => { await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; drawAcct(); showLogin(); });
+  on("acctIn", () => { PENDING = null; setAuthMode("in"); showLogin(); });
+  on("acctUp", () => { PENDING = null; setAuthMode("up"); showLogin(); });
+  on("acctName", async () => {
     const n = cleanName(prompt("Your name in Tenaball", accountName()) || ""); if (!n || n === accountName()) return;
-    const r = await api("/name", { name: n }); if (r.ok) setUser(r.data.user); else alert(r.data.error || "Couldn't change your name.");
-  };
+    const r = await api("/name", { name: n }); if (r.ok){ setUser(r.data.user); msg("Name changed.", true); } else msg(r.data.error || "Couldn't change your name.");
+  });
+  on("acctPin", () => { const f = $("pinForm"), open = f.classList.toggle("hidden"); $("acctPin").setAttribute("aria-expanded", !open); if (!open) $("pinOld").focus(); });
+  const form = $("pinForm");
+  if (form){
+    ["pinOld","pinNew"].forEach(id => $(id).addEventListener("input", e => { e.target.value = e.target.value.replace(/\D/g, "").slice(0, 4); }));
+    form.onsubmit = async e => {
+      e.preventDefault();
+      const old = $("pinOld").value, pin = $("pinNew").value;
+      if (!/^\d{4}$/.test(old) || !/^\d{4}$/.test(pin)) return msg("PINs are 4 digits.");
+      const r = await api("/pin", { old, pin });
+      if (!r.ok) return msg(r.data.error || "Couldn't change your PIN.");
+      form.reset(); form.classList.add("hidden"); msg("PIN changed.", true);
+    };
+  }
 }
 // a signed-in player's result goes to their account; if the phone is offline it's kept and sent later
 async function accountRecord(sorted, box){
   if (!signedIn()) return;
-  const top = sorted[0].score, multi = sorted.length > 1, i = sorted.findIndex(isAccountPlayer);
+  const i = sorted.findIndex(isAccountPlayer);
   if (i < 0) return;
-  const p = sorted[i], result = { score: p.score, tenables: p.tenables || 0, multi, won: multi && p.score === top };
+  const p = sorted[i], result = { rec: gameRec(p, sorted) };
   const panel = () => box.querySelectorAll(".pall-body")[i];
   const r = await api("/stats", result);
   if (r.ok){ NET.stats = r.data.stats; lsSet(USER_KEY, JSON.stringify({ user: NET.user, stats: NET.stats })); if (panel()) panel().innerHTML = statsHTML(NET.stats) + '<p class="statnote">Saved to your account.</p>'; }
@@ -3621,9 +4560,8 @@ const lobbyMsg = m => $("lobbyMsg").textContent = m || "";
 function guestId(){ let id = lsGet(GUEST_ID_KEY); if (!/^[a-f0-9]{32}$/.test(id || "")){ id = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2,"0")).join(""); lsSet(GUEST_ID_KEY, id); } return id; }
 function knownName(){ return accountName() || cleanName(lsGet(NAME_KEY)) || (/^Player \d$/.test(cfg.names[0]) ? "" : cleanName(cfg.names[0])); }
 function openOnlineMenu(msg){
-  theme("pl"); show("lobby");
-  $("lobbyMenu").classList.remove("hidden"); $("lobbyRoom").classList.add("hidden");
-  $("onlineNameRow").classList.toggle("hidden", signedIn());
+  if (ROOM) return; // already in a game's lobby
+  theme("pl"); show("setup"); openDoor("online");
   if (!$("onlineName").value) $("onlineName").value = knownName();
   lobbyMsg(msg);
 }
@@ -3635,7 +4573,6 @@ $("onlineBtn").onclick = () => {
   if (!signedIn() && lsGet(GUEST_KEY)!=="1"){ PENDING = "online"; return showLogin(); }
   openOnlineMenu();
 };
-$("lobbyBack").onclick = () => { history.replaceState(null, "", location.pathname); homeTheme(); show("setup"); };
 $("joinCode").addEventListener("input", e => { e.target.value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,5); });
 $("joinCode").addEventListener("keydown", e => { if (e.key==="Enter") $("joinBtn").click(); });
 function menuName(){
@@ -3648,7 +4585,7 @@ function menuBusy(on){ ["createBtn","joinBtn"].forEach(id => $(id).disabled = on
 $("createBtn").onclick = async () => {
   const name = menuName(); if (!name) return;
   menuBusy(true); lobbyMsg("");
-  const r = await api("/rooms", { settings: { rounds: cfg.rounds, cats: cfg.cats, cat: cfg.cats.length===1 ? cfg.cats[0] : "random", clock: cfg.clock, level: cfg.allLevels ? 3 : cfg.level, repeat: cfg.repeat }, ver: APP_VER, ...(signedIn() ? {} : { guest: guestId(), name }) });
+  const r = await api("/rooms", { settings: { rounds: cfg.rounds, cats: cfg.cats, cat: cfg.cats.length===1 ? cfg.cats[0] : "random", clock: cfg.clock, level: cfg.allLevels ? 3 : cfg.level, repeat: cfg.repeat, mode: cfg.mode, time: cfg.time }, ver: APP_VER, ...(signedIn() ? {} : { guest: guestId(), name }) });
   menuBusy(false);
   if (!r.ok) return lobbyMsg(r.data.error || "Couldn't create a game. Try again.");
   enterRoom(r.data.code, name);
@@ -3686,6 +4623,7 @@ function onRoomMessage(R, m){
     const O = ONLINE; if (O && m.game === O.game && m.move.seq >= O.next){ O.pending.set(m.move.seq, m.move); pump(O); }
     return;
   }
+  if (m.t === "ok"){ const s = m.ref && R.sends.get(m.ref); if (s){ R.sends.delete(m.ref); s.resolve(); } return; }
   if (m.t === "error"){ const s = m.ref && R.sends.get(m.ref); if (s){ R.sends.delete(m.ref); s.reject(new Error(m.msg)); } else $("roomMsg").textContent = m.msg; return; }
   if (m.t === "refused"){ R.leaving = true; return leaveRoomLocal(REFUSED[m.why] || "Couldn't join that game."); }
   if (m.t === "removed"){ R.leaving = true; return leaveRoomLocal("You're no longer in that game."); }
@@ -3712,13 +4650,12 @@ function onRoom(room, moves){
 }
 // the host's settings, as this phone's cfg (a room from before ticks has just "cat"; level 3 is All levels)
 function roomCats(s){ const cs = Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : []; return cs.length ? cs : s.cat && s.cat!=="random" && ALL_CATS.includes(s.cat) ? [s.cat] : [...ALL_CATS]; }
-const roomCfg = s => ({ rounds: s.rounds, cats: roomCats(s), clock: s.clock, level: s.level===3 ? 1 : s.level, allLevels: s.level===3, repeat: s.repeat });
+const roomCfg = s => ({ rounds: s.rounds, cats: roomCats(s), clock: s.clock, level: s.level===3 ? 1 : s.level, allLevels: s.level===3, repeat: s.repeat, mode: MODES[s.mode] ? s.mode : "turns", time: [30,60,90].includes(s.time) ? s.time : 60 });
 const roomPlayers = d => Object.entries(d.players).map(([uid, p]) => ({ uid, ...p })).sort((a,b) => a.n-b.n);
 const hostName = () => { const d = ROOM && ROOM.data; return d && d.players[d.host] ? d.players[d.host].name : "the host"; };
 function renderLobby(d){
   const me = ROOM.me, isHost = d.host===me, list = roomPlayers(d);
-  if ($("lobby").classList.contains("hidden") || $("lobbyRoom").classList.contains("hidden")){ theme("pl"); show("lobby"); }
-  $("lobbyMenu").classList.add("hidden"); $("lobbyRoom").classList.remove("hidden");
+  if ($("lobby").classList.contains("hidden")){ theme("pl"); show("lobby"); }
   $("lobbyCode").textContent = ROOM.code;
   $("lobbySub").textContent = isHost ? "Invite up to 3 friends, then start when everyone's in." : `${hostName()} will start the game when everyone's in.`;
   const box = $("lobbyList"), fresh = list.filter(p => !ROOM.seen.has(p.uid));
@@ -3734,7 +4671,17 @@ function renderLobby(d){
   for (let i=list.length; i<4; i++){ const r = document.createElement("div"); r.className = "lobbyrow empty"; r.textContent = "Waiting for a player to join…"; box.appendChild(r); }
   list.forEach(p => ROOM.seen.add(p.uid));
   const s = d.settings;
-  $("lobbySet").innerHTML = [`${s.rounds} round${s.rounds===1?"":"s"}`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
+  const mode = MODES[s.mode] ? s.mode : "turns", timed = mode!=="turns";
+  $("lobbySet").innerHTML = [MODES[mode][0], `${s.rounds} round${s.rounds===1?"":"s"}`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], timed ? `${s.time || 60} sec a round` : s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
+  // the host can still change the game mode and time limit here
+  const lm = $("lobbyMode"); lm.classList.toggle("hidden", !isHost);
+  if (isHost){
+    lm.innerHTML = `<div class="seg" role="group" aria-label="Game mode">${Object.entries(MODES).map(([k, [t]]) => `<button type="button" data-mode="${k}" aria-pressed="${k===mode}">${t}</button>`).join("")}</div>`
+      + (timed ? `<div class="seg" role="group" aria-label="Time limit per round">${[30,60,90].map(v => `<button type="button" data-time="${v}" aria-pressed="${v===(s.time||60)}">${v} sec</button>`).join("")}</div>` : "");
+    lm.onclick = e => { const b = e.target.closest("button"); if (!b) return;
+      const n = b.dataset.mode ? { mode: b.dataset.mode } : { time: Number(b.dataset.time) };
+      roomSend({ t: "settings", settings: n }).catch(err => $("roomMsg").textContent = err.message); };
+  }
   $("lobbyStart").classList.toggle("hidden", !isHost);
   $("lobbyStart").disabled = list.length < 2;
   $("lobbyStart").textContent = list.length < 2 ? "Waiting for players to join" : `Start game with ${list.length} players`;
@@ -3759,9 +4706,11 @@ $("lobbyStart").onclick = async () => {
   const d = ROOM.data, list = roomPlayers(d); if (list.length < 2) return;
   $("lobbyStart").disabled = true;
   const s = d.settings; Object.assign(cfg, roomCfg(s));
-  G = { picked: ROOM.picked, lastCat: null };
+  G = { picked: ROOM.picked, lastCat: null, mode: cfg.mode };
   const q = pickQuestion(nextCat()); ROOM.lastCat = G.lastCat;
-  try { await roomSend({ t: "start", move: { type: "round", data: { qid: q.id } } }); }
+  // taking turns: the host draws the order of play, and every phone shows the same shuffle landing on it
+  const data = { qid: q.id, ...(cfg.mode==="turns" ? { order: shuffleOrder(list.length).map(i => list[i].uid) } : {}) };
+  try { await roomSend({ t: "start", move: { type: "round", data } }); }
   catch(e){ $("roomMsg").textContent = e.message || "Couldn't start the game. Try again."; $("lobbyStart").disabled = false; }
 };
 // leave the room on this phone (telling the room, when needed, is up to the caller)
@@ -3778,7 +4727,7 @@ function startOnlineGame(d, moves){
   stopOnlineGame();
   const s = d.settings, me = ROOM.me;
   Object.assign(cfg, roomCfg(s), { count: d.order.length });
-  G = { players: d.order.map((uid, i) => ({ uid, name: d.players[uid] ? d.players[uid].name : "Player", score:0, lives:3, out:false, color:`var(--p${i+1})` })),
+  G = { mode: cfg.mode, players: d.order.map((uid, i) => ({ ...newPlayer(d.players[uid] ? d.players[uid].name : "Player", i, null), uid })),
         round:1, picked: ROOM.picked, refreshLeft:3, lastCat: ROOM.lastCat };
   const last = moves.length ? moves[moves.length-1].seq : 0;
   ONLINE = { code: ROOM.code, game: d.game, host: d.host, me, isHost: d.host===me, next: 1, pending: new Map(), running: false, sending: false, catchUpTo: last, wasMuted: muted };
@@ -3791,13 +4740,14 @@ function stopOnlineGame(){
   const O = ONLINE; if (!O) return;
   stopTimer(); ONLINE = null;
   if (FAST){ FAST = false; muted = O.wasMuted; }
-  ["intro","banner","outOverlay","winOverlay"].forEach(id => $(id).classList.add("hidden")); closeTrophy();
+  stopBots(); hideSheet();
+  ["intro","banner","outOverlay","winOverlay","orderOv"].forEach(id => $(id).classList.add("hidden")); closeTrophy();
   $("guessArea").classList.remove("watching"); $("skipBtn").classList.add("hidden");
   ["introBtn","refreshBtn","nextBtn","againBtn"].forEach(id => $(id).classList.remove("hidden"));
   ["introWait","roundWait"].forEach(id => $(id).classList.add("hidden"));
   $("setupBtn").textContent = "Change settings";
 }
-function endFast(O){ if (FAST && ONLINE===O){ FAST = false; muted = O.wasMuted; if (G && G.phase==="turn" && !G.over) onlineTurnUI(); } }
+function endFast(O){ if (FAST && ONLINE===O){ FAST = false; muted = O.wasMuted; if (G && G.phase==="turn" && !G.over) onlineTurnUI(); if (G && G.phase==="live" && !G.over){ const me = G.players[meIdx()]; input.disabled = $("lockBtn").disabled = !me || me.out || me.done; } } }
 async function pump(O){
   if (O.running) return; O.running = true;
   try {
@@ -3810,8 +4760,13 @@ async function pump(O){
   } finally { O.running = false; }
   if (ONLINE===O && O.next > O.catchUpTo) endFast(O);
 }
-function applyAction(a){
+async function applyAction(a){
   const O = ONLINE, t = a.type, d = a.data || {}, byHost = a.uid===O.host, turnP = G.players[G.turn];
+  if (G.mode!=="turns" && t==="guess"){ // First touch and Beat the clock: anyone, any time, in the room's order
+    if (G.phase==="live" && !G.over && typeof d.name==="string") applyLiveGuess(G.players.findIndex(p => p.uid===a.uid), d.name);
+    return;
+  }
+  if (t==="timeup"){ if (byHost) applyTimeUp(); return; }
   if (["guess","pass","timeout","skip"].includes(t)){
     if (!G.q || G.phase!=="turn" || G.over) return;
     if (t==="skip" ? !byHost : !(turnP && turnP.uid===a.uid)) return; // moves out of turn are ignored on every phone
@@ -3823,7 +4778,16 @@ function applyAction(a){
   if (!byHost) return;
   const q = d.qid ? findQ(d.qid) : null;
   if ((t==="round" || t==="refresh" || (t==="next" && G.round<cfg.rounds)) && !q){ feedback("This game needs the latest version of Tenaball. Refresh the page.", "bad"); return; }
-  if (t==="round"){ if (!G.q) startRound(q); return; }
+  if (t==="round"){
+    if (G.q) return;
+    // the first round carries the host's order of play (taking turns only)
+    if (G.mode==="turns" && G.round===1 && !G.ordered && Array.isArray(d.order)){
+      G.ordered = true;
+      const idx = d.order.map(u => G.players.findIndex(p => p.uid===u));
+      if (idx.length===G.players.length && new Set(idx).size===idx.length && !idx.includes(-1)) await whoGoesFirst(idx);
+    }
+    startRound(q); return;
+  }
   if (t==="reveal"){ if (G.phase==="intro") return applyReveal(); return; }
   if (t==="refresh"){ if (G.phase==="intro" && G.refreshLeft>0) applyRefresh(q); return; }
   if (t==="next"){ if (G.over){ G.phase = "done"; applyNext(q || undefined); } return; }
@@ -3885,7 +4849,7 @@ function onlineExit(){
 /* ----- start-up ----- */
 (function netInit(){
   if (!SERVER) return; // no server yet: no sign-in screen and no online games
-  $("onlineBtn").classList.remove("hidden");
+  $("onlineBtn").classList.remove("hidden"); drawAcct();
   const code = (new URLSearchParams(location.search).get("room") || "").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,5);
   if (code.length===5) PENDING = { join: code };
   let cached = null; try { cached = JSON.parse(lsGet(USER_KEY) || "null"); } catch(e){}

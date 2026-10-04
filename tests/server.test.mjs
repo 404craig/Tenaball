@@ -104,7 +104,8 @@ await test("server: a phone's own stats can be added to an account once", async 
   const t = (await signup("Merge", "merge@example.com")).body.token;
   await api("/stats", { score: 10, multi: true, won: true }, { token: t });
   const r = await api("/stats/merge", { stats: { played: 4, multi: 3, wins: 2, streak: 2, best: 2, points: 40, top: 18, tenables: 1 } }, { token: t });
-  eq(r.body.stats, { played: 5, multi: 4, wins: 3, streak: 2, best: 2, points: 50, top: 18, tenables: 1 });
+  const totals = s => Object.fromEntries(["played", "multi", "wins", "streak", "best", "points", "top", "tenables"].map(k => [k, s[k]]));
+  eq(totals(r.body.stats), { played: 5, multi: 4, wins: 3, streak: 2, best: 2, points: 50, top: 18, tenables: 1 });
   const odd = await api("/stats/merge", { stats: { played: 1, multi: 9, wins: 99 } }, { token: t });
   eq([odd.body.stats.multi - 4, odd.body.stats.wins - 3], [1, 1], "wins can't exceed games against others");
 });
@@ -166,7 +167,7 @@ await test("rooms: a host creates a game and friends join over a live connection
   const craig = { token: (await signup("Craig", "craig.rooms@example.com")).body.token };
   const r = await newRoom(craig);
   eq(r.status, 200); assert(/^[A-HJ-NP-Z2-9]{5}$/.test(r.code), `code ${r.code}`);
-  eq(r.room.settings, { rounds: 3, cat: "pl", cats: [], clock: 0, level: 1, repeat: "all" });
+  eq(r.room.settings, { rounds: 3, cat: "pl", cats: [], clock: 0, level: 1, repeat: "all", mode: "turns", time: 60 });
   // ticked competitions: only short keys are kept, without repeats; level 3 is All levels
   const r2 = await newRoom(craig, { rounds: 5, cats: ["wc", "euro", "wc", "<b>", 7, "averyveryverylongkey"], clock: 30, level: 3, repeat: "all" });
   eq([r2.room.settings.cats, r2.room.settings.level], [["wc", "euro"], 3]);
@@ -276,6 +277,53 @@ await test("rooms: a signed-in player joins with their account name, and a bad s
   [H, P].forEach(c => c.ws.close());
 });
 
+await test("server: a PIN can be changed with the current one, which signs out the player's other phones", async () => {
+  const a = (await signup("Pin", "pin@example.com", "1111")).body.token;
+  const b = (await api("/signin", { email: "pin@example.com", pin: "1111" }, { ip: freshIp() })).body.token;
+  eq((await api("/pin", { old: "9999", pin: "2222" }, { token: a })).status, 401, "the wrong current PIN");
+  eq((await api("/pin", { old: "1111", pin: "22" }, { token: a })).status, 400, "4 digits");
+  eq((await api("/pin", { old: "1111", pin: "2222" }, { token: a })).status, 200);
+  eq((await api("/me", {}, { token: a })).status, 200, "this phone stays signed in");
+  eq((await api("/me", {}, { token: b })).status, 401, "the other phone signs in again");
+  eq((await api("/signin", { email: "pin@example.com", pin: "2222" }, { ip: freshIp() })).status, 200, "the new PIN works");
+});
+await test("server: full game records fill the filters; played-with lists, stars and a friend's stats; reset", async () => {
+  const x = await signup("Ex", "ex@example.com"), y = await signup("Why", "why@example.com"), z = await signup("Zed", "zed@example.com");
+  const [tx, ty, tz] = [x, y, z].map(r => r.body.token), [ix, iy, iz] = [x, y, z].map(r => r.body.user.id);
+  const rec = { door: "online", mode: "first", people: 1, score: 9, result: "w", rounds: [{ cat: "pl", lv: 1, pts: 9, f: 8, o: 2, z: 0, r: 8, w: 1, done: true }], opp: [{ name: "Why", uid: "u:" + iy, score: 4 }, { name: "Ghost", uid: "u:" + "f".repeat(24), score: 1 }] };
+  const s = (await api("/stats", { rec }, { token: tx })).body.stats;
+  eq([s.played, s.multi, s.wins, s.x.b.online.games, s.x.b.first.mostClaims, s.x.b.all.done], [1, 1, 1, 1, 8, 1]);
+  const f = (await api("/friends", {}, { token: tx })).body.friends;
+  eq(f.map(p => [p.id, p.name, p.games, p.star]), [[iy, "Why", 1, false]], "only real accounts are remembered");
+  eq((await api("/friends/star", { id: iy, star: true }, { token: tx })).status, 200);
+  eq((await api("/friends/star", { id: iz, star: true }, { token: tx })).status, 404, "only people you've played");
+  eq((await api("/friends", {}, { token: tx })).body.friends[0].star, true);
+  eq((await api("/friends/stats", { id: iy }, { token: tx })).body.name, "Why", "a friend's stats");
+  eq((await api("/friends/stats", { id: iz }, { token: tx })).status, 404, "not someone you haven't played");
+  eq((await api("/friends/stats", { id: ix }, { token: tz })).status, 404, "and not the other way round");
+  const r = (await api("/stats/reset", {}, { token: tx })).body.stats;
+  eq([r.played, r.x], [0, undefined], "reset to nothing");
+});
+await test("rooms: the host can change the mode and time limit in the lobby, and sends the time-up move", async () => {
+  const host = { guest: guestId(), name: "Host" }, a = { guest: guestId(), name: "A" };
+  const { code, room: rm } = await newRoom(host, { rounds: 3, mode: "first", time: 90 });
+  eq([rm.settings.mode, rm.settings.time], ["first", 90]);
+  const H = live(code, host), A = live(code, a); await Promise.all([H.opened, A.opened]);
+  await H.wait(m => m.t === "room" && Object.keys(m.room.players).length === 2, "2 players");
+  A.send({ t: "settings", settings: { mode: "clock" }, ref: "s1" });
+  eq((await A.wait(m => m.t === "error" && m.ref === "s1", "error")).msg, "Only the host can change the game, in the lobby.");
+  H.send({ t: "settings", settings: { mode: "clock", time: 7 }, ref: "s2" });
+  await H.wait(m => m.t === "ok" && m.ref === "s2", "ok");
+  const seen = await A.wait(m => m.t === "room" && m.room.settings.mode === "clock", "A sees the new mode");
+  eq(seen.room.settings.time, 90, "a nonsense time keeps the last one");
+  H.send({ t: "start", move: { type: "round", data: { qid: "q1" } } });
+  await A.wait(m => m.t === "move" && m.move.seq === 1, "started");
+  A.send({ t: "move", type: "timeup", ref: "t1" });
+  eq((await A.wait(m => m.t === "error" && m.ref === "t1", "error")).msg, "That move isn't allowed.");
+  A.send({ t: "move", type: "guess", data: { name: "Arsenal" } }); H.send({ t: "move", type: "timeup" });
+  await A.wait(m => m.t === "move" && m.move.type === "timeup", "time up");
+  [H, A].forEach(c => c.ws.close());
+});
 await srv.stop();
 
 await test("server: without its secrets the server refuses to create accounts rather than storing weak PINs", async () => {

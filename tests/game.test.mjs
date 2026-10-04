@@ -7,7 +7,7 @@ const browser = await launch();
 async function twoPlayerGame(){
   const p = await phone(browser, "game"); await p.goto(site.url);
   await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="2"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#clockSeg button[data-v="0"]');
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
   return p;
@@ -50,7 +50,7 @@ await test("game: a pass on the last life is a red card, and the round ends when
 });
 await test("end: each player's row opens this game's stats, with a small link to their all-time stats", async () => {
   const p = await phone(browser, "gamestats"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
   await p.click("#startBtn"); await until(() => visible(p, "#intro"));
   await p.evaluate(() => applyRefresh(findQ("pl-at-mgr-wins"))); await p.click("#introBtn");
@@ -81,7 +81,7 @@ await test("end: each player's row opens this game's stats, with a small link to
 });
 await test("game: solo, the button still says Give up and ends the round without a card", async () => {
   const p = await phone(browser, "solo"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   eq(await p.textContent("#passBtn"), "Give up");
   await p.click("#passBtn");
@@ -93,7 +93,7 @@ await test("game: solo, the button still says Give up and ends the round without
 
 await test("game: solo with 0 points, the table shows - rather than 1st, no trophy, and a cheeky line", async () => {
   const p = await phone(browser, "zero"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn");
   for (let r = 1; r <= 3; r++){
     await until(() => visible(p, "#intro"), { what: `round ${r}` }); await p.click("#introBtn"); await ready(p);
@@ -118,7 +118,7 @@ await test("game: solo with 0 points, the table shows - rather than 1st, no trop
 });
 await test("game: solo with points still gets the trophy, then a line for the score under the table", async () => {
   const p = await phone(browser, "some"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.evaluate(() => { G.round = cfg.rounds; G.players[0].score = 4; endRound(); });
   await p.click("#nextBtn");
@@ -169,7 +169,7 @@ await test("questions: the October 2026 Premier League boards are all playable, 
   eq(r.bad, [], "every board has ten slots, a period and a level, and every answer is a known name");
   eq(r.fam, ["appearances", "assists", "keepers", "managers", "records", "scorers", "transfers", "trophies"], "the boards spread across families");
   // play one with a tie pool: any of the tied names fills the shared place, a near miss gets its note
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-hattricks"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.fill("#guessInput", "Raheem Sterling"); await p.click("#lockBtn"); await ready(p);
@@ -203,7 +203,7 @@ await test("letter boards: any Premier League player with the right surname lett
       f.open.fits("Mohamed Salah"), f.open.fits("Steven Gerrard"), /forwards/.test(f.note("Steven Gerrard")), /didn't play for Liverpool/.test(f.note("Wayne Rooney"))]; });
   eq(listed, [true, false, true, true, false, true, true], "list boards take only their own names and explain a miss");
   assert(/didn't play for Liverpool/.test(club.rooneyNote) && /doesn't begin with S/.test(club.sNote) && /both Everton and Man Utd/.test(club.bNote), "wrong answers explain why: " + [club.rooneyNote, club.sNote, club.bNote]);
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-letter-a"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   const guess = async (t) => { await p.fill("#guessInput", t); await p.click("#lockBtn"); await ready(p); return p.textContent("#feedback"); };
@@ -225,7 +225,7 @@ await test("sounds: the crowd joins the bleeps, cards get one whistle blast, and
     const w = window.whistle; window.whistle = pat => { __snd.push("whistle:" + pat.length); return w(pat); };
     window.__sizes = Object.fromEntries(Object.entries(CROWD_MP3).map(([k, v]) => [k, v.length])); });
   eq(await p.evaluate(() => __sizes), { applause:3, bigcheer:3, boos:4, cheer:4, groan:5, roar:3 }, "all 22 takes are in");
-  await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-2023/24"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.evaluate(() => __snd.length = 0);
@@ -242,7 +242,7 @@ await test("sounds: the crowd joins the bleeps, cards get one whistle blast, and
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("home: the difficulty ball slides anywhere along the bar and snaps to the nearest level when let go", async () => {
-  const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const p = await phone(browser, "slider"); await p.goto(site.url); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   await p.click("#allLevels"); // All levels starts on; the slider works with it off
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
   const box = await (await p.$("#diff")).boundingBox(), y = box.y + box.height/2, at = f => box.x + 16 + (box.width - 32) * f;
@@ -294,7 +294,7 @@ await test("questions: most titles as a manager takes any six of the nine one-ti
   eq(info.m, [10, 1, "Premier League era, 1992/93 to 2025/26", 6, 9]);
   eq(info.t, [["Man Utd","Arsenal","Man City","Chelsea","Liverpool","Blackburn","Newcastle","Aston Villa","Leicester","Spurs"], 0, "Premier League era, 1992/93 to 2025/26"]);
   // play the managers board solo: six one-title managers fill the pool, the seventh is turned away
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-at-mgr-titles"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
   const one = ["Carlo Ancelotti","Mikel Arteta","Antonio Conte","Kenny Dalglish","Jurgen Klopp","Roberto Mancini","Manuel Pellegrini"];
@@ -306,7 +306,7 @@ await test("questions: most titles as a manager takes any six of the nine one-ti
 });
 
 await test("home: competitions tick in a slide-up panel, the box sums them up, and the phone remembers them", async () => {
-  const p = await phone(browser, "comps"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const p = await phone(browser, "comps"); await p.goto(site.url); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.textContent("#compSum"), "All competitions");
   await p.click("#compBtn"); await until(() => visible(p, "#compSheet"));
   const rows = await p.$$eval("#compList .crow", rs => rs.map(r => [r.querySelector(".nm").textContent, r.getAttribute("aria-checked"), r.classList.contains("soon")]));
@@ -328,7 +328,7 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "International only");
   eq(await p.$$eval("#compFlags .ic img, #compFlags .ic svg", s => s.length), 2);
-  await p.reload(); await until(() => visible(p, "#setup"));
+  await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro"], "International only"], "remembered after a reload");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
@@ -364,7 +364,7 @@ await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions Leagu
 });
 await test("every answer on every board locks in when typed in full", async () => {
   const p = await phone(browser, "names"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]'); await p.click("#startBtn"); await until(() => visible(p, "#intro"));
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]'); await p.click("#startBtn"); await until(() => visible(p, "#intro"));
   const r = await p.evaluate(() => { const out = [], inp = document.getElementById("guessInput"); let n = 0;
     for (const q of Q){ if (q.open || q.dyn) continue; G.q = q;
       for (const name of new Set(q.slots.flatMap(s => [s.club, ...(s.alts || [])]))){ n++; inp.value = name; G.pick = null; const got = resolve(); if (got !== name) out.push(`${q.id}: "${name}" -> ${got}`); } }
@@ -374,7 +374,7 @@ await test("every answer on every board locks in when typed in full", async () =
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("home: All levels greys the slider and each board's level is picked at random; a note shows when a competition has none at a level", async () => {
-  const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => [cfg.allLevels, document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed")]), [true, "All levels", true], "All levels is on by default");
   await p.click("#allLevels"); eq(await p.evaluate(() => cfg.allLevels), false, "and can be switched off");
   await p.evaluate(() => { cfg.cats = ["laliga"]; renderCompBtn(); });
@@ -389,12 +389,12 @@ await test("home: All levels greys the slider and each board's level is picked a
   const lv = await p.evaluate(() => { G = { picked: new Set(), lastCat: null }; const c = [0,0,0]; for (let i = 0; i < 90; i++){ G.picked = new Set(); c[pickQuestion("pl").level]++; } return c; });
   assert(lv.every(n => n >= 12), "every level comes up: " + lv.join(","));
   eq(await p.evaluate(() => shareSummary([{ name: "Craig", score: 3 }]).meta.slice(1)), ["All levels", "La Liga"]);
-  await p.reload(); await until(() => visible(p, "#setup"));
+  await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => cfg.allLevels), true, "remembered after a reload");
   // a phone that turned it off keeps it off; one that saved its setup before All levels became the default gets it switched on once
-  await p.click("#allLevels"); await p.reload(); await until(() => visible(p, "#setup"));
+  await p.click("#allLevels"); await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => cfg.allLevels), false, "switched off stays off after a reload");
-  await p.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ cats: ["pl"], allLevels: false }))); await p.reload(); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ cats: ["pl"], allLevels: false }))); await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => [cfg.allLevels, cfg.cats]), [true, ["pl"]], "an older saved setup gets All levels switched on, and keeps its competitions");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
@@ -404,6 +404,7 @@ await test("home: each section's i opens a slide-up panel explaining it, and How
   const seen = [];
   for (const k of ["rounds","comps","clock","repeat","diff","how"]){
     const b = k === "how" ? "#infoBtn" : `#setup .finfo[data-info="${k}"]`;
+    if (k === "how") await p.click("#doorSet .backbtn"); else if (k === "rounds") await p.click('[data-door="h2h"]');
     await p.evaluate(sel => document.querySelector(sel).scrollIntoView({ block: "center" }), b);
     await p.click(b); await until(() => visible(p, "#infoSheet"), { what: `the ${k} panel` });
     seen.push([await p.textContent("#infoTitle"), (await p.textContent("#infoBody")).length > 80]);
@@ -417,7 +418,7 @@ await test("home: each section's i opens a slide-up panel explaining it, and How
 await test("game: a 1-round game goes straight to full time after its round", async () => {
   const p = await phone(browser, "one"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   eq(await p.$$eval("#roundSeg button", b => b.map(x => x.textContent)), ["1","3","5","7"]);
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro"));
   eq(await p.textContent("#introRound"), "Round 1 of 1");
   await p.click("#introBtn"); await ready(p); await p.click("#passBtn");
@@ -462,7 +463,7 @@ await test("badges: every game club but four gets a crest by its game name, and 
 });
 await test("badges: crests are 32px on the board and 26px in suggestions, plain with no backing, and centred with the pill text", async () => {
   const p = await phone(browser, "bk"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.fill("#guessInput", "sp"); await until(() => p.evaluate(() => document.querySelectorAll("#sugg button").length > 0), { what: "suggestions" });
@@ -502,7 +503,7 @@ await test("badges: every crest is drawn at the same visual size", async () => {
 });
 await test("Premier League season tables show each club's final points", async () => {
   const p = await phone(browser, "pts"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   const r = await p.evaluate(() => ({ top: findQ("pl-top-2023/24").slots.map(s => s.val), bot: findQ("pl-bot-2023/24").slots.slice(-2).map(s => s.val),
     seasons: PL_SEASONS.every(k => PL_PTS[k].length === PL[k].length), first: findQ("pl-top-1992/93").slots[0].val, pompey: PL_PTS["2009/10"][19], c100: PL_PTS["2017/18"][0] }));
   eq(r.top, ["91 pts","89 pts","82 pts","68 pts","66 pts","63 pts","60 pts","60 pts","52 pts","49 pts"], "2023/24 top ten");
@@ -517,7 +518,7 @@ await test("Premier League season tables show each club's final points", async (
 });
 await test("each competition has a faint watermark at the top right of the game screen, kept within the screen", async () => {
   const p = await phone(browser, "wmk"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => Q.find(q => q.cat === "ucl"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   const r = await p.evaluate(async () => {
@@ -561,7 +562,7 @@ await test("badges: country boards use circle flags, and the three countries tha
 
 await test("badges: missed rows fade the name more than the crest, and year boards get a narrow label column so names fit", async () => {
   const p = await phone(browser, "fade"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('#countSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="solo"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.evaluate(() => { window.pickQuestion = () => findQ("wc-ru-1930"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   const mid = await p.evaluate(() => { const l = document.querySelector("#tower .slot .lab"); return [document.getElementById("tower").classList.contains("shortlab"), Math.round(l.getBoundingClientRect().width)]; });

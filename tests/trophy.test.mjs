@@ -20,13 +20,14 @@ async function phone(name, reduced = false){
 }
 // start a real game from the home screen, then finish its last round with these scores and press "See final scores"
 async function toFullTime(p, players){
-  await p.click(`#countSeg button[data-v="${players.length}"]`);
+  if (players.length === 1) await p.click('[data-door="solo"]');
+  else { await p.click('[data-door="h2h"]'); await p.click(`#countSeg button[data-v="${players.length}"]`); }
   const boxes = await p.$$("#nameFields input");
   for (let i = 0; i < players.length; i++) await boxes[i].fill(players[i][0]);
   await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   await p.click("#startBtn"); await until(() => visible(p, "#intro"), { what: "first round" });
   await p.click("#introBtn"); await until(() => p.evaluate(() => !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled), { what: "first turn" });
-  await p.evaluate(sc => { G.round = cfg.rounds; G.players.forEach((x, i) => x.score = sc[i]); endRound(); }, players.map(x => x[1]));
+  await p.evaluate(pl => { G.round = cfg.rounds; G.players.forEach(x => x.score = pl.find(([n]) => n === x.name)[1]); endRound(); }, players); // by name: the order of play is shuffled
   eq(await p.textContent("#nextBtn"), "See final scores");
   await p.evaluate(() => { window.__conf = { back: 0, front: 0 };
     [["wtConfBack", "back"], ["wtConfFront", "front"]].forEach(([id, k]) => new MutationObserver(ms => ms.forEach(m => window.__conf[k] += m.addedNodes.length)).observe(document.getElementById(id), { childList: true })); });

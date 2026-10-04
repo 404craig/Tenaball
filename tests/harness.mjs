@@ -1,6 +1,7 @@
 // A tiny test runner: named checks, a pass/fail summary, and a non-zero exit code when anything fails.
 const results = [];
 export async function test(name, fn){
+  if (process.env.ONLY && !name.includes(process.env.ONLY)) return; // ONLY=text runs just the checks whose names contain it
   const t0 = Date.now();
   try { await fn(); results.push({ name, ok: true }); console.log(`  ✓ ${name} (${Date.now() - t0}ms)`); }
   catch (e) { results.push({ name, ok: false, e }); console.log(`  ✗ ${name}\n    ${String(e && e.stack || e).split("\n").slice(0, 4).join("\n    ")}`); }

@@ -28,21 +28,22 @@ async function pickComps(p, cats){
   await p.click("#compDone");
 }
 // host: pick settings on the home screen, then create an online game
-async function hostGame(p, { rounds = 3, clock = 0, cat = "pl" } = {}){
-  await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(`#clockSeg button[data-v="${clock}"]`); await pickComps(p, [].concat(cat));
-  await p.click("#onlineBtn"); await shown(p, "lobbyMenu");
+async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 30 } = {}){
+  await p.click("#onlineBtn"); await shown(p, "onlineGo");
+  await p.click(`#modePick button[data-v="${mode}"]`);
+  await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(mode === "turns" ? `#clockSeg button[data-v="${clock}"]` : `#timeSeg button[data-v="${time}"]`); await pickComps(p, [].concat(cat));
   if (!(await p.inputValue("#onlineName"))) await p.fill("#onlineName", p.label);
   await p.click("#createBtn"); await shown(p, "lobbyRoom");
   return p.textContent("#lobbyCode");
 }
 async function joinByLink(p, code, name){
   await p.goto(`${srv.url}?room=${code}`);
-  if (await until(async () => (await visible(p, "#login")) || (await visible(p, "#lobbyMenu")) || (await visible(p, "#lobbyRoom")), { what: "join screen" }) && await visible(p, "#login")){
+  if (await until(async () => (await visible(p, "#login")) || (await visible(p, "#onlineGo")) || (await visible(p, "#lobbyRoom")), { what: "join screen" }) && await visible(p, "#login")){
     eq(await p.textContent("#loginSub"), "Sign in, or play as a guest, to join the game");
     await p.click("#guestBtn");
   }
-  await until(async () => (await visible(p, "#lobbyMenu")) || (await visible(p, "#lobbyRoom")), { what: `${p.label} lobby` });
-  if (await visible(p, "#lobbyMenu")){ await p.fill("#onlineName", name); await p.click("#joinBtn"); }
+  await until(async () => (await visible(p, "#onlineGo")) || (await visible(p, "#lobbyRoom")), { what: `${p.label} lobby` });
+  if (await visible(p, "#onlineGo")){ await p.fill("#onlineName", name); await p.click("#joinBtn"); }
   await shown(p, "lobbyRoom");
 }
 async function everyoneSees(pages, names){
@@ -51,7 +52,8 @@ async function everyoneSees(pages, names){
 
 // a snapshot of the game that must match on every phone
 const state = p => p.evaluate(() => G && G.q ? JSON.stringify({ q: G.q.id, round: G.round, turn: G.turn, phase: G.phase, over: !!G.over,
-  scores: G.players.map(x => x.score), lives: G.players.map(x => x.lives), out: G.players.map(x => !!x.out), found: G.foundBy, refresh: G.refreshLeft }) : null);
+  scores: G.players.map(x => x.score), lives: G.players.map(x => x.lives), out: G.players.map(x => !!x.out), found: G.foundBy, refresh: G.refreshLeft,
+  order: G.players.map(x => x.uid), boards: G.players.map(x => x.B ? x.B.foundBy : null) }) : null);
 const settled = p => p.evaluate(() => !!(ONLINE && !ONLINE.running && !ONLINE.pending.size && !FAST && G && (G.phase !== "turn" || G.over || (!G.busy && G.turnReady))));
 // waits until every phone has applied the move log past \`after\` (the log position before the move being checked)
 const seqOf = p => p.evaluate(() => ONLINE ? ONLINE.next : 0);
@@ -124,7 +126,7 @@ await test("online: invite link and code joins update every phone's lobby live, 
   eq(await aiden.textContent("#lobbyWait"), "Waiting for Craig to start the game…");
 
   const emma = await open("Emma"); await guestTo(emma); await shown(emma, "setup");
-  await emma.click("#onlineBtn"); await shown(emma, "lobbyMenu");
+  await emma.click("#onlineBtn"); await shown(emma, "onlineGo");
   await emma.fill("#onlineName", "Emma"); await emma.fill("#joinCode", code.toLowerCase()); await emma.click("#joinBtn");
   await shown(emma, "lobbyRoom");
   await everyoneSees([craig, aiden, emma], ["Craig", "Aiden", "Emma"]);
@@ -144,7 +146,7 @@ await test("online: invite link and code joins update every phone's lobby live, 
   await craig.click('#lobbyList .kick[aria-label="Remove Aiden 2"]');
   await until(async () => (await dup.textContent("#lobbyMsg")) === "You're no longer in that game.", { what: "removed player's message" });
   await everyoneSees([craig, aiden, emma], ["Craig", "Aiden", "Emma"]);
-  await emma.click("#lobbyLeave"); await shown(emma, "lobbyMenu");
+  await emma.click("#lobbyLeave"); await shown(emma, "onlineGo");
   await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
   await closeAll(craig, aiden, emma, dup, late);
 });
@@ -327,7 +329,7 @@ await test("online: when the host ends the game, everyone else is told", async (
   await step([craig, aiden], craig, () => craig.click("#introBtn"), "reveal");
   await craig.click("#exitBtn"); await shown(craig, "setup");
   await until(async () => (await aiden.textContent("#lobbyMsg")) === "The host ended the game.", { what: "Aiden's message" });
-  assert(await visible(aiden, "#lobbyMenu"), "Aiden is back at the online menu");
+  assert(await visible(aiden, "#onlineGo"), "Aiden is back at the online menu");
   await closeAll(craig, aiden);
 });
 
@@ -356,6 +358,68 @@ await test("online: a phone whose connection drops mid-game reconnects and catch
   await until(async () => (await seqOf(craig)) > at && await settled(craig), { what: "Craig's move" });
   await inSync([craig, aiden], "Aiden back", at);
   eq(await state(aiden), await state(craig), "same board after reconnecting");
+  await closeAll(craig, aiden);
+});
+
+// type an answer on a phone in First touch or Beat the clock
+const say = (p, name) => p.evaluate(n => { input.value = n; G.pick = n; lockIn(); }, name);
+const slotAnswer = (p, i) => p.evaluate(i => { const s = G.q.slots[i]; return s.alts ? s.alts[0] : s.club; }, i);
+async function liveGame(mode){
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  const code = await hostGame(craig, { rounds: 1, mode, time: 90 });
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
+  await craig.evaluate(() => { window.pickQuestion = () => findQ("pl-top-1992/93"); });
+  await craig.click("#lobbyStart"); await shown(craig, "intro"); await inSync([craig, aiden], "start");
+  eq(await aiden.evaluate(() => G.mode), mode, "the guest plays the host's mode");
+  await step([craig, aiden], craig, () => craig.click("#introBtn"), "reveal");
+  await until(() => aiden.evaluate(() => G.phase === "live" && !document.getElementById("guessInput").disabled), { what: "Aiden can answer" });
+  return [craig, aiden];
+}
+await test("online: First touch has both phones answering at once; the room's order decides each claim and the host's time-up ends the round", async () => {
+  const [craig, aiden] = await liveGame("first"), all = [craig, aiden];
+  const [a, b] = [await slotAnswer(craig, 0), await slotAnswer(craig, 1)];
+  const at = await seqOf(craig);
+  await Promise.all([say(craig, a), say(aiden, a)]); // the same answer at the same moment: one claims it, the other is too slow
+  await inSync(all, "a race for one slot", at + 1);
+  const owner = await craig.evaluate(() => G.foundBy[0]);
+  assert(owner === 0 || owner === 1, "someone claimed it");
+  eq(await craig.evaluate(() => G.players.map(x => x.lives)), [3, 3], "no card for being beaten to it");
+  await step(all, aiden, () => say(aiden, b), "Aiden claims another");
+  await step(all, craig, () => say(craig, "Barnet"), "a wrong answer");
+  eq(await aiden.evaluate(() => G.players.find(x => x.name === "Craig").lives), 2, "Craig's yellow card on Aiden's phone too");
+  await step(all, craig, () => craig.evaluate(() => liveTimeUp()), "time up");
+  for (const p of all) await until(() => p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), { what: `${p.label}'s points sheet` });
+  eq(await aiden.textContent("#roundSheet .waitpill"), "Waiting for Craig to show the final scores…");
+  await craig.click("#sheetNext");
+  for (const p of all) await shown(p, "end");
+  const finals = await Promise.all(all.map(p => p.evaluate(() => G.players.map(x => x.score))));
+  eq(finals[0], finals[1], "final scores match");
+  await closeAll(...all);
+});
+await test("online: Beat the clock keeps everyone's own board, shows others' finds as name pills, and agrees on the results", async () => {
+  const [craig, aiden] = await liveGame("clock"), all = [craig, aiden];
+  const [a, b] = [await slotAnswer(craig, 0), await slotAnswer(craig, 1)];
+  await step(all, aiden, () => say(aiden, a), "Aiden finds one");
+  eq(await craig.evaluate(() => document.querySelector("#tower .slot .upill").textContent), "Aiden", "Craig sees Aiden's name pill, not the answer");
+  await step(all, craig, () => say(craig, a), "Craig finds the same one");
+  await step(all, craig, () => say(craig, b), "and one on his own");
+  await step(all, craig, () => craig.evaluate(() => liveTimeUp()), "time up");
+  eq(await aiden.evaluate(() => G.players.map(x => x.score)), [3, 1], "1 for the shared find, 2 for the lone one");
+  eq(await aiden.$$eval("#tower .res .hd span", e => e.map(x => x.textContent).slice(2)), ["Cr", "You"]);
+  await closeAll(...all);
+});
+await test("online: the host can change the mode in the lobby, and taking turns starts with the same shuffled order on every phone", async () => {
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  const code = await hostGame(craig, { mode: "first" });
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
+  await until(async () => (await aiden.textContent("#lobbySet")).startsWith("First touch"), { what: "the mode in the lobby" });
+  assert(!(await visible(aiden, "#lobbyMode")), "only the host can change it");
+  await craig.click('#lobbyMode [data-mode="turns"]');
+  await until(async () => (await aiden.textContent("#lobbySet")).startsWith("Take turns"), { what: "the new mode on Aiden's phone" });
+  await craig.click("#lobbyStart"); await shown(craig, "intro"); await inSync([craig, aiden], "start");
+  eq(await aiden.evaluate(() => G.players.map(x => x.name)), await craig.evaluate(() => G.players.map(x => x.name)), "the same order of play");
   await closeAll(craig, aiden);
 });
 
