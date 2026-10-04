@@ -149,7 +149,7 @@ await test("trophy: playing again runs the whole sequence a second time from a c
   await p.waitForTimeout(1200);
   await p.click("#againBtn"); await until(() => visible(p, "#intro"), { what: "a new game" });
   await p.click("#introBtn"); await until(() => p.evaluate(() => !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled));
-  await p.evaluate(() => { window.__conf = { back: 0, front: 0 }; G.round = cfg.rounds; G.players[0].score = 3; G.players[1].score = 8; endRound(); }); await p.click("#nextBtn");
+  await p.evaluate(() => { window.__conf = { back: 0, front: 0 }; G.round = cfg.rounds; G.players.forEach(x => x.score = x.name === "Aiden" ? 8 : 3); endRound(); }); await p.click("#nextBtn");
   await until(() => visible(p, "#winTrophy"));
   await until(async () => (await p.textContent("#pillName")) === "Aiden", { what: "the new winner" });
   await until(() => p.evaluate(() => window.__conf.front === 56 && window.__conf.back === 34), { what: "a fresh confetti burst", timeout: 3000 });
