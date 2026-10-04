@@ -24,7 +24,7 @@ async function toFullTime(p, players){
   else { await p.click('[data-door="h2h"]'); await p.click(`#countSeg button[data-v="${players.length}"]`); }
   const boxes = await p.$$("#nameFields input");
   for (let i = 0; i < players.length; i++) await boxes[i].fill(players[i][0]);
-  await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('#roundSeg button[data-v="3"]'); await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */
   await p.click("#startBtn"); await until(() => visible(p, "#intro"), { what: "first round" });
   await p.click("#introBtn"); await until(() => p.evaluate(() => !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled), { what: "first turn" });
   await p.evaluate(pl => { G.round = cfg.rounds; G.players.forEach(x => x.score = pl.find(([n]) => n === x.name)[1]); endRound(); }, players); // by name: the order of play is shuffled

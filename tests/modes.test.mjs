@@ -1,4 +1,4 @@
-// The home screen's three doors, who goes first, TenaBot, the two new modes (First touch and Beat the clock) on one phone,
+// The home screen's three doors, who goes first, TenaBot, the two new modes (Fastest answer wins and Beat the clock) on one phone,
 // and the Stats tab.
 import { serve, launch, phone as makePhone, until, visible } from "./lib.mjs";
 import { test, assert, eq, report } from "./harness.mjs";
@@ -17,7 +17,7 @@ const done = async p => { assert(!p.errors.length, p.errors.join("\n")); await p
 async function vsBot(p, mode, { qid = "pl-top-1992/93", level = 1 } = {}){
   await p.click('[data-door="bot"]'); await p.click(`#botSeg button[data-v="${level}"]`);
   await p.click(`#modePick button[data-v="${mode}"]`); await p.click('#roundSeg button[data-v="1"]');
-  if (mode === "turns") await p.click('#clockSeg button[data-v="0"]'); else await p.click('#timeSeg button[data-v="60"]');
+  if (mode === "turns") await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */ else await p.click('#timeSeg button[data-v="60"]');
   await p.evaluate(id => { window.pickQuestion = () => findQ(id); }, qid);
   await p.click("#startBtn"); await until(() => visible(p, "#intro"), { what: "the intro", timeout: 15000 }); await p.click("#introBtn");
 }
@@ -34,14 +34,18 @@ await test("home: four doors, each opening its own settings, with Stats, Share a
   assert(!(await visible(p, "#botField")) && !(await visible(p, "#countField")) && !(await visible(p, "#modeField")), "solo: just you and the board");
   assert(!(await visible(p, "#tabBar")), "no tab bar inside a door");
   eq(await p.textContent("#doorTitle"), "Solo play");
+  eq(await p.$$eval("#clockSeg button:not(.hidden)", b => b.map(x => x.textContent)), ["Off", "30 sec", "60 sec", "90 sec"], "solo can switch the shot clock off");
+  await p.click('#clockSeg button[data-v="0"]');
   await p.click("#doorSet .backbtn"); await p.click('[data-door="bot"]');
   assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot: the modes and its level");
   eq(await p.evaluate(() => [cfg.count, botSeats()]), [2, [false, true]]);
-  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "First touch", "Beat the clock"]);
+  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "Fastest answer wins", "Beat the clock"]);
   await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="120"]');
   assert(await visible(p, "#timeField") && !(await visible(p, "#clockField")) && !(await visible(p, "#repeatField")), "a time limit replaces the shot clock");
   await p.click("#doorSet .backbtn"); await p.click('[data-door="h2h"]');
   assert(!(await visible(p, "#modeField")) && !(await visible(p, "#botField")), "pass and play takes turns, with no TenaBot");
+  eq(await p.$$eval("#clockSeg button:not(.hidden)", b => b.map(x => x.textContent)), ["30 sec", "60 sec", "90 sec"], "no Off with an opponent");
+  eq(await p.evaluate(() => [cfg.clock, document.querySelector('#clockSeg [aria-pressed="true"]').dataset.v]), [30, "30"], "Off from Solo play becomes 30 seconds");
   await p.click('#countSeg button[data-v="3"]');
   eq(await p.$$eval("#nameFields .namerow", r => r.length), 3); eq(await p.$$eval("#nameFields .botbtn", r => r.length), 0, "no Bot switches");
   await p.click("#doorSet .backbtn"); await p.click('[data-view="share"]');
@@ -54,7 +58,7 @@ await test("home: four doors, each opening its own settings, with Stats, Share a
 
 await test("who goes first: H2H shuffles the order once, and each round starts one place further down", async () => {
   const p = await phone("order");
-  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]'); await p.click('#roundSeg button[data-v="3"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="3"]'); await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */ await p.click('#roundSeg button[data-v="3"]');
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden"); await boxes[2].fill("Emma");
   await p.click("#startBtn"); await until(() => visible(p, "#orderOv"), { what: "the shuffle" });
   await until(async () => (await p.textContent("#orderNote")).endsWith("goes first"), { what: "the result" });
@@ -94,7 +98,7 @@ await test("TenaBot: takes its own turns against you, gets carded for wrong answ
   await done(p);
 });
 
-await test("First touch: the first right answer claims the slot in the player's colour; too slow costs nothing; a bonus for the most", async () => {
+await test("Fastest answer wins: the first right answer claims the slot in the player's colour; too slow costs nothing; a bonus for the most", async () => {
   const p = await phone("first", 0.0001);
   await vsBot(p, "first");
   await until(() => p.evaluate(() => G.phase === "live"), { what: "the round to start" });
@@ -126,7 +130,7 @@ await test("First touch: the first right answer claims the slot in the player's 
   await p.click("#mini .sheetbar"); assert(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), "the points bar brings it back");
   await p.click("#sheetNext"); await until(() => visible(p, "#end"), { what: "full time" });
   const msg = await p.evaluate(() => SHARE.text);
-  assert(msg.startsWith("🏆 *TENABALL | FIRST TOUCH*\n\n*TenaBot wins with 3 points!*"), msg);
+  assert(msg.startsWith("🏆 *TENABALL | FASTEST ANSWER WINS*\n\n*TenaBot wins with 3 points!*"), msg);
   assert(!/🟦|🟨|🥇/.test(msg), "no coloured squares or medals");
   await done(p);
 });
