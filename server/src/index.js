@@ -2,8 +2,8 @@
 // Runs on Cloudflare Workers. Accounts live in one SQLite-backed Durable Object; each online game is its own.
 import { DurableObject } from "cloudflare:workers";
 import { ADMIN_PAGE } from "./admin.js";
+import { BLANK_STATS, bumpStats, mergeStats } from "./stats.js";
 
-const BLANK_STATS = { played: 0, multi: 0, wins: 0, streak: 0, best: 0, points: 0, top: 0, tenables: 0 };
 const MAX_PLAYERS = 4;
 // the host's ticked competitions: short lowercase keys only, at most 16, no repeats (the game ignores ones it doesn't know)
 const catList = v => Array.isArray(v) ? [...new Set(v.filter(c => typeof c === "string" && /^[a-z0-9]{2,10}$/.test(c)))].slice(0, 16) : [];
@@ -28,13 +28,6 @@ function sameText(a, b){ // compares without leaking how much matched through ti
   for (let i = 0; i < Math.max(a.length, b.length); i++) d |= (a.charCodeAt(i) || 0) ^ (b.charCodeAt(i) || 0);
   return d === 0;
 }
-function bumpStats(old, r){
-  const s = { ...BLANK_STATS, ...(old || {}) };
-  s.played++; s.points += r.score; s.top = Math.max(s.top, r.score); s.tenables += r.tenables;
-  if (r.multi){ s.multi++; if (r.won){ s.wins++; s.streak++; s.best = Math.max(s.best, s.streak); } else s.streak = 0; }
-  return s;
-}
-
 const secretReport = env => ({
   PIN_SECRET: !env.PIN_SECRET ? "missing" : String(env.PIN_SECRET).length < 16 ? "too short (needs 16 or more characters)" : "set",
   ADMIN_PASSWORD: !env.ADMIN_PASSWORD ? "missing" : String(env.ADMIN_PASSWORD).length < 8 ? "too short (needs 8 or more characters)" : "set" });
@@ -127,6 +120,8 @@ export class Accounts extends DurableObject {
     this.sql.exec(`CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, email TEXT UNIQUE NOT NULL, name TEXT NOT NULL, salt TEXT NOT NULL, pin TEXT NOT NULL,
       fails INTEGER NOT NULL DEFAULT 0, lock_until INTEGER NOT NULL DEFAULT 0, stats TEXT NOT NULL, created INTEGER NOT NULL)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS sessions (token TEXT PRIMARY KEY, uid TEXT NOT NULL, created INTEGER NOT NULL, seen INTEGER NOT NULL)`);
+    // who each player has played online (other = their account id), and the ones they've starred as friends
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS played (uid TEXT NOT NULL, other TEXT NOT NULL, games INTEGER NOT NULL, last INTEGER NOT NULL, star INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (uid, other))`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS throttle (key TEXT PRIMARY KEY, count INTEGER NOT NULL, since INTEGER NOT NULL)`);
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
@@ -212,20 +207,57 @@ export class Accounts extends DurableObject {
       this.sql.exec("UPDATE users SET name = ? WHERE id = ?", name, u.id);
       return json({ user: { ...this.userOut(u), name } });
     }
-    if (path === "/stats"){ // one finished game for this player
+    if (path === "/pin"){ // a new PIN, with the current one to prove it's them
+      if (!this.secret()) return fail(503, this.secretProblem());
+      if (!validPin(b.old) || !validPin(b.pin)) return fail(400, "PINs are 4 digits.");
+      if (this.limited("pin:" + u.id, 5, 900000)) return fail(429, "Too many tries. Wait a while and try again.");
+      if (!sameText(await pinHash(this.secret(), u.salt, b.old), u.pin)){ this.limited("pin:" + u.id, 5, 900000, 1); return fail(401, "That isn't your current PIN."); }
+      const salt = randomHex(16);
+      this.sql.exec("UPDATE users SET salt = ?, pin = ? WHERE id = ?", salt, await pinHash(this.secret(), salt, b.pin), u.id);
+      this.sql.exec("DELETE FROM sessions WHERE uid = ? AND token != ?", u.id, await sha256(token)); // other phones sign in again
+      return json({ ok: true });
+    }
+    if (path === "/stats"){ // one finished game for this player: a full record, or the older short form (score, tenables, multi, won)
       const n = v => Number.isInteger(v) && v >= 0 && v <= 1000;
-      if (!n(b.score) || !n(b.tenables || 0)) return fail(400, "Those results don't look right.");
-      const s = bumpStats(this.statsOf(u), { score: b.score, tenables: b.tenables || 0, multi: !!b.multi, won: !!b.won });
+      let rec = b.rec && typeof b.rec === "object" ? b.rec : null;
+      if (!rec){
+        if (!n(b.score) || !n(b.tenables || 0)) return fail(400, "Those results don't look right.");
+        rec = { score: b.score, tenables: b.tenables || 0, people: b.multi ? 1 : 0, result: b.multi ? (b.won ? "w" : "l") : "s" };
+      }
+      const s = bumpStats(this.statsOf(u), rec);
       this.sql.exec("UPDATE users SET stats = ? WHERE id = ?", JSON.stringify(s), u.id);
+      // remember who they played online, for comparing stats with friends
+      const now = Date.now();
+      for (const o of Array.isArray(rec.opp) ? rec.opp.slice(0, 3) : []){
+        const id = /^u:([a-f0-9]{24})$/.exec(String(o && o.uid || ""));
+        if (!id || id[1] === u.id || !this.one("SELECT id FROM users WHERE id = ?", id[1])) continue;
+        this.sql.exec("INSERT INTO played (uid, other, games, last) VALUES (?, ?, 1, ?) ON CONFLICT (uid, other) DO UPDATE SET games = games + 1, last = excluded.last", u.id, id[1], now);
+      }
       return json({ stats: s });
     }
     if (path === "/stats/merge"){ // stats this phone kept before the player signed in
-      const o = b.stats || {}, n = k => Math.max(0, Math.min(100000, Math.floor(Number(o[k]) || 0)));
-      const s = this.statsOf(u), m = { played: n("played"), multi: Math.min(n("multi"), n("played")), wins: n("wins"), streak: n("streak"), best: n("best"), points: n("points"), top: n("top"), tenables: n("tenables") };
-      m.wins = Math.min(m.wins, m.multi);
-      const out = { played: s.played + m.played, multi: s.multi + m.multi, wins: s.wins + m.wins, streak: Math.max(s.streak, m.streak), best: Math.max(s.best, m.best, s.streak, m.streak), points: s.points + m.points, top: Math.max(s.top, m.top), tenables: s.tenables + m.tenables };
+      const out = mergeStats(this.statsOf(u), b.stats && typeof b.stats === "object" ? b.stats : {});
       this.sql.exec("UPDATE users SET stats = ? WHERE id = ?", JSON.stringify(out), u.id);
       return json({ stats: out });
+    }
+    if (path === "/stats/reset"){ // start again from nothing
+      this.sql.exec("UPDATE users SET stats = ? WHERE id = ?", JSON.stringify(BLANK_STATS), u.id);
+      return json({ stats: { ...BLANK_STATS } });
+    }
+    // friends: starred players plus the last 10 played online; a player's stats can be read only by someone who has played them
+    if (path === "/friends"){
+      const rows = this.sql.exec("SELECT p.other, p.games, p.last, p.star, u.name FROM played p JOIN users u ON u.id = p.other WHERE p.uid = ? ORDER BY p.star DESC, p.last DESC", u.id).toArray();
+      const list = [...rows.filter(r => r.star), ...rows.filter(r => !r.star).slice(0, 10)];
+      return json({ friends: list.map(r => ({ id: r.other, name: r.name, games: r.games, last: r.last, star: !!r.star })) });
+    }
+    if (path === "/friends/star"){
+      const r = this.sql.exec("UPDATE played SET star = ? WHERE uid = ? AND other = ?", b.star ? 1 : 0, u.id, String(b.id || ""));
+      return r.rowsWritten ? json({ ok: true }) : fail(404, "You haven't played them online.");
+    }
+    if (path === "/friends/stats"){
+      const id = String(b.id || ""), seen = this.one("SELECT other FROM played WHERE uid = ? AND other = ?", u.id, id), f = seen && this.one("SELECT * FROM users WHERE id = ?", id);
+      if (!f) return fail(404, "You can compare with players you've played online.");
+      return json({ name: f.name, stats: this.statsOf(f) });
     }
     return fail(404, "Not found");
   }
@@ -252,7 +284,7 @@ export class Accounts extends DurableObject {
       return json({ ok: true, user: row(this.one("SELECT * FROM users WHERE id = ?", u.id)) });
     }
     if (path === "/admin/unlock"){ this.sql.exec("UPDATE users SET fails = 0, lock_until = 0 WHERE id = ?", u.id); return json({ ok: true, user: row(this.one("SELECT * FROM users WHERE id = ?", u.id)) }); }
-    if (path === "/admin/delete"){ this.sql.exec("DELETE FROM sessions WHERE uid = ?", u.id); this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
+    if (path === "/admin/delete"){ this.sql.exec("DELETE FROM sessions WHERE uid = ?", u.id); this.sql.exec("DELETE FROM played WHERE uid = ? OR other = ?", u.id, u.id); this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
     return fail(404, "Not found");
   }
 }
@@ -261,7 +293,14 @@ export class Accounts extends DurableObject {
    The room keeps the lobby and the numbered move log. Every phone replays the log through the game's own
    rules, so the boards match; the room makes sure moves arrive in one order, come from players in the game,
    and that only the host sends the host's moves (reveal, question changes, next round, skip). */
-const PLAYER_MOVES = ["guess", "pass", "timeout"], HOST_MOVES = ["round", "reveal", "refresh", "next", "skip"];
+const PLAYER_MOVES = ["guess", "pass", "timeout"], HOST_MOVES = ["round", "reveal", "refresh", "next", "skip", "timeup"];
+const MODES = ["turns", "first", "clock"];
+// the host's choices, checked: anything unexpected falls back to the default
+function roomSettings(s = {}){
+  const pick = (v, ok, d) => ok.includes(v) ? v : d;
+  return { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all"),
+    mode: pick(s.mode, MODES, "turns"), time: pick(s.time, [30, 60, 90], 60) };
+}
 const IDLE_MS = 24 * 3600000;
 
 export class Room extends DurableObject {
@@ -284,9 +323,8 @@ export class Room extends DurableObject {
     if (url.pathname === "/create"){
       const b = await req.json();
       if (await this.load()) return fail(409, "taken");
-      const s = b.settings || {}, pick = (v, ok, d) => ok.includes(v) ? v : d;
       this.state = { code: b.code, host: b.host, status: "lobby", game: 1, seq: 0, ver: b.ver, created: Date.now(),
-        settings: { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all") },
+        settings: roomSettings(b.settings),
         players: { [b.host]: { name: b.name, n: 0 } } };
       await this.save();
       return json({ code: b.code, room: this.publicRoom() });
@@ -334,6 +372,14 @@ export class Room extends DurableObject {
       return ws.close(1000, "left");
     }
     if (m.t === "close"){ if (host) return this.close(r.status === "playing" ? "The host ended the game." : "The host closed this game."); return; }
+    if (m.t === "settings"){ // the host changes the game mode or time limit in the lobby
+      if (!host || r.status !== "lobby") return oops("Only the host can change the game, in the lobby.");
+      const n = m.settings || {};
+      r.settings = roomSettings({ ...r.settings, mode: MODES.includes(n.mode) ? n.mode : r.settings.mode, time: [30, 60, 90].includes(n.time) ? n.time : r.settings.time });
+      await this.save();
+      this.send(ws, { t: "ok", ref: m.ref });
+      return this.broadcast({ t: "room", room: this.publicRoom() });
+    }
     if (m.t === "start"){
       const order = Object.entries(r.players).sort((a, b) => a[1].n - b[1].n).map(e => e[0]);
       if (!host || r.status !== "lobby") return oops("Only the host can start the game.");

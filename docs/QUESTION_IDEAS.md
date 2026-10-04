@@ -118,7 +118,7 @@ A new competition for the home screen (an "Internationals" group, with its own t
 
 ## Game modes
 
-Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (https://claude.ai/artifact/A4BxSUqCxqRjY4gy6z6zcT). Not built yet.
+Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (https://claude.ai/artifact/A4BxSUqCxqRjY4gy6z6zcT). Built on 4 October 2026 (see Built below); kept here as the record of what was agreed.
 
 ### Home screen: three doors
 
@@ -182,6 +182,8 @@ Carried over from `CLAUDE.md`:
 - Player records (hat-tricks, fastest to 50 and 100 goals, 20-goal seasons, single-season highs), managers and transfers, per competition.
 
 ## Built
+
+- October 2026 (4th): the game modes. Three doors on the home screen (Play solo, H2H on this phone, H2H online) with a tab bar for Stats, Share and Account; who goes first; TenaBot (solo opponent in any mode, and a Bot switch for each seat after the first on one phone); First touch and Beat the clock online and against TenaBot, with the round's points sheet; the reworked Stats tab (filters, boards completed by competition, bests, head to head, badges, compare with friends, reset); and sharing for the new modes.
 
 - October 2026 (4th): World Cup and Euros final line-ups, the ten outfield starters for each finalist in the last four of each (16 boards).
 

@@ -8,7 +8,7 @@ const srv = await startServer({ port: 8791, origins: [origin] });
 const browser = await launch();
 const open = async (name, opts = {}) => { const p = await makePhone(browser, name, { server: opts.offline ? null : srv.url, ...opts }); await p.goto(site.url); await p.waitForFunction(() => document.readyState === "complete"); return p; };
 const shown = (p, id, timeout) => until(() => visible(p, "#" + id), { what: `${p.label} to show #${id}`, timeout });
-const acct = p => p.textContent("#acct");
+const acct = p => p.evaluate(() => { drawAcct(); return [...document.querySelectorAll("#acct *")].filter(e => !e.children.length).map(e => e.textContent.trim()).join(" "); });
 const closeAll = async (...ps) => { const errs = ps.flatMap(p => p.errors); for (const p of ps) await p.ctx.close(); assert(!errs.length, errs.join("\n")); };
 async function signUp(p, name, email, pin = "2468"){
   await shown(p, "login"); await p.click("#tabUp");
@@ -52,7 +52,7 @@ await test("account: creating an account checks the details, then signs in and n
   await tryIt("Craig", "craig@example.com", "2468", "2469", "Those PINs don't match. Type the same 4 digits twice.");
   await tryIt("Craig", "craig@", "2468", "2468", "That email address doesn't look right.");
   await p.fill("#signEmail", "craig@example.com"); await p.click("#authBtn"); await shown(p, "setup");
-  await until(async () => (await acct(p)).includes("Signed in as Craig"), { what: "account line" });
+  await until(async () => (await acct(p)).includes("Name Craig ›"), { what: "account line" });
   eq(await p.inputValue("#nameFields input"), "Craig", "player 1 box");
   const other = await open("dup"); await shown(other, "login"); await other.click("#tabUp");
   await other.fill("#signName", "Craig 2"); await other.fill("#signEmail", "CRAIG@example.com"); await other.fill("#signPin", "1111"); await other.fill("#signPin2", "1111"); await other.click("#authBtn");
@@ -62,7 +62,7 @@ await test("account: creating an account checks the details, then signs in and n
 await test("account: you stay signed in, a wrong PIN says how many tries are left, and 5 lock the account", async () => {
   const a = await open("a"); await signUp(a, "Lock", "lock@example.com", "1357");
   await a.reload(); await shown(a, "setup");
-  assert((await acct(a)).includes("Signed in as Lock"), "still signed in after reopening");
+  assert((await acct(a)).includes("Name Lock ›"), "still signed in after reopening");
   assert(!(await visible(a, "#login")), "no sign-in screen for a returning player");
   const b = await open("b");
   for (let i = 1; i <= 4; i++){ await signIn(b, "lock@example.com", "0000");
@@ -75,12 +75,12 @@ await test("account: you stay signed in, a wrong PIN says how many tries are lef
 });
 await test("account: signing out goes back to the sign-in screen; guests go straight to the home screen next time", async () => {
   const p = await open("out"); await signUp(p, "Leaver", "leaver@example.com");
-  await p.click("#acctOut"); await shown(p, "login");
+  await p.click('[data-view="acct"]'); await p.click("#acctOut"); await shown(p, "login");
   await p.reload(); await shown(p, "login");
   await p.click("#guestBtn"); await shown(p, "setup");
   assert((await acct(p)).includes("Playing as a guest"), "guest line");
   await p.reload(); await shown(p, "setup");
-  await p.click("#acctIn"); await shown(p, "login");
+  await p.click('[data-view="acct"]'); await p.click("#acctIn"); await shown(p, "login");
   await closeAll(p);
 });
 await test("account: stats follow you to another phone", async () => {
@@ -105,7 +105,7 @@ await test("account: a phone's earlier stats for your name can be added to your 
   await finishGame(p, [["Emma", 12], ["Craig", 8]]); await p.waitForTimeout(400); await p.click("#winTrophy").catch(() => {}); await p.waitForTimeout(1500);
   await finishGame(p, [["Emma", 5], ["Craig", 9]]); await p.waitForTimeout(400); await p.click("#winTrophy").catch(() => {}); await p.waitForTimeout(1500);
   eq(await p.evaluate(() => loadStats().emma.played), 2, "two guest games saved for Emma on this phone");
-  await p.click("#setupBtn"); await p.click("#acctIn"); await p.click("#tabUp");
+  await p.click("#setupBtn"); await p.click('[data-view="acct"]'); await p.click("#acctIn"); await p.click("#tabUp");
   await p.fill("#signName", "Emma"); await p.fill("#signEmail", "emma@example.com"); await p.fill("#signPin", "5555"); await p.fill("#signPin2", "5555"); await p.click("#authBtn");
   await shown(p, "setup");
   assert(p.dialogs.some(d => d === "This phone has 2 games saved for Emma. Add them to your account?"), `asked: ${p.dialogs.join(" | ")}`);
@@ -132,15 +132,15 @@ await test("account: when the admin resets a PIN, the player's phone goes back t
   await fetch(srv.url + "/api/admin/pin", { method: "POST", headers: { "content-type": "application/json", Origin: srv.url }, body: JSON.stringify({ password: TEST_SECRETS.ADMIN_PASSWORD, id, pin: "9753" }) });
   await p.reload(); await shown(p, "login");
   await signIn(p, "forget@example.com", "9753"); await shown(p, "setup");
-  assert((await acct(p)).includes("Signed in as Forgetful"), "signed in with the new PIN");
+  assert((await acct(p)).includes("Name Forgetful ›"), "signed in with the new PIN");
   await closeAll(p);
 });
 await test("account: you can change your name by tapping it", async () => {
   const p = await makePhone(browser, "rename", { server: srv.url }); await p.goto(site.url);
   await signUp(p, "Old", "rename@example.com");
   p.removeAllListeners("dialog"); p.on("dialog", d => d.accept("New Name"));
-  await p.click("#acctName");
-  await until(async () => (await acct(p)).includes("Signed in as New Name"), { what: "new name" });
+  await p.click('[data-view="acct"]'); await p.click("#acctName");
+  await until(async () => (await acct(p)).includes("Name New Name ›"), { what: "new name" });
   eq(await p.inputValue("#nameFields input"), "New Name", "player 1 follows the new name");
   eq((await serverStats("rename@example.com")).name, "New Name");
   await closeAll(p);
