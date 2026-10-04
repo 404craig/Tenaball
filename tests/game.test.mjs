@@ -411,7 +411,7 @@ await test("home: each section's i opens a slide-up panel explaining it, and How
     if (k === "how") await p.mouse.click(195, 30); else await p.click("#infoDone");
     await until(async () => !(await visible(p, "#infoSheet")), { what: "the panel to close" });
   }
-  eq(seen, [["Rounds",true],["Competitions",true],["Shot clock per answer",true],["Repeated answers",true],["Difficulty",true],["How to play",true]]);
+  eq(seen, [["Rounds",true],["Competitions",true],["Shot clock per answer",true],["Duplicate answers",true],["Difficulty",true],["How to play",true]]);
   eq(await p.evaluate(() => cfg.allLevels), true, "the i next to Difficulty doesn't flip the switch (it starts on)");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });

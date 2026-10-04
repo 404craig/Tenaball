@@ -929,6 +929,8 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
    background colour keeps it purple, the same trick as the top strip (more than 10px, opaque, takes taps). It sits inside the
    answer dock's bottom padding, under the points sheet and the overlays. */
 .botfade{position:fixed;left:0;right:0;bottom:0;height:12px;z-index:11;background-color:var(--bg2)}
+
+.seghint{font-size:.82rem;color:var(--muted);margin:7px 2px 0}
 </style>
 </head>
 <body data-cat="pl">
@@ -1033,11 +1035,11 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
         <button type="button" data-v="90" aria-pressed="false">90 sec</button>
         <button type="button" data-v="120" aria-pressed="false">120 sec</button>
       </div></div>
-    <div class="field" id="repeatField"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
+    <div class="field" id="repeatField"><div class="lblrow"><label>Duplicate answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About duplicate answers">i</button></div>
       <div class="seg" id="repeatSeg">
-        <button type="button" data-v="all" aria-pressed="true">Fill all at once</button>
-        <button type="button" data-v="one" aria-pressed="false">One per guess</button>
-      </div></div>
+        <button type="button" data-v="all" aria-pressed="true">Fill every match</button>
+        <button type="button" data-v="one" aria-pressed="false">Fill one only</button>
+      </div><p class="seghint" id="repeatHint" aria-live="polite">One guess fills every matching slot.</p></div>
   </div>
 
     <button class="btn" id="startBtn">Kick off</button>
@@ -2483,8 +2485,9 @@ function renderCompNote(){
   note.textContent = thin.length ? `No ${LEVELS[cfg.level]} questions for ${list} yet, so ${thin.length>1?"those rounds":"that round"} will use the nearest level.` : "";
   note.classList.toggle("hidden", !thin.length);
 }
-seg("countSeg","seats",Number); seg("botSeg","botLevel",Number); seg("timeSeg","time",Number); seg("repeatSeg","repeat",String); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
+seg("countSeg","seats",Number); seg("botSeg","botLevel",Number); seg("timeSeg","time",Number); seg("repeatSeg","repeat",String); $("repeatSeg").addEventListener("click", repeatHint); seg("roundSeg","rounds",Number); seg("clockSeg","clock",Number);
 const LEVELS = ["Easy","Medium","Hard"];
+function repeatHint(){ $("repeatHint").textContent = cfg.repeat==="one" ? "One guess fills a single matching slot." : "One guess fills every matching slot."; }
 const DIFF_COL = ["#00ff85","#04f5ff","#ff2882"], DIFF_GLOW = ["10px","16px","26px"];
 // the ball slides freely along the bar (0 to 200) and snaps to the nearest level when let go
 let diffDrag = false, diffAnim = 0;
@@ -2791,7 +2794,7 @@ const INFO = {
   rounds: ["Rounds", "<p>How many boards you play. Each round is one board with 10 answers to find.</p><p>Points carry over from round to round, and the highest total at full time wins. Pick 1 for a quick game.</p>"],
   comps: ["Competitions", "<p>Choose which competitions the questions come from. Each round picks one of the competitions you've switched on, never the same one twice in a row.</p><p>Switch on just one and every round comes from it. Your choices are remembered on this phone.</p>"],
   clock: ["Shot clock per answer", "<p>How long each player has to lock in an answer on their turn.</p><p>If the clock runs out, that player loses a life, just like a wrong answer. 30, 60 or 90 seconds. In Solo play you can choose Off to take as long as you like.</p>"],
-  repeat: ["Repeated answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill all at once:</strong> naming it fills every slot it's in, with a point for each.</p><p><strong>One per guess:</strong> each guess fills one slot, so it has to be named again on a later turn to fill the next.</p>"],
+  repeat: ["Duplicate answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill every match:</strong> one guess fills every matching slot, with a point for each.</p><p><strong>Fill one only:</strong> one guess fills a single matching slot, so it has to be named again on a later turn to fill the next.</p>"],
   diff: ["Difficulty", "<p><strong>Easy</strong> boards are the best-known facts. <strong>Hard</strong> ones go deeper into older seasons and smaller clubs, with <strong>Medium</strong> in between.</p><p>Some competitions don't have questions at every level yet. Those rounds use the nearest level, and a note under the slider says so.</p><p>Switch on <strong>All levels</strong> for a random mix of Easy, Medium and Hard, with a fair share of each.</p>"],
   opp: ["Playing TenaBot", "<p>TenaBot is the game's own player. Pick H2H vs TenaBot to play against it when you're on your own, in any of the three game modes.</p><p>Its level sets how much it knows: <strong>Easy</strong> knows the famous answers, <strong>Hard</strong> knows most of the board. It takes a moment to think and makes the odd howler, so it gets carded too.</p><p>Games against TenaBot have their own filter in your stats and don't change your win rate against people.</p>"],
   mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>Fastest answer wins:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p>"],
@@ -3196,7 +3199,7 @@ async function lockIn(){
   }
   return applyGuess(name);
 }
-// which slots a name fills on board B (the shared board, or a player's own in Beat the clock); one: "One per guess" is on
+// which slots a name fills on board B (the shared board, or a player's own in Beat the clock); one: "Fill one only" is on
 function guessHits(name, B = G, one = cfg.repeat==="one" && G.mode==="turns"){
   const q = G.q;
   if (q.open){ // a letter board: any player with the right surname letter fills the lowest empty place
