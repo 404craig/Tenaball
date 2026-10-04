@@ -346,10 +346,10 @@ await test("Ballon d'Or boards sit under Top 5 Leagues, and each Champions Leagu
   const r = await p.evaluate(() => {
     const bdo = Q.filter(q => /bdo/.test(q.id)), xi = Q.filter(q => /^ucl-xi-/.test(q.id));
     const lfc19 = findQ("ucl-xi-2019-lfc");
-    return { bdo: [bdo.length, bdo.every(q => q.cat==="top5")], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
+    return { bdo: [bdo.length, bdo.every(q => q.cat==="top5" && q.look==="bdo"), !!WATERMARK.bdo, lookName(bdo[0])], xi: [xi.length, xi.every(q => q.cat==="ucl" && q.slots.length===10 && q.period && new Set(q.slots.map(s => s.club)).size===10), [...new Set(xi.map(family))]],
       lfc19: [lfc19.title, lfc19.period, lfc19.slots.map(s => s.club).join(", ")], known: xi.every(q => q.slots.every(s => s.club in PEOPLE)) };
   });
-  eq(r.bdo, [7, true], "seven Ballon d'Or boards, all under Top 5");
+  eq(r.bdo, [7, true, true, "Ballon d'Or"], "seven Ballon d'Or boards, drawn under Top 5 but dressed in gold with the trophy watermark");
   eq(r.xi, [20, true, ["lineups"]], "twenty line-up boards of ten different players, in their own family");
   eq(r.lfc19, ["Liverpool's starters, 2019 final", "2018/19 Champions League final, 1 June 2019",
     "Trent Alexander-Arnold, Joel Matip, Virgil van Dijk, Andy Robertson, Jordan Henderson, Fabinho, Georginio Wijnaldum, Mohamed Salah, Roberto Firmino, Sadio Mane"]);

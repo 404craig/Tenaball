@@ -295,5 +295,14 @@
   "white": "",
   "source": "football-logos.cc",
   "licence": "trademark (UEFA)"
+ },
+ {
+  "comp": "ballon-dor",
+  "option": 1,
+  "label": "ballon-dor-trophy",
+  "file": "bdo.png",
+  "white": "",
+  "source": "photo supplied by Craig, background removed with rembg (u2net)",
+  "licence": "press photo: fine for this private family game, not for a public release"
  }
 ]
