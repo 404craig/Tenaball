@@ -134,7 +134,7 @@ Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (ht
 
 ### First touch (was "Race the board")
 
-Description: "Race against your friends to fill each slot first." Everyone plays the same board at the same time, with no turns; the first right answer to reach the server claims the slot, and it's then gone for everyone else. Wrong answers still cost a life (a yellow card), and three gone is a red card. The round ends when the board is full, everyone is out, or the time limit runs out. A point a slot, plus 2 for the last one.
+Description: "Race against your friends to fill each slot first." Everyone plays the same board at the same time, with no turns; the first right answer to reach the server claims the slot, and it's then gone for everyone else. Wrong answers still cost a life (a yellow card), and three gone is a red card. The round ends when the board is full, everyone is out, or the time limit runs out. Scoring: a point for every slot claimed, the last one included (no last-slot bonus), and a bonus point for winning the round (most slots; players level on most slots each get it).
 
 - A claimed slot fills with the finder's colour as a gentle gradient that stays close to that colour (cyan into aqua, two yellows, two greens, lilac into purple with a touch of pink). The player dots under the board are solid colours. The rest of the board (background, chip, watermark) keeps the competition's design.
 - "Too slow" message when someone else got there first, with no card. The server's move order decides ties, so every phone agrees.
@@ -142,7 +142,7 @@ Description: "Race against your friends to fill each slot first." Everyone plays
 
 ### Beat the clock
 
-Everyone gets their own copy of the same board and the same time limit. When someone else finds a slot, it shows faintly in their colour on your board, with their dot at the end of the row, but the answer stays hidden; when you find it, it becomes your full colour pill. The host's phone sends "time up" so everyone stops at the same point in the move log. At time up the board becomes one results grid: every answer down the side, a column per player (headed in their colour) with a filled dot where they found it and an empty ring where they didn't, a star where only one player found it, greyed rows nobody found, and each player's total at the bottom. The most slots wins. Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
+Everyone gets their own copy of the same board and the same time limit. Empty slots stay blank. When someone else finds a slot, their name appears in a small pill of their colour where the answer would go, and the stat shows on the right, but the answer stays hidden. When you find it, it becomes your full colour pill, with no other names on it. The host's phone sends "time up" so everyone stops at the same point in the move log. At time up the board becomes one results grid: every answer down the side, a column per player (headed in their colour) with a filled dot where they found it and an empty ring where they didn't, a star where only one player found it, greyed rows nobody found, and each player's points at the bottom. Scoring: 1 point an answer, 2 for an answer nobody else found. The most points wins. Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
 
 ### My stats (reworked)
 
