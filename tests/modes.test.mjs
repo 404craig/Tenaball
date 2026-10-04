@@ -72,7 +72,7 @@ await test("who goes first: H2H shuffles the order once, and each round starts o
   await done(p);
 });
 
-await test("TenaBot: takes its own turns against you, gets carded for wrong answers, and keeps no stats", async () => {
+await test("TenaBot: takes its own turns against you, gets carded for wrong answers, keeps no stats, and counts in your win rate", async () => {
   const p = await phone("bot turns", 20);
   await vsBot(p, "turns", { level: 2 });
   await until(async () => {
@@ -89,7 +89,7 @@ await test("TenaBot: takes its own turns against you, gets carded for wrong answ
   await p.click("#nextBtn"); await until(() => visible(p, "#end"), { what: "full time" });
   await p.click("#winTrophy").catch(() => {});
   eq(await p.evaluate(() => Object.keys(loadStats())), ["player 1"], "only the person's stats are kept");
-  eq(await p.evaluate(() => { const s = loadStats()["player 1"]; return [s.played, s.multi, s.x.b.bot.games, !!s.x.b.solo]; }), [1, 0, 1, false], "a TenaBot game, not a game against people");
+  eq(await p.evaluate(() => { const s = loadStats()["player 1"]; return [s.played, s.multi, s.x.b.bot.games, !!s.x.b.solo]; }), [1, 1, 1, false], "a game with an opponent, in the vs TenaBot filter");
   await done(p);
 });
 
@@ -115,8 +115,11 @@ await test("First touch: the first right answer claims the slot in the player's 
   eq(await p.$$eval("#roundSheet .rrow .nm span", e => e.map(x => x.textContent)), ["TenaBot", "Player 1"], "best first");
   eq(await p.$$eval("#roundSheet .rrow svg", e => e.length), 1, "a crown for the round's winner");
   eq(await p.textContent("#sheetNext"), "Final scores");
-  await p.click("#roundSheet .xbtn"); assert(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("peek")), "the ✕ slides it down");
-  await p.click("#roundSheet .rhead"); assert(!(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("peek"))), "tapping the bar brings it back");
+  assert(!(await visible(p, "#roundEnd")), "nothing under the sheet while it's up");
+  await p.click("#roundSheet .xbtn");
+  assert(!(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up"))), "the ✕ slides it away");
+  assert(await visible(p, "#nextBtn"), "Final scores shows in the page"); eq(await p.textContent("#nextBtn"), "Final scores");
+  await p.click("#mini .sheetbar"); assert(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), "the points bar brings it back");
   await p.click("#sheetNext"); await until(() => visible(p, "#end"), { what: "full time" });
   const msg = await p.evaluate(() => SHARE.text);
   assert(msg.startsWith("🏆 *TENABALL | FIRST TOUCH*\n\n*TenaBot wins with 3 points!*"), msg);
@@ -148,7 +151,7 @@ await test("Beat the clock: your own board, others' finds as name pills, then on
 await test("Beat the clock never draws a letter board (everyone needs the same answers in the same places)", async () => {
   const p = await phone("noletters", 0.0001);
   const ids = await p.evaluate(() => { G = { picked: new Set(), lastCat: null, mode: "clock" }; return Array.from({ length: 120 }, () => pickQuestion("pl").id); });
-  assert(!ids.some(id => /letter|open|both/.test(id)), ids.filter(id => /letter|open|both/.test(id)).join(", "));
+  assert(!(await p.evaluate(ids => ids.some(id => findQ(id).open), ids)), "a letter board was drawn");
   await done(p);
 });
 
@@ -163,7 +166,7 @@ await test("stats: filters by how you played, boards completed by competition, a
   });
   await p.click('[data-view="stats"]');
   eq(await p.$$eval("#statsBody .tiles span", e => e.map(x => x.textContent)), ["Games", "Wins", "Win rate", "Points"]);
-  eq(await p.$$eval("#statsBody .tiles b", e => e.map(x => x.textContent)), ["2", "1", "100%", "21"], "TenaBot's game doesn't change the win rate");
+  eq(await p.$$eval("#statsBody .tiles b", e => e.map(x => x.textContent)), ["2", "1", "50%", "21"], "the loss to TenaBot counts in the win rate");
   assert((await p.textContent("#statsBody")).includes("v Aiden1–0"), "head to head");
   eq(await p.$$eval("#statsBody .badges div:not(.locked) b", e => e.map(x => x.textContent)), ["Tenable!"]);
   await p.click('[data-sf="bot"]');

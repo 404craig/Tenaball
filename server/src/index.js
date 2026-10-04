@@ -2,7 +2,7 @@
 // Runs on Cloudflare Workers. Accounts live in one SQLite-backed Durable Object; each online game is its own.
 import { DurableObject } from "cloudflare:workers";
 import { ADMIN_PAGE } from "./admin.js";
-import { BLANK_STATS, bumpStats, mergeStats } from "./stats.js";
+import { BLANK_STATS, bumpStats, mergeStats, upgradeStats } from "./stats.js";
 
 const MAX_PLAYERS = 4;
 // the host's ticked competitions: short lowercase keys only, at most 16, no repeats (the game ignores ones it doesn't know)
@@ -126,7 +126,7 @@ export class Accounts extends DurableObject {
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
   userOut(u){ return { id: u.id, name: u.name, email: u.email }; }
-  statsOf(u){ try { return { ...BLANK_STATS, ...JSON.parse(u.stats) }; } catch(e){ return { ...BLANK_STATS }; } }
+  statsOf(u){ try { return upgradeStats({ ...BLANK_STATS, ...JSON.parse(u.stats) }); } catch(e){ return { ...BLANK_STATS }; } }
   // counts attempts per key inside a time window; true once the limit is reached
   limited(key, limit, windowMs, add = 0){
     const now = Date.now(); let row = this.one("SELECT count, since FROM throttle WHERE key = ?", key);

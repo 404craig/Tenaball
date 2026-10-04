@@ -14,7 +14,7 @@ async function twoPlayerGame(){
 }
 const ready = p => until(() => p.evaluate(() => !G.busy && !document.getElementById("guessArea").classList.contains("hidden") && !document.getElementById("guessInput").disabled), { what: "a turn", timeout: 10000 });
 const who = p => p.evaluate(() => G.players[G.turn].name);
-const lives = p => p.evaluate(() => G.players.map(x => x.lives));
+const lives = p => p.evaluate(() => [...G.players].sort((a, b) => a.ci - b.ci).map(x => x.lives)); // in seat order, whatever the order of play
 // press Pass and read the card that comes up
 async function pass(p){
   await ready(p); const name = await who(p);
