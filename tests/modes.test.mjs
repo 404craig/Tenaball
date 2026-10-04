@@ -105,7 +105,7 @@ await test("First touch: the first right answer claims the slot in the player's 
   await p.evaluate(([b, c]) => { applyLiveGuess(1, b); applyLiveGuess(1, c); }, [b, c]); // TenaBot claims two
   assert(await p.evaluate(() => document.querySelectorAll("#tower .slot")[1].classList.contains("pc2")), "TenaBot's colour");
   await p.evaluate(n => { input.value = n; G.pick = n; }, b); await p.click("#lockBtn");
-  eq(await p.textContent("#feedback"), `Too slow. TenaBot got ${b} first.`);
+  eq(await p.textContent("#feedback"), `Right answer, but too slow: TenaBot got ${b} first (2nd). No card.`);
   eq(await p.evaluate(() => G.players[0].lives), 3, "no card for being beaten to it");
   await p.evaluate(() => applyLiveGuess(0, "Barnet"));
   eq(await p.evaluate(() => [G.players[0].lives, G.players[0].g.yellow]), [2, 1], "a wrong answer is a yellow card");
@@ -168,6 +168,10 @@ await test("stats: filters by how you played, boards completed by competition, a
   eq(await p.$$eval("#statsBody .tiles span", e => e.map(x => x.textContent)), ["Games", "Wins", "Win rate", "Points"]);
   eq(await p.$$eval("#statsBody .tiles b", e => e.map(x => x.textContent)), ["2", "1", "50%", "21"], "the loss to TenaBot counts in the win rate");
   assert((await p.textContent("#statsBody")).includes("v Aiden1–0"), "head to head");
+  const how = await p.$$eval("#statsBody .homegrp", g => g.find(x => x.querySelector(".gh").textContent === "How you've played").querySelector(".kv").textContent);
+  eq(how, "On your own0 gamesAgainst friends1 · won 1 (100%)Against TenaBot1 · won 0 (0%)", "the record split by who you played");
+  eq(await p.evaluate(() => { const s = loadStats()["player 1"]; s.played += 5; s.multi += 2; s.wins += 1; return splitOf(s); }),
+    { games: 7, solo: 3, people: { games: 3, wins: 2 }, bot: { games: 1, wins: 0 } }, "games from before the detail fold into solo and friends");
   eq(await p.$$eval("#statsBody .badges div:not(.locked) b", e => e.map(x => x.textContent)), ["Tenable!"]);
   await p.click('[data-sf="bot"]');
   eq(await p.$$eval("#statsBody .tiles b", e => e.map(x => x.textContent)), ["1", "0", "0%", "9"], "vs TenaBot");

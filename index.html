@@ -2628,6 +2628,17 @@ function statsOwner(){
   return acc ? { name: accountName(), stats: upgradeStats(NET.stats), acc: true } : { name: cfg.names[0], stats: loadStats()[statKey(cfg.names[0])], acc: false };
 }
 const aggOf = (s, f) => s && s.x && s.x.b && s.x.b[f];
+// the whole record split by who you played: on your own, against friends (people), against TenaBot. Games from before the
+// detailed stats were all on your own or against people, so they come in from the old totals.
+function splitOf(s){
+  s = upgradeStats(s) || BLANK_STATS;
+  const a = aggOf(s, "all") || {}, n = v => v || 0;
+  const before = Math.max(0, s.played - n(a.games)), bMulti = Math.max(0, s.multi - n(a.people)), bWins = Math.max(0, s.wins - n(a.wins));
+  return { games: s.played, solo: Math.max(0, before - bMulti) + n((aggOf(s, "solo") || {}).games),
+    people: { games: bMulti + n(a.people) - n(a.bgames), wins: bWins + n(a.wins) - n(a.bwins) },
+    bot: { games: n(a.bgames), wins: n(a.bwins) } };
+}
+const wonOf = r => r.games ? `won ${r.wins} of ${r.games} (${pctOf(r.wins, r.games)})` : "none yet";
 function badgesOf(a){
   const comps = a ? Object.values(a.comp || {}).filter(c => c[1] > 0).length : 0;
   return [["tenable","Tenable!","Complete a board", a && a.done > 0], ["streak","On fire","10 right in a row", a && a.bestRun >= 10],
@@ -2658,7 +2669,10 @@ function drawStatsPage(){
   h += `<div class="tiles">${tilesOf(s, f).map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
   if (!s || !s.played){ $("statsBody").innerHTML = h + `<div class="homegrp"><p class="empty">No games yet. Your stats start with your next game.</p></div>`; return; }
   if (f==="all" && (!a || s.played > a.games)) h += `<p class="statnote">${a ? "Games from before the update count in the totals above; the detail below starts after it." : "Detailed stats start with your next game."}</p>`;
-  if (f!=="solo" && f!=="bot") h += `<p class="statnote">Win rate counts every game with an opponent, people or TenaBot, but not games on your own.</p>`;
+  if (f==="all"){ const sp = splitOf(s);
+    h += `<div class="homegrp"><div class="gh">How you've played</div><div class="kv"><span>On your own</span><span>${sp.solo} game${sp.solo===1?"":"s"}</span><span>Against friends</span><span>${sp.people.games ? `${sp.people.games} · ${wonOf(sp.people).replace(/ of \d+/, "")}` : "none yet"}</span><span>Against TenaBot</span><span>${sp.bot.games ? `${sp.bot.games} · ${wonOf(sp.bot).replace(/ of \d+/, "")}` : "none yet"}</span></div>
+      <p class="statnote">Wins and win rate count games against friends and TenaBot together. Games on your own have nobody to beat, so they only count towards games, points and bests.</p></div>`; }
+  else if (f!=="solo" && f!=="bot") h += `<p class="statnote">Win rate counts every game with an opponent, friends or TenaBot, but not games on your own.</p>`;
   if (!a){ $("statsBody").innerHTML = h + `<div class="homegrp"><p class="empty">No games here yet.</p></div>` + resetHTML(); return; }
   const slots = a.found + a.others + a.nobody, ans = a.right + a.wrong;
   h += `<div class="homegrp"><div class="gh">Boards</div>
@@ -3309,7 +3323,7 @@ function liveLockIn(){
   const B = G.mode==="clock" ? p.B : G, h = guessHits(name, B, false);
   if (h.allHits.length && !h.hits.length){ // already on the board: no card, you weren't wrong
     const o = G.players[B.foundBy[h.allHits[0]]];
-    if (G.mode==="first" && o && o!==p){ p.g.slow++; feedback(`Too slow. ${o.name} got ${name} first.`, "bad"); }
+    if (G.mode==="first" && o && o!==p){ p.g.slow++; beatenTo(o, name, h.allHits[0]); }
     else feedback(h.pooled ? `${name} is tied on that total, but those places are already filled.` : `You already have ${name}.`, "bad");
     return clear();
   }
@@ -3317,13 +3331,21 @@ function liveLockIn(){
   if (ONLINE) return void roomSend({ t: "move", type: "guess", data: { name } }).catch(e => feedback(e.message || "Couldn't send that. Try again.", "bad"));
   applyLiveGuess(pi, name);
 }
+// First touch: a right answer someone else had already claimed. No card, but make it plain: say so, and flash the slot they took
+function beatenTo(o, name, i){
+  feedback(`Right answer, but too slow: ${o.name} got ${name} first (${ord(i+1)}). No card.`, "wait");
+  const el = $("tower").children[i]; if (!el) return;
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  if (!REDUCED) el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  sfx.tick(1); buzz(30);
+}
 function applyLiveGuess(pi, name){
   const p = G.players[pi];
   if (!p || p.out || p.done || G.over || G.phase!=="live" || typeof name!=="string" || p.guessed.has(name)) return;
   const q = G.q, mine = pi===meIdx(), clock = G.mode==="clock", B = clock ? p.B : G;
   const { allHits, hits } = guessHits(name, B, false);
   if (allHits.length && !hits.length){ // beaten to it: no card
-    if (mine && !clock){ const o = G.players[G.foundBy[allHits[0]]]; if (o && o!==p) feedback(`Too slow. ${o.name} got ${name} first.`, "bad"); }
+    if (mine && !clock){ const o = G.players[G.foundBy[allHits[0]]]; if (o && o!==p) beatenTo(o, name, allHits[0]); }
     return;
   }
   p.guessed.add(name);
@@ -3850,8 +3872,11 @@ async function modeCard(sorted, s, cv, c, F){
 async function shareStats(){
   const me = statsOwner(), s = me.stats || BLANK_STATS, a = aggOf(s, "all");
   const acc = a && a.right + a.wrong ? Math.round(100*a.right/(a.right + a.wrong)) : null;
-  const lines = [`${s.played} game${s.played===1?"":"s"}${s.multi ? ` · ${s.wins} win${s.wins===1?"":"s"} (${pctOf(s.wins, s.multi)})` : ""}`,
-    ...(a ? [`${a.done} board${a.done===1?"":"s"} completed${acc!=null ? ` · ${acc}% right` : ""}`] : []), `Best game: ${s.top} point${s.top===1?"":"s"}`];
+  // the detail (boards, right answers) only goes on when it covers every game, so nothing reads as a whole-career figure when it isn't
+  const sp = splitOf(s), whole = a && a.games >= s.played;
+  const lines = [`${s.played} game${s.played===1?"":"s"}: ${sp.solo} on my own, ${sp.people.games} against friends, ${sp.bot.games} against TenaBot`,
+    `Against friends: ${wonOf(sp.people)}`, `Against TenaBot: ${wonOf(sp.bot)}`, `Best game: ${s.top} point${s.top===1?"":"s"}`,
+    ...(whole ? [`${a.done} board${a.done===1?"":"s"} completed${acc!=null ? ` · ${acc}% right` : ""}`] : [])];
   const text = [`📊 *${me.name}'s Tenaball stats*`, "", ...lines, "", "*Think you can beat that?*", shareUrl()].join("\n");
   let file = null;
   try {
@@ -3864,7 +3889,9 @@ async function shareStats(){
     try { const logo = await loadImg(document.querySelector("#topLogo img").src), lw = 560, lh = lw*logo.naturalHeight/logo.naturalWidth; c.drawImage(logo, (W-lw)/2, top, lw, lh); top += lh; } catch(e){ top += 150; }
     c.textAlign = "center"; c.fillStyle = "#fff"; c.font = F(800, 64); c.fillText(fitText(c, me.name, W - 160), W/2, top + 100);
     c.fillStyle = "#04f5ff"; c.font = F(700, 36); c.fillText("MY TENABALL STATS", W/2, top + 158);
-    const tiles = [[s.played, "Games"], [s.multi ? pctOf(s.wins, s.multi) : "–", "Win rate"], [a ? a.done : s.tenables, "Boards completed"], [acc!=null ? acc + "%" : "–", "Right answers"], [s.top, "Best game"], [a ? a.bestRun : "–", "Longest run"]];
+    const rec = r => r.games ? `${r.wins}/${r.games}` : "–";
+    const tiles = [[s.played, "Games"], [sp.solo, "On my own"], [rec(sp.people), "Won v friends"], [rec(sp.bot), "Won v TenaBot"], [s.top, "Best game"],
+      whole ? [a.done, "Boards completed"] : [s.points, "Points"]];
     tiles.forEach(([v, l], k) => { const col = k % 2, row = Math.floor(k / 2), x = 90 + col*460, y = top + 220 + row*190;
       c.fillStyle = "rgba(255,255,255,.08)"; pillPath(x, y, 440, 165, 28, c); c.fill();
       c.fillStyle = "#fff"; c.font = F(800, 70); c.fillText(String(v), x + 220, y + 88); c.fillStyle = "#dcc6e2"; c.font = F(600, 30); c.fillText(l, x + 220, y + 136); });
