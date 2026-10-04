@@ -146,6 +146,8 @@ Carried over from `CLAUDE.md`:
 
 ## Built
 
+- October 2026 (4th): World Cup and Euros final line-ups, the ten outfield starters for each finalist in the last four of each (16 boards).
+
 - October 2026 (4th): Champions League final line-ups, the ten outfield starters for each finalist from 2017 to 2026 (20 boards).
 - October 2026 (4th, Aiden's idea): Ballon d'Or boards under Top 5 Leagues: most wins, winners 1993 to 2002 and 2002 to 2011, and the top ten of the 2022 to 2025 votes (hard). Next: the 2026 vote after 26 October, and winners 2016 to 2026.
 
