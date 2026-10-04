@@ -146,7 +146,7 @@ Everyone gets their own copy of the same board and the same time limit. Empty sl
 
 ### End of a round (First touch and Beat the clock)
 
-When the round ends, the answer box and Lock in give way to a banner in the winner's colour ("Aiden wins the round!" with their points; split colours and "share the round" for a tie). It slides up with a shine and stays put. The host gets a Next round button directly under it; everyone else sees "Waiting for Craig to start the next round". Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
+A sheet slides up over the bottom of the board. Each player gets a full colour pill (their gradient), in order of total points, showing their points this round and their running total, with a crown for the round's winner. Under it the host has Next round (Final scores after the last round); everyone else sees an outlined "Waiting for Craig to start…" pill. Tapping the top of the sheet slides it down to a bar so the board can be seen.
 
 ### My stats (reworked)
 
@@ -158,6 +158,8 @@ Opened from My stats on the home screen and from the link at full time. A filter
 - Personal bests: best game, best round, longest run of right answers, plus mode records (first touches, beaten to it and quickest claim in First touch; most slots in a round and answers nobody else found in Beat the clock).
 - Accuracy by competition and by difficulty; head-to-head records against each opponent; the last 10 results; badges to chase.
 - Share my stats (a stats card, like the results card) and Compare (you against a friend, side by side).
+- Reset my stats at the bottom, with an in-page confirm step ("can't be undone"); afterwards the page shows zeros and "your stats start again with your next game".
+- Who you can compare with: no open friend search or requests. You can only add someone you've played online: after each online game the server saves who each signed-in player played, the stats page lists your last 10 signed-in opponents under "Played online recently", and a star keeps someone as a friend at the top. Players without an account are listed under "On this phone" from the local stats. Server work: a played-with list per account (updated when a game ends), a starred list, and a read of a friend's summary stats.
 - Needs the game to record more per round: mode, competition, difficulty, slots found by others and by nobody, opponents. Older games keep their totals only.
 
 ## Other competitions
