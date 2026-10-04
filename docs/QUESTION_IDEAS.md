@@ -122,10 +122,10 @@ Designs agreed with Craig on 4 October 2026, mocked up in the modes artifact (ht
 
 ### Home screen: three doors
 
-- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Each door has a large glowing ring icon in its own colour with a white symbol (green ring and lightning bolt for solo, pink ring and a group of players for H2H on this phone, blue ring and a globe for H2H online) and a matching glowing edge down its left side, as in Craig's mock-up. Smaller line icons in the logo's cyan-to-green are used for the game modes (Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
+- Keep the logo, the "Tenable: Football Edition!" subtitle and the cyan line exactly as now. Below them, three doors: **Play solo**, **H2H on this phone** and **H2H online**. Each door has a large glowing ring icon in its own colour with a softly tinted symbol inside (green ring and a player for solo, pink ring and a group of players for H2H on this phone, blue ring and a globe for H2H online), as in Craig's mock-up; no coloured edge on the doors. H2H online's description: "Everyone on their own phone. 3 game modes." Smaller line icons in the logo's cyan-to-green are used for the game modes (Take turns is a pair of circular arrows, First touch a lightning bolt, Beat the clock a stopwatch).
 - Each door opens its own settings, laid out like today's home screen panels (Who's playing, The game, House rules) and changed as little as possible: solo has your name; head to head on this phone has 2 to 4 players and names; online has your name and the game mode, then create a game or join with a code.
 - Only the online door offers the new modes. For First touch and Beat the clock the shot clock is replaced by a time limit per round (30, 60 or 90 seconds).
-- A tab bar along the bottom: **Play** (the doors, lit green with an underline), **Stats** (the stats page), **Share** (the phone's share sheet with the game link, or copy it, without starting a game) and **Account** (sign in, name, PIN, sign out).
+- A tab bar along the bottom with three tabs (no Play tab): **Stats** (the stats page), **Share** (the phone's share sheet with the game link, or copy it, without starting a game) and **Account** (sign in, name, PIN, sign out).
 
 ### Who goes first
 
