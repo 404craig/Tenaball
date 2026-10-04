@@ -1033,9 +1033,9 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
       </div></div>
     <div class="field hidden" id="timeField"><div class="lblrow"><label>Time limit per round</label><button type="button" class="finfo" data-info="time" aria-label="About the time limit">i</button></div>
       <div class="seg" id="timeSeg">
-        <button type="button" data-v="30" aria-pressed="false">30 sec</button>
         <button type="button" data-v="60" aria-pressed="true">60 sec</button>
         <button type="button" data-v="90" aria-pressed="false">90 sec</button>
+        <button type="button" data-v="120" aria-pressed="false">120 sec</button>
       </div></div>
     <div class="field" id="repeatField"><div class="lblrow"><label>Repeated answers</label><button type="button" class="finfo" data-info="repeat" aria-label="About repeated answers">i</button></div>
       <div class="seg" id="repeatSeg">
@@ -2445,7 +2445,7 @@ function saveSetup(){ try { localStorage.setItem(SETUP_KEY, JSON.stringify({ v: 
   cfg.cats = cats.length ? cats : [...ALL_CATS];
   // All levels is on by default; settings saved before it became the default (no v: 2) switch it on once, then the phone's own choice sticks
   cfg.allLevels = s && s.v >= 2 ? !!s.allLevels : true;
-  if (s){ if (MODES[s.mode]) cfg.mode = s.mode; if ([30,60,90].includes(s.time)) cfg.time = s.time; if (["none","bot"].includes(s.opp)) cfg.opp = s.opp; if ([0,1,2].includes(s.botLevel)) cfg.botLevel = s.botLevel; }
+  if (s){ if (MODES[s.mode]) cfg.mode = s.mode; if ([60,90,120].includes(s.time)) cfg.time = s.time; if (["none","bot"].includes(s.opp)) cfg.opp = s.opp; if ([0,1,2].includes(s.botLevel)) cfg.botLevel = s.botLevel; }
 })();
 let sheetCats = null; // the competitions being switched on and off in the open panel
 function renderCompBtn(){
@@ -2872,7 +2872,7 @@ async function whoGoesFirst(final){
 function startRound(qIn){
   const q = qIn || pickQuestion(nextCat());
   stopBots(); hideSheet();
-  Object.assign(G, { q, foundBy:{}, guessed:new Set(), over:false, busy:true, livesLost:0, passes:0, poolUsed:{}, slotName:{}, phase:"intro", tp:null, near:null });
+  Object.assign(G, { held:[], revealing:null, q, foundBy:{}, guessed:new Set(), over:false, busy:true, livesLost:0, passes:0, poolUsed:{}, slotName:{}, phase:"intro", tp:null, near:null });
   // B is a player's own board in Beat the clock; rs counts the slots they fill this round
   G.players.forEach(p => { p.lives=3; p.out=false; p.done=false; p.g = p.g || newGameStats(); p.r0 = p.score; p.rr0 = p.g.right; p.rw0 = p.g.wrong; p.rs = 0; p.guessed = new Set(); p.B = { foundBy:{}, poolUsed:{}, slotName:{} }; });
   G.turn = (G.round-1) % G.players.length;
@@ -2958,10 +2958,10 @@ function drawTower(flash){
   const t = $("tower"); t.innerHTML=""; t.classList.remove("wrong");
   if (G.mode==="clock" && G.over) return drawResults();
   t.classList.toggle("shortlab", !G.q.numeric && G.q.slots.every(s => String(s.label).length <= 6)); // years only: a narrow label column leaves room for the name
-  const B = boardOf(), live = G.mode!=="turns", mi = meIdx();
+  const B = boardOf(), live = G.mode!=="turns", mi = meIdx(), held = new Set((G.held || []).flatMap(h => h.slots));
   const openShown = G.q.open && G.over ? openExamples() : {};
   G.q.slots.forEach((sl, i) => {
-    const f = B.foundBy[i], d = document.createElement("div");
+    const f = held.has(i) ? undefined : B.foundBy[i], d = document.createElement("div");
     // Beat the clock: who else has found this slot (their names go where the answer would, with its stat)
     const others = G.mode==="clock" && f===undefined && !G.over ? G.players.filter((p, j) => j!==mi && p.B.foundBy[i]!==undefined) : [];
     d.className = "slot" + (G.q.numeric ? "" : " lab-slot") + (f!==undefined ? " found" + (live ? " pc" + (G.players[f].ci+1) : "") : (G.over ? " missed" : "")) + (flash && flash.includes(i) ? " flash" : "");
@@ -3009,8 +3009,11 @@ function renderPlayers(){
     d.className = "player" + (!live && i===G.turn && !G.over ? " active":"") + (i===mi && G.players.length>1 ? " me" : "") + (p.out ? " out":"");
     d.style.setProperty("--pc", p.color);
     // Beat the clock shows how many each player has found this round; the points come when time's up
-    const sc = clock && !G.over && p.B ? `${Object.keys(p.B.foundBy).length}<small>found</small>` : p.score;
-    d.innerHTML = `<span class="nm">${esc(p.name)}</span><span class="lives${p.lives===1?" last":""}" aria-label="${p.lives} lives">${"♥".repeat(p.lives)}<span style="opacity:.2">${"♥".repeat(3-p.lives)}</span></span><span class="sc">${sc}</span>`;
+    // this phone's own answer still climbing the board: its points, slots and lost life aren't shown yet
+    const hp = (G.held || []).filter(h => h.pi===i), lives = Math.min(3, p.lives + hp.reduce((t, h) => t + h.life, 0));
+    if (hp.length) d.classList.remove("out");
+    const sc = clock && !G.over && p.B ? `${Object.keys(p.B.foundBy).length - hp.reduce((t, h) => t + h.slots.length, 0)}<small>found</small>` : p.score - hp.reduce((t, h) => t + h.pts, 0);
+    d.innerHTML = `<span class="nm">${esc(p.name)}</span><span class="lives${lives===1?" last":""}" aria-label="${lives} lives">${"♥".repeat(lives)}<span style="opacity:.2">${"♥".repeat(3-lives)}</span></span><span class="sc">${sc}</span>`;
     box.appendChild(d);
   });
 }
@@ -3313,7 +3316,7 @@ function applyTimeUp(){
   endLiveRound("Time's up.");
 }
 function liveLockIn(){
-  if (G.over) return;
+  if (G.over || (G.held && G.held.length)) return;
   const pi = meIdx(), p = G.players[pi]; if (!p || p.out || p.done) return;
   const name = resolve();
   if (!name){ feedback(`That ${({person:"name",nation:"country",place:"city"})[qType()]||"club"} isn't recognised. Try another spelling.`, "bad"); return; }
@@ -3349,30 +3352,41 @@ function applyLiveGuess(pi, name){
     return;
   }
   p.guessed.add(name);
+  // your own answer climbs the board before it's revealed, as in Take turns. The game moves on at once (so every phone agrees);
+  // only this phone's view waits: the slots, points and lives it holds back show when the scan stops
+  const hold = mine && !FAST ? { pi, slots: hits.slice(), pts: clock ? 0 : hits.length, life: hits.length ? 0 : 1 } : null;
+  if (hold){ (G.held = G.held || []).push(hold); feedback(`You lock in ${name}...`, "wait"); $("lockBtn").disabled = true; }
+  const reveal = show => { if (!hold) return show();
+    const g = G; G.revealing = (G.revealing || Promise.resolve()).then(() => scan(hits)).then(() => { if (G!==g) return; G.held = G.held.filter(h => h!==hold); show(); if (!G.over && !p.out && !p.done) $("lockBtn").disabled = false; }); };
   if (hits.length){
     hits.forEach(i => { B.foundBy[i] = pi; const s = q.slots[i]; if (s.pool){ (B.poolUsed[s.pool] = B.poolUsed[s.pool]||[]).push(name); B.slotName[i] = name; } });
     p.rs += hits.length; p.g.right++; p.g.slots += hits.length; p.g.run++; p.g.bestRun = Math.max(p.g.bestRun, p.g.run);
     if (!clock){ p.score += hits.length; p.g.claims += hits.length; }
-    drawTower(mine || !clock ? hits : []); renderPlayers();
-    const s0 = q.slots[hits[0]];
-    if (mine){ sfx.correct(); crowdPlay(hits.length>1 || hits.includes(q.slots.length-1) ? "bigcheer" : "cheer"); buzz(40);
-      feedback(`Tenable! ${name}${q.open ? "" : hits.length>1 ? ` fills ${hits.length} slots` : `, ${q.numeric ? ord(Number(s0.label)) : s0.label}`}. +${hits.length}.`, "good"); }
-    else if (!clock){ sfx.tick(2); feedback(`${p.name} claimed ${name}.`, ""); }
     const full = Object.keys(B.foundBy).length===q.slots.length;
-    if (full && clock){ p.done = true; p.tenables = (p.tenables||0)+1; p.g.fullBoards++; if (mine){ feedback("Full board! Waiting for the clock.", "good"); input.disabled = $("lockBtn").disabled = true; } }
+    if (full && clock){ p.done = true; p.tenables = (p.tenables||0)+1; p.g.fullBoards++; if (mine) input.disabled = $("lockBtn").disabled = true; }
+    if (!hold) drawTower(mine || !clock ? hits : []); renderPlayers();
+    const s0 = q.slots[hits[0]];
+    reveal(() => {
+      if (!mine){ if (!clock){ sfx.tick(2); feedback(`${p.name} claimed ${name}.`, ""); } return; }
+      drawTower(hits); renderPlayers();
+      sfx.correct(); crowdPlay(hits.length>1 || hits.includes(q.slots.length-1) ? "bigcheer" : "cheer"); buzz(40);
+      if (!G.over) feedback(full && clock ? "Full board! Waiting for the clock." : `Tenable! ${name}${q.open ? "" : hits.length>1 ? ` fills ${hits.length} slots` : `, ${q.numeric ? ord(Number(s0.label)) : s0.label}`}. +${hits.length}.`, "good");
+    });
     if (full && !clock) return endLiveRound("The board is full.");
   } else {
     p.g.wrong++; p.g.run = 0; p.lives--; G.livesLost = (G.livesLost||0)+1; p.g[p.lives===0 ? "red" : "yellow"]++;
-    if (p.lives===0) p.out = true;
+    if (p.lives===0){ p.out = true; if (mine) input.disabled = true; }
     renderPlayers();
     const extra = q.note ? q.note(name, q.years) : null;
-    if (mine){
-      $("tower").classList.add("shake"); setTimeout(() => $("tower").classList.remove("shake"), 500);
+    reveal(() => {
+      if (!mine) return feedback(`${p.name}: ${name}. ${p.out ? "Red card, out of the round." : "Yellow card."}`, "");
+      renderPlayers();
+      $("tower").classList.add("wrong", "shake"); setTimeout(() => $("tower").classList.remove("wrong", "shake"), 600);
       sfx.wrong(); crowdPlay("groan"); buzz([80,60,80]);
       feedback(`No. ${extra || `${name} isn't on this board.`} ${p.out ? "Red card: you're out of this round." : `Yellow card, ${p.lives} ${p.lives===1 ? "life" : "lives"} left.`}`, "bad");
       showCard(p, p.out ? "red" : "yellow", { delay:100, live:true });
-      if (p.out){ input.disabled = $("lockBtn").disabled = true; }
-    } else feedback(`${p.name}: ${name}. ${p.out ? "Red card, out of the round." : "Yellow card."}`, "");
+      if (p.out) input.disabled = $("lockBtn").disabled = true;
+    });
   }
   if (G.players.every(x => x.out || x.done)) endLiveRound(G.players.every(x => x.out) ? "Everyone has been sent off." : "Everyone's finished.");
 }
@@ -3518,16 +3532,17 @@ function followScroll(){
   return { to: el => { target = viewTargetFor(el); }, stop: () => { on = false; cancelAnimationFrame(raf); } };
 }
 async function scan(hits){
-  const els = [...$("tower").children], n = els.length;
+  const T = $("tower"), n = T.children.length, at = i => T.children[i] || document.createElement("div"); // the board can be redrawn mid-scan in the live modes
+  const els = { forEach: f => [...T.children].forEach(f) };
   const stop = hits.length ? Math.max(...hits) : -1;
   const inc = Math.min(20, 190/n);
-  if (REDUCED){ if (stop>=0) window.scrollTo(0, viewTargetFor(els[stop])); await wait(400); return; }
+  if (REDUCED){ if (stop>=0) window.scrollTo(0, viewTargetFor(at(stop))); await wait(400); return; }
   const cam = followScroll();
   try {
     for (let i=n-1, k=0; i>=0; i--, k++){
       els.forEach(e => e.classList.remove("scan"));
-      els[i].classList.add("scan"); sfx.tick(k); cam.to(els[i]);
-      if (i===stop){ sfx.stop(); els[i].classList.add("stop"); await wait(900); els[i].classList.remove("scan","stop"); return; }
+      at(i).classList.add("scan"); sfx.tick(k); cam.to(at(i));
+      if (i===stop){ sfx.stop(); at(i).classList.add("stop"); await wait(900); at(i).classList.remove("scan","stop"); return; }
       await wait(95 + k*inc);
     }
     await wait(450);
@@ -3558,7 +3573,7 @@ function endRound(){
   });
   drawTower(); renderPlayers();
   $("guessArea").classList.add("hidden");
-  if (G.mode!=="turns"){ $("clock").classList.add("hidden"); showRoundSheet(); return; }
+  if (G.mode!=="turns"){ $("clock").classList.add("hidden"); const g = G; (G.revealing || Promise.resolve()).then(() => { if (G!==g) return; drawTower(); renderPlayers(); showRoundSheet(); }); return; }
   const left = G.q.slots.length - Object.keys(G.foundBy).length;
   if (left>0){ const allOut = G.players.every(x=>x.out); $("feedback").textContent += `${allOut ? (G.players.length===1 ? " Out of lives." : " Everyone is out.") : ""} ${left} slot${left>1?"s":""} not found, ${G.q.open ? `shown faded with players you could have had (${G.q.open.count} in all)` : "shown faded"}.`; }
   $("mini").innerHTML = [...G.players].sort((a,b)=>b.score-a.score).map(p=>`<span style="color:${p.color}">${esc(p.name)} ${p.score}</span>`).join("");
@@ -4701,7 +4716,7 @@ function onRoom(room, moves){
 }
 // the host's settings, as this phone's cfg (a room from before ticks has just "cat"; level 3 is All levels)
 function roomCats(s){ const cs = Array.isArray(s.cats) ? ALL_CATS.filter(c => s.cats.includes(c)) : []; return cs.length ? cs : s.cat && s.cat!=="random" && ALL_CATS.includes(s.cat) ? [s.cat] : [...ALL_CATS]; }
-const roomCfg = s => ({ rounds: s.rounds, cats: roomCats(s), clock: s.clock, level: s.level===3 ? 1 : s.level, allLevels: s.level===3, repeat: s.repeat, mode: MODES[s.mode] ? s.mode : "turns", time: [30,60,90].includes(s.time) ? s.time : 60 });
+const roomCfg = s => ({ rounds: s.rounds, cats: roomCats(s), clock: s.clock, level: s.level===3 ? 1 : s.level, allLevels: s.level===3, repeat: s.repeat, mode: MODES[s.mode] ? s.mode : "turns", time: [60,90,120].includes(s.time) ? s.time : 60 });
 const roomPlayers = d => Object.entries(d.players).map(([uid, p]) => ({ uid, ...p })).sort((a,b) => a.n-b.n);
 const hostName = () => { const d = ROOM && ROOM.data; return d && d.players[d.host] ? d.players[d.host].name : "the host"; };
 function renderLobby(d){
@@ -4728,7 +4743,7 @@ function renderLobby(d){
   const lm = $("lobbyMode"); lm.classList.toggle("hidden", !isHost);
   if (isHost){
     lm.innerHTML = `<div class="seg" role="group" aria-label="Game mode">${Object.entries(MODES).map(([k, [t]]) => `<button type="button" data-mode="${k}" aria-pressed="${k===mode}">${t}</button>`).join("")}</div>`
-      + (timed ? `<div class="seg" role="group" aria-label="Time limit per round">${[30,60,90].map(v => `<button type="button" data-time="${v}" aria-pressed="${v===(s.time||60)}">${v} sec</button>`).join("")}</div>` : "");
+      + (timed ? `<div class="seg" role="group" aria-label="Time limit per round">${[60,90,120].map(v => `<button type="button" data-time="${v}" aria-pressed="${v===(s.time||60)}">${v} sec</button>`).join("")}</div>` : "");
     lm.onclick = e => { const b = e.target.closest("button"); if (!b) return;
       const n = b.dataset.mode ? { mode: b.dataset.mode } : { time: Number(b.dataset.time) };
       roomSend({ t: "settings", settings: n }).catch(err => $("roomMsg").textContent = err.message); };
