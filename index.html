@@ -1022,10 +1022,10 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <div class="homegrp" role="group" aria-labelledby="ghRules"><div class="gh" id="ghRules">House rules</div>
     <div class="field" id="clockField"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
       <div class="seg" id="clockSeg">
-        <button type="button" data-v="0" aria-pressed="false">Off</button>
-        <button type="button" data-v="15" aria-pressed="false">15 sec</button>
+        <button type="button" data-v="0" aria-pressed="false" id="clockOff">Off</button>
         <button type="button" data-v="30" aria-pressed="true">30 sec</button>
         <button type="button" data-v="60" aria-pressed="false">60 sec</button>
+        <button type="button" data-v="90" aria-pressed="false">90 sec</button>
       </div></div>
     <div class="field hidden" id="timeField"><div class="lblrow"><label>Time limit per round</label><button type="button" class="finfo" data-info="time" aria-label="About the time limit">i</button></div>
       <div class="seg" id="timeSeg">
@@ -1078,7 +1078,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <p>Each round shows a board of empty slots. Name one club, player or manager at a time and lock it in. Play on your own against the board, against TenaBot, with up to 4 players passing one phone, or with friends online on separate phones.</p>
     <p>The tower then scans up from the bottom. If it stops on your club, you score a point for every slot that club fills. If it runs all the way to the top, you lose a life.</p>
     <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
-    <p>Online, and against TenaBot, there are two more modes. <strong>First touch:</strong> everyone answers at once and the first right answer claims the slot. <strong>Beat the clock:</strong> your own board against the clock, with 2 points for an answer nobody else found.</p>
+    <p>Online, and against TenaBot, there are two more modes. <strong>Fastest answer wins:</strong> everyone answers at once and the first right answer claims the slot. <strong>Beat the clock:</strong> your own board against the clock, with 2 points for an answer nobody else found.</p>
   </template>
 </section>
 
@@ -2420,7 +2420,7 @@ const QUICK = [["All", ALL_CATS], ...COMP_GROUPS.map(([g, cs]) => [g, cs.filter(
 // the three ways to play a game: Take turns (the original), and the two simultaneous modes, First touch and Beat the clock
 const MODES = {
   turns: ["Take turns", '<path d="M19.5 9A8 8 0 006.2 6.3L4 8.5"/><path d="M4 4v4.5h4.5"/><path d="M4.5 15a8 8 0 0013.3 2.7L20 15.5"/><path d="M20 20v-4.5h-4.5"/>'],
-  first: ["First touch", '<path class="fillg" d="M13.5 2.5L5 13.5h6l-1.5 8 8.5-11h-6z"/>'],
+  first: ["Fastest answer wins", '<path class="fillg" d="M13.5 2.5L5 13.5h6l-1.5 8 8.5-11h-6z"/>'],
   clock: ["Beat the clock", '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M12 13.5l2.8 2M10 2.5h4M12 2.5V6M18.6 6.4l1.4-1.4"/>']
 };
 const SETUP_KEY = "tenaball-setup";
@@ -2526,7 +2526,7 @@ const modeNow = () => cfg.door==="online" || cfg.door==="bot" ? cfg.mode : "turn
 const MODE_DESC = {
   turns: ["One answer at a time, round the table", "You and TenaBot answer in turn"],
   first: ["Race your friends to each slot first", "Race TenaBot to fill each slot first"],
-  clock: ["Beat your friends on your own board", "Fill more of your board than TenaBot"]
+  clock: ["Get the most answers before time's up", "Get the most answers before time's up"]
 };
 function drawModes(){
   const vsBot = cfg.door==="bot";
@@ -2569,6 +2569,9 @@ function homeSync(){
   const timed = modeNow()!=="turns";
   $("clockField").classList.toggle("hidden", timed); $("repeatField").classList.toggle("hidden", timed); $("timeField").classList.toggle("hidden", !timed);
   $("startBtn").classList.toggle("hidden", online); $("onlineGo").classList.toggle("hidden", !online);
+  // the shot clock can only be switched off in Solo play: with an opponent it's 30, 60 or 90 seconds
+  $("clockOff").classList.toggle("hidden", d!=="solo");
+  if (d!=="solo" && !cfg.clock){ cfg.clock = 30; pressSeg("clockSeg", 30); }
   drawNames();
 }
 // press the saved choices into the home screen's buttons
@@ -2599,7 +2602,7 @@ const linkMsg = m => { $("linkMsg").textContent = m; clearTimeout(linkMsg.t); li
 $("copyLink").onclick = () => navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(shareUrl()).then(() => linkMsg("Link copied. Paste it into a chat."), () => linkMsg("Copy this link: " + shareUrl())) : linkMsg("Copy this link: " + shareUrl());
 $("shareLink").onclick = () => navigator.share({ text: `⚽ *Tenaball: Tenable, Football Edition*\nName the top 10 in hundreds of football quizzes. Play solo, against TenaBot or with your mates.\n${shareUrl()}` }).catch(() => {});
 /* ---------- the Stats tab: the signed-in account's stats, or those this phone keeps for the first player's name ---------- */
-const STF = [["all","All"],["solo","Solo"],["bot","vs TenaBot"],["h2h","Local"],["online","Online"],["first","First touch"],["clock","Beat the clock"]];
+const STF = [["all","All"],["solo","Solo"],["bot","vs TenaBot"],["h2h","Local"],["online","Online"],["first","Fastest answer wins"],["clock","Beat the clock"]];
 const ST = { f: "all", cmp: null, ask: false, picks: null };
 const pctOf = (a, b) => b ? Math.round(100*a/b) + "%" : "–";
 const statIco = d => `<span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${d}</svg></span>`;
@@ -2630,7 +2633,7 @@ const wonOf = r => r.games ? `won ${r.wins} of ${r.games} (${pctOf(r.wins, r.gam
 function badgesOf(a){
   const comps = a ? Object.values(a.comp || {}).filter(c => c[1] > 0).length : 0;
   return [["tenable","Tenable!","Complete a board", a && a.done > 0], ["streak","On fire","10 right in a row", a && a.bestRun >= 10],
-    ["crown","Clean sweep","Win every round of a game", a && a.sweeps > 0], ["first","Quick draw","7 first touches in a round", a && a.mostClaims >= 7],
+    ["crown","Clean sweep","Win every round of a game", a && a.sweeps > 0], ["first","Quick draw","7 slots claimed first in a round", a && a.mostClaims >= 7],
     ["clock","Against the clock","Full board in Beat the clock", a && a.fullClock > 0], ["globe","Globetrotter","Complete boards in 5 competitions", comps >= 5]];
 }
 function tilesOf(s, f){
@@ -2641,7 +2644,7 @@ function tilesOf(s, f){
   return [[a ? a.games : 0, "Games"], [a ? a.wins : 0, "Wins"], [a ? pctOf(a.wins, a.people) : "–", "Win rate"], [a ? a.points : 0, "Points"]];
 }
 function bestsOf(a, f){
-  if (f==="first") return [["First touches (slots claimed)", a.claims], ["Beaten to it", a.slow], ["Most claimed in one round", a.mostClaims], ["Rounds won", a.roundWins]];
+  if (f==="first") return [["Slots claimed first", a.claims], ["Beaten to it", a.slow], ["Most claimed in one round", a.mostClaims], ["Rounds won", a.roundWins]];
   if (f==="clock") return [["Most slots in a round", a.mostClock], ["Full boards before time", a.fullClock], ["Answers nobody else found", a.unique], ["Rounds won", a.roundWins]];
   return [["Best game", ptsLabel(a.best)], ["Best round", ptsLabel(a.bestRound)], ["Longest run of right answers", a.bestRun], ...(f==="solo" || f==="bot" ? [] : [["Longest winning run", a.bestStreak]])];
 }
@@ -2787,12 +2790,12 @@ $("startBtn").onclick = () => { ac(); startGame(); };
 const INFO = {
   rounds: ["Rounds", "<p>How many boards you play. Each round is one board with 10 answers to find.</p><p>Points carry over from round to round, and the highest total at full time wins. Pick 1 for a quick game.</p>"],
   comps: ["Competitions", "<p>Choose which competitions the questions come from. Each round picks one of the competitions you've switched on, never the same one twice in a row.</p><p>Switch on just one and every round comes from it. Your choices are remembered on this phone.</p>"],
-  clock: ["Shot clock per answer", "<p>How long each player has to lock in an answer on their turn.</p><p>If the clock runs out, that player loses a life, just like a wrong answer. Choose Off to take as long as you like.</p>"],
+  clock: ["Shot clock per answer", "<p>How long each player has to lock in an answer on their turn.</p><p>If the clock runs out, that player loses a life, just like a wrong answer. 30, 60 or 90 seconds. In Solo play you can choose Off to take as long as you like.</p>"],
   repeat: ["Repeated answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill all at once:</strong> naming it fills every slot it's in, with a point for each.</p><p><strong>One per guess:</strong> each guess fills one slot, so it has to be named again on a later turn to fill the next.</p>"],
   diff: ["Difficulty", "<p><strong>Easy</strong> boards are the best-known facts. <strong>Hard</strong> ones go deeper into older seasons and smaller clubs, with <strong>Medium</strong> in between.</p><p>Some competitions don't have questions at every level yet. Those rounds use the nearest level, and a note under the slider says so.</p><p>Switch on <strong>All levels</strong> for a random mix of Easy, Medium and Hard, with a fair share of each.</p>"],
   opp: ["Playing TenaBot", "<p>TenaBot is the game's own player. Pick H2H vs TenaBot to play against it when you're on your own, in any of the three game modes.</p><p>Its level sets how much it knows: <strong>Easy</strong> knows the famous answers, <strong>Hard</strong> knows most of the board. It takes a moment to think and makes the odd howler, so it gets carded too.</p><p>Games against TenaBot have their own filter in your stats and don't change your win rate against people.</p>"],
-  mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>First touch:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p>"],
-  time: ["Time limit per round", "<p>In First touch and Beat the clock, the round ends when the time runs out (or sooner, when the board is full or everyone is out).</p>"],
+  mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>Fastest answer wins:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p>"],
+  time: ["Time limit per round", "<p>In Fastest answer wins and Beat the clock, the round ends when the time runs out (or sooner, when the board is full or everyone is out).</p>"],
   how: ["How to play", ""]
 };
 INFO.how[1] = $("howText").innerHTML.trim();
@@ -2895,7 +2898,7 @@ function fillIntro(q){
   theme(lookOf(q));
   $("introCat").innerHTML = compIcon(lookOf(q))+esc(lookName(q));
   $("introTitle").textContent = q.title;
-  $("introBrief").textContent = q.brief + ` ${q.slots.length} slots to fill.` + (G.mode==="first" ? ` First touch: ${cfg.time} seconds to fill them before anyone else.` : G.mode==="clock" ? ` Beat the clock: ${cfg.time} seconds on your own board.` : "");
+  $("introBrief").textContent = q.brief + ` ${q.slots.length} slots to fill.` + (G.mode==="first" ? ` Fastest answer wins: ${cfg.time} seconds to fill them before anyone else.` : G.mode==="clock" ? ` Beat the clock: ${cfg.time} seconds on your own board.` : "");
   $("catLabel").innerHTML = compIcon(lookOf(q))+esc(lookName(q));
   $("titleLabel").textContent = q.title; $("briefLabel").textContent = q.brief;
   $("periodLabel").textContent = "🗓 " + q.period; $("introPeriod").textContent = "🗓 " + q.period;

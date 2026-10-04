@@ -298,7 +298,7 @@ const MODES = ["turns", "first", "clock"];
 // the host's choices, checked: anything unexpected falls back to the default
 function roomSettings(s = {}){
   const pick = (v, ok, d) => ok.includes(v) ? v : d;
-  return { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 15, 30, 60], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all"),
+  return { rounds: pick(s.rounds, [1, 3, 5, 7], 5), cat: String(s.cat || "random").slice(0, 20), cats: catList(s.cats), clock: pick(s.clock, [0, 30, 60, 90], 30), level: pick(s.level, [0, 1, 2, 3], 1), repeat: pick(s.repeat, ["all", "one"], "all"),
     mode: pick(s.mode, MODES, "turns"), time: pick(s.time, [60, 90, 120], 60) };
 }
 const IDLE_MS = 24 * 3600000;

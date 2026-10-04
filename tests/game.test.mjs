@@ -7,7 +7,7 @@ const browser = await launch();
 async function twoPlayerGame(){
   const p = await phone(browser, "game"); await p.goto(site.url);
   await until(() => visible(p, "#setup"));
-  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
   return p;
@@ -50,7 +50,7 @@ await test("game: a pass on the last life is a red card, and the round ends when
 });
 await test("end: each player's row opens this game's stats, with a small link to their all-time stats", async () => {
   const p = await phone(browser, "gamestats"); await p.goto(site.url); await until(() => visible(p, "#setup"));
-  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
   await p.click("#startBtn"); await until(() => visible(p, "#intro"));
   await p.evaluate(() => { applyRefresh(findQ("pl-at-mgr-wins")); G.players.sort((a, b) => a.ci - b.ci); G.turn = 0; }); await p.click("#introBtn"); // Craig first, whatever the shuffle drew
@@ -225,7 +225,7 @@ await test("sounds: the crowd joins the bleeps, cards get one whistle blast, and
     const w = window.whistle; window.whistle = pat => { __snd.push("whistle:" + pat.length); return w(pat); };
     window.__sizes = Object.fromEntries(Object.entries(CROWD_MP3).map(([k, v]) => [k, v.length])); });
   eq(await p.evaluate(() => __sizes), { applause:3, bigcheer:3, boos:4, cheer:4, groan:5, roar:3 }, "all 22 takes are in");
-  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="1"]'); await p.click('#clockSeg button[data-v="0"]');
+  await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="1"]'); await p.evaluate(() => { cfg.clock = 0; }); /* no shot clock in tests (Off is Solo play only) */
   await p.evaluate(() => { window.pickQuestion = () => findQ("pl-top-2023/24"); });
   await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn"); await ready(p);
   await p.evaluate(() => __snd.length = 0);

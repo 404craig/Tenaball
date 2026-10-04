@@ -31,7 +31,7 @@ async function pickComps(p, cats){
 async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 60 } = {}){
   await p.click("#onlineBtn"); await shown(p, "onlineGo");
   await p.click(`#modePick button[data-v="${mode}"]`);
-  await p.click(`#roundSeg button[data-v="${rounds}"]`); await p.click(mode === "turns" ? `#clockSeg button[data-v="${clock}"]` : `#timeSeg button[data-v="${time}"]`); await pickComps(p, [].concat(cat));
+  await p.click(`#roundSeg button[data-v="${rounds}"]`); if (mode !== "turns") await p.click(`#timeSeg button[data-v="${time}"]`); else if (clock) await p.click(`#clockSeg button[data-v="${clock}"]`); else await p.evaluate(() => { cfg.clock = 0; }); // no shot clock in tests (Off is Solo play only) await pickComps(p, [].concat(cat));
   if (!(await p.inputValue("#onlineName"))) await p.fill("#onlineName", p.label);
   await p.click("#createBtn"); await shown(p, "lobbyRoom");
   return p.textContent("#lobbyCode");
@@ -270,13 +270,13 @@ await test("online: a player who reloads mid-game catches up to the same board",
 
 await test("online: when the shot clock runs out, that player loses a life on every phone", async () => {
   const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
-  const code = await hostGame(craig, { clock: 15 });
+  const code = await hostGame(craig, { clock: 30 });
   const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
   await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
   await craig.click("#lobbyStart"); await shown(craig, "intro"); await inSync([craig, aiden], "start");
   await step([craig, aiden], craig, () => craig.click("#introBtn"), "reveal");
   const t = await craig.evaluate(() => G.turn);
-  await until(async () => (await craig.evaluate(t => G.players[t].lives, t)) === 2, { what: "the clock to run out", timeout: 30000 });
+  await until(async () => (await craig.evaluate(t => G.players[t].lives, t)) === 2, { what: "the clock to run out", timeout: 45000 });
   await inSync([craig, aiden], "after timeout");
   eq(await aiden.evaluate(t => G.players[t].lives, t), 2, "the other phone agrees");
   assert((await craig.evaluate(() => G.turn)) !== t, "the turn moved on");
@@ -414,7 +414,7 @@ await test("online: the host can change the mode in the lobby, and taking turns 
   const code = await hostGame(craig, { mode: "first" });
   const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
   await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
-  await until(async () => (await aiden.textContent("#lobbySet")).startsWith("First touch"), { what: "the mode in the lobby" });
+  await until(async () => (await aiden.textContent("#lobbySet")).startsWith("Fastest answer wins"), { what: "the mode in the lobby" });
   assert(!(await visible(aiden, "#lobbyMode")), "only the host can change it");
   await craig.click('#lobbyMode [data-mode="turns"]');
   await until(async () => (await aiden.textContent("#lobbySet")).startsWith("Take turns"), { what: "the new mode on Aiden's phone" });
