@@ -15,7 +15,7 @@ async function phone(name, pace = 1){
 const done = async p => { assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close(); };
 // solo against TenaBot in a mode, one round from the Premier League
 async function vsBot(p, mode, { qid = "pl-top-1992/93", level = 1 } = {}){
-  await p.click('[data-door="solo"]'); await p.click('#oppSeg button[data-v="bot"]'); await p.click(`#botSeg button[data-v="${level}"]`);
+  await p.click('[data-door="bot"]'); await p.click(`#botSeg button[data-v="${level}"]`);
   await p.click(`#modePick button[data-v="${mode}"]`); await p.click('#roundSeg button[data-v="1"]');
   if (mode === "turns") await p.click('#clockSeg button[data-v="0"]'); else await p.click('#timeSeg button[data-v="60"]');
   await p.evaluate(id => { window.pickQuestion = () => findQ(id); }, qid);
@@ -23,31 +23,32 @@ async function vsBot(p, mode, { qid = "pl-top-1992/93", level = 1 } = {}){
 }
 const slotName = (p, i) => p.evaluate(i => { const s = G.q.slots[i]; return s.alts ? s.alts[0] : s.club; }, i);
 
-await test("home: three doors, each opening its own settings, with Stats, Share and Account in a tab bar", async () => {
+await test("home: four doors, each opening its own settings, with Stats, Share and Account in a tab bar", async () => {
   const p = await phone("doors");
-  eq(await p.$$eval("#doors .door b", b => b.map(x => x.textContent)), ["Play solo", "H2H on this phone", "H2H online"]);
-  eq(await p.$$eval("#doors .door .dd", b => b.map(x => x.textContent)), ["Beat your best score and complete more boards.", "2 to 4 players. Pass and play.", "Play on separate phones. 3 game modes."]);
+  eq(await p.$$eval("#doors .door b", b => b.map(x => x.textContent)), ["Solo play", "H2H vs TenaBot", "Multiplayer local", "Multiplayer online"]);
+  eq(await p.$$eval("#doors .door .dd", b => b.map(x => x.textContent)), ["Beat your best score and complete more boards.", "Play against the computer, with varying levels of difficulty.",
+    "Pass and play on one phone, with up to 4 players.", "Play on your own devices, the best way to compete at Tenaball!"]);
   assert(!(await visible(p, "#onlineBtn")), "no online door without a server");
   assert(await visible(p, "#tabBar"), "tab bar on the doors");
   await p.click('[data-door="solo"]');
-  assert(await visible(p, "#oppField") && !(await visible(p, "#countField")) && !(await visible(p, "#modeField")), "solo: an opponent choice, no player count, no modes on your own");
+  assert(!(await visible(p, "#botField")) && !(await visible(p, "#countField")) && !(await visible(p, "#modeField")), "solo: just you and the board");
   assert(!(await visible(p, "#tabBar")), "no tab bar inside a door");
-  await p.click('#oppSeg button[data-v="bot"]');
-  assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot brings the modes and its level");
+  eq(await p.textContent("#doorTitle"), "Solo play");
+  await p.click("#doorSet .backbtn"); await p.click('[data-door="bot"]');
+  assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot: the modes and its level");
+  eq(await p.evaluate(() => [cfg.count, botSeats()]), [2, [false, true]]);
   eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "First touch", "Beat the clock"]);
   await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="120"]');
   assert(await visible(p, "#timeField") && !(await visible(p, "#clockField")) && !(await visible(p, "#repeatField")), "a time limit replaces the shot clock");
   await p.click("#doorSet .backbtn"); await p.click('[data-door="h2h"]');
-  assert(!(await visible(p, "#modeField")), "pass and play takes turns");
+  assert(!(await visible(p, "#modeField")) && !(await visible(p, "#botField")), "pass and play takes turns, with no TenaBot");
   await p.click('#countSeg button[data-v="3"]');
-  eq(await p.$$eval("#nameFields .namerow", r => r.length), 3);
-  await p.click("#nameFields .botbtn");
-  eq(await p.textContent("#nameFields .botseat"), "TenaBot· Medium", "seat 2 is TenaBot"); assert(await visible(p, "#botField"), "bot level shown");
+  eq(await p.$$eval("#nameFields .namerow", r => r.length), 3); eq(await p.$$eval("#nameFields .botbtn", r => r.length), 0, "no Bot switches");
   await p.click("#doorSet .backbtn"); await p.click('[data-view="share"]');
   assert((await p.textContent("#siteLink")).startsWith("127.0.0.1:5191"), "the game's link");
   await p.click("#copyLink"); await until(async () => (await p.textContent("#linkMsg")).includes("copied"), { what: "copied" });
   await p.reload(); await until(() => visible(p, "#setup"));
-  eq(await p.evaluate(() => [cfg.mode, cfg.opp, cfg.time]), ["clock", "bot", 120], "the phone remembers the mode, opponent and time limit");
+  eq(await p.evaluate(() => [cfg.mode, cfg.time]), ["clock", 120], "the phone remembers the mode and time limit");
   await done(p);
 });
 
