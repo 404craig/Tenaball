@@ -142,7 +142,11 @@ Description: "Race against your friends to fill each slot first." Everyone plays
 
 ### Beat the clock
 
-Everyone gets their own copy of the same board and the same time limit. Empty slots stay blank. When someone else finds a slot, their name appears in a small pill of their colour where the answer would go, and the stat shows on the right, but the answer stays hidden. When you find it, it becomes your full colour pill, with no other names on it. The host's phone sends "time up" so everyone stops at the same point in the move log. At time up the board becomes one results grid: every answer down the side, a column per player (headed in their colour) with a filled dot where they found it and an empty ring where they didn't, a star where only one player found it, greyed rows nobody found, and each player's points at the bottom. Scoring: 1 point an answer, 2 for an answer nobody else found. The most points wins. Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
+Everyone gets their own copy of the same board and the same time limit. Empty slots stay blank. When someone else finds a slot, their name appears in a small pill of their colour where the answer would go, and the stat shows on the right, but the answer stays hidden. When you find it, it becomes your full colour pill, with no other names on it. The host's phone sends "time up" so everyone stops at the same point in the move log. At time up the board becomes one results grid: every answer down the side, a column per player (headed in their colour) with a filled dot where they found it and an empty ring where they didn't, a star where only one player found it, greyed rows nobody found, and each player's points at the bottom. Scoring: 1 point an answer, 2 for an answer nobody else found. The most points wins. The key under the grid is one line ("✓ 1 point · ★ only one player found it: 2 points").
+
+### End of a round (First touch and Beat the clock)
+
+When the round ends, the answer box and Lock in give way to a banner in the winner's colour ("Aiden wins the round!" with their points; split colours and "share the round" for a tie). It slides up with a shine and stays put. The host gets a Next round button directly under it; everyone else sees "Waiting for Craig to start the next round". Your found slots use your own colour. Clock bottom right, usual slot sizes; a red card ends your round early.
 
 ### My stats (reworked)
 
