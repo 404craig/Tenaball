@@ -53,7 +53,7 @@ await test("end: each player's row opens this game's stats, with a small link to
   await p.click('[data-door="h2h"]'); await p.click('#countSeg button[data-v="2"]'); await p.click('#roundSeg button[data-v="3"]'); await p.click('#clockSeg button[data-v="0"]');
   const boxes = await p.$$("#nameFields input"); await boxes[0].fill("Craig"); await boxes[1].fill("Aiden");
   await p.click("#startBtn"); await until(() => visible(p, "#intro"));
-  await p.evaluate(() => applyRefresh(findQ("pl-at-mgr-wins"))); await p.click("#introBtn");
+  await p.evaluate(() => { applyRefresh(findQ("pl-at-mgr-wins")); G.players.sort((a, b) => a.ci - b.ci); G.turn = 0; }); await p.click("#introBtn"); // Craig first, whatever the shuffle drew
   const card = async () => { await until(() => visible(p, "#outOverlay"), { what: "the card" }); await p.click("#outOverlay"); };
   await ready(p); await p.evaluate(() => applyGuess("Alex Ferguson"));      // Craig: right
   await ready(p); p.evaluate(() => applyGuess("Kevin Keegan")); await card(); // Aiden: wrong, a yellow
