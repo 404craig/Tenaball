@@ -1,0 +1,88 @@
+{
+ "pick": "b03-sco",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Scotland's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Scotland in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "John McGinn",
+   "val": "21 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kenny Miller",
+   "val": "18 goals"
+  },
+  {
+   "label": "3",
+   "name": "Scott McTominay",
+   "val": "15 goals"
+  },
+  {
+   "label": "4",
+   "name": "James McFadden",
+   "val": "15 goals"
+  },
+  {
+   "label": "5",
+   "name": "Che Adams",
+   "val": "13 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ryan Christie",
+   "val": "10 goals"
+  },
+  {
+   "label": "7",
+   "name": "Lyndon Dykes",
+   "val": "10 goals"
+  },
+  {
+   "label": "8",
+   "name": "Steven Naismith",
+   "val": "10 goals"
+  },
+  {
+   "label": "9",
+   "name": "Steven Fletcher",
+   "val": "10 goals"
+  },
+  {
+   "label": "10",
+   "name": "Shaun Maloney",
+   "val": "7 goals",
+   "pool": "sco-s10",
+   "alts": [
+    "Shaun Maloney",
+    "Robert Snodgrass",
+    "Lawrence Shankland",
+    "Kris Boyd"
+   ]
+  }
+ ],
+ "notes": {
+  "Shaun Maloney": "Shaun Maloney, Robert Snodgrass, Lawrence Shankland and Kris Boyd have 7 each and share 10th; any of them fills it.",
+  "Robert Snodgrass": "Robert Snodgrass shares 10th on 7 with Maloney, Shankland and Boyd.",
+  "Lawrence Shankland": "Lawrence Shankland shares 10th on 7 with Maloney, Snodgrass and Boyd.",
+  "Kris Boyd": "Kris Boyd shares 10th on 7 with Maloney, Snodgrass and Shankland.",
+  "Darren Fletcher": "Darren Fletcher has 5.",
+  "Stuart Armstrong": "Stuart Armstrong has 5.",
+  "James Forrest": "James Forrest has 5.",
+  "James McFadden": "McFadden is on 15 on Wikipedia (the SFA's count), 14 on Transfermarkt and 13 on RSSSF; he is 4th or 5th whichever is used.",
+  "Ally McCoist": "Ally McCoist's goals all came before 2000.",
+  "Kevin Gallacher": "Kevin Gallacher scored most of his 9 before 2000.",
+  "Billy Dodds": "Billy Dodds scored 3 of his 7 after 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://en.wikipedia.org/wiki/Scotland_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/scot-recintlp.html",
+  "https://en.wikipedia.org/wiki/List_of_Scotland_international_footballers"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. Everyone in the ten made his debut after 2000, so their totals at the cut-off were checked against RSSSF (to 24 June 2026) and Wikipedia's list of Scotland internationals and records page: all agree except McFadden (15 Wikipedia, 14 Transfermarkt, 13 RSSSF) and Christie (10 Wikipedia and Transfermarkt, 9 RSSSF), neither of which changes the ten. Maloney, Snodgrass, Shankland and Boyd are on 7 in every source, so 10th is a pool. Straddlers (Dodds, Gallacher, Dailly, Hutchison) have 4 or fewer from 2000."
+}

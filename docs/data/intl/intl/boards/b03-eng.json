@@ -1,0 +1,79 @@
+{
+ "pick": "b03-eng",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "England's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for England in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "2",
+   "name": "Wayne Rooney",
+   "val": "53 goals"
+  },
+  {
+   "label": "3",
+   "name": "Michael Owen",
+   "val": "35 goals"
+  },
+  {
+   "label": "4",
+   "name": "Frank Lampard",
+   "val": "29 goals"
+  },
+  {
+   "label": "5",
+   "name": "Peter Crouch",
+   "val": "22 goals"
+  },
+  {
+   "label": "6",
+   "name": "Steven Gerrard",
+   "val": "21 goals"
+  },
+  {
+   "label": "7",
+   "name": "Raheem Sterling",
+   "val": "20 goals"
+  },
+  {
+   "label": "8",
+   "name": "Jermain Defoe",
+   "val": "20 goals"
+  },
+  {
+   "label": "9",
+   "name": "Marcus Rashford",
+   "val": "19 goals"
+  },
+  {
+   "label": "10",
+   "name": "Bukayo Saka",
+   "val": "17 goals"
+  }
+ ],
+ "notes": {
+  "David Beckham": "David Beckham is joint 11th with 16 since 2000 (17 in all; one came in 1998).",
+  "Danny Welbeck": "Danny Welbeck is joint 11th with 16, just outside.",
+  "Jude Bellingham": "Jude Bellingham had 13 at the end of the 2026 World Cup.",
+  "Joe Cole": "Joe Cole has 10.",
+  "Michael Owen": "Michael Owen scored 40 for England, 5 of them before 2000, so 35 count here.",
+  "Alan Shearer": "Alan Shearer scored most of his 30 goals before 2000.",
+  "Bukayo Saka": "Bukayo Saka had 17 at the end of the 2026 World Cup, including his hat-trick against France on 18 July."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "http://www.englandfootballonline.com/TeamGoals/Goals_10-49.html",
+  "https://en.wikipedia.org/wiki/England_national_football_team_records_and_statistics",
+  "https://en.wikipedia.org/wiki/Michael_Owen",
+  "https://en.wikipedia.org/wiki/David_Beckham",
+  "https://en.wikipedia.org/wiki/Frank_Lampard"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data (every England game each player played, dated, 1 January 2000 to 19 July 2026). Players whose careers began after 2000 were checked against England Football Online's totals at 18 July 2026 (Saka 17 in 56, Rashford 19, Welbeck 16, Bellingham 13) and Wikipedia. Straddlers checked against the caps-and-goals-by-year tables in each player's Wikipedia article: Owen 35 from 2000 (5 in 1998 and 1999), Lampard all 29 from 2000, Beckham 16 from 2000. Sterling is 20 on Wikipedia, Transfermarkt and EFO (RSSSF has 19; either way he is 7th or 8th). EFO counts Lampard 28 and Owen 41; the FA count (29 and 40) is used, and neither changes a place."
+}

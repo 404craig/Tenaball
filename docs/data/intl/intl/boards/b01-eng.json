@@ -1,0 +1,84 @@
+{
+ "pick": "b01-eng",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "England's all-time top scorers",
+ "brief": "Name the ten players with the most goals for England in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "2",
+   "name": "Wayne Rooney",
+   "val": "53 goals"
+  },
+  {
+   "label": "3",
+   "name": "Bobby Charlton",
+   "val": "49 goals"
+  },
+  {
+   "label": "4",
+   "name": "Gary Lineker",
+   "val": "48 goals"
+  },
+  {
+   "label": "5",
+   "name": "Jimmy Greaves",
+   "val": "44 goals"
+  },
+  {
+   "label": "6",
+   "name": "Michael Owen",
+   "val": "40 goals"
+  },
+  {
+   "label": "7",
+   "name": "Tom Finney",
+   "val": "30 goals"
+  },
+  {
+   "label": "8",
+   "name": "Nat Lofthouse",
+   "val": "30 goals"
+  },
+  {
+   "label": "9",
+   "name": "Alan Shearer",
+   "val": "30 goals"
+  },
+  {
+   "label": "10",
+   "name": "Vivian Woodward",
+   "val": "29 goals",
+   "pool": "eng-g10",
+   "alts": [
+    "Vivian Woodward",
+    "Frank Lampard"
+   ]
+  }
+ ],
+ "notes": {
+  "Vivian Woodward": "Vivian Woodward and Frank Lampard are joint 10th with 29; either fills the 10th place.",
+  "Frank Lampard": "Frank Lampard and Vivian Woodward are joint 10th with 29; either fills the 10th place.",
+  "Steve Bloomer": "Steve Bloomer is 12th with 28, just outside.",
+  "David Platt": "David Platt is 13th with 27.",
+  "Bryan Robson": "Bryan Robson is 14th with 26.",
+  "Geoff Hurst": "Geoff Hurst has 24.",
+  "Harry Kane": "Harry Kane had 85 at the end of the 2026 World Cup; goals since then don't count here.",
+  "Raheem Sterling": "Raheem Sterling has 20.",
+  "Bukayo Saka": "Bukayo Saka had 17 at the end of the 2026 World Cup."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/England_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/eng-recintlp.html",
+  "http://www.englandfootballonline.com/TeamGoals/Goals_10-49.html",
+  "https://www.transfermarkt.com/england/rekordspieler/verein/3299/sort/tore.desc"
+ ],
+ "checks": "Wikipedia's records page as it stood on 19 July 2026 (the day after England's last World Cup match, the third-place win over France on 18 July) and Transfermarkt's match-by-match data agree on every figure: Kane 85 goals in 121 caps at that date (Transfermarkt shows 89 now, 4 of them in September and October 2026, which are excluded). RSSSF agrees for every retired player. England Football Online (updated to match 1090, 18 July 2026) also has Kane 85, but credits Owen with 41 and Lampard with 28 and Rooney with 52 (it reassigns a goal against Wales in 2004 and one other); the FA's own count, used by Wikipedia and RSSSF, is Owen 40, Lampard 29, Rooney 53, which is used here. Woodward and Lampard share 10th on 29, so the 10th place is a pool."
+}

@@ -1,0 +1,78 @@
+{
+ "pick": "b04-wal",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Wales's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Wales in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gareth Bale",
+   "val": "111 caps"
+  },
+  {
+   "label": "2",
+   "name": "Chris Gunter",
+   "val": "109 caps"
+  },
+  {
+   "label": "3",
+   "name": "Wayne Hennessey",
+   "val": "109 caps"
+  },
+  {
+   "label": "4",
+   "name": "Ben Davies",
+   "val": "100 caps"
+  },
+  {
+   "label": "5",
+   "name": "Aaron Ramsey",
+   "val": "86 caps"
+  },
+  {
+   "label": "6",
+   "name": "Ashley Williams",
+   "val": "86 caps"
+  },
+  {
+   "label": "7",
+   "name": "Joe Allen",
+   "val": "77 caps"
+  },
+  {
+   "label": "8",
+   "name": "Joe Ledley",
+   "val": "77 caps"
+  },
+  {
+   "label": "9",
+   "name": "Craig Bellamy",
+   "val": "71 caps"
+  },
+  {
+   "label": "10",
+   "name": "Harry Wilson",
+   "val": "69 caps"
+  }
+ ],
+ "notes": {
+  "Daniel James": "Daniel James is 11th with 65, just outside.",
+  "Connor Roberts": "Connor Roberts is joint 12th with 64.",
+  "Sam Vokes": "Sam Vokes is joint 12th with 64.",
+  "Ethan Ampadu": "Ethan Ampadu had 63 at the end of the 2026 World Cup.",
+  "Joe Rodon": "Joe Rodon has 62.",
+  "Gary Speed": "Gary Speed won 85 caps, only 31 of them from 2000.",
+  "Craig Bellamy": "Craig Bellamy won 78 caps; 7 came before 2000.",
+  "Neville Southall": "Neville Southall's caps all came before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://en.wikipedia.org/wiki/List_of_Wales_international_footballers",
+  "https://en.wikipedia.org/wiki/Craig_Bellamy",
+  "https://www.rsssf.org/miscellaneous/wal-recintlp.html"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026, and checked against Wikipedia's list of Wales internationals (June 2026, at the cut-off) for the players who began after 2000, and Bellamy's by-year table (71 from 2000). They agree except Ashley Williams (86 Wikipedia and RSSSF, 87 Transfermarkt; 86 used). James 65, Roberts 64 and Vokes 64 agree in both."
+}

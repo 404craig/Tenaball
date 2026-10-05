@@ -1,0 +1,85 @@
+{
+ "pick": "p04",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most international goals since 2000",
+ "brief": "Name the ten men who have scored the most goals in full internationals since 1 January 2000.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lionel Messi",
+   "val": "125 goals"
+  },
+  {
+   "label": "3",
+   "name": "Sunil Chhetri",
+   "val": "95 goals"
+  },
+  {
+   "label": "4",
+   "name": "Romelu Lukaku",
+   "val": "93 goals"
+  },
+  {
+   "label": "5",
+   "name": "Robert Lewandowski",
+   "val": "89 goals"
+  },
+  {
+   "label": "6",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "7",
+   "name": "Ali Mabkhout",
+   "val": "85 goals"
+  },
+  {
+   "label": "8",
+   "name": "Neymar",
+   "val": "80 goals"
+  },
+  {
+   "label": "9",
+   "name": "Edin Dzeko",
+   "val": "73 goals"
+  },
+  {
+   "label": "10",
+   "name": "Miroslav Klose",
+   "val": "71 goals"
+  }
+ ],
+ "notes": {
+  "Luis Suarez": "Luis Suarez is 11th with 69, just outside.",
+  "Mohamed Salah": "Mohamed Salah is 12th with 68 (Wikipedia; Transfermarkt has 66).",
+  "Kylian Mbappe": "Kylian Mbappe has 66.",
+  "Robbie Keane": "Robbie Keane scored 63 of his 68 after 1999.",
+  "Ali Daei": "Ali Daei scored around half of his 108 before 2000, so he is well short.",
+  "Mokhtar Dahari": "Mokhtar Dahari played from 1972 to 1985, so none of his goals count.",
+  "Ferenc Puskas": "None of Puskas's goals came after 2000.",
+  "Ronaldo Nazario": "Ronaldo Nazario scored much of his 62 before 2000, so he is well short.",
+  "Bashar Abdullah": "Bashar Abdullah (Kuwait) scored over 20 of his 75 before 2000.",
+  "Ali Mabkhout": "Wikipedia counts 85 for Mabkhout, RSSSF 84; he is in the ten either way."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals (revision of 9 August 2026)",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game",
+  "https://www.rsssf.org/miscellaneous/chhetri-intlg.html",
+  "https://www.rsssf.org/miscellaneous/mabkhout-intlg.html",
+  "https://www.rsssf.org/miscellaneous/babdullah-intlg.html",
+  "https://www.rsssf.org/miscellaneous/senamuang-intlg.html",
+  "https://www.rsssf.org/miscellaneous/john-intlg.html",
+  "https://www.rsssf.org/miscellaneous/robkeane-intlg.html",
+  "https://www.rsssf.org/miscellaneous/daei-intlg.html"
+ ],
+ "checks": "Every one of the ten made his debut after 1 January 2000 (Klose 2001, Ronaldo 2003, Chhetri and Messi 2005, Dzeko 2007, Lewandowski 2008, Mabkhout 2009, Lukaku and Neymar 2010, Kane 2015), so his career total is his total since 2000; career totals as for the all-time board (Transfermarkt match lists to 19 July 2026 and Wikipedia, or RSSSF for Chhetri and Mabkhout). Players whose careers straddle 2000 were checked against RSSSF's goal-by-goal pages: Bashar Abdullah, Kiatisuk Senamuang, Stern John, Robbie Keane and Carlos Ruiz all scored enough before 2000 to fall below 71."
+}

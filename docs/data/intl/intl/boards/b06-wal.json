@@ -1,0 +1,74 @@
+{
+ "pick": "b06-wal",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Wales managers in order",
+ "brief": "Name Wales's ten permanent managers from John Toshack's first spell (1994) to Craig Bellamy, in order. Each place is labelled with the year he took charge; Toshack had two spells and fills two places. Caretakers (Neville Southall, Brian Flynn) don't count, and Rob Page is labelled from 2022, when he was made permanent.",
+ "period": "Permanent managers, January 1994 to July 2026",
+ "rows": [
+  {
+   "label": "1994",
+   "name": "John Toshack",
+   "val": "1994"
+  },
+  {
+   "label": "1994",
+   "name": "Mike Smith",
+   "val": "1994 to 1995"
+  },
+  {
+   "label": "1995",
+   "name": "Bobby Gould",
+   "val": "1995 to 1999"
+  },
+  {
+   "label": "1999",
+   "name": "Mark Hughes",
+   "val": "1999 to 2004"
+  },
+  {
+   "label": "2004",
+   "name": "John Toshack",
+   "val": "2004 to 2010"
+  },
+  {
+   "label": "2010",
+   "name": "Gary Speed",
+   "val": "2010 to 2011"
+  },
+  {
+   "label": "2012",
+   "name": "Chris Coleman",
+   "val": "2012 to 2017"
+  },
+  {
+   "label": "2018",
+   "name": "Ryan Giggs",
+   "val": "2018 to 2022"
+  },
+  {
+   "label": "2022",
+   "name": "Rob Page",
+   "val": "2022 to 2024"
+  },
+  {
+   "label": "2024",
+   "name": "Craig Bellamy",
+   "val": "2024 on"
+  }
+ ],
+ "notes": {
+  "Terry Yorath": "Terry Yorath (1988 to 1993) came just before Toshack.",
+  "Neville Southall": "Neville Southall was joint caretaker with Mark Hughes in 1999.",
+  "Brian Flynn": "Brian Flynn was caretaker in 2010.",
+  "Rob Page": "Rob Page was in interim charge from November 2020 while Giggs was on leave and was made permanent in June 2022.",
+  "John Toshack": "Toshack's first spell in 1994 lasted one match; his second ran from November 2004 to 2010.",
+  "Mike Smith": "Mike Smith also managed Wales from 1974 to 1979."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Wales_national_football_team_manager",
+  "https://www.transfermarkt.com/wales/mitarbeiterhistorie/verein/3864"
+ ],
+ "checks": "Wikipedia's managers table and Transfermarkt's staff history agree on the order: Toshack (January to March 1994), Mike Smith (April 1994), Gould (1995), Hughes (1999), Toshack (appointed 12 November 2004; Wikipedia's table gives his first match in 2005), Speed (December 2010), Coleman (January 2012), Giggs (January 2018), Page (permanent 21 June 2022), Bellamy (July 2024, still in post). Ten from Toshack's first spell fits exactly."
+}

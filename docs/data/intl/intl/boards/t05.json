@@ -1,0 +1,75 @@
+{
+ "pick": "t05",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 0,
+ "title": "FIFA ranking after the 2026 World Cup",
+ "brief": "Name the top ten nations in FIFA's men's world ranking published on 20 July 2026, the day after the World Cup final.",
+ "period": "FIFA/Coca-Cola Men's World Ranking of 20 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Spain",
+   "val": "1995.88 points"
+  },
+  {
+   "label": "2",
+   "name": "Argentina",
+   "val": "1970.37 points"
+  },
+  {
+   "label": "3",
+   "name": "France",
+   "val": "1948.97 points"
+  },
+  {
+   "label": "4",
+   "name": "England",
+   "val": "1922.83 points"
+  },
+  {
+   "label": "5",
+   "name": "Brazil",
+   "val": "1804.92 points"
+  },
+  {
+   "label": "6",
+   "name": "Morocco",
+   "val": "1803.99 points"
+  },
+  {
+   "label": "7",
+   "name": "Portugal",
+   "val": "1787.85 points"
+  },
+  {
+   "label": "8",
+   "name": "Belgium",
+   "val": "1778.36 points"
+  },
+  {
+   "label": "9",
+   "name": "Netherlands",
+   "val": "1775.54 points"
+  },
+  {
+   "label": "10",
+   "name": "Mexico",
+   "val": "1754.30 points"
+  }
+ ],
+ "notes": {
+  "Colombia": "Colombia are 11th, just outside.",
+  "Germany": "Germany are 12th, down two places.",
+  "Croatia": "Croatia are 13th.",
+  "Switzerland": "Switzerland are 14th.",
+  "Italy": "Italy are outside the top ten.",
+  "Uruguay": "Uruguay are outside the top ten."
+ },
+ "sources": [
+  "https://inside.fifa.com/fifa-world-ranking/men (country pages ESP, POR, NED, COL, last update 20 July 2026)",
+  "https://inside.fifa.com/news/spain-top-mens-world-rankings-after-second-world-cup",
+  "https://en.wikipedia.org/wiki/Module:SportsRankings/data/FIFA_World_Rankings (revision of 20 July 2026)"
+ ],
+ "checks": "Places and points from FIFA's own ranking pages (update of 20 July 2026, the first after the final; the next is 7 October 2026) agree with Wikipedia's ranking table, except Spain, where Wikipedia has 1995.98 and FIFA 1995.88 (FIFA's figure used). FIFA's news story of 20 July confirms the places (Spain 1st, Argentina 2nd, Brazil 5th, Morocco 6th, Portugal 7th, Belgium 8th, Netherlands 9th, Mexico 10th, Germany 12th)."
+}

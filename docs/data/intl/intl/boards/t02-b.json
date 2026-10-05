@@ -1,0 +1,67 @@
+{
+ "pick": "t02-b",
+ "kind": "labelled",
+ "type": "nation",
+ "level": 2,
+ "title": "Africa Cup of Nations winners, 1988 to 2006",
+ "brief": "Name the winners of each Africa Cup of Nations, by edition.",
+ "period": "Africa Cup of Nations, 1988 to 2006 editions",
+ "rows": [
+  {
+   "label": "1988",
+   "name": "Cameroon",
+   "val": "Beat Nigeria in the final"
+  },
+  {
+   "label": "1990",
+   "name": "Algeria",
+   "val": "Beat Nigeria in the final"
+  },
+  {
+   "label": "1992",
+   "name": "Ivory Coast",
+   "val": "Beat Ghana in the final"
+  },
+  {
+   "label": "1994",
+   "name": "Nigeria",
+   "val": "Beat Zambia in the final"
+  },
+  {
+   "label": "1996",
+   "name": "South Africa",
+   "val": "Beat Tunisia in the final"
+  },
+  {
+   "label": "1998",
+   "name": "Egypt",
+   "val": "Beat South Africa in the final"
+  },
+  {
+   "label": "2000",
+   "name": "Cameroon",
+   "val": "Beat Nigeria in the final"
+  },
+  {
+   "label": "2002",
+   "name": "Cameroon",
+   "val": "Beat Senegal in the final"
+  },
+  {
+   "label": "2004",
+   "name": "Tunisia",
+   "val": "Beat Morocco in the final"
+  },
+  {
+   "label": "2006",
+   "name": "Egypt",
+   "val": "Beat Ivory Coast in the final"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/Africa_Cup_of_Nations (revision of 24 August 2026)",
+  "https://github.com/martj42/international_results (results.csv and shootouts.csv)"
+ ],
+ "checks": "Winners and runners-up from Wikipedia's summary table match the final of each edition in the martj42 international results dataset (with its shoot-out file for finals drawn after extra time). Editions are named by their official year: 2021 was played in early 2022, 2023 in early 2024 and 2025 from December 2025 to January 2026. Most slots for one nation: Cameroon 3, Egypt 2, Algeria 1."
+}

@@ -1,0 +1,77 @@
+{
+ "pick": "b02-eng",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "England's most capped players",
+ "brief": "Name the ten players with the most caps for England in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Peter Shilton",
+   "val": "125 caps"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "121 caps"
+  },
+  {
+   "label": "3",
+   "name": "Wayne Rooney",
+   "val": "120 caps"
+  },
+  {
+   "label": "4",
+   "name": "David Beckham",
+   "val": "115 caps"
+  },
+  {
+   "label": "5",
+   "name": "Steven Gerrard",
+   "val": "114 caps"
+  },
+  {
+   "label": "6",
+   "name": "Bobby Moore",
+   "val": "108 caps"
+  },
+  {
+   "label": "7",
+   "name": "Ashley Cole",
+   "val": "107 caps"
+  },
+  {
+   "label": "8",
+   "name": "Bobby Charlton",
+   "val": "106 caps"
+  },
+  {
+   "label": "9",
+   "name": "Frank Lampard",
+   "val": "106 caps"
+  },
+  {
+   "label": "10",
+   "name": "Billy Wright",
+   "val": "105 caps"
+  }
+ ],
+ "notes": {
+  "Kyle Walker": "Kyle Walker is 11th with 96, just outside.",
+  "John Stones": "John Stones is 12th with 94.",
+  "Jordan Pickford": "Jordan Pickford has 91.",
+  "Jordan Henderson": "Jordan Henderson has 91.",
+  "Bryan Robson": "Bryan Robson has 90.",
+  "Michael Owen": "Michael Owen has 89.",
+  "Harry Kane": "Harry Kane had 121 caps at the end of the 2026 World Cup; caps since then don't count here."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/England_national_football_team_records_and_statistics",
+  "http://www.englandfootballonline.com/TeamPlyrs/AppsMost.html",
+  "https://www.rsssf.org/miscellaneous/eng-recintlp.html",
+  "https://www.transfermarkt.com/england/rekordspieler/verein/3299/sort/einsaetze.desc"
+ ],
+ "checks": "Wikipedia's records page on 19 July 2026, England Football Online's most-appearances list (updated 18 July 2026) and Transfermarkt's match data (counted to 19 July 2026) all give the same ten with the same figures: Kane 121 at the cut-off (124 now). RSSSF (to November 2025) agrees for everyone else. Walker 96 and Stones 94 confirmed by EFO and Transfermarkt."
+}

@@ -1,0 +1,150 @@
+{
+ "pick": "b07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "England's most hat-tricks since 1992",
+ "brief": "Name the players with the most hat-tricks for England from August 1992 to the end of the 2026 World Cup. Three or more goals in a match counts as a hat-trick.",
+ "period": "Full internationals from August 1992 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "2",
+   "name": "Michael Owen",
+   "val": "2 hat-tricks"
+  },
+  {
+   "label": "3",
+   "name": "Bukayo Saka",
+   "val": "2 hat-tricks"
+  },
+  {
+   "label": "4",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "5",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "6",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "David Platt",
+   "val": "1 hat-trick",
+   "pool": "eng-ht1",
+   "alts": [
+    "David Platt",
+    "Ian Wright",
+    "Paul Scholes",
+    "Alan Shearer",
+    "Peter Crouch",
+    "Theo Walcott",
+    "Jermain Defoe",
+    "Raheem Sterling"
+   ]
+  }
+ ],
+ "notes": {
+  "Gary Lineker": "Gary Lineker's last England hat-trick was in 1991, before this period.",
+  "Wayne Rooney": "Wayne Rooney never scored an England hat-trick.",
+  "Jimmy Greaves": "Jimmy Greaves holds the all-time record with 6, all in the 1960s.",
+  "David Platt": "Eight players have one hat-trick each since 1992 (Platt, Wright, Scholes, Shearer, Crouch, Walcott, Defoe, Sterling) and share the last seven places.",
+  "Bukayo Saka": "Saka's second was against France in the World Cup third-place match on 18 July 2026."
+ },
+ "sources": [
+  "http://www.englandfootballonline.com/TeamGoals/GoalsHattricks.html",
+  "https://en.wikipedia.org/wiki/List_of_England_national_football_team_hat-tricks"
+ ],
+ "checks": "England Football Online's chronological list (updated to 18 July 2026) and Wikipedia's list of England hat-tricks agree on all 17 hat-tricks from August 1992: Platt (Feb 1993), Wright (Nov 1993), Scholes (Mar 1999), Shearer (Sep 1999), Owen (2001, 2005), Crouch (2006), Walcott (2008), Defoe (2010), Kane (2018, 2019 twice, 2021 twice), Sterling (2019), Saka (2023, July 2026). Eleven players have one, so the board is ranked; the eight with one share places 4 to 10 as a pool."
+}

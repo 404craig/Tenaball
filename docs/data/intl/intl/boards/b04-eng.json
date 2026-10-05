@@ -1,0 +1,82 @@
+{
+ "pick": "b04-eng",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "England's most caps since 2000",
+ "brief": "Name the ten players with the most caps for England in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "121 caps"
+  },
+  {
+   "label": "2",
+   "name": "Wayne Rooney",
+   "val": "120 caps"
+  },
+  {
+   "label": "3",
+   "name": "Steven Gerrard",
+   "val": "114 caps"
+  },
+  {
+   "label": "4",
+   "name": "Ashley Cole",
+   "val": "107 caps"
+  },
+  {
+   "label": "5",
+   "name": "Frank Lampard",
+   "val": "105 caps"
+  },
+  {
+   "label": "6",
+   "name": "Kyle Walker",
+   "val": "96 caps"
+  },
+  {
+   "label": "7",
+   "name": "John Stones",
+   "val": "94 caps"
+  },
+  {
+   "label": "8",
+   "name": "Jordan Pickford",
+   "val": "91 caps"
+  },
+  {
+   "label": "9",
+   "name": "Jordan Henderson",
+   "val": "91 caps"
+  },
+  {
+   "label": "10",
+   "name": "David Beckham",
+   "val": "88 caps"
+  }
+ ],
+ "notes": {
+  "Raheem Sterling": "Raheem Sterling is 11th with 82, just outside.",
+  "Declan Rice": "Declan Rice is 12th with 80.",
+  "John Terry": "John Terry has 78.",
+  "Marcus Rashford": "Marcus Rashford has 78.",
+  "Rio Ferdinand": "Rio Ferdinand has 73 since 2000 (81 in all).",
+  "Michael Owen": "Michael Owen has 71 since 2000 (89 in all).",
+  "Gary Neville": "Gary Neville has 51 since 2000 (85 in all).",
+  "David Beckham": "David Beckham won 115 caps; 27 came before 2000, so 88 count here.",
+  "Peter Shilton": "Peter Shilton's caps all came before 2000.",
+  "Frank Lampard": "Frank Lampard won 106 caps; his first, in October 1999, doesn't count here."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "http://www.englandfootballonline.com/TeamPlyrs/AppsMost.html",
+  "https://en.wikipedia.org/wiki/David_Beckham",
+  "https://en.wikipedia.org/wiki/Frank_Lampard",
+  "https://en.wikipedia.org/wiki/Jordan_Henderson",
+  "https://en.wikipedia.org/wiki/England_national_football_team_records_and_statistics"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. Cross-checked against England Football Online's appearance list at 18 July 2026 (Kane 121, Walker 96, Stones 94, Pickford 91, Henderson 91, Sterling 82, Rice 80) and the by-year tables in Wikipedia articles for the straddlers (Beckham 88 from 2000, Lampard 105). Henderson is 91 on EFO and Wikipedia, 90 on Transfermarkt; 91 is used, and he is 8th or 9th either way."
+}

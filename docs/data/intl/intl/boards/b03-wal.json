@@ -1,0 +1,80 @@
+{
+ "pick": "b03-wal",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Wales's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Wales in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gareth Bale",
+   "val": "41 goals"
+  },
+  {
+   "label": "2",
+   "name": "Aaron Ramsey",
+   "val": "21 goals"
+  },
+  {
+   "label": "3",
+   "name": "Craig Bellamy",
+   "val": "17 goals"
+  },
+  {
+   "label": "4",
+   "name": "Harry Wilson",
+   "val": "17 goals"
+  },
+  {
+   "label": "5",
+   "name": "Robert Earnshaw",
+   "val": "16 goals"
+  },
+  {
+   "label": "6",
+   "name": "Kieffer Moore",
+   "val": "15 goals"
+  },
+  {
+   "label": "7",
+   "name": "John Hartson",
+   "val": "12 goals"
+  },
+  {
+   "label": "8",
+   "name": "Sam Vokes",
+   "val": "11 goals"
+  },
+  {
+   "label": "9",
+   "name": "Daniel James",
+   "val": "10 goals"
+  },
+  {
+   "label": "10",
+   "name": "Jason Koumas",
+   "val": "10 goals"
+  }
+ ],
+ "notes": {
+  "David Brooks": "David Brooks is joint 11th with 7, just outside.",
+  "Brennan Johnson": "Brennan Johnson is joint 11th with 7, just outside.",
+  "Ryan Giggs": "Ryan Giggs scored 6 of his 12 from 2000.",
+  "Simon Davies": "Simon Davies has 6.",
+  "Hal Robson-Kanu": "Hal Robson-Kanu has 5.",
+  "Craig Bellamy": "Craig Bellamy scored 19 for Wales, 2 of them before 2000.",
+  "John Hartson": "John Hartson scored 14 for Wales, 2 of them before 2000.",
+  "Ian Rush": "Ian Rush's goals all came before 2000.",
+  "Dean Saunders": "Dean Saunders scored all but none of his 22 before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://en.wikipedia.org/wiki/List_of_Wales_international_footballers",
+  "https://en.wikipedia.org/wiki/Craig_Bellamy",
+  "https://en.wikipedia.org/wiki/John_Hartson",
+  "https://www.rsssf.org/miscellaneous/wal-recintlp.html"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. Players who began after 2000 checked against Wikipedia's list of Wales internationals (June 2026) and RSSSF; the two who began earlier against the by-year tables in their Wikipedia articles (Bellamy 17 of 19 from 2000, Hartson 12 of 14). All agree except Bale (41 FAW and Wikipedia, 40 Transfermarkt; 41 used). Daniel James had 10 at the cut-off (he scored again in October 2026)."
+}
