@@ -1,0 +1,609 @@
+season,club,player
+2025/26,Inter,Josep Martinez
+2025/26,Inter,Yann Sommer
+2025/26,Inter,Raffaele Di Gennaro
+2025/26,Inter,Alessandro Bastoni
+2025/26,Inter,Yann Bisseck
+2025/26,Inter,Federico Dimarco
+2025/26,Inter,Denzel Dumfries
+2025/26,Inter,Carlos Augusto
+2025/26,Inter,Manuel Akanji
+2025/26,Inter,Benjamin Pavard
+2025/26,Inter,Matteo Cocchi
+2025/26,Inter,Stefan de Vrij
+2025/26,Inter,Francesco Acerbi
+2025/26,Inter,Matteo Darmian
+2025/26,Inter,Nicolo Barella
+2025/26,Inter,Petar Sucic
+2025/26,Inter,Andy Diouf
+2025/26,Inter,Davide Frattesi
+2025/26,Inter,Luis Henrique
+2025/26,Inter,Hakan Calhanoglu
+2025/26,Inter,Piotr Zielinski
+2025/26,Inter,Luka Topalovic
+2025/26,Inter,Henrikh Mkhitaryan
+2025/26,Inter,Lautaro Martinez
+2025/26,Inter,Marcus Thuram
+2025/26,Inter,Pio Esposito
+2025/26,Inter,Ange-Yoan Bonny
+2025/26,Inter,Mattia Mosconi
+2025/26,Inter,Matteo Lavelli
+2025/26,Napoli,Vanja Milinkovic-Savic
+2025/26,Napoli,Alex Meret
+2025/26,Napoli,Nikita Contini
+2025/26,Napoli,Miguel Gutierrez
+2025/26,Napoli,Alessandro Buongiorno
+2025/26,Napoli,Sam Beukema
+2025/26,Napoli,Mathias Olivera
+2025/26,Napoli,Amir Rrahmani
+2025/26,Napoli,Giovanni Di Lorenzo
+2025/26,Napoli,Luca Marianucci
+2025/26,Napoli,Leonardo Spinazzola
+2025/26,Napoli,Pasquale Mazzocchi
+2025/26,Napoli,Juan Jesus
+2025/26,Napoli,Scott McTominay
+2025/26,Napoli,Billy Gilmour
+2025/26,Napoli,Antonio Vergara
+2025/26,Napoli,Frank Anguissa
+2025/26,Napoli,Eljif Elmas
+2025/26,Napoli,Stanislav Lobotka
+2025/26,Napoli,Kevin De Bruyne
+2025/26,Napoli,Rasmus Hojlund
+2025/26,Napoli,Alisson Santos
+2025/26,Napoli,Noa Lang
+2025/26,Napoli,Lorenzo Lucca
+2025/26,Napoli,David Neres
+2025/26,Napoli,Giovane
+2025/26,Napoli,Romelu Lukaku
+2025/26,Napoli,Matteo Politano
+2025/26,Napoli,Giuseppe Ambrosino
+2025/26,Roma,Mile Svilar
+2025/26,Roma,Wesley
+2025/26,Roma,Evan Ndicka
+2025/26,Roma,Daniele Ghilardi
+2025/26,Roma,Gianluca Mancini
+2025/26,Roma,Zeki Celik
+2025/26,Roma,Jan Ziolkowski
+2025/26,Roma,Devyne Rensch
+2025/26,Roma,Mario Hermoso
+2025/26,Roma,Konstantinos Tsimikas
+2025/26,Roma,Angelino
+2025/26,Roma,Manu Kone
+2025/26,Roma,Neil El Aynaoui
+2025/26,Roma,Niccolo Pisilli
+2025/26,Roma,Alessandro Romano
+2025/26,Roma,Tommaso Baldanzi
+2025/26,Roma,Lorenzo Pellegrini
+2025/26,Roma,Bryan Cristante
+2025/26,Roma,Donyell Malen
+2025/26,Roma,Matias Soule
+2025/26,Roma,Evan Ferguson
+2025/26,Roma,Robinio Vaz
+2025/26,Roma,Artem Dovbyk
+2025/26,Roma,Leon Bailey
+2025/26,Roma,Bryan Zaragoza
+2025/26,Roma,Lorenzo Venturino
+2025/26,Roma,Paulo Dybala
+2025/26,Roma,Antonio Arena
+2025/26,Roma,Stephan El Shaarawy
+2025/26,Como,Jean Butez
+2025/26,Como,Jacobo Ramon
+2025/26,Como,Alex Valle
+2025/26,Como,Stefan Posch
+2025/26,Como,Ignace Van der Brempt
+2025/26,Como,Marc Oliver Kempf
+2025/26,Como,Ivan Smolcic
+2025/26,Como,Diego Carlos
+2025/26,Como,Mergim Vojvoda
+2025/26,Como,Edoardo Goldaniga
+2025/26,Como,Alberto Moreno
+2025/26,Como,Nico Paz
+2025/26,Como,Martin Baturina
+2025/26,Como,Maximo Perrone
+2025/26,Como,Lucas Da Cunha
+2025/26,Como,Maxence Caqueret
+2025/26,Como,Andrea Le Borgne
+2025/26,Como,Sergi Roberto
+2025/26,Como,Assane Diao
+2025/26,Como,Jesus Rodriguez
+2025/26,Como,Anastasios Douvikas
+2025/26,Como,Jayden Addai
+2025/26,Como,Nicolas Kuhn
+2025/26,Como,Alvaro Morata
+2025/26,AC Milan,Mike Maignan
+2025/26,AC Milan,Pietro Terracciano
+2025/26,AC Milan,Strahinja Pavlovic
+2025/26,AC Milan,Koni De Winter
+2025/26,AC Milan,Alex Jimenez
+2025/26,AC Milan,Davide Bartesaghi
+2025/26,AC Milan,Matteo Gabbia
+2025/26,AC Milan,Zachary Athekame
+2025/26,AC Milan,Pervis Estupinan
+2025/26,AC Milan,Fikayo Tomori
+2025/26,AC Milan,David Odogu
+2025/26,AC Milan,Samuele Ricci
+2025/26,AC Milan,Ardon Jashari
+2025/26,AC Milan,Yunus Musah
+2025/26,AC Milan,Adrien Rabiot
+2025/26,AC Milan,Alexis Saelemaekers
+2025/26,AC Milan,Youssouf Fofana
+2025/26,AC Milan,Ruben Loftus-Cheek
+2025/26,AC Milan,Luka Modric
+2025/26,AC Milan,Rafael Leao
+2025/26,AC Milan,Christian Pulisic
+2025/26,AC Milan,Christopher Nkunku
+2025/26,AC Milan,Samuel Chukwueze
+2025/26,AC Milan,Santiago Gimenez
+2025/26,AC Milan,Niclas Fullkrug
+2025/26,AC Milan,Cheveyo Balentien
+2025/26,Juventus,Michele Di Gregorio
+2025/26,Juventus,Mattia Perin
+2025/26,Juventus,Bremer
+2025/26,Juventus,Pierre Kalulu
+2025/26,Juventus,Lloyd Kelly
+2025/26,Juventus,Andrea Cambiaso
+2025/26,Juventus,Emil Holm
+2025/26,Juventus,Federico Gatti
+2025/26,Juventus,Joao Mario
+2025/26,Juventus,Juan Cabal
+2025/26,Juventus,Daniele Rugani
+2025/26,Juventus,Filip Kostic
+2025/26,Juventus,Khephren Thuram
+2025/26,Juventus,Weston McKennie
+2025/26,Juventus,Manuel Locatelli
+2025/26,Juventus,Vasilije Adzic
+2025/26,Juventus,Fabio Miretti
+2025/26,Juventus,Teun Koopmeiners
+2025/26,Juventus,Kenan Yildiz
+2025/26,Juventus,Dusan Vlahovic
+2025/26,Juventus,Francisco Conceicao
+2025/26,Juventus,Jonathan David
+2025/26,Juventus,Lois Openda
+2025/26,Juventus,Nico Gonzalez
+2025/26,Juventus,Edon Zhegrova
+2025/26,Juventus,Jeremie Boga
+2025/26,Juventus,Arkadiusz Milik
+2025/26,Atalanta,Marco Carnesecchi
+2025/26,Atalanta,Marco Sportiello
+2025/26,Atalanta,Giorgio Scalvini
+2025/26,Atalanta,Honest Ahanor
+2025/26,Atalanta,Isak Hien
+2025/26,Atalanta,Lorenzo Bernasconi
+2025/26,Atalanta,Odilon Kossounou
+2025/26,Atalanta,Raoul Bellanova
+2025/26,Atalanta,Berat Djimsiti
+2025/26,Atalanta,Sead Kolasinac
+2025/26,Atalanta,Davide Zappacosta
+2025/26,Atalanta,Ederson
+2025/26,Atalanta,Charles De Ketelaere
+2025/26,Atalanta,Nicola Zalewski
+2025/26,Atalanta,Yunus Musah
+2025/26,Atalanta,Lazar Samardzic
+2025/26,Atalanta,Marco Brescianini
+2025/26,Atalanta,Daniel Maldini
+2025/26,Atalanta,Mario Pasalic
+2025/26,Atalanta,Marten de Roon
+2025/26,Atalanta,Mitchel Bakker
+2025/26,Atalanta,Ademola Lookman
+2025/26,Atalanta,Nikola Krstovic
+2025/26,Atalanta,Gianluca Scamacca
+2025/26,Atalanta,Giacomo Raspadori
+2025/26,Atalanta,Kamaldeen Sulemana
+2025/26,Atalanta,Dominic Vavassori
+2025/26,Bologna,Federico Ravaglia
+2025/26,Bologna,Massimo Pessina
+2025/26,Bologna,Lukasz Skorupski
+2025/26,Bologna,Jhon Lucumi
+2025/26,Bologna,Torbjorn Heggem
+2025/26,Bologna,Juan Miranda
+2025/26,Bologna,Martin Vitik
+2025/26,Bologna,Emil Holm
+2025/26,Bologna,Eivind Helland
+2025/26,Bologna,Joao Mario
+2025/26,Bologna,Nadir Zortea
+2025/26,Bologna,Nicolo Casale
+2025/26,Bologna,Charalampos Lykogiannis
+2025/26,Bologna,Lorenzo De Silvestri
+2025/26,Bologna,Lewis Ferguson
+2025/26,Bologna,Jens Odgaard
+2025/26,Bologna,Giovanni Fabbian
+2025/26,Bologna,Tommaso Pobega
+2025/26,Bologna,Simon Sohm
+2025/26,Bologna,Nikola Moro
+2025/26,Bologna,Ibrahim Sulemana
+2025/26,Bologna,Remo Freuler
+2025/26,Bologna,Jonathan Rowe
+2025/26,Bologna,Santiago Castro
+2025/26,Bologna,Riccardo Orsolini
+2025/26,Bologna,Nicolo Cambiaghi
+2025/26,Bologna,Thijs Dallinga
+2025/26,Bologna,Benja Dominguez
+2025/26,Bologna,Federico Bernardeschi
+2025/26,Bologna,Ciro Immobile
+2025/26,Lazio,Edoardo Motta
+2025/26,Lazio,Ivan Provedel
+2025/26,Lazio,Alessio Furlanetto
+2025/26,Lazio,Mario Gila
+2025/26,Lazio,Oliver Provstgaard
+2025/26,Lazio,Nuno Tavares
+2025/26,Lazio,Alessio Romagnoli
+2025/26,Lazio,Luca Pellegrini
+2025/26,Lazio,Adam Marusic
+2025/26,Lazio,Manuel Lazzari
+2025/26,Lazio,Patric
+2025/26,Lazio,Elseid Hysaj
+2025/26,Lazio,Matteo Guendouzi
+2025/26,Lazio,Kenneth Taylor
+2025/26,Lazio,Nicolo Rovella
+2025/26,Lazio,Daniel Maldini
+2025/26,Lazio,Reda Belahyane
+2025/26,Lazio,Fisayo Dele-Bashiru
+2025/26,Lazio,Adrian Przyborek
+2025/26,Lazio,Danilo Cataldi
+2025/26,Lazio,Toma Basic
+2025/26,Lazio,Matias Vecino
+2025/26,Lazio,Taty Castellanos
+2025/26,Lazio,Gustav Isaksen
+2025/26,Lazio,Petar Ratkov
+2025/26,Lazio,Tijjani Noslin
+2025/26,Lazio,Mattia Zaccagni
+2025/26,Lazio,Matteo Cancellieri
+2025/26,Lazio,Boulaye Dia
+2025/26,Lazio,Pedro
+2025/26,Udinese,Maduka Okoye
+2025/26,Udinese,Razvan Sava
+2025/26,Udinese,Daniele Padelli
+2025/26,Udinese,Oumar Solet
+2025/26,Udinese,Thomas Kristensen
+2025/26,Udinese,Matteo Palma
+2025/26,Udinese,Nicolo Bertola
+2025/26,Udinese,Branimir Mlacic
+2025/26,Udinese,Jordan Zemura
+2025/26,Udinese,Alessandro Zanoli
+2025/26,Udinese,Saba Goglichidze
+2025/26,Udinese,Hassane Kamara
+2025/26,Udinese,Kingsley Ehizibue
+2025/26,Udinese,Christian Kabasele
+2025/26,Udinese,Arthur Atta
+2025/26,Udinese,Jurgen Ekkelenkamp
+2025/26,Udinese,Lennon Miller
+2025/26,Udinese,Jakub Piotrowski
+2025/26,Udinese,Jesper Karlstrom
+2025/26,Udinese,Sandi Lovric
+2025/26,Udinese,Juan Arizala
+2025/26,Udinese,Oier Zarraga
+2025/26,Udinese,Rui Modesto
+2025/26,Udinese,Abdoulaye Camara
+2025/26,Udinese,Nicolo Zaniolo
+2025/26,Udinese,Keinan Davis
+2025/26,Udinese,Idrissa Gueye
+2025/26,Udinese,Iker Bravo
+2025/26,Udinese,Adam Buksa
+2025/26,Udinese,Vakoun Bayo
+2025/26,Sassuolo,Arijanet Muric
+2025/26,Sassuolo,Stefano Turati
+2025/26,Sassuolo,Gioele Zacchi
+2025/26,Sassuolo,Tarik Muharemovic
+2025/26,Sassuolo,Jay Idzes
+2025/26,Sassuolo,Sebastian Walukiewicz
+2025/26,Sassuolo,Josh Doig
+2025/26,Sassuolo,Fali Cande
+2025/26,Sassuolo,Ulisses Garcia
+2025/26,Sassuolo,Woyo Coulibaly
+2025/26,Sassuolo,Pedro Felipe
+2025/26,Sassuolo,Cas Odenthal
+2025/26,Sassuolo,Filippo Romagna
+2025/26,Sassuolo,Tommaso Macchioni
+2025/26,Sassuolo,Ismael Kone
+2025/26,Sassuolo,Darryl Bakola
+2025/26,Sassuolo,Kristian Thorstvedt
+2025/26,Sassuolo,Luca Lipani
+2025/26,Sassuolo,Daniel Boloca
+2025/26,Sassuolo,Aster Vranckx
+2025/26,Sassuolo,Nemanja Matic
+2025/26,Sassuolo,Andrea Ghion
+2025/26,Sassuolo,Edoardo Iannoni
+2025/26,Sassuolo,Christian Frangella
+2025/26,Sassuolo,Armand Lauriente
+2025/26,Sassuolo,Andrea Pinamonti
+2025/26,Sassuolo,Cristian Volpato
+2025/26,Sassuolo,Domenico Berardi
+2025/26,Sassuolo,Alieu Fadera
+2025/26,Sassuolo,Walid Cheddira
+2025/26,Sassuolo,M'Bala Nzola
+2025/26,Sassuolo,Nicholas Pierini
+2025/26,Sassuolo,Luca Moro
+2025/26,Sassuolo,Laurs Skjellerup
+2025/26,Torino,Franco Israel
+2025/26,Torino,Alberto Paleari
+2025/26,Torino,Saul Coco
+2025/26,Torino,Luca Marianucci
+2025/26,Torino,Marcus Pedersen
+2025/26,Torino,Rafa Obrador
+2025/26,Torino,Ardian Ismajli
+2025/26,Torino,Enzo Ebosse
+2025/26,Torino,Niels Nkounkou
+2025/26,Torino,Guillermo Maripan
+2025/26,Torino,Ali Dembele
+2025/26,Torino,Adam Masina
+2025/26,Torino,Cristiano Biraghi
+2025/26,Torino,Cesare Casadei
+2025/26,Torino,Kristjan Asllani
+2025/26,Torino,Nikola Vlasic
+2025/26,Torino,Gvidas Gineitis
+2025/26,Torino,Ivan Ilic
+2025/26,Torino,Emirhan Ilkhan
+2025/26,Torino,Matteo Prati
+2025/26,Torino,Tino Anjorin
+2025/26,Torino,Valentino Lazaro
+2025/26,Torino,Adrien Tameze
+2025/26,Torino,Alieu Njie
+2025/26,Torino,Cyril Ngonge
+2025/26,Torino,Giovanni Simeone
+2025/26,Torino,Zakaria Aboukhlal
+2025/26,Torino,Che Adams
+2025/26,Torino,Sandro Kulenovic
+2025/26,Torino,Duvan Zapata
+2025/26,Parma,Zion Suzuki
+2025/26,Parma,Edoardo Corvi
+2025/26,Parma,Filippo Rinaldi
+2025/26,Parma,Alessandro Circati
+2025/26,Parma,Sascha Britschgi
+2025/26,Parma,Mariano Troilo
+2025/26,Parma,Abdoulaye Ndiaye
+2025/26,Parma,Enrico Delprato
+2025/26,Parma,Mathias Lovik
+2025/26,Parma,Emanuele Valeri
+2025/26,Parma,Lautaro Valenti
+2025/26,Parma,Franco Carboni
+2025/26,Parma,Mandela Keita
+2025/26,Parma,Adrian Bernabe
+2025/26,Parma,Oliver Sorensen
+2025/26,Parma,Christian Ordonez
+2025/26,Parma,Hans Nicolussi Caviglia
+2025/26,Parma,Gaetano Oristanio
+2025/26,Parma,Benja Cremaschi
+2025/26,Parma,Nahuel Estevez
+2025/26,Parma,Hernani
+2025/26,Parma,Mateo Pellegrino
+2025/26,Parma,Adrian Benedyczak
+2025/26,Parma,Jacob Ondrejka
+2025/26,Parma,Gabriel Strefezza
+2025/26,Parma,Patrick Cutrone
+2025/26,Parma,Nesta Elphege
+2025/26,Parma,Daniel Mikolajewski
+2025/26,Parma,Pontus Almqvist
+2025/26,Parma,Tjas Begic
+2025/26,Parma,Alessandro Cardinali
+2025/26,Parma,Milan Djuric
+2025/26,Cagliari,Elia Caprile
+2025/26,Cagliari,Marco Palestra
+2025/26,Cagliari,Juan Rodriguez
+2025/26,Cagliari,Adam Obert
+2025/26,Cagliari,Alberto Dossena
+2025/26,Cagliari,Riyad Idrissi
+2025/26,Cagliari,Sebastiano Luperto
+2025/26,Cagliari,Ze Pedro
+2025/26,Cagliari,Yerry Mina
+2025/26,Cagliari,Gabriele Zappa
+2025/26,Cagliari,Alessandro Di Pardo
+2025/26,Cagliari,Othniel Raterink
+2025/26,Cagliari,Gianluca Gaetano
+2025/26,Cagliari,Michel Adopo
+2025/26,Cagliari,Ibrahim Sulemana
+2025/26,Cagliari,Matteo Prati
+2025/26,Cagliari,Michael Folorunsho
+2025/26,Cagliari,Joseph Liteta
+2025/26,Cagliari,Alessandro Deiola
+2025/26,Cagliari,Luca Mazzitelli
+2025/26,Cagliari,Nicolo Cavuoti
+2025/26,Cagliari,Sebastiano Esposito
+2025/26,Cagliari,Paul Mendy
+2025/26,Cagliari,Semih Kilicsoy
+2025/26,Cagliari,Zito Luvumbo
+2025/26,Cagliari,Gennaro Borrelli
+2025/26,Cagliari,Mattia Felici
+2025/26,Cagliari,Agustin Albarracin
+2025/26,Cagliari,Yael Trepy
+2025/26,Cagliari,Andrea Belotti
+2025/26,Cagliari,Leonardo Pavoletti
+2025/26,Fiorentina,David de Gea
+2025/26,Fiorentina,Oliver Christensen
+2025/26,Fiorentina,Luca Lezzerini
+2025/26,Fiorentina,Pietro Comuzzo
+2025/26,Fiorentina,Dodo
+2025/26,Fiorentina,Niccolo Fortini
+2025/26,Fiorentina,Marin Pongracic
+2025/26,Fiorentina,Luca Ranieri
+2025/26,Fiorentina,Eddy Kouadio
+2025/26,Fiorentina,Fabiano Parisi
+2025/26,Fiorentina,Robin Gosens
+2025/26,Fiorentina,Tariq Lamptey
+2025/26,Fiorentina,Mattia Viti
+2025/26,Fiorentina,Pablo Mari
+2025/26,Fiorentina,Daniele Rugani
+2025/26,Fiorentina,Luis Balbo
+2025/26,Fiorentina,Cher Ndour
+2025/26,Fiorentina,Nicolo Fagioli
+2025/26,Fiorentina,Giovanni Fabbian
+2025/26,Fiorentina,Marco Brescianini
+2025/26,Fiorentina,Jacopo Fazzini
+2025/26,Fiorentina,Simon Sohm
+2025/26,Fiorentina,Rolando Mandragora
+2025/26,Fiorentina,Hans Nicolussi Caviglia
+2025/26,Fiorentina,Amir Richardson
+2025/26,Fiorentina,Abdelhamid Sabiri
+2025/26,Fiorentina,Moise Kean
+2025/26,Fiorentina,Roberto Piccoli
+2025/26,Fiorentina,Albert Gudmundsson
+2025/26,Fiorentina,Manor Solomon
+2025/26,Fiorentina,Jack Harrison
+2025/26,Fiorentina,Riccardo Braschi
+2025/26,Fiorentina,Christian Kouame
+2025/26,Fiorentina,Edin Dzeko
+2025/26,Genoa,Justin Bijlow
+2025/26,Genoa,Nicola Leali
+2025/26,Genoa,Daniele Sommariva
+2025/26,Genoa,Brooke Norton-Cuffy
+2025/26,Genoa,Johan Vasquez
+2025/26,Genoa,Alessandro Marcandalli
+2025/26,Genoa,Leo Ostigard
+2025/26,Genoa,Aaron Martin
+2025/26,Genoa,Nils Zatterstrom
+2025/26,Genoa,Sebastian Otoa
+2025/26,Genoa,Stefano Sabelli
+2025/26,Genoa,Latif Ouedraogo
+2025/26,Genoa,Mamedi Doucoure
+2025/26,Genoa,Morten Frendrup
+2025/26,Genoa,Tommaso Baldanzi
+2025/26,Genoa,Amorim
+2025/26,Genoa,Valentin Carboni
+2025/26,Genoa,Albert Gronbaek
+2025/26,Genoa,Mikael Egill Ellertsson
+2025/26,Genoa,Patrizio Masini
+2025/26,Genoa,Morten Thorsby
+2025/26,Genoa,Ruslan Malinovskyi
+2025/26,Genoa,Nicolae Stanciu
+2025/26,Genoa,Jean Onana
+2025/26,Genoa,Gael Lafont
+2025/26,Genoa,Jacopo Grossi
+2025/26,Genoa,Filippo Carbone
+2025/26,Genoa,Jeff Ekhator
+2025/26,Genoa,Lorenzo Colombo
+2025/26,Genoa,Vitinha
+2025/26,Genoa,Lorenzo Venturino
+2025/26,Genoa,Seydou Fini
+2025/26,Genoa,Caleb Ekuban
+2025/26,Genoa,Junior Messias
+2025/26,Genoa,Joi Nuredini
+2025/26,Genoa,Maxwel Cornet
+2025/26,Lecce,Wladimiro Falcone
+2025/26,Lecce,Tiago Gabriel
+2025/26,Lecce,Jamil Siebert
+2025/26,Lecce,Antonino Gallo
+2025/26,Lecce,Gaspar
+2025/26,Lecce,Danilo Veiga
+2025/26,Lecce,Gaby Jean
+2025/26,Lecce,Christ-Owen Kouassi
+2025/26,Lecce,Corrie Ndaba
+2025/26,Lecce,Matias Perez
+2025/26,Lecce,Medon Berisha
+2025/26,Lecce,Omri Gandelman
+2025/26,Lecce,Oumar Ngom
+2025/26,Lecce,Mohamed Kaba
+2025/26,Lecce,Lassana Coulibaly
+2025/26,Lecce,Thorir Johann Helgason
+2025/26,Lecce,Ylber Ramadani
+2025/26,Lecce,Youssef Maleh
+2025/26,Lecce,Balthazar Pierret
+2025/26,Lecce,Alex Sala
+2025/26,Lecce,Olaf Gorter
+2025/26,Lecce,Sadik Fofana
+2025/26,Lecce,Francesco Camarda
+2025/26,Lecce,Santiago Pierotti
+2025/26,Lecce,Nikola Stulic
+2025/26,Lecce,Lameck Banda
+2025/26,Lecce,Walid Cheddira
+2025/26,Lecce,Tete Morente
+2025/26,Lecce,Konan NDri
+2025/26,Lecce,Riccardo Sottil
+2025/26,Cremonese,Emil Audero
+2025/26,Cremonese,Marco Silvestri
+2025/26,Cremonese,Romano Floriani Mussolini
+2025/26,Cremonese,Filippo Terracciano
+2025/26,Cremonese,Mikayil Faye
+2025/26,Cremonese,Tommaso Barbieri
+2025/26,Cremonese,Sebastiano Luperto
+2025/26,Cremonese,Federico Baschirotto
+2025/26,Cremonese,Giuseppe Pezzella
+2025/26,Cremonese,Matteo Bianchetti
+2025/26,Cremonese,Francesco Folino
+2025/26,Cremonese,Federico Ceccherini
+2025/26,Cremonese,Martin Payero
+2025/26,Cremonese,Warren Bondo
+2025/26,Cremonese,Jari Vandeputte
+2025/26,Cremonese,Morten Thorsby
+2025/26,Cremonese,Alessio Zerbin
+2025/26,Cremonese,Michele Collocolo
+2025/26,Cremonese,Youssef Maleh
+2025/26,Cremonese,Alberto Grassi
+2025/26,Cremonese,Simone Lottici Tessadri
+2025/26,Cremonese,Franco Vazquez
+2025/26,Cremonese,Dachi Lordkipanidze
+2025/26,Cremonese,Jeremy Sarmiento
+2025/26,Cremonese,Faris Moumbagna
+2025/26,Cremonese,Dennis Johnsen
+2025/26,Cremonese,Federico Bonazzoli
+2025/26,Cremonese,Antonio Sanabria
+2025/26,Cremonese,David Okereke
+2025/26,Cremonese,Manuel De Luca
+2025/26,Cremonese,Jamie Vardy
+2025/26,Cremonese,Milan Djuric
+2025/26,Verona,Lorenzo Montipo
+2025/26,Verona,Simone Perilli
+2025/26,Verona,Rafik Belghali
+2025/26,Verona,Armel Bella-Kotchap
+2025/26,Verona,Victor Nelsson
+2025/26,Verona,Unai Nunez
+2025/26,Verona,Andrias Edmundsson
+2025/26,Verona,Nicolas Valentini
+2025/26,Verona,Tobias Slotsager
+2025/26,Verona,Enzo Ebosse
+2025/26,Verona,Martin Frese
+2025/26,Verona,Domagoj Bradaric
+2025/26,Verona,Pol Lirola
+2025/26,Verona,Daniel Oyegoke
+2025/26,Verona,Fallou Cham
+2025/26,Verona,Moatasem Al-Musrati
+2025/26,Verona,Tomas Suslov
+2025/26,Verona,Sandi Lovric
+2025/26,Verona,Antoine Bernede
+2025/26,Verona,Suat Serdar
+2025/26,Verona,Cheikh Niasse
+2025/26,Verona,Abdou Harroui
+2025/26,Verona,Grigoris Kastanos
+2025/26,Verona,Roberto Gagliardini
+2025/26,Verona,Yellu Santiago
+2025/26,Verona,Jean-Daniel Akpa Akpro
+2025/26,Verona,Giovane
+2025/26,Verona,Kieron Bowie
+2025/26,Verona,Gift Orban
+2025/26,Verona,Amin Sarr
+2025/26,Verona,Daniel Mosquera
+2025/26,Verona,Ioan Vermesan
+2025/26,Verona,Isaac
+2025/26,Verona,Junior Ajayi
+2025/26,Pisa,Adrian Semper
+2025/26,Pisa,Simone Scuffet
+2025/26,Pisa,Nicolas
+2025/26,Pisa,Simone Canestrelli
+2025/26,Pisa,Rosen Bozhinov
+2025/26,Pisa,Giovanni Bonfanti
+2025/26,Pisa,Francesco Coppola
+2025/26,Pisa,Antonio Caracciolo
+2025/26,Pisa,Arturo Calabresi
+2025/26,Pisa,Mateus Lusuardi
+2025/26,Pisa,Raul Albiol
+2025/26,Pisa,Daniel Denoon
+2025/26,Pisa,Ebenezer Akinsanmiro
+2025/26,Pisa,Felipe Loyola
+2025/26,Pisa,Isak Vural
+2025/26,Pisa,Samuele Angori
+2025/26,Pisa,Matteo Tramoni
+2025/26,Pisa,Lorran
+2025/26,Pisa,Idrissa Toure
+2025/26,Pisa,Michel Aebischer
+2025/26,Pisa,Marius Marin
+2025/26,Pisa,Gabriele Piccinini
+2025/26,Pisa,Malthe Hojholt
+2025/26,Pisa,Tomas Esteves
+2025/26,Pisa,Juan Cuadrado
+2025/26,Pisa,Brando Bettazzi
+2025/26,Pisa,Rafiu Durosinmi
+2025/26,Pisa,Samuel Iling-Junior
+2025/26,Pisa,Calvin Stengs
+2025/26,Pisa,Henrik Meister
+2025/26,Pisa,Filip Stojilkovic
+2025/26,Pisa,Mehdi Leris
+2025/26,Pisa,Stefano Moreo
+2025/26,Pisa,Louis Buffon

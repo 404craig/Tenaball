@@ -1,0 +1,74 @@
+{
+ "pick": "de23",
+ "kind": "labelled",
+ "type": "person",
+ "level": 2,
+ "title": "Dortmund managers in order",
+ "brief": "Name Dortmund's last ten head coaches (caretakers left out), labelled by the year each spell began. A manager with two spells fills two places.",
+ "period": "Head coach spells starting 2008 to 2025 (the ten most recent; spells since 2000 run to 14)",
+ "rows": [
+  {
+   "label": "2008",
+   "name": "Jurgen Klopp",
+   "val": "Jul 2008 to Jun 2015"
+  },
+  {
+   "label": "2015",
+   "name": "Thomas Tuchel",
+   "val": "Jul 2015 to Jun 2017"
+  },
+  {
+   "label": "2017",
+   "name": "Peter Bosz",
+   "val": "Jul 2017 to Dec 2017"
+  },
+  {
+   "label": "2017",
+   "name": "Peter Stoger",
+   "val": "Dec 2017 to Jun 2018"
+  },
+  {
+   "label": "2018",
+   "name": "Lucien Favre",
+   "val": "Jul 2018 to Dec 2020"
+  },
+  {
+   "label": "2020",
+   "name": "Edin Terzic",
+   "val": "Dec 2020 to Jun 2021"
+  },
+  {
+   "label": "2021",
+   "name": "Marco Rose",
+   "val": "Jul 2021 to May 2022"
+  },
+  {
+   "label": "2022",
+   "name": "Edin Terzic",
+   "val": "Jul 2022 to Jun 2024"
+  },
+  {
+   "label": "2024",
+   "name": "Nuri Sahin",
+   "val": "Jul 2024 to Jan 2025"
+  },
+  {
+   "label": "2025",
+   "name": "Niko Kovac",
+   "val": "Feb 2025 to now"
+  }
+ ],
+ "notes": {
+  "Edin Terzic": "Terzic fills two places: Dec 2020 to Jun 2021 and Jul 2022 to Jun 2024.",
+  "Thomas Doll": "Doll (Mar 2007 to Jun 2008) is the 11th most recent spell, just before this board starts.",
+  "Jurgen Rober": "Rober (Dec 2006 to Mar 2007) is before this board starts.",
+  "Bert van Marwijk": "Van Marwijk (2004 to 2006) is before this board starts.",
+  "Matthias Sammer": "Sammer (2000 to 2004) is before this board starts.",
+  "Mike Tullberg": "Tullberg was caretaker for a few games in early 2025, so he is not counted."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/borussia-dortmund/mitarbeiterhistorie/verein/16/personalie_id/1",
+  "https://www.fussballdaten.de/vereine/borussia-dortmund/trainer/"
+ ],
+ "checks": "Spells from Transfermarkt's head coach history match fussballdaten.de's Dortmund coach list (which also lists caretakers such as Tullberg, Stefes and Redepenning, left out here). Terzic's December 2020 appointment ran only to the end of 2020/21, but Transfermarkt, fussballdaten.de and his Wikipedia article all treat it as a head coach spell, like Stoger's in 2017/18, so it counts. Bosz and Stoger both began in 2017 (July and December)."
+}

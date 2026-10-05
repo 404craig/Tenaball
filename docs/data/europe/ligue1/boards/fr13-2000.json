@@ -1,0 +1,61 @@
+{
+ "pick": "fr13-2000",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Ligue 1 Player of the Year 2000/01 to 2009/10",
+ "brief": "Name the UNFP Ligue 1 Player of the Year for each season from 2000/01 to 2009/10.",
+ "period": "Seasons 2000/01 to 2009/10",
+ "rows": [
+  {
+   "label": "2000/01",
+   "name": "Eric Carriere"
+  },
+  {
+   "label": "2001/02",
+   "name": "Pauleta"
+  },
+  {
+   "label": "2002/03",
+   "name": "Pauleta"
+  },
+  {
+   "label": "2003/04",
+   "name": "Didier Drogba"
+  },
+  {
+   "label": "2004/05",
+   "name": "Michael Essien"
+  },
+  {
+   "label": "2005/06",
+   "name": "Juninho Pernambucano"
+  },
+  {
+   "label": "2006/07",
+   "name": "Florent Malouda"
+  },
+  {
+   "label": "2007/08",
+   "name": "Karim Benzema"
+  },
+  {
+   "label": "2008/09",
+   "name": "Yoann Gourcuff"
+  },
+  {
+   "label": "2009/10",
+   "name": "Lisandro Lopez"
+  }
+ ],
+ "notes": {
+  "Marcelo Gallardo": "Gallardo won it in 1999/00, the season before this board starts.",
+  "Eden Hazard": "Hazard won it in 2010/11 and 2011/12, just after these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Ligue_1_Player_of_the_Year",
+  "https://fr.wikipedia.org/wiki/Troph%C3%A9es_UNFP_du_football",
+  "https://www.transfermarkt.com/ (each winner's honours page, erfolge/spieler)"
+ ],
+ "checks": "English Wikipedia's Ligue 1 Player of the Year list matched against French Wikipedia's Trophees UNFP list (which cites tropheesunfp.com): all agree for every season. Transfermarkt honours pages also list the award for Pauleta, Drogba, Juninho, Malouda and Benzema; they leave it out for Carriere, Essien, Gourcuff and Lisandro Lopez (Transfermarkt's own gap, not a disagreement). Pauleta fills two slots, under the limit. Juninho is written Juninho Pernambucano to keep him apart from the Premier League's Juninho."
+}

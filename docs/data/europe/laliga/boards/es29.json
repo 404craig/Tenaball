@@ -1,0 +1,88 @@
+{
+ "pick": "es29",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Biggest La Liga grounds",
+ "brief": "Name the ten 2025/26 La Liga clubs with the biggest home grounds, by capacity.",
+ "period": "The 20 clubs of 2025/26 and the grounds they played at that season",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Barcelona",
+   "val": "Camp Nou, 105,000"
+  },
+  {
+   "label": "2",
+   "name": "Real Madrid",
+   "val": "Bernabeu, 83,186"
+  },
+  {
+   "label": "3",
+   "name": "Atletico Madrid",
+   "val": "about 70,000",
+   "pool": "p34",
+   "alts": [
+    "Atletico Madrid",
+    "Real Betis"
+   ]
+  },
+  {
+   "label": "4",
+   "name": "Real Betis",
+   "val": "about 70,000",
+   "pool": "p34",
+   "alts": [
+    "Atletico Madrid",
+    "Real Betis"
+   ]
+  },
+  {
+   "label": "5",
+   "name": "Athletic Bilbao",
+   "val": "San Mames, 53,289"
+  },
+  {
+   "label": "6",
+   "name": "Valencia",
+   "val": "Mestalla, 49,430"
+  },
+  {
+   "label": "7",
+   "name": "Sevilla",
+   "val": "Ramon Sanchez-Pizjuan, about 43,800"
+  },
+  {
+   "label": "8",
+   "name": "Real Sociedad",
+   "val": "Anoeta, about 39,300 to 40,000"
+  },
+  {
+   "label": "9",
+   "name": "Espanyol",
+   "val": "RCDE Stadium, 37,776"
+  },
+  {
+   "label": "10",
+   "name": "Elche",
+   "val": "Martinez Valero, 31,388"
+  }
+ ],
+ "notes": {
+  "Real Oviedo": "Real Oviedo's Carlos Tartiere (30,500) is 11th, just outside.",
+  "Levante": "Levante's Ciutat de Valencia (26,354) is 12th.",
+  "Mallorca": "Mallorca's Son Moix holds about 23,000 to 26,000, well outside the top ten.",
+  "Villarreal": "Villarreal's Estadio de la Ceramica holds about 23,000.",
+  "Osasuna": "Osasuna's El Sadar holds 23,576.",
+  "Celta Vigo": "Celta's Balaidos holds about 23,000 to 25,000.",
+  "Alaves": "Alaves's Mendizorroza holds 19,840.",
+  "Getafe": "Getafe's Coliseum holds about 16,500.",
+  "Rayo Vallecano": "Rayo's Vallecas holds 14,708.",
+  "Girona": "Girona's Montilivi holds 14,624, the smallest in La Liga."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga (Stadiums and locations)",
+  "https://www.transfermarkt.co.uk/laliga/stadien/wettbewerb/ES1/saison_id/2025"
+ ],
+ "checks": "Wikipedia's 2025/26 stadium table and Transfermarkt's 2025/26 stadium list give the same ten clubs, with Real Oviedo (30,500 in both) 11th, and agree on the order of 5th to 10th and on Real Madrid 2nd (83,186 in both). Barcelona is 1st on the Camp Nou's full capacity in both (Wikipedia 105,000, Transfermarkt 99,354); Transfermarkt shows 62,657 open during the 2025/26 rebuilding, and Barcelona also played early home games at the Estadi Johan Cruyff and Montjuic. Atletico Madrid and Real Betis swap places between the sources (Wikipedia 70,692 and 70,000, Transfermarkt 70,813 and 71,374), so 3rd and 4th are a pool either club fills. Real Betis played 2025/26 at La Cartuja while the Benito Villamarin is rebuilt; on the old Villamarin (about 60,700) they would still be 4th. No ground was shared by two 2025/26 clubs (Rayo's one game at Leganes's Butarque is ignored). Exact figures differ a little between sources for Sevilla, Real Sociedad and some smaller grounds, so those values say about."
+}

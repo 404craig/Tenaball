@@ -1,0 +1,75 @@
+{
+ "pick": "de14-2017",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "DFB-Pokal winners 2017 to 2026",
+ "brief": "Name the club that won the DFB-Pokal final in each year from 2017 to 2026.",
+ "period": "DFB-Pokal finals 2017 to 2026",
+ "rows": [
+  {
+   "label": "2017",
+   "name": "Dortmund",
+   "val": "2-1 v Eintracht Frankfurt"
+  },
+  {
+   "label": "2018",
+   "name": "Eintracht Frankfurt",
+   "val": "3-1 v Bayern Munich"
+  },
+  {
+   "label": "2019",
+   "name": "Bayern Munich",
+   "val": "3-0 v RB Leipzig"
+  },
+  {
+   "label": "2020",
+   "name": "Bayern Munich",
+   "val": "4-2 v Leverkusen"
+  },
+  {
+   "label": "2021",
+   "name": "Dortmund",
+   "val": "4-1 v RB Leipzig"
+  },
+  {
+   "label": "2022",
+   "name": "RB Leipzig",
+   "val": "1-1, won on penalties v Freiburg"
+  },
+  {
+   "label": "2023",
+   "name": "RB Leipzig",
+   "val": "2-0 v Eintracht Frankfurt"
+  },
+  {
+   "label": "2024",
+   "name": "Leverkusen",
+   "val": "1-0 v Kaiserslautern"
+  },
+  {
+   "label": "2025",
+   "name": "Stuttgart",
+   "val": "4-2 v Arminia Bielefeld"
+  },
+  {
+   "label": "2026",
+   "name": "Bayern Munich",
+   "val": "3-0 v Stuttgart"
+  }
+ ],
+ "notes": {
+  "Bayern Munich": "Bayern won 3 of these finals (2019, 2020, 2026); they also won in 2016 and lost the 2018 final to Eintracht Frankfurt.",
+  "Wolfsburg": "Wolfsburg won in 2015, just outside this window.",
+  "Schalke": "Schalke last won in 2011.",
+  "Werder Bremen": "Werder Bremen last won in 2009.",
+  "Freiburg": "Freiburg lost the 2022 final to RB Leipzig on penalties.",
+  "Kaiserslautern": "Kaiserslautern lost the 2024 final to Leverkusen.",
+  "Arminia Bielefeld": "Arminia Bielefeld lost the 2025 final to Stuttgart."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_DFB-Pokal_finals",
+  "https://www.transfermarkt.com/dfb-pokal/erfolge/pokalwettbewerb/DFB"
+ ],
+ "checks": "Winners from Wikipedia's list of finals match Transfermarkt's list of winners for every final from 2001 to 2026. Bayern fill 3 slots here, so the 4-slot rule passes. Windows were tested from 2001: every window starting 2001 to 2014 gives Bayern 4 or more slots; windows starting 2015, 2016 and 2017 pass, and only the latest (2017 to 2026) is written, as the other two overlap it by eight or nine years."
+}

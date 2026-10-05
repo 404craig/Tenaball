@@ -1,0 +1,83 @@
+{
+ "pick": "de15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bayern's top league scorers since 2000",
+ "brief": "Name Bayern Munich's ten top Bundesliga scorers from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "238 goals"
+  },
+  {
+   "label": "2",
+   "name": "Thomas Muller",
+   "val": "150 goals"
+  },
+  {
+   "label": "3",
+   "name": "Arjen Robben",
+   "val": "99 goals"
+  },
+  {
+   "label": "4",
+   "name": "Harry Kane",
+   "val": "98 goals"
+  },
+  {
+   "label": "5",
+   "name": "Claudio Pizarro",
+   "val": "87 goals"
+  },
+  {
+   "label": "6",
+   "name": "Franck Ribery",
+   "val": "86 goals"
+  },
+  {
+   "label": "7",
+   "name": "Roy Makaay",
+   "val": "78 goals"
+  },
+  {
+   "label": "8",
+   "name": "Serge Gnabry",
+   "val": "78 goals"
+  },
+  {
+   "label": "9",
+   "name": "Mario Gomez",
+   "val": "75 goals"
+  },
+  {
+   "label": "10",
+   "name": "Giovane Elber",
+   "val": "54 goals"
+  }
+ ],
+ "notes": {
+  "Jamal Musiala": "Jamal Musiala is 11th with 48, just outside.",
+  "Kingsley Coman": "Kingsley Coman is 12th with 46, just outside.",
+  "Bastian Schweinsteiger": "Bastian Schweinsteiger is 13th with 45, just outside."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every Bundesliga club 2000/01 to 2025/26 (players.csv, source column)",
+  "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers",
+  "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+  "https://en.wikipedia.org/wiki/Thomas_M\u00fcller",
+  "https://en.wikipedia.org/wiki/Arjen_Robben",
+  "https://en.wikipedia.org/wiki/Harry_Kane",
+  "https://en.wikipedia.org/wiki/Claudio_Pizarro",
+  "https://en.wikipedia.org/wiki/Franck_Rib\u00e9ry",
+  "https://en.wikipedia.org/wiki/Roy_Makaay",
+  "https://en.wikipedia.org/wiki/Serge_Gnabry",
+  "https://en.wikipedia.org/wiki/Mario_G\u00f3mez",
+  "https://en.wikipedia.org/wiki/Giovane_\u00c9lber",
+  "https://en.wikipedia.org/wiki/Jamal_Musiala",
+  "https://en.wikipedia.org/wiki/Kingsley_Coman"
+ ],
+ "checks": "Transfermarkt figures summed by Transfermarkt player id from every club season page. Second source: each player's Wikipedia career statistics table, Bundesliga rows from 2000/01 to 2025/26, which agree season by season with Transfermarkt for every player listed and every near miss (no differences, so no split figures). Transfermarkt's game-by-game records (ceapi performance-game) also give the same totals. The List of Bundesliga top scorers gives the same Bayern splits for Lewandowski (238), Pizarro (87) and Gomez (75). Elber's 92 Bayern goals in all include 38 from 1997/98 to 1999/00, which don't count; his 54 are 2000/01 to 2003/04."
+}

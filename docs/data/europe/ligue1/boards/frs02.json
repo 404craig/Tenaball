@@ -1,0 +1,84 @@
+{
+ "pick": "frs02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Ligue 1 assists, 2025/26",
+ "brief": "Name the ten players with the most Ligue 1 assists in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Adrien Thomasson",
+   "val": "9 or 10 assists"
+  },
+  {
+   "label": "2",
+   "name": "Ludovic Ajorque",
+   "val": "9 or 10 assists"
+  },
+  {
+   "label": "3",
+   "name": "Afonso Moreira",
+   "val": "7 or 8 assists"
+  },
+  {
+   "label": "4",
+   "name": "Ousmane Dembele",
+   "val": "7 assists"
+  },
+  {
+   "label": "5",
+   "name": "Vitinha",
+   "val": "7 assists"
+  },
+  {
+   "label": "6",
+   "name": "Matthieu Udol",
+   "val": "7 assists"
+  },
+  {
+   "label": "7",
+   "name": "Endrick",
+   "val": "7 assists"
+  },
+  {
+   "label": "8",
+   "name": "Mason Greenwood",
+   "val": "7 assists"
+  },
+  {
+   "label": "9",
+   "name": "Gauthier Hein",
+   "val": "7 assists"
+  },
+  {
+   "label": "10",
+   "name": "Mousa Al-Tamari",
+   "val": "6 to 9 assists, sources differ",
+   "pool": "fr2526as",
+   "alts": [
+    "Mousa Al-Tamari",
+    "Arsene Kouassi",
+    "Maghnes Akliouche",
+    "Jonathan Clauss",
+    "Diego Moreira"
+   ]
+  }
+ ],
+ "notes": {
+  "Florian Thauvin": "Thauvin is just outside with 6 assists.",
+  "Santiago Hidalgo": "Hidalgo is just outside with 6 assists.",
+  "Julio Enciso": "Enciso is just outside with 6 assists.",
+  "Guela Doue": "Guela Doue is just outside with 6 assists.",
+  "Desire Doue": "Desire Doue is just outside with 6 assists on Transfermarkt.",
+  "Mousa Al-Tamari": "Al-Tamari has 9 assists on Transfermarkt but 6 on ESPN.",
+  "Arsene Kouassi": "Kouassi has 8 assists on Transfermarkt but 6 on ESPN."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/rc-lens/leistungsdaten/verein/826/plus/1?reldata=FR1%262025",
+  "https://www.transfermarkt.com/stade-brest-29/leistungsdaten/verein/3911/plus/1?reldata=FR1%262025",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/fra.1/seasons/2025/types/1/leaders"
+ ],
+ "checks": "Transfermarkt club season pages against ESPN's 2025/26 assists leaders. Assist counting differs between the two. The nine named slots are in the top ten (with ties) on both. The 10th slot is a pool of the five players who are in the top ten on both counts: on Transfermarkt they have 7 to 9, on ESPN 6 (joint 10th there with Thauvin, Hidalgo, Enciso and Guela Doue, who have 6 on Transfermarkt and are outside its top ten). Treat this board as less firm than the goals boards."
+}

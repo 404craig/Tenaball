@@ -1,0 +1,77 @@
+{
+ "pick": "esc0c",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Real Madrid's most appearances, 2025/26",
+ "brief": "Name the ten players who played the most La Liga games for Real Madrid in 2025/26 (starts and substitute appearances).",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Vinicius Junior",
+   "val": "36 games"
+  },
+  {
+   "label": "2",
+   "name": "Arda Guler",
+   "val": "33 games"
+  },
+  {
+   "label": "3",
+   "name": "Federico Valverde",
+   "val": "33 games"
+  },
+  {
+   "label": "4",
+   "name": "Aurelien Tchouameni",
+   "val": "33 games"
+  },
+  {
+   "label": "5",
+   "name": "Thibaut Courtois",
+   "val": "32 games"
+  },
+  {
+   "label": "6",
+   "name": "Kylian Mbappe",
+   "val": "31 games"
+  },
+  {
+   "label": "7",
+   "name": "Brahim Diaz",
+   "val": "30 games"
+  },
+  {
+   "label": "8",
+   "name": "Gonzalo Garcia",
+   "val": "30 games"
+  },
+  {
+   "label": "9",
+   "name": "Eduardo Camavinga",
+   "val": "29 games"
+  },
+  {
+   "label": "10",
+   "name": "Dean Huijsen",
+   "val": "28 games",
+   "pool": "t28",
+   "alts": [
+    "Dean Huijsen",
+    "Alvaro Carreras",
+    "Jude Bellingham"
+   ]
+  }
+ ],
+ "notes": {
+  "Raul Asencio": "Raul Asencio had 23 league games for Real Madrid, just outside the ten.",
+  "Franco Mastantuono": "Franco Mastantuono had 23 league games for Real Madrid, just outside the ten.",
+  "Trent Alexander-Arnold": "Trent Alexander-Arnold had 21 league games for Real Madrid, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/real-madrid/leistungsdaten/verein/418/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/86/roster?season=2025"
+ ],
+ "checks": "Appearances from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: none."
+}

@@ -1,0 +1,77 @@
+{
+ "pick": "es27-2016",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "La Liga title-winning managers, 2016/17 to 2025/26",
+ "brief": "Name the manager of the La Liga champions in each season from 2016/17 to 2025/26.",
+ "period": "La Liga seasons 2016/17 to 2025/26",
+ "rows": [
+  {
+   "label": "2016/17",
+   "name": "Zinedine Zidane",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2017/18",
+   "name": "Ernesto Valverde",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2018/19",
+   "name": "Ernesto Valverde",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2019/20",
+   "name": "Zinedine Zidane",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2020/21",
+   "name": "Diego Simeone",
+   "val": "Atletico Madrid"
+  },
+  {
+   "label": "2021/22",
+   "name": "Carlo Ancelotti",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2022/23",
+   "name": "Xavi",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2023/24",
+   "name": "Carlo Ancelotti",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2024/25",
+   "name": "Hansi Flick",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2025/26",
+   "name": "Hansi Flick",
+   "val": "Barcelona"
+  }
+ ],
+ "notes": {
+  "Vicente del Bosque": "Vicente del Bosque won the title outside these years.",
+  "Rafael Benitez": "Rafael Benitez won the title outside these years.",
+  "Frank Rijkaard": "Frank Rijkaard won the title outside these years.",
+  "Fabio Capello": "Fabio Capello won the title outside these years.",
+  "Bernd Schuster": "Bernd Schuster won the title outside these years.",
+  "Pep Guardiola": "Pep Guardiola won the title outside these years.",
+  "Jose Mourinho": "Jose Mourinho won the title outside these years.",
+  "Tito Vilanova": "Tito Vilanova won the title outside these years.",
+  "Luis Enrique": "Luis Enrique won the title outside these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_winning_managers",
+  "https://www.transfermarkt.co.uk/real-madrid/mitarbeiterhistorie/verein/418 (and the same page for Barcelona 131, Valencia 1049 and Atletico Madrid 13)"
+ ],
+ "checks": "Wikipedia's list of La Liga winning managers gives each season's champions and manager. Each was checked against Transfermarkt's staff history for the champions, which shows him in charge for that season. Most slots any one manager fills here: 2. The 2016/17 to 2025/26 window overlaps the 2010/11 one by four seasons; it is the latest ten seasons."
+}

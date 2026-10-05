@@ -1,0 +1,82 @@
+{
+ "pick": "de17",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bayern's biggest signings",
+ "brief": "Name the ten most expensive players Bayern Munich have signed since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "€100m (£86.4m)"
+  },
+  {
+   "label": "2",
+   "name": "Lucas Hernandez",
+   "val": "€80m (£68m)"
+  },
+  {
+   "label": "3",
+   "name": "Luis Diaz",
+   "val": "€70m"
+  },
+  {
+   "label": "4",
+   "name": "Matthijs de Ligt",
+   "val": "€67m"
+  },
+  {
+   "label": "5",
+   "name": "Michael Olise",
+   "val": "€53m"
+  },
+  {
+   "label": "6",
+   "name": "Joao Palhinha",
+   "val": "€51m"
+  },
+  {
+   "label": "7",
+   "name": "Kim Min-jae",
+   "val": "€50m"
+  },
+  {
+   "label": "8",
+   "name": "Nathaniel Brown",
+   "val": "€50m"
+  },
+  {
+   "label": "9",
+   "name": "Ismael Saibari",
+   "val": "€50m"
+  },
+  {
+   "label": "10",
+   "name": "Leroy Sane",
+   "val": "€45m"
+  }
+ ],
+ "notes": {
+  "Dayot Upamecano": "Dayot Upamecano is 11th, just outside: €42.5m release clause from RB Leipzig in 2021.",
+  "Corentin Tolisso": "Corentin Tolisso is 12th, just outside: €41.5m from Lyon in 2017.",
+  "Javi Martinez": "Javi Martinez is outside the ten: €40m release clause from Athletic Bilbao in 2012.",
+  "Arturo Vidal": "Arturo Vidal is outside the ten: about €37m plus add-ons from Juventus in 2015.",
+  "Mario Gotze": "Mario Gotze is outside the ten: €37m release clause from Dortmund in 2013."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-bayern-munchen/transferrekorde/verein/27",
+  "https://thescore.com/news/1981213",
+  "https://www.abola.pt/noticias/oficial-bayern-gasta-mais-de-euro100-m-em-dois-dias-2026070312092179235",
+  "https://www.bbc.com/sport/football/66484550",
+  "https://www.echo24.de/sport/fussball/die-teuersten-einkaeufe-des-fc-bayern-olise-landet-in-den-top-zr-93176994.html",
+  "https://www.espn.com/soccer/soccer-transfers/story/4702921/bayern-munich-complete-signing-of-matthijs-de-ligt-from-juventus",
+  "https://www.expressandstar.com/uk-sports/2025/07/30/luis-diaz-completes-65million-move-to-bayern-munich-from-liverpool",
+  "https://www.flashscore.com/news/soccer-serie-a-bayern-munich-sign-south-korea-defender-kim-min-jae-from-napoli-on-five-year-deal/t4G4z7g3",
+  "https://www.goal.com/en/lists/bayern-munich-confirm-50m-signing-of-morocco-star-ismael-saibari/blt0b4d435f54d6001e",
+  "https://www.skysports.com/football/news/11095/13162848/joao-palhinha-bayern-munich-agree-deal-for-fulham-midfielder-worth-gbp47-4m",
+  "https://www.tntsports.co.uk/football/bundesliga/2018-2019/bayern-munich-confirm-80m-summer-move-for-lucas-hernandez_sto7204129/story.shtml"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

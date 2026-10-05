@@ -1,0 +1,100 @@
+{
+ "pick": "its01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Serie A top scorers 2025/26",
+ "brief": "Name the ten top scorers in Serie A in 2025/26. Seven players tied on 10 goals share the last three places.",
+ "period": "Serie A 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lautaro Martinez",
+   "val": "17 goals (Inter)"
+  },
+  {
+   "label": "2",
+   "name": "Donyell Malen",
+   "val": "14 goals (Roma)"
+  },
+  {
+   "label": "3",
+   "name": "Anastasios Douvikas",
+   "val": "14 goals (Como)"
+  },
+  {
+   "label": "4",
+   "name": "Marcus Thuram",
+   "val": "13 goals (Inter)"
+  },
+  {
+   "label": "5",
+   "name": "Rasmus Hojlund",
+   "val": "12 goals (Napoli)"
+  },
+  {
+   "label": "6",
+   "name": "Nico Paz",
+   "val": "12 goals (Como)"
+  },
+  {
+   "label": "7",
+   "name": "Giovanni Simeone",
+   "val": "11 goals (Torino)"
+  },
+  {
+   "label": "8",
+   "val": "10 goals",
+   "pool": "its01-10",
+   "alts": [
+    "Federico Bonazzoli",
+    "Gianluca Scamacca",
+    "Keinan Davis",
+    "Kenan Yildiz",
+    "Nikola Krstovic",
+    "Riccardo Orsolini",
+    "Scott McTominay"
+   ]
+  },
+  {
+   "label": "9",
+   "val": "10 goals",
+   "pool": "its01-10",
+   "alts": [
+    "Federico Bonazzoli",
+    "Gianluca Scamacca",
+    "Keinan Davis",
+    "Kenan Yildiz",
+    "Nikola Krstovic",
+    "Riccardo Orsolini",
+    "Scott McTominay"
+   ]
+  },
+  {
+   "label": "10",
+   "val": "10 goals",
+   "pool": "its01-10",
+   "alts": [
+    "Federico Bonazzoli",
+    "Gianluca Scamacca",
+    "Keinan Davis",
+    "Kenan Yildiz",
+    "Nikola Krstovic",
+    "Riccardo Orsolini",
+    "Scott McTominay"
+   ]
+  }
+ ],
+ "notes": {
+  "Hakan Calhanoglu": "Hakan Calhanoglu scored 9, one short of the seven tied on 10.",
+  "Rafael Leao": "Rafael Leao scored 9, one short of the seven tied on 10.",
+  "Andrea Pinamonti": "Andrea Pinamonti scored 9, one short of the seven tied on 10.",
+  "Mateo Pellegrino": "Mateo Pellegrino scored 9, one short of the seven tied on 10."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/2025",
+  "http://sports.core.api.espn.com/v2/sports/soccer/leagues/ita.1/seasons/2025/types/1/leaders",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A"
+ ],
+ "checks": "Transfermarkt club pages, Transfermarkt game logs, ESPN season leaders and the Wikipedia season article (Top goalscorers) all give the same figures for every player on 9 goals or more; Lautaro Martinez on 17 also matches the game's seriea-ts board."
+}

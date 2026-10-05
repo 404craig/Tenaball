@@ -1,0 +1,79 @@
+{
+ "pick": "frs05",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Ligue 1 2025/26: most goals scored",
+ "brief": "Name the ten clubs that scored the most Ligue 1 goals in 2025/26.",
+ "period": "Ligue 1 season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "PSG",
+   "val": "74 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lens",
+   "val": "66 goals"
+  },
+  {
+   "label": "3",
+   "name": "Marseille",
+   "val": "63 goals"
+  },
+  {
+   "label": "4",
+   "name": "Monaco",
+   "val": "60 goals"
+  },
+  {
+   "label": "5",
+   "name": "Rennes",
+   "val": "59 goals"
+  },
+  {
+   "label": "6",
+   "name": "Strasbourg",
+   "val": "58 goals"
+  },
+  {
+   "label": "7",
+   "name": "Lyon",
+   "val": "53 goals"
+  },
+  {
+   "label": "8",
+   "name": "Lille",
+   "val": "52 goals"
+  },
+  {
+   "label": "9",
+   "name": "Lorient",
+   "val": "48 goals"
+  },
+  {
+   "label": "10",
+   "name": "Toulouse",
+   "pool": "gf10",
+   "alts": [
+    "Toulouse",
+    "Paris FC"
+   ],
+   "val": "47 goals"
+  }
+ ],
+ "notes": {
+  "Brest": "Brest scored 43, 13th.",
+  "Nice": "Nice scored 37, 14th.",
+  "Le Havre": "Le Havre scored 32.",
+  "Metz": "Metz scored 32.",
+  "Auxerre": "Auxerre scored 34."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1",
+  "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+  "https://www.transfermarkt.com/ligue-1/tabelle/wettbewerb/FR1/saison_id/2025"
+ ],
+ "checks": "Goals for every club worked out from all 306 results in football-data.co.uk's 2025/26 file and matched against the final table on Wikipedia and Transfermarkt. Toulouse and Paris FC both scored 47, so they share 10th as a pool."
+}

@@ -1,0 +1,77 @@
+{
+ "pick": "es27-2000",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "La Liga title-winning managers, 2000/01 to 2009/10",
+ "brief": "Name the manager of the La Liga champions in each season from 2000/01 to 2009/10.",
+ "period": "La Liga seasons 2000/01 to 2009/10",
+ "rows": [
+  {
+   "label": "2000/01",
+   "name": "Vicente del Bosque",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2001/02",
+   "name": "Rafael Benitez",
+   "val": "Valencia"
+  },
+  {
+   "label": "2002/03",
+   "name": "Vicente del Bosque",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2003/04",
+   "name": "Rafael Benitez",
+   "val": "Valencia"
+  },
+  {
+   "label": "2004/05",
+   "name": "Frank Rijkaard",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2005/06",
+   "name": "Frank Rijkaard",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2006/07",
+   "name": "Fabio Capello",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2007/08",
+   "name": "Bernd Schuster",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2008/09",
+   "name": "Pep Guardiola",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2009/10",
+   "name": "Pep Guardiola",
+   "val": "Barcelona"
+  }
+ ],
+ "notes": {
+  "Jose Mourinho": "Jose Mourinho won the title outside these years.",
+  "Tito Vilanova": "Tito Vilanova won the title outside these years.",
+  "Diego Simeone": "Diego Simeone won the title outside these years.",
+  "Luis Enrique": "Luis Enrique won the title outside these years.",
+  "Zinedine Zidane": "Zinedine Zidane won the title outside these years.",
+  "Ernesto Valverde": "Ernesto Valverde won the title outside these years.",
+  "Carlo Ancelotti": "Carlo Ancelotti won the title outside these years.",
+  "Xavi": "Xavi won the title outside these years.",
+  "Hansi Flick": "Hansi Flick won the title outside these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_winning_managers",
+  "https://www.transfermarkt.co.uk/real-madrid/mitarbeiterhistorie/verein/418 (and the same page for Barcelona 131, Valencia 1049 and Atletico Madrid 13)"
+ ],
+ "checks": "Wikipedia's list of La Liga winning managers gives each season's champions and manager. Each was checked against Transfermarkt's staff history for the champions, which shows him in charge for that season. Most slots any one manager fills here: 2."
+}

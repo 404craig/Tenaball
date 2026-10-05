@@ -1,0 +1,188 @@
+{
+ "pick": "ess02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "La Liga assists, 2025/26",
+ "brief": "Name the ten players with the most La Liga assists in 2025/26.",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lamine Yamal",
+   "val": "11 or 12 assists"
+  },
+  {
+   "label": "2",
+   "name": "Marcus Rashford",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "3",
+   "name": "Nicolas Pepe",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "4",
+   "name": "Luis Milla",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "5",
+   "name": "Pedri",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "6",
+   "name": "Fermin Lopez",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Arda Guler",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Abde Ezzalzouli",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Dani Olmo",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Federico Valverde",
+   "val": "6 to 10 assists",
+   "pool": "top",
+   "alts": [
+    "Marcus Rashford",
+    "Nicolas Pepe",
+    "Luis Milla",
+    "Pedri",
+    "Fermin Lopez",
+    "Arda Guler",
+    "Abde Ezzalzouli",
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  }
+ ],
+ "notes": {
+  "Yuri Berchiche": "Yuri Berchiche had 7 assists on Transfermarkt, just outside the ten.",
+  "Vinicius Junior": "Vinicius Junior had 6 assists on Transfermarkt, just outside the ten.",
+  "Santi Comesana": "Santi Comesana had 6 assists on Transfermarkt, just outside the ten."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages for all 20 clubs, 2025/26 (reldata=ES1%262025)",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/2025/types/1/leaders"
+ ],
+ "checks": "Assists summed per player from Transfermarkt club pages and compared with ESPN's 2025/26 assists leaders. Assist counting differs between providers: the same ten names are the top ten on ESPN, but some totals differ by one to three (shown as \"x or y\"). Lamine Yamal is first on both (12 and 11). Below him the order differs between the two (Rashford is 2nd on Transfermarkt with 10 but has 7 on ESPN), so places 2 to 10 are one pool: the nine names in the ESPN top ten after Yamal, plus Brahim Diaz, who ties for 9th on Transfermarkt with 8 (ESPN 6). Any of the ten fills a place. Figures (Transfermarkt, ESPN): Lamine Yamal 12, 11; Marcus Rashford 10, 7; Nicolas Pepe 10, 8; Luis Milla 10, 10; Pedri 9, 9; Fermin Lopez 9, 9; Arda Guler 9, 9; Abde Ezzalzouli 9, 8; Dani Olmo 8, 8; Federico Valverde 8, 8; Brahim Diaz 8, 6."
+}

@@ -1,0 +1,77 @@
+{
+ "pick": "es27-2010",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "La Liga title-winning managers, 2010/11 to 2019/20",
+ "brief": "Name the manager of the La Liga champions in each season from 2010/11 to 2019/20.",
+ "period": "La Liga seasons 2010/11 to 2019/20",
+ "rows": [
+  {
+   "label": "2010/11",
+   "name": "Pep Guardiola",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2011/12",
+   "name": "Jose Mourinho",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2012/13",
+   "name": "Tito Vilanova",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2013/14",
+   "name": "Diego Simeone",
+   "val": "Atletico Madrid"
+  },
+  {
+   "label": "2014/15",
+   "name": "Luis Enrique",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2015/16",
+   "name": "Luis Enrique",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2016/17",
+   "name": "Zinedine Zidane",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2017/18",
+   "name": "Ernesto Valverde",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2018/19",
+   "name": "Ernesto Valverde",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2019/20",
+   "name": "Zinedine Zidane",
+   "val": "Real Madrid"
+  }
+ ],
+ "notes": {
+  "Vicente del Bosque": "Vicente del Bosque won the title outside these years.",
+  "Rafael Benitez": "Rafael Benitez won the title outside these years.",
+  "Frank Rijkaard": "Frank Rijkaard won the title outside these years.",
+  "Fabio Capello": "Fabio Capello won the title outside these years.",
+  "Bernd Schuster": "Bernd Schuster won the title outside these years.",
+  "Carlo Ancelotti": "Carlo Ancelotti won the title outside these years.",
+  "Xavi": "Xavi won the title outside these years.",
+  "Hansi Flick": "Hansi Flick won the title outside these years.",
+  "Jordi Roura": "Jordi Roura was caretaker for part of 2012/13 while Tito Vilanova had cancer treatment; the title is credited to Vilanova."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_winning_managers",
+  "https://www.transfermarkt.co.uk/real-madrid/mitarbeiterhistorie/verein/418 (and the same page for Barcelona 131, Valencia 1049 and Atletico Madrid 13)"
+ ],
+ "checks": "Wikipedia's list of La Liga winning managers gives each season's champions and manager. Each was checked against Transfermarkt's staff history for the champions, which shows him in charge for that season. Most slots any one manager fills here: 2."
+}

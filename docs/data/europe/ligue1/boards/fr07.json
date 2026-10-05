@@ -1,0 +1,78 @@
+{
+ "pick": "fr07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Ligue 1 top scorers since 2000",
+ "brief": "Name the ten players with the most Ligue 1 goals from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "191 goals"
+  },
+  {
+   "label": "2",
+   "name": "Alexandre Lacazette",
+   "val": "161 goals"
+  },
+  {
+   "label": "3",
+   "name": "Wissam Ben Yedder",
+   "val": "161 goals"
+  },
+  {
+   "label": "4",
+   "name": "Pauleta",
+   "val": "141 goals"
+  },
+  {
+   "label": "5",
+   "name": "Edinson Cavani",
+   "val": "138 goals"
+  },
+  {
+   "label": "6",
+   "name": "Bafetimbi Gomis",
+   "val": "122 goals"
+  },
+  {
+   "label": "7",
+   "name": "Zlatan Ibrahimovic",
+   "val": "113 goals"
+  },
+  {
+   "label": "8",
+   "name": "Dimitri Payet",
+   "val": "103 goals"
+  },
+  {
+   "label": "9",
+   "name": "Andre-Pierre Gignac",
+   "val": "102 or 103 goals"
+  },
+  {
+   "label": "10",
+   "name": "Jimmy Briand",
+   "val": "102 goals"
+  }
+ ],
+ "notes": {
+  "Kevin Gameiro": "Gameiro is 11th with 101 goals, just outside.",
+  "Mamadou Niang": "Niang is 12th with 100 goals.",
+  "Florian Thauvin": "Thauvin is 13th with 97 goals.",
+  "Djibril Cisse": "Cisse is 14th with 96 goals.",
+  "Mevlut Erdinc": "Erdinc is 15th with 92 goals.",
+  "Pauleta": "Only goals from 2000/01 count, so his first two Bordeaux seasons are left out.",
+  "Sonny Anderson": "Anderson scored 48 Ligue 1 goals from 2000/01, most of his goals came earlier."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ligue-1/tabelle/wettbewerb/FR1/saison_id/2000",
+  "https://www.transfermarkt.com/ceapi/performance-game/43907",
+  "https://en.wikipedia.org/wiki/Andr%C3%A9-Pierre_Gignac",
+  "https://en.wikipedia.org/wiki/Jimmy_Briand",
+  "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
+ ],
+ "checks": "Totals summed from every Transfermarkt club season page 2000/01 to 2025/26, counted by Transfermarkt player id. Each of the top 16 checked against the Transfermarkt match log (exact match) and against the career statistics table in the player's English Wikipedia article (season by season). All agree except Gignac: Wikipedia has 9 goals in 2010/11, Transfermarkt 8, so 103 or 102. Either way he is in the top ten (9th or level with Payet in 8th). Gameiro is 101 on both."
+}

@@ -1,0 +1,90 @@
+{
+ "pick": "it21",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest sales by Serie A clubs",
+ "brief": "Name the ten players sold by Serie A clubs for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Romelu Lukaku",
+   "val": "€115m (£97.5m)"
+  },
+  {
+   "label": "2",
+   "name": "Paul Pogba",
+   "val": "€105m (£89m)"
+  },
+  {
+   "label": "3",
+   "name": "Gonzalo Higuain",
+   "val": "€90m (£75.3m)"
+  },
+  {
+   "label": "4",
+   "name": "Zinedine Zidane",
+   "val": "€77.5m (£46m)"
+  },
+  {
+   "label": "5",
+   "name": "Rasmus Hojlund",
+   "val": "€75m (£64m)"
+  },
+  {
+   "label": "6",
+   "name": "Victor Osimhen",
+   "val": "€75m"
+  },
+  {
+   "label": "7",
+   "name": "Dusan Vlahovic",
+   "val": "€70m"
+  },
+  {
+   "label": "8",
+   "name": "Khvicha Kvaratskhelia",
+   "val": "€70m"
+  },
+  {
+   "label": "9",
+   "name": "Matthijs de Ligt",
+   "val": "€67m"
+  },
+  {
+   "label": "10",
+   "name": "Kaka",
+   "val": "€65m",
+   "pool": "sa10",
+   "alts": [
+    "Kaka",
+    "Mateo Retegui",
+    "Joao Cancelo"
+   ]
+  }
+ ],
+ "notes": {
+  "Edinson Cavani": "Edinson Cavani is just outside: €64.5m, Napoli to PSG in 2013.",
+  "Sandro Tonali": "Sandro Tonali is just outside: €64m (£55m) plus add-ons, AC Milan to Newcastle in 2023.",
+  "Alisson": "Alisson is outside the ten: €62.5m plus add-ons, Roma to Liverpool in 2018 (TM €72.5m).",
+  "Achraf Hakimi": "Achraf Hakimi is outside the ten: €60m plus add-ons, Inter to PSG in 2021 (TM €68m).",
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic is outside the ten: Inter to Barcelona in 2009 for €46m in cash plus Samuel Eto'o. Only the cash counts here; Transfermarkt values the whole deal at €69.5m."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/transferrekorde/wettbewerb/IT1/saison_id/alle/land_id//ausrichtung//spielerposition_id//altersklasse//leihe//w_s//zuab/ab",
+  "https://fourfourtwo.com/news/juventus-sign-higuain-napoli-eu90m",
+  "https://lethbridgeherald.com/?p=995750",
+  "https://news.bbc.co.uk/sport1/hi/football/europe/8082147.stm",
+  "https://www.bbc.co.uk/sport/football/37016170",
+  "https://www.calcioefinanza.it/?p=198226",
+  "https://www.dailymaverick.co.za/article/2019-08-07-juventus-and-man-city-swap-danilo-and-cancelo.md",
+  "https://www.espn.com/soccer/soccer-transfers/story/4702921/bayern-munich-complete-signing-of-matthijs-de-ligt-from-juventus",
+  "https://www.getfootballnewsitaly.com/2023/official-manchester-united-complete-the-signing-of-rasmus-hojlund-from-atalanta/",
+  "https://www.malaymail.com/news/sports/2022/01/29/juventus-sign-fiorentina-striker-vlahovic/2038306",
+  "https://www.telegraph.co.uk/sport/football/3008694/Zidane-in-48m-Real-deal.html",
+  "https://www.theguardian.com/football/2021/aug/12/chelsea-confirm-romelu-lukaku-signing-from-inter-in-115m-deal",
+  "https://www.thescore.com/seri/news/3318450/sms:"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

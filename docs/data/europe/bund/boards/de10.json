@@ -1,0 +1,128 @@
+{
+ "pick": "de10",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Most Bundesliga hat-tricks since 2000",
+ "brief": "Name the ten players with the most Bundesliga hat-tricks (three or more goals in a game) since 2000/01.",
+ "period": "Bundesliga seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "16 hat-tricks"
+  },
+  {
+   "label": "2",
+   "name": "Mario Gomez",
+   "val": "12 hat-tricks"
+  },
+  {
+   "label": "3",
+   "name": "Harry Kane",
+   "val": "11 hat-tricks"
+  },
+  {
+   "label": "4",
+   "name": "Andrej Kramaric",
+   "val": "6 hat-tricks"
+  },
+  {
+   "label": "5",
+   "name": "Claudio Pizarro",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "6",
+   "name": "Patrik Schick",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "7",
+   "name": "Kevin Kuranyi",
+   "val": "4 hat-tricks",
+   "pool": "ht4",
+   "alts": [
+    "Kevin Kuranyi",
+    "Miroslav Klose",
+    "Roy Makaay",
+    "Arjen Robben",
+    "Klaas-Jan Huntelaar",
+    "Alfred Finnbogason",
+    "Pierre-Emerick Aubameyang",
+    "Max Kruse"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Miroslav Klose",
+   "val": "4 hat-tricks",
+   "pool": "ht4",
+   "alts": [
+    "Kevin Kuranyi",
+    "Miroslav Klose",
+    "Roy Makaay",
+    "Arjen Robben",
+    "Klaas-Jan Huntelaar",
+    "Alfred Finnbogason",
+    "Pierre-Emerick Aubameyang",
+    "Max Kruse"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Roy Makaay",
+   "val": "4 hat-tricks",
+   "pool": "ht4",
+   "alts": [
+    "Kevin Kuranyi",
+    "Miroslav Klose",
+    "Roy Makaay",
+    "Arjen Robben",
+    "Klaas-Jan Huntelaar",
+    "Alfred Finnbogason",
+    "Pierre-Emerick Aubameyang",
+    "Max Kruse"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Arjen Robben",
+   "val": "4 hat-tricks",
+   "pool": "ht4",
+   "alts": [
+    "Kevin Kuranyi",
+    "Miroslav Klose",
+    "Roy Makaay",
+    "Arjen Robben",
+    "Klaas-Jan Huntelaar",
+    "Alfred Finnbogason",
+    "Pierre-Emerick Aubameyang",
+    "Max Kruse"
+   ]
+  }
+ ],
+ "notes": {
+  "Giovane Elber": "Elber has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Ailton": "Ailton has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Vedad Ibisevic": "Ibisevic has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Raul": "Raul has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Marco Reus": "Reus has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Niclas Fullkrug": "Fullkrug has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Wout Weghorst": "Weghorst has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Timo Werner": "Werner has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Erling Haaland": "Haaland has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Serge Gnabry": "Gnabry has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Serhou Guirassy": "Guirassy has 3 Bundesliga hat-tricks since 2000/01, just outside.",
+  "Ebbe Sand": "Sand has 2 or 3 depending on the source, outside the ten either way.",
+  "Mario Gomez": "Gomez scored 4 for Stuttgart against Wolfsburg in May 2009; Wikipedia's list misses that one.",
+  "Gerd Muller": "Gerd Muller holds the all-time record (32), but all before 2000/01.",
+  "Halil Altintop": "Altintop has 2 or 3 depending on the source, outside the ten either way."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Bundesliga_hat-tricks",
+  "https://www.fussballdaten.de/bundesliga/2026/1/",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/912705"
+ ],
+ "checks": "Wikipedia's list (which says it is missing hat-tricks up to 2007/08) was checked against every Bundesliga match from 2000/01 to 2025/26, counted from the scorers on all 884 fussballdaten.de matchday pages (own goals left out). The two agree on everyone in the ten except three games Wikipedia leaves out, each confirmed by its Transfermarkt match report: Gomez 4 goals for Stuttgart v Wolfsburg (9 May 2009), Aubameyang 3 for Dortmund v Augsburg (25 Oct 2015) and Kruse 3 for Wolfsburg v Hoffenheim (17 Oct 2015). (fussballdaten files Kruse's goals under a wrong name, Zoran Zekic, but the matches match Wikipedia's Kruse entries.) A four-goal game counts as one hat-trick. Eight players have 4, so they share 7th to 10th as a pool."
+}

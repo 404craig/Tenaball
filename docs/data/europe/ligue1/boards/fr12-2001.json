@@ -1,0 +1,65 @@
+{
+ "pick": "fr12-2001",
+ "kind": "labelled",
+ "type": "club",
+ "level": 2,
+ "title": "Coupe de France winners 2001 to 2010",
+ "brief": "Name the club that won the Coupe de France in each year from 2001 to 2010.",
+ "period": "Coupe de France finals 2001 to 2010",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Strasbourg"
+  },
+  {
+   "label": "2002",
+   "name": "Lorient"
+  },
+  {
+   "label": "2003",
+   "name": "Auxerre"
+  },
+  {
+   "label": "2004",
+   "name": "PSG"
+  },
+  {
+   "label": "2005",
+   "name": "Auxerre"
+  },
+  {
+   "label": "2006",
+   "name": "PSG"
+  },
+  {
+   "label": "2007",
+   "name": "Sochaux"
+  },
+  {
+   "label": "2008",
+   "name": "Lyon"
+  },
+  {
+   "label": "2009",
+   "name": "Guingamp"
+  },
+  {
+   "label": "2010",
+   "name": "PSG"
+  }
+ ],
+ "notes": {
+  "Amiens": "Amiens lost the 2001 final, so no win in these years.",
+  "Bastia": "Bastia lost the 2002 final, so no win in these years.",
+  "Chateauroux": "Chateauroux lost the 2004 final, so no win in these years.",
+  "Sedan": "Sedan lost the 2005 final, so no win in these years.",
+  "Marseille": "Marseille lost the 2006 and 2007 finals and did not win the cup in these years.",
+  "Rennes": "Rennes lost the 2009 final, so no win in these years.",
+  "Monaco": "Monaco lost the 2010 final, so no win in these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Coupe_de_France",
+  "https://www.transfermarkt.com/coupe-de-france/erfolge/pokalwettbewerb/FRC"
+ ],
+ "checks": "Every winner taken from Wikipedia's Coupe de France results-by-club table and matched against Transfermarkt's list of all winners; both agree for every final from 2001 to 2026. PSG wins 3 in this window, under the 4-slot limit. Windows from 2008 onward all give PSG four or more slots, so 2001 to 2010 and 2007 to 2016 are the only usable windows (they overlap in 2007 to 2010)."
+}

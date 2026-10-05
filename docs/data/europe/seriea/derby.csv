@@ -1,0 +1,147 @@
+season,date,home,away,score,scorer,scorer_club,minute,own_goal,tm_match_id
+2000/01,2001-01-07,AC Milan,Inter,2-2,Hakan Sukur,Inter,11,,2217377
+2000/01,2001-01-07,AC Milan,Inter,2-2,Zvonimir Boban,AC Milan,65,,2217377
+2000/01,2001-01-07,AC Milan,Inter,2-2,Luigi Di Biagio,Inter,72,,2217377
+2000/01,2001-01-07,AC Milan,Inter,2-2,Oliver Bierhoff,AC Milan,85,,2217377
+2000/01,2001-05-11,Inter,AC Milan,0-6,Gianni Comandini,AC Milan,3,,2217522
+2000/01,2001-05-11,Inter,AC Milan,0-6,Gianni Comandini,AC Milan,19,,2217522
+2000/01,2001-05-11,Inter,AC Milan,0-6,Federico Giunti,AC Milan,53,,2217522
+2000/01,2001-05-11,Inter,AC Milan,0-6,Andriy Shevchenko,AC Milan,67,,2217522
+2000/01,2001-05-11,Inter,AC Milan,0-6,Andriy Shevchenko,AC Milan,78,,2217522
+2000/01,2001-05-11,Inter,AC Milan,0-6,Serginho,AC Milan,81,,2217522
+2001/02,2001-10-21,Inter,AC Milan,2-4,Nicola Ventola,Inter,13,,1133362
+2001/02,2001-10-21,Inter,AC Milan,2-4,Andriy Shevchenko,AC Milan,59,,1133362
+2001/02,2001-10-21,Inter,AC Milan,2-4,Cosmin Contra,AC Milan,62,,1133362
+2001/02,2001-10-21,Inter,AC Milan,2-4,Filippo Inzaghi,AC Milan,66,,1133362
+2001/02,2001-10-21,Inter,AC Milan,2-4,Andriy Shevchenko,AC Milan,78,,1133362
+2001/02,2001-10-21,Inter,AC Milan,2-4,Mohamed Kallon,Inter,90,,1133362
+2001/02,2002-03-03,AC Milan,Inter,0-1,Christian Vieri,Inter,78,,1133438
+2002/03,2002-11-23,AC Milan,Inter,1-0,Serginho,AC Milan,13,,1022493
+2002/03,2003-04-12,Inter,AC Milan,0-1,Filippo Inzaghi,AC Milan,62,,1022646
+2003/04,2003-10-05,Inter,AC Milan,1-3,Filippo Inzaghi,AC Milan,39,,1316
+2003/04,2003-10-05,Inter,AC Milan,1-3,Kaka,AC Milan,46,,1316
+2003/04,2003-10-05,Inter,AC Milan,1-3,Andriy Shevchenko,AC Milan,77,,1316
+2003/04,2003-10-05,Inter,AC Milan,1-3,Obafemi Martins,Inter,78,,1316
+2003/04,2004-02-21,AC Milan,Inter,3-2,Dejan Stankovic,Inter,15,,4566
+2003/04,2004-02-21,AC Milan,Inter,3-2,Cristiano Zanetti,Inter,40,,4566
+2003/04,2004-02-21,AC Milan,Inter,3-2,Jon Dahl Tomasson,AC Milan,56,,4566
+2003/04,2004-02-21,AC Milan,Inter,3-2,Kaka,AC Milan,57,,4566
+2003/04,2004-02-21,AC Milan,Inter,3-2,Clarence Seedorf,AC Milan,85,,4566
+2004/05,2004-10-24,AC Milan,Inter,0-0,,,,,27595
+2004/05,2005-02-27,Inter,AC Milan,0-1,Kaka,AC Milan,74,,27785
+2005/06,2005-12-11,Inter,AC Milan,3-2,Adriano,Inter,24,,49377
+2005/06,2005-12-11,Inter,AC Milan,3-2,Andriy Shevchenko,AC Milan,39,,49377
+2005/06,2005-12-11,Inter,AC Milan,3-2,Obafemi Martins,Inter,59,,49377
+2005/06,2005-12-11,Inter,AC Milan,3-2,Jaap Stam,AC Milan,83,,49377
+2005/06,2005-12-11,Inter,AC Milan,3-2,Adriano,Inter,90,,49377
+2005/06,2006-04-14,AC Milan,Inter,1-0,Kakhaber Kaladze,AC Milan,70,,41229
+2006/07,2006-10-28,AC Milan,Inter,3-4,Hernan Crespo,Inter,17,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Dejan Stankovic,Inter,22,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Zlatan Ibrahimovic,Inter,47,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Clarence Seedorf,AC Milan,50,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Marco Materazzi,Inter,69,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Alberto Gilardino,AC Milan,76,,65258
+2006/07,2006-10-28,AC Milan,Inter,3-4,Kaka,AC Milan,90,,65258
+2006/07,2007-03-11,Inter,AC Milan,2-1,Ronaldo,AC Milan,40,,65444
+2006/07,2007-03-11,Inter,AC Milan,2-1,Julio Cruz,Inter,54,,65444
+2006/07,2007-03-11,Inter,AC Milan,2-1,Zlatan Ibrahimovic,Inter,75,,65444
+2007/08,2007-12-23,Inter,AC Milan,2-1,Andrea Pirlo,AC Milan,18,,84078
+2007/08,2007-12-23,Inter,AC Milan,2-1,Julio Cruz,Inter,36,,84078
+2007/08,2007-12-23,Inter,AC Milan,2-1,Esteban Cambiasso,Inter,63,,84078
+2007/08,2008-05-04,AC Milan,Inter,2-1,Filippo Inzaghi,AC Milan,51,,84268
+2007/08,2008-05-04,AC Milan,Inter,2-1,Kaka,AC Milan,56,,84268
+2007/08,2008-05-04,AC Milan,Inter,2-1,Julio Cruz,Inter,76,,84268
+2008/09,2008-09-28,AC Milan,Inter,1-0,Ronaldinho,AC Milan,36,,926048
+2008/09,2009-02-15,Inter,AC Milan,2-1,Adriano,Inter,29,,932429
+2008/09,2009-02-15,Inter,AC Milan,2-1,Dejan Stankovic,Inter,43,,932429
+2008/09,2009-02-15,Inter,AC Milan,2-1,Alexandre Pato,AC Milan,71,,932429
+2009/10,2009-08-29,AC Milan,Inter,0-4,Thiago Motta,Inter,30,,964287
+2009/10,2009-08-29,AC Milan,Inter,0-4,Diego Milito,Inter,36,,964287
+2009/10,2009-08-29,AC Milan,Inter,0-4,Maicon,Inter,45,,964287
+2009/10,2009-08-29,AC Milan,Inter,0-4,Dejan Stankovic,Inter,67,,964287
+2009/10,2010-01-24,Inter,AC Milan,2-0,Diego Milito,Inter,10,,964477
+2009/10,2010-01-24,Inter,AC Milan,2-0,Goran Pandev,Inter,65,,964477
+2010/11,2010-11-14,Inter,AC Milan,0-1,Zlatan Ibrahimovic,AC Milan,5,,1047436
+2010/11,2011-04-02,AC Milan,Inter,3-0,Alexandre Pato,AC Milan,1,,1047627
+2010/11,2011-04-02,AC Milan,Inter,3-0,Alexandre Pato,AC Milan,62,,1047627
+2010/11,2011-04-02,AC Milan,Inter,3-0,Antonio Cassano,AC Milan,90,,1047627
+2011/12,2012-01-15,AC Milan,Inter,0-1,Diego Milito,Inter,54,,1137250
+2011/12,2012-05-06,Inter,AC Milan,4-2,Diego Milito,Inter,14,,1137436
+2011/12,2012-05-06,Inter,AC Milan,4-2,Zlatan Ibrahimovic,AC Milan,44,,1137436
+2011/12,2012-05-06,Inter,AC Milan,4-2,Zlatan Ibrahimovic,AC Milan,46,,1137436
+2011/12,2012-05-06,Inter,AC Milan,4-2,Diego Milito,Inter,52,,1137436
+2011/12,2012-05-06,Inter,AC Milan,4-2,Diego Milito,Inter,79,,1137436
+2011/12,2012-05-06,Inter,AC Milan,4-2,Maicon,Inter,87,,1137436
+2012/13,2012-10-07,AC Milan,Inter,0-1,Walter Samuel,Inter,3,,2251327
+2012/13,2013-02-24,Inter,AC Milan,1-1,Stephan El Shaarawy,AC Milan,21,,2251507
+2012/13,2013-02-24,Inter,AC Milan,1-1,Ezequiel Schelotto,Inter,71,,2251507
+2013/14,2013-12-22,Inter,AC Milan,1-0,Rodrigo Palacio,Inter,86,,2359369
+2013/14,2014-05-04,AC Milan,Inter,1-0,Nigel de Jong,AC Milan,65,,2359559
+2014/15,2014-11-23,AC Milan,Inter,1-1,Jeremy Menez,AC Milan,23,,2478703
+2014/15,2014-11-23,AC Milan,Inter,1-1,Joel Obi,Inter,61,,2478703
+2014/15,2015-04-19,Inter,AC Milan,0-0,,,,,2478893
+2015/16,2015-09-13,Inter,AC Milan,1-0,Fredy Guarin,Inter,58,,2603998
+2015/16,2016-01-31,AC Milan,Inter,3-0,Alex,AC Milan,35,,2604188
+2015/16,2016-01-31,AC Milan,Inter,3-0,Carlos Bacca,AC Milan,73,,2604188
+2015/16,2016-01-31,AC Milan,Inter,3-0,M'Baye Niang,AC Milan,77,,2604188
+2016/17,2016-11-20,AC Milan,Inter,2-2,Suso,AC Milan,43,,2726600
+2016/17,2016-11-20,AC Milan,Inter,2-2,Antonio Candreva,Inter,53,,2726600
+2016/17,2016-11-20,AC Milan,Inter,2-2,Suso,AC Milan,58,,2726600
+2016/17,2016-11-20,AC Milan,Inter,2-2,Ivan Perisic,Inter,90,,2726600
+2016/17,2017-04-15,Inter,AC Milan,2-2,Antonio Candreva,Inter,36,,2726790
+2016/17,2017-04-15,Inter,AC Milan,2-2,Mauro Icardi,Inter,44,,2726790
+2016/17,2017-04-15,Inter,AC Milan,2-2,Alessio Romagnoli,AC Milan,83,,2726790
+2016/17,2017-04-15,Inter,AC Milan,2-2,Cristian Zapata,AC Milan,90,,2726790
+2017/18,2017-10-15,Inter,AC Milan,3-2,Mauro Icardi,Inter,27,,2897233
+2017/18,2017-10-15,Inter,AC Milan,3-2,Suso,AC Milan,56,,2897233
+2017/18,2017-10-15,Inter,AC Milan,3-2,Mauro Icardi,Inter,62,,2897233
+2017/18,2017-10-15,Inter,AC Milan,3-2,Samir Handanovic,AC Milan,81,yes,2897233
+2017/18,2017-10-15,Inter,AC Milan,3-2,Mauro Icardi,Inter,90,,2897233
+2017/18,2018-04-04,AC Milan,Inter,0-0,,,,,2897363
+2018/19,2018-10-21,Inter,AC Milan,1-0,Mauro Icardi,Inter,90,,3081046
+2018/19,2019-03-17,AC Milan,Inter,2-3,Matias Vecino,Inter,3,,3081306
+2018/19,2019-03-17,AC Milan,Inter,2-3,Stefan de Vrij,Inter,51,,3081306
+2018/19,2019-03-17,AC Milan,Inter,2-3,Tiemoue Bakayoko,AC Milan,57,,3081306
+2018/19,2019-03-17,AC Milan,Inter,2-3,Lautaro Martinez,Inter,68,,3081306
+2018/19,2019-03-17,AC Milan,Inter,2-3,Mateo Musacchio,AC Milan,71,,3081306
+2019/20,2019-09-21,AC Milan,Inter,0-2,Marcelo Brozovic,Inter,49,,3229202
+2019/20,2019-09-21,AC Milan,Inter,0-2,Romelu Lukaku,Inter,78,,3229202
+2019/20,2020-02-09,Inter,AC Milan,4-2,Ante Rebic,AC Milan,40,,3229392
+2019/20,2020-02-09,Inter,AC Milan,4-2,Zlatan Ibrahimovic,AC Milan,45,,3229392
+2019/20,2020-02-09,Inter,AC Milan,4-2,Marcelo Brozovic,Inter,51,,3229392
+2019/20,2020-02-09,Inter,AC Milan,4-2,Matias Vecino,Inter,53,,3229392
+2019/20,2020-02-09,Inter,AC Milan,4-2,Stefan de Vrij,Inter,70,,3229392
+2019/20,2020-02-09,Inter,AC Milan,4-2,Romelu Lukaku,Inter,90,,3229392
+2020/21,2020-10-17,Inter,AC Milan,1-2,Zlatan Ibrahimovic,AC Milan,13,,3433217
+2020/21,2020-10-17,Inter,AC Milan,1-2,Zlatan Ibrahimovic,AC Milan,16,,3433217
+2020/21,2020-10-17,Inter,AC Milan,1-2,Romelu Lukaku,Inter,29,,3433217
+2020/21,2021-02-21,AC Milan,Inter,0-3,Lautaro Martinez,Inter,5,,3433407
+2020/21,2021-02-21,AC Milan,Inter,0-3,Lautaro Martinez,Inter,57,,3433407
+2020/21,2021-02-21,AC Milan,Inter,0-3,Romelu Lukaku,Inter,66,,3433407
+2021/22,2021-11-07,AC Milan,Inter,1-1,Hakan Calhanoglu,Inter,11,,3615120
+2021/22,2021-11-07,AC Milan,Inter,1-1,Stefan de Vrij,AC Milan,17,yes,3615120
+2021/22,2022-02-05,Inter,AC Milan,1-2,Ivan Perisic,Inter,38,,3614761
+2021/22,2022-02-05,Inter,AC Milan,1-2,Olivier Giroud,AC Milan,75,,3614761
+2021/22,2022-02-05,Inter,AC Milan,1-2,Olivier Giroud,AC Milan,78,,3614761
+2022/23,2022-09-03,AC Milan,Inter,3-2,Marcelo Brozovic,Inter,21,,3844780
+2022/23,2022-09-03,AC Milan,Inter,3-2,Rafael Leao,AC Milan,28,,3844780
+2022/23,2022-09-03,AC Milan,Inter,3-2,Olivier Giroud,AC Milan,54,,3844780
+2022/23,2022-09-03,AC Milan,Inter,3-2,Rafael Leao,AC Milan,60,,3844780
+2022/23,2022-09-03,AC Milan,Inter,3-2,Edin Dzeko,Inter,67,,3844780
+2022/23,2023-02-05,Inter,AC Milan,1-0,Lautaro Martinez,Inter,34,,3844939
+2023/24,2023-09-16,Inter,AC Milan,5-1,Henrikh Mkhitaryan,Inter,5,,4103507
+2023/24,2023-09-16,Inter,AC Milan,5-1,Marcus Thuram,Inter,38,,4103507
+2023/24,2023-09-16,Inter,AC Milan,5-1,Rafael Leao,AC Milan,57,,4103507
+2023/24,2023-09-16,Inter,AC Milan,5-1,Henrikh Mkhitaryan,Inter,69,,4103507
+2023/24,2023-09-16,Inter,AC Milan,5-1,Hakan Calhanoglu,Inter,79,,4103507
+2023/24,2023-09-16,Inter,AC Milan,5-1,Davide Frattesi,Inter,90,,4103507
+2023/24,2024-04-22,AC Milan,Inter,1-2,Francesco Acerbi,Inter,18,,4103796
+2023/24,2024-04-22,AC Milan,Inter,1-2,Marcus Thuram,Inter,49,,4103796
+2023/24,2024-04-22,AC Milan,Inter,1-2,Fikayo Tomori,AC Milan,80,,4103796
+2024/25,2024-09-22,Inter,AC Milan,1-2,Christian Pulisic,AC Milan,10,,4373949
+2024/25,2024-09-22,Inter,AC Milan,1-2,Federico Dimarco,Inter,27,,4373949
+2024/25,2024-09-22,Inter,AC Milan,1-2,Matteo Gabbia,AC Milan,89,,4373949
+2024/25,2025-02-02,AC Milan,Inter,1-1,Tijjani Reijnders,AC Milan,45,,4374147
+2024/25,2025-02-02,AC Milan,Inter,1-1,Stefan de Vrij,Inter,90,,4374147
+2025/26,2025-11-23,Inter,AC Milan,0-1,Christian Pulisic,AC Milan,54,,4620805
+2025/26,2026-03-08,AC Milan,Inter,1-0,Pervis Estupinan,AC Milan,35,,4620993

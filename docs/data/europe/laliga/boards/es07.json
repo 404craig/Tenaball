@@ -1,0 +1,83 @@
+{
+ "pick": "es07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "La Liga top scorers since 2000",
+ "brief": "Name the ten players with the most La Liga goals from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "474 goals"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "311 goals"
+  },
+  {
+   "label": "3",
+   "name": "Karim Benzema",
+   "val": "238 goals"
+  },
+  {
+   "label": "4",
+   "name": "Antoine Griezmann",
+   "val": "205 goals"
+  },
+  {
+   "label": "5",
+   "name": "David Villa",
+   "val": "185 or 186 goals"
+  },
+  {
+   "label": "6",
+   "name": "Luis Suarez",
+   "val": "176 or 179 goals"
+  },
+  {
+   "label": "7",
+   "name": "Iago Aspas",
+   "val": "170 goals"
+  },
+  {
+   "label": "8",
+   "name": "Aritz Aduriz",
+   "val": "158 goals"
+  },
+  {
+   "label": "9",
+   "name": "Samuel Eto'o",
+   "val": "156 goals"
+  },
+  {
+   "label": "10",
+   "name": "Gerard Moreno",
+   "val": "131 goals"
+  }
+ ],
+ "notes": {
+  "Roberto Soldado": "Roberto Soldado is just outside the ten with 129 goals.",
+  "Diego Forlan": "Diego Forlan is just outside the ten with 128 goals.",
+  "Alvaro Negredo": "Alvaro Negredo is just outside the ten with 128 goals."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_top_scorers",
+  "https://en.wikipedia.org/wiki/Lionel_Messi",
+  "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+  "https://en.wikipedia.org/wiki/Karim_Benzema",
+  "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+  "https://en.wikipedia.org/wiki/David_Villa",
+  "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(Uruguayan_footballer)",
+  "https://en.wikipedia.org/wiki/Iago_Aspas",
+  "https://en.wikipedia.org/wiki/Aritz_Aduriz",
+  "https://en.wikipedia.org/wiki/Samuel_Eto%27o",
+  "https://en.wikipedia.org/wiki/Gerard_Moreno",
+  "https://en.wikipedia.org/wiki/Roberto_Soldado",
+  "https://en.wikipedia.org/wiki/Diego_Forl%C3%A1n"
+ ],
+ "checks": "Totals summed by Transfermarkt player id from every club season page, then each of the top 13 compared season by season with the La Liga rows of the player's Wikipedia career statistics table. Lionel Messi 474 (Wikipedia agrees); Cristiano Ronaldo 311 (Wikipedia agrees); Karim Benzema 238 (Wikipedia agrees); Antoine Griezmann 205 (Wikipedia agrees); David Villa 185 (Wikipedia 186); Luis Suarez 176 (Wikipedia 179); Iago Aspas 170 (Wikipedia agrees); Aritz Aduriz 158 (Wikipedia agrees); Samuel Eto'o 156 (Wikipedia agrees); Gerard Moreno 131 (Wikipedia agrees); Roberto Soldado 129 (Wikipedia agrees); Diego Forlan 128 (Wikipedia agrees); Alvaro Negredo 128 (Wikipedia List of La Liga top scorers agrees; first La Liga season 2007/08). Also agrees with Wikipedia's List of La Liga top scorers (BDFutbol figures) for players who began after 2000; Raul (127) and Eto'o (156) have pre-2000/01 goals removed. Where the two differ by a goal or more both figures are shown: Villa 2006/07 (15 or 16), Suarez 2016/17 (28 or 29) and 2018/19 (19 or 21)."
+}

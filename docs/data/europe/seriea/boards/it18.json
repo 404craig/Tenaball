@@ -1,0 +1,83 @@
+{
+ "pick": "it18",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Juventus's biggest signings",
+ "brief": "Name the ten most expensive players Juventus have signed since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "€100m (£88.3m)"
+  },
+  {
+   "label": "2",
+   "name": "Gonzalo Higuain",
+   "val": "€90m (£75.3m)"
+  },
+  {
+   "label": "3",
+   "name": "Matthijs de Ligt",
+   "val": "€75m"
+  },
+  {
+   "label": "4",
+   "name": "Arthur",
+   "val": "€72m"
+  },
+  {
+   "label": "5",
+   "name": "Dusan Vlahovic",
+   "val": "€70m"
+  },
+  {
+   "label": "6",
+   "name": "Teun Koopmeiners",
+   "val": "€51.3m"
+  },
+  {
+   "label": "7",
+   "name": "Douglas Luiz",
+   "val": "€50m"
+  },
+  {
+   "label": "8",
+   "name": "Bremer",
+   "val": "€41m"
+  },
+  {
+   "label": "9",
+   "name": "Lois Openda",
+   "val": "€40.6m"
+  },
+  {
+   "label": "10",
+   "name": "Joao Cancelo",
+   "val": "€40.4m"
+  }
+ ],
+ "notes": {
+  "Douglas Costa": "Douglas Costa is 11th, just outside: €40m to make his loan from Bayern permanent in 2018 (after a €6m loan fee).",
+  "Federico Chiesa": "Federico Chiesa is 11th equal, just outside: €40m obligation fee in 2022 after a two-year loan costing €10m (€50m in all).",
+  "Federico Bernardeschi": "Federico Bernardeschi is 11th equal, just outside: €40m from Fiorentina in 2017.",
+  "Gianluigi Buffon": "Gianluigi Buffon: Juventus paid 75bn lire (about €38.7m) plus Jonathan Bachini in 2001. With Bachini valued, about €52.9m (TM). Counting only the cash, he is outside the ten.",
+  "Pavel Nedved": "Pavel Nedved is outside the ten: about 75bn lire (€38.7m) from Lazio in 2001 per La Repubblica; other sources say €41m to 45m.",
+  "Randal Kolo Muani": "Randal Kolo Muani is outside the ten: €38m fixed plus €12m bonuses from PSG in 2026.",
+  "Paulo Dybala": "Paulo Dybala is outside the ten: €32m plus €8m from Palermo in 2015."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/juventus-turin/transferrekorde/verein/506",
+  "https://en.nogomania.com/read/Juventus-forced-into-45m-mistake-as-Openda-deal-becomes-mandatory",
+  "https://fourfourtwo.com/news/juventus-sign-higuain-napoli-eu90m",
+  "https://www.flashscore.com/news/football-serie-a-juventus-confirm-koopmeiners-big-money-move-from-atalanta/QTeHWcDU/",
+  "https://www.malaymail.com/news/sports/2022/01/29/juventus-sign-fiorentina-striker-vlahovic/2038306",
+  "https://www.malaymail.com/news/sports/2022/07/20/juve-complete-deal-for-torino-defender-bremer/18361",
+  "https://www.theguardian.com/football/2018/jul/10/cristiano-ronaldo-juventus-real-madrid",
+  "https://www.thescore.com/liga/news/1980722",
+  "https://www.thescore.com/news/1563493",
+  "https://www.tsn.ca/de-ligt-completes-75-million-euro-transfer-to-juventus-1.1338905"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

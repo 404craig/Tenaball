@@ -1,0 +1,73 @@
+{
+ "pick": "ess01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "La Liga top scorers, 2025/26",
+ "brief": "Name the ten top scorers in La Liga in 2025/26 (league goals only).",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "25 goals"
+  },
+  {
+   "label": "2",
+   "name": "Vedat Muriqi",
+   "val": "23 goals"
+  },
+  {
+   "label": "3",
+   "name": "Ante Budimir",
+   "val": "17 goals"
+  },
+  {
+   "label": "4",
+   "name": "Lamine Yamal",
+   "val": "16 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ferran Torres",
+   "val": "16 goals"
+  },
+  {
+   "label": "6",
+   "name": "Vinicius Junior",
+   "val": "16 goals"
+  },
+  {
+   "label": "7",
+   "name": "Mikel Oyarzabal",
+   "val": "15 goals"
+  },
+  {
+   "label": "8",
+   "name": "Robert Lewandowski",
+   "val": "14 goals"
+  },
+  {
+   "label": "9",
+   "name": "Borja Iglesias",
+   "val": "14 goals"
+  },
+  {
+   "label": "10",
+   "name": "Toni Martinez",
+   "val": "14 goals"
+  }
+ ],
+ "notes": {
+  "Raphinha": "Raphinha had 13 league goals, just outside the ten.",
+  "Georges Mikautadze": "Georges Mikautadze had 13 league goals, just outside the ten.",
+  "Alexander Sorloth": "Alexander Sorloth had 13 league goals, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/laliga/tabelle/wettbewerb/ES1/saison_id/2025",
+  "Transfermarkt club season stats pages for all 20 clubs, 2025/26 (reldata=ES1%262025)",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/2025/types/1/leaders",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga#Top_goalscorers"
+ ],
+ "checks": "Goals summed per player from Transfermarkt club pages; the top 13 match ESPN's 2025/26 goals leaders exactly and the top ten match Wikipedia's 2025/26 La Liga top goalscorers table (which cites LaLiga)."
+}

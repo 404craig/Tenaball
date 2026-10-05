@@ -1,0 +1,81 @@
+{
+ "pick": "es22",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Barcelona's biggest sales",
+ "brief": "Name the ten players Barcelona have sold for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "€222m (£200m)"
+  },
+  {
+   "label": "2",
+   "name": "Arthur",
+   "val": "€72m"
+  },
+  {
+   "label": "3",
+   "name": "Luis Figo",
+   "val": "€60m (£37m)"
+  },
+  {
+   "label": "4",
+   "name": "Ousmane Dembele",
+   "val": "€50m"
+  },
+  {
+   "label": "5",
+   "name": "Ferran Torres",
+   "val": "€48.5m"
+  },
+  {
+   "label": "6",
+   "name": "Alexis Sanchez",
+   "val": "€42.5m (£35m)"
+  },
+  {
+   "label": "7",
+   "name": "Paulinho",
+   "val": "€42m"
+  },
+  {
+   "label": "8",
+   "name": "Malcom",
+   "val": "€40m"
+  },
+  {
+   "label": "9",
+   "name": "Jasper Cillessen",
+   "val": "€35m"
+  },
+  {
+   "label": "10",
+   "name": "Cesc Fabregas",
+   "val": "€33m (£30m)"
+  }
+ ],
+ "notes": {
+  "Yerry Mina": "Yerry Mina is 11th, just outside: €30.25m plus €1.5m to Everton in 2018 (Barcelona statement).",
+  "Nelson Semedo": "Nelson Semedo is 11th equal, just outside: €30m plus up to €10m to Wolves in 2020 (TM €32m).",
+  "Yaya Toure": "Yaya Toure is outside the ten: €30m to Manchester City in 2010.",
+  "Ronaldo": "Ronaldo was sold to Inter for €26.5m in 1997, before July 2000, so not counted."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-barcelona/rekordabgaenge/verein/131",
+  "https://english.ahram.org.eg/News/574606.aspx",
+  "https://news.bbc.co.uk/sport2/hi/football/europe/848836.stm",
+  "https://video.thescore.com/esp_fed/news/1805945/barcelona-sell-malcom-to-zenit-for-initial-fee-of-%E2%82%AC-40-m",
+  "https://www.bbc.co.uk/sport/football/40762417",
+  "https://www.cbssports.com/general/news/chilean-forward-alexis-sanchez-transfers-to-arsenal-from-barcelona",
+  "https://www.football-espana.net/2019/01/04/barcelona-receive-e42m-for-permanent-paulinho-sale-to-guangzhou-evergrande",
+  "https://www.goal.com/en-us/news/psg-trigger-ousmane-dembele-private-eur50m-release-clause-barcelona/blt4214c1d891f87071",
+  "https://www.goal.com/en/news/cillessen-leaves-barcelona-for-valencia-in-35m-deal/fwrk0zfd9kl105dv04wpa6yg",
+  "https://www.thescore.com/liga/news/1980722",
+  "https://www.tuttosport.com/news/calcio/calciomercato/2014/06/05-694651/fabregas_al_chelsea_piqu_fatta_per_33_milioni"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

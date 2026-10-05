@@ -1,0 +1,104 @@
+{
+ "pick": "es09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest La Liga seasons since 2000",
+ "brief": "Name the ten players with the most La Liga goals in a single season from 2000/01 to 2025/26. Each player counts once, for his best season.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "50 goals (2011/12, Barcelona)"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "48 goals (2014/15, Real Madrid)"
+  },
+  {
+   "label": "3",
+   "name": "Luis Suarez",
+   "val": "40 goals (2015/16, Barcelona)"
+  },
+  {
+   "label": "4",
+   "name": "Diego Forlan",
+   "val": "32 goals (2008/09, Atletico Madrid)"
+  },
+  {
+   "label": "5",
+   "name": "Kylian Mbappe",
+   "val": "31 goals (2024/25, Real Madrid)"
+  },
+  {
+   "label": "6",
+   "name": "Samuel Eto'o",
+   "val": "30 goals (2008/09, Barcelona)"
+  },
+  {
+   "label": "7",
+   "name": "Roy Makaay",
+   "val": "29 goals (2002/03, Deportivo)"
+  },
+  {
+   "label": "8",
+   "name": "David Villa",
+   "val": "28 goals (2008/09, Valencia)"
+  },
+  {
+   "label": "9",
+   "name": "Radamel Falcao",
+   "val": "28 goals (2012/13, Atletico Madrid)"
+  },
+  {
+   "label": "10",
+   "name": "Dani Guiza",
+   "val": "27 goals",
+   "pool": "t27",
+   "alts": [
+    "Dani Guiza",
+    "Gonzalo Higuain",
+    "Karim Benzema",
+    "Diego Costa",
+    "Robert Lewandowski"
+   ]
+  }
+ ],
+ "notes": {
+  "Ruud van Nistelrooy": "Ruud van Nistelrooy's best season since 2000/01 was 25 goals (2006/07), just short.",
+  "Alvaro Negredo": "Alvaro Negredo's best season since 2000/01 was 25 goals (2012/13), just short.",
+  "Raul": "Raul's best season since 2000/01 was 24 goals (2000/01), just short."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/2000%E2%80%9301_La_Liga",
+  "https://en.wikipedia.org/wiki/2001%E2%80%9302_La_Liga",
+  "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+  "https://en.wikipedia.org/wiki/2003%E2%80%9304_La_Liga",
+  "https://en.wikipedia.org/wiki/2004%E2%80%9305_La_Liga",
+  "https://en.wikipedia.org/wiki/2005%E2%80%9306_La_Liga",
+  "https://en.wikipedia.org/wiki/2006%E2%80%9307_La_Liga",
+  "https://en.wikipedia.org/wiki/2007%E2%80%9308_La_Liga",
+  "https://en.wikipedia.org/wiki/2008%E2%80%9309_La_Liga",
+  "https://en.wikipedia.org/wiki/2009%E2%80%9310_La_Liga",
+  "https://en.wikipedia.org/wiki/2010%E2%80%9311_La_Liga",
+  "https://en.wikipedia.org/wiki/2011%E2%80%9312_La_Liga",
+  "https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga",
+  "https://en.wikipedia.org/wiki/2013%E2%80%9314_La_Liga",
+  "https://en.wikipedia.org/wiki/2014%E2%80%9315_La_Liga",
+  "https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga",
+  "https://en.wikipedia.org/wiki/2016%E2%80%9317_La_Liga",
+  "https://en.wikipedia.org/wiki/2017%E2%80%9318_La_Liga",
+  "https://en.wikipedia.org/wiki/2018%E2%80%9319_La_Liga",
+  "https://en.wikipedia.org/wiki/2019%E2%80%9320_La_Liga",
+  "https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga",
+  "https://en.wikipedia.org/wiki/2021%E2%80%9322_La_Liga",
+  "https://en.wikipedia.org/wiki/2022%E2%80%9323_La_Liga",
+  "https://en.wikipedia.org/wiki/2023%E2%80%9324_La_Liga",
+  "https://en.wikipedia.org/wiki/2024%E2%80%9325_La_Liga",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga"
+ ],
+ "checks": "Each player's goals per season summed by Transfermarkt player id (goals for two clubs in one season would be added together; none of the board seasons involve two clubs), his best season kept, then each figure checked against that season's top scorers table on Wikipedia (Pichichi or LaLiga figures). Lionel Messi 50 in 2011/12 (Wikipedia agrees); Cristiano Ronaldo 48 in 2014/15 (Wikipedia agrees); Luis Suarez 40 in 2015/16 (Wikipedia agrees); Diego Forlan 32 in 2008/09 (Wikipedia agrees); Kylian Mbappe 31 in 2024/25 (Wikipedia agrees); Samuel Eto'o 30 in 2008/09 (Wikipedia agrees); Roy Makaay 29 in 2002/03 (Wikipedia agrees); David Villa 28 in 2008/09 (Wikipedia agrees); Radamel Falcao 28 in 2012/13 (Wikipedia agrees); Dani Guiza 27 in 2007/08 (Wikipedia agrees); Gonzalo Higuain 27 in 2009/10 (Wikipedia agrees); Karim Benzema 27 in 2021/22 (Wikipedia agrees); Diego Costa 27 in 2013/14 (Wikipedia agrees); Robert Lewandowski 27 in 2024/25 (Wikipedia agrees); Ruud van Nistelrooy 25 in 2006/07 (Wikipedia agrees); Alvaro Negredo 25 in 2012/13 (Wikipedia agrees). Five players tie on 27 for 10th, so they share it as a pool: Dani Guiza (2007/08, Mallorca); Gonzalo Higuain (2009/10, Real Madrid); Karim Benzema (2021/22, Real Madrid); Diego Costa (2013/14, Atletico Madrid); Robert Lewandowski (2024/25, Barcelona)."
+}

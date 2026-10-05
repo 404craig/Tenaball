@@ -1,0 +1,83 @@
+{
+ "pick": "esc1a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Barcelona's top scorers, 2025/26",
+ "brief": "Name the ten players with the most La Liga goals for Barcelona in 2025/26.",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lamine Yamal",
+   "val": "16 goals"
+  },
+  {
+   "label": "2",
+   "name": "Ferran Torres",
+   "val": "16 goals"
+  },
+  {
+   "label": "3",
+   "name": "Robert Lewandowski",
+   "val": "14 goals"
+  },
+  {
+   "label": "4",
+   "name": "Raphinha",
+   "val": "13 goals"
+  },
+  {
+   "label": "5",
+   "name": "Marcus Rashford",
+   "val": "8 goals"
+  },
+  {
+   "label": "6",
+   "name": "Dani Olmo",
+   "val": "7 goals"
+  },
+  {
+   "label": "7",
+   "name": "Fermin Lopez",
+   "val": "6 goals"
+  },
+  {
+   "label": "8",
+   "name": "Ronald Araujo",
+   "val": "3 goals"
+  },
+  {
+   "label": "9",
+   "name": "Joao Cancelo",
+   "val": "2 goals",
+   "pool": "t2",
+   "alts": [
+    "Joao Cancelo",
+    "Pedri",
+    "Marc Bernal"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Pedri",
+   "val": "2 goals",
+   "pool": "t2",
+   "alts": [
+    "Joao Cancelo",
+    "Pedri",
+    "Marc Bernal"
+   ]
+  }
+ ],
+ "notes": {
+  "Pau Cubarsi": "Pau Cubarsi had 1 league goal for Barcelona, just outside the ten.",
+  "Jules Kounde": "Jules Kounde had 1 league goal for Barcelona, just outside the ten.",
+  "Eric Garcia": "Eric Garcia had 1 league goal for Barcelona, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/fc-barcelona/leistungsdaten/verein/131/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/83/roster?season=2025"
+ ],
+ "checks": "Goals from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: none. Club total checked against the table: see club_season_checks.csv."
+}

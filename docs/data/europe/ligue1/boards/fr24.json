@@ -1,0 +1,84 @@
+{
+ "pick": "fr24",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Biggest Ligue 1 grounds",
+ "brief": "Name the ten 2025/26 Ligue 1 clubs with the biggest home grounds, by capacity.",
+ "period": "Clubs and grounds of the 2025/26 Ligue 1 season",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Marseille",
+   "val": "Stade Velodrome (67,394)"
+  },
+  {
+   "label": "2",
+   "name": "Lyon",
+   "val": "Groupama Stadium (59,186)"
+  },
+  {
+   "label": "3",
+   "name": "Lille",
+   "val": "Stade Pierre-Mauroy (50,186)"
+  },
+  {
+   "label": "4",
+   "name": "PSG",
+   "val": "Parc des Princes (47,926)"
+  },
+  {
+   "label": "5",
+   "name": "Lens",
+   "val": "Stade Bollaert-Delelis (37,705)"
+  },
+  {
+   "label": "6",
+   "name": "Nice",
+   "val": "Allianz Riviera (35,624)"
+  },
+  {
+   "label": "7",
+   "name": "Nantes",
+   "val": "Stade de la Beaujoire (35,322)"
+  },
+  {
+   "label": "8",
+   "name": "Toulouse",
+   "val": "Stadium de Toulouse (33,150)"
+  },
+  {
+   "label": "9",
+   "name": "Rennes",
+   "pool": "g910",
+   "alts": [
+    "Rennes",
+    "Strasbourg"
+   ],
+   "val": "about 29,000 to 32,000"
+  },
+  {
+   "label": "10",
+   "name": "Rennes",
+   "pool": "g910",
+   "alts": [
+    "Rennes",
+    "Strasbourg"
+   ],
+   "val": "about 29,000 to 32,000"
+  }
+ ],
+ "notes": {
+  "Metz": "Metz's Stade Saint-Symphorien holds 28,786, 11th.",
+  "Le Havre": "Le Havre's Stade Oceane holds 25,178, 12th.",
+  "Saint-Etienne": "Saint-Etienne's Geoffroy-Guichard is bigger, but they were in Ligue 2 in 2025/26.",
+  "Bordeaux": "Bordeaux's Matmut Atlantique is bigger, but they were not in Ligue 1 in 2025/26.",
+  "Paris FC": "Paris FC's Stade Jean-Bouin holds about 20,000.",
+  "Monaco": "Monaco's Stade Louis II holds about 18,500."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1 (Stadiums and locations table)",
+  "https://www.transfermarkt.com/<club>/stadion/verein/<id> (each 2025/26 club's stadium page)"
+ ],
+ "checks": "Capacities from Wikipedia's 2025/26 Ligue 1 stadium table checked against each club's Transfermarkt stadium page. Both give the same ten clubs above Metz (28,786 in both). Figures shown are Wikipedia's; Transfermarkt differs a little for PSG (48,583), Lens (38,223) and Nice (36,178) without changing the order of the top eight. 9th and 10th are a pool because the sources disagree on the order: Wikipedia has Rennes 29,778 and Strasbourg 29,230 (the Meinau was being rebuilt), Transfermarkt Strasbourg 32,300 (with 6,000 standing) and Rennes 29,778. No ground in the top ten is shared (PSG and Paris FC play at different grounds), so the shared-ground rule did not come up."
+}

@@ -1,0 +1,115 @@
+{
+ "pick": "it10",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most Serie A titles as a player since 2000",
+ "brief": "Name the ten players who won the most Serie A titles from 2000/01 to 2025/26, counting only titles where they played at least one league game for the champions.",
+ "period": "Serie A titles 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gianluigi Buffon",
+   "val": "10 titles"
+  },
+  {
+   "label": "2",
+   "name": "Leonardo Bonucci",
+   "val": "9 titles"
+  },
+  {
+   "label": "3",
+   "name": "Giorgio Chiellini",
+   "val": "9 titles"
+  },
+  {
+   "label": "4",
+   "name": "Andrea Barzagli",
+   "val": "8 titles"
+  },
+  {
+   "label": "5",
+   "name": "Stephan Lichtsteiner",
+   "val": "7 titles"
+  },
+  {
+   "label": "6",
+   "name": "Claudio Marchisio",
+   "val": "7 titles"
+  },
+  {
+   "label": "7",
+   "name": "Walter Samuel",
+   "val": "6 titles",
+   "pool": "six",
+   "alts": [
+    "Walter Samuel",
+    "Andrea Pirlo",
+    "Martin Caceres",
+    "Kwadwo Asamoah",
+    "Juan Cuadrado"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Andrea Pirlo",
+   "val": "6 titles",
+   "pool": "six",
+   "alts": [
+    "Walter Samuel",
+    "Andrea Pirlo",
+    "Martin Caceres",
+    "Kwadwo Asamoah",
+    "Juan Cuadrado"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Martin Caceres",
+   "val": "6 titles",
+   "pool": "six",
+   "alts": [
+    "Walter Samuel",
+    "Andrea Pirlo",
+    "Martin Caceres",
+    "Kwadwo Asamoah",
+    "Juan Cuadrado"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Kwadwo Asamoah",
+   "val": "6 titles",
+   "pool": "six",
+   "alts": [
+    "Walter Samuel",
+    "Andrea Pirlo",
+    "Martin Caceres",
+    "Kwadwo Asamoah",
+    "Juan Cuadrado"
+   ]
+  }
+ ],
+ "notes": {
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic won 5 titles in this period, one short of the pool on 6.",
+  "Arturo Vidal": "Arturo Vidal won 5 titles in this period, one short of the pool on 6.",
+  "Simone Padoin": "Simone Padoin won 5 titles in this period, one short of the pool on 6.",
+  "Daniele Rugani": "Daniele Rugani won 5 titles in this period, one short of the pool on 6.",
+  "Alex Sandro": "Alex Sandro won 5 titles in this period, one short of the pool on 6.",
+  "Sami Khedira": "Sami Khedira won 5 titles in this period, one short of the pool on 6.",
+  "Paulo Dybala": "Paulo Dybala won 5 titles in this period, one short of the pool on 6.",
+  "Ivan Cordoba": "Ivan Cordoba won 5 titles in this period, one short of the pool on 6.",
+  "Javier Zanetti": "Javier Zanetti won 5 titles in this period, one short of the pool on 6.",
+  "Marco Materazzi": "Marco Materazzi won 5 titles in this period, one short of the pool on 6.",
+  "Dejan Stankovic": "Dejan Stankovic won 5 titles in this period, one short of the pool on 6.",
+  "Esteban Cambiasso": "Esteban Cambiasso won 5 titles in this period, one short of the pool on 6.",
+  "Francesco Toldo": "Francesco Toldo played in 4 of Inter's title seasons in this period (5 if you count 2009/10, when he was in the squad but didn't play).",
+  "Gianluigi Buffon": "Buffon's 10 leave out 2004/05 and 2005/06, the Juventus titles taken away after Calciopoli."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/juventus-turin/leistungsdaten/verein/506/plus/1?reldata=IT1%262011",
+  "https://en.wikipedia.org/wiki/List_of_Italian_football_champions",
+  "https://en.wikipedia.org/wiki/Gianluigi_Buffon"
+ ],
+ "checks": "Champions from Wikipedia's list of Italian champions and Transfermarkt's list of winners. Official titles only: 2004/05 (stripped from Juventus, never reassigned) and the original 2005/06 Juventus title don't count, and 2005/06 counts for Inter, who were awarded it. For each of the 25 title-winning seasons, every player with at least one league appearance for the champions was taken from Transfermarkt's club season stats page (leistungsdaten, IT1), then counted per player. Every player on 5 or more was then checked against the Serie A titles in the honours list of his Wikipedia article; all agree (Buffon, Bonucci and Chiellini's articles also note the two Calciopoli titles are left out). Bonucci's 9 include 2005/06 with Inter, where he played one league game. Places 7 to 10 are a pool of five players on 6."
+}

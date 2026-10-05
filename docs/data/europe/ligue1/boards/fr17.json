@@ -1,0 +1,95 @@
+{
+ "pick": "fr17",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "PSG's biggest signings",
+ "brief": "Name the ten most expensive players PSG have signed since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "€222m (£200m)"
+  },
+  {
+   "label": "2",
+   "name": "Kylian Mbappe",
+   "val": "€180m (£165.7m)"
+  },
+  {
+   "label": "3",
+   "name": "Randal Kolo Muani",
+   "val": "€95m"
+  },
+  {
+   "label": "4",
+   "name": "Khvicha Kvaratskhelia",
+   "val": "€70m"
+  },
+  {
+   "label": "5",
+   "name": "Goncalo Ramos",
+   "val": "€65m"
+  },
+  {
+   "label": "6",
+   "name": "Edinson Cavani",
+   "val": "€64.5m"
+  },
+  {
+   "label": "7",
+   "name": "Illia Zabarnyi",
+   "val": "€63m (£54.5m)"
+  },
+  {
+   "label": "8",
+   "name": "Angel Di Maria",
+   "val": "€63m (£44.3m)"
+  },
+  {
+   "label": "9",
+   "name": "Achraf Hakimi",
+   "val": "€60m",
+   "pool": "psg9",
+   "alts": [
+    "Achraf Hakimi",
+    "Manuel Ugarte",
+    "Joao Neves"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Manuel Ugarte",
+   "val": "€60m",
+   "pool": "psg9",
+   "alts": [
+    "Achraf Hakimi",
+    "Manuel Ugarte",
+    "Joao Neves"
+   ]
+  }
+ ],
+ "notes": {
+  "Ousmane Dembele": "Ousmane Dembele is outside the ten: €50m release clause from Barcelona in 2023.",
+  "Mauro Icardi": "Mauro Icardi is outside the ten: €50m plus add-ons from Inter in 2020.",
+  "Desire Doue": "Desire Doue is outside the ten: €50m from Rennes in 2024.",
+  "Maghnes Akliouche": "Maghnes Akliouche is outside the ten: €50m from Monaco in 2026.",
+  "Ferran Torres": "Ferran Torres is outside the ten: about €48.5m to 50m from Barcelona in 2026."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-paris-saint-germain/transferrekorde/verein/583",
+  "https://english.ahram.org.eg/News/76628.aspx",
+  "https://lethbridgeherald.com/?p=995750",
+  "https://sport.sky.it/calciomercato/2021/07/06/hakimi-psg-inter-calciomercato-news",
+  "https://www.abola.pt/noticias/psg-ativou-opcao-de-compra-de-euro65m-por-goncalo-ramos-2023112218113775332",
+  "https://www.bbc.co.uk/sport/football/40762417",
+  "https://www.bbc.com/sport/football/40715851",
+  "https://www.dn.pt/desporto/joao-neves-no-psg-por-59-9-milhoes-de-euros-se-eu-quisesse-mesmo-ir-embora",
+  "https://www.expressandstar.com/uk-sports/psg-sign-bournemouth-defender-illia-zabarnyi-for-reported-ps545m-5677082",
+  "https://www.getfootballnewsfrance.com/2023/official-manuel-ugarte-joins-psg/",
+  "https://www.thelocal.fr/20150805/di-maria-delighted-with-move-to-paris-saint-germain",
+  "https://www.tsn.ca/soccer/paris-saint-germain-signs-forward-kolo-muani-as-transfer-window-closes-1.2002580"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

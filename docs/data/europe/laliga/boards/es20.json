@@ -1,0 +1,80 @@
+{
+ "pick": "es20",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Real Madrid's biggest sales",
+ "brief": "Name the ten players Real Madrid have sold for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "€100m (£88.3m)"
+  },
+  {
+   "label": "2",
+   "name": "Angel Di Maria",
+   "val": "€75m (£59.7m)"
+  },
+  {
+   "label": "3",
+   "name": "Casemiro",
+   "val": "€70.65m (£60m)"
+  },
+  {
+   "label": "4",
+   "name": "Alvaro Morata",
+   "val": "€66m (£58m)"
+  },
+  {
+   "label": "5",
+   "name": "Mesut Ozil",
+   "val": "€50m (£42.5m)"
+  },
+  {
+   "label": "6",
+   "name": "Mateo Kovacic",
+   "val": "€45m (£40.25m)"
+  },
+  {
+   "label": "7",
+   "name": "Robinho",
+   "val": "€42m (£32.5m)"
+  },
+  {
+   "label": "8",
+   "name": "Raphael Varane",
+   "val": "€40m (£34m)"
+  },
+  {
+   "label": "9",
+   "name": "Achraf Hakimi",
+   "val": "€40m"
+  },
+  {
+   "label": "10",
+   "name": "Gonzalo Garcia",
+   "val": "€40m"
+  }
+ ],
+ "notes": {
+  "Gonzalo Higuain": "Gonzalo Higuain is 11th, just outside: €37m plus €3m bonuses to Napoli in 2013 (Newstalk, TM €39m).",
+  "Martin Odegaard": "Martin Odegaard is 12th, just outside: about €35m to Arsenal in 2021.",
+  "Nico Paz": "Nico Paz: Transfermarkt lists his 2024 move to Como at €66m, which looks like a data error: reports at the time said about €6m. Left out."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/real-madrid/rekordabgaenge/verein/418",
+  "https://global.espn.com/football/soccer-transfers/story/3887530/chelsea-beat-transfer-ban-to-sign-kovacic",
+  "https://global.espn.com/football/soccer-transfers/story/4439748",
+  "https://reuters.screenocean.com/record/725228/media_id/718379",
+  "https://thescore.com/epl/news/3574483",
+  "https://www.cityam.com/thrift-out-42m-ozil-arsenal/",
+  "https://www.eurosport.com/football/premier-league/2015-2016/manchester-united-and-psg-agree-angel-di-maria-fee_sto4842550/story.shtml",
+  "https://www.eurosport.com/football/serie-a/2019-2020/inter-milan-complete-achraf-hakimi-signing-from-real-madrid_sto7792367/story.shtml",
+  "https://www.flashscore.com/news/manchester-united-reach-deal-to-sign-casemiro-from-real-madrid/IHwmE0Pi",
+  "https://www.theguardian.com/football/2018/jul/10/cristiano-ronaldo-juventus-real-madrid",
+  "https://www.thescore.com/news/1314717"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

@@ -1,0 +1,74 @@
+{
+ "pick": "de22",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Bayern managers in order",
+ "brief": "Name Bayern Munich's last ten permanent head coaches, labelled by the year each spell began. A manager with two spells fills two places.",
+ "period": "Permanent head coach spells starting 2009 to 2024 (the ten most recent; spells since 2000 run to 13)",
+ "rows": [
+  {
+   "label": "2009",
+   "name": "Louis van Gaal",
+   "val": "Jul 2009 to Apr 2011"
+  },
+  {
+   "label": "2011",
+   "name": "Jupp Heynckes",
+   "val": "Jul 2011 to Jun 2013"
+  },
+  {
+   "label": "2013",
+   "name": "Pep Guardiola",
+   "val": "Jul 2013 to Jun 2016"
+  },
+  {
+   "label": "2016",
+   "name": "Carlo Ancelotti",
+   "val": "Jul 2016 to Sep 2017"
+  },
+  {
+   "label": "2017",
+   "name": "Jupp Heynckes",
+   "val": "Oct 2017 to Jun 2018"
+  },
+  {
+   "label": "2018",
+   "name": "Niko Kovac",
+   "val": "Jul 2018 to Nov 2019"
+  },
+  {
+   "label": "2019",
+   "name": "Hansi Flick",
+   "val": "Nov 2019 to Jun 2021"
+  },
+  {
+   "label": "2021",
+   "name": "Julian Nagelsmann",
+   "val": "Jul 2021 to Mar 2023"
+  },
+  {
+   "label": "2023",
+   "name": "Thomas Tuchel",
+   "val": "Mar 2023 to Jun 2024"
+  },
+  {
+   "label": "2024",
+   "name": "Vincent Kompany",
+   "val": "Jul 2024 to now"
+  }
+ ],
+ "notes": {
+  "Jurgen Klinsmann": "Klinsmann (Jul 2008 to Apr 2009) is the 11th most recent spell, just before this board starts.",
+  "Ottmar Hitzfeld": "Hitzfeld's second spell (Feb 2007 to Jun 2008) and first (1998 to 2004) are before this board starts.",
+  "Felix Magath": "Magath (Jul 2004 to Jan 2007) is before this board starts.",
+  "Andries Jonker": "Jonker was caretaker in 2011, so he is not counted.",
+  "Willy Sagnol": "Sagnol was caretaker for one game in 2017, so he is not counted.",
+  "Hansi Flick": "Flick took over as caretaker in November 2019 and was then made permanent; it is one spell."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-bayern-munchen/mitarbeiterhistorie/verein/27/personalie_id/1",
+  "https://de.wikipedia.org/wiki/FC_Bayern_M%C3%BCnchen/Namen_und_Zahlen"
+ ],
+ "checks": "Spells and start dates from Transfermarkt's head coach history match German Wikipedia's list of Bayern coaches since 1963, which marks Heynckes (2009), Jonker (2011) and Sagnol (2017) as interim; those caretaker spells are left out. Heynckes fills two places (2011 and 2017)."
+}

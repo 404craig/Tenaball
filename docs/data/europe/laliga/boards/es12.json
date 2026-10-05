@@ -1,0 +1,101 @@
+{
+ "pick": "es12",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "El Clasico league scorers since 2000",
+ "brief": "Name the ten players with the most league goals in El Clasico (Real Madrid v Barcelona) since 2000/01. Own goals don't count.",
+ "period": "La Liga seasons 2000/01 to 2025/26 (52 league matches)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "18 goals"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "9 goals"
+  },
+  {
+   "label": "3",
+   "name": "Luis Suarez",
+   "val": "9 goals"
+  },
+  {
+   "label": "4",
+   "name": "Karim Benzema",
+   "val": "8 goals"
+  },
+  {
+   "label": "5",
+   "name": "Raul",
+   "val": "5 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ronaldinho",
+   "val": "5 goals"
+  },
+  {
+   "label": "7",
+   "name": "Sergio Ramos",
+   "val": "5 goals"
+  },
+  {
+   "label": "8",
+   "name": "Xavi",
+   "val": "4 goals",
+   "pool": "t10",
+   "alts": [
+    "Xavi",
+    "Ronaldo Nazario",
+    "Samuel Eto'o",
+    "Ruud van Nistelrooy",
+    "Jude Bellingham",
+    "Kylian Mbappe"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Ronaldo Nazario",
+   "val": "4 goals",
+   "pool": "t10",
+   "alts": [
+    "Xavi",
+    "Ronaldo Nazario",
+    "Samuel Eto'o",
+    "Ruud van Nistelrooy",
+    "Jude Bellingham",
+    "Kylian Mbappe"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Samuel Eto'o",
+   "val": "4 goals",
+   "pool": "t10",
+   "alts": [
+    "Xavi",
+    "Ronaldo Nazario",
+    "Samuel Eto'o",
+    "Ruud van Nistelrooy",
+    "Jude Bellingham",
+    "Kylian Mbappe"
+   ]
+  }
+ ],
+ "notes": {
+  "Thierry Henry": "Thierry Henry scored 3 league goals in El Clasico from 2000/01 to 2025/26, just outside the top ten.",
+  "Alexis Sanchez": "Alexis Sanchez scored 3 league goals in El Clasico from 2000/01 to 2025/26, just outside the top ten.",
+  "Neymar": "Neymar scored 3 league goals in El Clasico from 2000/01 to 2025/26, just outside the top ten.",
+  "Ferran Torres": "Ferran Torres scored 3 league goals in El Clasico from 2000/01 to 2025/26, just outside the top ten.",
+  "Raphinha": "Raphinha scored 3 league goals in El Clasico from 2000/01 to 2025/26, just outside the top ten.",
+  "Ronald Araujo": "Ronald Araujo's goal in March 2023 was an own goal, so it doesn't count."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/real-madrid/spielplan/verein/418 (each season's fixtures, then each league Clasico match report)",
+  "https://en.wikipedia.org/wiki/List_of_El_Cl%C3%A1sico_matches"
+ ],
+ "checks": "All 52 league Clasicos from 2000/01 to 2025/26 were taken from Transfermarkt's match reports (derby.csv). Each report's goals add up to its final score. Every match's score and scorers were then compared with Wikipedia's list of El Clasico matches: all 52 agree (the only differences are spellings such as Simao and Simao Sabrosa). The one own goal (Ronald Araujo, 19 March 2023) is left out."
+}

@@ -1,0 +1,92 @@
+{
+ "pick": "esc2a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Atletico Madrid's top scorers, 2025/26",
+ "brief": "Name the ten players with the most La Liga goals for Atletico Madrid in 2025/26.",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Alexander Sorloth",
+   "val": "13 goals"
+  },
+  {
+   "label": "2",
+   "name": "Julian Alvarez",
+   "val": "8 goals"
+  },
+  {
+   "label": "3",
+   "name": "Antoine Griezmann",
+   "val": "7 goals"
+  },
+  {
+   "label": "4",
+   "name": "Nico Gonzalez",
+   "val": "5 goals"
+  },
+  {
+   "label": "5",
+   "name": "Giuliano Simeone",
+   "val": "4 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ademola Lookman",
+   "val": "4 goals"
+  },
+  {
+   "label": "7",
+   "name": "Thiago Almada",
+   "val": "3 goals"
+  },
+  {
+   "label": "8",
+   "name": "Nahuel Molina",
+   "val": "2 goals",
+   "pool": "t2",
+   "alts": [
+    "Nahuel Molina",
+    "Conor Gallagher",
+    "Koke",
+    "Alex Baena"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Conor Gallagher",
+   "val": "2 goals",
+   "pool": "t2",
+   "alts": [
+    "Nahuel Molina",
+    "Conor Gallagher",
+    "Koke",
+    "Alex Baena"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Koke",
+   "val": "2 goals",
+   "pool": "t2",
+   "alts": [
+    "Nahuel Molina",
+    "Conor Gallagher",
+    "Koke",
+    "Alex Baena"
+   ]
+  }
+ ],
+ "notes": {
+  "Marc Pubill": "Marc Pubill had 1 league goal for Atletico Madrid, just outside the ten.",
+  "Robin Le Normand": "Robin Le Normand had 1 league goal for Atletico Madrid, just outside the ten.",
+  "Javier Bonar": "Javier Bonar had 1 league goal for Atletico Madrid, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/atletico-madrid/leistungsdaten/verein/13/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/1068/roster?season=2025"
+ ],
+ "checks": "Goals from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: Conor Gallagher (not on the ESPN end-of-season roster): Wikipedia career table has 19 games, 2 goals, agreeing. Club total checked against the table: see club_season_checks.csv."
+}

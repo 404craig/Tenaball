@@ -1,0 +1,83 @@
+{
+ "pick": "de16",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Dortmund's top league scorers since 2000",
+ "brief": "Name Dortmund's ten top Bundesliga scorers from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Marco Reus",
+   "val": "120 goals"
+  },
+  {
+   "label": "2",
+   "name": "Pierre-Emerick Aubameyang",
+   "val": "98 goals"
+  },
+  {
+   "label": "3",
+   "name": "Robert Lewandowski",
+   "val": "74 goals"
+  },
+  {
+   "label": "4",
+   "name": "Erling Haaland",
+   "val": "62 goals"
+  },
+  {
+   "label": "5",
+   "name": "Jan Koller",
+   "val": "59 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ewerthon",
+   "val": "47 goals"
+  },
+  {
+   "label": "7",
+   "name": "Julian Brandt",
+   "val": "43 goals"
+  },
+  {
+   "label": "8",
+   "name": "Shinji Kagawa",
+   "val": "41 goals"
+  },
+  {
+   "label": "9",
+   "name": "Jadon Sancho",
+   "val": "40 goals"
+  },
+  {
+   "label": "10",
+   "name": "Lucas Barrios",
+   "val": "39 goals"
+  }
+ ],
+ "notes": {
+  "Serhou Guirassy": "Serhou Guirassy is 11th with 38, just outside.",
+  "Mario Gotze": "Mario Gotze is 12th with 35, just outside.",
+  "Alexander Frei": "Alexander Frei is 13th with 34, just outside."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every Bundesliga club 2000/01 to 2025/26 (players.csv, source column)",
+  "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers",
+  "https://en.wikipedia.org/wiki/Marco_Reus",
+  "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+  "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+  "https://en.wikipedia.org/wiki/Erling_Haaland",
+  "https://en.wikipedia.org/wiki/Jan_Koller",
+  "https://en.wikipedia.org/wiki/Ewerthon",
+  "https://en.wikipedia.org/wiki/Julian_Brandt",
+  "https://en.wikipedia.org/wiki/Shinji_Kagawa",
+  "https://en.wikipedia.org/wiki/Jadon_Sancho",
+  "https://en.wikipedia.org/wiki/Lucas_Barrios",
+  "https://en.wikipedia.org/wiki/Serhou_Guirassy",
+  "https://en.wikipedia.org/wiki/Mario_G\u00f6tze"
+ ],
+ "checks": "Transfermarkt figures summed by Transfermarkt player id from every club season page. Second source: each player's Wikipedia career statistics table, Bundesliga rows from 2000/01 to 2025/26, which agree season by season with Transfermarkt for every player listed and every near miss (no differences, so no split figures). Transfermarkt's game-by-game records (ceapi performance-game) also give the same totals. Ewerthon and Koller have no season table on Wikipedia; their infobox Dortmund totals (Ewerthon 47 goals in 119 games, Koller 59 in 138) match. The List of Bundesliga top scorers gives the same Dortmund splits for Reus (120) and Lewandowski (74). Chapuisat scored nothing for Dortmund in the Bundesliga from 2000/01 on (he had left in 1999), so he isn't on this board."
+}

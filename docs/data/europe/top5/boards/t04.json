@@ -1,0 +1,88 @@
+{
+ "pick": "t04",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "The most expensive transfers ever",
+ "brief": "Name the players in the ten most expensive transfers since July 2000, ranked by the guaranteed fee in euros reported at the time. Enzo Fernandez is in it twice.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026), any club. Guaranteed fee in euros as reported at the time; add-ons left out. Fees agreed in pounds are converted at the rate of the day, as in Wikipedia's list.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "€222m (£200m), Barcelona to PSG, 2017"
+  },
+  {
+   "label": "2",
+   "name": "Kylian Mbappe",
+   "val": "€180m (£165.7m), Monaco to PSG, 2017"
+  },
+  {
+   "label": "3",
+   "name": "Enzo Fernandez",
+   "val": "€145.8m (£125m), Chelsea to Manchester City, 2026"
+  },
+  {
+   "label": "4",
+   "name": "Alexander Isak",
+   "val": "€144.5m (£125m), Newcastle to Liverpool, 2025"
+  },
+  {
+   "label": "5",
+   "name": "Morgan Rogers",
+   "val": "€137.3m (£117m), Aston Villa to Chelsea, 2026"
+  },
+  {
+   "label": "6",
+   "name": "Elliot Anderson",
+   "val": "€135.5m (£116m), Nottingham Forest to Manchester City, 2026"
+  },
+  {
+   "label": "7",
+   "name": "Joao Felix",
+   "val": "€126m (£113m), Benfica to Atletico Madrid, 2019"
+  },
+  {
+   "label": "8",
+   "name": "Yan Diomande",
+   "val": "€125m (£107m), RB Leipzig to Real Madrid, 2026"
+  },
+  {
+   "label": "9",
+   "name": "Bradley Barcola",
+   "val": "€125m (£106m), PSG to Liverpool, 2026"
+  },
+  {
+   "label": "10",
+   "name": "Enzo Fernandez",
+   "val": "€121m (£106.8m), Benfica to Chelsea, 2023"
+  }
+ ],
+ "notes": {
+  "Antoine Griezmann": "Antoine Griezmann is 11th, just outside: €120m buyout clause, Atletico Madrid to Barcelona in 2019.",
+  "Philippe Coutinho": "Philippe Coutinho is 12th, just outside: €120m fixed (about €118.4m at the day's rate) plus €40m add-ons, Liverpool to Barcelona in 2018.",
+  "Ousmane Dembele": "Ousmane Dembele is outside the ten on the guaranteed fee: €105m plus €40m add-ons, Dortmund to Barcelona in 2017 (Transfermarkt counts €148m with add-ons).",
+  "Jude Bellingham": "Jude Bellingham is outside the ten on the guaranteed fee: €103m plus up to €31m add-ons, Dortmund to Real Madrid in 2023.",
+  "Jack Grealish": "Jack Grealish is outside the ten: £100m (€117.7m), Aston Villa to Manchester City in 2021.",
+  "Florian Wirtz": "Florian Wirtz is outside the ten: initial £100m (€117.5m) plus £16m add-ons, Leverkusen to Liverpool in 2025.",
+  "Declan Rice": "Declan Rice is outside the ten: initial £100m (€116.5m), West Ham to Arsenal in 2023.",
+  "Moises Caicedo": "Moises Caicedo is outside the ten: initial £100m (€116.3m), Brighton to Chelsea in 2023.",
+  "Eden Hazard": "Eden Hazard is outside the ten on the guaranteed fee: initial £89m (€100m), Chelsea to Real Madrid in 2019.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo is outside the ten: €100m, Real Madrid to Juventus in 2018."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "https://www.transfermarkt.com/transfers/transferrekorde/statistik/top/plus/0/galerie/0?saison_id=alle",
+  "https://www.bbc.co.uk/sport/football/40762417",
+  "https://www.bbc.com/sport/football/40715851",
+  "https://aljazeera.com/sports/2026/9/1/fernandez-transfers-to-man-city-from-chelsea-in-joint-british-record-fee",
+  "https://www.bbc.com/sport/football/articles/cly4my21lz7o",
+  "https://www.skysports.com/football/news/12691/13564944/morgan-rogers-transfer-news-chelsea-complete-record-breaking-117m-deal-to-sign-forward-from-aston-villa",
+  "https://www.insideworldfootball.com/2026/06/26/man-city-agree-116m-fee-for-england-midfielder-elliot-anderson/",
+  "https://www.bbc.com/sport/football/48859847",
+  "https://www.nst.com.my/amp/sports/football/2026/08/1505652/real-madrid-agree-record-%E2%82%AC140m-deal-leipzigs-diomande",
+  "https://thescore-web-gcp.thescore.com/epl/news/3589432",
+  "https://www.skysports.com/football/news/11668/12799395/enzo-fernandez-to-chelsea-blues-agree-premier-league-record-105m-transfer-deal-for-benfica-midfielder"
+ ],
+ "checks": "Every row agrees between Wikipedia's list of most expensive transfers (updated 1 September 2026, each fee cited to BBC, Sky or The Athletic) and Transfermarkt's all-time record list, and each 2026 fee was checked again in a news report. Transfermarkt's figures include add-ons, so its order differs (it puts Dembele 3rd and Coutinho 8th); this board uses the guaranteed fee. The two £125m deals (Enzo Fernandez to City, Isak) are equal in pounds and only differ in euros because of the exchange rate."
+}

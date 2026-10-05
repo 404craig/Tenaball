@@ -1,0 +1,72 @@
+{
+ "pick": "es14-2001",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Copa del Rey winners, 2001 to 2010",
+ "brief": "Name the club that won the Copa del Rey final in each year from 2001 to 2010.",
+ "period": "Copa del Rey finals 2001 to 2010",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Real Zaragoza",
+   "val": "beat Celta Vigo 3-1"
+  },
+  {
+   "label": "2002",
+   "name": "Deportivo",
+   "val": "beat Real Madrid 2-1"
+  },
+  {
+   "label": "2003",
+   "name": "Mallorca",
+   "val": "beat Recreativo Huelva 3-0"
+  },
+  {
+   "label": "2004",
+   "name": "Real Zaragoza",
+   "val": "beat Real Madrid 3-2 after extra time"
+  },
+  {
+   "label": "2005",
+   "name": "Real Betis",
+   "val": "beat Osasuna 2-1 after extra time"
+  },
+  {
+   "label": "2006",
+   "name": "Espanyol",
+   "val": "beat Real Zaragoza 4-1"
+  },
+  {
+   "label": "2007",
+   "name": "Sevilla",
+   "val": "beat Getafe 1-0"
+  },
+  {
+   "label": "2008",
+   "name": "Valencia",
+   "val": "beat Getafe 3-1"
+  },
+  {
+   "label": "2009",
+   "name": "Barcelona",
+   "val": "beat Athletic Bilbao 4-1"
+  },
+  {
+   "label": "2010",
+   "name": "Sevilla",
+   "val": "beat Atletico Madrid 2-0"
+  }
+ ],
+ "notes": {
+  "Real Madrid": "Real Madrid won the Copa del Rey outside these years (2011).",
+  "Atletico Madrid": "Atletico Madrid won the Copa del Rey outside these years (2013).",
+  "Real Sociedad": "Real Sociedad won the Copa del Rey outside these years (2020).",
+  "Athletic Bilbao": "Athletic Bilbao won the Copa del Rey outside these years (2024)."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Copa_del_Rey_finals",
+  "https://www.transfermarkt.co.uk/copa-del-rey/erfolge/pokalwettbewerb/CDR"
+ ],
+ "checks": "Every winner from 2001 to 2026 agrees between Wikipedia's list of finals and Transfermarkt's list of winners. Windows were tested for the 4-slot rule: only windows starting 2001 to 2006 pass, because Barcelona won in 2009, 2012 and every year from 2015 to 2018, and 2017, 2018, 2021 and 2025 put four Barcelona wins in the latest window."
+}

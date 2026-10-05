@@ -1,0 +1,84 @@
+{
+ "pick": "de09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest Bundesliga seasons",
+ "brief": "Name the ten players with the most Bundesliga goals in a single season from 2000/01 to 2025/26. Each player counts once, for his best season.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "41 goals, 2020/21 (Bayern Munich)"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "36 goals, 2023/24 (Bayern Munich)"
+  },
+  {
+   "label": "3",
+   "name": "Pierre-Emerick Aubameyang",
+   "val": "31 goals, 2016/17 (Dortmund)"
+  },
+  {
+   "label": "4",
+   "name": "Klaas-Jan Huntelaar",
+   "val": "29 goals, 2011/12 (Schalke)"
+  },
+  {
+   "label": "5",
+   "name": "Ailton",
+   "val": "28 goals, 2003/04 (Werder Bremen)"
+  },
+  {
+   "label": "6",
+   "name": "Grafite",
+   "val": "28 goals, 2008/09 (Wolfsburg)"
+  },
+  {
+   "label": "7",
+   "name": "Mario Gomez",
+   "val": "28 goals, 2010/11 (Bayern Munich)"
+  },
+  {
+   "label": "8",
+   "name": "Timo Werner",
+   "val": "28 goals, 2019/20 (RB Leipzig)"
+  },
+  {
+   "label": "9",
+   "name": "Andre Silva",
+   "val": "28 goals, 2020/21 (Eintracht Frankfurt)"
+  },
+  {
+   "label": "10",
+   "name": "Serhou Guirassy",
+   "val": "28 goals, 2023/24 (Stuttgart)"
+  }
+ ],
+ "notes": {
+  "Erling Haaland": "Erling Haaland's best is 27 goals in 2020/21, just outside.",
+  "Edin Dzeko": "Edin Dzeko's best is 26 goals in 2008/09, just outside.",
+  "Miroslav Klose": "Miroslav Klose's best is 25 goals in 2005/06, just outside.",
+  "Stefan Kiessling": "Stefan Kiessling's best is 25 goals in 2012/13, just outside.",
+  "Robert Lewandowski": "Counts once, for his 41 in 2020/21."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every Bundesliga club 2000/01 to 2025/26 (players.csv, source column)",
+  "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+  "https://en.wikipedia.org/wiki/Harry_Kane",
+  "https://en.wikipedia.org/wiki/Pierre-Emerick_Aubameyang",
+  "https://en.wikipedia.org/wiki/Klaas-Jan_Huntelaar",
+  "https://en.wikipedia.org/wiki/A\u00edlton_(footballer,_born_1973)",
+  "https://en.wikipedia.org/wiki/Mario_G\u00f3mez",
+  "https://en.wikipedia.org/wiki/Grafite",
+  "https://en.wikipedia.org/wiki/Timo_Werner",
+  "https://en.wikipedia.org/wiki/Serhou_Guirassy",
+  "https://en.wikipedia.org/wiki/Andr\u00e9_Silva_(footballer,_born_1995)",
+  "https://en.wikipedia.org/wiki/Erling_Haaland",
+  "https://en.wikipedia.org/wiki/Edin_D\u017eeko"
+ ],
+ "checks": "Each player's best single season, goals for two clubs in one season added together (none of the top ten moved mid-season). Every figure matches the player's Wikipedia season table and the season's top scorer on the game's own bund-ts boards. Six players share fifth to tenth on 28, which fills the board exactly; Haaland is 11th with 27."
+}

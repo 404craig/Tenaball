@@ -1,0 +1,78 @@
+{
+ "pick": "ess06",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "La Liga 2025/26: fewest conceded",
+ "brief": "Name the ten clubs that conceded the fewest La Liga goals in 2025/26.",
+ "period": "La Liga season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Real Madrid",
+   "val": "35 goals"
+  },
+  {
+   "label": "2",
+   "name": "Barcelona",
+   "val": "36 goals"
+  },
+  {
+   "label": "3",
+   "name": "Getafe",
+   "val": "38 goals"
+  },
+  {
+   "label": "4",
+   "name": "Atletico Madrid",
+   "val": "44 goals"
+  },
+  {
+   "label": "5",
+   "name": "Rayo Vallecano",
+   "val": "44 goals"
+  },
+  {
+   "label": "6",
+   "name": "Villarreal",
+   "val": "46 goals"
+  },
+  {
+   "label": "7",
+   "name": "Real Betis",
+   "val": "48 goals"
+  },
+  {
+   "label": "8",
+   "name": "Celta Vigo",
+   "val": "48 goals"
+  },
+  {
+   "label": "9",
+   "name": "Osasuna",
+   "val": "50 goals"
+  },
+  {
+   "label": "10",
+   "name": "Valencia",
+   "val": "55 goals",
+   "pool": "t10",
+   "alts": [
+    "Valencia",
+    "Espanyol",
+    "Girona"
+   ]
+  }
+ ],
+ "notes": {
+  "Alaves": "Alaves conceded 56 league goals in 2025/26, just outside the top ten.",
+  "Elche": "Elche conceded 57 league goals in 2025/26, just outside the top ten.",
+  "Mallorca": "Mallorca conceded 57 league goals in 2025/26, just outside the top ten."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga",
+  "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
+  "https://www.transfermarkt.co.uk/laliga/tabelle/wettbewerb/ES1/saison_id/2025"
+ ],
+ "checks": "Goals taken from the final 2025/26 table in tables.csv. Wikipedia's table, the table worked out from every football-data.co.uk result and Transfermarkt's table agree on every club's wins, draws, losses, goals for and against and points."
+}

@@ -1,0 +1,79 @@
+{
+ "pick": "des05",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Bundesliga 2025/26: most goals",
+ "brief": "Name the ten clubs that scored the most Bundesliga goals in 2025/26.",
+ "period": "Bundesliga season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Bayern Munich",
+   "val": "122 goals"
+  },
+  {
+   "label": "2",
+   "name": "Stuttgart",
+   "val": "71 goals"
+  },
+  {
+   "label": "3",
+   "name": "Dortmund",
+   "val": "70 goals"
+  },
+  {
+   "label": "4",
+   "name": "Leverkusen",
+   "val": "68 goals"
+  },
+  {
+   "label": "5",
+   "name": "RB Leipzig",
+   "val": "66 goals"
+  },
+  {
+   "label": "6",
+   "name": "Hoffenheim",
+   "val": "65 goals"
+  },
+  {
+   "label": "7",
+   "name": "Eintracht Frankfurt",
+   "val": "61 goals"
+  },
+  {
+   "label": "8",
+   "name": "Freiburg",
+   "val": "51 goals"
+  },
+  {
+   "label": "9",
+   "name": "Koln",
+   "val": "49 goals"
+  },
+  {
+   "label": "10",
+   "name": "Augsburg",
+   "val": "45 goals",
+   "pool": "gf45",
+   "alts": [
+    "Augsburg",
+    "Wolfsburg"
+   ]
+  }
+ ],
+ "notes": {
+  "Augsburg": "Augsburg and Wolfsburg both scored 45, joint 10th.",
+  "Wolfsburg": "Wolfsburg and Augsburg both scored 45, joint 10th.",
+  "Mainz": "Mainz scored 44, just outside (joint 12th with Union Berlin).",
+  "Union Berlin": "Union Berlin scored 44, just outside (joint 12th with Mainz).",
+  "Gladbach": "Gladbach scored 42."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga",
+  "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
+  "https://www.transfermarkt.com/bundesliga/tabelle/wettbewerb/L1/saison_id/2025"
+ ],
+ "checks": "Goals for in Wikipedia's final table match the table worked out from every 2025/26 result at football-data.co.uk, and Transfermarkt's table. Koln are 9th with 49; Augsburg and Wolfsburg tie on 45 for 10th, so they share the place as a pool."
+}

@@ -1,0 +1,83 @@
+{
+ "pick": "es24",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest signings by La Liga clubs",
+ "brief": "Name the ten most expensive players signed by La Liga clubs since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Joao Felix",
+   "val": "€126m (£113m)"
+  },
+  {
+   "label": "2",
+   "name": "Yan Diomande",
+   "val": "€125m (£107m)"
+  },
+  {
+   "label": "3",
+   "name": "Philippe Coutinho",
+   "val": "€120m (£105m)"
+  },
+  {
+   "label": "4",
+   "name": "Antoine Griezmann",
+   "val": "€120m (£107m)"
+  },
+  {
+   "label": "5",
+   "name": "Ousmane Dembele",
+   "val": "€105m (£96.8m)"
+  },
+  {
+   "label": "6",
+   "name": "Jude Bellingham",
+   "val": "€103m (£88.5m)"
+  },
+  {
+   "label": "7",
+   "name": "Eden Hazard",
+   "val": "€100m (£89m)"
+  },
+  {
+   "label": "8",
+   "name": "Gareth Bale",
+   "val": "€100m (£85.3m)"
+  },
+  {
+   "label": "9",
+   "name": "Cristiano Ronaldo",
+   "val": "€94m (£80m)"
+  },
+  {
+   "label": "10",
+   "name": "Luis Suarez",
+   "val": "€81.7m"
+  }
+ ],
+ "notes": {
+  "Aurelien Tchouameni": "Aurelien Tchouameni is 11th, just outside: €80m plus €20m add-ons, Monaco to Real Madrid in 2022.",
+  "James Rodriguez": "James Rodriguez is 11th equal, just outside: about €80m, Monaco to Real Madrid in 2014.",
+  "Zinedine Zidane": "Zinedine Zidane is 13th, just outside: €77.5m, Juventus to Real Madrid in 2001.",
+  "Frenkie de Jong": "Frenkie de Jong is outside the ten: €75m plus €11m, Ajax to Barcelona in 2019.",
+  "Julian Alvarez": "Julian Alvarez is outside the ten: €75m plus €20m add-ons, Manchester City to Atletico Madrid in 2024.",
+  "Neymar": "Neymar: Barcelona announced €57.1m in 2013 (later €86.2m in total), below the ten either way."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/laliga/transferrekorde/wettbewerb/ES1/saison_id/alle/land_id//ausrichtung//spielerposition_id//altersklasse//leihe//w_s//zuab/zu",
+  "https://espndeportes.espn.com/futbol/espana/nota/_/id/3852401/coutinho-ya-es-del-barcelona!",
+  "https://www.bbc.co.uk/sport/football/41044659",
+  "https://www.bbc.com/sport/football/48548361",
+  "https://www.bbc.com/sport/football/48859847",
+  "https://www.bbc.com/sport/football/48967047",
+  "https://www.bbc.com/sport/football/65901078",
+  "https://www.eurosport.com/football/liga/2014-2015/revealed-the-actual-cost-of-luis-suarez-s-transfer-from-liverpool-to-barcelona_sto5413513/story.shtml",
+  "https://www.nst.com.my/amp/sports/football/2026/08/1505652/real-madrid-agree-record-%E2%82%AC140m-deal-leipzigs-diomande",
+  "https://www.theguardian.com/football/2013/sep/01/gareth-bale-100m-transfer-real-madrid",
+  "https://www.uefa.com/news-media/news/01da-0e724ecc82ec-05f7b7b5fb93-1000--ronaldo-completes-record-madrid-switch/"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

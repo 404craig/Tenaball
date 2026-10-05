@@ -1,0 +1,78 @@
+{
+ "pick": "fr09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest Ligue 1 seasons",
+ "brief": "Name the ten players with the highest Ligue 1 goal totals in a single season from 2000/01 to 2025/26. Each player counts once, for his best season.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Zlatan Ibrahimovic",
+   "val": "38 goals, PSG 2015/16"
+  },
+  {
+   "label": "2",
+   "name": "Edinson Cavani",
+   "val": "35 goals, PSG 2016/17"
+  },
+  {
+   "label": "3",
+   "name": "Kylian Mbappe",
+   "val": "33 goals, PSG 2018/19"
+  },
+  {
+   "label": "4",
+   "name": "Alexandre Lacazette",
+   "val": "28 goals, Lyon 2016/17"
+  },
+  {
+   "label": "5",
+   "name": "Shabani Nonda",
+   "val": "26 goals, Monaco 2002/03"
+  },
+  {
+   "label": "6",
+   "name": "Djibril Cisse",
+   "val": "26 goals, Auxerre 2003/04"
+  },
+  {
+   "label": "7",
+   "name": "Wissam Ben Yedder",
+   "val": "25 goals, Monaco 2021/22"
+  },
+  {
+   "label": "8",
+   "name": "Moussa Sow",
+   "val": "25 goals, Lille 2010/11"
+  },
+  {
+   "label": "9",
+   "name": "Jonathan David",
+   "val": "24 goals, Lille 2022/23"
+  },
+  {
+   "label": "10",
+   "name": "Andre-Pierre Gignac",
+   "val": "24 goals, Toulouse 2008/09"
+  }
+ ],
+ "notes": {
+  "Pauleta": "Pauleta is 11th with 23 goals for Bordeaux in 2002/03, just outside.",
+  "Sonny Anderson": "Anderson is just outside with 22 for Lyon in 2000/01.",
+  "Nicolas Pepe": "Pepe is just outside with 22 for Lille in 2018/19.",
+  "Kevin Gameiro": "Gameiro is just outside with 22 for Lorient in 2010/11.",
+  "Florian Thauvin": "Thauvin is just outside with 22 for Marseille in 2017/18.",
+  "Radamel Falcao": "Falcao's best was 21 for Monaco in 2016/17.",
+  "Mason Greenwood": "Greenwood's best was 21 for Marseille in 2024/25.",
+  "Ousmane Dembele": "Dembele's best was 21 for PSG in 2024/25."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262015",
+  "https://en.wikipedia.org/wiki/Zlatan_Ibrahimovi%C4%87",
+  "https://en.wikipedia.org/wiki/Jonathan_David",
+  "https://en.wikipedia.org/wiki/Andr%C3%A9-Pierre_Gignac"
+ ],
+ "checks": "Each player's best season total (goals for two clubs in one season added together) from the Transfermarkt club season pages. Every season on the board and the 11th to 15th checked against the player's Wikipedia career table and the Transfermarkt match log; all agree. The season top scorers also match the game's ligue1-ts boards."
+}

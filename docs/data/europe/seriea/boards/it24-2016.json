@@ -1,0 +1,60 @@
+{
+ "pick": "it24-2016",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Serie A title-winning managers 2016/17 to 2025/26",
+ "brief": "Name the manager who won Serie A in each season from 2016/17 to 2025/26.",
+ "period": "Serie A seasons 2016/17 to 2025/26",
+ "rows": [
+  {
+   "label": "2016/17",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2017/18",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2018/19",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2019/20",
+   "name": "Maurizio Sarri"
+  },
+  {
+   "label": "2020/21",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2021/22",
+   "name": "Stefano Pioli"
+  },
+  {
+   "label": "2022/23",
+   "name": "Luciano Spalletti"
+  },
+  {
+   "label": "2023/24",
+   "name": "Simone Inzaghi"
+  },
+  {
+   "label": "2024/25",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2025/26",
+   "name": "Cristian Chivu"
+  }
+ ],
+ "notes": {
+  "Jose Mourinho": "Jose Mourinho won 2008/09 and 2009/10 with Inter, before this board.",
+  "Roberto Mancini": "Roberto Mancini won three in a row with Inter from 2005/06, before this board."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Serie_A_winning_managers",
+  "https://www.transfermarkt.com/serie-a/erfolge/wettbewerb/IT1"
+ ],
+ "checks": "Every season's title-winning manager agrees between Wikipedia's list of Serie A winning managers and Transfermarkt's list of champions with their coaches. 2004/05 has no champion (the title was stripped from Juventus and not reassigned), so no ten-season window can include it. 4-slot rule checked for every window: only 2005/06 to 2014/15, 2006/07 to 2015/16 and 2016/17 to 2025/26 pass (Allegri has 4 or more in every window starting 2007/08 to 2015/16). The two windows that don't overlap are kept. Clubs: 2016/17 Juventus, 2017/18 Juventus, 2018/19 Juventus, 2019/20 Juventus, 2020/21 Inter, 2021/22 AC Milan, 2022/23 Napoli, 2023/24 Inter, 2024/25 Napoli, 2025/26 Inter."
+}

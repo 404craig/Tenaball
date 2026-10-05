@@ -1,0 +1,82 @@
+{
+ "pick": "es17",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Atletico Madrid's top league scorers since 2000",
+ "brief": "Name the ten players with the most La Liga goals for Atletico Madrid from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Antoine Griezmann",
+   "val": "143 goals"
+  },
+  {
+   "label": "2",
+   "name": "Fernando Torres",
+   "val": "102 goals"
+  },
+  {
+   "label": "3",
+   "name": "Sergio Aguero",
+   "val": "74 goals"
+  },
+  {
+   "label": "4",
+   "name": "Diego Forlan",
+   "val": "74 goals"
+  },
+  {
+   "label": "5",
+   "name": "Angel Correa",
+   "val": "68 goals"
+  },
+  {
+   "label": "6",
+   "name": "Diego Costa",
+   "val": "55 goals"
+  },
+  {
+   "label": "7",
+   "name": "Radamel Falcao",
+   "val": "52 goals"
+  },
+  {
+   "label": "8",
+   "name": "Alvaro Morata",
+   "val": "46 goals"
+  },
+  {
+   "label": "9",
+   "name": "Koke",
+   "val": "40 goals"
+  },
+  {
+   "label": "10",
+   "name": "Yannick Carrasco",
+   "val": "37 goals"
+  }
+ ],
+ "notes": {
+  "Alexander Sorloth": "Alexander Sorloth is just outside the ten with 33 goals.",
+  "Maxi Rodriguez": "Maxi Rodriguez is just outside the ten with 32 goals.",
+  "Luis Suarez": "Luis Suarez is just outside the ten with 32 goals."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+  "https://en.wikipedia.org/wiki/Fernando_Torres",
+  "https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero",
+  "https://en.wikipedia.org/wiki/Diego_Forl%C3%A1n",
+  "https://en.wikipedia.org/wiki/%C3%81ngel_Correa",
+  "https://en.wikipedia.org/wiki/Diego_Costa",
+  "https://en.wikipedia.org/wiki/Radamel_Falcao",
+  "https://en.wikipedia.org/wiki/%C3%81lvaro_Morata",
+  "https://en.wikipedia.org/wiki/Koke_(footballer%2C_born_1992)",
+  "https://en.wikipedia.org/wiki/Yannick_Carrasco",
+  "https://en.wikipedia.org/wiki/Alexander_S%C3%B8rloth",
+  "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(Uruguayan_footballer)"
+ ],
+ "checks": "Totals summed by Transfermarkt player id from every club season page, then each of the top 13 compared season by season with the La Liga rows of the player's Wikipedia career statistics table. Antoine Griezmann 143 (Wikipedia agrees); Fernando Torres 102 (Wikipedia agrees); Sergio Aguero 74 (Wikipedia agrees); Diego Forlan 74 (Wikipedia agrees); Angel Correa 68 (Wikipedia agrees); Diego Costa 55 (Wikipedia agrees); Radamel Falcao 52 (Wikipedia agrees); Alvaro Morata 46 (Wikipedia agrees); Koke 40 (Wikipedia agrees); Yannick Carrasco 37 (Wikipedia agrees); Alexander Sorloth 33 (Wikipedia agrees); Maxi Rodriguez (near miss, Transfermarkt only); Luis Suarez 32 (Wikipedia agrees)."
+}

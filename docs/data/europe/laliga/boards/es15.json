@@ -1,0 +1,81 @@
+{
+ "pick": "es15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Real Madrid's top league scorers since 2000",
+ "brief": "Name the ten players with the most La Liga goals for Real Madrid from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "311 goals"
+  },
+  {
+   "label": "2",
+   "name": "Karim Benzema",
+   "val": "238 goals"
+  },
+  {
+   "label": "3",
+   "name": "Raul",
+   "val": "127 goals"
+  },
+  {
+   "label": "4",
+   "name": "Gonzalo Higuain",
+   "val": "107 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ronaldo Nazario",
+   "val": "83 goals"
+  },
+  {
+   "label": "6",
+   "name": "Gareth Bale",
+   "val": "81 goals"
+  },
+  {
+   "label": "7",
+   "name": "Vinicius Junior",
+   "val": "77 goals"
+  },
+  {
+   "label": "8",
+   "name": "Sergio Ramos",
+   "val": "72 goals"
+  },
+  {
+   "label": "9",
+   "name": "Kylian Mbappe",
+   "val": "56 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ruud van Nistelrooy",
+   "val": "46 goals"
+  }
+ ],
+ "notes": {
+  "Luis Figo": "Luis Figo is just outside the ten with 38 goals.",
+  "Guti": "Guti is just outside the ten with 37 goals.",
+  "Zinedine Zidane": "Zinedine Zidane is just outside the ten with 37 goals."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+  "https://en.wikipedia.org/wiki/Karim_Benzema",
+  "https://en.wikipedia.org/wiki/Ra%C3%BAl_(footballer)",
+  "https://en.wikipedia.org/wiki/Gonzalo_Higua%C3%ADn",
+  "https://en.wikipedia.org/wiki/Ronaldo_(Brazilian_footballer)",
+  "https://en.wikipedia.org/wiki/Gareth_Bale",
+  "https://en.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior",
+  "https://en.wikipedia.org/wiki/Sergio_Ramos",
+  "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
+  "https://en.wikipedia.org/wiki/Ruud_van_Nistelrooy",
+  "https://en.wikipedia.org/wiki/Luis_Figo"
+ ],
+ "checks": "Totals summed by Transfermarkt player id from every club season page, then each of the top 13 compared season by season with the La Liga rows of the player's Wikipedia career statistics table. Cristiano Ronaldo 311 (Wikipedia agrees); Karim Benzema 238 (Wikipedia agrees); Raul 127 (Wikipedia agrees); Gonzalo Higuain 107 (Wikipedia agrees); Ronaldo Nazario 83 (Wikipedia agrees); Gareth Bale 81 (Wikipedia agrees); Vinicius Junior 77 (Wikipedia agrees); Sergio Ramos 72 (Wikipedia agrees); Kylian Mbappe 56 (Wikipedia agrees); Ruud van Nistelrooy 46 (Wikipedia agrees); Luis Figo 38 (Wikipedia agrees); Guti (near miss, Transfermarkt only); Zinedine Zidane (near miss, Transfermarkt only). Raul had 101 La Liga goals before 2000/01, not counted."
+}
