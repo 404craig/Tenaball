@@ -1,0 +1,76 @@
+{
+ "pick": "it09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest Serie A seasons",
+ "brief": "Name the ten players with the most Serie A goals in a single season since 2000/01. Each player counts once, for his best season.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Ciro Immobile",
+   "val": "36 goals, 2019/20 (Lazio)"
+  },
+  {
+   "label": "2",
+   "name": "Gonzalo Higuain",
+   "val": "36 goals, 2015/16 (Napoli)"
+  },
+  {
+   "label": "3",
+   "name": "Luca Toni",
+   "val": "31 goals, 2005/06 (Fiorentina)"
+  },
+  {
+   "label": "4",
+   "name": "Cristiano Ronaldo",
+   "val": "31 goals, 2019/20 (Juventus)"
+  },
+  {
+   "label": "5",
+   "name": "Antonio Di Natale",
+   "val": "29 goals, 2009/10 (Udinese)"
+  },
+  {
+   "label": "6",
+   "name": "Edinson Cavani",
+   "val": "29 goals, 2012/13 (Napoli)"
+  },
+  {
+   "label": "7",
+   "name": "Mauro Icardi",
+   "val": "29 goals, 2017/18 (Inter)"
+  },
+  {
+   "label": "8",
+   "name": "Edin Dzeko",
+   "val": "29 goals, 2016/17 (Roma)"
+  },
+  {
+   "label": "9",
+   "name": "Zlatan Ibrahimovic",
+   "val": "28 goals, 2011/12 (AC Milan)"
+  },
+  {
+   "label": "10",
+   "name": "Dries Mertens",
+   "val": "28 goals, 2016/17 (Napoli)"
+  }
+ ],
+ "notes": {
+  "Francesco Totti": "Francesco Totti's best is 26 goals (2006/07), just outside the top ten.",
+  "Hernan Crespo": "Hernan Crespo's best is 26 goals (2000/01), just outside the top ten.",
+  "Fabio Quagliarella": "Fabio Quagliarella's best is 26 goals (2018/19), just outside the top ten.",
+  "Andrea Belotti": "Andrea Belotti's best is 26 goals (2016/17), just outside the top ten.",
+  "Victor Osimhen": "Victor Osimhen's best is 26 goals (2022/23), just outside the top ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/<year>",
+  "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%26<year>",
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id>",
+  "https://en.wikipedia.org/wiki/<player> (Career statistics, club table)",
+  "https://en.wikipedia.org/wiki/Capocannoniere"
+ ],
+ "checks": "Each player-season summed by Transfermarkt player id across clubs (none of these ten moved mid-season), re-added from the player's Transfermarkt game log and checked against his Wikipedia career table; top-scorer seasons also match the game's own seriea-ts boards and the Capocannoniere list."
+}

@@ -1,0 +1,82 @@
+{
+ "pick": "de07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bundesliga top scorers since 2000",
+ "brief": "Name the ten players with the most Bundesliga goals from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "312 goals"
+  },
+  {
+   "label": "2",
+   "name": "Claudio Pizarro",
+   "val": "187 goals"
+  },
+  {
+   "label": "3",
+   "name": "Mario Gomez",
+   "val": "170 goals"
+  },
+  {
+   "label": "4",
+   "name": "Marco Reus",
+   "val": "156 goals"
+  },
+  {
+   "label": "5",
+   "name": "Thomas Muller",
+   "val": "150 goals"
+  },
+  {
+   "label": "6",
+   "name": "Stefan Kiessling",
+   "val": "144 goals"
+  },
+  {
+   "label": "7",
+   "name": "Andrej Kramaric",
+   "val": "140 goals"
+  },
+  {
+   "label": "8",
+   "name": "Vedad Ibisevic",
+   "val": "127 goals"
+  },
+  {
+   "label": "9",
+   "name": "Miroslav Klose",
+   "val": "121 goals"
+  },
+  {
+   "label": "10",
+   "name": "Kevin Kuranyi",
+   "val": "111 goals"
+  }
+ ],
+ "notes": {
+  "Timo Werner": "Timo Werner is 11th with 102, just outside.",
+  "Arjen Robben": "Arjen Robben is joint 12th with 99, just outside.",
+  "Serge Gnabry": "Serge Gnabry is joint 12th with 99, just outside."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every Bundesliga club 2000/01 to 2025/26 (players.csv, source column)",
+  "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers",
+  "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+  "https://en.wikipedia.org/wiki/Claudio_Pizarro",
+  "https://en.wikipedia.org/wiki/Mario_G\u00f3mez",
+  "https://en.wikipedia.org/wiki/Marco_Reus",
+  "https://en.wikipedia.org/wiki/Thomas_M\u00fcller",
+  "https://en.wikipedia.org/wiki/Stefan_Kie\u00dfling",
+  "https://en.wikipedia.org/wiki/Andrej_Kramari\u0107",
+  "https://en.wikipedia.org/wiki/Vedad_Ibi\u0161evi\u0107",
+  "https://en.wikipedia.org/wiki/Miroslav_Klose",
+  "https://en.wikipedia.org/wiki/Kevin_Kur\u00e1nyi",
+  "https://en.wikipedia.org/wiki/Timo_Werner"
+ ],
+ "checks": "Transfermarkt figures summed by Transfermarkt player id from every club season page. Second source: each player's Wikipedia career statistics table, Bundesliga rows from 2000/01 to 2025/26, which agree season by season with Transfermarkt for every player listed and every near miss (no differences, so no split figures). Transfermarkt's game-by-game records (ceapi performance-game) also give the same totals. Wikipedia's List of Bundesliga top scorers also gives the same all-time totals for the players whose careers fall wholly after 2000 (Lewandowski 312, Gomez 170, Reus 156, Muller 150, Kiessling 144, Kramaric 140, Ibisevic 127, Klose 121, Kuranyi 111). Pizarro's list total of 197 includes 10 goals for Werder Bremen in 1999/00, which don't count, leaving 187."
+}

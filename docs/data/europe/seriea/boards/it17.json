@@ -1,0 +1,73 @@
+{
+ "pick": "it17",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Roma or Napoli top scorers since 2000",
+ "brief": "Name the ten players with the most Serie A goals for Roma or Napoli since the start of 2000/01 (goals for both clubs added together).",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Francesco Totti",
+   "val": "207 goals"
+  },
+  {
+   "label": "2",
+   "name": "Dries Mertens",
+   "val": "113 goals"
+  },
+  {
+   "label": "3",
+   "name": "Marek Hamsik",
+   "val": "100 goals"
+  },
+  {
+   "label": "4",
+   "name": "Lorenzo Insigne",
+   "val": "96 goals"
+  },
+  {
+   "label": "5",
+   "name": "Edin Dzeko",
+   "val": "85 goals"
+  },
+  {
+   "label": "6",
+   "name": "Edinson Cavani",
+   "val": "78 goals"
+  },
+  {
+   "label": "7",
+   "name": "Gonzalo Higuain",
+   "val": "71 goals"
+  },
+  {
+   "label": "8",
+   "name": "Vincenzo Montella",
+   "val": "65 goals"
+  },
+  {
+   "label": "9",
+   "name": "Victor Osimhen",
+   "val": "65 goals"
+  },
+  {
+   "label": "10",
+   "name": "Jose Callejon",
+   "val": "64 goals"
+  }
+ ],
+ "notes": {
+  "Stephan El Shaarawy": "Stephan El Shaarawy is just outside with 52 goals.",
+  "Mirko Vucinic": "Mirko Vucinic is just outside with 46 goals.",
+  "Daniele De Rossi": "Daniele De Rossi is just outside with 43 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/<year>",
+  "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%26<year>",
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id>",
+  "https://en.wikipedia.org/wiki/<player> (Career statistics, club table)"
+ ],
+ "checks": "Goals summed by Transfermarkt player id from every club season page; each club season checked against the table goals for (club_season_checks.csv). Each figure re-added from the player's own Transfermarkt game log, and from the season-by-season club table in the player's English Wikipedia article (Serie A seasons 2000/01 to 2025/26 only)."
+}

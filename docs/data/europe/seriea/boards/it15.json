@@ -1,0 +1,73 @@
+{
+ "pick": "it15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "AC Milan top scorers since 2000",
+ "brief": "Name the ten players with the most Serie A goals for AC Milan since the start of 2000/01.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Andriy Shevchenko",
+   "val": "103 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kaka",
+   "val": "77 goals"
+  },
+  {
+   "label": "3",
+   "name": "Zlatan Ibrahimovic",
+   "val": "76 goals"
+  },
+  {
+   "label": "4",
+   "name": "Filippo Inzaghi",
+   "val": "73 goals"
+  },
+  {
+   "label": "5",
+   "name": "Rafael Leao",
+   "val": "64 goals"
+  },
+  {
+   "label": "6",
+   "name": "Alexandre Pato",
+   "val": "51 goals"
+  },
+  {
+   "label": "7",
+   "name": "Clarence Seedorf",
+   "val": "47 goals"
+  },
+  {
+   "label": "8",
+   "name": "Olivier Giroud",
+   "val": "39 goals"
+  },
+  {
+   "label": "9",
+   "name": "Alberto Gilardino",
+   "val": "36 goals"
+  },
+  {
+   "label": "10",
+   "name": "Franck Kessie",
+   "val": "35 goals"
+  }
+ ],
+ "notes": {
+  "Andrea Pirlo": "Andrea Pirlo is just outside with 32 goals.",
+  "Carlos Bacca": "Carlos Bacca is just outside with 31 goals.",
+  "Theo Hernandez": "Theo Hernandez is just outside with 31 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/<year>",
+  "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%26<year>",
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id>",
+  "https://en.wikipedia.org/wiki/<player> (Career statistics, club table)"
+ ],
+ "checks": "Goals summed by Transfermarkt player id from every club season page; each club season checked against the table goals for (club_season_checks.csv). Each figure re-added from the player's own Transfermarkt game log, and from the season-by-season club table in the player's English Wikipedia article (Serie A seasons 2000/01 to 2025/26 only)."
+}

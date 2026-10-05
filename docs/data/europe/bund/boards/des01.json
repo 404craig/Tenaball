@@ -1,0 +1,94 @@
+{
+ "pick": "des01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bundesliga top scorers, 2025/26",
+ "brief": "Name the ten top Bundesliga scorers of the 2025/26 season.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Deniz Undav",
+   "val": "19 goals"
+  },
+  {
+   "label": "3",
+   "name": "Serhou Guirassy",
+   "val": "17 goals"
+  },
+  {
+   "label": "4",
+   "name": "Patrik Schick",
+   "val": "16 goals"
+  },
+  {
+   "label": "5",
+   "name": "Michael Olise",
+   "val": "15 goals"
+  },
+  {
+   "label": "6",
+   "name": "Luis Diaz",
+   "val": "15 goals"
+  },
+  {
+   "label": "7",
+   "name": "Andrej Kramaric",
+   "val": "14 goals"
+  },
+  {
+   "label": "8",
+   "name": "Christoph Baumgartner",
+   "val": "13 goals",
+   "pool": "13g",
+   "alts": [
+    "Christoph Baumgartner",
+    "Jonathan Burkardt",
+    "Haris Tabakovic",
+    "Said El Mala"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Christoph Baumgartner",
+   "val": "13 goals",
+   "pool": "13g",
+   "alts": [
+    "Christoph Baumgartner",
+    "Jonathan Burkardt",
+    "Haris Tabakovic",
+    "Said El Mala"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Christoph Baumgartner",
+   "val": "13 goals",
+   "pool": "13g",
+   "alts": [
+    "Christoph Baumgartner",
+    "Jonathan Burkardt",
+    "Haris Tabakovic",
+    "Said El Mala"
+   ]
+  }
+ ],
+ "notes": {
+  "Yan Diomande": "Yan Diomande is just outside with 12.",
+  "Ermedin Demirovic": "Ermedin Demirovic is just outside with 12.",
+  "Nadiem Amiri": "Nadiem Amiri is just outside with 12.",
+  "Igor Matanovic": "Igor Matanovic scored 11, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/bundesliga/tabelle/wettbewerb/L1/saison_id/2025",
+  "Transfermarkt club season stats pages for all 18 clubs, 2025/26 (see players.csv source column)",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/ger.1/seasons/2025/types/1/leaders?limit=50"
+ ],
+ "checks": "Transfermarkt club season pages summed per player; each club's player goals checked against the table's goals for (gaps are own goals). ESPN's 2025/26 Bundesliga goals leaders agree on every figure in the top 14."
+}

@@ -1,0 +1,85 @@
+{
+ "pick": "dec0a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bayern Munich's top scorers, 2025/26",
+ "brief": "Name Bayern Munich's ten top Bundesliga scorers in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Michael Olise",
+   "val": "15 goals"
+  },
+  {
+   "label": "3",
+   "name": "Luis Diaz",
+   "val": "15 goals"
+  },
+  {
+   "label": "4",
+   "name": "Nicolas Jackson",
+   "val": "8 goals"
+  },
+  {
+   "label": "5",
+   "name": "Serge Gnabry",
+   "val": "8 goals"
+  },
+  {
+   "label": "6",
+   "name": "Leon Goretzka",
+   "val": "5 goals"
+  },
+  {
+   "label": "7",
+   "name": "Lennart Karl",
+   "val": "5 goals"
+  },
+  {
+   "label": "8",
+   "name": "Raphael Guerreiro",
+   "val": "5 goals"
+  },
+  {
+   "label": "9",
+   "name": "Konrad Laimer",
+   "val": "3 goals",
+   "pool": "3g",
+   "alts": [
+    "Konrad Laimer",
+    "Aleksandar Pavlovic",
+    "Jamal Musiala",
+    "Tom Bischof"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Konrad Laimer",
+   "val": "3 goals",
+   "pool": "3g",
+   "alts": [
+    "Konrad Laimer",
+    "Aleksandar Pavlovic",
+    "Jamal Musiala",
+    "Tom Bischof"
+   ]
+  }
+ ],
+ "notes": {
+  "Joshua Kimmich": "Joshua Kimmich scored 2, just outside.",
+  "Jonathan Tah": "Jonathan Tah scored 2, just outside.",
+  "Josip Stanisic": "Josip Stanisic scored 2, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-bayern-munchen/leistungsdaten/verein/27/plus/1?reldata=L1%262025",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/ger.1/seasons/2025/types/1/teams/132/leaders?limit=50"
+ ],
+ "checks": "Transfermarkt club page: player goals total 119 against 122 in the table (3 own goals). ESPN's Bayern 2025/26 league goals leaders agree on every figure."
+}

@@ -1,0 +1,99 @@
+{
+ "pick": "dec1a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Dortmund's top scorers, 2025/26",
+ "brief": "Name Dortmund's ten top Bundesliga scorers in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Serhou Guirassy",
+   "val": "17 goals"
+  },
+  {
+   "label": "2",
+   "name": "Maximilian Beier",
+   "val": "9 goals"
+  },
+  {
+   "label": "3",
+   "name": "Julian Brandt",
+   "val": "7 goals"
+  },
+  {
+   "label": "4",
+   "name": "Karim Adeyemi",
+   "val": "7 goals"
+  },
+  {
+   "label": "5",
+   "name": "Nico Schlotterbeck",
+   "val": "5 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ramy Bensebaini",
+   "val": "5 goals"
+  },
+  {
+   "label": "7",
+   "name": "Emre Can",
+   "val": "3 goals"
+  },
+  {
+   "label": "8",
+   "name": "Daniel Svensson",
+   "val": "2 goals",
+   "pool": "2g",
+   "alts": [
+    "Daniel Svensson",
+    "Waldemar Anton",
+    "Yan Couto",
+    "Felix Nmecha",
+    "Carney Chukwuemeka",
+    "Fabio Silva"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Daniel Svensson",
+   "val": "2 goals",
+   "pool": "2g",
+   "alts": [
+    "Daniel Svensson",
+    "Waldemar Anton",
+    "Yan Couto",
+    "Felix Nmecha",
+    "Carney Chukwuemeka",
+    "Fabio Silva"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Daniel Svensson",
+   "val": "2 goals",
+   "pool": "2g",
+   "alts": [
+    "Daniel Svensson",
+    "Waldemar Anton",
+    "Yan Couto",
+    "Felix Nmecha",
+    "Carney Chukwuemeka",
+    "Fabio Silva"
+   ]
+  }
+ ],
+ "notes": {
+  "Marcel Sabitzer": "Marcel Sabitzer scored 1, just outside.",
+  "Luca Reggiani": "Luca Reggiani scored 1, just outside.",
+  "Aaron Anselmino": "Aaron Anselmino scored 1, just outside.",
+  "Samuele Inacio": "Samuele Inacio scored 1, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/borussia-dortmund/leistungsdaten/verein/16/plus/1?reldata=L1%262025",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/ger.1/seasons/2025/types/1/teams/124/leaders?limit=50"
+ ],
+ "checks": "Transfermarkt club page: player goals checked against the table's goals for (gap is own goals). ESPN's Dortmund 2025/26 league goals leaders agree on every figure."
+}

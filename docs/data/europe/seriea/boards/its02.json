@@ -1,0 +1,160 @@
+{
+ "pick": "its02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Serie A assists 2025/26",
+ "brief": "Name the ten players with the most Serie A assists in 2025/26.",
+ "period": "Serie A 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Federico Dimarco",
+   "val": "18 or 17 assists"
+  },
+  {
+   "label": "2",
+   "name": "Nicolo Barella",
+   "val": "9 or 8 assists"
+  },
+  {
+   "label": "3",
+   "name": "Jesus Rodriguez",
+   "val": "9 assists"
+  },
+  {
+   "label": "4",
+   "name": "Armand Lauriente",
+   "val": "9 assists"
+  },
+  {
+   "label": "5",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "label": "6",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "label": "7",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "label": "8",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "label": "9",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "label": "10",
+   "val": "6 or 7 assists",
+   "pool": "its02-5",
+   "alts": [
+    "Ange-Yoan Bonny",
+    "Giovane",
+    "Jari Vandeputte",
+    "Kenan Yildiz",
+    "Lautaro Martinez",
+    "Marcus Thuram",
+    "Maxence Caqueret",
+    "Nico Paz",
+    "Nicolo Zaniolo",
+    "Paulo Dybala",
+    "Rasmus Hojlund",
+    "Weston McKennie"
+   ]
+  }
+ ],
+ "notes": {
+  "Matteo Politano": "Matteo Politano made 5 assists on at least one count, just outside.",
+  "Matias Soule": "Matias Soule made 5 assists on at least one count, just outside.",
+  "Francisco Conceicao": "Francisco Conceicao made 5 assists on at least one count, just outside.",
+  "Charles De Ketelaere": "Charles De Ketelaere made 5 assists on at least one count, just outside.",
+  "Sebastiano Esposito": "Sebastiano Esposito made 5 assists on at least one count, just outside.",
+  "Aaron Martin": "Aaron Martin made 5 assists on at least one count, just outside.",
+  "Nikola Krstovic": "Nikola Krstovic made 5 assists on at least one count, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%262025",
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id>",
+  "http://sports.core.api.espn.com/v2/sports/soccer/leagues/ita.1/seasons/2025/types/1/leaders"
+ ],
+ "checks": "Transfermarkt (club pages and game logs agree) against ESPN season leaders. Places 1 to 4 are the same four players in both, Dimarco clear first; values show both counts where they differ. Places 5 to 10 are a pool, because the two sources order the 6 and 7 assist players differently: Ange-Yoan Bonny 6 (ESPN 4); Giovane 6 (ESPN 5); Jari Vandeputte 6 (ESPN 5); Kenan Yildiz 7 (ESPN 6); Lautaro Martinez 6 (ESPN 6); Marcus Thuram 6 (ESPN 6); Maxence Caqueret 5 (ESPN 6); Nico Paz 7 (ESPN 6); Nicolo Zaniolo 6 (ESPN 6); Paulo Dybala 7 (ESPN 6); Rasmus Hojlund 6 (ESPN 5); Weston McKennie 6 (ESPN 5). Ange-Yoan Bonny is 6 on Transfermarkt but 4 on ESPN, kept in the pool on Transfermarkt's count."
+}

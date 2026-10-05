@@ -1,0 +1,189 @@
+{
+ "pick": "des02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Bundesliga assists, 2025/26",
+ "brief": "Name the ten players with the most Bundesliga assists in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Michael Olise",
+   "val": "21 assists (19 on ESPN)"
+  },
+  {
+   "label": "2",
+   "name": "Luis Diaz",
+   "val": "14 to 17 assists",
+   "pool": "a2",
+   "alts": [
+    "Luis Diaz",
+    "Julian Ryerson"
+   ]
+  },
+  {
+   "label": "3",
+   "name": "Luis Diaz",
+   "val": "14 to 17 assists",
+   "pool": "a2",
+   "alts": [
+    "Luis Diaz",
+    "Julian Ryerson"
+   ]
+  },
+  {
+   "label": "4",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "5",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "6",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Bazoumana Toure",
+   "val": "9 to 12 assists",
+   "pool": "a4",
+   "alts": [
+    "Bazoumana Toure",
+    "Andrej Ilic",
+    "Christian Eriksen",
+    "Konrad Laimer",
+    "Jamie Leweling",
+    "Fares Chaibi",
+    "Maximilian Beier",
+    "Christoph Baumgartner",
+    "Yan Diomande",
+    "Vladimir Coufal",
+    "Fisnik Asllani",
+    "Aleix Garcia"
+   ]
+  }
+ ],
+ "notes": {
+  "Joshua Kimmich": "Joshua Kimmich had 8, just outside.",
+  "Alejandro Grimaldo": "Alejandro Grimaldo had 8, just outside.",
+  "Romano Schmid": "Romano Schmid had 8, just outside.",
+  "Chris Fuhrich": "Chris Fuhrich had 7 or 8, just outside.",
+  "Wouter Burger": "Wouter Burger had 8 on Transfermarkt, just outside.",
+  "David Raum": "David Raum had 7, just outside."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages for all 18 clubs, 2025/26 (see players.csv source column)",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/ger.1/seasons/2025/types/1/leaders?limit=50"
+ ],
+ "checks": "Assist counts differ between sources. Transfermarkt: Olise 21, Diaz 17, Ryerson 15, Toure 12, Ilic 10, Eriksen 10, then nine players on 9 (Laimer, Beier, Baumgartner, Diomande, Leweling, Coufal, Asllani, Garcia, Chaibi). ESPN: Olise 19, Ryerson 15, Diaz 14, then Leweling, Ilic, Eriksen, Toure, Laimer, Chaibi on 9, and Coufal, Schmid, Baumgartner, Garcia, Diomande, Grimaldo, Kimmich on 8. Olise is first on both. Diaz and Ryerson are second and third on both but in a different order, so they share places 2 and 3. Places 4 to 10 are a pool of everyone in either source's top ten (ties included), excluding the 8-assist names that only reach it on ESPN's tie (Schmid, Grimaldo, Kimmich), who are near misses instead."
+}

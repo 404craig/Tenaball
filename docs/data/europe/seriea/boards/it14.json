@@ -1,0 +1,73 @@
+{
+ "pick": "it14",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Juventus top scorers since 2000",
+ "brief": "Name the ten players with the most Serie A goals for Juventus since the start of 2000/01.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Alessandro Del Piero",
+   "val": "129 goals"
+  },
+  {
+   "label": "2",
+   "name": "David Trezeguet",
+   "val": "123 goals"
+  },
+  {
+   "label": "3",
+   "name": "Paulo Dybala",
+   "val": "82 goals"
+  },
+  {
+   "label": "4",
+   "name": "Cristiano Ronaldo",
+   "val": "81 goals"
+  },
+  {
+   "label": "5",
+   "name": "Dusan Vlahovic",
+   "val": "50 goals"
+  },
+  {
+   "label": "6",
+   "name": "Gonzalo Higuain",
+   "val": "48 goals"
+  },
+  {
+   "label": "7",
+   "name": "Pavel Nedved",
+   "val": "40 goals"
+  },
+  {
+   "label": "8",
+   "name": "Carlos Tevez",
+   "val": "39 goals"
+  },
+  {
+   "label": "9",
+   "name": "Arturo Vidal",
+   "val": "35 goals"
+  },
+  {
+   "label": "10",
+   "name": "Alvaro Morata",
+   "val": "35 goals"
+  }
+ ],
+ "notes": {
+  "Claudio Marchisio": "Claudio Marchisio is just outside with 33 goals.",
+  "Mario Mandzukic": "Mario Mandzukic is just outside with 31 goals.",
+  "Vincenzo Iaquinta": "Vincenzo Iaquinta is just outside with 30 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/<year>",
+  "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%26<year>",
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id>",
+  "https://en.wikipedia.org/wiki/<player> (Career statistics, club table)"
+ ],
+ "checks": "Goals summed by Transfermarkt player id from every club season page; each club season checked against the table goals for (club_season_checks.csv). Each figure re-added from the player's own Transfermarkt game log, and from the season-by-season club table in the player's English Wikipedia article (Serie A seasons 2000/01 to 2025/26 only)."
+}

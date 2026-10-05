@@ -1,0 +1,83 @@
+{
+ "pick": "de08",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Most Bundesliga games since 2000",
+ "brief": "Name the ten players with the most Bundesliga appearances from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Manuel Neuer",
+   "val": "545 games"
+  },
+  {
+   "label": "2",
+   "name": "Oliver Baumann",
+   "val": "523 games"
+  },
+  {
+   "label": "3",
+   "name": "Thomas Muller",
+   "val": "503 games"
+  },
+  {
+   "label": "4",
+   "name": "Claudio Pizarro",
+   "val": "465 games"
+  },
+  {
+   "label": "5",
+   "name": "Mats Hummels",
+   "val": "442 games"
+  },
+  {
+   "label": "6",
+   "name": "Christian Gentner",
+   "val": "430 games"
+  },
+  {
+   "label": "7",
+   "name": "Gonzalo Castro",
+   "val": "421 games"
+  },
+  {
+   "label": "8",
+   "name": "Matthias Ginter",
+   "val": "412 games"
+  },
+  {
+   "label": "9",
+   "name": "Stefan Kiessling",
+   "val": "403 games"
+  },
+  {
+   "label": "10",
+   "name": "Maximilian Arnold",
+   "val": "400 games"
+  }
+ ],
+ "notes": {
+  "Marco Reus": "Marco Reus is 11th with 391, just outside.",
+  "Philipp Lahm": "Philipp Lahm is 12th with 385, just outside.",
+  "Makoto Hasebe": "Makoto Hasebe is joint 13th with 384, just outside."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every Bundesliga club 2000/01 to 2025/26 (players.csv, source column)",
+  "https://en.wikipedia.org/wiki/Manuel_Neuer",
+  "https://en.wikipedia.org/wiki/Oliver_Baumann",
+  "https://en.wikipedia.org/wiki/Thomas_M\u00fcller",
+  "https://en.wikipedia.org/wiki/Claudio_Pizarro",
+  "https://en.wikipedia.org/wiki/Mats_Hummels",
+  "https://en.wikipedia.org/wiki/Christian_Gentner",
+  "https://en.wikipedia.org/wiki/Gonzalo_Castro",
+  "https://en.wikipedia.org/wiki/Matthias_Ginter",
+  "https://en.wikipedia.org/wiki/Stefan_Kie\u00dfling",
+  "https://en.wikipedia.org/wiki/Maximilian_Arnold",
+  "https://en.wikipedia.org/wiki/Marco_Reus",
+  "https://en.wikipedia.org/wiki/Philipp_Lahm",
+  "https://en.wikipedia.org/wiki/Makoto_Hasebe"
+ ],
+ "checks": "Transfermarkt figures summed by Transfermarkt player id from every club season page. Second source: each player's Wikipedia career statistics table, Bundesliga rows from 2000/01 to 2025/26, which agree season by season with Transfermarkt for every player listed and every near miss (no differences, so no split figures). Transfermarkt's game-by-game records (ceapi performance-game) also give the same totals. Pizarro's 25 games for Werder Bremen in 1999/00 are left out (490 in all). Hasebe and Lewandowski are tied 13th on 384."
+}
