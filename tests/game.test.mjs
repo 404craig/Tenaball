@@ -191,7 +191,7 @@ await test("letter boards: any Premier League player with the right surname lett
   eq([info.kdb, info.son, info.known], ["BD", true, true], "De Bruyne counts for B and D, Son keeps the game's spelling, every player is a known name");
   assert(info.ms < 1500, "suggestions stay quick with every player loaded: " + Math.round(info.ms) + "ms");
   // club open boards: a surname letter at one club, or players who played for two clubs (the same player, not just the same name)
-  const club = await p.evaluate(() => { const s = findQ("pl-letter-lfc-s"), b = findQ("pl-both-eve-mu"), q = Q.filter(x => x.open);
+  const club = await p.evaluate(() => { const s = findQ("pl-letter-lfc-s"), b = findQ("pl-both-eve-mu"), q = Q.filter(x => x.open && x.cat==="pl");
     return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
       sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
       smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
