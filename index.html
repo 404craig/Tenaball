@@ -2097,6 +2097,26 @@ SPFL_OPEN.forEach(b => {
     slots: Array.from({length:10}, (_, i) => ({ label:String(i+1), club:"", pool:"open" })),
     note: n => b.miss.replace("{n}", n) });
 });
+/* La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 boards from Craig's October 2026 picks (scripts/build-europe-records.py, data and
+   sources in docs/data/europe/). EURO_PEOPLE is every player in those four leagues in 2025/26, so a wrong guess is recognised. */
+const EXTRA_Q6 = [];
+const EURO_OPEN = [];
+const EURO_PEOPLE = [];
+EURO_PEOPLE.forEach(addPerson);
+EXTRA_Q6.forEach(q => {
+  if (q.type==='person') q.slots.forEach(s => { addPerson(s.club); (s.alts||[]).forEach(addPerson); });
+  const n = q.note || {}; q.note = c => n[c] || null;
+  Q.push(q);
+});
+EURO_OPEN.forEach(b => {
+  const listed = new Set(b.names);
+  if (b.type==='person') b.names.forEach(addPerson);
+  Q.push({ id:b.id, cat:b.cat, type:b.type, title:b.title, brief:`${b.brief} Your first answer goes in 10th, the next in 9th, and so on up the board.`,
+    period:b.period, level:b.level, hard:b.level===2, numeric:true,
+    open:{ letters:"", label:"", examples:b.examples, count:b.names.length, fits: n => listed.has(n) },
+    slots: Array.from({length:10}, (_, i) => ({ label:String(i+1), club:"", pool:"open" })),
+    note: n => b.miss.replace("{n}", n) });
+});
 Object.keys(PERSON_EXTRA).forEach(n => { if (PEOPLE[n]) PEOPLE[n] = PERSON_EXTRA[n]; });
 PALIASrebuild();
 </script>
