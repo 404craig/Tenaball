@@ -96,7 +96,16 @@ Boards are in `boards/`, raw data in this folder (`tables.csv`, `derby.csv`). Ra
 
 ## es28: British and Irish players since 2000/01 (open board)
 
-See the section at the end.
+- **Names:** the 30 players listed under England, Northern Ireland, Republic of Ireland, Scotland and Wales in Wikipedia's "List of foreign La Liga players" with any season from 2000/01 to 2025/26. Nobody from Northern Ireland.
+- **Check:** I scanned Transfermarkt's league stats pages for all 520 La Liga club seasons from 2000/01 to 2025/26 for anyone with a British or Irish citizenship and at least one league appearance.
+  - All 30 are there, at the right club and season.
+  - No player with British or Irish first citizenship is missing from Wikipedia's list.
+- **Left out:** players with a British or Irish second citizenship who represent other countries: Lookman, Brereton Diaz, Musah, Diangana, Cho, Ilori, Mateo Joseph, Jon Toral, Brandon Thomas, Mat Ryan, Wanchope and Yaya Toure. Several have notes so a guess gets an explanation.
+- **Spellings:**
+  - John Patrick Finn (Getafe, Ireland) is "John Patrick" on Transfermarkt.
+  - Oliver McBurnie is "Oli" on Transfermarkt.
+- Examples: Beckham, Bale, Bellingham, Owen, McManaman, Trippier, Woodgate, Greenwood, Rashford, Alexander-Arnold.
+- The JSON also carries a `details` list (nation, clubs, seasons) for reference.
 
 ## es29: Biggest La Liga grounds
 
@@ -112,6 +121,12 @@ See the section at the end.
   - Betis played at La Cartuja while the Villamarin is rebuilt. On the old Villamarin (about 60,700) they would still be 4th.
 - No 2025/26 ground was shared by two clubs. Rayo's one game at Butarque is ignored.
 - Vals say "about" where the two sources' figures differ.
+
+## Cache check
+
+- All my raw pages are under `euro_raw/B/laliga/cache` (with `index.txt` listing every URL), not the shared `euro_raw/B/` folder.
+- I checked the index: every Wikipedia title is a La Liga, Spanish club or player page, and every Transfermarkt page is ES1, Real Madrid, Barcelona, a La Liga club or a Copa del Rey page.
+- The football-data files are `SP1` (`fd_2425.csv`, `fd_2526.csv`, whose rows start with `SP1`).
 
 ## Ideas not built
 

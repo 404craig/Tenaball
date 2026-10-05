@@ -1,0 +1,313 @@
+{
+ "pick": "es28",
+ "kind": "open",
+ "type": "person",
+ "level": 0,
+ "title": "British and Irish players in La Liga",
+ "brief": "Name players from England, Scotland, Wales, Northern Ireland or the Republic of Ireland who played in La Liga between 2000/01 and 2025/26.",
+ "period": "La Liga seasons 2000/01 to 2025/26",
+ "names": [
+  "Max Aarons",
+  "Trent Alexander-Arnold",
+  "David Beckham",
+  "Jude Bellingham",
+  "Stan Collymore",
+  "Tyrhys Dolan",
+  "Ovie Ejaria",
+  "Conor Gallagher",
+  "Mason Greenwood",
+  "Abu Kamara",
+  "Charlie I'Anson",
+  "Steve McManaman",
+  "Michael Owen",
+  "Jermaine Pennant",
+  "Marcus Rashford",
+  "Patrick Roberts",
+  "Vinny Samways",
+  "Kieran Trippier",
+  "Jonathan Woodgate",
+  "Matt Doherty",
+  "John Patrick Finn",
+  "Steve Finnan",
+  "Ian Harte",
+  "Oliver Burke",
+  "Jordan Holsgrove",
+  "Alan Hutton",
+  "Oliver McBurnie",
+  "Scott McKenna",
+  "Kieran Tierney",
+  "Gareth Bale"
+ ],
+ "examples": [
+  "David Beckham",
+  "Gareth Bale",
+  "Jude Bellingham",
+  "Michael Owen",
+  "Steve McManaman",
+  "Kieran Trippier",
+  "Jonathan Woodgate",
+  "Mason Greenwood",
+  "Marcus Rashford",
+  "Trent Alexander-Arnold"
+ ],
+ "details": [
+  {
+   "name": "Max Aarons",
+   "nation": "England",
+   "clubs": [
+    "Valencia"
+   ],
+   "seasons": "2024\u201325"
+  },
+  {
+   "name": "Trent Alexander-Arnold",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2025\u2013"
+  },
+  {
+   "name": "David Beckham",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2003\u201307"
+  },
+  {
+   "name": "Jude Bellingham",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2023\u2013"
+  },
+  {
+   "name": "Stan Collymore",
+   "nation": "England",
+   "clubs": [
+    "Oviedo"
+   ],
+   "seasons": "2000\u201301"
+  },
+  {
+   "name": "Tyrhys Dolan",
+   "nation": "England",
+   "clubs": [
+    "Espanyol"
+   ],
+   "seasons": "2025\u2013"
+  },
+  {
+   "name": "Ovie Ejaria",
+   "nation": "England",
+   "clubs": [
+    "Oviedo"
+   ],
+   "seasons": "2025\u201326"
+  },
+  {
+   "name": "Conor Gallagher",
+   "nation": "England",
+   "clubs": [
+    "Atl\u00e9tico Madrid"
+   ],
+   "seasons": "2024\u201326"
+  },
+  {
+   "name": "Mason Greenwood",
+   "nation": "England",
+   "clubs": [
+    "Getafe"
+   ],
+   "seasons": "2023\u201324"
+  },
+  {
+   "name": "Abu Kamara",
+   "nation": "England",
+   "clubs": [
+    "Getafe"
+   ],
+   "seasons": "2025\u2013"
+  },
+  {
+   "name": "Charlie I'Anson",
+   "nation": "England",
+   "clubs": [
+    "Elche"
+   ],
+   "seasons": "2013\u201314"
+  },
+  {
+   "name": "Steve McManaman",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "1999\u201303"
+  },
+  {
+   "name": "Michael Owen",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2004\u201305"
+  },
+  {
+   "name": "Jermaine Pennant",
+   "nation": "England",
+   "clubs": [
+    "Zaragoza"
+   ],
+   "seasons": "2009\u201310"
+  },
+  {
+   "name": "Marcus Rashford",
+   "nation": "England",
+   "clubs": [
+    "Barcelona"
+   ],
+   "seasons": "2025\u201326"
+  },
+  {
+   "name": "Patrick Roberts",
+   "nation": "England",
+   "clubs": [
+    "Girona"
+   ],
+   "seasons": "2018\u201319"
+  },
+  {
+   "name": "Vinny Samways",
+   "nation": "England",
+   "clubs": [
+    "Las Palmas",
+    "Sevilla"
+   ],
+   "seasons": "2000\u201303"
+  },
+  {
+   "name": "Kieran Trippier",
+   "nation": "England",
+   "clubs": [
+    "Atl\u00e9tico Madrid"
+   ],
+   "seasons": "2019\u201322"
+  },
+  {
+   "name": "Jonathan Woodgate",
+   "nation": "England",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2004\u201306"
+  },
+  {
+   "name": "Matt Doherty",
+   "nation": "Republic of Ireland",
+   "clubs": [
+    "Atl\u00e9tico Madrid"
+   ],
+   "seasons": "2022\u201323"
+  },
+  {
+   "name": "John Patrick Finn",
+   "nation": "Republic of Ireland",
+   "clubs": [
+    "Getafe"
+   ],
+   "seasons": "2020\u201321, 24\u201325"
+  },
+  {
+   "name": "Steve Finnan",
+   "nation": "Republic of Ireland",
+   "clubs": [
+    "Espanyol"
+   ],
+   "seasons": "2008\u201309"
+  },
+  {
+   "name": "Ian Harte",
+   "nation": "Republic of Ireland",
+   "clubs": [
+    "Levante"
+   ],
+   "seasons": "2004\u201305, 06\u201307"
+  },
+  {
+   "name": "Oliver Burke",
+   "nation": "Scotland",
+   "clubs": [
+    "Alav\u00e9s"
+   ],
+   "seasons": "2019\u201320"
+  },
+  {
+   "name": "Jordan Holsgrove",
+   "nation": "Scotland",
+   "clubs": [
+    "Celta"
+   ],
+   "seasons": "2020\u201321"
+  },
+  {
+   "name": "Alan Hutton",
+   "nation": "Scotland",
+   "clubs": [
+    "Mallorca"
+   ],
+   "seasons": "2012\u201313"
+  },
+  {
+   "name": "Oliver McBurnie",
+   "nation": "Scotland",
+   "clubs": [
+    "Las Palmas"
+   ],
+   "seasons": "2024\u201325"
+  },
+  {
+   "name": "Scott McKenna",
+   "nation": "Scotland",
+   "clubs": [
+    "Las Palmas"
+   ],
+   "seasons": "2024\u201325"
+  },
+  {
+   "name": "Kieran Tierney",
+   "nation": "Scotland",
+   "clubs": [
+    "Real Sociedad"
+   ],
+   "seasons": "2023\u201324"
+  },
+  {
+   "name": "Gareth Bale",
+   "nation": "Wales",
+   "clubs": [
+    "Real Madrid"
+   ],
+   "seasons": "2013\u201320, 21\u201322"
+  }
+ ],
+ "notes": {
+  "Ademola Lookman": "Ademola Lookman was born in London but plays for Nigeria, so he doesn't count.",
+  "Ben Brereton Diaz": "Ben Brereton Diaz was born in England but plays for Chile, so he doesn't count.",
+  "Yunus Musah": "Yunus Musah grew up in England but plays for the United States, so he doesn't count.",
+  "Grady Diangana": "Grady Diangana grew up in England but plays for DR Congo, so he doesn't count.",
+  "Mateo Joseph": "Mateo Joseph was born in England but has played for Spain's youth teams, so he doesn't count.",
+  "Mohamed-Ali Cho": "Mohamed-Ali Cho grew up partly in England but plays for France, so he doesn't count.",
+  "Tiago Ilori": "Tiago Ilori was born in London but played for Portugal, so he doesn't count.",
+  "Jon Toral": "Jon Toral was born in Spain and played for Spain's youth teams, so he doesn't count.",
+  "Jack Harper": "Jack Harper was at Malaga but Transfermarkt shows no La Liga game for him.",
+  "Charlie Patino": "Charlie Patino has played in Spain, but not in La Liga up to 2025/26."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_foreign_La_Liga_players",
+  "https://www.transfermarkt.co.uk/ (every La Liga club's league stats page for each season 2000/01 to 2025/26, ES1)"
+ ],
+ "checks": "Names are the players listed under England, Northern Ireland, Republic of Ireland, Scotland and Wales in Wikipedia's list of foreign La Liga players with any season from 2000/01 to 2025/26 (30 players; nobody from Northern Ireland). Transfermarkt's league stats pages for all 520 club seasons from 2000/01 to 2025/26 were scanned for every player with a British or Irish citizenship and at least one La Liga appearance: all 30 are there with appearances in the right club and season, and every other player Transfermarkt shows with British or Irish first citizenship is already on the list. Transfermarkt also shows players with a British or Irish second citizenship who represent other countries (Lookman, Brereton Diaz, Musah, Diangana, Cho, Ilori, Mateo Joseph, Jon Toral, Brandon Thomas, Mat Ryan, Wanchope, Yaya Toure); they are left out, as Wikipedia lists them under their national team. Examples are ten of the best known."
+}

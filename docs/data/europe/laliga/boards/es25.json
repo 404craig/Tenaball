@@ -4,9 +4,14 @@
  "type": "person",
  "level": 0,
  "title": "Real Madrid managers in order",
- "brief": "Name Real Madrid's last ten permanent managers in order, from Carlo Ancelotti's first spell in 2013. The label is the year each spell began.",
- "period": "Real Madrid managers, June 2013 to October 2026",
+ "brief": "Name Real Madrid's last ten permanent managers in order up to the end of 2025/26, from Jose Mourinho's first spell in 2010. The label is the year each spell began.",
+ "period": "Real Madrid managers, May 2010 to May 2026",
  "rows": [
+  {
+   "label": "2010",
+   "name": "Jose Mourinho",
+   "val": "May 2010 to June 2013"
+  },
   {
    "label": "2013",
    "name": "Carlo Ancelotti",
@@ -50,12 +55,7 @@
   {
    "label": "2026",
    "name": "Alvaro Arbeloa",
-   "val": "January 2026 to June 2026"
-  },
-  {
-   "label": "2026",
-   "name": "Jose Mourinho",
-   "val": "June 2026 to now"
+   "val": "January 2026 to the end of 2025/26"
   }
  ],
  "notes": {
@@ -74,5 +74,5 @@
   "https://en.wikipedia.org/wiki/List_of_Real_Madrid_CF_managers",
   "https://www.transfermarkt.co.uk/real-madrid/mitarbeiterhistorie/verein/418"
  ],
- "checks": "Every spell and its start date agrees between Wikipedia's list of Real Madrid managers (correct to 16 September 2026) and Transfermarkt's staff history. Since 2000 there have been 21 spells (Del Bosque to Mourinho's return), so the board takes the ten most recent, starting with Ancelotti in June 2013 (Mourinho's first spell, 2010 to 2013, is just before it). Ancelotti and Zidane each fill two places. Santiago Solari began as caretaker on 29 October 2018 and was made permanent on 13 November 2018 (Transfermarkt shows the two parts); it is one spell. Alvaro Arbeloa was named head coach on 12 January 2026 after Xabi Alonso left, and both sources list him as a full manager, not a caretaker. Jose Mourinho returned on 11 June 2026. No caretaker was needed to make ten."
+ "checks": "Every spell and its start date agrees between Wikipedia's list of Real Madrid managers (correct to 16 September 2026) and Transfermarkt's staff history. Since 2000 there have been 21 spells (Del Bosque to Mourinho's return), so the board takes the ten most recent, starting with Ancelotti in June 2013 (Mourinho's first spell, 2010 to 2013, is just before it). Ancelotti and Zidane each fill two places. Santiago Solari began as caretaker on 29 October 2018 and was made permanent on 13 November 2018 (Transfermarkt shows the two parts); it is one spell. Alvaro Arbeloa was named head coach on 12 January 2026 after Xabi Alonso left, and both sources list him as a full manager, not a caretaker. Jose Mourinho returned on 11 June 2026. No caretaker was needed to make ten. Mourinho's return in June 2026 is after the end of 2025/26, so it isn't counted (Tenaball's cut-off); his 2010 to 2013 spell fills the first place instead."
 }

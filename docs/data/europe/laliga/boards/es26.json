@@ -5,7 +5,7 @@
  "level": 0,
  "title": "Barcelona managers in order",
  "brief": "Name Barcelona's last ten permanent managers in order, from Frank Rijkaard in 2003. The label is the year each spell began.",
- "period": "Barcelona managers, June 2003 to October 2026",
+ "period": "Barcelona managers, June 2003 to May 2026",
  "rows": [
   {
    "label": "2003",
@@ -55,7 +55,7 @@
   {
    "label": "2024",
    "name": "Hansi Flick",
-   "val": "May 2024 to now"
+   "val": "May 2024 onwards"
   }
  ],
  "notes": {
