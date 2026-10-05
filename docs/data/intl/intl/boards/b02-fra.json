@@ -1,0 +1,73 @@
+{
+ "pick": "b02-fra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "France's most capped players",
+ "brief": "Name the ten players with the most caps for France in full internationals, from France's first match to the 2026 World Cup final.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Hugo Lloris",
+   "val": "145 caps"
+  },
+  {
+   "label": "2",
+   "name": "Lilian Thuram",
+   "val": "142 caps"
+  },
+  {
+   "label": "3",
+   "name": "Antoine Griezmann",
+   "val": "137 caps"
+  },
+  {
+   "label": "4",
+   "name": "Olivier Giroud",
+   "val": "137 caps"
+  },
+  {
+   "label": "5",
+   "name": "Thierry Henry",
+   "val": "123 caps"
+  },
+  {
+   "label": "6",
+   "name": "Marcel Desailly",
+   "val": "116 caps"
+  },
+  {
+   "label": "7",
+   "name": "Zinedine Zidane",
+   "val": "108 caps"
+  },
+  {
+   "label": "8",
+   "name": "Patrick Vieira",
+   "val": "107 caps"
+  },
+  {
+   "label": "9",
+   "name": "Kylian Mbappe",
+   "val": "106 caps"
+  },
+  {
+   "label": "10",
+   "name": "Didier Deschamps",
+   "val": "103 caps"
+  }
+ ],
+ "notes": {
+  "Laurent Blanc": "Laurent Blanc is joint 11th with 97 caps, just outside.",
+  "Bixente Lizarazu": "Bixente Lizarazu is joint 11th with 97 caps, just outside.",
+  "Karim Benzema": "Karim Benzema is joint 11th with 97 caps, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/frankreich/rekordspieler/verein/3377",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/67/2026/France.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/fran-recintlp.html"
+ ],
+ "checks": "Retired players: Transfermarkt's record list and RSSSF agree on every total (Lloris 145, Thuram 142, Griezmann and Giroud 137, Henry 123, Desailly 116, Zidane 108, Vieira 107, Deschamps 103, Blanc, Lizarazu and Benzema 97). Mbappe counted match by match to 19 July 2026 on Transfermarkt and national-football-teams.com: 106 (107 after 25 September 2026, not counted). Henry, Desailly, Zidane, Vieira and Lizarazu each have one game fewer on national-football-teams.com, which leaves out the FIFA World XI match of 15 August 2000; the federation and RSSSF count it, and so do we. It doesn't change any place."
+}

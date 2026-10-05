@@ -1,0 +1,75 @@
+{
+ "pick": "b03-esp",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Spain's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Spain in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "David Villa",
+   "val": "59 goals"
+  },
+  {
+   "label": "2",
+   "name": "Fernando Torres",
+   "val": "38 goals"
+  },
+  {
+   "label": "3",
+   "name": "Alvaro Morata",
+   "val": "37 goals"
+  },
+  {
+   "label": "4",
+   "name": "David Silva",
+   "val": "35 goals"
+  },
+  {
+   "label": "5",
+   "name": "Mikel Oyarzabal",
+   "val": "30 goals"
+  },
+  {
+   "label": "6",
+   "name": "Raul",
+   "val": "29 goals"
+  },
+  {
+   "label": "7",
+   "name": "Ferran Torres",
+   "val": "25 goals"
+  },
+  {
+   "label": "8",
+   "name": "Sergio Ramos",
+   "val": "23 goals"
+  },
+  {
+   "label": "9",
+   "name": "Fernando Morientes",
+   "val": "18 goals"
+  },
+  {
+   "label": "10",
+   "name": "Pedro",
+   "val": "17 goals"
+  }
+ ],
+ "notes": {
+  "Xabi Alonso": "Xabi Alonso is 11th with 16 goals, just outside.",
+  "Cesc Fabregas": "Cesc Fabregas is joint 12th with 15 goals.",
+  "Santi Cazorla": "Santi Cazorla is joint 12th with 15 goals.",
+  "Fernando Hierro": "Fernando Hierro scored most of his 29 goals before 2000.",
+  "Emilio Butragueno": "Emilio Butragueno last played for Spain in 1992."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/spanien/rekordspieler/verein/3375",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/174/2026/Spain.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/span-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Raul scored 15 of his 44 before 2000 and Morientes 9 of his 27."
+}

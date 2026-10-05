@@ -1,0 +1,78 @@
+{
+ "pick": "b04-fra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "France's most caps since 2000",
+ "brief": "Name the ten players with the most caps for France in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Hugo Lloris",
+   "val": "145 caps"
+  },
+  {
+   "label": "2",
+   "name": "Antoine Griezmann",
+   "val": "137 caps"
+  },
+  {
+   "label": "3",
+   "name": "Olivier Giroud",
+   "val": "137 caps"
+  },
+  {
+   "label": "4",
+   "name": "Thierry Henry",
+   "val": "112 caps"
+  },
+  {
+   "label": "5",
+   "name": "Kylian Mbappe",
+   "val": "106 caps"
+  },
+  {
+   "label": "6",
+   "name": "Karim Benzema",
+   "val": "97 caps"
+  },
+  {
+   "label": "7",
+   "name": "Raphael Varane",
+   "val": "93 caps"
+  },
+  {
+   "label": "8",
+   "name": "Paul Pogba",
+   "val": "91 caps"
+  },
+  {
+   "label": "9",
+   "name": "Lilian Thuram",
+   "val": "90 caps"
+  },
+  {
+   "label": "10",
+   "name": "Patrick Vieira",
+   "val": "89 caps"
+  }
+ ],
+ "notes": {
+  "Sylvain Wiltord": "Sylvain Wiltord is joint 11th with 84 caps since 2000.",
+  "William Gallas": "William Gallas is joint 11th with 84 caps, just outside.",
+  "Blaise Matuidi": "Blaise Matuidi is joint 11th with 84 caps, just outside.",
+  "Patrice Evra": "Patrice Evra is joint 14th with 81 caps.",
+  "Franck Ribery": "Franck Ribery is joint 14th with 81 caps.",
+  "Marcel Desailly": "Marcel Desailly won most of his 116 caps before 2000.",
+  "Zinedine Zidane": "Zinedine Zidane won 108 caps, 59 of them from 2000 on.",
+  "Didier Deschamps": "Didier Deschamps played his last game for France in September 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/frankreich/rekordspieler/verein/3377",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/67/2026/France.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/fran-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th except one match. One difference: France's 5-1 win over a FIFA World XI in Marseille on 15 August 2000 is counted by the French federation, RSSSF, Wikipedia and Transfermarkt (it is in Henry's 123 caps and Trezeguet's 34 goals) but not by national-football-teams.com; we count it, as the federation and RSSSF do. It doesn't change any place. Henry (112), Vieira (89) and Wiltord (84) are one lower on national-football-teams.com because of it; Vieira stays 10th either way, five clear of 11th."
+}

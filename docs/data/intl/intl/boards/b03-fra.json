@@ -1,0 +1,78 @@
+{
+ "pick": "b03-fra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "France's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for France in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "66 goals"
+  },
+  {
+   "label": "2",
+   "name": "Olivier Giroud",
+   "val": "57 goals"
+  },
+  {
+   "label": "3",
+   "name": "Thierry Henry",
+   "val": "48 goals"
+  },
+  {
+   "label": "4",
+   "name": "Antoine Griezmann",
+   "val": "44 goals"
+  },
+  {
+   "label": "5",
+   "name": "Karim Benzema",
+   "val": "37 goals"
+  },
+  {
+   "label": "6",
+   "name": "David Trezeguet",
+   "val": "31 goals"
+  },
+  {
+   "label": "7",
+   "name": "Sylvain Wiltord",
+   "val": "24 goals"
+  },
+  {
+   "label": "8",
+   "name": "Zinedine Zidane",
+   "val": "19 goals"
+  },
+  {
+   "label": "9",
+   "name": "Franck Ribery",
+   "val": "16 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ousmane Dembele",
+   "val": "13 goals"
+  }
+ ],
+ "notes": {
+  "Paul Pogba": "Paul Pogba is joint 11th with 11 goals, just outside.",
+  "Nicolas Anelka": "Nicolas Anelka is joint 11th with 11 goals since 2000 (14 in all).",
+  "Sidney Govou": "Sidney Govou is joint 13th with 10 goals.",
+  "Robert Pires": "Robert Pires is joint 13th with 10 goals since 2000 (14 in all).",
+  "Michel Platini": "Michel Platini played for France from 1976 to 1987, before this board starts.",
+  "Just Fontaine": "Just Fontaine played for France in the 1950s, before this board starts.",
+  "Jean-Pierre Papin": "Jean-Pierre Papin last played for France in 1995, before this board starts.",
+  "Youri Djorkaeff": "Youri Djorkaeff scored most of his 28 France goals before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/frankreich/rekordspieler/verein/3377",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/67/2026/France.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/fran-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th except one match. One difference: France's 5-1 win over a FIFA World XI in Marseille on 15 August 2000 is counted by the French federation, RSSSF, Wikipedia and Transfermarkt (it is in Henry's 123 caps and Trezeguet's 34 goals) but not by national-football-teams.com; we count it, as the federation and RSSSF do. It doesn't change any place. Trezeguet scored a hat-trick in that game, so national-football-teams.com has him on 28 (still 6th), and Anelka and Pires on one fewer. Henry (3 before 2000), Trezeguet (3), Wiltord (2) and Zidane (12) have their earlier goals left out."
+}

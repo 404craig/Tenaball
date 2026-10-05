@@ -1,0 +1,74 @@
+{
+ "pick": "b03-cro",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Croatia's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Croatia in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Ivan Perisic",
+   "val": "39 goals"
+  },
+  {
+   "label": "2",
+   "name": "Andrej Kramaric",
+   "val": "36 goals"
+  },
+  {
+   "label": "3",
+   "name": "Mario Mandzukic",
+   "val": "33 goals"
+  },
+  {
+   "label": "4",
+   "name": "Luka Modric",
+   "val": "29 goals"
+  },
+  {
+   "label": "5",
+   "name": "Eduardo",
+   "val": "29 goals"
+  },
+  {
+   "label": "6",
+   "name": "Darijo Srna",
+   "val": "22 goals"
+  },
+  {
+   "label": "7",
+   "name": "Ivica Olic",
+   "val": "20 goals"
+  },
+  {
+   "label": "8",
+   "name": "Ivan Rakitic",
+   "val": "15 goals"
+  },
+  {
+   "label": "9",
+   "name": "Niko Kranjcar",
+   "val": "15 goals"
+  },
+  {
+   "label": "10",
+   "name": "Nikola Kalinic",
+   "val": "15 goals"
+  }
+ ],
+ "notes": {
+  "Niko Kovac": "Niko Kovac is 11th with 14 goals, just outside.",
+  "Mladen Petric": "Mladen Petric is 12th with 13 goals.",
+  "Mario Pasalic": "Mario Pasalic is joint 13th with 12 goals.",
+  "Ivan Klasnic": "Ivan Klasnic is joint 13th with 12 goals.",
+  "Davor Suker": "Davor Suker scored 42 of his 45 Croatia goals before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/kroatien/rekordspieler/verein/3556",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/47/2026/Croatia.html (and each player page, /player/<id>/<name>.html, listing every match)"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Modric is on 29 to 19 July 2026 (his Nations League goal on 26 September 2026 is not counted). Eduardo is Eduardo da Silva. Suker's 3 goals from 2000 on agree with the Transfermarkt record."
+}

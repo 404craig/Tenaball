@@ -1,0 +1,74 @@
+{
+ "pick": "b01-ger",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Germany's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Germany in full internationals, from Germany's first match to the 2026 World Cup final. West Germany counts as Germany (the DFB's own count).",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Miroslav Klose",
+   "val": "71 goals"
+  },
+  {
+   "label": "2",
+   "name": "Gerd Muller",
+   "val": "68 goals"
+  },
+  {
+   "label": "3",
+   "name": "Lukas Podolski",
+   "val": "49 goals"
+  },
+  {
+   "label": "4",
+   "name": "Rudi Voller",
+   "val": "47 goals"
+  },
+  {
+   "label": "5",
+   "name": "Jurgen Klinsmann",
+   "val": "47 goals"
+  },
+  {
+   "label": "6",
+   "name": "Karl-Heinz Rummenigge",
+   "val": "45 goals"
+  },
+  {
+   "label": "7",
+   "name": "Thomas Muller",
+   "val": "45 goals"
+  },
+  {
+   "label": "8",
+   "name": "Uwe Seeler",
+   "val": "43 goals"
+  },
+  {
+   "label": "9",
+   "name": "Michael Ballack",
+   "val": "42 goals"
+  },
+  {
+   "label": "10",
+   "name": "Oliver Bierhoff",
+   "val": "37 goals"
+  }
+ ],
+ "notes": {
+  "Fritz Walter": "Fritz Walter is 11th with 33 goals, just outside.",
+  "Klaus Fischer": "Klaus Fischer is 12th with 32 goals.",
+  "Mario Gomez": "Mario Gomez is joint 13th with 31 goals.",
+  "Ernst Lehner": "Ernst Lehner is joint 13th with 31 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/deutschland/rekordspieler/verein/3262",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/71/2026/Germany.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/duit-recintlp.html"
+ ],
+ "checks": "Transfermarkt's Germany record list and RSSSF's (West) Germany record international players page (to November 2025) agree on every total in the ten and on 11th to 13th. None of the ten has played since Euro 2024; Thomas Muller's 45 was checked match by match on Transfermarkt and national-football-teams.com."
+}
