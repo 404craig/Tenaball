@@ -191,7 +191,7 @@ await test("letter boards: any Premier League player with the right surname lett
   eq([info.kdb, info.son, info.known], ["BD", true, true], "De Bruyne counts for B and D, Son keeps the game's spelling, every player is a known name");
   assert(info.ms < 1500, "suggestions stay quick with every player loaded: " + Math.round(info.ms) + "ms");
   // club open boards: a surname letter at one club, or players who played for two clubs (the same player, not just the same name)
-  const club = await p.evaluate(() => { const s = findQ("pl-letter-lfc-s"), b = findQ("pl-both-eve-mu"), q = Q.filter(x => x.open);
+  const club = await p.evaluate(() => { const s = findQ("pl-letter-lfc-s"), b = findQ("pl-both-eve-mu"), q = Q.filter(x => x.open && x.cat==="pl");
     return { n: q.length, fam: [...new Set(q.map(family))], salah: s.open.fits("Mohamed Salah"), rooney: s.open.fits("Wayne Rooney"), rooneyNote: s.note("Wayne Rooney"),
       sterling: s.open.fits("Raheem Sterling"), sNote: s.note("Steven Gerrard"), both: b.open.fits("Wayne Rooney"), bothNo: b.open.fits("Steven Gerrard"), bNote: b.note("Steven Gerrard"),
       smith: PLP.get("Alan Smith").clubs.length > 1, ex: s.open.examples.every(n => s.open.fits(n)) && b.open.examples.every(n => b.open.fits(n)) }; });
@@ -588,6 +588,20 @@ await test("questions: every board's answers match its type (clubs on club board
   eq(bad, [], "boards whose answers don't match their type");
   const q = await p.evaluate(() => { const q = findQ("pl-promoted-best-2006/07"); G = { q, pick: null, guessed: new Set() }; setPlaceholder(q); return [q.type, input.placeholder, matches(norm("Brighton"))[0]]; });
   eq(q, ["club", "Type a club", "Brighton"], "the promoted clubs board asks for clubs");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("scottish boards: open boards take any name on their list, filling from 10th up, and every board has ten answers", async () => {
+  const p = await phone(browser, "spfl"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const m = findQ("spfl-letter-cel-m"), c = findQ("spfl-open-captains");
+    G = { q: m, slotName: {}, foundBy: {}, poolUsed: {} };
+    const hit = guessHits("Callum McGregor", G, false).hits, miss = guessHits("Scott Brown", G, false).hits;
+    const spfl = [...EXTRA_Q5, ...SPFL_OPEN].map(b => findQ(b.id)).filter(Boolean);
+    return { hit, miss, cap: [c.open.fits("Scott Brown"), c.open.fits("Kris Boyd")], note: c.note("Kris Boyd"), n: spfl.length, ten: spfl.every(q => q.slots.length === 10), ex: m.open.examples.every(n => m.open.fits(n)) };
+  });
+  eq([r.hit, r.miss, r.cap, r.ten, r.ex], [[9], [], [true, false], true, true], "McGregor fills 10th on the Celtic M board, Brown doesn't count, captains board knows its captains");
+  eq(r.n, 57, "all 49 Scottish boards and 8 open boards are in the game");
+  assert(/Kris Boyd/.test(r.note), r.note);
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await browser.close(); await site.close();
