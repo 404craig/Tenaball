@@ -1,0 +1,98 @@
+{
+ "pick": "eu06",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most Euros appearances since 1996",
+ "brief": "Name the ten players with the most appearances at European Championship finals since Euro 96, including games as a substitute. Games at earlier tournaments do not count.",
+ "period": "Euro 96 to Euro 2024 (games before 1996 not counted)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "30 games"
+  },
+  {
+   "label": "2",
+   "name": "Pepe",
+   "val": "23 games"
+  },
+  {
+   "label": "3",
+   "name": "Manuel Neuer",
+   "val": "20 games"
+  },
+  {
+   "label": "4",
+   "name": "Joao Moutinho",
+   "val": "19 games"
+  },
+  {
+   "label": "5",
+   "name": "Toni Kroos",
+   "val": "19 games"
+  },
+  {
+   "label": "6",
+   "name": "Harry Kane",
+   "val": "18 games"
+  },
+  {
+   "label": "7",
+   "name": "Bastian Schweinsteiger",
+   "val": "18 games"
+  },
+  {
+   "label": "8",
+   "name": "Leonardo Bonucci",
+   "val": "18 games"
+  },
+  {
+   "label": "9",
+   "name": "Alvaro Morata",
+   "val": "17 games",
+   "pool": "p17",
+   "alts": [
+    "Alvaro Morata",
+    "Antoine Griezmann",
+    "Giorgio Chiellini",
+    "Gianluigi Buffon",
+    "Thomas Muller"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Alvaro Morata",
+   "val": "17 games",
+   "pool": "p17",
+   "alts": [
+    "Alvaro Morata",
+    "Antoine Griezmann",
+    "Giorgio Chiellini",
+    "Gianluigi Buffon",
+    "Thomas Muller"
+   ]
+  }
+ ],
+ "notes": {
+  "Lilian Thuram": "Lilian Thuram is just outside with 16 games.",
+  "Edwin van der Sar": "Edwin van der Sar is just outside with 16 games.",
+  "Cesc Fabregas": "Cesc Fabregas is just outside with 16 games.",
+  "Andres Iniesta": "Andres Iniesta is just outside with 16 games.",
+  "Luka Modric": "Luka Modric is just outside with 16 games.",
+  "Rui Patricio": "Rui Patricio is just outside with 16 games.",
+  "Jordi Alba": "Jordi Alba is just outside with 16 games.",
+  "Kyle Walker": "Kyle Walker is just outside with 16 games.",
+  "Sergio Ramos": "Sergio Ramos has 15 games.",
+  "David Silva": "David Silva has 15 games.",
+  "Hugo Lloris": "Hugo Lloris has 15 games.",
+  "Olivier Giroud": "Olivier Giroud has 15 games.",
+  "Nani": "Nani has 15 games."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://www.transfermarkt.com/europameisterschaft/rekordspieler/pokalwettbewerb/EURO",
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics"
+ ],
+ "checks": "UEFA's per-tournament appearances summed for 1996 to 2024 match Transfermarkt's all-time Euros appearance list for every player in the top 30. None of the top 21 played at a finals before 1996, so the since-1996 and all-time figures are the same for them. Ronaldo's 30 matches Wikipedia and UEFA's own most-matches ranking."
+}

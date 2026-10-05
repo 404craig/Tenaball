@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2021-mu",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Man Utd's starters, 2021 Europa League final",
+ "brief": "Name the ten outfield players Man Utd started with in the 2021 Europa League final against Villarreal (they drew 1-1 and lost 11-10 on penalties).",
+ "period": "2021 Europa League final, Gdansk, 26 May 2021",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Aaron Wan-Bissaka",
+   "val": "No. 29"
+  },
+  {
+   "label": "CB",
+   "name": "Victor Lindelof",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Eric Bailly",
+   "val": "No. 3"
+  },
+  {
+   "label": "LB",
+   "name": "Luke Shaw",
+   "val": "No. 23"
+  },
+  {
+   "label": "CM",
+   "name": "Paul Pogba",
+   "val": "No. 6"
+  },
+  {
+   "label": "CM",
+   "name": "Scott McTominay",
+   "val": "No. 39"
+  },
+  {
+   "label": "RW",
+   "name": "Mason Greenwood",
+   "val": "No. 11"
+  },
+  {
+   "label": "AM",
+   "name": "Bruno Fernandes",
+   "val": "No. 18"
+  },
+  {
+   "label": "LW",
+   "name": "Marcus Rashford",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Edinson Cavani",
+   "val": "No. 7"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2021_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2029909/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2020/21)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

@@ -1,0 +1,82 @@
+{
+ "pick": "cl16",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Most Champions League seasons",
+ "brief": "Name the ten clubs that have played the most Champions League group or league stage seasons since 1992/93.",
+ "period": "Group or league stage seasons 1992/93 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Real Madrid",
+   "val": "30 seasons"
+  },
+  {
+   "label": "2",
+   "name": "Barcelona",
+   "val": "30 seasons"
+  },
+  {
+   "label": "3",
+   "name": "Bayern Munich",
+   "val": "29 seasons"
+  },
+  {
+   "label": "4",
+   "name": "Porto",
+   "val": "27 seasons"
+  },
+  {
+   "label": "5",
+   "name": "Man Utd",
+   "val": "25 seasons"
+  },
+  {
+   "label": "6",
+   "name": "Juventus",
+   "val": "25 seasons"
+  },
+  {
+   "label": "7",
+   "name": "Arsenal",
+   "val": "22 seasons"
+  },
+  {
+   "label": "8",
+   "name": "AC Milan",
+   "val": "21 seasons"
+  },
+  {
+   "label": "9",
+   "name": "Olympiacos",
+   "val": "21 seasons"
+  },
+  {
+   "label": "10",
+   "name": "Benfica",
+   "val": "20 seasons",
+   "pool": "twenty",
+   "alts": [
+    "Benfica",
+    "Dortmund",
+    "Chelsea"
+   ]
+  }
+ ],
+ "notes": {
+  "PSV": "PSV are just outside with 19.",
+  "Ajax": "Ajax are just outside with 19.",
+  "Inter": "Inter are just outside with 19.",
+  "Shakhtar": "Shakhtar are just outside with 19.",
+  "Liverpool": "Liverpool have 17.",
+  "PSG": "PSG have 18.",
+  "Galatasaray": "Galatasaray have 18.",
+  "Dynamo Kyiv": "Dynamo Kyiv have 18."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Template:Participating_clubs_of_the_Champions_League_era",
+  "https://compstats.uefa.com/v1/team-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com team stats per season)"
+ ],
+ "checks": "Counted from the Wikipedia list of every club's group and league stage seasons (2026/27 left out) and from UEFA.com team stats per season, where a club is counted when it reached the group or league stage (in 1992/93 and 1993/94, when only eight clubs reached the groups, clubs knocked out in the first two rounds are not counted). The two agree for every club shown."
+}

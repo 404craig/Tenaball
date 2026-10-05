@@ -1,0 +1,81 @@
+{
+ "pick": "cl08-liverpool",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Liverpool's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for Liverpool since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Mohamed Salah",
+   "val": "47 goals"
+  },
+  {
+   "label": "2",
+   "name": "Sadio Mane",
+   "val": "24 goals"
+  },
+  {
+   "label": "3",
+   "name": "Roberto Firmino",
+   "val": "22 goals"
+  },
+  {
+   "label": "4",
+   "name": "Steven Gerrard",
+   "val": "21 goals"
+  },
+  {
+   "label": "5",
+   "name": "Luis Garcia",
+   "val": "10 goals"
+  },
+  {
+   "label": "6",
+   "name": "Peter Crouch",
+   "val": "9 goals"
+  },
+  {
+   "label": "7",
+   "name": "Dirk Kuyt",
+   "val": "9 goals"
+  },
+  {
+   "label": "8",
+   "name": "Fernando Torres",
+   "val": "8 goals"
+  },
+  {
+   "label": "9",
+   "name": "Ryan Babel",
+   "val": "7 goals"
+  },
+  {
+   "label": "10",
+   "name": "Michael Owen",
+   "val": "6 goals",
+   "pool": "six",
+   "alts": [
+    "Michael Owen",
+    "Yossi Benayoun",
+    "Dominik Szoboszlai",
+    "Luis Diaz"
+   ]
+  }
+ ],
+ "notes": {
+  "Philippe Coutinho": "Philippe Coutinho scored 5.",
+  "Virgil van Dijk": "Virgil van Dijk scored 5.",
+  "Diogo Jota": "Diogo Jota scored 5.",
+  "Darwin Nunez": "Darwin Nunez scored 5.",
+  "Cody Gakpo": "Cody Gakpo scored 5.",
+  "Georginio Wijnaldum": "Georginio Wijnaldum scored 5."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs. Gerrard's goals in qualifying rounds are not counted. Luis Diaz: UEFA.com lists 8 because it files his 2021/22 season (2 goals for Porto before his January move) under Liverpool; Transfermarkt game logs give 6 for Liverpool."
+}

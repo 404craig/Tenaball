@@ -1,0 +1,77 @@
+{
+ "pick": "el16",
+ "kind": "ranked",
+ "type": "club",
+ "level": 2,
+ "title": "Europa League 2025/26 league phase top ten",
+ "brief": "Name the clubs that finished 1st to 10th in the 2025/26 Europa League league phase table (the top eight went straight to the round of 16).",
+ "period": "UEFA Europa League 2025/26 league phase, 24 September 2025 to 29 January 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lyon",
+   "val": "21 pts"
+  },
+  {
+   "label": "2",
+   "name": "Aston Villa",
+   "val": "21 pts"
+  },
+  {
+   "label": "3",
+   "name": "Midtjylland",
+   "val": "19 pts"
+  },
+  {
+   "label": "4",
+   "name": "Real Betis",
+   "val": "17 pts"
+  },
+  {
+   "label": "5",
+   "name": "Porto",
+   "val": "17 pts"
+  },
+  {
+   "label": "6",
+   "name": "Braga",
+   "val": "17 pts"
+  },
+  {
+   "label": "7",
+   "name": "Freiburg",
+   "val": "17 pts"
+  },
+  {
+   "label": "8",
+   "name": "Roma",
+   "val": "16 pts"
+  },
+  {
+   "label": "9",
+   "name": "Genk",
+   "val": "16 pts"
+  },
+  {
+   "label": "10",
+   "name": "Bologna",
+   "val": "15 pts"
+  }
+ ],
+ "notes": {
+  "Stuttgart": "Stuttgart were 11th on 15 points, behind Bologna on goal difference.",
+  "Ferencvaros": "Ferencvaros were 12th on 15 points, just outside.",
+  "Nottingham Forest": "Nottingham Forest were 13th on 14 points.",
+  "Celtic": "Celtic were 21st on 11 points.",
+  "Rangers": "Rangers were 32nd on 4 points.",
+  "Celta Vigo": "Celta Vigo were 16th on 13 points.",
+  "Lille": "Lille were 18th on 12 points.",
+  "Feyenoord": "Feyenoord were 29th on 6 points.",
+  "Nice": "Nice were 33rd on 3 points."
+ },
+ "sources": [
+  "https://standings.uefa.com/v1/standings?competitionId=14&seasonYear=2026 (UEFA.com standings)",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_UEFA_Europa_League_league_phase"
+ ],
+ "checks": "UEFA.com's standings and Wikipedia's league phase table agree on the order and on every club's record (Lyon 7-0-1, 18-5; Aston Villa 7-0-1, 14-6; Midtjylland 6-1-1; Real Betis, Porto, Braga and Freiburg all 5-2-1 on 17; Roma and Genk 5-1-2 on 16; Bologna 4-3-1 on 15). Midtjylland, Braga and Genk are not on the game's club list, so they use their common English names."
+}

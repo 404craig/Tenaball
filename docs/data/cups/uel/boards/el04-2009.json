@@ -1,0 +1,74 @@
+{
+ "pick": "el04-2009",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League winning managers, 2009 to 2018",
+ "brief": "Name the manager who won the UEFA Cup (the Europa League from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2009 to 2018",
+ "rows": [
+  {
+   "label": "2009",
+   "name": "Mircea Lucescu",
+   "val": "Shakhtar"
+  },
+  {
+   "label": "2010",
+   "name": "Quique Sanchez Flores",
+   "val": "Atletico Madrid"
+  },
+  {
+   "label": "2011",
+   "name": "Andre Villas-Boas",
+   "val": "Porto"
+  },
+  {
+   "label": "2012",
+   "name": "Diego Simeone",
+   "val": "Atletico Madrid"
+  },
+  {
+   "label": "2013",
+   "name": "Rafael Benitez",
+   "val": "Chelsea"
+  },
+  {
+   "label": "2014",
+   "name": "Unai Emery",
+   "val": "Sevilla"
+  },
+  {
+   "label": "2015",
+   "name": "Unai Emery",
+   "val": "Sevilla"
+  },
+  {
+   "label": "2016",
+   "name": "Unai Emery",
+   "val": "Sevilla"
+  },
+  {
+   "label": "2017",
+   "name": "Jose Mourinho",
+   "val": "Man Utd"
+  },
+  {
+   "label": "2018",
+   "name": "Diego Simeone",
+   "val": "Atletico Madrid (Burgos on the touchline, Simeone banned)",
+   "alts": [
+    "Diego Simeone",
+    "German Burgos"
+   ]
+  }
+ ],
+ "notes": {
+  "German Burgos": "German Burgos was in the dugout in 2018 while Diego Simeone served a touchline ban, but Simeone was Atletico's manager."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/europa-league/erfolge/pokalwettbewerb/EL",
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals (each final's own article, manager in the line-ups)",
+  "https://match.uefa.com/v5/matches/<id>/lineups (UEFA's line-ups feed, coach where given)"
+ ],
+ "checks": "Transfermarkt's list of winning coaches against the manager named in each final's Wikipedia article; UEFA's line-ups feed names the coach for most finals from 2008 and agrees, except 2018 where it names Simeone's assistant German Burgos (Simeone was banned from the touchline)."
+}

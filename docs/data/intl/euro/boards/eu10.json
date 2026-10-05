@@ -1,0 +1,93 @@
+{
+ "pick": "eu10",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "England's most Euros appearances",
+ "brief": "Name the ten players with the most appearances for England at European Championship finals since Euro 96, including games as a substitute.",
+ "period": "Euro 96 to Euro 2024 (England missed Euro 2008)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "18 games"
+  },
+  {
+   "label": "2",
+   "name": "Kyle Walker",
+   "val": "16 games"
+  },
+  {
+   "label": "3",
+   "name": "Declan Rice",
+   "val": "14 games"
+  },
+  {
+   "label": "4",
+   "name": "John Stones",
+   "val": "14 games"
+  },
+  {
+   "label": "5",
+   "name": "Jordan Pickford",
+   "val": "14 games"
+  },
+  {
+   "label": "6",
+   "name": "Bukayo Saka",
+   "val": "11 games"
+  },
+  {
+   "label": "7",
+   "name": "Gary Neville",
+   "val": "11 games"
+  },
+  {
+   "label": "8",
+   "name": "Kieran Trippier",
+   "val": "11 games"
+  },
+  {
+   "label": "9",
+   "name": "Wayne Rooney",
+   "val": "10 games",
+   "pool": "p10",
+   "alts": [
+    "Wayne Rooney",
+    "Raheem Sterling",
+    "Jude Bellingham",
+    "Phil Foden"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Wayne Rooney",
+   "val": "10 games",
+   "pool": "p10",
+   "alts": [
+    "Wayne Rooney",
+    "Raheem Sterling",
+    "Jude Bellingham",
+    "Phil Foden"
+   ]
+  }
+ ],
+ "notes": {
+  "Steven Gerrard": "Steven Gerrard is just outside with 9 games.",
+  "Luke Shaw": "Luke Shaw is just outside with 9 games.",
+  "Alan Shearer": "Alan Shearer has 8 games since 1996.",
+  "Sol Campbell": "Sol Campbell has 8 games.",
+  "Ashley Cole": "Ashley Cole has 8 games.",
+  "Joe Hart": "Joe Hart has 8 games.",
+  "Jordan Henderson": "Jordan Henderson has 8 games.",
+  "David Seaman": "David Seaman has 7 games since 1996.",
+  "David Beckham": "David Beckham has 7 games.",
+  "Tony Adams": "Tony Adams has 6 games since 1996."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://www.transfermarkt.com/england/leistungsdaten/verein/3299/plus/1?reldata=EURO%26<season> (England squad stats for each Euros, 1996 to 2024)",
+  "https://www.transfermarkt.com/europameisterschaft/rekordspieler/pokalwettbewerb/EURO"
+ ],
+ "checks": "UEFA's and Transfermarkt's per-tournament appearances agree for every England player at every Euros from 1996 to 2024 (no differences). The 10-game pool for 9th and 10th: Rooney, Sterling, Bellingham and Foden."
+}

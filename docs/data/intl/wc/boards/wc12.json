@@ -1,0 +1,52 @@
+{
+ "pick": "wc12",
+ "kind": "open",
+ "type": "person",
+ "level": 1,
+ "title": "World Cup final scorers since 1994",
+ "brief": "Name any player who scored in a World Cup final from 1994 to 2026. Shoot-out penalties don't count.",
+ "period": "World Cup finals 1994 to 2026",
+ "names": [
+  "Andres Iniesta",
+  "Angel Di Maria",
+  "Antoine Griezmann",
+  "Emmanuel Petit",
+  "Ferran Torres",
+  "Ivan Perisic",
+  "Kylian Mbappe",
+  "Lionel Messi",
+  "Marco Materazzi",
+  "Mario Gotze",
+  "Mario Mandzukic",
+  "Paul Pogba",
+  "Ronaldo Nazario",
+  "Zinedine Zidane"
+ ],
+ "examples": [
+  "Zinedine Zidane",
+  "Ronaldo Nazario",
+  "Lionel Messi",
+  "Kylian Mbappe",
+  "Andres Iniesta",
+  "Mario Gotze",
+  "Antoine Griezmann",
+  "Paul Pogba",
+  "Angel Di Maria",
+  "Marco Materazzi"
+ ],
+ "notes": {
+  "Roberto Baggio": "Roberto Baggio missed in the 1994 shoot-out; the final itself was 0-0.",
+  "Fabio Grosso": "Fabio Grosso scored the winning shoot-out penalty in 2006, which doesn't count.",
+  "Gonzalo Montiel": "Gonzalo Montiel scored the winning shoot-out penalty in 2022, which doesn't count.",
+  "Thomas Muller": "Thomas Muller never scored in a final.",
+  "Miroslav Klose": "Miroslav Klose never scored in a final.",
+  "Nico Williams": "Nico Williams set up Ferran Torres's winner in 2026 but didn't score.",
+  "Geoff Hurst": "Geoff Hurst's hat-trick was in 1966, before 1994."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "https://en.wikipedia.org/wiki/<year>_FIFA_World_Cup_final (1998 to 2026 match boxes)",
+  "https://www.bbc.com/sport/football/live/cgk4ymn3n72t (2026 final, cited by Wikipedia)"
+ ],
+ "checks": "Scorers taken from each final's match box and checked against the finals list's scores (1994 0-0, 1998 3-0, 2002 2-0, 2006 1-1, 2010 1-0, 2014 1-0, 2018 4-2, 2022 3-3, 2026 1-0): the goals add up in every final. Mandzukic scored an own goal and a goal in 2018; he counts for the goal. Ferran Torres is also in the 2026 goalscorer list."
+}

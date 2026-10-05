@@ -1,0 +1,71 @@
+{
+ "pick": "cl26-2005-liverpool",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Liverpool's 2005 final XI",
+ "brief": "Name the ten outfield players who started for Liverpool against AC Milan in the 2005 Champions League final (25 May 2005), when they drew 3-3 and won on penalties. The goalkeeper (Jerzy Dudek) is left out.",
+ "period": "Champions League final 2005 (2004/05 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Steve Finnan",
+   "val": "No. 3"
+  },
+  {
+   "label": "CB",
+   "name": "Jamie Carragher",
+   "val": "No. 23"
+  },
+  {
+   "label": "CB",
+   "name": "Sami Hyypia",
+   "val": "No. 4"
+  },
+  {
+   "label": "LB",
+   "name": "Djimi Traore",
+   "val": "No. 21"
+  },
+  {
+   "label": "DM",
+   "name": "Xabi Alonso",
+   "val": "No. 14"
+  },
+  {
+   "label": "RM",
+   "name": "Luis Garcia",
+   "val": "No. 10"
+  },
+  {
+   "label": "CM",
+   "name": "Steven Gerrard",
+   "val": "No. 8"
+  },
+  {
+   "label": "LM",
+   "name": "John Arne Riise",
+   "val": "No. 6"
+  },
+  {
+   "label": "SS",
+   "name": "Harry Kewell",
+   "val": "No. 7"
+  },
+  {
+   "label": "CF",
+   "name": "Milan Baros",
+   "val": "No. 5"
+  }
+ ],
+ "notes": {
+  "Vladimir Smicer": "Vladimir Smicer came on as a substitute in the 2005 final, so he did not start.",
+  "Dietmar Hamann": "Dietmar Hamann came on as a substitute in the 2005 final, so he did not start.",
+  "Djibril Cisse": "Djibril Cisse came on as a substitute in the 2005 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2005_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/31195"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

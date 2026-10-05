@@ -1,0 +1,138 @@
+{
+ "pick": "eu05",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Euros top scorers since 1996",
+ "brief": "Name the ten players with the most goals at European Championship finals since Euro 96. Goals at earlier tournaments do not count. Shoot-out penalties do not count.",
+ "period": "Euro 96 to Euro 2024 (goals before 1996 not counted)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "14 goals"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "7 goals"
+  },
+  {
+   "label": "3",
+   "name": "Alvaro Morata",
+   "val": "7 goals"
+  },
+  {
+   "label": "4",
+   "name": "Antoine Griezmann",
+   "val": "7 goals"
+  },
+  {
+   "label": "5",
+   "name": "Alan Shearer",
+   "val": "7 goals"
+  },
+  {
+   "label": "6",
+   "name": "Nuno Gomes",
+   "val": "6 goals",
+   "pool": "p6",
+   "alts": [
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Robert Lewandowski",
+    "Zlatan Ibrahimovic",
+    "Thierry Henry",
+    "Wayne Rooney",
+    "Patrick Kluivert",
+    "Ruud van Nistelrooy",
+    "Patrik Schick"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Nuno Gomes",
+   "val": "6 goals",
+   "pool": "p6",
+   "alts": [
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Robert Lewandowski",
+    "Zlatan Ibrahimovic",
+    "Thierry Henry",
+    "Wayne Rooney",
+    "Patrick Kluivert",
+    "Ruud van Nistelrooy",
+    "Patrik Schick"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Nuno Gomes",
+   "val": "6 goals",
+   "pool": "p6",
+   "alts": [
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Robert Lewandowski",
+    "Zlatan Ibrahimovic",
+    "Thierry Henry",
+    "Wayne Rooney",
+    "Patrick Kluivert",
+    "Ruud van Nistelrooy",
+    "Patrik Schick"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Nuno Gomes",
+   "val": "6 goals",
+   "pool": "p6",
+   "alts": [
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Robert Lewandowski",
+    "Zlatan Ibrahimovic",
+    "Thierry Henry",
+    "Wayne Rooney",
+    "Patrick Kluivert",
+    "Ruud van Nistelrooy",
+    "Patrik Schick"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Nuno Gomes",
+   "val": "6 goals",
+   "pool": "p6",
+   "alts": [
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Robert Lewandowski",
+    "Zlatan Ibrahimovic",
+    "Thierry Henry",
+    "Wayne Rooney",
+    "Patrick Kluivert",
+    "Ruud van Nistelrooy",
+    "Patrik Schick"
+   ]
+  }
+ ],
+ "notes": {
+  "Michel Platini": "Michel Platini scored 9 at Euro 84, before 1996, so he does not count here.",
+  "Zinedine Zidane": "Zinedine Zidane is just outside with 5.",
+  "Savo Milosevic": "Savo Milosevic is just outside with 5.",
+  "Milan Baros": "Milan Baros is just outside with 5.",
+  "Fernando Torres": "Fernando Torres is just outside with 5.",
+  "Mario Gomez": "Mario Gomez is just outside with 5.",
+  "Xherdan Shaqiri": "Xherdan Shaqiri is just outside with 5.",
+  "David Villa": "David Villa scored 4, all at Euro 2008."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://github.com/martj42/international_results (goalscorers.csv)",
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics",
+  "https://www.transfermarkt.com/europameisterschaft/ewigetorschuetzenliste/pokalwettbewerb/EURO"
+ ],
+ "checks": "UEFA's per-tournament goals for every player, 1996 to 2024, match goalscorers.csv goal for goal (717 goals each, own goals left out; the only differences are spellings). Ronaldo's 14 matches Wikipedia. None of the top 14 scored at a finals before 1996 (Shearer played Euro 92 but did not score), so taking off pre-1996 goals only removes Platini and others with no goals since 1996."
+}

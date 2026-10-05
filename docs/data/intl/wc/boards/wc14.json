@@ -1,0 +1,100 @@
+{
+ "pick": "wc14",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "England's World Cup scorers since 1994",
+ "brief": "Name the ten players with the most World Cup finals goals for England from 1994 to 2026 (England missed 1994, so this is 1998 on).",
+ "period": "World Cups 1998 to 2026 (England did not qualify for 1994)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "14 goals"
+  },
+  {
+   "label": "2",
+   "name": "Jude Bellingham",
+   "val": "8 goals"
+  },
+  {
+   "label": "3",
+   "name": "Bukayo Saka",
+   "val": "6 goals"
+  },
+  {
+   "label": "4",
+   "name": "Michael Owen",
+   "val": "4 goals"
+  },
+  {
+   "label": "5",
+   "name": "Marcus Rashford",
+   "val": "4 goals"
+  },
+  {
+   "label": "6",
+   "name": "David Beckham",
+   "val": "3 goals"
+  },
+  {
+   "label": "7",
+   "name": "Steven Gerrard",
+   "val": "3 goals"
+  },
+  {
+   "label": "8",
+   "name": "Alan Shearer",
+   "val": "2 goals"
+  },
+  {
+   "label": "9",
+   "name": "John Stones",
+   "val": "2 goals"
+  },
+  {
+   "label": "10",
+   "name": "Darren Anderton",
+   "val": "1 goal",
+   "pool": "e1",
+   "alts": [
+    "Darren Anderton",
+    "Paul Scholes",
+    "Sol Campbell",
+    "Rio Ferdinand",
+    "Emile Heskey",
+    "Joe Cole",
+    "Peter Crouch",
+    "Jermain Defoe",
+    "Matthew Upson",
+    "Wayne Rooney",
+    "Daniel Sturridge",
+    "Dele Alli",
+    "Jesse Lingard",
+    "Harry Maguire",
+    "Kieran Trippier",
+    "Phil Foden",
+    "Jack Grealish",
+    "Jordan Henderson",
+    "Raheem Sterling",
+    "Anthony Gordon",
+    "Declan Rice",
+    "Ezri Konsa"
+   ]
+  }
+ ],
+ "notes": {
+  "Gary Lineker": "Gary Lineker's 10 World Cup goals came in 1986 and 1990, before 1994.",
+  "David Platt": "David Platt's 3 World Cup goals came in 1990.",
+  "Geoff Hurst": "Geoff Hurst's goals came in 1966 and 1970.",
+  "Frank Lampard": "Frank Lampard never scored at a World Cup (his 2010 shot over the line wasn't given).",
+  "Ashley Cole": "Ashley Cole never scored at a World Cup."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup#Top_goalscorers",
+  "https://en.wikipedia.org/wiki/<year>_FIFA_World_Cup#Goalscorers",
+  "https://www.englandstats.com/comp.php?tid=3",
+  "https://www.transfermarkt.com/england/leistungsdaten/verein/3299/plus/1?reldata=FIWC%26<year-1>"
+ ],
+ "checks": "England's goals by tournament (Wikipedia's England article) match the tournament goalscorer lists and Transfermarkt's England squad stats for each World Cup (7, 6, 5, 3, 2, 12, 13 and 20 goals, own goals aside); englandstats.com's World Cup top scorers agree for everyone on 2 or more that it lists. Twenty-two players scored once, so they share 10th place."
+}

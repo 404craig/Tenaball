@@ -1,0 +1,93 @@
+{
+ "pick": "wc09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "World Cup top scorers since 1994",
+ "brief": "Name the ten players with the most World Cup finals goals from 1994 to 2026.",
+ "period": "World Cups 1994 to 2026. Goals before 1994 don't count.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "22 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lionel Messi",
+   "val": "21 goals"
+  },
+  {
+   "label": "3",
+   "name": "Miroslav Klose",
+   "val": "16 goals"
+  },
+  {
+   "label": "4",
+   "name": "Ronaldo Nazario",
+   "val": "15 goals"
+  },
+  {
+   "label": "5",
+   "name": "Harry Kane",
+   "val": "14 goals"
+  },
+  {
+   "label": "6",
+   "name": "Cristiano Ronaldo",
+   "val": "11 goals"
+  },
+  {
+   "label": "7",
+   "name": "Gabriel Batistuta",
+   "val": "10 goals"
+  },
+  {
+   "label": "8",
+   "name": "Thomas Muller",
+   "val": "10 goals"
+  },
+  {
+   "label": "9",
+   "name": "Christian Vieri",
+   "val": "9 goals",
+   "pool": "g9",
+   "alts": [
+    "Christian Vieri",
+    "David Villa",
+    "Neymar"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "David Villa",
+   "val": "9 goals",
+   "pool": "g9",
+   "alts": [
+    "Christian Vieri",
+    "David Villa",
+    "Neymar"
+   ]
+  }
+ ],
+ "notes": {
+  "Jurgen Klinsmann": "Jurgen Klinsmann has 11 World Cup goals, but 3 came in 1990, so 8 count here, just outside.",
+  "Rivaldo": "Rivaldo is joint 12th with 8, just outside.",
+  "Romelu Lukaku": "Romelu Lukaku is joint 12th with 8, just outside.",
+  "Jude Bellingham": "Jude Bellingham is joint 12th with 8, just outside.",
+  "Roberto Baggio": "Roberto Baggio has 9 World Cup goals, but 2 came in 1990, so 7 count here.",
+  "Pele": "Pele's 12 goals all came before 1994.",
+  "Just Fontaine": "Just Fontaine's 13 goals came in 1958, before 1994.",
+  "Gerd Muller": "Gerd Muller's 14 goals came in 1970 and 1974, before 1994.",
+  "Gary Lineker": "Gary Lineker's 10 goals came in 1986 and 1990, before 1994.",
+  "Erling Haaland": "Erling Haaland has 7, all in 2026.",
+  "Luis Suarez": "Luis Suarez has 7, just outside.",
+  "Ivan Perisic": "Ivan Perisic has 7, just outside."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<year>_FIFA_World_Cup#Goalscorers for 1994 to 2022, and Module:Goalscorers/data/2026_FIFA_World_Cup",
+  "https://www.transfermarkt.com/weltmeisterschaft/ewigetorschuetzenliste/pokalwettbewerb/FIWC",
+  "https://www.transfermarkt.com/weltmeisterschaft/torschuetzenliste/pokalwettbewerb/FIWC/saison_id/<year-1> (each tournament)"
+ ],
+ "checks": "Totals summed from every tournament's goalscorer list on Wikipedia (each list's total checked against the tournament's goals minus own goals). Each top-ten total agrees with Transfermarkt's all-time World Cup scorers list once pre-1994 goals are removed (Klinsmann 3 and Baggio 2 in 1990; Batistuta's first World Cup was 1994). Three players on 9 share the last two places."
+}

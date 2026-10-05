@@ -1,0 +1,71 @@
+{
+ "pick": "cl26-2008-chelsea",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Chelsea's 2008 final XI",
+ "brief": "Name the ten outfield players who started for Chelsea against Man Utd in the 2008 Champions League final (21 May 2008), when they drew 1-1 and lost on penalties. The goalkeeper (Petr Cech) is left out.",
+ "period": "Champions League final 2008 (2007/08 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Michael Essien",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Ricardo Carvalho",
+   "val": "No. 6"
+  },
+  {
+   "label": "CB",
+   "name": "John Terry",
+   "val": "No. 26"
+  },
+  {
+   "label": "LB",
+   "name": "Ashley Cole",
+   "val": "No. 3"
+  },
+  {
+   "label": "DM",
+   "name": "Claude Makelele",
+   "val": "No. 4"
+  },
+  {
+   "label": "CM",
+   "name": "Michael Ballack",
+   "val": "No. 13"
+  },
+  {
+   "label": "CM",
+   "name": "Frank Lampard",
+   "val": "No. 8"
+  },
+  {
+   "label": "RW",
+   "name": "Joe Cole",
+   "val": "No. 10"
+  },
+  {
+   "label": "LW",
+   "name": "Florent Malouda",
+   "val": "No. 15"
+  },
+  {
+   "label": "CF",
+   "name": "Didier Drogba",
+   "val": "No. 11"
+  }
+ ],
+ "notes": {
+  "Salomon Kalou": "Salomon Kalou came on as a substitute in the 2008 final, so he did not start.",
+  "Nicolas Anelka": "Nicolas Anelka came on as a substitute in the 2008 final, so he did not start.",
+  "Belletti": "Belletti came on as a substitute in the 2008 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2008_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/909764"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

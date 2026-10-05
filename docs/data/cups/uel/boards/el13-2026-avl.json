@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2026-avl",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Aston Villa's starters, 2026 Europa League final",
+ "brief": "Name the ten outfield players Aston Villa started with in the 2026 Europa League final against Freiburg (they won 3-0).",
+ "period": "2026 Europa League final, Istanbul, 20 May 2026",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Matty Cash",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Ezri Konsa",
+   "val": "No. 4"
+  },
+  {
+   "label": "CB",
+   "name": "Pau Torres",
+   "val": "No. 14"
+  },
+  {
+   "label": "LB",
+   "name": "Lucas Digne",
+   "val": "No. 12"
+  },
+  {
+   "label": "CM",
+   "name": "Victor Lindelof",
+   "val": "No. 3"
+  },
+  {
+   "label": "CM",
+   "name": "Youri Tielemans",
+   "val": "No. 8"
+  },
+  {
+   "label": "RW",
+   "name": "John McGinn",
+   "val": "No. 7"
+  },
+  {
+   "label": "AM",
+   "name": "Morgan Rogers",
+   "val": "No. 27"
+  },
+  {
+   "label": "LW",
+   "name": "Emiliano Buendia",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Ollie Watkins",
+   "val": "No. 11"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2047743/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2025/26)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

@@ -1,0 +1,126 @@
+{
+ "pick": "wc11",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most goals at one World Cup since 1994",
+ "brief": "Name the ten players with the most goals at a single World Cup from 1994 to 2026, counting each player's best tournament once.",
+ "period": "World Cups 1994 to 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "10 goals (2026)"
+  },
+  {
+   "label": "2",
+   "name": "Ronaldo Nazario",
+   "val": "8 goals (2002)"
+  },
+  {
+   "label": "3",
+   "name": "Lionel Messi",
+   "val": "8 goals (2026)"
+  },
+  {
+   "label": "4",
+   "name": "Jude Bellingham",
+   "val": "7 goals (2026)"
+  },
+  {
+   "label": "5",
+   "name": "Erling Haaland",
+   "val": "7 goals (2026)"
+  },
+  {
+   "label": "6",
+   "name": "Hristo Stoichkov",
+   "val": "6 goals",
+   "pool": "g6",
+   "alts": [
+    "Hristo Stoichkov",
+    "Oleg Salenko",
+    "Davor Suker",
+    "James Rodriguez",
+    "Harry Kane",
+    "Ousmane Dembele"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Oleg Salenko",
+   "val": "6 goals",
+   "pool": "g6",
+   "alts": [
+    "Hristo Stoichkov",
+    "Oleg Salenko",
+    "Davor Suker",
+    "James Rodriguez",
+    "Harry Kane",
+    "Ousmane Dembele"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Davor Suker",
+   "val": "6 goals",
+   "pool": "g6",
+   "alts": [
+    "Hristo Stoichkov",
+    "Oleg Salenko",
+    "Davor Suker",
+    "James Rodriguez",
+    "Harry Kane",
+    "Ousmane Dembele"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "James Rodriguez",
+   "val": "6 goals",
+   "pool": "g6",
+   "alts": [
+    "Hristo Stoichkov",
+    "Oleg Salenko",
+    "Davor Suker",
+    "James Rodriguez",
+    "Harry Kane",
+    "Ousmane Dembele"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Harry Kane",
+   "val": "6 goals",
+   "pool": "g6",
+   "alts": [
+    "Hristo Stoichkov",
+    "Oleg Salenko",
+    "Davor Suker",
+    "James Rodriguez",
+    "Harry Kane",
+    "Ousmane Dembele"
+   ]
+  }
+ ],
+ "notes": {
+  "Miroslav Klose": "Miroslav Klose's best was 5 (2002 and 2006), just outside.",
+  "Thomas Muller": "Thomas Muller's best was 5 (2010 and 2014), just outside.",
+  "Romario": "Romario scored 5 in 1994, just outside.",
+  "Roberto Baggio": "Roberto Baggio scored 5 in 1994, just outside.",
+  "Jurgen Klinsmann": "Jurgen Klinsmann scored 5 in 1994, just outside.",
+  "Kennet Andersson": "Kennet Andersson scored 5 in 1994, just outside.",
+  "Gabriel Batistuta": "Gabriel Batistuta scored 5 in 1998, just outside.",
+  "Christian Vieri": "Christian Vieri scored 5 in 1998, just outside.",
+  "Rivaldo": "Rivaldo scored 5 in 2002, just outside.",
+  "David Villa": "David Villa scored 5 in 2010, just outside.",
+  "Wesley Sneijder": "Wesley Sneijder scored 5 in 2010, just outside.",
+  "Diego Forlan": "Diego Forlan scored 5 in 2010, just outside.",
+  "Mikel Oyarzabal": "Mikel Oyarzabal scored 5 in 2026, just outside."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<year>_FIFA_World_Cup#Goalscorers for 1994 to 2022, and Module:Goalscorers/data/2026_FIFA_World_Cup",
+  "https://www.transfermarkt.com/weltmeisterschaft/torschuetzenliste/pokalwettbewerb/FIWC/saison_id/<year-1> (each tournament)"
+ ],
+ "checks": "Every tournament's top scorers agree between Wikipedia and Transfermarkt's top scorer list for that tournament. Mbappe's 8 in 2022 and Messi's 7 in 2022 are left out (each player once, at his best). Kane scored 6 in both 2018 and 2026. Six players on 6 share the last five places."
+}

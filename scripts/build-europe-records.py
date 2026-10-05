@@ -1,4 +1,4 @@
-"""Build EXTRA_Q6 (La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 boards from Craig's October 2026 picks), EURO_OPEN (their open
+"""Build EXTRA_Q6 (La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 boards from Craig's October 2026 picks, and the Champions League and Europa League boards from docs/data/cups/), EURO_OPEN (their open
 boards) and EURO_PEOPLE (every player in the four leagues in 2025/26, so wrong answers are recognised), and write them into index.html.
 
 Data, in docs/data/europe/ (see BRIEF.md and each league's NOTES files):
@@ -13,7 +13,7 @@ import csv, glob, json, os, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 E = "docs/data/europe/"
-CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5"}
+CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro"}
 LEAGUE = {"laliga": "La Liga", "bund": "Bundesliga", "seriea": "Serie A", "ligue1": "Ligue 1"}
 h = open("index.html", encoding="utf-8").read()
 problems = []
@@ -28,7 +28,9 @@ def known_boards(cat):
     for m in re.finditer(r'\{"id":"(%s-top-\d{4}/\d\d)".*?"table":(\[[^\]]*\])' % cat, base): out[m.group(1)[-7:]] = json.loads(m.group(2))
     return out
 CLUBS = {k: set(open(E + f"clubs_{k}.txt").read().split("\n")) for k in LEAGUE}
+CLUBS["ucl"] = CLUBS["uel"] = set(open("docs/data/cups/clubs_all.txt").read().split("\n")) | set().union(*CLUBS.values())
 
+NATIONS = set(open("docs/data/intl/nations.txt").read().split("\n"))
 Q, OPEN = [], []
 def family(pick, title, kind, typ="person"):
     t = title.lower()
@@ -72,13 +74,13 @@ for lg, pick in [("bund", "de27"), ("seriea", "it26")]:
               "period": "Seasons 2000/01 to 2025/26", "level": 1, "hard": False, "numeric": True, "slots": slots, "note": {}})
 
 # ---------- the agents' boards ----------
-for path in sorted(glob.glob(E + "*/boards/*.json")):
+for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/*/boards/*.json") + glob.glob("docs/data/intl/*/boards/*.json")):
     lg = path.split("/")[-3]; b = json.load(open(path)); pick = b.get("pick") or os.path.basename(path)[:-5]
     where = f"{lg}/{pick}"
     text = [b.get("title", ""), b.get("brief", ""), b.get("period", ""), *b.get("notes", {}).values(), *(r.get("val", "") for r in b.get("rows", []))]
     if any("—" in t for t in text): problems.append(f"{where}: em dash"); continue
     if not b.get("period"): problems.append(f"{where}: no period line"); continue
-    if not re.search(r"20\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
+    if not re.search(r"(19|20)\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
     kind, typ, lv = b.get("kind"), b.get("type", "person"), int(b.get("level", 1))
     id = f"{CAT[lg]}-{family(pick, b['title'], kind, typ)}-{pick.replace('/', '-')}"
     fix = (lambda n: plain(n)) if typ == "person" else (lambda n: n)
@@ -102,6 +104,10 @@ for path in sorted(glob.glob(E + "*/boards/*.json")):
         slots.append(s)
     reps = Counter(s["club"] for s in slots if not s.get("pool"))
     if reps and max(reps.values()) > 3: problems.append(f"{where}: {reps.most_common(1)[0][0]} fills {reps.most_common(1)[0][1]} slots"); continue
+    if typ == "nation":
+        for s_ in slots:
+            for c in s_.get("alts") or [s_["club"]]:
+                if c not in NATIONS: problems.append(f"{where}: nation {c} isn't in the game's nation list")
     if typ == "club" and lg in CLUBS:
         for s in slots:
             for c in s.get("alts") or [s["club"]]:
@@ -121,7 +127,7 @@ for q in Q:
     if k == "it17": q["title"] = "Roma and Napoli top scorers since 2000"
 
 # ---------- levels: each league gets some easy boards (only La Liga had any), from its best-known names ----------
-EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b"}
+EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b", "el01-2017", "el03-2022"}
 for q in Q + OPEN:
     if q["id"].rsplit("-", 1)[-1] in EASY or any(q["id"].endswith("-" + k) for k in EASY): q["level"] = 0; q["hard"] = False
 

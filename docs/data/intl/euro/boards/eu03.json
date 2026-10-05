@@ -1,0 +1,84 @@
+{
+ "pick": "eu03",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 1,
+ "title": "Most Euros matches won",
+ "brief": "Name the ten nations that have won the most matches at European Championship finals. Wins on penalties count as draws. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Germany",
+   "val": "30 wins",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "2",
+   "name": "Spain",
+   "val": "28 wins"
+  },
+  {
+   "label": "3",
+   "name": "Netherlands",
+   "val": "23 wins"
+  },
+  {
+   "label": "4",
+   "name": "France",
+   "val": "23 wins"
+  },
+  {
+   "label": "5",
+   "name": "Italy",
+   "val": "22 wins"
+  },
+  {
+   "label": "6",
+   "name": "Portugal",
+   "val": "21 wins"
+  },
+  {
+   "label": "7",
+   "name": "England",
+   "val": "18 wins"
+  },
+  {
+   "label": "8",
+   "name": "Czech Republic",
+   "val": "15 wins",
+   "alts": [
+    "Czech Republic",
+    "Czechoslovakia"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Russia",
+   "val": "13 wins",
+   "alts": [
+    "Russia",
+    "Soviet Union"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Belgium",
+   "val": "12 wins"
+  }
+ ],
+ "notes": {
+  "Denmark": "Denmark are just outside with 10 wins.",
+  "Croatia": "Croatia have 9 wins, just outside.",
+  "Sweden": "Sweden have 7 wins.",
+  "Turkey": "Turkey have 7 wins."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics",
+  "https://github.com/martj42/international_results (results.csv, every Euros finals match, totals worked out by script)"
+ ],
+ "checks": "Wins counted with penalty shoot-outs as draws (Wikipedia's overall team records table, which follows the usual statistical convention). Every figure matches the totals worked out from results.csv, where shoot-out games are listed as draws. Extra-time wins count as wins. The 1968 final replay counts as a match. Russia alone (1996 to 2020) has 6 wins, the Czech Republic alone 12, Germany from 1992 21."
+}

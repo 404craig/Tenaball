@@ -1,0 +1,141 @@
+{
+ "pick": "cl05",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Most Champions League titles",
+ "brief": "Name the ten players who have won the Champions League the most times since 1992/93. A title counts if the player played in that season's competition for the winning club.",
+ "period": "Champions League winners 1993 to 2026; titles before 1992/93 not counted",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Toni Kroos",
+   "val": "6 titles"
+  },
+  {
+   "label": "2",
+   "name": "Luka Modric",
+   "val": "6 titles"
+  },
+  {
+   "label": "3",
+   "name": "Dani Carvajal",
+   "val": "6 titles"
+  },
+  {
+   "label": "4",
+   "name": "Nacho",
+   "val": "6 titles"
+  },
+  {
+   "label": "5",
+   "name": "Cristiano Ronaldo",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  },
+  {
+   "label": "6",
+   "name": "Gareth Bale",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Karim Benzema",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Casemiro",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Marcelo",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Lucas Vazquez",
+   "val": "5 titles",
+   "pool": "five",
+   "alts": [
+    "Cristiano Ronaldo",
+    "Gareth Bale",
+    "Karim Benzema",
+    "Casemiro",
+    "Marcelo",
+    "Lucas Vazquez",
+    "Clarence Seedorf"
+   ]
+  }
+ ],
+ "notes": {
+  "Isco": "Isco played in four winning campaigns; he was in the 2021/22 squad but played no Champions League games that season.",
+  "Sergio Ramos": "Sergio Ramos has four titles.",
+  "Raphael Varane": "Raphael Varane has four titles.",
+  "Lionel Messi": "Lionel Messi has four titles.",
+  "Xavi": "Xavi has four titles.",
+  "Andres Iniesta": "Andres Iniesta has four titles.",
+  "Gerard Pique": "Gerard Pique has four titles.",
+  "David Alaba": "David Alaba has four titles.",
+  "Mateo Kovacic": "Mateo Kovacic has four titles.",
+  "Samuel Eto'o": "Samuel Eto'o has four, counting 1999/2000 when he played for Real Madrid before leaving.",
+  "Paolo Maldini": "Paolo Maldini has three since 1992/93 (five counting 1989 and 1990)."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics (Most wins)",
+  "https://www.transfermarkt.com/<player>/erfolge/spieler/<id> (Transfermarkt honours pages)",
+  "https://www.transfermarkt.com/ceapi/performance-game/<id> (Transfermarkt game logs)",
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Titles counted where the player made at least one Champions League appearance for the winning club that season, checked two ways: UEFA.com season appearances by club and Transfermarkt game logs; both give the same counts for every player here. Wikipedia lists the same four on six and the same six Real Madrid players on five, but gives Seedorf four (it leaves out 1999/2000, when he played for Real Madrid until January). Transfermarkt honours pages give Seedorf five and also give Isco five (squad member in 2021/22 with no appearances). Seven players have five, so any six of them fill places five to ten."
+}

@@ -1,0 +1,88 @@
+{
+ "pick": "el07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League top scorers since 2000",
+ "brief": "Name the ten players with the most goals in the UEFA Cup and Europa League from 2000/01 to 2025/26, counting the main competition only (qualifying rounds and play-offs left out).",
+ "period": "UEFA Cup and Europa League 2000/01 to 2025/26, main competition (first round onwards to 2008/09, group or league stage onwards from 2009/10)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Pierre-Emerick Aubameyang",
+   "val": "34 goals"
+  },
+  {
+   "label": "2",
+   "name": "Klaas-Jan Huntelaar",
+   "val": "30 goals"
+  },
+  {
+   "label": "3",
+   "name": "Radamel Falcao",
+   "val": "30 goals"
+  },
+  {
+   "label": "4",
+   "name": "Edin Dzeko",
+   "val": "28 goals"
+  },
+  {
+   "label": "5",
+   "name": "Romelu Lukaku",
+   "val": "27 goals"
+  },
+  {
+   "label": "6",
+   "name": "Bruno Fernandes",
+   "val": "27 goals"
+  },
+  {
+   "label": "7",
+   "name": "Aritz Aduriz",
+   "val": "26 goals"
+  },
+  {
+   "label": "8",
+   "name": "Alexandre Lacazette",
+   "val": "26 goals"
+  },
+  {
+   "label": "9",
+   "name": "Henrik Larsson",
+   "val": "24 goals",
+   "pool": "g24",
+   "alts": [
+    "Henrik Larsson",
+    "Kevin Gameiro",
+    "Munas Dabbur"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Kevin Gameiro",
+   "val": "24 goals",
+   "pool": "g24",
+   "alts": [
+    "Henrik Larsson",
+    "Kevin Gameiro",
+    "Munas Dabbur"
+   ]
+  }
+ ],
+ "notes": {
+  "Vagner Love": "Vagner Love is 12th with 23, just outside.",
+  "Dimitris Salpingidis": "Dimitris Salpingidis is 13th with 22, just outside.",
+  "Oscar Cardozo": "Oscar Cardozo is 14th with 21.",
+  "Henrik Larsson": "Henrik Larsson has 24 since 2000/01; his goals for Feyenoord and Celtic before 2000 don't count here.",
+  "Olivier Giroud": "Olivier Giroud has 19.",
+  "Jermain Defoe": "Jermain Defoe has 19.",
+  "Carlos Bacca": "Carlos Bacca has 19.",
+  "Claudio Pizarro": "Claudio Pizarro has 18."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=14&phase=TOURNAMENT&stats=goals (UEFA.com stats, every season 2000/01 to 2025/26)",
+  "https://www.transfermarkt.com/europa-league/ewigetorschuetzenliste/pokalwettbewerb/EL/plus/1?saisonIdVon=2000&saisonIdBis=2025"
+ ],
+ "checks": "UEFA.com season goal rankings (main competition, qualifying and play-offs left out) summed by UEFA player id over all 26 seasons, against Transfermarkt's all-time scorers list restricted to seasons 2000 to 2025. Both give the same total for all eleven players listed here (Aubameyang 34, Huntelaar 30, Falcao 30, Dzeko 28, Lukaku 27, Bruno Fernandes 27, Aduriz 26, Lacazette 26, Larsson 24, Gameiro 24, Dabbur 24) and for Vagner Love 23 and Salpingidis 22. Larsson, Gameiro and Dabbur tie on 24 for 9th and 10th, so they share those places."
+}

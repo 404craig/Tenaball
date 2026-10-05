@@ -1,0 +1,71 @@
+{
+ "pick": "cl12-2017",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Winning captains 2017 to 2026",
+ "brief": "Name the captain of the Champions League winners in each final from 2017 to 2026: the player who wore the armband at kick-off.",
+ "period": "Champions League finals 2017 to 2026",
+ "rows": [
+  {
+   "label": "2017",
+   "name": "Sergio Ramos",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2018",
+   "name": "Sergio Ramos",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2019",
+   "name": "Jordan Henderson",
+   "val": "Liverpool"
+  },
+  {
+   "label": "2020",
+   "name": "Manuel Neuer",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2021",
+   "name": "Cesar Azpilicueta",
+   "val": "Chelsea"
+  },
+  {
+   "label": "2022",
+   "name": "Karim Benzema",
+   "val": "Real Madrid"
+  },
+  {
+   "label": "2023",
+   "name": "Ilkay Gundogan",
+   "val": "Man City"
+  },
+  {
+   "label": "2024",
+   "name": "Nacho Fernandez",
+   "val": "Real Madrid",
+   "alts": [
+    "Nacho Fernandez",
+    "Nacho"
+   ]
+  },
+  {
+   "label": "2025",
+   "name": "Marquinhos",
+   "val": "PSG"
+  },
+  {
+   "label": "2026",
+   "name": "Marquinhos",
+   "val": "PSG"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2008_UEFA_Champions_League_final (and each final in the window)",
+  "Transfermarkt final match reports (captain's armband on the line-up), ids in cl_finals_1993_2026.csv"
+ ],
+ "checks": "Built from cl_finals_1993_2026.csv (winner_captain), which CL-B read from each final's Wikipedia team sheet and Transfermarkt match report; the two agree for every final. The 4-slot rule applies to the answers (the captains): Ramos and Marquinhos fill two slots each."
+}

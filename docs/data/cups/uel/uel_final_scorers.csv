@@ -1,0 +1,87 @@
+final,home,away,score,penalties,scorer,goal_type,minute
+2001,Liverpool,Alavés,5-4,,Markus Babbel,SCORED,3
+2001,Liverpool,Alavés,5-4,,Steven Gerrard,SCORED,16
+2001,Liverpool,Alavés,5-4,,Ivan Alonso,SCORED,26
+2001,Liverpool,Alavés,5-4,,Gary McAllister,PENALTY,40
+2001,Liverpool,Alavés,5-4,,Javi Moreno,SCORED,47
+2001,Liverpool,Alavés,5-4,,Javi Moreno,SCORED,49
+2001,Liverpool,Alavés,5-4,,Robbie Fowler,SCORED,72
+2001,Liverpool,Alavés,5-4,,Jordi Cruyff,SCORED,88
+2001,Liverpool,Alavés,5-4,,Delfi Geli,OWN,116
+2002,Feyenoord,B. Dortmund,3-2,,Pierre van Hooijdonk,PENALTY,33
+2002,Feyenoord,B. Dortmund,3-2,,Pierre van Hooijdonk,SCORED,40
+2002,Feyenoord,B. Dortmund,3-2,,Marcio Amoroso,PENALTY,47
+2002,Feyenoord,B. Dortmund,3-2,,Jon Dahl Tomasson,SCORED,50
+2002,Feyenoord,B. Dortmund,3-2,,Jan Koller,SCORED,58
+2003,Celtic,Porto,2-3,,Derlei,SCORED,45
+2003,Celtic,Porto,2-3,,Henrik Larsson,SCORED,47
+2003,Celtic,Porto,2-3,,Dmitri Alenichev,SCORED,54
+2003,Celtic,Porto,2-3,,Henrik Larsson,SCORED,57
+2003,Celtic,Porto,2-3,,Derlei,SCORED,115
+2004,Valencia,Marseille,2-0,,Vicente,PENALTY,45
+2004,Valencia,Marseille,2-0,,Mista,SCORED,58
+2005,Sporting CP,CSKA Moskva,1-3,,Rogério,SCORED,29
+2005,Sporting CP,CSKA Moskva,1-3,,Aleksei Berezutski,SCORED,56
+2005,Sporting CP,CSKA Moskva,1-3,,Yuri Zhirkov,SCORED,65
+2005,Sporting CP,CSKA Moskva,1-3,,Vágner Love,SCORED,75
+2006,Middlesbrough,Sevilla,0-4,,Luís Fabiano,SCORED,27
+2006,Middlesbrough,Sevilla,0-4,,Enzo Maresca,SCORED,78
+2006,Middlesbrough,Sevilla,0-4,,Enzo Maresca,SCORED,84
+2006,Middlesbrough,Sevilla,0-4,,Frédéric Kanouté,SCORED,89
+2007,Espanyol,Sevilla,2-2,1-3,Adriano,SCORED,18
+2007,Espanyol,Sevilla,2-2,1-3,Albert Riera,SCORED,28
+2007,Espanyol,Sevilla,2-2,1-3,Frédéric Kanouté,SCORED,105
+2007,Espanyol,Sevilla,2-2,1-3,Jônatas,SCORED,115
+2008,Zenit,Rangers,2-0,,Igor Denisov,SCORED,72
+2008,Zenit,Rangers,2-0,,Konstantin Zyryanov,SCORED,90
+2009,Shakhtar,Bremen,2-1,,Luiz Adriano,SCORED,25
+2009,Shakhtar,Bremen,2-1,,Naldo,SCORED,35
+2009,Shakhtar,Bremen,2-1,,Jádson,SCORED,97
+2010,Atleti,Fulham,2-1,,Diego Forlán,SCORED,32
+2010,Atleti,Fulham,2-1,,Simon Davies,SCORED,37
+2010,Atleti,Fulham,2-1,,Diego Forlán,SCORED,116
+2011,Porto,Braga,1-0,,Radamel Falcao,SCORED,44
+2012,Atleti,Athletic Club,3-0,,Radamel Falcao,SCORED,7
+2012,Atleti,Athletic Club,3-0,,Radamel Falcao,SCORED,34
+2012,Atleti,Athletic Club,3-0,,Diego,SCORED,85
+2013,Benfica,Chelsea,1-2,,Fernando Torres,SCORED,60
+2013,Benfica,Chelsea,1-2,,Óscar Cardozo,PENALTY,68
+2013,Benfica,Chelsea,1-2,,Branislav Ivanović,SCORED,90
+2014,Sevilla,Benfica,0-0,4-2,,,
+2015,Dnipro,Sevilla,2-3,,Nikola Kalinić,SCORED,7
+2015,Dnipro,Sevilla,2-3,,Grzegorz Krychowiak,SCORED,28
+2015,Dnipro,Sevilla,2-3,,Carlos Bacca,SCORED,31
+2015,Dnipro,Sevilla,2-3,,Ruslan Rotan,SCORED,44
+2015,Dnipro,Sevilla,2-3,,Carlos Bacca,SCORED,73
+2016,Liverpool,Sevilla,1-3,,Daniel Sturridge,SCORED,35
+2016,Liverpool,Sevilla,1-3,,Kevin Gameiro,SCORED,46
+2016,Liverpool,Sevilla,1-3,,Coke,SCORED,64
+2016,Liverpool,Sevilla,1-3,,Coke,SCORED,70
+2017,Ajax,Man Utd,0-2,,Paul Pogba,SCORED,18
+2017,Ajax,Man Utd,0-2,,Henrikh Mkhitaryan,SCORED,48
+2018,Marseille,Atleti,0-3,,Antoine Griezmann,SCORED,21
+2018,Marseille,Atleti,0-3,,Antoine Griezmann,SCORED,49
+2018,Marseille,Atleti,0-3,,Gabi,SCORED,89
+2019,Chelsea,Arsenal,4-1,,Olivier Giroud,SCORED,49
+2019,Chelsea,Arsenal,4-1,,Pedro Rodríguez,SCORED,60
+2019,Chelsea,Arsenal,4-1,,Eden Hazard,PENALTY,65
+2019,Chelsea,Arsenal,4-1,,Alex Iwobi,SCORED,69
+2019,Chelsea,Arsenal,4-1,,Eden Hazard,SCORED,72
+2020,Sevilla,Inter,3-2,,Romelu Lukaku,PENALTY,5
+2020,Sevilla,Inter,3-2,,Luuk de Jong,SCORED,12
+2020,Sevilla,Inter,3-2,,Luuk de Jong,SCORED,33
+2020,Sevilla,Inter,3-2,,Diego Godín,SCORED,36
+2020,Sevilla,Inter,3-2,,Romelu Lukaku,OWN,74
+2021,Villarreal,Man Utd,1-1,11-10,Gerard Moreno,SCORED,29
+2021,Villarreal,Man Utd,1-1,11-10,Edinson Cavani,SCORED,55
+2022,Frankfurt,Rangers,1-1,5-4,Joe Aribo,SCORED,57
+2022,Frankfurt,Rangers,1-1,5-4,Rafael Borré,SCORED,69
+2023,Sevilla,Roma,1-1,4-1,Paulo Dybala,SCORED,35
+2023,Sevilla,Roma,1-1,4-1,Gianluca Mancini,OWN,55
+2024,Atalanta,Leverkusen,3-0,,Ademola Lookman,SCORED,12
+2024,Atalanta,Leverkusen,3-0,,Ademola Lookman,SCORED,26
+2024,Atalanta,Leverkusen,3-0,,Ademola Lookman,SCORED,75
+2025,Tottenham,Man Utd,1-0,,Brennan Johnson,SCORED,42
+2026,Freiburg,Aston Villa,0-3,,Youri Tielemans,SCORED,41
+2026,Freiburg,Aston Villa,0-3,,Emiliano Buendía,SCORED,45
+2026,Freiburg,Aston Villa,0-3,,Morgan Rogers,SCORED,58

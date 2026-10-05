@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2001-lfc",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Liverpool's starters, 2001 UEFA Cup final",
+ "brief": "Name the ten outfield players Liverpool started with in the 2001 UEFA Cup final against Alaves (they won 5-4 with a golden goal).",
+ "period": "2001 UEFA Cup final, Dortmund, 16 May 2001",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Markus Babbel",
+   "val": "No. 6"
+  },
+  {
+   "label": "CB",
+   "name": "Stephane Henchoz",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Sami Hyypia",
+   "val": "No. 12"
+  },
+  {
+   "label": "LB",
+   "name": "Jamie Carragher",
+   "val": "No. 23"
+  },
+  {
+   "label": "RM",
+   "name": "Steven Gerrard",
+   "val": "No. 17"
+  },
+  {
+   "label": "CM",
+   "name": "Dietmar Hamann",
+   "val": "No. 16"
+  },
+  {
+   "label": "CM",
+   "name": "Gary McAllister",
+   "val": "No. 21"
+  },
+  {
+   "label": "LM",
+   "name": "Danny Murphy",
+   "val": "No. 13"
+  },
+  {
+   "label": "CF",
+   "name": "Michael Owen",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Emile Heskey",
+   "val": "No. 8"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2001_UEFA_Cup_final",
+  "https://match.uefa.com/v5/matches/67741/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2000/01)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

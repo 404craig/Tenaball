@@ -1,0 +1,71 @@
+{
+ "pick": "cl07-2001",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Champions League top scorers, 2001/02 to 2010/11",
+ "brief": "Name the top scorer in each Champions League season. For shared awards, any of the joint top scorers counts.",
+ "period": "Champions League seasons 2001/02 to 2010/11, group stage onwards",
+ "rows": [
+  {
+   "label": "2001/02",
+   "name": "Ruud van Nistelrooy",
+   "val": "10 goals, Man Utd"
+  },
+  {
+   "label": "2002/03",
+   "name": "Ruud van Nistelrooy",
+   "val": "12 goals, Man Utd"
+  },
+  {
+   "label": "2003/04",
+   "name": "Fernando Morientes",
+   "val": "9 goals, Monaco"
+  },
+  {
+   "label": "2004/05",
+   "name": "Ruud van Nistelrooy",
+   "val": "8 goals, Man Utd"
+  },
+  {
+   "label": "2005/06",
+   "name": "Andriy Shevchenko",
+   "val": "9 goals, AC Milan"
+  },
+  {
+   "label": "2006/07",
+   "name": "Kaka",
+   "val": "10 goals, AC Milan"
+  },
+  {
+   "label": "2007/08",
+   "name": "Cristiano Ronaldo",
+   "val": "8 goals, Man Utd"
+  },
+  {
+   "label": "2008/09",
+   "name": "Lionel Messi",
+   "val": "9 goals, Barcelona"
+  },
+  {
+   "label": "2009/10",
+   "name": "Lionel Messi",
+   "val": "8 goals, Barcelona"
+  },
+  {
+   "label": "2010/11",
+   "name": "Lionel Messi",
+   "val": "12 goals, Barcelona"
+  }
+ ],
+ "notes": {
+  "Thierry Henry": "Thierry Henry never finished a season as the top scorer.",
+  "Didier Drogba": "Didier Drogba never finished a season as the top scorer."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)",
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers (Top scorers by season)"
+ ],
+ "checks": "Every season checked against UEFA.com season stats, the Transfermarkt season scorer list and the Wikipedia list of season top scorers; all three agree except 1993/94, where Wikipedia and Transfermarkt have Koeman level with Rufer on 8 and UEFA.com has Koeman on 7, so either name fills that slot. Shared awards are one slot with alts. Man Utd players fill four slots here (Van Nistelrooy three times and Ronaldo once); no player fills more than three. Seasons 2011/12 to 2015/16 cannot be covered: any ten-year window that includes them gives Messi or Ronaldo four or more slots."
+}

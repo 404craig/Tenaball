@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2016-lfc",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Liverpool's starters, 2016 Europa League final",
+ "brief": "Name the ten outfield players Liverpool started with in the 2016 Europa League final against Sevilla (they lost 3-1).",
+ "period": "2016 Europa League final, Basel, 18 May 2016",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Nathaniel Clyne",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Dejan Lovren",
+   "val": "No. 6"
+  },
+  {
+   "label": "CB",
+   "name": "Kolo Toure",
+   "val": "No. 4"
+  },
+  {
+   "label": "LB",
+   "name": "Alberto Moreno",
+   "val": "No. 18"
+  },
+  {
+   "label": "CM",
+   "name": "James Milner",
+   "val": "No. 7"
+  },
+  {
+   "label": "CM",
+   "name": "Emre Can",
+   "val": "No. 23"
+  },
+  {
+   "label": "RW",
+   "name": "Adam Lallana",
+   "val": "No. 20"
+  },
+  {
+   "label": "AM",
+   "name": "Roberto Firmino",
+   "val": "No. 11"
+  },
+  {
+   "label": "LW",
+   "name": "Philippe Coutinho",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Daniel Sturridge",
+   "val": "No. 15"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2016_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2017222/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2015/16)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

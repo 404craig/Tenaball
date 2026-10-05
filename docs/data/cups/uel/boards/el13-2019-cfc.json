@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2019-cfc",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Chelsea's starters, 2019 Europa League final",
+ "brief": "Name the ten outfield players Chelsea started with in the 2019 Europa League final against Arsenal (they won 4-1).",
+ "period": "2019 Europa League final, Baku, 29 May 2019",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Cesar Azpilicueta",
+   "val": "No. 28"
+  },
+  {
+   "label": "CB",
+   "name": "Andreas Christensen",
+   "val": "No. 27"
+  },
+  {
+   "label": "CB",
+   "name": "David Luiz",
+   "val": "No. 30"
+  },
+  {
+   "label": "LB",
+   "name": "Emerson",
+   "val": "No. 33"
+  },
+  {
+   "label": "CM",
+   "name": "N'Golo Kante",
+   "val": "No. 7"
+  },
+  {
+   "label": "CM",
+   "name": "Jorginho",
+   "val": "No. 5"
+  },
+  {
+   "label": "CM",
+   "name": "Mateo Kovacic",
+   "val": "No. 17"
+  },
+  {
+   "label": "RF",
+   "name": "Pedro",
+   "val": "No. 11"
+  },
+  {
+   "label": "CF",
+   "name": "Olivier Giroud",
+   "val": "No. 18"
+  },
+  {
+   "label": "LF",
+   "name": "Eden Hazard",
+   "val": "No. 10"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2019_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2025487/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2018/19)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's. Name spellings differ only in form: No. 33: Wikipedia Emerson Palmieri, UEFA Emerson, Transfermarkt Emerson; No. 11: Wikipedia Pedro, UEFA Pedro Rodriguez, Transfermarkt Pedro."
+}

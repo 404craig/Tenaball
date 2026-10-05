@@ -1,0 +1,72 @@
+{
+ "pick": "cl24",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "2025/26 league phase: the top ten",
+ "brief": "Name the clubs that finished first to tenth in the 36-team league phase of the 2025/26 Champions League. The top eight went straight to the round of 16.",
+ "period": "Champions League 2025/26 league phase (September 2025 to January 2026)",
+ "rows": [
+  {
+   "label": "1st",
+   "name": "Arsenal",
+   "val": "24 pts"
+  },
+  {
+   "label": "2nd",
+   "name": "Bayern Munich",
+   "val": "21 pts"
+  },
+  {
+   "label": "3rd",
+   "name": "Liverpool",
+   "val": "18 pts"
+  },
+  {
+   "label": "4th",
+   "name": "Spurs",
+   "val": "17 pts"
+  },
+  {
+   "label": "5th",
+   "name": "Barcelona",
+   "val": "16 pts"
+  },
+  {
+   "label": "6th",
+   "name": "Chelsea",
+   "val": "16 pts"
+  },
+  {
+   "label": "7th",
+   "name": "Sporting",
+   "val": "16 pts"
+  },
+  {
+   "label": "8th",
+   "name": "Man City",
+   "val": "16 pts"
+  },
+  {
+   "label": "9th",
+   "name": "Real Madrid",
+   "val": "15 pts"
+  },
+  {
+   "label": "10th",
+   "name": "Inter",
+   "val": "15 pts"
+  }
+ ],
+ "notes": {
+  "PSG": "PSG were 11th on 14 points and went on to win the final.",
+  "Newcastle": "Newcastle were 12th on 14 points.",
+  "Juventus": "Juventus were 13th on 13 points.",
+  "Atletico Madrid": "Atletico Madrid were 14th."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_UEFA_Champions_League_league_phase",
+  "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2026 (UEFA match results)"
+ ],
+ "checks": "Table from Wikipedia checked by rebuilding it from all 144 league phase results in UEFA's match data: same points, goals and order. Barcelona, Chelsea, Sporting and Man City all had 16 points and are split by goal difference (+8, +7, +6, +6) then goals scored (Sporting 17, Man City 15); Real Madrid and Inter on 15 by goal difference (+9, +8)."
+}

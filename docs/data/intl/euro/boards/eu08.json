@@ -1,0 +1,55 @@
+{
+ "pick": "eu08",
+ "kind": "open",
+ "type": "person",
+ "level": 1,
+ "title": "Euros final scorers since 1996",
+ "brief": "Name players who scored in a European Championship final since Euro 96. Shoot-out penalties do not count.",
+ "period": "Finals from Euro 96 to Euro 2024 (Euro 2020 final played in 2021)",
+ "names": [
+  "Patrik Berger",
+  "Oliver Bierhoff",
+  "Marco Delvecchio",
+  "Sylvain Wiltord",
+  "David Trezeguet",
+  "Angelos Charisteas",
+  "Fernando Torres",
+  "David Silva",
+  "Jordi Alba",
+  "Juan Mata",
+  "Eder",
+  "Luke Shaw",
+  "Leonardo Bonucci",
+  "Nico Williams",
+  "Cole Palmer",
+  "Mikel Oyarzabal"
+ ],
+ "examples": [
+  "Fernando Torres",
+  "Oliver Bierhoff",
+  "David Trezeguet",
+  "Angelos Charisteas",
+  "Eder",
+  "Luke Shaw",
+  "Leonardo Bonucci",
+  "Cole Palmer",
+  "Mikel Oyarzabal",
+  "Nico Williams"
+ ],
+ "notes": {
+  "Michel Platini": "Michel Platini scored in the 1984 final, before 1996.",
+  "Marco van Basten": "Marco van Basten scored in the 1988 final, before 1996.",
+  "Ruud Gullit": "Ruud Gullit scored in the 1988 final, before 1996.",
+  "John Jensen": "John Jensen scored in the 1992 final, before 1996.",
+  "Kim Vilfort": "Kim Vilfort scored in the 1992 final, before 1996.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo never scored in a Euros final.",
+  "Fernando Torres": "Fernando Torres scored in two finals, 2008 and 2012.",
+  "Oliver Bierhoff": "Oliver Bierhoff scored both of Germany's goals in 1996, the second a golden goal."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "https://github.com/martj42/international_results (goalscorers.csv)",
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics"
+ ],
+ "checks": "Every final's scorers in goalscorers.csv match the Wikipedia list of finals (1996 to 2024), and Shaw and Bonucci (2021, not named in that text) are confirmed by the records page (fastest goal in a final, oldest final scorer). 16 different scorers; Torres scored in two finals."
+}

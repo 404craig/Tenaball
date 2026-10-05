@@ -1,0 +1,74 @@
+{
+ "pick": "cl17",
+ "kind": "ranked",
+ "type": "club",
+ "level": 0,
+ "title": "Most Champions League wins",
+ "brief": "Name the ten clubs that have won the most Champions League matches since 1992/93. Wins after extra time count; shoot-outs count as draws.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards; in 1992/93 and 1993/94 the first and second rounds count, as UEFA counts them",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Real Madrid",
+   "val": "208 wins"
+  },
+  {
+   "label": "2",
+   "name": "Bayern Munich",
+   "val": "192 wins"
+  },
+  {
+   "label": "3",
+   "name": "Barcelona",
+   "val": "186 wins"
+  },
+  {
+   "label": "4",
+   "name": "Man Utd",
+   "val": "127 wins"
+  },
+  {
+   "label": "5",
+   "name": "Juventus",
+   "val": "118 wins"
+  },
+  {
+   "label": "6",
+   "name": "Arsenal",
+   "val": "108 wins"
+  },
+  {
+   "label": "7",
+   "name": "Chelsea",
+   "val": "106 wins"
+  },
+  {
+   "label": "8",
+   "name": "Porto",
+   "val": "101 wins"
+  },
+  {
+   "label": "9",
+   "name": "PSG",
+   "val": "100 wins"
+  },
+  {
+   "label": "10",
+   "name": "Liverpool",
+   "val": "95 wins"
+  }
+ ],
+ "notes": {
+  "AC Milan": "AC Milan are just outside with 94.",
+  "Dortmund": "Dortmund have 87.",
+  "Inter": "Inter have 85.",
+  "Man City": "Man City have 80.",
+  "Atletico Madrid": "Atletico Madrid have 72."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/team-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com team stats, matches_win)",
+  "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=<year> (UEFA match results)",
+  "https://www.transfermarkt.com/uefa-champions-league/ewigeTabelle/pokalwettbewerb/CL/saison_id_von/1992/saison_id_bis/2025/plus/1"
+ ],
+ "checks": "UEFA.com team stats summed over every season, and a recount from every main-tournament result in UEFA's match data, give identical figures. Transfermarkt's all-time table for 1992/93 to 2025/26 has the same top ten in the same order but slightly higher totals for some clubs (Real Madrid 212, Bayern 193, Barcelona 188) because it lists a few more matches than UEFA (AC Milan 211 against UEFA's 207, which matches the rounds Milan actually played); on Transfermarkt's figures AC Milan tie Liverpool on 95."
+}

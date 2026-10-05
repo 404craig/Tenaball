@@ -1,0 +1,97 @@
+{
+ "pick": "el09-2016",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League top scorers 2016/17 to 2025/26",
+ "brief": "Name the top scorer (or a joint top scorer) in the UEFA Cup or Europa League each season from 2016/17 to 2025/26.",
+ "period": "UEFA Cup and Europa League seasons 2016/17 to 2025/26, main competition only",
+ "rows": [
+  {
+   "label": "2016/17",
+   "name": "Edin Dzeko",
+   "val": "8 goals, shared: Edin Dzeko (Roma), Giuliano (Zenit)",
+   "alts": [
+    "Edin Dzeko",
+    "Giuliano"
+   ]
+  },
+  {
+   "label": "2017/18",
+   "name": "Aritz Aduriz",
+   "val": "8 goals, shared: Aritz Aduriz (Athletic Bilbao), Ciro Immobile (Lazio)",
+   "alts": [
+    "Aritz Aduriz",
+    "Ciro Immobile"
+   ]
+  },
+  {
+   "label": "2018/19",
+   "name": "Olivier Giroud",
+   "val": "11 goals, Chelsea"
+  },
+  {
+   "label": "2019/20",
+   "name": "Bruno Fernandes",
+   "val": "8 goals, Sporting and Man Utd"
+  },
+  {
+   "label": "2020/21",
+   "name": "Gerard Moreno",
+   "val": "7 goals, shared: Gerard Moreno (Villarreal), Pizzi (Benfica), Borja Mayoral (Roma), Yusuf Yazici (Lille)",
+   "alts": [
+    "Gerard Moreno",
+    "Pizzi",
+    "Borja Mayoral",
+    "Yusuf Yazici"
+   ]
+  },
+  {
+   "label": "2021/22",
+   "name": "James Tavernier",
+   "val": "7 goals, Rangers"
+  },
+  {
+   "label": "2022/23",
+   "name": "Marcus Rashford",
+   "val": "6 goals, shared: Marcus Rashford (Man Utd), Victor Boniface (Union SG)",
+   "alts": [
+    "Marcus Rashford",
+    "Victor Boniface"
+   ]
+  },
+  {
+   "label": "2023/24",
+   "name": "Pierre-Emerick Aubameyang",
+   "val": "10 goals, Marseille"
+  },
+  {
+   "label": "2024/25",
+   "name": "Bruno Fernandes",
+   "val": "7 goals, shared: Bruno Fernandes (Man Utd), Kasper Hogh (Bodo/Glimt), Ayoub El Kaabi (Olympiacos)",
+   "alts": [
+    "Bruno Fernandes",
+    "Kasper Hogh",
+    "Ayoub El Kaabi"
+   ]
+  },
+  {
+   "label": "2025/26",
+   "name": "Igor Jesus",
+   "val": "7 goals, shared: Igor Jesus (Nottingham Forest), Petar Stanic (Ludogorets)",
+   "alts": [
+    "Igor Jesus",
+    "Petar Stanic"
+   ]
+  }
+ ],
+ "notes": {
+  "Klaas-Jan Huntelaar": "Klaas-Jan Huntelaar never topped a season's list in this window.",
+  "Luka Jovic": "Luka Jovic scored 10 in 2018/19, one behind Giroud."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=14&phase=TOURNAMENT&stats=goals (UEFA.com stats for each season)",
+  "https://www.transfermarkt.com/europa-league/torschuetzenliste/pokalwettbewerb/EL/saison_id/<season>"
+ ],
+ "checks": "Each season's top scorer from UEFA.com's season goal rankings (main competition only: first round onwards to 2008/09, group or league stage onwards from 2009/10, qualifying and play-offs left out), checked against Transfermarkt's season scorer lists; they agree on every season. Ties are shared rows (alts). Most slots for one player: Bruno Fernandes 2, so the 4-slot rule passes."
+}

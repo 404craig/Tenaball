@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2025-tot",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Spurs' starters, 2025 Europa League final",
+ "brief": "Name the ten outfield players Spurs started with in the 2025 Europa League final against Man Utd (they won 1-0).",
+ "period": "2025 Europa League final, Bilbao, 21 May 2025",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Pedro Porro",
+   "val": "No. 23"
+  },
+  {
+   "label": "CB",
+   "name": "Cristian Romero",
+   "val": "No. 17"
+  },
+  {
+   "label": "CB",
+   "name": "Micky van de Ven",
+   "val": "No. 37"
+  },
+  {
+   "label": "LB",
+   "name": "Destiny Udogie",
+   "val": "No. 13"
+  },
+  {
+   "label": "CM",
+   "name": "Pape Matar Sarr",
+   "val": "No. 29"
+  },
+  {
+   "label": "CM",
+   "name": "Yves Bissouma",
+   "val": "No. 8"
+  },
+  {
+   "label": "CM",
+   "name": "Rodrigo Bentancur",
+   "val": "No. 30"
+  },
+  {
+   "label": "RF",
+   "name": "Brennan Johnson",
+   "val": "No. 22"
+  },
+  {
+   "label": "CF",
+   "name": "Dominic Solanke",
+   "val": "No. 19"
+  },
+  {
+   "label": "LF",
+   "name": "Richarlison",
+   "val": "No. 9"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2044465/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2024/25)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's. Name spellings differ only in form: No. 29: Wikipedia Pape Matar Sarr, UEFA Pape Sarr, Transfermarkt Pape Matar Sarr."
+}

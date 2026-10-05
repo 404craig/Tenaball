@@ -1,0 +1,71 @@
+{
+ "pick": "cl26-2007-liverpool",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Liverpool's 2007 final XI",
+ "brief": "Name the ten outfield players who started for Liverpool against AC Milan in the 2007 Champions League final (23 May 2007), when they lost 2-1. The goalkeeper (Pepe Reina) is left out.",
+ "period": "Champions League final 2007 (2006/07 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Steve Finnan",
+   "val": "No. 3"
+  },
+  {
+   "label": "CB",
+   "name": "Jamie Carragher",
+   "val": "No. 23"
+  },
+  {
+   "label": "CB",
+   "name": "Daniel Agger",
+   "val": "No. 5"
+  },
+  {
+   "label": "LB",
+   "name": "John Arne Riise",
+   "val": "No. 6"
+  },
+  {
+   "label": "DM",
+   "name": "Xabi Alonso",
+   "val": "No. 14"
+  },
+  {
+   "label": "DM",
+   "name": "Javier Mascherano",
+   "val": "No. 20"
+  },
+  {
+   "label": "RM",
+   "name": "Jermaine Pennant",
+   "val": "No. 16"
+  },
+  {
+   "label": "LM",
+   "name": "Bolo Zenden",
+   "val": "No. 32"
+  },
+  {
+   "label": "AM",
+   "name": "Steven Gerrard",
+   "val": "No. 8"
+  },
+  {
+   "label": "CF",
+   "name": "Dirk Kuyt",
+   "val": "No. 18"
+  }
+ ],
+ "notes": {
+  "Harry Kewell": "Harry Kewell came on as a substitute in the 2007 final, so he did not start.",
+  "Peter Crouch": "Peter Crouch came on as a substitute in the 2007 final, so he did not start.",
+  "Alvaro Arbeloa": "Alvaro Arbeloa came on as a substitute in the 2007 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2007_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/68267"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

@@ -1,0 +1,67 @@
+{
+ "pick": "el03-2022",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League finalists, 2022 to 2026",
+ "brief": "Name both clubs in each UEFA Cup final (the Europa League final from 2010).",
+ "period": "Europa League finals, 2022 to 2026",
+ "rows": [
+  {
+   "label": "2022 winners",
+   "name": "Eintracht Frankfurt",
+   "val": "1-1 after extra time"
+  },
+  {
+   "label": "2022 runners-up",
+   "name": "Rangers",
+   "val": ""
+  },
+  {
+   "label": "2023 winners",
+   "name": "Sevilla",
+   "val": "1-1 after extra time"
+  },
+  {
+   "label": "2023 runners-up",
+   "name": "Roma",
+   "val": ""
+  },
+  {
+   "label": "2024 winners",
+   "name": "Atalanta",
+   "val": "3-0"
+  },
+  {
+   "label": "2024 runners-up",
+   "name": "Leverkusen",
+   "val": ""
+  },
+  {
+   "label": "2025 winners",
+   "name": "Spurs",
+   "val": "1-0"
+  },
+  {
+   "label": "2025 runners-up",
+   "name": "Man Utd",
+   "val": ""
+  },
+  {
+   "label": "2026 winners",
+   "name": "Aston Villa",
+   "val": "3-0"
+  },
+  {
+   "label": "2026 runners-up",
+   "name": "Freiburg",
+   "val": ""
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

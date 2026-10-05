@@ -1,0 +1,67 @@
+{
+ "pick": "el03-2002",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League finalists, 2002 to 2006",
+ "brief": "Name both clubs in each UEFA Cup final (the Europa League final from 2010).",
+ "period": "UEFA Cup and Europa League finals, 2002 to 2006",
+ "rows": [
+  {
+   "label": "2002 winners",
+   "name": "Feyenoord",
+   "val": "3-2"
+  },
+  {
+   "label": "2002 runners-up",
+   "name": "Dortmund",
+   "val": ""
+  },
+  {
+   "label": "2003 winners",
+   "name": "Porto",
+   "val": "3-2 after extra time"
+  },
+  {
+   "label": "2003 runners-up",
+   "name": "Celtic",
+   "val": ""
+  },
+  {
+   "label": "2004 winners",
+   "name": "Valencia",
+   "val": "2-0"
+  },
+  {
+   "label": "2004 runners-up",
+   "name": "Marseille",
+   "val": ""
+  },
+  {
+   "label": "2005 winners",
+   "name": "CSKA Moscow",
+   "val": "3-1"
+  },
+  {
+   "label": "2005 runners-up",
+   "name": "Sporting",
+   "val": ""
+  },
+  {
+   "label": "2006 winners",
+   "name": "Sevilla",
+   "val": "4-0"
+  },
+  {
+   "label": "2006 runners-up",
+   "name": "Middlesbrough",
+   "val": ""
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

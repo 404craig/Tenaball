@@ -1,0 +1,84 @@
+{
+ "pick": "cl22",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Champions League top scorers 2025/26",
+ "brief": "Name the ten top scorers in the 2025/26 Champions League (league phase onwards).",
+ "period": "Champions League 2025/26, league phase to the final on 30 May 2026; qualifying rounds not counted",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "15 goals"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "14 goals"
+  },
+  {
+   "label": "3",
+   "name": "Khvicha Kvaratskhelia",
+   "val": "10 goals"
+  },
+  {
+   "label": "4",
+   "name": "Julian Alvarez",
+   "val": "10 goals"
+  },
+  {
+   "label": "5",
+   "name": "Anthony Gordon",
+   "val": "10 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ousmane Dembele",
+   "val": "8 goals"
+  },
+  {
+   "label": "7",
+   "name": "Erling Haaland",
+   "val": "8 goals"
+  },
+  {
+   "label": "8",
+   "name": "Luis Diaz",
+   "val": "7 goals"
+  },
+  {
+   "label": "9",
+   "name": "Victor Osimhen",
+   "val": "7 goals"
+  },
+  {
+   "label": "10",
+   "name": "Vitinha",
+   "val": "6 goals",
+   "pool": "six",
+   "alts": [
+    "Vitinha",
+    "Gabriel Martinelli",
+    "Alexander Sorloth",
+    "Harvey Barnes",
+    "Jens Petter Hauge",
+    "Fermin Lopez",
+    "Lamine Yamal"
+   ]
+  }
+ ],
+ "notes": {
+  "Vinicius Junior": "Vinicius Junior scored 5.",
+  "Michael Olise": "Michael Olise scored 5.",
+  "Desire Doue": "Desire Doue scored 5.",
+  "Viktor Gyokeres": "Viktor Gyokeres scored 5.",
+  "Dominik Szoboszlai": "Dominik Szoboszlai scored 5.",
+  "Marcus Rashford": "Marcus Rashford scored 5."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=2026&stats=goals",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/2025"
+ ],
+ "checks": "UEFA.com and Transfermarkt agree on every figure. Seven players scored 6, so any of them fills tenth place."
+}

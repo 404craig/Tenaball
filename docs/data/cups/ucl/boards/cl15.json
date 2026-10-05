@@ -1,0 +1,81 @@
+{
+ "pick": "cl15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Managers with the most Champions League games",
+ "brief": "Name the ten managers who have taken charge of the most Champions League games since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards; in 1992/93 and 1993/94 the first and second rounds count; games a manager missed through a touchline ban still count for him",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Carlo Ancelotti",
+   "val": "218 games"
+  },
+  {
+   "label": "2",
+   "name": "Alex Ferguson",
+   "val": "194 games"
+  },
+  {
+   "label": "3",
+   "name": "Pep Guardiola",
+   "val": "191 games"
+  },
+  {
+   "label": "4",
+   "name": "Arsene Wenger",
+   "val": "185 games"
+  },
+  {
+   "label": "5",
+   "name": "Jose Mourinho",
+   "val": "160 games"
+  },
+  {
+   "label": "6",
+   "name": "Diego Simeone",
+   "val": "131 games"
+  },
+  {
+   "label": "7",
+   "name": "Mircea Lucescu",
+   "val": "115 games"
+  },
+  {
+   "label": "8",
+   "name": "Jurgen Klopp",
+   "val": "102 games"
+  },
+  {
+   "label": "9",
+   "name": "Massimiliano Allegri",
+   "val": "100 games"
+  },
+  {
+   "label": "10",
+   "name": "Ottmar Hitzfeld",
+   "val": "95 games",
+   "pool": "ninetyfive",
+   "alts": [
+    "Ottmar Hitzfeld",
+    "Louis van Gaal",
+    "Rafael Benitez"
+   ]
+  }
+ ],
+ "notes": {
+  "Fabio Capello": "Fabio Capello is next with 86.",
+  "Luis Enrique": "Luis Enrique has 79.",
+  "Marcello Lippi": "Marcello Lippi has 76.",
+  "Luciano Spalletti": "Luciano Spalletti has 74.",
+  "Thomas Tuchel": "Thomas Tuchel has 67.",
+  "Zinedine Zidane": "Zinedine Zidane has 53."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/<coach>/leistungsdatenDetail/trainer/<id>/saison_id/0/wettbewerb_id/CL (Transfermarkt list of every Champions League game for each manager)",
+  "https://match.uefa.com/v5/matches/<id>/lineups (UEFA line-ups, which name the coach on the bench, mostly from 2008/09)",
+  "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics (All-time managerial appearances)"
+ ],
+ "checks": "Game lists from Transfermarkt, each game matched to UEFA's results. Where UEFA line-ups name the coach (most games from 2008/09), they agree with Transfermarkt except games under a touchline ban, where UEFA names the assistant. Wikipedia's table (to September 2026) has the same top nine but counts differently: it leaves out banned games (Klopp 100, Simeone 128), counts 1993/94 first and second rounds as qualifying (Ferguson 190 at Man Utd) and includes 2026/27 games and pre-1992 European Cup games (Wenger, Hitzfeld). Hitzfeld, Van Gaal and Benitez share tenth on 95."
+}

@@ -1,15 +1,22 @@
 1860 Munich
 AC Milan
+APOEL
+AZ Alkmaar
 Aberdeen
+Airdrieonians
 Ajaccio
 Ajax
+Al Hilal
+Al Nassr
 Alaves
 Albacete
 Alemannia Aachen
 Almeria
 Amiens
 Ancona
+Anderlecht
 Angers
+Arbroath
 Arles
 Arminia Bielefeld
 Arsenal
@@ -20,16 +27,21 @@ Athletic Bilbao
 Atletico Madrid
 Augsburg
 Auxerre
+Ayr United
+BATE Borisov
 Barcelona
 Bari
 Barnsley
+Basel
 Bastia
 Bayern Munich
 Benevento
 Benfica
+Besiktas
 Birmingham
 Blackburn
 Blackpool
+Boca Juniors
 Bochum
 Bologna
 Bolton
@@ -37,11 +49,14 @@ Bordeaux
 Boulogne
 Bournemouth
 Bradford
+Braga
 Brentford
 Brescia
 Brest
 Brighton
+Bristol City
 Burnley
+CSKA Moscow
 Cadiz
 Caen
 Cagliari
@@ -57,10 +72,12 @@ Chateauroux
 Chelsea
 Chievo
 Clermont
+Club America
 Club Brugge
 Como
 Compostela
 Cordoba
+Cove Rangers
 Coventry
 Cremonese
 Crotone
@@ -69,12 +86,14 @@ Darmstadt
 Deportivo
 Derby
 Dijon
+Dinamo Zagreb
 Dortmund
 Dundee
 Dundee United
 Dunfermline
 Dynamo Dresden
 Dynamo Kyiv
+Dynamo Moscow
 Eibar
 Eintracht Braunschweig
 Eintracht Frankfurt
@@ -85,9 +104,12 @@ Espanyol
 Everton
 Evian
 Extremadura
+FC Copenhagen
 Falkirk
+Fenerbahce
 Feyenoord
 Fiorentina
+Flamengo
 Foggia
 Fortuna Dusseldorf
 Freiburg
@@ -95,12 +117,14 @@ Frosinone
 Fulham
 GFC Ajaccio
 Galatasaray
+Genk
 Genoa
 Getafe
 Gimnastic Tarragona
 Girona
 Gladbach
 Granada
+Greenock Morton
 Grenoble
 Gretna
 Greuther Furth
@@ -122,6 +146,7 @@ Huesca
 Hull
 Ingolstadt
 Inter
+Inter Miami
 Inverness CT
 Ipswich
 Istres
@@ -131,6 +156,7 @@ Kaiserslautern
 Karlsruher SC
 Kilmarnock
 Koln
+LA Galaxy
 Las Palmas
 Lazio
 Le Havre
@@ -138,6 +164,7 @@ Le Mans
 Lecce
 Leeds
 Leganes
+Legia Warsaw
 Leicester
 Lens
 Levante
@@ -148,10 +175,13 @@ Livingston
 Livorno
 Lleida
 Logrones
+Lokomotiv Moscow
 Lorient
+Ludogorets
 Luton
 Lyon
 MSV Duisburg
+Maccabi Haifa
 Mainz
 Malaga
 Mallorca
@@ -164,7 +194,9 @@ Merida
 Messina
 Metz
 Middlesbrough
+Millwall
 Modena
+Molde
 Monaco
 Montpellier
 Monza
@@ -183,6 +215,7 @@ Nurnberg
 Oldham
 Olympiacos
 Osasuna
+PAOK
 PSG
 PSV
 Paderborn
@@ -197,10 +230,15 @@ Perugia
 Pescara
 Piacenza
 Pisa
+Plymouth
 Porto
 Portsmouth
+Preston
 QPR
+Queen of the South
+Queen's Park
 RB Leipzig
+RB Salzburg
 Racing Santander
 Raith Rovers
 Rangers
@@ -214,12 +252,15 @@ Real Sociedad
 Real Valladolid
 Real Zaragoza
 Recreativo Huelva
+Red Bull Salzburg
 Red Star Belgrade
 Reggiana
 Reggina
 Reims
 Rennes
+River Plate
 Roma
+Rosenborg
 Ross County
 SPAL
 SSV Ulm
@@ -227,6 +268,7 @@ Saint-Etienne
 Salamanca
 Salernitana
 Sampdoria
+Santos
 Sassuolo
 Schalke
 Sedan
@@ -235,8 +277,11 @@ Shakhtar
 Sheffield Utd
 Sheffield Wed
 Siena
+Slavia Prague
 Sochaux
 Southampton
+Sparta Prague
+Spartak Moscow
 Spezia
 Sporting
 Sporting Gijon
@@ -244,6 +289,7 @@ Spurs
 St Johnstone
 St Mirren
 St Pauli
+Standard Liege
 Steaua Bucharest
 Stoke
 Strasbourg
@@ -256,6 +302,7 @@ Torino
 Toulouse
 Treviso
 Troyes
+Twente
 Udinese
 Union Berlin
 Unterhaching
@@ -264,6 +311,7 @@ Valenciennes
 Venezia
 Verona
 Vicenza
+Viktoria Plzen
 Villarreal
 Watford
 Wattenscheid
@@ -274,4 +322,9 @@ Wigan
 Wimbledon
 Wolfsburg
 Wolves
+Wrexham
 Xerez
+Young Boys
+Zenit St Petersburg
+Dnipro
+Midtjylland

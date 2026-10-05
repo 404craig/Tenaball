@@ -1,0 +1,74 @@
+{
+ "pick": "cl26-2012-chelsea",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Chelsea's 2012 final XI",
+ "brief": "Name the ten outfield players who started for Chelsea against Bayern Munich in the 2012 Champions League final (19 May 2012), when they drew 1-1 and won on penalties. The goalkeeper (Petr Cech) is left out.",
+ "period": "Champions League final 2012 (2011/12 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Jose Bosingwa",
+   "val": "No. 17"
+  },
+  {
+   "label": "CB",
+   "name": "David Luiz",
+   "val": "No. 4"
+  },
+  {
+   "label": "CB",
+   "name": "Gary Cahill",
+   "val": "No. 24"
+  },
+  {
+   "label": "LB",
+   "name": "Ashley Cole",
+   "val": "No. 3"
+  },
+  {
+   "label": "DM",
+   "name": "John Obi Mikel",
+   "val": "No. 12"
+  },
+  {
+   "label": "CM",
+   "name": "Frank Lampard",
+   "val": "No. 8"
+  },
+  {
+   "label": "RW",
+   "name": "Salomon Kalou",
+   "val": "No. 21"
+  },
+  {
+   "label": "AM",
+   "name": "Juan Mata",
+   "val": "No. 10"
+  },
+  {
+   "label": "LW",
+   "name": "Ryan Bertrand",
+   "val": "No. 34"
+  },
+  {
+   "label": "CF",
+   "name": "Didier Drogba",
+   "val": "No. 11"
+  }
+ ],
+ "notes": {
+  "Florent Malouda": "Florent Malouda came on as a substitute in the 2012 final, so he did not start.",
+  "Fernando Torres": "Fernando Torres came on as a substitute in the 2012 final, so he did not start.",
+  "John Terry": "John Terry was suspended for the 2012 final.",
+  "Branislav Ivanovic": "Branislav Ivanovic was suspended for the 2012 final.",
+  "Ramires": "Ramires was suspended for the 2012 final.",
+  "Raul Meireles": "Raul Meireles was suspended for the 2012 final."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2012_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/2208062"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

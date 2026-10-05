@@ -1,0 +1,92 @@
+{
+ "pick": "cl08-real",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Real Madrid's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for Real Madrid since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "105 goals"
+  },
+  {
+   "label": "2",
+   "name": "Karim Benzema",
+   "val": "78 goals"
+  },
+  {
+   "label": "3",
+   "name": "Raul",
+   "val": "66 goals"
+  },
+  {
+   "label": "4",
+   "name": "Vinicius Junior",
+   "val": "34 goals"
+  },
+  {
+   "label": "5",
+   "name": "Rodrygo",
+   "val": "26 goals"
+  },
+  {
+   "label": "6",
+   "name": "Kylian Mbappe",
+   "val": "22 goals"
+  },
+  {
+   "label": "7",
+   "name": "Fernando Morientes",
+   "val": "17 goals"
+  },
+  {
+   "label": "8",
+   "name": "Roberto Carlos",
+   "val": "16 goals",
+   "pool": "sixteen",
+   "alts": [
+    "Roberto Carlos",
+    "Guti",
+    "Luis Figo",
+    "Gareth Bale"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Guti",
+   "val": "16 goals",
+   "pool": "sixteen",
+   "alts": [
+    "Roberto Carlos",
+    "Guti",
+    "Luis Figo",
+    "Gareth Bale"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Luis Figo",
+   "val": "16 goals",
+   "pool": "sixteen",
+   "alts": [
+    "Roberto Carlos",
+    "Guti",
+    "Luis Figo",
+    "Gareth Bale"
+   ]
+  }
+ ],
+ "notes": {
+  "Ivan Helguera": "Ivan Helguera is just outside with 15.",
+  "Sergio Ramos": "Sergio Ramos is just outside with 15.",
+  "Ruud van Nistelrooy": "Ruud van Nistelrooy scored 13 for Real Madrid."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs. Four players share eighth on 16, so any three of them fill places eight to ten."
+}

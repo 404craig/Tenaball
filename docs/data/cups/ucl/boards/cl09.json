@@ -1,0 +1,75 @@
+{
+ "pick": "cl09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "English clubs' Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for English clubs since 1992/93 (goals for more than one English club add together).",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Mohamed Salah",
+   "val": "47 goals"
+  },
+  {
+   "label": "2",
+   "name": "Didier Drogba",
+   "val": "36 goals"
+  },
+  {
+   "label": "3",
+   "name": "Sergio Aguero",
+   "val": "36 goals"
+  },
+  {
+   "label": "4",
+   "name": "Thierry Henry",
+   "val": "35 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ruud van Nistelrooy",
+   "val": "35 goals"
+  },
+  {
+   "label": "6",
+   "name": "Erling Haaland",
+   "val": "34 goals"
+  },
+  {
+   "label": "7",
+   "name": "Wayne Rooney",
+   "val": "30 goals"
+  },
+  {
+   "label": "8",
+   "name": "Ryan Giggs",
+   "val": "28 goals"
+  },
+  {
+   "label": "9",
+   "name": "Raheem Sterling",
+   "val": "27 goals"
+  },
+  {
+   "label": "10",
+   "name": "Gabriel Jesus",
+   "val": "26 goals"
+  }
+ ],
+ "notes": {
+  "Robin van Persie": "Robin van Persie is just outside with 25 (18 for Arsenal, 7 for Man Utd).",
+  "Paul Scholes": "Paul Scholes scored 24.",
+  "Sadio Mane": "Sadio Mane scored 24.",
+  "Frank Lampard": "Frank Lampard scored 23.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo scored 21 for Man Utd.",
+  "Harry Kane": "Harry Kane scored 21 for Spurs.",
+  "Steven Gerrard": "Steven Gerrard scored 21."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Sum of goals for Man Utd, Arsenal, Chelsea, Liverpool, Man City, Spurs, Newcastle, Leeds, Leicester, Aston Villa and Blackburn in every season, from UEFA.com season stats and Transfermarkt season scorer lists; both agree on every figure. Sterling is 24 for Man City and 3 for Chelsea; Jesus is 20 for Man City and 6 for Arsenal."
+}

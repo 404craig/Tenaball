@@ -1,0 +1,167 @@
+{
+ "pick": "el06",
+ "kind": "ranked",
+ "type": "club",
+ "level": 0,
+ "title": "Most Europa League titles since 2001",
+ "brief": "Name the clubs that have won the UEFA Cup or Europa League the most times since 2000/01. 12 clubs have won it once, so any 6 of them fill the last 6 places.",
+ "period": "UEFA Cup and Europa League finals, 2001 to 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Sevilla",
+   "val": "7 titles (2006, 2007, 2014, 2015, 2016, 2020, 2023)"
+  },
+  {
+   "label": "2",
+   "name": "Atletico Madrid",
+   "val": "3 titles (2010, 2012, 2018)"
+  },
+  {
+   "label": "3",
+   "name": "Chelsea",
+   "val": "2 titles (2013, 2019)"
+  },
+  {
+   "label": "4",
+   "name": "Porto",
+   "val": "2 titles (2003, 2011)"
+  },
+  {
+   "label": "5",
+   "name": "Aston Villa",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  },
+  {
+   "label": "6",
+   "name": "Atalanta",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  },
+  {
+   "label": "7",
+   "name": "CSKA Moscow",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  },
+  {
+   "label": "8",
+   "name": "Eintracht Frankfurt",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  },
+  {
+   "label": "9",
+   "name": "Feyenoord",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  },
+  {
+   "label": "10",
+   "name": "Liverpool",
+   "pool": "one",
+   "alts": [
+    "Aston Villa",
+    "Atalanta",
+    "CSKA Moscow",
+    "Eintracht Frankfurt",
+    "Feyenoord",
+    "Liverpool",
+    "Man Utd",
+    "Shakhtar",
+    "Spurs",
+    "Valencia",
+    "Villarreal",
+    "Zenit St Petersburg"
+   ],
+   "val": "1 title"
+  }
+ ],
+ "notes": {
+  "Inter": "Inter won the UEFA Cup three times, all before 2000/01, and lost the 2020 final.",
+  "Juventus": "Juventus won the UEFA Cup three times, all before 2000/01.",
+  "Parma": "Parma won it in 1995 and 1999, before this board starts.",
+  "Galatasaray": "Galatasaray won it in 2000, the season before this board starts.",
+  "Benfica": "Benfica lost the 2013 and 2014 finals.",
+  "Marseille": "Marseille lost the 2004 and 2018 finals.",
+  "Rangers": "Rangers lost the 2008 and 2022 finals.",
+  "Arsenal": "Arsenal lost the 2000 and 2019 finals."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://www.transfermarkt.com/europa-league/erfolge/pokalwettbewerb/EL",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Titles counted from the 26 finals in uel_finals.csv (Wikipedia, Transfermarkt and UEFA agree on every winner); the totals match Transfermarkt's record-winner table once titles before 2001 are taken off (Liverpool 3 all-time, 1 since 2001)."
+}

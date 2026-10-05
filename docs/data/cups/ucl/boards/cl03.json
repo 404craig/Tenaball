@@ -1,0 +1,90 @@
+{
+ "pick": "cl03",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most Champions League hat-tricks",
+ "brief": "Name the ten players with the most Champions League hat-tricks (three or more goals in a game) since 1992/93. Tenth place is shared by everyone on two.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "8 hat-tricks"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "8 hat-tricks"
+  },
+  {
+   "label": "3",
+   "name": "Robert Lewandowski",
+   "val": "6 hat-tricks"
+  },
+  {
+   "label": "4",
+   "name": "Kylian Mbappe",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "5",
+   "name": "Karim Benzema",
+   "val": "4 hat-tricks"
+  },
+  {
+   "label": "6",
+   "name": "Filippo Inzaghi",
+   "val": "3 hat-tricks"
+  },
+  {
+   "label": "7",
+   "name": "Mario Gomez",
+   "val": "3 hat-tricks"
+  },
+  {
+   "label": "8",
+   "name": "Luiz Adriano",
+   "val": "3 hat-tricks"
+  },
+  {
+   "label": "9",
+   "name": "Neymar",
+   "val": "3 hat-tricks"
+  },
+  {
+   "label": "10",
+   "name": "Marco Simone",
+   "val": "2 hat-tricks",
+   "pool": "two",
+   "alts": [
+    "Marco Simone",
+    "Andriy Shevchenko",
+    "Ruud van Nistelrooy",
+    "Andy Cole",
+    "Michael Owen",
+    "Roy Makaay",
+    "Didier Drogba",
+    "Adriano",
+    "Samuel Eto'o",
+    "Roberto Soldado",
+    "Sergio Aguero",
+    "Olivier Giroud",
+    "Harry Kane",
+    "Gabriel Jesus",
+    "Erling Haaland"
+   ]
+  }
+ ],
+ "notes": {
+  "Raul": "Raul scored one Champions League hat-trick.",
+  "Thierry Henry": "Thierry Henry scored one Champions League hat-trick.",
+  "Mohamed Salah": "Mohamed Salah scored one Champions League hat-trick.",
+  "Vinicius Junior": "Vinicius Junior scored one Champions League hat-trick."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_hat-tricks",
+  "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=<year> (UEFA match data with every scorer, 1992/93 to 2025/26)"
+ ],
+ "checks": "Wikipedia lists 173 hat-tricks to 9 September 2026; two of them (Demirovic and Ferran Torres) came in 2026/27, leaving 171 to the end of 2025/26. Counting three or more goals per player per game from UEFA match events gives the same 171 and the same count for every player above. Fifteen players have two: Marco Simone, Andriy Shevchenko, Ruud van Nistelrooy, Andy Cole, Michael Owen, Roy Makaay, Didier Drogba, Adriano, Samuel Eto'o, Roberto Soldado, Sergio Aguero, Olivier Giroud, Harry Kane, Gabriel Jesus, Erling Haaland."
+}

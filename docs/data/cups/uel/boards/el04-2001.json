@@ -1,0 +1,68 @@
+{
+ "pick": "el04-2001",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League winning managers, 2001 to 2010",
+ "brief": "Name the manager who won the UEFA Cup (the Europa League from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2001 to 2010",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Gerard Houllier",
+   "val": "Liverpool"
+  },
+  {
+   "label": "2002",
+   "name": "Bert van Marwijk",
+   "val": "Feyenoord"
+  },
+  {
+   "label": "2003",
+   "name": "Jose Mourinho",
+   "val": "Porto"
+  },
+  {
+   "label": "2004",
+   "name": "Rafael Benitez",
+   "val": "Valencia"
+  },
+  {
+   "label": "2005",
+   "name": "Valery Gazzaev",
+   "val": "CSKA Moscow"
+  },
+  {
+   "label": "2006",
+   "name": "Juande Ramos",
+   "val": "Sevilla"
+  },
+  {
+   "label": "2007",
+   "name": "Juande Ramos",
+   "val": "Sevilla"
+  },
+  {
+   "label": "2008",
+   "name": "Dick Advocaat",
+   "val": "Zenit St Petersburg"
+  },
+  {
+   "label": "2009",
+   "name": "Mircea Lucescu",
+   "val": "Shakhtar"
+  },
+  {
+   "label": "2010",
+   "name": "Quique Sanchez Flores",
+   "val": "Atletico Madrid"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://www.transfermarkt.com/europa-league/erfolge/pokalwettbewerb/EL",
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals (each final's own article, manager in the line-ups)",
+  "https://match.uefa.com/v5/matches/<id>/lineups (UEFA's line-ups feed, coach where given)"
+ ],
+ "checks": "Transfermarkt's list of winning coaches against the manager named in each final's Wikipedia article; UEFA's line-ups feed names the coach for most finals from 2008 and agrees, except 2018 where it names Simeone's assistant German Burgos (Simeone was banned from the touchline)."
+}

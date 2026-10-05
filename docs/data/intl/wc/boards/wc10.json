@@ -1,0 +1,89 @@
+{
+ "pick": "wc10",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most World Cup games since 1994",
+ "brief": "Name the ten players with the most World Cup finals appearances from 1994 to 2026.",
+ "period": "World Cups 1994 to 2026. Games before 1994 don't count.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "34 games"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "27 games"
+  },
+  {
+   "label": "3",
+   "name": "Miroslav Klose",
+   "val": "24 games"
+  },
+  {
+   "label": "4",
+   "name": "Manuel Neuer",
+   "val": "23 games"
+  },
+  {
+   "label": "5",
+   "name": "Luka Modric",
+   "val": "23 games"
+  },
+  {
+   "label": "6",
+   "name": "Kylian Mbappe",
+   "val": "22 games"
+  },
+  {
+   "label": "7",
+   "name": "Ivan Perisic",
+   "val": "21 games"
+  },
+  {
+   "label": "8",
+   "name": "Nicolas Otamendi",
+   "val": "21 games"
+  },
+  {
+   "label": "9",
+   "name": "Thibaut Courtois",
+   "val": "21 games"
+  },
+  {
+   "label": "10",
+   "name": "Cafu",
+   "val": "20 games",
+   "pool": "a20",
+   "alts": [
+    "Cafu",
+    "Javier Mascherano",
+    "Philipp Lahm",
+    "Bastian Schweinsteiger",
+    "Hugo Lloris"
+   ]
+  }
+ ],
+ "notes": {
+  "Lothar Matthaus": "Lothar Matthaus played 25 World Cup games, but most came in 1982, 1986 and 1990, so he is well short here.",
+  "Paolo Maldini": "Paolo Maldini played 23 World Cup games, but 7 came in 1990, so 16 count here.",
+  "Diego Maradona": "Diego Maradona played 21 World Cup games, almost all before 1994.",
+  "Thomas Muller": "Thomas Muller has 19, just outside.",
+  "Jordan Pickford": "Jordan Pickford has 19, just outside.",
+  "Ousmane Dembele": "Ousmane Dembele has 19, just outside.",
+  "Ronaldo Nazario": "Ronaldo has 19, just outside.",
+  "Antoine Griezmann": "Antoine Griezmann has 19, just outside.",
+  "Per Mertesacker": "Per Mertesacker has 19, just outside.",
+  "Fernando Muslera": "Fernando Muslera has 19, just outside.",
+  "Mateo Kovacic": "Mateo Kovacic has 19, just outside.",
+  "Rafael Marquez": "Rafael Marquez has 19, just outside."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/weltmeisterschaft/rekordspieler/pokalwettbewerb/FIWC",
+  "https://theanalyst.com/articles/most-world-cup-appearances-by-a-player (Opta, 20 July 2026)",
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics#Most_appearances"
+ ],
+ "checks": "All-time appearance totals agree between Transfermarkt and Opta Analyst's list (updated after the 2026 final) for every player on 20 or more; Wikipedia confirms Messi's 34. Pre-1994 games removed: Maldini 7 in 1990 (Opta's text: all seven of Italy's matches). Matthaus (25: two cameos in 1982 and every minute of 1990 per Opta, plus 1986) and Maradona (21, 1982 to 1994) fall well below 20 once pre-1994 games go; Seeler, Zmuda and Lato played only before 1994. Five players on 20 share the last place. Players at 19 come from Transfermarkt only."
+}

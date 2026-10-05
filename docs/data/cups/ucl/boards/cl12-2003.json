@@ -1,0 +1,96 @@
+{
+ "pick": "cl12-2003",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Winning captains 2003 to 2012",
+ "brief": "Name the captain of the Champions League winners in each final from 2003 to 2012: the player who wore the armband at kick-off.",
+ "period": "Champions League finals 2003 to 2012",
+ "rows": [
+  {
+   "label": "2003",
+   "name": "Paolo Maldini",
+   "val": "AC Milan"
+  },
+  {
+   "label": "2004",
+   "name": "Jorge Costa",
+   "val": "Porto"
+  },
+  {
+   "label": "2005",
+   "name": "Steven Gerrard",
+   "val": "Liverpool"
+  },
+  {
+   "label": "2006",
+   "name": "Carles Puyol",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2007",
+   "name": "Paolo Maldini",
+   "val": "AC Milan"
+  },
+  {
+   "label": "2008",
+   "name": "Rio Ferdinand",
+   "val": "Man Utd"
+  },
+  {
+   "label": "2009",
+   "name": "Carles Puyol",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2010",
+   "name": "Javier Zanetti",
+   "val": "Inter"
+  },
+  {
+   "label": "2011",
+   "name": "Xavi",
+   "val": "Barcelona"
+  },
+  {
+   "label": "2012",
+   "name": "Frank Lampard",
+   "val": "Chelsea"
+  }
+ ],
+ "notes": {
+  "Didier Deschamps": "Didier Deschamps captained the winners in 1993, outside this board's years.",
+  "Mauro Tassotti": "Mauro Tassotti captained the winners in 1994, outside this board's years.",
+  "Danny Blind": "Danny Blind captained the winners in 1995, outside this board's years.",
+  "Gianluca Vialli": "Gianluca Vialli captained the winners in 1996, outside this board's years.",
+  "Matthias Sammer": "Matthias Sammer captained the winners in 1997, outside this board's years.",
+  "Manolo Sanchis": "Manolo Sanchis captained the winners in 1998, outside this board's years.",
+  "Peter Schmeichel": "Peter Schmeichel captained the winners in 1999, outside this board's years.",
+  "Fernando Redondo": "Fernando Redondo captained the winners in 2000, outside this board's years.",
+  "Stefan Effenberg": "Stefan Effenberg captained the winners in 2001, outside this board's years.",
+  "Fernando Hierro": "Fernando Hierro captained the winners in 2002, outside this board's years.",
+  "Philipp Lahm": "Philipp Lahm captained the winners in 2013, outside this board's years.",
+  "Iker Casillas": "Iker Casillas captained the winners in 2014, outside this board's years.",
+  "Andres Iniesta": "Andres Iniesta captained the winners in 2015, outside this board's years.",
+  "Sergio Ramos": "Sergio Ramos captained the winners in 2016 and 2017 and 2018, outside this board's years.",
+  "Jordan Henderson": "Jordan Henderson captained the winners in 2019, outside this board's years.",
+  "Manuel Neuer": "Manuel Neuer captained the winners in 2020, outside this board's years.",
+  "Cesar Azpilicueta": "Cesar Azpilicueta captained the winners in 2021, outside this board's years.",
+  "Karim Benzema": "Karim Benzema captained the winners in 2022, outside this board's years.",
+  "Ilkay Gundogan": "Ilkay Gundogan captained the winners in 2023, outside this board's years.",
+  "Nacho": "Nacho captained the winners in 2024, outside this board's years.",
+  "Marquinhos": "Marquinhos captained the winners in 2025 and 2026, outside this board's years.",
+  "Rio Ferdinand": "Rio Ferdinand captained Man Utd in the 2008 final and lifted the trophy with Ryan Giggs, who came on.",
+  "Xavi": "Xavi started the 2011 final as Barcelona captain; Carles Puyol came on late and Eric Abidal lifted the trophy.",
+  "Frank Lampard": "Frank Lampard captained Chelsea in the 2012 final because John Terry was suspended.",
+  "Carles Puyol": "Puyol came on in the 2011 final, but Xavi started it as captain.",
+  "Eric Abidal": "Abidal lifted the trophy in 2011, but Xavi was Barcelona's captain on the team sheet.",
+  "Ryan Giggs": "Giggs lifted the trophy with Rio Ferdinand in 2008, but Ferdinand started the final as captain.",
+  "John Terry": "Terry was suspended for the 2012 final; Lampard captained Chelsea."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2003_UEFA_Champions_League_final (and each final in the window)",
+  "Transfermarkt final match reports (captain's armband on the line-up), ids in cl_finals_1993_2026.csv"
+ ],
+ "checks": "Captain read from the (c) mark on each final's Wikipedia team sheet and from the captain's armband icon on each Transfermarkt match report; the two agree for every final in the window. No player or club fills four slots."
+}

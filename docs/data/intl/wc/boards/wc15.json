@@ -1,0 +1,106 @@
+{
+ "pick": "wc15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "England's most World Cup games since 1994",
+ "brief": "Name the ten players with the most World Cup finals appearances for England from 1994 to 2026 (England missed 1994, so this is 1998 on).",
+ "period": "World Cups 1998 to 2026 (England did not qualify for 1994)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Jordan Pickford",
+   "val": "19 games"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "18 games"
+  },
+  {
+   "label": "3",
+   "name": "Marcus Rashford",
+   "val": "17 games"
+  },
+  {
+   "label": "4",
+   "name": "John Stones",
+   "val": "17 games"
+  },
+  {
+   "label": "5",
+   "name": "Ashley Cole",
+   "val": "14 games"
+  },
+  {
+   "label": "6",
+   "name": "David Beckham",
+   "val": "13 games"
+  },
+  {
+   "label": "7",
+   "name": "Jude Bellingham",
+   "val": "13 games"
+  },
+  {
+   "label": "8",
+   "name": "Michael Owen",
+   "val": "12 games",
+   "pool": "e12",
+   "alts": [
+    "Michael Owen",
+    "Steven Gerrard",
+    "Jordan Henderson",
+    "Raheem Sterling",
+    "Harry Maguire",
+    "Declan Rice"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Steven Gerrard",
+   "val": "12 games",
+   "pool": "e12",
+   "alts": [
+    "Michael Owen",
+    "Steven Gerrard",
+    "Jordan Henderson",
+    "Raheem Sterling",
+    "Harry Maguire",
+    "Declan Rice"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Jordan Henderson",
+   "val": "12 games",
+   "pool": "e12",
+   "alts": [
+    "Michael Owen",
+    "Steven Gerrard",
+    "Jordan Henderson",
+    "Raheem Sterling",
+    "Harry Maguire",
+    "Declan Rice"
+   ]
+  }
+ ],
+ "notes": {
+  "Wayne Rooney": "Wayne Rooney played 11, just outside.",
+  "Bukayo Saka": "Bukayo Saka played 11, just outside.",
+  "Frank Lampard": "Frank Lampard played 10.",
+  "Rio Ferdinand": "Rio Ferdinand played 10.",
+  "Sol Campbell": "Sol Campbell played 10.",
+  "Peter Shilton": "Peter Shilton's 17 World Cup games came before 1994.",
+  "Terry Butcher": "Terry Butcher's 14 came before 1994.",
+  "Bobby Moore": "Bobby Moore's 14 came before 1994.",
+  "Bobby Charlton": "Bobby Charlton's 14 came before 1994.",
+  "Gary Lineker": "Gary Lineker's 12 came before 1994."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup#Most_appearances",
+  "https://www.englandstats.com/comp.php?tid=3",
+  "https://www.transfermarkt.com/england/leistungsdaten/verein/3299/plus/1?reldata=FIWC%26<year-1>"
+ ],
+ "checks": "Totals summed from Transfermarkt's England squad stats for each World Cup 1998 to 2026. englandstats.com's most World Cup caps list agrees for every player on 11 or more (it lists Maguire, Henderson, Sterling, Rice, Owen and Gerrard on 12), and Wikipedia's list agrees for the top seven. Six players on 12 share the last three places."
+}

@@ -1,0 +1,87 @@
+{
+ "pick": "cl04",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most goals in a Champions League season",
+ "brief": "Name the ten players with the most goals in a single Champions League season since 1992/93. Each player counts once, for his best season.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "17 goals, 2013/14"
+  },
+  {
+   "label": "2",
+   "name": "Karim Benzema",
+   "val": "15 goals, 2021/22"
+  },
+  {
+   "label": "3",
+   "name": "Robert Lewandowski",
+   "val": "15 goals, 2019/20"
+  },
+  {
+   "label": "4",
+   "name": "Kylian Mbappe",
+   "val": "15 goals, 2025/26"
+  },
+  {
+   "label": "5",
+   "name": "Lionel Messi",
+   "val": "14 goals, 2011/12"
+  },
+  {
+   "label": "6",
+   "name": "Harry Kane",
+   "val": "14 goals, 2025/26"
+  },
+  {
+   "label": "7",
+   "name": "Serhou Guirassy",
+   "val": "13 goals, 2024/25"
+  },
+  {
+   "label": "8",
+   "name": "Raphinha",
+   "val": "13 goals, 2024/25"
+  },
+  {
+   "label": "9",
+   "name": "Ruud van Nistelrooy",
+   "val": "12 goals",
+   "pool": "twelve",
+   "alts": [
+    "Ruud van Nistelrooy",
+    "Mario Gomez",
+    "Erling Haaland"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Mario Gomez",
+   "val": "12 goals",
+   "pool": "twelve",
+   "alts": [
+    "Ruud van Nistelrooy",
+    "Mario Gomez",
+    "Erling Haaland"
+   ]
+  }
+ ],
+ "notes": {
+  "Sebastien Haller": "Sebastien Haller is next with 11 in 2021/22.",
+  "Neymar": "Neymar's best season was 10 goals, in 2014/15.",
+  "Kaka": "Kaka's best season was 10 goals, in 2006/07.",
+  "Alessandro Del Piero": "Alessandro Del Piero's best season was 10 goals, in 1997/98.",
+  "Mohamed Salah": "Mohamed Salah's best season was 10 goals, in 2017/18.",
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic's best season was 10 goals, in 2013/14."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)",
+  "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics (Most goals in a single season)"
+ ],
+ "checks": "Each player season total from UEFA.com matches the Transfermarkt season scorer list; the Wikipedia single-season table agrees. Van Nistelrooy (2002/03), Gomez (2011/12) and Haaland (2022/23) share ninth on 12, so any two of them fill the last two places."
+}
