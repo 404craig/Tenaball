@@ -1,0 +1,73 @@
+{
+ "pick": "its05",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Serie A 2025/26: most goals scored",
+ "brief": "Name the ten clubs that scored the most Serie A goals in 2025/26.",
+ "period": "Serie A 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Inter",
+   "val": "89 goals"
+  },
+  {
+   "label": "2",
+   "name": "Como",
+   "val": "65 goals"
+  },
+  {
+   "label": "3",
+   "name": "Juventus",
+   "val": "61 goals"
+  },
+  {
+   "label": "4",
+   "name": "Roma",
+   "val": "59 goals"
+  },
+  {
+   "label": "5",
+   "name": "Napoli",
+   "val": "58 goals"
+  },
+  {
+   "label": "6",
+   "name": "AC Milan",
+   "val": "53 goals"
+  },
+  {
+   "label": "7",
+   "name": "Atalanta",
+   "val": "51 goals"
+  },
+  {
+   "label": "8",
+   "name": "Bologna",
+   "val": "49 goals"
+  },
+  {
+   "label": "9",
+   "name": "Sassuolo",
+   "val": "46 goals"
+  },
+  {
+   "label": "10",
+   "name": "Udinese",
+   "val": "45 goals"
+  }
+ ],
+ "notes": {
+  "Torino": "Torino were 11th with 44 goals, one short.",
+  "Lazio": "Lazio were joint 12th with 41 goals.",
+  "Fiorentina": "Fiorentina were joint 12th with 41 goals.",
+  "Genoa": "Genoa were joint 12th with 41 goals."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A",
+  "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/2025"
+ ],
+ "checks": "Every club's goals for and against agree in three places: Wikipedia's final table (Template:2025-26 Serie A table), the table worked out from all 380 results in football-data.co.uk's I1.csv, and Transfermarkt's final table."
+}

@@ -1,0 +1,75 @@
+{
+ "pick": "es26",
+ "kind": "labelled",
+ "type": "person",
+ "level": 0,
+ "title": "Barcelona managers in order",
+ "brief": "Name Barcelona's last ten permanent managers in order, from Frank Rijkaard in 2003. The label is the year each spell began.",
+ "period": "Barcelona managers, June 2003 to October 2026",
+ "rows": [
+  {
+   "label": "2003",
+   "name": "Frank Rijkaard",
+   "val": "June 2003 to June 2008"
+  },
+  {
+   "label": "2008",
+   "name": "Pep Guardiola",
+   "val": "June 2008 to June 2012"
+  },
+  {
+   "label": "2012",
+   "name": "Tito Vilanova",
+   "val": "July 2012 to July 2013"
+  },
+  {
+   "label": "2013",
+   "name": "Gerardo Martino",
+   "val": "July 2013 to May 2014"
+  },
+  {
+   "label": "2014",
+   "name": "Luis Enrique",
+   "val": "May 2014 to May 2017"
+  },
+  {
+   "label": "2017",
+   "name": "Ernesto Valverde",
+   "val": "May 2017 to January 2020"
+  },
+  {
+   "label": "2020",
+   "name": "Quique Setien",
+   "val": "January 2020 to August 2020"
+  },
+  {
+   "label": "2020",
+   "name": "Ronald Koeman",
+   "val": "August 2020 to October 2021"
+  },
+  {
+   "label": "2021",
+   "name": "Xavi",
+   "val": "November 2021 to May 2024"
+  },
+  {
+   "label": "2024",
+   "name": "Hansi Flick",
+   "val": "May 2024 to now"
+  }
+ ],
+ "notes": {
+  "Lorenzo Serra Ferrer": "Lorenzo Serra Ferrer (2000/01) is before this board starts.",
+  "Carles Rexach": "Carles Rexach (2001 to 2002) is before this board starts.",
+  "Louis van Gaal": "Louis van Gaal's second spell (2002 to 2003) is before this board starts.",
+  "Radomir Antic": "Radomir Antic (2003) is just before this board starts.",
+  "Jordi Roura": "Jordi Roura was only caretaker in 2013, while Tito Vilanova had cancer treatment.",
+  "Sergi Barjuan": "Sergi Barjuan was only caretaker, for three games between Koeman and Xavi in 2021.",
+  "Antonio de la Cruz": "Antonio de la Cruz was only caretaker, for one game in 2003."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_FC_Barcelona_managers",
+  "https://www.transfermarkt.co.uk/fc-barcelona/mitarbeiterhistorie/verein/131"
+ ],
+ "checks": "Every spell agrees between Wikipedia's list of Barcelona managers and Transfermarkt's staff history. Since 2000 there have been 14 permanent spells (Serra Ferrer, Rexach, Van Gaal, Antic, Rijkaard, Guardiola, Vilanova, Martino, Luis Enrique, Valverde, Setien, Koeman, Xavi, Flick), so the board takes the ten most recent, starting with Rijkaard in 2003. Caretakers left out: Antonio de la Cruz (2003), Jordi Roura (January to March 2013, standing in for Vilanova, whose spell counts once as Wikipedia has it) and Sergi Barjuan (2021). Transfermarkt dates Rijkaard, Guardiola, Luis Enrique and Valverde from 1 July, Wikipedia from the announcement; the years agree. Hansi Flick is still in charge in October 2026."
+}

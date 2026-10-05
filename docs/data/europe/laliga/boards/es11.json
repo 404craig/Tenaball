@@ -1,0 +1,111 @@
+{
+ "pick": "es11",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most La Liga titles as a player",
+ "brief": "Name the ten players who won the most La Liga titles from 2000/01 to 2025/26. A title counts if the player played at least one league game that season for the champions.",
+ "period": "La Liga seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "10 titles"
+  },
+  {
+   "label": "2",
+   "name": "Andres Iniesta",
+   "val": "9 titles"
+  },
+  {
+   "label": "3",
+   "name": "Gerard Pique",
+   "val": "9 titles"
+  },
+  {
+   "label": "4",
+   "name": "Sergio Busquets",
+   "val": "9 titles"
+  },
+  {
+   "label": "5",
+   "name": "Xavi",
+   "val": "7 titles"
+  },
+  {
+   "label": "6",
+   "name": "Sergi Roberto",
+   "val": "7 titles"
+  },
+  {
+   "label": "7",
+   "name": "Victor Valdes",
+   "val": "6 titles",
+   "pool": "t10",
+   "alts": [
+    "Victor Valdes",
+    "Carles Puyol",
+    "Marcelo",
+    "Dani Alves",
+    "Jordi Alba"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Carles Puyol",
+   "val": "6 titles",
+   "pool": "t10",
+   "alts": [
+    "Victor Valdes",
+    "Carles Puyol",
+    "Marcelo",
+    "Dani Alves",
+    "Jordi Alba"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Marcelo",
+   "val": "6 titles",
+   "pool": "t10",
+   "alts": [
+    "Victor Valdes",
+    "Carles Puyol",
+    "Marcelo",
+    "Dani Alves",
+    "Jordi Alba"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Dani Alves",
+   "val": "6 titles",
+   "pool": "t10",
+   "alts": [
+    "Victor Valdes",
+    "Carles Puyol",
+    "Marcelo",
+    "Dani Alves",
+    "Jordi Alba"
+   ]
+  }
+ ],
+ "notes": {
+  "Iker Casillas": "Iker Casillas won 5 La Liga titles from 2000/01 to 2025/26, just outside the top ten.",
+  "Sergio Ramos": "Sergio Ramos won 5 La Liga titles from 2000/01 to 2025/26, just outside the top ten.",
+  "Pedro": "Pedro won 5 La Liga titles from 2000/01 to 2025/26, just outside the top ten.",
+  "Marc Bartra": "Marc Bartra won 5 La Liga titles from 2000/01 to 2025/26, just outside the top ten.",
+  "Javier Mascherano": "Javier Mascherano won 5 La Liga titles from 2000/01 to 2025/26, just outside the top ten.",
+  "Luis Suarez": "Luis Suarez won 5 La Liga titles from 2000/01 to 2025/26 (four with Barcelona, one with Atletico Madrid), just outside the top ten.",
+  "Marc-Andre ter Stegen": "Marc-Andre ter Stegen counts for 5: he played no league games in Barcelona's 2014/15 and 2025/26 title seasons.",
+  "Karim Benzema": "Karim Benzema won 4 La Liga titles with Real Madrid.",
+  "Luka Modric": "Luka Modric won 4 La Liga titles with Real Madrid.",
+  "Raul": "Raul won 4 La Liga titles from 2000/01 on (2000/01, 2002/03, 2006/07 and 2007/08); his earlier ones don't count here."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/fc-barcelona/leistungsdaten/verein/131/plus/1?reldata=ES1%262025 (the champions' La Liga squad stats for each of the 26 seasons)",
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_winning_managers (champions by season)",
+  "Wikipedia player articles, Honours sections (Messi, Iniesta, Pique, Busquets, Xavi, Sergi Roberto, Valdes, Puyol, Marcelo, Dani Alves, Jordi Alba and the 5-title players)"
+ ],
+ "checks": "Champions for every season from Wikipedia, which agree with the club pages used. For each title season, Transfermarkt's league stats page for the champions gave every player with at least one league appearance; titles were counted per player (by Transfermarkt player id, so namesakes don't merge). Each of the eighteen players with 5 or more was checked against the La Liga titles in his Wikipedia honours list: all agree except ter Stegen, whom Wikipedia credits with 2014/15 and 2025/26 although he played no league game in either, so by the one-appearance rule he has 5, outside the board anyway."
+}

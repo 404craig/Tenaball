@@ -1,0 +1,612 @@
+season,club,player
+2025/26,Barcelona,Joan Garcia
+2025/26,Barcelona,Wojciech Szczesny
+2025/26,Barcelona,Pau Cubarsi
+2025/26,Barcelona,Jules Kounde
+2025/26,Barcelona,Eric Garcia
+2025/26,Barcelona,Alejandro Balde
+2025/26,Barcelona,Gerard Martin
+2025/26,Barcelona,Xavi Espart
+2025/26,Barcelona,Ronald Araujo
+2025/26,Barcelona,Andreas Christensen
+2025/26,Barcelona,Joao Cancelo
+2025/26,Barcelona,Alvaro Cortes
+2025/26,Barcelona,Jofre Torrents
+2025/26,Barcelona,Pedri
+2025/26,Barcelona,Fermin Lopez
+2025/26,Barcelona,Dani Olmo
+2025/26,Barcelona,Marc Bernal
+2025/26,Barcelona,Gavi
+2025/26,Barcelona,Frenkie de Jong
+2025/26,Barcelona,Marc Casado
+2025/26,Barcelona,Dro Fernandez
+2025/26,Barcelona,Tommy Marques
+2025/26,Barcelona,Toni Fernandez
+2025/26,Barcelona,Lamine Yamal
+2025/26,Barcelona,Raphinha
+2025/26,Barcelona,Ferran Torres
+2025/26,Barcelona,Marcus Rashford
+2025/26,Barcelona,Roony Bardghji
+2025/26,Barcelona,Robert Lewandowski
+2025/26,Real Madrid,Thibaut Courtois
+2025/26,Real Madrid,Andriy Lunin
+2025/26,Real Madrid,Trent Alexander-Arnold
+2025/26,Real Madrid,Dean Huijsen
+2025/26,Real Madrid,Alvaro Carreras
+2025/26,Real Madrid,Eder Militao
+2025/26,Real Madrid,Raul Asencio
+2025/26,Real Madrid,Victor Valdepenas
+2025/26,Real Madrid,Fran Garcia
+2025/26,Real Madrid,Antonio Rudiger
+2025/26,Real Madrid,Diego Aguado
+2025/26,Real Madrid,Dani Carvajal
+2025/26,Real Madrid,Ferland Mendy
+2025/26,Real Madrid,David Alaba
+2025/26,Real Madrid,David Jimenez
+2025/26,Real Madrid,Manu Serrano
+2025/26,Real Madrid,Jude Bellingham
+2025/26,Real Madrid,Arda Guler
+2025/26,Real Madrid,Federico Valverde
+2025/26,Real Madrid,Aurelien Tchouameni
+2025/26,Real Madrid,Eduardo Camavinga
+2025/26,Real Madrid,Thiago Pitarch
+2025/26,Real Madrid,Jorge Cestero
+2025/26,Real Madrid,Cesar Palacios
+2025/26,Real Madrid,Dani Ceballos
+2025/26,Real Madrid,Manuel Angel
+2025/26,Real Madrid,Kylian Mbappe
+2025/26,Real Madrid,Vinicius Junior
+2025/26,Real Madrid,Rodrygo
+2025/26,Real Madrid,Franco Mastantuono
+2025/26,Real Madrid,Endrick
+2025/26,Real Madrid,Brahim Diaz
+2025/26,Real Madrid,Gonzalo Garcia
+2025/26,Real Madrid,Daniel Yanez
+2025/26,Real Madrid,Alvaro Leiva
+2025/26,Villarreal,Luiz Junior
+2025/26,Villarreal,Arnau Tenas
+2025/26,Villarreal,Renato Veiga
+2025/26,Villarreal,Santiago Mourino
+2025/26,Villarreal,Rafa Marin
+2025/26,Villarreal,Logan Costa
+2025/26,Villarreal,Alex Freeman
+2025/26,Villarreal,Pau Navarro
+2025/26,Villarreal,Sergi Cardona
+2025/26,Villarreal,Juan Foyth
+2025/26,Villarreal,Willy Kambwala
+2025/26,Villarreal,Alfonso Pedraza
+2025/26,Villarreal,Adria Altimira
+2025/26,Villarreal,Pape Gueye
+2025/26,Villarreal,Carlos Macia
+2025/26,Villarreal,Santi Comesana
+2025/26,Villarreal,Alassane Diatta
+2025/26,Villarreal,Thomas Partey
+2025/26,Villarreal,Dani Parejo
+2025/26,Villarreal,Alberto Moleiro
+2025/26,Villarreal,Georges Mikautadze
+2025/26,Villarreal,Yeremy Pino
+2025/26,Villarreal,Ilias Akhomach
+2025/26,Villarreal,Tajon Buchanan
+2025/26,Villarreal,Manor Solomon
+2025/26,Villarreal,Karl Etta Eyong
+2025/26,Villarreal,Tani Oluwaseyi
+2025/26,Villarreal,Nicolas Pepe
+2025/26,Villarreal,Ayoze Perez
+2025/26,Villarreal,Alfon Gonzalez
+2025/26,Villarreal,Gerard Moreno
+2025/26,Villarreal,Hugo Lopez
+2025/26,Villarreal,Pau Cabanes
+2025/26,Atletico Madrid,Jan Oblak
+2025/26,Atletico Madrid,Juan Musso
+2025/26,Atletico Madrid,Marc Pubill
+2025/26,Atletico Madrid,David Hancko
+2025/26,Atletico Madrid,Matteo Ruggeri
+2025/26,Atletico Madrid,Marcos Llorente
+2025/26,Atletico Madrid,Robin Le Normand
+2025/26,Atletico Madrid,Nahuel Molina
+2025/26,Atletico Madrid,Jose Maria Gimenez
+2025/26,Atletico Madrid,Clement Lenglet
+2025/26,Atletico Madrid,Dani Martinez
+2025/26,Atletico Madrid,Julio Diaz
+2025/26,Atletico Madrid,Javier Bonar
+2025/26,Atletico Madrid,Javi Galan
+2025/26,Atletico Madrid,Aleksa Puric
+2025/26,Atletico Madrid,Pablo Barrios
+2025/26,Atletico Madrid,Conor Gallagher
+2025/26,Atletico Madrid,Rodrigo Mendoza
+2025/26,Atletico Madrid,Johnny Cardoso
+2025/26,Atletico Madrid,Thiago Almada
+2025/26,Atletico Madrid,Obed Vargas
+2025/26,Atletico Madrid,Koke
+2025/26,Atletico Madrid,Javi Morcillo
+2025/26,Atletico Madrid,Rayane Belaid
+2025/26,Atletico Madrid,Jano Monserrate
+2025/26,Atletico Madrid,Taufik Seidu
+2025/26,Atletico Madrid,Julian Alvarez
+2025/26,Atletico Madrid,Alex Baena
+2025/26,Atletico Madrid,Giuliano Simeone
+2025/26,Atletico Madrid,Ademola Lookman
+2025/26,Atletico Madrid,Giacomo Raspadori
+2025/26,Atletico Madrid,Nico Gonzalez
+2025/26,Atletico Madrid,Alexander Sorloth
+2025/26,Atletico Madrid,Antoine Griezmann
+2025/26,Atletico Madrid,Iker Luque
+2025/26,Atletico Madrid,Miguel Cubo
+2025/26,Real Betis,Alvaro Valles
+2025/26,Real Betis,Pau Lopez
+2025/26,Real Betis,Adrian San Miguel
+2025/26,Real Betis,Natan
+2025/26,Real Betis,Valentin Gomez
+2025/26,Real Betis,Angel Ortiz
+2025/26,Real Betis,Junior Firpo
+2025/26,Real Betis,Diego Llorente
+2025/26,Real Betis,Hector Bellerin
+2025/26,Real Betis,Ricardo Rodriguez
+2025/26,Real Betis,Marc Bartra
+2025/26,Real Betis,Sergi Altimira
+2025/26,Real Betis,Nelson Deossa
+2025/26,Real Betis,Pablo Fornals
+2025/26,Real Betis,Sofyan Amrabat
+2025/26,Real Betis,Giovani Lo Celso
+2025/26,Real Betis,Alvaro Fidalgo
+2025/26,Real Betis,Marc Roca
+2025/26,Real Betis,Isco
+2025/26,Real Betis,Dani Perez
+2025/26,Real Betis,Ivan Corralejo
+2025/26,Real Betis,Antony
+2025/26,Real Betis,Abde Ezzalzouli
+2025/26,Real Betis,Cucho Hernandez
+2025/26,Real Betis,Pablo Garcia
+2025/26,Real Betis,Rodrigo Riquelme
+2025/26,Real Betis,Aitor Ruibal
+2025/26,Real Betis,Chimy Avila
+2025/26,Real Betis,Cedric Bakambu
+2025/26,Celta Vigo,Ionut Radu
+2025/26,Celta Vigo,Oscar Mingueza
+2025/26,Celta Vigo,Javi Rodriguez
+2025/26,Celta Vigo,Sergio Carreira
+2025/26,Celta Vigo,Yoel Lago
+2025/26,Celta Vigo,Javi Rueda
+2025/26,Celta Vigo,Carl Starfelt
+2025/26,Celta Vigo,Alvaro Nunez
+2025/26,Celta Vigo,Carlos Dominguez
+2025/26,Celta Vigo,Manu Fernandez
+2025/26,Celta Vigo,Marcos Alonso
+2025/26,Celta Vigo,Joseph Aidoo
+2025/26,Celta Vigo,Mihailo Ristic
+2025/26,Celta Vigo,Fer Lopez
+2025/26,Celta Vigo,Ilaix Moriba
+2025/26,Celta Vigo,Miguel Roman
+2025/26,Celta Vigo,Hugo Sotelo
+2025/26,Celta Vigo,Fran Beltran
+2025/26,Celta Vigo,Hugo Burcio
+2025/26,Celta Vigo,Andres Antanon
+2025/26,Celta Vigo,Damian Rodriguez
+2025/26,Celta Vigo,Matias Vecino
+2025/26,Celta Vigo,Williot Swedberg
+2025/26,Celta Vigo,Ferran Jutgla
+2025/26,Celta Vigo,Bryan Zaragoza
+2025/26,Celta Vigo,Hugo Alvarez
+2025/26,Celta Vigo,Jones El-Abdellaoui
+2025/26,Celta Vigo,Pablo Duran
+2025/26,Celta Vigo,Hugo Gonzalez
+2025/26,Celta Vigo,Borja Iglesias
+2025/26,Celta Vigo,Iago Aspas
+2025/26,Getafe,David Soria
+2025/26,Getafe,Juan Iglesias
+2025/26,Getafe,Zaid Romero
+2025/26,Getafe,Abdel Abqar
+2025/26,Getafe,Davinchi
+2025/26,Getafe,Sebastian Boselli
+2025/26,Getafe,Dakonam Djene
+2025/26,Getafe,Diego Rico
+2025/26,Getafe,Domingos Duarte
+2025/26,Getafe,Kiko Femenia
+2025/26,Getafe,Ismael Bekhoucha
+2025/26,Getafe,Allan Nyom
+2025/26,Getafe,Jorge Montes
+2025/26,Getafe,Mario Martin
+2025/26,Getafe,Luis Milla
+2025/26,Getafe,Mauro Arambarri
+2025/26,Getafe,Yvan Neyou
+2025/26,Getafe,Javi Munoz
+2025/26,Getafe,Hugo Solozabal
+2025/26,Getafe,Alejandro Mestanza
+2025/26,Getafe,Damian Caceres
+2025/26,Getafe,Martin Satriano
+2025/26,Getafe,Christantus Uche
+2025/26,Getafe,Borja Mayoral
+2025/26,Getafe,Veljko Birmancevic
+2025/26,Getafe,Adrian Liso
+2025/26,Getafe,Abu Kamara
+2025/26,Getafe,Luis Vazquez
+2025/26,Getafe,Coba da Costa
+2025/26,Getafe,Alex Sola
+2025/26,Getafe,Alex Sancris
+2025/26,Getafe,Juanmi
+2025/26,Getafe,Joselu Perez
+2025/26,Rayo Vallecano,Augusto Batalla
+2025/26,Rayo Vallecano,Dani Cardenas
+2025/26,Rayo Vallecano,Andrei Ratiu
+2025/26,Rayo Vallecano,Pep Chavarria
+2025/26,Rayo Vallecano,Nobel Mendy
+2025/26,Rayo Vallecano,Luiz Felipe
+2025/26,Rayo Vallecano,Abdul Mumin
+2025/26,Rayo Vallecano,Jozhua Vertrouwd
+2025/26,Rayo Vallecano,Florian Lejeune
+2025/26,Rayo Vallecano,Ivan Balliu
+2025/26,Rayo Vallecano,Alfonso Espino
+2025/26,Rayo Vallecano,Pelayo Fernandez
+2025/26,Rayo Vallecano,Pedro Diaz
+2025/26,Rayo Vallecano,Unai Lopez
+2025/26,Rayo Vallecano,Oscar Valentin
+2025/26,Rayo Vallecano,Pathe Ciss
+2025/26,Rayo Vallecano,Gerard Gumbau
+2025/26,Rayo Vallecano,Randy Nteka
+2025/26,Rayo Vallecano,Samu Becerra
+2025/26,Rayo Vallecano,Oscar Trejo
+2025/26,Rayo Vallecano,Ilias Akhomach
+2025/26,Rayo Vallecano,Jorge de Frutos
+2025/26,Rayo Vallecano,Sergio Camello
+2025/26,Rayo Vallecano,Alemao
+2025/26,Rayo Vallecano,Isi Palazon
+2025/26,Rayo Vallecano,Fran Perez
+2025/26,Rayo Vallecano,Carlos Martin
+2025/26,Rayo Vallecano,Alvaro Garcia
+2025/26,Valencia,Julen Agirrezabala
+2025/26,Valencia,Stole Dimitrievski
+2025/26,Valencia,Cesar Tarrega
+2025/26,Valencia,Jose Copete
+2025/26,Valencia,Jose Gaya
+2025/26,Valencia,Jesus Vazquez
+2025/26,Valencia,Unai Nunez
+2025/26,Valencia,Eray Comert
+2025/26,Valencia,Mouctar Diakhaby
+2025/26,Valencia,Renzo Saravia
+2025/26,Valencia,Ruben Iranzo
+2025/26,Valencia,Dimitri Foulquier
+2025/26,Valencia,Javi Guerra
+2025/26,Valencia,Pepelu
+2025/26,Valencia,Filip Ugrinic
+2025/26,Valencia,Andre Almeida
+2025/26,Valencia,Guido Rodriguez
+2025/26,Valencia,Thierry Correia
+2025/26,Valencia,Baptiste Santamaria
+2025/26,Valencia,Hugo Duro
+2025/26,Valencia,Diego Lopez
+2025/26,Valencia,Lucas Beltran
+2025/26,Valencia,Largie Ramazani
+2025/26,Valencia,Umar Sadiq
+2025/26,Valencia,Arnaut Danjuma
+2025/26,Valencia,Luis Rioja
+2025/26,Valencia,Dani Raba
+2025/26,Real Sociedad,Alex Remiro
+2025/26,Real Sociedad,Unai Marrero
+2025/26,Real Sociedad,Jon Martin
+2025/26,Real Sociedad,Jon Aramburu
+2025/26,Real Sociedad,Sergio Gomez
+2025/26,Real Sociedad,Igor Zubeldia
+2025/26,Real Sociedad,Duje Caleta-Car
+2025/26,Real Sociedad,Aihen Munoz
+2025/26,Real Sociedad,Luken Beitia
+2025/26,Real Sociedad,Aritz Elustondo
+2025/26,Real Sociedad,Alvaro Odriozola
+2025/26,Real Sociedad,Inaki Ruperez
+2025/26,Real Sociedad,Jon Gorrotxategi
+2025/26,Real Sociedad,Luka Sucic
+2025/26,Real Sociedad,Urko Gonzalez de Zarate
+2025/26,Real Sociedad,Benat Turrientes
+2025/26,Real Sociedad,Arsen Zakharyan
+2025/26,Real Sociedad,Pablo Marin
+2025/26,Real Sociedad,Carlos Soler
+2025/26,Real Sociedad,Brais Mendez
+2025/26,Real Sociedad,Yangel Herrera
+2025/26,Real Sociedad,Ibai Aguirre
+2025/26,Real Sociedad,Mikel Goti
+2025/26,Real Sociedad,Mikel Oyarzabal
+2025/26,Real Sociedad,Orri Oskarsson
+2025/26,Real Sociedad,Takefusa Kubo
+2025/26,Real Sociedad,Ander Barrenetxea
+2025/26,Real Sociedad,Goncalo Guedes
+2025/26,Real Sociedad,Job Ochieng
+2025/26,Real Sociedad,Gorka Carrera
+2025/26,Real Sociedad,Wesley
+2025/26,Real Sociedad,Umar Sadiq
+2025/26,Real Sociedad,Lander Astiazaran
+2025/26,Real Sociedad,Dani Diaz
+2025/26,Real Sociedad,Jon Karrikaburu
+2025/26,Real Sociedad,Arkaitz Mariezkurrena
+2025/26,Espanyol,Marko Dmitrovic
+2025/26,Espanyol,Angel Fortuno
+2025/26,Espanyol,Carlos Romero
+2025/26,Espanyol,Omar El Hilali
+2025/26,Espanyol,Clemens Riedel
+2025/26,Espanyol,Fernando Calero
+2025/26,Espanyol,Jose Salinas
+2025/26,Espanyol,Ruben Sanchez
+2025/26,Espanyol,Miguel Rubio
+2025/26,Espanyol,Leandro Cabrera
+2025/26,Espanyol,Urko Gonzalez de Zarate
+2025/26,Espanyol,Pol Lozano
+2025/26,Espanyol,Edu Exposito
+2025/26,Espanyol,Ramon Terrats
+2025/26,Espanyol,Charles Pickel
+2025/26,Espanyol,Roberto Fernandez
+2025/26,Espanyol,Luca Koleosho
+2025/26,Espanyol,Tyrhys Dolan
+2025/26,Espanyol,Javi Puado
+2025/26,Espanyol,Cyril Ngonge
+2025/26,Espanyol,Jofre Carreras
+2025/26,Espanyol,Lluc Castell
+2025/26,Espanyol,Antoniu Roca
+2025/26,Espanyol,Pere Milla
+2025/26,Espanyol,Kike Garcia
+2025/26,Athletic Bilbao,Unai Simon
+2025/26,Athletic Bilbao,Alex Padilla
+2025/26,Athletic Bilbao,Dani Vivian
+2025/26,Athletic Bilbao,Aymeric Laporte
+2025/26,Athletic Bilbao,Aitor Paredes
+2025/26,Athletic Bilbao,Jesus Areso
+2025/26,Athletic Bilbao,Andoni Gorosabel
+2025/26,Athletic Bilbao,Adama Boiro
+2025/26,Athletic Bilbao,Yuri Berchiche
+2025/26,Athletic Bilbao,Yeray Alvarez
+2025/26,Athletic Bilbao,Inigo Lekue
+2025/26,Athletic Bilbao,Oihan Sancet
+2025/26,Athletic Bilbao,Mikel Jauregizar
+2025/26,Athletic Bilbao,Benat Prados
+2025/26,Athletic Bilbao,Unai Gomez
+2025/26,Athletic Bilbao,Alejandro Rego
+2025/26,Athletic Bilbao,Selton Sanchez
+2025/26,Athletic Bilbao,Inigo Ruiz de Galarreta
+2025/26,Athletic Bilbao,Mikel Vesga
+2025/26,Athletic Bilbao,Eder Garcia
+2025/26,Athletic Bilbao,Nico Williams
+2025/26,Athletic Bilbao,Inaki Williams
+2025/26,Athletic Bilbao,Robert Navarro
+2025/26,Athletic Bilbao,Gorka Guruzeta
+2025/26,Athletic Bilbao,Alex Berenguer
+2025/26,Athletic Bilbao,Maroan Sannadi
+2025/26,Athletic Bilbao,Urko Izeta
+2025/26,Athletic Bilbao,Nico Serrano
+2025/26,Athletic Bilbao,Asier Hierro
+2025/26,Sevilla,Odysseas Vlachodimos
+2025/26,Sevilla,Orjan Nyland
+2025/26,Sevilla,Kike Salas
+2025/26,Sevilla,Jose Angel Carmona
+2025/26,Sevilla,Juanlu Sanchez
+2025/26,Sevilla,Oso
+2025/26,Sevilla,Andres Castrin
+2025/26,Sevilla,Gabriel Suazo
+2025/26,Sevilla,Adria Pedrosa
+2025/26,Sevilla,Marcao
+2025/26,Sevilla,Fabio Cardoso
+2025/26,Sevilla,Tanguy Nianzou
+2025/26,Sevilla,Ramon Martinez
+2025/26,Sevilla,Federico Gattoni
+2025/26,Sevilla,Cesar Azpilicueta
+2025/26,Sevilla,Lucien Agoume
+2025/26,Sevilla,Stanis Idumbo
+2025/26,Sevilla,Djibril Sow
+2025/26,Sevilla,Batista Mendy
+2025/26,Sevilla,Nemanja Gudelj
+2025/26,Sevilla,Manu Bueno
+2025/26,Sevilla,Joan Jordan
+2025/26,Sevilla,Dodi Lukebakio
+2025/26,Sevilla,Akor Adams
+2025/26,Sevilla,Ruben Vargas
+2025/26,Sevilla,Miguel Sierra
+2025/26,Sevilla,Isaac Romero
+2025/26,Sevilla,Neal Maupay
+2025/26,Sevilla,Chidera Ejuke
+2025/26,Sevilla,Alfon Gonzalez
+2025/26,Sevilla,Peque Fernandez
+2025/26,Sevilla,Alexis Sanchez
+2025/26,Sevilla,Adnan Januzaj
+2025/26,Alaves,Antonio Sivera
+2025/26,Alaves,Youssef Enriquez
+2025/26,Alaves,Jon Pacheco
+2025/26,Alaves,Ville Koski
+2025/26,Alaves,Victor Parada
+2025/26,Alaves,Nahuel Tenaglia
+2025/26,Alaves,Jonny Otto
+2025/26,Alaves,Moussa Diarra
+2025/26,Alaves,Carlos Ballestero
+2025/26,Alaves,Facundo Garces
+2025/26,Alaves,Antonio Blanco
+2025/26,Alaves,Pablo Ibanez
+2025/26,Alaves,Ander Guevara
+2025/26,Alaves,Carles Alena
+2025/26,Alaves,Jon Guridi
+2025/26,Alaves,Calebe
+2025/26,Alaves,Denis Suarez
+2025/26,Alaves,Carlos Protesoni
+2025/26,Alaves,Lander Pinillos
+2025/26,Alaves,Toni Martinez
+2025/26,Alaves,Carlos Vicente
+2025/26,Alaves,Angel Perez
+2025/26,Alaves,Lucas Boye
+2025/26,Alaves,Abde Rebbach
+2025/26,Alaves,Ibrahim Diabate
+2025/26,Alaves,Aitor Manas
+2025/26,Alaves,Mariano Diaz
+2025/26,Alaves,Diego Morcillo
+2025/26,Elche,Inaki Pena
+2025/26,Elche,Matias Dituro
+2025/26,Elche,David Affengruber
+2025/26,Elche,Hector Fort
+2025/26,Elche,Buba Sangare
+2025/26,Elche,Alvaro Nunez
+2025/26,Elche,Adria Pedrosa
+2025/26,Elche,Victor Chust
+2025/26,Elche,Leo Petrot
+2025/26,Elche,John Donald
+2025/26,Elche,Bambo Diaby
+2025/26,Elche,Jairo Izquierdo
+2025/26,Elche,Pedro Bigas
+2025/26,Elche,Rodrigo Mendoza
+2025/26,Elche,Aleix Febas
+2025/26,Elche,Martim Neto
+2025/26,Elche,Marc Aguado
+2025/26,Elche,Federico Redondo
+2025/26,Elche,Gonzalo Villar
+2025/26,Elche,Alvaro Rodriguez
+2025/26,Elche,German Valera
+2025/26,Elche,Andre Silva
+2025/26,Elche,Rafa Mir
+2025/26,Elche,Mourad El Ghezouani
+2025/26,Elche,Lucas Cepeda
+2025/26,Elche,Grady Diangana
+2025/26,Elche,Tete Morente
+2025/26,Elche,Yago Santiago
+2025/26,Elche,Adam Boayar
+2025/26,Elche,Ali Houary
+2025/26,Elche,Josan
+2025/26,Elche,Alex Sanchez
+2025/26,Levante,Mathew Ryan
+2025/26,Levante,Pablo Campos
+2025/26,Levante,Matias Moreno
+2025/26,Levante,Manu Sanchez
+2025/26,Levante,Adrian Dela
+2025/26,Levante,Alan Matturro
+2025/26,Levante,Jeremy Toljan
+2025/26,Levante,Nacho Perez
+2025/26,Levante,Diego Pampin
+2025/26,Levante,Jorge Cabello
+2025/26,Levante,Unai Elgezabal
+2025/26,Levante,Carlos Alvarez
+2025/26,Levante,Ugo Raghouber
+2025/26,Levante,Pablo Martinez
+2025/26,Levante,Jon Ander Olasagasti
+2025/26,Levante,Kervin Arriaga
+2025/26,Levante,Iker Losada
+2025/26,Levante,Oriol Rey
+2025/26,Levante,Sergio Lozano
+2025/26,Levante,Unai Vencedor
+2025/26,Levante,Carlos Espi
+2025/26,Levante,Karl Etta Eyong
+2025/26,Levante,Ivan Romero
+2025/26,Levante,Roger Brugue
+2025/26,Levante,Kareem Tunde
+2025/26,Levante,Goduine Koyalipou
+2025/26,Levante,Paco Cortes
+2025/26,Levante,Victor Garcia
+2025/26,Levante,Tay Abed
+2025/26,Levante,Jose Luis Morales
+2025/26,Osasuna,Sergio Herrera
+2025/26,Osasuna,Aitor Fernandez
+2025/26,Osasuna,Enzo Boyomo
+2025/26,Osasuna,Jorge Herrando
+2025/26,Osasuna,Abel Bretones
+2025/26,Osasuna,Valentin Rosier
+2025/26,Osasuna,Alejandro Catena
+2025/26,Osasuna,Inigo Arguibide
+2025/26,Osasuna,Javi Galan
+2025/26,Osasuna,Juan Cruz
+2025/26,Osasuna,Aimar Oroz
+2025/26,Osasuna,Jon Moncayola
+2025/26,Osasuna,Lucas Torro
+2025/26,Osasuna,Iker Munoz
+2025/26,Osasuna,Asier Osambela
+2025/26,Osasuna,Moi Gomez
+2025/26,Osasuna,Victor Munoz
+2025/26,Osasuna,Raul Moro
+2025/26,Osasuna,Raul Garcia
+2025/26,Osasuna,Ante Budimir
+2025/26,Osasuna,Sheraldo Becker
+2025/26,Osasuna,Ruben Garcia
+2025/26,Osasuna,Iker Benito
+2025/26,Osasuna,Kike Barja
+2025/26,Mallorca,Leo Roman
+2025/26,Mallorca,Lucas Bergstrom
+2025/26,Mallorca,Marash Kumbulla
+2025/26,Mallorca,Martin Valjent
+2025/26,Mallorca,Pablo Maffeo
+2025/26,Mallorca,Johan Mojica
+2025/26,Mallorca,Mateu Morey
+2025/26,Mallorca,Toni Lato
+2025/26,Mallorca,David Lopez
+2025/26,Mallorca,Antonio Raillo
+2025/26,Mallorca,Miguel Calatayud
+2025/26,Mallorca,Javier Olaizola
+2025/26,Mallorca,Luis Orejuela
+2025/26,Mallorca,Samu Costa
+2025/26,Mallorca,Pablo Torre
+2025/26,Mallorca,Manu Morlanes
+2025/26,Mallorca,Sergi Darder
+2025/26,Mallorca,Antonio Sanchez
+2025/26,Mallorca,Omar Mascarell
+2025/26,Mallorca,Jan Salas
+2025/26,Mallorca,Dani Rodriguez
+2025/26,Mallorca,Jan Virgili
+2025/26,Mallorca,Vedat Muriqi
+2025/26,Mallorca,Mateo Joseph
+2025/26,Mallorca,Zito Luvumbo
+2025/26,Mallorca,Takuma Asano
+2025/26,Mallorca,Marc Domenech
+2025/26,Mallorca,Javi Llabres
+2025/26,Mallorca,Abdon Prats
+2025/26,Mallorca,Justin Kalumba
+2025/26,Girona,Marc ter Stegen
+2025/26,Girona,Paulo Gazzaniga
+2025/26,Girona,Vladyslav Krapyvtsov
+2025/26,Girona,Vitor Reis
+2025/26,Girona,Ladislav Krejci
+2025/26,Girona,Arnau Martinez
+2025/26,Girona,Hugo Rincon
+2025/26,Girona,Alejandro Frances
+2025/26,Girona,Alex Moreno
+2025/26,Girona,Daley Blind
+2025/26,Girona,David Lopez
+2025/26,Girona,Azzedine Ounahi
+2025/26,Girona,Claudio Echeverri
+2025/26,Girona,Jhon Solis
+2025/26,Girona,Yangel Herrera
+2025/26,Girona,Fran Beltran
+2025/26,Girona,Ivan Martin
+2025/26,Girona,Thomas Lemar
+2025/26,Girona,Donny van de Beek
+2025/26,Girona,Axel Witsel
+2025/26,Girona,Lass Kourouma
+2025/26,Girona,Viktor Tsygankov
+2025/26,Girona,Yaser Asprilla
+2025/26,Girona,Vladyslav Vanat
+2025/26,Girona,Joel Roca
+2025/26,Girona,Bryan Gil
+2025/26,Girona,Bojan Miovski
+2025/26,Girona,Dawda Camara
+2025/26,Girona,Abel Ruiz
+2025/26,Girona,Portu
+2025/26,Girona,Cristhian Stuani
+2025/26,Girona,Juan Arango
+2025/26,Real Oviedo,Aaron Escandell
+2025/26,Real Oviedo,Horatiu Moldovan
+2025/26,Real Oviedo,David Carmo
+2025/26,Real Oviedo,Javi Lopez
+2025/26,Real Oviedo,Rahim Alhassane
+2025/26,Real Oviedo,Eric Bailly
+2025/26,Real Oviedo,David Costas
+2025/26,Real Oviedo,Nacho Vidal
+2025/26,Real Oviedo,Dani Calvo
+2025/26,Real Oviedo,Oier Luengo
+2025/26,Real Oviedo,Lucas Ahijado
+2025/26,Real Oviedo,Marco Esteban
+2025/26,Real Oviedo,Omar Falah
+2025/26,Real Oviedo,Nicolas Fonseca
+2025/26,Real Oviedo,Santiago Colombatto
+2025/26,Real Oviedo,Alberto Reina
+2025/26,Real Oviedo,Leander Dendoncker
+2025/26,Real Oviedo,Kwasi Sibo
+2025/26,Real Oviedo,Luka Ilic
+2025/26,Real Oviedo,Pablo Agudin
+2025/26,Real Oviedo,Santi Cazorla
+2025/26,Real Oviedo,Federico Vinas
+2025/26,Real Oviedo,Haissem Hassan
+2025/26,Real Oviedo,Thiago Fernandez
+2025/26,Real Oviedo,Ilyas Chaira
+2025/26,Real Oviedo,Josip Brekalo
+2025/26,Real Oviedo,Thiago Borbas
+2025/26,Real Oviedo,Alex Fores
+2025/26,Real Oviedo,Ovie Ejaria
+2025/26,Real Oviedo,Salomon Rondon
+2025/26,Real Oviedo,Borja Sanchez

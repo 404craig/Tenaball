@@ -1,0 +1,82 @@
+{
+ "pick": "de19",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Dortmund's biggest sales",
+ "brief": "Name the ten players Dortmund have sold for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Ousmane Dembele",
+   "val": "€105m (£96.8m)"
+  },
+  {
+   "label": "2",
+   "name": "Jude Bellingham",
+   "val": "€103m (£88.5m)"
+  },
+  {
+   "label": "3",
+   "name": "Jadon Sancho",
+   "val": "€85m (£73m)"
+  },
+  {
+   "label": "4",
+   "name": "Christian Pulisic",
+   "val": "€64m (£58m)"
+  },
+  {
+   "label": "5",
+   "name": "Pierre-Emerick Aubameyang",
+   "val": "€63.75m (£56m)"
+  },
+  {
+   "label": "6",
+   "name": "Erling Haaland",
+   "val": "€60m (£51.2m)"
+  },
+  {
+   "label": "7",
+   "name": "Jamie Gittens",
+   "val": "€56m"
+  },
+  {
+   "label": "8",
+   "name": "Henrikh Mkhitaryan",
+   "val": "€42m"
+  },
+  {
+   "label": "9",
+   "name": "Mario Gotze",
+   "val": "€37m"
+  },
+  {
+   "label": "10",
+   "name": "Mats Hummels",
+   "val": "€35m"
+  }
+ ],
+ "notes": {
+  "Abdou Diallo": "Abdou Diallo is 11th, just outside: €32m to PSG in 2019.",
+  "Ilkay Gundogan": "Ilkay Gundogan is 12th, just outside: about €27m to Manchester City in 2016.",
+  "Niclas Fullkrug": "Niclas Fullkrug is 12th equal, just outside: about €27m to West Ham in 2024.",
+  "Karim Adeyemi": "Karim Adeyemi is outside the ten: €22m to Barcelona in 2026.",
+  "Robert Lewandowski": "Robert Lewandowski left Dortmund on a free transfer in 2014."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/borussia-dortmund/rekordabgaenge/verein/16",
+  "https://fourfourtwo.com/news/dortmund-confirm-gotze-move-bayern",
+  "https://nbcsports.com/soccer/news/erling-haaland-to-manchester-city-transfer-confirmed-via-release-clause",
+  "https://www.bavarianfootballworks.com/bayern-munich-transfer-rumors-news/2016/5/10/11648266/official-bayern-sign-mats-hummels-from-dortmund",
+  "https://www.bbc.co.uk/sport/football/41044659",
+  "https://www.bbc.com/sport/football/65901078",
+  "https://www.beinsports.com/en-au/football/bundesliga/articles/chelsea-and-dortmund-reach-gittens-agreement-2025-07-04",
+  "https://www.skysports.com/football/news/12040/12346233/jadon-sancho-transfer-to-manchester-united-for-73m-confirmed-by-borussia-dortmund",
+  "https://www.sport1.de/transfermarkt/2016/07/henrikh-mkhitaryan-von-borussia-dortmund-zu-manchester-united",
+  "https://www.thejakartapost.com/news/2019/01/02/chelsea-sign-american-star-pulisic-from-dortmund",
+  "https://www.washingtontimes.com/news/2018/jan/31/aubameyang-joins-arsenal-for-club-record-80-millio/"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

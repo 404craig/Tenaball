@@ -1,0 +1,87 @@
+{
+ "pick": "es10",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most La Liga hat-tricks since 2000",
+ "brief": "Name the ten players with the most La Liga hat-tricks since 2000/01. Four or more goals in a game counts as a hat-trick.",
+ "period": "La Liga seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "36 hat-tricks"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "34 hat-tricks"
+  },
+  {
+   "label": "3",
+   "name": "Luis Suarez",
+   "val": "10 hat-tricks"
+  },
+  {
+   "label": "4",
+   "name": "Roberto Soldado",
+   "val": "7 hat-tricks"
+  },
+  {
+   "label": "5",
+   "name": "Diego Tristan",
+   "val": "6 hat-tricks"
+  },
+  {
+   "label": "6",
+   "name": "Patrick Kluivert",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "7",
+   "name": "Gonzalo Higuain",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "8",
+   "name": "Antoine Griezmann",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "9",
+   "name": "Karim Benzema",
+   "val": "5 hat-tricks"
+  },
+  {
+   "label": "10",
+   "name": "Aritz Aduriz",
+   "val": "4 hat-tricks",
+   "pool": "t10",
+   "alts": [
+    "Aritz Aduriz",
+    "Radamel Falcao",
+    "Alexander Sorloth"
+   ]
+  }
+ ],
+ "notes": {
+  "Ricardo Oliveira": "Ricardo Oliveira scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "David Villa": "David Villa scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Diego Forlan": "Diego Forlan scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Samuel Eto'o": "Samuel Eto'o scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Gareth Bale": "Gareth Bale scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Neymar": "Neymar scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Wissam Ben Yedder": "Wissam Ben Yedder scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Iago Aspas": "Iago Aspas scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Youssef En-Nesyri": "Youssef En-Nesyri scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Oihan Sancet": "Oihan Sancet scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Robert Lewandowski": "Robert Lewandowski scored 3 La Liga hat-tricks from 2000/01 to 2025/26, just outside the top ten.",
+  "Kylian Mbappe": "Kylian Mbappe scored 2 La Liga hat-tricks up to the end of 2025/26 (his August 2026 one is in 2026/27).",
+  "Raul": "Raul scored only 2 La Liga hat-tricks from 2000/01 on."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_hat-tricks",
+  "https://www.transfermarkt.co.uk/lionel-messi/alletore/spieler/28003 (each player's list of every La Liga goal, filtered to LaLiga)"
+ ],
+ "checks": "Counted from every hat-trick in Wikipedia's list dated from July 2000 to June 2026 (301 hat-tricks). For each of the twelve players at 4 or more, Transfermarkt's list of every La Liga goal was grouped by match and the games with 3 or more goals since 2000/01 counted: all twelve totals agree (Messi 36, Ronaldo 34, Suarez 10, Soldado 7, Tristan 6, Kluivert, Higuain, Griezmann and Benzema 5, Aduriz, Falcao and Sorloth 4). Villa, Eto'o, Lewandowski, Aspas, Forlan and Neymar were also checked on Transfermarkt and have 3 each, as Wikipedia says."
+}

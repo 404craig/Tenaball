@@ -1,0 +1,81 @@
+{
+ "pick": "it19",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Napoli's biggest sales",
+ "brief": "Name the ten players Napoli have sold for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gonzalo Higuain",
+   "val": "€90m (£75.3m)"
+  },
+  {
+   "label": "2",
+   "name": "Victor Osimhen",
+   "val": "€75m"
+  },
+  {
+   "label": "3",
+   "name": "Khvicha Kvaratskhelia",
+   "val": "€70m"
+  },
+  {
+   "label": "4",
+   "name": "Edinson Cavani",
+   "val": "€64.5m"
+  },
+  {
+   "label": "5",
+   "name": "Jorginho",
+   "val": "€57m (£50m)"
+  },
+  {
+   "label": "6",
+   "name": "Kim Min-jae",
+   "val": "€50m"
+  },
+  {
+   "label": "7",
+   "name": "Kalidou Koulibaly",
+   "val": "€38m"
+  },
+  {
+   "label": "8",
+   "name": "Ezequiel Lavezzi",
+   "val": "€26m"
+  },
+  {
+   "label": "9",
+   "name": "Miguel Gutierrez",
+   "val": "€26m"
+  },
+  {
+   "label": "10",
+   "name": "Allan",
+   "val": "€25m"
+  }
+ ],
+ "notes": {
+  "Eljif Elmas": "Eljif Elmas is 11th, just outside: €23m to 24m to RB Leipzig in January 2024.",
+  "Giacomo Raspadori": "Giacomo Raspadori is 12th, just outside: €22m plus up to €4m to Atletico Madrid in 2025.",
+  "Fabian Ruiz": "Fabian Ruiz is 12th equal, just outside: initial €21.5m to PSG in 2022.",
+  "Marek Hamsik": "Marek Hamsik is outside the ten: about €20m to Dalian Yifang in 2019."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ssc-neapel/rekordabgaenge/verein/6195",
+  "https://english.ahram.org.eg/News/76628.aspx",
+  "https://fourfourtwo.com/news/juventus-sign-higuain-napoli-eu90m",
+  "https://lethbridgeherald.com/?p=995750",
+  "https://thescore.com/news/1571211",
+  "https://www.calcioefinanza.it/?p=102208",
+  "https://www.flashscore.com/news/soccer-serie-a-bayern-munich-sign-south-korea-defender-kim-min-jae-from-napoli-on-five-year-deal/t4G4z7g3",
+  "https://www.getfootballnewsgermany.com/2026/leverkusen-gutierrez-done/",
+  "https://www.getfootballnewsitaly.com/2020/napolis-allan-set-to-join-everton-as-deal-initially-worth-e25m-is-agreed/",
+  "https://www.maxifoot.fr/football/article-15663.htm",
+  "https://www.thescore.com/seri/news/3318450/sms:"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

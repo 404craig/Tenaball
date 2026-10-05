@@ -1,0 +1,84 @@
+{
+ "pick": "ess02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "La Liga assists, 2025/26",
+ "brief": "Name the ten players with the most La Liga assists in 2025/26.",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lamine Yamal",
+   "val": "11 or 12 assists"
+  },
+  {
+   "label": "2",
+   "name": "Marcus Rashford",
+   "val": "7 or 10 assists"
+  },
+  {
+   "label": "3",
+   "name": "Nicolas Pepe",
+   "val": "8 or 10 assists"
+  },
+  {
+   "label": "4",
+   "name": "Luis Milla",
+   "val": "10 assists"
+  },
+  {
+   "label": "5",
+   "name": "Pedri",
+   "val": "9 assists"
+  },
+  {
+   "label": "6",
+   "name": "Fermin Lopez",
+   "val": "9 assists"
+  },
+  {
+   "label": "7",
+   "name": "Arda Guler",
+   "val": "9 assists"
+  },
+  {
+   "label": "8",
+   "name": "Abde Ezzalzouli",
+   "val": "8 or 9 assists"
+  },
+  {
+   "label": "9",
+   "name": "Dani Olmo",
+   "val": "8 assists",
+   "pool": "t8",
+   "alts": [
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Federico Valverde",
+   "val": "8 assists",
+   "pool": "t8",
+   "alts": [
+    "Dani Olmo",
+    "Federico Valverde",
+    "Brahim Diaz"
+   ]
+  }
+ ],
+ "notes": {
+  "Yuri Berchiche": "Yuri Berchiche had 7 assists on Transfermarkt, just outside the ten.",
+  "Vinicius Junior": "Vinicius Junior had 6 assists on Transfermarkt, just outside the ten.",
+  "Santi Comesana": "Santi Comesana had 6 assists on Transfermarkt, just outside the ten.",
+  "Brahim Diaz": "Brahim Diaz is in the shared places on Transfermarkt (8 assists) but ESPN gives him 6."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages for all 20 clubs, 2025/26 (reldata=ES1%262025)",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/2025/types/1/leaders"
+ ],
+ "checks": "Assists summed per player from Transfermarkt club pages and compared with ESPN's 2025/26 assists leaders. Assist counting differs between providers: the same ten names are the top ten on ESPN, but some totals differ by one to three (shown as \"x or y\"). Order follows Transfermarkt. Olmo, Valverde and Brahim Diaz tie on 8 on Transfermarkt for the last two places, so they share them as a pool; ESPN has Olmo and Valverde on 8 and Brahim on 6."
+}

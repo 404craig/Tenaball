@@ -1,0 +1,95 @@
+{
+ "pick": "it11",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Milan derby league scorers since 2000",
+ "brief": "Name the ten players with the most Serie A goals in Milan derbies (Inter v AC Milan) from 2000/01 to 2025/26. League games only; own goals don't count.",
+ "period": "Serie A Milan derbies 2000/01 to 2025/26 (52 matches)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Zlatan Ibrahimovic",
+   "val": "8 goals"
+  },
+  {
+   "label": "2",
+   "name": "Andriy Shevchenko",
+   "val": "6 goals"
+  },
+  {
+   "label": "3",
+   "name": "Diego Milito",
+   "val": "6 goals"
+  },
+  {
+   "label": "4",
+   "name": "Kaka",
+   "val": "5 goals"
+  },
+  {
+   "label": "5",
+   "name": "Mauro Icardi",
+   "val": "5 goals"
+  },
+  {
+   "label": "6",
+   "name": "Filippo Inzaghi",
+   "val": "4 goals"
+  },
+  {
+   "label": "7",
+   "name": "Dejan Stankovic",
+   "val": "4 goals"
+  },
+  {
+   "label": "8",
+   "name": "Lautaro Martinez",
+   "val": "4 goals"
+  },
+  {
+   "label": "9",
+   "name": "Romelu Lukaku",
+   "val": "4 goals"
+  },
+  {
+   "label": "10",
+   "name": "Adriano",
+   "val": "3 goals",
+   "pool": "three",
+   "alts": [
+    "Adriano",
+    "Julio Cruz",
+    "Alexandre Pato",
+    "Suso",
+    "Stefan de Vrij",
+    "Marcelo Brozovic",
+    "Olivier Giroud",
+    "Rafael Leao"
+   ]
+  }
+ ],
+ "notes": {
+  "Gianni Comandini": "Gianni Comandini scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Serginho": "Serginho scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Obafemi Martins": "Obafemi Martins scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Clarence Seedorf": "Clarence Seedorf scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Maicon": "Maicon scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Antonio Candreva": "Antonio Candreva scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Ivan Perisic": "Ivan Perisic scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Matias Vecino": "Matias Vecino scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Marcus Thuram": "Marcus Thuram scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Henrikh Mkhitaryan": "Henrikh Mkhitaryan scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Hakan Calhanoglu": "Hakan Calhanoglu scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Christian Pulisic": "Christian Pulisic scored 2 league goals in Milan derbies in this period, one short of the pool on 3.",
+  "Zlatan Ibrahimovic": "Ibrahimovic scored 2 for Inter and 6 for AC Milan.",
+  "Stefan de Vrij": "De Vrij scored 3 for Inter; his own goal in November 2021 doesn't count.",
+  "Lautaro Martinez": "Only league derbies count here, so goals in cup and European derbies are left out."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/1047436",
+  "https://en.wikipedia.org/wiki/2010%E2%80%9311_Inter_Milan_season",
+  "https://en.wikipedia.org/wiki/2010%E2%80%9311_AC_Milan_season"
+ ],
+ "checks": "All 52 league derbies (two a season) were found from Inter's Transfermarkt fixture lists, and every goal was taken from Transfermarkt's match reports (derby.csv), with each match's goal total matching its score. Each match's scorers were then checked against the match box in Wikipedia's Inter season article and AC Milan season article for that season: every match agrees with at least one, and the only real disagreement is 24 February 2013, where the AC Milan season article gives Milan's goal to Bojan Krkic, against Transfermarkt and the Inter article (Stephan El Shaarawy); that doesn't affect the board. Own goals (Handanovic 2017, de Vrij 2021) left out. 10th place is a pool of eight players on 3."
+}

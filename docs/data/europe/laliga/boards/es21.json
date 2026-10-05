@@ -1,0 +1,81 @@
+{
+ "pick": "es21",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Barcelona's biggest signings",
+ "brief": "Name the ten most expensive players Barcelona have signed since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Philippe Coutinho",
+   "val": "€120m (£105m)"
+  },
+  {
+   "label": "2",
+   "name": "Antoine Griezmann",
+   "val": "€120m (£107m)"
+  },
+  {
+   "label": "3",
+   "name": "Ousmane Dembele",
+   "val": "€105m (£96.8m)"
+  },
+  {
+   "label": "4",
+   "name": "Luis Suarez",
+   "val": "€81.7m"
+  },
+  {
+   "label": "5",
+   "name": "Frenkie de Jong",
+   "val": "€75m"
+  },
+  {
+   "label": "6",
+   "name": "Anthony Gordon",
+   "val": "€70m"
+  },
+  {
+   "label": "7",
+   "name": "Rodri",
+   "val": "€60m"
+  },
+  {
+   "label": "8",
+   "name": "Miralem Pjanic",
+   "val": "€60m"
+  },
+  {
+   "label": "9",
+   "name": "Raphinha",
+   "val": "€58m (£49m)"
+  },
+  {
+   "label": "10",
+   "name": "Neymar",
+   "val": "€57.1m"
+  }
+ ],
+ "notes": {
+  "Dani Olmo": "Dani Olmo is 11th, just outside: €55m plus €7m from RB Leipzig in 2024 (TM €61m).",
+  "Ferran Torres": "Ferran Torres is 11th equal, just outside: €55m plus add-ons from Manchester City in 2022.",
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic cost €46m in cash plus Samuel Eto'o in 2009. Counting only the cash, he is outside the ten; Transfermarkt values the whole deal at €69.5m.",
+  "Jules Kounde": "Jules Kounde is outside the ten: €50m plus add-ons from Sevilla in 2022."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-barcelona/transferrekorde/verein/131",
+  "https://africa.espn.com/football/soccer-transfers/story/4699070/barcelonaleeds-united-agree-raphinha-deal-sources",
+  "https://espndeportes.espn.com/futbol/espana/nota/_/id/3852401/coutinho-ya-es-del-barcelona!",
+  "https://prod.beinsports.com/en-us/soccer/la-liga/articles/the-staggering-price-barcelona-will-pay-to-sign-rodri-2026-08-17",
+  "https://www.bbc.co.uk/sport/football/41044659",
+  "https://www.bbc.com/sport/football/48967047",
+  "https://www.beinsports.com/en-au/football/laliga/articles-video/gordon-completes-80m-barcelona-move-2026-05-29",
+  "https://www.eurosport.com/football/liga/2014-2015/revealed-the-actual-cost-of-luis-suarez-s-transfer-from-liverpool-to-barcelona_sto5413513/story.shtml",
+  "https://www.fcbarcelona.com/en/news/981677/barca-sign-de-jong",
+  "https://www.thescore.com/liga/news/1980722",
+  "https://www1.skysports.com/football/news/11833/9132103/primera-division-barcelona-reveal-details-of-deal-to-sign-brazil-star-neymar"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

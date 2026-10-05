@@ -1,0 +1,77 @@
+{
+ "pick": "t01-2000",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "European Golden Shoe winners, 2000/01 to 2009/10",
+ "brief": "Name the winner of the European Golden Shoe, for the top league scorer in Europe, in each season from 2000/01 to 2009/10.",
+ "period": "League seasons 2000/01 to 2009/10",
+ "rows": [
+  {
+   "label": "2000/01",
+   "name": "Henrik Larsson",
+   "val": "35 goals, Celtic"
+  },
+  {
+   "label": "2001/02",
+   "name": "Mario Jardel",
+   "val": "42 goals, Sporting"
+  },
+  {
+   "label": "2002/03",
+   "name": "Roy Makaay",
+   "val": "29 goals, Deportivo"
+  },
+  {
+   "label": "2003/04",
+   "name": "Thierry Henry",
+   "val": "30 goals, Arsenal"
+  },
+  {
+   "label": "2004/05",
+   "name": "Thierry Henry",
+   "val": "25 goals, Arsenal and Villarreal (shared)",
+   "alts": [
+    "Thierry Henry",
+    "Diego Forlan"
+   ]
+  },
+  {
+   "label": "2005/06",
+   "name": "Luca Toni",
+   "val": "31 goals, Fiorentina"
+  },
+  {
+   "label": "2006/07",
+   "name": "Francesco Totti",
+   "val": "26 goals, Roma"
+  },
+  {
+   "label": "2007/08",
+   "name": "Cristiano Ronaldo",
+   "val": "31 goals, Manchester United"
+  },
+  {
+   "label": "2008/09",
+   "name": "Diego Forlan",
+   "val": "32 goals, Atletico Madrid"
+  },
+  {
+   "label": "2009/10",
+   "name": "Lionel Messi",
+   "val": "34 goals, Barcelona"
+  }
+ ],
+ "notes": {
+  "Lionel Messi": "Lionel Messi won once in these years (2009/10); his other five came from 2011/12 to 2018/19.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo also won in 2010/11, 2013/14 (shared) and 2014/15, outside these years.",
+  "Kevin Phillips": "Kevin Phillips won in 1999/2000, just before these years.",
+  "Luis Suarez": "Luis Suarez won in 2013/14 (shared) and 2015/16, outside these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/European_Golden_Shoe",
+  "https://www.rsssf.org/miscellaneous/gboot.html",
+  "https://bundesliga.com/en/bundesliga/news/harry-kane-wins-golden-shoe-2025-26-bayern-munich-england-37552"
+ ],
+ "checks": "Every winner and goal tally agrees between Wikipedia's European Golden Shoe list and RSSSF's Golden Boot list (RSSSF lists one name for a shared year; Wikipedia, France Football's record, shows Henry and Forlan sharing 2004/05). Kane's 2025/26 award (36 goals, 72 points) is confirmed by Bayern and bundesliga.com (August 2026). The 4-slot rule was tested for every ten-season window from 2000/01: windows starting 2000/01 to 2004/05 and 2013/14 to 2016/17 pass; windows starting 2005/06 to 2012/13 fail, because Messi or Ronaldo would fill four or more slots."
+}

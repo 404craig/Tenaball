@@ -28,9 +28,10 @@ def known_boards(cat):
 CLUBS = {k: set(open(E + f"clubs_{k}.txt").read().split("\n")) for k in LEAGUE}
 
 Q, OPEN = [], []
-def family(pick, title, kind):
+def family(pick, title, kind, typ="person"):
     t = title.lower()
     if kind == "open": return "open"
+    if typ == "club" and not re.search(r"cup|pokal|coppa|copa|coupe", t): return "rec"
     if re.search(r"signing|sale|transfer", t): return "fee"
     if "manager" in t: return "mgr"
     if "assist" in t: return "assists"
@@ -77,7 +78,7 @@ for path in sorted(glob.glob(E + "*/boards/*.json")):
     if not b.get("period"): problems.append(f"{where}: no period line"); continue
     if not re.search(r"20\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
     kind, typ, lv = b.get("kind"), b.get("type", "person"), int(b.get("level", 1))
-    id = f"{CAT[lg]}-{family(pick, b['title'], kind)}-{pick.replace('/', '-')}"
+    id = f"{CAT[lg]}-{family(pick, b['title'], kind, typ)}-{pick.replace('/', '-')}"
     fix = (lambda n: plain(n)) if typ == "person" else (lambda n: n)
     if kind == "open":
         names = list(dict.fromkeys(fix(n) for n in b.get("names", [])))

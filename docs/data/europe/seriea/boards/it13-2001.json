@@ -1,0 +1,60 @@
+{
+ "pick": "it13-2001",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Coppa Italia winners 2001 to 2010",
+ "brief": "Name the Coppa Italia winners for each year from the 2001 final to the 2010 final.",
+ "period": "Coppa Italia finals 2001 to 2010 (seasons 2000/01 to 2009/10)",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Fiorentina"
+  },
+  {
+   "label": "2002",
+   "name": "Parma"
+  },
+  {
+   "label": "2003",
+   "name": "AC Milan"
+  },
+  {
+   "label": "2004",
+   "name": "Lazio"
+  },
+  {
+   "label": "2005",
+   "name": "Inter"
+  },
+  {
+   "label": "2006",
+   "name": "Inter"
+  },
+  {
+   "label": "2007",
+   "name": "Roma"
+  },
+  {
+   "label": "2008",
+   "name": "Roma"
+  },
+  {
+   "label": "2009",
+   "name": "Lazio"
+  },
+  {
+   "label": "2010",
+   "name": "Inter"
+  }
+ ],
+ "notes": {
+  "Juventus": "Juventus lost the final in 2002 and 2004.",
+  "Sampdoria": "Sampdoria lost the final in 2009."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Coppa_Italia_finals",
+  "https://www.transfermarkt.com/italy-cup/erfolge/pokalwettbewerb/CIT"
+ ],
+ "checks": "Every winner agrees between Wikipedia's list of finals and Transfermarkt's list of winners. 4-slot rule checked for every ten-year window from 2001: only the windows starting 2001, 2006, 2007 and 2008 pass (Inter win 4 in any window starting 2002 to 2005, Juventus win 4 or more in any window starting 2009 to 2017, so 2017 to 2026 fails too). Two windows kept: 2001 to 2010 and 2008 to 2017; they share 2008 to 2010."
+}

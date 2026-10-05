@@ -1,0 +1,72 @@
+{
+ "pick": "its06",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Serie A 2025/26: fewest goals conceded",
+ "brief": "Name the ten clubs that conceded the fewest Serie A goals in 2025/26.",
+ "period": "Serie A 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Como",
+   "val": "29 goals"
+  },
+  {
+   "label": "2",
+   "name": "Roma",
+   "val": "31 goals"
+  },
+  {
+   "label": "3",
+   "name": "Juventus",
+   "val": "34 goals"
+  },
+  {
+   "label": "4",
+   "name": "Inter",
+   "val": "35 goals"
+  },
+  {
+   "label": "5",
+   "name": "AC Milan",
+   "val": "35 goals"
+  },
+  {
+   "label": "6",
+   "name": "Napoli",
+   "val": "36 goals"
+  },
+  {
+   "label": "7",
+   "name": "Atalanta",
+   "val": "36 goals"
+  },
+  {
+   "label": "8",
+   "name": "Lazio",
+   "val": "40 goals"
+  },
+  {
+   "label": "9",
+   "name": "Bologna",
+   "val": "46 goals"
+  },
+  {
+   "label": "10",
+   "name": "Parma",
+   "val": "46 goals"
+  }
+ ],
+ "notes": {
+  "Udinese": "Udinese were 11th, conceding 48.",
+  "Sassuolo": "Sassuolo were joint 12th, conceding 50.",
+  "Fiorentina": "Fiorentina were joint 12th, conceding 50."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A",
+  "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
+  "https://www.transfermarkt.com/serie-a/tabelle/wettbewerb/IT1/saison_id/2025"
+ ],
+ "checks": "Every club's goals for and against agree in three places: Wikipedia's final table (Template:2025-26 Serie A table), the table worked out from all 380 results in football-data.co.uk's I1.csv, and Transfermarkt's final table."
+}

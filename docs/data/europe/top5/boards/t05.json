@@ -1,0 +1,95 @@
+{
+ "pick": "t05",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Title winners in two or more big leagues",
+ "brief": "Name the ten managers who won the league title in two or more of the Premier League, La Liga, the Bundesliga, Serie A and Ligue 1 between 2000/01 and 2025/26, ranked by how many of those leagues they won, then by titles.",
+ "period": "League seasons 2000/01 to 2025/26 in the Premier League, La Liga, Bundesliga, Serie A and Ligue 1",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Carlo Ancelotti",
+   "val": "5 leagues, 6 titles"
+  },
+  {
+   "label": "2",
+   "name": "Pep Guardiola",
+   "val": "3 leagues, 12 titles"
+  },
+  {
+   "label": "3",
+   "name": "Jose Mourinho",
+   "val": "3 leagues, 6 titles"
+  },
+  {
+   "label": "4",
+   "name": "Antonio Conte",
+   "val": "2 leagues, 6 titles"
+  },
+  {
+   "label": "5",
+   "name": "Luis Enrique",
+   "val": "2 leagues, 5 titles"
+  },
+  {
+   "label": "6",
+   "name": "Roberto Mancini",
+   "val": "2 leagues, 4 titles"
+  },
+  {
+   "label": "7",
+   "name": "Hansi Flick",
+   "val": "2 leagues, 4 titles"
+  },
+  {
+   "label": "8",
+   "name": "Jurgen Klopp",
+   "val": "2 leagues, 3 titles"
+  },
+  {
+   "label": "9",
+   "name": "Thomas Tuchel",
+   "val": "2 leagues, 3 titles"
+  },
+  {
+   "label": "10",
+   "name": "Fabio Capello",
+   "val": "2 leagues, 2 titles"
+  }
+ ],
+ "notes": {
+  "Louis van Gaal": "Louis van Gaal won La Liga in 1998 and 1999, before these years; from 2000/01 he won only the Bundesliga (2010).",
+  "Giovanni Trapattoni": "Giovanni Trapattoni won the Bundesliga in 1997 and Serie A before 2000; no big-five title from 2000/01.",
+  "Jupp Heynckes": "Jupp Heynckes won only the Bundesliga in these years (2013, 2018).",
+  "Xabi Alonso": "Xabi Alonso won only the Bundesliga (2024); Real Madrid did not win La Liga under him.",
+  "Claudio Ranieri": "Claudio Ranieri won only the Premier League (2016).",
+  "Manuel Pellegrini": "Manuel Pellegrini won only the Premier League (2014).",
+  "Unai Emery": "Unai Emery won only Ligue 1 (2018).",
+  "Mauricio Pochettino": "Mauricio Pochettino won only Ligue 1 (2022).",
+  "Christophe Galtier": "Christophe Galtier won only Ligue 1 (2021 and 2023).",
+  "Laurent Blanc": "Laurent Blanc won only Ligue 1 (2009, 2014 to 2016).",
+  "Felix Magath": "Felix Magath won only the Bundesliga (2005, 2006, 2009).",
+  "Massimiliano Allegri": "Massimiliano Allegri won only Serie A.",
+  "Arsene Wenger": "Arsene Wenger won only the Premier League in these years (2002, 2004).",
+  "Vincent Kompany": "Vincent Kompany won only the Bundesliga (2025, 2026).",
+  "Rafael Benitez": "Rafael Benitez won only La Liga (2002, 2004)."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/premier-league/erfolge/wettbewerb/GB1",
+  "https://www.transfermarkt.com/laliga/erfolge/wettbewerb/ES1",
+  "https://www.transfermarkt.com/bundesliga/erfolge/wettbewerb/L1",
+  "https://www.transfermarkt.com/serie-a/erfolge/wettbewerb/IT1",
+  "https://www.transfermarkt.com/ligue-1/erfolge/wettbewerb/FR1",
+  "https://en.wikipedia.org/wiki/List_of_La_Liga_winning_managers",
+  "https://en.wikipedia.org/wiki/List_of_Serie_A_winning_managers",
+  "https://en.wikipedia.org/wiki/List_of_Ligue_1_winning_managers",
+  "https://en.wikipedia.org/wiki/List_of_English_football_championship-winning_managers",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1"
+ ],
+ "checks": "Every champion's manager from 2000/01 to 2025/26 in all five leagues (129 titles; Serie A 2004/05 was not awarded) was taken from Transfermarkt's champions pages, which name the coach of each champion, and checked against Wikipedia's winning-manager lists for La Liga, Serie A, Ligue 1 and England and the 2025/26 season pages of all five leagues (Arsenal and Arteta, Barcelona and Flick, Bayern and Kompany, Inter and Chivu, PSG and Luis Enrique). The two sources agree on every season. Exactly ten managers won in two or more leagues, so it is a fixed board, ranked by leagues and then titles. Juventus's 2004/05 and 2005/06 titles under Capello were revoked and do not count; Inter's awarded 2005/06 title is counted for Mancini (without it he has 3, level with Klopp and Tuchel). Flick's 2019/20 title counts for him (he took over from Kovac in November). Craig's guesses Van Gaal and Trapattoni drop out because their second leagues came before 2000/01; Klopp and Mancini come in."
+}

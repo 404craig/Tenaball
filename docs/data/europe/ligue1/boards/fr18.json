@@ -1,0 +1,96 @@
+{
+ "pick": "fr18",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Monaco's biggest sales",
+ "brief": "Name the ten players Monaco have sold for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "€180m (£165.7m)"
+  },
+  {
+   "label": "2",
+   "name": "Aurelien Tchouameni",
+   "val": "€80m (£68.3m)"
+  },
+  {
+   "label": "3",
+   "name": "James Rodriguez",
+   "val": "€80m (£63m)"
+  },
+  {
+   "label": "4",
+   "name": "Thomas Lemar",
+   "val": "€72m incl. bonuses"
+  },
+  {
+   "label": "5",
+   "name": "Benjamin Mendy",
+   "val": "€57.5m (£52m)"
+  },
+  {
+   "label": "6",
+   "name": "Anthony Martial",
+   "val": "€50m (£36m)"
+  },
+  {
+   "label": "7",
+   "name": "Bernardo Silva",
+   "val": "€50m (£43m)"
+  },
+  {
+   "label": "8",
+   "name": "Maghnes Akliouche",
+   "val": "€50m"
+  },
+  {
+   "label": "9",
+   "name": "Fabinho",
+   "val": "€45m",
+   "pool": "mon9",
+   "alts": [
+    "Fabinho",
+    "Youri Tielemans",
+    "Axel Disasi",
+    "Tiemoue Bakayoko"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Youri Tielemans",
+   "val": "€45m",
+   "pool": "mon9",
+   "alts": [
+    "Fabinho",
+    "Youri Tielemans",
+    "Axel Disasi",
+    "Tiemoue Bakayoko"
+   ]
+  }
+ ],
+ "notes": {
+  "Benoit Badiashile": "Benoit Badiashile is outside the ten: €38m to Chelsea in 2023.",
+  "Geoffrey Kondogbia": "Geoffrey Kondogbia is outside the ten: about €36m to Inter in 2015.",
+  "Aladji Bamba": "Aladji Bamba is outside the ten: €35.5m to Newcastle in 2026."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/as-monaco/rekordabgaenge/verein/162",
+  "https://capitalfm.africa/8-billion-shilling-average-martial/",
+  "https://d11.thedailystar.net/sports/football/news/man-city-sign-50m-euro-silva-1411906",
+  "https://espndeportes.espn.com/futbol/inglaterra/nota/_/id/3390285/chelsea-le-compro-a-tiemoue-bakayoko-al-monaco",
+  "https://irishtimes.com/sport/soccer/2022/06/11/real-madrid-reach-agreement-to-sign-tchouameni-from-monaco-in-100m-deal",
+  "https://m.maxifoot.fr/psg/monaco-accepte-une-offre-pour-akliouche-foot-460957.htm",
+  "https://tsn.ca/belgium-midfielder-youri-tielemans-joins-leicester-city-on-a-four-year-deal-1.1334668",
+  "https://www.asmonaco.com/en/agreement-with-liverpool-for-fabinho/",
+  "https://www.bbc.com/sport/football/40715851",
+  "https://www.malaymail.com/news/sports/2023/08/04/chelsea-sign-france-defender-disasi-in-45m-deal/83537",
+  "https://www.maxifoot.fr/atletico/on-connait-le-prix-de-lemar-foot-284956.htm",
+  "https://www.si.com/soccer/2014/07/21/james-rodriguez-transfer-real-madrid-fee-amount",
+  "https://www.thescore.com/news/1337944"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

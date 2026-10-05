@@ -1,0 +1,72 @@
+{
+ "pick": "ess05",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "La Liga 2025/26: most goals",
+ "brief": "Name the ten clubs that scored the most La Liga goals in 2025/26.",
+ "period": "La Liga season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Barcelona",
+   "val": "95 goals"
+  },
+  {
+   "label": "2",
+   "name": "Real Madrid",
+   "val": "77 goals"
+  },
+  {
+   "label": "3",
+   "name": "Villarreal",
+   "val": "72 goals"
+  },
+  {
+   "label": "4",
+   "name": "Atletico Madrid",
+   "val": "62 goals"
+  },
+  {
+   "label": "5",
+   "name": "Real Betis",
+   "val": "59 goals"
+  },
+  {
+   "label": "6",
+   "name": "Real Sociedad",
+   "val": "59 goals"
+  },
+  {
+   "label": "7",
+   "name": "Celta Vigo",
+   "val": "53 goals"
+  },
+  {
+   "label": "8",
+   "name": "Elche",
+   "val": "49 goals"
+  },
+  {
+   "label": "9",
+   "name": "Levante",
+   "val": "47 goals"
+  },
+  {
+   "label": "10",
+   "name": "Mallorca",
+   "val": "47 goals"
+  }
+ ],
+ "notes": {
+  "Valencia": "Valencia scored 46 league goals in 2025/26, just outside the top ten.",
+  "Sevilla": "Sevilla scored 46 league goals in 2025/26, just outside the top ten.",
+  "Alaves": "Alaves scored 44 league goals in 2025/26, just outside the top ten."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga",
+  "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
+  "https://www.transfermarkt.co.uk/laliga/tabelle/wettbewerb/ES1/saison_id/2025"
+ ],
+ "checks": "Goals taken from the final 2025/26 table in tables.csv. Wikipedia's table, the table worked out from every football-data.co.uk result and Transfermarkt's table agree on every club's wins, draws, losses, goals for and against and points."
+}

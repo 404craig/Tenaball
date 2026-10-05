@@ -1,0 +1,87 @@
+{
+ "pick": "es19",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Real Madrid's biggest signings",
+ "brief": "Name the ten most expensive players Real Madrid have signed since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Yan Diomande",
+   "val": "€125m (£107m)"
+  },
+  {
+   "label": "2",
+   "name": "Jude Bellingham",
+   "val": "€103m (£88.5m)"
+  },
+  {
+   "label": "3",
+   "name": "Eden Hazard",
+   "val": "€100m (£89m)"
+  },
+  {
+   "label": "4",
+   "name": "Gareth Bale",
+   "val": "€100m (£85.3m)"
+  },
+  {
+   "label": "5",
+   "name": "Cristiano Ronaldo",
+   "val": "€94m (£80m)"
+  },
+  {
+   "label": "6",
+   "name": "Aurelien Tchouameni",
+   "val": "€80m (£68.3m)"
+  },
+  {
+   "label": "7",
+   "name": "James Rodriguez",
+   "val": "€80m (£63m)"
+  },
+  {
+   "label": "8",
+   "name": "Zinedine Zidane",
+   "val": "€77.5m (£46m)"
+  },
+  {
+   "label": "9",
+   "name": "Kaka",
+   "val": "€65m (£56m)"
+  },
+  {
+   "label": "10",
+   "name": "Luis Figo",
+   "val": "€60m",
+   "pool": "rm10",
+   "alts": [
+    "Luis Figo",
+    "Luka Jovic"
+   ]
+  }
+ ],
+ "notes": {
+  "Dean Huijsen": "Dean Huijsen is 11th, just outside: £50m release clause (about €59m) from Bournemouth in 2025 (Premier League site, EWN). Transfermarkt has €62.5m, which would put him 10th; the reported euro figure is below €60m.",
+  "Marc Cucurella": "Marc Cucurella is 12th, just outside: €55m from Chelsea in 2026 (Transfermarkt).",
+  "Eder Militao": "Eder Militao is outside the ten: €50m from Porto in 2019.",
+  "Kylian Mbappe": "Kylian Mbappe joined Real Madrid on a free transfer in 2024, so no fee."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/real-madrid/transferrekorde/verein/418",
+  "https://irishtimes.com/sport/soccer/2022/06/11/real-madrid-reach-agreement-to-sign-tchouameni-from-monaco-in-100m-deal",
+  "https://news.bbc.co.uk/sport1/hi/football/europe/8082147.stm",
+  "https://news.bbc.co.uk/sport2/hi/football/europe/848836.stm",
+  "https://www.bbc.com/sport/football/48548361",
+  "https://www.bbc.com/sport/football/65901078",
+  "https://www.eurosport.com/football/liga/2018-2019/real-madrid-sign-jovic-for-60-million-euros-report_sto7275666/story.shtml",
+  "https://www.nst.com.my/amp/sports/football/2026/08/1505652/real-madrid-agree-record-%E2%82%AC140m-deal-leipzigs-diomande",
+  "https://www.si.com/soccer/2014/07/21/james-rodriguez-transfer-real-madrid-fee-amount",
+  "https://www.telegraph.co.uk/sport/football/3008694/Zidane-in-48m-Real-deal.html",
+  "https://www.theguardian.com/football/2013/sep/01/gareth-bale-100m-transfer-real-madrid",
+  "https://www.uefa.com/news-media/news/01da-0e724ecc82ec-05f7b7b5fb93-1000--ronaldo-completes-record-madrid-switch/"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

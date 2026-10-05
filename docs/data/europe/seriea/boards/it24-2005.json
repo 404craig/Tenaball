@@ -1,0 +1,61 @@
+{
+ "pick": "it24-2005",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Serie A title-winning managers 2005/06 to 2014/15",
+ "brief": "Name the manager who won Serie A in each season from 2005/06 to 2014/15.",
+ "period": "Serie A seasons 2005/06 to 2014/15",
+ "rows": [
+  {
+   "label": "2005/06",
+   "name": "Roberto Mancini"
+  },
+  {
+   "label": "2006/07",
+   "name": "Roberto Mancini"
+  },
+  {
+   "label": "2007/08",
+   "name": "Roberto Mancini"
+  },
+  {
+   "label": "2008/09",
+   "name": "Jose Mourinho"
+  },
+  {
+   "label": "2009/10",
+   "name": "Jose Mourinho"
+  },
+  {
+   "label": "2010/11",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2011/12",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2012/13",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2013/14",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2014/15",
+   "name": "Massimiliano Allegri"
+  }
+ ],
+ "notes": {
+  "Fabio Capello": "Fabio Capello led Juventus to first place in 2004/05 and 2005/06, but both titles were taken away in the Calciopoli scandal; 2005/06 went to Mancini's Inter.",
+  "Marcello Lippi": "Marcello Lippi won 2001/02 and 2002/03 with Juventus, before this board.",
+  "Carlo Ancelotti": "Carlo Ancelotti won 2003/04 with AC Milan, before this board."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Serie_A_winning_managers",
+  "https://www.transfermarkt.com/serie-a/erfolge/wettbewerb/IT1"
+ ],
+ "checks": "Every season's title-winning manager agrees between Wikipedia's list of Serie A winning managers and Transfermarkt's list of champions with their coaches. 2004/05 has no champion (the title was stripped from Juventus and not reassigned), so no ten-season window can include it. 4-slot rule checked for every window: only 2005/06 to 2014/15, 2006/07 to 2015/16 and 2016/17 to 2025/26 pass (Allegri has 4 or more in every window starting 2007/08 to 2015/16). The two windows that don't overlap are kept. Clubs: 2005/06 Inter, 2006/07 Inter, 2007/08 Inter, 2008/09 Inter, 2009/10 Inter, 2010/11 AC Milan, 2011/12 Juventus, 2012/13 Juventus, 2013/14 Juventus, 2014/15 Juventus."
+}

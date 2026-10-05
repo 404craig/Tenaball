@@ -1,0 +1,83 @@
+{
+ "pick": "de21",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Biggest sales by Bundesliga clubs",
+ "brief": "Name the ten players sold by Bundesliga clubs for the biggest fees since July 2000, ranked by the guaranteed fee in euros reported at the time.",
+ "period": "Transfers from July 2000 to the end of the summer 2026 window (1 September 2026). Ranked by the guaranteed fee in euros as reported at the time; add-ons are left out. A loan with an obligation to buy counts at the obligation fee.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Yan Diomande",
+   "val": "€125m (£107m)"
+  },
+  {
+   "label": "2",
+   "name": "Florian Wirtz",
+   "val": "€117.5m (£100m)"
+  },
+  {
+   "label": "3",
+   "name": "Ousmane Dembele",
+   "val": "€105m (£96.8m)"
+  },
+  {
+   "label": "4",
+   "name": "Jude Bellingham",
+   "val": "€103m (£88.5m)"
+  },
+  {
+   "label": "5",
+   "name": "Randal Kolo Muani",
+   "val": "€95m"
+  },
+  {
+   "label": "6",
+   "name": "Josko Gvardiol",
+   "val": "€90m (£77.45m)"
+  },
+  {
+   "label": "7",
+   "name": "Jadon Sancho",
+   "val": "€85m (£73m)"
+  },
+  {
+   "label": "8",
+   "name": "Kai Havertz",
+   "val": "€80m"
+  },
+  {
+   "label": "9",
+   "name": "Hugo Ekitike",
+   "val": "€80m (£69m)"
+  },
+  {
+   "label": "10",
+   "name": "Benjamin Sesko",
+   "val": "€76.5m (£66.3m)"
+  }
+ ],
+ "notes": {
+  "Kevin De Bruyne": "Kevin De Bruyne is 11th, just outside: Wolfsburg to Manchester City in 2015, about £55m (German reports €74m, rising to €80m; TM €76m).",
+  "Nick Woltemade": "Nick Woltemade is 11th equal, just outside: Stuttgart to Newcastle in 2025, £64.8m (€75m) plus €5m add-ons.",
+  "Omar Marmoush": "Omar Marmoush is outside the ten: Eintracht Frankfurt to Manchester City in 2025, TM €75m including add-ons.",
+  "Dominik Szoboszlai": "Dominik Szoboszlai is outside the ten: €70m release clause, RB Leipzig to Liverpool in 2023.",
+  "Erling Haaland": "Erling Haaland is outside the ten: €60m release clause, Dortmund to Manchester City in 2022.",
+  "Leroy Sane": "Leroy Sane is outside the ten: Schalke to Manchester City in 2016, about €50m."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/bundesliga/transferrekorde/wettbewerb/L1/saison_id/alle/land_id//ausrichtung//spielerposition_id//altersklasse//leihe//w_s//zuab/ab",
+  "https://breakingnews.ie/sport/manchester-city-complete-77-6million-signing-of-josko-gvardiol-from-rb-leipzig-1511552.html",
+  "https://www.bbc.co.uk/sport/football/41044659",
+  "https://www.bbc.com/sport/football/65901078",
+  "https://www.expressandstar.com/uk-sports/manchester-united-agree-deal-for-rb-leipzig-striker-benjamin-sesko-5677980",
+  "https://www.nst.com.my/amp/sports/football/2026/08/1505652/real-madrid-agree-record-%E2%82%AC140m-deal-leipzigs-diomande",
+  "https://www.nytimes.com/athletic/6410031/2025/06/13/liverpool-transfer-wirtz-transfer-latest/",
+  "https://www.skysports.com/football/news/11661/13399200/hugo-ekitike-transfer-news-liverpool-agree-69m-fixed-fee-for-eintracht-frankfurt-forward-as-negotiations-continue-over-add-on-bonuses",
+  "https://www.skysports.com/football/news/11668/12060588/kai-havertz-chelsea-agree-836480m-fee-plus-836420m-add-ons-with-bayer-leverkusen",
+  "https://www.skysports.com/football/news/12040/12346233/jadon-sancho-transfer-to-manchester-united-for-73m-confirmed-by-borussia-dortmund",
+  "https://www.tsn.ca/soccer/paris-saint-germain-signs-forward-kolo-muani-as-transfer-window-closes-1.2002580"
+ ],
+ "checks": "Every fee was read from Transfermarkt's club or league record page and checked against a news report (BBC, Sky, Reuters, AP, ESPN, the Guardian, Eurosport, kicker, Calcio e Finanza, A Bola or the club's statement, as named per row in transfers.csv). Where a report splits a fee into a fixed part and add-ons, the fixed part is used, so several fees are lower than Transfermarkt's (which usually adds add-ons paid or agency costs). Where a player went the other way as part of the fee, only the cash is counted unless the clubs stated a fee for each player (Arthur and Pjanic, Cancelo and Danilo, Cillessen and Neto)."
+}

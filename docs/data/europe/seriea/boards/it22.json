@@ -1,0 +1,66 @@
+{
+ "pick": "it22",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Juventus managers since 2010",
+ "brief": "Name Juventus's last ten permanent managers in order, from Alberto Zaccheroni's appointment in January 2010 to Luciano Spalletti. The label is the year each spell began; Allegri had two spells and fills two places.",
+ "period": "Permanent Juventus managers appointed January 2010 to October 2025 (the ten most recent spells, as of the end of the 2026 summer)",
+ "rows": [
+  {
+   "label": "2010",
+   "name": "Alberto Zaccheroni"
+  },
+  {
+   "label": "2010",
+   "name": "Luigi Delneri"
+  },
+  {
+   "label": "2011",
+   "name": "Antonio Conte"
+  },
+  {
+   "label": "2014",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2019",
+   "name": "Maurizio Sarri"
+  },
+  {
+   "label": "2020",
+   "name": "Andrea Pirlo"
+  },
+  {
+   "label": "2021",
+   "name": "Massimiliano Allegri"
+  },
+  {
+   "label": "2024",
+   "name": "Thiago Motta"
+  },
+  {
+   "label": "2025",
+   "name": "Igor Tudor"
+  },
+  {
+   "label": "2025",
+   "name": "Luciano Spalletti"
+  }
+ ],
+ "notes": {
+  "Ciro Ferrara": "Ciro Ferrara (2009 to January 2010) came just before, so he's 11th counting back.",
+  "Claudio Ranieri": "Claudio Ranieri (2007 to 2009) is 12th counting back.",
+  "Didier Deschamps": "Didier Deschamps (2006 to 2007) is just before this board's start.",
+  "Fabio Capello": "Fabio Capello (2004 to 2006) is before this board's start.",
+  "Marcello Lippi": "Marcello Lippi's second spell began in 2001, before this board's start.",
+  "Carlo Ancelotti": "Carlo Ancelotti was manager from 1999 to 2001, before this board's start.",
+  "Massimo Brambilla": "Massimo Brambilla was only interim manager in October 2025, between Tudor and Spalletti, so he doesn't count.",
+  "Giancarlo Corradini": "Giancarlo Corradini was only caretaker in 2007, so he doesn't count."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_Juventus_FC_managers",
+  "https://www.transfermarkt.com/juventus-turin/mitarbeiterhistorie/verein/506/personalie_id/1"
+ ],
+ "checks": "Spells and start dates agree between Wikipedia's list of Juventus managers and Transfermarkt's head coach history: Zaccheroni 29/01/2010, Delneri 19/05/2010, Conte 01/07/2011, Allegri 16/07/2014, Sarri 01/07/2019, Pirlo 08/08/2020, Allegri 01/07/2021, Motta 01/07/2024, Tudor 23/03/2025, Spalletti 30/10/2025 (still in post). Fifteen permanent spells began from 2000 (Lippi 2001, Capello, Deschamps, Ranieri, Ferrara before these), so the board uses the ten most recent and starts at Zaccheroni. Wikipedia's interim managers (Corradini 2007, Brambilla 2025) left out; none was needed to make ten. Zaccheroni is listed as a full appointment, not interim, by both sources."
+}
