@@ -1,0 +1,78 @@
+{
+ "pick": "cl08-bayern",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Bayern Munich's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for Bayern Munich since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "69 goals"
+  },
+  {
+   "label": "2",
+   "name": "Thomas Muller",
+   "val": "57 goals"
+  },
+  {
+   "label": "3",
+   "name": "Harry Kane",
+   "val": "33 goals"
+  },
+  {
+   "label": "4",
+   "name": "Arjen Robben",
+   "val": "25 goals"
+  },
+  {
+   "label": "5",
+   "name": "Mario Gomez",
+   "val": "23 goals"
+  },
+  {
+   "label": "6",
+   "name": "Giovane Elber",
+   "val": "21 or 22 goals"
+  },
+  {
+   "label": "7",
+   "name": "Claudio Pizarro",
+   "val": "18 goals"
+  },
+  {
+   "label": "8",
+   "name": "Franck Ribery",
+   "val": "18 goals"
+  },
+  {
+   "label": "9",
+   "name": "Serge Gnabry",
+   "val": "18 goals"
+  },
+  {
+   "label": "10",
+   "name": "Roy Makaay",
+   "val": "17 goals",
+   "pool": "seventeen",
+   "alts": [
+    "Roy Makaay",
+    "Kingsley Coman"
+   ]
+  }
+ ],
+ "notes": {
+  "Leroy Sane": "Leroy Sane is just outside with 16.",
+  "Mehmet Scholl": "Mehmet Scholl scored 12.",
+  "Carsten Jancker": "Carsten Jancker scored 12 or 13.",
+  "Bastian Schweinsteiger": "Bastian Schweinsteiger scored 12.",
+  "Joshua Kimmich": "Joshua Kimmich scored 12."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs. Elber: UEFA.com 22, Transfermarkt 21 (they differ on 1998/99); sixth either way."
+}

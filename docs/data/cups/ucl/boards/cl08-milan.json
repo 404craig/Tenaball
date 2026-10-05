@@ -1,0 +1,80 @@
+{
+ "pick": "cl08-milan",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "AC Milan's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for AC Milan since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Andriy Shevchenko",
+   "val": "29 goals"
+  },
+  {
+   "label": "2",
+   "name": "Filippo Inzaghi",
+   "val": "29 goals"
+  },
+  {
+   "label": "3",
+   "name": "Kaka",
+   "val": "25 goals"
+  },
+  {
+   "label": "4",
+   "name": "Marco Simone",
+   "val": "14 goals"
+  },
+  {
+   "label": "5",
+   "name": "Zlatan Ibrahimovic",
+   "val": "9 goals"
+  },
+  {
+   "label": "6",
+   "name": "Clarence Seedorf",
+   "val": "8 goals"
+  },
+  {
+   "label": "7",
+   "name": "Daniele Massaro",
+   "val": "7 goals"
+  },
+  {
+   "label": "8",
+   "name": "Jean-Pierre Papin",
+   "val": "7 goals"
+  },
+  {
+   "label": "9",
+   "name": "Andrea Pirlo",
+   "val": "7 goals"
+  },
+  {
+   "label": "10",
+   "name": "Marco van Basten",
+   "val": "6 goals",
+   "pool": "six",
+   "alts": [
+    "Marco van Basten",
+    "Hernan Crespo",
+    "Alexandre Pato",
+    "Rafael Leao",
+    "Olivier Giroud"
+   ]
+  }
+ ],
+ "notes": {
+  "Santiago Gimenez": "Santiago Gimenez has scored only once for AC Milan in the Champions League; his other 2024/25 goals were for Feyenoord.",
+  "Demetrio Albertini": "Demetrio Albertini scored 5.",
+  "Dejan Savicevic": "Dejan Savicevic scored 5.",
+  "Christian Pulisic": "Christian Pulisic scored 5."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs. UEFA.com lists Santiago Gimenez with 6 for AC Milan because it files his 2024/25 season under Milan; Transfermarkt game logs show 5 of those were for Feyenoord."
+}

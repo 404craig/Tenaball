@@ -1,0 +1,76 @@
+{
+ "pick": "cl08-mancity",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Man City's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for Man City since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Sergio Aguero",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Erling Haaland",
+   "val": "34 goals"
+  },
+  {
+   "label": "3",
+   "name": "Raheem Sterling",
+   "val": "24 goals"
+  },
+  {
+   "label": "4",
+   "name": "Phil Foden",
+   "val": "20 goals"
+  },
+  {
+   "label": "5",
+   "name": "Gabriel Jesus",
+   "val": "20 goals"
+  },
+  {
+   "label": "6",
+   "name": "Kevin De Bruyne",
+   "val": "16 goals"
+  },
+  {
+   "label": "7",
+   "name": "Riyad Mahrez",
+   "val": "16 goals"
+  },
+  {
+   "label": "8",
+   "name": "Bernardo Silva",
+   "val": "15 goals"
+  },
+  {
+   "label": "9",
+   "name": "Ilkay Gundogan",
+   "val": "12 goals"
+  },
+  {
+   "label": "10",
+   "name": "David Silva",
+   "val": "8 goals",
+   "pool": "eight",
+   "alts": [
+    "David Silva",
+    "Julian Alvarez"
+   ]
+  }
+ ],
+ "notes": {
+  "Yaya Toure": "Yaya Toure is just outside with 7.",
+  "Leroy Sane": "Leroy Sane scored 6 for Man City.",
+  "John Stones": "John Stones scored 6."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs."
+}

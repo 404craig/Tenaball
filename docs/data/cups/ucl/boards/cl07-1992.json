@@ -1,0 +1,84 @@
+{
+ "pick": "cl07-1992",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Champions League top scorers, 1992/93 to 2001/02",
+ "brief": "Name the top scorer in each Champions League season. For shared awards, any of the joint top scorers counts.",
+ "period": "Champions League seasons 1992/93 to 2001/02, group stage onwards (in 1992/93 and 1993/94 the first and second rounds count, as UEFA counts them)",
+ "rows": [
+  {
+   "label": "1992/93",
+   "name": "Romario",
+   "val": "7 goals, PSV"
+  },
+  {
+   "label": "1993/94",
+   "name": "Wynton Rufer",
+   "val": "8 goals each, Werder Bremen and Barcelona",
+   "alts": [
+    "Wynton Rufer",
+    "Ronald Koeman"
+   ]
+  },
+  {
+   "label": "1994/95",
+   "name": "George Weah",
+   "val": "7 goals, PSG"
+  },
+  {
+   "label": "1995/96",
+   "name": "Jari Litmanen",
+   "val": "9 goals, Ajax"
+  },
+  {
+   "label": "1996/97",
+   "name": "Milinko Pantic",
+   "val": "5 goals, Atletico Madrid"
+  },
+  {
+   "label": "1997/98",
+   "name": "Alessandro Del Piero",
+   "val": "10 goals, Juventus"
+  },
+  {
+   "label": "1998/99",
+   "name": "Andriy Shevchenko",
+   "val": "8 goals each, Dynamo Kyiv and Man Utd",
+   "alts": [
+    "Andriy Shevchenko",
+    "Dwight Yorke"
+   ]
+  },
+  {
+   "label": "1999/00",
+   "name": "Raul",
+   "val": "10 goals each, Real Madrid, Barcelona and Porto",
+   "alts": [
+    "Raul",
+    "Rivaldo",
+    "Mario Jardel"
+   ]
+  },
+  {
+   "label": "2000/01",
+   "name": "Raul",
+   "val": "7 goals, Real Madrid"
+  },
+  {
+   "label": "2001/02",
+   "name": "Ruud van Nistelrooy",
+   "val": "10 goals, Man Utd"
+  }
+ ],
+ "notes": {
+  "Filippo Inzaghi": "Filippo Inzaghi never finished a season as the top scorer.",
+  "Thierry Henry": "Thierry Henry never finished a season as the top scorer."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)",
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers (Top scorers by season)"
+ ],
+ "checks": "Every season checked against UEFA.com season stats, the Transfermarkt season scorer list and the Wikipedia list of season top scorers; all three agree except 1993/94, where Wikipedia and Transfermarkt have Koeman level with Rufer on 8 and UEFA.com has Koeman on 7, so either name fills that slot. Shared awards are one slot with alts."
+}

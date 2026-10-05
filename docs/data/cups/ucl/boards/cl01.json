@@ -1,0 +1,74 @@
+{
+ "pick": "cl01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Most Champions League appearances",
+ "brief": "Name the ten players with the most Champions League appearances since 1992/93, not counting qualifying rounds.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards; qualifying rounds and play-offs before the group or league stage not counted",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "183 games"
+  },
+  {
+   "label": "2",
+   "name": "Iker Casillas",
+   "val": "177 games"
+  },
+  {
+   "label": "3",
+   "name": "Lionel Messi",
+   "val": "163 games"
+  },
+  {
+   "label": "4",
+   "name": "Thomas Muller",
+   "val": "163 games"
+  },
+  {
+   "label": "5",
+   "name": "Manuel Neuer",
+   "val": "161 games"
+  },
+  {
+   "label": "6",
+   "name": "Karim Benzema",
+   "val": "152 games"
+  },
+  {
+   "label": "7",
+   "name": "Xavi",
+   "val": "151 games"
+  },
+  {
+   "label": "8",
+   "name": "Toni Kroos",
+   "val": "151 games"
+  },
+  {
+   "label": "9",
+   "name": "Ryan Giggs",
+   "val": "145 games"
+  },
+  {
+   "label": "10",
+   "name": "Robert Lewandowski",
+   "val": "144 games"
+  }
+ ],
+ "notes": {
+  "Raul": "Raul is just outside the ten with 142 games.",
+  "Sergio Ramos": "Sergio Ramos is just outside the ten with 142 games.",
+  "Luka Modric": "Luka Modric is just outside the ten with 142 games.",
+  "Andres Iniesta": "Andres Iniesta has 130 games, outside the top ten.",
+  "Paolo Maldini": "Paolo Maldini has 109 games since 1992/93, outside the top ten."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/rekordspieler/pokalwettbewerb/CL/saison_id_von/1992/saison_id_bis/2025/plus/1",
+  "https://en.wikipedia.org/wiki/List_of_footballers_with_100_or_more_UEFA_Champions_League_appearances"
+ ],
+ "checks": "Every figure is the sum of UEFA.com season-by-season appearances (1992/93 to 2025/26) and matches the Transfermarkt record appearances list filtered to 1992/93 to 2025/26. Wikipedia agrees on all but Giggs (Wikipedia 141, UEFA and Transfermarkt 145, the difference being his 1993/94 first and second round games). Neuer is 161 to the end of 2025/26 (162 after his first 2026/27 game)."
+}

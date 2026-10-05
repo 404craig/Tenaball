@@ -1,0 +1,73 @@
+{
+ "pick": "cl08-chelsea",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Chelsea's Champions League scorers",
+ "brief": "Name the ten players with the most Champions League goals for Chelsea since 1992/93.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Didier Drogba",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Frank Lampard",
+   "val": "23 goals"
+  },
+  {
+   "label": "3",
+   "name": "Nicolas Anelka",
+   "val": "12 goals"
+  },
+  {
+   "label": "4",
+   "name": "John Terry",
+   "val": "10 goals"
+  },
+  {
+   "label": "5",
+   "name": "Fernando Torres",
+   "val": "10 goals"
+  },
+  {
+   "label": "6",
+   "name": "Willian",
+   "val": "10 goals"
+  },
+  {
+   "label": "7",
+   "name": "Tore Andre Flo",
+   "val": "8 goals"
+  },
+  {
+   "label": "8",
+   "name": "Oscar",
+   "val": "8 goals"
+  },
+  {
+   "label": "9",
+   "name": "Eden Hazard",
+   "val": "8 goals"
+  },
+  {
+   "label": "10",
+   "name": "Timo Werner",
+   "val": "8 goals"
+  }
+ ],
+ "notes": {
+  "Salomon Kalou": "Salomon Kalou is just outside with 7.",
+  "Branislav Ivanovic": "Branislav Ivanovic is just outside with 7.",
+  "Ramires": "Ramires is just outside with 7.",
+  "Olivier Giroud": "Olivier Giroud scored 6 for Chelsea.",
+  "Kai Havertz": "Kai Havertz scored 6 for Chelsea."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=1&phase=TOURNAMENT&seasonYear=<year> (UEFA.com player stats, every season 1992/93 to 2025/26)",
+  "https://www.transfermarkt.com/uefa-champions-league/torschuetzenliste/pokalwettbewerb/CL/saison_id/<year> (Transfermarkt scorer list, every season 1992/93 to 2025/26)"
+ ],
+ "checks": "Each player total is the sum of his goals for the club in every season, from UEFA.com season stats and from Transfermarkt season scorer lists; the two agree on every figure shown unless the value gives both. UEFA.com files a mid-season mover's whole season under his later club, so those seasons were split using Transfermarkt game logs."
+}
