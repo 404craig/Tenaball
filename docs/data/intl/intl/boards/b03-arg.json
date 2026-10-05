@@ -1,0 +1,77 @@
+{
+ "pick": "b03-arg",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Argentina's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Argentina in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "125 goals"
+  },
+  {
+   "label": "2",
+   "name": "Sergio Aguero",
+   "val": "41 goals"
+  },
+  {
+   "label": "3",
+   "name": "Lautaro Martinez",
+   "val": "40 goals"
+  },
+  {
+   "label": "4",
+   "name": "Angel Di Maria",
+   "val": "31 goals"
+  },
+  {
+   "label": "5",
+   "name": "Gonzalo Higuain",
+   "val": "31 goals"
+  },
+  {
+   "label": "6",
+   "name": "Hernan Crespo",
+   "val": "28 goals"
+  },
+  {
+   "label": "7",
+   "name": "Juan Roman Riquelme",
+   "val": "17 goals"
+  },
+  {
+   "label": "8",
+   "name": "Maxi Rodriguez",
+   "val": "16 goals"
+  },
+  {
+   "label": "9",
+   "name": "Julian Alvarez",
+   "val": "15 goals"
+  },
+  {
+   "label": "10",
+   "name": "Carlos Tevez",
+   "val": "13 goals"
+  }
+ ],
+ "notes": {
+  "Javier Saviola": "Javier Saviola is 11th with 11.",
+  "Ezequiel Lavezzi": "Ezequiel Lavezzi is just outside with 9.",
+  "Luciano Figueroa": "Luciano Figueroa is just outside with 9.",
+  "Gabriel Batistuta": "Gabriel Batistuta scored only 6 of his 56 from 2000 on.",
+  "Diego Maradona": "Diego Maradona played before 2000.",
+  "Pablo Aimar": "Pablo Aimar scored 8."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/argentinien/spielplan/verein/3437/saison_id/<year>",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/<id>",
+  "https://www.national-football-teams.com/country/9/<year>/Argentina.html",
+  "https://www.rsssf.org/miscellaneous/arg-recintlp.html",
+  "https://en.wikipedia.org/wiki/Argentina_national_football_team_records_and_statistics"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. Crespo's 28 (35 in all, 7 before 2000) and Riquelme's 17 (all from 2000 on) checked against Wikipedia's caps-by-year tables. Aguero 41 and Higuain 31 as on the all-time board (RSSSF 42 and 32). Lautaro Martinez 40 and Julian Alvarez 15 exclude goals after 19 July 2026."
+}

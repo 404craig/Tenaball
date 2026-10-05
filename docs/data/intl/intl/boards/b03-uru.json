@@ -1,0 +1,82 @@
+{
+ "pick": "b03-uru",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Uruguay's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Uruguay in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Luis Suarez",
+   "val": "69 goals"
+  },
+  {
+   "label": "2",
+   "name": "Edinson Cavani",
+   "val": "58 goals"
+  },
+  {
+   "label": "3",
+   "name": "Diego Forlan",
+   "val": "36 goals"
+  },
+  {
+   "label": "4",
+   "name": "Sebastian Abreu",
+   "val": "23 goals"
+  },
+  {
+   "label": "5",
+   "name": "Carlos Bueno",
+   "val": "13 goals"
+  },
+  {
+   "label": "6",
+   "name": "Giorgian de Arrascaeta",
+   "val": "13 goals"
+  },
+  {
+   "label": "7",
+   "name": "Darwin Nunez",
+   "val": "13 goals"
+  },
+  {
+   "label": "8",
+   "name": "Cristian Rodriguez",
+   "val": "11 goals"
+  },
+  {
+   "label": "9",
+   "name": "Abel Hernandez",
+   "val": "11 goals"
+  },
+  {
+   "label": "10",
+   "name": "Diego Lugano",
+   "val": "9 goals",
+   "pool": "p10",
+   "alts": [
+    "Diego Lugano",
+    "Federico Valverde"
+   ]
+  }
+ ],
+ "notes": {
+  "Dario Silva": "Dario Silva is just outside with 8 from 2000 on.",
+  "Diego Godin": "Diego Godin is just outside with 8.",
+  "Cristhian Stuani": "Cristhian Stuani is just outside with 8.",
+  "Jose Maria Gimenez": "Jose Maria Gimenez is just outside with 8.",
+  "Alvaro Recoba": "Alvaro Recoba scored 4 of his 11 from 2000 on.",
+  "Marcelo Zalayeta": "Marcelo Zalayeta scored 4 from 2000 on."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/uruguay/spielplan/verein/3449/saison_id/<year>",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/<id>",
+  "https://www.national-football-teams.com/country/198/<year>/Uruguay.html",
+  "https://www.rsssf.org/miscellaneous/uru-recintlp.html",
+  "https://en.wikipedia.org/wiki/Uruguay_national_football_team_records_and_statistics"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. Transfermarkt lacks line-ups or scorers for four Uruguay games (China and Bosnia in early 2000 and 2001, Tunisia in 2006, Venezuela in 2007); National Football Teams has them, and its totals match Transfermarkt's for everyone near the ten. Abreu's 23 (26 in all, 3 before 2000) checked against his Wikipedia caps-by-year table. Darwin Nunez and De Arrascaeta exclude their goals in September 2026. Lugano and Valverde tie on 9 for 10th, so they share it as a pool."
+}

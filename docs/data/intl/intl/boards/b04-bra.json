@@ -1,0 +1,76 @@
+{
+ "pick": "b04-bra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Brazil's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Brazil in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "130 caps"
+  },
+  {
+   "label": "2",
+   "name": "Dani Alves",
+   "val": "126 caps"
+  },
+  {
+   "label": "3",
+   "name": "Thiago Silva",
+   "val": "113 caps"
+  },
+  {
+   "label": "4",
+   "name": "Marquinhos",
+   "val": "110 caps"
+  },
+  {
+   "label": "5",
+   "name": "Lucio",
+   "val": "105 caps"
+  },
+  {
+   "label": "6",
+   "name": "Robinho",
+   "val": "100 caps"
+  },
+  {
+   "label": "7",
+   "name": "Gilberto Silva",
+   "val": "93 caps"
+  },
+  {
+   "label": "8",
+   "name": "Kaka",
+   "val": "92 caps"
+  },
+  {
+   "label": "9",
+   "name": "Casemiro",
+   "val": "91 caps"
+  },
+  {
+   "label": "10",
+   "name": "Julio Cesar",
+   "val": "87 caps"
+  }
+ ],
+ "notes": {
+  "Ronaldinho": "Ronaldinho is 11th with 84 from 2000 on (13 more in 1999).",
+  "Alisson": "Alisson is 12th with 83.",
+  "Juan": "Juan has 79.",
+  "Maicon": "Maicon has 76.",
+  "Cafu": "Cafu won 57 of his 142 caps from 2000 on.",
+  "Roberto Carlos": "Roberto Carlos won 59 of his 125 caps from 2000 on."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/brasilien/spielplan/verein/3439/saison_id/<year>",
+  "https://www.national-football-teams.com/country/28/<year>/Brazil.html",
+  "https://www.rsssf.org/miscellaneous/braz-recintlp.html",
+  "https://en.wikipedia.org/wiki/Brazil_national_football_team_records_and_statistics"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. Every one of the ten made his debut in 2000 or later (Lucio in November 2000), so each total is also his career total: all match RSSSF (with 2026 games added for Neymar, Marquinhos and Casemiro) and National Football Teams. Gilberto Silva's Wikipedia infobox says 89, but RSSSF, Transfermarkt and National Football Teams all give 93; 93 used, and he is in the ten either way. Ronaldinho's 84 is checked against his Wikipedia caps-by-year table (97 minus 13 in 1999)."
+}

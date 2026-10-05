@@ -1,0 +1,78 @@
+{
+ "pick": "b01-bra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Brazil's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Brazil in official full internationals, to the 2026 World Cup final. Games FIFA does not count (against clubs, select sides and the 1968 FIFA XI) are left out.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "80 goals"
+  },
+  {
+   "label": "2",
+   "name": "Pele",
+   "val": "77 goals"
+  },
+  {
+   "label": "3",
+   "name": "Ronaldo",
+   "val": "62 goals"
+  },
+  {
+   "label": "4",
+   "name": "Romario",
+   "val": "55 goals"
+  },
+  {
+   "label": "5",
+   "name": "Zico",
+   "val": "48 goals"
+  },
+  {
+   "label": "6",
+   "name": "Bebeto",
+   "val": "39 goals"
+  },
+  {
+   "label": "7",
+   "name": "Rivaldo",
+   "val": "35 goals"
+  },
+  {
+   "label": "8",
+   "name": "Jairzinho",
+   "val": "33 goals"
+  },
+  {
+   "label": "9",
+   "name": "Ronaldinho",
+   "val": "33 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ademir",
+   "val": "32 goals"
+  }
+ ],
+ "notes": {
+  "Tostao": "Tostao is 11th with 31 in FIFA-recognised games (32 counting the 1968 game against a FIFA XI, which the CBF keeps but FIFA does not).",
+  "Zizinho": "Zizinho is just outside with 30.",
+  "Careca": "Careca is just outside with 29.",
+  "Kaka": "Kaka is just outside with 29.",
+  "Luis Fabiano": "Luis Fabiano scored 28, just outside.",
+  "Robinho": "Robinho scored 28, just outside.",
+  "Rivellino": "Rivellino scored 25 in FIFA-recognised games (26 counting the 1968 FIFA XI game)."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/braz-recintlp.html",
+  "https://en.wikipedia.org/wiki/Brazil_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/brasilien/rekordspieler/verein/3439",
+  "https://www.rsssf.org/miscellaneous/bebeto-intlg.html",
+  "https://en.wikipedia.org/wiki/Bebeto"
+ ],
+ "checks": "RSSSF (updated January 2026, to 18 November 2025) and Wikipedia's records table agree on every figure except Bebeto (RSSSF 39 with a match-by-match list, Wikipedia's records table 38, Bebeto's own Wikipedia infobox 39; 39 used) and Tostao (both count the 1968 game against a FIFA XI, in which he scored; FIFA does not, so 31). Neymar's 80 is RSSSF's 79 plus his one goal in 2026 (Transfermarkt match reports, National Football Teams 2026 table, Wikipedia infobox 80). Transfermarkt's totals are higher for older players (Bebeto 40, Jairzinho 35) because it includes unofficial games."
+}
