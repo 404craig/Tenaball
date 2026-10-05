@@ -304,5 +304,14 @@
   "white": "",
   "source": "photo supplied by Craig, background removed with rembg (u2net)",
   "licence": "press photo: fine for this private family game, not for a public release"
+ },
+ {
+  "comp": "internationals",
+  "option": 1,
+  "label": "flags-ball",
+  "file": "intl_photo.jpg",
+  "white": null,
+  "source": "Craig's photo, 6 October 2026 (cut to a circle as intl.png)",
+  "licence": "photo supplied by Craig"
  }
 ]
