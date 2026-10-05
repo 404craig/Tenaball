@@ -377,7 +377,7 @@ await test("home: All levels greys the slider and each board's level is picked a
   const p = await phone(browser, "levels"); await p.goto(site.url); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => [cfg.allLevels, document.getElementById("diffName").textContent, document.getElementById("diffWrap").classList.contains("dimmed")]), [true, "All levels", true], "All levels is on by default");
   await p.click("#allLevels"); eq(await p.evaluate(() => cfg.allLevels), false, "and can be switched off");
-  await p.evaluate(() => { cfg.cats = ["laliga"]; renderCompBtn(); });
+  await p.evaluate(() => { for (let i = Q.length-1; i >= 0; i--) if (Q[i].cat==="laliga" && Q[i].level===0) Q.splice(i, 1); cfg.cats = ["laliga"]; renderCompBtn(); }); // every league has easy boards now, so take La Liga's away to see the note
   await p.evaluate(() => document.getElementById("diff").scrollIntoView({ block: "center" }));
   await p.focus("#diff"); await p.keyboard.press("ArrowLeft");
   await until(async () => (await p.textContent("#diffName")) === "Easy", { what: "Easy" });

@@ -23,7 +23,8 @@ def plain(s):
 
 def known_boards(cat):
     out = {}
-    for m in re.finditer(r'\{"id":"(%s-top-\d{4}/\d\d)".*?"table":(\[[^\]]*\])' % cat, h): out[m.group(1)[-7:]] = json.loads(m.group(2))
+    base = re.sub(r"const EXTRA_Q6 = \[.*?\];\n", "", h, count=1, flags=re.S)  # leave out this script's own earlier output
+    for m in re.finditer(r'\{"id":"(%s-top-\d{4}/\d\d)".*?"table":(\[[^\]]*\])' % cat, base): out[m.group(1)[-7:]] = json.loads(m.group(2))
     return out
 CLUBS = {k: set(open(E + f"clubs_{k}.txt").read().split("\n")) for k in LEAGUE}
 
@@ -89,9 +90,12 @@ for path in sorted(glob.glob(E + "*/boards/*.json")):
         continue
     rows = b.get("rows", [])
     if len(rows) != 10: problems.append(f"{where}: {len(rows)} rows"); continue
-    slots = []
+    slots, used = [], defaultdict(set)
     for r in rows:
-        s = {"label": str(r.get("label", len(slots) + 1)), "club": fix(r["name"]), "val": r.get("val", "")}
+        name = r.get("name")
+        if not name and r.get("alts"):  # a shared place given only as its list of names: take the next one not used yet
+            name = next(a for a in r["alts"] if a not in used[r.get("pool")]); used[r.get("pool")].add(name)
+        s = {"label": str(r.get("label", len(slots) + 1)), "club": fix(name), "val": r.get("val", "")}
         if r.get("alts"): s["alts"] = [fix(a) for a in r["alts"]]; s["pool"] = f"{pick}-{r.get('pool') or s['label']}"
         if s.get("alts") and s["club"] not in s["alts"]: s["alts"].insert(0, s["club"])
         slots.append(s)
@@ -105,6 +109,11 @@ for path in sorted(glob.glob(E + "*/boards/*.json")):
          "slots": slots, "note": {fix(k): v for k, v in b.get("notes", {}).items()}}
     if kind == "ranked": q["numeric"] = True
     Q.append(q)
+
+# ---------- levels: each league gets some easy boards (only La Liga had any), from its best-known names ----------
+EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b"}
+for q in Q + OPEN:
+    if q["id"].rsplit("-", 1)[-1] in EASY or any(q["id"].endswith("-" + k) for k in EASY): q["level"] = 0; q["hard"] = False
 
 # ---------- 2025/26 squads: recognised names ----------
 people = set()
