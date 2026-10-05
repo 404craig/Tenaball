@@ -1,0 +1,87 @@
+{
+ "pick": "frs06",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Ligue 1 2025/26: fewest goals conceded",
+ "brief": "Name the ten clubs that conceded the fewest Ligue 1 goals in 2025/26.",
+ "period": "Ligue 1 season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "PSG",
+   "val": "29 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lens",
+   "val": "35 goals"
+  },
+  {
+   "label": "3",
+   "name": "Lille",
+   "val": "37 goals"
+  },
+  {
+   "label": "4",
+   "name": "Lyon",
+   "val": "40 goals"
+  },
+  {
+   "label": "5",
+   "name": "Le Havre",
+   "pool": "ga56",
+   "alts": [
+    "Le Havre",
+    "Auxerre"
+   ],
+   "val": "44 goals"
+  },
+  {
+   "label": "6",
+   "name": "Le Havre",
+   "pool": "ga56",
+   "alts": [
+    "Le Havre",
+    "Auxerre"
+   ],
+   "val": "44 goals"
+  },
+  {
+   "label": "7",
+   "name": "Marseille",
+   "val": "45 goals"
+  },
+  {
+   "label": "8",
+   "name": "Toulouse",
+   "val": "46 goals"
+  },
+  {
+   "label": "9",
+   "name": "Strasbourg",
+   "val": "47 goals"
+  },
+  {
+   "label": "10",
+   "name": "Angers",
+   "val": "48 goals"
+  }
+ ],
+ "notes": {
+  "Paris FC": "Paris FC conceded 50, joint 11th.",
+  "Rennes": "Rennes conceded 50, joint 11th.",
+  "Lorient": "Lorient conceded 51.",
+  "Nantes": "Nantes conceded 52.",
+  "Monaco": "Monaco conceded 54.",
+  "Brest": "Brest conceded 55.",
+  "Nice": "Nice conceded 60.",
+  "Metz": "Metz conceded 76, the most."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1",
+  "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+  "https://www.transfermarkt.com/ligue-1/tabelle/wettbewerb/FR1/saison_id/2025"
+ ],
+ "checks": "Goals against worked out from all 306 results in football-data.co.uk's 2025/26 file and matched against the final table on Wikipedia and Transfermarkt. Le Havre and Auxerre both conceded 44, so they share 5th and 6th as a pool. No tie at 10th: Angers 48, then Paris FC and Rennes 50."
+}

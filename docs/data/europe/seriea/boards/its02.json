@@ -143,13 +143,15 @@
   }
  ],
  "notes": {
-  "Matteo Politano": "Matteo Politano made 5 assists on at least one count, just outside.",
-  "Matias Soule": "Matias Soule made 5 assists on at least one count, just outside.",
-  "Francisco Conceicao": "Francisco Conceicao made 5 assists on at least one count, just outside.",
-  "Charles De Ketelaere": "Charles De Ketelaere made 5 assists on at least one count, just outside.",
-  "Sebastiano Esposito": "Sebastiano Esposito made 5 assists on at least one count, just outside.",
-  "Aaron Martin": "Aaron Martin made 5 assists on at least one count, just outside.",
-  "Nikola Krstovic": "Nikola Krstovic made 5 assists on at least one count, just outside."
+  "Matteo Politano": "Matteo Politano made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Matias Soule": "Matias Soule made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Francisco Conceicao": "Francisco Conceicao made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Charles De Ketelaere": "Charles De Ketelaere made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Sebastiano Esposito": "Sebastiano Esposito made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Aaron Martin": "Aaron Martin made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Nikola Krstovic": "Nikola Krstovic made 5 assists (Transfermarkt and ESPN agree), just outside.",
+  "Ange-Yoan Bonny": "Ange-Yoan Bonny is in the pool on Transfermarkt's 6 assists; ESPN gives him 4.",
+  "Maxence Caqueret": "Maxence Caqueret is in the pool on ESPN's 6 assists; Transfermarkt gives him 5."
  },
  "sources": [
   "https://www.transfermarkt.com/<club>/leistungsdaten/verein/<id>/plus/1?reldata=IT1%262025",
