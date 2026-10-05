@@ -32,6 +32,7 @@ CLUBS["ucl"] = CLUBS["uel"] = set(open("docs/data/cups/clubs_all.txt").read().sp
 
 NATIONS = set(open("docs/data/intl/nations.txt").read().split("\n"))
 Q, OPEN = [], []
+CANON = {"Ronaldo": "Ronaldo Nazario"}  # the game's own spelling, where a board gives the short name
 def family(pick, title, kind, typ="person"):
     t = title.lower()
     if kind == "open": return "open"
@@ -83,7 +84,7 @@ for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/
     if not re.search(r"(19|20)\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
     kind, typ, lv = b.get("kind"), b.get("type", "person"), int(b.get("level", 1))
     id = f"{CAT[lg]}-{family(pick, b['title'], kind, typ)}-{pick.replace('/', '-')}"
-    fix = (lambda n: plain(n)) if typ == "person" else (lambda n: n)
+    fix = (lambda n: CANON.get(plain(n), plain(n))) if typ == "person" else (lambda n: n)
     if kind == "open":
         names = list(dict.fromkeys(fix(n) for n in b.get("names", [])))
         ex = [fix(n) for n in b.get("examples", []) if fix(n) in names]
@@ -144,7 +145,7 @@ for f in glob.glob(E + "*/players.csv"):
 
 # Internationals (Craig, 6 October 2026): each nation's top 30 scorers and caps, all time and since 2000, so near misses are recognised
 for f in glob.glob("docs/data/intl/intl/people_*.txt"):
-    people |= {plain(n) for n in open(f).read().split("\n") if n.strip()}
+    people |= {CANON.get(plain(n), plain(n)) for n in open(f).read().split("\n") if n.strip()}
 
 ids = [q["id"] for q in Q + OPEN]
 dup = [i for i, k in Counter(ids).items() if k > 1]
