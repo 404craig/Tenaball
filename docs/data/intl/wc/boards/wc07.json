@@ -1,0 +1,55 @@
+{
+ "pick": "wc07",
+ "kind": "open",
+ "type": "nation",
+ "level": 1,
+ "title": "European nations at the 2026 World Cup",
+ "brief": "Name any of the 16 UEFA nations that played at the 2026 World Cup.",
+ "period": "2026 World Cup (June to July 2026)",
+ "names": [
+  "Austria",
+  "Belgium",
+  "Bosnia and Herzegovina",
+  "Croatia",
+  "Czech Republic",
+  "England",
+  "France",
+  "Germany",
+  "Netherlands",
+  "Norway",
+  "Portugal",
+  "Scotland",
+  "Spain",
+  "Sweden",
+  "Switzerland",
+  "Turkey"
+ ],
+ "examples": [
+  "England",
+  "France",
+  "Spain",
+  "Germany",
+  "Portugal",
+  "Netherlands",
+  "Belgium",
+  "Croatia",
+  "Scotland",
+  "Switzerland"
+ ],
+ "notes": {
+  "Italy": "Italy did not qualify: they lost the play-off final to Bosnia and Herzegovina on penalties.",
+  "Denmark": "Denmark did not qualify for 2026.",
+  "Poland": "Poland did not qualify for 2026.",
+  "Wales": "Wales did not qualify for 2026.",
+  "Serbia": "Serbia did not qualify for 2026.",
+  "Republic of Ireland": "The Republic of Ireland did not qualify for 2026.",
+  "Ukraine": "Ukraine did not qualify for 2026.",
+  "Northern Ireland": "Northern Ireland did not qualify for 2026.",
+  "West Germany": "The 2026 team is Germany; West Germany last played in 1990."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup#Qualification",
+  "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(UEFA)#Qualified_teams"
+ ],
+ "checks": "The 16 UEFA qualifiers agree between the 2026 World Cup article's qualified teams list and the UEFA qualification article's qualified teams table (12 group winners plus 4 play-off winners: Bosnia and Herzegovina, Sweden, Turkey, Czech Republic). Bosnia and Herzegovina is not in nations.txt yet."
+}

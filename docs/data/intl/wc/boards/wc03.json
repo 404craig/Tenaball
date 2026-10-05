@@ -1,0 +1,78 @@
+{
+ "pick": "wc03",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 1,
+ "title": "Most World Cup matches won",
+ "brief": "Name the ten nations that have won the most matches at World Cup finals tournaments.",
+ "period": "Every World Cup, 1930 to 2026. Shoot-outs count as draws.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Brazil",
+   "val": "79 wins"
+  },
+  {
+   "label": "2",
+   "name": "Germany",
+   "val": "70 wins",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "3",
+   "name": "Argentina",
+   "val": "54 wins"
+  },
+  {
+   "label": "4",
+   "name": "Italy",
+   "val": "45 wins"
+  },
+  {
+   "label": "5",
+   "name": "France",
+   "val": "45 wins"
+  },
+  {
+   "label": "6",
+   "name": "England",
+   "val": "38 wins"
+  },
+  {
+   "label": "7",
+   "name": "Spain",
+   "val": "38 wins"
+  },
+  {
+   "label": "8",
+   "name": "Netherlands",
+   "val": "32 wins"
+  },
+  {
+   "label": "9",
+   "name": "Uruguay",
+   "val": "25 wins"
+  },
+  {
+   "label": "10",
+   "name": "Belgium",
+   "val": "24 wins"
+  }
+ ],
+ "notes": {
+  "Mexico": "Mexico are 11th with 21 wins, just outside.",
+  "Sweden": "Sweden are 12th with 20 wins.",
+  "Russia": "Russia (with the Soviet Union) have 19 wins, just outside.",
+  "Portugal": "Portugal have 19 wins, just outside.",
+  "Germany": "Germany's figures include West Germany (1950 to 1990) and the pre-war Germany team, as FIFA counts them; the slot takes Germany or West Germany."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics#Overall_team_records",
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics?oldid=1356803625 (29 May 2026, before the 2026 finals)",
+  "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup#Tournament_ranking (FIFA competition summary)"
+ ],
+ "checks": "The current all-time table was rebuilt as the 29 May 2026 version of the same table plus every team's 2026 record from the 2026 tournament ranking (sourced to FIFA's competition summary): all 81 main rows agree. Germany's row also equals the sum of its Germany 1934-38, West Germany and Germany since 1994 sub-rows. Matches won in extra time count as wins; matches settled on penalties count as draws (the table's own convention)."
+}

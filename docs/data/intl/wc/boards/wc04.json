@@ -1,0 +1,83 @@
+{
+ "pick": "wc04",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 1,
+ "title": "Most World Cup goals scored",
+ "brief": "Name the ten nations that have scored the most goals at World Cup finals tournaments.",
+ "period": "Every World Cup, 1930 to 2026. Shoot-out goals don't count.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Brazil",
+   "val": "247 goals"
+  },
+  {
+   "label": "2",
+   "name": "Germany",
+   "val": "243 goals",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "3",
+   "name": "Argentina",
+   "val": "171 goals"
+  },
+  {
+   "label": "4",
+   "name": "France",
+   "val": "156 goals"
+  },
+  {
+   "label": "5",
+   "name": "Italy",
+   "val": "128 goals"
+  },
+  {
+   "label": "6",
+   "name": "England",
+   "val": "124 goals"
+  },
+  {
+   "label": "7",
+   "name": "Spain",
+   "val": "122 goals"
+  },
+  {
+   "label": "8",
+   "name": "Netherlands",
+   "val": "107 goals"
+  },
+  {
+   "label": "9",
+   "name": "Uruguay",
+   "val": "92 goals"
+  },
+  {
+   "label": "10",
+   "name": "Sweden",
+   "val": "87 goals",
+   "pool": "g87",
+   "alts": [
+    "Sweden",
+    "Hungary"
+   ]
+  }
+ ],
+ "notes": {
+  "Belgium": "Belgium are 12th with 83, just outside.",
+  "Russia": "Russia (with the Soviet Union) have 77, just outside.",
+  "Mexico": "Mexico have 72, just outside.",
+  "Serbia": "Serbia (with Yugoslavia) have 71, just outside.",
+  "Germany": "Germany's figures include West Germany (1950 to 1990) and the pre-war Germany team, as FIFA counts them; the slot takes Germany or West Germany."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics#Overall_team_records",
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics?oldid=1356803625 (29 May 2026, before the 2026 finals)",
+  "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup#Tournament_ranking (FIFA competition summary)"
+ ],
+ "checks": "The current all-time table was rebuilt as the 29 May 2026 version of the same table plus every team's 2026 record from the 2026 tournament ranking (sourced to FIFA's competition summary): all 81 main rows agree. Germany's row also equals the sum of its Germany 1934-38, West Germany and Germany since 1994 sub-rows. Sweden (80 before 2026, 7 in 2026) and Hungary (87, not at a World Cup since 1986) are level on 87 for 10th, so they share the last slot."
+}

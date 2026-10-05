@@ -1,0 +1,80 @@
+{
+ "pick": "wc02",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 0,
+ "title": "Most World Cups played",
+ "brief": "Name the ten nations that have played at the most World Cup finals tournaments.",
+ "period": "Every World Cup, 1930 to 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Brazil",
+   "val": "23 tournaments"
+  },
+  {
+   "label": "2",
+   "name": "Germany",
+   "val": "21 tournaments",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "3",
+   "name": "Argentina",
+   "val": "19 tournaments"
+  },
+  {
+   "label": "4",
+   "name": "Italy",
+   "val": "18 tournaments"
+  },
+  {
+   "label": "5",
+   "name": "Mexico",
+   "val": "18 tournaments"
+  },
+  {
+   "label": "6",
+   "name": "France",
+   "val": "17 tournaments"
+  },
+  {
+   "label": "7",
+   "name": "England",
+   "val": "17 tournaments"
+  },
+  {
+   "label": "8",
+   "name": "Spain",
+   "val": "17 tournaments"
+  },
+  {
+   "label": "9",
+   "name": "Uruguay",
+   "val": "15 tournaments"
+  },
+  {
+   "label": "10",
+   "name": "Belgium",
+   "val": "15 tournaments"
+  }
+ ],
+ "notes": {
+  "Switzerland": "Switzerland are joint 11th with 13, just outside.",
+  "Sweden": "Sweden are joint 11th with 13, just outside.",
+  "Serbia": "Serbia (with Yugoslavia) are joint 11th with 13, just outside.",
+  "Yugoslavia": "Yugoslavia and Serbia together have 13, joint 11th, just outside.",
+  "South Korea": "South Korea are 14th with 12.",
+  "USA": "USA have 12, just outside.",
+  "Netherlands": "Netherlands have 12, just outside.",
+  "Germany": "Germany's figures include West Germany (1950 to 1990) and the pre-war Germany team, as FIFA counts them; the slot takes Germany or West Germany."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/National_team_appearances_in_the_FIFA_World_Cup",
+  "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics#Overall_team_records"
+ ],
+ "checks": "Appearance counts agree between the appearances ranking and the all-time table (both updated for 2026), and each top-ten count was checked by listing the tournaments each nation missed (for example Mexico missed 1934, 1938, 1974, 1982 and 1990). Italy missed 2018, 2022 and 2026. Germany's figures include West Germany (1950 to 1990) and the pre-war Germany team, as FIFA counts them; the slot takes Germany or West Germany."
+}

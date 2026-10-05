@@ -127,7 +127,7 @@ for q in Q:
     if k == "it17": q["title"] = "Roma and Napoli top scorers since 2000"
 
 # ---------- levels: each league gets some easy boards (only La Liga had any), from its best-known names ----------
-EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b"}
+EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b", "el01-2017", "el03-2022"}
 for q in Q + OPEN:
     if q["id"].rsplit("-", 1)[-1] in EASY or any(q["id"].endswith("-" + k) for k in EASY): q["level"] = 0; q["hard"] = False
 

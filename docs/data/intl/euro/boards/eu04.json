@@ -1,0 +1,83 @@
+{
+ "pick": "eu04",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 1,
+ "title": "Most Euros goals scored",
+ "brief": "Name the ten nations that have scored the most goals at European Championship finals. Shoot-out penalties do not count. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Germany",
+   "val": "89 goals",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "2",
+   "name": "Spain",
+   "val": "83 goals"
+  },
+  {
+   "label": "3",
+   "name": "Netherlands",
+   "val": "75 goals"
+  },
+  {
+   "label": "4",
+   "name": "France",
+   "val": "73 goals"
+  },
+  {
+   "label": "5",
+   "name": "Portugal",
+   "val": "61 goals"
+  },
+  {
+   "label": "6",
+   "name": "England",
+   "val": "59 goals"
+  },
+  {
+   "label": "7",
+   "name": "Italy",
+   "val": "55 goals"
+  },
+  {
+   "label": "8",
+   "name": "Czech Republic",
+   "val": "51 goals",
+   "alts": [
+    "Czech Republic",
+    "Czechoslovakia"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Denmark",
+   "val": "44 goals"
+  },
+  {
+   "label": "10",
+   "name": "Russia",
+   "val": "40 goals",
+   "alts": [
+    "Russia",
+    "Soviet Union"
+   ]
+  }
+ ],
+ "notes": {
+  "Belgium": "Belgium are just outside with 33 goals.",
+  "Croatia": "Croatia have 33 goals, just outside.",
+  "Sweden": "Sweden have 30 goals."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics",
+  "https://github.com/martj42/international_results (results.csv, every Euros finals match, totals worked out by script)"
+ ],
+ "checks": "Goals for in Wikipedia's overall team records table match the totals worked out from results.csv for every nation in the top 12. Own goals count for the team that benefited. Russia alone (1996 to 2020) has 22 goals, the Soviet Union and CIS 18; the Czech Republic alone 39."
+}

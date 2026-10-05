@@ -1,0 +1,86 @@
+{
+ "pick": "wc08",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "2026 World Cup top scorers",
+ "brief": "Name the ten top scorers at the 2026 World Cup.",
+ "period": "2026 World Cup (June to July 2026)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "10 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lionel Messi",
+   "val": "8 goals"
+  },
+  {
+   "label": "3",
+   "name": "Jude Bellingham",
+   "val": "7 goals"
+  },
+  {
+   "label": "4",
+   "name": "Erling Haaland",
+   "val": "7 goals"
+  },
+  {
+   "label": "5",
+   "name": "Harry Kane",
+   "val": "6 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ousmane Dembele",
+   "val": "6 goals"
+  },
+  {
+   "label": "7",
+   "name": "Mikel Oyarzabal",
+   "val": "5 goals"
+  },
+  {
+   "label": "8",
+   "name": "Vinicius Junior",
+   "val": "4 goals"
+  },
+  {
+   "label": "9",
+   "name": "Julian Quinones",
+   "val": "4 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ismaila Sarr",
+   "val": "4 goals"
+  }
+ ],
+ "notes": {
+  "Bukayo Saka": "Bukayo Saka scored 3, just outside.",
+  "Lautaro Martinez": "Lautaro Martinez scored 3, just outside.",
+  "Romelu Lukaku": "Romelu Lukaku scored 3, just outside.",
+  "Charles De Ketelaere": "Charles De Ketelaere scored 3, just outside.",
+  "Matheus Cunha": "Matheus Cunha scored 3, just outside.",
+  "Jonathan David": "Jonathan David scored 3, just outside.",
+  "Yoane Wissa": "Yoane Wissa scored 3, just outside.",
+  "Bradley Barcola": "Bradley Barcola scored 3, just outside.",
+  "Kai Havertz": "Kai Havertz scored 3, just outside.",
+  "Deniz Undav": "Deniz Undav scored 3, just outside.",
+  "Raul Jimenez": "Raul Jimenez scored 3, just outside.",
+  "Ismael Saibari": "Ismael Saibari scored 3, just outside.",
+  "Brian Brobbey": "Brian Brobbey scored 3, just outside.",
+  "Cody Gakpo": "Cody Gakpo scored 3, just outside.",
+  "Elijah Just": "Elijah Just scored 3, just outside.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo scored 3, just outside.",
+  "Johan Manzambi": "Johan Manzambi scored 3, just outside.",
+  "Folarin Balogun": "Folarin Balogun scored 3, just outside."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Module:Goalscorers/data/2026_FIFA_World_Cup (feeds the 2026 FIFA World Cup article)",
+  "https://www.transfermarkt.com/weltmeisterschaft/torschuetzenliste/pokalwettbewerb/FIWC/saison_id/2025"
+ ],
+ "checks": "Top ten agree between Wikipedia's goalscorer data (marked complete, 104 matches) and Transfermarkt's 2026 top scorers list. Exactly three players on 4 goals fill 8th to 10th, so no pool. Eighteen players scored 3."
+}

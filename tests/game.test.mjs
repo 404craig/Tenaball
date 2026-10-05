@@ -311,12 +311,12 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   await p.click("#compBtn"); await until(() => visible(p, "#compSheet"));
   const rows = await p.$$eval("#compList .crow", rs => rs.map(r => [r.querySelector(".nm").textContent, r.getAttribute("aria-checked"), r.classList.contains("soon")]));
   eq(rows.map(r => r[0]), ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","Scottish Premiership","Top 5 Leagues","Champions League","Europa League","World Cup","Euros"]);
-  eq(rows.filter(r => r[2]).map(r => r[0]), ["Europa League"], "Europa League is shown as coming later");
+  eq(rows.filter(r => r[2]).map(r => r[0]), [], "nothing is shown as coming later now the Europa League is on");
   eq(await p.$$eval("#compList .cgrp", g => g.map(x => x.textContent)), ["Leagues","Europe","International"]);
   eq(await p.$$eval("#compList .crow .ic img, #compList .crow .ic svg", s => s.length), 11, "every row has a circle flag, logo or badge");
   eq(await p.$$eval("#compList .crow .ic img", s => s.length), 9, "the leagues, Euros, Champions League and Europa League use the pack's images");
   await p.click('#compQuick [data-q="Leagues"]');
-  eq(await p.textContent("#compCount"), "7 of 10 on");
+  eq(await p.textContent("#compCount"), "7 of 11 on");
   await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
   await p.click("#compDone"); await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "5 competitions");
@@ -330,6 +330,10 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(await p.$$eval("#compFlags .ic img, #compFlags .ic svg", s => s.length), 2);
   await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
   eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro"], "International only"], "remembered after a reload");
+  // a phone that saved every competition before the Europa League arrived gets it ticked too
+  await p.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ v: 2, cats: ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"], allLevels: true })));
+  await p.reload(); await until(() => visible(p, "#setup"));
+  eq(await p.evaluate(() => cfg.cats.includes("uel") && cfg.cats.length), 11, "the Europa League is ticked for a phone that had everything on");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("game: rounds come only from ticked competitions, never the same one twice running", async () => {
@@ -454,7 +458,7 @@ await test("badges: every game club but four gets a crest by its game name, and 
       valid: Object.values(BADGE_FILE).every(k => BADGE_IMG[k]) };
   });
   eq(r.none, ["Arles", "Lleida", "Merida", "Salamanca"], "only these four have no badge");
-  eq(r.total - r.none.length, 324, "324 game names have a badge");
+  eq(r.total - r.none.length, 326, "326 game names have a badge");
   assert(r.two[0] && r.two[0] === r.two[1], "both names on a two-name row find the same badge");
   assert(r.aliased[1] && r.aliased[1] === r.aliased[2], "lookup ignores case");
   eq(r.circle, [true, true, true, true], "no badge keeps the two-colour circle");

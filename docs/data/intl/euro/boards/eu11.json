@@ -1,0 +1,124 @@
+{
+ "pick": "eu11",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Euro 2024 top scorers",
+ "brief": "Name the ten top scorers at Euro 2024. Six players shared the Golden Boot on 3 goals; any of the ten players on 2 fills the last four places. Own goals and shoot-out penalties do not count.",
+ "period": "Euro 2024, Germany, 14 June to 14 July 2024",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Harry Kane",
+   "val": "3 goals"
+  },
+  {
+   "label": "2",
+   "name": "Dani Olmo",
+   "val": "3 goals"
+  },
+  {
+   "label": "3",
+   "name": "Cody Gakpo",
+   "val": "3 goals"
+  },
+  {
+   "label": "4",
+   "name": "Jamal Musiala",
+   "val": "3 goals"
+  },
+  {
+   "label": "5",
+   "name": "Georges Mikautadze",
+   "val": "3 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ivan Schranz",
+   "val": "3 goals"
+  },
+  {
+   "label": "7",
+   "name": "Breel Embolo",
+   "val": "2 goals",
+   "pool": "p2",
+   "alts": [
+    "Breel Embolo",
+    "Jude Bellingham",
+    "Kai Havertz",
+    "Fabian Ruiz",
+    "Donyell Malen",
+    "Merih Demiral",
+    "Nico Williams",
+    "Florian Wirtz",
+    "Niclas Fullkrug",
+    "Razvan Marin"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "Breel Embolo",
+   "val": "2 goals",
+   "pool": "p2",
+   "alts": [
+    "Breel Embolo",
+    "Jude Bellingham",
+    "Kai Havertz",
+    "Fabian Ruiz",
+    "Donyell Malen",
+    "Merih Demiral",
+    "Nico Williams",
+    "Florian Wirtz",
+    "Niclas Fullkrug",
+    "Razvan Marin"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Breel Embolo",
+   "val": "2 goals",
+   "pool": "p2",
+   "alts": [
+    "Breel Embolo",
+    "Jude Bellingham",
+    "Kai Havertz",
+    "Fabian Ruiz",
+    "Donyell Malen",
+    "Merih Demiral",
+    "Nico Williams",
+    "Florian Wirtz",
+    "Niclas Fullkrug",
+    "Razvan Marin"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Breel Embolo",
+   "val": "2 goals",
+   "pool": "p2",
+   "alts": [
+    "Breel Embolo",
+    "Jude Bellingham",
+    "Kai Havertz",
+    "Fabian Ruiz",
+    "Donyell Malen",
+    "Merih Demiral",
+    "Nico Williams",
+    "Florian Wirtz",
+    "Niclas Fullkrug",
+    "Razvan Marin"
+   ]
+  }
+ ],
+ "notes": {
+  "Lamine Yamal": "Lamine Yamal scored 1, the famous one against France.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo did not score at Euro 2024.",
+  "Kylian Mbappe": "Kylian Mbappe scored 1, a penalty against Poland.",
+  "Khvicha Kvaratskhelia": "Khvicha Kvaratskhelia scored 1."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://github.com/martj42/international_results (goalscorers.csv)"
+ ],
+ "checks": "UEFA's Euro 2024 player goals and goalscorers.csv agree for every scorer. Six on 3 (Kane, Musiala, Mikautadze, Schranz, Olmo, Gakpo), the Golden Boot shared; ten on 2. 69 players scored 1."
+}

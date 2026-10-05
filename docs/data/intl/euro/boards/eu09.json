@@ -1,0 +1,92 @@
+{
+ "pick": "eu09",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "England's Euros scorers since 1996",
+ "brief": "Name the ten players with the most goals for England at European Championship finals since Euro 96. Own goals and shoot-out penalties do not count. Lots of players scored once, so any of them fills 10th place.",
+ "period": "Euro 96 to Euro 2024 (England missed Euro 2008)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Alan Shearer",
+   "val": "7 goals"
+  },
+  {
+   "label": "2",
+   "name": "Harry Kane",
+   "val": "7 goals"
+  },
+  {
+   "label": "3",
+   "name": "Wayne Rooney",
+   "val": "6 goals"
+  },
+  {
+   "label": "4",
+   "name": "Frank Lampard",
+   "val": "3 goals"
+  },
+  {
+   "label": "5",
+   "name": "Raheem Sterling",
+   "val": "3 goals"
+  },
+  {
+   "label": "6",
+   "name": "Teddy Sheringham",
+   "val": "2 goals"
+  },
+  {
+   "label": "7",
+   "name": "Paul Scholes",
+   "val": "2 goals"
+  },
+  {
+   "label": "8",
+   "name": "Michael Owen",
+   "val": "2 goals"
+  },
+  {
+   "label": "9",
+   "name": "Jude Bellingham",
+   "val": "2 goals"
+  },
+  {
+   "label": "10",
+   "name": "Paul Gascoigne",
+   "val": "1 goal",
+   "pool": "p1",
+   "alts": [
+    "Paul Gascoigne",
+    "Steve McManaman",
+    "Steven Gerrard",
+    "Joleon Lescott",
+    "Andy Carroll",
+    "Theo Walcott",
+    "Danny Welbeck",
+    "Eric Dier",
+    "Jamie Vardy",
+    "Daniel Sturridge",
+    "Harry Maguire",
+    "Jordan Henderson",
+    "Luke Shaw",
+    "Bukayo Saka",
+    "Ollie Watkins",
+    "Cole Palmer"
+   ]
+  }
+ ],
+ "notes": {
+  "Gary Lineker": "Gary Lineker never scored at a Euros finals.",
+  "David Platt": "David Platt scored England's only goal at Euro 92, before 1996.",
+  "Tony Adams": "Tony Adams scored at Euro 88, before 1996.",
+  "Simon Kjaer": "Simon Kjaer's own goal for England in the 2021 semi-final is not counted.",
+  "Michael Owen": "Michael Owen scored 2, one in 2000 and one in 2004."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://github.com/martj42/international_results (goalscorers.csv)"
+ ],
+ "checks": "England's goals per player from UEFA and goalscorers.csv agree exactly (1996 to 2024). Shearer 7 (5 in 1996, 2 in 2000), Kane 7 (4 in 2020, 3 in 2024), Rooney 6, Lampard 3, Sterling 3, then 2 each for Sheringham, Scholes, Owen and Bellingham, and 16 players on 1 for 10th place."
+}

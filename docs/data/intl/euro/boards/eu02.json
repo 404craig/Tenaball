@@ -1,0 +1,88 @@
+{
+ "pick": "eu02",
+ "kind": "ranked",
+ "type": "nation",
+ "level": 0,
+ "title": "Most Euros played",
+ "brief": "Name the ten nations that have played at the most European Championship finals tournaments. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Germany",
+   "val": "14 tournaments",
+   "alts": [
+    "Germany",
+    "West Germany"
+   ]
+  },
+  {
+   "label": "2",
+   "name": "Spain",
+   "val": "12 tournaments"
+  },
+  {
+   "label": "3",
+   "name": "Russia",
+   "val": "12 tournaments",
+   "alts": [
+    "Russia",
+    "Soviet Union"
+   ]
+  },
+  {
+   "label": "4",
+   "name": "Netherlands",
+   "val": "11 tournaments"
+  },
+  {
+   "label": "5",
+   "name": "France",
+   "val": "11 tournaments"
+  },
+  {
+   "label": "6",
+   "name": "Italy",
+   "val": "11 tournaments"
+  },
+  {
+   "label": "7",
+   "name": "England",
+   "val": "11 tournaments"
+  },
+  {
+   "label": "8",
+   "name": "Czech Republic",
+   "val": "11 tournaments",
+   "alts": [
+    "Czech Republic",
+    "Czechoslovakia"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Denmark",
+   "val": "10 tournaments"
+  },
+  {
+   "label": "10",
+   "name": "Portugal",
+   "val": "9 tournaments"
+  }
+ ],
+ "notes": {
+  "Belgium": "Belgium are just outside with 7, level with Sweden and Croatia.",
+  "Sweden": "Sweden have played 7, just outside.",
+  "Croatia": "Croatia have played 7, just outside.",
+  "Switzerland": "Switzerland have played 6.",
+  "Turkey": "Turkey have played 6.",
+  "Romania": "Romania have played 6.",
+  "Serbia": "Serbia (with Yugoslavia) have played 6.",
+  "Scotland": "Scotland have played 4."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics",
+  "https://github.com/martj42/international_results (results.csv, every Euros finals match, totals worked out by script)"
+ ],
+ "checks": "Wikipedia's ranking of teams by appearances (updated to Euro 2024) matches the count of tournaments for each nation in the results.csv match list, every row. Russia alone has 6 (1996 to 2020), the Soviet Union 5 and the CIS 1; the Czech Republic alone 8 and Czechoslovakia 3; Germany from 1992 9 and West Germany 5."
+}

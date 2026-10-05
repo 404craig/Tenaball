@@ -1,0 +1,111 @@
+{
+ "pick": "eu07",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most goals at one Euros",
+ "brief": "Name the ten players who scored the most goals at a single European Championship since Euro 96. Each player counts once, for his best tournament.",
+ "period": "Euro 96 to Euro 2024, one tournament each (Euro 2020 was played in 2021)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Antoine Griezmann",
+   "val": "6 goals (2016)"
+  },
+  {
+   "label": "2",
+   "name": "Cristiano Ronaldo",
+   "val": "5 goals (2020)"
+  },
+  {
+   "label": "3",
+   "name": "Milan Baros",
+   "val": "5 goals (2004)"
+  },
+  {
+   "label": "4",
+   "name": "Patrick Kluivert",
+   "val": "5 goals (2000)"
+  },
+  {
+   "label": "5",
+   "name": "Alan Shearer",
+   "val": "5 goals (1996)"
+  },
+  {
+   "label": "6",
+   "name": "Patrik Schick",
+   "val": "5 goals (2020)"
+  },
+  {
+   "label": "7",
+   "name": "Savo Milosevic",
+   "val": "5 goals (2000)"
+  },
+  {
+   "label": "8",
+   "name": "Harry Kane",
+   "val": "4 goals",
+   "pool": "p4",
+   "alts": [
+    "Harry Kane",
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Wayne Rooney",
+    "Karim Benzema",
+    "Ruud van Nistelrooy",
+    "Emil Forsberg",
+    "David Villa"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Harry Kane",
+   "val": "4 goals",
+   "pool": "p4",
+   "alts": [
+    "Harry Kane",
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Wayne Rooney",
+    "Karim Benzema",
+    "Ruud van Nistelrooy",
+    "Emil Forsberg",
+    "David Villa"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Harry Kane",
+   "val": "4 goals",
+   "pool": "p4",
+   "alts": [
+    "Harry Kane",
+    "Nuno Gomes",
+    "Romelu Lukaku",
+    "Wayne Rooney",
+    "Karim Benzema",
+    "Ruud van Nistelrooy",
+    "Emil Forsberg",
+    "David Villa"
+   ]
+  }
+ ],
+ "notes": {
+  "Michel Platini": "Michel Platini scored 9 at Euro 84, before 1996.",
+  "Marco van Basten": "Marco van Basten scored 5 at Euro 88, before 1996.",
+  "Harry Kane": "Harry Kane scored 4 at Euro 2020.",
+  "Nuno Gomes": "Nuno Gomes scored 4 at Euro 2000.",
+  "Romelu Lukaku": "Romelu Lukaku scored 4 at Euro 2020.",
+  "Wayne Rooney": "Wayne Rooney scored 4 at Euro 2004.",
+  "Karim Benzema": "Karim Benzema scored 4 at Euro 2020.",
+  "Ruud van Nistelrooy": "Ruud van Nistelrooy scored 4 at Euro 2004.",
+  "Emil Forsberg": "Emil Forsberg scored 4 at Euro 2020.",
+  "David Villa": "David Villa scored 4 at Euro 2008."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=3&phase=TOURNAMENT&stats=matches_appearance,goals&seasonYear=<year> (UEFA's own player stats, one call per tournament 1996 to 2024)",
+  "https://github.com/martj42/international_results (goalscorers.csv)"
+ ],
+ "checks": "Goals per player per tournament from UEFA match goalscorers.csv for every tournament 1996 to 2024. Griezmann 6 in 2016; 5 each: Shearer 1996, Kluivert and Milosevic 2000, Baros 2004, Ronaldo and Schick 2020. The 4-goal pool: Harry Kane (2020), Nuno Gomes (2000), Romelu Lukaku (2020), Wayne Rooney (2004), Karim Benzema (2020), Ruud van Nistelrooy (2004), Emil Forsberg (2020), David Villa (2008). No one scored more than 3 at Euro 2024."
+}
