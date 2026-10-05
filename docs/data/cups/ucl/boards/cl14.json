@@ -1,0 +1,75 @@
+{
+ "pick": "cl14",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Managers with the most Champions League wins",
+ "brief": "Name the ten managers who have won the most Champions League games since 1992/93. Wins after extra time count; shoot-outs count as draws.",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards; in 1992/93 and 1993/94 the first and second rounds count; games a manager missed through a touchline ban still count for him",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Carlo Ancelotti",
+   "val": "124 wins"
+  },
+  {
+   "label": "2",
+   "name": "Pep Guardiola",
+   "val": "117 wins"
+  },
+  {
+   "label": "3",
+   "name": "Alex Ferguson",
+   "val": "104 wins"
+  },
+  {
+   "label": "4",
+   "name": "Arsene Wenger",
+   "val": "86 wins"
+  },
+  {
+   "label": "5",
+   "name": "Jose Mourinho",
+   "val": "84 wins"
+  },
+  {
+   "label": "6",
+   "name": "Diego Simeone",
+   "val": "65 wins"
+  },
+  {
+   "label": "7",
+   "name": "Jurgen Klopp",
+   "val": "58 wins"
+  },
+  {
+   "label": "8",
+   "name": "Louis van Gaal",
+   "val": "57 wins"
+  },
+  {
+   "label": "9",
+   "name": "Rafael Benitez",
+   "val": "53 wins"
+  },
+  {
+   "label": "10",
+   "name": "Luis Enrique",
+   "val": "50 wins"
+  }
+ ],
+ "notes": {
+  "Ottmar Hitzfeld": "Ottmar Hitzfeld is just outside with 47.",
+  "Massimiliano Allegri": "Massimiliano Allegri has 45.",
+  "Fabio Capello": "Fabio Capello has 45.",
+  "Thomas Tuchel": "Thomas Tuchel has 40.",
+  "Mircea Lucescu": "Mircea Lucescu has 37.",
+  "Zinedine Zidane": "Zinedine Zidane has 31."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/<coach>/leistungsdatenDetail/trainer/<id>/saison_id/0/wettbewerb_id/CL",
+  "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=<year> (UEFA results)",
+  "https://match.uefa.com/v5/matches/<id>/lineups (UEFA line-ups naming the coach)"
+ ],
+ "checks": "Each manager's games come from Transfermarkt and are matched one by one to UEFA's results, which give the score after extra time and the shoot-out separately (Transfermarkt adds shoot-out kicks to its scores, so its colours were not used). UEFA line-ups confirm the manager for most games from 2008/09. Leaving out the few games under touchline bans would not change who is in the ten (Klopp and Van Gaal could swap seventh and eighth)."
+}

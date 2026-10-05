@@ -1,0 +1,74 @@
+{
+ "pick": "cl06",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Most Champions League clean sheets",
+ "brief": "Name the ten goalkeepers with the most Champions League clean sheets since 1992/93 (games they started in which their team conceded no goals).",
+ "period": "Champions League seasons 1992/93 to 2025/26, group or league stage onwards; a goalless game settled on penalties counts as a clean sheet",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Manuel Neuer",
+   "val": "63 clean sheets"
+  },
+  {
+   "label": "2",
+   "name": "Iker Casillas",
+   "val": "57 clean sheets"
+  },
+  {
+   "label": "3",
+   "name": "Gianluigi Buffon",
+   "val": "52 clean sheets"
+  },
+  {
+   "label": "4",
+   "name": "Edwin van der Sar",
+   "val": "51 clean sheets"
+  },
+  {
+   "label": "5",
+   "name": "Petr Cech",
+   "val": "49 clean sheets"
+  },
+  {
+   "label": "6",
+   "name": "Victor Valdes",
+   "val": "45 clean sheets"
+  },
+  {
+   "label": "7",
+   "name": "Jan Oblak",
+   "val": "36 clean sheets"
+  },
+  {
+   "label": "8",
+   "name": "Dida",
+   "val": "35 clean sheets"
+  },
+  {
+   "label": "9",
+   "name": "Thibaut Courtois",
+   "val": "34 clean sheets"
+  },
+  {
+   "label": "10",
+   "name": "Oliver Kahn",
+   "val": "33 clean sheets"
+  }
+ ],
+ "notes": {
+  "Marc-Andre ter Stegen": "Marc-Andre ter Stegen is just outside with 32.",
+  "Ederson": "Ederson is just outside with 32.",
+  "Alisson": "Alisson has 31.",
+  "Vitor Baia": "Vitor Baia has 28.",
+  "Santiago Canizares": "Santiago Canizares has 27."
+ },
+ "sources": [
+  "https://match.uefa.com/v5/matches/<id>/lineups and https://match.uefa.com/v5/matches?competitionId=1&seasonYear=<year> (UEFA starting line-ups and results for every main-tournament game)",
+  "https://www.transfermarkt.com/ceapi/performance-game/<id> (Transfermarkt game logs for each keeper)",
+  "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics (Goalkeeping: Neuer 63)"
+ ],
+ "checks": "Counted two ways with the same rule (started the game, team conceded nothing in 90 or 120 minutes): from UEFA starting line-ups plus UEFA results, and from each keeper's Transfermarkt game log. They agree on every figure once Transfermarkt's habit of adding shoot-out kicks to the score is allowed for (Buffon and Dida in the 2003 final, Oblak against Leverkusen in 2015 and PSV in 2016). Wikipedia also gives Neuer 63. UEFA.com's own player clean-sheet stat is incomplete before about 2003 (it gives Van der Sar 43 and Kahn 29), so it was not used."
+}
