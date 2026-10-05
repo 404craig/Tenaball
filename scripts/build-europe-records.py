@@ -13,7 +13,7 @@ import csv, glob, json, os, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 E = "docs/data/europe/"
-CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro"}
+CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro", "intl": "intl"}
 LEAGUE = {"laliga": "La Liga", "bund": "Bundesliga", "seriea": "Serie A", "ligue1": "Ligue 1"}
 h = open("index.html", encoding="utf-8").read()
 problems = []
@@ -39,7 +39,7 @@ def family(pick, title, kind, typ="person"):
     if re.search(r"signing|sale|transfer", t): return "fee"
     if "manager" in t: return "mgr"
     if "assist" in t: return "assists"
-    if "appearance" in t or "most-used" in t or "games" in t: return "apps"
+    if "appearance" in t or "most-used" in t or "games" in t or re.search(r"\bcap", t): return "apps"
     if re.search(r"scorer|goals|hat-trick|seasons \(each|biggest .* seasons|golden shoe", t): return "goals"
     if re.search(r"cup|pokal|coppa|copa|coupe|player of the year|award", t): return "aw"
     if re.search(r"ground|title|seasons", t): return "rec"
@@ -141,6 +141,10 @@ for f in glob.glob(E + "*/players.csv"):
     for r in csv.DictReader(open(f)):
         k = r["tm_player_id"]; g[k] += int(r["goals"] or 0); a[k] += int(r["apps"] or 0); nm[k] = plain(r["player"])
     people |= {nm[k] for k in nm if g[k] >= 30 or a[k] >= 200}
+
+# Internationals (Craig, 6 October 2026): each nation's top 30 scorers and caps, all time and since 2000, so near misses are recognised
+for f in glob.glob("docs/data/intl/intl/people_*.txt"):
+    people |= {plain(n) for n in open(f).read().split("\n") if n.strip()}
 
 ids = [q["id"] for q in Q + OPEN]
 dup = [i for i, k in Counter(ids).items() if k > 1]
