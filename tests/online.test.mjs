@@ -18,7 +18,7 @@ async function guestTo(p){ await shown(p, "login"); await p.click("#guestBtn"); 
 async function signUp(p, name, email){
   await shown(p, "login"); await p.click("#tabUp");
   await p.fill("#signName", name); await p.fill("#signEmail", email); await p.fill("#signPin", "2468"); await p.fill("#signPin2", "2468"); await p.click("#authBtn");
-  await shown(p, "setup");
+  await shown(p, "setup").catch(async e => { throw new Error(e.message + ": " + await p.textContent("#authMsg").catch(() => "")); });
 }
 // tick exactly these competitions in the slide-up panel
 async function pickComps(p, cats){
@@ -31,7 +31,8 @@ async function pickComps(p, cats){
 async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 60 } = {}){
   await p.click("#onlineBtn"); await shown(p, "onlineGo");
   await p.click(`#modePick button[data-v="${mode}"]`);
-  await p.click(`#roundSeg button[data-v="${rounds}"]`); if (mode !== "turns") await p.click(`#timeSeg button[data-v="${time}"]`); else if (clock) await p.click(`#clockSeg button[data-v="${clock}"]`); else await p.evaluate(() => { cfg.clock = 0; }); // no shot clock in tests (Off is Solo play only) await pickComps(p, [].concat(cat));
+  await p.click(`#roundSeg button[data-v="${rounds}"]`); if (mode !== "turns") await p.click(`#timeSeg button[data-v="${time}"]`); else if (clock) await p.click(`#clockSeg button[data-v="${clock}"]`); else await p.evaluate(() => { cfg.clock = 0; }); // no shot clock in tests (Off is Solo play only)
+  await pickComps(p, [].concat(cat));
   if (!(await p.inputValue("#onlineName"))) await p.fill("#onlineName", p.label);
   await p.click("#createBtn"); await shown(p, "lobbyRoom");
   return p.textContent("#lobbyCode");
@@ -295,11 +296,12 @@ await test("online: the host can skip a player who has gone quiet without costin
   assert(await visible(craig, "#skipBtn"), "the host sees Skip turn");
   assert(!(await visible(aiden, "#skipBtn")), "other players don't");
   await step([craig, aiden], craig, () => craig.click("#skipBtn"), "skip");
-  eq(await aiden.evaluate(() => [G.players[1].lives, G.players[G.turn].name]), [3, "Craig"], "no life lost, back to Craig");
+  const lives = (p, n) => p.evaluate(n => G.players.find(x => x.name===n).lives, n);
+  eq([await lives(aiden, "Aiden"), await aiden.evaluate(() => G.players[G.turn].name)], [3, "Craig"], "no life lost, back to Craig");
   // a pass is different: it costs a life, on every phone
   await step([craig, aiden], craig, () => craig.click("#passBtn"), "Craig passes");
-  eq(await aiden.evaluate(() => [G.players[0].lives, G.players[G.turn].name]), [2, "Aiden"], "Craig loses a life and Aiden is up");
-  eq(await craig.evaluate(() => G.players[0].lives), 2, "same on Craig's phone");
+  eq([await lives(aiden, "Craig"), await aiden.evaluate(() => G.players[G.turn].name)], [2, "Aiden"], "Craig loses a life and Aiden is up");
+  eq(await lives(craig, "Craig"), 2, "same on Craig's phone");
   await closeAll(craig, aiden);
 });
 
