@@ -1,0 +1,73 @@
+{
+ "pick": "b06-irl",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Ireland managers in order",
+ "brief": "Name the Republic of Ireland's ten permanent managers from Eoin Hand (1980) to Heimir Hallgrimsson, in order. Each place is labelled with the year he took charge; Mick McCarthy had two spells and fills two places. Caretakers (Don Givens, Noel King, John O'Shea) don't count.",
+ "period": "Permanent managers, 1980 to July 2026",
+ "rows": [
+  {
+   "label": "1980",
+   "name": "Eoin Hand",
+   "val": "1980 to 1985"
+  },
+  {
+   "label": "1986",
+   "name": "Jack Charlton",
+   "val": "1986 to 1995"
+  },
+  {
+   "label": "1996",
+   "name": "Mick McCarthy",
+   "val": "1996 to 2002"
+  },
+  {
+   "label": "2003",
+   "name": "Brian Kerr",
+   "val": "2003 to 2005"
+  },
+  {
+   "label": "2006",
+   "name": "Steve Staunton",
+   "val": "2006 to 2007"
+  },
+  {
+   "label": "2008",
+   "name": "Giovanni Trapattoni",
+   "val": "2008 to 2013"
+  },
+  {
+   "label": "2013",
+   "name": "Martin O'Neill",
+   "val": "2013 to 2018"
+  },
+  {
+   "label": "2018",
+   "name": "Mick McCarthy",
+   "val": "2018 to 2020"
+  },
+  {
+   "label": "2020",
+   "name": "Stephen Kenny",
+   "val": "2020 to 2023"
+  },
+  {
+   "label": "2024",
+   "name": "Heimir Hallgrimsson",
+   "val": "2024 on"
+  }
+ ],
+ "notes": {
+  "Alan Kelly": "Alan Kelly Sr. took charge for one match in 1980, just before Eoin Hand.",
+  "Johnny Giles": "Johnny Giles managed from 1973 to 1980, before this period.",
+  "Don Givens": "Don Givens was caretaker in 2002 to 2003 and 2007 to 2008.",
+  "Noel King": "Noel King was caretaker in 2013.",
+  "John O'Shea": "John O'Shea was interim manager in 2024."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team#Coaching_history",
+  "https://www.transfermarkt.com/irland/mitarbeiterhistorie/verein/3509"
+ ],
+ "checks": "Wikipedia's coaching history (updated to October 2026) and Transfermarkt's staff history agree on the order and years: Hand May 1980, Charlton February 1986, McCarthy February 1996, Kerr January 2003, Staunton January 2006, Trapattoni May 2008, O'Neill November 2013, McCarthy November 2018, Kenny April 2020, Hallgrimsson July 2024 (still in post). Givens, King and O'Shea were interim. Starting at Hand gives exactly ten; Alan Kelly Sr., in charge for one match in 1980 before Hand, is left out by the start point."
+}

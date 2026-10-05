@@ -1,0 +1,74 @@
+{
+ "pick": "b02-nir",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Northern Ireland's most capped players",
+ "brief": "Name the ten players with the most caps for Northern Ireland in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Steven Davis",
+   "val": "140 caps"
+  },
+  {
+   "label": "2",
+   "name": "Pat Jennings",
+   "val": "119 caps"
+  },
+  {
+   "label": "3",
+   "name": "Aaron Hughes",
+   "val": "112 caps"
+  },
+  {
+   "label": "4",
+   "name": "Jonny Evans",
+   "val": "107 caps"
+  },
+  {
+   "label": "5",
+   "name": "David Healy",
+   "val": "95 caps"
+  },
+  {
+   "label": "6",
+   "name": "Mal Donaghy",
+   "val": "91 caps"
+  },
+  {
+   "label": "7",
+   "name": "Kyle Lafferty",
+   "val": "89 caps"
+  },
+  {
+   "label": "8",
+   "name": "Josh Magennis",
+   "val": "89 caps"
+  },
+  {
+   "label": "9",
+   "name": "Sammy McIlroy",
+   "val": "88 caps"
+  },
+  {
+   "label": "10",
+   "name": "Maik Taylor",
+   "val": "88 caps"
+  }
+ ],
+ "notes": {
+  "Keith Gillespie": "Keith Gillespie is 11th with 86, just outside.",
+  "Paddy McNair": "Paddy McNair is 12th with 82 (at the end of the 2026 World Cup).",
+  "Gareth McAuley": "Gareth McAuley has 80.",
+  "Chris Baird": "Chris Baird has 79.",
+  "Josh Magennis": "Josh Magennis had 89 at the end of the 2026 World Cup; caps since then don't count here."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Northern_Ireland_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/nil-recintlp.html",
+  "https://www.transfermarkt.com/nordirland/rekordspieler/verein/5674/sort/einsaetze.desc"
+ ],
+ "checks": "Wikipedia's records page on 12 June 2026 and RSSSF (to 7 June 2026, Northern Ireland's last match before the cut-off) give identical figures. Transfermarkt's match data counted to 19 July 2026 agrees (Magennis 89, McNair 82) except Jonny Evans, 108 there against 107; 107 is used (4th either way)."
+}

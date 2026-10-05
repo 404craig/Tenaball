@@ -1,0 +1,79 @@
+{
+ "pick": "b01-irl",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Ireland's all-time top scorers",
+ "brief": "Name the ten players with the most goals for the Republic of Ireland in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robbie Keane",
+   "val": "68 goals"
+  },
+  {
+   "label": "2",
+   "name": "Niall Quinn",
+   "val": "21 goals"
+  },
+  {
+   "label": "3",
+   "name": "Frank Stapleton",
+   "val": "20 goals"
+  },
+  {
+   "label": "4",
+   "name": "John Aldridge",
+   "val": "19 goals"
+  },
+  {
+   "label": "5",
+   "name": "Tony Cascarino",
+   "val": "19 goals"
+  },
+  {
+   "label": "6",
+   "name": "Don Givens",
+   "val": "19 goals"
+  },
+  {
+   "label": "7",
+   "name": "Shane Long",
+   "val": "17 goals"
+  },
+  {
+   "label": "8",
+   "name": "Noel Cantwell",
+   "val": "14 goals"
+  },
+  {
+   "label": "9",
+   "name": "Jon Walters",
+   "val": "14 goals"
+  },
+  {
+   "label": "10",
+   "name": "Kevin Doyle",
+   "val": "14 goals"
+  }
+ ],
+ "notes": {
+  "Gerry Daly": "Gerry Daly is joint 11th with 13, just outside.",
+  "Jimmy Dunne": "Jimmy Dunne is joint 11th with 13, just outside.",
+  "Troy Parrott": "Troy Parrott had 11 at the end of the 2026 World Cup; his goals since then don't count here.",
+  "James McClean": "James McClean has 11.",
+  "Ian Harte": "Ian Harte has 11 (12 on Wikipedia).",
+  "Robbie Brady": "Robbie Brady has 10.",
+  "Liam Brady": "Liam Brady has 9.",
+  "Roy Keane": "Roy Keane has 9.",
+  "David Connolly": "David Connolly has 9."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team",
+  "https://www.rsssf.org/miscellaneous/ier-recintlp.html",
+  "https://en.wikipedia.org/wiki/List_of_Republic_of_Ireland_international_footballers",
+  "https://www.transfermarkt.com/irland/rekordspieler/verein/3509/sort/tore.desc"
+ ],
+ "checks": "Wikipedia's national team article as it stood on 16 July 2026 (updated after Ireland's last match before the cut-off, Ireland v Canada on 5 June 2026), RSSSF (last match included 5 June 2026) and Wikipedia's list of internationals agree on every figure. Transfermarkt swaps Stapleton and Aldridge (19 and 20) but has the same ten; its match data gives Parrott 11 at the cut-off (15 now)."
+}
