@@ -42,6 +42,13 @@ body[data-cat="ucl"]{
   --scan:linear-gradient(90deg,#00e1ff,#2f5bff); --miss:#ff2fa0;
   --glowA:rgba(90,140,255,.55); --glowB:rgba(0,225,255,.28); --glowC:rgba(255,47,160,.18);
 }
+/* Europa League: floodlit orange on black, from the competition's own colours */
+body[data-cat="uel"]{
+  --bg1:#6a2a00; --bg2:#120600; --topc:#62290a; --muted:#f2d6c0; --slot:rgba(24,8,0,.66); --slotline:rgba(255,190,140,.2);
+  --acc:#ff6a00; --acc2:#ffb347; --hit:linear-gradient(90deg,#ffd29a,#ff8a00); --hitInk:#2a0e00;
+  --scan:linear-gradient(90deg,#ff8a00,#ff4d00); --miss:#ff2f6d;
+  --glowA:rgba(255,120,0,.5); --glowB:rgba(255,180,60,.25); --glowC:rgba(255,60,0,.18);
+}
 /* Top 5 leagues: floodlit pitch green with trophy gold */
 body[data-cat="top5"]{
   --bg1:#0d4a35; --bg2:#03150e; --topc:#1f5841; --muted:#c7e6d8; --slot:rgba(2,20,13,.62); --slotline:rgba(200,255,225,.18);
@@ -427,6 +434,7 @@ body[data-cat="spfl"]{--hit:linear-gradient(90deg,#4aa8ff,#ffffff); --hitInk:#07
 body[data-cat="ucl"]{--hit:linear-gradient(90deg,#9fd8ff,#ffffff 50%,#c9b8ff); --hitInk:#0d1a55;}
 body[data-cat="wc"]{--hit:linear-gradient(90deg,#fff1b8,#f4d774 40%,#d4af37); --hitInk:#1b1300; --scan:linear-gradient(90deg,#6b5310,#d4af37);}
 body[data-cat="top5"]{--hit:linear-gradient(90deg,#7cffb2,#ffd54a 55%,#f5b700); --hitInk:#1b1300;}
+body[data-cat="uel"]{--hit:linear-gradient(90deg,#ffe0b8,#ff9a2e 55%,#ff6a00); --hitInk:#2a0e00;}
 
 .homebrand{text-align:center;margin:-10px 0 26px}
 .homebrand .sub{margin-top:0;color:var(--ink)}

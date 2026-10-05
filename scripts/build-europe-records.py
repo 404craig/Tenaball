@@ -1,4 +1,4 @@
-"""Build EXTRA_Q6 (La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 boards from Craig's October 2026 picks), EURO_OPEN (their open
+"""Build EXTRA_Q6 (La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 boards from Craig's October 2026 picks, and the Champions League and Europa League boards from docs/data/cups/), EURO_OPEN (their open
 boards) and EURO_PEOPLE (every player in the four leagues in 2025/26, so wrong answers are recognised), and write them into index.html.
 
 Data, in docs/data/europe/ (see BRIEF.md and each league's NOTES files):
@@ -13,7 +13,7 @@ import csv, glob, json, os, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 E = "docs/data/europe/"
-CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5"}
+CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel"}
 LEAGUE = {"laliga": "La Liga", "bund": "Bundesliga", "seriea": "Serie A", "ligue1": "Ligue 1"}
 h = open("index.html", encoding="utf-8").read()
 problems = []
@@ -28,6 +28,7 @@ def known_boards(cat):
     for m in re.finditer(r'\{"id":"(%s-top-\d{4}/\d\d)".*?"table":(\[[^\]]*\])' % cat, base): out[m.group(1)[-7:]] = json.loads(m.group(2))
     return out
 CLUBS = {k: set(open(E + f"clubs_{k}.txt").read().split("\n")) for k in LEAGUE}
+CLUBS["ucl"] = CLUBS["uel"] = set(open("docs/data/cups/clubs_all.txt").read().split("\n")) | set().union(*CLUBS.values())
 
 Q, OPEN = [], []
 def family(pick, title, kind, typ="person"):
@@ -72,7 +73,7 @@ for lg, pick in [("bund", "de27"), ("seriea", "it26")]:
               "period": "Seasons 2000/01 to 2025/26", "level": 1, "hard": False, "numeric": True, "slots": slots, "note": {}})
 
 # ---------- the agents' boards ----------
-for path in sorted(glob.glob(E + "*/boards/*.json")):
+for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/*/boards/*.json")):
     lg = path.split("/")[-3]; b = json.load(open(path)); pick = b.get("pick") or os.path.basename(path)[:-5]
     where = f"{lg}/{pick}"
     text = [b.get("title", ""), b.get("brief", ""), b.get("period", ""), *b.get("notes", {}).values(), *(r.get("val", "") for r in b.get("rows", []))]
