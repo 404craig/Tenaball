@@ -62,7 +62,10 @@
  },
  "sources": [
   "https://www.transfermarkt.com/ligue-1/erfolge/wettbewerb/FR1",
-  "https://en.wikipedia.org/wiki/<season>_Ligue_1 (personnel tables in each season article)"
+  "https://en.wikipedia.org/wiki/<season>_Ligue_1 (personnel tables in each season article)",
+  "https://en.wikipedia.org/wiki/Jacques_Santini",
+  "https://en.wikipedia.org/wiki/Paul_Le_Guen",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Paris_Saint-Germain_FC_season"
  ],
- "checks": "Champions and their coaches from Transfermarkt's Ligue 1 winners page, checked against the manager column of each Wikipedia season article's personnel table (2004/05 onward). For 2000/01 Wikipedia names Denoueix as manager of the year with champions Nantes; for 2001/02 to 2003/04 (Santini, then Le Guen at Lyon) and 2025/26 (Luis Enrique) the season articles have no manager table, so these were checked against the managers' own Wikipedia articles and the club manager lists. Most slots for one manager: 3."
+ "checks": "Champions and their coaches from Transfermarkt's Ligue 1 winners page, checked against the manager column of each Wikipedia season article's personnel table (2004/05 onward). For 2000/01 Wikipedia names Denoueix as manager of the year with champions Nantes; for 2001/02 to 2003/04 (Santini, then Le Guen at Lyon) and 2025/26 (Luis Enrique) the season articles have no manager table, so these were checked against Wikipedia's Jacques Santini and Paul Le Guen articles (honours: Division 1 2001/02; Ligue 1 2002/03, 2003/04, 2004/05) and the 2025/26 Paris Saint-Germain season article (head coach Luis Enrique, league result 1st). Most slots for one manager: 3."
 }

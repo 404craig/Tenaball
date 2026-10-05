@@ -36,7 +36,7 @@ def family(pick, title, kind, typ="person"):
     if re.search(r"signing|sale|transfer", t): return "fee"
     if "manager" in t: return "mgr"
     if "assist" in t: return "assists"
-    if "appearance" in t or "most-used" in t: return "apps"
+    if "appearance" in t or "most-used" in t or "games" in t: return "apps"
     if re.search(r"scorer|goals|hat-trick|seasons \(each|biggest .* seasons|golden shoe", t): return "goals"
     if re.search(r"cup|pokal|coppa|copa|coupe|player of the year|award", t): return "aw"
     if re.search(r"ground|title|seasons", t): return "rec"
@@ -109,6 +109,15 @@ for path in sorted(glob.glob(E + "*/boards/*.json")):
          "slots": slots, "note": {fix(k): v for k, v in b.get("notes", {}).items()}}
     if kind == "ranked": q["numeric"] = True
     Q.append(q)
+
+# ---------- tidier period lines and titles ----------
+FEE = "Deals from July 2000 to the end of the summer 2026 window, by the fee reported at the time (euros, without add-ons)"
+PERIOD = {"de22": "Bayern managers, 2009 to May 2026", "de23": "Dortmund managers, 2008 to May 2026", "fr21": "PSG managers, December 2005 to May 2026"}
+for q in Q:
+    k = q["id"].split("-", 2)[-1]
+    if "-fee-" in q["id"]: q["period"] = FEE
+    if k in PERIOD: q["period"] = PERIOD[k]
+    if k == "it17": q["title"] = "Roma and Napoli top scorers since 2000"
 
 # ---------- levels: each league gets some easy boards (only La Liga had any), from its best-known names ----------
 EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b"}
