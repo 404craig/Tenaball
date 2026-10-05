@@ -1,0 +1,35 @@
+final,winner,runner_up,tm_score,winner_captain,runner_up_captain,scorers_tm,tm_match_id
+1993,Marseille,AC Milan,1:0,didier-deschamps,franco-baresi,Basile Boli (Marseille),1019745
+1994,AC Milan,Barcelona,4:0,mauro-tassotti,jose-mari-bakero (Wikipedia; TM shows no captain),Daniele Massaro (AC Milan); Daniele Massaro (AC Milan); Dejan Savicevic (AC Milan); Marcel Desailly (AC Milan),983320
+1995,Ajax,AC Milan,1:0,danny-blind,franco-baresi,Patrick Kluivert (Ajax),1019806
+1996,Juventus,Ajax,5:3,gianluca-vialli,danny-blind,Fabrizio Ravanelli (Juventus); Jari Litmanen (Ajax),1067646
+1997,Dortmund,Juventus,3:1,matthias-sammer,angelo-peruzzi,Karl-Heinz Riedle (Dortmund); Karl-Heinz Riedle (Dortmund); Alessandro Del Piero (Juventus); Lars Ricken (Dortmund),990547
+1998,Real Madrid,Juventus,1:0,manolo-sanchis,angelo-peruzzi,Predrag Mijatovic (Real Madrid),1069421
+1999,Man Utd,Bayern Munich,2:1,peter-schmeichel,oliver-kahn,Mario Basler (Bayern Munich); Teddy Sheringham (Man Utd); Ole Gunnar Solskjaer (Man Utd),983044
+2000,Real Madrid,Valencia,3:0,fernando-redondo,gaizka-mendieta,Fernando Morientes (Real Madrid); Steve McManaman (Real Madrid); Raul (Real Madrid),984698
+2001,Bayern Munich,Valencia,5:4,stefan-effenberg,gaizka-mendieta,Gaizka Mendieta (Valencia); Stefan Effenberg (Bayern Munich),990248
+2002,Real Madrid,Leverkusen,1:2,fernando-hierro,carsten-ramelow,Raul (Real Madrid); Lucio (Leverkusen); Zinedine Zidane (Real Madrid),1004719
+2003,AC Milan,Juventus,2:3,paolo-maldini,alessandro-del-piero,,985129
+2004,Porto,Monaco,0:3,jorge-costa,ludovic-giuly,Carlos Alberto (Porto); Deco (Porto); Dmitriy Alenichev (Porto),303
+2005,Liverpool,AC Milan,5:6,steven-gerrard,paolo-maldini,Paolo Maldini (AC Milan); Hernan Crespo (AC Milan); Hernan Crespo (AC Milan); Steven Gerrard (Liverpool); Vladimir Smicer (Liverpool); Xabi Alonso (Liverpool),31195
+2006,Barcelona,Arsenal,2:1,carles-puyol,thierry-henry,Sol Campbell (Arsenal); Samuel Eto'o (Barcelona); Juliano Belletti (Barcelona),53463
+2007,AC Milan,Liverpool,1:2,paolo-maldini,steven-gerrard,Filippo Inzaghi (AC Milan); Filippo Inzaghi (AC Milan); Dirk Kuyt (Liverpool),68267
+2008,Man Utd,Chelsea,6:5,rio-ferdinand,john-terry,Cristiano Ronaldo (Man Utd); Frank Lampard (Chelsea),909764
+2009,Barcelona,Man Utd,2:0,carles-puyol,ryan-giggs,Samuel Eto'o (Barcelona); Lionel Messi (Barcelona),946099
+2010,Inter,Bayern Munich,2:0,javier-zanetti,mark-van-bommel,Diego Milito (Inter); Diego Milito (Inter),1016825
+2011,Barcelona,Man Utd,3:1,xavi,nemanja-vidic-lrm-,Pedro (Barcelona); Wayne Rooney (Man Utd); Lionel Messi (Barcelona); David Villa (Barcelona),1102390
+2012,Chelsea,Bayern Munich,4:5,frank-lampard,philipp-lahm,Thomas Muller (Bayern Munich); Didier Drogba (Chelsea),2208062
+2013,Bayern Munich,Dortmund,1:2,philipp-lahm,roman-weidenfeller,Mario Mandzukic (Bayern Munich); Ilkay Gundogan (Dortmund); Arjen Robben (Bayern Munich),2314690
+2014,Real Madrid,Atletico Madrid,4:1,iker-casillas,gabi,Diego Godin (Atletico Madrid); Sergio Ramos (Real Madrid); Gareth Bale (Real Madrid); Marcelo (Real Madrid); Cristiano Ronaldo (Real Madrid),2456475
+2015,Barcelona,Juventus,1:3,andres-iniesta,gianluigi-buffon,Ivan Rakitic (Barcelona); Alvaro Morata (Juventus); Luis Suarez (Barcelona); Neymar (Barcelona),2567502
+2016,Real Madrid,Atletico Madrid,6:4,sergio-ramos,gabi,Sergio Ramos (Real Madrid); Yannick Carrasco (Atletico Madrid),2690027
+2017,Real Madrid,Juventus,1:4,sergio-ramos,gianluigi-buffon,Cristiano Ronaldo (Real Madrid); Mario Mandzukic (Juventus); Casemiro (Real Madrid); Cristiano Ronaldo (Real Madrid); Marco Asensio (Real Madrid),2853591
+2018,Real Madrid,Liverpool,3:1,sergio-ramos,jordan-henderson,Karim Benzema (Real Madrid); Sadio Mane (Liverpool); Gareth Bale (Real Madrid); Gareth Bale (Real Madrid),3038747
+2019,Liverpool,Spurs,0:2,jordan-henderson,hugo-lloris,Mohamed Salah (Liverpool); Divock Origi (Liverpool),3183105
+2020,Bayern Munich,PSG,0:1,manuel-neuer,thiago-silva,Kingsley Coman (Bayern Munich),3421017
+2021,Chelsea,Man City,0:1,cesar-azpilicueta,kevin-de-bruyne,Kai Havertz (Chelsea),3562547
+2022,Real Madrid,Liverpool,0:1,karim-benzema,jordan-henderson,Vinicius Junior (Real Madrid),3812391
+2023,Man City,Inter,1:0,ilkay-gundogan,marcelo-brozovic,Rodri (Man City),4077814
+2024,Real Madrid,Dortmund,0:2,nacho-fernandez,emre-can,Daniel Carvajal (Real Madrid); Vinicius Junior (Real Madrid),4343512
+2025,PSG,Inter,5:0,marquinhos,lautaro-martinez,Achraf Hakimi (PSG); Desire Doue (PSG); Desire Doue (PSG); Khvicha Kvaratskhelia (PSG); Senny Mayulu (PSG),4547655
+2026,PSG,Arsenal,5:4,marquinhos,martin-odegaard,Kai Havertz (Arsenal); Ousmane Dembele (PSG),4814382

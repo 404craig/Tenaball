@@ -1,0 +1,104 @@
+{
+ "pick": "cl18",
+ "kind": "ranked",
+ "type": "club",
+ "level": 0,
+ "title": "Most Champions League finals",
+ "brief": "Name the ten clubs that have played in the most Champions League finals since 1993. Four clubs tie on three finals for the last three places.",
+ "period": "Champions League finals 1993 to 2026 (34 finals)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Real Madrid",
+   "val": "9 finals (won 9)"
+  },
+  {
+   "label": "2",
+   "name": "AC Milan",
+   "val": "6 finals (won 3)"
+  },
+  {
+   "label": "3",
+   "name": "Juventus",
+   "val": "6 finals (won 1)"
+  },
+  {
+   "label": "4",
+   "name": "Bayern Munich",
+   "val": "6 finals (won 3)"
+  },
+  {
+   "label": "5",
+   "name": "Barcelona",
+   "val": "5 finals (won 4)"
+  },
+  {
+   "label": "6",
+   "name": "Liverpool",
+   "val": "5 finals (won 2)"
+  },
+  {
+   "label": "7",
+   "name": "Man Utd",
+   "val": "4 finals (won 2)"
+  },
+  {
+   "label": "8",
+   "name": "Dortmund",
+   "pool": "three",
+   "alts": [
+    "Dortmund",
+    "Chelsea",
+    "Inter",
+    "PSG"
+   ],
+   "val": "3 finals"
+  },
+  {
+   "label": "9",
+   "name": "Chelsea",
+   "pool": "three",
+   "alts": [
+    "Dortmund",
+    "Chelsea",
+    "Inter",
+    "PSG"
+   ],
+   "val": "3 finals"
+  },
+  {
+   "label": "10",
+   "name": "Inter",
+   "pool": "three",
+   "alts": [
+    "Dortmund",
+    "Chelsea",
+    "Inter",
+    "PSG"
+   ],
+   "val": "3 finals"
+  }
+ ],
+ "notes": {
+  "Dortmund": "Dortmund played 3 finals: won 1997, lost 2013 and 2024.",
+  "Chelsea": "Chelsea played 3 finals: lost 2008, won 2012 and 2021.",
+  "Inter": "Inter played 3 finals: won 2010, lost 2023 and 2025.",
+  "PSG": "PSG played 3 finals: lost 2020, won 2025 and 2026.",
+  "Ajax": "Ajax played 2 finals (won 1995, lost 1996), just outside.",
+  "Valencia": "Valencia played 2 finals (lost 2000 and 2001), just outside.",
+  "Arsenal": "Arsenal played 2 finals (lost 2006 and 2026), just outside.",
+  "Atletico Madrid": "Atletico Madrid played 2 finals (lost 2014 and 2016), just outside.",
+  "Man City": "Man City played 2 finals (lost 2021, won 2023), just outside.",
+  "Marseille": "Marseille played 1 final (won 1993).",
+  "Porto": "Porto played 1 final (won 2004).",
+  "Monaco": "Monaco played 1 final (lost 2004).",
+  "Leverkusen": "Leverkusen played 1 final (lost 2002).",
+  "Spurs": "Spurs played 1 final (lost 2019)."
+ },
+ "sources": [
+  "index.html UCL_W and UCL_R (the game's finals list)",
+  "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "https://www.transfermarkt.com/uefa-champions-league/gesamtspielplan/pokalwettbewerb/CL/saison_id/2025 (each season's final, 1992 to 2025)"
+ ],
+ "checks": "Counted from the game's UCL_W and UCL_R arrays for 1993 to 2026, then counted again from the two finalists of all 34 Transfermarkt final match reports; both counts agree club for club."
+}

@@ -1,0 +1,70 @@
+{
+ "pick": "cl26-2011-manutd",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Man Utd's 2011 final XI",
+ "brief": "Name the ten outfield players who started for Man Utd against Barcelona in the 2011 Champions League final (28 May 2011), when they lost 3-1. The goalkeeper (Edwin van der Sar) is left out.",
+ "period": "Champions League final 2011 (2010/11 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Fabio",
+   "val": "No. 20"
+  },
+  {
+   "label": "CB",
+   "name": "Rio Ferdinand",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Nemanja Vidic",
+   "val": "No. 15"
+  },
+  {
+   "label": "LB",
+   "name": "Patrice Evra",
+   "val": "No. 3"
+  },
+  {
+   "label": "RM",
+   "name": "Antonio Valencia",
+   "val": "No. 25"
+  },
+  {
+   "label": "CM",
+   "name": "Michael Carrick",
+   "val": "No. 16"
+  },
+  {
+   "label": "CM",
+   "name": "Ryan Giggs",
+   "val": "No. 11"
+  },
+  {
+   "label": "LM",
+   "name": "Park Ji-sung",
+   "val": "No. 13"
+  },
+  {
+   "label": "SS",
+   "name": "Wayne Rooney",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Javier Hernandez",
+   "val": "No. 14"
+  }
+ ],
+ "notes": {
+  "Nani": "Nani came on as a substitute in the 2011 final, so he did not start.",
+  "Paul Scholes": "Paul Scholes came on as a substitute in the 2011 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2011_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/1102390"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

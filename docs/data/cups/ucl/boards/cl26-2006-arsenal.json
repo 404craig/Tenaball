@@ -1,0 +1,71 @@
+{
+ "pick": "cl26-2006-arsenal",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Arsenal's 2006 final XI",
+ "brief": "Name the ten outfield players who started for Arsenal against Barcelona in the 2006 Champions League final (17 May 2006), when they lost 2-1. The goalkeeper (Jens Lehmann) is left out.",
+ "period": "Champions League final 2006 (2005/06 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Emmanuel Eboue",
+   "val": "No. 27"
+  },
+  {
+   "label": "CB",
+   "name": "Kolo Toure",
+   "val": "No. 28"
+  },
+  {
+   "label": "CB",
+   "name": "Sol Campbell",
+   "val": "No. 23"
+  },
+  {
+   "label": "LB",
+   "name": "Ashley Cole",
+   "val": "No. 3"
+  },
+  {
+   "label": "RM",
+   "name": "Robert Pires",
+   "val": "No. 7"
+  },
+  {
+   "label": "CM",
+   "name": "Gilberto Silva",
+   "val": "No. 19"
+  },
+  {
+   "label": "CM",
+   "name": "Cesc Fabregas",
+   "val": "No. 15"
+  },
+  {
+   "label": "LM",
+   "name": "Alexander Hleb",
+   "val": "No. 13"
+  },
+  {
+   "label": "SS",
+   "name": "Freddie Ljungberg",
+   "val": "No. 8"
+  },
+  {
+   "label": "CF",
+   "name": "Thierry Henry",
+   "val": "No. 14"
+  }
+ ],
+ "notes": {
+  "Manuel Almunia": "Manuel Almunia came on as a substitute in the 2006 final, so he did not start.",
+  "Mathieu Flamini": "Mathieu Flamini came on as a substitute in the 2006 final, so he did not start.",
+  "Jose Antonio Reyes": "Jose Antonio Reyes came on as a substitute in the 2006 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2006_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/53463"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

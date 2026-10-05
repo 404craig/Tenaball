@@ -1,0 +1,72 @@
+{
+ "pick": "cl26-1999-manutd",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Man Utd's 1999 final XI",
+ "brief": "Name the ten outfield players who started for Man Utd against Bayern Munich in the 1999 Champions League final (26 May 1999), when they won 2-1. The goalkeeper (Peter Schmeichel) is left out.",
+ "period": "Champions League final 1999 (1998/99 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Gary Neville",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Ronny Johnsen",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Jaap Stam",
+   "val": "No. 6"
+  },
+  {
+   "label": "LB",
+   "name": "Denis Irwin",
+   "val": "No. 3"
+  },
+  {
+   "label": "RM",
+   "name": "Ryan Giggs",
+   "val": "No. 11"
+  },
+  {
+   "label": "CM",
+   "name": "David Beckham",
+   "val": "No. 7"
+  },
+  {
+   "label": "CM",
+   "name": "Nicky Butt",
+   "val": "No. 8"
+  },
+  {
+   "label": "LM",
+   "name": "Jesper Blomqvist",
+   "val": "No. 15"
+  },
+  {
+   "label": "CF",
+   "name": "Dwight Yorke",
+   "val": "No. 19"
+  },
+  {
+   "label": "CF",
+   "name": "Andy Cole",
+   "val": "No. 9"
+  }
+ ],
+ "notes": {
+  "Teddy Sheringham": "Teddy Sheringham came on as a substitute in the 1999 final, so he did not start.",
+  "Ole Gunnar Solskjaer": "Ole Gunnar Solskjaer came on as a substitute in the 1999 final, so he did not start.",
+  "Roy Keane": "Roy Keane was suspended for the 1999 final.",
+  "Paul Scholes": "Paul Scholes was suspended for the 1999 final."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/1999_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/983044"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}

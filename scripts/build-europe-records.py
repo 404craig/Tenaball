@@ -79,7 +79,7 @@ for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/
     text = [b.get("title", ""), b.get("brief", ""), b.get("period", ""), *b.get("notes", {}).values(), *(r.get("val", "") for r in b.get("rows", []))]
     if any("—" in t for t in text): problems.append(f"{where}: em dash"); continue
     if not b.get("period"): problems.append(f"{where}: no period line"); continue
-    if not re.search(r"20\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
+    if not re.search(r"(19|20)\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
     kind, typ, lv = b.get("kind"), b.get("type", "person"), int(b.get("level", 1))
     id = f"{CAT[lg]}-{family(pick, b['title'], kind, typ)}-{pick.replace('/', '-')}"
     fix = (lambda n: plain(n)) if typ == "person" else (lambda n: n)

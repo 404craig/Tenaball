@@ -1,0 +1,71 @@
+{
+ "pick": "cl26-2008-manutd",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Man Utd's 2008 final XI",
+ "brief": "Name the ten outfield players who started for Man Utd against Chelsea in the 2008 Champions League final (21 May 2008), when they drew 1-1 and won on penalties. The goalkeeper (Edwin van der Sar) is left out.",
+ "period": "Champions League final 2008 (2007/08 season)",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Wes Brown",
+   "val": "No. 6"
+  },
+  {
+   "label": "CB",
+   "name": "Rio Ferdinand",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Nemanja Vidic",
+   "val": "No. 15"
+  },
+  {
+   "label": "LB",
+   "name": "Patrice Evra",
+   "val": "No. 3"
+  },
+  {
+   "label": "RM",
+   "name": "Owen Hargreaves",
+   "val": "No. 4"
+  },
+  {
+   "label": "CM",
+   "name": "Paul Scholes",
+   "val": "No. 18"
+  },
+  {
+   "label": "CM",
+   "name": "Michael Carrick",
+   "val": "No. 16"
+  },
+  {
+   "label": "LM",
+   "name": "Cristiano Ronaldo",
+   "val": "No. 7"
+  },
+  {
+   "label": "CF",
+   "name": "Wayne Rooney",
+   "val": "No. 10"
+  },
+  {
+   "label": "CF",
+   "name": "Carlos Tevez",
+   "val": "No. 32"
+  }
+ ],
+ "notes": {
+  "Ryan Giggs": "Ryan Giggs came on as a substitute in the 2008 final, so he did not start.",
+  "Nani": "Nani came on as a substitute in the 2008 final, so he did not start.",
+  "Anderson": "Anderson came on as a substitute in the 2008 final, so he did not start."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2008_UEFA_Champions_League_final",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/909764"
+ ],
+ "checks": "Starting XI, positions and shirt numbers from the team sheet on the final's Wikipedia page; the same eleven players and shirt numbers are on the Transfermarkt match report. Positions are Wikipedia's."
+}
