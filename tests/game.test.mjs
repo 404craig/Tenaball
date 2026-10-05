@@ -336,6 +336,12 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(await p.evaluate(() => cfg.cats.includes("uel") && cfg.cats.length), 11, "the Europa League is ticked for a phone that had everything on");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("game: one question change for every round, used in any round", async () => {
+  const p = await phone(browser, "refresh"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(async () => { cfg.rounds = 5; cfg.count = 1; await startGame(); const a = G.refreshLeft; for (let i = 0; i < 5; i++) applyRefresh(refreshPick()); return [a, G.refreshLeft, $("refreshBtn").disabled]; });
+  eq(r, [5, 0, true], "5 rounds give 5 changes, all usable in the first round");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("game: rounds come only from ticked competitions, never the same one twice running", async () => {
   const p = await phone(browser, "ticked"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   await p.evaluate(() => { cfg.cats = ["wc","euro","ucl"]; renderCompBtn(); });
