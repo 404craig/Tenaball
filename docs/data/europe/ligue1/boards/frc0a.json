@@ -1,0 +1,84 @@
+{
+ "pick": "frc0a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "PSG's top scorers, 2025/26",
+ "brief": "Name the ten PSG players who scored the most Ligue 1 goals in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Bradley Barcola",
+   "val": "11 goals"
+  },
+  {
+   "label": "2",
+   "name": "Ousmane Dembele",
+   "val": "10 goals"
+  },
+  {
+   "label": "3",
+   "name": "Khvicha Kvaratskhelia",
+   "val": "8 goals"
+  },
+  {
+   "label": "4",
+   "name": "Desire Doue",
+   "val": "7 goals"
+  },
+  {
+   "label": "5",
+   "name": "Goncalo Ramos",
+   "val": "6 goals"
+  },
+  {
+   "label": "6",
+   "name": "Joao Neves",
+   "val": "5 goals"
+  },
+  {
+   "label": "7",
+   "name": "Nuno Mendes",
+   "val": "4 goals"
+  },
+  {
+   "label": "8",
+   "name": "Senny Mayulu",
+   "val": "4 goals"
+  },
+  {
+   "label": "9",
+   "name": "Warren Zaire-Emery",
+   "val": "3 goals",
+   "pool": "psg2526ts3",
+   "alts": [
+    "Warren Zaire-Emery",
+    "Lee Kang-in",
+    "Ibrahim Mbaye"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Warren Zaire-Emery",
+   "val": "3 goals",
+   "pool": "psg2526ts3",
+   "alts": [
+    "Warren Zaire-Emery",
+    "Lee Kang-in",
+    "Ibrahim Mbaye"
+   ]
+  }
+ ],
+ "notes": {
+  "Achraf Hakimi": "Hakimi is just outside with 2 goals.",
+  "Lucas Beraldo": "Beraldo is just outside with 2 goals.",
+  "Vitinha": "Vitinha scored 1 league goal.",
+  "Fabian Ruiz": "Fabian Ruiz scored 1 league goal."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/fra.1/seasons/2025/types/1/teams/160/leaders"
+ ],
+ "checks": "Transfermarkt PSG 2025/26 page; player goals 73 against 74 in the table (1 own goal). ESPN PSG 2025/26 goals leaders agree for every player."
+}

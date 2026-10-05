@@ -1,0 +1,562 @@
+season,club,player
+2025/26,PSG,Matvey Safonov
+2025/26,PSG,Lucas Chevalier
+2025/26,PSG,Renato Marin
+2025/26,PSG,Achraf Hakimi
+2025/26,PSG,Nuno Mendes
+2025/26,PSG,Willian Pacho
+2025/26,PSG,Illia Zabarnyi
+2025/26,PSG,Marquinhos
+2025/26,PSG,Lucas Beraldo
+2025/26,PSG,Lucas Hernandez
+2025/26,PSG,Dimitri Lucea
+2025/26,PSG,Vitinha
+2025/26,PSG,Joao Neves
+2025/26,PSG,Warren Zaire-Emery
+2025/26,PSG,Senny Mayulu
+2025/26,PSG,Lee Kang-in
+2025/26,PSG,Fabian Ruiz
+2025/26,PSG,Dro Fernandez
+2025/26,PSG,Mathis Jangeal
+2025/26,PSG,Khvicha Kvaratskhelia
+2025/26,PSG,Desire Doue
+2025/26,PSG,Ousmane Dembele
+2025/26,PSG,Bradley Barcola
+2025/26,PSG,Goncalo Ramos
+2025/26,PSG,Ibrahim Mbaye
+2025/26,PSG,Quentin Ndjantou
+2025/26,PSG,Pierre Mounguengue
+2025/26,PSG,Noah Nsoki
+2025/26,Lens,Robin Risser
+2025/26,Lens,Mathieu Gorgelin
+2025/26,Lens,Ismaelo Ganiou
+2025/26,Lens,Samson Baidoo
+2025/26,Lens,Malang Sarr
+2025/26,Lens,Kyllian Antonio
+2025/26,Lens,Saud Abdulhamid
+2025/26,Lens,Matthieu Udol
+2025/26,Lens,Nidal Celik
+2025/26,Lens,Ruben Aguilar
+2025/26,Lens,Jonathan Gradit
+2025/26,Lens,Deiver Machado
+2025/26,Lens,Arthur Masuaku
+2025/26,Lens,Mamadou Sangare
+2025/26,Lens,Andy Diouf
+2025/26,Lens,Mezian Mesloub
+2025/26,Lens,Andrija Bulatovic
+2025/26,Lens,Amadou Haidara
+2025/26,Lens,Adrien Thomasson
+2025/26,Lens,Fode Sylla
+2025/26,Lens,Odsonne Edouard
+2025/26,Lens,Allan Saint-Maximin
+2025/26,Lens,Rayan Fofana
+2025/26,Lens,Abdallah Sima
+2025/26,Lens,Florian Thauvin
+2025/26,Lens,Wesley Said
+2025/26,Lens,Morgan Guilavogui
+2025/26,Lens,Anthony Bermont
+2025/26,Lens,Florian Sotoca
+2025/26,Lens,Erawan Garnier
+2025/26,Lille,Berke Ozer
+2025/26,Lille,Arnaud Bodart
+2025/26,Lille,Nathan Ngoy
+2025/26,Lille,Alexsandro
+2025/26,Lille,Tiago Santos
+2025/26,Lille,Romain Perraud
+2025/26,Lille,Calvin Verdonk
+2025/26,Lille,Chancel Mbemba
+2025/26,Lille,Thomas Meunier
+2025/26,Lille,Maxima Goffi
+2025/26,Lille,Aissa Mandi
+2025/26,Lille,Vincent Burlet
+2025/26,Lille,Ousmane Toure
+2025/26,Lille,Ayyoub Bouaddi
+2025/26,Lille,Hakon Arnar Haraldsson
+2025/26,Lille,Ngal'ayel Mukau
+2025/26,Lille,Ugo Raghouber
+2025/26,Lille,Nabil Bentaleb
+2025/26,Lille,Andre Gomes
+2025/26,Lille,Benjamin Andre
+2025/26,Lille,Matias Fernandez-Pardo
+2025/26,Lille,Hamza Igamane
+2025/26,Lille,Ethan Mbappe
+2025/26,Lille,Felix Correia
+2025/26,Lille,Osame Sahraoui
+2025/26,Lille,Marius Broholm
+2025/26,Lille,Noah Edjouma
+2025/26,Lille,Gaetan Perrin
+2025/26,Lille,Soriba Diaoune
+2025/26,Lille,Olivier Giroud
+2025/26,Lyon,Dominik Greif
+2025/26,Lyon,Remy Descamps
+2025/26,Lyon,Moussa Niakhate
+2025/26,Lyon,Sael Kumbedi
+2025/26,Lyon,Abner
+2025/26,Lyon,Ainsley Maitland-Niles
+2025/26,Lyon,Ruben Kluivert
+2025/26,Lyon,Nicolas Tagliafico
+2025/26,Lyon,Noham Kamara
+2025/26,Lyon,Clinton Mata
+2025/26,Lyon,Hans Hateboer
+2025/26,Lyon,Steeve Kango
+2025/26,Lyon,Tyler Morton
+2025/26,Lyon,Pavel Sulc
+2025/26,Lyon,Khalis Merah
+2025/26,Lyon,Noah Nartey
+2025/26,Lyon,Tanner Tessmann
+2025/26,Lyon,Corentin Tolisso
+2025/26,Lyon,Orel Mangala
+2025/26,Lyon,Adam Karabec
+2025/26,Lyon,Mathys de Carvalho
+2025/26,Lyon,Georges Mikautadze
+2025/26,Lyon,Endrick
+2025/26,Lyon,Malick Fofana
+2025/26,Lyon,Afonso Moreira
+2025/26,Lyon,Ernest Nuamah
+2025/26,Lyon,Martin Satriano
+2025/26,Lyon,Remi Himbert
+2025/26,Lyon,Roman Yaremchuk
+2025/26,Lyon,Enzo Molebe
+2025/26,Lyon,Adil Hamdani
+2025/26,Lyon,Rachid Ghezzal
+2025/26,Marseille,Geronimo Rulli
+2025/26,Marseille,Jeffrey de Lange
+2025/26,Marseille,Facundo Medina
+2025/26,Marseille,Timothy Weah
+2025/26,Marseille,Leonardo Balerdi
+2025/26,Marseille,Nayef Aguerd
+2025/26,Marseille,Benjamin Pavard
+2025/26,Marseille,CJ Egan-Riley
+2025/26,Marseille,Emerson
+2025/26,Marseille,Amir Murillo
+2025/26,Marseille,Ulisses Garcia
+2025/26,Marseille,Derek Cornelius
+2025/26,Marseille,Pol Lirola
+2025/26,Marseille,Hilan Hamzaoui Slimani
+2025/26,Marseille,Ethan Nwaneri
+2025/26,Marseille,Quinten Timber
+2025/26,Marseille,Arthur Vermeeren
+2025/26,Marseille,Adrien Rabiot
+2025/26,Marseille,Matt O'Riley
+2025/26,Marseille,Darryl Bakola
+2025/26,Marseille,Pierre-Emile Hojbjerg
+2025/26,Marseille,Angel Gomes
+2025/26,Marseille,Bilal Nadir
+2025/26,Marseille,Himad Abdelli
+2025/26,Marseille,Tochukwu Nnadi
+2025/26,Marseille,Geoffrey Kondogbia
+2025/26,Marseille,Nouhoum Kamissoko
+2025/26,Marseille,Mason Greenwood
+2025/26,Marseille,Igor Paixao
+2025/26,Marseille,Jonathan Rowe
+2025/26,Marseille,Amine Gouiri
+2025/26,Marseille,Robinio Vaz
+2025/26,Marseille,Hamed Traore
+2025/26,Marseille,Neal Maupay
+2025/26,Marseille,Pierre-Emerick Aubameyang
+2025/26,Marseille,Tadjidine Mmadi
+2025/26,Marseille,Ange Lago
+2025/26,Marseille,Ugo Kadmiri
+2025/26,Rennes,Brice Samba
+2025/26,Rennes,Mathys Silistrie
+2025/26,Rennes,Jeremy Jacquet
+2025/26,Rennes,Abdelhamid Ait Boudlal
+2025/26,Rennes,Quentin Merlin
+2025/26,Rennes,Anthony Rouault
+2025/26,Rennes,Lilian Brassier
+2025/26,Rennes,Mahamadou Nagida
+2025/26,Rennes,Przemyslaw Frankowski
+2025/26,Rennes,Christopher Wooh
+2025/26,Rennes,Alidu Seidu
+2025/26,Rennes,Mikayil Faye
+2025/26,Rennes,Hans Hateboer
+2025/26,Rennes,Fabian Rieder
+2025/26,Rennes,Sebastian Szymanski
+2025/26,Rennes,Mahdi Camara
+2025/26,Rennes,Djaoui Cisse
+2025/26,Rennes,Ludovic Blas
+2025/26,Rennes,Seko Fofana
+2025/26,Rennes,Valentin Rongier
+2025/26,Rennes,Glen Kamara
+2025/26,Rennes,Henrick Do Marcolino
+2025/26,Rennes,Esteban Lepaul
+2025/26,Rennes,Yassir Zabiri
+2025/26,Rennes,Kader Meite
+2025/26,Rennes,Breel Embolo
+2025/26,Rennes,Mousa Al-Tamari
+2025/26,Rennes,Bertug Yildirim
+2025/26,Rennes,Arnaud Nordin
+2025/26,Rennes,Ibrahim Salah
+2025/26,Rennes,Nordan Mukiele
+2025/26,Rennes,Elias Legendre Quinonez
+2025/26,Rennes,Lucas Rosier
+2025/26,Monaco,Philipp Kohn
+2025/26,Monaco,Lukas Hradecky
+2025/26,Monaco,Vanderson
+2025/26,Monaco,Jordan Teze
+2025/26,Monaco,Christian Mawissa
+2025/26,Monaco,Kassoum Ouattara
+2025/26,Monaco,Caio Henrique
+2025/26,Monaco,Mohammed Salisu
+2025/26,Monaco,Wout Faes
+2025/26,Monaco,Thilo Kehrer
+2025/26,Monaco,Eric Dier
+2025/26,Monaco,Samuel Nibombe
+2025/26,Monaco,Ilane Toure
+2025/26,Monaco,Lamine Camara
+2025/26,Monaco,Denis Zakaria
+2025/26,Monaco,Mamadou Coulibaly
+2025/26,Monaco,Aleksandr Golovin
+2025/26,Monaco,Aladji Bamba
+2025/26,Monaco,Stanis Idumbo
+2025/26,Monaco,Krepin Diatta
+2025/26,Monaco,Pape Cabral
+2025/26,Monaco,Paul Pogba
+2025/26,Monaco,Folarin Balogun
+2025/26,Monaco,Maghnes Akliouche
+2025/26,Monaco,Simon Adingra
+2025/26,Monaco,Eliesse Ben Seghir
+2025/26,Monaco,Mika Biereth
+2025/26,Monaco,Paris Brunner
+2025/26,Monaco,Ansu Fati
+2025/26,Monaco,George Ilenikhena
+2025/26,Monaco,Takumi Minamino
+2025/26,Monaco,Lucas Michal
+2025/26,Strasbourg,Mike Penders
+2025/26,Strasbourg,Karl-Johan Johnsson
+2025/26,Strasbourg,Guela Doue
+2025/26,Strasbourg,Mamadou Sarr
+2025/26,Strasbourg,Ismael Doukoure
+2025/26,Strasbourg,Lucas Hogsberg
+2025/26,Strasbourg,Abdoul Ouattara
+2025/26,Strasbourg,Ben Chilwell
+2025/26,Strasbourg,Aaron Anselmino
+2025/26,Strasbourg,Andrew Omobamidele
+2025/26,Strasbourg,Abakar Sylla
+2025/26,Strasbourg,Amadou Cisse
+2025/26,Strasbourg,Diego Moreira
+2025/26,Strasbourg,Valentin Barco
+2025/26,Strasbourg,Julio Enciso
+2025/26,Strasbourg,Samir El Mourabet
+2025/26,Strasbourg,Mathis Amougou
+2025/26,Strasbourg,Kendry Paez
+2025/26,Strasbourg,Felix Lemarechal
+2025/26,Strasbourg,Junior Mwanga
+2025/26,Strasbourg,Maxi Oyedele
+2025/26,Strasbourg,Rafael Luis
+2025/26,Strasbourg,Rabby Nzingoula
+2025/26,Strasbourg,Tyrese Noubissie
+2025/26,Strasbourg,Idrissa Sabaly
+2025/26,Strasbourg,Joaquin Panichelli
+2025/26,Strasbourg,Dilane Bakwa
+2025/26,Strasbourg,Emmanuel Emegha
+2025/26,Strasbourg,Martial Godo
+2025/26,Strasbourg,Gessime Yassine
+2025/26,Strasbourg,Sebastian Nanasi
+2025/26,Strasbourg,Samuel Amo-Ameyaw
+2025/26,Strasbourg,David Datro Fofana
+2025/26,Strasbourg,Yaya Dieme
+2025/26,Strasbourg,Jean-Baptiste Bosey
+2025/26,Toulouse,Guillaume Restes
+2025/26,Toulouse,Kjetil Haug
+2025/26,Toulouse,Jaydee Canvot
+2025/26,Toulouse,Charlie Cresswell
+2025/26,Toulouse,Dayann Methalie
+2025/26,Toulouse,Mark McKenzie
+2025/26,Toulouse,Rasmus Nicolaisen
+2025/26,Toulouse,Seny Koumbassa
+2025/26,Toulouse,Rafik Messali
+2025/26,Toulouse,Warren Kamanzi
+2025/26,Toulouse,Djibril Sidibe
+2025/26,Toulouse,Alexis Vossah
+2025/26,Toulouse,Cristian Casseres Jr.
+2025/26,Toulouse,Pape Demba Diop
+2025/26,Toulouse,Aron Donnum
+2025/26,Toulouse,Abu Francis
+2025/26,Toulouse,Mario Sauer
+2025/26,Toulouse,Mathis Saka
+2025/26,Toulouse,Yann Gboho
+2025/26,Toulouse,Emersonn
+2025/26,Toulouse,Santiago Hidalgo
+2025/26,Toulouse,Noah Edjouma
+2025/26,Toulouse,Frank Magri
+2025/26,Toulouse,Jacen Russell-Rowe
+2025/26,Toulouse,Ilyas Azizi
+2025/26,Toulouse,Julian Vignolo
+2025/26,Lorient,Yvon Mvogo
+2025/26,Lorient,Bingourou Kamara
+2025/26,Lorient,Arsene Kouassi
+2025/26,Lorient,Montassar Talbi
+2025/26,Lorient,Bamo Meite
+2025/26,Lorient,Darlin Yongwa
+2025/26,Lorient,Abdoulaye Faye
+2025/26,Lorient,Formose Mendy
+2025/26,Lorient,Nathaniel Adjei
+2025/26,Lorient,Igor Silva
+2025/26,Lorient,Isaak Toure
+2025/26,Lorient,Arthur Avom
+2025/26,Lorient,Noah Cadiou
+2025/26,Lorient,Jean-Victor Makengo
+2025/26,Lorient,Theo Le Bris
+2025/26,Lorient,Panos Katseris
+2025/26,Lorient,Dermane Karim
+2025/26,Lorient,Laurent Abergel
+2025/26,Lorient,Daniel Semedo
+2025/26,Lorient,Martin Bley
+2025/26,Lorient,Pablo Pagis
+2025/26,Lorient,Bamba Dieng
+2025/26,Lorient,Sambou Soumano
+2025/26,Lorient,Mohamed Bamba
+2025/26,Lorient,Aiyegun Tosin
+2025/26,Lorient,Joel Mvuka
+2025/26,Paris FC,Obed Nkambadio
+2025/26,Paris FC,Kevin Trapp
+2025/26,Paris FC,Diego Coppola
+2025/26,Paris FC,Moustapha Mbow
+2025/26,Paris FC,Otavio
+2025/26,Paris FC,Nhoa Sangui
+2025/26,Paris FC,Adama Camara
+2025/26,Paris FC,Samir Chergui
+2025/26,Paris FC,Hamari Traore
+2025/26,Paris FC,Thibault De Smet
+2025/26,Paris FC,Tuomas Ollila
+2025/26,Paris FC,Timothee Kolodziejczak
+2025/26,Paris FC,Rudy Matondo
+2025/26,Paris FC,Marshall Munetsi
+2025/26,Paris FC,Maxime Lopez
+2025/26,Paris FC,Pierre Lees-Melou
+2025/26,Paris FC,Vincent Marchetti
+2025/26,Paris FC,Lohann Doucet
+2025/26,Paris FC,Ilan Kebbal
+2025/26,Paris FC,Luca Koleosho
+2025/26,Paris FC,Moses Simon
+2025/26,Paris FC,Willem Geubbels
+2025/26,Paris FC,Jonathan Ikone
+2025/26,Paris FC,Jean-Philippe Krasso
+2025/26,Paris FC,Alimami Gory
+2025/26,Paris FC,Mathieu Cafaro
+2025/26,Paris FC,Pierre-Yves Hamel
+2025/26,Paris FC,Nouha Dicko
+2025/26,Paris FC,Julien Lopez
+2025/26,Paris FC,Ciro Immobile
+2025/26,Paris FC,Mohamed Dao
+2025/26,Brest,Gregoire Coudert
+2025/26,Brest,Radoslaw Majecki
+2025/26,Brest,Raphael Le Guen
+2025/26,Brest,Bradley Locko
+2025/26,Brest,Junior Diaz
+2025/26,Brest,Soumaila Coulibaly
+2025/26,Brest,Daouda Guindo
+2025/26,Brest,Brendan Chardonnet
+2025/26,Brest,Julien Le Cardinal
+2025/26,Brest,Kenny Lala
+2025/26,Brest,Luck Zogbe
+2025/26,Brest,Justin Bourgault
+2025/26,Brest,Kamory Doumbia
+2025/26,Brest,Joris Chotard
+2025/26,Brest,Hugo Magnetti
+2025/26,Brest,Pierre Lees-Melou
+2025/26,Brest,Junior Dina Ebimbe
+2025/26,Brest,Lucas Tousart
+2025/26,Brest,Hamidou Makalou
+2025/26,Brest,Romain Del Castillo
+2025/26,Brest,Remy Labeau Lascary
+2025/26,Brest,Mama Balde
+2025/26,Brest,Ludovic Ajorque
+2025/26,Brest,Pathe Mboup
+2025/26,Brest,Axel Camblan
+2025/26,Brest,Saliou Diop
+2025/26,Brest,Ibrahim Yayiya Kante
+2025/26,Angers,Herve Koffi
+2025/26,Angers,Melvin Zinga
+2025/26,Angers,Oumar Pona
+2025/26,Angers,Jacques Ekomie
+2025/26,Angers,Ousmane Camara
+2025/26,Angers,Lilian Raolisoa
+2025/26,Angers,Emmanuel Biumla
+2025/26,Angers,Marius Louer
+2025/26,Angers,Carlens Arcus
+2025/26,Angers,Jordan Lefort
+2025/26,Angers,Dan Sinate
+2025/26,Angers,Florent Hanin
+2025/26,Angers,Abdoulaye Bamba
+2025/26,Angers,Yassin Belkhdim
+2025/26,Angers,Himad Abdelli
+2025/26,Angers,Louis Mouton
+2025/26,Angers,Marius Courcoul
+2025/26,Angers,Branco van den Boomen
+2025/26,Angers,Haris Belkebla
+2025/26,Angers,Bane Diatta
+2025/26,Angers,Pierrick Capelle
+2025/26,Angers,Esteban Lepaul
+2025/26,Angers,Sidiki Cherif
+2025/26,Angers,Prosper Peter
+2025/26,Angers,Amine Sbai
+2025/26,Angers,Goduine Koyalipou
+2025/26,Angers,Harouna Djibirin
+2025/26,Angers,Lanroy Machine
+2025/26,Angers,Jim Allevinah
+2025/26,Angers,Justin Kalumba
+2025/26,Le Havre,Mory Diaw
+2025/26,Le Havre,Lionel Mpasi-Nzau
+2025/26,Le Havre,Paul Argney
+2025/26,Le Havre,Arouna Sangante
+2025/26,Le Havre,Ayumu Seko
+2025/26,Le Havre,Stephan Zagadou
+2025/26,Le Havre,Gautier Lloris
+2025/26,Le Havre,Etienne Youte Kinkoue
+2025/26,Le Havre,Yanis Zouaoui
+2025/26,Le Havre,Fode Doucoure
+2025/26,Le Havre,Enzo Koffi
+2025/26,Le Havre,Timothee Pembele
+2025/26,Le Havre,Thomas Delaine
+2025/26,Le Havre,Loic Nego
+2025/26,Le Havre,Georges Gomis
+2025/26,Le Havre,Rassoul Ndiaye
+2025/26,Le Havre,Lucas Gourna-Douath
+2025/26,Le Havre,Simon Ebonog
+2025/26,Le Havre,Yassine Kechta
+2025/26,Le Havre,Abdoulaye Toure
+2025/26,Le Havre,Reda Khadra
+2025/26,Le Havre,Daren Mosengo
+2025/26,Le Havre,Issa Soumare
+2025/26,Le Havre,Kenny Quetant
+2025/26,Le Havre,Sofiane Boufal
+2025/26,Le Havre,Damian Pizarro
+2025/26,Le Havre,Noam Obougou
+2025/26,Le Havre,Younes Namli
+2025/26,Le Havre,Mbwana Samatta
+2025/26,Le Havre,Felix Mambimbi
+2025/26,Le Havre,Godson Kyeremeh
+2025/26,Auxerre,Donovan Leon
+2025/26,Auxerre,Theo De Percin
+2025/26,Auxerre,Clement Akpa
+2025/26,Auxerre,Sinaly Diomande
+2025/26,Auxerre,Gideon Mensah
+2025/26,Auxerre,Bryan Okoh
+2025/26,Auxerre,Marvin Senaya
+2025/26,Auxerre,Lamine Sy
+2025/26,Auxerre,Fredrik Oppegard
+2025/26,Auxerre,Gabriel Osho
+2025/26,Auxerre,Francisco Sierralta
+2025/26,Auxerre,Telli Siwe
+2025/26,Auxerre,Rudy Matondo
+2025/26,Auxerre,Kevin Danois
+2025/26,Auxerre,Romain Faivre
+2025/26,Auxerre,Naouirou Ahamada
+2025/26,Auxerre,Elisha Owusu
+2025/26,Auxerre,Oussama El Azzouzi
+2025/26,Auxerre,Assane Diousse
+2025/26,Auxerre,Tidiane Devernois
+2025/26,Auxerre,Yvan Zaddy
+2025/26,Auxerre,Lassine Sinayoko
+2025/26,Auxerre,Ibrahim Osman
+2025/26,Auxerre,Danny Namaso
+2025/26,Auxerre,Sekou Mara
+2025/26,Auxerre,Josue Casimir
+2025/26,Auxerre,Theo Bair
+2025/26,Auxerre,Lasso Coulibaly
+2025/26,Auxerre,Ryan Rodin
+2025/26,Auxerre,Mamoudou Cissokho
+2025/26,Nice,Yehvann Diouf
+2025/26,Nice,Maxime Dupe
+2025/26,Nice,Kojo Oppong
+2025/26,Nice,Melvin Bard
+2025/26,Nice,Juma Bah
+2025/26,Nice,Antoine Mendy
+2025/26,Nice,Youssouf Ndayishimiye
+2025/26,Nice,Moise Bombito
+2025/26,Nice,Jonathan Clauss
+2025/26,Nice,Brad-Hamilton Mantsounga
+2025/26,Nice,Ali Abdi
+2025/26,Nice,Hamza Koutoune
+2025/26,Nice,Dante
+2025/26,Nice,Hicham Boudaoui
+2025/26,Nice,Pablo Rosario
+2025/26,Nice,Djibril Coulibaly
+2025/26,Nice,Charles Vanhoutte
+2025/26,Nice,Tom Louchet
+2025/26,Nice,Salis Abdul Samed
+2025/26,Nice,Morgan Sanson
+2025/26,Nice,Tanguy Ndombele
+2025/26,Nice,Everton
+2025/26,Nice,Gabin Bernardeau
+2025/26,Nice,Elye Wahi
+2025/26,Nice,Sofiane Diop
+2025/26,Nice,Mohamed-Ali Cho
+2025/26,Nice,Badredine Bouanani
+2025/26,Nice,Jeremie Boga
+2025/26,Nice,Kail Boudache
+2025/26,Nice,Terem Moffi
+2025/26,Nice,Tiago Gouveia
+2025/26,Nice,Kevin Carlos
+2025/26,Nice,Isak Jansson
+2025/26,Nice,Billal Brahimi
+2025/26,Nice,Bernard Nguene
+2025/26,Nice,Zoumana Diallo
+2025/26,Nantes,Anthony Lopes
+2025/26,Nantes,Patrik Carlgren
+2025/26,Nantes,Tylel Tati
+2025/26,Nantes,Ali Youssif
+2025/26,Nantes,Nicolas Cozza
+2025/26,Nantes,Abakar Sylla
+2025/26,Nantes,Chidozie Awaziem
+2025/26,Nantes,Kelvin Amian
+2025/26,Nantes,Deiver Machado
+2025/26,Nantes,Fabien Centonze
+2025/26,Nantes,Frederic Guilbert
+2025/26,Nantes,Mathieu Acapandie
+2025/26,Nantes,Uros Radakovic
+2025/26,Nantes,Sekou Doucoure
+2025/26,Nantes,Louis Leroux
+2025/26,Nantes,Junior Mwanga
+2025/26,Nantes,Johann Lepenant
+2025/26,Nantes,Dehmaine Tabibou
+2025/26,Nantes,Hyun-seok Hong
+2025/26,Nantes,Mohamed Kaba
+2025/26,Nantes,Ibrahima Sissoko
+2025/26,Nantes,Bahmed Deuff
+2025/26,Nantes,Hyeok-kyu Kwon
+2025/26,Nantes,Remy Cabella
+2025/26,Nantes,Francis Coquelin
+2025/26,Nantes,Matthis Abline
+2025/26,Nantes,Herba Guirassy
+2025/26,Nantes,Mayckel Lahdo
+2025/26,Nantes,Yassine Benhattab
+2025/26,Nantes,Mostafa Mohamed
+2025/26,Nantes,Ignatius Ganago
+2025/26,Nantes,Amady Camara
+2025/26,Nantes,Youssef El Arabi
+2025/26,Metz,Jonathan Fischer
+2025/26,Metz,Pape Sy
+2025/26,Metz,Sadibou Sane
+2025/26,Metz,Terry Yegbe
+2025/26,Metz,Koffi Kouao
+2025/26,Metz,Jean-Philippe Gbamin
+2025/26,Metz,Michel Mboula
+2025/26,Metz,Fode Ballo-Toure
+2025/26,Metz,Bouna Sarr
+2025/26,Metz,Maxime Colin
+2025/26,Metz,Cleo Melieres
+2025/26,Metz,Believe Munongo
+2025/26,Metz,Boubacar Traore
+2025/26,Metz,Alpha Toure
+2025/26,Metz,Jessy Deminguet
+2025/26,Metz,Joseph Nduquidi
+2025/26,Metz,Ismael Guerti
+2025/26,Metz,Benjamin Stambouli
+2025/26,Metz,Brian Madjo
+2025/26,Metz,Idrissa Gueye
+2025/26,Metz,Gauthier Hein
+2025/26,Metz,Nathan Mbala
+2025/26,Metz,Lucas Michal
+2025/26,Metz,Cheikh Sabaly
+2025/26,Metz,Giorgi Tsitaishvili
+2025/26,Metz,Habib Diallo
+2025/26,Metz,Giorgi Abuashvili
+2025/26,Metz,Jahyann Pandore
+2025/26,Metz,Morgan Bokele
+2025/26,Metz,Giorgi Kvilitaia
+2025/26,Metz,Ibou Sane
+2025/26,Metz,Joel Asoro
+2025/26,Metz,Malick Mbaye

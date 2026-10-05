@@ -429,7 +429,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2000/01,Saint-Etienne,Luiz Alberto,Defender,Brazil,10,0,0,23193,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
 2000/01,Saint-Etienne,Lionel Potillon,Defender,France,28,4,0,5559,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
 2000/01,Saint-Etienne,Patrice Carteron,Defender,France,20,0,0,17418,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
-2000/01,Saint-Etienne,Bjrn Tore Kvarme,Defender,Norway,29,0,3,7463,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
+2000/01,Saint-Etienne,Bjorn Tore Kvarme,Defender,Norway,29,0,3,7463,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
 2000/01,Saint-Etienne,Sylvain Meslien,Defender,France,4,0,0,17435,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
 2000/01,Saint-Etienne,Fousseni Diawara,Defender,Mali,17,2,0,17422,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
 2000/01,Saint-Etienne,Stephane Hernandez,Defender,France,2,0,0,17430,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262000
@@ -1406,7 +1406,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2002/03,Rennes,Toifilou Maoulida,Attack,France,26,3,0,5680,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
 2002/03,Rennes,Olivier Monterrubio,Attack,France,36,6,2,5681,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
 2002/03,Rennes,Jimmy Briand,Attack,France,1,0,0,18909,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
-2002/03,Rennes,Alex Frei,Attack,Switzerland,13,1,0,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
+2002/03,Rennes,Alexander Frei,Attack,Switzerland,13,1,0,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
 2002/03,Rennes,Stephane N'Guema,Attack,Gabon,5,0,0,26327,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
 2002/03,Rennes,Cyril Yapi,Attack,France,5,0,0,5685,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262002
 2002/03,Montpellier,Rudy Riou,Goalkeeper,France,28,0,0,5687,https://www.transfermarkt.com/montpellier-hsc/leistungsdaten/verein/969/plus/1?reldata=FR1%262002
@@ -1800,7 +1800,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2003/04,Rennes,Olivier Monterrubio,Attack,France,34,3,2,5681,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
 2003/04,Rennes,Lucas Severino,Attack,Brazil,11,0,0,8517,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
 2003/04,Rennes,Jimmy Briand,Attack,France,7,1,0,18909,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
-2003/04,Rennes,Alex Frei,Attack,Switzerland,28,20,0,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
+2003/04,Rennes,Alexander Frei,Attack,Switzerland,28,20,0,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
 2003/04,Rennes,Stephane N'Guema,Attack,Gabon,21,4,0,26327,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262003
 2003/04,Lille,Gregory Wimbee,Goalkeeper,France,34,0,0,5634,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262003
 2003/04,Lille,Gregory Malicki,Goalkeeper,France,4,0,0,5632,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262003
@@ -2200,7 +2200,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2004/05,Rennes,Toifilou Maoulida,Attack,France,31,7,1,5680,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
 2004/05,Rennes,Olivier Monterrubio,Attack,France,37,9,5,5681,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
 2004/05,Rennes,Jimmy Briand,Attack,France,10,0,0,18909,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
-2004/05,Rennes,Alex Frei,Attack,Switzerland,36,20,2,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
+2004/05,Rennes,Alexander Frei,Attack,Switzerland,36,20,2,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
 2004/05,Rennes,Stephane N'Guema,Attack,Gabon,13,0,0,26327,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
 2004/05,Rennes,Moussa Sow,Attack,Senegal,3,0,0,22382,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262004
 2004/05,Marseille,Fabien Barthez,Goalkeeper,France,30,0,0,3289,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262004
@@ -2576,7 +2576,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2004/05,Bastia,Greg Vanney,Defender,United States,18,0,0,5585,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
 2004/05,Bastia,Cedric Uras,Defender,France,21,0,0,5584,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
 2004/05,Bastia,Bernt Haas,Defender,Switzerland,4,0,0,2888,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
-2004/05,Bastia,Bjrn Tore Kvarme,Defender,Norway,10,0,0,7463,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
+2004/05,Bastia,Bjorn Tore Kvarme,Defender,Norway,10,0,0,7463,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
 2004/05,Bastia,Pascal Chimbonda,Defender,Guadeloupe,36,3,2,18875,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
 2004/05,Bastia,Anthar Yahia,Defender,Algeria,31,2,0,5586,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
 2004/05,Bastia,David Sauget,Defender,France,17,0,1,19045,https://www.transfermarkt.com/sc-bastia/leistungsdaten/verein/595/plus/1?reldata=FR1%262004
@@ -2812,7 +2812,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2005/06,Rennes,Youssouf Hadji,Attack,Morocco,21,3,2,5345,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
 2005/06,Rennes,Olivier Monterrubio,Attack,France,32,5,16,5681,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
 2005/06,Rennes,Jimmy Briand,Attack,France,29,3,0,18909,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
-2005/06,Rennes,Alex Frei,Attack,Switzerland,23,7,1,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
+2005/06,Rennes,Alexander Frei,Attack,Switzerland,23,7,1,4977,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
 2005/06,Rennes,Moussa Sow,Attack,Senegal,7,0,0,22382,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262005
 2005/06,Nice,Hugo Lloris,Goalkeeper,France,5,0,0,17965,https://www.transfermarkt.com/ogc-nizza/leistungsdaten/verein/417/plus/1?reldata=FR1%262005
 2005/06,Nice,Damien Gregorini,Goalkeeper,France,33,0,0,5309,https://www.transfermarkt.com/ogc-nizza/leistungsdaten/verein/417/plus/1?reldata=FR1%262005
@@ -4342,7 +4342,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2008/09,Toulouse,Etienne Capoue,Midfield,France,32,1,3,63494,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
 2008/09,Toulouse,Andre-Pierre Gignac,Attack,France,38,24,4,43907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
 2008/09,Toulouse,Fode Mansare,Attack,Guinea,18,1,1,5710,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
-2008/09,Toulouse,Sren Larsen,Attack,Denmark,7,0,0,24282,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
+2008/09,Toulouse,Soren Larsen,Attack,Denmark,7,0,0,24282,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
 2008/09,Toulouse,Xavier Pentecote,Attack,France,9,0,1,33907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
 2008/09,Toulouse,Daniel Braaten,Attack,Norway,30,2,2,26407,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
 2008/09,Toulouse,Ahmed Soukouna,Attack,France,2,0,0,83502,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262008
@@ -4662,7 +4662,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2008/09,Le Mans,Mamadou Wague,Defender,France,1,0,0,101808,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
 2008/09,Le Mans,Marcos Paulo,Midfield,Brazil,1,0,0,77832,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
 2008/09,Le Mans,Alphousseyni Keita,Midfield,Mali,7,0,0,51853,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
-2008/09,Le Mans,Fredrik Strmstad,Midfield,Norway,23,0,4,26790,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
+2008/09,Le Mans,Fredrik Stromstad,Midfield,Norway,23,0,4,26790,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
 2008/09,Le Mans,Frederic Thomas,Midfield,France,32,0,0,23979,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
 2008/09,Le Mans,Marcelo Estigarribia,Midfield,Paraguay,7,0,0,76329,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
 2008/09,Le Mans,Mathieu Coutadeur,Midfield,France,36,4,2,39914,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262008
@@ -5136,7 +5136,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2009/10,Toulouse,Andre-Pierre Gignac,Attack,France,31,8,5,43907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
 2009/10,Toulouse,Xavier Pentecote,Attack,France,6,0,0,33907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
 2009/10,Toulouse,Fode Mansare,Attack,Guinea,8,0,0,5710,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
-2009/10,Toulouse,Colin Kazm-Richards,Attack,Turkiye,15,2,1,36802,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
+2009/10,Toulouse,Colin Kazim-Richards,Attack,Turkiye,15,2,1,36802,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
 2009/10,Toulouse,Luan,Attack,Brazil,14,1,1,75380,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
 2009/10,Toulouse,Kevin Dupuis,Attack,France,6,1,0,56780,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
 2009/10,Toulouse,Daniel Braaten,Attack,Norway,32,4,3,26407,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262009
@@ -5243,7 +5243,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2009/10,Le Mans,Marcelo Estigarribia,Midfield,Paraguay,5,0,0,76329,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
 2009/10,Le Mans,Guy-Michel Landel,Midfield,Guinea,1,0,0,109974,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
 2009/10,Le Mans,Moussa Narry,Midfield,Ghana,12,0,0,63476,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
-2009/10,Le Mans,Fredrik Strmstad,Midfield,Norway,3,0,0,26790,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
+2009/10,Le Mans,Fredrik Stromstad,Midfield,Norway,3,0,0,26790,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
 2009/10,Le Mans,Frederic Thomas,Midfield,France,30,2,2,23979,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
 2009/10,Le Mans,Badara Sene,Midfield,Senegal,5,0,0,33932,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
 2009/10,Le Mans,Guillaume Loriot,Midfield,France,21,0,0,38387,https://www.transfermarkt.com/le-mans-fc/leistungsdaten/verein/1164/plus/1?reldata=FR1%262009
@@ -5523,7 +5523,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2010/11,Toulouse,Andre-Pierre Gignac,Attack,France,1,0,1,43907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
 2010/11,Toulouse,Amadou Soukouna,Attack,France,2,0,0,105874,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
 2010/11,Toulouse,Federico Santander,Attack,Paraguay,23,5,2,99180,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
-2010/11,Toulouse,Sren Larsen,Attack,Denmark,2,0,0,24282,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
+2010/11,Toulouse,Soren Larsen,Attack,Denmark,2,0,0,24282,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
 2010/11,Toulouse,Fode Mansare,Attack,Guinea,24,0,3,5710,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
 2010/11,Toulouse,Xavier Pentecote,Attack,France,6,2,0,33907,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
 2010/11,Toulouse,Daniel Braaten,Attack,Norway,32,5,3,26407,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262010
@@ -7256,7 +7256,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2013/14,Reims,Antoine Devaux,Midfield,France,35,2,1,57376,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
 2013/14,Reims,Prince Oniangue,Midfield,Congo,35,10,2,60578,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
 2013/14,Reims,Diego Rigonato,Midfield,Brazil,7,1,0,55042,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
-2013/14,Reims,Mads Albk,Midfield,Denmark,27,2,2,48805,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
+2013/14,Reims,Mads Albaek,Midfield,Denmark,27,2,2,48805,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
 2013/14,Reims,Bocundji Ca,Midfield,Guinea-Bissau,6,0,0,29351,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
 2013/14,Reims,Florent Ghisolfi,Midfield,France,2,0,0,27390,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
 2013/14,Reims,Gaetan Courtet,Attack,France,27,0,2,171408,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262013
@@ -7920,7 +7920,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2014/15,Reims,Antoine Devaux,Midfield,France,28,1,0,57376,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
 2014/15,Reims,Prince Oniangue,Midfield,Congo,32,3,2,60578,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
 2014/15,Reims,Diego Rigonato,Midfield,Brazil,31,5,7,55042,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
-2014/15,Reims,Mads Albk,Midfield,Denmark,12,0,0,48805,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
+2014/15,Reims,Mads Albaek,Midfield,Denmark,12,0,0,48805,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
 2014/15,Reims,Alexi Peuget,Midfield,France,9,1,0,127213,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
 2014/15,Reims,Nuke Mfulu,Midfield,DR Congo,7,0,1,203516,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
 2014/15,Reims,Jordan,Attack,United States,1,0,0,355369,https://www.transfermarkt.com/stade-reims/leistungsdaten/verein/1421/plus/1?reldata=FR1%262014
@@ -8247,7 +8247,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2015/16,Saint-Etienne,Francois Clerc,Defender,France,10,0,1,12134,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Benoit Assou-Ekotto,Defender,Cameroon,20,0,0,18310,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Oussama Tannane,Midfield,Morocco,10,2,1,235540,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
-2015/16,Saint-Etienne,Ole Selns,Midfield,Norway,3,0,0,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
+2015/16,Saint-Etienne,Ole Selnaes,Midfield,Norway,3,0,0,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Valentin Eysseric,Midfield,France,29,6,4,126687,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Ismael Diomande,Midfield,Cote d'Ivoire,7,0,0,170495,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Vincent Pajot,Midfield,France,28,1,1,126699,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
@@ -8264,7 +8264,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2015/16,Saint-Etienne,Nolan Roux,Attack,France,29,9,2,81460,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Romain Hamouma,Attack,France,24,3,3,98349,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Saint-Etienne,Kevin Monnet-Paquet,Attack,France,31,2,2,44045,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
-2015/16,Saint-Etienne,Alexander Sderlund,Attack,Norway,14,2,2,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
+2015/16,Saint-Etienne,Alexander Soderlund,Attack,Norway,14,2,2,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262015
 2015/16,Caen,Remy Vercoutre,Goalkeeper,France,38,0,0,5338,https://www.transfermarkt.com/sm-caen/leistungsdaten/verein/1162/plus/1?reldata=FR1%262015
 2015/16,Caen,Dennis Appiah,Defender,France,38,1,1,111038,https://www.transfermarkt.com/sm-caen/leistungsdaten/verein/1162/plus/1?reldata=FR1%262015
 2015/16,Caen,Alaeddine Yahia,Defender,Tunisia,26,1,0,5451,https://www.transfermarkt.com/sm-caen/leistungsdaten/verein/1162/plus/1?reldata=FR1%262015
@@ -8877,7 +8877,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2016/17,Saint-Etienne,Jordan Veretout,Midfield,France,35,3,4,164771,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Habib Maiga,Midfield,Cote d'Ivoire,5,0,0,293944,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Oussama Tannane,Midfield,Morocco,17,1,1,235540,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
-2016/17,Saint-Etienne,Ole Selns,Midfield,Norway,26,0,0,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
+2016/17,Saint-Etienne,Ole Selnaes,Midfield,Norway,26,0,0,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Kenny Rocha Santos,Midfield,Cape Verde,3,0,0,476527,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Jorginho,Midfield,Guinea-Bissau,5,1,1,277111,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Henri Saivet,Midfield,Senegal,27,1,2,51540,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
@@ -8894,7 +8894,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2016/17,Saint-Etienne,Nolan Roux,Attack,France,21,4,1,81460,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Romain Hamouma,Attack,France,29,7,7,98349,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Saint-Etienne,Kevin Monnet-Paquet,Attack,France,34,4,4,44045,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
-2016/17,Saint-Etienne,Alexander Sderlund,Attack,Norway,17,1,1,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
+2016/17,Saint-Etienne,Alexander Soderlund,Attack,Norway,17,1,1,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262016
 2016/17,Rennes,Benoit Costil,Goalkeeper,France,38,0,1,22628,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262016
 2016/17,Rennes,Ramy Bensebaini,Defender,Algeria,25,0,0,284732,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262016
 2016/17,Rennes,Steven Moreira,Defender,Cape Verde,1,0,0,203517,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262016
@@ -9351,7 +9351,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2017/18,Marseille,Dimitri Payet,Midfield,France,31,6,14,37647,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
 2017/18,Marseille,Gregory Sertic,Midfield,France,7,0,0,81386,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
 2017/18,Marseille,Florian Thauvin,Attack,France,35,22,11,184892,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
-2017/18,Marseille,Yusuf Sar,Attack,Turkiye,1,0,0,517376,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
+2017/18,Marseille,Yusuf Sari,Attack,Turkiye,1,0,0,517376,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
 2017/18,Marseille,Lucas Ocampos,Attack,Argentina,31,9,3,189441,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
 2017/18,Marseille,Clinton N'Jie,Attack,Cameroon,22,7,3,241119,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
 2017/18,Marseille,Konstantinos Mitroglou,Attack,Greece,19,9,0,34944,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262017
@@ -9431,7 +9431,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2017/18,Saint-Etienne,Hernani,Midfield,Brazil,14,3,0,181768,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Oussama Tannane,Midfield,Morocco,6,0,1,235540,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Remy Cabella,Midfield,France,26,7,6,113707,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
-2017/18,Saint-Etienne,Ole Selns,Midfield,Norway,26,0,2,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
+2017/18,Saint-Etienne,Ole Selnaes,Midfield,Norway,26,0,2,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Assane Diousse,Midfield,Senegal,25,1,0,287635,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Bryan Dabo,Midfield,Burkina Faso,16,2,1,149446,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Yann M'Vila,Midfield,France,17,0,0,60573,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
@@ -9441,7 +9441,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2017/18,Saint-Etienne,Lois Diony,Attack,France,16,0,3,126552,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Robert Beric,Attack,Slovenia,15,7,2,91415,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Vagner Dias,Attack,Cape Verde,4,0,0,353211,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
-2017/18,Saint-Etienne,Alexander Sderlund,Attack,Norway,12,0,1,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
+2017/18,Saint-Etienne,Alexander Soderlund,Attack,Norway,12,0,1,87479,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Paul-Georges Ntep,Attack,Cameroon,13,1,0,148955,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Romain Hamouma,Attack,France,29,5,3,98349,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
 2017/18,Saint-Etienne,Kevin Monnet-Paquet,Attack,France,30,2,2,44045,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262017
@@ -9891,7 +9891,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2018/19,Saint-Etienne,Valentin Vada,Midfield,Argentina,12,1,1,225004,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
 2018/19,Saint-Etienne,Youssef Ait Bennasser,Midfield,Morocco,13,0,0,265569,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
 2018/19,Saint-Etienne,Remy Cabella,Midfield,France,34,8,5,113707,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
-2018/19,Saint-Etienne,Ole Selns,Midfield,Norway,20,0,5,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
+2018/19,Saint-Etienne,Ole Selnaes,Midfield,Norway,20,0,5,175961,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
 2018/19,Saint-Etienne,Assane Diousse,Midfield,Senegal,7,0,0,287635,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
 2018/19,Saint-Etienne,Kenny Rocha Santos,Midfield,Cape Verde,1,0,0,476527,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
 2018/19,Saint-Etienne,Yann M'Vila,Midfield,France,37,0,1,60573,https://www.transfermarkt.com/as-saint-etienne/leistungsdaten/verein/618/plus/1?reldata=FR1%262018
@@ -10192,7 +10192,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2018/19,Amiens,Alexis Blin,Midfield,France,27,1,1,236041,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
 2018/19,Amiens,Eddy Gnahore,Midfield,France,34,4,2,168933,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
 2018/19,Amiens,Ganso,Midfield,Brazil,12,0,2,67920,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
-2018/19,Amiens,Rafa Kurzawa,Midfield,Poland,11,1,0,191895,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
+2018/19,Amiens,Rafal Kurzawa,Midfield,Poland,11,1,0,191895,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
 2018/19,Amiens,Gaoussou Traore,Midfield,France,3,0,0,606450,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
 2018/19,Amiens,Guessouma Fofana,Midfield,Mauritania,3,0,0,419999,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
 2018/19,Amiens,Bongani Zungu,Midfield,South Africa,5,0,0,240892,https://www.transfermarkt.com/amiens-sc/leistungsdaten/verein/1416/plus/1?reldata=FR1%262018
@@ -10448,7 +10448,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2019/20,Lille,Jose Fonte,Defender,Portugal,25,1,1,33829,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
 2019/20,Lille,Jeremy Pied,Defender,France,5,0,0,60583,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
 2019/20,Lille,Boubakary Soumare,Midfield,France,20,0,0,344605,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
-2019/20,Lille,Yusuf Yazc,Midfield,Turkiye,18,1,4,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
+2019/20,Lille,Yusuf Yazici,Midfield,Turkiye,18,1,4,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
 2019/20,Lille,Benjamin Andre,Midfield,France,26,2,1,84301,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
 2019/20,Lille,Thiago Maia,Midfield,Brazil,3,0,0,294873,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
 2019/20,Lille,Cheikh Niasse,Midfield,Senegal,1,0,0,644032,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262019
@@ -10910,7 +10910,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2020/21,Lille,Jose Fonte,Defender,Portugal,36,3,1,33829,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Jeremy Pied,Defender,France,6,0,0,60583,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Boubakary Soumare,Midfield,France,32,0,1,344605,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
-2020/21,Lille,Yusuf Yazc,Midfield,Turkiye,32,7,4,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
+2020/21,Lille,Yusuf Yazici,Midfield,Turkiye,32,7,4,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Benjamin Andre,Midfield,France,35,0,1,84301,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Renato Sanches,Midfield,Portugal,23,1,3,258027,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Xeka,Midfield,Portugal,33,1,2,290256,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
@@ -10919,7 +10919,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2020/21,Lille,Jonathan Ikone,Attack,France,37,4,5,324690,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Jonathan Bamba,Attack,Cote d'Ivoire,38,6,10,292818,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,Lille,Isaac Lihadji,Attack,France,15,0,1,557610,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
-2020/21,Lille,Burak Ylmaz,Attack,Turkiye,28,16,5,34987,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
+2020/21,Lille,Burak Yilmaz,Attack,Turkiye,28,16,5,34987,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262020
 2020/21,PSG,Marcin Bulka,Goalkeeper,Poland,1,0,0,465955,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262020
 2020/21,PSG,Keylor Navas,Goalkeeper,Costa Rica,29,0,0,79422,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262020
 2020/21,PSG,Sergio Rico,Goalkeeper,Spain,10,0,0,207302,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262020
@@ -11753,7 +11753,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2021/22,Lille,Jeremy Pied,Defender,France,2,0,0,60583,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Amadou Onana,Midfield,Belgium,32,1,0,485706,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Angel Gomes,Midfield,England,24,1,1,392770,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
-2021/22,Lille,Yusuf Yazc,Midfield,Turkiye,15,1,1,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
+2021/22,Lille,Yusuf Yazici,Midfield,Turkiye,15,1,1,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Benjamin Andre,Midfield,France,33,2,1,84301,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Cheikh Niasse,Midfield,Senegal,4,0,0,644032,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Renato Sanches,Midfield,Portugal,25,2,5,258027,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
@@ -11764,7 +11764,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2021/22,Lille,Jonathan Ikone,Attack,France,18,1,0,324690,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Jonathan Bamba,Attack,Cote d'Ivoire,31,1,2,292818,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Lille,Isaac Lihadji,Attack,France,13,1,4,557610,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
-2021/22,Lille,Burak Ylmaz,Attack,Turkiye,31,4,3,34987,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
+2021/22,Lille,Burak Yilmaz,Attack,Turkiye,31,4,3,34987,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262021
 2021/22,Brest,Marco Bizot,Goalkeeper,Netherlands,38,0,1,124884,https://www.transfermarkt.com/stade-brest-29/leistungsdaten/verein/3911/plus/1?reldata=FR1%262021
 2021/22,Brest,Lilian Brassier,Defender,France,31,1,0,485960,https://www.transfermarkt.com/stade-brest-29/leistungsdaten/verein/3911/plus/1?reldata=FR1%262021
 2021/22,Brest,Brendan Chardonnet,Defender,France,32,3,0,250779,https://www.transfermarkt.com/stade-brest-29/leistungsdaten/verein/3911/plus/1?reldata=FR1%262021
@@ -12219,7 +12219,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2022/23,Lille,Ismaily,Defender,Brazil,23,2,2,124028,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
 2022/23,Lille,Carlos Baleba,Midfield,Cameroon,19,0,2,973085,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
 2022/23,Lille,Angel Gomes,Midfield,England,36,2,6,392770,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
-2022/23,Lille,Yusuf Yazc,Midfield,Turkiye,4,1,1,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
+2022/23,Lille,Yusuf Yazici,Midfield,Turkiye,4,1,1,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
 2022/23,Lille,Benjamin Andre,Midfield,France,34,1,2,84301,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
 2022/23,Lille,Alan Virginius,Midfield,France,15,1,0,654415,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
 2022/23,Lille,Andre Gomes,Midfield,Portugal,26,3,2,221025,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262022
@@ -12710,7 +12710,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2023/24,PSG,Vitinha,Midfield,Portugal,28,7,4,487469,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
 2023/24,PSG,Warren Zaire-Emery,Midfield,France,26,2,3,810092,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
 2023/24,PSG,Senny Mayulu,Midfield,France,8,0,1,903693,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
-2023/24,PSG,Kang-in Lee,Midfield,"Korea, South",23,3,4,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
+2023/24,PSG,Lee Kang-in,Midfield,"Korea, South",23,3,4,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
 2023/24,PSG,Fabian Ruiz,Midfield,Spain,21,1,3,350219,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
 2023/24,PSG,Manuel Ugarte,Midfield,Uruguay,25,0,3,476701,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
 2023/24,PSG,Cher Ndour,Midfield,Italy,3,0,0,651005,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262023
@@ -12792,7 +12792,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2023/24,Lille,Hakon Arnar Haraldsson,Midfield,Iceland,26,2,0,652275,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
 2023/24,Lille,Angel Gomes,Midfield,England,31,0,8,392770,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
 2023/24,Lille,Nabil Bentaleb,Midfield,Algeria,26,0,3,245537,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
-2023/24,Lille,Yusuf Yazc,Midfield,Turkiye,27,5,2,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
+2023/24,Lille,Yusuf Yazici,Midfield,Turkiye,27,5,2,386726,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
 2023/24,Lille,Benjamin Andre,Midfield,France,30,4,0,84301,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
 2023/24,Lille,Alan Virginius,Midfield,France,2,0,0,654415,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
 2023/24,Lille,Ignacio Miramon,Midfield,Argentina,2,0,0,836518,https://www.transfermarkt.com/losc-lille/leistungsdaten/verein/1082/plus/1?reldata=FR1%262023
@@ -12983,7 +12983,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2023/24,Rennes,Amine Gouiri,Attack,Algeria,31,7,3,418659,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
 2023/24,Rennes,Arnaud Kalimuendo,Attack,France,30,10,4,585959,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
 2023/24,Rennes,Martin Terrier,Attack,France,24,7,3,442891,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
-2023/24,Rennes,Bertug Yldrm,Attack,Turkiye,21,0,2,672803,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
+2023/24,Rennes,Bertug Yildirim,Attack,Turkiye,21,0,2,672803,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
 2023/24,Rennes,Ibrahim Salah,Attack,Morocco,23,4,1,928323,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
 2023/24,Rennes,Mathis Lambourde,Attack,France,1,0,0,979766,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Guillaume Restes,Goalkeeper,France,34,0,0,912902,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
@@ -12997,7 +12997,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2023/24,Toulouse,Warren Kamanzi,Defender,Norway,24,0,3,794758,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Fares Chaibi,Midfield,Algeria,2,0,1,855015,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Cristian Casseres Jr.,Midfield,Venezuela,32,1,3,467632,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
-2023/24,Toulouse,Aron Dnnum,Midfield,Norway,27,0,2,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
+2023/24,Toulouse,Aron Donnum,Midfield,Norway,27,0,2,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Naatan Skytta,Midfield,Finland,8,0,0,567309,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Cesar Gelabert,Midfield,Spain,16,1,2,505308,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
 2023/24,Toulouse,Vincent Sierro,Midfield,Switzerland,30,6,2,280387,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262023
@@ -13224,7 +13224,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2023/24,Clermont,Yohann Magnin,Midfield,France,31,1,0,594997,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
 2023/24,Clermont,Maxime Gonalons,Midfield,France,21,1,0,60542,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
 2023/24,Clermont,Johan Gastien,Midfield,France,28,0,0,72121,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
-2023/24,Clermont,Ilhan Fakl,Attack,Turkiye,3,0,0,1047101,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
+2023/24,Clermont,Ilhan Fakili,Attack,Turkiye,3,0,0,1047101,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
 2023/24,Clermont,Shamar Nicholson,Attack,Jamaica,26,4,3,354666,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
 2023/24,Clermont,Bilal Boutobba,Attack,France,27,1,1,344151,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
 2023/24,Clermont,Jim Allevinah,Attack,Gabon,29,2,1,646733,https://www.transfermarkt.com/clermont-foot-63/leistungsdaten/verein/3524/plus/1?reldata=FR1%262023
@@ -13252,7 +13252,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2024/25,PSG,Joao Neves,Midfield,Portugal,29,3,8,670681,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
 2024/25,PSG,Warren Zaire-Emery,Midfield,France,29,1,2,810092,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
 2024/25,PSG,Senny Mayulu,Midfield,France,20,2,2,903693,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
-2024/25,PSG,Kang-in Lee,Midfield,"Korea, South",30,6,6,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
+2024/25,PSG,Lee Kang-in,Midfield,"Korea, South",30,6,6,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
 2024/25,PSG,Fabian Ruiz,Midfield,Spain,30,4,5,350219,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
 2024/25,PSG,Marco Asensio,Midfield,Spain,12,2,4,296622,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
 2024/25,PSG,Khvicha Kvaratskhelia,Attack,Georgia,14,4,3,502670,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262024
@@ -13277,7 +13277,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2024/25,Marseille,Ismael Kone,Midfield,Canada,8,0,0,921655,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
 2024/25,Marseille,Luis Henrique,Midfield,Brazil,33,7,8,691316,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
 2024/25,Marseille,Adrien Rabiot,Midfield,France,29,9,5,182913,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
-2024/25,Marseille,Pierre-Emile Hjbjerg,Midfield,Denmark,30,2,4,167799,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
+2024/25,Marseille,Pierre-Emile Hojbjerg,Midfield,Denmark,30,2,4,167799,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
 2024/25,Marseille,Darryl Bakola,Midfield,France,2,0,0,1170286,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
 2024/25,Marseille,Valentin Rongier,Midfield,France,25,3,1,332889,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
 2024/25,Marseille,Ismael Bennacer,Midfield,Algeria,12,0,2,351816,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262024
@@ -13518,7 +13518,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2024/25,Toulouse,Warren Kamanzi,Defender,Norway,24,1,1,794758,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
 2024/25,Toulouse,Djibril Sidibe,Defender,France,28,0,3,161869,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
 2024/25,Toulouse,Cristian Casseres Jr.,Midfield,Venezuela,32,1,3,467632,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
-2024/25,Toulouse,Aron Dnnum,Midfield,Norway,32,2,3,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
+2024/25,Toulouse,Aron Donnum,Midfield,Norway,32,2,3,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
 2024/25,Toulouse,Naatan Skytta,Midfield,Finland,1,0,0,567309,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
 2024/25,Toulouse,Vincent Sierro,Midfield,Switzerland,29,5,1,280387,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
 2024/25,Toulouse,Niklas Schmidt,Midfield,Germany,9,0,1,275249,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262024
@@ -13565,7 +13565,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2024/25,Rennes,Steve Mandanda,Goalkeeper,France,18,0,0,23951,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Jeremy Jacquet,Defender,France,11,0,1,1004301,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Adrien Truffert,Defender,France,33,2,2,654539,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
-2024/25,Rennes,Leo stigard,Defender,Norway,16,1,0,367284,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
+2024/25,Rennes,Leo Ostigard,Defender,Norway,16,1,0,367284,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Anthony Rouault,Defender,France,11,0,0,690799,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Lilian Brassier,Defender,France,14,1,1,485960,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Mahamadou Nagida,Defender,Cameroon,13,2,0,1176345,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
@@ -13580,7 +13580,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2024/25,Rennes,Ludovic Blas,Midfield,Martinique,29,6,9,288225,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Djaoui Cisse,Midfield,France,14,1,0,931160,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Seko Fofana,Midfield,Cote d'Ivoire,16,1,1,182893,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
-2024/25,Rennes,Albert Grnbaek,Midfield,Denmark,16,2,1,503866,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
+2024/25,Rennes,Albert Gronbaek,Midfield,Denmark,16,2,1,503866,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Benjamin Bourigeaud,Midfield,France,1,1,0,266359,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Naouirou Ahamada,Midfield,France,3,0,0,538971,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
 2024/25,Rennes,Baptiste Santamaria,Midfield,France,10,0,2,285323,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262024
@@ -13793,7 +13793,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,PSG,Achraf Hakimi,Defender,Morocco,18,2,2,398073,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Nuno Mendes,Defender,Portugal,20,4,5,616341,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Willian Pacho,Defender,Ecuador,23,0,0,661171,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
-2025/26,PSG,Ilya Zabarnyi,Defender,Ukraine,28,1,0,659089,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
+2025/26,PSG,Illia Zabarnyi,Defender,Ukraine,28,1,0,659089,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Marquinhos,Defender,Brazil,14,0,0,181767,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Lucas Beraldo,Defender,Brazil,20,2,1,872171,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Lucas Hernandez,Defender,France,25,0,3,281963,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
@@ -13802,7 +13802,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,PSG,Joao Neves,Midfield,Portugal,21,5,1,670681,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Warren Zaire-Emery,Midfield,France,32,3,4,810092,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Senny Mayulu,Midfield,France,26,4,4,903693,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
-2025/26,PSG,Kang-in Lee,Midfield,"Korea, South",27,3,4,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
+2025/26,PSG,Lee Kang-in,Midfield,"Korea, South",27,3,4,557149,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Fabian Ruiz,Midfield,Spain,20,1,4,350219,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Dro Fernandez,Midfield,Spain,12,1,0,1071596,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
 2025/26,PSG,Mathis Jangeal,Midfield,France,1,0,0,1185887,https://www.transfermarkt.com/fc-paris-saint-germain/leistungsdaten/verein/583/plus/1?reldata=FR1%262025
@@ -13927,7 +13927,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,Marseille,Adrien Rabiot,Midfield,France,1,0,0,182913,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
 2025/26,Marseille,Matt O'Riley,Midfield,Denmark,15,1,2,406634,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
 2025/26,Marseille,Darryl Bakola,Midfield,France,8,0,0,1170286,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
-2025/26,Marseille,Pierre-Emile Hjbjerg,Midfield,Denmark,32,4,5,167799,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
+2025/26,Marseille,Pierre-Emile Hojbjerg,Midfield,Denmark,32,4,5,167799,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
 2025/26,Marseille,Angel Gomes,Midfield,England,14,3,0,392770,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
 2025/26,Marseille,Bilal Nadir,Midfield,Morocco,20,0,4,659520,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
 2025/26,Marseille,Himad Abdelli,Midfield,Algeria,8,0,0,592979,https://www.transfermarkt.com/olympique-marseille/leistungsdaten/verein/244/plus/1?reldata=FR1%262025
@@ -13972,7 +13972,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,Rennes,Kader Meite,Attack,Cote d'Ivoire,17,3,2,1141560,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
 2025/26,Rennes,Breel Embolo,Attack,Switzerland,31,8,3,237662,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
 2025/26,Rennes,Mousa Al-Tamari,Attack,Jordan,33,6,9,551505,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
-2025/26,Rennes,Bertug Yldrm,Attack,Turkiye,1,0,0,672803,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
+2025/26,Rennes,Bertug Yildirim,Attack,Turkiye,1,0,0,672803,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
 2025/26,Rennes,Arnaud Nordin,Attack,France,10,1,2,324811,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
 2025/26,Rennes,Ibrahim Salah,Attack,Morocco,2,0,0,928323,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
 2025/26,Rennes,Nordan Mukiele,Attack,France,8,1,0,986285,https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025
@@ -14015,7 +14015,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,Strasbourg,Guela Doue,Defender,Cote d'Ivoire,24,2,6,711980,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
 2025/26,Strasbourg,Mamadou Sarr,Defender,Senegal,15,0,0,910905,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
 2025/26,Strasbourg,Ismael Doukoure,Defender,France,25,0,2,786436,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
-2025/26,Strasbourg,Lucas Hgsberg,Defender,Denmark,24,0,0,926978,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
+2025/26,Strasbourg,Lucas Hogsberg,Defender,Denmark,24,0,0,926978,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
 2025/26,Strasbourg,Abdoul Ouattara,Defender,Cote d'Ivoire,28,2,1,991487,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
 2025/26,Strasbourg,Ben Chilwell,Defender,England,20,0,2,316125,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
 2025/26,Strasbourg,Aaron Anselmino,Defender,Argentina,3,0,0,1145504,https://www.transfermarkt.com/rc-strassburg-alsace/leistungsdaten/verein/667/plus/1?reldata=FR1%262025
@@ -14059,7 +14059,7 @@ season,club,player,position,nationality,apps,goals,assists,tm_player_id,source
 2025/26,Toulouse,Alexis Vossah,Midfield,France,23,1,1,1200427,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
 2025/26,Toulouse,Cristian Casseres Jr.,Midfield,Venezuela,31,2,4,467632,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
 2025/26,Toulouse,Pape Demba Diop,Midfield,Senegal,16,1,2,949113,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
-2025/26,Toulouse,Aron Dnnum,Midfield,Norway,28,4,4,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
+2025/26,Toulouse,Aron Donnum,Midfield,Norway,28,4,4,476836,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
 2025/26,Toulouse,Abu Francis,Midfield,Ghana,8,0,0,658533,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
 2025/26,Toulouse,Mario Sauer,Midfield,Slovakia,25,1,0,710885,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025
 2025/26,Toulouse,Mathis Saka,Midfield,France,1,0,0,986310,https://www.transfermarkt.com/fc-toulouse/leistungsdaten/verein/415/plus/1?reldata=FR1%262025

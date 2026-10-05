@@ -1,0 +1,99 @@
+{
+ "pick": "frs01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Ligue 1 top scorers, 2025/26",
+ "brief": "Name the ten players who scored the most Ligue 1 goals in 2025/26.",
+ "period": "League season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Esteban Lepaul",
+   "val": "21 goals"
+  },
+  {
+   "label": "2",
+   "name": "Mason Greenwood",
+   "val": "16 goals"
+  },
+  {
+   "label": "3",
+   "name": "Joaquin Panichelli",
+   "val": "16 goals"
+  },
+  {
+   "label": "4",
+   "name": "Folarin Balogun",
+   "val": "13 goals"
+  },
+  {
+   "label": "5",
+   "name": "Odsonne Edouard",
+   "val": "12 goals"
+  },
+  {
+   "label": "6",
+   "name": "Wesley Said",
+   "val": "12 goals"
+  },
+  {
+   "label": "7",
+   "name": "Lassine Sinayoko",
+   "val": "12 goals"
+  },
+  {
+   "label": "8",
+   "name": "Bradley Barcola",
+   "val": "11 goals",
+   "pool": "fr2526ts11",
+   "alts": [
+    "Bradley Barcola",
+    "Florian Thauvin",
+    "Pavel Sulc",
+    "Corentin Tolisso",
+    "Ansu Fati"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Bradley Barcola",
+   "val": "11 goals",
+   "pool": "fr2526ts11",
+   "alts": [
+    "Bradley Barcola",
+    "Florian Thauvin",
+    "Pavel Sulc",
+    "Corentin Tolisso",
+    "Ansu Fati"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Bradley Barcola",
+   "val": "11 goals",
+   "pool": "fr2526ts11",
+   "alts": [
+    "Bradley Barcola",
+    "Florian Thauvin",
+    "Pavel Sulc",
+    "Corentin Tolisso",
+    "Ansu Fati"
+   ]
+  }
+ ],
+ "notes": {
+  "Pierre-Emerick Aubameyang": "Aubameyang is just outside with 10 goals.",
+  "Ousmane Dembele": "Dembele is just outside with 10 goals.",
+  "Pablo Pagis": "Pagis is just outside with 10 goals.",
+  "Martial Godo": "Godo is just outside with 10 goals.",
+  "Bamba Dieng": "Dieng is just outside with 10 goals.",
+  "Esteban Lepaul": "Lepaul scored 20 for Rennes and 1 for Angers before his move."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ligue-1/tabelle/wettbewerb/FR1/saison_id/2025",
+  "https://www.transfermarkt.com/fc-stade-rennes/leistungsdaten/verein/273/plus/1?reldata=FR1%262025",
+  "https://sports.core.api.espn.com/v2/sports/soccer/leagues/fra.1/seasons/2025/types/1/leaders"
+ ],
+ "checks": "Every club season stats page on Transfermarkt for 2025/26; each club's player goals add up to its goals in the table within own goals. ESPN's Ligue 1 2025/26 goals leaders agree with every figure in the top 17 (21, 16, 16, 13, 12 x3, 11 x5, 10 x5)."
+}
