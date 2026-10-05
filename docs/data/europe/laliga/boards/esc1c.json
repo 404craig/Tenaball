@@ -1,0 +1,71 @@
+{
+ "pick": "esc1c",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Barcelona's most appearances, 2025/26",
+ "brief": "Name the ten players who played the most La Liga games for Barcelona in 2025/26 (starts and substitute appearances).",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Eric Garcia",
+   "val": "34 games"
+  },
+  {
+   "label": "2",
+   "name": "Dani Olmo",
+   "val": "33 games"
+  },
+  {
+   "label": "3",
+   "name": "Ferran Torres",
+   "val": "33 games"
+  },
+  {
+   "label": "4",
+   "name": "Gerard Martin",
+   "val": "32 games"
+  },
+  {
+   "label": "5",
+   "name": "Marcus Rashford",
+   "val": "32 games"
+  },
+  {
+   "label": "6",
+   "name": "Pau Cubarsi",
+   "val": "31 games"
+  },
+  {
+   "label": "7",
+   "name": "Robert Lewandowski",
+   "val": "31 games"
+  },
+  {
+   "label": "8",
+   "name": "Joan Garcia",
+   "val": "30 games"
+  },
+  {
+   "label": "9",
+   "name": "Jules Kounde",
+   "val": "30 games"
+  },
+  {
+   "label": "10",
+   "name": "Fermin Lopez",
+   "val": "30 games"
+  }
+ ],
+ "notes": {
+  "Pedri": "Pedri had 29 league games for Barcelona, just outside the ten.",
+  "Alejandro Balde": "Alejandro Balde had 28 league games for Barcelona, just outside the ten.",
+  "Lamine Yamal": "Lamine Yamal had 28 league games for Barcelona, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/fc-barcelona/leistungsdaten/verein/131/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/83/roster?season=2025"
+ ],
+ "checks": "Appearances from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: none."
+}

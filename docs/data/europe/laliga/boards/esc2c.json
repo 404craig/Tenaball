@@ -1,0 +1,76 @@
+{
+ "pick": "esc2c",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Atletico Madrid's most appearances, 2025/26",
+ "brief": "Name the ten players who played the most La Liga games for Atletico Madrid in 2025/26 (starts and substitute appearances).",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Alexander Sorloth",
+   "val": "35 games"
+  },
+  {
+   "label": "2",
+   "name": "Koke",
+   "val": "34 games"
+  },
+  {
+   "label": "3",
+   "name": "Antoine Griezmann",
+   "val": "34 games"
+  },
+  {
+   "label": "4",
+   "name": "Giuliano Simeone",
+   "val": "31 games"
+  },
+  {
+   "label": "5",
+   "name": "Jan Oblak",
+   "val": "30 games"
+  },
+  {
+   "label": "6",
+   "name": "David Hancko",
+   "val": "30 games"
+  },
+  {
+   "label": "7",
+   "name": "Marcos Llorente",
+   "val": "29 games"
+  },
+  {
+   "label": "8",
+   "name": "Julian Alvarez",
+   "val": "29 games"
+  },
+  {
+   "label": "9",
+   "name": "Robin Le Normand",
+   "val": "28 games"
+  },
+  {
+   "label": "10",
+   "name": "Thiago Almada",
+   "val": "27 games",
+   "pool": "t27",
+   "alts": [
+    "Thiago Almada",
+    "Alex Baena"
+   ]
+  }
+ ],
+ "notes": {
+  "Matteo Ruggeri": "Matteo Ruggeri had 26 league games for Atletico Madrid, just outside the ten.",
+  "Nahuel Molina": "Nahuel Molina had 26 league games for Atletico Madrid, just outside the ten.",
+  "Nico Gonzalez": "Nico Gonzalez had 24 league games for Atletico Madrid, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/atletico-madrid/leistungsdaten/verein/13/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/1068/roster?season=2025"
+ ],
+ "checks": "Appearances from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: none."
+}

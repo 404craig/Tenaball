@@ -1,0 +1,71 @@
+{
+ "pick": "esc0a",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Real Madrid's top scorers, 2025/26",
+ "brief": "Name the ten players with the most La Liga goals for Real Madrid in 2025/26.",
+ "period": "La Liga 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "25 goals"
+  },
+  {
+   "label": "2",
+   "name": "Vinicius Junior",
+   "val": "16 goals"
+  },
+  {
+   "label": "3",
+   "name": "Jude Bellingham",
+   "val": "6 goals"
+  },
+  {
+   "label": "4",
+   "name": "Gonzalo Garcia",
+   "val": "6 goals"
+  },
+  {
+   "label": "5",
+   "name": "Federico Valverde",
+   "val": "5 goals"
+  },
+  {
+   "label": "6",
+   "name": "Arda Guler",
+   "val": "4 goals"
+  },
+  {
+   "label": "7",
+   "name": "Dean Huijsen",
+   "val": "2 goals"
+  },
+  {
+   "label": "8",
+   "name": "Alvaro Carreras",
+   "val": "2 goals"
+  },
+  {
+   "label": "9",
+   "name": "Eder Militao",
+   "val": "2 goals"
+  },
+  {
+   "label": "10",
+   "name": "Raul Asencio",
+   "val": "2 goals"
+  }
+ ],
+ "notes": {
+  "Fran Garcia": "Fran Garcia had 1 league goal for Real Madrid, just outside the ten.",
+  "Antonio Rudiger": "Antonio Rudiger had 1 league goal for Real Madrid, just outside the ten.",
+  "Aurelien Tchouameni": "Aurelien Tchouameni had 1 league goal for Real Madrid, just outside the ten."
+ },
+ "sources": [
+  "https://www.transfermarkt.co.uk/real-madrid/leistungsdaten/verein/418/plus/1?reldata=ES1%262025",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/86/roster?season=2025"
+ ],
+ "checks": "Goals from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: none. Club total checked against the table: see club_season_checks.csv."
+}
