@@ -1,0 +1,83 @@
+{
+ "pick": "p03",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Europe's most capped men",
+ "brief": "Name the ten players from European (UEFA) nations with the most caps in official full internationals.",
+ "period": "All full internationals to 19 July 2026. Germany includes West Germany.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "233 caps"
+  },
+  {
+   "label": "2",
+   "name": "Luka Modric",
+   "val": "202 caps"
+  },
+  {
+   "label": "3",
+   "name": "Sergio Ramos",
+   "val": "180 caps"
+  },
+  {
+   "label": "4",
+   "name": "Gianluigi Buffon",
+   "val": "176 caps"
+  },
+  {
+   "label": "5",
+   "name": "Iker Casillas",
+   "val": "167 caps"
+  },
+  {
+   "label": "6",
+   "name": "Robert Lewandowski",
+   "val": "167 caps"
+  },
+  {
+   "label": "7",
+   "name": "Vitalijs Astafjevs",
+   "val": "167 caps"
+  },
+  {
+   "label": "8",
+   "name": "Konstantin Vassiljev",
+   "val": "159 caps"
+  },
+  {
+   "label": "9",
+   "name": "Ivan Perisic",
+   "val": "158 caps"
+  },
+  {
+   "label": "10",
+   "name": "Jan Vertonghen",
+   "val": "157 caps",
+   "pool": "reim",
+   "alts": [
+    "Jan Vertonghen",
+    "Martin Reim"
+   ]
+  }
+ ],
+ "notes": {
+  "Martin Reim": "Martin Reim (Estonia) has 157 (156 in FIFA's count), level with Vertonghen for 10th.",
+  "Jan Vertonghen": "Jan Vertonghen and Martin Reim share 10th on 157.",
+  "Granit Xhaka": "Granit Xhaka is 12th with 152, just outside.",
+  "Edin Dzeko": "Edin Dzeko has 151.",
+  "Christian Eriksen": "Christian Eriksen has 151.",
+  "Lothar Matthaus": "Lothar Matthaus has 150.",
+  "Vitalijs Astafjevs": "Astafjevs has 167 in Latvia's and RSSSF's count (166 in Wikipedia's list, 168 on Transfermarkt)."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps (revision of 24 August 2026)",
+  "https://www.rsssf.org/miscellaneous/century.html",
+  "https://en.wikipedia.org/wiki/Martin_Reim",
+  "https://en.wikipedia.org/wiki/Vit%C4%81lijs_Astafjevs",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game"
+ ],
+ "checks": "Ronaldo, Modric, Ramos, Buffon, Casillas, Lewandowski, Vassiljev, Perisic, Vertonghen and Xhaka: Wikipedia's list and Transfermarkt's match list to 19 July 2026 agree. Astafjevs: 167 in his Wikipedia article and RSSSF (list 166, Transfermarkt 168); every count keeps him between 5th and 7th. Reim: 157 in his article, RSSSF and Transfermarkt, 156 in Wikipedia's list, so 10th is a pool of Vertonghen and Reim. Modric, Perisic and Lewandowski played again in September and October 2026; those caps are left out."
+}

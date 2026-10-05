@@ -1,0 +1,75 @@
+{
+ "pick": "b02-sco",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Scotland's most capped players",
+ "brief": "Name the ten players with the most caps for Scotland in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kenny Dalglish",
+   "val": "102 caps"
+  },
+  {
+   "label": "2",
+   "name": "Andy Robertson",
+   "val": "97 caps"
+  },
+  {
+   "label": "3",
+   "name": "Jim Leighton",
+   "val": "91 caps"
+  },
+  {
+   "label": "4",
+   "name": "John McGinn",
+   "val": "89 caps"
+  },
+  {
+   "label": "5",
+   "name": "Craig Gordon",
+   "val": "84 caps"
+  },
+  {
+   "label": "6",
+   "name": "Darren Fletcher",
+   "val": "80 caps"
+  },
+  {
+   "label": "7",
+   "name": "Alex McLeish",
+   "val": "77 caps"
+  },
+  {
+   "label": "8",
+   "name": "Paul McStay",
+   "val": "76 caps"
+  },
+  {
+   "label": "9",
+   "name": "Scott McTominay",
+   "val": "73 caps"
+  },
+  {
+   "label": "10",
+   "name": "Tom Boyd",
+   "val": "72 caps"
+  }
+ ],
+ "notes": {
+  "Ryan Christie": "Ryan Christie is 11th with 71, just outside.",
+  "Grant Hanley": "Grant Hanley is 12th with 70.",
+  "Kenny Miller": "Kenny Miller has 69.",
+  "David Weir": "David Weir has 69.",
+  "Christian Dailly": "Christian Dailly has 67.",
+  "Andy Robertson": "Andy Robertson had 97 caps at the end of the 2026 World Cup; he passed 100 in October 2026, which doesn't count here."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Scotland_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/scot-recintlp.html",
+  "https://www.transfermarkt.com/schottland/rekordspieler/verein/3380/sort/einsaetze.desc"
+ ],
+ "checks": "Wikipedia's records page on 1 July 2026 and RSSSF (to 24 June 2026, Scotland's last match before the cut-off) give the same ten and figures; Transfermarkt's match data counted to 19 July 2026 agrees (Robertson 97, McGinn 89, Christie 71) except Fletcher, 81 there and 80 in both other sources (80 used; 6th either way)."
+}

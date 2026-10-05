@@ -1,0 +1,90 @@
+{
+ "pick": "b01-wal",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Wales's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Wales in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gareth Bale",
+   "val": "41 goals"
+  },
+  {
+   "label": "2",
+   "name": "Ian Rush",
+   "val": "28 goals"
+  },
+  {
+   "label": "3",
+   "name": "Trevor Ford",
+   "val": "23 goals"
+  },
+  {
+   "label": "4",
+   "name": "Ivor Allchurch",
+   "val": "23 goals"
+  },
+  {
+   "label": "5",
+   "name": "Dean Saunders",
+   "val": "22 goals"
+  },
+  {
+   "label": "6",
+   "name": "Aaron Ramsey",
+   "val": "21 goals"
+  },
+  {
+   "label": "7",
+   "name": "Craig Bellamy",
+   "val": "19 goals"
+  },
+  {
+   "label": "8",
+   "name": "Harry Wilson",
+   "val": "17 goals"
+  },
+  {
+   "label": "9",
+   "name": "Robert Earnshaw",
+   "val": "16 goals",
+   "pool": "wal-g9",
+   "alts": [
+    "Robert Earnshaw",
+    "Cliff Jones",
+    "Mark Hughes"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Robert Earnshaw",
+   "val": "16 goals",
+   "pool": "wal-g9",
+   "alts": [
+    "Robert Earnshaw",
+    "Cliff Jones",
+    "Mark Hughes"
+   ]
+  }
+ ],
+ "notes": {
+  "Robert Earnshaw": "Robert Earnshaw, Cliff Jones and Mark Hughes are joint 9th with 16; any two fill the last two places.",
+  "Cliff Jones": "Cliff Jones, Robert Earnshaw and Mark Hughes are joint 9th with 16.",
+  "Mark Hughes": "Mark Hughes, Robert Earnshaw and Cliff Jones are joint 9th with 16.",
+  "John Charles": "John Charles is joint 12th with 15, just outside.",
+  "Kieffer Moore": "Kieffer Moore is joint 12th with 15, just outside.",
+  "John Hartson": "John Hartson has 14.",
+  "John Toshack": "John Toshack has 13.",
+  "Ryan Giggs": "Ryan Giggs has 12.",
+  "Gareth Bale": "Gareth Bale has 41 by the FAW's count (Transfermarkt lists 40)."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Wales_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/wal-recintlp.html",
+  "https://www.transfermarkt.com/wales/rekordspieler/verein/3864/sort/tore.desc"
+ ],
+ "checks": "Wikipedia's records page as it stood on 11 June 2026 (updated to 6 June 2026, Wales's last match before the cut-off; Wales were not at the World Cup) and RSSSF agree on every figure. Transfermarkt agrees for the modern players except Bale (40, against 41) and has incomplete older data; it confirms Wilson 17 and Moore 15 at the cut-off. Earnshaw, Cliff Jones and Mark Hughes share 9th on 16, so the last two places are a pool."
+}

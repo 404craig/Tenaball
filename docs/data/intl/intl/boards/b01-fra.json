@@ -1,0 +1,72 @@
+{
+ "pick": "b01-fra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "France's all-time top scorers",
+ "brief": "Name the ten players with the most goals for France in full internationals, from France's first match to the 2026 World Cup final.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kylian Mbappe",
+   "val": "66 goals"
+  },
+  {
+   "label": "2",
+   "name": "Olivier Giroud",
+   "val": "57 goals"
+  },
+  {
+   "label": "3",
+   "name": "Thierry Henry",
+   "val": "51 goals"
+  },
+  {
+   "label": "4",
+   "name": "Antoine Griezmann",
+   "val": "44 goals"
+  },
+  {
+   "label": "5",
+   "name": "Michel Platini",
+   "val": "41 goals"
+  },
+  {
+   "label": "6",
+   "name": "Karim Benzema",
+   "val": "37 goals"
+  },
+  {
+   "label": "7",
+   "name": "David Trezeguet",
+   "val": "34 goals"
+  },
+  {
+   "label": "8",
+   "name": "Zinedine Zidane",
+   "val": "31 goals"
+  },
+  {
+   "label": "9",
+   "name": "Jean-Pierre Papin",
+   "val": "30 goals"
+  },
+  {
+   "label": "10",
+   "name": "Just Fontaine",
+   "val": "30 goals"
+  }
+ ],
+ "notes": {
+  "Youri Djorkaeff": "Youri Djorkaeff is 11th with 28 goals, just outside.",
+  "Sylvain Wiltord": "Sylvain Wiltord is 12th with 26 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/frankreich/rekordspieler/verein/3377",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/67/2026/France.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/fran-recintlp.html"
+ ],
+ "checks": "Retired players' totals: Transfermarkt's France record list and RSSSF's France record international players page (to November 2025) agree on every one (Platini 41, Fontaine 30, Papin 30, Djorkaeff 28, Wiltord 26). Mbappe, the only one still playing, counted match by match to 19 July 2026 on Transfermarkt and national-football-teams.com: 66 goals in 106 games (his goal against Turkey on 25 September 2026 is left out). Trezeguet's 34 includes his hat-trick against the FIFA World XI on 15 August 2000, which the French federation and RSSSF count."
+}

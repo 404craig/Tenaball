@@ -1,0 +1,77 @@
+{
+ "pick": "b04-ger",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Germany's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Germany in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Miroslav Klose",
+   "val": "137 caps"
+  },
+  {
+   "label": "2",
+   "name": "Thomas Muller",
+   "val": "131 caps"
+  },
+  {
+   "label": "3",
+   "name": "Lukas Podolski",
+   "val": "130 caps"
+  },
+  {
+   "label": "4",
+   "name": "Manuel Neuer",
+   "val": "128 caps"
+  },
+  {
+   "label": "5",
+   "name": "Bastian Schweinsteiger",
+   "val": "121 caps"
+  },
+  {
+   "label": "6",
+   "name": "Joshua Kimmich",
+   "val": "114 caps"
+  },
+  {
+   "label": "7",
+   "name": "Toni Kroos",
+   "val": "114 caps"
+  },
+  {
+   "label": "8",
+   "name": "Philipp Lahm",
+   "val": "113 caps"
+  },
+  {
+   "label": "9",
+   "name": "Per Mertesacker",
+   "val": "104 caps"
+  },
+  {
+   "label": "10",
+   "name": "Michael Ballack",
+   "val": "95 caps"
+  }
+ ],
+ "notes": {
+  "Mesut Ozil": "Mesut Ozil is 11th with 92 caps, just outside.",
+  "Antonio Rudiger": "Antonio Rudiger is 12th with 86 caps.",
+  "Arne Friedrich": "Arne Friedrich is joint 13th with 82 caps.",
+  "Ilkay Gundogan": "Ilkay Gundogan is joint 13th with 82 caps.",
+  "Lothar Matthaus": "Lothar Matthaus played his last game for Germany in June 2000, but most of his 150 caps came before.",
+  "Jurgen Klinsmann": "Jurgen Klinsmann last played for Germany in 1998.",
+  "Oliver Kahn": "Oliver Kahn won 86 caps, 65 of them from 2000 on."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/deutschland/rekordspieler/verein/3262",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/71/2026/Germany.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/duit-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Ballack won 98 caps; three came in 1999 and are left out. Kimmich is 114 to 19 July 2026 (his two September 2026 games are not counted)."
+}

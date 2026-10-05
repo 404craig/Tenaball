@@ -1,0 +1,75 @@
+{
+ "pick": "b03-bel",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Belgium's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Belgium in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Romelu Lukaku",
+   "val": "93 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kevin De Bruyne",
+   "val": "38 goals"
+  },
+  {
+   "label": "3",
+   "name": "Eden Hazard",
+   "val": "33 goals"
+  },
+  {
+   "label": "4",
+   "name": "Michy Batshuayi",
+   "val": "27 goals"
+  },
+  {
+   "label": "5",
+   "name": "Wesley Sonck",
+   "val": "24 goals"
+  },
+  {
+   "label": "6",
+   "name": "Dries Mertens",
+   "val": "21 goals"
+  },
+  {
+   "label": "7",
+   "name": "Marouane Fellaini",
+   "val": "18 goals"
+  },
+  {
+   "label": "8",
+   "name": "Christian Benteke",
+   "val": "18 goals"
+  },
+  {
+   "label": "9",
+   "name": "Youri Tielemans",
+   "val": "15 goals"
+  },
+  {
+   "label": "10",
+   "name": "Leandro Trossard",
+   "val": "14 goals"
+  }
+ ],
+ "notes": {
+  "Marc Wilmots": "Marc Wilmots is joint 11th with 13 goals since 2000 (29 in all), just outside.",
+  "Emile Mpenza": "Emile Mpenza is joint 11th with 13 goals since 2000 (19 in all), just outside.",
+  "Axel Witsel": "Axel Witsel is 13th with 12 goals.",
+  "Yannick Carrasco": "Yannick Carrasco is joint 14th with 11 goals.",
+  "Bart Goor": "Bart Goor is joint 14th with 11 goals since 2000.",
+  "Thomas Meunier": "Thomas Meunier is joint 16th with 10 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/belgien/rekordspieler/verein/3382",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/20/2026/Belgium.html (and each player page, /player/<id>/<name>.html, listing every match)"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Lukaku (93 to 19 July 2026) and De Bruyne (38) have scored again since; those goals are not counted."
+}

@@ -1,0 +1,82 @@
+{
+ "pick": "b01-ita",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Italy's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Italy in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gigi Riva",
+   "val": "35 goals"
+  },
+  {
+   "label": "2",
+   "name": "Giuseppe Meazza",
+   "val": "33 goals"
+  },
+  {
+   "label": "3",
+   "name": "Silvio Piola",
+   "val": "30 goals"
+  },
+  {
+   "label": "4",
+   "name": "Roberto Baggio",
+   "val": "27 goals"
+  },
+  {
+   "label": "5",
+   "name": "Alessandro Del Piero",
+   "val": "27 goals"
+  },
+  {
+   "label": "6",
+   "name": "Alessandro Altobelli",
+   "val": "25 goals"
+  },
+  {
+   "label": "7",
+   "name": "Adolfo Baloncieri",
+   "val": "25 goals"
+  },
+  {
+   "label": "8",
+   "name": "Filippo Inzaghi",
+   "val": "25 goals"
+  },
+  {
+   "label": "9",
+   "name": "Francesco Graziani",
+   "val": "23 goals"
+  },
+  {
+   "label": "10",
+   "name": "Christian Vieri",
+   "val": "23 goals"
+  }
+ ],
+ "notes": {
+  "Sandro Mazzola": "Sandro Mazzola is 11th with 22, just outside.",
+  "Daniele De Rossi": "Daniele De Rossi is 12th with 21.",
+  "Paolo Rossi": "Paolo Rossi has 20.",
+  "Alberto Gilardino": "Alberto Gilardino has 19.",
+  "Roberto Bettega": "Roberto Bettega has 19.",
+  "Ciro Immobile": "Ciro Immobile has 17.",
+  "Luca Toni": "Luca Toni has 16.",
+  "Gianluca Vialli": "Gianluca Vialli has 16.",
+  "Mario Balotelli": "Mario Balotelli has 14.",
+  "Gianni Rivera": "Gianni Rivera has 14.",
+  "Moise Kean": "Moise Kean had 13 at 19 July 2026.",
+  "Andrea Pirlo": "Andrea Pirlo has 13.",
+  "Francesco Totti": "Francesco Totti has 9."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/ital-recintlp.html",
+  "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/italien/rekordspieler/verein/3376/sort/tore.desc"
+ ],
+ "checks": "RSSSF (last match included: Greece v Italy, 7 June 2026, Italy's last game before the World Cup final, as Italy did not reach the finals) and Wikipedia's records page (FIGC figures) agree on every figure in the ten and on 11th and 12th; Transfermarkt agrees too. Italy played one game after 19 July 2026 up to now (Belgium, 25 September 2026), in which none of these players scored. Ties inside the ten are listed in RSSSF order."
+}

@@ -1,0 +1,83 @@
+{
+ "pick": "b03-nir",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Northern Ireland's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Northern Ireland in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "David Healy",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kyle Lafferty",
+   "val": "20 goals"
+  },
+  {
+   "label": "3",
+   "name": "Steven Davis",
+   "val": "13 goals"
+  },
+  {
+   "label": "4",
+   "name": "Josh Magennis",
+   "val": "12 goals"
+  },
+  {
+   "label": "5",
+   "name": "Isaac Price",
+   "val": "10 goals"
+  },
+  {
+   "label": "6",
+   "name": "Gareth McAuley",
+   "val": "9 goals"
+  },
+  {
+   "label": "7",
+   "name": "Paddy McNair",
+   "val": "7 goals"
+  },
+  {
+   "label": "8",
+   "name": "Jonny Evans",
+   "val": "6 goals"
+  },
+  {
+   "label": "9",
+   "name": "Niall McGinn",
+   "val": "6 goals"
+  },
+  {
+   "label": "10",
+   "name": "Conor Washington",
+   "val": "6 goals"
+  }
+ ],
+ "notes": {
+  "Warren Feeney": "Warren Feeney is joint 11th with 5, just outside.",
+  "Dan Ballard": "Dan Ballard is joint 11th with 5, just outside.",
+  "Gavin Whyte": "Gavin Whyte is joint 11th with 5, just outside.",
+  "Grant McCann": "Grant McCann has 4.",
+  "Stuart Elliott": "Stuart Elliott has 4.",
+  "Jamie Ward": "Jamie Ward has 4.",
+  "Conor Bradley": "Conor Bradley has 4.",
+  "Dion Charles": "Dion Charles has 4.",
+  "Iain Dowie": "Iain Dowie's 12 goals all came before 2000.",
+  "Colin Clarke": "Colin Clarke's goals all came before 2000.",
+  "James Quinn": "James Quinn scored 3 of his 4 from 2000.",
+  "Michael Hughes": "Michael Hughes scored most of his goals before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://www.rsssf.org/miscellaneous/nil-recintlp.html",
+  "https://en.wikipedia.org/wiki/Northern_Ireland_national_football_team_records_and_statistics",
+  "https://en.wikipedia.org/wiki/Conor_Washington",
+  "https://en.wikipedia.org/wiki/Dan_Ballard_(footballer)"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. All ten made their debuts in 2000 or later (Healy in February 2000), so their totals at the cut-off were checked against RSSSF (to 7 June 2026) and Wikipedia's records page and player articles: Healy 36, Lafferty 20, Davis 13, Magennis 12, Price 10, McAuley 9, McNair 7, Evans 6, McGinn 6, Washington 6, and Feeney, Ballard (all 5 of his goals came before the cut-off) and Whyte on 5. The three on 6 fill places 8 to 10 exactly."
+}

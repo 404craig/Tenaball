@@ -1,0 +1,86 @@
+{
+ "pick": "b02-ned",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Netherlands' most capped players",
+ "brief": "Name the ten players with the most caps for the Netherlands in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Wesley Sneijder",
+   "val": "134 caps"
+  },
+  {
+   "label": "2",
+   "name": "Edwin van der Sar",
+   "val": "130 caps"
+  },
+  {
+   "label": "3",
+   "name": "Memphis Depay",
+   "val": "112 caps"
+  },
+  {
+   "label": "4",
+   "name": "Frank de Boer",
+   "val": "112 caps"
+  },
+  {
+   "label": "5",
+   "name": "Rafael van der Vaart",
+   "val": "109 caps"
+  },
+  {
+   "label": "6",
+   "name": "Daley Blind",
+   "val": "108 caps"
+  },
+  {
+   "label": "7",
+   "name": "Giovanni van Bronckhorst",
+   "val": "106 caps"
+  },
+  {
+   "label": "8",
+   "name": "Dirk Kuyt",
+   "val": "104 caps"
+  },
+  {
+   "label": "9",
+   "name": "Robin van Persie",
+   "val": "102 caps"
+  },
+  {
+   "label": "10",
+   "name": "Phillip Cocu",
+   "val": "101 caps"
+  }
+ ],
+ "notes": {
+  "Arjen Robben": "Arjen Robben is joint 11th with 96, just outside.",
+  "Georginio Wijnaldum": "Georginio Wijnaldum is joint 11th with 96, just outside.",
+  "Virgil van Dijk": "Virgil van Dijk is joint 11th with 96 at 19 July 2026, just outside (his caps since then don't count).",
+  "John Heitinga": "John Heitinga has 87.",
+  "Clarence Seedorf": "Clarence Seedorf has 87.",
+  "Marc Overmars": "Marc Overmars has 86.",
+  "Joris Mathijsen": "Joris Mathijsen has 84.",
+  "Aron Winter": "Aron Winter has 84.",
+  "Ruud Krol": "Ruud Krol has 83.",
+  "Nigel de Jong": "Nigel de Jong has 81.",
+  "Dennis Bergkamp": "Dennis Bergkamp has 79.",
+  "Patrick Kluivert": "Patrick Kluivert has 79.",
+  "Mark van Bommel": "Mark van Bommel has 79.",
+  "Memphis Depay": "Memphis Depay had 112 at the end of the 2026 World Cup."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/ned-recintlp.html",
+  "https://www.transfermarkt.com/niederlande/rekordspieler/verein/3379",
+  "https://www.national-football-teams.com/country/129/2010/Netherlands.html (one page per year, 2000 to 2026)",
+  "Transfermarkt match reports for the Netherlands' eight games from March to July 2026 (https://www.transfermarkt.com/niederlande/spielplan/verein/3379/saison_id/2026)",
+  "https://en.wikipedia.org/wiki/Memphis_Depay",
+  "https://en.wikipedia.org/wiki/Virgil_van_Dijk"
+ ],
+ "checks": "RSSSF (to 17 November 2025) plus the 2026 games up to the final, and Transfermarkt's record list, agree on every figure in the ten: Depay 108 + 4 = 112. The Netherlands' 2026 games up to the World Cup final (eight, the last the round of 32 against Morocco on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Depay 4 games and no goals, Van Dijk 8 and 2, Gakpo 8 and 5, Dumfries 7. The September and October 2026 games are left out. Van Dijk: RSSSF 88 + 8 = 96, national-football-teams.com 96, and his Wikipedia year table gives 88 to the end of 2025; Transfermarkt's higher figure includes autumn 2026. Robben and Wijnaldum on 96 agree in all sources."
+}

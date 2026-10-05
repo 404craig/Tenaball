@@ -1,0 +1,93 @@
+{
+ "pick": "p06-2",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "More nations' record scorers",
+ "brief": "Name each nation's all-time top scorer in full internationals.",
+ "period": "All full internationals to 19 July 2026.",
+ "rows": [
+  {
+   "label": "Scotland",
+   "name": "Kenny Dalglish",
+   "val": "30 goals",
+   "alts": [
+    "Kenny Dalglish",
+    "Denis Law"
+   ]
+  },
+  {
+   "label": "Wales",
+   "name": "Gareth Bale",
+   "val": "41 goals"
+  },
+  {
+   "label": "Northern Ireland",
+   "name": "David Healy",
+   "val": "36 goals"
+  },
+  {
+   "label": "Republic of Ireland",
+   "name": "Robbie Keane",
+   "val": "68 goals"
+  },
+  {
+   "label": "Croatia",
+   "name": "Davor Suker",
+   "val": "45 goals"
+  },
+  {
+   "label": "Uruguay",
+   "name": "Luis Suarez",
+   "val": "69 goals"
+  },
+  {
+   "label": "Denmark",
+   "name": "Poul Nielsen",
+   "val": "52 goals",
+   "alts": [
+    "Poul Nielsen",
+    "Jon Dahl Tomasson"
+   ]
+  },
+  {
+   "label": "Sweden",
+   "name": "Zlatan Ibrahimovic",
+   "val": "62 goals"
+  },
+  {
+   "label": "Poland",
+   "name": "Robert Lewandowski",
+   "val": "89 goals"
+  },
+  {
+   "label": "USA",
+   "name": "Landon Donovan",
+   "val": "57 goals",
+   "alts": [
+    "Landon Donovan",
+    "Clint Dempsey"
+   ]
+  }
+ ],
+ "notes": {
+  "Denis Law": "Denis Law shares Scotland's record with Kenny Dalglish on 30.",
+  "Jon Dahl Tomasson": "Jon Dahl Tomasson shares Denmark's record with Poul Nielsen on 52.",
+  "Clint Dempsey": "Clint Dempsey shares the USA record with Landon Donovan on 57.",
+  "Ian Rush": "Ian Rush (28) is second for Wales behind Bale.",
+  "Kyle Lafferty": "Kyle Lafferty (20) is second for Northern Ireland.",
+  "Niall Quinn": "Niall Quinn is second for Ireland, far behind Keane.",
+  "Ivan Perisic": "Ivan Perisic is second for Croatia behind Suker.",
+  "Edinson Cavani": "Edinson Cavani (58) is second for Uruguay behind Suarez.",
+  "Sven Rydell": "Sven Rydell (49) is second for Sweden.",
+  "Wlodzimierz Lubanski": "Wlodzimierz Lubanski is second for Poland.",
+  "Ally McCoist": "Ally McCoist (19) is not Scotland's record scorer; Dalglish and Law share it on 30."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<Nation>_national_football_team (infobox, revisions of August 2026)",
+  "https://www.transfermarkt.com/<nation>/rekordspieler/verein/<id>/sort/tore.desc",
+  "https://www.rsssf.org/miscellaneous/tomasson-intlg.html",
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals"
+ ],
+ "checks": "Each record holder agrees between the nation's Wikipedia infobox (August 2026 revision) and Transfermarkt's record scorers page. Shared records are one slot with both names. Denmark: Wikipedia and RSSSF both give Tomasson 52, level with Nielsen (Transfermarkt has 51, which would leave Nielsen alone, so either name counts). Wales: Bale has 41 in the FAW's count and Wikipedia (Transfermarkt 40); he is the record holder either way. Lewandowski counted to 19 July 2026 (89; he scored again in September and October)."
+}

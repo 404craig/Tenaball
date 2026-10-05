@@ -1,0 +1,85 @@
+{
+ "pick": "p06-1",
+ "kind": "labelled",
+ "type": "person",
+ "level": 0,
+ "title": "Record scorers of the big nations",
+ "brief": "Name each nation's all-time top scorer in full internationals.",
+ "period": "All full internationals to 19 July 2026. Germany includes West Germany.",
+ "rows": [
+  {
+   "label": "England",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "Brazil",
+   "name": "Neymar",
+   "val": "80 goals"
+  },
+  {
+   "label": "Argentina",
+   "name": "Lionel Messi",
+   "val": "125 goals"
+  },
+  {
+   "label": "France",
+   "name": "Kylian Mbappe",
+   "val": "66 goals"
+  },
+  {
+   "label": "Germany",
+   "name": "Miroslav Klose",
+   "val": "71 goals"
+  },
+  {
+   "label": "Spain",
+   "name": "David Villa",
+   "val": "59 goals"
+  },
+  {
+   "label": "Italy",
+   "name": "Gigi Riva",
+   "val": "35 goals",
+   "alts": [
+    "Gigi Riva",
+    "Luigi Riva"
+   ]
+  },
+  {
+   "label": "Portugal",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "Netherlands",
+   "name": "Memphis Depay",
+   "val": "55 goals"
+  },
+  {
+   "label": "Belgium",
+   "name": "Romelu Lukaku",
+   "val": "93 goals"
+  }
+ ],
+ "notes": {
+  "Wayne Rooney": "Wayne Rooney (53) is England's second highest scorer behind Kane.",
+  "Pele": "Pele (77) is Brazil's second highest scorer, behind Neymar.",
+  "Olivier Giroud": "Olivier Giroud (57) is second for France behind Mbappe.",
+  "Thierry Henry": "Thierry Henry (51) is third for France.",
+  "Gerd Muller": "Gerd Muller (68) is second for Germany behind Klose.",
+  "Raul": "Raul (44) is second for Spain behind Villa.",
+  "Giuseppe Meazza": "Giuseppe Meazza (33) is second for Italy behind Riva.",
+  "Robin van Persie": "Robin van Persie (50) is second for the Netherlands behind Depay.",
+  "Pauleta": "Pauleta (47) is second for Portugal.",
+  "Eden Hazard": "Eden Hazard is not Belgium's record scorer; Lukaku is.",
+  "Gabriel Batistuta": "Gabriel Batistuta (56) is second for Argentina behind Messi.",
+  "Kevin De Bruyne": "Kevin De Bruyne is second for Belgium, a long way behind Lukaku."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<Nation>_national_football_team (infobox, revisions of August 2026)",
+  "https://www.transfermarkt.com/<nation>/rekordspieler/verein/<id>/sort/tore.desc",
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals"
+ ],
+ "checks": "Each record holder and figure agrees between the nation's Wikipedia infobox (August 2026 revision) and Transfermarkt's record scorers page; for active players (Kane, Mbappe, Lukaku) the figure is counted to 19 July 2026 from Transfermarkt's match list, since all three scored again later. Neymar (80) passed Pele (77, FIFA matches only; the CBF's own count adds unofficial games) in 2023. Germany's figures include West Germany, as the DFB counts them."
+}

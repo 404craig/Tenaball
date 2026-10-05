@@ -1,0 +1,83 @@
+{
+ "pick": "b04-ned",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Netherlands' most caps since 2000",
+ "brief": "Name the ten players with the most caps for the Netherlands in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Wesley Sneijder",
+   "val": "134 caps"
+  },
+  {
+   "label": "2",
+   "name": "Memphis Depay",
+   "val": "112 caps"
+  },
+  {
+   "label": "3",
+   "name": "Rafael van der Vaart",
+   "val": "109 caps"
+  },
+  {
+   "label": "4",
+   "name": "Daley Blind",
+   "val": "108 caps"
+  },
+  {
+   "label": "5",
+   "name": "Dirk Kuyt",
+   "val": "104 caps"
+  },
+  {
+   "label": "6",
+   "name": "Robin van Persie",
+   "val": "102 caps"
+  },
+  {
+   "label": "7",
+   "name": "Arjen Robben",
+   "val": "96 caps"
+  },
+  {
+   "label": "8",
+   "name": "Georginio Wijnaldum",
+   "val": "96 caps"
+  },
+  {
+   "label": "9",
+   "name": "Virgil van Dijk",
+   "val": "96 caps"
+  },
+  {
+   "label": "10",
+   "name": "Giovanni van Bronckhorst",
+   "val": "92 caps"
+  }
+ ],
+ "notes": {
+  "Edwin van der Sar": "Edwin van der Sar is joint 11th with 87 since 2000 (130 in all), just outside.",
+  "John Heitinga": "John Heitinga is joint 11th with 87, just outside.",
+  "Joris Mathijsen": "Joris Mathijsen has 84.",
+  "Nigel de Jong": "Nigel de Jong has 81.",
+  "Mark van Bommel": "Mark van Bommel has 79.",
+  "Stefan de Vrij": "Stefan de Vrij had 79 at 19 July 2026.",
+  "Denzel Dumfries": "Denzel Dumfries had 76 at 19 July 2026.",
+  "Klaas-Jan Huntelaar": "Klaas-Jan Huntelaar has 76.",
+  "Frenkie de Jong": "Frenkie de Jong had 70 at 19 July 2026.",
+  "Frank de Boer": "Frank de Boer has 40 since 2000 (112 in all).",
+  "Giovanni van Bronckhorst": "Giovanni van Bronckhorst has 92 since 2000 (106 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/129/2010/Netherlands.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/ned-recintlp.html",
+  "https://en.wikipedia.org/wiki/Giovanni_van_Bronckhorst",
+  "https://en.wikipedia.org/wiki/Edwin_van_der_Sar",
+  "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+  "Transfermarkt match reports for the Netherlands' eight games from March to July 2026 (https://www.transfermarkt.com/niederlande/spielplan/verein/3379/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Netherlands pages for 2000 to 2026. Players who started after 2000 match RSSSF's career totals plus 2026 (Sneijder 134, Depay 108 + 4 = 112, Van der Vaart 109, Blind 108, Kuyt 104, Van Persie 102, Robben 96, Wijnaldum 96, Van Dijk 88 + 8 = 96, Heitinga 87, Mathijsen 84). Van Bronckhorst (92) and Van der Sar (87), who started before 2000, match the year tables in their Wikipedia articles. The Netherlands' 2026 games up to the World Cup final (eight, the last the round of 32 against Morocco on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Depay 4 games and no goals, Van Dijk 8 and 2, Gakpo 8 and 5, Dumfries 7. The September and October 2026 games are left out. Robben, Wijnaldum and Van Dijk share 7th to 9th on 96, all on the board."
+}

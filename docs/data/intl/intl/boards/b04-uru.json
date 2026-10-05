@@ -1,0 +1,77 @@
+{
+ "pick": "b04-uru",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Uruguay's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Uruguay in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Diego Godin",
+   "val": "161 caps"
+  },
+  {
+   "label": "2",
+   "name": "Luis Suarez",
+   "val": "143 caps"
+  },
+  {
+   "label": "3",
+   "name": "Fernando Muslera",
+   "val": "137 caps"
+  },
+  {
+   "label": "4",
+   "name": "Edinson Cavani",
+   "val": "136 caps"
+  },
+  {
+   "label": "5",
+   "name": "Maxi Pereira",
+   "val": "125 caps"
+  },
+  {
+   "label": "6",
+   "name": "Martin Caceres",
+   "val": "116 caps"
+  },
+  {
+   "label": "7",
+   "name": "Diego Forlan",
+   "val": "112 caps"
+  },
+  {
+   "label": "8",
+   "name": "Cristian Rodriguez",
+   "val": "110 caps"
+  },
+  {
+   "label": "9",
+   "name": "Jose Maria Gimenez",
+   "val": "99 caps"
+  },
+  {
+   "label": "10",
+   "name": "Diego Lugano",
+   "val": "95 caps"
+  }
+ ],
+ "notes": {
+  "Egidio Arevalo Rios": "Egidio Arevalo Rios is 11th with 90.",
+  "Diego Perez": "Diego Perez is 12th with 89.",
+  "Alvaro Pereira": "Alvaro Pereira has 83.",
+  "Federico Valverde": "Federico Valverde had 76 by the 2026 final.",
+  "Rodrigo Bentancur": "Rodrigo Bentancur had 76 by the 2026 final.",
+  "Alvaro Recoba": "Alvaro Recoba won 49 of his 69 caps from 2000 on."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/uruguay/spielplan/verein/3449/saison_id/<year>",
+  "https://www.national-football-teams.com/country/198/<year>/Uruguay.html",
+  "https://www.rsssf.org/miscellaneous/uru-recintlp.html",
+  "https://en.wikipedia.org/wiki/Uruguay_national_football_team_records_and_statistics",
+  "https://en.wikipedia.org/wiki/Fernando_Muslera"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. All ten made their debuts after 2000, so these are career totals: RSSSF (to November 2023), Wikipedia's records table and National Football Teams agree on Godin 161, Suarez 143, Cavani 136, Maxi Pereira 125, Caceres 116, Forlan 112, Cristian Rodriguez 110 and Lugano 95 (Transfermarkt is one short for Forlan, Rodriguez and Lugano because it has no line-up for the 2007 Copa America game against Venezuela). Muslera 137 (Transfermarkt, National Football Teams, his Wikipedia infobox and caps-by-year table) and Gimenez 99 (Transfermarkt, National Football Teams; Wikipedia's 100 includes one game in September 2026)."
+}

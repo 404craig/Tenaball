@@ -1,0 +1,89 @@
+{
+ "pick": "b01-sco",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Scotland's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Scotland in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Kenny Dalglish",
+   "val": "30 goals"
+  },
+  {
+   "label": "2",
+   "name": "Denis Law",
+   "val": "30 goals"
+  },
+  {
+   "label": "3",
+   "name": "Hughie Gallacher",
+   "val": "24 goals"
+  },
+  {
+   "label": "4",
+   "name": "Lawrie Reilly",
+   "val": "22 goals"
+  },
+  {
+   "label": "5",
+   "name": "John McGinn",
+   "val": "21 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ally McCoist",
+   "val": "19 goals"
+  },
+  {
+   "label": "7",
+   "name": "Kenny Miller",
+   "val": "18 goals"
+  },
+  {
+   "label": "8",
+   "name": "Scott McTominay",
+   "val": "15 goals"
+  },
+  {
+   "label": "9",
+   "name": "Robert Hamilton",
+   "val": "14 or 15 goals",
+   "pool": "sco-g9",
+   "alts": [
+    "Robert Hamilton",
+    "James McFadden",
+    "Mo Johnston"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Robert Hamilton",
+   "val": "14 or 15 goals",
+   "pool": "sco-g9",
+   "alts": [
+    "Robert Hamilton",
+    "James McFadden",
+    "Mo Johnston"
+   ]
+  }
+ ],
+ "notes": {
+  "Robert Hamilton": "The sources differ by a goal for Robert Hamilton (15 or 14), James McFadden (15, 14 or 13) and Mo Johnston (14), so any of the three fills the last two places.",
+  "James McFadden": "The sources differ by a goal for McFadden (15 on Wikipedia and the SFA's count, 14 on Transfermarkt, 13 on RSSSF), so he shares the last two places with Robert Hamilton and Mo Johnston.",
+  "Mo Johnston": "Mo Johnston has 14 and shares the last two places with Robert Hamilton and James McFadden, as the sources differ on their totals.",
+  "Che Adams": "Che Adams is just outside with 13.",
+  "Bob McColl": "Bob McColl has 13, just outside.",
+  "Andy Wilson": "Andy Wilson has 13, just outside.",
+  "John McGinn": "John McGinn had 21 at the end of the 2026 World Cup; goals since then don't count here.",
+  "Hughie Gallacher": "Hughie Gallacher has 24 on Wikipedia and the SFA's count, 23 on RSSSF; 3rd either way."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Scotland_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/scot-recintlp.html",
+  "https://www.transfermarkt.com/schottland/rekordspieler/verein/3380/sort/tore.desc"
+ ],
+ "checks": "Wikipedia's records page as it stood on 1 July 2026 (updated after Scotland's last World Cup match, Brazil v Scotland on 24 June 2026; Scotland played no more games before the cut-off), RSSSF (last match included 24 June 2026) and Transfermarkt's match data agree on the top eight apart from Gallacher (24 or 23, 3rd either way). They differ by a goal on Robert Hamilton, James McFadden and Mo Johnston (Wikipedia 15, 15, 14; RSSSF 14, 13, 14; Transfermarkt 15, 14, 14), so places 9 and 10 are a pool of those three."
+}

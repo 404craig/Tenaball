@@ -1,0 +1,87 @@
+{
+ "pick": "b03-swe",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Sweden's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Sweden in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Zlatan Ibrahimovic",
+   "val": "62 goals"
+  },
+  {
+   "label": "2",
+   "name": "Marcus Allback",
+   "val": "30 goals"
+  },
+  {
+   "label": "3",
+   "name": "Henrik Larsson",
+   "val": "27 goals"
+  },
+  {
+   "label": "4",
+   "name": "Marcus Berg",
+   "val": "24 goals"
+  },
+  {
+   "label": "5",
+   "name": "Anders Svensson",
+   "val": "21 goals"
+  },
+  {
+   "label": "6",
+   "name": "Emil Forsberg",
+   "val": "21 goals"
+  },
+  {
+   "label": "7",
+   "name": "Viktor Gyokeres",
+   "val": "21 goals"
+  },
+  {
+   "label": "8",
+   "name": "Johan Elmander",
+   "val": "20 goals"
+  },
+  {
+   "label": "9",
+   "name": "Alexander Isak",
+   "val": "18 goals"
+  },
+  {
+   "label": "10",
+   "name": "Kim Kallstrom",
+   "val": "16 goals"
+  }
+ ],
+ "notes": {
+  "Viktor Claesson": "Viktor Claesson is 11th with 15, just outside.",
+  "Ola Toivonen": "Ola Toivonen is joint 12th with 14.",
+  "Robin Quaison": "Robin Quaison is joint 12th with 14.",
+  "Freddie Ljungberg": "Freddie Ljungberg has 12 since 2000 (14 in all).",
+  "Seb Larsson": "Seb Larsson has 10.",
+  "Tobias Hysen": "Tobias Hysen has 10.",
+  "Andreas Granqvist": "Andreas Granqvist has 9.",
+  "Christian Wilhelmsson": "Christian Wilhelmsson has 9.",
+  "Olof Mellberg": "Olof Mellberg has 8.",
+  "Anthony Elanga": "Anthony Elanga had 8 at 19 July 2026.",
+  "Henrik Larsson": "Henrik Larsson has 27 since 2000 (37 in all).",
+  "Kennet Andersson": "Kennet Andersson's 31 goals were almost all before 2000.",
+  "Martin Dahlin": "Martin Dahlin's 29 goals were all before 2000.",
+  "Viktor Gyokeres": "Viktor Gyokeres had 21 at 19 July 2026; his goals since then don't count."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/179/2010/Sweden.html (one page per year, 2000 to 2026)",
+  "https://en.wikipedia.org/wiki/List_of_Sweden_international_footballers",
+  "https://www.transfermarkt.com/schweden/rekordspieler/verein/3557/sort/tore.desc",
+  "https://en.wikipedia.org/wiki/Henrik_Larsson",
+  "https://en.wikipedia.org/wiki/Marcus_Allb%C3%A4ck",
+  "https://en.wikipedia.org/wiki/Anders_Svensson_(footballer,_born_1976)",
+  "Transfermarkt match reports for Sweden's eight games from March to June 2026 and its four Nations League games from September and October 2026 (https://www.transfermarkt.com/schweden/spielplan/verein/3557/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Sweden pages for 2000 to 2026, FIFA and non-FIFA games together: the Swedish FA, Wikipedia and Transfermarkt count Sweden's January tour games, which national-football-teams.com marks non-FIFA (for example Allback 30 and Berg 24 with them, 29 and 23 without). Career totals in Wikipedia's list of Sweden internationals and on Transfermarkt agree for everyone who started in 2000 or later (Ibrahimovic 62, Berg 24, Forsberg 21, Kallstrom 16, Claesson 15, Toivonen 14, Quaison 14). Henrik Larsson (27), Allback (30) and Svensson (21), who started before 2000, match the year tables in their Wikipedia articles. Elmander: Transfermarkt has 18, but Wikipedia (list and his article's year table) and national-football-teams.com have 20; 20 is used. Sweden's 2026 games up to the World Cup final (eight, the last the round of 32 against France on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player (Gyokeres 7 games and 6 goals, Isak 6 and 2, Lindelof 7). The September and October 2026 Nations League games are taken off the current totals: Gyokeres scored in all four (25 now, 21 at 19 July), Isak once (19 now, 18), and Lindelof played all four (84 now, 80). Svensson, Forsberg and Gyokeres share 5th to 7th on 21, all on the board."
+}

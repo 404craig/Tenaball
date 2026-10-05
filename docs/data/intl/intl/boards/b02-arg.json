@@ -1,0 +1,77 @@
+{
+ "pick": "b02-arg",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Argentina's most capped players",
+ "brief": "Name the ten players with the most caps for Argentina in official full internationals, to the 2026 World Cup final.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "207 caps"
+  },
+  {
+   "label": "2",
+   "name": "Javier Mascherano",
+   "val": "147 caps"
+  },
+  {
+   "label": "3",
+   "name": "Angel Di Maria",
+   "val": "145 caps"
+  },
+  {
+   "label": "4",
+   "name": "Javier Zanetti",
+   "val": "145 caps"
+  },
+  {
+   "label": "5",
+   "name": "Nicolas Otamendi",
+   "val": "139 caps"
+  },
+  {
+   "label": "6",
+   "name": "Roberto Ayala",
+   "val": "115 caps"
+  },
+  {
+   "label": "7",
+   "name": "Diego Simeone",
+   "val": "104 caps"
+  },
+  {
+   "label": "8",
+   "name": "Sergio Aguero",
+   "val": "101 caps"
+  },
+  {
+   "label": "9",
+   "name": "Oscar Ruggeri",
+   "val": "97 caps"
+  },
+  {
+   "label": "10",
+   "name": "Sergio Romero",
+   "val": "96 caps"
+  }
+ ],
+ "notes": {
+  "Rodrigo De Paul": "Rodrigo De Paul is 11th with 94 at the 2026 final.",
+  "Diego Maradona": "Diego Maradona is 12th with 91.",
+  "Ariel Ortega": "Ariel Ortega has 87 or 88, depending on the source.",
+  "Lautaro Martinez": "Lautaro Martinez had 84 by the 2026 final.",
+  "Leandro Paredes": "Leandro Paredes had 84 by the 2026 final.",
+  "Gabriel Batistuta": "Gabriel Batistuta has 78."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/arg-recintlp.html",
+  "https://en.wikipedia.org/wiki/Argentina_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/argentinien/rekordspieler/verein/3437",
+  "https://www.transfermarkt.com/argentinien/spielplan/verein/3437/saison_id/<year>",
+  "https://www.national-football-teams.com/country/9/<year>/Argentina.html"
+ ],
+ "checks": "Wikipedia's records table (3 October 2026) and RSSSF (to 14 November 2025) agree on Mascherano 147, Di Maria 145, Zanetti 145, Ayala 115, Aguero 101, Ruggeri 97 and Romero 96. Messi 207 and Otamendi 139 at 19 July 2026: RSSSF's 196 and 129 plus 11 and 10 in 2026 (Transfermarkt match reports, National Football Teams), and neither played after the final, so Wikipedia's October figures are the same. Simeone: Wikipedia's table and National Football Teams give 104, RSSSF 106 (it adds two 1995 and 1996 games against Slovak and Polish league selections) and Transfermarkt 105; 104 used, and he is 7th on any count."
+}

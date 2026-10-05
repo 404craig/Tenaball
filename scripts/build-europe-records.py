@@ -13,7 +13,7 @@ import csv, glob, json, os, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 E = "docs/data/europe/"
-CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro"}
+CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro", "intl": "intl"}
 LEAGUE = {"laliga": "La Liga", "bund": "Bundesliga", "seriea": "Serie A", "ligue1": "Ligue 1"}
 h = open("index.html", encoding="utf-8").read()
 problems = []
@@ -32,6 +32,7 @@ CLUBS["ucl"] = CLUBS["uel"] = set(open("docs/data/cups/clubs_all.txt").read().sp
 
 NATIONS = set(open("docs/data/intl/nations.txt").read().split("\n"))
 Q, OPEN = [], []
+CANON = {"Ronaldo": "Ronaldo Nazario"}  # the game's own spelling, where a board gives the short name
 def family(pick, title, kind, typ="person"):
     t = title.lower()
     if kind == "open": return "open"
@@ -39,7 +40,7 @@ def family(pick, title, kind, typ="person"):
     if re.search(r"signing|sale|transfer", t): return "fee"
     if "manager" in t: return "mgr"
     if "assist" in t: return "assists"
-    if "appearance" in t or "most-used" in t or "games" in t: return "apps"
+    if "appearance" in t or "most-used" in t or "games" in t or re.search(r"\bcap", t): return "apps"
     if re.search(r"scorer|goals|hat-trick|seasons \(each|biggest .* seasons|golden shoe", t): return "goals"
     if re.search(r"cup|pokal|coppa|copa|coupe|player of the year|award", t): return "aw"
     if re.search(r"ground|title|seasons", t): return "rec"
@@ -83,7 +84,7 @@ for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/
     if not re.search(r"(19|20)\d\d", b["period"]) : problems.append(f"{where}: period doesn't name its years: {b['period']}")
     kind, typ, lv = b.get("kind"), b.get("type", "person"), int(b.get("level", 1))
     id = f"{CAT[lg]}-{family(pick, b['title'], kind, typ)}-{pick.replace('/', '-')}"
-    fix = (lambda n: plain(n)) if typ == "person" else (lambda n: n)
+    fix = (lambda n: CANON.get(plain(n), plain(n))) if typ == "person" else (lambda n: n)
     if kind == "open":
         names = list(dict.fromkeys(fix(n) for n in b.get("names", [])))
         ex = [fix(n) for n in b.get("examples", []) if fix(n) in names]
@@ -127,7 +128,7 @@ for q in Q:
     if k == "it17": q["title"] = "Roma and Napoli top scorers since 2000"
 
 # ---------- levels: each league gets some easy boards (only La Liga had any), from its best-known names ----------
-EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b", "el01-2017", "el03-2022"}
+EASY = {"de07", "de15", "de12", "de22", "de17", "dec0b", "it07", "it14", "it15", "it16", "it18", "itc1b", "fr07", "fr15", "fr17", "fr21", "frc0b", "el01-2017", "el03-2022", "b03-fra", "b03-esp", "b03-arg", "b03-por"}
 for q in Q + OPEN:
     if q["id"].rsplit("-", 1)[-1] in EASY or any(q["id"].endswith("-" + k) for k in EASY): q["level"] = 0; q["hard"] = False
 
@@ -141,6 +142,10 @@ for f in glob.glob(E + "*/players.csv"):
     for r in csv.DictReader(open(f)):
         k = r["tm_player_id"]; g[k] += int(r["goals"] or 0); a[k] += int(r["apps"] or 0); nm[k] = plain(r["player"])
     people |= {nm[k] for k in nm if g[k] >= 30 or a[k] >= 200}
+
+# Internationals (Craig, 6 October 2026): each nation's top 30 scorers and caps, all time and since 2000, so near misses are recognised
+for f in glob.glob("docs/data/intl/intl/people_*.txt"):
+    people |= {CANON.get(plain(n), plain(n)) for n in open(f).read().split("\n") if n.strip()}
 
 ids = [q["id"] for q in Q + OPEN]
 dup = [i for i, k in Counter(ids).items() if k > 1]

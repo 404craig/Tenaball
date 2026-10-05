@@ -1,0 +1,78 @@
+{
+ "pick": "b03-ger",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Germany's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Germany in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Miroslav Klose",
+   "val": "71 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lukas Podolski",
+   "val": "49 goals"
+  },
+  {
+   "label": "3",
+   "name": "Thomas Muller",
+   "val": "45 goals"
+  },
+  {
+   "label": "4",
+   "name": "Michael Ballack",
+   "val": "42 goals"
+  },
+  {
+   "label": "5",
+   "name": "Mario Gomez",
+   "val": "31 goals"
+  },
+  {
+   "label": "6",
+   "name": "Serge Gnabry",
+   "val": "26 goals"
+  },
+  {
+   "label": "7",
+   "name": "Kai Havertz",
+   "val": "25 goals"
+  },
+  {
+   "label": "8",
+   "name": "Bastian Schweinsteiger",
+   "val": "24 goals"
+  },
+  {
+   "label": "9",
+   "name": "Timo Werner",
+   "val": "24 goals"
+  },
+  {
+   "label": "10",
+   "name": "Mesut Ozil",
+   "val": "23 goals"
+  }
+ ],
+ "notes": {
+  "Andre Schurrle": "Andre Schurrle is 11th with 22 goals, just outside.",
+  "Ilkay Gundogan": "Ilkay Gundogan is joint 12th with 19 goals.",
+  "Kevin Kuranyi": "Kevin Kuranyi is joint 12th with 19 goals.",
+  "Leroy Sane": "Leroy Sane is 14th with 18 goals.",
+  "Oliver Bierhoff": "Oliver Bierhoff scored most of his 37 goals before 2000.",
+  "Gerd Muller": "Gerd Muller played for West Germany from 1966 to 1974.",
+  "Rudi Voller": "Rudi Voller last played for Germany in 1994.",
+  "Jurgen Klinsmann": "Jurgen Klinsmann last played for Germany in 1998."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/deutschland/rekordspieler/verein/3262",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/71/2026/Germany.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/duit-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Ballack's first cap was in April 1999 but his goals all came from 2000 on."
+}

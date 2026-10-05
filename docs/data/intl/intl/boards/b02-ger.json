@@ -1,0 +1,74 @@
+{
+ "pick": "b02-ger",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Germany's most capped players",
+ "brief": "Name the ten players with the most caps for Germany in full internationals, from Germany's first match to the 2026 World Cup final. West Germany counts as Germany (the DFB's own count).",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lothar Matthaus",
+   "val": "150 caps"
+  },
+  {
+   "label": "2",
+   "name": "Miroslav Klose",
+   "val": "137 caps"
+  },
+  {
+   "label": "3",
+   "name": "Thomas Muller",
+   "val": "131 caps"
+  },
+  {
+   "label": "4",
+   "name": "Lukas Podolski",
+   "val": "130 caps"
+  },
+  {
+   "label": "5",
+   "name": "Manuel Neuer",
+   "val": "128 caps"
+  },
+  {
+   "label": "6",
+   "name": "Bastian Schweinsteiger",
+   "val": "121 caps"
+  },
+  {
+   "label": "7",
+   "name": "Joshua Kimmich",
+   "val": "114 caps"
+  },
+  {
+   "label": "8",
+   "name": "Toni Kroos",
+   "val": "114 caps"
+  },
+  {
+   "label": "9",
+   "name": "Philipp Lahm",
+   "val": "113 caps"
+  },
+  {
+   "label": "10",
+   "name": "Jurgen Klinsmann",
+   "val": "108 caps"
+  }
+ ],
+ "notes": {
+  "Jurgen Kohler": "Jurgen Kohler is 11th with 105 caps, just outside.",
+  "Per Mertesacker": "Per Mertesacker is 12th with 104 caps.",
+  "Franz Beckenbauer": "Franz Beckenbauer is 13th with 103 caps.",
+  "Thomas Hassler": "Thomas Hassler is 14th with 101 caps (the DFB count; Transfermarkt has 100)."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/deutschland/rekordspieler/verein/3262",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/71/2026/Germany.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/duit-recintlp.html"
+ ],
+ "checks": "Matthaus, Klose, Muller, Podolski, Schweinsteiger, Kroos, Lahm and Mertesacker: Transfermarkt, RSSSF and national-football-teams.com agree. Neuer (128, four World Cup 2026 games after his 124 at the end of 2025) and Kimmich (114 to 19 July 2026; 116 after his two Nations League games in September 2026, not counted) were counted match by match on Transfermarkt and national-football-teams.com. Klinsmann 108 and Kohler 105 are the DFB's figures, given by RSSSF and national-football-teams.com; Transfermarkt has 107 and 104 because it leaves out the friendly in South Africa on 15 December 1995, which the DFB counts. Either way Klinsmann is 10th and Kohler 11th."
+}

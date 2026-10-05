@@ -1,0 +1,74 @@
+{
+ "pick": "b02-esp",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Spain's most capped players",
+ "brief": "Name the ten players with the most caps for Spain in full internationals, from Spain's first match to the 2026 World Cup final.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Sergio Ramos",
+   "val": "180 caps"
+  },
+  {
+   "label": "2",
+   "name": "Iker Casillas",
+   "val": "167 caps"
+  },
+  {
+   "label": "3",
+   "name": "Sergio Busquets",
+   "val": "143 caps"
+  },
+  {
+   "label": "4",
+   "name": "Xavi",
+   "val": "133 caps"
+  },
+  {
+   "label": "5",
+   "name": "Andres Iniesta",
+   "val": "131 caps"
+  },
+  {
+   "label": "6",
+   "name": "Andoni Zubizarreta",
+   "val": "126 caps"
+  },
+  {
+   "label": "7",
+   "name": "David Silva",
+   "val": "125 caps"
+  },
+  {
+   "label": "8",
+   "name": "Xabi Alonso",
+   "val": "114 caps"
+  },
+  {
+   "label": "9",
+   "name": "Cesc Fabregas",
+   "val": "110 caps"
+  },
+  {
+   "label": "10",
+   "name": "Fernando Torres",
+   "val": "110 caps"
+  }
+ ],
+ "notes": {
+  "Gerard Pique": "Gerard Pique is joint 11th with 102 caps, just outside.",
+  "Raul": "Raul is joint 11th with 102 caps, just outside.",
+  "Carles Puyol": "Carles Puyol is 13th with 100 caps.",
+  "David Villa": "David Villa is 14th with 98 caps."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/spanien/rekordspieler/verein/3375",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/174/2026/Spain.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/span-recintlp.html"
+ ],
+ "checks": "Transfermarkt's Spain record list and RSSSF agree on every total in the ten and on 11th to 14th; none of these players has played since 2022, and national-football-teams.com agrees on every one too."
+}

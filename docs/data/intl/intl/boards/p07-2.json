@@ -1,0 +1,87 @@
+{
+ "pick": "p07-2",
+ "kind": "labelled",
+ "type": "person",
+ "level": 2,
+ "title": "More nations' most capped players",
+ "brief": "Name each nation's most capped player in full internationals.",
+ "period": "All full internationals to 19 July 2026.",
+ "rows": [
+  {
+   "label": "Scotland",
+   "name": "Kenny Dalglish",
+   "val": "102 caps"
+  },
+  {
+   "label": "Wales",
+   "name": "Gareth Bale",
+   "val": "111 caps"
+  },
+  {
+   "label": "Northern Ireland",
+   "name": "Steven Davis",
+   "val": "140 caps"
+  },
+  {
+   "label": "Republic of Ireland",
+   "name": "Robbie Keane",
+   "val": "146 caps"
+  },
+  {
+   "label": "Croatia",
+   "name": "Luka Modric",
+   "val": "202 caps"
+  },
+  {
+   "label": "Uruguay",
+   "name": "Diego Godin",
+   "val": "161 caps"
+  },
+  {
+   "label": "Denmark",
+   "name": "Christian Eriksen",
+   "val": "151 caps"
+  },
+  {
+   "label": "Sweden",
+   "name": "Anders Svensson",
+   "val": "148 caps"
+  },
+  {
+   "label": "Poland",
+   "name": "Robert Lewandowski",
+   "val": "167 caps"
+  },
+  {
+   "label": "USA",
+   "name": "Cobi Jones",
+   "val": "164 caps"
+  }
+ ],
+ "notes": {
+  "Andrew Robertson": "Andy Robertson had 97 caps on 19 July 2026, behind Dalglish's 102.",
+  "Andy Robertson": "Andy Robertson had 97 caps on 19 July 2026, behind Dalglish's 102.",
+  "Jim Leighton": "Jim Leighton is behind Dalglish for Scotland.",
+  "Chris Gunter": "Chris Gunter (109) is second for Wales.",
+  "Wayne Hennessey": "Wayne Hennessey (109) is second for Wales.",
+  "Pat Jennings": "Pat Jennings (119) is second for Northern Ireland.",
+  "Shay Given": "Shay Given (134) is second for Ireland.",
+  "Ivan Perisic": "Ivan Perisic (158) is second for Croatia.",
+  "Luis Suarez": "Luis Suarez (143) is behind Godin for Uruguay.",
+  "Fernando Muslera": "Fernando Muslera (137) is behind Godin.",
+  "Peter Schmeichel": "Peter Schmeichel is behind Eriksen for Denmark.",
+  "Simon Kjaer": "Simon Kjaer (132) is second for Denmark.",
+  "Thomas Ravelli": "Thomas Ravelli (143) is second for Sweden.",
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic (122) is behind Svensson.",
+  "Landon Donovan": "Landon Donovan is second for the USA.",
+  "Michael Bradley": "Michael Bradley is third for the USA.",
+  "Anders Svensson": "Svensson has 148 in the Swedish FA's count (146 in FIFA's)."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<Nation>_national_football_team (infobox, revisions of August 2026)",
+  "https://www.transfermarkt.com/<nation>/rekordspieler/verein/<id>/sort/einsaetze.desc",
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+  "https://www.rsssf.org/miscellaneous/century.html"
+ ],
+ "checks": "Each record holder agrees between the nation's Wikipedia infobox and Transfermarkt's record caps page. Sweden: 148 in the Wikipedia infobox and RSSSF, 147 on Transfermarkt, 146 in Wikipedia's 100-cap list; Svensson is the record holder on every count (Ravelli 143). USA: Cobi Jones 164 in Wikipedia and RSSSF (Transfermarkt 163), ahead of Donovan's 157. Modric and Lewandowski counted to 19 July 2026 (202 and 167); they played again later. Scotland: Robertson reached 100 only after 19 July 2026."
+}

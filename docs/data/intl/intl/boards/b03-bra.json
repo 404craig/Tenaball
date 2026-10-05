@@ -1,0 +1,83 @@
+{
+ "pick": "b03-bra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Brazil's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Brazil in full internationals since 1 January 2000, to the 2026 World Cup final. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Neymar",
+   "val": "80 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kaka",
+   "val": "29 goals"
+  },
+  {
+   "label": "3",
+   "name": "Luis Fabiano",
+   "val": "28 goals"
+  },
+  {
+   "label": "4",
+   "name": "Robinho",
+   "val": "28 goals"
+  },
+  {
+   "label": "5",
+   "name": "Adriano",
+   "val": "27 goals"
+  },
+  {
+   "label": "6",
+   "name": "Ronaldinho",
+   "val": "26 goals"
+  },
+  {
+   "label": "7",
+   "name": "Ronaldo",
+   "val": "26 goals"
+  },
+  {
+   "label": "8",
+   "name": "Philippe Coutinho",
+   "val": "21 goals"
+  },
+  {
+   "label": "9",
+   "name": "Richarlison",
+   "val": "20 goals"
+  },
+  {
+   "label": "10",
+   "name": "Gabriel Jesus",
+   "val": "18 or 19 goals",
+   "pool": "p10",
+   "alts": [
+    "Gabriel Jesus",
+    "Fred"
+   ]
+  }
+ ],
+ "notes": {
+  "Rivaldo": "Rivaldo scored 17 from 2000 on (35 in all).",
+  "Roberto Firmino": "Roberto Firmino is just outside with 17.",
+  "Paulinho": "Paulinho scored 13.",
+  "Lucas Paqueta": "Lucas Paqueta scored 13.",
+  "Vinicius Junior": "Vinicius Junior had 13 by the 2026 final.",
+  "Romario": "Romario scored only 11 of his 55 from 2000 on.",
+  "Pele": "Pele played before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/brasilien/spielplan/verein/3439/saison_id/<year>",
+  "https://www.transfermarkt.com/spielbericht/index/spielbericht/<id>",
+  "https://www.national-football-teams.com/country/28/<year>/Brazil.html",
+  "https://www.rsssf.org/miscellaneous/braz-recintlp.html",
+  "https://en.wikipedia.org/wiki/Gabriel_Jesus"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. Straddlers checked against their Wikipedia caps-by-year tables: Ronaldinho 26 (7 in 1999), Ronaldo 26, Rivaldo 17. Philippe Coutinho: Transfermarkt, National Football Teams and Wikipedia all give 21 (RSSSF 20); 21 used. Gabriel Jesus: Transfermarkt and Wikipedia give 19, RSSSF and National Football Teams 18 (they differ on one 2016 qualifier goal), so 10th is a pool with Fred on 18 (Fred's 18 includes two against the UAE in 2005, a friendly National Football Teams lists as non-FIFA because of eight substitutions; RSSSF, Wikipedia and Transfermarkt count it)."
+}

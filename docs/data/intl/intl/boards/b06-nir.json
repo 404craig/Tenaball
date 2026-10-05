@@ -1,0 +1,72 @@
+{
+ "pick": "b06-nir",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Northern Ireland managers in order",
+ "brief": "Name Northern Ireland's ten managers from Danny Blanchflower (1976) to Michael O'Neill's second spell, in order. Each place is labelled with the year he took charge; Michael O'Neill had two spells and fills two places.",
+ "period": "Managers, October 1976 to July 2026",
+ "rows": [
+  {
+   "label": "1976",
+   "name": "Danny Blanchflower",
+   "val": "1976 to 1979"
+  },
+  {
+   "label": "1980",
+   "name": "Billy Bingham",
+   "val": "1980 to 1993"
+  },
+  {
+   "label": "1994",
+   "name": "Bryan Hamilton",
+   "val": "1994 to 1997"
+  },
+  {
+   "label": "1998",
+   "name": "Lawrie McMenemy",
+   "val": "1998 to 1999"
+  },
+  {
+   "label": "2000",
+   "name": "Sammy McIlroy",
+   "val": "2000 to 2003"
+  },
+  {
+   "label": "2004",
+   "name": "Lawrie Sanchez",
+   "val": "2004 to 2007"
+  },
+  {
+   "label": "2007",
+   "name": "Nigel Worthington",
+   "val": "2007 to 2011"
+  },
+  {
+   "label": "2011",
+   "name": "Michael O'Neill",
+   "val": "2011 to 2020"
+  },
+  {
+   "label": "2020",
+   "name": "Ian Baraclough",
+   "val": "2020 to 2022"
+  },
+  {
+   "label": "2022",
+   "name": "Michael O'Neill",
+   "val": "2022 on"
+  }
+ ],
+ "notes": {
+  "Dave Clements": "Dave Clements (1975 to 1976) came just before Blanchflower.",
+  "Terry Neill": "Terry Neill managed from 1971 to 1974.",
+  "Billy Bingham": "Billy Bingham also managed from 1967 to 1971, before this period.",
+  "Michael O'Neill": "Michael O'Neill was appointed in December 2011 (first match February 2012) and returned in December 2022."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Northern_Ireland_national_football_team#Manager_history",
+  "https://www.transfermarkt.com/nordirland/mitarbeiterhistorie/verein/5674"
+ ],
+ "checks": "Wikipedia's manager history (updated to 8 June 2026) and Transfermarkt's staff history list the same managers in the same order with no caretakers in this period. Labels are the year each took charge (Transfermarkt's start dates): O'Neill's first spell is labelled 2011, when he was appointed, though his first match was in February 2012. O'Neill was still in post in July 2026."
+}

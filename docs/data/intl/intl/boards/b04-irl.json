@@ -1,0 +1,83 @@
+{
+ "pick": "b04-irl",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Ireland's most caps since 2000",
+ "brief": "Name the ten players with the most caps for the Republic of Ireland in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robbie Keane",
+   "val": "133 caps"
+  },
+  {
+   "label": "2",
+   "name": "John O'Shea",
+   "val": "118 caps"
+  },
+  {
+   "label": "3",
+   "name": "Shay Given",
+   "val": "111 caps"
+  },
+  {
+   "label": "4",
+   "name": "James McClean",
+   "val": "103 caps"
+  },
+  {
+   "label": "5",
+   "name": "Kevin Kilbane",
+   "val": "100 caps"
+  },
+  {
+   "label": "6",
+   "name": "Aiden McGeady",
+   "val": "93 caps"
+  },
+  {
+   "label": "7",
+   "name": "Glenn Whelan",
+   "val": "91 caps"
+  },
+  {
+   "label": "8",
+   "name": "Shane Long",
+   "val": "88 caps"
+  },
+  {
+   "label": "9",
+   "name": "Damien Duff",
+   "val": "87 caps"
+  },
+  {
+   "label": "10",
+   "name": "Seamus Coleman",
+   "val": "81 caps"
+  }
+ ],
+ "notes": {
+  "Richard Dunne": "Richard Dunne is 11th with 80, just outside.",
+  "Jeff Hendrick": "Jeff Hendrick is 12th with 79.",
+  "Robbie Brady": "Robbie Brady has 73.",
+  "Kevin Doyle": "Kevin Doyle has 63.",
+  "Steve Staunton": "Steve Staunton won 102 caps, only 20 of them from 2000.",
+  "Niall Quinn": "Niall Quinn won 91 caps, only 17 from 2000.",
+  "Robbie Keane": "Robbie Keane won 146 caps; 13 came in 1998 and 1999.",
+  "Shay Given": "Shay Given won 134 caps; 23 came before 2000.",
+  "Kevin Kilbane": "Kevin Kilbane won 110 caps; 10 came before 2000.",
+  "Damien Duff": "Damien Duff won 100 caps; 13 came before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://www.rsssf.org/miscellaneous/ier-recintlp.html",
+  "https://en.wikipedia.org/wiki/List_of_Republic_of_Ireland_international_footballers",
+  "https://en.wikipedia.org/wiki/Robbie_Keane",
+  "https://en.wikipedia.org/wiki/Shay_Given",
+  "https://en.wikipedia.org/wiki/Kevin_Kilbane",
+  "https://en.wikipedia.org/wiki/Damien_Duff"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. The four who began before 2000 match the by-year tables in their Wikipedia articles (Keane 133, Given 111, Kilbane 100, Duff 87). The rest began after 2000 and agree with RSSSF and Wikipedia's list at the cut-off (Coleman 81, Dunne 80, Hendrick 79), except McGeady, 93 there and 92 on Transfermarkt (93 used; 6th either way)."
+}

@@ -1,0 +1,84 @@
+{
+ "pick": "b02-wal",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Wales's most capped players",
+ "brief": "Name the ten players with the most caps for Wales in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gareth Bale",
+   "val": "111 caps"
+  },
+  {
+   "label": "2",
+   "name": "Chris Gunter",
+   "val": "109 caps"
+  },
+  {
+   "label": "3",
+   "name": "Wayne Hennessey",
+   "val": "109 caps"
+  },
+  {
+   "label": "4",
+   "name": "Ben Davies",
+   "val": "100 caps"
+  },
+  {
+   "label": "5",
+   "name": "Neville Southall",
+   "val": "92 caps"
+  },
+  {
+   "label": "6",
+   "name": "Aaron Ramsey",
+   "val": "86 caps"
+  },
+  {
+   "label": "7",
+   "name": "Ashley Williams",
+   "val": "86 caps"
+  },
+  {
+   "label": "8",
+   "name": "Gary Speed",
+   "val": "85 caps"
+  },
+  {
+   "label": "9",
+   "name": "Craig Bellamy",
+   "val": "78 caps"
+  },
+  {
+   "label": "10",
+   "name": "Joe Ledley",
+   "val": "77 caps",
+   "pool": "wal-c10",
+   "alts": [
+    "Joe Ledley",
+    "Joe Allen"
+   ]
+  }
+ ],
+ "notes": {
+  "Joe Ledley": "Joe Ledley and Joe Allen are joint 10th with 77; either fills it.",
+  "Joe Allen": "Joe Allen and Joe Ledley are joint 10th with 77; either fills it.",
+  "Dean Saunders": "Dean Saunders is 12th with 75, just outside.",
+  "Ian Rush": "Ian Rush has 73.",
+  "Peter Nicholas": "Peter Nicholas has 73.",
+  "Mark Hughes": "Mark Hughes has 72.",
+  "Joey Jones": "Joey Jones has 72.",
+  "Harry Wilson": "Harry Wilson had 69 at the end of the 2026 World Cup.",
+  "Ben Davies": "Ben Davies had 100 caps at the end of the 2026 World Cup; caps since then don't count here."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Wales_national_football_team_records_and_statistics",
+  "https://en.wikipedia.org/wiki/List_of_Wales_international_footballers",
+  "https://www.rsssf.org/miscellaneous/wal-recintlp.html",
+  "https://www.transfermarkt.com/wales/rekordspieler/verein/3864/sort/einsaetze.desc"
+ ],
+ "checks": "Wikipedia's records page and list of Wales internationals as they stood in June 2026 (updated to 6 June 2026, Wales's last match before the cut-off), RSSSF and Transfermarkt's match data (Davies 100 at the cut-off, 104 now) agree. Ashley Williams is 86 on Wikipedia and RSSSF, 87 on Transfermarkt; 86 is used (6th or 7th either way). Ledley and Allen share 10th on 77."
+}

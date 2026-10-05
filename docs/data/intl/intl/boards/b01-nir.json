@@ -1,0 +1,79 @@
+{
+ "pick": "b01-nir",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Northern Ireland's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Northern Ireland (and Ireland before 1921) in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "David Healy",
+   "val": "36 goals"
+  },
+  {
+   "label": "2",
+   "name": "Kyle Lafferty",
+   "val": "20 goals"
+  },
+  {
+   "label": "3",
+   "name": "Colin Clarke",
+   "val": "13 goals"
+  },
+  {
+   "label": "4",
+   "name": "Steven Davis",
+   "val": "13 goals"
+  },
+  {
+   "label": "5",
+   "name": "Billy Gillespie",
+   "val": "13 goals"
+  },
+  {
+   "label": "6",
+   "name": "Gerry Armstrong",
+   "val": "12 goals"
+  },
+  {
+   "label": "7",
+   "name": "Joe Bambrick",
+   "val": "12 goals"
+  },
+  {
+   "label": "8",
+   "name": "Jimmy Quinn",
+   "val": "12 goals"
+  },
+  {
+   "label": "9",
+   "name": "Iain Dowie",
+   "val": "12 goals"
+  },
+  {
+   "label": "10",
+   "name": "Josh Magennis",
+   "val": "12 goals"
+  }
+ ],
+ "notes": {
+  "Olphie Stanfield": "Olphie Stanfield is 11th with 11, just outside.",
+  "Isaac Price": "Isaac Price had 10 at the end of the 2026 World Cup.",
+  "Jimmy McIlroy": "Jimmy McIlroy has 10.",
+  "Peter McParland": "Peter McParland has 10.",
+  "Johnny Crossan": "Johnny Crossan has 10.",
+  "Gareth McAuley": "Gareth McAuley has 9.",
+  "George Best": "George Best has 9.",
+  "Norman Whiteside": "Norman Whiteside has 9.",
+  "Billy Bingham": "Billy Bingham has 9 or 10, depending on the source.",
+  "Billy Gillespie": "Billy Gillespie has 13 on Wikipedia and the IFA's count, 12 on RSSSF; he is in the ten either way."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Northern_Ireland_national_football_team_records_and_statistics",
+  "https://www.rsssf.org/miscellaneous/nil-recintlp.html",
+  "https://www.transfermarkt.com/nordirland/rekordspieler/verein/5674/sort/tore.desc"
+ ],
+ "checks": "Wikipedia's records page as it stood on 12 June 2026 (after Northern Ireland's last match before the cut-off, France on 7/8 June 2026; they were not at the World Cup) and RSSSF (last match included 7 June 2026) give the same ten names: Wikipedia has Gillespie on 13 with Clarke and Davis and five players on 12; RSSSF has Gillespie on 12, so six on 12. Either way the same ten fill the board. Transfermarkt confirms the modern figures (Healy 36, Lafferty 20, Davis 13, Clarke 13, Magennis 12 at the cut-off); its pre-war data is incomplete."
+}

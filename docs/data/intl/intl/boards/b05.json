@@ -1,0 +1,79 @@
+{
+ "pick": "b05",
+ "kind": "labelled",
+ "type": "person",
+ "level": 0,
+ "title": "England managers in order",
+ "brief": "Name England's ten permanent managers from Terry Venables (1994) to Thomas Tuchel, in order. Each place is labelled with the year he took charge. Caretakers (Howard Wilkinson, Peter Taylor, Stuart Pearce, Lee Carsley) don't count.",
+ "period": "Permanent managers, January 1994 to July 2026",
+ "rows": [
+  {
+   "label": "1994",
+   "name": "Terry Venables",
+   "val": "1994 to 1996"
+  },
+  {
+   "label": "1996",
+   "name": "Glenn Hoddle",
+   "val": "1996 to 1999"
+  },
+  {
+   "label": "1999",
+   "name": "Kevin Keegan",
+   "val": "1999 to 2000"
+  },
+  {
+   "label": "2001",
+   "name": "Sven-Goran Eriksson",
+   "val": "2001 to 2006"
+  },
+  {
+   "label": "2006",
+   "name": "Steve McClaren",
+   "val": "2006 to 2007"
+  },
+  {
+   "label": "2008",
+   "name": "Fabio Capello",
+   "val": "2008 to 2012"
+  },
+  {
+   "label": "2012",
+   "name": "Roy Hodgson",
+   "val": "2012 to 2016"
+  },
+  {
+   "label": "2016",
+   "name": "Sam Allardyce",
+   "val": "2016"
+  },
+  {
+   "label": "2016",
+   "name": "Gareth Southgate",
+   "val": "2016 to 2024"
+  },
+  {
+   "label": "2025",
+   "name": "Thomas Tuchel",
+   "val": "2025 on"
+  }
+ ],
+ "notes": {
+  "Graham Taylor": "Graham Taylor (1990 to 1993) came just before Venables.",
+  "Howard Wilkinson": "Howard Wilkinson was caretaker twice (1999 and 2000), so he isn't on the board.",
+  "Peter Taylor": "Peter Taylor was caretaker for one match in November 2000.",
+  "Stuart Pearce": "Stuart Pearce was caretaker for one match in 2012.",
+  "Lee Carsley": "Lee Carsley was interim manager in 2024 before Tuchel.",
+  "Bobby Robson": "Bobby Robson managed England from 1982 to 1990, before this period.",
+  "Sven-Goran Eriksson": "Eriksson was appointed in October 2000 and took charge in January 2001.",
+  "Fabio Capello": "Capello was appointed in December 2007 and took charge in January 2008.",
+  "Thomas Tuchel": "Tuchel was appointed in October 2024 and took charge on 1 January 2025.",
+  "Gareth Southgate": "Southgate was caretaker from September 2016 and made permanent that November."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/England_national_football_team_manager",
+  "http://www.englandfootballonline.com/TeamMgr/MgrChron.html",
+  "https://www.transfermarkt.com/england/mitarbeiterhistorie/verein/3299"
+ ],
+ "checks": "Wikipedia's managers table, England Football Online's chronology and Transfermarkt's staff history list the same permanent managers in the same order. Labels are the year each took up the post (Wikipedia and EFO): Eriksson 2001 and Capello 2008, although Transfermarkt dates their appointments to 2000 and December 2007. Tuchel was still in post at the end of the 2026 World Cup."
+}

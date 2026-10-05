@@ -1,0 +1,85 @@
+{
+ "pick": "b03-ita",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Italy's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Italy in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Daniele De Rossi",
+   "val": "21 goals"
+  },
+  {
+   "label": "2",
+   "name": "Filippo Inzaghi",
+   "val": "19 goals"
+  },
+  {
+   "label": "3",
+   "name": "Alberto Gilardino",
+   "val": "19 goals"
+  },
+  {
+   "label": "4",
+   "name": "Alessandro Del Piero",
+   "val": "17 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ciro Immobile",
+   "val": "17 goals"
+  },
+  {
+   "label": "6",
+   "name": "Luca Toni",
+   "val": "16 goals"
+  },
+  {
+   "label": "7",
+   "name": "Mario Balotelli",
+   "val": "14 goals"
+  },
+  {
+   "label": "8",
+   "name": "Christian Vieri",
+   "val": "13 goals"
+  },
+  {
+   "label": "9",
+   "name": "Andrea Pirlo",
+   "val": "13 goals"
+  },
+  {
+   "label": "10",
+   "name": "Moise Kean",
+   "val": "13 goals"
+  }
+ ],
+ "notes": {
+  "Andrea Belotti": "Andrea Belotti is 11th with 12, just outside.",
+  "Antonio Di Natale": "Antonio Di Natale is joint 12th with 11.",
+  "Giacomo Raspadori": "Giacomo Raspadori is joint 12th with 11.",
+  "Mateo Retegui": "Mateo Retegui is joint 12th with 11.",
+  "Antonio Cassano": "Antonio Cassano has 10.",
+  "Lorenzo Insigne": "Lorenzo Insigne has 10.",
+  "Nicolo Barella": "Nicolo Barella has 10.",
+  "Francesco Totti": "Francesco Totti has 9 since 2000.",
+  "Gigi Riva": "Gigi Riva's 35 goals were all before 2000.",
+  "Roberto Baggio": "Roberto Baggio scored all 27 of his Italy goals before 2000.",
+  "Filippo Inzaghi": "Filippo Inzaghi has 19 since 2000 (25 in all).",
+  "Alessandro Del Piero": "Alessandro Del Piero has 17 since 2000 (27 in all).",
+  "Christian Vieri": "Christian Vieri has 13 since 2000 (23 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/92/2010/Italy.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/ital-recintlp.html",
+  "https://en.wikipedia.org/wiki/Filippo_Inzaghi",
+  "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+  "https://en.wikipedia.org/wiki/Christian_Vieri",
+  "https://en.wikipedia.org/wiki/Andrea_Belotti"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Italy pages for 2000 to 2026 (every player's caps and goals each year, including the few games it marks as non-FIFA, which the FIGC counts). For players who started after 2000, the totals match RSSSF's career totals (to 7 June 2026). For Inzaghi, Del Piero and Vieri, whose careers straddle 2000, the year-by-year tables in their Wikipedia articles give the same 2000 onwards figures (19, 17 and 13). Belotti: national-football-teams.com credits him with 13, but RSSSF and Wikipedia (year table and infobox) both have 12; 12 is used, so he is 11th. Kean's 13 includes his 2 goals in March 2026 (Transfermarkt match reports agree)."
+}

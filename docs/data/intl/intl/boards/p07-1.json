@@ -1,0 +1,81 @@
+{
+ "pick": "p07-1",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Most capped players of the big nations",
+ "brief": "Name each nation's most capped player in full internationals.",
+ "period": "All full internationals to 19 July 2026. Germany includes West Germany.",
+ "rows": [
+  {
+   "label": "England",
+   "name": "Peter Shilton",
+   "val": "125 caps"
+  },
+  {
+   "label": "Brazil",
+   "name": "Cafu",
+   "val": "142 caps"
+  },
+  {
+   "label": "Argentina",
+   "name": "Lionel Messi",
+   "val": "207 caps"
+  },
+  {
+   "label": "France",
+   "name": "Hugo Lloris",
+   "val": "145 caps"
+  },
+  {
+   "label": "Germany",
+   "name": "Lothar Matthaus",
+   "val": "150 caps"
+  },
+  {
+   "label": "Spain",
+   "name": "Sergio Ramos",
+   "val": "180 caps"
+  },
+  {
+   "label": "Italy",
+   "name": "Gianluigi Buffon",
+   "val": "176 caps"
+  },
+  {
+   "label": "Portugal",
+   "name": "Cristiano Ronaldo",
+   "val": "233 caps"
+  },
+  {
+   "label": "Netherlands",
+   "name": "Wesley Sneijder",
+   "val": "134 caps"
+  },
+  {
+   "label": "Belgium",
+   "name": "Jan Vertonghen",
+   "val": "157 caps"
+  }
+ ],
+ "notes": {
+  "Harry Kane": "Harry Kane had 121 caps on 19 July 2026, behind Peter Shilton's 125.",
+  "Wayne Rooney": "Wayne Rooney (120) is behind Shilton.",
+  "Lilian Thuram": "Lilian Thuram (142) is second for France behind Lloris.",
+  "Miroslav Klose": "Miroslav Klose (137) is second for Germany behind Matthaus.",
+  "Iker Casillas": "Iker Casillas (167) is second for Spain behind Ramos.",
+  "Fabio Cannavaro": "Fabio Cannavaro (136) is second for Italy behind Buffon.",
+  "Edwin van der Sar": "Edwin van der Sar (130) is second for the Netherlands behind Sneijder.",
+  "Axel Witsel": "Axel Witsel (140) is second for Belgium.",
+  "Javier Mascherano": "Javier Mascherano (147) is second for Argentina behind Messi.",
+  "Neymar": "Neymar (130) is behind Cafu for Brazil.",
+  "Joao Moutinho": "Joao Moutinho (146) is second for Portugal."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/<Nation>_national_football_team (infobox, revisions of August 2026)",
+  "https://www.transfermarkt.com/<nation>/rekordspieler/verein/<id>/sort/einsaetze.desc",
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+  "https://www.rsssf.org/miscellaneous/century.html"
+ ],
+ "checks": "Each record holder agrees between the nation's Wikipedia infobox, Wikipedia's 100-cap list and Transfermarkt's record caps page. Figures are FIFA official matches as Wikipedia and RSSSF give them; Transfermarkt has Cafu on 143. Matthaus's 150 include his West Germany caps. Messi and Ronaldo counted to 19 July 2026."
+}

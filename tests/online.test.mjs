@@ -216,7 +216,7 @@ await test("online: the host's ticked competitions and All levels apply on every
   const all = [craig, aiden];
   await everyoneSees(all, ["Craig", "Aiden"]);
   const set = await aiden.textContent("#lobbySet");
-  assert(set.includes("International only") && set.includes("All levels"), "the lobby shows the host's settings: " + set);
+  assert(set.includes("World Cup and Euros") && set.includes("All levels"), "the lobby shows the host's settings: " + set);
   await craig.click("#lobbyStart");
   for (const p of all) await shown(p, "intro");
   await inSync(all, "start");

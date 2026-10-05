@@ -1,0 +1,76 @@
+{
+ "pick": "b02-irl",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Ireland's most capped players",
+ "brief": "Name the ten players with the most caps for the Republic of Ireland in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robbie Keane",
+   "val": "146 caps"
+  },
+  {
+   "label": "2",
+   "name": "Shay Given",
+   "val": "134 caps"
+  },
+  {
+   "label": "3",
+   "name": "John O'Shea",
+   "val": "118 caps"
+  },
+  {
+   "label": "4",
+   "name": "Kevin Kilbane",
+   "val": "110 caps"
+  },
+  {
+   "label": "5",
+   "name": "James McClean",
+   "val": "103 caps"
+  },
+  {
+   "label": "6",
+   "name": "Steve Staunton",
+   "val": "102 caps"
+  },
+  {
+   "label": "7",
+   "name": "Damien Duff",
+   "val": "100 caps"
+  },
+  {
+   "label": "8",
+   "name": "Aiden McGeady",
+   "val": "93 caps"
+  },
+  {
+   "label": "9",
+   "name": "Niall Quinn",
+   "val": "91 caps"
+  },
+  {
+   "label": "10",
+   "name": "Glenn Whelan",
+   "val": "91 caps"
+  }
+ ],
+ "notes": {
+  "Tony Cascarino": "Tony Cascarino is joint 11th with 88, just outside.",
+  "Shane Long": "Shane Long is joint 11th with 88, just outside.",
+  "Paul McGrath": "Paul McGrath has 83.",
+  "Seamus Coleman": "Seamus Coleman had 81 at the end of the 2026 World Cup.",
+  "Pat Bonner": "Pat Bonner has 80.",
+  "Richard Dunne": "Richard Dunne has 80."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team",
+  "https://www.rsssf.org/miscellaneous/ier-recintlp.html",
+  "https://en.wikipedia.org/wiki/List_of_Republic_of_Ireland_international_footballers",
+  "https://www.transfermarkt.com/irland/rekordspieler/verein/3509/sort/einsaetze.desc"
+ ],
+ "checks": "Wikipedia's national team article (16 July 2026), its list of internationals (18 July 2026) and RSSSF (to 5 June 2026) agree on every figure. Transfermarkt has the same ten but differs by one cap for Staunton (103), McGeady (92) and Cascarino (89); the association figures used by Wikipedia and RSSSF are used, and none changes the ten."
+}

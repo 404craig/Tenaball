@@ -1,0 +1,75 @@
+{
+ "pick": "b04-arg",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Argentina's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Argentina in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "207 caps"
+  },
+  {
+   "label": "2",
+   "name": "Javier Mascherano",
+   "val": "147 caps"
+  },
+  {
+   "label": "3",
+   "name": "Angel Di Maria",
+   "val": "145 caps"
+  },
+  {
+   "label": "4",
+   "name": "Nicolas Otamendi",
+   "val": "139 caps"
+  },
+  {
+   "label": "5",
+   "name": "Sergio Aguero",
+   "val": "101 caps"
+  },
+  {
+   "label": "6",
+   "name": "Javier Zanetti",
+   "val": "97 caps"
+  },
+  {
+   "label": "7",
+   "name": "Sergio Romero",
+   "val": "96 caps"
+  },
+  {
+   "label": "8",
+   "name": "Rodrigo De Paul",
+   "val": "94 caps"
+  },
+  {
+   "label": "9",
+   "name": "Lautaro Martinez",
+   "val": "84 caps"
+  },
+  {
+   "label": "10",
+   "name": "Leandro Paredes",
+   "val": "84 caps"
+  }
+ ],
+ "notes": {
+  "Nicolas Tagliafico": "Nicolas Tagliafico is 11th with 83, one short.",
+  "Carlos Tevez": "Carlos Tevez is 12th with 76.",
+  "Gonzalo Higuain": "Gonzalo Higuain has 75.",
+  "Roberto Ayala": "Roberto Ayala won 60 of his 115 caps from 2000 on.",
+  "Diego Simeone": "Diego Simeone won most of his caps before 2000."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/argentinien/spielplan/verein/3437/saison_id/<year>",
+  "https://www.national-football-teams.com/country/9/<year>/Argentina.html",
+  "https://www.rsssf.org/miscellaneous/arg-recintlp.html",
+  "https://en.wikipedia.org/wiki/Argentina_national_football_team_records_and_statistics"
+ ],
+ "checks": "Counted match by match: every Transfermarkt match report for the nation from 1 January 2000 to 19 July 2026 (starters plus substitutes who came on; scorers, own goals left out; results checked against each match's score, shoot-outs aside), then checked year by year against National Football Teams (its per-year player tables, FIFA and non-FIFA columns added together, September and October 2026 games taken off). Career totals also checked against RSSSF's record players page and Wikipedia (player infoboxes and caps-by-year tables), with games after 19 July 2026 taken off. Zanetti's 97 (145 in all, 48 before 2000) checked against his Wikipedia caps-by-year table. Transfermarkt and National Football Teams agree on every figure in the ten and on Tagliafico's 83 and Tevez's 76. Lautaro Martinez's 84 excludes two caps in October 2026."
+}

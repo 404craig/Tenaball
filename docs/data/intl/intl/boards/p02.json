@@ -1,0 +1,81 @@
+{
+ "pick": "p02",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Europe's top international scorers",
+ "brief": "Name the ten players from European (UEFA) nations with the most goals in official full internationals.",
+ "period": "All full internationals to 19 July 2026. Germany includes West Germany.",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "2",
+   "name": "Romelu Lukaku",
+   "val": "93 goals"
+  },
+  {
+   "label": "3",
+   "name": "Robert Lewandowski",
+   "val": "89 goals"
+  },
+  {
+   "label": "4",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ferenc Puskas",
+   "val": "84 goals"
+  },
+  {
+   "label": "6",
+   "name": "Sandor Kocsis",
+   "val": "75 goals"
+  },
+  {
+   "label": "7",
+   "name": "Edin Dzeko",
+   "val": "73 goals"
+  },
+  {
+   "label": "8",
+   "name": "Miroslav Klose",
+   "val": "71 goals"
+  },
+  {
+   "label": "9",
+   "name": "Gerd Muller",
+   "val": "68 goals"
+  },
+  {
+   "label": "10",
+   "name": "Robbie Keane",
+   "val": "68 goals"
+  }
+ ],
+ "notes": {
+  "Kylian Mbappe": "Kylian Mbappe is 11th with 66, just outside.",
+  "Aleksandar Mitrovic": "Aleksandar Mitrovic is 12th with 64.",
+  "Erling Haaland": "Erling Haaland has 62.",
+  "Zlatan Ibrahimovic": "Zlatan Ibrahimovic has 62.",
+  "Vivian Woodward": "Vivian Woodward's 75 includes amateur internationals; only 29 came in full internationals for England.",
+  "Imre Schlosser": "Imre Schlosser has 59.",
+  "David Villa": "David Villa has 59."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals (revision of 9 August 2026)",
+  "https://www.rsssf.org/miscellaneous/kocsis-intlg.html",
+  "https://www.rsssf.org/miscellaneous/mueller-intlg.html",
+  "https://www.rsssf.org/miscellaneous/klose-intlg.html",
+  "https://www.rsssf.org/miscellaneous/dzeko-intlg.html",
+  "https://www.rsssf.org/miscellaneous/robkeane-intlg.html",
+  "https://www.rsssf.org/miscellaneous/puskas-intlg.html",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game"
+ ],
+ "checks": "Every figure matches in Wikipedia's list (9 August 2026 revision) and either Transfermarkt's match list counted to 19 July 2026 (Ronaldo, Lukaku, Lewandowski, Kane, Dzeko, Klose, Muller, Keane, Mbappe, Mitrovic) or RSSSF's goal lists (Puskas 84 for Hungary and 0 for Spain, Kocsis 75, Muller 68, Klose 71, Keane 68). Woodward is left out because his 75 needs his England amateur games."
+}

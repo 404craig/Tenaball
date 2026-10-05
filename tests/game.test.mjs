@@ -310,30 +310,30 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(await p.textContent("#compSum"), "All competitions");
   await p.click("#compBtn"); await until(() => visible(p, "#compSheet"));
   const rows = await p.$$eval("#compList .crow", rs => rs.map(r => [r.querySelector(".nm").textContent, r.getAttribute("aria-checked"), r.classList.contains("soon")]));
-  eq(rows.map(r => r[0]), ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","Scottish Premiership","Top 5 Leagues","Champions League","Europa League","World Cup","Euros"]);
+  eq(rows.map(r => r[0]), ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","Scottish Premiership","Top 5 Leagues","Champions League","Europa League","World Cup","Euros","Internationals"]);
   eq(rows.filter(r => r[2]).map(r => r[0]), [], "nothing is shown as coming later now the Europa League is on");
   eq(await p.$$eval("#compList .cgrp", g => g.map(x => x.textContent)), ["Leagues","Europe","International"]);
-  eq(await p.$$eval("#compList .crow .ic img, #compList .crow .ic svg", s => s.length), 11, "every row has a circle flag, logo or badge");
+  eq(await p.$$eval("#compList .crow .ic img, #compList .crow .ic svg", s => s.length), 12, "every row has a circle flag, logo or badge");
   eq(await p.$$eval("#compList .crow .ic img", s => s.length), 9, "the leagues, Euros, Champions League and Europa League use the pack's images");
   await p.click('#compQuick [data-q="Leagues"]');
-  eq(await p.textContent("#compCount"), "7 of 11 on");
+  eq(await p.textContent("#compCount"), "7 of 12 on");
   await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
   await p.click("#compDone"); await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "5 competitions");
   // none ticked: Done waits
   await p.click("#compBtn"); for (const c of ["pl","laliga","bund","seriea","ligue1"]) await p.click(`#compList [data-c="${c}"]`);
   eq([await p.textContent("#compCount"), await p.$eval("#compDone", b => b.disabled)], ["Turn at least one on", true]);
-  await p.click('#compList [data-c="wc"]'); await p.click('#compList [data-c="euro"]');
+  await p.click('#compList [data-c="wc"]'); await p.click('#compList [data-c="euro"]'); await p.click('#compList [data-c="intl"]');
   await p.mouse.click(195, 30); // a tap above the panel closes it too
   await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "International only");
-  eq(await p.$$eval("#compFlags .ic img, #compFlags .ic svg", s => s.length), 2);
+  eq(await p.$$eval("#compFlags .ic img, #compFlags .ic svg", s => s.length), 3);
   await p.reload(); await until(() => visible(p, "#setup")); await p.click('[data-door="h2h"]');
-  eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro"], "International only"], "remembered after a reload");
-  // a phone that saved every competition before the Europa League arrived gets it ticked too
+  eq(await p.evaluate(() => [cfg.cats, document.getElementById("compSum").textContent]), [["wc","euro","intl"], "International only"], "remembered after a reload");
+  // a phone that saved every competition before the Europa League and Internationals arrived gets them ticked too
   await p.evaluate(() => localStorage.setItem("tenaball-setup", JSON.stringify({ v: 2, cats: ["pl","laliga","bund","seriea","ligue1","spfl","top5","ucl","wc","euro"], allLevels: true })));
   await p.reload(); await until(() => visible(p, "#setup"));
-  eq(await p.evaluate(() => cfg.cats.includes("uel") && cfg.cats.length), 11, "the Europa League is ticked for a phone that had everything on");
+  eq(await p.evaluate(() => cfg.cats.includes("uel") && cfg.cats.includes("intl") && cfg.cats.length), 12, "the Europa League and Internationals are ticked for a phone that had everything on");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
 await test("game: one question change for every round, used in any round", async () => {

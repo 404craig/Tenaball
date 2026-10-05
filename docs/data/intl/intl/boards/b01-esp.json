@@ -1,0 +1,74 @@
+{
+ "pick": "b01-esp",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Spain's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Spain in full internationals, from Spain's first match to the 2026 World Cup final.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "David Villa",
+   "val": "59 goals"
+  },
+  {
+   "label": "2",
+   "name": "Raul",
+   "val": "44 goals"
+  },
+  {
+   "label": "3",
+   "name": "Fernando Torres",
+   "val": "38 goals"
+  },
+  {
+   "label": "4",
+   "name": "Alvaro Morata",
+   "val": "37 goals"
+  },
+  {
+   "label": "5",
+   "name": "David Silva",
+   "val": "35 goals"
+  },
+  {
+   "label": "6",
+   "name": "Mikel Oyarzabal",
+   "val": "30 goals"
+  },
+  {
+   "label": "7",
+   "name": "Fernando Hierro",
+   "val": "29 goals"
+  },
+  {
+   "label": "8",
+   "name": "Fernando Morientes",
+   "val": "27 goals"
+  },
+  {
+   "label": "9",
+   "name": "Emilio Butragueno",
+   "val": "26 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ferran Torres",
+   "val": "25 goals"
+  }
+ ],
+ "notes": {
+  "Sergio Ramos": "Sergio Ramos is joint 11th with 23 goals, just outside.",
+  "Alfredo Di Stefano": "Alfredo Di Stefano is joint 11th with 23 goals for Spain, just outside.",
+  "Julio Salinas": "Julio Salinas is joint 13th with 22 goals.",
+  "Michel": "Michel is 15th with 21 goals."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/spanien/rekordspieler/verein/3375",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/174/2026/Spain.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/span-recintlp.html"
+ ],
+ "checks": "Retired players: Transfermarkt's Spain record list and RSSSF's Spain record international players page (to November 2025) agree on every total (Villa 59, Raul 44, Fernando Torres 38, Morata 37, Silva 35, Hierro 29, Morientes 27, Butragueno 26, Ramos and Di Stefano 23, Salinas 22). Oyarzabal (30) and Ferran Torres (25) scored at the 2026 World Cup and were counted match by match to 19 July 2026 on Transfermarkt and national-football-teams.com; Oyarzabal's Nations League goal on 26 September 2026 is not counted."
+}

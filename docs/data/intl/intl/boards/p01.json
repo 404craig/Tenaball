@@ -1,0 +1,86 @@
+{
+ "pick": "p01",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "World's top international scorers",
+ "brief": "Name the ten men who have scored the most goals in official full internationals.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "2",
+   "name": "Lionel Messi",
+   "val": "125 goals"
+  },
+  {
+   "label": "3",
+   "name": "Ali Daei",
+   "val": "108 goals"
+  },
+  {
+   "label": "4",
+   "name": "Sunil Chhetri",
+   "val": "95 goals"
+  },
+  {
+   "label": "5",
+   "name": "Romelu Lukaku",
+   "val": "93 goals"
+  },
+  {
+   "label": "6",
+   "name": "Robert Lewandowski",
+   "val": "89 goals"
+  },
+  {
+   "label": "7",
+   "name": "Mokhtar Dahari",
+   "val": "89 goals"
+  },
+  {
+   "label": "8",
+   "name": "Harry Kane",
+   "val": "85 goals"
+  },
+  {
+   "label": "9",
+   "name": "Ali Mabkhout",
+   "val": "85 goals"
+  },
+  {
+   "label": "10",
+   "name": "Ferenc Puskas",
+   "val": "84 goals"
+  }
+ ],
+ "notes": {
+  "Neymar": "Neymar is 11th with 80, just outside.",
+  "Godfrey Chitalu": "Godfrey Chitalu (Zambia) is 12th with 79.",
+  "Hussein Saeed": "Hussein Saeed (Iraq) is 13th with 78.",
+  "Pele": "Pele is 14th with 77.",
+  "Sandor Kocsis": "Sandor Kocsis is joint 15th with 75.",
+  "Vivian Woodward": "Vivian Woodward's 75 includes amateur internationals; he scored 29 in full internationals for England.",
+  "Ali Mabkhout": "Wikipedia counts 85 for Mabkhout, RSSSF 84; he is in the ten either way.",
+  "Mokhtar Dahari": "Dahari's 89 includes Olympic qualifiers that FIFA now recognises.",
+  "Kylian Mbappe": "Kylian Mbappe had 66 at the end of the 2026 World Cup.",
+  "Miroslav Klose": "Miroslav Klose has 71.",
+  "Edin Dzeko": "Edin Dzeko has 73.",
+  "Ronaldo Nazario": "Ronaldo Nazario has 62."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals (revision of 9 August 2026)",
+  "https://www.rsssf.org/miscellaneous/daei-intlg.html",
+  "https://www.rsssf.org/miscellaneous/chhetri-intlg.html",
+  "https://www.rsssf.org/miscellaneous/malay-dahari-intlg.html",
+  "https://www.rsssf.org/miscellaneous/mabkhout-intlg.html",
+  "https://www.rsssf.org/miscellaneous/puskas-intlg.html",
+  "https://www.transfermarkt.com/lionel-messi/nationalmannschaft/spieler/28003",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (match by match, counted to 19 July 2026)"
+ ],
+ "checks": "Active players (Ronaldo, Messi, Lukaku, Lewandowski, Kane, Neymar) counted match by match from Transfermarkt's game list up to 19 July 2026 and matched Wikipedia's list as it stood on 9 August 2026, before the September window. Retired players (Daei, Chhetri, Dahari, Puskas) match RSSSF's goal-by-goal pages. Mabkhout: Wikipedia 85, RSSSF 84 (last updated February 2024); either figure keeps him in the ten, above Neymar's 80. Lewandowski and Kane later scored in September and October 2026; those goals are left out."
+}

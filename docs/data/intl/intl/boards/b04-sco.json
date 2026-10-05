@@ -1,0 +1,77 @@
+{
+ "pick": "b04-sco",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Scotland's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Scotland in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Andy Robertson",
+   "val": "97 caps"
+  },
+  {
+   "label": "2",
+   "name": "John McGinn",
+   "val": "89 caps"
+  },
+  {
+   "label": "3",
+   "name": "Craig Gordon",
+   "val": "84 caps"
+  },
+  {
+   "label": "4",
+   "name": "Darren Fletcher",
+   "val": "80 caps"
+  },
+  {
+   "label": "5",
+   "name": "Scott McTominay",
+   "val": "73 caps"
+  },
+  {
+   "label": "6",
+   "name": "Ryan Christie",
+   "val": "71 caps"
+  },
+  {
+   "label": "7",
+   "name": "Grant Hanley",
+   "val": "70 caps"
+  },
+  {
+   "label": "8",
+   "name": "Kenny Miller",
+   "val": "69 caps"
+  },
+  {
+   "label": "9",
+   "name": "Callum McGregor",
+   "val": "63 caps"
+  },
+  {
+   "label": "10",
+   "name": "Kenny McLean",
+   "val": "61 caps"
+  }
+ ],
+ "notes": {
+  "Kieran Tierney": "Kieran Tierney is 11th with 58, just outside.",
+  "Gary Caldwell": "Gary Caldwell is joint 12th with 55.",
+  "Scott Brown": "Scott Brown is joint 12th with 55.",
+  "David Weir": "David Weir won 69 caps but only 49 from 2000.",
+  "Christian Dailly": "Christian Dailly won 67 caps, 46 from 2000.",
+  "Lyndon Dykes": "Lyndon Dykes has 53.",
+  "Scott McKenna": "Scott McKenna has 54."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://www.rsssf.org/miscellaneous/scot-recintlp.html",
+  "https://en.wikipedia.org/wiki/Scotland_national_football_team_records_and_statistics",
+  "https://en.wikipedia.org/wiki/List_of_Scotland_international_footballers"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. All ten made their debuts after 2000, so their totals at the cut-off were checked against RSSSF (to 24 June 2026) and Wikipedia: they agree except Fletcher (81 Transfermarkt, 80 elsewhere) and Miller (68 Transfermarkt, 69 elsewhere); the RSSSF and Wikipedia figure is used and neither changes a place. Weir and Dailly, who began before 2000, are well short from 2000."
+}

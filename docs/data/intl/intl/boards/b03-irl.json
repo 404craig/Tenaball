@@ -1,0 +1,82 @@
+{
+ "pick": "b03-irl",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Ireland's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for the Republic of Ireland in full internationals since 1 January 2000, to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robbie Keane",
+   "val": "63 goals"
+  },
+  {
+   "label": "2",
+   "name": "Shane Long",
+   "val": "17 goals"
+  },
+  {
+   "label": "3",
+   "name": "Kevin Doyle",
+   "val": "14 goals"
+  },
+  {
+   "label": "4",
+   "name": "Jon Walters",
+   "val": "14 goals"
+  },
+  {
+   "label": "5",
+   "name": "James McClean",
+   "val": "11 goals"
+  },
+  {
+   "label": "6",
+   "name": "Troy Parrott",
+   "val": "11 goals"
+  },
+  {
+   "label": "7",
+   "name": "Robbie Brady",
+   "val": "10 goals"
+  },
+  {
+   "label": "8",
+   "name": "Ian Harte",
+   "val": "9 goals"
+  },
+  {
+   "label": "9",
+   "name": "Callum Robinson",
+   "val": "9 goals"
+  },
+  {
+   "label": "10",
+   "name": "Clinton Morrison",
+   "val": "9 goals"
+  }
+ ],
+ "notes": {
+  "Kevin Kilbane": "Kevin Kilbane is joint 11th with 8, just outside.",
+  "Damien Duff": "Damien Duff is joint 11th with 8, just outside.",
+  "Richard Dunne": "Richard Dunne is joint 11th with 8, just outside.",
+  "Evan Ferguson": "Evan Ferguson is joint 11th with 8, just outside.",
+  "Shane Duffy": "Shane Duffy has 7.",
+  "Adam Idah": "Adam Idah had 6 at the end of the 2026 World Cup.",
+  "Robbie Keane": "Robbie Keane scored 68 for Ireland, 5 of them in 1998 and 1999.",
+  "Ian Harte": "Ian Harte scored 2 of his 11 before 2000.",
+  "Niall Quinn": "Niall Quinn scored only 2 of his 21 from 2000.",
+  "Roy Keane": "Roy Keane scored 4 of his 9 from 2000.",
+  "David Connolly": "David Connolly scored 2 of his 9 from 2000.",
+  "Troy Parrott": "Troy Parrott had 11 at the end of the 2026 World Cup; his goals since then don't count here."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ceapi/performance-game/<player id> (every match a player played, filtered to the national team and the date window)",
+  "https://www.rsssf.org/miscellaneous/ier-recintlp.html",
+  "https://en.wikipedia.org/wiki/List_of_Republic_of_Ireland_international_footballers",
+  "https://en.wikipedia.org/wiki/Robbie_Keane"
+ ],
+ "checks": "Counted match by match from Transfermarkt's per-game data, 1 January 2000 to 19 July 2026. Players who began after 2000 checked against RSSSF (to 5 June 2026) and Wikipedia's list of internationals (18 July 2026): all agree (Parrott 11, Morrison 9, Robinson 9, Brady 10). Robbie Keane's 63 from 2000 matches the by-year table in his Wikipedia article. Ian Harte is 11 in all on RSSSF and Transfermarkt, 2 of them in 1996, so 9 from 2000; Wikipedia credits him with 12, which would make 9 or 10 from 2000, so he is in the ten either way."
+}

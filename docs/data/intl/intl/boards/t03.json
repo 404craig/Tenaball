@@ -1,0 +1,98 @@
+{
+  "pick": "t03",
+  "kind": "ranked",
+  "type": "nation",
+  "level": 1,
+  "title": "Most Africa Cup of Nations titles",
+  "brief": "Name the ten nations with the most Africa Cup of Nations titles.",
+  "period": "Every Africa Cup of Nations, 1957 to 2025",
+  "rows": [
+    {
+      "label": "1",
+      "name": "Egypt",
+      "val": "7 titles"
+    },
+    {
+      "label": "2",
+      "name": "Cameroon",
+      "val": "5 titles"
+    },
+    {
+      "label": "3",
+      "name": "Ghana",
+      "val": "4 titles"
+    },
+    {
+      "label": "4",
+      "name": "Nigeria",
+      "val": "3 titles"
+    },
+    {
+      "label": "5",
+      "name": "Ivory Coast",
+      "val": "3 titles"
+    },
+    {
+      "label": "6",
+      "name": "Algeria",
+      "val": "2 titles"
+    },
+    {
+      "label": "7",
+      "name": "DR Congo",
+      "val": "2 titles",
+      "alts": [
+        "DR Congo"
+      ]
+    },
+    {
+      "label": "8",
+      "name": "Morocco",
+      "val": "2 titles"
+    },
+    {
+      "label": "9",
+      "name": "Senegal",
+      "val": "1 title",
+      "pool": "one",
+      "alts": [
+        "Senegal",
+        "South Africa",
+        "Tunisia",
+        "Zambia",
+        "Sudan",
+        "Ethiopia",
+        "Congo"
+      ]
+    },
+    {
+      "label": "10",
+      "name": "Senegal",
+      "val": "1 title",
+      "pool": "one",
+      "alts": [
+        "Senegal",
+        "South Africa",
+        "Tunisia",
+        "Zambia",
+        "Sudan",
+        "Ethiopia",
+        "Congo"
+      ]
+    }
+  ],
+  "notes": {
+    "Egypt": "Egypt's seven include 1959, won as the United Arab Republic.",
+    "DR Congo": "DR Congo won in 1968 and, as Zaire, in 1974.",
+    "Senegal": "Senegal (2021), South Africa (1996), Tunisia (2004), Zambia (2012), Sudan (1970), Ethiopia (1962) and Congo (1972) have one title each and share the last two places.",
+    "Burkina Faso": "Burkina Faso have never won it (runners-up in 2013).",
+    "Mali": "Mali have never won it (runners-up in 1972).",
+    "Uganda": "Uganda have never won it (runners-up in 1978).",
+    "Guinea": "Guinea have never won it (runners-up in 1976)."
+  },
+  "sources": [
+    "https://en.wikipedia.org/wiki/Africa_Cup_of_Nations (revision of 24 August 2026)",
+    "https://github.com/martj42/international_results"
+  ],
+  "checks": "Titles counted from Wikipedia's summary table and checked edition by edition against the finals in the martj42 dataset (1957 to 2025, 35 editions). Seven nations have one title each, so 9th and 10th are a pool of all seven."
+}

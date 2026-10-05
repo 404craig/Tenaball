@@ -1,0 +1,87 @@
+{
+ "pick": "b04-swe",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Sweden's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Sweden in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Anders Svensson",
+   "val": "147 caps"
+  },
+  {
+   "label": "2",
+   "name": "Andreas Isaksson",
+   "val": "133 caps"
+  },
+  {
+   "label": "3",
+   "name": "Seb Larsson",
+   "val": "133 caps"
+  },
+  {
+   "label": "4",
+   "name": "Kim Kallstrom",
+   "val": "131 caps"
+  },
+  {
+   "label": "5",
+   "name": "Zlatan Ibrahimovic",
+   "val": "122 caps"
+  },
+  {
+   "label": "6",
+   "name": "Olof Mellberg",
+   "val": "117 caps"
+  },
+  {
+   "label": "7",
+   "name": "Mikael Lustig",
+   "val": "94 caps"
+  },
+  {
+   "label": "8",
+   "name": "Emil Forsberg",
+   "val": "92 caps"
+  },
+  {
+   "label": "9",
+   "name": "Marcus Berg",
+   "val": "90 caps"
+  },
+  {
+   "label": "10",
+   "name": "Andreas Granqvist",
+   "val": "88 caps"
+  }
+ ],
+ "notes": {
+  "Johan Elmander": "Johan Elmander is 11th with 85, just outside.",
+  "Victor Lindelof": "Victor Lindelof is 12th with 80 at 19 July 2026 (his caps since then don't count).",
+  "Robin Olsen": "Robin Olsen has 79.",
+  "Christian Wilhelmsson": "Christian Wilhelmsson has 79.",
+  "Tobias Linderoth": "Tobias Linderoth has 75 since 2000 (76 in all).",
+  "Marcus Allback": "Marcus Allback has 73 since 2000 (74 in all).",
+  "Niclas Alexandersson": "Niclas Alexandersson has 70 since 2000 (109 in all).",
+  "Albin Ekdal": "Albin Ekdal has 70.",
+  "Viktor Claesson": "Viktor Claesson has 74.",
+  "Freddie Ljungberg": "Freddie Ljungberg has 62 since 2000 (75 in all).",
+  "Henrik Larsson": "Henrik Larsson has 60 since 2000 (106 in all).",
+  "Thomas Ravelli": "Thomas Ravelli's 143 caps were all before 2000.",
+  "Anders Svensson": "Anders Svensson has 147 since 2000 (148 in all, one in 1999)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/179/2010/Sweden.html (one page per year, 2000 to 2026)",
+  "https://en.wikipedia.org/wiki/List_of_Sweden_international_footballers",
+  "https://www.transfermarkt.com/schweden/rekordspieler/verein/3557",
+  "https://en.wikipedia.org/wiki/Anders_Svensson_(footballer,_born_1976)",
+  "https://en.wikipedia.org/wiki/Olof_Mellberg",
+  "https://en.wikipedia.org/wiki/Kim_K%C3%A4llstr%C3%B6m",
+  "https://en.wikipedia.org/wiki/Sebastian_Larsson",
+  "Transfermarkt match reports for Sweden's eight games from March to June 2026 and its four Nations League games from September and October 2026 (https://www.transfermarkt.com/schweden/spielplan/verein/3557/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Sweden pages for 2000 to 2026, FIFA and non-FIFA games together (the Swedish FA counts the January tour games). Everyone in the ten except Svensson started in 2000 or later, and each matches the career totals in Wikipedia's list of Sweden internationals and on Transfermarkt (Isaksson 133, Larsson 133, Kallstrom 131, Ibrahimovic 122, Mellberg 117 from 2000, Lustig 94, Forsberg 92, Berg 90, Granqvist 88, Elmander 85). Svensson: the Swedish FA and Wikipedia have 148 caps, one in 1999, and his Wikipedia year table gives 147 from 2000; national-football-teams.com (one short in 2011) and Transfermarkt (147 in all) give 146. The association's count, 147, is used; he is 1st either way. Sweden's 2026 games up to the World Cup final (eight, the last the round of 32 against France on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player (Gyokeres 7 games and 6 goals, Isak 6 and 2, Lindelof 7). The September and October 2026 Nations League games are taken off the current totals: Gyokeres scored in all four (25 now, 21 at 19 July), Isak once (19 now, 18), and Lindelof played all four (84 now, 80)."
+}

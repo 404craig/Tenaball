@@ -1,0 +1,85 @@
+{
+ "pick": "b02-bra",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Brazil's most capped players",
+ "brief": "Name the ten players with the most caps for Brazil in official full internationals, to the 2026 World Cup final. Games FIFA does not count are left out.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cafu",
+   "val": "142 caps"
+  },
+  {
+   "label": "2",
+   "name": "Neymar",
+   "val": "130 caps"
+  },
+  {
+   "label": "3",
+   "name": "Dani Alves",
+   "val": "126 caps"
+  },
+  {
+   "label": "4",
+   "name": "Roberto Carlos",
+   "val": "125 caps"
+  },
+  {
+   "label": "5",
+   "name": "Thiago Silva",
+   "val": "113 caps"
+  },
+  {
+   "label": "6",
+   "name": "Marquinhos",
+   "val": "110 caps"
+  },
+  {
+   "label": "7",
+   "name": "Lucio",
+   "val": "105 caps"
+  },
+  {
+   "label": "8",
+   "name": "Taffarel",
+   "val": "101 caps"
+  },
+  {
+   "label": "9",
+   "name": "Robinho",
+   "val": "100 caps"
+  },
+  {
+   "label": "10",
+   "name": "Ronaldo",
+   "val": "98 caps",
+   "pool": "p10",
+   "alts": [
+    "Ronaldo",
+    "Djalma Santos"
+   ]
+  }
+ ],
+ "notes": {
+  "Ronaldinho": "Ronaldinho is just outside with 97.",
+  "Gilmar": "Gilmar is just outside with 94.",
+  "Gilberto Silva": "Gilberto Silva has 93, just outside.",
+  "Kaka": "Kaka has 92, just outside.",
+  "Pele": "Pele has 91 in FIFA-recognised games (92 with the 1968 FIFA XI game).",
+  "Rivellino": "Rivellino has 91 in FIFA-recognised games (92 with the 1968 FIFA XI game).",
+  "Dida": "Dida has 91, just outside.",
+  "Dunga": "Dunga has 91, just outside.",
+  "Casemiro": "Casemiro has 91, just outside."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/braz-recintlp.html",
+  "https://en.wikipedia.org/wiki/Brazil_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/brasilien/rekordspieler/verein/3439",
+  "https://www.transfermarkt.com/brasilien/spielplan/verein/3439/saison_id/<year>",
+  "https://www.national-football-teams.com/country/28/<year>/Brazil.html"
+ ],
+ "checks": "RSSSF (to 18 November 2025) and Wikipedia's records table agree on every retired player (Cafu 142, Dani Alves 126, Roberto Carlos 125, Thiago Silva 113, Lucio 105, Taffarel 101, Robinho 100, Ronaldo 98, Djalma Santos 98). Transfermarkt's figures are a cap or two higher for some (Cafu 143, Roberto Carlos 127) because it counts unofficial games such as Kuwait SC in 2006. Active players to 19 July 2026: Neymar 128 (RSSSF) plus 2 at the 2026 World Cup = 130; Marquinhos 103 plus 7 in 2026 = 110 (Transfermarkt match reports and National Football Teams' 2026 table, which also holds one September game; Wikipedia's 111 dated 25 September includes it). Ronaldo and Djalma Santos tie on 98 for 10th, so they share it as a pool."
+}

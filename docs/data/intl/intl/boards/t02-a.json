@@ -1,0 +1,67 @@
+{
+ "pick": "t02-a",
+ "kind": "labelled",
+ "type": "nation",
+ "level": 2,
+ "title": "Africa Cup of Nations winners, 2008 to 2025",
+ "brief": "Name the winners of each Africa Cup of Nations, by edition.",
+ "period": "Africa Cup of Nations, 2008 to 2025 editions",
+ "rows": [
+  {
+   "label": "2008",
+   "name": "Egypt",
+   "val": "Beat Cameroon in the final"
+  },
+  {
+   "label": "2010",
+   "name": "Egypt",
+   "val": "Beat Ghana in the final"
+  },
+  {
+   "label": "2012",
+   "name": "Zambia",
+   "val": "Beat Ivory Coast in the final"
+  },
+  {
+   "label": "2013",
+   "name": "Nigeria",
+   "val": "Beat Burkina Faso in the final"
+  },
+  {
+   "label": "2015",
+   "name": "Ivory Coast",
+   "val": "Beat Ghana in the final"
+  },
+  {
+   "label": "2017",
+   "name": "Cameroon",
+   "val": "Beat Egypt in the final"
+  },
+  {
+   "label": "2019",
+   "name": "Algeria",
+   "val": "Beat Senegal in the final"
+  },
+  {
+   "label": "2021",
+   "name": "Senegal",
+   "val": "Beat Egypt in the final (played in 2022)"
+  },
+  {
+   "label": "2023",
+   "name": "Ivory Coast",
+   "val": "Beat Nigeria in the final (played in 2024)"
+  },
+  {
+   "label": "2025",
+   "name": "Morocco",
+   "val": "Beat Senegal in the final (played December 2025 to January 2026)"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/Africa_Cup_of_Nations (revision of 24 August 2026)",
+  "https://github.com/martj42/international_results (results.csv and shootouts.csv)"
+ ],
+ "checks": "Winners and runners-up from Wikipedia's summary table match the final of each edition in the martj42 international results dataset (with its shoot-out file for finals drawn after extra time). Editions are named by their official year: 2021 was played in early 2022, 2023 in early 2024 and 2025 from December 2025 to January 2026. Most slots for one nation: Egypt 2, Ivory Coast 2, Zambia 1."
+}

@@ -1,0 +1,75 @@
+{
+ "pick": "b04-esp",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Spain's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Spain in full internationals since 1 January 2000, to the 2026 World Cup final. Only games from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Sergio Ramos",
+   "val": "180 caps"
+  },
+  {
+   "label": "2",
+   "name": "Iker Casillas",
+   "val": "167 caps"
+  },
+  {
+   "label": "3",
+   "name": "Sergio Busquets",
+   "val": "143 caps"
+  },
+  {
+   "label": "4",
+   "name": "Xavi",
+   "val": "133 caps"
+  },
+  {
+   "label": "5",
+   "name": "Andres Iniesta",
+   "val": "131 caps"
+  },
+  {
+   "label": "6",
+   "name": "David Silva",
+   "val": "125 caps"
+  },
+  {
+   "label": "7",
+   "name": "Xabi Alonso",
+   "val": "114 caps"
+  },
+  {
+   "label": "8",
+   "name": "Cesc Fabregas",
+   "val": "110 caps"
+  },
+  {
+   "label": "9",
+   "name": "Fernando Torres",
+   "val": "110 caps"
+  },
+  {
+   "label": "10",
+   "name": "Gerard Pique",
+   "val": "102 caps"
+  }
+ ],
+ "notes": {
+  "Carles Puyol": "Carles Puyol is 11th with 100 caps, just outside.",
+  "David Villa": "David Villa is 12th with 98 caps.",
+  "Jordi Alba": "Jordi Alba is 13th with 93 caps.",
+  "Raul": "Raul won 102 caps, 73 of them from 2000 on.",
+  "Andoni Zubizarreta": "Andoni Zubizarreta last played for Spain in 1998."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/spanien/rekordspieler/verein/3375",
+  "https://tmapi.transfermarkt.technology/player/<id>/performance-game (Transfermarkt match-by-match national team record for each player)",
+  "https://www.national-football-teams.com/country/174/2026/Spain.html (and each player page, /player/<id>/<name>.html, listing every match)",
+  "https://www.rsssf.org/miscellaneous/span-recintlp.html"
+ ],
+ "checks": "Transfermarkt's match-by-match record for each player and national-football-teams.com's match list for each player were both counted between the board's dates and agree on every figure in the ten and on 11th and 12th. Every player in the ten made his debut in 2000 or later (Casillas on 3 June 2000)."
+}
