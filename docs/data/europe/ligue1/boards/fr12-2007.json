@@ -1,0 +1,64 @@
+{
+ "pick": "fr12-2007",
+ "kind": "labelled",
+ "type": "club",
+ "level": 2,
+ "title": "Coupe de France winners 2007 to 2016",
+ "brief": "Name the club that won the Coupe de France in each year from 2007 to 2016.",
+ "period": "Coupe de France finals 2007 to 2016",
+ "rows": [
+  {
+   "label": "2007",
+   "name": "Sochaux"
+  },
+  {
+   "label": "2008",
+   "name": "Lyon"
+  },
+  {
+   "label": "2009",
+   "name": "Guingamp"
+  },
+  {
+   "label": "2010",
+   "name": "PSG"
+  },
+  {
+   "label": "2011",
+   "name": "Lille"
+  },
+  {
+   "label": "2012",
+   "name": "Lyon"
+  },
+  {
+   "label": "2013",
+   "name": "Bordeaux"
+  },
+  {
+   "label": "2014",
+   "name": "Guingamp"
+  },
+  {
+   "label": "2015",
+   "name": "PSG"
+  },
+  {
+   "label": "2016",
+   "name": "PSG"
+  }
+ ],
+ "notes": {
+  "Marseille": "Marseille lost the 2007 and 2016 finals and did not win the cup in these years.",
+  "Rennes": "Rennes lost the 2009 and 2014 finals, so no win in these years.",
+  "Monaco": "Monaco lost the 2010 final, so no win in these years.",
+  "Quevilly": "Quevilly lost the 2012 final, so no win in these years.",
+  "Evian": "Evian lost the 2013 final, so no win in these years.",
+  "Auxerre": "Auxerre lost the 2015 final, so no win in these years."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Coupe_de_France",
+  "https://www.transfermarkt.com/coupe-de-france/erfolge/pokalwettbewerb/FRC"
+ ],
+ "checks": "Every winner taken from Wikipedia's Coupe de France results-by-club table and matched against Transfermarkt's list of all winners; both agree for every final from 2001 to 2026. PSG wins 3 in this window, under the 4-slot limit. Windows from 2008 onward all give PSG four or more slots, so 2001 to 2010 and 2007 to 2016 are the only usable windows (they overlap in 2007 to 2010)."
+}

@@ -1,0 +1,65 @@
+{
+ "pick": "fr21",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "PSG managers since 2005",
+ "brief": "Name PSG's permanent managers in order, from Guy Lacombe's appointment in 2005 to Luis Enrique. Labels are the year each spell began.",
+ "period": "Permanent PSG managers appointed December 2005 to July 2023 (Luis Enrique still in charge in October 2026)",
+ "rows": [
+  {
+   "label": "2005",
+   "name": "Guy Lacombe"
+  },
+  {
+   "label": "2007",
+   "name": "Paul Le Guen"
+  },
+  {
+   "label": "2009",
+   "name": "Antoine Kombouare"
+  },
+  {
+   "label": "2011",
+   "name": "Carlo Ancelotti"
+  },
+  {
+   "label": "2013",
+   "name": "Laurent Blanc"
+  },
+  {
+   "label": "2016",
+   "name": "Unai Emery"
+  },
+  {
+   "label": "2018",
+   "name": "Thomas Tuchel"
+  },
+  {
+   "label": "2021",
+   "name": "Mauricio Pochettino"
+  },
+  {
+   "label": "2022",
+   "name": "Christophe Galtier"
+  },
+  {
+   "label": "2023",
+   "name": "Luis Enrique"
+  }
+ ],
+ "notes": {
+  "Laurent Fournier": "Fournier managed PSG from February to December 2005, just before this board starts.",
+  "Vahid Halilhodzic": "Halilhodzic managed PSG from 2003 to 2005, before this board starts.",
+  "Luis Fernandez": "Fernandez's second spell ran from December 2000 to 2003, before this board starts.",
+  "Philippe Bergeroo": "Bergeroo left in December 2000.",
+  "Zinedine Zidane": "Zidane has never managed PSG.",
+  "Jose Mourinho": "Mourinho has never managed PSG.",
+  "Arsene Wenger": "Wenger has never managed PSG."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/paris-saint-germain/mitarbeiterhistorie/verein/583",
+  "https://en.wikipedia.org/wiki/List_of_Paris_Saint-Germain_FC_managers"
+ ],
+ "checks": "Transfermarkt's staff history and Wikipedia's list of PSG managers give the same 13 permanent spells since 2000 in the same order: Fernandez (Dec 2000), Halilhodzic (2003), Fournier (Feb 2005), Lacombe, Le Guen (Jan 2007), Kombouare (2009), Ancelotti, Blanc (2013), Emery (2016), Tuchel (2018), Pochettino (Jan 2021), Galtier (2022), Luis Enrique (2023). The board uses the ten most recent, so it starts with Lacombe. No caretakers needed. Start years: Transfermarkt has Lacombe from 27 Dec 2005 and Wikipedia Jan 2006; Ancelotti from 1 Jan 2012 on Transfermarkt and Dec 2011 on Wikipedia (he was appointed on 30 December 2011). The labels use the appointment year, 2005 and 2011. No manager has two spells in this window."
+}

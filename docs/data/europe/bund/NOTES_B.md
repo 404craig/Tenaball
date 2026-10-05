@@ -1,6 +1,6 @@
 # Bundesliga research notes (agent B, October 2026)
 
-All boards cover league seasons 2000/01 to 2025/26 unless the board says otherwise. Raw pages are cached under `scratchpad/euro_raw/B/bund/`. Board files are in `boards/`.
+All boards cover league seasons 2000/01 to 2025/26 unless the board says otherwise. Raw pages are cached under `scratchpad/euro_raw/B/bund/`. (Early on some files sat in the shared `euro_raw/B/` folder; every cached page used was checked to be the Bundesliga one (football-data division D1, Wikipedia article titles, Transfermarkt page titles, fussballdaten matchday titles), moved into `B/bund/`, and the checks were rerun there with the same results.) Board files are in `boards/`.
 
 ## Sources used
 
@@ -49,6 +49,10 @@ Wikipedia's 2025/26 stadiums table, fussballdaten.de's 2025/26 stadium table and
 ## de25: British and Irish players
 
 Open board, 36 names. Wikipedia's foreign players list (England, Scotland, Wales and Republic of Ireland sections; there is no Northern Ireland section) gives 36 players whose spells overlap 2000/01 to 2025/26; all 36 have at least one league appearance on Transfermarkt. Every player Transfermarkt lists with a British or Irish first nationality is on the Wikipedia list. Keanan Bennetts and Conor Noss are on Wikipedia's England and Ireland lists but Transfermarkt gives Germany first; both are kept. Players who only hold British or Irish citizenship second and are listed under other countries (Musiala, Olise, Holtby, Lookman, Mancienne and others) are left out, with notes. Ethan Nwaneri, Mikey Moore and Reigan Heskey joined for 2026/27 and are left out.
+
+## de10: most hat-tricks since 2000/01
+
+Wikipedia's List of Bundesliga hat-tricks says it is missing entries up to 2007/08, so it was checked against a full count: the scorers from all 884 fussballdaten.de matchday pages, 2000/01 to 2025/26 (7,956 matches, goal counts checked against each score; own goals left out; fussballdaten sometimes lists a goal twice under two spellings of a player, so goals are de-duplicated by the score after the goal). The two agree on everyone in the ten except three games Wikipedia leaves out, all confirmed by Transfermarkt match reports: Gomez 4 for Stuttgart v Wolfsburg (9 May 2009), Aubameyang 3 for Dortmund v Augsburg (25 October 2015) and Kruse 3 for Wolfsburg v Hoffenheim (17 October 2015). fussballdaten files Kruse's goals under a wrong name (Zoran Zekic); the matches are Wikipedia's Kruse entries. Result: Lewandowski 16, Gomez 12, Kane 11, Kramaric 6, Pizarro and Schick 5, then eight players on 4 (Kuranyi, Klose, Makaay, Robben, Huntelaar, Finnbogason, Aubameyang, Kruse) sharing 7th to 10th as a pool. Small disagreements below the cut (Halil Altintop 2 or 3, Ebbe Sand 2 or 3) do not affect the board.
 
 ## Award by season
 

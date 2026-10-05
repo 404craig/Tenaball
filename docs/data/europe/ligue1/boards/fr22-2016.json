@@ -1,0 +1,69 @@
+{
+ "pick": "fr22-2016",
+ "kind": "labelled",
+ "type": "person",
+ "level": 2,
+ "title": "Ligue 1 title-winning managers 2016/17 to 2025/26",
+ "brief": "Name the manager who won the French league title in each season from 2016/17 to 2025/26.",
+ "period": "Seasons 2016/17 to 2025/26",
+ "rows": [
+  {
+   "label": "2016/17",
+   "name": "Leonardo Jardim"
+  },
+  {
+   "label": "2017/18",
+   "name": "Unai Emery"
+  },
+  {
+   "label": "2018/19",
+   "name": "Thomas Tuchel"
+  },
+  {
+   "label": "2019/20",
+   "name": "Thomas Tuchel"
+  },
+  {
+   "label": "2020/21",
+   "name": "Christophe Galtier"
+  },
+  {
+   "label": "2021/22",
+   "name": "Mauricio Pochettino"
+  },
+  {
+   "label": "2022/23",
+   "name": "Christophe Galtier"
+  },
+  {
+   "label": "2023/24",
+   "name": "Luis Enrique"
+  },
+  {
+   "label": "2024/25",
+   "name": "Luis Enrique"
+  },
+  {
+   "label": "2025/26",
+   "name": "Luis Enrique"
+  }
+ ],
+ "notes": {
+  "Raynald Denoueix": "Raynald Denoueix won the title with Nantes in 2000/01, outside these seasons.",
+  "Jacques Santini": "Jacques Santini won the title with Lyon in 2001/02, outside these seasons.",
+  "Paul Le Guen": "Paul Le Guen won the title with Lyon in 2002/03, 2003/04, 2004/05, outside these seasons.",
+  "Gerard Houllier": "Gerard Houllier won the title with Lyon in 2005/06, 2006/07, outside these seasons.",
+  "Alain Perrin": "Alain Perrin won the title with Lyon in 2007/08, outside these seasons.",
+  "Laurent Blanc": "Laurent Blanc won the title with Bordeaux in 2008/09, 2013/14, 2014/15, 2015/16, outside these seasons.",
+  "Didier Deschamps": "Didier Deschamps won the title with Marseille in 2009/10, outside these seasons.",
+  "Rudi Garcia": "Rudi Garcia won the title with Lille in 2010/11, outside these seasons.",
+  "Rene Girard": "Rene Girard won the title with Montpellier in 2011/12, outside these seasons.",
+  "Carlo Ancelotti": "Carlo Ancelotti won the title with PSG in 2012/13, outside these seasons.",
+  "Claude Puel": "Puel won the title with Monaco in 1999/00, before 2000/01; he won none in these seasons."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/ligue-1/erfolge/wettbewerb/FR1",
+  "https://en.wikipedia.org/wiki/<season>_Ligue_1 (personnel tables in each season article)"
+ ],
+ "checks": "Champions and their coaches from Transfermarkt's Ligue 1 winners page, checked against the manager column of each Wikipedia season article's personnel table (2004/05 onward). For 2000/01 Wikipedia names Denoueix as manager of the year with champions Nantes; for 2001/02 to 2003/04 (Santini, then Le Guen at Lyon) and 2025/26 (Luis Enrique) the season articles have no manager table, so these were checked against the managers' own Wikipedia articles and the club manager lists. Most slots for one manager: 3."
+}

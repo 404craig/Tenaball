@@ -1,0 +1,63 @@
+{
+ "pick": "fr13-2010",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Ligue 1 Player of the Year 2010/11 to 2020/21",
+ "brief": "Name the UNFP Ligue 1 Player of the Year for each season from 2010/11 to 2020/21 (no award in 2019/20).",
+ "period": "Seasons 2010/11 to 2020/21, with no award in 2019/20 (season cut short by COVID-19)",
+ "rows": [
+  {
+   "label": "2010/11",
+   "name": "Eden Hazard"
+  },
+  {
+   "label": "2011/12",
+   "name": "Eden Hazard"
+  },
+  {
+   "label": "2012/13",
+   "name": "Zlatan Ibrahimovic"
+  },
+  {
+   "label": "2013/14",
+   "name": "Zlatan Ibrahimovic"
+  },
+  {
+   "label": "2014/15",
+   "name": "Alexandre Lacazette"
+  },
+  {
+   "label": "2015/16",
+   "name": "Zlatan Ibrahimovic"
+  },
+  {
+   "label": "2016/17",
+   "name": "Edinson Cavani"
+  },
+  {
+   "label": "2017/18",
+   "name": "Neymar"
+  },
+  {
+   "label": "2018/19",
+   "name": "Kylian Mbappe"
+  },
+  {
+   "label": "2020/21",
+   "name": "Kylian Mbappe"
+  }
+ ],
+ "notes": {
+  "Lisandro Lopez": "Lisandro Lopez won it in 2009/10, the season before this board starts.",
+  "Kylian Mbappe": "Mbappe won it five times in all; the later three (2021/22 to 2023/24) are after these years.",
+  "Lionel Messi": "Messi never won the award.",
+  "Thiago Silva": "Thiago Silva never won the award."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/Ligue_1_Player_of_the_Year",
+  "https://fr.wikipedia.org/wiki/Troph%C3%A9es_UNFP_du_football",
+  "https://www.transfermarkt.com/ (each winner's honours page, erfolge/spieler)"
+ ],
+ "checks": "English Wikipedia list matched against French Wikipedia's Trophees UNFP list: all agree, and both say 2019/20 was not awarded. Transfermarkt honours pages also list the award for Hazard (2), Ibrahimovic (3), Cavani, Neymar and Mbappe; Lacazette's 2014/15 award is missing from Transfermarkt but in both Wikipedias (English cites ligue1.com). Ten seasons with an award are used because 2019/20 has none. Ibrahimovic fills three slots, under the limit. Any window reaching 2021/22 or later gives Mbappe four or more slots, so no later window works."
+}
