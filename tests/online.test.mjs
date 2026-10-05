@@ -31,7 +31,8 @@ async function pickComps(p, cats){
 async function hostGame(p, { rounds = 3, clock = 0, cat = "pl", mode = "turns", time = 60 } = {}){
   await p.click("#onlineBtn"); await shown(p, "onlineGo");
   await p.click(`#modePick button[data-v="${mode}"]`);
-  await p.click(`#roundSeg button[data-v="${rounds}"]`); if (mode !== "turns") await p.click(`#timeSeg button[data-v="${time}"]`); else if (clock) await p.click(`#clockSeg button[data-v="${clock}"]`); else await p.evaluate(() => { cfg.clock = 0; }); // no shot clock in tests (Off is Solo play only) await pickComps(p, [].concat(cat));
+  await p.click(`#roundSeg button[data-v="${rounds}"]`); if (mode !== "turns") await p.click(`#timeSeg button[data-v="${time}"]`); else if (clock) await p.click(`#clockSeg button[data-v="${clock}"]`); else await p.evaluate(() => { cfg.clock = 0; }); // no shot clock in tests (Off is Solo play only)
+  await pickComps(p, [].concat(cat));
   if (!(await p.inputValue("#onlineName"))) await p.fill("#onlineName", p.label);
   await p.click("#createBtn"); await shown(p, "lobbyRoom");
   return p.textContent("#lobbyCode");
