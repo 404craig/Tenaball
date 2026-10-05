@@ -1,0 +1,73 @@
+{
+ "pick": "des06",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Bundesliga 2025/26: fewest conceded",
+ "brief": "Name the ten clubs that conceded the fewest Bundesliga goals in 2025/26.",
+ "period": "Bundesliga season 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Dortmund",
+   "val": "34 goals"
+  },
+  {
+   "label": "2",
+   "name": "Bayern Munich",
+   "val": "36 goals"
+  },
+  {
+   "label": "3",
+   "name": "RB Leipzig",
+   "val": "47 goals"
+  },
+  {
+   "label": "4",
+   "name": "Leverkusen",
+   "val": "47 goals"
+  },
+  {
+   "label": "5",
+   "name": "Stuttgart",
+   "val": "49 goals"
+  },
+  {
+   "label": "6",
+   "name": "Hoffenheim",
+   "val": "52 goals"
+  },
+  {
+   "label": "7",
+   "name": "Mainz",
+   "val": "53 goals"
+  },
+  {
+   "label": "8",
+   "name": "Gladbach",
+   "val": "53 goals"
+  },
+  {
+   "label": "9",
+   "name": "Hamburg",
+   "val": "54 goals"
+  },
+  {
+   "label": "10",
+   "name": "Freiburg",
+   "val": "57 goals"
+  }
+ ],
+ "notes": {
+  "Union Berlin": "Union Berlin conceded 58, just outside in 11th.",
+  "Werder Bremen": "Werder Bremen conceded 60, joint 12th with St Pauli.",
+  "St Pauli": "St Pauli conceded 60, joint 12th with Werder Bremen.",
+  "Koln": "Koln conceded 63."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga",
+  "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
+  "https://www.transfermarkt.com/bundesliga/tabelle/wettbewerb/L1/saison_id/2025"
+ ],
+ "checks": "Goals against in Wikipedia's final table match the table worked out from every 2025/26 result at football-data.co.uk, and Transfermarkt's table. Ties inside the ten (RB Leipzig and Leverkusen on 47, Mainz and Gladbach on 53) are listed in league position order; Freiburg (57) are 10th outright."
+}

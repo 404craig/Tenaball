@@ -49,12 +49,19 @@
   "Jules Kounde",
   "Joan Garcia"
  ],
+ "miss": "Did not play a La Liga game for Barcelona in 2025/26.",
  "notes": {
-  "_miss": "Played for another La Liga club in 2025/26, or did not play a league game for Barcelona that season."
+  "Inaki Pena": "Inaki Pena played 16 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Marc-Andre ter Stegen": "Marc-Andre ter Stegen played 8 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Hector Fort": "Hector Fort played 17 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Inigo Martinez": "Inigo Martinez played 28 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Pablo Torre": "Pablo Torre played 10 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Ansu Fati": "Ansu Fati played 6 league games for Barcelona in 2024/25 but none in 2025/26.",
+  "Pau Victor": "Pau Victor played 21 league games for Barcelona in 2024/25 but none in 2025/26."
  },
  "sources": [
   "https://www.transfermarkt.co.uk/fc-barcelona/leistungsdaten/verein/131/plus/1?reldata=ES1%262025",
   "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/83/roster?season=2025"
  ],
- "checks": "Every player with at least one league appearance on the Transfermarkt club season page (29 players). Each was matched on the ESPN 2025/26 roster; not found there or different: [('Dro Fernandez', 'apps', 'not on ESPN roster')]. Examples are the ten with the most games."
+ "checks": "Every player with at least one league appearance on the Transfermarkt club season page (29 players). Each was matched on the ESPN 2025/26 roster; not found there or different: Dro Fernandez (ESPN lists a different record under another name): Wikipedia career table has 4 games, 0 goals, agreeing. Examples are the ten with the most games."
 }

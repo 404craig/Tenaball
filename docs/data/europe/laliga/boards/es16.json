@@ -1,0 +1,81 @@
+{
+ "pick": "es16",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Barcelona's top league scorers since 2000",
+ "brief": "Name the ten players with the most La Liga goals for Barcelona from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Lionel Messi",
+   "val": "474 goals"
+  },
+  {
+   "label": "2",
+   "name": "Luis Suarez",
+   "val": "144 or 147 goals"
+  },
+  {
+   "label": "3",
+   "name": "Samuel Eto'o",
+   "val": "108 goals"
+  },
+  {
+   "label": "4",
+   "name": "Robert Lewandowski",
+   "val": "83 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ronaldinho",
+   "val": "70 goals"
+  },
+  {
+   "label": "6",
+   "name": "Neymar",
+   "val": "68 goals"
+  },
+  {
+   "label": "7",
+   "name": "Patrick Kluivert",
+   "val": "60 goals"
+  },
+  {
+   "label": "8",
+   "name": "Pedro",
+   "val": "58 goals"
+  },
+  {
+   "label": "9",
+   "name": "Xavi",
+   "val": "57 goals"
+  },
+  {
+   "label": "10",
+   "name": "Javier Saviola",
+   "val": "49 goals"
+  }
+ ],
+ "notes": {
+  "Raphinha": "Raphinha is just outside the ten with 44 goals.",
+  "Ferran Torres": "Ferran Torres is just outside the ten with 41 goals.",
+  "Alexis Sanchez": "Alexis Sanchez is just outside the ten with 38 goals."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/Lionel_Messi",
+  "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(Uruguayan_footballer)",
+  "https://en.wikipedia.org/wiki/Samuel_Eto%27o",
+  "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+  "https://en.wikipedia.org/wiki/Ronaldinho",
+  "https://en.wikipedia.org/wiki/Neymar",
+  "https://en.wikipedia.org/wiki/Patrick_Kluivert",
+  "https://en.wikipedia.org/wiki/Pedro_(footballer%2C_born_1987)",
+  "https://en.wikipedia.org/wiki/Xavi_(footballer%2C_born_1980)",
+  "https://en.wikipedia.org/wiki/Javier_Saviola",
+  "https://en.wikipedia.org/wiki/Raphinha"
+ ],
+ "checks": "Totals summed by Transfermarkt player id from every club season page, then each of the top 13 compared season by season with the La Liga rows of the player's Wikipedia career statistics table. Lionel Messi 474 (Wikipedia agrees); Luis Suarez 144 (Wikipedia 147); Samuel Eto'o 108 (Wikipedia agrees); Robert Lewandowski 83 (Wikipedia agrees); Ronaldinho 70 (Wikipedia agrees); Neymar 68 (Wikipedia agrees); Patrick Kluivert 60 (Wikipedia agrees); Pedro 58 (Wikipedia agrees); Xavi 57 (Wikipedia agrees); Javier Saviola 49 (Wikipedia agrees); Raphinha 44 (Wikipedia agrees); Ferran Torres (near miss, Transfermarkt only); Alexis Sanchez (near miss, Transfermarkt only)."
+}

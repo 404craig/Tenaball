@@ -1,0 +1,83 @@
+{
+ "pick": "es08",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most La Liga appearances since 2000",
+ "brief": "Name the ten players with the most La Liga appearances from 2000/01 to 2025/26.",
+ "period": "League seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Joaquin",
+   "val": "622 games"
+  },
+  {
+   "label": "2",
+   "name": "Raul Garcia",
+   "val": "609 games"
+  },
+  {
+   "label": "3",
+   "name": "Antoine Griezmann",
+   "val": "564 games"
+  },
+  {
+   "label": "4",
+   "name": "Dani Parejo",
+   "val": "558 games"
+  },
+  {
+   "label": "5",
+   "name": "Sergio Ramos",
+   "val": "536 games"
+  },
+  {
+   "label": "6",
+   "name": "Lionel Messi",
+   "val": "520 games"
+  },
+  {
+   "label": "7",
+   "name": "Koke",
+   "val": "519 games"
+  },
+  {
+   "label": "8",
+   "name": "Jesus Navas",
+   "val": "516 games"
+  },
+  {
+   "label": "9",
+   "name": "Iker Casillas",
+   "val": "483 games"
+  },
+  {
+   "label": "10",
+   "name": "Sergio Busquets",
+   "val": "481 games"
+  }
+ ],
+ "notes": {
+  "Xavi": "Xavi is just outside the ten with 464 games.",
+  "Aritz Aduriz": "Aritz Aduriz is just outside the ten with 443 games.",
+  "Andres Iniesta": "Andres Iniesta is just outside the ten with 442 games."
+ },
+ "sources": [
+  "Transfermarkt club season stats pages, every club, 2000/01 to 2025/26 (players.csv)",
+  "https://en.wikipedia.org/wiki/Joaqu%C3%ADn_(footballer%2C_born_1981)",
+  "https://en.wikipedia.org/wiki/Ra%C3%BAl_Garc%C3%ADa_(footballer%2C_born_1986)",
+  "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+  "https://en.wikipedia.org/wiki/Dani_Parejo",
+  "https://en.wikipedia.org/wiki/Sergio_Ramos",
+  "https://en.wikipedia.org/wiki/Lionel_Messi",
+  "https://en.wikipedia.org/wiki/Koke_(footballer%2C_born_1992)",
+  "https://en.wikipedia.org/wiki/Jes%C3%BAs_Navas",
+  "https://en.wikipedia.org/wiki/Iker_Casillas",
+  "https://en.wikipedia.org/wiki/Sergio_Busquets",
+  "https://en.wikipedia.org/wiki/Xavi_(footballer%2C_born_1980)",
+  "https://en.wikipedia.org/wiki/Aritz_Aduriz",
+  "https://en.wikipedia.org/wiki/Andr%C3%A9s_Iniesta"
+ ],
+ "checks": "Totals summed by Transfermarkt player id from every club season page, then each of the top 13 compared season by season with the La Liga rows of the player's Wikipedia career statistics table. Joaquin 622 (Wikipedia agrees); Raul Garcia 609 (Wikipedia agrees); Antoine Griezmann 564 (Wikipedia agrees); Dani Parejo 558 (Wikipedia agrees); Sergio Ramos 536 (Wikipedia agrees); Lionel Messi 520 (Wikipedia agrees); Koke 519 (Wikipedia agrees); Jesus Navas 516 (Wikipedia agrees); Iker Casillas 483 (Wikipedia agrees); Sergio Busquets 481 (Wikipedia agrees); Xavi 464 (Wikipedia agrees); Aritz Aduriz 443 (Wikipedia agrees); Andres Iniesta 442 (Wikipedia agrees). Casillas and Xavi had La Liga games before 2000/01 that are not counted. Two different players are called Raul Garcia and two Koke: these are Raul Garcia (born 1986: Osasuna, Atletico Madrid, Athletic Bilbao) and Koke (Atletico Madrid, born 1992)."
+}

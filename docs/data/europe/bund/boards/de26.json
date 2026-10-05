@@ -1,0 +1,87 @@
+{
+ "pick": "de26",
+ "kind": "ranked",
+ "type": "club",
+ "level": 1,
+ "title": "Biggest Bundesliga grounds",
+ "brief": "Name the ten 2025/26 Bundesliga clubs with the biggest home grounds by capacity.",
+ "period": "The 18 clubs of the 2025/26 Bundesliga, league capacity",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Dortmund",
+   "val": "81,365 (Signal Iduna Park)"
+  },
+  {
+   "label": "2",
+   "name": "Bayern Munich",
+   "val": "75,024 (Allianz Arena)"
+  },
+  {
+   "label": "3",
+   "name": "Stuttgart",
+   "val": "about 60,000 (MHPArena)",
+   "pool": "g60",
+   "alts": [
+    "Stuttgart",
+    "Eintracht Frankfurt"
+   ]
+  },
+  {
+   "label": "4",
+   "name": "Eintracht Frankfurt",
+   "val": "about 60,000 (Deutsche Bank Park)",
+   "pool": "g60",
+   "alts": [
+    "Stuttgart",
+    "Eintracht Frankfurt"
+   ]
+  },
+  {
+   "label": "5",
+   "name": "Hamburg",
+   "val": "57,000 (Volksparkstadion)"
+  },
+  {
+   "label": "6",
+   "name": "Gladbach",
+   "val": "54,909 (Borussia-Park)"
+  },
+  {
+   "label": "7",
+   "name": "Koln",
+   "val": "50,000 (RheinEnergieStadion)"
+  },
+  {
+   "label": "8",
+   "name": "RB Leipzig",
+   "val": "47,069 (Red Bull Arena)"
+  },
+  {
+   "label": "9",
+   "name": "Werder Bremen",
+   "val": "42,100 (Weserstadion)"
+  },
+  {
+   "label": "10",
+   "name": "Freiburg",
+   "val": "34,700 (Europa-Park Stadion)"
+  }
+ ],
+ "notes": {
+  "Mainz": "Mainz (MEWA Arena, 33,305) are 11th, just outside.",
+  "Augsburg": "Augsburg (WWK Arena, 30,660) are 12th.",
+  "Leverkusen": "Leverkusen (BayArena, 30,210) are 13th.",
+  "Hoffenheim": "Hoffenheim (PreZero Arena, 30,150) are 14th.",
+  "Wolfsburg": "Wolfsburg's Volkswagen Arena holds about 30,000.",
+  "St Pauli": "St Pauli's Millerntor-Stadion holds 29,546.",
+  "Union Berlin": "Union Berlin's Alte Forsterei holds 22,012.",
+  "Heidenheim": "Heidenheim's Voith-Arena holds 15,000, the smallest."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga",
+  "https://www.fussballdaten.de/bundesliga/2026/stadien/",
+  "https://www.transfermarkt.com/borussia-dortmund/stadion/verein/16"
+ ],
+ "checks": "Capacities from Wikipedia's 2025/26 stadiums table (which cites each club's own site), fussballdaten.de's 2025/26 stadium table and each club's Transfermarkt stadium page. The figure shown is one at least two of them agree on. All three agree on the top ten clubs and on Mainz 11th. Stuttgart and Frankfurt are both about 60,000 and the sources disagree on the order (Wikipedia 60,058 v 59,500, Transfermarkt 60,449 v 60,100, fussballdaten 60,058 v 60,100), so they share 3rd and 4th as a pool. Other small differences: Dortmund 81,359 (fussballdaten), Bayern 75,000 (Transfermarkt), Gladbach 54,057 and Koln 49,698 and Leipzig 47,800 (Wikipedia), Werder Bremen 41,800 (Transfermarkt); none changes the order. No two 2025/26 clubs share a ground (Hamburg and St Pauli play at different stadiums), so the shared-ground rule is not needed."
+}

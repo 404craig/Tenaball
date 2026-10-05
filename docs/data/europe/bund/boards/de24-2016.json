@@ -1,0 +1,76 @@
+{
+ "pick": "de24-2016",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Bundesliga title-winning managers 2016/17 to 2025/26",
+ "brief": "Name the manager who won the Bundesliga in each season from 2016/17 to 2025/26 (the coach in charge when the title was won).",
+ "period": "Bundesliga seasons 2016/17 to 2025/26",
+ "rows": [
+  {
+   "label": "2016/17",
+   "name": "Carlo Ancelotti",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2017/18",
+   "name": "Jupp Heynckes",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2018/19",
+   "name": "Niko Kovac",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2019/20",
+   "name": "Hansi Flick",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2020/21",
+   "name": "Hansi Flick",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2021/22",
+   "name": "Julian Nagelsmann",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2022/23",
+   "name": "Thomas Tuchel",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2023/24",
+   "name": "Xabi Alonso",
+   "val": "Leverkusen"
+  },
+  {
+   "label": "2024/25",
+   "name": "Vincent Kompany",
+   "val": "Bayern Munich"
+  },
+  {
+   "label": "2025/26",
+   "name": "Vincent Kompany",
+   "val": "Bayern Munich"
+  }
+ ],
+ "notes": {
+  "Ottmar Hitzfeld": "Ottmar Hitzfeld won the title in 2007/08, outside this window.",
+  "Matthias Sammer": "Matthias Sammer won the title in 2001/02, outside this window.",
+  "Thomas Schaaf": "Thomas Schaaf won the title in 2003/04, outside this window.",
+  "Felix Magath": "Felix Magath won the title in 2008/09, outside this window.",
+  "Armin Veh": "Armin Veh won the title in 2006/07, outside this window.",
+  "Louis van Gaal": "Louis van Gaal won the title in 2009/10, outside this window.",
+  "Jurgen Klopp": "Jurgen Klopp won the title in 2011/12, outside this window.",
+  "Pep Guardiola": "Pep Guardiola won the title in 2015/16, outside this window."
+ },
+ "sources": [
+  "https://de.wikipedia.org/wiki/Liste_der_Meistertrainer_der_Fu%C3%9Fball-Bundesliga",
+  "https://www.transfermarkt.com/fc-bayern-munchen/mitarbeiterhistorie/verein/27/personalie_id/1"
+ ],
+ "checks": "German Wikipedia's list of title-winning coaches matches the champion (Transfermarkt's final tables) and the coach in post at the end of that season in Transfermarkt's head coach histories for Bayern, Dortmund, Werder Bremen, Stuttgart, Wolfsburg and Leverkusen. Most slots for one manager in this window: 2 (4-slot rule passes). In 2017/18 Ancelotti was sacked in September, so Heynckes is the title winner; in 2022/23 Nagelsmann was sacked in March, so Tuchel is."
+}

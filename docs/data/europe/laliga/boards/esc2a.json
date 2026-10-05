@@ -88,5 +88,5 @@
   "https://www.transfermarkt.co.uk/atletico-madrid/leistungsdaten/verein/13/plus/1?reldata=ES1%262025",
   "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams/1068/roster?season=2025"
  ],
- "checks": "Goals from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: [('Conor Gallagher', 'goals', 'not on ESPN roster')]. Club total checked against the table: see club_season_checks.csv."
+ "checks": "Goals from the Transfermarkt club season page, checked player by player against ESPN 2025/26 roster stats. Differences or gaps for board names: Conor Gallagher (not on the ESPN end-of-season roster): Wikipedia career table has 19 games, 2 goals, agreeing. Club total checked against the table: see club_season_checks.csv."
 }

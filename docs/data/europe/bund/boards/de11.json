@@ -1,0 +1,84 @@
+{
+ "pick": "de11",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Most Bundesliga titles as a player",
+ "brief": "Name the ten players who won the most Bundesliga titles from 2000/01 to 2025/26, counting a title only if they played at least one league game that season.",
+ "period": "Bundesliga seasons 2000/01 to 2025/26",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Thomas Muller",
+   "val": "13 titles"
+  },
+  {
+   "label": "2",
+   "name": "Manuel Neuer",
+   "val": "13 titles"
+  },
+  {
+   "label": "3",
+   "name": "David Alaba",
+   "val": "10 titles"
+  },
+  {
+   "label": "4",
+   "name": "Robert Lewandowski",
+   "val": "10 titles"
+  },
+  {
+   "label": "5",
+   "name": "Joshua Kimmich",
+   "val": "10 titles"
+  },
+  {
+   "label": "6",
+   "name": "Franck Ribery",
+   "val": "9 titles"
+  },
+  {
+   "label": "7",
+   "name": "Javi Martinez",
+   "val": "9 titles"
+  },
+  {
+   "label": "8",
+   "name": "Jerome Boateng",
+   "val": "9 titles"
+  },
+  {
+   "label": "9",
+   "name": "Sven Ulreich",
+   "val": "9 titles"
+  },
+  {
+   "label": "10",
+   "name": "Kingsley Coman",
+   "val": "9 titles"
+  }
+ ],
+ "notes": {
+  "Thomas Muller": "Muller: 2009/10, 2012/13 to 2022/23 and 2024/25.",
+  "Manuel Neuer": "Neuer: 2012/13 to 2022/23, 2024/25 and 2025/26.",
+  "Robert Lewandowski": "Lewandowski: 2 with Dortmund (2010/11, 2011/12) and 8 with Bayern.",
+  "Mats Hummels": "Hummels won 5 (2 with Dortmund, 3 with Bayern).",
+  "Bastian Schweinsteiger": "Schweinsteiger won 8, just outside.",
+  "Philipp Lahm": "Lahm won 8, just outside.",
+  "Arjen Robben": "Robben won 8, just outside.",
+  "Rafinha": "Rafinha won 7.",
+  "Thiago Alcantara": "Thiago won 7.",
+  "Alphonso Davies": "Davies won 7.",
+  "Leon Goretzka": "Goretzka won 7.",
+  "Serge Gnabry": "Gnabry won 7.",
+  "Oliver Kahn": "Kahn won 5 since 2000/01 (his earlier titles do not count here).",
+  "Jamal Musiala": "Musiala won 6.",
+  "Josip Stanisic": "Stanisic won 6, one of them with Leverkusen in 2023/24 on loan."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-bayern-munchen/leistungsdaten/verein/27/plus/1?reldata=L1%262025",
+  "https://www.fussballdaten.de/person/thomas-mueller/leistungsdaten/",
+  "https://en.wikipedia.org/wiki/Javi_Mart%C3%ADnez"
+ ],
+ "checks": "How it was settled: for each of the 26 champions (Bayern 20, Dortmund 3, Werder Bremen, Stuttgart, Wolfsburg, Leverkusen) every squad member with at least one league appearance that season on Transfermarkt's club season stats page was credited with a title, counted by Transfermarkt player id. The thirteen players on 8 or more were then checked season by season against fussballdaten.de's career tables: all agree except Javi Martinez in 2014/15, where fussballdaten has no league game but Transfermarkt and Wikipedia (citing kicker) both give him one Bundesliga appearance, so it counts. Sven Ulreich's 2025/26 title rests on 1 game (Transfermarkt) or 2 (fussballdaten)."
+}

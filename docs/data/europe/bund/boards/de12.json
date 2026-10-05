@@ -1,0 +1,104 @@
+{
+ "pick": "de12",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Der Klassiker league scorers",
+ "brief": "Name the ten players with the most Bundesliga goals in Bayern Munich against Dortmund matches since 2000/01. Own goals do not count.",
+ "period": "Bundesliga seasons 2000/01 to 2025/26 (52 league matches)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Robert Lewandowski",
+   "val": "24 goals"
+  },
+  {
+   "label": "2",
+   "name": "Thomas Muller",
+   "val": "8 goals"
+  },
+  {
+   "label": "3",
+   "name": "Roy Makaay",
+   "val": "7 goals"
+  },
+  {
+   "label": "4",
+   "name": "Harry Kane",
+   "val": "6 goals"
+  },
+  {
+   "label": "5",
+   "name": "Marco Reus",
+   "val": "5 goals"
+  },
+  {
+   "label": "6",
+   "name": "Arjen Robben",
+   "val": "5 goals"
+  },
+  {
+   "label": "7",
+   "name": "Hasan Salihamidzic",
+   "val": "5 goals"
+  },
+  {
+   "label": "8",
+   "name": "Serge Gnabry",
+   "val": "4 goals",
+   "pool": "kl4",
+   "alts": [
+    "Serge Gnabry",
+    "Erling Haaland",
+    "Mario Gotze",
+    "Jan Koller",
+    "Claudio Pizarro"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Erling Haaland",
+   "val": "4 goals",
+   "pool": "kl4",
+   "alts": [
+    "Serge Gnabry",
+    "Erling Haaland",
+    "Mario Gotze",
+    "Jan Koller",
+    "Claudio Pizarro"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Mario Gotze",
+   "val": "4 goals",
+   "pool": "kl4",
+   "alts": [
+    "Serge Gnabry",
+    "Erling Haaland",
+    "Mario Gotze",
+    "Jan Koller",
+    "Claudio Pizarro"
+   ]
+  }
+ ],
+ "notes": {
+  "Robert Lewandowski": "Lewandowski scored 23 for Bayern and 1 for Dortmund (April 2012).",
+  "Mario Gotze": "Gotze scored 2 for Dortmund and 2 for Bayern.",
+  "Mats Hummels": "Hummels scored 3 (2 for Dortmund, 1 for Bayern), just outside. His 2019 own goal does not count.",
+  "Franck Ribery": "Ribery scored 3, just outside.",
+  "Mario Gomez": "Gomez scored 3, just outside.",
+  "Bastian Schweinsteiger": "Schweinsteiger scored 3, just outside.",
+  "Ewerthon": "Ewerthon scored 3 for Dortmund, just outside.",
+  "Roque Santa Cruz": "Santa Cruz scored 3 for Bayern, just outside.",
+  "Gregor Kobel": "Kobel's 2023 own goal does not count.",
+  "Joshua Kimmich": "Kimmich scored 2.",
+  "Jamal Musiala": "Musiala scored 2."
+ },
+ "sources": [
+  "https://www.transfermarkt.com/fc-bayern-munchen/bilanzdetail/verein/27/saison_id/0/wettbewerb_id/L1/gegner_id/16",
+  "https://www.fussballdaten.de/bundesliga/2026/24/dortmund-bayern/",
+  "docs/data/europe/bund/derby.csv"
+ ],
+ "checks": "Every one of the 52 league meetings from 2000/01 to 2025/26 was read from its Transfermarkt match report and checked goal by goal (score after the goal and scorer) against the fussballdaten.de match page; all 180 goals agree, including the two own goals (Hummels 2019, Kobel 2023), which are left out. Every final score also matches football-data.co.uk. Five players have 4 goals, so they share 8th to 10th as a pool."
+}
