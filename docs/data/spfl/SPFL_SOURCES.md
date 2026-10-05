@@ -8,12 +8,15 @@ Craig's picks from the Scottish Premiership question picker (5 October 2026), bu
 |---|---|---|
 | `spfl_tables.csv` | Every final table, 2000/01 to 2025/26 | Worked out from every result in football-data.co.uk's Scottish files (`SC0.csv` for each season). All 250 points totals in the game's own season tables matched; 2025/26 matched Wikipedia (Celtic 82, Hearts 80, Rangers 72). Deductions from Wikipedia's season articles: Gretna -10 (2007/08), Rangers -10 (2011/12), Hearts -15 (2013/14), Dundee United -3 (2015/16). |
 | `spfl_players.csv` | Every player's league appearances, goals and assists for each club and season | Transfermarkt club season pages, with the post-split games (TM's SCPM and SCPA codes) added; see `README.md`. Each club's goals were checked against its table (gaps of 0 to 4 are own goals). The season's top scorer matched the game's own top scorer boards for 25 of 26 seasons; the 26th (Ross County 2021/22) is corrected below. |
-| `fitba_players.csv` | Appearances and goals for Celtic, Rangers, Aberdeen, Hearts, Hibernian, Motherwell and Dundee United | FitbaStats, as an independent check on the Transfermarkt figures (`FITBA_NOTES.md`). |
+| `second_source.csv` | A second source for every club scorers and appearances board | FitbaStats for Celtic, Rangers and Hibernian (`fitba_players.csv`, `FITBA_NOTES.md`); AFC Heritage for Aberdeen, londonhearts.com and Soccerbase for Hearts, Soccerbase and Wikipedia for Motherwell and Dundee United (`XCHECK_NOTES.md`). |
 | `derbies.csv` | Every Old Firm and Edinburgh derby league match with its scorers | FitbaStats match pages, londonhearts.com and the clubs' Wikipedia season articles (`DERBIES_NOTES.md`). |
 | `SPFL_LISTS.md` | Managers, captains, PFA Scotland awards, cup finals, promotion and relegation, European final line-ups | Wikipedia, FitbaStats, RSSSF, AFC Heritage, BBC and others, two sources a row. |
 | `SPFL_TRANSFERS.md` | Celtic, Rangers and other clubs' biggest fees | Transfermarkt plus a news report for every fee. |
 
 ## Corrections and decisions
+
+- **Two sources for the club boards:** every club scorers and appearances top ten is the same in both sources. Where the totals differ (by one or two), the board shows both, for example "88 or 89 goals", and players whose order isn't certain in both sources (level in either, or the other way round) share their places, so either order counts.
+- **One source only (overall scorers, assists, best seasons, 20-goal seasons, top scorer per country):** where the sources could be compared they differed by a goal or a game, so on these boards players within one of each other share their places, and a gap of one at the cut brings the next player into a shared 10th (the overall scorers' 10th is Kenny Miller, Adam Rooney or Billy McKay).
 
 - **Ross County 2021/22:** Transfermarkt has Regan Charles-Cook on 10 goals and Joseph Hungbo on 6. Wikipedia's season article and the game's own top scorer board have 13 and 7, so the CSV uses those.
 - **Dundee 3-2 Aberdeen, 17 May 2026:** Transfermarkt has no line-ups for this game, so players in it are one appearance short for 2025/26. It changes no board.

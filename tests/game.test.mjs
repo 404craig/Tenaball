@@ -590,5 +590,19 @@ await test("questions: every board's answers match its type (clubs on club board
   eq(q, ["club", "Type a club", "Brighton"], "the promoted clubs board asks for clubs");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("scottish boards: open boards take any name on their list, filling from 10th up, and every board has ten answers", async () => {
+  const p = await phone(browser, "spfl"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const r = await p.evaluate(() => {
+    const m = findQ("spfl-letter-cel-m"), c = findQ("spfl-open-captains");
+    G = { q: m, slotName: {}, foundBy: {}, poolUsed: {} };
+    const hit = guessHits("Callum McGregor", G, false).hits, miss = guessHits("Scott Brown", G, false).hits;
+    const spfl = [...EXTRA_Q5, ...SPFL_OPEN].map(b => findQ(b.id)).filter(Boolean);
+    return { hit, miss, cap: [c.open.fits("Scott Brown"), c.open.fits("Kris Boyd")], note: c.note("Kris Boyd"), n: spfl.length, ten: spfl.every(q => q.slots.length === 10), ex: m.open.examples.every(n => m.open.fits(n)) };
+  });
+  eq([r.hit, r.miss, r.cap, r.ten, r.ex], [[9], [], [true, false], true, true], "McGregor fills 10th on the Celtic M board, Brown doesn't count, captains board knows its captains");
+  eq(r.n, 57, "all 49 Scottish boards and 8 open boards are in the game");
+  assert(/Kris Boyd/.test(r.note), r.note);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await browser.close(); await site.close();
 report();
