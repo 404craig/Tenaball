@@ -1,0 +1,86 @@
+{
+ "pick": "b04-por",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Portugal's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Portugal in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "233 caps"
+  },
+  {
+   "label": "2",
+   "name": "Joao Moutinho",
+   "val": "146 caps"
+  },
+  {
+   "label": "3",
+   "name": "Pepe",
+   "val": "141 caps"
+  },
+  {
+   "label": "4",
+   "name": "Bernardo Silva",
+   "val": "113 caps"
+  },
+  {
+   "label": "5",
+   "name": "Nani",
+   "val": "112 caps"
+  },
+  {
+   "label": "6",
+   "name": "Rui Patricio",
+   "val": "108 caps"
+  },
+  {
+   "label": "7",
+   "name": "Bruno Alves",
+   "val": "96 caps"
+  },
+  {
+   "label": "8",
+   "name": "Bruno Fernandes",
+   "val": "94 caps"
+  },
+  {
+   "label": "9",
+   "name": "Ricardo Carvalho",
+   "val": "89 caps"
+  },
+  {
+   "label": "10",
+   "name": "Simao",
+   "val": "84 caps"
+  }
+ ],
+ "notes": {
+  "Ricardo Quaresma": "Ricardo Quaresma is joint 11th with 80, just outside.",
+  "William Carvalho": "William Carvalho is joint 11th with 80, just outside.",
+  "Ruben Dias": "Ruben Dias is joint 11th with 80 at 19 July 2026, just outside.",
+  "Pauleta": "Pauleta has 77 since 2000 (88 in all).",
+  "Raul Meireles": "Raul Meireles has 76.",
+  "Deco": "Deco has 75.",
+  "Danilo Pereira": "Danilo Pereira has 74.",
+  "Joao Cancelo": "Joao Cancelo had 73 at 19 July 2026.",
+  "Nuno Gomes": "Nuno Gomes has 71 since 2000 (79 in all).",
+  "Helder Postiga": "Helder Postiga has 71.",
+  "Luis Figo": "Luis Figo has 70 since 2000 (127 in all).",
+  "Fernando Couto": "Fernando Couto has 110 in all, more than half of them before 2000.",
+  "Rui Costa": "Rui Costa has 46 since 2000 (94 in all).",
+  "Simao": "Simao has 84 since 2000 (85 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/148/2010/Portugal.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/port-recintlp.html",
+  "https://en.wikipedia.org/wiki/Sim%C3%A3o_Sabrosa",
+  "https://en.wikipedia.org/wiki/Bernardo_Silva",
+  "https://en.wikipedia.org/wiki/Nani_(footballer)",
+  "Transfermarkt match reports for Portugal's nine games from March to July 2026 (https://www.transfermarkt.com/portugal/spielplan/verein/3300/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Portugal pages for 2000 to 2026, FIFA and non-FIFA games together (the FPF, RSSSF and Wikipedia count the friendlies it marks non-FIFA in 2007, 2008 and 2010; its FIFA-only figures are 1 to 3 short for Ronaldo, Moutinho, Pepe, Nani and Bruno Alves). Every player in the ten and in joint 11th started after 2000 except Simao, and each matches RSSSF's career total plus his 2026 games (Ronaldo 233, Moutinho 146, Pepe 141, Bernardo Silva 113, Nani 112, Rui Patricio 108, Bruno Alves 96, Bruno Fernandes 94, Ricardo Carvalho 89, Quaresma 80, William Carvalho 80, Ruben Dias 74 + 6 = 80). Simao's 84 (85 in all, one cap in 1998) matches the year table in his Wikipedia article. Portugal's 2026 games up to the World Cup final (nine, the last the quarter-final against Spain on 6 July) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Ronaldo 7 games and 3 goals, Bruno Fernandes 9 and 1, Bernardo Silva 6, Ruben Dias 6, Joao Cancelo 9, Joao Felix 7 and 1. The September and October 2026 games are left out."
+}

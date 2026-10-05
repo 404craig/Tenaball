@@ -1,0 +1,85 @@
+{
+ "pick": "b03-den",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Denmark's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Denmark in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Jon Dahl Tomasson",
+   "val": "46 goals"
+  },
+  {
+   "label": "2",
+   "name": "Christian Eriksen",
+   "val": "46 goals"
+  },
+  {
+   "label": "3",
+   "name": "Nicklas Bendtner",
+   "val": "30 goals"
+  },
+  {
+   "label": "4",
+   "name": "Dennis Rommedahl",
+   "val": "21 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ebbe Sand",
+   "val": "17 goals"
+  },
+  {
+   "label": "6",
+   "name": "Yussuf Poulsen",
+   "val": "14 goals"
+  },
+  {
+   "label": "7",
+   "name": "Rasmus Hojlund",
+   "val": "13 goals"
+  },
+  {
+   "label": "8",
+   "name": "Daniel Agger",
+   "val": "12 goals"
+  },
+  {
+   "label": "9",
+   "name": "Kasper Dolberg",
+   "val": "12 goals"
+  },
+  {
+   "label": "10",
+   "name": "Joakim Maehle",
+   "val": "12 goals"
+  }
+ ],
+ "notes": {
+  "Pierre-Emile Hojbjerg": "Pierre-Emile Hojbjerg is joint 11th with 11, just outside.",
+  "Soren Larsen": "Soren Larsen is joint 11th with 11, just outside.",
+  "Martin Braithwaite": "Martin Braithwaite has 10.",
+  "Martin Jorgensen": "Martin Jorgensen has 9 since 2000 (12 in all).",
+  "Andreas Cornelius": "Andreas Cornelius has 9.",
+  "Nicolai Jorgensen": "Nicolai Jorgensen has 9.",
+  "Mikkel Damsgaard": "Mikkel Damsgaard had 8 at 19 July 2026.",
+  "Thomas Delaney": "Thomas Delaney has 8.",
+  "Jon Dahl Tomasson": "Jon Dahl Tomasson has 46 since 2000 (52 in all).",
+  "Ebbe Sand": "Ebbe Sand has 17 since 2000 (22 in all).",
+  "Michael Laudrup": "Michael Laudrup's 37 goals were all before 2000.",
+  "Brian Laudrup": "Brian Laudrup's 21 goals were all before 2000."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/51/2010/Denmark.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/den-recintlp.html",
+  "https://en.wikipedia.org/wiki/Jon_Dahl_Tomasson",
+  "https://en.wikipedia.org/wiki/Ebbe_Sand",
+  "https://en.wikipedia.org/wiki/Kasper_Dolberg",
+  "https://en.wikipedia.org/wiki/Dennis_Rommedahl",
+  "Transfermarkt match reports for Denmark's four games from March to June 2026 (https://www.transfermarkt.com/daenemark/spielplan/verein/3436/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Denmark pages for 2000 to 2026, using its FIFA games only: the games it marks non-FIFA (Danish league selections on January tours in 2000, 2012 and 2013) are not counted by the DBU, RSSSF or Wikipedia (for example Cornelius has 9 in all three, 13 with those games). Players who started in 2000 or later match RSSSF's career totals (Eriksen 46, Bendtner 30, Rommedahl 21, Y. Poulsen 14, Hojlund 13, Agger 12, Maehle 12, Hojbjerg 11, S. Larsen 11). Tomasson (46) and Sand (17), who started before 2000, match the year tables in their Wikipedia articles. Dolberg: RSSSF has 13, but national-football-teams.com and Wikipedia (year table and infobox) both have 12; 12 is used. With 13 he would share 7th with Hojlund; the same ten names fill the board either way. Denmark did not reach the 2026 World Cup (out after the play-off final in the Czech Republic on 31 March), so its last game before 19 July 2026 was the friendly against Ukraine on 7 June; RSSSF runs to that game. Its 2026 games come from national-football-teams.com and Transfermarkt match reports, which agree player by player. The September 2026 game in Norway is left out."
+}

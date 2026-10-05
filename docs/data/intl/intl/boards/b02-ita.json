@@ -1,0 +1,81 @@
+{
+ "pick": "b02-ita",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Italy's most capped players",
+ "brief": "Name the ten players with the most caps for Italy in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gianluigi Buffon",
+   "val": "176 caps"
+  },
+  {
+   "label": "2",
+   "name": "Fabio Cannavaro",
+   "val": "136 caps"
+  },
+  {
+   "label": "3",
+   "name": "Paolo Maldini",
+   "val": "126 caps"
+  },
+  {
+   "label": "4",
+   "name": "Leonardo Bonucci",
+   "val": "121 caps"
+  },
+  {
+   "label": "5",
+   "name": "Giorgio Chiellini",
+   "val": "117 caps"
+  },
+  {
+   "label": "6",
+   "name": "Daniele De Rossi",
+   "val": "117 caps"
+  },
+  {
+   "label": "7",
+   "name": "Andrea Pirlo",
+   "val": "116 caps"
+  },
+  {
+   "label": "8",
+   "name": "Dino Zoff",
+   "val": "112 caps"
+  },
+  {
+   "label": "9",
+   "name": "Gianluca Zambrotta",
+   "val": "98 caps"
+  },
+  {
+   "label": "10",
+   "name": "Giacinto Facchetti",
+   "val": "94 caps"
+  }
+ ],
+ "notes": {
+  "Alessandro Del Piero": "Alessandro Del Piero is 11th with 91, just outside.",
+  "Gianluigi Donnarumma": "Gianluigi Donnarumma is 12th with 83 at 19 July 2026 (his caps since then don't count).",
+  "Franco Baresi": "Franco Baresi has 81.",
+  "Giuseppe Bergomi": "Giuseppe Bergomi has 81.",
+  "Marco Tardelli": "Marco Tardelli has 81.",
+  "Demetrio Albertini": "Demetrio Albertini has 79.",
+  "Alessandro Nesta": "Alessandro Nesta has 78.",
+  "Gaetano Scirea": "Gaetano Scirea has 78.",
+  "Gennaro Gattuso": "Gennaro Gattuso has 73.",
+  "Andrea Barzagli": "Andrea Barzagli has 73.",
+  "Nicolo Barella": "Nicolo Barella had 70 at 19 July 2026."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/ital-recintlp.html",
+  "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/italien/rekordspieler/verein/3376",
+  "https://www.national-football-teams.com/country/92/2010/Italy.html (one page per year, 2000 to 2026)"
+ ],
+ "checks": "RSSSF (to 7 June 2026, Italy's last match before 19 July 2026) and Wikipedia's records page agree on every figure in the ten; Transfermarkt agrees on all ten. Donnarumma: RSSSF 83 and national-football-teams.com 83 to 19 July 2026 (Transfermarkt shows more, counting autumn 2026 games). Del Piero 91: RSSSF, Wikipedia and Transfermarkt agree."
+}

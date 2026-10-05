@@ -1,0 +1,80 @@
+{
+ "pick": "b01-por",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Portugal's all-time top scorers",
+ "brief": "Name the ten players with the most goals for Portugal in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "2",
+   "name": "Pauleta",
+   "val": "47 goals"
+  },
+  {
+   "label": "3",
+   "name": "Eusebio",
+   "val": "41 goals"
+  },
+  {
+   "label": "4",
+   "name": "Luis Figo",
+   "val": "32 goals"
+  },
+  {
+   "label": "5",
+   "name": "Nuno Gomes",
+   "val": "29 goals"
+  },
+  {
+   "label": "6",
+   "name": "Bruno Fernandes",
+   "val": "29 goals"
+  },
+  {
+   "label": "7",
+   "name": "Helder Postiga",
+   "val": "27 goals"
+  },
+  {
+   "label": "8",
+   "name": "Rui Costa",
+   "val": "26 goals"
+  },
+  {
+   "label": "9",
+   "name": "Nani",
+   "val": "24 goals"
+  },
+  {
+   "label": "10",
+   "name": "Joao Pinto",
+   "val": "23 goals"
+  }
+ ],
+ "notes": {
+  "Nene": "Nene (Tamagnini Nene, 1971 to 1984) is joint 11th with 22, just outside.",
+  "Simao": "Simao is joint 11th with 22, just outside.",
+  "Hugo Almeida": "Hugo Almeida has 19.",
+  "Andre Silva": "Andre Silva has 19.",
+  "Rui Jordao": "Rui Jordao has 15.",
+  "Bernardo Silva": "Bernardo Silva has 14.",
+  "Diogo Jota": "Diogo Jota has 14.",
+  "Joao Felix": "Joao Felix had 12 at 19 July 2026.",
+  "Joao Cancelo": "Joao Cancelo has 12.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo had 146 at the end of the 2026 World Cup."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/port-recintlp.html",
+  "https://en.wikipedia.org/wiki/Portugal_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/portugal/rekordspieler/verein/3300/sort/tore.desc",
+  "https://www.national-football-teams.com/country/148/2010/Portugal.html (one page per year, 2000 to 2026)"
+ ],
+ "checks": "RSSSF (to 16 November 2025) plus Portugal's 2026 games up to the final, and Wikipedia's records page (updated to 24 September 2026; nobody in the ten scored in September 2026), agree on every figure in the ten and on 11th: Ronaldo 143 + 3 = 146, Bruno Fernandes 28 + 1 = 29. Portugal's 2026 games up to the World Cup final (nine, the last the quarter-final against Spain on 6 July) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Ronaldo 7 games and 3 goals, Bruno Fernandes 9 and 1, Bernardo Silva 6, Ruben Dias 6, Joao Cancelo 9, Joao Felix 7 and 1. The September and October 2026 games are left out. Transfermarkt has Eusebio on 42 and Joao Pinto on 22; RSSSF and Wikipedia (the FPF count) both have 41 and 23, used here. Joao Pinto here is Joao Vieira Pinto (1991 to 2002), not the 1980s defender of the same name."
+}

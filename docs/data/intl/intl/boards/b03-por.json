@@ -1,0 +1,89 @@
+{
+ "pick": "b03-por",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Portugal's top scorers since 2000",
+ "brief": "Name the ten players with the most goals for Portugal in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "146 goals"
+  },
+  {
+   "label": "2",
+   "name": "Pauleta",
+   "val": "44 goals"
+  },
+  {
+   "label": "3",
+   "name": "Nuno Gomes",
+   "val": "29 goals"
+  },
+  {
+   "label": "4",
+   "name": "Bruno Fernandes",
+   "val": "29 goals"
+  },
+  {
+   "label": "5",
+   "name": "Helder Postiga",
+   "val": "27 goals"
+  },
+  {
+   "label": "6",
+   "name": "Nani",
+   "val": "24 goals"
+  },
+  {
+   "label": "7",
+   "name": "Simao",
+   "val": "21 goals"
+  },
+  {
+   "label": "8",
+   "name": "Luis Figo",
+   "val": "20 goals"
+  },
+  {
+   "label": "9",
+   "name": "Hugo Almeida",
+   "val": "19 goals"
+  },
+  {
+   "label": "10",
+   "name": "Andre Silva",
+   "val": "19 goals"
+  }
+ ],
+ "notes": {
+  "Bernardo Silva": "Bernardo Silva is joint 11th with 14, just outside.",
+  "Diogo Jota": "Diogo Jota is joint 11th with 14, just outside.",
+  "Joao Cancelo": "Joao Cancelo has 12.",
+  "Joao Felix": "Joao Felix had 12 at 19 July 2026.",
+  "Goncalo Ramos": "Goncalo Ramos had 11 at 19 July 2026.",
+  "Bruno Alves": "Bruno Alves has 11.",
+  "Sergio Conceicao": "Sergio Conceicao has 10 since 2000 (12 in all).",
+  "Ricardo Quaresma": "Ricardo Quaresma has 10.",
+  "Raul Meireles": "Raul Meireles has 10.",
+  "Rui Costa": "Rui Costa has 9 since 2000 (26 in all).",
+  "Eusebio": "Eusebio's 41 goals were all long before 2000.",
+  "Joao Pinto": "Joao Pinto scored most of his 23 before 2000.",
+  "Pauleta": "Pauleta has 44 since 2000 (47 in all).",
+  "Luis Figo": "Luis Figo has 20 since 2000 (32 in all).",
+  "Simao": "Simao has 21 since 2000 (22 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/148/2010/Portugal.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/port-recintlp.html",
+  "https://en.wikipedia.org/wiki/Pauleta",
+  "https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo",
+  "https://en.wikipedia.org/wiki/Nuno_Gomes",
+  "https://en.wikipedia.org/wiki/Sim%C3%A3o_Sabrosa",
+  "https://en.wikipedia.org/wiki/Nani_(footballer)",
+  "Transfermarkt match reports for Portugal's nine games from March to July 2026 (https://www.transfermarkt.com/portugal/spielplan/verein/3300/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Portugal pages for 2000 to 2026. Players who started after 2000 match RSSSF's career totals plus 2026 (Ronaldo 146, Bruno Fernandes 29, Postiga 27, Hugo Almeida 19, Andre Silva 19, Bernardo Silva 14, Jota 14). Pauleta (44), Nuno Gomes (29, all from 2000), Simao (21) and Figo (20), who started before 2000, match the year tables in their Wikipedia articles. Nani: national-football-teams.com has 23, RSSSF and Wikipedia (year table and infobox) both 24; 24 is used (6th either way). Portugal's 2026 games up to the World Cup final (nine, the last the quarter-final against Spain on 6 July) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Ronaldo 7 games and 3 goals, Bruno Fernandes 9 and 1, Bernardo Silva 6, Ruben Dias 6, Joao Cancelo 9, Joao Felix 7 and 1. The September and October 2026 games are left out."
+}

@@ -1,0 +1,82 @@
+{
+ "pick": "b01-ned",
+ "kind": "ranked",
+ "type": "person",
+ "level": 0,
+ "title": "Netherlands' all-time top scorers",
+ "brief": "Name the ten players with the most goals for the Netherlands in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Memphis Depay",
+   "val": "55 goals"
+  },
+  {
+   "label": "2",
+   "name": "Robin van Persie",
+   "val": "50 goals"
+  },
+  {
+   "label": "3",
+   "name": "Klaas-Jan Huntelaar",
+   "val": "42 goals"
+  },
+  {
+   "label": "4",
+   "name": "Patrick Kluivert",
+   "val": "40 goals"
+  },
+  {
+   "label": "5",
+   "name": "Dennis Bergkamp",
+   "val": "37 goals"
+  },
+  {
+   "label": "6",
+   "name": "Arjen Robben",
+   "val": "37 goals"
+  },
+  {
+   "label": "7",
+   "name": "Faas Wilkes",
+   "val": "35 goals"
+  },
+  {
+   "label": "8",
+   "name": "Ruud van Nistelrooy",
+   "val": "35 goals"
+  },
+  {
+   "label": "9",
+   "name": "Abe Lenstra",
+   "val": "33 goals"
+  },
+  {
+   "label": "10",
+   "name": "Johan Cruyff",
+   "val": "33 goals"
+  }
+ ],
+ "notes": {
+  "Wesley Sneijder": "Wesley Sneijder is 11th with 31, just outside.",
+  "Beb Bakhuys": "Beb Bakhuys is joint 12th with 28.",
+  "Georginio Wijnaldum": "Georginio Wijnaldum is joint 12th with 28.",
+  "Kick Smit": "Kick Smit has 26.",
+  "Rafael van der Vaart": "Rafael van der Vaart has 25.",
+  "Marco van Basten": "Marco van Basten has 24.",
+  "Dirk Kuyt": "Dirk Kuyt has 24.",
+  "Cody Gakpo": "Cody Gakpo had 24 at 19 July 2026.",
+  "Marc Overmars": "Marc Overmars has 17.",
+  "Ruud Gullit": "Ruud Gullit has 17.",
+  "Johan Neeskens": "Johan Neeskens has 17.",
+  "Memphis Depay": "Memphis Depay had 55 at the end of the 2026 World Cup (no goals in his four 2026 games)."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/ned-recintlp.html",
+  "https://www.transfermarkt.com/niederlande/rekordspieler/verein/3379/sort/tore.desc",
+  "https://www.national-football-teams.com/country/129/2010/Netherlands.html (one page per year, 2000 to 2026)",
+  "Transfermarkt match reports for the Netherlands' eight games from March to July 2026 (https://www.transfermarkt.com/niederlande/spielplan/verein/3379/saison_id/2026)"
+ ],
+ "checks": "RSSSF (to 17 November 2025) plus the 2026 games up to the final, and Transfermarkt's record list, agree on every figure in the ten and on 11th and 12th. The Netherlands' 2026 games up to the World Cup final (eight, the last the round of 32 against Morocco on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Depay 4 games and no goals, Van Dijk 8 and 2, Gakpo 8 and 5, Dumfries 7. The September and October 2026 games are left out. national-football-teams.com has Depay one short on 54; RSSSF, Transfermarkt and Wikipedia's article on Depay (year table and infobox) all have 55. Ties inside the ten are listed in RSSSF order."
+}

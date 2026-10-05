@@ -1,0 +1,83 @@
+{
+ "pick": "b03-ned",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Netherlands' top scorers since 2000",
+ "brief": "Name the ten players with the most goals for the Netherlands in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only goals from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Memphis Depay",
+   "val": "55 goals"
+  },
+  {
+   "label": "2",
+   "name": "Robin van Persie",
+   "val": "50 goals"
+  },
+  {
+   "label": "3",
+   "name": "Klaas-Jan Huntelaar",
+   "val": "42 goals"
+  },
+  {
+   "label": "4",
+   "name": "Arjen Robben",
+   "val": "37 goals"
+  },
+  {
+   "label": "5",
+   "name": "Ruud van Nistelrooy",
+   "val": "34 goals"
+  },
+  {
+   "label": "6",
+   "name": "Wesley Sneijder",
+   "val": "31 goals"
+  },
+  {
+   "label": "7",
+   "name": "Georginio Wijnaldum",
+   "val": "28 goals"
+  },
+  {
+   "label": "8",
+   "name": "Rafael van der Vaart",
+   "val": "25 goals"
+  },
+  {
+   "label": "9",
+   "name": "Dirk Kuyt",
+   "val": "24 goals"
+  },
+  {
+   "label": "10",
+   "name": "Cody Gakpo",
+   "val": "24 goals"
+  }
+ ],
+ "notes": {
+  "Patrick Kluivert": "Patrick Kluivert is 11th with 23 since 2000 (40 in all), just outside.",
+  "Wout Weghorst": "Wout Weghorst is 12th with 14.",
+  "Virgil van Dijk": "Virgil van Dijk had 13 at 19 July 2026.",
+  "Donyell Malen": "Donyell Malen has 13.",
+  "Denzel Dumfries": "Denzel Dumfries has 11.",
+  "Mark van Bommel": "Mark van Bommel has 10.",
+  "Ryan Babel": "Ryan Babel has 10.",
+  "Davy Klaassen": "Davy Klaassen has 10.",
+  "Dennis Bergkamp": "Dennis Bergkamp's 37 goals came almost entirely before 2000.",
+  "Frank de Boer": "Frank de Boer has 7 since 2000.",
+  "Ruud van Nistelrooy": "Ruud van Nistelrooy has 34 since 2000 (35 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/129/2010/Netherlands.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/ned-recintlp.html",
+  "https://en.wikipedia.org/wiki/Patrick_Kluivert",
+  "https://en.wikipedia.org/wiki/Ruud_van_Nistelrooy",
+  "https://en.wikipedia.org/wiki/Memphis_Depay",
+  "Transfermarkt match reports for the Netherlands' eight games from March to July 2026 (https://www.transfermarkt.com/niederlande/spielplan/verein/3379/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Netherlands pages for 2000 to 2026. Players who started after 2000 match RSSSF's career totals plus 2026 (Van Persie 50, Huntelaar 42, Robben 37, Sneijder 31, Wijnaldum 28, Van der Vaart 25, Kuyt 24, Gakpo 19 + 5 = 24, Weghorst 14). Depay: 55 in RSSSF, Transfermarkt and his Wikipedia article (national-football-teams.com 54). Van Nistelrooy (34, one goal in 1999) and Kluivert (23, 17 before 2000) match the year tables in their Wikipedia articles. The Netherlands' 2026 games up to the World Cup final (eight, the last the round of 32 against Morocco on 30 June) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Depay 4 games and no goals, Van Dijk 8 and 2, Gakpo 8 and 5, Dumfries 7. The September and October 2026 games are left out. Kuyt and Gakpo share 9th and 10th on 24, both on the board."
+}

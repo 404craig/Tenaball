@@ -1,0 +1,95 @@
+{
+ "pick": "b04-den",
+ "kind": "ranked",
+ "type": "person",
+ "level": 2,
+ "title": "Denmark's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Denmark in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Christian Eriksen",
+   "val": "151 caps"
+  },
+  {
+   "label": "2",
+   "name": "Simon Kjaer",
+   "val": "132 caps"
+  },
+  {
+   "label": "3",
+   "name": "Dennis Rommedahl",
+   "val": "126 caps"
+  },
+  {
+   "label": "4",
+   "name": "Kasper Schmeichel",
+   "val": "120 caps"
+  },
+  {
+   "label": "5",
+   "name": "Thomas Sorensen",
+   "val": "100 caps"
+  },
+  {
+   "label": "6",
+   "name": "Jon Dahl Tomasson",
+   "val": "97 caps"
+  },
+  {
+   "label": "7",
+   "name": "Pierre-Emile Hojbjerg",
+   "val": "97 caps"
+  },
+  {
+   "label": "8",
+   "name": "Christian Poulsen",
+   "val": "92 caps"
+  },
+  {
+   "label": "9",
+   "name": "Yussuf Poulsen",
+   "val": "86 caps"
+  },
+  {
+   "label": "10",
+   "name": "Nicklas Bendtner",
+   "val": "81 caps",
+   "pool": "den-c10",
+   "alts": [
+    "Nicklas Bendtner",
+    "Andreas Christensen",
+    "Thomas Delaney",
+    "Lars Jacobsen",
+    "William Kvist"
+   ]
+  }
+ ],
+ "notes": {
+  "Nicklas Bendtner": "Nicklas Bendtner is one of five players joint 10th with 81; any of them fills the 10th place.",
+  "Andreas Christensen": "Andreas Christensen is one of five players joint 10th with 81; any of them fills the 10th place.",
+  "Thomas Delaney": "Thomas Delaney is one of five players joint 10th with 81; any of them fills the 10th place.",
+  "Lars Jacobsen": "Lars Jacobsen is one of five players joint 10th with 81; any of them fills the 10th place.",
+  "William Kvist": "William Kvist is one of five players joint 10th with 81; any of them fills the 10th place.",
+  "Martin Jorgensen": "Martin Jorgensen is next with 80 since 2000 (102 in all), just outside.",
+  "Daniel Agger": "Daniel Agger has 75.",
+  "Jesper Gronkjaer": "Jesper Gronkjaer has 74 since 2000 (80 in all).",
+  "Martin Braithwaite": "Martin Braithwaite has 69.",
+  "Thomas Helveg": "Thomas Helveg has 60 since 2000 (108 in all).",
+  "Peter Schmeichel": "Peter Schmeichel's 129 caps were nearly all before 2000.",
+  "Thomas Sorensen": "Thomas Sorensen has 100 since 2000 (101 in all).",
+  "Jon Dahl Tomasson": "Jon Dahl Tomasson has 97 since 2000 (112 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/51/2010/Denmark.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/den-recintlp.html",
+  "https://en.wikipedia.org/wiki/Thomas_S%C3%B8rensen",
+  "https://en.wikipedia.org/wiki/Jon_Dahl_Tomasson",
+  "https://en.wikipedia.org/wiki/Lars_Jacobsen",
+  "https://en.wikipedia.org/wiki/William_Kvist",
+  "https://en.wikipedia.org/wiki/Yussuf_Poulsen",
+  "Transfermarkt match reports for Denmark's four games from March to June 2026 (https://www.transfermarkt.com/daenemark/spielplan/verein/3436/saison_id/2026)"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Denmark pages for 2000 to 2026 (FIFA games only, as the DBU counts; see the scorers board), then checked against RSSSF's career totals for everyone who started in 2000 or later and against Wikipedia year tables for Sorensen (100) and Tomasson (97), who started earlier. Two disagreements: national-football-teams.com has Lars Jacobsen on 87 and William Kvist on 84, but RSSSF and Wikipedia (infobox, and Kvist's year table) both have 81 for each; 81 is used. Yussuf Poulsen: RSSSF and his Wikipedia infobox have 86 (national-football-teams.com 85 FIFA games plus one January 2013 game, his Wikipedia year table 87 counting that game); 86 is used and he is 9th on any of the three counts. Rommedahl 126 (RSSSF, Wikipedia; national-football-teams.com adds one non-FIFA game). Five players share 10th on 81 (Bendtner, Christensen, Delaney, Jacobsen, Kvist), so the 10th place is a pool; Martin Jorgensen is next on 80. Denmark did not reach the 2026 World Cup (out after the play-off final in the Czech Republic on 31 March), so its last game before 19 July 2026 was the friendly against Ukraine on 7 June; RSSSF runs to that game. Its 2026 games come from national-football-teams.com and Transfermarkt match reports, which agree player by player. The September 2026 game in Norway is left out."
+}

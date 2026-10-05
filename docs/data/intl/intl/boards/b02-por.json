@@ -1,0 +1,88 @@
+{
+ "pick": "b02-por",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Portugal's most capped players",
+ "brief": "Name the ten players with the most caps for Portugal in full internationals, to the end of the 2026 World Cup.",
+ "period": "All full internationals to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Cristiano Ronaldo",
+   "val": "233 caps"
+  },
+  {
+   "label": "2",
+   "name": "Joao Moutinho",
+   "val": "146 caps"
+  },
+  {
+   "label": "3",
+   "name": "Pepe",
+   "val": "141 caps"
+  },
+  {
+   "label": "4",
+   "name": "Luis Figo",
+   "val": "127 caps"
+  },
+  {
+   "label": "5",
+   "name": "Bernardo Silva",
+   "val": "113 caps"
+  },
+  {
+   "label": "6",
+   "name": "Nani",
+   "val": "112 caps"
+  },
+  {
+   "label": "7",
+   "name": "Fernando Couto",
+   "val": "110 caps"
+  },
+  {
+   "label": "8",
+   "name": "Rui Patricio",
+   "val": "108 caps"
+  },
+  {
+   "label": "9",
+   "name": "Bruno Alves",
+   "val": "96 caps"
+  },
+  {
+   "label": "10",
+   "name": "Rui Costa",
+   "val": "94 caps",
+   "pool": "por-c10",
+   "alts": [
+    "Rui Costa",
+    "Bruno Fernandes"
+   ]
+  }
+ ],
+ "notes": {
+  "Rui Costa": "Rui Costa and Bruno Fernandes are joint 10th with 94; either fills the 10th place.",
+  "Bruno Fernandes": "Bruno Fernandes and Rui Costa are joint 10th with 94 (Bruno's caps since 19 July 2026 don't count); either fills the 10th place.",
+  "Ricardo Carvalho": "Ricardo Carvalho is 12th with 89.",
+  "Pauleta": "Pauleta has 88.",
+  "Simao": "Simao has 85.",
+  "Joao Pinto": "Joao Pinto (Joao Vieira Pinto) has 81.",
+  "Ricardo Quaresma": "Ricardo Quaresma has 80.",
+  "William Carvalho": "William Carvalho has 80.",
+  "Ruben Dias": "Ruben Dias had 80 at 19 July 2026.",
+  "Vitor Baia": "Vitor Baia has 80.",
+  "Nuno Gomes": "Nuno Gomes has 79.",
+  "Cristiano Ronaldo": "Cristiano Ronaldo had 233 at the end of the 2026 World Cup."
+ },
+ "sources": [
+  "https://www.rsssf.org/miscellaneous/port-recintlp.html",
+  "https://en.wikipedia.org/wiki/Portugal_national_football_team_records_and_statistics",
+  "https://www.transfermarkt.com/portugal/rekordspieler/verein/3300",
+  "https://www.national-football-teams.com/country/148/2010/Portugal.html (one page per year, 2000 to 2026)",
+  "Transfermarkt match reports for Portugal's nine games from March to July 2026 (https://www.transfermarkt.com/portugal/spielplan/verein/3300/saison_id/2026)"
+ ],
+ "checks": "RSSSF (to 16 November 2025) plus Portugal's 2026 games up to the World Cup final, checked against Wikipedia's records page (to 27 September 2026, minus the September games: Ronaldo 234 less 1, Bernardo Silva 114 less 1, Bruno Fernandes 95 less 1) and against national-football-teams.com's year pages counted from 2000 (FIFA and non-FIFA games together, as the FPF counts them). Portugal's 2026 games up to the World Cup final (nine, the last the quarter-final against Spain on 6 July) come from national-football-teams.com and Transfermarkt match reports, which agree player by player: Ronaldo 7 games and 3 goals, Bruno Fernandes 9 and 1, Bernardo Silva 6, Ruben Dias 6, Joao Cancelo 9, Joao Felix 7 and 1. The September and October 2026 games are left out. Ronaldo 226 + 7 = 233, Bernardo Silva 107 + 6 = 113, Bruno Fernandes 85 + 9 = 94. Transfermarkt counts a few more for current players (it includes autumn 2026 and some extra games) and has Bruno Alves on 95; RSSSF, Wikipedia and national-football-teams.com all have 96. Rui Costa and Bruno Fernandes share 10th on 94, so the 10th place is a pool."
+}

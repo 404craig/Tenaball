@@ -1,0 +1,83 @@
+{
+ "pick": "b04-ita",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Italy's most caps since 2000",
+ "brief": "Name the ten players with the most caps for Italy in full internationals from 1 January 2000 to the end of the 2026 World Cup. Only caps from 2000 on count.",
+ "period": "Full internationals from 1 January 2000 to 19 July 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Gianluigi Buffon",
+   "val": "164 caps"
+  },
+  {
+   "label": "2",
+   "name": "Leonardo Bonucci",
+   "val": "121 caps"
+  },
+  {
+   "label": "3",
+   "name": "Giorgio Chiellini",
+   "val": "117 caps"
+  },
+  {
+   "label": "4",
+   "name": "Daniele De Rossi",
+   "val": "117 caps"
+  },
+  {
+   "label": "5",
+   "name": "Andrea Pirlo",
+   "val": "116 caps"
+  },
+  {
+   "label": "6",
+   "name": "Fabio Cannavaro",
+   "val": "105 caps"
+  },
+  {
+   "label": "7",
+   "name": "Gianluca Zambrotta",
+   "val": "95 caps"
+  },
+  {
+   "label": "8",
+   "name": "Gianluigi Donnarumma",
+   "val": "83 caps"
+  },
+  {
+   "label": "9",
+   "name": "Gennaro Gattuso",
+   "val": "73 caps"
+  },
+  {
+   "label": "10",
+   "name": "Andrea Barzagli",
+   "val": "73 caps"
+  }
+ ],
+ "notes": {
+  "Nicolo Barella": "Nicolo Barella is 11th with 70, just outside.",
+  "Riccardo Montolivo": "Riccardo Montolivo is 12th with 66.",
+  "Alessandro Del Piero": "Alessandro Del Piero has 64 since 2000 (91 in all).",
+  "Alberto Gilardino": "Alberto Gilardino has 57.",
+  "Ciro Immobile": "Ciro Immobile has 57.",
+  "Jorginho": "Jorginho has 57.",
+  "Alessandro Nesta": "Alessandro Nesta has 56 since 2000 (78 in all).",
+  "Paolo Maldini": "Paolo Maldini's caps were mostly before 2000.",
+  "Francesco Totti": "Francesco Totti has 49 since 2000 (58 in all).",
+  "Gianluigi Buffon": "Gianluigi Buffon has 164 since 2000 (176 in all).",
+  "Fabio Cannavaro": "Fabio Cannavaro has 105 since 2000 (136 in all)."
+ },
+ "sources": [
+  "https://www.national-football-teams.com/country/92/2010/Italy.html (one page per year, 2000 to 2026)",
+  "https://www.rsssf.org/miscellaneous/ital-recintlp.html",
+  "https://en.wikipedia.org/wiki/Gianluigi_Buffon",
+  "https://en.wikipedia.org/wiki/Fabio_Cannavaro",
+  "https://en.wikipedia.org/wiki/Gianluca_Zambrotta",
+  "https://en.wikipedia.org/wiki/Daniele_De_Rossi"
+ ],
+ "checks": "Counted year by year from national-football-teams.com's Italy pages for 2000 to 2026 (FIFA and non-FIFA games together, as the FIGC counts them: its FIFA-only column is one short for Buffon, De Rossi, Cannavaro and Zambrotta, who played a 2006 game it marks non-FIFA). Players who started after 2000 match RSSSF's career totals (Bonucci 121, Chiellini 117, De Rossi 117, Pirlo 116, Donnarumma 83, Gattuso 73 from February 2000, Barzagli 73, Barella 70, Montolivo 66). Buffon, Cannavaro and Zambrotta, who started before 2000, match the year tables in their Wikipedia articles (164, 105, 95). Donnarumma's 83 includes his 4 games in 2026 before the World Cup final (Transfermarkt match reports agree) and leaves out September 2026."
+}
