@@ -245,13 +245,26 @@ def tally(rows, f):
     return t
 SECOND = defaultdict(dict)
 for r in csv.DictReader(open(D + "second_source.csv")): SECOND[r["board"]][r["player"]] = int(r["value"])
-def top(rows, f, word, poolname, board=None):
+def top(rows, f, word, poolname, board=None, margin=1):
     """the top ten by Transfermarkt. With a second source for the board (second_source.csv), the ten must be the same in both;
     a figure the two disagree on shows both, and players whose order isn't certain (level in either source, or the other way
     round in the second) share their places as a pool"""
     t = Counter({PNAME[p]: v for p, v in tally(rows, f).items() if v})
     two = SECOND.get(board)
-    if not two: return by(list(t.items()), fmt=lambda n, x: f"{x} {word}", poolname=poolname)
+    if not two:
+        # one source only: where we could compare, the two sources differed by a goal or a game, so players within one of each
+        # other share their places, and a gap of one at the cut brings the next player into a shared 10th
+        order = [n for n, _ in t.most_common()]; out, i, used = [], 0, 0
+        while used < 10:
+            bl = [order[i]]
+            while i + len(bl) < len(order) and t[bl[-1]] - t[order[i + len(bl)]] <= margin: bl.append(order[i + len(bl)])
+            k = min(len(bl), 10 - used)
+            if len(bl) == 1: out.append((bl[0], f"{t[bl[0]]} {word}"))
+            else:
+                lo, hi = t[bl[-1]], t[bl[0]]
+                out.append((bl, f"{lo} {word}" if lo == hi else f"{lo} to {hi} {word}", f"{poolname}{len(out)}", k))
+            used += k; i += len(bl)
+        return out
     order = [n for n, _ in t.most_common()]
     ten, rest = order[:10], order[10:]
     assert all(n in two for n in ten), (board, [n for n in ten if n not in two])
