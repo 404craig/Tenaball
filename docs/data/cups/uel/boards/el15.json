@@ -1,0 +1,137 @@
+{
+ "pick": "el15",
+ "kind": "ranked",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League top scorers 2025/26",
+ "brief": "Name the ten top scorers in the 2025/26 Europa League, league phase to the final (qualifying and play-off rounds left out).",
+ "period": "UEFA Europa League 2025/26, league phase to the final (20 May 2026)",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Igor Jesus",
+   "val": "7 goals"
+  },
+  {
+   "label": "2",
+   "name": "Petar Stanic",
+   "val": "7 goals"
+  },
+  {
+   "label": "3",
+   "name": "Kerem Akturkoglu",
+   "val": "6 goals"
+  },
+  {
+   "label": "4",
+   "name": "Antony",
+   "val": "6 goals"
+  },
+  {
+   "label": "5",
+   "name": "Dion Beljo",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  },
+  {
+   "label": "6",
+   "name": "Williot Swedberg",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  },
+  {
+   "label": "7",
+   "name": "Bilal El Khannouss",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  },
+  {
+   "label": "8",
+   "name": "John McGinn",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  },
+  {
+   "label": "9",
+   "name": "Federico Bernardeschi",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  },
+  {
+   "label": "10",
+   "name": "Ollie Watkins",
+   "val": "5 goals",
+   "pool": "g5",
+   "alts": [
+    "Dion Beljo",
+    "Williot Swedberg",
+    "Bilal El Khannouss",
+    "John McGinn",
+    "Federico Bernardeschi",
+    "Ollie Watkins",
+    "Vincenzo Grifo"
+   ]
+  }
+ ],
+ "notes": {
+  "Emiliano Buendia": "Emiliano Buendia scored 4, just outside.",
+  "Ricardo Horta": "Ricardo Horta scored 4, just outside.",
+  "Donyell Malen": "Donyell Malen scored 4, just outside.",
+  "Jonathan Rowe": "Jonathan Rowe scored 4, just outside.",
+  "Talisca": "Talisca scored 4, just outside.",
+  "Georgios Giakoumakis": "Georgios Giakoumakis scored 4, just outside.",
+  "Olivier Giroud": "Olivier Giroud scored 4 for Lille, just outside.",
+  "Corentin Tolisso": "Corentin Tolisso scored 4, just outside."
+ },
+ "sources": [
+  "https://www.uefa.com/uefaeuropaleague/statistics/players/?sortBy=goals (compstats.uefa.com player ranking, seasonYear 2026)",
+  "https://www.transfermarkt.com/europa-league/torschuetzenliste/pokalwettbewerb/EL/saison_id/2025",
+  "https://en.wikipedia.org/wiki/2025%E2%80%9326_UEFA_Europa_League"
+ ],
+ "checks": "UEFA.com, Transfermarkt and Wikipedia's statistics section agree on every figure: Igor Jesus (Nottingham Forest) and Petar Stanic (Ludogorets) 7; Kerem Akturkoglu (Fenerbahce) and Antony (Real Betis) 6; then seven players on 5 (Dion Beljo, Dinamo Zagreb; Williot Swedberg, Celta Vigo; Bilal El Khannouss, Stuttgart; John McGinn and Ollie Watkins, Aston Villa; Federico Bernardeschi, Bologna; Vincenzo Grifo, Freiburg), who share places 5 to 10. Nineteen players scored 4 on UEFA's figures, just outside."
+}

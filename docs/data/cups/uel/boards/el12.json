@@ -1,0 +1,76 @@
+{
+ "pick": "el12",
+ "kind": "ranked",
+ "type": "club",
+ "level": 0,
+ "title": "English and Scottish clubs in Europa League finals",
+ "brief": "Name the ten English and Scottish clubs that have played in a UEFA Cup or Europa League final since 2000/01, ranked by finals played. Clubs level on finals are ordered by their first final.",
+ "period": "UEFA Cup and Europa League finals, 2001 to 2026",
+ "rows": [
+  {
+   "label": "1",
+   "name": "Man Utd",
+   "val": "3 finals: won 2017, lost 2021 and 2025"
+  },
+  {
+   "label": "2",
+   "name": "Liverpool",
+   "val": "2 finals: won 2001, lost 2016"
+  },
+  {
+   "label": "3",
+   "name": "Rangers",
+   "val": "2 finals: lost 2008 and 2022"
+  },
+  {
+   "label": "4",
+   "name": "Chelsea",
+   "val": "2 finals: won 2013 and 2019"
+  },
+  {
+   "label": "5",
+   "name": "Celtic",
+   "val": "1 final: lost 2003"
+  },
+  {
+   "label": "6",
+   "name": "Middlesbrough",
+   "val": "1 final: lost 2006"
+  },
+  {
+   "label": "7",
+   "name": "Fulham",
+   "val": "1 final: lost 2010"
+  },
+  {
+   "label": "8",
+   "name": "Arsenal",
+   "val": "1 final: lost 2019"
+  },
+  {
+   "label": "9",
+   "name": "Spurs",
+   "val": "1 final: won 2025"
+  },
+  {
+   "label": "10",
+   "name": "Aston Villa",
+   "val": "1 final: won 2026"
+  }
+ ],
+ "notes": {
+  "Arsenal": "Arsenal also lost the 2000 final to Galatasaray, the season before this board starts.",
+  "Spurs": "Spurs also won the UEFA Cup in 1972 and 1984, before this board starts.",
+  "Ipswich": "Ipswich won the UEFA Cup in 1981, long before this board starts.",
+  "Dundee United": "Dundee United lost the 1987 final, before this board starts.",
+  "Wolves": "Wolves lost the first UEFA Cup final in 1972, before this board starts.",
+  "Newcastle": "Newcastle have not reached a UEFA Cup or Europa League final.",
+  "West Ham": "West Ham have not reached a UEFA Cup or Europa League final; they won the Conference League in 2023.",
+  "Leicester": "Leicester have not reached a UEFA Cup or Europa League final."
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Every final from 2001 to 2026 in uel_finals.csv, checked on Wikipedia's list of finals and UEFA's match feed; these are all the English and Scottish finalists in that time, exactly ten clubs."
+}

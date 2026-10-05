@@ -1,0 +1,67 @@
+{
+ "pick": "el03-2012",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League finalists, 2012 to 2016",
+ "brief": "Name both clubs in each UEFA Cup final (the Europa League final from 2010).",
+ "period": "Europa League finals, 2012 to 2016",
+ "rows": [
+  {
+   "label": "2012 winners",
+   "name": "Atletico Madrid",
+   "val": "3-0"
+  },
+  {
+   "label": "2012 runners-up",
+   "name": "Athletic Bilbao",
+   "val": ""
+  },
+  {
+   "label": "2013 winners",
+   "name": "Chelsea",
+   "val": "2-1"
+  },
+  {
+   "label": "2013 runners-up",
+   "name": "Benfica",
+   "val": ""
+  },
+  {
+   "label": "2014 winners",
+   "name": "Sevilla",
+   "val": "0-0 after extra time"
+  },
+  {
+   "label": "2014 runners-up",
+   "name": "Benfica",
+   "val": ""
+  },
+  {
+   "label": "2015 winners",
+   "name": "Sevilla",
+   "val": "3-2"
+  },
+  {
+   "label": "2015 runners-up",
+   "name": "Dnipro",
+   "val": ""
+  },
+  {
+   "label": "2016 winners",
+   "name": "Sevilla",
+   "val": "3-1"
+  },
+  {
+   "label": "2016 runners-up",
+   "name": "Liverpool",
+   "val": ""
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

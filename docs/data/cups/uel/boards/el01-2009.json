@@ -1,0 +1,68 @@
+{
+ "pick": "el01-2009",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League winners, 2009 to 2018",
+ "brief": "Name the club that won the UEFA Cup (the Europa League from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2009 to 2018",
+ "rows": [
+  {
+   "label": "2009",
+   "name": "Shakhtar",
+   "val": "beat Werder Bremen"
+  },
+  {
+   "label": "2010",
+   "name": "Atletico Madrid",
+   "val": "beat Fulham"
+  },
+  {
+   "label": "2011",
+   "name": "Porto",
+   "val": "beat Braga"
+  },
+  {
+   "label": "2012",
+   "name": "Atletico Madrid",
+   "val": "beat Athletic Bilbao"
+  },
+  {
+   "label": "2013",
+   "name": "Chelsea",
+   "val": "beat Benfica"
+  },
+  {
+   "label": "2014",
+   "name": "Sevilla",
+   "val": "beat Benfica"
+  },
+  {
+   "label": "2015",
+   "name": "Sevilla",
+   "val": "beat Dnipro"
+  },
+  {
+   "label": "2016",
+   "name": "Sevilla",
+   "val": "beat Liverpool"
+  },
+  {
+   "label": "2017",
+   "name": "Man Utd",
+   "val": "beat Ajax"
+  },
+  {
+   "label": "2018",
+   "name": "Atletico Madrid",
+   "val": "beat Marseille"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://www.transfermarkt.com/europa-league/erfolge/pokalwettbewerb/EL",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Winner of every final from Wikipedia's list of finals, Transfermarkt's list of winners and UEFA's match feed; all three agree."
+}

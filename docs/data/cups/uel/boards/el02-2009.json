@@ -1,0 +1,67 @@
+{
+ "pick": "el02-2009",
+ "kind": "labelled",
+ "type": "club",
+ "level": 2,
+ "title": "Europa League beaten finalists, 2009 to 2018",
+ "brief": "Name the club that lost the UEFA Cup final (the Europa League final from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2009 to 2018",
+ "rows": [
+  {
+   "label": "2009",
+   "name": "Werder Bremen",
+   "val": "lost to Shakhtar"
+  },
+  {
+   "label": "2010",
+   "name": "Fulham",
+   "val": "lost to Atletico Madrid"
+  },
+  {
+   "label": "2011",
+   "name": "Braga",
+   "val": "lost to Porto"
+  },
+  {
+   "label": "2012",
+   "name": "Athletic Bilbao",
+   "val": "lost to Atletico Madrid"
+  },
+  {
+   "label": "2013",
+   "name": "Benfica",
+   "val": "lost to Chelsea"
+  },
+  {
+   "label": "2014",
+   "name": "Benfica",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2015",
+   "name": "Dnipro",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2016",
+   "name": "Liverpool",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2017",
+   "name": "Ajax",
+   "val": "lost to Man Utd"
+  },
+  {
+   "label": "2018",
+   "name": "Marseille",
+   "val": "lost to Atletico Madrid"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists and the result of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

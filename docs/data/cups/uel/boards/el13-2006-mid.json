@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2006-mid",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Middlesbrough's starters, 2006 UEFA Cup final",
+ "brief": "Name the ten outfield players Middlesbrough started with in the 2006 UEFA Cup final against Sevilla (they lost 4-0).",
+ "period": "2006 UEFA Cup final, Eindhoven, 10 May 2006",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Stuart Parnaby",
+   "val": "No. 21"
+  },
+  {
+   "label": "CB",
+   "name": "Chris Riggott",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Gareth Southgate",
+   "val": "No. 6"
+  },
+  {
+   "label": "LB",
+   "name": "Franck Queudrue",
+   "val": "No. 3"
+  },
+  {
+   "label": "RM",
+   "name": "James Morrison",
+   "val": "No. 25"
+  },
+  {
+   "label": "CM",
+   "name": "Fabio Rochemback",
+   "val": "No. 10"
+  },
+  {
+   "label": "CM",
+   "name": "George Boateng",
+   "val": "No. 7"
+  },
+  {
+   "label": "LM",
+   "name": "Stewart Downing",
+   "val": "No. 19"
+  },
+  {
+   "label": "CF",
+   "name": "Mark Viduka",
+   "val": "No. 36"
+  },
+  {
+   "label": "CF",
+   "name": "Jimmy Floyd Hasselbaink",
+   "val": "No. 9"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2006_UEFA_Cup_final",
+  "https://match.uefa.com/v5/matches/84102/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2005/06)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

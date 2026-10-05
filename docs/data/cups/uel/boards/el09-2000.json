@@ -1,0 +1,91 @@
+{
+ "pick": "el09-2000",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League top scorers 2000/01 to 2009/10",
+ "brief": "Name the top scorer (or a joint top scorer) in the UEFA Cup or Europa League each season from 2000/01 to 2009/10.",
+ "period": "UEFA Cup and Europa League seasons 2000/01 to 2009/10, main competition only",
+ "rows": [
+  {
+   "label": "2000/01",
+   "name": "Marcin Kuzba",
+   "val": "6 goals, shared: Marcin Kuzba (Lausanne-Sport), Goran Drulic (Red Star Belgrade), Javi Moreno (Alaves), Demis Nikolaidis (AEK Athens)",
+   "alts": [
+    "Marcin Kuzba",
+    "Goran Drulic",
+    "Javi Moreno",
+    "Demis Nikolaidis"
+   ]
+  },
+  {
+   "label": "2001/02",
+   "name": "Pierre van Hooijdonk",
+   "val": "8 goals, Feyenoord"
+  },
+  {
+   "label": "2002/03",
+   "name": "Derlei",
+   "val": "12 goals, Porto"
+  },
+  {
+   "label": "2003/04",
+   "name": "Sonny Anderson",
+   "val": "6 goals, shared: Sonny Anderson (Villarreal), Mateja Kezman (PSV), Didier Drogba (Marseille), Alan Shearer (Newcastle)",
+   "alts": [
+    "Sonny Anderson",
+    "Mateja Kezman",
+    "Didier Drogba",
+    "Alan Shearer"
+   ]
+  },
+  {
+   "label": "2004/05",
+   "name": "Alan Shearer",
+   "val": "11 goals, Newcastle"
+  },
+  {
+   "label": "2005/06",
+   "name": "Matias Delgado",
+   "val": "7 goals, Basel"
+  },
+  {
+   "label": "2006/07",
+   "name": "Walter Pandiani",
+   "val": "11 goals, Espanyol"
+  },
+  {
+   "label": "2007/08",
+   "name": "Luca Toni",
+   "val": "10 goals, shared: Luca Toni (Bayern Munich), Pavel Pogrebnyak (Zenit)",
+   "alts": [
+    "Luca Toni",
+    "Pavel Pogrebnyak"
+   ]
+  },
+  {
+   "label": "2008/09",
+   "name": "Vagner Love",
+   "val": "11 goals, CSKA Moscow"
+  },
+  {
+   "label": "2009/10",
+   "name": "Claudio Pizarro",
+   "val": "9 goals, shared: Claudio Pizarro (Werder Bremen), Oscar Cardozo (Benfica)",
+   "alts": [
+    "Claudio Pizarro",
+    "Oscar Cardozo"
+   ]
+  }
+ ],
+ "notes": {
+  "Henrik Larsson": "Henrik Larsson scored 11 in 2002/03, one behind Derlei.",
+  "Sonny Anderson": "Sonny Anderson shares 2003/04 on 6 goals (UEFA.com now gives him 7)."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=14&phase=TOURNAMENT&stats=goals (UEFA.com stats for each season)",
+  "https://www.transfermarkt.com/europa-league/torschuetzenliste/pokalwettbewerb/EL/saison_id/<season>",
+  "https://en.wikipedia.org/wiki/2003%E2%80%9304_UEFA_Cup"
+ ],
+ "checks": "Each season's top scorer from UEFA.com's season goal rankings (main competition only: first round onwards to 2008/09, group or league stage onwards from 2009/10, qualifying and play-offs left out), checked against Transfermarkt's season scorer lists; they agree on every season except 2003/04, where UEFA.com now credits Sonny Anderson with 7 goals but Transfermarkt and Wikipedia's 2003/04 UEFA Cup article (which cites UEFA's own match protocols) give Anderson, Kezman, Drogba and Shearer 6 each; all four are accepted for that season. Ties are shared rows (alts). Most slots for one player: Alan Shearer 2, so the 4-slot rule passes."
+}

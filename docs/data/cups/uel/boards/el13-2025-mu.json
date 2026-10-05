@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2025-mu",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Man Utd's starters, 2025 Europa League final",
+ "brief": "Name the ten outfield players Man Utd started with in the 2025 Europa League final against Spurs (they lost 1-0).",
+ "period": "2025 Europa League final, Bilbao, 21 May 2025",
+ "rows": [
+  {
+   "label": "CB",
+   "name": "Leny Yoro",
+   "val": "No. 15"
+  },
+  {
+   "label": "CB",
+   "name": "Harry Maguire",
+   "val": "No. 5"
+  },
+  {
+   "label": "CB",
+   "name": "Luke Shaw",
+   "val": "No. 23"
+  },
+  {
+   "label": "RM",
+   "name": "Noussair Mazraoui",
+   "val": "No. 3"
+  },
+  {
+   "label": "CM",
+   "name": "Casemiro",
+   "val": "No. 18"
+  },
+  {
+   "label": "CM",
+   "name": "Bruno Fernandes",
+   "val": "No. 8"
+  },
+  {
+   "label": "LM",
+   "name": "Patrick Dorgu",
+   "val": "No. 13"
+  },
+  {
+   "label": "RF",
+   "name": "Amad Diallo",
+   "val": "No. 16"
+  },
+  {
+   "label": "CF",
+   "name": "Rasmus Hojlund",
+   "val": "No. 9"
+  },
+  {
+   "label": "LF",
+   "name": "Mason Mount",
+   "val": "No. 7"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2044465/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2024/25)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}

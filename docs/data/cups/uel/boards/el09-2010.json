@@ -1,0 +1,83 @@
+{
+ "pick": "el09-2010",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Europa League top scorers 2010/11 to 2019/20",
+ "brief": "Name the top scorer (or a joint top scorer) in the UEFA Cup or Europa League each season from 2010/11 to 2019/20.",
+ "period": "UEFA Cup and Europa League seasons 2010/11 to 2019/20, main competition only",
+ "rows": [
+  {
+   "label": "2010/11",
+   "name": "Radamel Falcao",
+   "val": "17 goals, Porto"
+  },
+  {
+   "label": "2011/12",
+   "name": "Radamel Falcao",
+   "val": "12 goals, Atletico Madrid"
+  },
+  {
+   "label": "2012/13",
+   "name": "Libor Kozak",
+   "val": "8 goals, Lazio"
+  },
+  {
+   "label": "2013/14",
+   "name": "Jonathan Soriano",
+   "val": "8 goals, Red Bull Salzburg"
+  },
+  {
+   "label": "2014/15",
+   "name": "Alan",
+   "val": "8 goals, shared: Alan (Red Bull Salzburg), Romelu Lukaku (Everton)",
+   "alts": [
+    "Alan",
+    "Romelu Lukaku"
+   ]
+  },
+  {
+   "label": "2015/16",
+   "name": "Aritz Aduriz",
+   "val": "10 goals, Athletic Bilbao"
+  },
+  {
+   "label": "2016/17",
+   "name": "Edin Dzeko",
+   "val": "8 goals, shared: Edin Dzeko (Roma), Giuliano (Zenit)",
+   "alts": [
+    "Edin Dzeko",
+    "Giuliano"
+   ]
+  },
+  {
+   "label": "2017/18",
+   "name": "Aritz Aduriz",
+   "val": "8 goals, shared: Aritz Aduriz (Athletic Bilbao), Ciro Immobile (Lazio)",
+   "alts": [
+    "Aritz Aduriz",
+    "Ciro Immobile"
+   ]
+  },
+  {
+   "label": "2018/19",
+   "name": "Olivier Giroud",
+   "val": "11 goals, Chelsea"
+  },
+  {
+   "label": "2019/20",
+   "name": "Bruno Fernandes",
+   "val": "8 goals, Sporting and Man Utd"
+  }
+ ],
+ "notes": {
+  "Fernando Llorente": "Fernando Llorente never topped a season's list.",
+  "Klaas-Jan Huntelaar": "Klaas-Jan Huntelaar scored 10 in 2011/12, two behind Falcao.",
+  "Luka Jovic": "Luka Jovic scored 10 in 2018/19, one behind Giroud."
+ },
+ "sources": [
+  "https://compstats.uefa.com/v1/player-ranking?competitionId=14&phase=TOURNAMENT&stats=goals (UEFA.com stats for each season)",
+  "https://www.transfermarkt.com/europa-league/torschuetzenliste/pokalwettbewerb/EL/saison_id/<season>"
+ ],
+ "checks": "Each season's top scorer from UEFA.com's season goal rankings (main competition only: first round onwards to 2008/09, group or league stage onwards from 2009/10, qualifying and play-offs left out), checked against Transfermarkt's season scorer lists; they agree on every season. Ties are shared rows (alts). Most slots for one player: Aritz Aduriz 2, Radamel Falcao 2, so the 4-slot rule passes."
+}

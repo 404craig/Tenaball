@@ -1,0 +1,67 @@
+{
+ "pick": "el03-2007",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League finalists, 2007 to 2011",
+ "brief": "Name both clubs in each UEFA Cup final (the Europa League final from 2010).",
+ "period": "UEFA Cup and Europa League finals, 2007 to 2011",
+ "rows": [
+  {
+   "label": "2007 winners",
+   "name": "Sevilla",
+   "val": "2-2 after extra time"
+  },
+  {
+   "label": "2007 runners-up",
+   "name": "Espanyol",
+   "val": ""
+  },
+  {
+   "label": "2008 winners",
+   "name": "Zenit St Petersburg",
+   "val": "2-0"
+  },
+  {
+   "label": "2008 runners-up",
+   "name": "Rangers",
+   "val": ""
+  },
+  {
+   "label": "2009 winners",
+   "name": "Shakhtar",
+   "val": "2-1 after extra time"
+  },
+  {
+   "label": "2009 runners-up",
+   "name": "Werder Bremen",
+   "val": ""
+  },
+  {
+   "label": "2010 winners",
+   "name": "Atletico Madrid",
+   "val": "2-1 after extra time"
+  },
+  {
+   "label": "2010 runners-up",
+   "name": "Fulham",
+   "val": ""
+  },
+  {
+   "label": "2011 winners",
+   "name": "Porto",
+   "val": "1-0"
+  },
+  {
+   "label": "2011 runners-up",
+   "name": "Braga",
+   "val": ""
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

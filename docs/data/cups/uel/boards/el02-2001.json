@@ -1,0 +1,67 @@
+{
+ "pick": "el02-2001",
+ "kind": "labelled",
+ "type": "club",
+ "level": 2,
+ "title": "Europa League beaten finalists, 2001 to 2010",
+ "brief": "Name the club that lost the UEFA Cup final (the Europa League final from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2001 to 2010",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Alaves",
+   "val": "lost to Liverpool"
+  },
+  {
+   "label": "2002",
+   "name": "Dortmund",
+   "val": "lost to Feyenoord"
+  },
+  {
+   "label": "2003",
+   "name": "Celtic",
+   "val": "lost to Porto"
+  },
+  {
+   "label": "2004",
+   "name": "Marseille",
+   "val": "lost to Valencia"
+  },
+  {
+   "label": "2005",
+   "name": "Sporting",
+   "val": "lost to CSKA Moscow"
+  },
+  {
+   "label": "2006",
+   "name": "Middlesbrough",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2007",
+   "name": "Espanyol",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2008",
+   "name": "Rangers",
+   "val": "lost to Zenit St Petersburg"
+  },
+  {
+   "label": "2009",
+   "name": "Werder Bremen",
+   "val": "lost to Shakhtar"
+  },
+  {
+   "label": "2010",
+   "name": "Fulham",
+   "val": "lost to Atletico Madrid"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists and the result of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

@@ -1,0 +1,67 @@
+{
+ "pick": "el02-2017",
+ "kind": "labelled",
+ "type": "club",
+ "level": 2,
+ "title": "Europa League beaten finalists, 2017 to 2026",
+ "brief": "Name the club that lost the UEFA Cup final (the Europa League final from 2010) each year.",
+ "period": "Europa League finals, 2017 to 2026",
+ "rows": [
+  {
+   "label": "2017",
+   "name": "Ajax",
+   "val": "lost to Man Utd"
+  },
+  {
+   "label": "2018",
+   "name": "Marseille",
+   "val": "lost to Atletico Madrid"
+  },
+  {
+   "label": "2019",
+   "name": "Arsenal",
+   "val": "lost to Chelsea"
+  },
+  {
+   "label": "2020",
+   "name": "Inter",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2021",
+   "name": "Man Utd",
+   "val": "lost to Villarreal"
+  },
+  {
+   "label": "2022",
+   "name": "Rangers",
+   "val": "lost to Eintracht Frankfurt"
+  },
+  {
+   "label": "2023",
+   "name": "Roma",
+   "val": "lost to Sevilla"
+  },
+  {
+   "label": "2024",
+   "name": "Leverkusen",
+   "val": "lost to Atalanta"
+  },
+  {
+   "label": "2025",
+   "name": "Man Utd",
+   "val": "lost to Spurs"
+  },
+  {
+   "label": "2026",
+   "name": "Freiburg",
+   "val": "lost to Aston Villa"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Both finalists and the result of every final from Wikipedia's list of finals and UEFA's match feed; they agree."
+}

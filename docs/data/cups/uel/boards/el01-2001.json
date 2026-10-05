@@ -1,0 +1,68 @@
+{
+ "pick": "el01-2001",
+ "kind": "labelled",
+ "type": "club",
+ "level": 1,
+ "title": "Europa League winners, 2001 to 2010",
+ "brief": "Name the club that won the UEFA Cup (the Europa League from 2010) each year.",
+ "period": "UEFA Cup and Europa League finals, 2001 to 2010",
+ "rows": [
+  {
+   "label": "2001",
+   "name": "Liverpool",
+   "val": "beat Alaves"
+  },
+  {
+   "label": "2002",
+   "name": "Feyenoord",
+   "val": "beat Dortmund"
+  },
+  {
+   "label": "2003",
+   "name": "Porto",
+   "val": "beat Celtic"
+  },
+  {
+   "label": "2004",
+   "name": "Valencia",
+   "val": "beat Marseille"
+  },
+  {
+   "label": "2005",
+   "name": "CSKA Moscow",
+   "val": "beat Sporting"
+  },
+  {
+   "label": "2006",
+   "name": "Sevilla",
+   "val": "beat Middlesbrough"
+  },
+  {
+   "label": "2007",
+   "name": "Sevilla",
+   "val": "beat Espanyol"
+  },
+  {
+   "label": "2008",
+   "name": "Zenit St Petersburg",
+   "val": "beat Rangers"
+  },
+  {
+   "label": "2009",
+   "name": "Shakhtar",
+   "val": "beat Werder Bremen"
+  },
+  {
+   "label": "2010",
+   "name": "Atletico Madrid",
+   "val": "beat Fulham"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "https://www.transfermarkt.com/europa-league/erfolge/pokalwettbewerb/EL",
+  "https://match.uefa.com/v5/matches?competitionId=14 (UEFA's match feed, the final of each season)"
+ ],
+ "checks": "Winner of every final from Wikipedia's list of finals, Transfermarkt's list of winners and UEFA's match feed; all three agree."
+}

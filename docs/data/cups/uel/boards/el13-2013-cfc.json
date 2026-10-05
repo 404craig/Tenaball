@@ -1,0 +1,68 @@
+{
+ "pick": "el13-2013-cfc",
+ "kind": "labelled",
+ "type": "person",
+ "level": 1,
+ "title": "Chelsea's starters, 2013 Europa League final",
+ "brief": "Name the ten outfield players Chelsea started with in the 2013 Europa League final against Benfica (they won 2-1).",
+ "period": "2013 Europa League final, Amsterdam, 15 May 2013",
+ "rows": [
+  {
+   "label": "RB",
+   "name": "Cesar Azpilicueta",
+   "val": "No. 28"
+  },
+  {
+   "label": "CB",
+   "name": "Branislav Ivanovic",
+   "val": "No. 2"
+  },
+  {
+   "label": "CB",
+   "name": "Gary Cahill",
+   "val": "No. 24"
+  },
+  {
+   "label": "LB",
+   "name": "Ashley Cole",
+   "val": "No. 3"
+  },
+  {
+   "label": "CM",
+   "name": "Frank Lampard",
+   "val": "No. 8"
+  },
+  {
+   "label": "CM",
+   "name": "David Luiz",
+   "val": "No. 4"
+  },
+  {
+   "label": "RW",
+   "name": "Ramires",
+   "val": "No. 7"
+  },
+  {
+   "label": "AM",
+   "name": "Juan Mata",
+   "val": "No. 10"
+  },
+  {
+   "label": "LW",
+   "name": "Oscar",
+   "val": "No. 11"
+  },
+  {
+   "label": "CF",
+   "name": "Fernando Torres",
+   "val": "No. 9"
+  }
+ ],
+ "notes": {},
+ "sources": [
+  "https://en.wikipedia.org/wiki/2013_Europa_League_final",
+  "https://match.uefa.com/v5/matches/2010095/lineups",
+  "https://www.transfermarkt.com/spielbericht/aufstellung/spielbericht/ (final of season 2012/13)"
+ ],
+ "checks": "The starting eleven and shirt numbers agree in Wikipedia's match article, UEFA's line-ups feed and Transfermarkt's line-up page. Positions are Wikipedia's."
+}
