@@ -5,6 +5,7 @@ Data, in docs/data/europe/ (see BRIEF.md and each league's NOTES files):
   <league>/boards/<pick>.json   one board each, from the research agents (two sources a figure)
   <league>/tables.csv           season tables the game doesn't have yet (2024/25 and 2025/26), with points
   <league>/squads_2025_26.csv   every player who played a league game in 2025/26
+  <league>/players.csv          every player's league seasons since 2000/01; those with 30+ goals or 200+ games are recognised names too
 Every board covers 2000/01 to 2025/26 (Craig, 5 October 2026: not 1992/93 for these leagues).
 Run from the repo root: python3 scripts/build-europe-records.py
 """
@@ -128,11 +129,17 @@ for q in Q + OPEN:
 people = set()
 for f in glob.glob(E + "*/squads_2025_26.csv"):
     for r in csv.DictReader(open(f)): people.add(plain(r["player"]))
+# and the well-known names since 2000/01 (Craig, 6 October 2026): 30 or more league goals or 200 or more league games in that league
+for f in glob.glob(E + "*/players.csv"):
+    g, a, nm = Counter(), Counter(), {}
+    for r in csv.DictReader(open(f)):
+        k = r["tm_player_id"]; g[k] += int(r["goals"] or 0); a[k] += int(r["apps"] or 0); nm[k] = plain(r["player"])
+    people |= {nm[k] for k in nm if g[k] >= 30 or a[k] >= 200}
 
 ids = [q["id"] for q in Q + OPEN]
 dup = [i for i, k in Counter(ids).items() if k > 1]
 if dup: problems.append(f"duplicate ids: {dup}")
-print(len(Q), "boards,", len(OPEN), "open boards,", len(people), "2025/26 squad names")
+print(len(Q), "boards,", len(OPEN), "open boards,", len(people), "recognised names (2025/26 squads, and 30+ goals or 200+ games since 2000/01)")
 for p in problems: print("  !", p)
 if "--dry" in sys.argv:
     for q in Q + OPEN: print(q["id"], (q.get("slots") or [{"club": n} for n in q["names"][:10]])[:10] and [s["club"] for s in (q.get("slots") or [{"club": n} for n in q["names"][:10]])])
