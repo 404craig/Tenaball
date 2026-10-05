@@ -13,7 +13,7 @@ import csv, glob, json, os, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 E = "docs/data/europe/"
-CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel"}
+CAT = {"laliga": "laliga", "bund": "bund", "seriea": "seriea", "ligue1": "ligue1", "top5": "top5", "ucl": "ucl", "uel": "uel", "wc": "wc", "euro": "euro"}
 LEAGUE = {"laliga": "La Liga", "bund": "Bundesliga", "seriea": "Serie A", "ligue1": "Ligue 1"}
 h = open("index.html", encoding="utf-8").read()
 problems = []
@@ -30,6 +30,7 @@ def known_boards(cat):
 CLUBS = {k: set(open(E + f"clubs_{k}.txt").read().split("\n")) for k in LEAGUE}
 CLUBS["ucl"] = CLUBS["uel"] = set(open("docs/data/cups/clubs_all.txt").read().split("\n")) | set().union(*CLUBS.values())
 
+NATIONS = set(open("docs/data/intl/nations.txt").read().split("\n"))
 Q, OPEN = [], []
 def family(pick, title, kind, typ="person"):
     t = title.lower()
@@ -73,7 +74,7 @@ for lg, pick in [("bund", "de27"), ("seriea", "it26")]:
               "period": "Seasons 2000/01 to 2025/26", "level": 1, "hard": False, "numeric": True, "slots": slots, "note": {}})
 
 # ---------- the agents' boards ----------
-for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/*/boards/*.json")):
+for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/*/boards/*.json") + glob.glob("docs/data/intl/*/boards/*.json")):
     lg = path.split("/")[-3]; b = json.load(open(path)); pick = b.get("pick") or os.path.basename(path)[:-5]
     where = f"{lg}/{pick}"
     text = [b.get("title", ""), b.get("brief", ""), b.get("period", ""), *b.get("notes", {}).values(), *(r.get("val", "") for r in b.get("rows", []))]
@@ -103,6 +104,10 @@ for path in sorted(glob.glob(E + "*/boards/*.json") + glob.glob("docs/data/cups/
         slots.append(s)
     reps = Counter(s["club"] for s in slots if not s.get("pool"))
     if reps and max(reps.values()) > 3: problems.append(f"{where}: {reps.most_common(1)[0][0]} fills {reps.most_common(1)[0][1]} slots"); continue
+    if typ == "nation":
+        for s_ in slots:
+            for c in s_.get("alts") or [s_["club"]]:
+                if c not in NATIONS: problems.append(f"{where}: nation {c} isn't in the game's nation list")
     if typ == "club" and lg in CLUBS:
         for s in slots:
             for c in s.get("alts") or [s["club"]]:
