@@ -293,7 +293,8 @@ export class Accounts extends DurableObject {
    The room keeps the lobby and the numbered move log. Every phone replays the log through the game's own
    rules, so the boards match; the room makes sure moves arrive in one order, come from players in the game,
    and that only the host sends the host's moves (reveal, question changes, next round, skip). */
-const PLAYER_MOVES = ["guess", "pass", "timeout"], HOST_MOVES = ["round", "reveal", "refresh", "next", "skip", "timeup"];
+// "pen" is a penalty shootout answer and "penskip" the host skipping a player who has gone quiet in one
+const PLAYER_MOVES = ["guess", "pass", "timeout", "pen"], HOST_MOVES = ["round", "reveal", "refresh", "next", "skip", "timeup", "penskip"];
 const MODES = ["turns", "first", "clock"];
 // the host's choices, checked: anything unexpected falls back to the default
 function roomSettings(s = {}){

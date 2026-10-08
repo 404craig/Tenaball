@@ -1,0 +1,298 @@
+{
+  "2": {
+    "q": "Who has more Premier League assists?",
+    "period": "Premier League era, 1992/93 to 2025/26",
+    "unit": "assists",
+    "values": {
+      "Ryan Giggs": 162,
+      "Kevin De Bruyne": 119,
+      "Cesc Fabregas": 111,
+      "Wayne Rooney": 103,
+      "Frank Lampard": 102,
+      "Dennis Bergkamp": 94,
+      "Mohamed Salah": 94,
+      "David Silva": 93,
+      "Steven Gerrard": 92,
+      "James Milner": 90
+    },
+    "sources": [
+      "https://theanalyst.com/articles/most-premier-league-assists-players",
+      "https://www.nbcsports.com/soccer/news/premier-league-all-time-assist-leaders",
+      "https://www.premierleague.com/news/4277915",
+      "https://www.liverpoolfc.com/news/mo-salah-becomes-liverpools-premier-league-assist-record-holder",
+      "docs/data/PL_ASSISTS_2026-10-03.md"
+    ],
+    "notes": "All raw values match Opta (The Analyst, dated 24 May 2026, after the last day of 2025/26). StatMuse counts assists differently and is lower for older players (Giggs 163, Fabregas 108, Rooney 100, Silva 90, Gerrard 89, Milner 88); premierleague.com has De Bruyne 118. Opta used, as on the game's own assists board. Bergkamp and Salah are level on 94. Rooney 103 v Lampard 102 is a one-assist gap on Opta only (StatMuse has Rooney 100), so that pair is fragile."
+  },
+  "3": {
+    "q": "Who has kept more Premier League clean sheets?",
+    "period": "Premier League era, 1992/93 to 2025/26",
+    "unit": "clean sheets",
+    "values": {
+      "Petr Cech": 202,
+      "David James": 169,
+      "Mark Schwarzer": 152,
+      "David de Gea": 147,
+      "David Seaman": 141,
+      "Nigel Martyn": 137,
+      "Pepe Reina": 136,
+      "Edwin van der Sar": 132,
+      "Brad Friedel": 132,
+      "Tim Howard": 132
+    },
+    "sources": [
+      "https://www.premierleague.com/en/news/662064",
+      "https://footballapi.pulselive.com/football/stats/ranked/players/clean_sheet?comps=1",
+      "https://theanalyst.com/articles/the-most-premier-league-clean-sheets",
+      "docs/data/PL_KEEPERS_DISCIPLINE_2026-10-03.md"
+    ],
+    "notes": "All ten have retired or left the Premier League, so totals are final. The Premier League has Schwarzer 152 and Seaman 141; Opta (The Analyst) has 151 and 140 (the raw figures). The game's clean-sheets board uses the Premier League figures, so they are used here too; no pair changes order. Van der Sar, Friedel and Howard are level on 132."
+  },
+  "16": {
+    "q": "Which club has won more league titles?",
+    "period": "Premier League, La Liga, Bundesliga, Serie A and Ligue 1 titles, seasons 1992/93 to 2025/26",
+    "unit": "titles",
+    "values": {
+      "Bayern Munich": 23,
+      "Barcelona": 17,
+      "Juventus": 14,
+      "Man Utd": 13,
+      "PSG": 13,
+      "Real Madrid": 11,
+      "Inter": 8,
+      "Man City": 8,
+      "AC Milan": 7,
+      "Lyon": 7
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_German_football_champions",
+      "https://en.wikipedia.org/wiki/List_of_Spanish_football_champions",
+      "https://en.wikipedia.org/wiki/List_of_Italian_football_champions",
+      "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+      "https://en.wikipedia.org/wiki/List_of_French_football_champions",
+      "index.html T5 table and docs/data/europe/*/tables.csv (2025/26 champions: Arsenal, Barcelona, Bayern Munich, Inter, PSG)"
+    ],
+    "notes": "Each club counts titles in its own league only: Bayern (Bundesliga), Barcelona and Real Madrid (La Liga), Juventus, Inter and AC Milan (Serie A), Man Utd and Man City (Premier League), PSG and Lyon (Ligue 1). All raw values confirmed, including 2025/26. Juventus' revoked 2004/05 and 2005/06 titles are not counted; Inter's 2005/06 title (awarded) is counted, as officially recorded. Marseille's 1992/93 Ligue 1 title was stripped and not reawarded."
+  },
+  "18": {
+    "q": "Who has scored more Champions League goals?",
+    "period": "Champions League era, 1992/93 to 2025/26, excluding qualifying rounds",
+    "unit": "goals",
+    "values": {
+      "Cristiano Ronaldo": 140,
+      "Lionel Messi": 129,
+      "Robert Lewandowski": 109,
+      "Karim Benzema": 90,
+      "Kylian Mbappe": 70,
+      "Raul": 71,
+      "Erling Haaland": 57,
+      "Thomas Muller": 57,
+      "Ruud van Nistelrooy": 56,
+      "Harry Kane": 54
+    },
+    "sources": [
+      "https://theanalyst.com/articles/most-champions-league-goals-all-time-top-scorers/",
+      "https://www.nbcsports.com/soccer/news/who-are-the-uefa-champions-league-all-time-scoring-leaders",
+      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/mbappe-iguala-a-raul-como-quinto-maximo-goleador-de-la-historia-de-la-champions-08-09-2026",
+      "https://www.uefa.com/uefachampionsleague/news/0268-11f9321e7599-fde3dd4a7bd0-1000--erling-haaland-in-the-champions-league-records-stats-who-h/",
+      "https://www.uefa.com/uefachampionsleague/news/02a7-2101c9e7335c-4bb71d400574-1000--harry-kane-in-the-champions-league-records-stats-who-he-ha/",
+      "docs/data/UCL_GOALS_2025-26.md",
+      "docs/data/cups/ucl/boards/cl08-*.json (club splits)"
+    ],
+    "notes": "The raw figures came from September 2026 lists that include 2026/27 league-phase goals. Taken back to the end of 2025/26: Mbappe 70 (his goal v Inter on 8 Sep 2026 made 71), Haaland 57 (two in his first 2026/27 game made 59), Kane 54 (his goal v Bodo/Glimt on 10 Sep 2026 made 55). Club splits in the repo boards agree: Mbappe 6+42+22, Haaland 8+15+34, Kane 21+33. Effects: Haaland and Muller are now level on 57 (the gap-1 pair is a tie), and Raul 71 is now ahead of Mbappe 70."
+  },
+  "19": {
+    "q": "Who has scored more top five league goals?",
+    "period": "Premier League, La Liga, Bundesliga, Serie A and Ligue 1, seasons 1992/93 to 2025/26",
+    "unit": "goals",
+    "values": {
+      "Lionel Messi": 496,
+      "Cristiano Ronaldo": 495,
+      "Robert Lewandowski": 395,
+      "Harry Kane": 311,
+      "Zlatan Ibrahimovic": 302,
+      "Karim Benzema": 281,
+      "Edinson Cavani": 267,
+      "Alan Shearer": 260,
+      "Sergio Aguero": 259,
+      "Raul": 256
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lionel_Messi",
+      "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+      "https://en.wikipedia.org/wiki/Harry_Kane",
+      "https://www.bundesliga.com/en/bundesliga/news/harry-kane-top-scorer-2025-26-third-time-bayern-munich-37407",
+      "https://en.wikipedia.org/wiki/Zlatan_Ibrahimovi%C4%87",
+      "https://en.wikipedia.org/wiki/Karim_Benzema",
+      "https://en.wikipedia.org/wiki/Edinson_Cavani",
+      "https://en.wikipedia.org/wiki/Alan_Shearer",
+      "https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero",
+      "https://en.wikipedia.org/wiki/Ra%C3%BAl_(footballer)",
+      "docs/data/europe/*/players.csv",
+      "docs/data/pl_players/pl_players.csv"
+    ],
+    "notes": "Kept at 1992/93 to 2025/26: every total verified. Only league goals in the five leagues count (Sporting, Ajax, Malmo, LA Galaxy, Al Nassr, Inter Miami and so on left out). One change: Aguero 259, not 258 (Atletico 74 + Man City 184 + 1 for Barcelona in 2021/22; the raw figure missed the Barcelona goal). Raul 256 = Real Madrid 228 (all from 1994/95) + Schalke 28. Kane 311 = Spurs 213 + Bayern 98 (36 in 2025/26, bundesliga.com). Lewandowski 395 = Dortmund 74 + Bayern 238 + Barcelona 83 (left May 2026)."
+  },
+  "20": {
+    "q": "Which club has played more La Liga seasons?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "seasons",
+    "values": {
+      "Barcelona": 26,
+      "Real Madrid": 26,
+      "Valencia": 26,
+      "Atletico Madrid": 24,
+      "Espanyol": 24,
+      "Real Sociedad": 23,
+      "Sevilla": 25,
+      "Real Betis": 22,
+      "Celta Vigo": 20
+    },
+    "sources": [
+      "https://www.transfermarkt.com/laliga/ewigeTabelle/wettbewerb/ES1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/spainm.php (results CSVs mmz4281/0001 to 2526/SP1.csv, wins counted from every result)",
+      "docs/data/europe/laliga/club_season_checks.csv"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26 (Craig's rule for these leagues); the raw 1993/94 to 2023/24 figures no longer apply. Transfermarkt games played divided by 38 and football-data seasons agree for every club. Many pairs are now level: Barcelona, Real Madrid and Valencia 26; Atletico Madrid and Espanyol 24. Rows between them need dropping."
+  },
+  "21": {
+    "q": "Which club has played more Ligue 1 seasons?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "seasons",
+    "values": {
+      "Lyon": 26,
+      "PSG": 26,
+      "Rennes": 26,
+      "Marseille": 26,
+      "Lille": 26,
+      "Monaco": 24,
+      "Nice": 24,
+      "Bordeaux": 22,
+      "Nantes": 21,
+      "Montpellier": 19
+    },
+    "sources": [
+      "https://www.transfermarkt.com/ligue-1/ewigeTabelle/wettbewerb/FR1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/francem.php (results CSVs mmz4281/0001 to 2526/F1.csv, wins counted from every result)",
+      "docs/data/europe/ligue1/tables.csv (checked against Wikipedia, football-data and Transfermarkt)"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26. Repo season tables, Transfermarkt and football-data agree. Lyon, PSG, Rennes, Marseille and Lille all on 26 (ever-present); Monaco and Nice level on 24. Many raw pairs become ties."
+  },
+  "23": {
+    "q": "Which club has more La Liga wins?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "wins",
+    "values": {
+      "Barcelona": 661,
+      "Real Madrid": 664,
+      "Atletico Madrid": 479,
+      "Valencia": 422,
+      "Sevilla": 420,
+      "Athletic Bilbao": 370,
+      "Real Sociedad": 330,
+      "Villarreal": 410,
+      "Real Betis": 294,
+      "Espanyol": 286
+    },
+    "sources": [
+      "https://www.transfermarkt.com/laliga/ewigeTabelle/wettbewerb/ES1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/spainm.php (results CSVs mmz4281/0001 to 2526/SP1.csv, wins counted from every result)"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26. Transfermarkt's all-time table for the window and wins counted from every football-data result agree exactly for all ten. Order changes from the raw: Real Madrid now ahead of Barcelona; Villarreal (410) now ahead of Athletic Bilbao (370)."
+  },
+  "24": {
+    "q": "Which club has more Bundesliga wins?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "wins",
+    "values": {
+      "Bayern Munich": 608,
+      "Dortmund": 471,
+      "Leverkusen": 439,
+      "Werder Bremen": 333,
+      "Schalke": 319,
+      "Stuttgart": 322,
+      "Wolfsburg": 328,
+      "Gladbach": 289,
+      "Hamburg": 230,
+      "Eintracht Frankfurt": 252
+    },
+    "sources": [
+      "https://www.transfermarkt.com/bundesliga/ewigeTabelle/wettbewerb/L1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/germanym.php (results CSVs mmz4281/0001 to 2526/D1.csv, wins counted from every result)",
+      "docs/data/europe/bund/tables.csv (checked against Wikipedia, football-data and Transfermarkt)"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26. Repo tables, Transfermarkt and football-data agree exactly. Order changes from the raw: Wolfsburg 328 and Stuttgart 322 now ahead of Schalke 319; Frankfurt 252 ahead of Hamburg 230."
+  },
+  "25": {
+    "q": "Which club has more Serie A wins?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "wins",
+    "values": {
+      "Juventus": 580,
+      "Inter": 559,
+      "AC Milan": 516,
+      "Roma": 518,
+      "Lazio": 449,
+      "Fiorentina": 359,
+      "Napoli": 407,
+      "Udinese": 333,
+      "Atalanta": 337,
+      "Sampdoria": 235
+    },
+    "sources": [
+      "https://www.transfermarkt.com/serie-a/ewigeTabelle/wettbewerb/IT1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/italym.php (results CSVs mmz4281/0001 to 2526/I1.csv, wins counted from every result)",
+      "https://en.wikipedia.org/wiki/List_of_AC_Milan_seasons",
+      "https://en.wikipedia.org/wiki/List_of_ACF_Fiorentina_seasons"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26 (Juventus 25 seasons, out in 2006/07). Football-data and Transfermarkt agree for eight clubs. Transfermarkt has AC Milan 518 and Fiorentina 360, but it counts more games than a Serie A season holds (Milan 975 against a possible 972; Fiorentina includes the 2004 Serie A/B play-off v Perugia). Wikipedia's season lists for both clubs sum to 516 and 359, matching football-data, so those are used. Order changes from the raw: Roma 518 now ahead of AC Milan 516; Napoli 407 ahead of Fiorentina 359; Atalanta 337 ahead of Udinese 333."
+  },
+  "26": {
+    "q": "Which club has more Ligue 1 wins?",
+    "period": "Seasons 2000/01 to 2025/26",
+    "unit": "wins",
+    "values": {
+      "PSG": 543,
+      "Lyon": 512,
+      "Monaco": 400,
+      "Marseille": 451,
+      "Lille": 430,
+      "Rennes": 379,
+      "Bordeaux": 319,
+      "Nice": 330,
+      "Nantes": 243,
+      "Lens": 241
+    },
+    "sources": [
+      "https://www.transfermarkt.com/ligue-1/ewigeTabelle/wettbewerb/FR1/saison_id_von/2000/saison_id_bis/2025",
+      "https://www.football-data.co.uk/francem.php (results CSVs mmz4281/0001 to 2526/F1.csv, wins counted from every result)",
+      "docs/data/europe/ligue1/tables.csv (checked against Wikipedia, football-data and Transfermarkt)",
+      "https://en.wikipedia.org/wiki/2000%E2%80%9301_French_Division_1",
+      "https://en.wikipedia.org/wiki/2013%E2%80%9314_Ligue_1"
+    ],
+    "notes": "Re-windowed to 2000/01 to 2025/26 (2019/20 stopped after 27 or 28 games). Repo tables (Wikipedia-checked) used. Small source differences: Transfermarkt Lyon 511 (repo and football-data 512); football-data Rennes 378 and Nantes 244 (Wikipedia 2000/01 table has Rennes 15 wins, 2013/14 has Nantes 12, matching repo and Transfermarkt 379 and 243). Order changes from the raw: Marseille 451 and Lille 430 now ahead of Monaco 400; Nice 330 ahead of Bordeaux 319. Nantes 243 v Lens 241 is a two-win gap."
+  },
+  "27": {
+    "q": "Which nation has played in more World Cup finals?",
+    "period": "Every World Cup, 1930 to 2026 (West Germany counts as Germany)",
+    "unit": "finals",
+    "values": {
+      "Germany": 8,
+      "Argentina": 7,
+      "Brazil": 7,
+      "Italy": 6,
+      "France": 4,
+      "Netherlands": 3,
+      "Czechoslovakia": 2,
+      "Hungary": 2,
+      "Spain": 2
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+      "https://www.espn.com/story/_/id/49397462",
+      "docs/data/intl/wc/NOTES_WC.md"
+    ],
+    "notes": "All raw values confirmed. The 2026 final (19 July 2026, MetLife Stadium) was Spain 1-0 Argentina after extra time (Ferran Torres, 106th minute), so Spain have 2 finals (2010, 2026) and Argentina 7 (1930, 1978, 1986, 1990, 2014, 2022, 2026). Germany 8 includes West Germany (1954, 1966, 1974, 1982, 1986, 1990) and Germany (2002, 2014). Brazil 7 counts the 1950 deciding match v Uruguay, which Wikipedia and FIFA treat as the final though it was technically a final-group game; without it Brazil have 6."
+  }
+}

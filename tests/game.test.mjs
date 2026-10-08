@@ -614,5 +614,35 @@ await test("scottish boards: open boards take any name on their list, filling fr
   assert(/Kris Boyd/.test(r.note), r.note);
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("penalties: players level on top at full time go to a shootout; the winner gets a point and it shows in the table and the message", async () => {
+  const p = await phone(browser, "pens"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { cfg.count = 3; G = { players: [newPlayer("Craig", 0), newPlayer("Aiden", 1), newPlayer("Phil", 2)], round: 3, picked: new Set(), refreshLeft: 3 };
+    G.players[0].score = 12; G.players[1].score = 12; G.players[2].score = 7; endGame(); });
+  await until(() => visible(p, "#shootout"), { what: "the shootout" });
+  eq(await p.evaluate(() => [...document.querySelectorAll("#soTally .nm")].map(e => e.textContent).sort()), ["Aiden", "Craig"], "only the two level on top take kicks");
+  await until(() => visible(p, "#end"), { what: "full time after the shootout", timeout: 30000 });
+  const r = await p.evaluate(() => ({ pens: G.pens, scores: Object.fromEntries(G.players.map(x => [x.name, x.score])), goals: G.players.map(x => x.pens), label: $("winnerLabel").textContent, share: shareText([...G.players].sort((a, b) => b.score - a.score)) }));
+  const w = r.pens.winner, l = w === "Craig" ? "Aiden" : "Craig";
+  eq([r.scores[w], r.scores[l], r.scores.Phil], [13, 12, 7], "the shootout winner gets a point");
+  const [gw, gl] = r.pens.score.split("–").map(Number); assert(gw > gl, "the winner scored more kicks: " + r.pens.score);
+  eq(r.label, `${w} wins on penalties, ${r.pens.score}.`);
+  assert(r.share.includes(`⚽ ${w} won the penalty shootout ${r.pens.score}`), r.share);
+  assert(!(await visible(p, "#shootout")), "the shootout has closed");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("penalties: a solo game and a clear winner never go to a shootout", async () => {
+  const p = await phone(browser, "nopens"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { cfg.count = 2; G = { players: [newPlayer("Craig", 0), newPlayer("Aiden", 1)], round: 3, picked: new Set(), refreshLeft: 3 }; G.players[0].score = 9; G.players[1].score = 8; endGame(); });
+  await until(() => visible(p, "#end"), { what: "full time" });
+  eq(await p.evaluate(() => [!!G.pens, G.players.map(x => x.score)]), [false, [9, 8]]);
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("penalties: every shootout question has two different values, a date line and a known unit", async () => {
+  const p = await phone(browser, "penq"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const bad = await p.evaluate(() => PEN_DATA.r.filter(([h, a, b, va, vb, u, g]) => !PEN_DATA.h[h] || !PEN_DATA.h[h][1] || a === b || va === vb || !(va > 0 && vb > 0) || !u || ![1, 2, 3].includes(g) || /\u2014/.test(PEN_DATA.h[h].join(" "))));
+  eq(bad, [], "no broken pairs");
+  assert(await p.evaluate(() => PENS.count) > 500, "a full pool of questions");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await browser.close(); await site.close();
 report();

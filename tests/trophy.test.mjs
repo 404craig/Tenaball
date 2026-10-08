@@ -12,6 +12,7 @@ async function phone(name, reduced = false){
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: reduced ? "reduce" : "no-preference" });
   await ctx.route("https://fonts.googleapis.com/**", r => r.fulfill({ body: "", contentType: "text/css" }));
   await ctx.addInitScript(() => { window.TENABALL_SERVER_URL = ""; }); // offline: the trophy doesn't need the server
+  await ctx.addInitScript(() => { window.TENABALL_PEN_PACE = .01; window.TENABALL_PEN_AUTO = true; }); // a draw's penalty shootout plays itself, quickly
   const p = await ctx.newPage(); p.errors = [];
   p.on("pageerror", e => p.errors.push(e.message));
   p.on("console", m => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) p.errors.push(m.text()); });
@@ -77,15 +78,16 @@ async function handOver(p, winnerText, top){
   assert(winnerText.startsWith(row.name) || winnerText.includes(row.name), `first row ${row.name} belongs to the winner ${winnerText}`);
 }
 
-for (const [label, players, pillName] of [
+for (let [label, players, pillName] of [
   ["solo", [["Craig", 27]], "Craig"],
   ["two players", [["Craig", 14], ["Aiden", 9]], "Craig"],
-  ["a drawn game", [["Aiden", 12], ["Craig", 12]], "Aiden & Craig"],
+  ["a drawn game", [["Aiden", 12], ["Craig", 12]], null], // settled on penalties: the winner gets a point
 ]){
   await test(`trophy: ${label}: the approved sequence plays with the real winner, then hands over into the final table`, async () => {
     const p = await phone(label); try {
-    const top = Math.max(...players.map(x => x[1]));
+    let top = Math.max(...players.map(x => x[1]));
     await toFullTime(p, players);
+    if (!pillName){ pillName = await p.evaluate(() => G.pens.winner); top++; }
     // anticipation, then the explosion and the trophy fired out: 60% at 0.3s, 108% at the overshoot, settled at 100% by 0.85s
     await until(() => p.evaluate(() => document.getElementById("wtTrophy").getAnimations().length > 0), { what: "trophy animation" });
     const t = await p.evaluate(() => { const a = document.getElementById("wtTrophy").getAnimations().find(x => !(x instanceof CSSAnimation)).effect; return { delay: a.getTiming().delay, dur: a.getTiming().duration }; });
@@ -134,7 +136,7 @@ await test("trophy: with reduced motion the trophy appears without the build-up,
   await toFullTime(p, [["Aiden", 12], ["Craig", 12]]);
   await p.waitForTimeout(250);
   const r = await p.evaluate(() => ({ trophy: getComputedStyle(document.getElementById("wtTrophy")).opacity, conf: document.getElementById("wtConfFront").children.length, name: document.getElementById("pillName").textContent }));
-  eq(r, { trophy: "1", conf: 0, name: "Aiden & Craig" }, "reduced motion: trophy shown, no confetti burst");
+  eq(r, { trophy: "1", conf: 0, name: await p.evaluate(() => G.pens.winner) }, "reduced motion: trophy shown, no confetti burst, the shootout winner on the pill");
   await p.click("#winTrophy");
   await until(() => p.evaluate(() => document.getElementById("winTrophy").classList.contains("hidden")), { what: "the overlay to close", timeout: 3000 });
   await p.waitForTimeout(800); await nothingLeft(p);
