@@ -324,6 +324,42 @@ await test("rooms: the host can change the mode and time limit in the lobby, and
   await A.wait(m => m.t === "move" && m.move.type === "timeup", "time up");
   [H, A].forEach(c => c.ws.close());
 });
+await test("leagues: make, join by code, report a game once, read the table, compare, hand over and leave", async () => {
+  const [a, b, c, d] = await Promise.all(["Lcraig", "Lphil", "Laiden", "Lmum"].map((n, i) => signup(n, n.toLowerCase() + "@leagues.test", "1234", `10.7.0.${i + 1}`).then(r => r.body)));
+  const call = (who, path, body) => api(path, body, { token: who.token });
+  eq((await call(a, "/leagues/new", { name: "  " })).body.error, "Give the league a name.");
+  const made = await call(a, "/leagues/new", { name: "The Wilsons" }); eq(made.status, 200);
+  const L = made.body.league; assert(/^[A-Z0-9]{6}$/.test(L.code), "a 6-character code"); eq([L.name, L.admin, L.members], ["The Wilsons", true, 1]);
+  eq((await call(b, "/leagues/join", { code: "ZZZZZZ" })).status, 404, "an unknown code");
+  eq((await call(b, "/leagues/join", { code: L.code.toLowerCase() })).status, 200, "codes ignore case");
+  eq((await call(c, "/leagues/join", { code: L.code })).status, 200);
+  eq((await call(d, "/leagues/get", { id: L.id })).status, 404, "only members can see a league");
+  // one game, reported by both phones: kept once, and both get the line
+  const game = { w: a.user.id, p: [{ u: a.user.id, s: 9, r: [5, 4], b: [1, 0, 0] }, { u: b.user.id, s: 6, r: [3, 3] }, { u: d.user.id, s: 1, r: [1, 0] }] };
+  eq((await call(a, "/leagues/result", { key: "bad", game })).status, 400, "a game key must look right");
+  eq((await call(c, "/leagues/result", { key: "ABCDE:1:123", game })).status, 400, "only a player in the game can report it");
+  const r1 = await call(a, "/leagues/result", { key: "ABCDE:1:123", game }), r2 = await call(b, "/leagues/result", { key: "ABCDE:1:123", game });
+  eq(r1.body.leagues.map(x => [x.name, x.line]), [["The Wilsons", "Lcraig in at 1st · Lphil in at 2nd"]]);
+  eq(r2.body.leagues.map(x => x.line), ["Lcraig in at 1st · Lphil in at 2nd"], "the second phone reads the same line");
+  const got = (await call(b, "/leagues/get", { id: L.id })).body;
+  eq(got.games.length, 1, "the game is kept once");
+  eq(got.games[0].p.map(x => x.u), [a.user.id, b.user.id], "only members' results are kept");
+  eq(got.members.map(m => m.name), ["Lcraig", "Lphil", "Laiden"]);
+  const list = (await call(b, "/leagues")).body.leagues[0];
+  eq([list.members, list.admin, list.rows.map(x => [x.name, x.pos, x.pct])], [3, false, [["Lcraig", 1, 100], ["Lphil", 2, 0]]]);
+  // league mates can compare stats without having played each other
+  eq((await call(c, "/friends/stats", { id: a.user.id })).status, 200, "a league mate's stats");
+  eq((await call(d, "/friends/stats", { id: a.user.id })).status, 404, "but not anyone's");
+  // only the admin removes players or hands over; leaving hands admin on
+  eq((await call(b, "/leagues/remove", { id: L.id, uid: c.user.id })).status, 403);
+  eq((await call(b, "/leagues/admin", { id: L.id, uid: b.user.id })).status, 403);
+  eq((await call(a, "/leagues/remove", { id: L.id, uid: c.user.id })).status, 200);
+  eq((await call(a, "/leagues/leave", { id: L.id })).status, 200);
+  eq((await call(b, "/leagues")).body.leagues.map(x => [x.admin, x.members]), [[true, 1]], "Phil takes over when Craig leaves");
+  eq((await call(b, "/leagues/leave", { id: L.id })).status, 200);
+  eq((await call(b, "/leagues/join", { code: L.code })).status, 404, "an empty league goes");
+});
+
 await srv.stop();
 
 await test("server: without its secrets the server refuses to create accounts rather than storing weak PINs", async () => {

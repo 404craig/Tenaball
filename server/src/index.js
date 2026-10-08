@@ -3,6 +3,7 @@
 import { DurableObject } from "cloudflare:workers";
 import { ADMIN_PAGE } from "./admin.js";
 import { BLANK_STATS, bumpStats, mergeStats, upgradeStats } from "./stats.js";
+import { cleanLeagueGame, leagueTable, leagueMoves } from "./leagues.js";
 
 const MAX_PLAYERS = 4;
 // the host's ticked competitions: short lowercase keys only, at most 16, no repeats (the game ignores ones it doesn't know)
@@ -123,6 +124,10 @@ export class Accounts extends DurableObject {
     // who each player has played online (other = their account id), and the ones they've starred as friends
     this.sql.exec(`CREATE TABLE IF NOT EXISTS played (uid TEXT NOT NULL, other TEXT NOT NULL, games INTEGER NOT NULL, last INTEGER NOT NULL, star INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (uid, other))`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS throttle (key TEXT PRIMARY KEY, count INTEGER NOT NULL, since INTEGER NOT NULL)`);
+    // leagues: a name, a code to join with and an admin; its members; and every online game two or more members played together
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS leagues (id TEXT PRIMARY KEY, code TEXT UNIQUE NOT NULL, name TEXT NOT NULL, admin TEXT NOT NULL, created INTEGER NOT NULL)`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS league_members (lid TEXT NOT NULL, uid TEXT NOT NULL, joined INTEGER NOT NULL, PRIMARY KEY (lid, uid))`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS league_games (lid TEXT NOT NULL, gkey TEXT NOT NULL, at INTEGER NOT NULL, data TEXT NOT NULL, PRIMARY KEY (lid, gkey))`);
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
   userOut(u){ return { id: u.id, name: u.name, email: u.email }; }
@@ -244,7 +249,7 @@ export class Accounts extends DurableObject {
       this.sql.exec("UPDATE users SET stats = ? WHERE id = ?", JSON.stringify(BLANK_STATS), u.id);
       return json({ stats: { ...BLANK_STATS } });
     }
-    // friends: starred players plus the last 10 played online; a player's stats can be read only by someone who has played them
+    // friends: starred players plus the last 10 played online; a player's stats can be read only by someone who has played them or shares a league with them
     if (path === "/friends"){
       const rows = this.sql.exec("SELECT p.other, p.games, p.last, p.star, u.name FROM played p JOIN users u ON u.id = p.other WHERE p.uid = ? ORDER BY p.star DESC, p.last DESC", u.id).toArray();
       const list = [...rows.filter(r => r.star), ...rows.filter(r => !r.star).slice(0, 10)];
@@ -255,11 +260,101 @@ export class Accounts extends DurableObject {
       return r.rowsWritten ? json({ ok: true }) : fail(404, "You haven't played them online.");
     }
     if (path === "/friends/stats"){
-      const id = String(b.id || ""), seen = this.one("SELECT other FROM played WHERE uid = ? AND other = ?", u.id, id), f = seen && this.one("SELECT * FROM users WHERE id = ?", id);
-      if (!f) return fail(404, "You can compare with players you've played online.");
+      const id = String(b.id || ""), seen = this.one("SELECT other FROM played WHERE uid = ? AND other = ?", u.id, id)
+        || this.one("SELECT a.lid FROM league_members a JOIN league_members b ON a.lid = b.lid WHERE a.uid = ? AND b.uid = ?", u.id, id); // or a league mate
+      const f = seen && this.one("SELECT * FROM users WHERE id = ?", id);
+      if (!f) return fail(404, "You can compare with players you've played online or share a league with.");
       return json({ name: f.name, stats: this.statsOf(f) });
     }
+    if (path.startsWith("/leagues")) return this.leagues(path, b, u);
     return fail(404, "Not found");
+  }
+
+  /* ---------- leagues ----------
+     Any online game two or more members play together counts, in every league they share. Each signed-in phone reports
+     the game at full time; the first report for a game is kept and the rest only read back what it did to the table. */
+  leagueOf(id){ return this.one("SELECT * FROM leagues WHERE id = ?", String(id || "")); }
+  leagueMembers(lid){ return this.sql.exec("SELECT m.uid, m.joined, u.name, u.stats FROM league_members m JOIN users u ON u.id = m.uid WHERE m.lid = ? ORDER BY m.joined", lid).toArray(); }
+  leagueGames(lid){ return this.sql.exec("SELECT data FROM league_games WHERE lid = ? ORDER BY at DESC LIMIT 2000", lid).toArray().map(r => JSON.parse(r.data)); }
+  leagueSummary(l, uid){
+    const members = this.leagueMembers(l.id), games = this.leagueGames(l.id);
+    const t = leagueTable(games, members.map(m => ({ id: m.uid, name: m.name })));
+    return { id: l.id, name: l.name, code: l.code, admin: l.admin === uid, members: members.length, last: games.length ? games[0].at : 0,
+      rows: t.ranked.map(r => ({ id: r.id, name: r.name, pos: r.pos, pct: r.pct })) };
+  }
+  async leagues(path, b, u){
+    const MAX_MEMBERS = 50, MAX_LEAGUES = 10;
+    const mine = () => this.sql.exec("SELECT l.* FROM leagues l JOIN league_members m ON m.lid = l.id WHERE m.uid = ? ORDER BY m.joined", u.id).toArray();
+    const member = lid => !!this.one("SELECT uid FROM league_members WHERE lid = ? AND uid = ?", lid, u.id);
+    const lname = n => String(n || "").replace(/\s+/g, " ").trim().slice(0, 30);
+    if (path === "/leagues") return json({ leagues: mine().map(l => this.leagueSummary(l, u.id)) });
+    if (path === "/leagues/new"){
+      const name = lname(b.name); if (!name) return fail(400, "Give the league a name.");
+      if (mine().length >= MAX_LEAGUES) return fail(400, `You can be in up to ${MAX_LEAGUES} leagues.`);
+      if (this.limited("league:" + u.id, 20, 86400000, 1)) return fail(429, "That's a lot of new leagues today. Try again tomorrow.");
+      let code; do { code = Array.from(crypto.getRandomValues(new Uint8Array(6)), x => CODE_CHARS[x % CODE_CHARS.length]).join(""); } while (this.one("SELECT id FROM leagues WHERE code = ?", code));
+      const id = randomHex(12), now = Date.now();
+      this.sql.exec("INSERT INTO leagues (id, code, name, admin, created) VALUES (?, ?, ?, ?, ?)", id, code, name, u.id, now);
+      this.sql.exec("INSERT INTO league_members (lid, uid, joined) VALUES (?, ?, ?)", id, u.id, now);
+      return json({ league: this.leagueSummary(this.leagueOf(id), u.id) });
+    }
+    if (path === "/leagues/join"){
+      const code = String(b.code || "").toUpperCase().replace(/[^A-Z0-9]/g, ""), l = code.length === 6 && this.one("SELECT * FROM leagues WHERE code = ?", code);
+      if (!l) return fail(404, "There's no league with that code.");
+      if (member(l.id)) return json({ league: this.leagueSummary(l, u.id), already: true });
+      if (mine().length >= MAX_LEAGUES) return fail(400, `You can be in up to ${MAX_LEAGUES} leagues.`);
+      if (this.leagueMembers(l.id).length >= MAX_MEMBERS) return fail(400, `That league is full (${MAX_MEMBERS} players).`);
+      this.sql.exec("INSERT INTO league_members (lid, uid, joined) VALUES (?, ?, ?)", l.id, u.id, Date.now());
+      return json({ league: this.leagueSummary(l, u.id) });
+    }
+    // a game from a phone at full time: the players with accounts, their points in each round and boards completed, and the winner
+    if (path === "/leagues/result"){
+      const key = String(b.key || "").slice(0, 80), g = cleanLeagueGame({ ...b.game, at: Date.now() });
+      if (!/^[A-Z0-9]{5}:\d+:\d+$/.test(key) || !g.p.some(x => x.u === u.id)) return fail(400, "That game doesn't look right.");
+      const ids = g.p.map(x => x.u), out = [];
+      const lids = this.sql.exec(`SELECT lid FROM league_members WHERE uid IN (${ids.map(() => "?").join(",")}) GROUP BY lid HAVING COUNT(*) >= 2`, ...ids).toArray().map(r => r.lid);
+      for (const lid of lids){
+        const l = this.leagueOf(lid), members = this.leagueMembers(lid), m = new Set(members.map(x => x.uid));
+        if (!m.has(u.id)) continue;
+        if (!this.one("SELECT gkey FROM league_games WHERE lid = ? AND gkey = ?", lid, key)){ // the first report of this game
+          const kept = { ...g, k: key, p: g.p.filter(x => m.has(x.u)) }; kept.w = m.has(kept.w) ? kept.w : null;
+          this.sql.exec("INSERT INTO league_games (lid, gkey, at, data) VALUES (?, ?, ?, ?)", lid, key, kept.at, JSON.stringify(kept));
+        }
+        const all = this.leagueGames(lid), list = members.map(x => ({ id: x.uid, name: x.name }));
+        const before = leagueTable(all.filter(x => x.k !== key), list), after = leagueTable(all, list);
+        out.push({ id: lid, name: l.name, line: leagueMoves(before, after, ids.filter(i => m.has(i))) });
+      }
+      return json({ leagues: out });
+    }
+    const l = this.leagueOf(b.id);
+    if (!l || !member(l.id)) return fail(404, "You're not in that league.");
+    if (path === "/leagues/get"){
+      const members = this.leagueMembers(l.id).map(m => { let lv = []; try { lv = ((((JSON.parse(m.stats) || {}).x || {}).b || {}).all || {}).lvl || []; } catch(e){}
+        return { id: m.uid, name: m.name, joined: m.joined, all: [0, 1, 2].map(i => Number((lv[i] || [])[2]) || 0) }; });
+      return json({ league: { id: l.id, name: l.name, code: l.code, admin: l.admin, created: l.created }, members, games: this.leagueGames(l.id) });
+    }
+    if (path === "/leagues/leave" || path === "/leagues/remove"){
+      const who = path === "/leagues/leave" ? u.id : String(b.uid || "");
+      if (who !== u.id && l.admin !== u.id) return fail(403, "Only the league's admin can remove players.");
+      this.sql.exec("DELETE FROM league_members WHERE lid = ? AND uid = ?", l.id, who);
+      this.tidyLeague(l.id);
+      return json({ ok: true });
+    }
+    if (path === "/leagues/admin"){ // hand the league over to another member
+      const to = String(b.uid || "");
+      if (l.admin !== u.id) return fail(403, "Only the league's admin can hand it over.");
+      if (!this.one("SELECT uid FROM league_members WHERE lid = ? AND uid = ?", l.id, to)) return fail(404, "They're not in this league.");
+      this.sql.exec("UPDATE leagues SET admin = ? WHERE id = ?", to, l.id);
+      return json({ ok: true });
+    }
+    return fail(404, "Not found");
+  }
+  // after someone leaves: the longest-standing member takes over as admin, and an empty league goes
+  tidyLeague(lid){
+    const l = this.leagueOf(lid); if (!l) return;
+    const left = this.sql.exec("SELECT uid FROM league_members WHERE lid = ? ORDER BY joined", lid).toArray();
+    if (!left.length){ this.sql.exec("DELETE FROM league_games WHERE lid = ?", lid); this.sql.exec("DELETE FROM leagues WHERE id = ?", lid); return; }
+    if (!left.some(m => m.uid === l.admin)) this.sql.exec("UPDATE leagues SET admin = ? WHERE id = ?", left[0].uid, lid);
   }
 
   // the admin page: find players, set a new PIN, unlock or delete an account
@@ -284,7 +379,10 @@ export class Accounts extends DurableObject {
       return json({ ok: true, user: row(this.one("SELECT * FROM users WHERE id = ?", u.id)) });
     }
     if (path === "/admin/unlock"){ this.sql.exec("UPDATE users SET fails = 0, lock_until = 0 WHERE id = ?", u.id); return json({ ok: true, user: row(this.one("SELECT * FROM users WHERE id = ?", u.id)) }); }
-    if (path === "/admin/delete"){ this.sql.exec("DELETE FROM sessions WHERE uid = ?", u.id); this.sql.exec("DELETE FROM played WHERE uid = ? OR other = ?", u.id, u.id); this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
+    if (path === "/admin/delete"){ this.sql.exec("DELETE FROM sessions WHERE uid = ?", u.id); this.sql.exec("DELETE FROM played WHERE uid = ? OR other = ?", u.id, u.id);
+      const lids = this.sql.exec("SELECT lid FROM league_members WHERE uid = ?", u.id).toArray().map(r => r.lid);
+      this.sql.exec("DELETE FROM league_members WHERE uid = ?", u.id); lids.forEach(lid => this.tidyLeague(lid));
+      this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
     return fail(404, "Not found");
   }
 }
@@ -312,7 +410,7 @@ export class Room extends DurableObject {
   }
   async load(){ return this.state || (this.state = await this.ctx.storage.get("room")) || null; }
   async save(){ await this.ctx.storage.put("room", this.state); await this.ctx.storage.setAlarm(Date.now() + IDLE_MS); }
-  publicRoom(){ const r = this.state; return { code: r.code, host: r.host, status: r.status, game: r.game, settings: r.settings, ver: r.ver, players: r.players, order: r.order || null, seq: r.seq }; }
+  publicRoom(){ const r = this.state; return { code: r.code, host: r.host, status: r.status, game: r.game, settings: r.settings, ver: r.ver, players: r.players, order: r.order || null, seq: r.seq, created: r.created || 0 }; }
   movesOf(game){ return this.sql.exec("SELECT seq, pid, type, data FROM moves WHERE game = ? ORDER BY seq", game).toArray().map(m => ({ seq: m.seq, uid: m.pid, type: m.type, data: JSON.parse(m.data) })); }
   send(ws, msg){ try { ws.send(JSON.stringify(msg)); } catch(e){} }
   broadcast(msg, except){ const s = JSON.stringify(msg); for (const ws of this.ctx.getWebSockets()) if (ws !== except) try { ws.send(s); } catch(e){} }

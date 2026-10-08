@@ -948,6 +948,71 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 .botfade{position:fixed;left:0;right:0;bottom:var(--kb,0px);height:12px;z-index:11;background-color:var(--bg2)}
 
 .seghint{font-size:.82rem;color:var(--muted);margin:7px 2px 0}
+/* leagues: the Leagues tab, a league's table, the row in Multiplayer online and the line at full time */
+.tabbar.four{grid-template-columns:repeat(4,1fr)}
+#leaguesPane{--gold:#ffd23f;--allc:#c9a6ff;--bad:#ff5a7a}
+.lgcard{display:grid;gap:8px;width:100%;text-align:left;font:inherit;color:var(--ink);padding:12px;margin:0 0 10px;border-radius:16px;border:1px solid var(--slotline);background:rgba(0,0,0,.22)}
+.lgcard.top{border-color:rgba(255,210,63,.6);background:linear-gradient(135deg,rgba(255,210,63,.12),rgba(0,0,0,.2))}
+.lgtop{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center}
+.lgtop b{font-size:1.02rem;grid-column:1}
+.lgtop small{font-size:.74rem;color:var(--muted);grid-column:1}
+.bigpos{grid-column:2;grid-row:1/span 2;text-align:right;font-weight:800;font-size:1.5rem;line-height:1;color:var(--gold)}
+.bigpos small{display:block;font-size:.68rem;font-weight:700;color:var(--muted);margin-top:3px}
+.bigpos .up,.lgrow .mv.up{color:#00ff85} .bigpos .dn,.lgrow .mv.dn{color:var(--bad)}
+.lgmini{display:grid;gap:3px}
+.mrow{display:grid;grid-template-columns:20px 1fr 44px;gap:4px;align-items:center;padding:4px 8px;border-radius:8px;background:rgba(10,0,14,.5);font-size:.82rem;font-variant-numeric:tabular-nums}
+.mrow span:first-child{color:var(--muted);font-weight:700;text-align:center}
+.mrow span:last-child{text-align:right;font-weight:800;color:var(--gold)}
+.mrow.me{background:rgba(4,245,255,.12)}
+.mrow.lead{background:linear-gradient(90deg,#ffe066,#ffc93c);color:#2b1d00}
+.mrow.lead span{color:#2b1d00!important}
+.lgfoot{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted)}
+.lgcrown{width:15px;height:15px;fill:none;stroke:#140016;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-2px;margin-right:4px}
+.lgbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.lnkb{font:inherit;font-size:.85rem;font-weight:700;background:none;border:0;padding:0;color:var(--acc2,#04f5ff);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.lnkb.dim{color:var(--muted)} .lnkb.bad{color:#ff8aa3}
+.lghead{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-bottom:8px}
+.lghead h2{margin:0;font-size:1.3rem}
+.lghead small{color:var(--muted);font-size:.78rem}
+.btn.sm{width:auto;padding:8px 14px;font-size:.88rem}
+.lgcode{letter-spacing:.15em;color:var(--gold)}
+.lgfilters{display:grid;gap:6px;margin:8px 0}
+.lgseg button{min-width:0;padding:7px 4px;font-size:.84rem}
+.lgtbl{display:grid;gap:4px}
+.lgrow{display:grid;grid-template-columns:24px minmax(0,1fr) var(--cols) 44px;gap:3px;align-items:center;min-height:42px;padding:0 8px;border-radius:10px;background:rgba(10,0,14,.55);border:1px solid var(--slotline);font-variant-numeric:tabular-nums;font-size:.88rem;cursor:pointer;text-align:right}
+.lgrow.th{min-height:24px;background:transparent;border:0;cursor:default;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.lgrow .p{text-align:center;color:var(--muted);font-weight:700;font-size:.8rem}
+.lgrow .mv{display:block;font-size:.58rem;line-height:1}
+.lgrow .nm{text-align:left;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:2px}
+.lgrow .k{font-weight:800;color:var(--gold)}
+.lgrow.me{background:rgba(4,245,255,.1);border-color:rgba(4,245,255,.35)}
+.lgrow.unr{opacity:.6}
+.lgrow.lead{background:linear-gradient(90deg,#ffe066,#ffc93c);border-color:transparent;color:#2b1d00}
+.lgrow.lead .p,.lgrow.lead .k,.lgrow.lead .mv{color:#2b1d00}
+.lgexp{padding:9px 10px 10px;margin:-2px 0 4px;border-radius:0 0 10px 10px;background:rgba(255,255,255,.05);border:1px solid var(--slotline);border-top:0;display:grid;gap:7px;font-size:.82rem;color:var(--muted)}
+.lgline2{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.lgform{display:inline-flex;gap:3px}
+.lgform i{width:18px;height:18px;border-radius:5px;font-style:normal;font-size:.64rem;font-weight:800;display:grid;place-items:center;color:#140016}
+.lgform .w{background:#00ff85} .lgform .l{background:var(--bad)} .lgform .d{background:#cbb9cf}
+.lglvl{display:grid;grid-template-columns:54px 1fr 92px;gap:8px;align-items:center}
+.lglvl>span:last-child{text-align:right;white-space:nowrap;font-size:.76rem;font-variant-numeric:tabular-nums}
+.lgbar{position:relative;height:9px;border-radius:999px;background:rgba(255,255,255,.1);overflow:hidden}
+.lgbar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px}
+.lgbar i.b,.lgleg i.b{background:var(--allc)} .lgbar i.a,.lgleg i.a{background:var(--gold)}
+.lgleg{display:inline-flex;align-items:center;gap:5px;font-size:.72rem}
+.lgleg i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-left:4px}
+.cg{color:var(--gold)} .cb{color:var(--allc)}
+.lgacts{display:flex;justify-content:space-between;gap:10px}
+.lgnote{font-size:.74rem;color:var(--muted);line-height:1.35;margin:6px 0 0}
+.lgleave{display:block;width:100%;margin:16px 0 0;padding:10px;border-radius:999px;border:1.5px solid rgba(255,90,122,.6);background:transparent;color:#ff8aa3;font:inherit;font-weight:700}
+.lgonline{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;margin-top:12px;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,210,63,.6);background:rgba(0,0,0,.2);color:var(--ink);font:inherit;text-align:left}
+.lgonline b{display:block;color:#ffd23f}
+.lgonline small{font-size:.76rem;color:var(--muted)}
+.lglines{display:grid;gap:6px;margin:10px 0 0}
+.lglines:empty{display:none}
+.lgline{padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid var(--slotline)}
+.lgline b{display:block;font-size:.92rem;color:#ffd23f}
+.lgline small{font-size:.8rem;color:var(--muted)}
 /* penalty shootout (Craig's shootout, docs/penalties/): a full-screen overlay at full time when players are level on top */
 .overlay.pens{--band:#2a0633;background:radial-gradient(120% 90% at 20% 0%,#4a0f5c 0%,#2a0633 40%,#12021a 100%);place-items:start center;overflow-y:auto;padding:16px 16px calc(16px + var(--kb,0px));z-index:30}
 #shootout .soCard{position:relative;width:min(92vw,440px);min-height:calc(100dvh - 40px);display:flex;flex-direction:column;justify-content:center;text-align:center}
@@ -1138,6 +1203,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
       <button class="btn" id="createBtn" type="button">Create a game</button>
       <div class="orline">or join a friend's game</div>
       <div class="joinrow"><input type="text" id="joinCode" maxlength="5" placeholder="CODE" aria-label="Game code" autocomplete="off" autocapitalize="characters"><button class="btn" id="joinBtn" type="button">Join</button></div>
+      <button type="button" class="lgonline hidden" id="lgOnline"></button>
       <p class="authmsg" id="lobbyMsg" aria-live="polite"></p>
     </div>
   </div>
@@ -1157,19 +1223,25 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <div class="homegrp" id="acct"></div>
   </div>
 
+  <div id="leaguesPane" class="hidden">
+    <div class="backrow"><button type="button" class="backbtn" id="lgHomeBack" aria-label="Back">‹</button><h2 id="lgTitle">Leagues</h2></div>
+    <div id="leaguesBody"></div>
+  </div>
+
   <div id="statsPane" class="hidden">
     <div class="backrow"><button type="button" class="backbtn" data-view="doors" aria-label="Back to the home screen">‹</button><h2>My stats</h2></div>
     <div id="statsBody"></div>
   </div>
 
   <nav class="tabbar" id="tabBar" aria-label="More">
+    <button type="button" data-view="leagues" id="lgTab" class="hidden"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 01-8 0z"/><path d="M8 5.5H5.5a2.5 2.5 0 003 3.3M16 5.5h2.5a2.5 2.5 0 01-3 3.3M12 13v4M8.5 20h7"/></svg>Leagues</button>
     <button type="button" data-view="stats"><svg viewBox="0 0 24 24" aria-hidden="true"><rect class="f" x="4" y="13" width="4.2" height="8" rx="1.2"/><rect class="f" x="9.9" y="8.5" width="4.2" height="12.5" rx="1.2"/><rect class="f" x="15.8" y="3.5" width="4.2" height="17.5" rx="1.2"/></svg>Stats</button>
     <button type="button" data-view="share"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5L12 3l4.5 4.5"/><path d="M5 12.5V19a2 2 0 002 2h10a2 2 0 002-2v-6.5"/></svg>Share</button>
     <button type="button" data-view="acct" id="acctTab"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg>Account</button>
   </nav>
   <template id="updatesText">
     <p>Newest first. Each number is the update that went live.</p>
-    <div class="upd"><h4>8 October 2026</h4><p><b>82</b>Penalty shootouts: players level on top at full time settle it from the spot, with a question for every kick, a pixel-art keeper, a coin toss and live commentary. Five kicks each, then sudden death, and the winner gets a point. Works on one phone, against TenaBot and online.</p></div>
+    <div class="upd"><h4>8 October 2026</h4><p><b>83</b>Leagues, from Phil's idea: make a league for your mates, the family or the office and every online game two or more of you play together moves the table, in any game mode. A Leagues tab with your leagues and each table (all, games or rounds; all time, 7 days or 24 hours), a row in Multiplayer online, and a line at full time saying who went up. Tap a player for their form and boards completed.</p><p><b>82</b>Penalty shootouts: players level on top at full time settle it from the spot, with a question for every kick, a pixel-art keeper, a coin toss and live commentary. Five kicks each, then sudden death, and the winner gets a point. Works on one phone, against TenaBot and online.</p></div>
     <div class="upd"><h4>6 October 2026</h4><p><b>81</b>A new competition, Internationals, beside the World Cup and Euros, with its own green theme and a flags ball in the background: 81 boards. All-time and since-2000 top scorers and caps for England, Scotland, Wales, Northern Ireland, Ireland, Brazil, Argentina, France, Germany, Spain, Italy, Portugal and the Netherlands, since-2000 boards for Belgium, Croatia, Uruguay, Denmark and Sweden, managers in order for the home nations, England hat-tricks, the world's and Europe's top scorers and most capped, each nation's record scorer and most capped player, Premier League players with 100 caps, the Africa Cup of Nations and the FIFA ranking after the World Cup. Figures run to the 2026 World Cup final.</p><p><b>80</b>You get one question change for every round in the game (5 for a 5-round game, instead of 3 every time), and you can use them in any round.</p><p><b>79</b>The Europa League is here, with its own orange theme, and 96 new boards from your picks. Champions League (from 1992/93): appearances, hat-tricks, titles, clean sheets, top scorers, the big clubs' scorers, winning captains and managers, final scorers and English clubs' final line-ups. Europa League (from 2000/01): winners, finalists, managers, top scorers, final scorers and British clubs' final line-ups. World Cup and Euros: most tournaments, wins and goals for nations, and top scorers and appearances since 1994 and Euro 96, England's included. Bosnia and Herzegovina is now a recognised nation.</p><p><b>78</b>About 1,100 more La Liga, Bundesliga, Serie A and Ligue 1 players are recognised (30 or more league goals or 200 or more games since 2000/01), so more wrong answers get a card instead of "not recognised".</p></div>
     <div class="upd"><h4>5 October 2026</h4><p><b>77</b>120 new boards for La Liga, the Bundesliga, Serie A, Ligue 1 and Top 5 Leagues from your picks, all from 2000/01 or for last season: top scorers, the big clubs' scorers and squads, derbies, cups, managers, transfers and British players abroad. The 2024/25 and 2025/26 tables are in, every league now has easy boards, and a few top scorer seasons are corrected.</p><p><b>75</b>57 new Scottish Premiership boards since 2000, from your picks: scorers, appearances and assists for the big clubs, derby scorers, managers, captains, PFA awards, cup runners-up, relegations and promotions, European final line-ups, transfer fees and Celtic and Rangers letter boards. The 2025/26 Scottish tables now show points.</p><p><b>74</b>A Latest updates list next to How to play on the home screen. The TenaBot help text now says its games count towards your win rate.</p></div>
     <div class="upd"><h4>4 October 2026</h4><p><b>73</b>In Fastest answer wins and Beat the clock the keyboard drops while your answer climbs the board, so you can see the reveal.</p><p><b>72</b>The climbing answer stays in view with the keyboard up, and pop-ups sit in the middle of the visible screen.</p><p><b>71</b>Fixed the Best finish by a promoted club boards asking for players instead of clubs, and every board is now checked to make sure its answers match what it asks for.</p><p><b>70</b>The answer box sits above the keyboard and Safari's bottom bar instead of being cut off.</p><p><b>69</b>Fixed the answer box freezing after tapping a suggestion. If a turn, a reveal or TenaBot ever stalls, the game now frees itself.</p><p><b>68</b>Repeated answers is now Duplicate answers: Fill every match or Fill one only, with a line saying what each does.</p><p><b>67</b>The shot clock is 30, 60 or 90 seconds, with Off in Solo play only. First touch is now called Fastest answer wins.</p><p><b>66</b>Game mode icons sit in circles, each with a one-line description.</p><p><b>65</b>Four doors on the home screen: Solo play, H2H vs TenaBot, Multiplayer local and Multiplayer online.</p><p><b>64</b>Your answer climbs the board with the slowing scan again in the timed modes. Time limits are 60, 90 or 120 seconds.</p><p><b>63</b>It's clearer when someone beats you to an answer, and your stats split into on your own, against friends and against TenaBot.</p><p><b>62</b>Games against TenaBot count in your win rate. Next round stays on the page when you close the points sheet, and the iPhone bottom bar is purple.</p><p><b>61</b>The big one: a new home screen, a shuffle for who goes first, TenaBot to play against, two new game modes (First touch and Beat the clock) and a new stats page with Compare and Reset.</p><p><b>52</b>Every final line-up board is medium.</p><p><b>51</b>16 World Cup and Euros final line-up boards from the last four finals of each.</p><p><b>50</b>Typing a player's full name exactly always locks in that player. Ballon d'Or boards get a black and gold look with the trophy watermark.</p><p><b>49</b>Champions League final line-ups for both finalists from 2017, and Ballon d'Or boards come up under Top 5 Leagues.</p><p><b>48</b>Ballon d'Or boards: most wins, winners by year and the top ten of each recent vote.</p></div>
@@ -1186,6 +1258,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <p>Three lives each per round. A wrong answer is a yellow card, and losing all three is a red card until the next round. If the shot clock runs out, that costs a life too. Not sure? You can pass, but that costs a life too. Fill the last slot for a 2 point bonus.</p>
     <p>Don't fancy a board? Tap Different question before the round starts. You get one change for every round in the game (5 for a 5-round game), to use whenever you like.</p>
     <p>Online, and against TenaBot, there are two more modes. <strong>Fastest answer wins:</strong> everyone answers at once and the first right answer claims the slot. <strong>Beat the clock:</strong> your own board against the clock, with 2 points for an answer nobody else found.</p>
+    <p>Leagues: make one in the Leagues tab and share the code. Every online game two or more members play together counts, in any mode. Each round counts as a head to head against every other member in the game, and the table ranks you on the share of rounds you win.</p>
     <p>Level on points at the top at full time? It goes to penalties. Each kick is a question with two answers: who has more? Get it right and you score, get it wrong and it's saved or missed. Five kicks each, then sudden death, and the winner gets a point.</p>
   </template>
 </section>
@@ -1252,6 +1325,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <div class="brand"><h1>Full time</h1><div class="sub" id="winnerLabel">&nbsp;</div></div>
   <div class="podium" id="podium"></div>
   <p class="zeronote hidden" id="banter" aria-live="polite"></p>
+  <div class="lglines" id="leagueLines" aria-live="polite"></div>
   <div class="row">
     <button class="btn" id="againBtn">Play again</button>
     <button class="btn ghost" id="setupBtn">Change settings</button>
@@ -2728,13 +2802,14 @@ function homeSync(){
 // press the saved choices into the home screen's buttons
 const pressSeg = (id, v) => $(id).querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v===String(v)));
 [["botSeg", cfg.botLevel], ["timeSeg", cfg.time]].forEach(([id, v]) => pressSeg(id, v));
-const VIEWS = { doors:"doors", door:"doorSet", share:"sharePane", acct:"acctPane", stats:"statsPane" };
+const VIEWS = { doors:"doors", door:"doorSet", share:"sharePane", acct:"acctPane", stats:"statsPane", leagues:"leaguesPane" };
 function setView(v){
   Object.entries(VIEWS).forEach(([k, id]) => $(id).classList.toggle("hidden", k!==v));
   $("tabBar").classList.toggle("hidden", v==="door");
   $("tabBar").querySelectorAll("button").forEach(b => b.dataset.view===v ? b.setAttribute("aria-current","page") : b.removeAttribute("aria-current"));
   if (v==="share") drawShareLink();
   if (v==="acct" && typeof drawAcct==="function") drawAcct();
+  if (v==="leagues" && typeof drawLeagues==="function") drawLeagues();
   if (v==="stats"){ ST.cmp = null; ST.ask = false; drawStatsPage(); }
   window.scrollTo(0,0);
 }
@@ -2744,6 +2819,7 @@ function openDoor(d){
   $("doorIcon").innerHTML = door.querySelector(".ringi").innerHTML; $("doorIcon").setAttribute("style", door.getAttribute("style"));
   $("doorTitle").textContent = door.querySelector("b").textContent;
   homeSync(); setView("door");
+  if (d==="online" && typeof drawLgOnline==="function") drawLgOnline();
 }
 document.querySelectorAll('.door[data-door="solo"],.door[data-door="bot"],.door[data-door="h2h"]').forEach(b => b.onclick = () => openDoor(b.dataset.door));
 document.addEventListener("click", e => { const v = e.target.closest("#setup [data-view]"); if (v) setView(v.dataset.view); });
@@ -3882,7 +3958,7 @@ function bumpStats(old, raw, now = Date.now()){
     for (const d of r.rounds){
       a.boards++; a.done += d.done ? 1 : 0; a.found += d.f; a.others += d.o; a.nobody += d.z; a.bestRound = Math.max(a.bestRound, d.pts);
       if (d.cat){ const c = a.comp[d.cat] = a.comp[d.cat] || [0, 0, 0, 0]; c[0]++; c[1] += d.done ? 1 : 0; c[2] += d.r; c[3] += d.w; }
-      a.lvl[d.lv][0] += d.r; a.lvl[d.lv][1] += d.w;
+      a.lvl[d.lv][0] += d.r; a.lvl[d.lv][1] += d.w; a.lvl[d.lv][2] = (a.lvl[d.lv][2] || 0) + (d.done ? 1 : 0); // right, wrong, boards completed
       if (r.mode === "first") a.mostClaims = Math.max(a.mostClaims, d.f);
       if (r.mode === "clock"){ a.mostClock = Math.max(a.mostClock, d.f); if (d.done) a.fullClock++; }
     }
@@ -3915,12 +3991,12 @@ function mergeStats(a, b){
   if (x.since === Infinity) x.since = Date.now();
   for (const k of STAT_FILTERS){
     const p = (xa.b || {})[k], q = (xb.b || {})[k]; if (!p && !q) continue;
-    const m = x.b[k] = { ...blankAgg(), comp: {}, lvl: [[0, 0], [0, 0], [0, 0]] };
+    const m = x.b[k] = { ...blankAgg(), comp: {}, lvl: [[0, 0, 0], [0, 0, 0], [0, 0, 0]] };
     for (const f of STAT_KEYS) m[f] = MAX_KEYS.includes(f) ? Math.max(n((p || {})[f]), n((q || {})[f])) : n((p || {})[f]) + n((q || {})[f]);
     m.streak = Math.max(n((p || {}).streak), n((q || {}).streak));
     for (const src of [p, q]) if (src){
       for (const [c, v] of Object.entries(src.comp || {})) if (Array.isArray(v)){ const t = m.comp[c] = m.comp[c] || [0, 0, 0, 0]; v.slice(0, 4).forEach((y, i) => t[i] += n(y)); }
-      (Array.isArray(src.lvl) ? src.lvl : []).slice(0, 3).forEach((v, i) => { if (Array.isArray(v)){ m.lvl[i][0] += n(v[0]); m.lvl[i][1] += n(v[1]); } });
+      (Array.isArray(src.lvl) ? src.lvl : []).slice(0, 3).forEach((v, i) => { if (Array.isArray(v)){ m.lvl[i][0] += n(v[0]); m.lvl[i][1] += n(v[1]); m.lvl[i][2] += n(v[2]); } });
     }
   }
   for (const src of [xa.vs || {}, xb.vs || {}]) for (const [k, v] of Object.entries(src)){
@@ -3932,6 +4008,69 @@ function mergeStats(a, b){
   return out;
 }
 /* stats.js: end */
+/* leagues.js: start */
+// Tenaball leagues: a league's table, worked out from its games. The same code runs on the server (the line at full time)
+// and in the game (the Leagues tab). index.html carries a copy between the "leagues.js" markers, made by
+// scripts/embed-stats.mjs; tests/stats.test.mjs checks the copy matches this file.
+// A game is { at, w, p: [{ u, s, r, b }] }: when it finished, the winner's account id (after any penalty shootout), and for
+// each member who played: account id, final score, points in each round, and boards completed at each level (easy, medium, hard).
+// Every round is a head to head against each other member in the game: a win, a draw on the same points, or a loss.
+
+const LEAGUE_MIN = 5; // head to heads to be ranked, unless nobody has that many yet
+
+// a game as a phone reports it, checked: anything unexpected is dropped or clamped
+function cleanLeagueGame(g){
+  g = g && typeof g === "object" ? g : {};
+  const n = (v, max) => Math.max(0, Math.min(max, Math.floor(Number(v) || 0)));
+  const p = (Array.isArray(g.p) ? g.p : []).slice(0, 4).map(x => {
+    x = x && typeof x === "object" ? x : {};
+    return { u: /^[a-f0-9]{24}$/.test(String(x.u || "")) ? x.u : null, s: n(x.s, 1000),
+      r: (Array.isArray(x.r) ? x.r : []).slice(0, 7).map(v => n(v, 100)), b: [0, 1, 2].map(i => n((x.b || [])[i], 7)) };
+  }).filter((x, i, all) => x.u && all.findIndex(y => y.u === x.u) === i);
+  const w = p.some(x => x.u === g.w) ? g.w : null;
+  return { at: n(g.at, 1e14), w, p };
+}
+
+// the table: rows of { id, name, p, w, rw, rd, rl, pct, form, b, last, pos }; ranked in order, then the rest
+// opts.kind: "all" (rounds %, the default), "games" (games %) or "rounds" (rounds %); opts.since: only games from then on
+function leagueTable(games, members, opts = {}){
+  const since = opts.since || 0, kind = opts.kind || "all";
+  const T = new Map(members.map(m => [m.id, { id: m.id, name: m.name, p: 0, w: 0, rw: 0, rd: 0, rl: 0, form: "", b: [0, 0, 0], last: 0 }]));
+  for (const g of [...games].sort((a, b) => a.at - b.at)){
+    if (g.at < since) continue;
+    const ps = g.p.filter(x => T.has(x.u)); if (ps.length < 2) continue;
+    for (const x of ps){ const t = T.get(x.u); t.p++; if (g.w === x.u) t.w++; t.last = Math.max(t.last, g.at); x.b.forEach((k, i) => t.b[i] += k); }
+    const rounds = Math.max(...ps.map(x => x.r.length));
+    for (let i = 0; i < rounds; i++) for (const a of ps){
+      const t = T.get(a.u), sa = a.r[i] || 0; let w = 0, d = 0, l = 0;
+      for (const b of ps) if (b !== a){ const sb = b.r[i] || 0; if (sa > sb) w++; else if (sa < sb) l++; else d++; }
+      t.rw += w; t.rd += d; t.rl += l;
+      t.form += l ? "L" : d ? "D" : "W"; // the round: beat everyone, level with the best, or beaten
+    }
+  }
+  const rds = t => t.rw + t.rd + t.rl;
+  const pctOf = t => kind === "games" ? (t.p ? Math.round(100 * t.w / t.p) : 0) : (rds(t) ? Math.round(100 * (t.rw + t.rd / 2) / rds(t)) : 0);
+  const rows = [...T.values()].map(t => ({ ...t, pct: pctOf(t), form: t.form.slice(-5) }));
+  const played = rows.filter(t => t.p > 0), early = !played.some(t => rds(t) >= LEAGUE_MIN);
+  const exact = t => kind === "games" ? (t.p ? t.w / t.p : 0) : (rds(t) ? (t.rw + t.rd / 2) / rds(t) : 0);
+  const ranked = played.filter(t => early || rds(t) >= LEAGUE_MIN)
+    .sort((a, b) => exact(b) - exact(a) || b.w - a.w || b.rw - a.rw || a.name.localeCompare(b.name));
+  ranked.forEach((t, i) => t.pos = i + 1);
+  const rest = rows.filter(t => !ranked.includes(t)).sort((a, b) => rds(b) - rds(a) || a.name.localeCompare(b.name));
+  rest.forEach(t => t.pos = 0);
+  return { ranked, rest, early };
+}
+
+const ordinal = n => n + (n % 10 === 1 && n % 100 !== 11 ? "st" : n % 10 === 2 && n % 100 !== 12 ? "nd" : n % 10 === 3 && n % 100 !== 13 ? "rd" : "th");
+// what a game did to the table, for the players in it: "Craig up to 1st · Phil down to 2nd"
+function leagueMoves(before, after, ids){
+  const pos = (tbl, id) => (tbl.ranked.find(t => t.id === id) || {}).pos || 0;
+  return after.ranked.filter(t => ids.includes(t.id)).map(t => {
+    const b = pos(before, t.id), a = t.pos;
+    return !b ? `${t.name} in at ${ordinal(a)}` : a < b ? `${t.name} up to ${ordinal(a)}` : a > b ? `${t.name} down to ${ordinal(a)}` : `${t.name} stays ${ordinal(a)}`;
+  }).join(" · ");
+}
+/* leagues.js: end */
 function statsHTML(s){
   s = upgradeStats(s) || {played:0,multi:0,wins:0,streak:0,best:0,points:0,top:0,tenables:0};
   const pct = s.multi ? Math.round(100*s.wins/s.multi) : 0, avg = s.played ? s.points/s.played : 0;
@@ -4401,7 +4540,7 @@ async function endGame(){
     d.onclick = toggle; d.onkeydown = e => { if (e.key==="Enter" || e.key===" "){ e.preventDefault(); toggle(); } };
     w.append(d, panel); box.appendChild(w); return d;
   });
-  accountRecord(sorted, box);
+  accountRecord(sorted, box); leagueReport(sorted);
   if (ONLINE) onlineEndUI();
   $("winnerLabel").textContent = sorted.length===1 ? " " : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : G.pens && G.pens.winner ? `${winners[0].name} wins on penalties, ${penScore()}.` : `${winners[0].name} wins with ${top} points.`;
   G.banter = banterLine(sorted, cfg.rounds * 10).text;
@@ -4735,6 +4874,7 @@ function showLogin(){
 function afterLogin(){
   const p = PENDING; PENDING = null;
   if (p && p.join) return openJoin(p.join);
+  if (p && p.league){ history.replaceState(null, "", location.pathname); homeTheme(); show("setup"); setView("leagues"); if (signedIn()) joinLeague(p.league); return; }
   if (p === "online") return openOnlineMenu();
   homeTheme(); show("setup"); setView("doors");
 }
@@ -4782,7 +4922,7 @@ const ADMIN_EMAILS = ["craigwilson84@gmail.com"];
 const isAdmin = () => signedIn() && ADMIN_EMAILS.includes(String(NET.user.email || "").toLowerCase());
 function drawAcct(){
   const box = $("acct");
-  $("acctTab").classList.toggle("hidden", !SERVER); $("tabBar").classList.toggle("two", !SERVER);
+  $("acctTab").classList.toggle("hidden", !SERVER); $("lgTab").classList.toggle("hidden", !SERVER); $("tabBar").classList.toggle("two", !SERVER); $("tabBar").classList.toggle("four", !!SERVER);
   if (!SERVER){ box.innerHTML = ""; return; }
   box.innerHTML = signedIn() ? `<div class="gh">Signed in</div>
       <button type="button" class="acctrow" id="acctName" aria-label="Change your name"><span>Name</span><span>${esc(accountName())} ›</span></button>
@@ -4800,7 +4940,7 @@ function drawAcct(){
       <button type="button" class="btn" id="acctIn">Sign in</button><button type="button" class="btn ghost" id="acctUp" style="margin-top:10px">Create an account</button>`;
   const on = (id, f) => { const el = $(id); if (el) el.onclick = f; };
   const msg = (m, ok) => { const el = $("acctMsg"); if (el){ el.textContent = m || ""; el.classList.toggle("ok", !!ok); } };
-  on("acctOut", async () => { await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; drawAcct(); showLogin(); });
+  on("acctOut", async () => { await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; LG.list = null; LG.cur = null; LG.data = null; drawAcct(); showLogin(); });
   on("acctIn", () => { PENDING = null; setAuthMode("in"); showLogin(); });
   on("acctPens", () => PENS.test());
   on("acctUp", () => { PENDING = null; setAuthMode("up"); showLogin(); });
@@ -4855,6 +4995,8 @@ function openJoin(code){
   openOnlineMenu(); $("joinCode").value = code;
   if (knownName()) joinRoom(code); else { lobbyMsg("You've been invited to a game. Enter your name and tap Join."); $("onlineName").focus(); }
 }
+$("lgOnline").onclick = () => setView("leagues");
+$("lgHomeBack").onclick = () => LG.cur ? lgBackToList() : setView("doors");
 $("onlineBtn").onclick = () => {
   if (!signedIn() && lsGet(GUEST_KEY)!=="1"){ PENDING = "online"; return showLogin(); }
   openOnlineMenu();
@@ -5016,7 +5158,7 @@ function startOnlineGame(d, moves){
   G = { mode: cfg.mode, players: d.order.map((uid, i) => ({ ...newPlayer(d.players[uid] ? d.players[uid].name : "Player", i, null), uid })),
         round:1, picked: ROOM.picked, refreshLeft:cfg.rounds, lastCat: ROOM.lastCat };
   const last = moves.length ? moves[moves.length-1].seq : 0;
-  ONLINE = { code: ROOM.code, game: d.game, host: d.host, me, isHost: d.host===me, next: 1, pending: new Map(), running: false, sending: false, catchUpTo: last, wasMuted: muted };
+  ONLINE = { code: ROOM.code, game: d.game, created: d.created || 0, host: d.host, me, isHost: d.host===me, next: 1, pending: new Map(), running: false, sending: false, catchUpTo: last, wasMuted: muted };
   if (last > 1){ FAST = true; muted = true; } // rejoining a game in progress: catch up quickly and quietly
   show("game"); feedback("", ""); $("tower").innerHTML = ""; $("roundEnd").classList.add("hidden"); $("guessArea").classList.add("hidden"); renderPlayers();
   moves.forEach(mv => ONLINE.pending.set(mv.seq, mv));
@@ -5133,12 +5275,164 @@ function onlineExit(){
   drawNames(); theme("pl"); show("setup");
 }
 
+/* ----- leagues (server/src/leagues.js works out the tables): a Leagues tab, a row in Multiplayer online, and a line at full time ----- */
+const LG = { list: null, cur: null, data: null, kind: "all", when: "all", open: null, msg: "", code: null };
+const LG_TOTAL = () => [0, 1, 2].map(l => Q.filter(q => q.level === l).length); // every board at each level
+const LG_SEEN = "tenaball-lg-seen"; // where you stood in each league last time you looked, for the arrows
+const lgSeen = () => { try { return JSON.parse(lsGet(LG_SEEN) || "{}") || {}; } catch(e){ return {}; } };
+const lgCrown = '<svg class="lgcrown" viewBox="0 0 24 24" aria-label="Leader"><path d="M4 17.5h16M5 17.5L3.5 8l5 4L12 5l3.5 7 5-4-1.5 9.5"/></svg>';
+const lgAgo = t => { if (!t) return "No games yet"; const m = Math.round((Date.now() - t) / 60000);
+  return m < 2 ? "Played just now" : m < 60 ? `Played ${m} minutes ago` : m < 120 ? "Played an hour ago" : m < 1440 ? `Played ${Math.round(m / 60)} hours ago` : m < 2880 ? "Played yesterday" : `Played ${Math.round(m / 1440)} days ago`; };
+const myId = () => signedIn() ? NET.user.id : null;
+async function drawLeagues(){
+  const box = $("leaguesBody"); if (!box) return;
+  if (!signedIn()){
+    box.innerHTML = `<div class="homegrp"><div class="gh">Leagues</div><p class="panenote">Make a league for your mates, your class or the office, and every online game you play together moves the table. Leagues need an account, so sign in first.</p>
+      <button type="button" class="btn" id="lgSignIn">Sign in</button></div>`;
+    $("lgSignIn").onclick = () => { PENDING = LG.code ? { league: LG.code } : null; setAuthMode("in"); showLogin(); };
+    return;
+  }
+  if (LG.cur) return drawLeague();
+  if (!LG.list) box.innerHTML = '<p class="panenote">Loading your leagues…</p>';
+  const r = await api("/leagues"); if (LG.cur) return;
+  if (r.ok) LG.list = r.data.leagues; else if (!LG.list){ box.innerHTML = `<p class="authmsg">${esc(r.data.error || "Couldn't load your leagues. Check your connection.")}</p>`; return; }
+  const seen = lgSeen(), me = myId();
+  box.innerHTML = (LG.list.length ? LG.list.map(l => {
+      const at = l.rows.findIndex(x => x.id === me), pos = at + 1, was = seen[l.id], mv = pos && was ? was - pos : 0;
+      const from = Math.max(0, Math.min(at < 0 ? 0 : at - 1, l.rows.length - 3)), slice = l.rows.slice(from, from + 3);
+      return `<button type="button" class="lgcard${pos === 1 ? " top" : ""}" data-lg="${l.id}">
+        <span class="lgtop"><b>${esc(l.name)}</b><small>${l.members} member${l.members === 1 ? "" : "s"}${l.rows[0] && l.rows[0].id !== me && at > 2 ? ` · ${esc(l.rows[0].name)} leads` : ""}</small>
+          <span class="bigpos">${pos ? ord(pos) : "–"}<small class="${mv > 0 ? "up" : mv < 0 ? "dn" : ""}">${!pos ? "Not ranked yet" : mv > 0 ? "▲ " + mv : mv < 0 ? "▼ " + (-mv) : "No change"}</small></span></span>
+        ${slice.length ? `<span class="lgmini">${slice.map(x => `<span class="mrow${x.id === me ? " me" : ""}${x.pos === 1 ? " lead" : ""}"><span>${x.pos}</span><span>${x.pos === 1 ? lgCrown : ""}${esc(x.name)}${x.id === me ? " (you)" : ""}</span><span>${x.pct}%</span></span>`).join("")}</span>` : ""}
+        <span class="lgfoot"><span>${lgAgo(l.last)}</span><span>Open ›</span></span></button>`; }).join("")
+    : `<div class="homegrp"><div class="gh">No leagues yet</div><p class="panenote">Make a league for your mates or your class. Every online game two or more of you play together counts, in any game mode.</p></div>`)
+    + `<p class="authmsg" id="lgMsg" aria-live="polite">${esc(LG.msg)}</p><div class="lgbtns"><button type="button" class="btn" id="lgNew">New league</button><button type="button" class="btn ghost" id="lgJoin">Join league</button></div>`;
+  LG.msg = "";
+  box.querySelectorAll("[data-lg]").forEach(b => b.onclick = () => openLeague(b.dataset.lg));
+  $("lgNew").onclick = async () => { const n = (prompt("Name your league") || "").trim(); if (!n) return;
+    const r = await api("/leagues/new", { name: n }); if (!r.ok) return lgMsg(r.data.error || "Couldn't make the league."); LG.list = null; openLeague(r.data.league.id, true); };
+  $("lgJoin").onclick = () => { const c = (prompt("The league's 6-letter code") || "").trim(); if (c) joinLeague(c); };
+}
+const lgMsg = m => { const el = $("lgMsg"); if (el) el.textContent = m; };
+async function joinLeague(code){
+  const r = await api("/leagues/join", { code }); LG.code = null;
+  if (!r.ok){ LG.msg = r.data.error || "Couldn't join that league."; LG.cur = null; return drawLeagues(); }
+  LG.list = null; openLeague(r.data.league.id);
+}
+async function openLeague(id, fresh){
+  LG.cur = id; LG.open = null; LG.data = null; LG.fresh = !!fresh; drawLeague();
+  const r = await api("/leagues/get", { id });
+  if (LG.cur !== id) return;
+  if (!r.ok){ LG.cur = null; LG.msg = r.data.error || "Couldn't open that league."; return drawLeagues(); }
+  LG.data = r.data; drawLeague();
+}
+function lgTable(){
+  const d = LG.data, since = LG.when === "day" ? Date.now() - 86400000 : LG.when === "week" ? Date.now() - 7 * 86400000 : 0;
+  return leagueTable(d.games, d.members.map(m => ({ id: m.id, name: m.name })), { kind: LG.kind, since });
+}
+function drawLeague(){
+  const box = $("leaguesBody"), d = LG.data, me = myId();
+  $("lgTitle").textContent = "Leagues";
+  if (!d){ box.innerHTML = '<p class="panenote">Loading the table…</p>'; return; }
+  const L = d.league, t = lgTable(), kind = LG.kind, admin = L.admin === me, all = LG_TOTAL(), byId = Object.fromEntries(d.members.map(m => [m.id, m]));
+  // the arrows on the full table show places moved since you last looked
+  const seen = lgSeen(), was = (seen.t || {})[L.id] || {};
+  const seg = (name, cur, opts) => `<div class="seg lgseg" role="group" aria-label="${name}">${opts.map(([k, l]) => `<button type="button" data-${name}="${k}" aria-pressed="${cur === k}">${l}</button>`).join("")}</div>`;
+  const cols = kind === "all" ? ["P", "W", "Rounds", "%"] : kind === "games" ? ["P", "W", "L", "%"] : ["W", "D", "L", "%"];
+  const cells = m => kind === "all" ? [m.p, m.w, `${m.rw}-${m.rd}-${m.rl}`] : kind === "games" ? [m.p, m.w, m.p - m.w] : [m.rw, m.rd, m.rl];
+  const bars = m => { const a = (byId[m.id] || {}).all || [0, 0, 0], w = (x, n) => Math.min(100, Math.max(100 * x / n, x ? 1.5 : 0));
+    return `<div class="lgline2"><span>Boards completed</span><span class="lgleg"><i class="a"></i>This league <i class="b"></i>All play</span></div>`
+      + ["Easy", "Medium", "Hard"].map((l, j) => `<div class="lglvl"><span>${l}</span><span class="lgbar"><i class="b" style="width:${w(Math.max(a[j], m.b[j]), all[j])}%"></i><i class="a" style="width:${w(m.b[j], all[j])}%"></i></span><span><b class="cg">${m.b[j]}</b> · <b class="cb">${Math.max(a[j], m.b[j])}</b>/${all[j]}</span></div>`).join(""); };
+  const row = (m, i, ranked) => { const lead = ranked && m.pos === 1, mv = ranked && LG.when === "all" && was[m.id] ? was[m.id] - m.pos : 0;
+    return `<div class="lgrow${m.id === me ? " me" : ""}${ranked ? "" : " unr"}${lead ? " lead" : ""}" role="button" tabindex="0" data-row="${m.id}" aria-expanded="${LG.open === m.id}">
+      <span class="p">${ranked ? m.pos : ""}${mv ? `<span class="mv ${mv > 0 ? "up" : "dn"}">${mv > 0 ? "▲" : "▼"}${Math.abs(mv)}</span>` : ""}</span>
+      <span class="nm">${lead ? lgCrown : ""}${esc(m.name)}${m.id === me ? " (you)" : ""}</span>${cells(m).map(x => `<span>${x}</span>`).join("")}<span class="k">${m.p ? m.pct + "%" : "–"}</span></div>
+      ${LG.open === m.id ? `<div class="lgexp">${m.form ? `<div class="lgline2"><span>Form, last ${m.form.length === 1 ? "round" : m.form.length + " rounds"}</span><span class="lgform">${[...m.form].map(c => `<i class="${c.toLowerCase()}">${c}</i>`).join("")}</span></div>` : ""}
+        ${bars(m)}
+        <div class="lgacts">${m.id === me ? `<button type="button" class="lnkb" data-full="${m.id}">Full stats</button>` : `<button type="button" class="lnkb" data-cmp="${m.id}">Compare</button><button type="button" class="lnkb" data-full="${m.id}">Full stats</button>`}</div>
+        ${admin && m.id !== me ? `<div class="lgacts"><button type="button" class="lnkb dim" data-hand="${m.id}">Make admin</button><button type="button" class="lnkb bad" data-kick="${m.id}">Remove from league</button></div>` : ""}</div>` : ""}`; };
+  const notPlayed = t.rest.filter(m => !m.p), short = t.rest.filter(m => m.p);
+  box.innerHTML = `<div class="lghead"><div><h2>${esc(L.name)}</h2><small>${d.members.length} member${d.members.length === 1 ? "" : "s"} · since ${new Date(L.created).toLocaleDateString("en-GB", { day: "numeric", month: "long" })}${admin ? " · you're the admin" : ""}</small></div><button type="button" class="btn sm" id="lgInvite">Invite</button></div>
+    ${LG.fresh ? `<p class="panenote">Your league's code is <b class="lgcode">${esc(L.code)}</b>. Invite your mates, then host an online game together: it counts automatically, in any game mode.</p>` : ""}
+    <div class="lgfilters">${seg("kind", kind, [["all", "All"], ["games", "Games"], ["rounds", "Rounds"]])}${seg("when", LG.when, [["all", "All time"], ["week", "7 days"], ["day", "24 hrs"]])}</div>
+    <div class="lgtbl" style="--cols:${kind === "all" ? "24px 24px 62px" : "30px 30px 30px"}">
+      <div class="lgrow th"><span>#</span><span class="nm">Player</span>${cols.map((c, i) => `<span class="${i === 3 ? "k" : ""}">${c}</span>`).join("")}</div>
+      ${t.ranked.map((m, i) => row(m, i, true)).join("") || '<p class="panenote">No games yet. Host an online game with two or more members and the table starts.</p>'}
+      ${short.length ? `<div class="lgnote">Needs ${LEAGUE_MIN} rounds to be ranked:</div>` + short.map((m, i) => row(m, i, false)).join("") : ""}
+    </div>
+    <p class="lgnote">${kind === "all" ? "Rounds: won-drawn-lost. " : ""}${kind === "games" ? "Ranked on the share of games won." : "Ranked on the share of rounds won, draws counting half, then games won."} Each round counts against every other member in the game.</p>
+    ${notPlayed.length ? `<p class="lgnote">Not played yet: ${esc(notPlayed.map(m => m.name).join(", "))}.</p>` : ""}
+    <p class="authmsg" id="lgMsg" aria-live="polite"></p>
+    <div class="lgbtns"><button type="button" class="btn" id="lgPlay">Play a league game</button><button type="button" class="btn ghost" id="lgShare">Share table</button></div>
+    <button type="button" class="lgleave" id="lgLeave">Leave league</button>`;
+  // remember where everyone stands now, for next time's arrows
+  if (LG.when === "all" && LG.kind === "all"){ const s = lgSeen(); s.t = s.t || {}; s.t[L.id] = Object.fromEntries(t.ranked.map(m => [m.id, m.pos])); const mine = t.ranked.find(m => m.id === me); if (mine) s[L.id] = mine.pos; lsSet(LG_SEEN, JSON.stringify(s)); }
+  box.querySelectorAll("[data-kind]").forEach(b => b.onclick = () => { LG.kind = b.dataset.kind; drawLeague(); });
+  box.querySelectorAll("[data-when]").forEach(b => b.onclick = () => { LG.when = b.dataset.when; drawLeague(); });
+  box.querySelectorAll("[data-row]").forEach(b => { const go = () => { LG.open = LG.open === b.dataset.row ? null : b.dataset.row; drawLeague(); };
+    b.onclick = go; b.onkeydown = e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); go(); } }; });
+  box.querySelectorAll("[data-cmp]").forEach(b => b.onclick = () => { setView("stats"); compareWith(b.dataset.cmp); });
+  box.querySelectorAll("[data-full]").forEach(b => b.onclick = () => lgFullStats(b.dataset.full));
+  box.querySelectorAll("[data-kick]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.kick]; if (!confirm(`Remove ${m.name} from ${L.name}?`)) return;
+    const r = await api("/leagues/remove", { id: L.id, uid: m.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't remove them."); openLeague(L.id); });
+  box.querySelectorAll("[data-hand]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.hand]; if (!confirm(`Make ${m.name} the admin of ${L.name}? You'll stay in the league.`)) return;
+    const r = await api("/leagues/admin", { id: L.id, uid: m.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't hand it over."); openLeague(L.id); });
+  $("lgInvite").onclick = () => lgInvite(L);
+  $("lgShare").onclick = () => lgShareTable(L, t);
+  $("lgPlay").onclick = () => { if (!$("onlineBtn").classList.contains("hidden")) $("onlineBtn").click(); };
+  $("lgLeave").onclick = async () => { if (!confirm(`Leave ${L.name}? Your row goes from the table.`)) return;
+    const r = await api("/leagues/leave", { id: L.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't leave the league."); lgBackToList(); };
+}
+function lgBackToList(){ LG.cur = null; LG.data = null; LG.list = null; drawLeagues(); window.scrollTo(0, 0); }
+async function lgFullStats(id){
+  if (id === myId()){ setView("stats"); return; }
+  const r = await api("/friends/stats", { id });
+  if (!r.ok) return lgMsg(r.data.error || "Couldn't fetch their stats.");
+  $("infoTitle").textContent = `${r.data.name}'s stats`; $("infoBody").innerHTML = statsHTML(r.data.stats); $("infoSheet").classList.remove("hidden"); $("infoDone").focus({ preventScroll:true });
+}
+const lgLink = code => shareUrl() + "?league=" + code;
+async function lgInvite(L){
+  const text = `Join my Tenaball league, ${L.name}: every online game we play together moves the table. Code ${L.code}.`, url = lgLink(L.code);
+  try { if (navigator.share){ await navigator.share({ text, url }); return; } } catch(e){ if (e && e.name === "AbortError") return; }
+  try { await navigator.clipboard.writeText(text + " " + url); lgMsg("Invite copied. Paste it into your group chat."); } catch(e){ lgMsg(`The code is ${L.code}.`); }
+}
+async function lgShareTable(L, t){
+  const text = [`🏆 *${L.name.toUpperCase()}*`, "", ...t.ranked.map(m => `${m.pos}. ${m.name} · *${m.pct}%*`), "", `Join with code ${L.code}`, lgLink(L.code)].join("\n");
+  try { if (navigator.share){ await navigator.share({ text }); return; } } catch(e){ if (e && e.name === "AbortError") return; }
+  try { await navigator.clipboard.writeText(text); lgMsg("Table copied. Paste it into your group chat."); } catch(e){}
+}
+// the row inside Multiplayer online: where you stand in each league
+async function drawLgOnline(){
+  const el = $("lgOnline"); if (!el) return;
+  if (!SERVER || !signedIn()){ el.classList.add("hidden"); return; }
+  const r = await api("/leagues"); if (!r.ok){ el.classList.add("hidden"); return; }
+  LG.list = r.data.leagues; const me = myId();
+  const parts = LG.list.map(l => { const at = l.rows.findIndex(x => x.id === me); return `${esc(l.name)}: ${at < 0 ? "not ranked yet" : ord(at + 1)}`; });
+  el.innerHTML = `<span><b>Your leagues</b><small>${parts.length ? parts.join(" · ") : "Make a league for your mates"}</small></span><span aria-hidden="true">›</span>`;
+  el.classList.remove("hidden");
+}
+// at full time online: each signed-in phone reports the game, and shows what it did to each league the players share
+async function leagueReport(sorted){
+  const box = $("leagueLines"); if (box) box.innerHTML = "";
+  if (!ONLINE || !signedIn() || !isAccountPlayer(sorted.find(isAccountPlayer) || {})) return;
+  const acc = G.players.filter(p => /^u:[a-f0-9]{24}$/.test(p.uid || ""));
+  if (acc.length < 2) return;
+  const top = sorted[0], solo = sorted.filter(p => p.score === top.score).length === 1;
+  const game = { w: solo && /^u:/.test(top.uid || "") ? top.uid.slice(2) : null,
+    p: acc.map(p => ({ u: p.uid.slice(2), s: p.score, r: (p.g && p.g.rounds) || [], b: [0, 1, 2].map(l => ((p.g && p.g.boards) || []).filter(x => x.lv === l && x.done).length) })) };
+  const r = await api("/leagues/result", { key: `${ONLINE.code}:${ONLINE.game}:${ONLINE.created || 0}`, game });
+  if (!r.ok || !box) return;
+  box.innerHTML = r.data.leagues.filter(l => l.line).map(l => `<div class="lgline"><b>${esc(l.name)}</b><small>${esc(l.line)}</small></div>`).join("");
+}
+
 /* ----- start-up ----- */
 (function netInit(){
   if (!SERVER) return; // no server yet: no sign-in screen and no online games
   $("onlineBtn").classList.remove("hidden"); drawAcct();
   const code = (new URLSearchParams(location.search).get("room") || "").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,5);
   if (code.length===5) PENDING = { join: code };
+  const lcode = (new URLSearchParams(location.search).get("league") || "").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6);
+  if (lcode.length===6 && !PENDING){ PENDING = { league: lcode }; LG.code = lcode; }
   let cached = null; try { cached = JSON.parse(lsGet(USER_KEY) || "null"); } catch(e){}
   if (lsGet(TOKEN_KEY) && cached && cached.user){
     NET.user = cached.user; NET.stats = cached.stats || null; NET.prevName = cached.user.name;

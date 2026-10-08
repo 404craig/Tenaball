@@ -71,7 +71,7 @@ export function bumpStats(old, raw, now = Date.now()){
     for (const d of r.rounds){
       a.boards++; a.done += d.done ? 1 : 0; a.found += d.f; a.others += d.o; a.nobody += d.z; a.bestRound = Math.max(a.bestRound, d.pts);
       if (d.cat){ const c = a.comp[d.cat] = a.comp[d.cat] || [0, 0, 0, 0]; c[0]++; c[1] += d.done ? 1 : 0; c[2] += d.r; c[3] += d.w; }
-      a.lvl[d.lv][0] += d.r; a.lvl[d.lv][1] += d.w;
+      a.lvl[d.lv][0] += d.r; a.lvl[d.lv][1] += d.w; a.lvl[d.lv][2] = (a.lvl[d.lv][2] || 0) + (d.done ? 1 : 0); // right, wrong, boards completed
       if (r.mode === "first") a.mostClaims = Math.max(a.mostClaims, d.f);
       if (r.mode === "clock"){ a.mostClock = Math.max(a.mostClock, d.f); if (d.done) a.fullClock++; }
     }
@@ -104,12 +104,12 @@ export function mergeStats(a, b){
   if (x.since === Infinity) x.since = Date.now();
   for (const k of STAT_FILTERS){
     const p = (xa.b || {})[k], q = (xb.b || {})[k]; if (!p && !q) continue;
-    const m = x.b[k] = { ...blankAgg(), comp: {}, lvl: [[0, 0], [0, 0], [0, 0]] };
+    const m = x.b[k] = { ...blankAgg(), comp: {}, lvl: [[0, 0, 0], [0, 0, 0], [0, 0, 0]] };
     for (const f of STAT_KEYS) m[f] = MAX_KEYS.includes(f) ? Math.max(n((p || {})[f]), n((q || {})[f])) : n((p || {})[f]) + n((q || {})[f]);
     m.streak = Math.max(n((p || {}).streak), n((q || {}).streak));
     for (const src of [p, q]) if (src){
       for (const [c, v] of Object.entries(src.comp || {})) if (Array.isArray(v)){ const t = m.comp[c] = m.comp[c] || [0, 0, 0, 0]; v.slice(0, 4).forEach((y, i) => t[i] += n(y)); }
-      (Array.isArray(src.lvl) ? src.lvl : []).slice(0, 3).forEach((v, i) => { if (Array.isArray(v)){ m.lvl[i][0] += n(v[0]); m.lvl[i][1] += n(v[1]); } });
+      (Array.isArray(src.lvl) ? src.lvl : []).slice(0, 3).forEach((v, i) => { if (Array.isArray(v)){ m.lvl[i][0] += n(v[0]); m.lvl[i][1] += n(v[1]); m.lvl[i][2] += n(v[2]); } });
     }
   }
   for (const src of [xa.vs || {}, xb.vs || {}]) for (const [k, v] of Object.entries(src)){
