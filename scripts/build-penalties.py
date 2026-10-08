@@ -13,7 +13,8 @@ Questions start from Craig's shootout build (docs/penalties/questions_raw.json, 
     docs/penalties/VERIFY_NOTES.md). A question missing from it is left out, and so is any pair
     where a value couldn't be checked or the two are level.
 
-The artwork (the keeper's frames, the coin and the ball) is copied from docs/penalties/shootout-latest.html.
+The artwork (the keeper's frames and the coin) is copied from docs/penalties/shootout-latest.html; the ball's
+spin frames come from assets/penalties/ball/ (Craig's ten frames, cut to 22px).
 Run it from the repo root: python3 scripts/build-penalties.py
 """
 import collections, csv, json, os, re, sys
@@ -97,6 +98,10 @@ art_src = open(P("docs/penalties/shootout-latest.html"), encoding="utf-8").read(
 gk = re.search(r"^const GK = (\[.*\]);$", art_src, re.M).group(1)
 coin = re.search(r"^const COIN_FRAMES = (\[.*\]);$", art_src, re.M).group(1)
 ball = re.search(r'<g id="soBallSpin"><image href="(data:image/[^"]+)"', art_src).group(1)
+# Craig's spinning ball (8 October 2026): ten 22px frames cut from his artwork, cycled while the ball travels
+import base64, glob
+spin = [("data:image/png;base64," + base64.b64encode(open(f, "rb").read()).decode()) for f in sorted(glob.glob(P("assets/penalties/ball/spin_*.png")))]
+if spin: ball = spin[0]
 
 html = open(P("index.html"), encoding="utf-8").read()
 block = ("<script>/* penalties: built by scripts/build-penalties.py */\n"
@@ -104,6 +109,7 @@ block = ("<script>/* penalties: built by scripts/build-penalties.py */\n"
          f"const PEN_GK = {gk};\n"
          f"const PEN_COIN = {coin};\n"
          f"const PEN_BALL = {json.dumps(ball)};\n"
+         f"const PEN_SPIN = {json.dumps(spin)};\n"
          "</script>")
 pat = re.compile(r"<script>/\* penalties: built by scripts/build-penalties\.py \*/\n.*?</script>", re.S)
 if pat.search(html): html = pat.sub(lambda m: block, html, count=1)
