@@ -102,6 +102,16 @@ ball = re.search(r'<g id="soBallSpin"><image href="(data:image/[^"]+)"', art_src
 import base64, glob
 spin = [("data:image/png;base64," + base64.b64encode(open(f, "rb").read()).decode()) for f in sorted(glob.glob(P("assets/penalties/ball/spin_*.png")))]
 if spin: ball = spin[0]
+# Craig's save straight down the middle (8 October 2026): ten frames cut to his keeper's pixel scale (about 9 screen
+# pixels to one), appended to the keeper's frames as 77 to 86. Every one has the ball in the keeper's hands or at his
+# feet (db), so the flying ball hides once he has it.
+from PIL import Image
+GK = json.loads(gk)
+for n, f in enumerate(sorted(glob.glob(P("assets/penalties/keeper_centre/centre_*.png")))):
+    w, h = Image.open(f).size
+    GK.append({"i": len(GK), "w": w, "h": h, "cx": w / 2, "cy": h / 2, "fx": w / 2, "gx": w / 2, "gy": round(h * .4, 2), "s": 0.933, "db": True,
+               "src": "data:image/png;base64," + base64.b64encode(open(f, "rb").read()).decode()})
+gk = json.dumps(GK, separators=(",", ":"))
 
 html = open(P("index.html"), encoding="utf-8").read()
 block = ("<script>/* penalties: built by scripts/build-penalties.py */\n"
