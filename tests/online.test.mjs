@@ -455,5 +455,34 @@ await test("online: only Craig's admin account has the penalty shootout practice
   await closeAll(craig);
 });
 
+await test("online: league mates who play an online game see what it did to the table at full time, and the Leagues tab has the table", async () => {
+  const craig = await open("Craig"); await signUp(craig, "Craig", "craig.lg@example.com");
+  const r = await craig.evaluate(() => api("/leagues/new", { name: "The Wilsons" })); const code = r.data.league.code;
+  const phil = await open("Phil", "?league=" + code); await signUp(phil, "Phil", "phil.lg@example.com");
+  await until(() => phil.evaluate(() => !!(LG.data && LG.data.members.length === 2)), { what: "Phil to join from the invite link" });
+  await craig.click("#onlineBtn"); await shown(craig, "onlineGo");
+  await until(async () => /The Wilsons/.test(await craig.textContent("#lgOnline")), { what: "the Your leagues row" });
+  await craig.goto(srv.url); await shown(craig, "setup");
+  const gcode = await hostGame(craig, { rounds: 1 });
+  await joinByLink(phil, gcode, "Phil");
+  await everyoneSees([craig, phil], ["Craig", "Phil"]);
+  await craig.click("#lobbyStart"); await shown(craig, "intro"); await inSync([craig, phil], "start");
+  await playThrough([craig, phil], craig, { plan: ["right", "pass"] });
+  for (const p of [craig, phil]) await until(async () => /The Wilsons/.test(await p.textContent("#leagueLines")), { what: `${p.label}'s league line` });
+  const line = await craig.textContent("#leagueLines .lgline small");
+  assert(/(Craig|Phil) in at 1st · (Craig|Phil) in at 2nd/.test(line), "the line: " + line);
+  eq(await phil.textContent("#leagueLines .lgline small"), line, "both phones show the same line");
+  // the Leagues tab: the table, with the leader's row in gold
+  await craig.goto(srv.url); await shown(craig, "setup"); await craig.click("#lgTab");
+  await until(() => craig.evaluate(() => document.querySelectorAll(".lgcard").length === 1), { what: "the league card" });
+  await craig.click(".lgcard"); await until(() => craig.evaluate(() => document.querySelectorAll(".lgrow:not(.th)").length === 2), { what: "the table" });
+  const rows = await craig.$$eval(".lgrow:not(.th)", rs => rs.map(r => [...r.children].map(c => c.textContent.trim())));
+  eq(rows.map(r => r.slice(2, 4)), [["1", "1"], ["1", "0"]], "P and W: the winner on top");
+  assert(await craig.evaluate(() => document.querySelector(".lgrow:not(.th)").classList.contains("lead")), "the leader in gold");
+  await craig.click(".lgrow:not(.th)"); await until(() => visible(craig, ".lgexp"), { what: "the row to open" });
+  assert(/Boards completed/.test(await craig.textContent(".lgexp")), "the boards bars");
+  await closeAll(craig, phil);
+});
+
 await browser.close(); await server.stop(); await srv.close();
 report();
