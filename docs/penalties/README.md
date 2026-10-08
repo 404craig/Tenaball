@@ -34,8 +34,14 @@
 - Settings drawer (gear): commentary on or off (`tenaball-comm`), blending, gloves.
 - Sounds reuse the game's synth (`tone`, `bell`, `sfx`) plus a clang and a net swish.
 
-## Before it goes in the game
+## In the game (8 October 2026)
 
-- Commentary says "he" and "his" in places; players are family and friends, so those lines need rewording.
-- Online it would need the host to draw the question order and kick outcomes and send them as moves, so every phone plays the same shootout (`makeKick` and the coin toss use `Math.random`).
-- Questions need checking against the board rules (periods, verified sources).
+Built into `index.html` as the tie-break at full time (see the penalty shootout line in `CLAUDE.md`). What changed from this build on the way in:
+
+- The questions were checked. Premier League figures are worked out by `scripts/build-penalties.py` from the game's own datasets, to the end of 2025/26 (the build had some to September 2026). The rest were checked against two sources each (`verified.json`, `VERIFY_NOTES.md`); La Liga, Bundesliga, Serie A and Ligue 1 questions now cover 2000/01 to 2025/26, and the Scottish one too (the season tables start there). Pairs that came out level were dropped, and each pair's gap was worked out again. 604 pairs in 28 question types.
+- Commentary that called the taker "he" or "his" was reworded.
+- Online, the toss, the questions and where each kick goes come from a seed every phone shares, and the answers travel as moves, so every phone plays the same shootout.
+- TenaBot takes kicks too.
+- Craig's admin account has a practice link on the Account tab.
+
+`questions_raw.json` is the build's question data as it came, kept as the starting point for the build script.

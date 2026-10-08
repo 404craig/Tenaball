@@ -425,5 +425,35 @@ await test("online: the host can change the mode in the lobby, and taking turns 
   await closeAll(craig, aiden);
 });
 
+await test("online: a draw goes to a penalty shootout that plays the same on every phone, with each player answering on their own", async () => {
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  const code = await hostGame(craig, { rounds: 1 });
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
+  await craig.click("#lobbyStart"); await shown(craig, "intro"); await inSync([craig, aiden], "start");
+  await playThrough([craig, aiden], craig, { plan: ["pass"] }); // both on 0: level
+  const r = await Promise.all([craig, aiden].map(p => p.evaluate(() => ({ pens: G.pens, scores: G.players.map(x => x.score), goals: G.players.map(x => x.pens) }))));
+  eq(r[0], r[1], "both phones agree on the shootout");
+  assert(r[0].pens && r[0].pens.winner, "someone won it");
+  eq([...r[0].scores].sort(), [0, 1], "the winner gets a point");
+  const moves = await craig.evaluate(() => ONLINE.next - 1);
+  assert(moves > 7, "the answers travelled as moves: " + moves);
+  await closeAll(craig, aiden);
+});
+
+await test("online: only Craig's admin account has the penalty shootout practice link, and it plays one", async () => {
+  const craig = await open("Craig"); await signUp(craig, "Craig", "craigwilson84@gmail.com");
+  await craig.evaluate(() => drawAcct()); assert(await craig.evaluate(() => !!document.getElementById("acctPens")), "the link on Craig's account");
+  assert(!(await craig.evaluate(() => { const e = NET.user.email; NET.user.email = "emma@example.com"; drawAcct(); const has = !!document.getElementById("acctPens"); NET.user.email = e; return has; })), "no link for any other account");
+  await craig.evaluate(() => drawAcct()); await craig.click("#acctTab"); await craig.click("#acctPens");
+  await shown(craig, "penTest");
+  await craig.click('#ptCount button[data-v="3"]');
+  eq(await craig.$$eval("#ptNames input", e => e.length), 3);
+  await craig.click("#ptStart"); await shown(craig, "shootout");
+  await until(async () => /won/.test(await craig.textContent("#ptResult")), { what: "the practice shootout to finish", timeout: 30000 });
+  await shown(craig, "penTest");
+  await closeAll(craig);
+});
+
 await browser.close(); await server.stop(); await srv.close();
 report();
