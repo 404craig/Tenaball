@@ -108,7 +108,8 @@ await test("account: a phone's earlier stats for your name can be added to your 
   await p.click("#setupBtn"); await p.click('[data-view="acct"]'); await p.click("#acctIn"); await p.click("#tabUp");
   await p.fill("#signName", "Emma"); await p.fill("#signEmail", "emma@example.com"); await p.fill("#signPin", "5555"); await p.fill("#signPin2", "5555"); await p.click("#authBtn");
   await shown(p, "setup");
-  assert(p.dialogs.some(d => d === "This phone has 2 games saved for Emma. Add them to your account?"), `asked: ${p.dialogs.join(" | ")}`);
+  const asked = await p.evaluate(() => window.__asked || []);
+  assert(asked.some(d => d === "This phone has 2 games saved for Emma. Add them to your account?"), `asked: ${asked.join(" | ")}`);
   const s = await serverStats("emma@example.com");
   eq(s.played, 2, "added to the account");
   eq(await p.evaluate(() => "emma" in loadStats()), false, "and taken off the phone so they aren't counted twice");
@@ -138,7 +139,7 @@ await test("account: when the admin resets a PIN, the player's phone goes back t
 await test("account: you can change your name by tapping it", async () => {
   const p = await makePhone(browser, "rename", { server: srv.url }); await p.goto(site.url);
   await signUp(p, "Old", "rename@example.com");
-  p.removeAllListeners("dialog"); p.on("dialog", d => d.accept("New Name"));
+  await p.evaluate(() => { window.TENABALL_ASK_VALUE = "New Name"; });
   await p.click('[data-view="acct"]'); await p.click("#acctName");
   await until(async () => (await acct(p)).includes("Name New Name ›"), { what: "new name" });
   eq(await p.inputValue("#nameFields input"), "New Name", "player 1 follows the new name");

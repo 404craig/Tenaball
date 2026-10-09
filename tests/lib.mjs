@@ -63,6 +63,7 @@ export async function phone(browser, name, { server = null, dialogs = "accept" }
   await ctx.route("https://fonts.gstatic.com/**", route => route.abort());
   await ctx.addInitScript(url => { window.TENABALL_SERVER_URL = url; }, server || ""); // never the live server
   await ctx.addInitScript(() => { window.TENABALL_PEN_PACE = .01; window.TENABALL_PEN_AUTO = true; }); // a draw's penalty shootout plays itself, quickly
+  await ctx.addInitScript(mode => { window.TENABALL_ASK = mode; }, dialogs === "accept" ? "accept" : "dismiss"); // the game's own question box answers itself (read what was asked from window.__asked)
   const page = await ctx.newPage();
   page.errors = []; page.dialogs = [];
   page.on("pageerror", e => page.errors.push(`${name}: ${e.message}`));
