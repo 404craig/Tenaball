@@ -644,5 +644,17 @@ await test("penalties: every shootout question has two different values, a date 
   assert(await p.evaluate(() => PENS.count) > 500, "a full pool of questions");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("updates: a newer version.txt reloads the home screen once, with no loop", async () => {
+  const p = await phone(browser, "update");
+  await p.ctx.route("**/version.txt*", r => r.fulfill({ body: "999", contentType: "text/plain" }));
+  let loads = 0; p.on("load", () => loads++);
+  await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await until(() => p.evaluate(() => sessionStorage.getItem("tenaball-tried") === "999"), { what: "the reload to the new version" });
+  await until(() => loads >= 2, { what: "a second load" });
+  await p.waitForTimeout(2500);
+  eq(loads, 2, "it reloads once, not again and again");
+  assert(!/v=/.test(p.url()), "the address is tidied: " + p.url());
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await browser.close(); await site.close();
 report();
