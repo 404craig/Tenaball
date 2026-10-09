@@ -656,5 +656,17 @@ await test("updates: a newer version.txt reloads the home screen once, with no l
   assert(!/v=/.test(p.url()), "the address is tidied: " + p.url());
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("the game asks its own questions in its own box: OK, Cancel and a text box", async () => {
+  const p = await phone(browser, "ask"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.evaluate(() => { window.TENABALL_ASK = null; window.__r = []; ask("Leave this game?", { ok: "Leave", danger: true }).then(v => __r.push(v)); });
+  await until(() => visible(p, "#askBox")); eq([await p.textContent("#askTitle"), await p.textContent("#askYes")], ["Leave this game?", "Leave"]);
+  await p.click("#askNo"); await until(async () => !(await visible(p, "#askBox")));
+  await p.evaluate(() => { ask("Name your league", { input: true, ok: "Create" }).then(v => __r.push(v)); });
+  await until(() => visible(p, "#askInput")); await p.fill("#askInput", "The Wilsons"); await p.press("#askInput", "Enter");
+  await until(() => p.evaluate(() => __r.length === 2));
+  eq(await p.evaluate(() => __r), [null, "The Wilsons"], "Cancel gives nothing, OK gives the text");
+  assert(!p.dialogs.length, "no built-in dialogs: " + p.dialogs.join(" | "));
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await browser.close(); await site.close();
 report();

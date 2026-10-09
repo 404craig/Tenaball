@@ -948,6 +948,16 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 .botfade{position:fixed;left:0;right:0;bottom:var(--kb,0px);height:12px;z-index:11;background-color:var(--bg2)}
 
 .seghint{font-size:.82rem;color:var(--muted);margin:7px 2px 0}
+/* the game's own question box (ask) */
+.overlay.askwrap{z-index:70;--band:color-mix(in srgb,var(--topc) 45%,#000)}
+.askcard{width:min(100%,360px);background:#2a0630;border:1.5px solid var(--slotline);border-radius:20px;padding:20px 18px 16px;display:grid;gap:14px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.55);animation:askIn .2s cubic-bezier(.2,.9,.3,1) both}
+.askcard p{margin:0;font-weight:700;font-size:1.05rem;line-height:1.35}
+.askcard input{width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border-radius:12px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.3);color:var(--ink);text-align:center}
+.askbtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:10px}
+.askbtns .btn{padding:12px 14px;font-size:1rem}
+.askbtns .btn.danger{background:#ff2d6f;box-shadow:none}
+@keyframes askIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.askcard{animation:none}}
 /* leagues: the Leagues tab, a league's table, the row in Multiplayer online and the line at full time */
 .tabbar.four{grid-template-columns:repeat(4,1fr)}
 #leaguesPane{--gold:#ffd23f;--allc:#c9a6ff;--bad:#ff5a7a}
@@ -1245,7 +1255,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   </nav>
   <template id="updatesText">
     <p>Newest first. Each number is the update that went live.</p>
-    <div class="upd"><h4>9 October 2026</h4><p><b>91</b>Tenaball on your Home Screen now picks up new updates by itself: it checks each time you open it, and loads the new version straight away (or as soon as your game is over).</p><p><b>90</b>Penalty shootout: no name line under the commentary (it already says whose kick it is), so the answers sit higher on the screen.</p></div>
+    <div class="upd"><h4>9 October 2026</h4><p><b>92</b>The yes-or-no questions and text boxes (leaving a game, naming a league, joining with a code and so on) are now the game's own purple pop-ups instead of the phone's grey ones.</p><p><b>91</b>Tenaball on your Home Screen now picks up new updates by itself: it checks each time you open it, and loads the new version straight away (or as soon as your game is over).</p><p><b>90</b>Penalty shootout: no name line under the commentary (it already says whose kick it is), so the answers sit higher on the screen.</p></div>
     <div class="upd"><h4>8 October 2026</h4><p><b>89</b>Penalty shootout: off the woodwork, the way you sketched it. Six spots (each corner of the bar, the top and the foot of each post); a pixel bang flashes where the ball hits, then it carries on away from the goal, growing a little and fading slowly.</p><p><b>88</b>Penalty shootout: new keeper artwork for saves straight down the middle. A low shot is smothered at his feet and scooped up, and a chest-high one goes straight into his arms; either way he stands holding it.</p><p><b>87</b>Penalty shootout: the ball spins through your new frames as it flies, keeps turning in the net and winds down to a stop on the grass; the keeper reaches saves in time instead of arriving after the ball; a busier, less repetitive crowd; more grass before the fade; and the commentary is just two centred lines.</p><p><b>86</b>Multiplayer online and the Leagues and Account tabs show as soon as the home screen does, instead of popping in a moment later.</p><p><b>85</b>The penalty shootout's crowd and pitch now spill past the goal on iPhones too (Safari was cutting them off at the old box).</p><p><b>84</b>The penalty shootout is out of its box: the crowd rises behind the scores and fades into the page, and the pitch runs to the bottom of the screen, with the penalty area marked and a dark fade under the question.</p><p><b>83</b>Leagues, from Phil's idea: make a league for your mates, the family or the office and every online game two or more of you play together moves the table, in any game mode. A Leagues tab with your leagues and each table (all, games or rounds; all time, 7 days or 24 hours), a row in Multiplayer online, and a line at full time saying who went up. Tap a player for their form and boards completed.</p><p><b>82</b>Penalty shootouts: players level on top at full time settle it from the spot, with a question for every kick, a pixel-art keeper, a coin toss and live commentary. Five kicks each, then sudden death, and the winner gets a point. Works on one phone, against TenaBot and online.</p></div>
     <div class="upd"><h4>6 October 2026</h4><p><b>81</b>A new competition, Internationals, beside the World Cup and Euros, with its own green theme and a flags ball in the background: 81 boards. All-time and since-2000 top scorers and caps for England, Scotland, Wales, Northern Ireland, Ireland, Brazil, Argentina, France, Germany, Spain, Italy, Portugal and the Netherlands, since-2000 boards for Belgium, Croatia, Uruguay, Denmark and Sweden, managers in order for the home nations, England hat-tricks, the world's and Europe's top scorers and most capped, each nation's record scorer and most capped player, Premier League players with 100 caps, the Africa Cup of Nations and the FIFA ranking after the World Cup. Figures run to the 2026 World Cup final.</p><p><b>80</b>You get one question change for every round in the game (5 for a 5-round game, instead of 3 every time), and you can use them in any round.</p><p><b>79</b>The Europa League is here, with its own orange theme, and 96 new boards from your picks. Champions League (from 1992/93): appearances, hat-tricks, titles, clean sheets, top scorers, the big clubs' scorers, winning captains and managers, final scorers and English clubs' final line-ups. Europa League (from 2000/01): winners, finalists, managers, top scorers, final scorers and British clubs' final line-ups. World Cup and Euros: most tournaments, wins and goals for nations, and top scorers and appearances since 1994 and Euro 96, England's included. Bosnia and Herzegovina is now a recognised nation.</p><p><b>78</b>About 1,100 more La Liga, Bundesliga, Serie A and Ligue 1 players are recognised (30 or more league goals or 200 or more games since 2000/01), so more wrong answers get a card instead of "not recognised".</p></div>
     <div class="upd"><h4>5 October 2026</h4><p><b>77</b>120 new boards for La Liga, the Bundesliga, Serie A, Ligue 1 and Top 5 Leagues from your picks, all from 2000/01 or for last season: top scorers, the big clubs' scorers and squads, derbies, cups, managers, transfers and British players abroad. The 2024/25 and 2025/26 tables are in, every league now has easy boards, and a few top scorer seasons are corrected.</p><p><b>75</b>57 new Scottish Premiership boards since 2000, from your picks: scorers, appearances and assists for the big clubs, derby scorers, managers, captains, PFA awards, cup runners-up, relegations and promotions, European final line-ups, transfer fees and Celtic and Rangers letter boards. The 2025/26 Scottish tables now show points.</p><p><b>74</b>A Latest updates list next to How to play on the home screen. The TenaBot help text now says its games count towards your win rate.</p></div>
@@ -1465,6 +1475,11 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   <div class="csfoot"><span id="compCount"></span><button type="button" class="csdone" id="compDone">Done</button></div>
 </div></div>
 
+<div class="overlay askwrap hidden" id="askBox" role="alertdialog" aria-modal="true" aria-labelledby="askTitle"><div class="askcard">
+  <p id="askTitle"></p>
+  <input type="text" id="askInput" class="hidden" autocomplete="off" aria-labelledby="askTitle">
+  <div class="askbtns"><button type="button" class="btn ghost" id="askNo">Cancel</button><button type="button" class="btn" id="askYes">OK</button></div>
+</div></div>
 <div class="overlay sheetwrap hidden" id="infoSheet" role="dialog" aria-modal="true" aria-labelledby="infoTitle"><div class="csheet">
   <div class="grab" aria-hidden="true"></div>
   <h3 id="infoTitle"></h3>
@@ -2989,6 +3004,27 @@ $("statsBody").addEventListener("click", e => {
   if (act==="share") return shareStats();
 });
 $("statsBody").addEventListener("keydown", e => { const w = e.target.closest("[data-with]"); if (w && (e.key==="Enter" || e.key===" ")){ e.preventDefault(); compareWith(w.dataset.with); } });
+/* The game's own question box, in place of the phone's built-in confirm() and prompt() (Craig, 9 October 2026): a
+   message with OK and Cancel, or with a text box. Resolves true (or the text) for OK, null for Cancel. Tests set
+   window.TENABALL_ASK ("accept" or "dismiss"; TENABALL_ASK_VALUE for the text) and read what was asked in __asked. */
+function ask(text, { input = false, value = "", placeholder = "", max = 30, upper = false, ok = "OK", cancel = "Cancel", danger = false } = {}){
+  if (window.TENABALL_ASK){ (window.__asked = window.__asked || []).push(text);
+    return Promise.resolve(window.TENABALL_ASK === "dismiss" ? null : input ? (window.TENABALL_ASK_VALUE ?? value) : true); }
+  const box = $("askBox"), inp = $("askInput"), yes = $("askYes"), no = $("askNo"), was = document.activeElement;
+  $("askTitle").textContent = text; yes.textContent = ok; yes.classList.toggle("danger", !!danger);
+  no.textContent = cancel || ""; no.classList.toggle("hidden", !cancel);
+  inp.classList.toggle("hidden", !input); inp.value = value; inp.placeholder = placeholder; inp.maxLength = max; inp.style.textTransform = upper ? "uppercase" : "";
+  box.classList.remove("hidden");
+  setTimeout(() => (input ? inp : yes).focus(), 30);
+  return new Promise(res => {
+    const done = v => { box.classList.add("hidden"); yes.onclick = no.onclick = box.onclick = inp.onkeydown = document.onkeydown = null; if (was && was.focus) try { was.focus({ preventScroll: true }); } catch(e){} res(v); };
+    yes.onclick = () => done(input ? (upper ? inp.value.toUpperCase() : inp.value) : true);
+    no.onclick = () => done(null);
+    box.onclick = e => { if (e.target === box) done(null); };
+    inp.onkeydown = e => { if (e.key === "Enter"){ e.preventDefault(); yes.onclick(); } };
+    document.onkeydown = e => { if (e.key === "Escape") done(null); };
+  });
+}
 function show(id){ if (id === "setup" && typeof NEWER !== "undefined" && NEWER) setTimeout(() => onHome() && loadNewer(), 300); ["login","setup","lobby","game","end"].forEach(s => $(s).classList.toggle("hidden", s!==id)); document.body.classList.toggle("ingame", ["lobby","game","end"].includes(id)); window.scrollTo(0,0); }
 /* Updates for a phone that keeps an old copy (Craig, 9 October 2026): an iPhone Home Screen app comes back to the page
    it kept in memory instead of loading it again, so it could sit on an old version for days. version.txt holds the
@@ -3073,7 +3109,7 @@ $("infoSheet").addEventListener("click", e => { if (e.target === $("infoSheet"))
 document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); });
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
 $("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
-$("exitBtn").onclick = () => { if (ONLINE) return onlineExit(); if (confirm("Leave this game and go back to setup?")) { stopTimer(); stopBots(); hideSheet(); $("orderOv").classList.add("hidden"); G.left = 0; G.over = true; theme("pl"); show("setup"); } };
+$("exitBtn").onclick = async () => { if (ONLINE) return onlineExit(); if (await ask("Leave this game and go back to setup?", { ok: "Leave" })) { stopTimer(); stopBots(); hideSheet(); $("orderOv").classList.add("hidden"); G.left = 0; G.over = true; theme("pl"); show("setup"); } };
 $("muteBtn").onclick = () => { muted = !muted; if (muted) crowdStop(); $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
 $("nextBtn").onclick = () => { if (ONLINE) return onlineNext(); applyNext(); };
 function applyNext(q){ G.round++; G.round > cfg.rounds ? endGame() : startRound(q); }
@@ -4941,7 +4977,7 @@ $("guestBtn").onclick = () => { lsSet(GUEST_KEY, "1"); drawAcct(); afterLogin();
 async function offerMerge(){
   const S = loadStats(), k = statKey(accountName()), local = S[k];
   if (!local || !local.played) return;
-  if (!confirm(`This phone has ${local.played} game${local.played===1?"":"s"} saved for ${local.name || accountName()}. Add them to your account?`)) return;
+  if (!(await ask(`This phone has ${local.played} game${local.played===1?"":"s"} saved for ${local.name || accountName()}. Add them to your account?`, { ok: "Add them", cancel: "Not now" }))) return;
   const r = await api("/stats/merge", { stats: local });
   if (r.ok){ NET.stats = r.data.stats; delete S[k]; saveStats(S); lsSet(USER_KEY, JSON.stringify({ user: NET.user, stats: NET.stats })); }
 }
@@ -4973,7 +5009,7 @@ function drawAcct(){
   on("acctPens", () => PENS.test());
   on("acctUp", () => { PENDING = null; setAuthMode("up"); showLogin(); });
   on("acctName", async () => {
-    const n = cleanName(prompt("Your name in Tenaball", accountName()) || ""); if (!n || n === accountName()) return;
+    const n = cleanName(await ask("Your name in Tenaball", { input: true, value: accountName(), max: 20, ok: "Save" }) || ""); if (!n || n === accountName()) return;
     const r = await api("/name", { name: n }); if (r.ok){ setUser(r.data.user); msg("Name changed.", true); } else msg(r.data.error || "Couldn't change your name.");
   });
   on("acctPin", () => { const f = $("pinForm"), open = f.classList.toggle("hidden"); $("acctPin").setAttribute("aria-expanded", !open); if (!open) $("pinOld").focus(); });
@@ -5152,9 +5188,9 @@ $("inviteBtn").onclick = () => {
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(() => done("Invite link copied. Paste it into a chat."), () => done(url));
   else done(url);
 };
-$("lobbyLeave").onclick = () => {
+$("lobbyLeave").onclick = async () => {
   const d = ROOM && ROOM.data; if (!d) return leaveRoomLocal();
-  if (d.host===ROOM.me && !confirm("Close this game for everyone?")) return;
+  if (d.host===ROOM.me && !(await ask("Close this game for everyone?", { ok: "Close it", danger: true }))) return;
   ROOM.leaving = true; try { ROOM.ws.send(JSON.stringify({ t: d.host===ROOM.me ? "close" : "leave" })); } catch(e){}
   leaveRoomLocal();
 };
@@ -5282,22 +5318,22 @@ function onlineTurnUI(){
   const p = G.players[G.turn];
   $("skipBtn").classList.toggle("hidden", !(ONLINE.isHost && p && p.uid!==ONLINE.me));
 }
-$("skipBtn").onclick = () => { if (ONLINE && ONLINE.isHost && G.phase==="turn" && !G.over && !G.busy && confirm(`Skip ${G.players[G.turn].name}'s turn?`)) onlineSend("skip"); };
+$("skipBtn").onclick = async () => { if (ONLINE && ONLINE.isHost && G.phase==="turn" && !G.over && !G.busy && await ask(`Skip ${G.players[G.turn].name}'s turn?`, { ok: "Skip" }) && ONLINE && G.phase==="turn" && !G.over) onlineSend("skip"); };
 function onlineEndUI(){
   $("againBtn").classList.toggle("hidden", !ONLINE.isHost);
   $("setupBtn").textContent = "Leave game";
 }
-function onlineAgain(){ if (ONLINE && ONLINE.isHost && ROOM) roomSend({ t: "again" }).catch(e => alert(e.message)); }
-function onlineLeave(){
+function onlineAgain(){ if (ONLINE && ONLINE.isHost && ROOM) roomSend({ t: "again" }).catch(e => ask(e.message, { cancel: null })); }
+async function onlineLeave(){
   const host = ONLINE && ONLINE.isHost;
-  if (host && !confirm("Leaving closes this game for everyone. Leave?")) return;
+  if (host && !(await ask("Leaving closes this game for everyone. Leave?", { ok: "Leave", danger: true }))) return;
   if (ROOM){ ROOM.leaving = true; try { ROOM.ws.send(JSON.stringify({ t: host ? "close" : "leave" })); } catch(e){} }
   leaveRoomLocal(null, true); history.replaceState(null, "", location.pathname);
   drawNames(); homeTheme(); show("setup");
 }
-function onlineExit(){
+async function onlineExit(){
   const host = ONLINE.isHost;
-  if (!confirm(host ? "End this game for everyone?" : "Leave this game? The others can carry on without you.")) return;
+  if (!(await ask(host ? "End this game for everyone?" : "Leave this game? The others can carry on without you.", { ok: host ? "End it" : "Leave", danger: host }))) return;
   if (ROOM){ ROOM.leaving = true; try { ROOM.ws.send(JSON.stringify({ t: host ? "close" : "leave" })); } catch(e){} }
   leaveRoomLocal(null, true); history.replaceState(null, "", location.pathname);
   drawNames(); theme("pl"); show("setup");
@@ -5337,9 +5373,9 @@ async function drawLeagues(){
     + `<p class="authmsg" id="lgMsg" aria-live="polite">${esc(LG.msg)}</p><div class="lgbtns"><button type="button" class="btn" id="lgNew">New league</button><button type="button" class="btn ghost" id="lgJoin">Join league</button></div>`;
   LG.msg = "";
   box.querySelectorAll("[data-lg]").forEach(b => b.onclick = () => openLeague(b.dataset.lg));
-  $("lgNew").onclick = async () => { const n = (prompt("Name your league") || "").trim(); if (!n) return;
+  $("lgNew").onclick = async () => { const n = (await ask("Name your league", { input: true, max: 30, placeholder: "The Wilsons", ok: "Create" }) || "").trim(); if (!n) return;
     const r = await api("/leagues/new", { name: n }); if (!r.ok) return lgMsg(r.data.error || "Couldn't make the league."); LG.list = null; openLeague(r.data.league.id, true); };
-  $("lgJoin").onclick = () => { const c = (prompt("The league's 6-letter code") || "").trim(); if (c) joinLeague(c); };
+  $("lgJoin").onclick = async () => { const c = (await ask("The league's 6-letter code", { input: true, max: 6, upper: true, placeholder: "ABC123", ok: "Join" }) || "").trim(); if (c) joinLeague(c); };
 }
 const lgMsg = m => { const el = $("lgMsg"); if (el) el.textContent = m; };
 async function joinLeague(code){
@@ -5401,14 +5437,14 @@ function drawLeague(){
     b.onclick = go; b.onkeydown = e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); go(); } }; });
   box.querySelectorAll("[data-cmp]").forEach(b => b.onclick = () => { setView("stats"); compareWith(b.dataset.cmp); });
   box.querySelectorAll("[data-full]").forEach(b => b.onclick = () => lgFullStats(b.dataset.full));
-  box.querySelectorAll("[data-kick]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.kick]; if (!confirm(`Remove ${m.name} from ${L.name}?`)) return;
+  box.querySelectorAll("[data-kick]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.kick]; if (!(await ask(`Remove ${m.name} from ${L.name}?`, { ok: "Remove", danger: true }))) return;
     const r = await api("/leagues/remove", { id: L.id, uid: m.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't remove them."); openLeague(L.id); });
-  box.querySelectorAll("[data-hand]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.hand]; if (!confirm(`Make ${m.name} the admin of ${L.name}? You'll stay in the league.`)) return;
+  box.querySelectorAll("[data-hand]").forEach(b => b.onclick = async () => { const m = byId[b.dataset.hand]; if (!(await ask(`Make ${m.name} the admin of ${L.name}? You'll stay in the league.`, { ok: "Make admin" }))) return;
     const r = await api("/leagues/admin", { id: L.id, uid: m.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't hand it over."); openLeague(L.id); });
   $("lgInvite").onclick = () => lgInvite(L);
   $("lgShare").onclick = () => lgShareTable(L, t);
   $("lgPlay").onclick = () => { if (!$("onlineBtn").classList.contains("hidden")) $("onlineBtn").click(); };
-  $("lgLeave").onclick = async () => { if (!confirm(`Leave ${L.name}? Your row goes from the table.`)) return;
+  $("lgLeave").onclick = async () => { if (!(await ask(`Leave ${L.name}? Your row goes from the table.`, { ok: "Leave", danger: true }))) return;
     const r = await api("/leagues/leave", { id: L.id }); if (!r.ok) return lgMsg(r.data.error || "Couldn't leave the league."); lgBackToList(); };
 }
 function lgBackToList(){ LG.cur = null; LG.data = null; LG.list = null; drawLeagues(); window.scrollTo(0, 0); }
