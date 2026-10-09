@@ -95,4 +95,9 @@ await test("leagues: a reported game is checked: unknown ids, repeats and silly 
   const g = cleanLeagueGame({ at: 5, w: "nobody", p: [{ u: A, s: 99999, r: [1, 500, -3], b: [9, 1] }, { u: A, s: 1 }, { u: "x", s: 1 }, null] });
   eq(g, { at: 5, w: null, p: [{ u: A, s: 1000, r: [1, 100, 0], b: [7, 1, 0] }] });
 });
+await test("version.txt matches the newest Latest updates line, so phones holding an old copy reload", () => {
+  const html = readFileSync(new URL("../index.html", import.meta.url), "utf8"), v = readFileSync(new URL("../version.txt", import.meta.url), "utf8").trim();
+  const top = html.slice(html.indexOf('<template id="updatesText">')).match(/<b>(\d+)<\/b>/)[1];
+  eq(v, top, "set version.txt to the newest update's number");
+});
 report();
