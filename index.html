@@ -308,6 +308,7 @@ body[data-cat="intl"]{ /* Internationals: a night pitch in deep green with white
 .csheet{position:relative;z-index:1;width:min(100%,480px);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:#2a0630;border-radius:22px 22px 0 0;border-top:1.5px solid var(--slotline);padding-bottom:env(safe-area-inset-bottom,0px);animation:sheetUp .28s cubic-bezier(.2,.9,.3,1) both}
 @keyframes sheetUp{from{transform:translateY(100%)}}
 .csheet .grab{width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.3);margin:8px auto 2px}
+.csheet .grab,.csheet h3,.rsheet .rhead{touch-action:none;cursor:grab}
 .csheet h3{margin:4px 16px 0;font-size:1.15rem}
 .cscroll{overflow-y:auto;flex:1 1 auto;min-height:0;overscroll-behavior:contain}
 .quick{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px 4px}
@@ -1255,6 +1256,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   </nav>
   <template id="updatesText">
     <p>Newest first. Each number is the update that went live.</p>
+    <div class="upd"><h4>10 October 2026</h4><p><b>94</b>Every slide-up panel (competitions, the info and updates panels, and the round points) can be swept away by dragging the bar at its top down.</p></div>
     <div class="upd"><h4>9 October 2026</h4><p><b>93</b>The sign-in screen remembers the last email used on your phone and fills it in, and the email box now offers your own email from the keyboard on iPhone.</p><p><b>92</b>The yes-or-no questions and text boxes (leaving a game, naming a league, joining with a code and so on) are now the game's own purple pop-ups instead of the phone's grey ones.</p><p><b>91</b>Tenaball on your Home Screen now picks up new updates by itself: it checks each time you open it, and loads the new version straight away (or as soon as your game is over).</p><p><b>90</b>Penalty shootout: no name line under the commentary (it already says whose kick it is), so the answers sit higher on the screen.</p></div>
     <div class="upd"><h4>8 October 2026</h4><p><b>89</b>Penalty shootout: off the woodwork, the way you sketched it. Six spots (each corner of the bar, the top and the foot of each post); a pixel bang flashes where the ball hits, then it carries on away from the goal, growing a little and fading slowly.</p><p><b>88</b>Penalty shootout: new keeper artwork for saves straight down the middle. A low shot is smothered at his feet and scooped up, and a chest-high one goes straight into his arms; either way he stands holding it.</p><p><b>87</b>Penalty shootout: the ball spins through your new frames as it flies, keeps turning in the net and winds down to a stop on the grass; the keeper reaches saves in time instead of arriving after the ball; a busier, less repetitive crowd; more grass before the fade; and the commentary is just two centred lines.</p><p><b>86</b>Multiplayer online and the Leagues and Account tabs show as soon as the home screen does, instead of popping in a moment later.</p><p><b>85</b>The penalty shootout's crowd and pitch now spill past the goal on iPhones too (Safari was cutting them off at the old box).</p><p><b>84</b>The penalty shootout is out of its box: the crowd rises behind the scores and fades into the page, and the pitch runs to the bottom of the screen, with the penalty area marked and a dark fade under the question.</p><p><b>83</b>Leagues, from Phil's idea: make a league for your mates, the family or the office and every online game two or more of you play together moves the table, in any game mode. A Leagues tab with your leagues and each table (all, games or rounds; all time, 7 days or 24 hours), a row in Multiplayer online, and a line at full time saying who went up. Tap a player for their form and boards completed.</p><p><b>82</b>Penalty shootouts: players level on top at full time settle it from the spot, with a question for every kick, a pixel-art keeper, a coin toss and live commentary. Five kicks each, then sudden death, and the winner gets a point. Works on one phone, against TenaBot and online.</p></div>
     <div class="upd"><h4>6 October 2026</h4><p><b>81</b>A new competition, Internationals, beside the World Cup and Euros, with its own green theme and a flags ball in the background: 81 boards. All-time and since-2000 top scorers and caps for England, Scotland, Wales, Northern Ireland, Ireland, Brazil, Argentina, France, Germany, Spain, Italy, Portugal and the Netherlands, since-2000 boards for Belgium, Croatia, Uruguay, Denmark and Sweden, managers in order for the home nations, England hat-tricks, the world's and Europe's top scorers and most capped, each nation's record scorer and most capped player, Premier League players with 100 caps, the Africa Cup of Nations and the FIFA ranking after the World Cup. Figures run to the 2026 World Cup final.</p><p><b>80</b>You get one question change for every round in the game (5 for a 5-round game, instead of 3 every time), and you can use them in any round.</p><p><b>79</b>The Europa League is here, with its own orange theme, and 96 new boards from your picks. Champions League (from 1992/93): appearances, hat-tricks, titles, clean sheets, top scorers, the big clubs' scorers, winning captains and managers, final scorers and English clubs' final line-ups. Europa League (from 2000/01): winners, finalists, managers, top scorers, final scorers and British clubs' final line-ups. World Cup and Euros: most tournaments, wins and goals for nations, and top scorers and appearances since 1994 and Euro 96, England's included. Bosnia and Herzegovina is now a recognised nation.</p><p><b>78</b>About 1,100 more La Liga, Bundesliga, Serie A and Ligue 1 players are recognised (30 or more league goals or 200 or more games since 2000/01), so more wrong answers get a card instead of "not recognised".</p></div>
@@ -2703,6 +2705,33 @@ function renderSheet(){
   $("compDone").disabled = !on.length;
   scroll.scrollTop = top;
 }
+// slide-up sheets: drag the bar at the top (or the title under it) down to sweep the sheet away (Craig, 10 October 2026)
+function swipeAway(sheet, close, base = ""){
+  let id = null, y0 = 0, t0 = 0, dy = 0, moved = false, eat = false;
+  const put = (y, anim) => { sheet.style.transition = anim ? "transform .22s ease-out" : "none"; sheet.style.transform = `${base} translateY(${y}px)`; };
+  const clear = () => { sheet.style.transition = sheet.style.transform = ""; };
+  sheet.addEventListener("pointerdown", e => {
+    if (id !== null || e.button > 0 || e.clientY - sheet.getBoundingClientRect().top > 60 || e.target.closest("input")) return;
+    id = e.pointerId; y0 = e.clientY; t0 = performance.now(); dy = 0; moved = false;
+  });
+  sheet.addEventListener("pointermove", e => {
+    if (e.pointerId !== id) return;
+    dy = Math.max(0, e.clientY - y0);
+    if (!moved && dy > 6){ moved = true; try { sheet.setPointerCapture(id); } catch(_){} }
+    if (moved){ e.preventDefault(); put(dy); }
+  });
+  const end = e => {
+    if (e.pointerId !== id) return; id = null;
+    if (!moved) return;
+    eat = true; setTimeout(() => eat = false, 80); // the drag isn't also a tap on the bar
+    const fast = dy > 30 && dy / Math.max(1, performance.now() - t0) > .6;
+    if (e.type === "pointerup" && (fast || dy > Math.min(120, sheet.offsetHeight * .3))){
+      put(sheet.offsetHeight + 40, true); setTimeout(() => { clear(); close(); }, 220);
+    } else { put(0, true); setTimeout(clear, 230); }
+  };
+  sheet.addEventListener("pointerup", end); sheet.addEventListener("pointercancel", end);
+  sheet.addEventListener("click", e => { if (eat){ eat = false; e.stopPropagation(); e.preventDefault(); } }, true);
+}
 function openComps(){ sheetCats = [...cfg.cats]; renderSheet(); $("compSheet").classList.remove("hidden"); $("compBtn").setAttribute("aria-expanded","true"); $("compDone").focus({ preventScroll:true }); }
 function closeComps(){
   if (sheetCats && sheetCats.length){ cfg.cats = ALL_CATS.filter(c => sheetCats.includes(c)); saveSetup(); }
@@ -2711,6 +2740,7 @@ function closeComps(){
 }
 $("compBtn").onclick = openComps;
 $("compDone").onclick = closeComps;
+swipeAway($("compSheet").querySelector(".csheet"), closeComps);
 $("compSheet").addEventListener("click", e => {
   if (e.target === $("compSheet")) return closeComps(); // a tap on the shade above the panel
   const row = e.target.closest("button.crow"), q = e.target.closest("[data-q]");
@@ -3105,6 +3135,7 @@ function openInfo(k, from){ const [t, h] = INFO[k]; $("infoTitle").textContent =
 function closeInfo(){ if ($("infoSheet").classList.contains("hidden")) return; $("infoSheet").classList.add("hidden"); if (infoFrom) infoFrom.focus({ preventScroll:true }); infoFrom = null; }
 document.addEventListener("click", e => { const b = e.target.closest("[data-info]"); if (b){ e.preventDefault(); openInfo(b.dataset.info, b); } });
 $("infoDone").onclick = closeInfo;
+swipeAway($("infoSheet").querySelector(".csheet"), closeInfo);
 $("infoSheet").addEventListener("click", e => { if (e.target === $("infoSheet")) closeInfo(); });
 document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); });
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
@@ -3765,6 +3796,7 @@ document.addEventListener("click", e => {
   const sh = $("roundSheet"), up = !sh.classList.contains("up");
   sh.classList.toggle("up", up); $("roundEnd").classList.toggle("hidden", up);
 });
+swipeAway($("roundSheet"), () => { $("roundSheet").classList.remove("up"); $("roundEnd").classList.remove("hidden"); }, "translate(-50%,0)");
 
 /* ---------- TenaBot: plays on this phone only (never online), with a thinking pause, a hit rate set by its level
    (the top of a board is better known than the bottom) and the odd near miss from elsewhere in the competition ---------- */

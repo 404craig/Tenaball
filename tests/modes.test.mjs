@@ -1,6 +1,6 @@
 // The home screen's three doors, who goes first, TenaBot, the two new modes (Fastest answer wins and Beat the clock) on one phone,
 // and the Stats tab.
-import { serve, launch, phone as makePhone, until, visible } from "./lib.mjs";
+import { serve, launch, phone as makePhone, until, visible, dragDown } from "./lib.mjs";
 import { test, assert, eq, report } from "./harness.mjs";
 
 const site = await serve(5191);
@@ -128,6 +128,10 @@ await test("Fastest answer wins: the first right answer claims the slot in the p
   assert(!(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up"))), "the ✕ slides it away");
   assert(await visible(p, "#nextBtn"), "Final scores shows in the page"); eq(await p.textContent("#nextBtn"), "Final scores");
   await p.click("#mini .sheetbar"); assert(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), "the points bar brings it back");
+  await dragDown(p, "#roundSheet .rhead span", 200);
+  await until(async () => !(await p.evaluate(() => document.getElementById("roundSheet").classList.contains("up"))), { what: "the sheet swept away" });
+  assert(await visible(p, "#nextBtn"), "dragging the bar down sweeps it away too");
+  await p.click("#mini .sheetbar"); await until(() => p.evaluate(() => document.getElementById("roundSheet").classList.contains("up")), { what: "the sheet back" });
   await p.click("#sheetNext"); await until(() => visible(p, "#end"), { what: "full time" });
   const msg = await p.evaluate(() => SHARE.text);
   assert(msg.startsWith("🏆 *TENABALL | FASTEST ANSWER WINS*\n\n*TenaBot wins with 3 points!*"), msg);

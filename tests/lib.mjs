@@ -72,3 +72,12 @@ export async function phone(browser, name, { server = null, dialogs = "accept" }
   page.label = name; page.ctx = ctx;
   return page;
 }
+
+// drag from the middle of an element straight down by dy pixels, as a finger sweeping a sheet away
+export async function dragDown(p, sel, dy){
+  await new Promise(r => setTimeout(r, 400)); // let the sheet finish sliding up
+  const b = await (await p.$(sel)).boundingBox(), x = b.x + b.width / 2, y = b.y + b.height / 2;
+  await p.mouse.move(x, y); await p.mouse.down();
+  for (let i = 1; i <= 8; i++){ await p.mouse.move(x, y + dy * i / 8); await new Promise(r => setTimeout(r, 30)); }
+  await p.mouse.up();
+}
