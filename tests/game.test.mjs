@@ -1,5 +1,5 @@
 // Game rules on one phone: passing costs a life, with a yellow card (red on the last life).
-import { serve, launch, phone, until, visible } from "./lib.mjs";
+import { serve, launch, phone, until, visible, dragDown } from "./lib.mjs";
 import { test, assert, eq, report } from "./harness.mjs";
 
 const site = await serve(5190);
@@ -318,7 +318,8 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   await p.click('#compQuick [data-q="Leagues"]');
   eq(await p.textContent("#compCount"), "7 of 12 on");
   await p.click('#compList [data-c="top5"]'); await p.click('#compList [data-c="spfl"]');
-  await p.click("#compDone"); await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
+  await dragDown(p, "#compSheet .grab", 130); // swept down by its top bar, the ticks are kept as with Done
+  await until(async () => !(await visible(p, "#compSheet")), { what: "the panel to close" });
   eq(await p.textContent("#compSum"), "5 competitions");
   // none ticked: Done waits
   await p.click("#compBtn"); for (const c of ["pl","laliga","bund","seriea","ligue1"]) await p.click(`#compList [data-c="${c}"]`);
@@ -418,7 +419,12 @@ await test("home: each section's i opens a slide-up panel explaining it, and How
     await p.evaluate(sel => document.querySelector(sel).scrollIntoView({ block: "center" }), b);
     await p.click(b); await until(() => visible(p, "#infoSheet"), { what: `the ${k} panel` });
     seen.push([await p.textContent("#infoTitle"), (await p.textContent("#infoBody")).length > 80]);
-    if (k === "how") await p.mouse.click(195, 30); else await p.click("#infoDone");
+    if (k === "how") await p.mouse.click(195, 30);
+    else if (k === "diff"){ // a short drag on the top bar springs back; a longer one sweeps the panel away
+      await dragDown(p, "#infoSheet .grab", 20); await new Promise(r => setTimeout(r, 400)); assert(await visible(p, "#infoSheet"), "a short drag springs back");
+      await dragDown(p, "#infoSheet .grab", 130);
+    } else if (k === "comps") await dragDown(p, "#infoTitle", 130); // the title under the bar drags too
+    else await p.click("#infoDone");
     await until(async () => !(await visible(p, "#infoSheet")), { what: "the panel to close" });
   }
   eq(seen, [["Rounds",true],["Competitions",true],["Shot clock per answer",true],["Duplicate answers",true],["Difficulty",true],["How to play",true]]);
