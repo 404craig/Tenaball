@@ -67,9 +67,9 @@ const myTurn = p => p.evaluate(() => onlineMyTurn());
 async function step(pages, actor, fn, what){ const at = await seqOf(actor); await fn(); await inSync(pages, what, at); }
 // answers for the current board, from the page's own data
 const answer = (p, kind) => p.evaluate(kind => {
-  if (G.q.open){ // a letter board: any player with (or, for a wrong answer, without) the right surname letter
+  if (G.q.open){ // an open board: any name that fits (or, for a wrong answer, doesn't); boards with their own list fit few Premier League names, so try its examples first
     const fits = n => G.q.open.fits(n);
-    return [...PLP.keys()].find(n => fits(n) === (kind !== "wrong") && !G.guessed.has(n) && !Object.values(G.slotName).includes(n));
+    return [...new Set([...(G.q.open.examples || []), ...PLP.keys()])].find(n => fits(n) === (kind !== "wrong") && !G.guessed.has(n) && !Object.values(G.slotName).includes(n));
   }
   if (kind === "wrong"){ const on = new Set(G.q.slots.flatMap(s => [s.club, ...(s.alts || [])])); return Object.keys(DICT()).map(a => { const v = DICT()[a]; return v instanceof Set ? [...v][0] : v; }).find(x => !on.has(x) && !G.guessed.has(x)); }
   const open = G.q.slots.map((s, i) => [s, i]).filter(([s, i]) => G.foundBy[i] === undefined);

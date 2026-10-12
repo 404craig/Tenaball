@@ -4,7 +4,7 @@
  "type": "nation",
  "level": 1,
  "title": "Most Euros matches won",
- "brief": "Name the ten nations that have won the most matches at European Championship finals. Wins on penalties count as draws. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "brief": "Name the ten nations that have won the most matches at European Championship finals. Wins on penalties count as draws. A former country counts as the one that followed it.",
  "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
  "rows": [
   {
