@@ -4,7 +4,7 @@
  "type": "nation",
  "level": 0,
  "title": "Most Euros played",
- "brief": "Name the ten nations that have played at the most European Championship finals tournaments. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "brief": "Name the ten nations that have played at the most European Championship finals tournaments. A former country counts as the one that followed it.",
  "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
  "rows": [
   {

@@ -185,7 +185,7 @@ PRO = [("2011/12","Ross County"),("2011/12 ","Dundee"),("2012/13","Partick Thist
 for rows, key, title, brief, lvs in [(REL, "rel", "Relegated from the top flight", "Name the clubs relegated from the Scottish top flight each season, play-off losers included. A club can fill more than one slot.", (2, 1)),
                                      (PRO, "pro", "Promoted to the top flight", "Name the clubs promoted to the Scottish top flight each season, play-off winners included. A club can fill more than one slot.", (2, 1))]:
     for w, lv in [(rows[-20:-10], lvs[0]), (rows[-10:], lvs[1])]:
-        labelled(f"spfl-{ {'rel': 'relegated', 'pro': 'promoted'}[key] }-{w[0][0].strip()}", title, brief + (" Rangers went up in 2016 after starting again in the bottom division in 2012." if key == "pro" and any(c == "Rangers" for _, c in w) else ""),
+        labelled(f"spfl-{ {'rel': 'relegated', 'pro': 'promoted'}[key] }-{w[0][0].strip()}", title, brief + ("" if key == "pro" and any(c == "Rangers" for _, c in w) else ""),
                  f"Seasons {w[0][0].strip()} to {w[-1][0].strip()}", lv, [(l, c, "play-off" if l.endswith(" ") else "") for l, c in w], type="club")
 
 # ---------- European final line-ups (SPFL_LISTS.md 8: Wikipedia and FitbaStats agree on every name; where the two disagree on
@@ -212,7 +212,7 @@ ranked("spfl-fee-celtic-sales", "Celtic's biggest sales", "Name the ten players 
         ("Virgil van Dijk","£13m to Southampton, 2015"),("Victor Wanyama","£12.5m to Southampton, 2013")],
        {"Fraser Forster":"Fraser Forster went for £10m, just outside.","Kyogo Furuhashi":"Kyogo went for a reported £10m, just outside.","Daizen Maeda":"Daizen Maeda went for a reported £10m, just outside.",
         "Jeremie Frimpong":"Jeremie Frimpong went for about £10m, just outside.","Aiden McGeady":"Aiden McGeady went for £9.5m, just outside."})
-ranked("spfl-fee-celtic-buys", "Celtic's biggest signings", "Name the players Celtic have paid the biggest fees for since 2000. Jota was signed twice, so he can fill two places. Six players cost £6m, so any three of them fill the last three places.", FEE, 1,
+ranked("spfl-fee-celtic-buys", "Celtic's biggest signings", "Name the players Celtic have paid the biggest fees for since 2000. One player was signed twice, so he can fill two places. Six players cost £6m, so any three of them fill the last three places.", FEE, 1,
        [(["Kasper Hogh","Arne Engels"],"£11m","cb11",2),("Adam Idah","£9.5m from Norwich, 2024"),(["Odsonne Edouard","Jota"],"£9m","cb9",2),
         ("Christopher Jullien","£7m from Toulouse, 2019"),("Jota","£6.5m from Benfica, 2022"),
         (["Chris Sutton","John Hartson","Cameron Carter-Vickers","Auston Trusty","Haissem Hassan","Camilo Duran"],"£6m","cb6",3)],

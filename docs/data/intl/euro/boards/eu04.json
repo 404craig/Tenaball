@@ -4,7 +4,7 @@
  "type": "nation",
  "level": 1,
  "title": "Most Euros goals scored",
- "brief": "Name the ten nations that have scored the most goals at European Championship finals. Shoot-out penalties do not count. West Germany counts as Germany, the Soviet Union and the CIS as Russia, and Czechoslovakia as the Czech Republic.",
+ "brief": "Name the ten nations that have scored the most goals at European Championship finals. Shoot-out penalties do not count. A former country counts as the one that followed it.",
  "period": "Every European Championship, 1960 to 2024 (finals tournaments only)",
  "rows": [
   {

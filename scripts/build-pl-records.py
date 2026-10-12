@@ -62,11 +62,11 @@ ranked("pl-at-penalties", "Most Premier League penalties scored", "Name the ten 
  [("Alan Shearer","56 penalties"),("Frank Lampard","43 penalties"),("Mohamed Salah","35 penalties"),("Harry Kane","33 penalties"),("Steven Gerrard","31 penalties"),
   ("Mark Noble","28 penalties"),("Sergio Aguero","27 penalties"),("Jamie Vardy","27 penalties"),("Bruno Fernandes","26 penalties"),("Matt Le Tissier","25 penalties")],
  {"Thierry Henry":"Thierry Henry is just outside with 23.","Wayne Rooney":"Wayne Rooney is just outside with 23 (he missed 11).","James Milner":"James Milner scored 18.","Erling Haaland":"Erling Haaland isn't in the top ten yet.","Cole Palmer":"Cole Palmer isn't in the top ten yet."})
-ranked("pl-at-fastest-50", "Fastest to 50 Premier League goals", "Name the ten players who reached 50 Premier League goals in the fewest games. Thierry Henry and Kevin Phillips share 10th, so either counts.", "Premier League seasons 1992/93 to 2025/26", 2,
+ranked("pl-at-fastest-50", "Fastest to 50 Premier League goals", "Name the ten players who reached 50 Premier League goals in the fewest games. Two players share 10th, so either counts.", "Premier League seasons 1992/93 to 2025/26", 2,
  [("Erling Haaland","48 games"),("Andy Cole","65 games"),("Alan Shearer","66 games"),("Ruud van Nistelrooy","68 games"),("Fernando Torres","72 games"),
   ("Mohamed Salah","72 games"),("Alexander Isak","76 games"),("Pierre-Emerick Aubameyang","79 games"),("Sergio Aguero","81 games"),(["Thierry Henry","Kevin Phillips"],"83 games","f50",1)],
  {"Diego Costa":"Diego Costa took 85 games, just outside."})
-ranked("pl-at-fastest-100", "Fastest to 100 Premier League goals", "Name the ten players who reached 100 Premier League goals in the fewest games. Michael Owen and Andy Cole share 10th, so either counts.", "Premier League seasons 1992/93 to 2025/26", 2,
+ranked("pl-at-fastest-100", "Fastest to 100 Premier League goals", "Name the ten players who reached 100 Premier League goals in the fewest games. Two players share 10th, so either counts.", "Premier League seasons 1992/93 to 2025/26", 2,
  [("Erling Haaland","111 games"),("Alan Shearer","124 games"),("Harry Kane","141 games"),("Sergio Aguero","147 games"),("Thierry Henry","160 games"),
   ("Mohamed Salah","162 games"),("Ian Wright","173 games"),("Robbie Fowler","175 games"),("Les Ferdinand","178 games"),(["Michael Owen","Andy Cole"],"185 games","f100",1)],
  {"Robin van Persie":"Robin van Persie took 197 games, just outside."})
@@ -88,7 +88,7 @@ ranked("pl-at-promoted", "Most promotions to the Premier League", "Name the club
 
 # transfers (headline fees as reported in the UK)
 FEES = "All time, to 1 September 2026"
-ranked("pl-fee-signings", "Most expensive Premier League signings", "Name the players behind the ten biggest fees paid by Premier League clubs (headline fees as reported in the UK). A player can fill more than one slot. Jack Grealish and Sandro Tonali share 10th, so either counts.", FEES, 1,
+ranked("pl-fee-signings", "Most expensive Premier League signings", "Name the players behind the ten biggest fees paid by Premier League clubs (headline fees as reported in the UK). A player can fill more than one slot. Two players share 10th, so either counts.", FEES, 1,
  [("Alexander Isak","£125m, 2025"),("Enzo Fernandez","£125m, 2026"),("Bradley Barcola","£123m, 2026"),("Morgan Rogers","£117m, 2026"),
   ("Elliot Anderson","£116m, 2026"),("Florian Wirtz","£116m, 2025"),("Moises Caicedo","£115m, 2023"),("Enzo Fernandez","£106.8m, 2023"),
   ("Declan Rice","£105m, 2023"),(["Jack Grealish","Sandro Tonali"],"£100m","fee100",1)],
@@ -113,7 +113,7 @@ ranked("pl-fee-fwd", "Most expensive forwards", "Name the strikers and wingers b
   ("Romelu Lukaku","£90m, 2017"),("Mykhailo Mudryk","£88.5m, 2023"),("Antony","£85.5m, 2022"),("Savinho","£85m, 2026"),
   ("Darwin Nunez","£85m, 2022"),("Hugo Ekitike","£79m, 2025")],
  {"Benjamin Sesko":"Benjamin Sesko's £73.7m move to Man Utd is just outside."})
-labelled("pl-fee-clubbuy", "Club record signings", "Name each club's record signing (headline fees as reported in the UK). Man Utd and Everton have two answers: Pogba and Sigurdsson cost the most up front, Lukaku and Richarlison the most once add-ons are counted.", FEES, 1,
+labelled("pl-fee-clubbuy", "Club record signings", "Name each club's record signing (headline fees as reported in the UK). Man Utd and Everton have two answers each: the biggest fee up front and the biggest once add-ons are counted, so either counts.", FEES, 1,
  [("Man Utd",["Romelu Lukaku","Paul Pogba"],"£90m Lukaku, 2017; £89m Pogba, 2016"),("Liverpool","Alexander Isak","£125m, 2025"),("Arsenal","Declan Rice","£105m, 2023"),
   ("Chelsea","Morgan Rogers","£117m, 2026"),("Man City","Enzo Fernandez","£125m, 2026"),("Spurs","Sandro Tonali","£100m, 2026"),
   ("Newcastle","Nick Woltemade","£69m, 2025"),("Aston Villa","Nicolas Jackson","£65m, 2026"),("West Ham","Lucas Paqueta","£51m, 2022"),("Everton",["Richarlison","Gylfi Sigurdsson"],"£50m Richarlison, 2018; £45m Sigurdsson, 2017")])
@@ -124,7 +124,7 @@ SALES = "All time, to the end of the summer 2026 window"
 SB = "Fees are estimates: the biggest published figure, add-ons included."
 def sales(id, title, brief, level, rows, notes=None):
     ranked(id, title, brief + " " + SB, SALES, level, rows, notes)
-sales("pl-fee-sales", "Biggest sales by Premier League clubs", "Name the players behind the ten biggest fees received by Premier League clubs. Harry Kane, Jack Grealish and Sandro Tonali all went for £100m, so any two of them fill 9th and 10th.", 1,
+sales("pl-fee-sales", "Biggest sales by Premier League clubs", "Name the players behind the ten biggest fees received by Premier League clubs. Three players went for £100m, so any two of them fill 9th and 10th.", 1,
  [("Philippe Coutinho","£142m, 2018"),("Eden Hazard","£130m, 2019"),("Alexander Isak","£125m, 2025"),("Enzo Fernandez","£125m, 2026"),("Morgan Rogers","£117m, 2026"),
   ("Elliot Anderson","£116m, 2026"),("Moises Caicedo","£115m, 2023"),("Declan Rice","£105m, 2023"),(["Harry Kane","Jack Grealish","Sandro Tonali"],"£100m","sale100",2)],
  {"Romelu Lukaku":"Romelu Lukaku's £90m move from Everton is just outside.","Gareth Bale":"Gareth Bale's £85.3m move is just outside.","Savinho":"Savinho's £85m move to Spurs is just outside."})
@@ -253,7 +253,7 @@ def gboard(id, title, brief, level, scores, name, val, pool_val, notes=None, per
         n = 10 - len(above); names = list(dict.fromkeys(name(k) for k in tied))
         assert len(names) > n, (id, names, n)
         rows.append((names, pool_val(cut), id.replace("pl-", "")[:12], n))
-        who = " and ".join(names) if len(names) == 2 else f"{WORDS[len(names)] if len(names) < len(WORDS) else len(names)} {who_word}"
+        who = f"{WORDS[len(names)] if len(names) < len(WORDS) else len(names)} {who_word}" # never the names: they're answers
         brief += f" {who} share {'10th' if n == 1 else 'the last ' + WORDS[n].lower() + ' places'}, so {'either' if len(names) == 2 else 'any ' + WORDS[n].lower()} of them {'counts' if n == 1 else 'fill them'}."
     below = [k for k in order if sign * scores[k] > sign * cut][:3]
     near = near or (lambda k, v: f"{v}")
@@ -748,7 +748,7 @@ ranked("pl-pen-saves", "Most penalty saves", "Name the goalkeepers who have save
 ranked("pl-red-cards", "Most Premier League red cards", "Name the players sent off the most times in the Premier League. Thirteen players have six, so any three of them fill the last three places.", LIVE, 1,
        [("Richard Dunne","8 red cards"),("Duncan Ferguson","8 red cards"),("Patrick Vieira","8 red cards"),("Lee Cattermole","7 red cards"),("Vinnie Jones","7 red cards"),("Roy Keane","7 red cards"),("Alan Smith","7 red cards"),
         (["Gareth Barry","Joey Barton","Luis Boa Morte","Nicky Butt","Andy Cole","Steven Gerrard","John Hartson","Younes Kaboul","Martin Keown","Paul Konchesky","Franck Queudrue","John Terry","Nemanja Vidic"],"6 red cards","red6",3)])
-ranked("pl-yellow-cards", "Most Premier League yellow cards", "Name the players booked the most times in the Premier League. George Boateng and Kevin Nolan share 10th, so either counts.", LIVE, 1,
+ranked("pl-yellow-cards", "Most Premier League yellow cards", "Name the players booked the most times in the Premier League. Two players share 10th, so either counts.", LIVE, 1,
        [("Gareth Barry","123 yellows"),("Wayne Rooney","102 yellows"),("Lee Bowyer","99 yellows"),("Kevin Davies","99 yellows"),("Paul Scholes","97 yellows"),("Scott Parker","92 yellows"),
         ("Ashley Young","91 yellows"),("Robbie Savage","89 yellows"),("Lee Cattermole","88 yellows"),(["George Boateng","Kevin Nolan"],"85 yellows","yel85",1)],
        {"Phil Neville":"Phil Neville is just outside with 82.","Mark Noble":"Mark Noble is just outside with 82.","James Milner":"James Milner was booked 78 times."})
@@ -792,7 +792,7 @@ ranked("pl-mgr-scot", "Scottish managers: most games", "Name the Scottish manage
        [("Alex Ferguson","810 games"),("David Moyes","754 games"),("George Graham","287 games"),("Graeme Souness","280 games"),("Gordon Strachan","271 games"),
         ("Kenny Dalglish","238 games"),("Paul Lambert","154 games"),("Walter Smith","143 games"),("Alex McLeish","138 games"),("George Burley","98 games")],
        {"Steve Kean":"Steve Kean is just outside with 59.","Steve Clarke":"Steve Clarke is just outside with 55."})
-ranked("pl-mgr-ita", "Italian managers: most games", "Name the Italian managers who have taken charge of the most Premier League games. Maurizio Sarri and Walter Mazzarri share 10th, so either counts.", LIVE, 2,
+ranked("pl-mgr-ita", "Italian managers: most games", "Name the Italian managers who have taken charge of the most Premier League games. Two managers share 10th, so either counts.", LIVE, 2,
        [("Claudio Ranieri","238 games"),("Carlo Ancelotti","134 games"),("Roberto Mancini","133 games"),("Antonio Conte","132 games"),("Gianluca Vialli","94 games"),
         ("Roberto De Zerbi","77 games"),("Gianfranco Zola","72 games"),("Enzo Maresca","57 games"),("Roberto Di Matteo","48 games"),(["Maurizio Sarri","Walter Mazzarri"],"38 games","ita38",1)],
        {"Francesco Guidolin":"Francesco Guidolin is just outside with 23.","Paolo Di Canio":"Paolo Di Canio managed 12."})
@@ -807,7 +807,7 @@ ranked("pl-rec-medals", "Most Premier League winners' medals", "Name the players
        [("Ryan Giggs","13 medals"),("Paul Scholes","11 medals"),("Gary Neville","8 medals"),("Denis Irwin","7 medals"),("Roy Keane","7 medals"),
         (["David Beckham","Nicky Butt","Phil Neville","Ole Gunnar Solskjaer","Rio Ferdinand","Kevin De Bruyne","Ederson","Phil Foden","Bernardo Silva","John Stones","Kyle Walker"],"6 medals","med6",5)],
        {"Wayne Rooney":"Wayne Rooney is just outside with five.","John Terry":"John Terry is just outside with five.","Sergio Aguero":"Sergio Aguero is just outside with five.","Riyad Mahrez":"Riyad Mahrez is just outside with five."})
-ranked("pl-rec-title-2-clubs", "Champions with two clubs", "Name the players who have won the Premier League with two different clubs, ranked by their titles. Nicolas Anelka, Kolo Toure and N'Golo Kante won two each, so any two of them fill the last two places.", LIVE, 2,
+ranked("pl-rec-title-2-clubs", "Champions with two clubs", "Name the players who have won the Premier League with two different clubs, ranked by their titles. Three players won two each, so any two of them fill the last two places.", LIVE, 2,
        [("Riyad Mahrez","5 titles, Leicester and Man City"),("Gabriel Jesus","5 titles, Man City and Arsenal"),("Henning Berg","3 titles, Blackburn and Man Utd"),("Ashley Cole","3 titles, Arsenal and Chelsea"),
         ("Gael Clichy","3 titles, Arsenal and Man City"),("Robert Huth","3 titles, Chelsea and Leicester"),("Carlos Tevez","3 titles, Man Utd and Man City"),("James Milner","3 titles, Man City and Liverpool"),
         (["Nicolas Anelka","Kolo Toure","N'Golo Kante"],"2 titles","t2c2",2)])
@@ -823,7 +823,7 @@ ranked("pl-fee-british", "Most expensive British players", "Name the ten most ex
        [("Morgan Rogers","£117m, 2026"),("Elliot Anderson","£116m, 2026"),("Jude Bellingham","£115m, 2023"),("Declan Rice","£105m, 2023"),("Jack Grealish","£100m, 2021"),
         ("Harry Kane","£100m, 2023"),("Gareth Bale","£85.3m, 2013"),("Harry Maguire","£80m, 2019"),("Jadon Sancho","£73m, 2021"),("Anthony Gordon","£69.3m, 2026")],
        {"Eberechi Eze":"Eberechi Eze's £67.5m move to Arsenal is just outside.","Dominic Solanke":"Dominic Solanke's £65m move to Spurs is just outside.","Mason Mount":"Mason Mount's £60m move is outside the top ten."})
-ranked("pl-fee-teens", "Most expensive teenagers", "Name the ten most expensive players signed by Premier League clubs aged 19 or under. Fees include add-ons. Geovany Quenda, Archie Gray and Honest Ahanor all cost £40m, so any two of them fill the last two places.", "Premier League signings to 1 September 2026", 2,
+ranked("pl-fee-teens", "Most expensive teenagers", "Name the ten most expensive players signed by Premier League clubs aged 19 or under. Fees include add-ons. Three players cost £40m, so any two of them fill the last two places.", "Premier League signings to 1 September 2026", 2,
        [("Ayyoub Bouaddi","£86m, 2026"),("Leny Yoro","£58.9m, 2024"),("Romeo Lavia","£58m, 2023"),("Anthony Martial","£58m, 2015"),("Estevao","£51.5m, 2024"),
         ("Luka Vuskovic","£50m, 2026"),("Ibrahim Mbaye","£47m, 2026"),(["Geovany Quenda","Archie Gray","Honest Ahanor"],"£40m","teen40",3)],
        {"Amad Diallo":"Amad Diallo's move, up to £37.1m, is just outside.","Jorrel Hato":"Jorrel Hato's £37m move is just outside.","Wesley Fofana":"Wesley Fofana's move to Leicester, up to £36.5m, is outside the top ten."})
@@ -835,7 +835,7 @@ labelled("pl-fee-record-season", "Record signing each season", "Name the Premier
        {"John Stones":"John Stones (£47.5m) was 2016/17's next biggest.","Virgil van Dijk":"Virgil van Dijk (£75m) was 2017/18's next biggest.","Alisson":"Alisson (£66.8m) was 2018/19's next biggest.",
         "Nicolas Pepe":"Nicolas Pepe (£72m) was 2019/20's next biggest.","Ruben Dias":"Ruben Dias (£65m) was 2020/21's next biggest.","Mykhailo Mudryk":"Mykhailo Mudryk (£88.5m) was 2022/23's next biggest.",
         "Declan Rice":"Declan Rice (£105m) was 2023/24's next biggest.","Omar Marmoush":"Omar Marmoush (£63.2m) was 2024/25's next biggest.","Florian Wirtz":"Florian Wirtz (£116.5m) was 2025/26's next biggest."})
-sales("pl-fee-sales-abroad", "Biggest sales abroad", "Name the players behind the ten biggest fees Premier League clubs have received from clubs outside England. Luis Diaz (£65.5m) and Rodri (£65.4m) are a whisker apart, so either counts for 10th.", 2,
+sales("pl-fee-sales-abroad", "Biggest sales abroad", "Name the players behind the ten biggest fees Premier League clubs have received from clubs outside England. Two players are a whisker apart (£65.5m and £65.4m), so either counts for 10th.", 2,
       [("Philippe Coutinho","£142m, 2018"),("Eden Hazard","£130m, 2019"),("Harry Kane","£100m, 2023"),("Gareth Bale","£85.3m, 2013"),("Julian Alvarez","£81.5m, 2024"),
        ("Cristiano Ronaldo","£80m, 2009"),("Luis Suarez","£75m, 2014"),("Romelu Lukaku","£74m, 2019"),("Anthony Gordon","£69.3m, 2026"),(["Luis Diaz","Rodri"],"£65.5m","abr65",1)],
       {"Jhon Duran":"Jhon Duran's £64.5m move to Al-Nassr is just outside.","Gabriel Martinelli":"Gabriel Martinelli's £60m move to Al Hilal is just outside.","Oscar":"Oscar's £60m move to Shanghai is just outside."})

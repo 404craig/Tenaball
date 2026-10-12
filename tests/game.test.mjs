@@ -337,6 +337,39 @@ await test("home: competitions tick in a slide-up panel, the box sums them up, a
   eq(await p.evaluate(() => cfg.cats.includes("uel") && cfg.cats.includes("intl") && cfg.cats.length), 12, "the Europa League and Internationals are ticked for a phone that had everything on");
   assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
 });
+await test("questions: no board names one of its answers in its title, question or period before the round", async () => {
+  const p = await phone(browser, "spoilers"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  const bad = await p.evaluate(() => {
+    const fold = s => String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const has = (txt, w) => new RegExp(`(^|[^a-z])${w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}($|[^a-z])`).test(txt);
+    const out = [];
+    for (const q of Q){
+      const txt = fold([q.title, q.brief, q.period].join(" | "));
+      for (const s of q.slots || []) for (const a of [s.club, ...(s.alts || [])].filter(Boolean)){
+        const fa = fold(a), words = fa.split(/[\s-]+/), sur = words[words.length - 1];
+        if (has(txt, fa) || (words.length > 1 && sur.length >= 4 && sur !== "africa" && has(txt, sur))) out.push(`${q.id}: ${a}`);
+      }
+    }
+    return [...new Set(out)];
+  });
+  eq(bad, [], "answers named before the round");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
+await test("board: a stat too long to sit beside its answer drops onto its own line, and the row grows", async () => {
+  const p = await phone(browser, "tall"); await p.goto(site.url); await until(() => visible(p, "#setup"));
+  await p.click('[data-door="solo"]'); await p.evaluate(() => { cfg.clock = 0; });
+  await p.click("#startBtn"); await until(() => visible(p, "#intro")); await p.click("#introBtn");
+  await until(() => p.evaluate(() => !G.busy));
+  const r = await p.evaluate(() => {
+    G.q = findQ("pl-fee-clubbuy"); G.foundBy = { 0: 0, 1: 0 }; G.slotName = { 0: "Romelu Lukaku", 1: "Alexander Isak" }; G.poolUsed = {}; drawTower();
+    return [...document.querySelectorAll("#tower .slot")].slice(0, 3).map(d => { const w = d.querySelector(".who"), n = d.querySelector(".nm");
+      return { tall: d.classList.contains("tall"), h: d.offsetHeight, whoCut: w ? w.scrollWidth > w.clientWidth + 1 : false, nameBelowStat: w && n ? w.getBoundingClientRect().top >= n.getBoundingClientRect().bottom - 2 : null }; });
+  });
+  eq([r[0].tall, r[0].whoCut, r[0].nameBelowStat], [true, false, true], "the long stat sits whole under the name");
+  assert(r[0].h > r[2].h, "its row is taller than an empty one");
+  eq(r[2].tall, false, "an empty row stays as it was");
+  assert(!p.errors.length, p.errors.join("\n")); await p.ctx.close();
+});
 await test("game: one question change for every round, used in any round", async () => {
   const p = await phone(browser, "refresh"); await p.goto(site.url); await until(() => visible(p, "#setup"));
   const r = await p.evaluate(async () => { cfg.rounds = 5; cfg.count = 1; await startGame(); const a = G.refreshLeft; for (let i = 0; i < 5; i++) applyRefresh(refreshPick()); return [a, G.refreshLeft, $("refreshBtn").disabled]; });
