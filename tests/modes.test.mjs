@@ -39,11 +39,12 @@ await test("home: four doors, each opening its own settings, with Stats, Share a
   await p.click("#doorSet .backbtn"); await p.click('[data-door="bot"]');
   assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot: the modes and its level");
   eq(await p.evaluate(() => [cfg.count, botSeats()]), [2, [false, true]]);
-  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "Fastest answer wins", "Beat the clock"]);
+  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "Fastest answer wins", "Beat the clock", "Penalty shootout"]);
   await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="120"]');
   assert(await visible(p, "#timeField") && !(await visible(p, "#clockField")) && !(await visible(p, "#repeatField")), "a time limit replaces the shot clock");
   await p.click("#doorSet .backbtn"); await p.click('[data-door="h2h"]');
-  assert(!(await visible(p, "#modeField")) && !(await visible(p, "#botField")), "pass and play takes turns, with no TenaBot");
+  assert(!(await visible(p, "#botField")), "pass and play has no TenaBot");
+  eq(await p.$$eval("#modePick button", b => b.map(x => [x.dataset.v, x.getAttribute("aria-pressed")])), [["turns", "true"], ["pens", "false"]], "pass and play takes turns (Beat the clock from TenaBot doesn't carry over) or plays penalties");
   eq(await p.$$eval("#clockSeg button:not(.hidden)", b => b.map(x => x.textContent)), ["30 sec", "60 sec", "90 sec"], "no Off with an opponent");
   eq(await p.evaluate(() => [cfg.clock, document.querySelector('#clockSeg [aria-pressed="true"]').dataset.v]), [30, "30"], "Off from Solo play becomes 30 seconds");
   await p.click('#countSeg button[data-v="3"]');
@@ -165,6 +166,34 @@ await test("Beat the clock never draws a letter board (everyone needs the same a
   const ids = await p.evaluate(() => { G = { picked: new Set(), lastCat: null, mode: "clock" }; return Array.from({ length: 120 }, () => pickQuestion("pl").id); });
   assert(!(await p.evaluate(ids => ids.some(id => findQ(id).open), ids)), "a letter board was drawn");
   await done(p);
+});
+
+await test("Penalty shootout: a whole game of penalties against TenaBot, or passing one phone round, with goals as the score", async () => {
+  for (const [door, n] of [["bot", 2], ["h2h", 3]]){
+    const p = await phone("pens-" + door, 0.0001);
+    await p.goto(site.url); await until(() => visible(p, "#setup"));
+    await p.click(`[data-door="${door}"]`);
+    if (door === "h2h"){
+      await p.click('#countSeg button[data-v="3"]');
+      eq(await p.$$eval("#modePick button", b => b.map(x => x.dataset.v)), ["turns", "pens"], "one phone passed round can take turns or play penalties");
+    }
+    await p.click('#modePick button[data-v="pens"]');
+    eq(await p.evaluate(() => ["roundsField","compField","diffField","rulesGrp"].map(id => document.getElementById(id).classList.contains("hidden"))), [true, true, true, true], "no boards, so no rounds, competitions, difficulty or house rules");
+    await p.click("#startBtn");
+    await until(() => visible(p, "#shootout"), { what: "the shootout" });
+    assert(await visible(p, "#soExit"), "a way out of the game");
+    await until(() => visible(p, "#end"), { what: "full time", timeout: 60000 });
+    const r = await p.evaluate(() => ({ n: G.players.length, mode: G.mode, game: G.pens.game, label: document.getElementById("winnerLabel").textContent,
+      ok: G.players.every(x => x.score === x.g.right && x.g.right + x.g.wrong >= 1), top: Math.max(...G.players.map(x => x.score)), winner: G.players.find(x => x.name === G.pens.winner).score,
+      msg: SHARE.text, stats: loadStats()[statKey("Player 1")] }));
+    eq([r.n, r.mode, r.game], [n, "pens", true]);
+    assert(r.ok, "each player's score is their goals (a shootout can be settled before five kicks each)");
+    eq(r.winner, r.top, "the winner scored the most");
+    assert(r.label.includes("wins the shootout"), r.label);
+    assert(r.msg.startsWith("🏆 *TENABALL | PENALTY SHOOTOUT*"), r.msg);
+    assert(r.stats && r.stats.x.b.pens && r.stats.x.b.pens.games === 1, "the game counts under the Penalty shootout filter");
+    await done(p);
+  }
 });
 
 await test("stats: filters by how you played, boards completed by competition, and a reset that asks first", async () => {

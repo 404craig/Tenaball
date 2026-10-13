@@ -803,6 +803,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 .mico{grid-row:span 2;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1.5px solid transparent;background:linear-gradient(#1d0623,#14031a) padding-box,linear-gradient(135deg,rgba(4,245,255,.8),rgba(0,255,133,.5)) border-box}
 .mico svg{width:22px;height:22px;fill:none;stroke:#3df8d0;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .mico svg .fillg{fill:#3df8d0;stroke:none}
+.mico svg .faint{opacity:.45;stroke-width:1.4}
 #onlineGo{margin-top:4px}
 .panenote{font-size:.92rem;color:var(--muted)}
 .linkbox{display:flex;gap:8px;align-items:center;padding:6px 6px 6px 14px;border-radius:999px;border:1.5px solid var(--slotline);background:rgba(0,0,0,.3);margin:0 0 12px}
@@ -1069,6 +1070,8 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
 #shootout .soReveal{min-height:1.4em;margin-top:10px;font-weight:700;font-size:.95rem}
 #shootout .soNext{margin-top:12px;background:linear-gradient(90deg,#04f5ff,#00ff85);color:#1a0020;box-shadow:none}
 #shootout .soSkip{margin-top:10px}
+#shootout .soExit{position:absolute;top:10px;left:0;z-index:3;width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;font-size:1rem;display:grid;place-items:center;padding:0}
+#shootout .soExit.hidden{display:none}
 #shootout .soGear{position:absolute;top:10px;right:0;z-index:3;width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;font-size:1.05rem;display:grid;place-items:center;padding:0}
 #shootout .soDrawer{position:fixed;top:0;right:0;bottom:0;z-index:40;width:min(78vw,280px);background:#1d0428;border-left:1px solid rgba(255,255,255,.12);box-shadow:-10px 0 30px rgba(0,0,0,.5);
   padding:calc(18px + env(safe-area-inset-top,0px)) 16px 18px;transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;gap:10px;text-align:left}
@@ -1181,23 +1184,23 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
     <div class="homegrp" role="group" aria-labelledby="ghGame"><div class="gh" id="ghGame">The game</div>
       <div class="field" id="modeField"><div class="lblrow"><label id="modeLbl">Game mode</label><button type="button" class="finfo" data-info="mode" aria-label="About the game modes">i</button></div>
         <div class="modepick" id="modePick" role="group" aria-labelledby="modeLbl"></div></div>
-    <div class="field"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
+    <div class="field" id="roundsField"><div class="lblrow"><label>Rounds</label><button type="button" class="finfo" data-info="rounds" aria-label="About rounds">i</button></div>
       <div class="seg" id="roundSeg">
         <button type="button" data-v="1" aria-pressed="false">1</button>
         <button type="button" data-v="3" aria-pressed="false">3</button>
         <button type="button" data-v="5" aria-pressed="true">5</button>
         <button type="button" data-v="7" aria-pressed="false">7</button>
       </div></div>
-    <div class="field"><div class="lblrow"><label id="compLbl">Competitions</label><button type="button" class="finfo" data-info="comps" aria-label="About competitions">i</button></div>
+    <div class="field" id="compField"><div class="lblrow"><label id="compLbl">Competitions</label><button type="button" class="finfo" data-info="comps" aria-label="About competitions">i</button></div>
       <button type="button" class="comptrig" id="compBtn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="compLbl compSum"><span class="flags" id="compFlags" aria-hidden="true"></span><span class="sum" id="compSum">All competitions</span><span class="chev" aria-hidden="true">▾</span></button></div>
-    <div class="field"><div class="difflbl"><div class="lblrow"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="finfo" data-info="diff" aria-label="About difficulty">i</button></div><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
+    <div class="field" id="diffField"><div class="difflbl"><div class="lblrow"><label for="diff">Difficulty: <span id="diffName">Medium</span></label><button type="button" class="finfo" data-info="diff" aria-label="About difficulty">i</button></div><button type="button" class="alltoggle" id="allLevels" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>All levels</button></div>
       <div id="diffWrap"><input type="range" id="diff" min="0" max="200" step="1" value="100" aria-valuetext="Medium">
       <div class="difflabels"><span>Easy</span><span>Medium</span><span>Hard</span></div></div>
     </div>
     <p class="compnote hidden" id="compNote" aria-live="polite"></p>
   </div>
 
-    <div class="homegrp" role="group" aria-labelledby="ghRules"><div class="gh" id="ghRules">House rules</div>
+    <div class="homegrp" role="group" aria-labelledby="ghRules" id="rulesGrp"><div class="gh" id="ghRules">House rules</div>
     <div class="field" id="clockField"><div class="lblrow"><label>Shot clock per answer</label><button type="button" class="finfo" data-info="clock" aria-label="About the shot clock">i</button></div>
       <div class="seg" id="clockSeg">
         <button type="button" data-v="0" aria-pressed="false" id="clockOff">Off</button>
@@ -1261,6 +1264,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   </nav>
   <template id="updatesText">
     <p>Newest first. Each number is the update that went live.</p>
+    <div class="upd"><h4>13 October 2026</h4><p><b>96</b>A new game mode, Penalty shootout: no boards, just penalties, with a question for every kick. Five kicks each, then sudden death. Pick it under Game mode in H2H vs TenaBot, Multiplayer local and Multiplayer online. Your stats have a Penalty shootout filter too.</p></div>
     <div class="upd"><h4>12 October 2026</h4><p><b>95</b>No question gives away an answer before the round any more: 41 boards named players, clubs or nations that were on the board (for example Pogba on Club record signings, or the two players sharing 10th). And a stat too long to fit beside its answer now drops onto its own line under it, with the row growing to fit.</p></div>
     <div class="upd"><h4>10 October 2026</h4><p><b>94</b>Every slide-up panel (competitions, the info and updates panels, and the round points) can be swept away by dragging the bar at its top down.</p></div>
     <div class="upd"><h4>9 October 2026</h4><p><b>93</b>The sign-in screen remembers the last email used on your phone and fills it in, and the email box now offers your own email from the keyboard on iPhone.</p><p><b>92</b>The yes-or-no questions and text boxes (leaving a game, naming a league, joining with a code and so on) are now the game's own purple pop-ups instead of the phone's grey ones.</p><p><b>91</b>Tenaball on your Home Screen now picks up new updates by itself: it checks each time you open it, and loads the new version straight away (or as soon as your game is over).</p><p><b>90</b>Penalty shootout: no name line under the commentary (it already says whose kick it is), so the answers sit higher on the screen.</p></div>
@@ -2670,7 +2674,9 @@ const QUICK = [["All", ALL_CATS], ...COMP_GROUPS.map(([g, cs]) => [g, cs.filter(
 const MODES = {
   turns: ["Take turns", '<path d="M19.5 9A8 8 0 006.2 6.3L4 8.5"/><path d="M4 4v4.5h4.5"/><path d="M4.5 15a8 8 0 0013.3 2.7L20 15.5"/><path d="M20 20v-4.5h-4.5"/>'],
   first: ["Fastest answer wins", '<path class="fillg" d="M13.5 2.5L5 13.5h6l-1.5 8 8.5-11h-6z"/>'],
-  clock: ["Beat the clock", '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M12 13.5l2.8 2M10 2.5h4M12 2.5V6M18.6 6.4l1.4-1.4"/>']
+  clock: ["Beat the clock", '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M12 13.5l2.8 2M10 2.5h4M12 2.5V6M18.6 6.4l1.4-1.4"/>'],
+  // a whole game of penalties (Craig, 13 October 2026): the goal and its net, the ball on the spot
+  pens: ["Penalty shootout", '<path class="faint" d="M8 5.5v9.5M12 5.5v9.5M16 5.5v9.5M3.5 10.3h17"/><path d="M3.5 15V5.5h17V15"/><circle class="fillg" cx="12" cy="19.5" r="2.3"/>']
 };
 const SETUP_KEY = "tenaball-setup";
 const sameCats = (a, b) => a.length===b.length && a.every(c => b.includes(c));
@@ -2802,16 +2808,19 @@ const BOT_NAME = "TenaBot";
 // which seats are TenaBot: H2H vs TenaBot has it in the second seat (it doesn't play anywhere else)
 const botSeats = () => cfg.door==="bot" ? [false, true] : [];
 const botName = (seats, i) => { const k = seats.slice(0, i+1).filter(Boolean).length; return k>1 ? `${BOT_NAME} ${k}` : BOT_NAME; };
-// the mode this game uses: only online games and solo games against TenaBot can pick one
-const modeNow = () => cfg.door==="online" || cfg.door==="bot" ? cfg.mode : "turns";
+// the mode this game uses: online games and games against TenaBot can pick any; one phone passed round can take turns or
+// play a penalty shootout; Solo play always takes turns
+const modeNow = () => cfg.door==="online" || cfg.door==="bot" ? cfg.mode : cfg.door==="h2h" && cfg.mode==="pens" ? "pens" : "turns";
 const MODE_DESC = {
   turns: ["One answer at a time, round the table", "You and TenaBot answer in turn"],
   first: ["Race your friends to each slot first", "Race TenaBot to fill each slot first"],
-  clock: ["Get the most answers before time's up", "Get the most answers before time's up"]
+  clock: ["Get the most answers before time's up", "Get the most answers before time's up"],
+  pens: ["Five kicks each, then sudden death", "Five kicks each against TenaBot, then sudden death"]
 };
 function drawModes(){
-  const vsBot = cfg.door==="bot";
-  $("modePick").innerHTML = Object.entries(MODES).map(([k, [t, ic]]) => `<button type="button" data-v="${k}" aria-pressed="${cfg.mode===k}"><span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${ic}</svg></span>${t}<small>${MODE_DESC[k][vsBot ? 1 : 0]}</small></button>`).join("");
+  const vsBot = cfg.door==="bot", now = modeNow();
+  // passing one phone round: only taking turns and penalties work
+  $("modePick").innerHTML = Object.entries(MODES).filter(([k]) => cfg.door!=="h2h" || k==="turns" || k==="pens").map(([k, [t, ic]]) => `<button type="button" data-v="${k}" aria-pressed="${now===k}"><span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${ic}</svg></span>${t}<small>${MODE_DESC[k][vsBot ? 1 : 0]}</small></button>`).join("");
 }
 $("modePick").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; cfg.mode = b.dataset.v; saveSetup(); homeSync(); });
 function drawNames(){
@@ -2845,9 +2854,12 @@ function homeSync(){
   $("whoAmI").classList.toggle("hidden", !online || !signed);
   if (online && signed) $("whoAmI").innerHTML = `Playing as <b>${esc(accountName())}</b>. Change your name in Account.`;
   $("botField").classList.toggle("hidden", !seats.some(Boolean));
-  $("modeField").classList.toggle("hidden", !(online || bot));
+  $("modeField").classList.toggle("hidden", !(online || bot || h2h));
   drawModes();
-  const timed = modeNow()!=="turns";
+  // a penalty shootout has no boards: no rounds, competitions, difficulty or house rules
+  const pens = modeNow()==="pens";
+  ["roundsField","compField","diffField","rulesGrp"].forEach(id => $(id).classList.toggle("hidden", pens)); if (pens) $("compNote").classList.add("hidden"); else renderCompNote();
+  const timed = ["first","clock"].includes(modeNow());
   $("clockField").classList.toggle("hidden", timed); $("repeatField").classList.toggle("hidden", timed); $("timeField").classList.toggle("hidden", !timed);
   $("startBtn").classList.toggle("hidden", online); $("onlineGo").classList.toggle("hidden", !online);
   // the shot clock can only be switched off in Solo play: with an opponent it's 30, 60 or 90 seconds
@@ -2885,7 +2897,7 @@ const linkMsg = m => { $("linkMsg").textContent = m; clearTimeout(linkMsg.t); li
 $("copyLink").onclick = () => navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(shareUrl()).then(() => linkMsg("Link copied. Paste it into a chat."), () => linkMsg("Copy this link: " + shareUrl())) : linkMsg("Copy this link: " + shareUrl());
 $("shareLink").onclick = () => navigator.share({ text: `⚽ *Tenaball: Tenable, Football Edition*\nName the top 10 in hundreds of football quizzes. Play solo, against TenaBot or with your mates.\n${shareUrl()}` }).catch(() => {});
 /* ---------- the Stats tab: the signed-in account's stats, or those this phone keeps for the first player's name ---------- */
-const STF = [["all","All"],["solo","Solo"],["bot","vs TenaBot"],["h2h","Local"],["online","Online"],["first","Fastest answer wins"],["clock","Beat the clock"]];
+const STF = [["all","All"],["solo","Solo"],["bot","vs TenaBot"],["h2h","Local"],["online","Online"],["first","Fastest answer wins"],["clock","Beat the clock"],["pens","Penalty shootout"]];
 const ST = { f: "all", cmp: null, ask: false, picks: null };
 const pctOf = (a, b) => b ? Math.round(100*a/b) + "%" : "–";
 const statIco = d => `<span class="mico" aria-hidden="true"><svg viewBox="0 0 24 24">${d}</svg></span>`;
@@ -2948,6 +2960,12 @@ function drawStatsPage(){
       <p class="statnote">Wins and win rate count games against friends and TenaBot together. Games on your own have nobody to beat, so they only count towards games, points and bests.</p></div>`; }
   else if (f!=="solo" && f!=="bot") h += `<p class="statnote">Win rate counts every game with an opponent, friends or TenaBot, but not games on your own.</p>`;
   if (!a){ $("statsBody").innerHTML = h + `<div class="homegrp"><p class="empty">No games here yet.</p></div>` + resetHTML(); return; }
+  if (f==="pens"){ // penalty shootout games have no boards: each kick is one question, right scores and wrong misses
+    const k = a.right + a.wrong;
+    h += `<div class="homegrp"><div class="gh">Penalty shootouts</div><div class="kv"><span>Shootouts played</span><span>${a.games}</span><span>Won</span><span>${a.wins} · ${pctOf(a.wins, a.people)}</span>
+      <span>Penalties scored</span><span>${a.right} of ${k} · ${pctOf(a.right, k)}</span><span>Most goals in one</span><span>${a.best}</span></div></div>`;
+    $("statsBody").innerHTML = h + resetHTML(); return;
+  }
   const slots = a.found + a.others + a.nobody, ans = a.right + a.wrong;
   h += `<div class="homegrp"><div class="gh">Boards</div>
       <div class="kv"><span>Boards played</span><span>${a.boards}</span><span>Completed (Tenable!)</span><span>${a.done} · ${pctOf(a.done, a.boards)}</span></div>
@@ -3129,7 +3147,7 @@ const INFO = {
   repeat: ["Duplicate answers", "<p>Some boards have the same answer in more than one slot, such as a club that won the league in several seasons.</p><p><strong>Fill every match:</strong> one guess fills every matching slot, with a point for each.</p><p><strong>Fill one only:</strong> one guess fills a single matching slot, so it has to be named again on a later turn to fill the next.</p>"],
   diff: ["Difficulty", "<p><strong>Easy</strong> boards are the best-known facts. <strong>Hard</strong> ones go deeper into older seasons and smaller clubs, with <strong>Medium</strong> in between.</p><p>Some competitions don't have questions at every level yet. Those rounds use the nearest level, and a note under the slider says so.</p><p>Switch on <strong>All levels</strong> for a random mix of Easy, Medium and Hard, with a fair share of each.</p>"],
   opp: ["Playing TenaBot", "<p>TenaBot is the game's own player. Pick H2H vs TenaBot to play against it when you're on your own, in any of the three game modes.</p><p>Its level sets how much it knows: <strong>Easy</strong> knows the famous answers, <strong>Hard</strong> knows most of the board. It takes a moment to think and makes the odd howler, so it gets carded too.</p><p>Games against TenaBot count towards your win rate, and have their own filter in your stats.</p>"],
-  mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>Fastest answer wins:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p>"],
+  mode: ["Game modes", "<p><strong>Take turns:</strong> the original. One answer at a time, round the table, with three lives each.</p><p><strong>Fastest answer wins:</strong> everyone answers at once on one board. The first right answer claims the slot in your colour. A point a slot, and a bonus point for whoever claims the most. Wrong answers still cost a life.</p><p><strong>Beat the clock:</strong> everyone has their own board and the same time. Others' names show where they've found an answer, but not the answer. When time's up, a point for each answer, and 2 for one nobody else found.</p><p><strong>Penalty shootout:</strong> no boards, just penalties. Every kick is a question: pick which of two has more. Right and you score, wrong and it's saved or missed. Five kicks each, then sudden death; with three or four players, anyone who can't catch the leader drops out. Play it against TenaBot, passing one phone round, or online.</p>"],
   time: ["Time limit per round", "<p>In Fastest answer wins and Beat the clock, the round ends when the time runs out (or sooner, when the board is full or everyone is out).</p>"],
   how: ["How to play", ""],
   updates: ["Latest updates", ""]
@@ -3146,7 +3164,7 @@ $("infoSheet").addEventListener("click", e => { if (e.target === $("infoSheet"))
 document.addEventListener("keydown", e => { if (e.key==="Escape") closeInfo(); });
 $("againBtn").onclick = () => { ac(); if (ONLINE) return onlineAgain(); startGame(); };
 $("setupBtn").onclick = () => { if (ONLINE) return onlineLeave(); homeTheme(); show("setup"); };
-$("exitBtn").onclick = async () => { if (ONLINE) return onlineExit(); if (await ask("Leave this game and go back to setup?", { ok: "Leave" })) { stopTimer(); stopBots(); hideSheet(); $("orderOv").classList.add("hidden"); G.left = 0; G.over = true; theme("pl"); show("setup"); } };
+$("exitBtn").onclick = async () => { if (ONLINE) return onlineExit(); if (await ask("Leave this game and go back to setup?", { ok: "Leave" })) { stopTimer(); stopBots(); hideSheet(); PENS.stop(); $("orderOv").classList.add("hidden"); G.left = 0; G.over = true; theme("pl"); show("setup"); } };
 $("muteBtn").onclick = () => { muted = !muted; if (muted) crowdStop(); $("muteBtn").textContent = muted ? "🔇" : "🔊"; $("muteBtn").setAttribute("aria-label", muted ? "Sound off" : "Sound on"); };
 $("nextBtn").onclick = () => { if (ONLINE) return onlineNext(); applyNext(); };
 function applyNext(q){ G.round++; G.round > cfg.rounds ? endGame() : startRound(q); }
@@ -3160,9 +3178,22 @@ async function startGame(){
         round:1, picked:new Set(), refreshLeft:cfg.rounds, lastCat:null }; // one question change for every round, to use whenever
   show("game"); theme(cfg.cats.length===1 ? cfg.cats[0] : "pl");
   feedback("", ""); $("tower").innerHTML = ""; $("roundEnd").classList.add("hidden"); $("guessArea").classList.add("hidden"); renderPlayers();
+  if (G.mode==="pens") return pensGame();
   // taking turns with others: shuffle who goes first, once for the whole game
   if (G.mode==="turns" && G.players.length>1){ await whoGoesFirst(shuffleOrder(G.players.length)); if (G!==g) return; }
   startRound();
+}
+// a penalty shootout as the whole game (Craig, 13 October 2026): five kicks each, then sudden death, with a question for
+// every kick. The goals are the score, and full time follows as after any game. Online, every phone plays the same shootout.
+async function pensGame(){
+  const g = G; g.turn = 0; g.phase = "pens";
+  show("game"); theme("pl"); feedback("", ""); $("tower").innerHTML = ""; $("roundEnd").classList.add("hidden"); $("guessArea").classList.add("hidden"); renderPlayers();
+  const seed = ONLINE ? PENS.seedFor(`${ONLINE.code}:${ONLINE.game}:pens`) : Math.floor(Math.random()*4294967296);
+  const res = await PENS.run(g.players, { seed, online: !!ONLINE, me: ONLINE && ONLINE.me, isHost: ONLINE && ONLINE.isHost, game: true });
+  if (!res || G!==g || g.over) return; // left part-way through
+  g.players.forEach(p => { const goals = res.goals.get(p) || 0, kicks = res.kicks.get(p) || 0; p.score = p.pens = goals; p.g = { ...newGameStats(), right: goals, wrong: kicks - goals }; });
+  g.pens = { winner: res.winner.name, score: res.score, n: g.players.length, game: true };
+  g.over = true; endGame();
 }
 function shuffleOrder(n){ const a = [...Array(n).keys()]; for (let i=n-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 // final lists the players' current places in their new order. The order is set straight away (so an online game stays in step);
@@ -3344,7 +3375,7 @@ function drawResults(){
 
 function renderPlayers(){
   const box = $("players"); box.innerHTML="";
-  const live = G.mode && G.mode!=="turns", clock = G.mode==="clock", mi = live ? meIdx() : -1;
+  const live = G.mode==="first" || G.mode==="clock", clock = G.mode==="clock", mi = live ? meIdx() : -1;
   box.classList.toggle("gone", clock && !!G.over); // the results grid shows everyone's finds
   G.players.forEach((p,i)=>{
     const d = document.createElement("div");
@@ -4012,7 +4043,7 @@ const BLANK_STATS = { played: 0, multi: 0, wins: 0, streak: 0, best: 0, points: 
 const STAT_KEYS = ["games", "people", "wins", "draws", "streak", "bestStreak", "bgames", "bwins", "points", "best", "boards", "done", "found", "others", "nobody",
   "right", "wrong", "passes", "timeouts", "yellow", "red", "bestRound", "bestRun", "claims", "slow", "unique", "fullClock", "mostClaims", "mostClock", "roundWins", "sweeps"];
 const MAX_KEYS = ["bestStreak", "best", "bestRound", "bestRun", "mostClaims", "mostClock"];
-const STAT_FILTERS = ["all", "solo", "h2h", "online", "first", "clock", "bot"];
+const STAT_FILTERS = ["all", "solo", "h2h", "online", "first", "clock", "bot", "pens"];
 const blankAgg = () => Object.fromEntries(STAT_KEYS.map(k => [k, 0]));
 
 // a game's record, checked: anything unexpected is dropped or clamped
@@ -4028,7 +4059,7 @@ function cleanRec(r){
     o = o && typeof o === "object" ? o : {};
     return { name: String(o.name || "").replace(/\s+/g, " ").trim().slice(0, 20), uid: /^u:[a-f0-9]{24}$/.test(String(o.uid || "")) ? o.uid : null, bot: !!o.bot, score: n(o.score) };
   }).filter(o => o.name);
-  return { door: pick(r.door, ["solo", "h2h", "online"], "solo"), mode: pick(r.mode, ["turns", "first", "clock"], "turns"),
+  return { door: pick(r.door, ["solo", "h2h", "online"], "solo"), mode: pick(r.mode, ["turns", "first", "clock", "pens"], "turns"),
     bots: !!r.bots, people: n(r.people, 3), score: n(r.score), tenables: n(r.tenables, 7), result: pick(r.result, ["w", "l", "d", "s"], "s"),
     right: n(r.right), wrong: n(r.wrong), passes: n(r.passes), timeouts: n(r.timeouts), yellow: n(r.yellow), red: n(r.red),
     bestRun: n(r.bestRun, 70), claims: n(r.claims, 70), slow: n(r.slow), unique: n(r.unique, 70), roundWins: n(r.roundWins, 7), sweep: !!r.sweep, rounds, opp };
@@ -4043,6 +4074,7 @@ function statBuckets(r){
   if (r.door === "online") b.push("online");
   if (r.mode === "first") b.push("first");
   if (r.mode === "clock") b.push("clock");
+  if (r.mode === "pens") b.push("pens"); // a penalty shootout game: right is goals, wrong is kicks missed
   return b;
 }
 
@@ -4200,6 +4232,7 @@ function statsHTML(s){
 const newGameStats = () => ({right:0, wrong:0, slots:0, passes:0, timeouts:0, yellow:0, red:0, rounds:[], boards:[], run:0, bestRun:0, claims:0, slow:0, unique:0, fullBoards:0, roundWins:0});
 function gameStatsHTML(p){
   const g = p.g || newGameStats(), guesses = g.right + g.wrong;
+  if (G && G.mode==="pens") return `<p class="stathead">This game</p><div class="statgrid"><div><b>${g.right}</b><span>Scored</span></div><div><b>${g.wrong}</b><span>Missed</span></div><div><b>${guesses ? Math.round(100*g.right/guesses)+"%" : "–"}</b><span>Converted</span></div><div><b>${guesses}</b><span>Penalties</span></div></div>`;
   const best = g.rounds.length ? Math.max(...g.rounds) : 0, bestAt = g.rounds.indexOf(best) + 1;
   const four = g.rounds.length > 1 ? `<div><b>${best}</b><span>Best round${best ? ` (R${bestAt})` : ""}</span></div>` : `<div><b>${g.slots}</b><span>Slots filled</span></div>`;
   const bits = [["Yellow cards", g.yellow], ["Red cards", g.red], ["Passes", g.passes], ["Time-outs", g.timeouts], ["Full boards", p.tenables||0]]
@@ -4211,25 +4244,25 @@ function gameStatsHTML(p){
 /* ---------- sharing: a WhatsApp-style message plus an image of the final table ---------- */
 const SITE_URL = "https://404craig.github.io/Tenaball/";
 const shareUrl = () => /^https?:$/.test(location.protocol) ? location.origin + location.pathname : SITE_URL;
-const ptsLabel = n => n===1 ? "1 pt" : `${n} pts`;
+const ptsLabel = n => G && G.mode==="pens" ? (n===1 ? "1 goal" : `${n} goals`) : n===1 ? "1 pt" : `${n} pts`;
 const MEDALS = ["🥇","🥈","🥉","4️⃣"];
 const PLAYER_HEX = ["#04f5ff","#ffd23f","#00ff85","#c77dff"];
 // the shootout's score: 4–3 with two players, (Craig 4, Aiden 3, Phil 2) with more
 const penScore = () => G.pens.n===2 ? G.pens.score : `(${G.pens.score})`;
-const penLine = () => G && G.pens && G.pens.winner ? [`⚽ ${G.pens.winner} won the penalty shootout ${penScore()}`, ""] : [];
+const penLine = () => G && G.pens && G.pens.winner && !G.pens.game ? [`⚽ ${G.pens.winner} won the penalty shootout ${penScore()}`, ""] : [];
 function shareSummary(sorted){
   const top = sorted[0].score, winners = sorted.filter(p=>p.score===top), solo = sorted.length===1;
   return { top, winners, solo, zero: solo && top===0,
     rank: p => 1 + sorted.filter(q=>q.score>p.score).length,
     names: winners.map(w=>w.name).join(" and "),
-    meta: [...(G && G.mode && G.mode!=="turns" ? [MODES[G.mode][0]] : []), `${cfg.rounds} Round${cfg.rounds===1?"":"s"}`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
+    meta: G && G.mode==="pens" ? [MODES.pens[0]] : [...(G && G.mode && G.mode!=="turns" ? [MODES[G.mode][0]] : []), `${cfg.rounds} Round${cfg.rounds===1?"":"s"}`, cfg.allLevels ? "All levels" : LEVELS[cfg.level], catsLabel()] };
 }
 // *text* is bold in WhatsApp
 function shareText(sorted){
   const s = shareSummary(sorted);
   // First touch and Beat the clock: a short message to go with the picture of the final table
   if (G && G.mode && G.mode!=="turns") return [`🏆 *TENABALL | ${MODES[G.mode][0].toUpperCase()}*`, "",
-    s.winners.length>1 ? `*${s.names} draw on ${s.top} point${s.top===1?"":"s"}!*` : `*${s.names} wins with ${s.top} point${s.top===1?"":"s"}!*`, "", ...penLine(),
+    G.pens && G.pens.game ? `*${G.pens.winner} wins the shootout${G.pens.n===2 ? " " + G.pens.score : ""}!*` : s.winners.length>1 ? `*${s.names} draw on ${s.top} point${s.top===1?"":"s"}!*` : `*${s.names} wins with ${s.top} point${s.top===1?"":"s"}!*`, "", ...penLine(),
     ...(G.banter ? ["_" + G.banter + "_", ""] : []), `*Think you can beat ${s.names}?*`, shareUrl()].join("\n");
   const head = s.zero ? `*${sorted[0].name} scored 0 points.*` : s.solo ? `*${sorted[0].name} wins with ${s.top} point${s.top===1?"":"s"}!*` : "*FINAL SCORE*";
   return [ "🏆 *TENABALL | FOOTBALL EDITION*", "", head, "",
@@ -4599,7 +4632,7 @@ function banterKind(scores, total){
   if (lead <= Math.max(1, Math.round(total / 20))) return "close";
   return pct >= .6 ? "winHigh" : "winMid";
 }
-const pointsLabel = n => n === 1 ? "1 point" : `${n} points`;
+const pointsLabel = n => G && G.mode==="pens" ? (n === 1 ? "1 goal" : `${n} goals`) : n === 1 ? "1 point" : `${n} points`;
 const BANTER_KEY = "tenaball-banter";
 // the line for a finished game: sorted is the players, best first
 function banterLine(sorted, total){
@@ -4657,8 +4690,8 @@ async function endGame(){
   });
   accountRecord(sorted, box); leagueReport(sorted);
   if (ONLINE) onlineEndUI();
-  $("winnerLabel").textContent = sorted.length===1 ? " " : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : G.pens && G.pens.winner ? `${winners[0].name} wins on penalties, ${penScore()}.` : `${winners[0].name} wins with ${top} points.`;
-  G.banter = banterLine(sorted, cfg.rounds * 10).text;
+  $("winnerLabel").textContent = sorted.length===1 ? " " : G.pens && G.pens.game ? `${G.pens.winner} wins the shootout${G.pens.n===2 ? " " + G.pens.score : ""}.` : winners.length>1 ? `It's a draw between ${winners.map(p=>p.name).join(" and ")}.` : G.pens && G.pens.winner ? `${winners[0].name} wins on penalties, ${penScore()}.` : `${winners[0].name} wins with ${top} points.`;
+  G.banter = banterLine(sorted, G.mode==="pens" ? Math.max(5, top) : cfg.rounds * 10).text;
   prepareShare(sorted);
   const banter = $("banter"); banter.textContent = G.banter; banter.classList.toggle("hidden", !zero); // shown once the table is in
   if (zero){
@@ -5215,8 +5248,8 @@ function renderLobby(d){
   for (let i=list.length; i<4; i++){ const r = document.createElement("div"); r.className = "lobbyrow empty"; r.textContent = "Waiting for a player to join…"; box.appendChild(r); }
   list.forEach(p => ROOM.seen.add(p.uid));
   const s = d.settings;
-  const mode = MODES[s.mode] ? s.mode : "turns", timed = mode!=="turns";
-  $("lobbySet").innerHTML = [MODES[mode][0], `${s.rounds} round${s.rounds===1?"":"s"}`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], timed ? `${s.time || 60} sec a round` : s.clock ? `${s.clock} sec clock` : "No clock"].map(t => `<span>${esc(t)}</span>`).join("•");
+  const mode = MODES[s.mode] ? s.mode : "turns", timed = mode==="first" || mode==="clock";
+  $("lobbySet").innerHTML = (mode==="pens" ? [MODES.pens[0], MODE_DESC.pens[0]] : [MODES[mode][0], `${s.rounds} round${s.rounds===1?"":"s"}`, catsLabel(roomCats(s)), s.level===3 ? "All levels" : LEVELS[s.level], timed ? `${s.time || 60} sec a round` : s.clock ? `${s.clock} sec clock` : "No clock"]).map(t => `<span>${esc(t)}</span>`).join("•");
   // the host can still change the game mode and time limit here
   const lm = $("lobbyMode"); lm.classList.toggle("hidden", !isHost);
   if (isHost){
@@ -5251,6 +5284,11 @@ $("lobbyStart").onclick = async () => {
   $("lobbyStart").disabled = true;
   const s = d.settings; Object.assign(cfg, roomCfg(s));
   G = { picked: ROOM.picked, lastCat: null, mode: cfg.mode };
+  if (cfg.mode==="pens"){ // a penalty shootout has no question to pick: the first move just starts it
+    try { await roomSend({ t: "start", move: { type: "round", data: { pens: true } } }); }
+    catch(e){ $("roomMsg").textContent = e.message || "Couldn't start the game. Try again."; $("lobbyStart").disabled = false; }
+    return;
+  }
   const q = pickQuestion(nextCat()); ROOM.lastCat = G.lastCat;
   // taking turns: the host draws the order of play, and every phone shows the same shuffle landing on it
   const data = { qid: q.id, ...(cfg.mode==="turns" ? { order: shuffleOrder(list.length).map(i => list[i].uid) } : {}) };
@@ -5321,6 +5359,8 @@ async function applyAction(a){
     return applyPass(t==="skip");
   }
   if (!byHost) return;
+  // a penalty shootout game: the host's first move starts it on every phone (not awaited, so its kicks can arrive)
+  if (G.mode==="pens"){ if (t==="round" && !G.pensOn){ G.pensOn = true; pensGame(); } return; }
   const q = d.qid ? findQ(d.qid) : null;
   if ((t==="round" || t==="refresh" || (t==="next" && G.round<cfg.rounds)) && !q){ feedback("This game needs the latest version of Tenaball. Refresh the page.", "bad"); return; }
   if (t==="round"){
@@ -5561,6 +5601,7 @@ async function leagueReport(sorted){
 })();
 </script>
 <div class="overlay pens hidden" id="shootout" role="dialog" aria-modal="true" aria-label="Penalty shootout"><div class="soCard">
+  <button class="soExit hidden" id="soExit" type="button" aria-label="Leave the game">✕</button>
   <button class="soGear" id="soGear" type="button" aria-label="Shootout settings">⚙︎</button>
   <div class="soHead">Penalty shootout</div>
   <div class="soSub" id="soSub"></div>
@@ -6100,7 +6141,9 @@ function onMove(a, byHost){
 function botPick(p, q, correct){ const lvl = p.bot.level ?? 1, hit = clamp(BOT_HIT[lvl] + .12 - (q.gap - 1) * .1, .25, .95);
   return rnd() < hit ? correct : (correct === q.a ? q.b : q.a); }
 
+let RUN = 0;   // each shootout's number: stop() moves it on, and a shootout that has been stopped goes no further
 async function shootout(tied, opts = {}){
+  const run = ++RUN, gone = () => run !== RUN;
   const ov = $("shootout"), online = !!opts.online, me = opts.me, auto = !!opts.auto || !!window.TENABALL_PEN_AUTO;   // tests answer at random
   const main = seeded(opts.seed >>> 0), shuffle = arr => { for (let i = arr.length - 1; i > 0; i--){ const j = Math.floor(main() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; };
   // the easiest pairs first: a shuffled pool sorted by how clear-cut the pair is
@@ -6119,13 +6162,14 @@ async function shootout(tied, opts = {}){
     $("soStage").textContent = winner ? "Shootout over" : stage(); };
   ["soTaker","soQ","soPeriod","soReveal","soWait"].forEach(id => $(id).textContent = ""); $("soOpts").innerHTML = ""; $("soNext").classList.add("hidden");
   ov.classList.remove("hidden"); toggleDrawer(false); applyComm(); applyKeeperMode(); clearComm(); drawTally();
+  $("soExit").classList.toggle("hidden", !opts.game);
   NET.reset(); if (GLOVES) glovesReady(); else keeperReady();
   if (!FAST){ psfx.start(); crowdPlay("roar", .5); }
-  say("Level on points. It goes to penalties.", null, "neutral", "PENS", 2400);
+  say(opts.game ? "It's a penalty shootout. A question for every kick." : "Level on points. It goes to penalties.", null, "neutral", "PENS", 2400);
   say("Five kicks each, sudden death if required.", null, "neutral", "PENS", 2400);
   say("The crowd are tense. It's all to play for.", null, "neutral", "PENS", 2400);
-  await pw(2700);
-  rnd = seeded(main() * 4294967296); const first = await coinToss(tied); order = tied.slice(first).concat(tied.slice(0, first));
+  await pw(2700); if (gone()) return null;
+  rnd = seeded(main() * 4294967296); const first = await coinToss(tied); if (gone()) return null; order = tied.slice(first).concat(tied.slice(0, first));
   say(`${order[0].name} won the ${tied.length === 2 ? "toss" : "draw"} and opts to shoot first.`, order[0].color, "info", "PENS", 2600);
   const qFor = r => pool[(r - 1) % pool.length];
   // carry on: a tap here, or on its own online (each phone keeps its own pace; only the answers have to match)
@@ -6189,6 +6233,7 @@ async function shootout(tied, opts = {}){
     rnd = seeded(main() * 4294967296);
     const opts2 = rnd() < .5 ? [q.a, q.b] : [q.b, q.a];
     const res = online ? await answersOnline(L, q, correct, opts2, tag, round) : await answersLocal(L, q, correct, opts2, tag);
+    if (gone()) return null;
     if (!res){ ov.classList.add("hidden"); return null; }
     ["soTaker","soQ","soPeriod","soReveal"].forEach(id => $(id).textContent = "");
     let k = 0;
@@ -6202,6 +6247,7 @@ async function shootout(tied, opts = {}){
       await say(pickOne(BUILD1(p.name)), p.color, "info", tag, 2000);
       await say(sk || pickOne(BUILD2(p.name)), p.color, "info", tag, 2000);
       await kickAnim(ok, { name: p.name, color: p.color, tag, celebrate, decisive: !!sk });
+      if (gone()) return null;
       s.kicks.push(ok); if (ok) s.goals++;
       if (round <= REG) checkRegular(); drawTally();
     }
@@ -6224,6 +6270,7 @@ async function shootout(tied, opts = {}){
       else if (round < REG) say(leaders.length === stillIn.length ? `All square going into round ${round + 1}.` : `${andList(leaders.map(p => p.name))} ${leaders.length > 1 ? "lead" : "leads"} going into round ${round + 1}.`, null, "neutral", tag, 2600);
       else if (round > REG) say(`Still nothing to separate them. On to round ${round + 1}.`, null, "neutral", "SD", 2600);
       await tap("Next round", 3200);
+      if (gone()) return null;
       if (online && !ONLINE){ ov.classList.add("hidden"); return null; }
     }
   }
@@ -6232,17 +6279,17 @@ async function shootout(tied, opts = {}){
   const score = tied.length === 2 ? ranked.map(p => st.get(p).goals).join("–") : ranked.map(p => `${p.name} ${st.get(p).goals}`).join(", ");
   drawTally();
   $("soTaker").innerHTML = `<span style="color:${winner.color}">${esc(winner.name)}</span> wins the shootout ${tied.length === 2 ? score : `(${score})`}!`;
-  $("soQ").textContent = "+1 point"; $("soPeriod").textContent = "";
+  $("soQ").textContent = opts.game ? "" : "+1 point"; $("soPeriod").textContent = "";
   clearComm(); comm(`${winner.name} wins the shootout ${tied.length === 2 ? score : `(${score})`}!`, winner.color, "win", "FT");
   if (!FAST){ psfx.fanfare(); crowdPlay("roar"); }
-  await pw(3200);
-  await tap("See the final scores", 5000);
+  await pw(3200); if (gone()) return null;
+  await tap("See the final scores", 5000); if (gone()) return null;
   stopKeeper(); cancelAnimationFrame(gloveRaf); toggleDrawer(false); clearComm(); ST = null;
   ov.classList.add("hidden");
-  return { winner, goals: new Map(tied.map(p => [p, st.get(p).goals])), score };
+  return { winner, goals: new Map(tied.map(p => [p, st.get(p).goals])), kicks: new Map(tied.map(p => [p, st.get(p).kicks.length])), score };
 }
 // stop it whenever the game is left part-way through
-function stop(){ ST = null; ANS = {}; spinStop(true); stopKeeper(); cancelAnimationFrame(gloveRaf); clearComm(); toggleDrawer(false); $("shootout").classList.add("hidden"); }
+function stop(){ RUN++; ST = null; ANS = {}; spinStop(true); stopKeeper(); cancelAnimationFrame(gloveRaf); clearComm(); toggleDrawer(false); $("shootout").classList.add("hidden"); }
 
 /* ---------- the admin account's practice screen: 2 to 4 players, any of them TenaBot, with auto-play ---------- */
 const T = { n: 2, names: ["Craig", "Aiden", "Phil", "Mum"], bots: [false, true, false, false] };
@@ -6263,6 +6310,7 @@ $("ptStart").onclick = async () => {
   if (r){ $("ptResult").textContent = `Last one: ${r.winner.name} won ${players.length === 2 ? r.score : `(${r.score})`}.`; }
   test();
 };
+$("soExit").onclick = () => $("exitBtn").onclick();   // a penalties game: leave it the same way as any game
 $("soGear").onclick = () => toggleDrawer(); $("soDone").onclick = () => toggleDrawer(false);
 $("soModeBtn").onclick = toggleGloves; $("soBlendBtn").onclick = toggleBlend; $("soCommBtn").onclick = toggleComm;
 $("soBallImg").setAttribute("href", PEN_BALL);
