@@ -441,6 +441,27 @@ await test("online: a draw goes to a penalty shootout that plays the same on eve
   await closeAll(craig, aiden);
 });
 
+await test("online: a Penalty shootout game plays the same shootout on every phone, and the goals are the score", async () => {
+  const craig = await open("Craig"); await guestTo(craig); await shown(craig, "setup");
+  await craig.click("#onlineBtn"); await shown(craig, "onlineGo");
+  await craig.click('#modePick button[data-v="pens"]');
+  assert(!(await visible(craig, "#roundsField")), "no rounds to pick for penalties");
+  if (!(await craig.inputValue("#onlineName"))) await craig.fill("#onlineName", "Craig");
+  await craig.click("#createBtn"); await shown(craig, "lobbyRoom");
+  const code = await craig.textContent("#lobbyCode");
+  const aiden = await open("Aiden"); await joinByLink(aiden, code, "Aiden");
+  await everyoneSees([craig, aiden], ["Craig", "Aiden"]);
+  assert((await aiden.textContent("#lobbySet")).includes("Penalty shootout"), "the lobby says it's penalties");
+  await craig.click("#lobbyStart");
+  for (const p of [craig, aiden]) await shown(p, "shootout");
+  for (const p of [craig, aiden]) await shown(p, "end", 60000);
+  const r = await Promise.all([craig, aiden].map(p => p.evaluate(() => ({ pens: G.pens, scores: G.players.map(x => x.score), label: document.getElementById("winnerLabel").textContent }))));
+  eq(r[0], r[1], "both phones agree on the shootout");
+  assert(r[0].pens.game && r[0].pens.winner && r[0].label.includes("wins the shootout"), JSON.stringify(r[0]));
+  eq(Math.max(...r[0].scores) > Math.min(...r[0].scores), true, "the winner scored more");
+  await closeAll(craig, aiden);
+});
+
 await test("online: only Craig's admin account has the penalty shootout practice link, and it plays one", async () => {
   const craig = await open("Craig"); await signUp(craig, "Craig", "craigwilson84@gmail.com");
   await craig.evaluate(() => drawAcct()); assert(await craig.evaluate(() => !!document.getElementById("acctPens")), "the link on Craig's account");

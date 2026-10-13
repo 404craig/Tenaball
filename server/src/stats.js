@@ -10,7 +10,7 @@ export const BLANK_STATS = { played: 0, multi: 0, wins: 0, streak: 0, best: 0, p
 export const STAT_KEYS = ["games", "people", "wins", "draws", "streak", "bestStreak", "bgames", "bwins", "points", "best", "boards", "done", "found", "others", "nobody",
   "right", "wrong", "passes", "timeouts", "yellow", "red", "bestRound", "bestRun", "claims", "slow", "unique", "fullClock", "mostClaims", "mostClock", "roundWins", "sweeps"];
 const MAX_KEYS = ["bestStreak", "best", "bestRound", "bestRun", "mostClaims", "mostClock"];
-export const STAT_FILTERS = ["all", "solo", "h2h", "online", "first", "clock", "bot"];
+export const STAT_FILTERS = ["all", "solo", "h2h", "online", "first", "clock", "bot", "pens"];
 const blankAgg = () => Object.fromEntries(STAT_KEYS.map(k => [k, 0]));
 
 // a game's record, checked: anything unexpected is dropped or clamped
@@ -26,7 +26,7 @@ export function cleanRec(r){
     o = o && typeof o === "object" ? o : {};
     return { name: String(o.name || "").replace(/\s+/g, " ").trim().slice(0, 20), uid: /^u:[a-f0-9]{24}$/.test(String(o.uid || "")) ? o.uid : null, bot: !!o.bot, score: n(o.score) };
   }).filter(o => o.name);
-  return { door: pick(r.door, ["solo", "h2h", "online"], "solo"), mode: pick(r.mode, ["turns", "first", "clock"], "turns"),
+  return { door: pick(r.door, ["solo", "h2h", "online"], "solo"), mode: pick(r.mode, ["turns", "first", "clock", "pens"], "turns"),
     bots: !!r.bots, people: n(r.people, 3), score: n(r.score), tenables: n(r.tenables, 7), result: pick(r.result, ["w", "l", "d", "s"], "s"),
     right: n(r.right), wrong: n(r.wrong), passes: n(r.passes), timeouts: n(r.timeouts), yellow: n(r.yellow), red: n(r.red),
     bestRun: n(r.bestRun, 70), claims: n(r.claims, 70), slow: n(r.slow), unique: n(r.unique, 70), roundWins: n(r.roundWins, 7), sweep: !!r.sweep, rounds, opp };
@@ -41,6 +41,7 @@ export function statBuckets(r){
   if (r.door === "online") b.push("online");
   if (r.mode === "first") b.push("first");
   if (r.mode === "clock") b.push("clock");
+  if (r.mode === "pens") b.push("pens"); // a penalty shootout game: right is goals, wrong is kicks missed
   return b;
 }
 

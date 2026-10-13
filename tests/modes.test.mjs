@@ -167,6 +167,34 @@ await test("Beat the clock never draws a letter board (everyone needs the same a
   await done(p);
 });
 
+await test("Penalty shootout: a whole game of penalties against TenaBot, or passing one phone round, with goals as the score", async () => {
+  for (const [door, n] of [["bot", 2], ["h2h", 3]]){
+    const p = await phone("pens-" + door, 0.0001);
+    await p.goto(site.url); await until(() => visible(p, "#setup"));
+    await p.click(`[data-door="${door}"]`);
+    if (door === "h2h"){
+      await p.click('#countSeg button[data-v="3"]');
+      eq(await p.$$eval("#modePick button", b => b.map(x => x.dataset.v)), ["turns", "pens"], "one phone passed round can take turns or play penalties");
+    }
+    await p.click('#modePick button[data-v="pens"]');
+    eq(await p.evaluate(() => ["roundsField","compField","diffField","rulesGrp"].map(id => document.getElementById(id).classList.contains("hidden"))), [true, true, true, true], "no boards, so no rounds, competitions, difficulty or house rules");
+    await p.click("#startBtn");
+    await until(() => visible(p, "#shootout"), { what: "the shootout" });
+    assert(await visible(p, "#soExit"), "a way out of the game");
+    await until(() => visible(p, "#end"), { what: "full time", timeout: 60000 });
+    const r = await p.evaluate(() => ({ n: G.players.length, mode: G.mode, game: G.pens.game, label: document.getElementById("winnerLabel").textContent,
+      ok: G.players.every(x => x.score === x.g.right && x.g.right + x.g.wrong >= 1), top: Math.max(...G.players.map(x => x.score)), winner: G.players.find(x => x.name === G.pens.winner).score,
+      msg: SHARE.text, stats: loadStats()[statKey("Player 1")] }));
+    eq([r.n, r.mode, r.game], [n, "pens", true]);
+    assert(r.ok, "each player's score is their goals (a shootout can be settled before five kicks each)");
+    eq(r.winner, r.top, "the winner scored the most");
+    assert(r.label.includes("wins the shootout"), r.label);
+    assert(r.msg.startsWith("🏆 *TENABALL | PENALTY SHOOTOUT*"), r.msg);
+    assert(r.stats && r.stats.x.b.pens && r.stats.x.b.pens.games === 1, "the game counts under the Penalty shootout filter");
+    await done(p);
+  }
+});
+
 await test("stats: filters by how you played, boards completed by competition, and a reset that asks first", async () => {
   const p = await phone("stats", 0.0001);
   await p.evaluate(() => {
