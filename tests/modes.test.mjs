@@ -39,11 +39,12 @@ await test("home: four doors, each opening its own settings, with Stats, Share a
   await p.click("#doorSet .backbtn"); await p.click('[data-door="bot"]');
   assert(await visible(p, "#modeField") && await visible(p, "#botField"), "TenaBot: the modes and its level");
   eq(await p.evaluate(() => [cfg.count, botSeats()]), [2, [false, true]]);
-  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "Fastest answer wins", "Beat the clock"]);
+  eq(await p.$$eval("#modePick button", b => b.map(x => x.childNodes[1].textContent)), ["Take turns", "Fastest answer wins", "Beat the clock", "Penalty shootout"]);
   await p.click('#modePick button[data-v="clock"]'); await p.click('#timeSeg button[data-v="120"]');
   assert(await visible(p, "#timeField") && !(await visible(p, "#clockField")) && !(await visible(p, "#repeatField")), "a time limit replaces the shot clock");
   await p.click("#doorSet .backbtn"); await p.click('[data-door="h2h"]');
-  assert(!(await visible(p, "#modeField")) && !(await visible(p, "#botField")), "pass and play takes turns, with no TenaBot");
+  assert(!(await visible(p, "#botField")), "pass and play has no TenaBot");
+  eq(await p.$$eval("#modePick button", b => b.map(x => [x.dataset.v, x.getAttribute("aria-pressed")])), [["turns", "true"], ["pens", "false"]], "pass and play takes turns (Beat the clock from TenaBot doesn't carry over) or plays penalties");
   eq(await p.$$eval("#clockSeg button:not(.hidden)", b => b.map(x => x.textContent)), ["30 sec", "60 sec", "90 sec"], "no Off with an opponent");
   eq(await p.evaluate(() => [cfg.clock, document.querySelector('#clockSeg [aria-pressed="true"]').dataset.v]), [30, "30"], "Off from Solo play becomes 30 seconds");
   await p.click('#countSeg button[data-v="3"]');
