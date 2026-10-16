@@ -1,0 +1,426 @@
+TENABALL: RULES, ALGORITHMS AND DATA
+====================================
+As of update 97 (16 October 2026). Figures are counted from the live game, not estimated.
+This is a summary: it says what the data is, where it came from and how much of it there is,
+not the data itself.
+
+
+1. WHAT THE GAME IS
+-------------------
+A Tenable-style football quiz. Each board asks for a top ten (or ten labelled answers). You name
+answers one at a time; the board's "tower" scans up from the bottom and stops on your answer if it
+is on the board.
+
+Everything runs from one file, index.html, hosted on GitHub Pages. Accounts, online games, stats
+and leagues use a small server (a Cloudflare Worker in server/).
+
+
+2. WAYS TO PLAY (THE FOUR DOORS)
+--------------------------------
+- Solo play: just you and the board. Always Take turns. The shot clock can be switched off.
+- H2H vs TenaBot: you against the computer. Any of the four game modes. TenaBot's level is
+  Easy, Medium or Hard.
+- Multiplayer local: 2 to 4 people passing one phone. Take turns or Penalty shootout.
+- Multiplayer online: 2 to 4 people, each on their own phone, joined by a 5-character code or
+  an invite link. Any of the four game modes. TenaBot never plays online.
+
+Settings on the home screen:
+- Rounds: 1, 3, 5 or 7 boards.
+- Competitions: any mix of the 12 (section 9).
+- Difficulty: Easy, Medium or Hard, or All levels (on by default).
+- Shot clock: 30, 60 or 90 seconds a turn (Off in Solo play only).
+- Time limit for the timed modes: 60, 90 or 120 seconds a round.
+- Duplicate answers: Fill every match, or Fill one only.
+
+Picking Penalty shootout hides rounds, competitions, difficulty and house rules, because there
+are no boards.
+
+
+3. TAKE TURNS (THE ORIGINAL MODE)
+---------------------------------
+- Each round is one board with 10 slots. Players take turns to lock in one answer.
+- The scan: the tower lights each slot from 10th up to 1st, slowing as it climbs. It starts at
+  95 ms a step and adds up to 20 ms more each step. It stops on the highest slot your answer
+  fills, or runs off the top if your answer isn't there.
+- Scoring: 1 point for every slot your answer fills. Filling the board's last empty slot is a
+  "Tenable!", worth a 2 point bonus.
+- Duplicate answers:
+  - Fill every match: one guess fills every slot it matches, with a point each.
+  - Fill one only: one guess fills one slot, and it must be named again for the next.
+- Lives: 3 per player per round. Each of these costs a life and shows a yellow card: a wrong
+  answer, a pass, or the shot clock running out. Losing the third life is a red card, and you're
+  out until the next round.
+- A round ends when the board is full or everyone is out. Points carry over between rounds; the
+  highest total at full time wins.
+- Who goes first: with 2 or more players, the order is shuffled once per game (a short animated
+  shuffle). Each later round starts one place further down.
+- Question changes: one "Different question" for every round in the game (5 in a 5-round game),
+  shared across the game and usable at any round's intro.
+- Ties at a board's cut-off: when players are level on the 10th-place figure, those slots share a
+  "pool". Any of the tied names fills the shared places. The question says how many are tied
+  (it never names them).
+
+
+4. FASTEST ANSWER WINS
+----------------------
+- One shared board. Everyone answers at once against the round's time limit.
+- The first right answer claims the slot in that player's colour.
+- 1 point a slot, plus a bonus point for whoever claims the most (shared when tied).
+- Wrong answers cost a life. A player who is out of lives stops answering.
+- Your own answer still climbs the board with the scan before it's revealed; others' answers
+  keep landing meanwhile.
+
+
+5. BEAT THE CLOCK
+-----------------
+- Every player has their own copy of the board and the same time.
+- Others' finds show on your board as name pills (with the stat), not the answer.
+- At time up the board becomes a results grid: 1 point per answer you found, 2 for an answer
+  nobody else found.
+- Wrong answers cost a life. Letter boards are never used in this mode.
+
+
+6. PENALTY SHOOTOUT (GAME MODE AND TIE-BREAK)
+---------------------------------------------
+Each kick is a two-option question: "Who has more...?" Right and you score; wrong and it's saved,
+missed or off the woodwork.
+
+The shootout follows the Laws of the Game:
+- A coin toss (or a draw with 3 or 4 players) decides who shoots first.
+- Five kicks each, taken in turn. It ends early as soon as a player can't be caught.
+- If still level after five each, sudden death: one kick each per round until a round ends with
+  someone ahead.
+- With 3 or 4 players, anyone who can no longer catch the leader drops out.
+- Everyone still in answers the same question each round. The easiest (most clear-cut) pairs are
+  used first: a shuffled pool sorted by "gap".
+
+The two uses:
+- As a game mode: the goals scored are each player's score, and the winner tops the table.
+- As a tie-break: when two or more players finish level on top at full time, a shootout settles
+  it and the winner gets 1 extra point.
+
+Online:
+- Every phone plays the identical shootout. The toss, the questions and where each kick goes come
+  from a seed every phone works out from the room code and game.
+- Each player answers on their own phone. There are 20 seconds to answer, then the kick is
+  missed. After 30 seconds the host can skip a quiet player.
+
+TenaBot in a shootout:
+- Hit rate = its level rate (0.40, 0.58 or 0.76) + 0.12 - 0.10 x (gap - 1), kept between 0.25
+  and 0.95. So it's better on clear-cut pairs.
+
+Animation (Craig's pixel art):
+- Keeper: 87 frames, including 10 frames for saves straight down the middle.
+- Coin: 9 frames. Ball spin: 10 frames.
+- 14 kick outcomes, including six woodwork spots: each corner of the bar, and the top and the
+  foot of each post.
+- Football Manager style commentary.
+- On a save, the keeper is timed to reach the ball when it has covered 90% of its flight.
+
+
+7. HOW QUESTIONS ARE PICKED
+---------------------------
+Competition for each round:
+- One of your ticked competitions, at random, never the same one twice in a row (unless only one
+  is ticked).
+
+Level:
+- Your chosen level. With All levels on, a random level for each board (a third each).
+
+Board within the competition and level:
+1. Try your level first. If there's nothing left there, try the levels either side, then any
+   level.
+2. Leave out boards played recently on this phone and boards already used in this game. If none
+   are left, the phone's "used" list for that group is reset.
+3. Variety: every board belongs to one of 14 "families" (tables, scorers, trophies, managers,
+   letters and so on). The phone remembers the last 12 families played. The pick favours a
+   family not played for at least 3 boards, or the one played least recently, then picks a
+   random board within it.
+4. Club record scorers boards are drawn fresh each time from 51 clubs in three tiers. The clubs
+   chosen travel in the board's id, so every phone rebuilds the same draw.
+
+Online:
+- Only the host picks. The chosen board's id travels to the other phones.
+
+
+8. TENABOT
+----------
+Plays on the phone only, never online.
+
+Base hit rate by level: Easy 0.40, Medium 0.58, Hard 0.76.
+
+On each turn:
+1. Chance of knowing an answer = base rate x (0.75 + 0.25 x share of slots still empty). It gets
+   harder as the board fills.
+2. If it knows one, it picks an empty slot weighted towards the top of the board (weight
+   1 / (1 + 0.18 x position)), since the top is better known.
+3. If it doesn't know one, it gives a near miss: a real name from another board in the same
+   competition and of the same type. So it gets carded too. If there's no near miss, it passes.
+
+Thinking time:
+- Take turns: 1.5 to 3.5 seconds, plus 0.5 seconds for each level below Hard.
+- Timed modes: a guess every 2.8 to 5.2 seconds by level, with a 30% chance of a near miss when
+  it doesn't know one.
+
+TenaBot keeps no stats. Games against it count in your win rate and in the vs TenaBot filter.
+
+
+9. THE QUESTION BANK (1,237 BOARDS)
+-----------------------------------
+By competition (easy / medium / hard):
+
+  Premier League          475   (83 / 206 / 186)
+  Scottish Premiership     99   (13 / 37 / 49)
+  Champions League         90   (10 / 59 / 21)
+  Internationals           81   (17 / 48 / 16)
+  La Liga                  79   (13 / 29 / 37)
+  Top 5 Leagues            78   (5 / 24 / 49)   includes the Ballon d'Or boards
+  Bundesliga               74   (6 / 27 / 41)
+  Serie A                  73   (6 / 27 / 40)
+  Ligue 1                  65   (5 / 20 / 40)
+  World Cup                48   (7 / 27 / 14)
+  Euros                    40   (5 / 25 / 10)
+  Europa League            35   (4 / 27 / 4)
+
+  All levels: 174 easy, 556 medium, 507 hard.
+
+By answer type:
+- player or manager: 703
+- club: 474
+- nation: 56
+- city: 4
+
+By family:
+
+  tables        331     scorers     250     letters      123     appearances   117
+  trophies      103     records      93     managers      51     transfers      47
+  lineups        39     awards       37     knockouts     26     assists         9
+  hosts           9     keepers       2
+
+Other counts:
+- Open boards (any name that fits counts): 124 (96 Premier League). These include:
+  - 22 surname-letter boards across every Premier League player (rare letters share a board:
+    I/Q/U and X/Y/Z);
+  - club letter boards;
+  - "played for both clubs" boards;
+  - list boards such as each big club's forwards, midfielders and defenders.
+- Boards with a tie at the cut-off (pooled slots): 310.
+
+Recognised names (so wrong answers get a card and suggestions work): 9,356 people in all. This
+includes all 5,082 Premier League players and 4,864 Europe people (every 2025/26 squad player in
+the top five leagues, plus everyone with 30+ league goals or 200+ league games since 2000/01).
+
+
+10. QUESTION RULES (CRAIG'S, ENFORCED)
+--------------------------------------
+- Every board has exactly 10 answers.
+- No single answer may fill 4 or more slots on a board. The board is moved to other years or
+  dropped.
+- Periods:
+  - Premier League player and goals data from 1992/93.
+  - Champions League from 1992/93.
+  - La Liga, Bundesliga, Serie A, Ligue 1 and the Scottish top flight from 2000/01.
+  - Europa League (UEFA Cup included) from 2000/01.
+  - World Cup and Euros player boards from the 1994 World Cup and Euro 96; nation boards cover
+    every tournament.
+  - Internationals: career boards are all time; "since 2000" boards from 1 January 2000.
+- Every board states its period on a date line.
+- Figures stop at the end of the last completed season (2025/26). Transfer fees run to the end of
+  the latest window. Internationals stop at the 2026 World Cup final, 19 July 2026.
+- Every board shows positions 1 to 10 down the left.
+- Only data checked against a source is used. If it can't be verified, the board isn't built.
+- A board's title, question and date line never name one of its answers. A test checks all
+  1,237 boards.
+- Every board's type must match its answers, checked by tests against the club, country and
+  player lists.
+
+
+11. THE DATA SETS BEHIND THE BOARDS
+-----------------------------------
+Premier League players (docs/data/pl_players/):
+- Every player, 1992/93 to 2025/26: 34 seasons, 18,652 player-club-season rows, 5,113 different
+  people (5,082 display names).
+- Columns: apps (starts + sub appearances), goals (own goals excluded), position, nationality.
+- Sources:
+  - StatMuse FC: apps, goals and own goals.
+  - 11v11.com: the independent second source for every row, and tie-breaker.
+  - Wikipedia season pages: third source.
+  - footballsquads.co.uk: positions and nationalities.
+- Checks:
+  - Every club-season reconciles: player goals + own goals by opponents = club goals (686 of
+    686, difference 0).
+  - 42 rows where sources still disagree are flagged with the figure used.
+  - Every other row is confirmed by at least two sources.
+
+Premier League results (docs/data/pl_results/):
+- Every match, 1992/93 to 2025/26: 13,166 matches.
+- Sources: football-data.co.uk, cross-checked against engsoccerdata. The two agree on every
+  match in the 31 seasons they share.
+- The build stops unless:
+  - every season has 462 or 380 matches;
+  - the table worked out from the results matches every club's points, allowing for the four
+    points deductions.
+- Used for the season and run records, and for the penalty questions on club points, wins and
+  seasons.
+
+Premier League season tables (PL and PL_PTS): 34 seasons of final tables with points after
+deductions.
+
+Premier League managers: 508 manager spells (docs/data/pl_managers.csv), used for the managers'
+records boards.
+
+Premier League records boards (scripts/build-pl-records.py):
+- Covers managers, scoring records, transfer fees, relegations, promotions, penalties, awards and
+  cups, hat-tricks, assists, keepers, cards, medals, crowds, shirt numbers, winners' squads and
+  derby scorers.
+- Some rows are held in the script; others are worked out from the data sets above.
+- Sources and corrections: docs/PL_RECORDS_SOURCES.md.
+
+Scottish top flight (docs/data/spfl/):
+- 312 club-season table rows (26 seasons, 2000/01 to 2025/26, worked out from every result).
+- 9,301 Transfermarkt player-season rows, cross-checked against 1,246 FitbaStats rows.
+- 164 derby records, plus lists and transfers.
+- Sources and decisions: SPFL_SOURCES.md.
+
+La Liga, Bundesliga, Serie A, Ligue 1 and Top 5 (docs/data/europe/):
+- One board file per pick, plus tables, players and notes, built by
+  scripts/build-europe-records.py.
+
+Champions League, Europa League, World Cup, Euros and Internationals (docs/data/cups/,
+docs/data/intl/):
+- 177 board files in all, each folder with NOTES files of sources and decisions.
+- Club names must be in a list of 329 known clubs, and nations in a list of 71; the build stops
+  on any it doesn't know.
+- Former countries: West Germany counts as Germany, the Soviet Union and CIS as Russia, and
+  Czechoslovakia as the Czech Republic, with the old name accepted too.
+- Copa America boards were dropped, because every recent ten-edition window gives Brazil four
+  places.
+
+Champions League, World Cup and Euros final line-ups:
+- The ten outfield starters of each Champions League finalist from 2017.
+- The last four World Cup and Euros finals.
+
+Ballon d'Or: most wins, winners by year, and the top ten of each vote from 2022.
+
+Penalty questions (docs/penalties/):
+- 614 raw pairs in 28 question types; 604 pairs kept.
+- A pair is dropped if it couldn't be checked or the two come out level.
+- Premier League figures (goals, appearances, goals per club for 10 clubs, club points, wins and
+  seasons) are worked out from the player and results data sets above. Scottish seasons come
+  from the season tables. Every other question uses values checked against two sources each
+  (verified.json, VERIFY_NOTES.md).
+- "gap" is how far apart the two sit in that question's ranking. By gap, the kept pairs are:
+  209 neighbours (gap 1, the closest calls), 195 at gap 2 and 200 at gap 3.
+- The 28 question types: Premier League goals, appearances, assists, clean sheets, club points,
+  club wins, club seasons, and goals for each of Man Utd, Liverpool, Arsenal, Everton, West Ham,
+  Aston Villa, Newcastle, Spurs, Man City and Chelsea; league titles across the top five leagues;
+  Champions League goals; top five league goals; La Liga, Ligue 1 and Scottish top flight
+  seasons; La Liga, Bundesliga, Serie A and Ligue 1 club wins; and World Cup final appearances.
+
+
+12. STATS
+---------
+Each finished game is folded into the player's stats by the same code on the phone and the
+server.
+
+Stats are kept:
+- On the account, for a signed-in player.
+- On the phone, for anyone else.
+- TenaBot keeps none.
+
+Top-level totals:
+- games played, games with an opponent, wins, win streak, best streak, points, best score,
+  full boards.
+
+Detail filters (from the October 2026 update):
+- All, Solo, vs TenaBot, Local, Online, Fastest answer wins, Beat the clock, Penalty shootout.
+- Each filter has: games, wins, draws, streaks, points, boards played and completed, slots you
+  found / others found / nobody found, right and wrong answers, passes, time-outs, cards, best
+  round, best run, claims, unique finds, completion by competition and accuracy by level.
+- In Penalty shootout games, goals count as right answers and misses as wrong.
+
+Win rate and streaks:
+- They count every game with an opponent (people or TenaBot), not games on your own.
+
+Head to head:
+- Your record against each person you've played (the 30 most recent kept).
+
+Form:
+- The last 10 results.
+
+
+13. LEAGUES
+-----------
+Joining and limits:
+- Signed-in players make a league (a name and a 6-character code) and invite with a link.
+- 50 members a league, 10 leagues a player.
+- There are no seasons; to get a fresh table, start a new league.
+
+What counts:
+- Every online game two or more members play together counts in every league they share, in any
+  mode. One-phone, solo and TenaBot games don't count.
+
+How the table works:
+- Each round is a head to head against every other member in that game: a win, a draw on the same
+  points, or a loss.
+- Ranking: the share of rounds won, with a draw counting as half. Ties are split by games won,
+  then rounds won.
+- The Games filter ranks on games won.
+- 5 head to heads are needed to be ranked, unless nobody has 5 yet.
+- At full time each phone shows a line such as "Craig up to 1st, Phil down to 2nd".
+
+
+14. BANTER AT FULL TIME
+-----------------------
+Every game ends with a sarcastic line, picked from 15 lists (140 lines in all). The rules work on
+shares of the game's slots (rounds x 10).
+
+Solo:
+- Goes by your share: 0, poor, mid, good, great or perfect.
+
+Multiplayer takes the first rule that fits, in this order:
+1. everyone on 0
+2. a tie for first
+3. a table that found hardly anything
+4. a chasm between first and last
+5. a runaway winner
+6. last place on 0
+7. a close finish
+8. otherwise, the winner's own score
+
+The pick is seeded from the result, so every phone in an online game shows the same line, and a
+phone skips lines it showed recently.
+
+
+15. ONLINE PLAY
+---------------
+- The server's room keeps a numbered log of moves. Every phone replays the log through the same
+  game rules, so the boards match.
+- Only the host sends round, reveal, question change, next round, skip, time up and penalty skip.
+- Players send guesses, passes, time-outs and penalty answers.
+- Anything random (question picks, the order of play, the penalty seed) is decided once and sent,
+  or worked out from the room code, so phones never drift apart.
+- A player who reloads catches up by replaying the log quickly and quietly.
+
+
+16. LOOK, SOUND AND ASSETS
+--------------------------
+Each competition has:
+- its own colour theme;
+- a faint watermark: 13 in all, one per competition plus the Ballon d'Or.
+
+Badges and flags:
+- 325 club crests embedded (327 names, since some answer to two names). All are re-sized so they
+  look the same size.
+- 69 circle flags; former countries get simple drawn flags.
+- The full badge library (1,538 crests) is kept in assets/badges/.
+
+Sound:
+- The game's chimes, ticks and whistles are synthesised.
+- Craig's recorded crowd plays underneath, in six kinds: cheer, big cheer, groan, boos, roar and
+  applause. Each has its own level so the crowd sits under the chimes.
+- Whistles: one blast for every card and for time up; three blasts only at full time.
+
+Phones:
+- The page never zooms and stays at full screen width.
+- An iPhone Home Screen app reloads itself onto a newer version when there is one (version.txt).
