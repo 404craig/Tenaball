@@ -4,6 +4,7 @@ import { DurableObject } from "cloudflare:workers";
 import { ADMIN_PAGE } from "./admin.js";
 import { BLANK_STATS, bumpStats, mergeStats, upgradeStats } from "./stats.js";
 import { cleanLeagueGame, leagueTable, leagueMoves } from "./leagues.js";
+import { D2T_MODES, GUEST_ROWS, TABS, BOARDS, MAX_RESULTS, cleanResult, resultKeys, aggregate, onTable, rankKeys, rank, placeOf, slice, trophy, ukDay, weekStart } from "./d2t.js";
 
 const MAX_PLAYERS = 4;
 // the host's ticked competitions: short lowercase keys only, at most 16, no repeats (the game ignores ones it doesn't know)
@@ -103,7 +104,7 @@ export default {
       // accounts, stats and the admin tools
       if (req.method !== "POST") return withCors(fail(405, "Use POST."));
       const body = await req.text();
-      if (body.length > 20000) return withCors(fail(413, "Too much data."));
+      if (body.length > (url.pathname === "/api/d2t/merge" ? 120000 : 20000)) return withCors(fail(413, "Too much data."));
       const token = (req.headers.get("Authorization") || "").replace(/^Bearer /, "");
       return withCors(await accounts(env).fetch("https://accounts" + url.pathname.slice(4), { method: "POST", body, headers: { "x-ip": ip, "x-token": token } }));
     } catch (e){
@@ -128,6 +129,14 @@ export class Accounts extends DurableObject {
     this.sql.exec(`CREATE TABLE IF NOT EXISTS leagues (id TEXT PRIMARY KEY, code TEXT UNIQUE NOT NULL, name TEXT NOT NULL, admin TEXT NOT NULL, created INTEGER NOT NULL)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS league_members (lid TEXT NOT NULL, uid TEXT NOT NULL, joined INTEGER NOT NULL, PRIMARY KEY (lid, uid))`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS league_games (lid TEXT NOT NULL, gkey TEXT NOT NULL, at INTEGER NOT NULL, data TEXT NOT NULL, PRIMARY KEY (lid, gkey))`);
+    // DROP2TOP's leaderboards (October 2026; src/d2t.js): every finished game by its run id, and one aggregate per player
+    // per game with three sort keys (k1, k2, k3, bigger first) so a table or a position is one ordered query; n is 1 for a
+    // player with something to rank. day is the UK date a result belongs to (a Daily's own date; '-' for carried totals)
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_results (uid TEXT NOT NULL, mode TEXT NOT NULL, rid TEXT NOT NULL, day TEXT NOT NULL, at INTEGER NOT NULL, win INTEGER NOT NULL, val INTEGER NOT NULL, data TEXT NOT NULL, PRIMARY KEY (uid, mode, rid))`);
+    this.sql.exec(`CREATE INDEX IF NOT EXISTS d2t_results_day ON d2t_results (mode, day, at)`);
+    this.sql.exec(`CREATE INDEX IF NOT EXISTS d2t_results_win ON d2t_results (mode, win, val, at)`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_players (uid TEXT NOT NULL, mode TEXT NOT NULL, name TEXT NOT NULL, agg TEXT NOT NULL, k1 REAL NOT NULL, k2 REAL NOT NULL, k3 REAL NOT NULL, n INTEGER NOT NULL, updated INTEGER NOT NULL, PRIMARY KEY (uid, mode))`);
+    this.sql.exec(`CREATE INDEX IF NOT EXISTS d2t_players_rank ON d2t_players (mode, n, k1, k2, k3, uid)`);
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
   userOut(u){ return { id: u.id, name: u.name, email: u.email }; }
@@ -200,8 +209,9 @@ export class Accounts extends DurableObject {
       return json({ token: await this.newSession(u.id), user: this.userOut(u), stats: this.statsOf(u) });
     }
 
-    // everything below needs a signed-in player (or, for /admin/*, the admin password)
+    // everything below needs a signed-in player (or, for /admin/*, the admin password; DROP2TOP's tables can be read signed out)
     if (path.startsWith("/admin/")) return this.admin(path, b, ip);
+    if (path.startsWith("/d2t/")) return this.d2t(path, b, token, ip);
     const u = await this.userFromToken(token);
     if (!u) return fail(401, "You're signed out. Sign in again.");
 
@@ -357,6 +367,104 @@ export class Accounts extends DurableObject {
     if (!left.some(m => m.uid === l.admin)) this.sql.exec("UPDATE leagues SET admin = ? WHERE id = ?", left[0].uid, lid);
   }
 
+  /* ---------- DROP2TOP's leaderboards (October 2026; src/d2t.js) ----------
+     /d2t/result records one finished game, /d2t/merge the results a phone already held (both by run id, so a repeat never
+     counts twice), /d2t/board reads one table (a game and a tab) and /d2t/me the player's position on every game's table.
+     The tables can be read signed out: a guest sends their phone's results and is told where they would sit. */
+  async d2t(path, b, token, ip){
+    const now = Date.now(), today = ukDay(now), u = await this.userFromToken(token);
+    // who the results belong to: the account, or (with GUEST_ROWS on) the random id a phone keeps, under an automatic name
+    let who = u ? { uid: u.id, name: u.name } : null;
+    if (!who && GUEST_ROWS && /^[a-f0-9]{24,64}$/.test(String(b.guest || ""))) who = { uid: "g:" + b.guest, name: "Player " + String(b.guest).slice(0, 4) };
+    const mode = D2T_MODES.includes(b.game) ? b.game : null, tab = mode && TABS[mode].includes(b.tab) ? b.tab : "all";
+    const parse = row => { try { return JSON.parse(row.data); } catch(e){ return null; } };
+    const named = rows => rows.map(r => ({ uid: r.uid, name: r.name, r: parse(r) })).filter(x => x.r);
+    const NAMED = "SELECT r.uid, r.data, COALESCE(u.name, p.name) AS name FROM d2t_results r LEFT JOIN users u ON u.id = r.uid LEFT JOIN d2t_players p ON p.uid = r.uid AND p.mode = r.mode";
+    // a player's results for a game, folded into their aggregate and stored with its sort keys
+    const refresh = (uid, name, m) => {
+      const list = this.sql.exec("SELECT data FROM d2t_results WHERE uid = ? AND mode = ? ORDER BY at", uid, m).toArray().map(parse).filter(Boolean);
+      const agg = aggregate(m, list), k = rankKeys(m, agg);
+      this.sql.exec("INSERT OR REPLACE INTO d2t_players (uid, mode, name, agg, k1, k2, k3, n, updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", uid, m, name, JSON.stringify(agg), k[0], k[1], k[2], onTable(m, agg) ? 1 : 0, now);
+      return agg;
+    };
+    // how many rank above these keys on a game's all-time table (ties by id, as rank() breaks them)
+    const above = (m, k, uid) => this.one("SELECT COUNT(*) AS c FROM d2t_players WHERE mode = ? AND n = 1 AND (k1 > ? OR (k1 = ? AND k2 > ?) OR (k1 = ? AND k2 = ? AND k3 > ?) OR (k1 = ? AND k2 = ? AND k3 = ? AND uid < ?))", m, k[0], k[0], k[1], k[0], k[1], k[2], k[0], k[1], k[2], uid).c;
+    const countOf = m => this.one("SELECT COUNT(*) AS c FROM d2t_players WHERE mode = ? AND n = 1", m).c;
+    const playersOf = (m, limit, offset = 0) => this.sql.exec("SELECT p.uid, p.agg, COALESCE(u.name, p.name) AS name FROM d2t_players p LEFT JOIN users u ON u.id = p.uid WHERE p.mode = ? AND p.n = 1 ORDER BY p.k1 DESC, p.k2 DESC, p.k3 DESC, p.uid LIMIT ? OFFSET ?", m, limit, offset).toArray()
+      .map(p => ({ uid: p.uid, name: p.name, agg: JSON.parse(p.agg) }));
+    const mine = m => { const p = who && this.one("SELECT agg, n FROM d2t_players WHERE uid = ? AND mode = ?", who.uid, m); return p && p.n ? JSON.parse(p.agg) : null; };
+    // the results a guest's phone holds, checked and folded like a player's but never stored
+    const guestAgg = (m, from) => { const list = (Array.isArray(b.mine) ? b.mine : []).slice(0, 500).map(r => cleanResult(m, r, now)).filter(r => r && (!from || (!r.carry && resultKeys(m, r, now).day >= from))); return aggregate(m, list); };
+
+    if (path === "/d2t/board"){
+      if (!mode) return fail(400, "Which table?");
+      const spec = BOARDS[mode][tab], out = { game: mode, tab, cols: spec.cols, sort: spec.sort, signedIn: !!u, name: who ? who.name : null };
+      const extra = {};
+      if (tab === "all"){
+        // the all-time table straight from the stored keys: the top ten, then the rows around the player
+        const count = countOf(mode), top = playersOf(mode, 10), rows = top.map((p, i) => ({ pos: i + 1, name: p.name, v: spec.vals(p.agg), me: !!who && p.uid === who.uid }));
+        let me = rows.find(r => r.me) || null;
+        const my = mine(mode);
+        if (who && my && !me){
+          const pos = 1 + above(mode, rankKeys(mode, my), who.uid);
+          const from = Math.max(10, pos - 3), near = playersOf(mode, 5, from);
+          if (from > 10) rows.push({ gap: true });
+          near.forEach((p, i) => { const r = { pos: from + i + 1, name: p.name, v: spec.vals(p.agg), me: p.uid === who.uid }; rows.push(r); if (r.me) me = r; });
+          if (from + near.length < count) rows.push({ gap: true });
+        } else if (count > 10) rows.push({ gap: true });
+        Object.assign(out, { count, rows, me });
+        if (!who){ const g = guestAgg(mode), k = rankKeys(mode, g); out.you = onTable(mode, g) ? { pos: 1 + above(mode, k, ""), v: spec.vals(g) } : null; }
+        // the record and its holder
+        if (mode === "classic") extra.hardest = named(this.sql.exec(NAMED + " WHERE r.mode = 'classic' AND r.win = 1 ORDER BY r.val ASC, r.at ASC LIMIT 1").toArray())[0] || null;
+        if (mode === "ub") extra.longest = named(this.sql.exec(NAMED + " WHERE r.mode = 'ub' ORDER BY r.val DESC, r.at ASC LIMIT 1").toArray())[0] || null;
+        out.trophy = trophy(mode, tab, mode === "clubx" ? rank(mode, tab, playersOf(mode, 100000)) : top, extra);
+      } else {
+        // today, this week (from Monday) or the best season: the period's results folded per player, ranked here
+        const from = tab === "today" ? today : tab === "week" ? weekStart(today) : null;
+        const byUid = {};
+        if (from){
+          for (const x of named(this.sql.exec(NAMED + " WHERE r.mode = ? AND r.day >= ? ORDER BY r.at", mode, from).toArray()))
+            (byUid[x.uid] = byUid[x.uid] || { uid: x.uid, name: x.name, list: [] }).list.push(x.r);
+        }
+        const players = from ? Object.values(byUid).map(p => ({ uid: p.uid, name: p.name, agg: aggregate(mode, p.list) })) : playersOf(mode, 100000);
+        const ranked = rank(mode, tab, players), sl = slice(mode, tab, ranked, who ? who.uid : "");
+        Object.assign(out, sl);
+        if (!who){ const g = guestAgg(mode, from); const pos = placeOf(mode, tab, ranked, g); out.you = pos ? { pos, v: spec.vals(g) } : null; }
+        if (from && (mode === "daily" || mode === "goal")) extra.first = named(this.sql.exec(NAMED + " WHERE r.mode = ? AND r.day >= ? AND r.win = 1 ORDER BY r.at ASC LIMIT 1", mode, from).toArray())[0] || null;
+        if (from && mode === "ub") extra.longest = named(this.sql.exec(NAMED + " WHERE r.mode = 'ub' AND r.day >= ? ORDER BY r.val DESC, r.at ASC LIMIT 1", from).toArray())[0] || null;
+        out.trophy = trophy(mode, tab, ranked, extra);
+      }
+      return json(out, 200, { "cache-control": "no-store" });
+    }
+    if (path === "/d2t/me"){ // the player's position on every game's all-time table (the home page's shields)
+      if (!who) return json({ signedIn: false, games: {} }, 200, { "cache-control": "no-store" });
+      const games = {};
+      for (const m of D2T_MODES){ const a = mine(m); games[m] = a ? { pos: 1 + above(m, rankKeys(m, a), who.uid), count: countOf(m) } : null; }
+      return json({ signedIn: !!u, name: who.name, games }, 200, { "cache-control": "no-store" });
+    }
+    if (!who) return fail(401, "Sign in to get on the tables.");
+    if (path === "/d2t/result" || path === "/d2t/merge"){
+      const list = path === "/d2t/merge" ? (Array.isArray(b.results) ? b.results : []).slice(0, 500) : [{ game: b.game, rec: b.rec }];
+      if (this.limited("d2t:" + who.uid, 2000, 3600000, list.length)) return fail(429, "That's a lot of results in an hour. Try again later.");
+      let added = 0, refused = 0; const touched = new Set();
+      for (const x of list){
+        const m = x && D2T_MODES.includes(x.game) ? x.game : null, r = m && cleanResult(m, x.rec, now);
+        if (!r){ refused++; continue; }
+        if (this.one("SELECT COUNT(*) AS c FROM d2t_results WHERE uid = ? AND mode = ?", who.uid, m).c >= MAX_RESULTS){ refused++; continue; }
+        const k = resultKeys(m, r, now);
+        const w = this.sql.exec("INSERT OR IGNORE INTO d2t_results (uid, mode, rid, day, at, win, val, data) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", who.uid, m, r.rid, r.carry ? "-" : k.day, r.at, k.win, k.val, JSON.stringify(r));
+        if (w.rowsWritten){ added++; touched.add(m); }
+      }
+      if (path === "/d2t/result" && !added && refused) return fail(400, "That result doesn't look right.");
+      const games = {};
+      for (const m of touched) games[m] = refresh(who.uid, who.name, m);
+      if (path === "/d2t/result" && !added && mode) games[mode] = mine(mode);
+      const pos = {}; for (const m of Object.keys(games)) if (games[m]) pos[m] = onTable(m, games[m]) ? { pos: 1 + above(m, rankKeys(m, games[m]), who.uid), count: countOf(m) } : null;
+      return json({ added, refused, games, pos });
+    }
+    return fail(404, "Not found");
+  }
+
   // the admin page: find players, set a new PIN, unlock or delete an account
   async admin(path, b, ip){
     if (!this.env.ADMIN_PASSWORD) return fail(503, "The admin page isn't set up yet (ADMIN_PASSWORD is missing).");
@@ -382,6 +490,7 @@ export class Accounts extends DurableObject {
     if (path === "/admin/delete"){ this.sql.exec("DELETE FROM sessions WHERE uid = ?", u.id); this.sql.exec("DELETE FROM played WHERE uid = ? OR other = ?", u.id, u.id);
       const lids = this.sql.exec("SELECT lid FROM league_members WHERE uid = ?", u.id).toArray().map(r => r.lid);
       this.sql.exec("DELETE FROM league_members WHERE uid = ?", u.id); lids.forEach(lid => this.tidyLeague(lid));
+      this.sql.exec("DELETE FROM d2t_results WHERE uid = ?", u.id); this.sql.exec("DELETE FROM d2t_players WHERE uid = ?", u.id);
       this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
     return fail(404, "Not found");
   }
