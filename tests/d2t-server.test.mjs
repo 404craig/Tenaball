@@ -1,7 +1,7 @@
 // DROP2TOP's leaderboard routes on the real server code, run locally with an empty database: results by run id (a repeat
 // never counts twice), a phone's old records merged once, the tables with the rows round the player, a guest told where
 // they would sit, and the home page's positions.
-import { startServer } from "./lib.mjs";
+import { startServer, TEST_SECRETS } from "./lib.mjs";
 import { test, assert, eq, report } from "./harness.mjs";
 
 const ORIGIN = "http://127.0.0.1:5199";
@@ -82,6 +82,17 @@ await test("d2t server: a long table sends the top ten and the rows round the pl
   eq(b.count, 15); eq(b.me.pos, 15);
   eq(b.rows.map(r => r.gap ? "…" : r.pos), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "…", 13, 14, 15]);
   eq((await api("/d2t/board", { game: "ub", tab: "all" }, { token: toks[2] })).body.rows.length, 11, "in the top ten: the ten and a gap");
+});
+await test("d2t server: the admin page counts accounts, who has used DROP2TOP and the automatic sign-ins, names only", async () => {
+  eq((await api("/d2t/adopted", {})).status, 401, "an automatic sign-in needs the token it adopted");
+  const kim = await signup("KimW", "kim@example.com");
+  eq((await api("/d2t/adopted", {}, { token: kim })).status, 200);
+  await api("/d2t/me", {}, { token: kim });
+  const d = (await api("/admin/d2t", { password: TEST_SECRETS.ADMIN_PASSWORD }, { ip: "10.7.7.7" })).body;
+  eq([d.adopted, d.adoptedPlayers], [1, 1]);
+  assert(d.accounts >= 4 && d.d2t.some(p => p.name === "KimW") && d.d2t.some(p => p.name === "toffee_tom"), "accounts and DROP2TOP players: " + JSON.stringify(d));
+  assert(!JSON.stringify(d).includes("@"), "no emails on the DROP2TOP view");
+  eq((await api("/admin/d2t", { password: "wrong-password" }, { ip: "10.7.7.8" })).status, 401);
 });
 await srv.stop();
 report();

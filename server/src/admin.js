@@ -19,6 +19,7 @@ button{border:0;border-radius:999px;padding:11px 18px;font-weight:700;background
 <section id="tools" class="hidden">
   <div class="row"><input id="q" placeholder="Search by email or name" aria-label="Search"><button id="find">Find</button></div>
   <div class="msg" id="msg" aria-live="polite"></div>
+  <div class="card" id="d2t"><b>DROP2TOP</b><small id="d2tSum">Loading…</small><div id="d2tNames"></div></div>
   <div id="list"></div>
 </section>
 <div class="msg" id="lmsg" aria-live="polite"></div>
@@ -32,7 +33,7 @@ async function call(path, body){
   const d = await r.json().catch(() => ({})); if (!r.ok) throw new Error(d.error || "Something went wrong."); return d;
 }
 $("login").onsubmit = async e => { e.preventDefault(); pw = $("pw").value;
-  try { await call("find", { q: "" }); $("login").classList.add("hidden"); $("tools").classList.remove("hidden"); say("lmsg", ""); find(); }
+  try { await call("find", { q: "" }); $("login").classList.add("hidden"); $("tools").classList.remove("hidden"); say("lmsg", ""); find(); d2t(); }
   catch(err){ say("lmsg", err.message); } };
 async function find(){
   try { const { users } = await call("find", { q: $("q").value });
@@ -48,6 +49,13 @@ async function find(){
         try { await call("delete", { id: u.id }); say("msg", u.name + "'s account has been deleted.", true); find(); } catch(err){ say("msg", err.message); } };
       $("list").appendChild(c); });
   } catch(err){ say("msg", err.message); }
+}
+// DROP2TOP: accounts, who has used it signed in, and the automatic sign-ins from a Tenaball sign-in on the phone
+async function d2t(){
+  try { const d = await call("d2t", {});
+    $("d2tSum").textContent = d.accounts + " accounts \u00b7 " + d.d2t.length + " have used DROP2TOP signed in \u00b7 " + d.adopted + " automatic sign-ins (" + d.adoptedPlayers + " players)";
+    $("d2tNames").innerHTML = d.d2t.length ? "<p>" + d.d2t.map(p => esc(p.name)).join(", ") + "</p>" : "";
+  } catch(err){ $("d2tSum").textContent = err.message; }
 }
 $("find").onclick = find; $("q").addEventListener("keydown", e => { if (e.key === "Enter") find(); });
 </script></body></html>`;
