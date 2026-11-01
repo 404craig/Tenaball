@@ -104,7 +104,7 @@ export default {
       // accounts, stats and the admin tools
       if (req.method !== "POST") return withCors(fail(405, "Use POST."));
       const body = await req.text();
-      if (body.length > (url.pathname === "/api/d2t/merge" ? 120000 : 20000)) return withCors(fail(413, "Too much data."));
+      if (body.length > (url.pathname === "/api/d2t/backup" ? 1600000 : url.pathname === "/api/d2t/merge" ? 120000 : 20000)) return withCors(fail(413, "Too much data."));
       const token = (req.headers.get("Authorization") || "").replace(/^Bearer /, "");
       return withCors(await accounts(env).fetch("https://accounts" + url.pathname.slice(4), { method: "POST", body, headers: { "x-ip": ip, "x-token": token } }));
     } catch (e){
@@ -141,6 +141,10 @@ export class Accounts extends DurableObject {
     // Tenaball sign-in already on the phone (the shared sign-in); names only reach the admin page
     this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_seen (uid TEXT PRIMARY KEY, first INTEGER NOT NULL, last INTEGER NOT NULL)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_adopt (uid TEXT NOT NULL, at INTEGER NOT NULL)`);
+    // DROP2TOP's backup (Craig, 1 Nov: Aiden's records went with Safari's clear-out): each account's saved game, one row
+    // with a version so two phones never write over each other, and the last few versions kept as a safety net
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_backup (uid TEXT PRIMARY KEY, v INTEGER NOT NULL, at INTEGER NOT NULL, data TEXT NOT NULL)`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_backup_old (uid TEXT NOT NULL, v INTEGER NOT NULL, at INTEGER NOT NULL, data TEXT NOT NULL, PRIMARY KEY (uid, v))`);
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
   userOut(u){ return { id: u.id, name: u.name, email: u.email }; }
@@ -451,6 +455,25 @@ export class Accounts extends DurableObject {
       for (const m of D2T_MODES){ const a = mine(m); games[m] = a ? { pos: 1 + above(m, rankKeys(m, a), who.uid), count: countOf(m) } : null; }
       return json({ signedIn: !!u, name: who.name, games }, 200, { "cache-control": "no-store" });
     }
+    if (path === "/d2t/backup"){ // the account's saved game: get it, or put a newer one (base: the version it was built on)
+      if (!u) return fail(401, "You're signed out. Sign in again.");
+      const cur = this.one("SELECT v, at, data FROM d2t_backup WHERE uid = ?", u.id);
+      const out = c => ({ v: c ? c.v : 0, at: c ? c.at : 0, data: c ? parse(c) : null });
+      if (b.op === "put"){
+        if (!b.data || typeof b.data !== "object" || Array.isArray(b.data)) return fail(400, "That backup doesn't look right.");
+        if (this.limited("d2tb:" + u.id, 600, 3600000, 1)) return fail(429, "That's a lot of backups in an hour. Try again later.");
+        if (Number(b.base) !== (cur ? cur.v : 0)) return json({ conflict: true, ...out(cur) }, 409);
+        const data = JSON.stringify(b.data), v = (cur ? cur.v : 0) + 1;
+        if (data.length > 1500000) return fail(413, "Too much data.");
+        if (cur){ this.sql.exec("INSERT OR REPLACE INTO d2t_backup_old (uid, v, at, data) VALUES (?, ?, ?, ?)", u.id, cur.v, cur.at, cur.data); this.sql.exec("DELETE FROM d2t_backup_old WHERE uid = ? AND v <= ?", u.id, v - 6); }
+        this.sql.exec("INSERT OR REPLACE INTO d2t_backup (uid, v, at, data) VALUES (?, ?, ?, ?)", u.id, v, now, data);
+        return json({ v, at: now }, 200, { "cache-control": "no-store" });
+      }
+      const res = out(cur);
+      // a phone with nothing gets the account's results on the tables too, to rebuild what it can from them
+      if (b.results) res.results = this.sql.exec("SELECT mode, data FROM d2t_results WHERE uid = ? ORDER BY at", u.id).toArray().map(r => ({ game: r.mode, rec: parse(r) })).filter(x => x.rec);
+      return json(res, 200, { "cache-control": "no-store" });
+    }
     if (!who) return fail(401, "Sign in to get on the tables.");
     if (path === "/d2t/result" || path === "/d2t/merge"){
       const list = path === "/d2t/merge" ? (Array.isArray(b.results) ? b.results : []).slice(0, 500) : [{ game: b.game, rec: b.rec }];
@@ -508,6 +531,7 @@ export class Accounts extends DurableObject {
       const lids = this.sql.exec("SELECT lid FROM league_members WHERE uid = ?", u.id).toArray().map(r => r.lid);
       this.sql.exec("DELETE FROM league_members WHERE uid = ?", u.id); lids.forEach(lid => this.tidyLeague(lid));
       this.sql.exec("DELETE FROM d2t_results WHERE uid = ?", u.id); this.sql.exec("DELETE FROM d2t_players WHERE uid = ?", u.id);
+      this.sql.exec("DELETE FROM d2t_backup WHERE uid = ?", u.id); this.sql.exec("DELETE FROM d2t_backup_old WHERE uid = ?", u.id);
       this.sql.exec("DELETE FROM users WHERE id = ?", u.id); return json({ ok: true }); }
     return fail(404, "Not found");
   }

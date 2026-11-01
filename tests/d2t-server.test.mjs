@@ -94,5 +94,20 @@ await test("d2t server: the admin page counts accounts, who has used DROP2TOP an
   assert(!JSON.stringify(d).includes("@"), "no emails on the DROP2TOP view");
   eq((await api("/admin/d2t", { password: "wrong-password" }, { ip: "10.7.7.8" })).status, 401);
 });
+await test("d2t server: the backup: signed in only, versioned so two phones never write over each other, results for a phone with nothing", async () => {
+  eq((await api("/d2t/backup", {})).status, 401, "signed out");
+  const none = (await api("/d2t/backup", { results: true }, { token: tom })).body;
+  eq([none.v, none.data], [0, null], "nothing backed up yet");
+  assert(none.results.length >= 3 && none.results.every(x => x.game && x.rec && x.rec.rid), "the account's results come with it");
+  const p1 = await api("/d2t/backup", { op: "put", base: 0, data: { record: { runs: [{ key: "a" }] } } }, { token: tom });
+  eq([p1.status, p1.body.v], [200, 1]);
+  const stale = await api("/d2t/backup", { op: "put", base: 0, data: { record: { runs: [] } } }, { token: tom });
+  eq([stale.status, stale.body.conflict, stale.body.v, stale.body.data.record.runs.length], [409, true, 1, 1], "a phone behind is told, with the newer copy");
+  eq((await api("/d2t/backup", { op: "put", base: 1, data: [] }, { token: tom })).status, 400, "not an object");
+  eq((await api("/d2t/backup", { op: "put", base: 1, data: { record: { runs: [{ key: "a" }, { key: "b" }] } } }, { token: tom })).body.v, 2);
+  const got = (await api("/d2t/backup", {}, { token: tom })).body;
+  eq([got.v, got.data.record.runs.length, got.results], [2, 2, undefined]);
+  eq((await api("/d2t/backup", {}, { token: lauren })).body.data, null, "each account its own");
+});
 await srv.stop();
 report();
