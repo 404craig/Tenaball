@@ -1264,6 +1264,7 @@ input[type=email]::placeholder,input[type=password]::placeholder{color:var(--mut
   </nav>
   <template id="updatesText">
     <p>Newest first. Each number is the update that went live.</p>
+    <div class="upd"><h4>1 November 2026</h4><p><b>100</b>One sign-in with DROP2TOP: sign in to DROP2TOP in the same browser and Tenaball is signed in too. Signing out of one game keeps you signed in to the other.</p></div>
     <div class="upd"><h4>14 October 2026</h4><p><b>97</b>The game no longer zooms in when you type an answer: the page stays at full width, and if your phone zooms anyway it snaps back. The answer box no longer offers to AutoFill your contact details.</p></div>
     <div class="upd"><h4>13 October 2026</h4><p><b>96</b>A new game mode, Penalty shootout: no boards, just penalties, with a question for every kick. Five kicks each, then sudden death. Pick it under Game mode in H2H vs TenaBot, Multiplayer local and Multiplayer online. Your stats have a Penalty shootout filter too.</p></div>
     <div class="upd"><h4>12 October 2026</h4><p><b>95</b>No question gives away an answer before the round any more: 41 boards named players, clubs or nations that were on the board (for example Pogba on Club record signings, or the two players sharing 10th). And a stat too long to fit beside its answer now drops onto its own line under it, with the row growing to fit.</p></div>
@@ -5096,7 +5097,9 @@ function drawAcct(){
       <button type="button" class="btn" id="acctIn">Sign in</button><button type="button" class="btn ghost" id="acctUp" style="margin-top:10px">Create an account</button>`;
   const on = (id, f) => { const el = $(id); if (el) el.onclick = f; };
   const msg = (m, ok) => { const el = $("acctMsg"); if (el){ el.textContent = m || ""; el.classList.toggle("ok", !!ok); } };
-  on("acctOut", async () => { await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; LG.list = null; LG.cur = null; LG.data = null; drawAcct(); showLogin(); });
+  // signing out here signs out of Tenaball only: a session DROP2TOP holds too (the shared sign-in, 1 Nov) is not ended on the server
+  const d2tToken = () => { try { const st = JSON.parse(lsGet("d2t-v2") || "null"); return st && st.account && st.account.token || null; } catch(e){ return null; } };
+  on("acctOut", async () => { if (lsGet(TOKEN_KEY) !== d2tToken()) await api("/signout"); lsDel(TOKEN_KEY); lsDel(USER_KEY); NET.user = null; NET.stats = null; LG.list = null; LG.cur = null; LG.data = null; drawAcct(); showLogin(); });
   on("acctIn", () => { PENDING = null; setAuthMode("in"); showLogin(); });
   on("acctPens", () => PENS.test());
   on("acctUp", () => { PENDING = null; setAuthMode("up"); showLogin(); });

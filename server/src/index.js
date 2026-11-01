@@ -137,6 +137,10 @@ export class Accounts extends DurableObject {
     this.sql.exec(`CREATE INDEX IF NOT EXISTS d2t_results_win ON d2t_results (mode, win, val, at)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_players (uid TEXT NOT NULL, mode TEXT NOT NULL, name TEXT NOT NULL, agg TEXT NOT NULL, k1 REAL NOT NULL, k2 REAL NOT NULL, k3 REAL NOT NULL, n INTEGER NOT NULL, updated INTEGER NOT NULL, PRIMARY KEY (uid, mode))`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS d2t_players_rank ON d2t_players (mode, n, k1, k2, k3, uid)`);
+    // DROP2TOP's use of accounts (1 Nov): every signed-in player it has seen, and each time it signed someone in with a
+    // Tenaball sign-in already on the phone (the shared sign-in); names only reach the admin page
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_seen (uid TEXT PRIMARY KEY, first INTEGER NOT NULL, last INTEGER NOT NULL)`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS d2t_adopt (uid TEXT NOT NULL, at INTEGER NOT NULL)`);
   }
   one(q, ...a){ const r = this.sql.exec(q, ...a).toArray(); return r[0] || null; }
   userOut(u){ return { id: u.id, name: u.name, email: u.email }; }
@@ -375,6 +379,9 @@ export class Accounts extends DurableObject {
     const now = Date.now(), today = ukDay(now), u = await this.userFromToken(token);
     // who the results belong to: the account, or (with GUEST_ROWS on) the random id a phone keeps, under an automatic name
     let who = u ? { uid: u.id, name: u.name } : null;
+    if (u) this.sql.exec("INSERT INTO d2t_seen (uid, first, last) VALUES (?, ?, ?) ON CONFLICT(uid) DO UPDATE SET last = excluded.last", u.id, now, now);
+    // DROP2TOP signed this player in from the Tenaball sign-in on their phone
+    if (path === "/d2t/adopted"){ if (!u) return fail(401, "You're signed out. Sign in again."); this.sql.exec("INSERT INTO d2t_adopt (uid, at) VALUES (?, ?)", u.id, now); return json({ ok: true }); }
     if (!who && GUEST_ROWS && /^[a-f0-9]{24,64}$/.test(String(b.guest || ""))) who = { uid: "g:" + b.guest, name: "Player " + String(b.guest).slice(0, 4) };
     const mode = D2T_MODES.includes(b.game) ? b.game : null, tab = mode && TABS[mode].includes(b.tab) ? b.tab : "all";
     const parse = row => { try { return JSON.parse(row.data); } catch(e){ return null; } };
@@ -474,6 +481,14 @@ export class Accounts extends DurableObject {
     if (this.limited("admin:" + ip, 10, 3600000)) return fail(429, "Too many wrong passwords. Try again in an hour.");
     if (!sameText(b.password || "", this.env.ADMIN_PASSWORD)){ this.limited("admin:" + ip, 10, 3600000, 1); return fail(401, "Wrong admin password."); }
     const row = u => ({ ...this.userOut(u), locked: u.lock_until > Date.now(), created: u.created, played: this.statsOf(u).played });
+    // DROP2TOP: how many accounts there are, who has used DROP2TOP signed in (seen since 1 Nov, or with results on its
+    // tables from before) and how many automatic sign-ins there have been; names only, never emails
+    if (path === "/admin/d2t"){
+      const accounts = this.one("SELECT COUNT(*) AS c FROM users").c;
+      const players = this.sql.exec(`SELECT u.name, MIN(x.first) AS first FROM (SELECT uid, first FROM d2t_seen UNION ALL SELECT uid, MIN(at) AS first FROM d2t_results GROUP BY uid) x JOIN users u ON u.id = x.uid GROUP BY x.uid ORDER BY first`).toArray();
+      const adopted = this.one("SELECT COUNT(*) AS c FROM d2t_adopt").c, adoptedPlayers = this.one("SELECT COUNT(DISTINCT uid) AS c FROM d2t_adopt").c;
+      return json({ accounts, d2t: players.map(p => ({ name: p.name, first: p.first })), adopted, adoptedPlayers });
+    }
     if (path === "/admin/find"){
       const q = "%" + String(b.q || "").trim().toLowerCase().replace(/[%_]/g, "") + "%";
       return json({ users: this.sql.exec("SELECT * FROM users WHERE lower(email) LIKE ? OR lower(name) LIKE ? ORDER BY created DESC LIMIT 50", q, q).toArray().map(row) });
