@@ -39,7 +39,7 @@ await test("d2t server: a phone's old records merge once, in one call, and the t
   eq(b.rows.map(r => r.gap ? "…" : `${r.pos} ${r.name} ${r.v.join("/")}`), ["1 deano 3/2/3", "2 toffee_tom 2/1/1", "3 LaurenB 1/0/1"]);
   eq(b.me, { pos: 3, name: "LaurenB", v: [1, 0, 1], me: true });
   eq(b.trophy, { title: "The hardest title", who: "toffee_tom", val: "Derby", what: "Won the league with Derby 2007/08 (11 pts for real)" });
-  eq((await api("/d2t/board", { game: "goal", tab: "all" })).body.rows, [{ pos: 1, name: "deano", v: [23, 2, "9%"], me: false }], "carried Goal Rush totals count");
+  eq((await api("/d2t/board", { game: "goal", tab: "all" })).body.rows, [{ pos: 1, name: "deano", v: [23, 2, "-"], me: false }], "carried Goal Rush totals count");
 });
 await test("d2t server: the Daily today: every go counts, the best of the day ranks, the first champion holds the trophy", async () => {
   await api("/d2t/result", daily("d:tom:1", 4, 1), { token: tom });

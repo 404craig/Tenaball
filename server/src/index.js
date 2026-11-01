@@ -387,6 +387,8 @@ export class Accounts extends DurableObject {
       this.sql.exec("INSERT OR REPLACE INTO d2t_players (uid, mode, name, agg, k1, k2, k3, n, updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", uid, m, name, JSON.stringify(agg), k[0], k[1], k[2], onTable(m, agg) ? 1 : 0, now);
       return agg;
     };
+    // Goal Rush totals stored before the average off target (1 Nov) are folded again once, from the games they hold
+    this.sql.exec("SELECT uid, name FROM d2t_players WHERE mode = 'goal' AND instr(agg, '\"gapGames\"') = 0").toArray().forEach(p => refresh(p.uid, p.name, "goal"));
     // how many rank above these keys on a game's all-time table (ties by id, as rank() breaks them)
     const above = (m, k, uid) => this.one("SELECT COUNT(*) AS c FROM d2t_players WHERE mode = ? AND n = 1 AND (k1 > ? OR (k1 = ? AND k2 > ?) OR (k1 = ? AND k2 = ? AND k3 > ?) OR (k1 = ? AND k2 = ? AND k3 = ? AND uid < ?))", m, k[0], k[0], k[1], k[0], k[1], k[2], k[0], k[1], k[2], uid).c;
     const countOf = m => this.one("SELECT COUNT(*) AS c FROM d2t_players WHERE mode = ? AND n = 1", m).c;
