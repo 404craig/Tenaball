@@ -44,6 +44,13 @@ await test("d2t: a Daily folds by day (the best go counts, goes are the most rep
   eq([a.played, a.wins, a.bestRise, a.bestFinish, a.goes], [2, 1, 19, 1, 5]);
   const g = aggregate("goal", [goal({ total: 433 }), goal({ total: 440 }), cleanResult("goal", { rid: "carry:p", carry: true, games: 23, exact: 2, best: 4 }, NOW)]);
   eq([g.games, g.exact, g.closest, Math.round(100 * g.rate)], [25, 3, 0, 12]);
+  // the average off target counts only the games stored one by one (the carry has no gaps): (0 + 7) / 2 = 3.5, shown ±4
+  eq([g.gapGames, g.gapSum, g.avg, BOARDS.goal.all.vals(g)[2]], [2, 7, 3.5, "±4"]);
+  eq(BOARDS.goal.all.vals(aggregate("goal", [cleanResult("goal", { rid: "carry:q", carry: true, games: 5, exact: 1, best: 2 }, NOW)]))[2], "-");
+  // lower average ranks higher on level spot-ons; none counted ranks last
+  const k = (a) => BOARDS.goal.all.keys(a);
+  const near = aggregate("goal", [goal({ total: 430 }), goal({ total: 436 })]), far = aggregate("goal", [goal({ total: 400 })]), none = aggregate("goal", [cleanResult("goal", { rid: "carry:r", carry: true, games: 9, exact: 0, best: 1 }, NOW)]);
+  eq(k(near)[1] > k(far)[1] && k(far)[1] > k(none)[1], true);
   const u = aggregate("ub", [ub({ run: 12 }), ub({ run: 7, stat: "pts" }), cleanResult("ub", { rid: "carry:p", carry: true, runs: 10, best: { cg: 15, w: 3 } }, NOW)]);
   eq([u.runs, u.best, u.bestStat, u.avg, u.known], [12, 15, "cg", 9.5, 2]);
 });

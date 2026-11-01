@@ -108,7 +108,10 @@ export function aggregate(mode, results){
   if (mode === "goal"){
     const games = R.length + C.reduce((t, c) => t + c.games, 0), exact = R.filter(r => r.gap === 0).length + C.reduce((t, c) => t + c.exact, 0);
     const gaps = R.map(r => r.gap).concat(C.filter(c => c.best != null).map(c => c.best));
-    return { games, exact, rate: games ? exact / games : 0, closest: gaps.length ? Math.min(...gaps) : null };
+    // the average distance from the target, over the games stored one by one (a carry from before the tables has no gaps
+    // to give, so it stays out; Craig, 1 Nov: it replaced the hit rate)
+    const gapGames = R.length, gapSum = R.reduce((t, r) => t + r.gap, 0);
+    return { games, exact, rate: games ? exact / games : 0, closest: gaps.length ? Math.min(...gaps) : null, gapSum, gapGames, avg: gapGames ? gapSum / gapGames : null };
   }
   if (mode === "ub"){
     const best = {}; for (const c of C) for (const [k, v] of Object.entries(c.best || {})) best[k] = Math.max(best[k] || 0, v);
@@ -137,7 +140,8 @@ export const BOARDS = {
     season: { cols: ["Points", "Wins", "Goal diff"], sort: 0, keys: a => [a.best ? a.best.pts : -1, a.best ? a.best.w : -1, a.best ? a.best.gd : -999], vals: a => [a.best ? a.best.pts : "-", a.best ? a.best.w : "-", a.best ? sg(a.best.gd) : "-"] }
   },
   goal: {
-    all: { cols: ["Games", "Spot on", "Hit rate"], sort: 1, keys: a => [a.exact, a.rate, a.games], vals: a => [a.games, a.exact, a.games ? pct(a.rate) : "-"] },
+    // spot on first, then the lower average off target (none counted last), then more games
+    all: { cols: ["Games", "Spot on", "Avg off"], sort: 1, keys: a => [a.exact, a.avg == null ? -1e6 : -a.avg, a.games], vals: a => [a.games, a.exact, a.avg == null ? "-" : "±" + Math.round(a.avg)] },
     today: { cols: ["Games", "Spot on", "Closest"], sort: 1, keys: a => [a.exact, -(a.closest == null ? 9999 : a.closest), -a.games], vals: a => [a.games, a.exact, a.closest == null ? "-" : a.closest] }
   },
   ub: {
