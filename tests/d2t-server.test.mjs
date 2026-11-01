@@ -109,5 +109,10 @@ await test("d2t server: the backup: signed in only, versioned so two phones neve
   eq([got.v, got.data.record.runs.length, got.results], [2, 2, undefined]);
   eq((await api("/d2t/backup", {}, { token: lauren })).body.data, null, "each account its own");
 });
+await test("d2t server: a guest's results count once each, however often they are sent", async () => {
+  const one = classic("g:dup", 1, { club: "Bolton", season: "1995/96" }).rec;
+  const b = (await api("/d2t/board", { game: "classic", tab: "all", mine: [one, one, one] })).body;
+  assert(b.you && b.you.v[0] === 1 && b.you.v[1] === 1, "a game sent three times counted once: " + JSON.stringify(b.you));
+});
 await srv.stop();
 report();

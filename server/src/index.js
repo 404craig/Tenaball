@@ -407,7 +407,8 @@ export class Accounts extends DurableObject {
       .map(p => ({ uid: p.uid, name: p.name, agg: JSON.parse(p.agg) }));
     const mine = m => { const p = who && this.one("SELECT agg, n FROM d2t_players WHERE uid = ? AND mode = ?", who.uid, m); return p && p.n ? JSON.parse(p.agg) : null; };
     // the results a guest's phone holds, checked and folded like a player's but never stored
-    const guestAgg = (m, from) => { const list = (Array.isArray(b.mine) ? b.mine : []).slice(0, 500).map(r => cleanResult(m, r, now)).filter(r => r && (!from || (!r.carry && resultKeys(m, r, now).day >= from))); return aggregate(m, list); };
+    // a guest's own results, each run id once (a phone may send a game twice; Fable, 1 Nov)
+    const guestAgg = (m, from) => { const ids = new Set(); const list = (Array.isArray(b.mine) ? b.mine : []).slice(0, 500).map(r => cleanResult(m, r, now)).filter(r => r && !ids.has(r.rid) && ids.add(r.rid) && (!from || (!r.carry && resultKeys(m, r, now).day >= from))); return aggregate(m, list); };
 
     if (path === "/d2t/board"){
       if (!mode) return fail(400, "Which table?");
